@@ -9,21 +9,24 @@ export default function Home() {
       name: 'Godforge',
       slug: 'godforge',
       description: 'Hero collector RPG focused on strategic team composition',
-      color: '#372061'
+      color: '#372061',
+      image: '/images/games/godforgemain.png'
     },
     {
       id: 'dcdl',
       name: 'DC: Dark Legion',
       slug: 'dc-dark-legion',
       description: 'Strategy game set in the DC Universe with idle and base-building elements',
-      color: '#1a1a1a'
+      color: '#1a1a1a',
+      image: '/images/games/dcdlmain.png'
     },
     {
       id: 'void-hunters',
       name: 'Void Hunters',
       slug: 'void-hunters',
       description: 'Turn-based RPG with deep progression systems',
-      color: '#2a2a2a'
+      color: '#2a2a2a',
+      image: null
     }
   ]
 
@@ -46,6 +49,7 @@ export default function Home() {
             {games.map((game) => (
               <a key={game.id} href={`/games/${game.slug}`} className="game-card">
                 <div className="game-banner" style={{ backgroundColor: game.color }}>
+                  {game.image && <img src={game.image} alt={game.name} />}
                   <h3>{game.name}</h3>
                 </div>
                 <div className="game-info">
