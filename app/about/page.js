@@ -47,9 +47,9 @@ export default function About() {
 
               <h3>Connect</h3>
               <ul className="connect-links">
-                <li><a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener">YouTube Channel</a></li>
-                <li><a href="https://discord.gg" target="_blank" rel="noopener">Join Discord Community</a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener">Follow on Twitter</a></li>
+                <li><a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">YouTube Channel</a></li>
+                <li><a href="https://discord.gg" target="_blank" rel="noopener noreferrer">Join Discord Community</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Follow on Twitter</a></li>
               </ul>
             </div>
 
@@ -71,7 +71,7 @@ export default function About() {
                 </div>
               )}
               <p className="video-note">
-                <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener">
+                <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">
                   View all videos on YouTube →
                 </a>
               </p>

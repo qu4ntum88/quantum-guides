@@ -59,8 +59,8 @@ export default function GodforgePage() {
               <section className="resources-section">
                 <h2>Resources</h2>
                 <ul className="resources-list">
-                  <li><a href="https://godforge.gg" target="_blank" rel="noopener">Official Godforge Database</a> - Champion stats and information</li>
-                  <li><a href="https://www.hellhades.com" target="_blank" rel="noopener">HellHades Guides</a> - Creator and game developer resources</li>
+                  <li><a href="https://godforge.gg" target="_blank" rel="noopener noreferrer">Official Godforge Database</a> - Champion stats and information</li>
+                  <li><a href="https://www.hellhades.com" target="_blank" rel="noopener noreferrer">HellHades Guides</a> - Creator and game developer resources</li>
                 </ul>
               </section>
             </div>
@@ -74,7 +74,7 @@ export default function GodforgePage() {
               <div className="sidebar-card">
                 <h3>Community</h3>
                 <p>Join the Godforge community to discuss strategies, share tips, and stay updated on the latest content.</p>
-                <a href="https://discord.gg" target="_blank" rel="noopener" className="btn">Join Discord</a>
+                <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
               </div>
 
               <div className="sidebar-card">
