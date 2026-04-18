@@ -5,7 +5,7 @@ import './game.css'
 export default function GodforgePage() {
   return (
     <main>
-      <section className="game-hero" style={{ backgroundImage: 'linear-gradient(135deg, #372061 0%, #2a1a4a 100%)' }}>
+      <section className="game-hero" style={{ backgroundImage: "url('/images/site/Quantum Purple Background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container">
           <h1>Godforge Guides</h1>
           <p className="subtitle">Hero collector RPG focused on strategic team composition and deep progression systems</p>
