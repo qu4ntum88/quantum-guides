@@ -5,12 +5,10 @@ export const revalidate = 3600
 async function getLatestQuantumVideo() {
   try {
     const res = await fetch(
-      'https://www.youtube.com/feeds/videos.xml?channel_id=UCu4ftCdHwu6imYFbjIUAbhg',
-      { headers: { 'User-Agent': 'Mozilla/5.0' } }
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCu4ftCdHwu6imYFbjIUAbhg&maxResults=1&order=date&type=video&key=${process.env.YOUTUBE_API_KEY}`
     )
-    const xml = await res.text()
-    const match = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)
-    return match ? match[1] : null
+    const data = await res.json()
+    return data.items?.[0]?.id?.videoId ?? null
   } catch {
     return null
   }
