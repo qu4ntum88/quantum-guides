@@ -1,8 +1,23 @@
-'use client'
-
 import './game.css'
 
-export default function GodforgePage() {
+export const revalidate = 3600
+
+async function getLatestFatelessVideo() {
+  try {
+    const res = await fetch(
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCSpCHYBp2ptiAHVX0KYYlSQ'
+    )
+    const xml = await res.text()
+    const match = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)
+    return match ? match[1] : null
+  } catch {
+    return null
+  }
+}
+
+export default async function GodforgePage() {
+  const latestDevVideoId = await getLatestFatelessVideo()
+
   return (
     <main>
       <section className="game-hero" style={{ backgroundImage: "url('/images/site/Quantum Purple Background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -19,7 +34,7 @@ export default function GodforgePage() {
               <section className="guides-section">
                 <h2>Comprehensive Guides</h2>
                 <p className="section-desc">In-depth guides covering all aspects of Godforge gameplay</p>
-                
+
                 <div className="guides-list">
                   <div className="guide-card">
                     <h3>Mechanics Guide</h3>
@@ -50,10 +65,31 @@ export default function GodforgePage() {
               <section className="videos-section">
                 <h2>Video Guides</h2>
                 <p className="section-desc">Watch video walkthroughs and detailed explanations</p>
-                
                 <div className="videos-placeholder">
                   <p>Latest video guides coming during Godforge beta...</p>
                 </div>
+              </section>
+
+              <section className="videos-section">
+                <h2>Latest Developer News</h2>
+                <p className="section-desc">The latest from Fateless Games</p>
+                {latestDevVideoId ? (
+                  <div className="video-container">
+                    <iframe
+                      width="100%"
+                      height="315"
+                      src={`https://www.youtube.com/embed/${latestDevVideoId}`}
+                      title="Latest Fateless Games video"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                ) : (
+                  <div className="videos-placeholder">
+                    <p>Visit <a href="https://www.youtube.com/@FatelessGames" target="_blank" rel="noopener noreferrer">Fateless Games on YouTube</a> for the latest news.</p>
+                  </div>
+                )}
               </section>
 
               <section className="resources-section">
