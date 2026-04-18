@@ -1,6 +1,23 @@
 import './about.css'
 
-export default function About() {
+export const revalidate = 3600
+
+async function getLatestQuantumVideo() {
+  try {
+    const res = await fetch(
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCu4ftCdHwu6imYFbjIUAbhg',
+      { headers: { 'User-Agent': 'Mozilla/5.0' } }
+    )
+    const xml = await res.text()
+    const match = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)
+    return match ? match[1] : null
+  } catch {
+    return null
+  }
+}
+
+export default async function About() {
+  const latestVideoId = await getLatestQuantumVideo()
   return (
     <main>
       <section className="about-hero">
@@ -42,17 +59,25 @@ export default function About() {
 
             <div className="video-section">
               <h2>Latest Video</h2>
-              <div className="video-container">
-                <iframe
-                  width="100%"
-                  height="315"
-                  src="https://www.youtube.com/embed/videoseries?list=UUu4ftCdHwu6imYFbjIUAbhg"
-                  title="Latest Quantum video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              {latestVideoId ? (
+                <div className="video-container">
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src={`https://www.youtube.com/embed/${latestVideoId}`}
+                    title="Latest Quantum video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ) : (
+                <div className="placeholder">
+                  <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">
+                    View latest videos on YouTube →
+                  </a>
+                </div>
+              )}
               <p className="video-note">
                 <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">
                   View all videos on YouTube →
