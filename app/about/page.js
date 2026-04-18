@@ -1,23 +1,6 @@
 import './about.css'
 
-export const revalidate = 3600
-
-async function getLatestQuantumVideo() {
-  try {
-    const res = await fetch(
-      'https://www.youtube.com/feeds/videos.xml?channel_id=UCAEzz9h47VuaGSTgwzavxEA'
-    )
-    const xml = await res.text()
-    const match = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)
-    return match ? match[1] : null
-  } catch {
-    return null
-  }
-}
-
-export default async function About() {
-  const latestVideoId = await getLatestQuantumVideo()
-
+export default function About() {
   return (
     <main>
       <section className="about-hero">
@@ -39,31 +22,37 @@ export default async function About() {
 
               <h3>Connect</h3>
               <ul className="connect-links">
-                <li><a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">YouTube Channel</a></li>
-                <li><a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer">Join Discord Community</a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Follow on Twitter</a></li>
+                <li>
+                  <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/site/yt_logo_mono_dark.png" alt="YouTube Channel" className="social-icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/site/Discord-Logo-Blurple.png" alt="Join Discord Community" className="social-icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/Quantumx86" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/site/twitter_logo_white.png" alt="Follow on X" className="social-icon" />
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div className="video-section">
               <h2>Latest Video</h2>
-              {latestVideoId ? (
-                <div className="video-container">
-                  <iframe
-                    width="100%"
-                    height="315"
-                    src={`https://www.youtube.com/embed/${latestVideoId}`}
-                    title="Latest Quantum video"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              ) : (
-                <div className="placeholder">
-                  <p>Visit <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">Quantum on YouTube</a> for the latest videos.</p>
-                </div>
-              )}
+              <div className="video-container">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/videoseries?list=UUu4ftCdHwu6imYFbjIUAbhg"
+                  title="Latest Quantum video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
               <p className="video-note">
                 <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">
                   View all videos on YouTube →
