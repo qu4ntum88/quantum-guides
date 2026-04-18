@@ -22,7 +22,9 @@ export default async function GodforgePage() {
     <main>
       <section className="game-hero" style={{ backgroundImage: "url('/images/site/Quantum Purple Background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container">
-          <h1>Godforge Guides</h1>
+          <h1 className="game-title">
+            <img src="/images/site/Godforge_LogoPNG.png" alt="Godforge" className="game-title-logo" />Guides
+          </h1>
           <p className="subtitle">Hero collector RPG focused on strategic team composition and deep progression systems</p>
         </div>
       </section>
