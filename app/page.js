@@ -34,7 +34,7 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="container">
-          <h1>Quantum Game Guides</h1>
+          <h1><img src="/images/site/Q GOLD FULL ICON.png" alt="" className="brand-icon" />Quantum Game Guides</h1>
           <p className="tagline">Deep-dive guides, tier lists, and meta analysis for mobile gacha and strategy games</p>
           <p className="intro">
             On this site, you will find comprehensive written guides, links to video walkthroughs, and community discussion for DC: Dark Legion, Godforge, Void Hunters, and more!

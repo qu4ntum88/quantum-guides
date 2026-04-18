@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <nav className="navbar">
           <div className="nav-container">
             <div className="logo">
-              <a href="/">Quantum Guides</a>
+              <a href="/"><img src="/images/site/Q GOLD FULL ICON.png" alt="" className="brand-icon" />Quantum Game Guides</a>
             </div>
             <ul className="nav-links">
               <li><a href="/">Home</a></li>

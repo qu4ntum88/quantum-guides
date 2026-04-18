@@ -45,6 +45,17 @@ body {
   font-weight: 700;
   color: var(--gold);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-icon {
+  height: 1.2em;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .nav-links {
