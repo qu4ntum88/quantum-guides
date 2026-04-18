@@ -1,0 +1,901 @@
+[
+  {
+    "name": "Gas Derringer",
+    "id": "gas_derringer",
+    "image": "./legacy_images/gasderinger.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "C",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"]
+  },
+  {
+    "name": "Gabriel Horn",
+    "id": "gabriel_horn",
+    "image": "./legacy_images/horn.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "B",
+    "role": "Tank",
+    "gearEffects": ["HP", "HP%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Sonic Solo",
+        "description": "Increases the weearer's HP by %. At the start of battle, increases all allies' ATK by % for 20s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Gabriel_Horn_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Tectonic Disruptor",
+    "id": "tectonic_disruptor",
+    "image": "./legacy_images/Icon_sw_26.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "B",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Earth Shake",
+        "description": "Increases the wearer's Crit Rate by %. Each time the wearer casts their Ultimate, there is a % chance to inflict [Severe Wound] on the target for 8s. [Severe Wound]: Reduces healing received by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Tectonic_Disruptor_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Promethium Claws",
+    "id": "promethium_claws",
+    "image": "./legacy_images/Icon_sw_27.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "B",
+    "role": "Tank",
+    "gearEffects": ["HP", "ATK%", "Crit RES"],
+    "legacySkills": [
+      {
+        "name": "Deadly Digits",
+        "description": "Increases the wearer's ATK by %. When HP drops below 50%, the wearer gains a shield equal to % of Max HP for 12s. Can be triggered once per battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_Promethium_Claws_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Duplication Mirror",
+    "id": "duplication_mirror",
+    "image": "./legacy_images/Icon_sw_28.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "C",
+    "role": "Tank",
+    "gearEffects": ["HP", "ATK%", "Dodge"],
+    "legacySkills": [
+      {
+        "name": "Hard Light Henchmen",
+        "description": "Increases the wearer's ATK by %. Upon taking a melee attack, increases the wearer's DMG reduction by % for 8s. Cooldown: 12s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Duplication_Mirror_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Charged Escrima Sticks",
+    "id": "charged_escrima_sticks",
+    "image": "./legacy_images/Icon_sw_33.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Showstopper",
+        "description": "Activates only when equipped by Nightwing. Increases Nightwing's ATK by %. He gains % Physical PEN when dealing DMG with his Ultimate or the follow-up strike. If his Crit Rate is above 100%, every additional 1% grants 1% more Physical PEN, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Nightwing_general.png"
+      },
+      {
+        "name": "Recharge",
+        "description": "Increases the wearer's Crit DMG AMP by %. Upon defeating an enemy, the wearer restores X Energy.",
+        "image": "./legacy_images_skills/icon_hero_skill_Nightwing_main_exclusive.png"
+      }
+    ]
+  },
+  {
+    "name": "Imp Doll",
+    "id": "imp_doll",
+    "image": "./legacy_images/Icon_sw_34.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "B",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Little Friend",
+        "description": "Increases the wearer's Spiritual AMP by %. Each time the wearer casts their Ultimate, there is a 50% chance to inflict [Severe Wound] on the target for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Imp_Doll_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Robot Duplicate",
+    "id": "robot_duplicate",
+    "image": "./legacy_images/Icon_sw_35.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "A",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["HP", "HP%", "Effect RES"],
+    "legacySkills": [
+      {
+        "name": "Toy Soldier",
+        "description": "Increases the wearer's HP by % and ATK of nearby allies by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Robot_Duplicate_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Pied Piper Flute",
+    "id": "pied_piper_flute",
+    "image": "./legacy_images/Icon_sw_36.png",
+    "rank": "Epic",
+    "unique": false,
+    "tier": "D",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "Healing Bonus"]
+  },
+  {
+    "name": "Wand of the Magi",
+    "id": "wand_of_the_magi",
+    "image": "./legacy_images/Icon_sw_38.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Spiritual AMP"],
+    "legacySkills": [
+      {
+        "name": "Tcetorp",
+        "description": "Activates only when equipped by Zatanna. Increases Zatanna's Spiritual PEN by %. At the start of battle, she applies [Escape Trick] to all allies. [Escape Trick]: When invlicted with a ctonrol effect, there is a fixed % chance to immediately remove it. Can only be triggered once per battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_ZatannaZatara_main_exclusive.png"
+      },
+      {
+        "name": "Big Finish",
+        "description": "Increases the wearer's Physical DEF by %. After each basic attack, the wearer gains % ATK Up, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_ZatannaZatara_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Superman's Cape",
+    "id": "supermans_cape",
+    "image": "./legacy_images/Icon_sw_39.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Tank",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Kryptonian Protection",
+        "description": "Activates only when equipped by Superman. Increases Superman's Physical PEN by %. Before casting a skill, Superman gains 1 stack of % ATK Up. Stackable up to 6 times.",
+        "image": "./legacy_images_skills/icon_hero_skill_Superman_exclusive.png"
+      },
+      {
+        "name": "It Means Hope",
+        "description": "At the start of battle, Increases the wearer's Physical and Spiritual DEF by % per second, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Superman_main_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Sigil Magic",
+    "id": "sigil_magic",
+    "image": "./legacy_images/Icon_sw_41.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Spiritual AMP"],
+    "legacySkills": [
+      {
+        "name": "Synchronicity",
+        "description": "Activates only when equipped by Constantine. Casting [Summoned Flame] or [Exorcism Blast] triggers a fiery shockwave in the magic circle, dealing Spiritual DMG equal to % of Constantine's ATK to enemies within a circular area.",
+        "image": "./legacy_images_skills/icon_hero_skill_Constantine_main_exclusive.png"
+      },
+      {
+        "name": "Mystic Strike",
+        "description": "Increases the wearer's Spiritual PEN by %. After casting the Ultimate, the wearer's ATK is permanently increased by %, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Constantine_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Sinestro Corps Ring",
+    "id": "sinestro_corps_ring",
+    "image": "./legacy_images/Icon_sw_42.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Spiritual AMP"],
+    "legacySkills": [
+      {
+        "name": "Schadenfreude",
+        "description": "Activates only when equipped by Sinestro. Increases Sinestro's Spiritual PEN by %. When an enemy is defeated by direct DMG, Sinestro gains [X] Energy. Cooldown: 2s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Sinestro_main_exclusive.png"
+      },
+      {
+        "name": "Panic Attack",
+        "description": "Increases the wearer's Spiritual AMP by %. Before casting the Ultimate, if HP is below 75%, the wearer gains an additional % Spiritual AMP for 5s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Sinestro_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Thanagarian Mace",
+    "id": "thanagarian_mace",
+    "image": "./legacy_images/Icon_sw_43.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "C",
+    "role": "Tank",
+    "gearEffects": ["ATK", "ATK%", "HP%"],
+    "legacySkills": [
+      {
+        "name": "Nth Level",
+        "description": "Activates only when equipped by Hawkgirl. Increases Hawkgirl's AoE DMG by %. Upon casting the Ultimate, her ATK is increased by % for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Hawkgirl_main_exclusive.png"
+      },
+      {
+        "name": "Emergency Shield",
+        "description": "At the start of battle, the wearer's HP is increased by %. When HP drops below 50% for the first time, the wearer gains a shield equal to % of Max HP for 20s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Hawkgirl_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Starheart Staff",
+    "id": "starheart_staff",
+    "image": "./legacy_images/Icon_sw_44.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "S",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["HP", "HP%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Allied Force",
+        "description": "Each time the wearer casts their Ultimate, nearby allies gain a % ATK bonus and a % Physical and Spiritual DEF bonus for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Starheart_Staff_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Kuru Pendant",
+    "id": "kuru_pendant",
+    "image": "./legacy_images/Icon_sw_45.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Tank",
+    "gearEffects": ["HP", "HP%", "Spiritual AMP"],
+    "legacySkills": [
+      {
+        "name": "H'ronmeer's Vengeance",
+        "description": "Activates only when equipped by Martian Manhunter. Every time an enemy casts a skill or their Ultimate, Martian Manhunter restores % of his Max HP. Cooldown: 5s.",
+        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_main_exclusive.png"
+      },
+      {
+        "name": "Piercing Gaze",
+        "description": "Every time an ally casts their Ultimate, the wearer's ATK and Phsyical DEF are permanently increased by %, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Starfire's Starbolts",
+    "id": "starfires_starbolts",
+    "image": "./legacy_images/Icon_sw_46.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Tamaran Arcs",
+        "description": "Activates only when equipped by Starfire. Allies within the range of Starfire's Ultimate (excluding herself) gain bonus ATK equal to % of her ATK. After casting the Ultimate, Starfire gaines 1 stack of % ATK Up, Stacking up to [X] times.",
+        "image": "./legacy_images_skills/icon_hero_skill_Starfire_main_exclusive.png"
+      },
+      {
+        "name": "Astral Blaze",
+        "description": "Increases the wearer's ATK by %. Each time the wearer casts their Ultimate, nearby allies restore HP equal to % of the wearer's ATK plus % of the target's lost HP.",
+        "image": "./legacy_images_skills/icon_hero_skill_Starfire_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "House of El Symbol",
+    "id": "house_of_el_symbol",
+    "image": "./legacy_images/Icon_sw_47.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Tank",
+    "gearEffects": ["ATK", "ATK%", "HP%"],
+    "legacySkills": [
+      {
+        "name": "Rao's Ascension",
+        "description": "Activates only when equipped by Supergirl. Increases ATK by %. Upon casting the Ultimate, AoE DMG dealt is increased by %, stacking up to 10 times.",
+        "image": "./legacy_images_skills/icon_hero_skill_supergirl_main_exclusive.png"
+      },
+      {
+        "name": "Protection of El",
+        "description": "Increases ATK by %. After casting the Ultimate, gains a shield equal to % of Max HP for 10s.",
+        "image": "./legacy_images_skills/icon_hero_skill_supergirl_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Super Six-String",
+    "id": "super_six_string",
+    "image": "./legacy_images/Icon_sw_48.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Too Cool",
+        "description": "Activates only when equipped by Superboy. Increases Effect RES by %. Increases DMG of [Chill] by % of ATK, with a % base chance to freeze the targets for 1s.",
+        "image": "./legacy_images_skills/icon_hero_skill_connerkent_main_exclusive.png"
+      },
+      {
+        "name": "Punk Rock",
+        "description": "Icnreases Energy Restoration Speed by %. After the wearer casts their Ultimate, increases all allies' ATK by %. This effect has an 8s cooldown and can stack up to 5 times.",
+        "image": "./legacy_images_skills/icon_hero_skill_connerkent_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Green Lantern Power Belt",
+    "id": "green_lantern_power_belt",
+    "image": "./legacy_images/Icon_sw_49.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["HP", "ATK%", "Healing Bonus"],
+    "legacySkills": [
+      {
+        "name": "Beware my Power",
+        "description": "Activates only when equipped by Green Lantern. Increases ATK by %. At the start of battle, all allies gain a sheild equl to Hal Jordan's Ultimate level x % of Hal Jordan's ATK for 8s. The shield strength is doubled for [Justice League] and [Green Lantern Corps] allies.",
+        "image": "./legacy_images_skills/icon_hero_skill_GreenLantern_main_exclusive.png"
+      },
+      {
+        "name": "Brightest Day",
+        "description": "Increases HP by %. When the wearer heals an ally, any excess healing grants the target (excluding the wearer) % ATK Up for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_GreenLantern_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Amazonium Alloy Shield",
+    "id": "amazonium_alloy_shield",
+    "image": "./legacy_images/Icon_sw_AmazoniumAlloyShield.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "A",
+    "role": "Tank",
+    "gearEffects": ["HP", "P DEF", "Crit DMG RES"],
+    "legacySkills": [
+      {
+        "name": "Amazonian Protection",
+        "description": "Increases the wearer's Physical and Spiritual DEF by %. The wearer gains [X] stacks of [Amazonian Protection] when attacked.",
+        "image": "./legacy_images_skills/icon_hero_skill_Amazon_Alloy_Shield_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Cold Gun",
+    "id": "cold_gun",
+    "image": "./legacy_images/Icon_sw_ColdGun.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "D",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "ACC"]
+  },
+  {
+    "name": "Coluan Force Field Belt",
+    "id": "coluan_force_field_belt",
+    "image": "./legacy_images/Icon_sw_ColuanForceFieldBelt.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "D",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["HP", "P DEF", "Crit RES"]
+  },
+  {
+    "name": "Dual Katanas",
+    "id": "dual_katanas",
+    "image": "./legacy_images/Icon_sw_DualKatanas.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Peak Hunter",
+        "description": "Activates only when equipped by Deathstroke. After defeating an emeny with his Ultimate, Deathstroke gains [Funeral] for 10s and restores % of Max HP. [Funeral]: Increases ATK by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Deathstroke_main_exclusive.png"
+      },
+      {
+        "name": "Disabling Strike",
+        "description": "Increases the wearer's Energy Restoration Speed by %. Upon casting the Ulitimate, if the HP of any target is below 50%, the wearer gains [Disabling Strike]. [Disabling Strike]: Increases Physical PEN by % for 10s. Cannot be dispelled.",
+        "image": "./legacy_images_skills/icon_hero_skill_Deathstroke_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Fear Reaper",
+    "id": "fear_reaper",
+    "image": "./legacy_images/Icon_sw_Fear_Reaper.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Tank",
+    "gearEffects": ["HP", "HP%", "Crit DMG RES"],
+    "legacySkills": [
+      {
+        "name": "Harvest of Terror",
+        "description": "Activates only when equipped by Scarecrow. Increases Scarecrow's Physical and Spiritual RES by %. When Scarecrow's HP drops below 50%, he restores % of Max HP over 5s, during which DMG taken is reduced by %. Triggers every 20s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Scarecrow_main_exclusive.png"
+      },
+      {
+        "name": "Fear Field",
+        "description": "Increases the wearer's Max HP by % and Effect ACC by %. The wearer's attacks and skill casts reduce enemy ATK by % for 5s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Scarecrow_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Flash-Bulb Kite",
+    "id": "flash_bulb_kite",
+    "image": "./legacy_images/Icon_sw_FlashBulbKite.png",
+    "rank": "Epic",
+    "unique": false,
+    "tier": "D",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "Energy Gain Bonus"]
+  },
+  {
+    "name": "Fool's Scepter",
+    "id": "fools_scepter",
+    "image": "./legacy_images/Icon_sw_FoolsScepter.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Spiritual AMP"],
+    "legacySkills": [
+      {
+        "name": "You Slayed 'Em",
+        "description": "Activates only when equipped by Joker. Increases The Joker's Effect ACC by %. Each of his attacks increases the target's DMG taken by % for 10s, stacking up to 10 times.",
+        "image": "./legacy_images_skills/icon_hero_skill_Joker_main_exclusive.png"
+      },
+      {
+        "name": "Hilarity Ensues",
+        "description": "Increases the wearer's DMG Over Time bonus by %. Every 10s, increases the wearer's Spiritual AMP by %, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Joker_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Honkin' Huge Hammer",
+    "id": "honkin_huge_hammer",
+    "image": "./legacy_images/Icon_sw_HonkinHugeHammer.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Tank",
+    "gearEffects": ["ATK", "ATK%", "Crit Rate"],
+    "legacySkills": [
+      {
+        "name": "Wake-Up Call",
+        "description": "Activates only when equipped by Harley Quinn. Increases Harley Quinn's Crit Rate by %. She gains [Wake-Up Call] for every [X] critical hits. [Wake-Up Call]: Increases Crit DMG by %. Stackable up to 4 times. Cannot be dispelled.",
+        "image": "./legacy_images_skills/icon_hero_skill_HarleyQuinn_main_exclusive.png"
+      },
+      {
+        "name": "Whack-A-Loser",
+        "description": "At the start of battle, the wearer gains [X] Energy. Upon defeating an enemy, the wearer restores % of Max HP.",
+        "image": "./legacy_images_skills/icon_hero_skill_HarleyQuinn_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Improved Fear Gas Vial",
+    "id": "improved_fear_gas_vial",
+    "image": "./legacy_images/Icon_sw_ImprovedFearGasvial.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "C",
+    "role": "Tank",
+    "gearEffects": ["HP", "S DEF", "Dodge"]
+  },
+  {
+    "name": "Lawton Rifle Scope",
+    "id": "lawton_rifle_scope",
+    "image": "./legacy_images/Icon_sw_LawtonRifleScope.png",
+    "rank": "Epic",
+    "unique": false,
+    "tier": "D",
+    "role": "DPS",
+    "gearEffects": ["ATK", "Crit Rate"]
+  },
+  {
+    "name": "Mind Control Hat",
+    "id": "mind_control_hat",
+    "image": "./legacy_images/Icon_sw_MindControlHat.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "B",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Effect ACC"],
+    "legacySkills": [
+      {
+        "name": "Mess With Your Head",
+        "description": "Increases the wearer's ATK by %. Before casting the Ultimate, increases the wearer's Spiritual AMP by % for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Mind_control_hat_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Modified Joker Venom Grenade",
+    "id": "modified_joker_venom_grenade",
+    "image": "./legacy_images/Icon_sw_ModifiedJokerVenomGrenade.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "A",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Spiritual AMP"],
+    "legacySkills": [
+      {
+        "name": "ROTFL",
+        "description": "Increases the wearer's Effect ACC by %. After casting the Ultimate, increases the wearer's ATK by %, up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_Modified_Joker_Venom_Grenade_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Modoran Sonic Bomb",
+    "id": "modoran_sonic_bomb",
+    "image": "./legacy_images/Icon_sw_ModoranSonicBomb.png",
+    "rank": "Epic",
+    "unique": false,
+    "tier": "D",
+    "role": "Tank",
+    "gearEffects": ["HP", "HP%"]
+  },
+  {
+    "name": "Not So Huge Hammer",
+    "id": "not_so_huge_hammer",
+    "image": "./legacy_images/Icon_sw_NotSoHugeHammer.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "C",
+    "role": "Tank",
+    "gearEffects": ["HP", "ATK%", "Crit DMG"]
+  },
+  {
+    "name": "Dart with Poison Ivy Poison",
+    "id": "dart_with_poison_ivy_poison",
+    "image": "./legacy_images/Icon_sw_PoisonedDart.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "S",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Ivy's Kiss",
+        "description": "Increases the wearer's Spiritual PEN by %. Each time the wearer casts their Ultimate, there is a 50% chance to inflict [Ivy's Kiss] on the target. [Ivy's Kiss]: Increases DMG taken by % for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_poison_ivy_dart_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Purple Ray Radiation",
+    "id": "purple_ray_radiation",
+    "image": "./legacy_images/Icon_sw_PurpleRayRadiation.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "A",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["HP", "HP%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Panacea",
+        "description": "Increases the wearer's healing effect by %. The effect is increased by an additional % on targets with less than 50% HP.",
+        "image": "./legacy_images_skills/icon_hero_skill_Purple_ray_radiation_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Razor Rib Umbrella",
+    "id": "razor_rib_umbrella",
+    "image": "./legacy_images/Icon_sw_RazorRibUmbrella.png",
+    "rank": "Epic",
+    "unique": false,
+    "tier": "D",
+    "role": "Tank",
+    "gearEffects": ["HP", "ATK%"]
+  },
+  {
+    "name": "Replica Time Commander",
+    "id": "replica_time_commander",
+    "image": "./legacy_images/Icon_sw_ReplicaTimeCommanderHourglassSand.png",
+    "rank": "Epic",
+    "unique": false,
+    "tier": "D",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%"]
+  },
+  {
+    "name": "T-Sphere Weakness Analyzer",
+    "id": "t_sphere_weakness_analyzer",
+    "image": "./legacy_images/Icon_sw_Tsphere.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "A",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Analyze Vulnerability",
+        "description": "Increases the wearer's Crit Rate by %. Upon casting the Ultimate, the wearer gains [Analyze Vulnerability]. [Analyze Vulnerability]: Increases Crit DMG by % for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_T_Sphere_Weakness_Analyzer_general.png"
+      }
+    ]
+  },
+  {
+    "name": "Explosive Javelin",
+    "id": "explosive_javelin",
+    "image": "./legacy_images/javelin.png",
+    "rank": "Legendary",
+    "unique": false,
+    "role": "Tank",
+    "tier": "D",
+    "gearEffects": ["HP", "HP%", "Crit Rate"]
+  },
+  {
+    "name": "Plastic Explosive",
+    "id": "plastic_explosive",
+    "image": "./legacy_images/plasticexplosive.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "C",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Spiritual AMP"]
+  },
+  {
+    "name": "Demon's Sword",
+    "id": "demons_sword",
+    "image": "./legacy_images/DemonsSword.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "No Quarter",
+        "description": "Activates only when equipped by Ra's al Ghul. Increases ATK by %. For every [%] of Ra's al Ghul's Max HP lost, single-target DMG is increased by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_main_exclusive.png"
+      },
+      {
+        "name": "Deadlier Cornered",
+        "description": "Increases Physical DMG by %. Before the wearer casts their Ultimate, if HP is below 50%, the wearer gains an additional % Physical DMG bonus for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Fangs of the Demon",
+    "id": "fangs_of_the_demon",
+    "image": "./legacy_images/FangsoftheDemon.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Relentless Assault",
+        "description": "Activates only when equipped by Talia al Ghul. Talia al Ghul gains [Super Armor] while casting her Ultimate. The first time she casts her Ultimate in each battle, its DMG is increased by %. [Super Armor]: Prevents actions or skills from being interrupted by enemy attacks.",
+        "image": "./legacy_images_skills/icon_hero_skill_TaliaalGhul_main_exclusive.png"
+      },
+      {
+        "name": "Sharp Wind",
+        "description": "Increases the wearer's ATK by % and Physical PEN by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_TaliaalGhul_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Cocoon Gun",
+    "id": "cocoon_gun",
+    "image": "./legacy_images/cocoongun.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "C",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "HP%", "Healing Bonus"]
+  },
+  {
+    "name": "Energy Mace",
+    "id": "energy_mace",
+    "image": "./legacy_images/mace.png",
+    "rank": "Legendary",
+    "unique": false,
+    "tier": "C",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Effect ACC"]
+  },
+  {
+    "name": "Themysciran Royal Sceptre",
+    "id": "themysciran_sceptre",
+    "image": "./legacy_images/53_ThemysciranRoyalSceptre.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Tank",
+    "gearEffects": ["HP", "HP%", "Crit RES"],
+    "legacySkills": [
+      {
+        "name": "Queen's Privilege",
+        "description": "Activates only when equipped by Queen Hippolyta. At the start of battle, Queen Hippolyta gains [X] Energy. She also restores % of her Max HP per second until the end of battle. After casting her Ultimate, she restores an additional % of her Max HP per second for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_hippolyta_main_exclusive.png"
+      },
+      {
+        "name": "Protection of the Fates",
+        "description": "Increases the wearer's Physical DEF by %. After the wearer casts their Ultimate, all other allies gain [X] Energy.",
+        "image": "./legacy_images_skills/icon_hero_skill_hippolyta_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Antler Crown",
+    "id": "antler_crown",
+    "image": "./legacy_images/54_AntlerCrown.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Tank",
+    "gearEffects": ["HP", "ATK%", "HP%"],
+    "legacySkills": [
+      {
+        "name": "Green Knight",
+        "description": "Activates only when equipped by Swamp Thing. At the start of battle, Swamp Thing inflicts [Nature's Curse] on all enemies for 10s. [Nature's Curse]: Reduces ATK by % and Crit Rate by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_swampthing_main_exclusive.png"
+      },
+      {
+        "name": "Regrowth",
+        "description": "Increases the wearer's Ultimate DMG by %. After the start of battle, the wearer restores % of lost HP every 5s until the end of battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_swampthing_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Hells Distortion",
+    "id": "hells_distortion",
+    "image": "./legacy_images/icon_sw_51_hells_distortion.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Tank",
+    "gearEffects": ["ATK", "ATK%", "Crit Rate"],
+    "legacySkills": [
+      {
+        "name": "Amp it Up",
+        "description": "Activates only when equipped by Death Metal Wonder Woman. At the start of battle, Wonder Woman Death Metal's Spiritual Resistance increases by [%]. After Wonder Woman Death Metal casts her Ultimate, she doesn't consume energy for [5s]. Her basic attacks deal additional physical damage equal to [%] of the target's Max HP (capped at [%] of Wonder Woman Death Metal's Attack.",
+        "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_main_exclusive.png"
+      },
+      {
+        "name": "Encore",
+        "description": "Increases the wearer's Physical Defense by [%]. After casting their Ultimate, the wearer gains a shield equal to [%] of their Physical Defense for [10s].",
+        "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Mistress",
+    "id": "mistress",
+    "image": "./legacy_images/icon_sw_57_Mistress.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Tank",
+    "gearEffects": ["ATK", "ATK%", "HP%"],
+    "legacySkills": [
+      {
+        "name": "Amazon Clash",
+        "description": "Activates only when equipped by Artemis. Increases Artemis's damage dealt during duels by [%]. If she defeats her target in a duel, all [Amazons] allies' damage dealt is increased by [%] for [15s].",
+        "image": "./legacy_images_skills/icon_hero_skill_artemis_main_exclusive.png"
+      },
+      {
+        "name": "Warborn Essence",
+        "description": "Increases the wearer's Physical Defense by [%]. Upon casting a skill or the Ultimate, the wearer's Crit Rate is increased by [%], stacking up to three times.",
+        "image": "./legacy_images_skills/icon_hero_skill_artemis_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Conundrum Cane",
+    "id": "conundrum_cane",
+    "image": "./legacy_images/icon_sw_56_conundrum_cane.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Buffer/Debuffer",
+    "gearEffects": ["ATK", "ATK%", "Energy Gain Bonus"],
+    "legacySkills": [
+      {
+        "name": "Intermission",
+        "description": "Activates only when equipped by The Riddler. While protected by The Riddler's shield, allies restore HP equal to [%] of The Riddler's Attack every second. When the shield breaks or expires, they immediately restore HP equal to [%] of the Riddler's Attack.",
+        "image": "./legacy_images_skills/icon_hero_skill_Riddler_main_exclusive.png"
+      },
+      {
+        "name": "Disorientation",
+        "description": "Increases the wearer's Effect Accuracy by [%]. Every [5s], increases all other allies' Attack by [%], stacking up to [%] and lasting until the end of battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_Riddler_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Spacehog",
+    "id": "spacehog",
+    "image": "./legacy_images/icon_sw_58_Spacehog.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Too Mean to Die",
+        "description": "Activates only when equipped by Lobo. Increases Lobo's basic attack damage by [%]. When he takes lethal damage for the first time (while at least one ally is alive), his HP is set to 1 and he immediately restores [%] of his mas HP. Can be triggered once per battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_lobo_main_exclusive.png"
+      },
+      {
+        "name": "Full Throttle Kill Instinct",
+        "description": "Increases the wearer's Crit Rate by [%]. After casting the Ultimate, increases the wearer's Physical Penetration by [%] for [10s].",
+        "image": "./legacy_images_skills/icon_hero_skill_lobo_general_skills.png"
+      }
+    ]
+  },
+  {
+    "name": "Psycho Syringe",
+    "id": "psycho_syringe",
+    "image": "./legacy_images/icon_sw_55_psycho_syringe.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "DPS",
+    "gearEffects": ["ATK", "ATK%", "Crit DMG"],
+    "legacySkills": [
+      {
+        "name": "Vital Pierce",
+        "description": "Activates only when equipped by Nurse Harley. Increases Nurse Harley's Attack by [%]. During her Ultimate, each attack deals additional physical damage equal to [%] of the target's Max HP (capped at [%] of Nurse Harley's Attack; not affected by [Madness Actualization]).",
+        "image": "./legacy_images_skills/icon_hero_skill_NurseHarley_main_exclusive.png"
+      },
+      {
+        "name": "Delirium Strike",
+        "description": "Increases the wearer's Crit Rate by [%]. Upon casting the Ultimate, Crit Damage is increased by [%] for [35s], stacking up to [x] times.",
+        "image": "./legacy_images_skills/icon_hero_skill_NurseHarley_general_skills.png"
+      }
+    ]
+  }
+]

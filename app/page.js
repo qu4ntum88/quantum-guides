@@ -47,7 +47,7 @@ export default function Home() {
           <h2>Game Guides</h2>
           <div className="games-grid">
             {games.map((game) => (
-              <a key={game.id} href={game.id === 'dcdl' ? 'https://dcdl.info' : `/games/${game.slug}`} target={game.id === 'dcdl' ? '_blank' : undefined} rel={game.id === 'dcdl' ? 'noopener noreferrer' : undefined} className="game-card">
+              <a key={game.id} href={`/games/${game.slug}`} className="game-card">
                 <div className="game-banner" style={{ backgroundColor: game.color }}>
                   {game.image && <img src={game.image} alt={game.name} />}
                   <h3>{game.name}</h3>

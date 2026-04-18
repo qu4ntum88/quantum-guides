@@ -1,0 +1,3916 @@
+[
+  {
+    "id": "aquaman",
+    "name": "Aquaman",
+    "damageType": "Physical",
+    "gameModes": ["Meta Brawl", "3v3", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "P DEF", "Crit DMG RES"],
+    "quantumsTake": "Aquaman is a champion who was built for crowd control, making him incredibly useful for PvP game modes and certain levels of Training Simulator. He pairs really well with Justice League lineups, particularly ones designed around Superman. He's really more of a Supporter than Firepower, as his damage output is embarassingly low, but he makes up for that with an incapacitate ability in addition to his ultimate, which disrupts enemies by pulling them into a vortex. Overall, he's a solid champion with a niche use, so be careful not to overinvest.",
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "B",
+    "tagSynergies": ["justice_league", "atlanteans", "metahuman"],
+    "imageHeadshot": "./headshot_images/aquaman.png",
+    "imageFull": "./full_images/Aquaman_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shard",
+      "Custom Mythic Shard",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "dart_with_poison_ivy_poison",
+      "tectonic_disruptor",
+      "cold_gun"
+    ],
+    "ultimate": {
+      "name": "Atlantean Vortex",
+      "description": "Deals Physical DMG equal to 120% of ATK over time while pulling them towards the center",
+      "image": "./skill_images/icon_hero_skill_Aquaman_main.png"
+    },
+    "skills": [
+      {
+        "name": "Trident's Shield",
+        "description": "Inflicts [Water Prison] on an enemy for 2s",
+        "image": "./skill_images/icon_hero_skill_Aquaman_sub01.png"
+      },
+
+      {
+        "name": "Breath of Atlantis",
+        "description": "Knockbacks enemies in rectangular area in front of Aquaman, dealing Physical DMG equal to 160% of ATK",
+        "image": "./skill_images/icon_hero_skill_Aquaman_sub02.png"
+      },
+
+      {
+        "name": "Sea King",
+        "description": "With at least 4 [Justice League] allies present, Aquaman basic attacks have a 50% chance to deliver a heavy blow, dealing Physical DMG equal to 260% of his ATK",
+        "image": "./skill_images/icon_hero_skill_Aquaman_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Neptune's Glory",
+      "description": "Increases [Justice League] Champions' Crit Rate.",
+      "image": "./globalskill_images/Aquaman_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Trident's Shield - Enhanced",
+        "description": "Reduces cooldown of [Trident's Shield].",
+        "image": "./upgrade_images/aquaman_sub01_enhanced.png"
+      },
+      {
+        "name": "Breath of Atlantis - Enhanced",
+        "description": "Reduces cooldown of [Breath of Atlantis].",
+        "image": "./upgrade_images/aquaman_sub02_enhanced.png"
+      },
+      {
+        "name": "Sea King - Enhanced",
+        "description": "Increases Aquaman's ATK.",
+        "image": "./upgrade_images/aquaman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "atom",
+    "name": "Atom",
+    "tagSynergies": ["teen_titans", "justice_league", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Training Simulator", "Story Mode"],
+    "transmutePriorities": ["HP", "Crit RES", "ATK"],
+    "class": "Warrior",
+    "rarity": "Legendary",
+    "tier": "C",
+    "imageHeadshot": "./headshot_images/atom.png",
+    "imageFull": "./full_images/Atom_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shard"
+    ],
+    "recommendedLegacyPieces": ["duplication_mirror", "not_so_huge_hammer"],
+    "quantumsTake": "Atom saw a significant rework in 2025, taking his kit from utterly unusable to moderately effective against certain Training Simulator levels, and to an extent in PvP modes such as 3v3 Strategic Challenge. The stun on his ultimate, coupled with significant AoE damage prior to his departure from the battlefield, can be the push you need to complete levels you otherwise struggle with. He doesn't need much investment (if any), so he's just a good champion to have in your level sync just in case.",
+    "ultimate": {
+      "name": "Shockwave & Awe",
+      "description": "Atom increases in size dealing Physical DMG equal to 500% of ATK, plus an additional 1500 Phyiscal DMG to all enemies and [stunning] them for 2s before exiting the battle",
+      "image": "./skill_images/icon_hero_skill_Atom_main.png"
+    },
+    "skills": [
+      {
+        "name": "Small Target",
+        "description": "Atom shrinks rapidly, increasing Dodge by 18% for 10s",
+        "image": "./skill_images/icon_hero_skill_Atom_sub01.png"
+      },
+      {
+        "name": "Exponential Force",
+        "description": "Atom's ATK increases by 1.5% per basic attack until the end of battle, max of 15%",
+        "image": "./skill_images/icon_hero_skill_Atom_sub02.png"
+      },
+      {
+        "name": "Subatomic Retreat",
+        "description": "Upon defeat, Atom deals Physical DMG equal to 300% of ATK to nearby enemies before exiting and [Stunning] them for 2s",
+        "image": "./skill_images/icon_hero_skill_Atom_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Atomic Cohesion",
+      "description": "Increases all Champions' Physical DEF.",
+      "image": "./globalskill_images/Atom_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Small Target - Enhanced",
+        "description": "Reduces cooldown of [Small Target].",
+        "image": "./upgrade_images/Atom_sub01_enhanced.png"
+      },
+      {
+        "name": "Exponential Force - Enhanced",
+        "description": "Increases The Atom's ATK.",
+        "image": "./upgrade_images/Atom_sub02_enhanced.png"
+      },
+      {
+        "name": "Subatomic Retreat - Enhanced",
+        "description": "Increases The Atom's DMG dealt.",
+        "image": "./upgrade_images/Atom_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "arsenal",
+    "name": "Arsenal",
+    "tagSynergies": ["teen_titans", "outsiders", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Meta Brawl", "3v3", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Crit Rate"],
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "D",
+    "imageHeadshot": "./headshot_images/arsenal.png",
+    "imageFull": "./full_images/Arsenal_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "tectonic_disruptor",
+      "gas_derringer",
+      "lawton_rifle_scope"
+    ],
+    "quantumsTake": "Arsenal saw a rework in 2025, and it actually made him if not worse, net neutral to his prior position, which was unusable. He gained slight synergy with Teen Titans, but he offers very little of value. In testing, we found that Green Arrow (a legendary champion) can do just as well as he can in most battles. Do not build..",
+    "ultimate": {
+      "name": "Rain of Destruction",
+      "description": "Arsenal Shoots 9 arrows into the sky, each dealing Physical DMG equal to [X]% of his ATK to a random enemy.",
+      "image": "./skill_images/icon_hero_skill_Arsenal_main.png"
+    },
+    "skills": [
+      {
+        "name": "On Target",
+        "description": "Arsenal charges briefly before firing an arrow, dealing physical DMG equal to [%] of his ATK to an enemy and inflicting [Deadly Mark] for [8s]. [Deadly Mark]: Increases physical DMG taken by [%].",
+        "image": "./skill_images/icon_hero_skill_Arsenal_sub01.png"
+      },
+      {
+        "name": "Retribution",
+        "description": "Arsenal deploys a ballista turret that attacks the nearest enemy every [3s] (prioritizing those with [Deadly Mark]), dealing physical damage equal to [%] of Arsenal's Attack. The turret is untargetable and lasts [15s].",
+        "image": "./skill_images/icon_hero_skill_Arsenal_sub02.png"
+      },
+      {
+        "name": "Acrobat Attack",
+        "description": "Increases Arsenal's Attack by [%]. At the start of battle, each [Outsiders] or [Teen Titans] ally present increases Arsenal's Energy gain by [%], stacking up to [%].",
+        "image": "./skill_images/icon_hero_skill_Arsenal_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Weapon Maximization",
+      "description": "Increases [Outsiders] Champions' ATK.",
+      "image": "./globalskill_images/Arsenal_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "On Target - Enhanced",
+        "description": "Reduces cooldown of [On Target].",
+        "image": "./upgrade_images/Arsenal_sub01_enhanced.png"
+      },
+      {
+        "name": "Retribution - Enhanced",
+        "description": "Reduces cooldown of [Retribution].",
+        "image": "./upgrade_images/Arsenal_sub02_enhanced.png"
+      },
+      {
+        "name": "Acrobat Attack - Enhanced",
+        "description": "Increases Arsenal's ATK.",
+        "image": "./upgrade_images/Arsenal_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "bane",
+    "name": "Bane",
+    "tagSynergies": ["league_of_assassins", "arkhams_most_wanted", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Meta Brawl", "3v3", "Story Mode"],
+    "transmutePriorities": [
+      "HP",
+      "Healing Bonus",
+      "P DEF",
+      "Energy Gain Bonus"
+    ],
+    "class": "Guardian",
+    "rarity": "Mythic",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/bane.png",
+    "imageFull": "./full_images/Bane_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "amazonian_alloy_shield",
+      "gabriel_horn",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "Bane is a bit of an enigma in the game. He has incredible self-sustain, but he doesn't see much play. He has some niche uses, such as popping tires on Killer Tank in Combat Cycle. I also think he is worth building for Training Simulator and PvP if you go with a villain arc to your account. We are collecting more data on Bane and want to see him with full force investment at high stars to form more of an opinion.",
+    "ultimate": {
+      "name": "Break You",
+      "description": "Deals Physical DMG equal to 240% of ATK to an enemy, restoring 15% of Max HP",
+      "image": "./skill_images/icon_hero_skill_Bane_main.png"
+    },
+    "skills": [
+      {
+        "name": "Venom Boost",
+        "description": "Recover 4% of HP per second for 5s",
+        "image": "./skill_images/icon_hero_skill_Bane_sub01.png"
+      },
+      {
+        "name": "Unbreakable",
+        "description": "On Ult, gain 10% DMG reduction for 8s. When HP is below 50%, Physical DEF increases by 10%",
+        "image": "./skill_images/icon_hero_skill_Bane_sub02.png"
+      },
+      {
+        "name": "Mob Mentality",
+        "description": "All [arkhams_most_wanted] allies gain [Robustness] for 20s, increasing Physical Def by 10% and rendering them immune to forced enemy movement effects",
+        "image": "./skill_images/icon_hero_skill_Bane_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Unbroken",
+      "description": "Increases all Champions' Physical DEF.",
+      "image": "./globalskill_images/Bane_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Venom Boost - Enhanced",
+        "description": "Reduces cooldown of [Venom Boost].",
+        "image": "./upgrade_images/Bane_sub01_enhanced.png"
+      },
+      {
+        "name": "Unbreakable - Enhanced",
+        "description": "Increases Bane's Spiritual DEF.",
+        "image": "./upgrade_images/Bane_sub02_enhanced.png"
+      },
+      {
+        "name": "Mob Mentality - Enhanced",
+        "description": "Increases Bane's ATK.",
+        "image": "./upgrade_images/Bane_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "batgirl",
+    "name": "Batgirl",
+    "tagSynergies": ["birds_of_prey", "bat_family", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "Combat Cycle",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "P DEF", "S DEF"],
+    "class": "Guardian",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/batgirl.png",
+    "imageFull": "./full_images/Batgirl_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Weekly Login",
+      "Path of Justice"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Batgirl is a supporter who was out of favor in the meta for quite a while, but has become quite useful in [Bat Family] lineups utilizing Nightwing. She does require some investment to get the full potential from her kit. Fair warning: She's a niche champion at the moment, so make sure you're all-in on [Bat Family] and [Teen Titans] before you commit.",
+    "ultimate": {
+      "name": "Bat Scanner",
+      "description": "Transfers Energy and increases Crit rate by 12% for 15s of all allies",
+      "image": "./skill_images/icon_hero_skill_Batgirl_main.png"
+    },
+    "skills": [
+      {
+        "name": "Tactical Drone",
+        "description": "Transfers energy to ally and increases target's Crit Rate by 8% for 20s",
+        "image": "./skill_images/icon_hero_skill_Batgirl_sub01.png"
+      },
+      {
+        "name": "Grapple with This",
+        "description": "Deals Phyiscal DMG equal to 225% of ATK, pulling enemy towards self",
+        "image": "./skill_images/icon_hero_skill_Batgirl_sub02.png"
+      },
+      {
+        "name": "Bab's Boost",
+        "description": "All allies' Crit Amp increases by 9% for 20s",
+        "image": "./skill_images/icon_hero_skill_Batgirl_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Detective Mode",
+      "description": "Increases [Bat Family] Champions' ATK.",
+      "image": "./globalskill_images/Batgirl_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Tactical Drone - Enhanced",
+        "description": "Reduces cooldown of [Tactical Drone].",
+        "image": "./upgrade_images/Batgirl_sub01_enhanced.png"
+      },
+      {
+        "name": "Grapple with This - Enhanced",
+        "description": "Reduces cooldown of [Grapple with This].",
+        "image": "./upgrade_images/Batgirl_sub02_enhanced.png"
+      },
+      {
+        "name": "Bab's Boost - Enhanced",
+        "description": "Increases Batgirl's Energy Restoration Speed.",
+        "image": "./upgrade_images/Batgirl_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "batman",
+    "name": "Batman",
+    "tagSynergies": ["bat_family", "justice_league", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Training Simulator", "Meta Brawl", "Story Mode"],
+    "transmutePriorities": ["HP", "P DEF", "ATK"],
+    "class": "Warrior",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/batman.png",
+    "imageFull": "./full_images/Batman_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Rookie Growth/Starter Pack"
+    ],
+    "recommendedLegacyPieces": [
+      "promethium_claws",
+      "gabriel_horn",
+      "not_so_huge_hammer"
+    ],
+    "quantumsTake": "Batman is one of the most iconic DC characters, and a lot of us in the community expected more out of his kit. He was much better in the beta, but he's more mediocre than anything in the current version of the game. He's quite useful in Training Simulator, and I've seen him used to great effect with Nightwing in PvP. Non-spenders who get lucky and obtain a couple copies of him, or lite spenders who are willing to purchase his starter pack can get a good jump on Combat Cycle early on, but there are just too many Bleed champions who can outpace him.",
+    "ultimate": {
+      "name": "Batmobile",
+      "description": "Deals Phyiscal DMG equal to 420% of his ATK to enemies in a circular area, with 3 [Justice League] allies on the team, damage is increased by 150%, w/ 5 increased by 300%",
+      "image": "./skill_images/icon_hero_skill_Batman_main.png"
+    },
+    "skills": [
+      {
+        "name": "Dark Knight Detective",
+        "description": "Every 10s, dodges a basic attack, throwing a batarang dealing 100% Physical DMG, after which becoming untargetable and gains a 10% Physical DEF bonus for 5s",
+        "image": "./skill_images/icon_hero_skill_Batman_sub01.png"
+      },
+      {
+        "name": "Utlitity Belt",
+        "description": "Deals Physical DMG equal to 125% of his ATK to enemies within a circular area, with a base chance of 50% to reduce their ATK by 10%",
+        "image": "./skill_images/icon_hero_skill_Batman_sub02.png"
+      },
+      {
+        "name": "I Am Vengeance",
+        "description": "At the start of the battle, Batman's gains 1 stack of 3% ATK UP per [Justice League] ally present.",
+        "image": "./skill_images/icon_hero_skill_Batman_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Bob & Weave",
+      "description": "Increases [Warrior] Champions' Dodge.",
+      "image": "./globalskill_images/Batman_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Dark Knight Detective - Enhanced",
+        "description": "Increases Batman's ATK.",
+        "image": "./upgrade_images/Batman_sub01_enhanced.png"
+      },
+      {
+        "name": "Utility Belt - Enhanced",
+        "description": "Reduces cooldown of [Utility Belt].",
+        "image": "./upgrade_images/Batman_sub02_enhanced.png"
+      },
+      {
+        "name": "I Am Vengeance - Enhanced",
+        "description": "Increases Batman's Physical DEF.",
+        "image": "./upgrade_images/Batman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "black_adam",
+    "name": "Black Adam",
+    "tagSynergies": ["legion_of_doom", "metahuman"],
+    "damageType": "Spiritual",
+    "gameModes": ["Training Simulator", "Combat Cycle", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Spiritual AMP"],
+    "class": "Magical",
+    "rarity": "Legendary",
+    "tier": "C",
+    "imageHeadshot": "./headshot_images/black_adam.png",
+    "imageFull": "./full_images/BlackAdam_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "sigil_magic",
+      "imp_doll",
+      "plastic_explosives"
+    ],
+    "quantumsTake": "Black Adam is one of the more useful Legendary champions. He's the most obtainable Spiritual DMG champions in the game and the only one you can get as a new player without spending until The Joker shows up in the Bleed. What I like about him is you can build a budget Legion of Doom team using him instead of Sinestro or Deathstroke. As your roster progresses, he's going to taper off, but he's going to be usable in every game mode for the first month or two after you start, and for that reason you can get away with investing in the first level or two of his force.",
+    "ultimate": {
+      "name": "Power of Aten",
+      "description": "Deals Spiritual DMG equal to 220% of ATK to enemies within rectangular area in front of self",
+      "image": "./skill_images/icon_hero_skill_BlackAdam_main.png"
+    },
+    "skills": [
+      {
+        "name": "Wrath",
+        "description": "Deals Spiritual DMG equal to 155% of ATK to target and nearby enemies",
+        "image": "./skill_images/icon_hero_skill_BlackAdam_sub01.png"
+      },
+      {
+        "name": "Judgement of Osiris",
+        "description": "Deals 6% more damage to enemies under 75% HP",
+        "image": "./skill_images/icon_hero_skill_BlackAdam_sub02.png"
+      },
+      {
+        "name": "Injustice Society",
+        "description": "At start of battle, Black Adam's ATK increases by 6% for 20s",
+        "image": "./skill_images/icon_hero_skill_BlackAdam_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Wisdom of the Gods",
+      "description": "Increases all Champions'Spiritual DEF.",
+      "image": "./globalskill_images/BlackAdam_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Wrath - Enhanced",
+        "description": "Reduces cooldown of [Wrath].",
+        "image": "./upgrade_images/BlackAdam_sub01_enhanced.png"
+      },
+      {
+        "name": "Judgement of Osiris - Enhanced",
+        "description": "Increases Black Adam's Spiritual PEN.",
+        "image": "./upgrade_images/BlackAdam_sub02_enhanced.png"
+      },
+      {
+        "name": "Injustice Society - Enhanced",
+        "description": "Increases Black Adam's Spiritual AMP.",
+        "image": "./upgrade_images/BlackAdam_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "black_canary",
+    "name": "Black Canary",
+    "tagSynergies": ["birds_of_prey", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Meta Brawl", "3v3", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "P DEF", "S DEF"],
+    "class": "Intimidator",
+    "rarity": "Mythic",
+    "tier": "D",
+    "imageHeadshot": "./headshot_images/black_canary.png",
+    "imageFull": "./full_images/BlackCanary_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Path of Justice"
+    ],
+    "recommendedLegacyPieces": ["mind_control_hat", "energy_mace"],
+    "quantumsTake": "Black Canary's kit sounds nice with the silence, and her kit was clearly written with PvP in mind, but we have yet to see a team composiiton in-game that makes her worth using.",
+    "ultimate": {
+      "name": "Canary Cry",
+      "description": "Deals Phyiscal DMG equal to 200% of ATK within circular area, inflicting [Silence] for 3s",
+      "image": "./skill_images/icon_hero_skill_BlackCanary_main.png"
+    },
+    "skills": [
+      {
+        "name": "Throw Your Voice",
+        "description": "Deal Physical DMG equal to 100% of ATK to enemies in range, reducing target's ACC by 5% for 5s",
+        "image": "./skill_images/icon_hero_skill_BlackCanary_sub01.png"
+      },
+      {
+        "name": "Inner Ear Disruption",
+        "description": "Disrupts all enemies, reducing ATK by 5% for 15s",
+        "image": "./skill_images/icon_hero_skill_BlackCanary_sub02.png"
+      },
+      {
+        "name": "Birds of a Feather",
+        "description": "Phyiscal DEF increases by 20%",
+        "image": "./skill_images/icon_hero_skill_BlackCanary_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Birdsong",
+      "description": "Increases [Birds of Prey] Champions' Crit RES.",
+      "image": "./globalskill_images/BlackCanary_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Throw Your Voice - Enhanced",
+        "description": "Reduces cooldown of [Throw Your Voice].",
+        "image": "./upgrade_images/BlackCanary_sub01_enhanced.png"
+      },
+      {
+        "name": "Inner Ear Disruption - Enhanced",
+        "description": "Increases Black Canary's ATK.",
+        "image": "./upgrade_images/BlackCanary_sub02_enhanced.png"
+      },
+      {
+        "name": "Birds of a Feather - Enhanced",
+        "description": "Increases Black Canary's Physical DEF.",
+        "image": "./upgrade_images/BlackCanary_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "captain_cold",
+    "name": "Captain Cold",
+    "tagSynergies": ["suicide_squad", "legion_of_doom", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "Effect ACC", "P DEF"],
+    "class": "Intimidator",
+    "rarity": "Legendary",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/captain_cold.png",
+    "imageFull": "./full_images/CaptainCold_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "conundrum_cane",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Captain Cold has seen a complete 180 in the game, from being considered one of the worst champions to one of the most important for non-spenders looking to improve their Combat Cycle scores. His ultimate functions much the same as Cyborg's, but only for single-target. So there are some clear limitations to the kit, but ever since the developers fixed his ultimate, we've seen him added to some interested Physical DMG lineups and he has finally found his niche spot in the meta.",
+    "ultimate": {
+      "name": "On Ice",
+      "description": "Deal Physical DMG equal to 300% of his ATK to an enemy, infliciting [Frostbite] for 10s",
+      "image": "./skill_images/icon_hero_skill_CaptainCold_main.png"
+    },
+    "skills": [
+      {
+        "name": "Frozen Stiff",
+        "description": "Deals 6 consecutive attacks to an enemy within a circular area in front of self. Each attack deals Physical DMG equal to 45% of his ATK and has fixed 10% chance to render target [Frozen] for 1s",
+        "image": "./skill_images/icon_hero_skill_CaptainCold_sub01.png"
+      },
+      {
+        "name": "Cool Off",
+        "description": "All [Legion of Doom] allies' Physical Def and Spiritual Def increased by 4% for 15s",
+        "image": "./skill_images/icon_hero_skill_CaptainCold_sub02.png"
+      },
+      {
+        "name": "Avalanche",
+        "description": "When receiving melee attacks, Captain Cold rolls back and charges forward, knocking down target and dealing Physical DMG equal to 240% of ATK (on a 20s cooldown)",
+        "image": "./skill_images/icon_hero_skill_CaptainCold_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Cold Analysis",
+      "description": "Increases all Champions' Spiritual DEF.",
+      "image": "./globalskill_images/CaptainCold_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Frozen Stiff - Enhanced",
+        "description": "Reduces cooldown of [Frozen Stiff].",
+        "image": "./upgrade_images/CaptainCold_sub01_enhanced.png"
+      },
+      {
+        "name": "Cool Off - Enhanced",
+        "description": "Reduces Spiritual DEF of all enemies within a certain range of Captain Cold.",
+        "image": "./upgrade_images/CaptainCold_sub02_enhanced.png"
+      },
+      {
+        "name": "Avalanche - Enhanced",
+        "description": "Increases Captain Cold's ATK.",
+        "image": "./upgrade_images/CaptainCold_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "catwoman",
+    "name": "Catwoman",
+    "tagSynergies": ["birds_of_prey", "arkhams_most_wanted", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Story Mode"],
+    "transmutePriorities": ["ATK", "HP", "Energy Gain Bonus"],
+    "class": "Warrior",
+    "rarity": "Legendary",
+    "tier": "D",
+    "imageHeadshot": "./headshot_images/catwoman.png",
+    "imageFull": "./full_images/CatWoman_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "promethium_claws",
+      "duplication_mirror",
+      "not_so_huge_hammer"
+    ],
+    "quantumsTake": "Unfortunately, Catwoman is the worst champion in the game. In the beta, she was one of the best Combat Cycle champions, due in part to her ability to steal stats from enemies. However, she saw a nerf during the soft launch of the game that has set her back and there are just too many better options in the Warrior class.",
+    "ultimate": {
+      "name": "Cat Lash",
+      "description": "Deal Physical DMG equal to 260% of ATK and stealing 4% of target's ATK, stackable up to 3 times, but cannot exceed 4% of her own attack each time",
+      "image": "./skill_images/icon_hero_skill_Catwoman_main.png"
+    },
+    "skills": [
+      {
+        "name": "Murder Mittens",
+        "description": "Deals Phyiscal DMG equal to 345% of ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_Catwoman_sub01.png"
+      },
+      {
+        "name": "Cat Burglar",
+        "description": "Moves behind enemy, dealing Physical DMG equal to 200% of ATK and stealing 4% of target's ATK for 10s. ATK stolen cannot exceed 4% of own ATK",
+        "image": "./skill_images/icon_hero_skill_Catwoman_sub02.png"
+      },
+      {
+        "name": "Feline Grace",
+        "description": "Incereases Dodge by 0.3% every 1s, up to a maximum of 6%",
+        "image": "./skill_images/icon_hero_skill_Catwoman_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Predator's Instinct",
+      "description": "Increases all Champions' ATK.",
+      "image": "./globalskill_images/Catwoman_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Murder Mittens - Enhanced",
+        "description": "Reduces cooldown of [Murder Mittens].",
+        "image": "./upgrade_images/Catwoman_sub01_enhanced.png"
+      },
+      {
+        "name": "Cat Burglar - Enhanced",
+        "description": "Before casting [Cat Burglar], increases ATK by [%] for 5s.",
+        "image": "./upgrade_images/Catwoman_sub02_enhanced.png"
+      },
+      {
+        "name": "Feline Grace - Enhanced",
+        "description": "Increases Catwoman's Max HP.",
+        "image": "./upgrade_images/Catwoman_sub03_enhanced.png"
+      }
+    ]
+  },
+
+  {
+    "id": "constantine",
+    "name": "Constantine",
+    "tagSynergies": ["justice_league_dark", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "P DEF", "Crit RES"],
+    "class": "Magical",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageHeadshot": "./headshot_images/constantine.png",
+    "imageFull": "./full_images/Constantine_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "sigil_magic",
+      "imp_doll",
+      "plastic_explosives"
+    ],
+    "quantumsTake": "Constantine is one of the best AoE chmapions in the game, and he's on a team that is relatively obtainable by non-spenders and lite spenders. He has an AoE on both his ultimate and one of his basic skills, and you can get a third AoE if you have his unique legacy piece (which is required if you're building Justice League Dark). He does heavily rely on his teammates (at least a three-tag bonus) to provide additional Spiritual AMP, but he sees plenty of action as a plug-and-play unit when there's a support champion who can boost ATK..",
+    "ultimate": {
+      "name": "Summoned Flame",
+      "description": "Deals Spiritual DMG equal to 200% of ATK in a circular area. If [Black Magic Surge] is active, next two Ultimate casts deal Spirtual DMG equal to 400% and 500% of Constantine's ATK",
+      "image": "./skill_images/icon_hero_skill_Constantine_main.png"
+    },
+    "skills": [
+      {
+        "name": "Exorcismm Blast",
+        "description": "Deals Spiritual DMG equal to 175% of ATK to enemies in circular area",
+        "image": "./skill_images/icon_hero_skill_Constantine_sub01.png"
+      },
+      {
+        "name": "Power Curse",
+        "description": "After Constantine casts Ult or Skill 2, there is a fixed 30% chance to inflict [Burn] on the target for 5s. [Burn]: Deals Spiritual DMG equal to [%] of Constantine's ATK per second.",
+        "image": "./skill_images/icon_hero_skill_Constantine_sub02.png"
+      },
+      {
+        "name": "Black Magic Surge",
+        "description": "After Constantine casts Ult, area of next [Exorcism Blast] increases and DMG of next [Summoned Flame] increases. Stacks up to 2 times. Constantine's ATK increases by x%Every [Justice League Dark] ally increases Constantine's ATK by 5%",
+        "image": "./skill_images/icon_hero_skill_Constantine_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Unfair Advantage",
+      "description": "Increases all Champions' ATK and [Magical] Champions' HP.",
+      "image": "./globalskill_images/Constantine_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Exorcism Blast - Enhanced",
+        "description": "Reduces cooldown of [Exorcism Blast].",
+        "image": "./upgrade_images/Constantine_sub01_enhanced.png"
+      },
+      {
+        "name": "Power Curse - Enhanced",
+        "description": "At the start of battle, Constantine's Crit RES is increased by [%] for 15s.",
+        "image": "./upgrade_images/Constantine_sub02_enhanced.png"
+      },
+      {
+        "name": "Black Magic Surge - Enhanced",
+        "description": "At the start of battle, Constantine's Physical DEF is increased by [%] for 15s.",
+        "image": "./upgrade_images/Constantine_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "cyborg",
+    "name": "Cyborg",
+    "tagSynergies": ["teen_titans", "justice_league", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Training Simulator", "Combat Cycle", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "HP", "P DEF"],
+    "class": "Intimidator",
+    "rarity": "Mythic",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/cyborg.png",
+    "imageFull": "./full_images/Cyborg_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Cyborg is one of the best early game mythic champions simply because he can be used at zero stars, since his ultimate is his primary utility. He does tend to taper off as you enter late game (Captain Cold offers similar utility, albeit single-target, and you get him to higher stars faster), for whales and long-time players, this is a champion that you will use heavily in Combat Cycle and other non-PvP modes like Anti-Crime Network.",
+    "ultimate": {
+      "name": "Scan Strike",
+      "description": "Inflicts [Vulnerable] on enemies for 12s in circular area in front of self",
+      "image": "./skill_images/icon_hero_skill_Cyborg_main.png"
+    },
+    "skills": [
+      {
+        "name": "Sonic Cannon",
+        "description": "Deals Physical DMG equal to 125% of ATK within rectangular area in front of self",
+        "image": "./skill_images/icon_hero_skill_Cyborg_sub01.png"
+      },
+      {
+        "name": "Reboot",
+        "description": "When Cyborg takes lethal damage for the first time, and there is at least 1 living ally present, blocks damage and gains [Emergency Repair] for 5s",
+        "image": "./skill_images/icon_hero_skill_Cyborg_sub02.png"
+      },
+      {
+        "name": "System Hack",
+        "description": "At the start of the battle, Cyborg gains [x] Energy. In Anti-Crime Network - Reconnaissance Mission / Genesis Gathering / Data Breach, if Cyborg survives until the countdown ends, he hacks the system to extend the timer by [5s].",
+        "image": "./skill_images/icon_hero_skill_Cyborg_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Hammer Blow",
+      "description": "Increases [Intimidator] Champions' Effect ACC.",
+      "image": "./globalskill_images/Cyborg_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Sonic Cannon - Enhanced",
+        "description": "Reduces cooldown of [Sonic Cannon].",
+        "image": "./upgrade_images/Cyborg_sub01_enhanced.png"
+      },
+      {
+        "name": "Reboot - Enhanced",
+        "description": "Immediately restores [%] of Max HP upon taking lethal damage.",
+        "image": "./upgrade_images/Cyborg_sub02_enhanced.png"
+      },
+      {
+        "name": "System Hack - Enhanced",
+        "description": "Increases Cyborg's ATK.",
+        "image": "./upgrade_images/Cyborg_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "deadshot",
+    "name": "Deadshot",
+    "tagSynergies": ["suicide_squad", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Story Mode"],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "D",
+    "imageHeadshot": "./headshot_images/deadshot.png",
+    "imageFull": "./full_images/Deadshot_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "t_sphere_weakness_analyzer",
+      "gas_derringer",
+      "lawton_rifle_scope"
+    ],
+    "quantumsTake": "Deadshot has a solid kit for single-target damage, but he seems to be lacking something to make him viable. His only faction tag is Suicide Squad, and with the lack of a meta lineup for that faction, he will continue to be one of the worst mythic champions in the game. I do not recommend building him at this time, but we will monitor the meta with upcoming champion releases and update our rankings accordingly.",
+    "ultimate": {
+      "name": "Marked for Death",
+      "description": "Deals Physical Dmg equal to 340% of ATK and reduces target's healing by 20% for 15s, during which Deadshot gains 15 Energy if target is defeated",
+      "image": "./skill_images/icon_hero_skill_Deadshot_main.png"
+    },
+    "skills": [
+      {
+        "name": "Maximum Damage",
+        "description": "Deal Physical DMG equal to 170% of ATK and reduces target's healing received by 3% for 15s. Stacks up to 3 times",
+        "image": "./skill_images/icon_hero_skill_Deadshot_sub01.png"
+      },
+      {
+        "name": "Nowhere to Run",
+        "description": "Basic attacks deal 16% more dmg to enemies with healing reduction debuff",
+        "image": "./skill_images/icon_hero_skill_Deadshot_sub02.png"
+      },
+      {
+        "name": "Killer Elite",
+        "description": "Increases self ACC by 10%",
+        "image": "./skill_images/icon_hero_skill_Deadshot_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Dead Aim",
+      "description": "Increase [Firepower] Champions' ATK.",
+      "image": "./globalskill_images/Deadshot_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Maximum Damage - Enhanced",
+        "description": "Reduces cooldown of [Maximum Damage].",
+        "image": "./upgrade_images/Deadshot_sub01_enhanced.png"
+      },
+      {
+        "name": "Nowhere to Run - Enhanced",
+        "description": "Increases Deadshot's ATK.",
+        "image": "./upgrade_images/Deadshot_sub02_enhanced.png"
+      },
+      {
+        "name": "Killer Elite - Enhanced",
+        "description": "Increases Deadshot's ACC.",
+        "image": "./upgrade_images/Deadshot_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "deathstroke",
+    "name": "Deathstroke",
+    "tagSynergies": ["legion_of_doom", "league_of_assassins", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Assassin",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/deathstroke.png",
+    "imageFull": "./full_images/Deathstroke_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "t_sphere_weakness_analyzer",
+      "dual_katanas",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Deathstroke is one of the more devisive champions in the game, primarily because he requires heavy investment and isn't very plug-and-play friendly at lower star levels. Yet, he has some of the highest single-target damage of any champion, and Legion of Doom teams continue to make up a large percentage of the top teams in Meta Brawl. You need him at two purple stars for minimum viability, but one you get him there, he's one of the champions that can really carry your account.",
+    "ultimate": {
+      "name": "Slade's Blade",
+      "description": "Deal Physical DMG equal to 900% of his ATK to an enemy",
+      "image": "./skill_images/icon_hero_skill_Deathstroke_main.png"
+    },
+    "skills": [
+      {
+        "name": "Eye on You",
+        "description": "Deal Physical DMG equal to 400% of ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_Deathstroke_sub01.png"
+      },
+      {
+        "name": "Stroke of Genius",
+        "description": "Gains 6% ATK up for 20s per [Legion of Doom] ally present",
+        "image": "./skill_images/icon_hero_skill_Deathstroke_sub02.png"
+      },
+      {
+        "name": "ACTH Serum",
+        "description": "Recover 3% of HP lost every 2s",
+        "image": "./skill_images/icon_hero_skill_Deathstroke_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Perfect Soldier",
+      "description": "Increases all Champions' HP and [Assassin] Champions' Dodge.",
+      "image": "./globalskill_images/Deathstroke_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Eye on You - Enhanced",
+        "description": "Reduces cooldown of [Eye of You].",
+        "image": "./upgrade_images/Deathstroke_sub01_enhanced.png"
+      },
+      {
+        "name": "Stroke of Genius - Enhanced",
+        "description": "Increases Deathstroke's ATK.",
+        "image": "./upgrade_images/Deathstroke_sub02_enhanced.png"
+      },
+      {
+        "name": "ACTH Serum - Enhanced",
+        "description": "Increases Deathstroke's Physical DEF.",
+        "image": "./upgrade_images/Deathstroke_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "doctor_fate",
+    "name": "Doctor Fate",
+    "tagSynergies": ["justice_league_dark", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["HP", "Energy Gain Bonus"],
+    "class": "Guardian",
+    "rarity": "Mythic",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/dr_fate.png",
+    "imageFull": "./full_images/DoctorFate_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Weekly Login"
+    ],
+    "recommendedLegacyPieces": [
+      "amazonian_alloy_shield",
+      "gabriel_horn",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "Doctor Fate has been one of the better F2P champions in the game since the beta tests, and that's because his ultimate works really well to protect your team even at 0 stars. He's a bit squishy at lower star levels, but becomes quite formidable as you build him, and he is plug-and-play viabile in all game modes.",
+    "ultimate": {
+      "name": "Protection Charm",
+      "description": "Grants [Shield] equal to 16% of Max HP to allies within circular area",
+      "image": "./skill_images/icon_hero_skill_DoctorFate_main.png"
+    },
+    "skills": [
+      {
+        "name": "Mystic Shield",
+        "description": "Grants [Shield] equal to 12% of self Max HP to ally",
+        "image": "./skill_images/icon_hero_skill_DoctorFate_sub01.png"
+      },
+      {
+        "name": "Ancient Strike",
+        "description": "Deal Spiritual DMG equal to 330% of ATK over time to enemy",
+        "image": "./skill_images/icon_hero_skill_DoctorFate_sub02.png"
+      },
+      {
+        "name": "Dark Magic",
+        "description": "At the start of the battle, strength of [Shields] granted by Doctor Fate increases by [%], lasting until the end of the battle.",
+        "image": "./skill_images/icon_hero_skill_DoctorFate_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Fate Smiles",
+      "description": "Increases [Justice League Dark] Champions' HP.",
+      "image": "./globalskill_images/DoctorFate_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Mystic Shield - Enhanced",
+        "description": "Reduces cooldown of [Mystic Shield].",
+        "image": "./upgrade_images/DoctorFate_sub01_enhanced.png"
+      },
+      {
+        "name": "Ancient Strike - Enhanced",
+        "description": "Reduces cooldown of [Ancient Strike].",
+        "image": "./upgrade_images/DoctorFate_sub02_enhanced.png"
+      },
+      {
+        "name": "Dark Magic - Enhanced",
+        "description": "Increases Doctor Fate's Max HP.",
+        "image": "./upgrade_images/DoctorFate_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "the_flash",
+    "name": "The Flash",
+    "tagSynergies": ["justice_league", "the_flash_family", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Training Simulator", "Combat Cycle", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "HP", "P DEF"],
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/flash.png",
+    "imageFull": "./full_images/TheFlash_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "The Flash is one of the most important supports in the game for anyone looking to maximize their damage in Combat Cycle. He doesn't need to be on a specific team to provide a massive advantage, because his kit is meant to cycle your other squad members' ultimates. In early tier lists I did not value him highly and I regret it. I see him staying relevant for a long time, and cannot wait to see the rest of the Flash Family.",
+    "ultimate": {
+      "name": "Speed Force Sharing",
+      "description": "The Flash channels his Energy to an ally until they are fully charged or his Energy is depleted, and increases the target's ATK by [%] for 15s. Casting the Ultimate costs The Flash at least 40 Energy. In auto mode, the skill targets the ally with the highest ATK.",
+      "image": "./skill_images/icon_hero_skill_Flash_main.png"
+    },
+    "skills": [
+      {
+        "name": "What a Rush",
+        "description": "The Flash zips to the side of an ally to assist, increasing the target's ATK by [%] for 10s. In auto mode, the skill targets the ally with the highest ATK.",
+        "image": "./skill_images/icon_hero_skill_Flash_sub01.png"
+      },
+      {
+        "name": "Speed Strike",
+        "description": "The Flash attacks enemies while running in circles, dealing Physical DMG equal to [%] of his ATK to enemies within a circular area.",
+        "image": "./skill_images/icon_hero_skill_Flash_sub02.png"
+      },
+      {
+        "name": "Fast Friends",
+        "description": "The Flash runs to an ally's back and grants them [Speed Force Resonance] for 15s. In auto mode, the skill targets the ally with the lowest HP percentag. [Speed Force Resonance]: Increases Dodge %",
+        "image": "./skill_images/icon_hero_skill_Flash_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Speed Healing",
+      "description": "Increases all Champions' HP.",
+      "image": "./globalskill_images/TheFlash_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "What a Rush - Enhanced",
+        "description": "Reduces cooldown of [What a Rush].",
+        "image": "./upgrade_images/TheFlash_sub01_enhanced.png"
+      },
+      {
+        "name": "Speed Strike - Enhanced",
+        "description": "Reduces cooldown of [Speed Strike].",
+        "image": "./upgrade_images/TheFlash_sub02_enhanced.png"
+      },
+      {
+        "name": "Fast Friends - Enhanced",
+        "description": "Upon casting [Fast Friends], The Flash gains [Speed Force Resonance] for 3s.",
+        "image": "./upgrade_images/TheFlash_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "green_arrow",
+    "name": "Green Arrow",
+    "tagSynergies": ["justice_league", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Training Simulator", "Combat Cycle", "Story Mode"],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Firepower",
+    "rarity": "Legendary",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/green_arrow.png",
+    "imageFull": "./full_images/GreenArrow_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "t_sphere_weakness_analyzer",
+      "gas_derringer",
+      "lawton_rifle_scope"
+    ],
+    "quantumsTake": "Green Arrow is one of the best legendary champions and ends up being useful well into the late game, especially for non-spenders. On manual, he can be used to deal with tough to kill enemies in Training Simulator, and he's actually a solid damage dealer in Combat Cycle if you don't have access to any of the high value limited mythics.",
+    "ultimate": {
+      "name": "Sharp Rain",
+      "description": "Deal Physical DMG equal to [%] ATK to an enemy",
+      "image": "./skill_images/icon_hero_skill_GreenArrow_main.png"
+    },
+    "skills": [
+      {
+        "name": "Boxing Glove Arrow",
+        "description": "Deal Physical DMG equal to [%] of ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_GreenArrow_sub01.png"
+      },
+      {
+        "name": "Multitasking",
+        "description": "Deal Physical DMG equal to [%] of ATK to enemies within range",
+        "image": "./skill_images/icon_hero_skill_GreenArrow_sub02.png"
+      },
+      {
+        "name": "Watch and Learn",
+        "description": "Increase self Crit Rate by [%]",
+        "image": "./skill_images/icon_hero_skill_GreenArrow_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Hunter's Instinct",
+      "description": "Increases all Champions' ATK.",
+      "image": "./globalskill_images/GreenArrow_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Boxing Glove Arrow - Enhanced",
+        "description": "[Boxing Glove Arrow] additionally inflicts [Stunned] for a short duration. [Stunned]: Unable to take action.",
+        "image": "./upgrade_images/GreenArrow_sub01_enhanced.png"
+      },
+      {
+        "name": "Multitasking - Enhanced",
+        "description": "Reduces cooldown of [Multitasking].",
+        "image": "./upgrade_images/GreenArrow_sub02_enhanced.png"
+      },
+      {
+        "name": "Watch and Learn - Enhanced",
+        "description": "Green Arrow gains [%] extra Crit Rate.",
+        "image": "./upgrade_images/GreenArrow_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "green_lantern",
+    "name": "Green Lantern",
+    "tagSynergies": ["justice_league", "green_lantern_corps", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Healing Bonus"],
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "S",
+    "imageHeadshot": "./headshot_images/green_lantern.png",
+    "imageFull": "./full_images/GreenLantern_full.png",
+    "sourcesWhereAvailable": ["VIP Perks"],
+    "recommendedLegacyPieces": [
+      "green_lantern_power_belt",
+      "purple_ray_radiation",
+      "cocoon_gun"
+    ],
+    "quantumsTake": "Obviously Hal Jordan is a pay-to-win champion, but he's an incredible healer at high stars. I can't in good conscience recommend that anyone spend $15,000 to $20,000 USD just to unlock him at five red stars, but if you're able to get him to purple stars over time, you'll finally be able to start inserting him into your Justice League lineups. Mera getting her Justice League tag back does mean that Green Lantern is less needed, but he was S-tier before his legacy piece came out, and now he's solidly entrenched in that ranking.",
+    "ultimate": {
+      "name": "Green Lantern's Light",
+      "description": "Heals allies within a circular area for [%] of Hal Jordan's ATK. 50% excess healing converted to a [Shield].",
+      "image": "./skill_images/icon_hero_skill_GreenLantern_main.png"
+    },
+    "skills": [
+      {
+        "name": "Emerald Armory",
+        "description": "Deals Spiritual DMG equal to [%] of ATK to an enemy and [Stunning] them for 2s. [Stunned]: Incapacitates the target.",
+        "image": "./skill_images/icon_hero_skill_GreenLantern_sub01.png"
+      },
+      {
+        "name": "Lantern Shield",
+        "description": "Creates an energy shield that lasts for 5s, healing allies within range for [%] of his ATK per second",
+        "image": "./skill_images/icon_hero_skill_GreenLantern_sub02.png"
+      },
+      {
+        "name": "Green Lantern Corps",
+        "description": "Increases Healing Taken Up by all [Green Lantern Corps] Champions by [%] every 1s, up to a maximum increase of [%]",
+        "image": "./skill_images/icon_hero_skill_GreenLantern_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Green Guardian",
+      "description": "Increases all Champions' Crit DMG RES.",
+      "image": "./globalskill_images/GreenLantern_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Emerald Armory - Enhanced",
+        "description": "Hal Jordan gains [X] extra Energy.",
+        "image": "./upgrade_images/GreenLantern_sub01_enhanced.png"
+      },
+      {
+        "name": "Lantern Shield - Enhanced",
+        "description": "Allies in the energy field receive additional [Healing Over Time]. [Healing Over Time]: Grants healing over time equal to [%] of Hal Jordan's ATK.",
+        "image": "./upgrade_images/GreenLantern_sub02_enhanced.png"
+      },
+      {
+        "name": "Green Lantern Corps - Enhanced",
+        "description": "Increases Hal Jordan's Physical DEF.",
+        "image": "./upgrade_images/GreenLantern_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "harley_quinn",
+    "name": "Harley Quinn",
+    "tagSynergies": ["suicide_squad", "birds_of_prey", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["ATK", "HP", "Energy Gain Bonus"],
+    "class": "Warrior",
+    "rarity": "Mythic",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/harley_quinn.png",
+    "imageFull": "./full_images/HarleyQuinn_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "7-Day Login"
+    ],
+    "recommendedLegacyPieces": [
+      "honkin_huge_hammer",
+      "not_so_huge_hammer",
+      "promethium_claws"
+    ],
+    "quantumsTake": "Harley Quinn is one of the most important early champions for non-spenders and lite spenders. Since you get a copy of her through the 7-day login reward, it means that any additional shards allow you to build her abilities. She does decent AoE damage, especially with her legacy weapon, which is given to you early on in your playthrough. She does taper off as you get access to limite mythics, but I think she will see a resurgence as soon as there's a renewed focus on Suicide Squad champions.",
+    "ultimate": {
+      "name": "Self-Actualization:Relase Self",
+      "description": "Harley Quinn unleashes her full potential and enters a [Self-Actualization] state for 10s, dealing Physical DMG equl to [%] of her ATK to the target and all nearby enemies. [Self-Actualization]: Increases ATK by [%] and enhances attacks to deal AoE damage in a small area.",
+      "image": "./skill_images/icon_hero_skill_HarleyQuinn_main.png"
+    },
+    "skills": [
+      {
+        "name": "Manic Episode",
+        "description": "Deal Physical DMG equal to [%] of ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub01.png"
+      },
+      {
+        "name": "Escalation",
+        "description": "Gains HP equal to [%] of Damage Dealt. All [Suicide Squad] allies gain HP equal to [%] of DMG dealt",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub02.png"
+      },
+      {
+        "name": "Special Physiology",
+        "description": "Gain [X] Energy per enemy defeated",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Reckless Abandon",
+      "description": "Increases [Suicide Squad] Champions' ATK.",
+      "image": "./globalskill_images/HarleyQuinn_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Manic Episode - Enhanced",
+        "description": "[Manic Episode] additionally reduces the target's Physical DEF by [%] for 5s.",
+        "image": "./upgrade_images/HarleyQuinn_sub01_enhanced.png"
+      },
+      {
+        "name": "Escalation - Enhanced",
+        "description": "Increases Harley Quinn's ATK.",
+        "image": "./upgrade_images/HarleyQuinn_sub02_enhanced.png"
+      },
+      {
+        "name": "Special Physiology - Enhanced",
+        "description": "Increases Harley Quinn's Max HP.",
+        "image": "./upgrade_images/HarleyQuinn_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "hawkgirl",
+    "name": "Hawkgirl",
+    "tagSynergies": ["birds_of_prey", "justice_league", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Meta Brawl", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "HP", "ATK"],
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/hawkgirl.png",
+    "imageFull": "./full_images/Hawkgirl_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "gabriel_horn",
+      "amazonian_alloy_shield",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "Hawkgirl was initially expected to come in to the game as the damage dealer for Birds of Prey. Instead, she plays much more like a Guardian champion. They even nerfed her legacy weapon to swap it from more DPS to defense focused. Regardless, she's a formidable tank. I don't recommend that anyone other than whales invest past blue stars, but I've seen whales have luck using her in Training Simulator and PvP.",
+    "ultimate": {
+      "name": "Dive Bomb",
+      "description": "Deals Physical Dmg equal to [%] of ATK to enemies in range. Gains Super Armor and recovers HP equal to [%] of dmg dealt",
+      "image": "./skill_images/icon_hero_skill_Hawkgirl_main.png"
+    },
+    "skills": [
+      {
+        "name": "Hurricane Force",
+        "description": "Deal Physical DMG equal to [%] of ATK to enemies and pull enemies within 6-12 meters 6 meters closer to self",
+        "image": "./skill_images/icon_hero_skill_Hawkgirl_sub01.png"
+      },
+      {
+        "name": "Nth Degree",
+        "description": "Deal Physical DMG equal to [%] of ATK to enemies within range",
+        "image": "./skill_images/icon_hero_skill_Hawkgirl_sub02.png"
+      },
+      {
+        "name": "Energy Absorption",
+        "description": "At the start of battle, Hawkgirl gains a shield equal to [%] of Max HP for each [Birds of Prey] ally present, up to a maximum of [%] of Max HP. Upon casting the Ultimate, gains a shield equal to [%] of Max HP for [8s].",
+        "image": "./skill_images/icon_hero_skill_Hawkgirl_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Thanagarian's Might",
+      "description": "Increases all Champions' HP and [Warrior] Champions' HP.",
+      "image": "./globalskill_images/Hawkgirl_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Hurricane Force - Enhanced",
+        "description": "Reduces cooldown of [Hurricane Force].",
+        "image": "./upgrade_images/Hawkgirl_sub01_enhanced.png"
+      },
+      {
+        "name": "Nth Degree - Enhanced",
+        "description": "Reduces cooldown of [Nth Degree].",
+        "image": "./upgrade_images/Hawkgirl_sub02_enhanced.png"
+      },
+      {
+        "name": "Energy Absorption - Enhanced",
+        "description": "Increases Crit Rate by [%].",
+        "image": "./upgrade_images/Hawkgirl_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "killer_croc",
+    "name": "Killer Croc",
+    "tagSynergies": ["suicide_squad", "legion_of_doom", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Story Mode"],
+    "transmutePriorities": ["HP", "P DEF", "Energy Gain Bonus"],
+    "class": "Guardian",
+    "rarity": "Legendary",
+    "tier": "C",
+    "imageHeadshot": "./headshot_images/killer_croc.png",
+    "imageFull": "./full_images/KillerCroc_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Randome Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "amazonian_alloy_shield",
+      "gabriel_horn",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "With the prevalence of Legion of Doom in the top of Meta Brawl, Killer Croc is an interesting champion. I think he's a solid Guardian to build early on, but he tapers off as you get access to other champions. I see him as a bridge to Scarecrow for new accounts, and if you're not going to run Legion of Doom, you can skip building him entirely.",
+    "ultimate": {
+      "name": "Ambush Predator",
+      "description": "Deal Physical DMG equal to [%] ATK to enemies within a circular area inflicting [Shockwave] for 10s",
+      "image": "./skill_images/icon_hero_skill_Killercroc_main.png"
+    },
+    "skills": [
+      {
+        "name": "Crocodile Wrestling",
+        "description": "Deal Physical DMG equal to [%] of ATK to enemies within range",
+        "image": "./skill_images/icon_hero_skill_Killercroc_sub01.png"
+      },
+      {
+        "name": "Tough Hide",
+        "description": "Killer Croc's Physical DEF increases by [%]",
+        "image": "./skill_images/icon_hero_skill_Killercroc_sub02.png"
+      },
+      {
+        "name": "Sewer Strike",
+        "description": "When HP is below 50% retreast from field, restoring [%] HP then resurges near enemy with highest ATK dealing Physical DMG equal to [%] of his ATK. Once per battle",
+        "image": "./skill_images/icon_hero_skill_Killercroc_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Thick Skin",
+      "description": "Increases all Champions' HP.",
+      "image": "./globalskill_images/KillerCroc_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Crocodile Wrestling - Enhanced",
+        "description": "Reduces cooldown of [Crocodile Wrestling].",
+        "image": "./upgrade_images/KillerCroc_sub01_enhanced.png"
+      },
+      {
+        "name": "Tough Hide - Enhanced",
+        "description": "Increases Killer Croc's Physical DEF.",
+        "image": "./upgrade_images/KillerCroc_sub02_enhanced.png"
+      },
+      {
+        "name": "Sewer Strike - Enhanced",
+        "description": "Increases Killer Croc's Healing Taken Up.",
+        "image": "./upgrade_images/KillerCroc_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "lex_luthor",
+    "name": "Lex Luthor",
+    "tagSynergies": ["legion_of_doom", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Crit Rate"],
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/lex_luthor.png",
+    "imageFull": "./full_images/LexLuthor_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Path of Justice",
+      "Training Simulator"
+    ],
+    "recommendedLegacyPieces": [
+      "tectonic_disruptor",
+      "t_sphere_weakness_analyzer",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Lex Luthor is a champion who's most useful in a full Legion of Doom team. You simply can't use him without at least the three tag Legion of Doom synergy, unless you want to see a marked drop off in DPS. However, he is THE reason Legion of Doom is such a powerhouse in PvP.",
+    "ultimate": {
+      "name": "Warsuit",
+      "description": "Deal Physical DMG equal to 385% of ATK to an entire row of enemies",
+      "image": "./skill_images/icon_hero_skill_Luthor_main.png"
+    },
+    "skills": [
+      {
+        "name": "Ability Analysis",
+        "description": "Deal Physical DMG equal to [%] of ATK to enemies within a fan-shaped area",
+        "image": "./skill_images/icon_hero_skill_Luthor_sub01.png"
+      },
+      {
+        "name": "Natural Leader",
+        "description": "At start of battle Luthor's Energy Restoration Speed increases by [%]. Increases by additional [%] per [Legion of Doom] ally present",
+        "image": "./skill_images/icon_hero_skill_Luthor_sub02.png"
+      },
+      {
+        "name": "Human Supremacy",
+        "description": "Grants [X] energy to all [Legion of Doom] ally present",
+        "image": "./skill_images/icon_hero_skill_Luthor_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "LexCorp Bonus",
+      "description": "Increases [Legion of Doom] Champions' HP.",
+      "image": "./globalskill_images/Luthor_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Ability Analysis - Enhanced",
+        "description": "Reduces cooldown of [Ability Analysis].",
+        "image": "./upgrade_images/LexLuthor_sub01_enhanced.png"
+      },
+      {
+        "name": "Natural Leader - Enhanced",
+        "description": "Increases Lex Luthor's Physical DEF.",
+        "image": "./upgrade_images/LexLuthor_sub02_enhanced.png"
+      },
+      {
+        "name": "Human Supremacy - Enhanced",
+        "description": "Increases Lex Luthor's ATK.",
+        "image": "./upgrade_images/LexLuthor_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "martian_manhunter",
+    "name": "Martian Manhunter",
+    "tagSynergies": ["justice_league", "metahuman", "outsiders"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "S DEF", "P DEF"],
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/martianmanhunter.png",
+    "imageFull": "./full_images/MartianManhunter_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "kuru_pendant",
+      "gabriel_horn",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "Martian Manhunter is a champion we expected to have more synergy with Justice League, so it was a surpise to see him as the main engine for the Outsiders team. He's a direct counter to Justice League Dark and a natural PvP workhorse. As the game gets more Outsiders champions, he should become even more valuable. Unfortunately, he's a high investment champion, as he needs to be 1 yellow star with a 5 blue star legacy piece minimum, and even then he's more of a niche use at this point.",
+    "ultimate": {
+      "name": "Psionic Protection",
+      "description": "Martian Manhunter links minds with all allies, granting them [Mind Ward] for 10s. When J'onn carries [Mind Ward], taking basic attack DMG reduces cooldown of [H'ronmeer's Rage] by 2s. This effect is triggered once every 1s. [Mind Ward]: When the target is hit by a skill other than a basic attack, Martian Manhunter performs counterattack on the attacker, dealing Spiritual DMG equal to [%] of his ATK",
+      "image": "./skill_images/icon_hero_skill_Martianmanhunter_main.png"
+    },
+    "skills": [
+      {
+        "name": "H'ronmeer's Rage",
+        "description": "Martian Manhunter fires heat beams from his eyes, dealing Spiritual DMG equal to [%] of his ATK to enemies within a rectangular area in front of him.",
+        "image": "./skill_images/icon_hero_skill_Martianmanhunter_sub01.png"
+      },
+      {
+        "name": "Outsiders Forever",
+        "description": "At the start of the battle, J'onn's Physical and Spiritual DEF increase by [%].",
+        "image": "./skill_images/icon_hero_skill_Martianmanhunter_sub02.png"
+      },
+      {
+        "name": "Telepathic Bulwark",
+        "description": "Increases ATK by [%]. At the start of battle, if there are at least 3 [Outsiders] allies present, duration of [Mind Ward] is increased by 5s.",
+        "image": "./skill_images/icon_hero_skill_Martianmanhunter_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Telekinetic Shield",
+      "description": "Increases all Champions' Physical DEF and [Warrior] Champions' Physical DEF.",
+      "image": "./globalskill_images/MartianManhunter_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "H'ronmeer's Rage - Enhanced",
+        "description": "Reduces cooldown of [H'ronmeer's Rage].",
+        "image": "./upgrade_images/MartianManhunter_sub01_enhanced.png"
+      },
+      {
+        "name": "Outsiders Forever - Enhanced",
+        "description": "At the start of the battle, Martian manhunter gains [X] Energy.",
+        "image": "./upgrade_images/MartianManhunter_sub02_enhanced.png"
+      },
+      {
+        "name": "Telepathic Bulwark - Enhanced",
+        "description": "Increases Martian Manhunter's ATK.",
+        "image": "./upgrade_images/MartianManhunter_sub03_enhanced.png"
+      }
+    ]
+  },
+
+  {
+    "id": "mera",
+    "name": "Mera",
+    "tagSynergies": ["atlanteans", "energy_wielder", "justice_league"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Healing Bonus"],
+    "class": "Supporter",
+    "rarity": "Legendary",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/mera.png",
+    "imageFull": "./full_images/Mera_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "purple_ray_radiation",
+      "cocoon_gun",
+      "pied_piper_flute"
+    ],
+    "quantumsTake": "Mera is the first healer you get in the game, and she scales well with your account. There are several healers that are much better than her, but given the high acquisition cost of champions like Starfire and Green Lantern, the only healer worth prioritizing over Mera early on is Krypto, in particular if you invested in Superman. The big downside to her kit is there's no utility outside of raw healing, but she heals well enough to somewhat offset that limitation. Despite falling off late game due to power creep, unless you're a heavy spender, chances are you'll still be using her six months into your account.",
+    "ultimate": {
+      "name": "The Gift of Sea",
+      "description": "Heals allies in a circular area for [%] of her ATK over time",
+      "image": "./skill_images/icon_hero_skill_Mera_main.png"
+    },
+    "skills": [
+      {
+        "name": "Healing Waters",
+        "description": "Heals an ally for [%] of Mera's ATK",
+        "image": "./skill_images/icon_hero_skill_Mera_sub01.png"
+      },
+      {
+        "name": "Water of Life",
+        "description": "For the first 20s of battle, Mera's healing is increased by [%]",
+        "image": "./skill_images/icon_hero_skill_Mera_sub02.png"
+      },
+      {
+        "name": "Crown of Atlantis",
+        "description": "Mera's ATK increases by 4%",
+        "image": "./skill_images/icon_hero_skill_Mera_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Healing Waters",
+      "description": "Increases all Champions' HP.",
+      "image": "./globalskill_images/Mera_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Healing Waters - Enhanced",
+        "description": "Additionally applies [Healing Over Time] upon healing an ally. [Healing Over Time]: Grants healing over time equal to [%] of Mera's Max HP.",
+        "image": "./upgrade_images/Mera_sub01_enhanced.png"
+      },
+      {
+        "name": "Water of Life - Enhanced",
+        "description": "Increases Mera's Physical DEF.",
+        "image": "./upgrade_images/Mera_sub02_enhanced.png"
+      },
+      {
+        "name": "Corwn of Atlantis - Enhanced",
+        "description": "Increases Mera's ATK.",
+        "image": "./upgrade_images/Mera_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "nightwing",
+    "name": "Nightwing",
+    "tagSynergies": ["teen_titans", "bat_family", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Crit Rate", "Crit DMG", "ATK"],
+    "class": "Assassin",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageHeadshot": "./headshot_images/nightwing.png",
+    "imageFull": "./full_images/Nightwing_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "charged_escrima_sticks",
+      "gas_derringer",
+      "t_sphere_weakness_analyzer"
+    ],
+    "quantumsTake": "Nightwing is one of the more free-to-play bleed champions due to the versatility in lineups he can fit into. Obviously Bat Family is quite expensive and a long farm if you can't spend, but if you can get him to purple stars or higher and obtain his legacy weapon, it will vastly improve any roster.",
+    "ultimate": {
+      "name": "Darkest Knight Strike",
+      "description": "Nightwing strikes an enemy in front of him, dealing Physical DMG equal to [%] of his ATK. Nightwing gains 1 stack of 10% Crit DMG AMP Up and 5% Crit Rate Up for each [Bat Family] Ally present. If this attack defeats the target, Nightwing immediately strikes again on another enemy with the lowest HP, dealing DMG equal to [%] of his ATK. Nightwing is untargetable during the leap. Prioritizes the enemy Champion with the lowest HP in auto mode.",
+      "image": "./skill_images/icon_hero_skill_Nightwing_main.png"
+    },
+    "skills": [
+      {
+        "name": "Shadow Flip",
+        "description": "Deal Physical DMG equal to [%] of ATK and gain Super Armor for the duration",
+        "image": "./skill_images/icon_hero_skill_Nightwing_sub01.png"
+      },
+      {
+        "name": "Bright Knight",
+        "description": "Nightwing gains 1 stack of [%] Crit Up for 10s. Stackable up to 5 times",
+        "image": "./skill_images/icon_hero_skill_Nightwing_sub02.png"
+      },
+      {
+        "name": "Double Trouble",
+        "description": "Whenever Nightwing basic attack deals Crit DMG, deals additional Physical DMG equal to [%] of ATK to an enemy and gains [X] energy",
+        "image": "./skill_images/icon_hero_skill_Nightwing_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Son of Gotham",
+      "description": "Increases all Champions' ATK and [Assassin] Champions' Crit Rate.",
+      "image": "./globalskill_images/Nightwing_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Shadow Flip - Enhanced",
+        "description": "Reduces the target's Crit RES by [%] for 10s.",
+        "image": "./upgrade_images/Nightwing_sub01_enhanced.png"
+      },
+      {
+        "name": "Bright Knight - Enhanced",
+        "description": "Increases Nightwing's Crit DMG by [%].",
+        "image": "./upgrade_images/Nightwing_sub02_enhanced.png"
+      },
+      {
+        "name": "Double Trouble - Enhanced",
+        "description": "Increases Nightwing's ATK.",
+        "image": "./upgrade_images/Nightwing_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "poison_ivy",
+    "name": "Poison Ivy",
+    "tagSynergies": ["birds_of_prey", "arkhams_most_wanted", "energy_wielder"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Healing Bonus"],
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/poison_ivy.png",
+    "imageFull": "./full_images/PoisonIvy_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Weekly Login",
+      "Path of Justice",
+      "7-Day Login"
+    ],
+    "recommendedLegacyPieces": [
+      "purple_ray_radiation",
+      "cocoon_gun",
+      "modified_joker_venom_grenade"
+    ],
+    "quantumsTake": "Poison Ivy underwent a complete kit overhaul in early 2026. She appears to be a much more efficient healer now, but there are questions about whether her Super Armor is viable anymore or even matters. Superman seems to be a little better agains the vine AI, so that's a downside for PvP, but an upside for Justice League mains in Training Sim going against her. Overall, I think she's a great early game healer, even at low stars, and I would 100% recommend using the free copy you get. However, once Riddler enters the Bleed on your server, she will become utterly irrelevant.",
+    "ultimate": {
+      "name": "Growing Pains",
+      "description": "Poison Ivy summons an untargetable Blooming ivy for [10s]. [Blooming Ivy]: Every [2s], heals all allies for [%] of Poison Ivy's Attack.",
+      "image": "./skill_images/icon_hero_skill_PoisonIvy_main.png"
+    },
+    "skills": [
+      {
+        "name": "Poison Embrace",
+        "description": "Poison Ivy summons a Thorny Ivy near an enemy, inheriting [%] of Poison Ivy's HP and lasting [10s]. [Thorny Ivy]: Cannot Move. Every [2s], deals spiritual damage equal to [%] of Poison Ivy's Attack to nearby enemies.",
+        "image": "./skill_images/icon_hero_skill_PoisonIvy_sub01.png"
+      },
+      {
+        "name": "Bloom of Life",
+        "description": "Whenever Poison Ivy summons a Blooming Ivy or Thorny Ivy, immediately heals all allies for [%] of her Attack.",
+        "image": "./skill_images/icon_hero_skill_PoisonIvy_sub02.png"
+      },
+      {
+        "name": "Death's Embrace",
+        "description": "At the start of battle, for each [Arkham's Most Wanted] ally present, Poison Ivy's healing done is increased by [%].",
+        "image": "./skill_images/icon_hero_skill_PoisonIvy_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Personal Growth",
+      "description": "Increases [Supporter] Champions' healing effect.",
+      "image": "./globalskill_images/PoisonIvy_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Poison Embrace - Enhanced",
+        "description": "Reduces cooldown of [Poison Embrace].",
+        "image": "./upgrade_images/PoisonIvy_sub01_enhanced.png"
+      },
+      {
+        "name": "Bloom of Life - Enhanced",
+        "description": "Increases Poison Ivy's Max HP.",
+        "image": "./upgrade_images/PoisonIvy_sub02_enhanced.png"
+      },
+      {
+        "name": "Death's Embrace - Enhanced",
+        "description": "Increases Poison Ivy's healing done.",
+        "image": "./upgrade_images/PoisonIvy_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "raven",
+    "name": "Raven",
+    "tagSynergies": ["teen_titans", "justice_league_dark", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Healing Bonus"],
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/raven.png",
+    "imageFull": "./full_images/Raven_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "purple_ray_radiation",
+      "cocoon_gun"
+    ],
+    "quantumsTake": "Raven has a kit that can be hard to manage. She's much better on manual, where you can time her ultimate. I've seen very effective PvP comps using her, especially on early servers, but she end up being most effective in a Justice League Dark lineup.",
+    "ultimate": {
+      "name": "Demon's Flight",
+      "description": "Heals all allies in circular area in front of self by 240% of ATK",
+      "image": "./skill_images/icon_hero_skill_Raven_main.png"
+    },
+    "skills": [
+      {
+        "name": "Flock Together",
+        "description": "Deal Spiritual DMG equal to 160% of her ATK to enemies in rectangular area in front of self. Restores own HP equal to 50% of DMG dealt",
+        "image": "./skill_images/icon_hero_skill_Raven_sub01.png"
+      },
+      {
+        "name": "Demon's Shield",
+        "description": "Swap places with ally below 50% HP and heal them by 225% for 5s",
+        "image": "./skill_images/icon_hero_skill_Raven_sub02.png"
+      },
+      {
+        "name": "Dark Soul",
+        "description": "At the start of the battle, Raven's Attack increases by [%].",
+        "image": "./skill_images/icon_hero_skill_Raven_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Daughter of Darkness",
+      "description": "Increases all Champions' ATK.",
+      "image": "./globalskill_images/Raven_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Flock Together - Enhanced",
+        "description": "There is a fixed 50% chance to reduce the target's Spiritual DEF.",
+        "image": "./upgrade_images/Raven_sub01_enhanced.png"
+      },
+      {
+        "name": "Demon's Shield - Enhanced",
+        "description": "Upon casting this skill, Raven's Physical DEF increases.",
+        "image": "./upgrade_images/Raven_sub02_enhanced.png"
+      },
+      {
+        "name": "Dark Soul - Enhanced",
+        "description": "Increases Raven's ATK.",
+        "image": "./upgrade_images/Raven_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "red_hood",
+    "name": "Red Hood",
+    "tagSynergies": ["league_of_assassins", "bat_family", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Firepower",
+    "rarity": "Legendary",
+    "tier": "C",
+    "imageHeadshot": "./headshot_images/red_hood.png",
+    "imageFull": "./full_images/RedHood_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": [
+      "dart_with_poison_ivy_poison",
+      "t_sphere_weakness_analyzer",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Red Hood is a champion that can be fairly useful when you first start playing, but his kit suffers from one fatal flaw, and that's the fact that when he uses his ultimate, he usually dies soon thereafter. We are hoping that his kit gets refreshed when he ascends to mythic, but until then, he just doesn't slot into any team late game.",
+    "ultimate": {
+      "name": "Strafe Strife",
+      "description": "Deal Physical DMG equal to 280% of ATK to enemies within range",
+      "image": "./skill_images/icon_hero_skill_RedHood_main.png"
+    },
+    "skills": [
+      {
+        "name": "Blow the Hood",
+        "description": "When basic attacks deal Crit DMG, deal extra Physical DMG equal to 140% of attack to enemies in range. Can be triggered every 5 seconds",
+        "image": "./skill_images/icon_hero_skill_RedHood_sub01.png"
+      },
+      {
+        "name": "Wrong Place, Right Time",
+        "description": "For every enemy within 12 meters, increases Crit Rate by 1.2%, up to 6%",
+        "image": "./skill_images/icon_hero_skill_RedHood_sub02.png"
+      },
+      {
+        "name": "Bat-Family Tree",
+        "description": "After casting [Strafe Strife], increases Dodge by 8% for 8s",
+        "image": "./skill_images/icon_hero_skill_RedHood_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Ruthless Pursuit",
+      "description": "Increases all Champions' ATK.",
+      "image": "./globalskill_images/RedHood_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Blow the Hood - Enhanced",
+        "description": "The grenade has a base chance of 50% to additionally reduce the target's Crit RES.",
+        "image": "./upgrade_images/RedHood_sub01_enhanced.png"
+      },
+      {
+        "name": "Wrong Place, Right Time - Enhanced",
+        "description": "Increases Red Hood's Energy restoration speed.",
+        "image": "./upgrade_images/RedHood_sub02_enhanced.png"
+      },
+      {
+        "name": "Bat-Family Tree - Enhanced",
+        "description": "Increases Red Hood's ATK.",
+        "image": "./upgrade_images/RedHood_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "red_robin",
+    "name": "Red Robin",
+    "tagSynergies": ["teen_titans", "bat_family", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Training Simulator", "Story Mode"],
+    "transmutePriorities": ["HP", "Energy Gain Bonus"],
+    "class": "Guardian",
+    "rarity": "Mythic",
+    "tier": "C",
+    "imageHeadshot": "./headshot_images/red_robin.png",
+    "imageFull": "./full_images/RedRobin_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Path of Justice"
+    ],
+    "recommendedLegacyPieces": [
+      "amazonian_alloy_shield",
+      "gabriel_horn",
+      "not_so_huge_hammer"
+    ],
+    "quantumsTake": "Red Robin's kit was reworked and he's a pretty solid guardian for a Bat Family team now. Reducing Crit RES ends up superpowering Nightwing, making him a pretty powerful support.",
+    "ultimate": {
+      "name": "Bat-Tech Decoy",
+      "description": "Deal Physical DMG equal to 150% of ATK to enemies in range. Leaves a decoy that reduces enemies' in range's Crit Res by 1.5% every 2s, stacking up to 8 times. After 8s decoy explodes dealing Physical DMG equal to 150% of self ATK to nearby enemies",
+      "image": "./skill_images/icon_hero_skill_RedRobin_main.png"
+    },
+    "skills": [
+      {
+        "name": "Spin Cycle",
+        "description": "Gains a Shield equal to 10% of Max HP for 8s, dealing Physical DMG up to 120% of his ATK to nearby enemies",
+        "image": "./skill_images/icon_hero_skill_RedRobin_sub01.png"
+      },
+      {
+        "name": "Precision Bat",
+        "description": "Deals Physical DMG equal to 150% of ATK to enemies in range and reducing Crit Res by 5% for 10s",
+        "image": "./skill_images/icon_hero_skill_RedRobin_sub02.png"
+      },
+      {
+        "name": "Robin's Egg",
+        "description": "At the start of battle, gain 20 energy. During combat, gain 1% DMG Reduction for 1% of Crit Rate, up to a max of 20%",
+        "image": "./skill_images/icon_hero_skill_RedRobin_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Seeing Red",
+      "description": "Increases [Teen Titans] Champions' Physical DEF.",
+      "image": "./globalskill_images/RedRobin_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Spin Cycle - Enhanced",
+        "description": "A compelte cast of the skill grants additional Energy.",
+        "image": "./upgrade_images/RedRobin_sub01_enhanced.png"
+      },
+      {
+        "name": "Precision Bat - Enhanced",
+        "description": "Reduces cooldown of [Precision Bat].",
+        "image": "./upgrade_images/RedRobin_sub02_enhanced.png"
+      },
+      {
+        "name": "Robin's Egg - Enhanced",
+        "description": "Increases Red Robin's Crit Rate.",
+        "image": "./upgrade_images/RedRobin_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "robin",
+    "name": "Robin",
+    "tagSynergies": ["teen_titans", "bat_family", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Assassin",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/robin.png",
+    "imageFull": "./full_images/Robin_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "charged_escrima_sticks",
+      "t_sphere_weakness_analyzer",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Robin is effectively discount Nightwing. If you're looking to invest in Bat Family long-term for an eventual Nightwing team comp, you'll want to go all-in on Robin while you wait for Nightwing to show up in the Bleed. And in a lot of cases, you can use both of them together for a one-two punch that's hard to beat in all game modes.",
+    "ultimate": {
+      "name": "Round Robin",
+      "description": "Deals 9 slashes to enemies. Each slash deals Physical DMG equal to 100% of ATK. First slash targets selected enemy, with following slashes hitting random enemies within 5 meters. Robin cannot be targeted during the attack",
+      "image": "./skill_images/icon_hero_skill_Robin_main.png"
+    },
+    "skills": [
+      {
+        "name": "Vengeance is Mine",
+        "description": "Deals Phyiscal DMG equal to 260% of ATK to an enemy. When an attack deals Crit DMG, unleashes shockwave around self, dealing DMG equal to 65% of his ATK to enemies in range",
+        "image": "./skill_images/icon_hero_skill_Robin_sub01.png"
+      },
+      {
+        "name": "Cloud of Bats",
+        "description": "Deals Physical Dmg equal to 140% of ATK to enemies in range",
+        "image": "./skill_images/icon_hero_skill_Robin_sub02.png"
+      },
+      {
+        "name": "Brooding Legacy",
+        "description": "Crit Amp increases by 5%. When Crit Rate exceeds 100%, gains Crit Amp equal to 1.5% of excess, up to 50%",
+        "image": "./skill_images/icon_hero_skill_Robin_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "League Synergy",
+      "description": "Increases [Assassin] Champions' ATK.",
+      "image": "./globalskill_images/Robin_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Vengeance is Mine - Enhanced",
+        "description": "Reduces cooldown of [Vengeance is Mine].",
+        "image": "./upgrade_images/Robin_sub01_enhanced.png"
+      },
+      {
+        "name": "Cloud of Bats - Enhanced",
+        "description": "Reduces cooldown of [Cloud of Bats].",
+        "image": "./upgrade_images/Robin_sub02_enhanced.png"
+      },
+      {
+        "name": "Brooding Legacy - Enhanced",
+        "description": "Increases Robin's ATK.",
+        "image": "./upgrade_images/Robin_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "scarecrow",
+    "name": "Scarecrow",
+    "tagSynergies": ["legion_of_doom", "arkhams_most_wanted", "weapon_master"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["HP", "Energy Gain Bonus", "S DEF"],
+    "class": "Guardian",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/scarecrow.png",
+    "imageFull": "./full_images/Scarecrow_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "fear_reaper",
+      "improved_fear_gas_vial",
+      "duplication_mirror"
+    ],
+    "quantumsTake": "Scarecrow was the best tank in the game until early 2026, when his kit was gutted due to how overpowered his stun mechanic was at the beginning of fights. They went further, though, and made him very good against physical damage, but a joke against spiritual damage. He's still usable, as he's required for LOD in PvP and he's still decent with Arkham.",
+    "ultimate": {
+      "name": "The Scent of Fear",
+      "description": "Scarecrow turns into a towering phantom, dealing spiritual damage equal to [%] of his Attack to enemies in a circular area and inflicting one stack of [Fear]. [Fear]: Reduces physical damage dealt by [%], stacking up to [3] times and lasting [20s].",
+      "image": "./skill_images/icon_hero_skill_Scarecrow_main.png"
+    },
+    "skills": [
+      {
+        "name": "Terror Strike",
+        "description": "Scarecrow intimidates enemies in a fan-shaped area, dealing spiritual damage equal to [%] of his Attack and inflicting one stack of [Fear].",
+        "image": "./skill_images/icon_hero_skill_Scarecrow_sub01.png"
+      },
+      {
+        "name": "Haunting Visions",
+        "description": "Every time Scarecrow inflicts [Fear], he gains a permanent [%] Attack Up and [%] Physical Defense Up for each stack inflicted, stacking up to [60] times.",
+        "image": "./skill_images/icon_hero_skill_Scarecrow_sub02.png"
+      },
+      {
+        "name": "Growing Terror",
+        "description": "Increases Scarecrow's Max HP by [%]. After the start of battle, every [6s], all [Arkham's Most Wanted] allies gain Physical Defense equal to [%] of Scarecrow's base Physical Defense, stacking up to [%].",
+        "image": "./skill_images/icon_hero_skill_Scarecrow_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Frightener",
+      "description": "Increases all Champions' Spiritual DEF and [Guardian] Champions' HP.",
+      "image": "./globalskill_images/Scarecrow_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Terror Strike - Enhanced",
+        "description": "Reduces cooldown of [Terror Strike].",
+        "image": "./upgrade_images/Scarecrow_sub01_enhanced.png"
+      },
+      {
+        "name": "Haunting Visions - Enhanced",
+        "description": "Increases Scarecrow's Physical Defense.",
+        "image": "./upgrade_images/Scarecrow_sub02_enhanced.png"
+      },
+      {
+        "name": "Growing Terror - Enhanced",
+        "description": "Increases Scarecrow's HP.",
+        "image": "./upgrade_images/Scarecrow_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "shazam",
+    "name": "Shazam",
+    "tagSynergies": ["justice_league", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["HP", "Energy Gain Bonus", "P DEF"],
+    "class": "Guardian",
+    "rarity": "Mythic",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/shazam.png",
+    "imageFull": "./full_images/Shazam_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "themysciran_sceptre",
+      "amazonian_alloy_shield",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "Shazam was not well-regarded earlier in the beta testing for the game, but that was mostly because many players didn't have him at high star levels. Now that the game has matured, Shazam is heavily regarded as the best early tank for a Superman hypercarry team for fresh accounts. He's more of a tool for lite spenders and above, because you need all of his skills unlocked at a minimum for usability, but don't sleep on Shazam's taunt and revive if you need a big frontline for Training Simulator and even early PvP before you have access to better champions.",
+    "ultimate": {
+      "name": "Strength of Hercules",
+      "description": "Deals Physical DMG equal to 100% of ATK to enemies within circular area and [Taunts] them for 3s",
+      "image": "./skill_images/icon_hero_skill_Shazam_main.png"
+    },
+    "skills": [
+      {
+        "name": "Achilles Summon",
+        "description": "Gains [Courage of Achilles] for 10s. [Courage of Achilles]: Reduces Physical DMG taken by [%]. Cannot be dispelled.",
+        "image": "./skill_images/icon_hero_skill_Shazam_sub01.png"
+      },
+      {
+        "name": "Wisdom of Solomon",
+        "description": "Shazam dashes forward and unleashes a burst of lightning within a circular area around him, dealing Physical DMG equal to [%] of his ATK and gaining a Shield equal to [%] of his ATK.",
+        "image": "./skill_images/icon_hero_skill_Shazam_sub02.png"
+      },
+      {
+        "name": "Atlas Boost",
+        "description": "When Shazam takes lethal damage, his HP is locked at 1 instead and he recovers [%] of his Max HP within [9s], inflicting [Taunted] for [3s] on all enemies at the cost of all his Energy. Can be triggered once per battle.",
+        "image": "./skill_images/icon_hero_skill_Shazam_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Achilles' Shield",
+      "description": "Increases [Guardian] Champions' Crit RES.",
+      "image": "./globalskill_images/Shazam_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Achilles Summon - Enhanced",
+        "description": "Reduces cooldown of [Achilles Summon].",
+        "image": "./upgrade_images/Shazam_sub01_enhanced.png"
+      },
+      {
+        "name": "Wisdom of Solomon - Enhanced",
+        "description": "Reduces cooldown of [Wisdom of Solomon].",
+        "image": "./upgrade_images/Shazam_sub02_enhanced.png"
+      },
+      {
+        "name": "Hero's Legacy - Enhanced",
+        "description": "Increases Shazam's Physical DEF.",
+        "image": "./upgrade_images/Shazam_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "sinestro",
+    "name": "Sinestro",
+    "tagSynergies": ["legion_of_doom", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["ATK", "Spiritual PEN", "Spiritual AMP"],
+    "class": "Magical",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageHeadshot": "./headshot_images/sinestro.png",
+    "imageFull": "./full_images/Sinestro_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "sinestro_corps_ring",
+      "dart_with_poison_ivy_poison",
+      "imp_doll"
+    ],
+    "quantumsTake": "Many people assume that Deathstroke is the primary win-condition for Legion of Doom PvP teams. However, Sinestro is who really shuts down enemy teams. His ultimate is one of the best burst damage abilities in the game, and it's even better with his unique legacy Sinestro Corps Ring. He's an S-tier champion because not only is he the star of LoD, but he can also be added to JLD teams to bolster Constantine's ability to deal Spiritual damage.",
+    "ultimate": {
+      "name": "Mind over Matter",
+      "description": "Deal Spiritual DMG equal to 800% of ATK to enemy, then chains nearest addition target, and so on. Each chain attack's Spiritual DMG dealt reduces by 40%, affecting up to 3 targets",
+      "image": "./skill_images/icon_hero_skill_Sinestro_main.png"
+    },
+    "skills": [
+      {
+        "name": "Bondage of Fear",
+        "description": "Deal Spiritual DMG equal to 300% of ATK to enemy",
+        "image": "./skill_images/icon_hero_skill_Sinestro_sub01.png"
+      },
+      {
+        "name": "Strong Will",
+        "description": "Restore own energy by 30",
+        "image": "./skill_images/icon_hero_skill_Sinestro_sub02.png"
+      },
+      {
+        "name": "Fear Grows",
+        "description": "When allies defeat an enemy, Sinestro's ATK increases by 5% for 10s per [Legion of Doom] ally present",
+        "image": "./skill_images/icon_hero_skill_Sinestro_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Sinestro's Might",
+      "description": "Increases all Champions' Spiritual DEF and [Magical] Champions' Spiritual AMP.",
+      "image": "./globalskill_images/Sinestro_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Bondage of Fear - Enhanced",
+        "description": "Each time Sinestro attacks, there is a chance to reduce the target's Spiritual DEF.",
+        "image": "./upgrade_images/Sinestro_sub01_enhanced.png"
+      },
+      {
+        "name": "Strong Will - Enhanced",
+        "description": "Reduces cooldown of [Strong Will].",
+        "image": "./upgrade_images/Sinestro_sub02_enhanced.png"
+      },
+      {
+        "name": "Fear Grows - Enhanced",
+        "description": "Increases Sinestro's Spiritual PEN.",
+        "image": "./upgrade_images/Sinestro_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "stargirl",
+    "name": "Stargirl",
+    "tagSynergies": ["justice_league", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": ["Combat Cycle", "Story Mode"],
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "C",
+    "imageHeadshot": "./headshot_images/stargirl.png",
+    "imageFull": "./full_images/Stargirl_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "P DEF", "S DEF"],
+    "recommendedLegacyPieces": [
+      "starheart_staff",
+      "coluan_force_field_belt",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Stargirl is a niche champion who at one point was regarded as a potential game changer in PvP. Unfortunately, her cleanse is only useful against The Drowned in Combat Cycle, and even then she needs to be at high star levels for her kit to be effective. Do not invest in her force, but know that she does have a very specific purpose. This is a champion that we will monitor to see whether future champions being added to the game changes her usefulness.",
+    "ultimate": {
+      "name": "Cosmic Cleanse",
+      "description": "Stargirl dispels [x] stacks of debuffs or weakening effects for all allies and applies a [%] DMG Reduction to them for [10s].",
+      "image": "./skill_images/icon_hero_skill_Stargirl_main.png"
+    },
+    "skills": [
+      {
+        "name": "Star Shield",
+        "description": "Stargirl applies a [%] DMG Reduction to an ally for [15s].",
+        "image": "./skill_images/icon_hero_skill_Stargirl_sub01.png"
+      },
+      {
+        "name": "Astral Autofire",
+        "description": "Stargirl unleashes energy at an enemy, dealing Spiritual DMG equal to [%] of her ATK and reducing their Effect ACC by [%] for [10s].",
+        "image": "./skill_images/icon_hero_skill_Stargirl_sub02.png"
+      },
+      {
+        "name": "Stellar Stamina",
+        "description": "At the start of battle, all allies gain a [%] Effect RES bonus for [20s].",
+        "image": "./skill_images/icon_hero_skill_Stargirl_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Tamaranean Blessing",
+      "description": "Increases all Champions' Effect RES.",
+      "image": "./globalskill_images/Stargirl_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Star Shield - Enhanced",
+        "description": "Reduces cooldown of [Star Shield].",
+        "image": "./upgrade_images/Stargirl_sub01_enhanced.png"
+      },
+      {
+        "name": "Astral Autofire - Enhanced",
+        "description": "Reduces the target's Effect ACC.",
+        "image": "./upgrade_images/Stargirl_sub02_enhanced.png"
+      },
+      {
+        "name": "Stellar Stamina - Enhanced",
+        "description": "Stargirl gains an additional [%] Effect RES.",
+        "image": "./upgrade_images/Stargirl_sub03_enhanced.png"
+      }
+    ]
+  },
+
+  {
+    "id": "superboy",
+    "name": "Superboy",
+    "tagSynergies": ["superman_family", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["ATK", "Energy Gain Bonus", "P DEF"],
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/Conner_Kent.png",
+    "imageFull": "./full_images/Superboy_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Superboy is a champion that we always knew would be a great support from the time we saw his kit, but who we did not realize would be as good as he is as a plug-and-play champion. You can stick him into just about any lineup and see massive gains, which can't be said for champions like Zatanna, who is good but only with her assigned tag synergy. Superboy does work best with Supergirl, but I think he's a champion that all players should pull for, even if it's just to white stars, granted that Purple 1 will future proof him as your account progresses if you're a lite spender and can afford to pull that high.",
+    "ultimate": {
+      "name": "Super Bro",
+      "description": "Conner Kent unleashes his telekenetic power, increasing ATK by [X]% of his base ATK for both himself and the ally with the highest ATK (Supergirl takes priority if present). This effect is capped at [X]% of the target's base ATK each time, stacks up to 3 times, and lasts until the end of battle. The ally also becomes immune to control effects for 1 time (the first control effect is negated). The ATK bonus is doubled for [Superman Family] allies.",
+      "image": "./skill_images/icon_hero_skill_connerkent_main.png"
+    },
+    "skills": [
+      {
+        "name": "Chill",
+        "description": "Conner Kent exhales a blast of icy wind, dealing Physical DMG equal to [X] of his ATK to enemies in a circular area and reducing their Physical DEF by [X]% until the end of battle, stacking up to [X] times.",
+        "image": "./skill_images/icon_hero_skill_connerkent_sub01.png"
+      },
+      {
+        "name": "S Shield",
+        "description": "Conner Kent Strengthens his resolve, reducing DMG taken from ranged skills by [X]%",
+        "image": "./skill_images/icon_hero_skill_connerkent_sub02.png"
+      },
+      {
+        "name": "In the Genes",
+        "description": "During battle, as [Krypton Energy] changes, Conner Kent's ATK increases by [X]% for each level of [Krypton Energy].",
+        "image": "./skill_images/icon_hero_skill_connerkent_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "TK Field",
+      "description": "Increases all Champions' Spiritual DEF and [Supporter] Champions' HP.",
+      "image": "./globalskill_images/Superboy_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Chill - Enhanced",
+        "description": "Reduces cooldown of [Chill].",
+        "image": "./upgrade_images/ConnerKent_sub01_enhanced.png"
+      },
+      {
+        "name": "S Shield - Enhanced",
+        "description": "Increases Conner Kent's Effect RES.",
+        "image": "./upgrade_images/ConnerKent_sub02_enhanced.png"
+      },
+      {
+        "name": "In the Genes - Enhanced",
+        "description": "Increases Conner Kent's Spiritual DEF.",
+        "image": "./upgrade_images/ConnerKent_sub03_enhanced.png"
+      }
+    ]
+  },
+
+  {
+    "id": "supergirl",
+    "name": "Supergirl",
+    "tagSynergies": ["superman_family", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Crit DMG"],
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageHeadshot": "./headshot_images/Supergirl.png",
+    "imageFull": "./full_images/Supergirl_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "house_of_el_symbol",
+      "not_so_huge_hammer",
+      "promethium_claws"
+    ],
+    "quantumsTake": "Supergirl is widely regarded at this point as one of the best AoE champions in the game, if not the best. However, she also requires some of the highest investment in the game. You NEED Krypto and Superboy paired with her at a minimum to get the full effectiveness from her kit, so she gets the same treatment at LoD champions in that I can't in good faith recommend that non-spenders go for Superman Family unless they are willing to hamper their account by pulling for her and waiting for her re-run to get her up and running. Build her at your own risk if you don't spend, but know that once she's at yellow stars, she is unstoppable.",
+    "ultimate": {
+      "name": "Solar Battery",
+      "description": "Supergirl channels her power, dealing Physical DMG equal to [X]% of her ATK to enemies in a circular area. At [Krypton Energy] level 1, she absorbs solar energy, increasing this skill's Crit Rate by [X]%. At [Krypton Energy] level 3, solar energy enhances her might even more, increasing this skill's DMG to [X]% of her ATK.",
+      "image": "./skill_images/icon_hero_skill_supergirl_main.png"
+    },
+    "skills": [
+      {
+        "name": "Arctic Breath",
+        "description": "Supergirl draws in freezing air and exhales an icy blast, dealing Physical DMG equal to [X]% of her ATK to enemies in a fan-shaped area.",
+        "image": "./skill_images/icon_hero_skill_supergirl_sub01.png"
+      },
+      {
+        "name": "Solar Recharge",
+        "description": "Increases DEF and MEN by [X]%. At the start of battle, for each [Superman Family] ally present, Supergirl gains an additional stack of [X]% DEF and MEN Up, stacking up to 5 times.",
+        "image": "./skill_images/icon_hero_skill_supergirl_sub02.png"
+      },
+      {
+        "name": "Family Ties",
+        "description": "Increases ATK by [X]%. At the start of battle, for each [Superman Family] ally present, Supergirl's Ultimate DMG is increased by 15%, stacking up to 5 times.",
+        "image": "./skill_images/icon_hero_skill_supergirl_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Power of Rao",
+      "description": "Increases all Champions' Physical DEF and [Warrior] Champions' Spiritual DEF.",
+      "image": "./globalskill_images/Supergirl_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Arctic Breath - Enhanced",
+        "description": "Reduces cooldown of [Arctic Breath].",
+        "image": "./upgrade_images/Supergirl_sub01_enhanced.png"
+      },
+      {
+        "name": "Solar Recharge - Enhanced",
+        "description": "Icnreases Supergirl's Crit Rate.",
+        "image": "./upgrade_images/Supergirl_sub02_enhanced.png"
+      },
+      {
+        "name": "Family Ties - Enhanced",
+        "description": "Increases Supergirl's ATK.",
+        "image": "./upgrade_images/Supergirl_sub03_enhanced.png"
+      }
+    ]
+  },
+
+  {
+    "id": "superman",
+    "name": "Superman (Clark Kent)",
+    "tagSynergies": ["superman_family", "justice_league", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["ATK", "Physical PEN", "HP"],
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageFull": "./full_images/Superman_full.png",
+    "imageHeadshot": "./headshot_images/superman.png",
+    "quantumsTake": "Superman is up there with Batman as one of the most iconic DC characters. He's the first Bleed champion you can go after on a fresh server. As far as his kit goes, he's one of the most powerful single-target damage dealers in the game. When fully built, and with the right supporters, he can carry your roster in every game mode. The biggest limitation is that long-term you will need his unique legacy item and purple stars or better to realize his full potential.",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "supermans_cape",
+      "not_so_huge_hammer",
+      "promethium_claws"
+    ],
+    "ultimate": {
+      "name": "Under a Yellow Sun",
+      "description": "Gain one stack of [Solar Energy]. Deal [Physical DMG] equal to % ATK to an enemy. (Solar Energy: Increases ATK by a set %, stacking up to 3 times.",
+      "image": "./skill_images/icon_hero_skill_Superman_main.png"
+    },
+    "skills": [
+      {
+        "name": "Heat Vision",
+        "description": "Deals Physical DMG equal to 275% of his ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_Superman_sub01.png"
+      },
+      {
+        "name": "Freeze Breath",
+        "description": "Deal Physical DMG equal to 190% of ATK to an enemy and [Freezing] them for 3s",
+        "image": "./skill_images/icon_hero_skill_Superman_sub02.png"
+      },
+      {
+        "name": "Man of Steel",
+        "description": "DEF increases by 15% at the start of battle, gains 1 stack of 5% ATK Up for each [Superman Family] ally present",
+        "image": "./skill_images/icon_hero_skill_Superman_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Hope Restored",
+      "description": "Increases all Champions' HP and [Warrior] Champions' ATK.",
+      "image": "./globalskill_images/Superman_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Heat Vision - Enhanced",
+        "description": "Additionally reduces the target's Physical DEF.",
+        "image": "./upgrade_images/Superman_sub01_enhanced.png"
+      },
+      {
+        "name": "Freeze Breath - Enhanced",
+        "description": "Reduces cooldown of [Freeze Breath].",
+        "image": "./upgrade_images/Superman_sub02_enhanced.png"
+      },
+      {
+        "name": "Man of Steel - Enhanced",
+        "description": "Increases Superman's ATK.",
+        "image": "./upgrade_images/Superman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "the_joker",
+    "name": "The Joker",
+    "tagSynergies": ["arkhams_most_wanted", "weapon_master"],
+    "damageType": "Spiritual",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["ATK", "Spiritual PEN", "Spiritual AMP"],
+    "class": "Intimidator",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/the_joker.png",
+    "imageFull": "./full_images/TheJoker_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "fools_scepter",
+      "modified_joker_venom_grenade",
+      "energy_mace"
+    ],
+    "quantumsTake": "The Joker has seen quite a few changes to his kit in the last few months, but he's maintained a relatively stable spot in the meta. He may be the best champion in the game for Combat Cycle, particularly on bosses where there are multiple targets, and he is incredibly useful in Training Simulator for the same reason. However, he is less than ideal for use in Meta Brawl and 3v3, due to the fact that there are so many champions who can counter his kit by shutting him down early. It's hard to give him the S-tier designation due to his PvP deficiencies, but he's a champion that you can 100% build around and he is especially useful for new accounts.",
+    "ultimate": {
+      "name": "Joker Venom",
+      "description": "The Joker deals Spiritual DMG equal to [%] of his ATK to an enemy, with a [%] base chance to inflict [10] stacks of [Joker Venom] for [20s]. In auto mode, he prioritizes the enemy with the most stacks of [Joker Venom]. After casting this skill, if an enemy reaches [50] stacks of [Joker Venom], their debuffs and weakening effects spread to other enemies, up to [5] stacks per effect. [Passive]: When an enemy with [Joker Venom] is defeated (even if prevented by an HP lock effect), their debuffs and weakening effects spread to other enemies, up to [5] stacks per effect. [Joker Venom]: Deals Spiritual DMG equal to [%] of The Joker's ATK per second, stacking up to [100] times.",
+      "image": "./skill_images/icon_hero_skill_Joker_main.png"
+    },
+    "skills": [
+      {
+        "name": "What a Gas",
+        "description": "The Joker detonates a bomb, dealing Spiritual DMG equal to [%] of his ATK to enemies within rang, with a base chance of [60%] to inflict [2] stacks of [Joker Venom] for [20s].",
+        "image": "./skill_images/icon_hero_skill_Joker_sub01.png"
+      },
+      {
+        "name": "Big Laugh",
+        "description": "The Joker's Spiritual AMP increases by [%]. Each of his attacks has a [60%] base chance to inflict one stack of [Joker Venom] on the target for [20s]. Can be triggered once every second.",
+        "image": "./skill_images/icon_hero_skill_Joker_sub02.png"
+      },
+      {
+        "name": "Buzz Off",
+        "description": "At the start of battle, The Joker gains one stack of ATK UP of [%] for each [Arkham's Most Wanted] ally present.",
+        "image": "./skill_images/icon_hero_skill_Joker_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Laugh Attack",
+      "description": "Increases all Champions' ATK and [Intimidator] Champions' ATK.",
+      "image": "./globalskill_images/TheJoker_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "What a Gas - Enhanced",
+        "description": "Reduces cooldown of [What a Gas].",
+        "image": "./upgrade_images/Joker_sub01_enhanced.png"
+      },
+      {
+        "name": "Big Laugh - Enhanced",
+        "description": "Increases The Joker's Effect ACC.",
+        "image": "./upgrade_images/Joker_sub02_enhanced.png"
+      },
+      {
+        "name": "Buzz Off - Enhanced",
+        "description": "Increases The Joker's ATK.",
+        "image": "./upgrade_images/Joker_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "the_penguin",
+    "name": "The Penguin",
+    "tagSynergies": ["arkhams_most_wanted", "weapon_master"],
+    "damageType": "Spiritual",
+    "gameModes": ["Training Simulator", "Story Mode"],
+    "transmutePriorities": ["ATK", "Energy Gain Bonus", "Spiritual AMP"],
+    "class": "Intimidator",
+    "rarity": "Mythic",
+    "tier": "D",
+    "imageHeadshot": "./headshot_images/the_penguin.png",
+    "imageFull": "./full_images/ThePenguin_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "conundrum_cane",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "The Penguin received a kit rework in early 2026. We still see him as a skip for anyone who builds The Joker up long term, but for non-spenders who need a third or fourth team and have no other choice, the new kit actually has some viability in the early game and for those looking for a solid ship combat team.",
+    "ultimate": {
+      "name": "For the Birds",
+      "description": "The Penguin summons 3 Penguin Commandos, each dealing spiritual damage equal to [%] of The Penguin's Attack to an enemy (no penguins are harmed in the process), with a [50%] base chance to inflict one stack of [Burning] for [20s]. [Burning]: Deals spiritual damage equal to [%] of The Penguin's Attack per second. Stacks up to [100] times.",
+      "image": "./skill_images/icon_hero_skill_Penguin_main.png"
+    },
+    "skills": [
+      {
+        "name": "Oil Spill",
+        "description": "The Penguin summons a Penguin Commando, dealing spiritual damage equal to [%] of The Penguin's Attack to an enemy (no penguins are harmed in the process), with a [50%] base chance to inflict one stack of [Burning] for [20s].",
+        "image": "./skill_images/icon_hero_skill_Penguin_sub01.png"
+      },
+      {
+        "name": "Bird of Prey",
+        "description": "At the start of the battle, for each [Arkham's Most Wanted] ally present, The Penguin's Attack is increased by [%].",
+        "image": "./skill_images/icon_hero_skill_Penguin_sub02.png"
+      },
+      {
+        "name": "Umbrella Retreat",
+        "description": "Increases The Penguin's Effect Accuracy by [%]. After each Ultimate cast, the next Ultimate summons one extra Penguin Commando, stacking up to four additional commandos.",
+        "image": "./skill_images/icon_hero_skill_Penguin_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Keen Analysis",
+      "description": "Increases all Champions' Spiritual DEF.",
+      "image": "./globalskill_images/ThePenguin_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Oil Spill - Enhanced",
+        "description": "Reduces cooldown of [Bird of Prey].",
+        "image": "./upgrade_images/Penguin_sub01_enhanced.png"
+      },
+      {
+        "name": "Bird of Prey - Enhanced",
+        "description": "Increases The Penguin's Effect Accuracy.",
+        "image": "./upgrade_images/Penguin_sub02_enhanced.png"
+      },
+      {
+        "name": "Umbrella Retreat - Enhanced",
+        "description": "Increases The Penguin's Physical DEF.",
+        "image": "./upgrade_images/Penguin_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "two_face",
+    "name": "Two Face",
+    "tagSynergies": ["arkhams_most_wanted", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "HP"],
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "B",
+    "imageHeadshot": "./headshot_images/two_face.png",
+    "imageFull": "./full_images/TwoFace_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "dart_with_poison_ivy_poison",
+      "tectonic_disruptor",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Two Face has seen his ups and downs in our rankings since the game's launch. His kit bolsters Spirutal damage dealers, and he does Physical damage, so it's a bit counterintuitive. Effectively, he's much more of a supporter for a Joker hypercarry than a true damage dealer, but that synergy with The Joker is what makes him useful. he doesn't see play in PvP, but he's especially useful on the Combat Cycle bosses with multiple targets and Training Simulator.",
+    "ultimate": {
+      "name": "Both Bad Sides",
+      "description": "Two-Face fires with dual assault rifles, dealing Physical DMG equal to [%] of his ATK to enemies within a fan-shaped area in front of him and inflicting one stack of [Panic] for [10s]. [Panic]: The target's Spiritual DEF reduces by [%].",
+      "image": "./skill_images/icon_hero_skill_TwoFace_main.png"
+    },
+    "skills": [
+      {
+        "name": "Shoot You Twice",
+        "description": "Two-Face fires with one assault rifle, dealing Physical DMG equal to [%] of his ATK to enemies within a circular area in front of him.",
+        "image": "./skill_images/icon_hero_skill_TwoFace_sub01.png"
+      },
+      {
+        "name": "Bleed You Dry",
+        "description": "When attacking an enemy inflicted with [Panic], Two-Face has a [50%] chance to inflict one stack of [Bleeding] on the target for [5s]. [Bleeding]: Deals Physical DMG equal to [%] of Two-Face's ATK per second.",
+        "image": "./skill_images/icon_hero_skill_TwoFace_sub02.png"
+      },
+      {
+        "name": "Shot in the Dark",
+        "description": "Two-Face's basic attack has a fixed [50%] chance to attack with an assault rifle, dealing Physical DMG equal to [%] of his ATK. After the start of battle, all [Arkham's Most Wanted] allies gain one stack of [%] DMG Over Time Up every [3s], stacking up to [5] times.",
+        "image": "./skill_images/icon_hero_skill_TwoFace_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Lawyer's Advice",
+      "description": "Increases [Arkham's Most Wanted] Champions' ATK.",
+      "image": "./globalskill_images/TwoFace_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Shoot You Twice - Enhanced",
+        "description": "Reduces cooldown of [Shoot You Twice].",
+        "image": "./upgrade_images/TwoFace_sub01_enhanced.png"
+      },
+      {
+        "name": "Bleed You Dry - Enhanced",
+        "description": "Increases Two-Face's Crit Rate.",
+        "image": "./upgrade_images/TwoFace_sub02_enhanced.png"
+      },
+      {
+        "name": "Shot in the Dark - Enhanced",
+        "description": "Increases Two-Face's ATK.",
+        "image": "./upgrade_images/TwoFace_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "vixen",
+    "name": "Vixen",
+    "tagSynergies": ["birds_of_prey", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["Energy Gain Bonus", "P DEF", "S DEF"],
+    "class": "Supporter",
+    "rarity": "Legendary",
+    "tier": "D",
+    "imageHeadshot": "./headshot_images/vixen.png",
+    "imageFull": "./full_images/Vixen_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards"
+    ],
+    "recommendedLegacyPieces": ["starheart_staff", "coluan_force_field_belt"],
+    "quantumsTake": "Vixen is a champion with some very strong synergies for new players on fresh servers, but she falls off incredibly fast due to the fact that Birds of Prey is not a meta faction and there are much better Mythic and Limited Mythic supports you can unlock in your first month, such as Cyborg. I wouldn't invest too much force into her, but she does have some early usefulness.",
+    "ultimate": {
+      "name": "King of Beasts",
+      "description": "Increases ATK of all allies within range by 15% for 10s",
+      "image": "./skill_images/icon_hero_skill_Vixen_main.png"
+    },
+    "skills": [
+      {
+        "name": "Familiar",
+        "description": "Increases ATK of an ally by 20% for 10s",
+        "image": "./skill_images/icon_hero_skill_Vixen_sub01.png"
+      },
+      {
+        "name": "Raptor Attack",
+        "description": "Deal Damage equal to 200% of ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_Vixen_sub02.png"
+      },
+      {
+        "name": "Fly High",
+        "description": "At start of battle, increases self Dodge by 4%",
+        "image": "./skill_images/icon_hero_skill_Vixen_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Rhino Hide",
+      "description": "Increases all Champions' HP.",
+      "image": "./globalskill_images/Vixen_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Familiar - Enhanced",
+        "description": "Reduces cooldown of [Familiar].",
+        "image": "./upgrade_images/Vixen_sub01_enhanced.png"
+      },
+      {
+        "name": "Raptor Attack - Enhanced",
+        "description": "Reduces cooldown of [Raptor Attack].",
+        "image": "./upgrade_images/Vixen_sub02_enhanced.png"
+      },
+      {
+        "name": "Fly High - Enhanced",
+        "description": "Increases Vixen's Physical DEF.",
+        "image": "./upgrade_images/Vixen_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "wonder_woman",
+    "name": "Wonder Woman",
+    "tagSynergies": [
+      "justice_league",
+      "justice_league_dark",
+      "metahuman",
+      "amazons"
+    ],
+    "damageType": "Physical",
+    "gameModes": [
+      "Training Simulator",
+      "Meta Brawl",
+      "Vehicle Combat",
+      "3v3",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["HP", "P DEF"],
+    "class": "Guardian",
+    "rarity": "Legendary",
+    "tier": "A",
+    "imageHeadshot": "./headshot_images/wonder_woman.png",
+    "imageFull": "./full_images/WonderWoman_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Green, Blue, Purple, Yellow)",
+      "Random Legendary Shards",
+      "Meta Brawl Store (Legendary or Mythic)"
+    ],
+    "recommendedLegacyPieces": [
+      "amazonian_alloy_shield",
+      "gabriel_horn",
+      "improved_fear_gas_vial"
+    ],
+    "quantumsTake": "Wonder Woman is one of the first champions you're given as you start the game's main campaign, and she maintains her usefulness in your roster well into the late game. With the new Amazons tagged champions being added into the game, she now fits with Justice League, Justice League Dark, or Amazons, making her one of the most verstile champions available. Her stuns can easily win PvP fights, and her tankiness lends her to effective use in Training Simulator as well. Her biggest weakness is Combat Cycle. Note: Once Wonder Woman ascends to Mythic, her shards can currently only be obtained from the Meta Brawl store.",
+    "ultimate": {
+      "name": "Bracelets of Submission",
+      "description": "Deal Physical DMG equal to 120% of ATK to enemies within fan-shaped area and [Stunning] them for 2s",
+      "image": "./skill_images/icon_hero_skill_WonderWoman_main.png"
+    },
+    "skills": [
+      {
+        "name": "Amazonian Shield",
+        "description": "Wonder Woman infuses her shield with divine power, granting [Divine Shield] to the ally with the lowest HP percentage for 8s. [Divine Shield]: Absorbs damage equal to [%] of Wonder Woman's Max HP.",
+        "image": "./skill_images/icon_hero_skill_WonderWoman_sub01.png"
+      },
+      {
+        "name": "Lasso of Truth",
+        "description": "Wonder Woman throws her Lasso of Truth, dealing Physical DMG equal to [%] of her ATK to an enemy and inflicting [Stunned] on them for 3s.",
+        "image": "./skill_images/icon_hero_skill_WonderWoman_sub02.png"
+      },
+      {
+        "name": "Amazon Goddess",
+        "description": "When HP is below [%], increases Wonder Woman's Physical DEF by [%]",
+        "image": "./skill_images/icon_hero_skill_WonderWoman_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Olympian - Athena's Aegis",
+      "description": "Increases all Champions' Physical DEF.",
+      "image": "./globalskill_images/WonderWoman_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Amazonian Shield - Enhanced",
+        "description": "Increses the [%] of Shield Up.",
+        "image": "./upgrade_images/WonderWoman_sub01_enhanced.png"
+      },
+      {
+        "name": "Lasso of Truth - Enhanced",
+        "description": "Increases Wonder Woman's Physical DEF.",
+        "image": "./upgrade_images/WonderWoman_sub02_enhanced.png"
+      },
+      {
+        "name": "Amazon Goddess - Enhanced",
+        "description": "Increases Wonder Woman's ATK.",
+        "image": "./upgrade_images/WonderWoman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "krypto",
+    "name": "Krypto",
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Healing Bonus"],
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "S",
+    "tagSynergies": ["superman_family", "metahuman"],
+    "imageHeadshot": "./headshot_images/Krypto.png",
+    "imageFull": "./full_images/Krypto_full.png",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Weekly Login"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "robot_duplicate",
+      "starheart_staff"
+    ],
+    "quantumsTake": "Krypto is easily one of the best healers in the game, and one of the most impactful champions released so far. He has a unique kit in that he does no damage. Instead, he provides massive amounts of burst healing, healing over time, and shields. In addition, he is very important as the primary engine for generating Krypton Energy for the Superman Family team. In my opinion, he's a must build champion for everyone from non-spenders to whales. His biggest limitation is that in PvP he waits several seconds to use his ultimate after it's ready to be used. This results in a lot of dropped battles and creates more of a coin flip situation in mirror matches and against opponents that need to be shut down early. But, if you're able to cast his ultimate, he can knock down enemies for a short duration which effectivley acts as a stun. Even given the limitation with his ultimate timing, he should still be used in PvP, and he's incredible in Combat Cycle as well, particularly since he can pop addiitonal tires on Killer Tank and stun summoned enemies on Merciless.",
+    "ultimate": {
+      "name": "Zoomies",
+      "description": "Krypto zips around excitedly, knocking down enemies in his path and reducing their ATK by [X]%. He also heals allies in his path for [X]% of his ATK per second for 5 seconds. Passive: Instead of attacking, Krypto sniffs out buried bones across the battlefield. Each bone he finds grants him a large amount of Energy and increases his healing effect by 5%, stacking up to 50%.",
+      "image": "./skill_images/icon_hero_skill_Krypto_main.png"
+    },
+    "skills": [
+      {
+        "name": "Good Boy!",
+        "description": "Krypto heals allies within range for [X]% of his ATK.",
+        "image": "./skill_images/icon_hero_skill_Krypto_sub01.png"
+      },
+
+      {
+        "name": "Therapy Dog",
+        "description": "When an ally drops below 50% HP, Krypto flies to their side, granting a shield equal to [X]% of his ATK and healing them for [X]% of his ATK. This skill has a 10 second cooldown after Krypto actively casts it.",
+        "image": "./skill_images/icon_hero_skill_Krypto_sub02.png"
+      },
+
+      {
+        "name": "Best Super-Friend",
+        "description": "At the start of battle, Krypto gains 50% bonus HP and increases all allies' Physical and Spiritual DEF by 15% of his own. Casting his Ultimate generats [X] [Krypton Energy], and if Krypto is defeated, this effect transfers to the nearest [Superman Family] ally.",
+        "image": "./skill_images/icon_hero_skill_Krypto_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Cuddle Charge",
+      "description": "Increases [Superman Family] Champions' ATK and Physical DEF.",
+      "image": "./globalskill_images/Krypto_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Good Boy! - Enhanced",
+        "description": "Increases healing amount of [Good Boy!].",
+        "image": "./upgrade_images/Krypto_sub01_enhanced.png"
+      },
+      {
+        "name": "Therapy Dog - Enhanced",
+        "description": "Increases healing amount of [Therapy Dog].",
+        "image": "./upgrade_images/Krypto_sub02_enhanced.png"
+      },
+      {
+        "name": "Best Super-Friend - Enhanced",
+        "description": "Increases Krypto's ATK.",
+        "image": "./upgrade_images/Krypto_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "rasalghul",
+    "name": "Ra's al Ghul",
+    "damageType": "Physical",
+    "gameModes": ["Meta Brawl", "3v3", "Vehicle Combat", "Story Mode"],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Assassin",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "tagSynergies": ["league_of_assassins", "metahuman"],
+    "imageHeadshot": "./headshot_images/rasalghul.png",
+    "imageFull": "./full_images/RasalGhul_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "demons_sword",
+      "t_sphere_weakness_analyzer",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Ra's al Ghul has a very unique kit, allowing him to sacrifice his HP in order to deal more damage. He's a champion that needs to be protected by shields in order to work properly. I've showcased an LOA team with him, Talia, Fate, Hippolyta, and Deathstroke, where he can drop down to 1 HP and have a constant shield on him, which allows him to shut down LoD. He's incredible in PvP because of how his kit works, but tapers off in other aspects of the game. I think he will be a much more well-rounded champion as we get more LoA champions.",
+    "ultimate": {
+      "name": "Wrath of the Demon",
+      "description": "Ra's al Ghul draws power from the Lazarus Pit, sacrificing 15% of his Max HP (won't reduce HP below 1) to deal Physical DMG equal to [X]% of his ATK to an enemy. For every 1% of Max HP lost, the DMG is increased by [X]%. Passive: Before each basic attack, Ra's al Ghul sacrifices 4% of hs Max HP (won't reduce HP below 1) to deal addiitonal Physical DMG equal to [X]% of his ATK to the target.",
+      "image": "./skill_images/icon_hero_skill_RasalGhul_main.png"
+    },
+    "skills": [
+      {
+        "name": "Assassin's Strike",
+        "description": "Ra's al Ghul sacrifices [X]% of his Max HP (won't reduce HP below 1) and dashes behind the farthest enemy, dealing Physical DMG equal to [X]% of his ATK to them.",
+        "image": "./skill_images/icon_hero_skill_RasalGhul_sub01.png"
+      },
+
+      {
+        "name": "To the Death",
+        "description": "In battle, for every [X]% of Max HP lost, Ra's al Ghul's ATK increases by [X]%.",
+        "image": "./skill_images/icon_hero_skill_RasalGhul_sub02.png"
+      },
+
+      {
+        "name": "Lazarus's Rise",
+        "description": "Ra's al Ghul's Spiritual RES increases by [X]%. When taking lethal damage, Ra's al Ghul enters the Lazarus Pit to recover. If all allies (excluding summons) are defeated, he returns and immediately casts his Ultimate, during which he's invulnerable.",
+        "image": "./skill_images/icon_hero_skill_RasalGhul_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Lazarus Effect",
+      "description": "Increases all Champions' HP and [Assassin] Champions' HP.",
+      "image": "./globalskill_images/Ras_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Assassin's Strike - Enhanced",
+        "description": "Reduces cooldown of [Assassin's Strike].",
+        "image": "./upgrade_images/Ras_sub01_enhanced.png"
+      },
+      {
+        "name": "To the Death - Enhanced",
+        "description": "Increases Ra's al Ghul's Energy gain.",
+        "image": "./upgrade_images/Ras_sub02_enhanced.png"
+      },
+      {
+        "name": "Lazarus's Rise - Enhanced",
+        "description": "Increases Ra's al Ghul's Crit Rate.",
+        "image": "./upgrade_images/Ras_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "starfire",
+    "name": "Starfire",
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "Healing Bonus"],
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "tagSynergies": ["outsiders", "teen_titans", "energy_wielder"],
+    "imageHeadshot": "./headshot_images/starfire.png",
+    "imageFull": "./full_images/Starfire_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "starfires_starbolts",
+      "mind_control_hat",
+      "cocoon_gun"
+    ],
+    "quantumsTake": "Starfire is the first Limited Mythic healer added to the game, and accordingly has pretty powerful stat scaling. She does perform best when used with Titans, particularly Nightwing, but she can be inserted into a lot of lineups and be quite efficient. She's good in both PvP and Combat Cycle and has solidified herself as an S-tier champion. You can get away with taking her to purple stars for most players.",
+    "ultimate": {
+      "name": "Energy Absorption Field",
+      "description": "Starfire converts ultraviolet light energy into an Energy Absorption Field, reducing damage taken by allies inside by [X]%, with [Outsiders] allies receiving [X]% extra DMG Reduction. The Field lasts for 20 seconds. If Starfire casts her Ultimate again while the Energy Absorption Field is active, it enhances the Field, further reducing allies' damage taken by [X]%, stacking up to 3 times.",
+      "image": "./skill_images/icon_hero_skill_Starfire_main.png"
+    },
+    "skills": [
+      {
+        "name": "Starbolts",
+        "description": "Starfire unleashes a beam of light, dealing Spiritual DMG equal to [X]% of her ATK to enemies within range and reducing their ATK by [X]% for 8 seconds.",
+        "image": "./skill_images/icon_hero_skill_Starfire_sub01.png"
+      },
+
+      {
+        "name": "Healing Energy",
+        "description": "While the Energy Absorption Field is active, allies inside it restores HP equal to [X]% of Starfire's ATK per second.",
+        "image": "./skill_images/icon_hero_skill_Starfire_sub02.png"
+      },
+
+      {
+        "name": "Precognition",
+        "description": "Starfire's Spiritual DEF increases by [X]%. At the start of battle, Starfire gains [X] Energy for each [Outsiders] ally present.",
+        "image": "./skill_images/icon_hero_skill_Starfire_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Empathic Perception",
+      "description": "Increases all Champions' Spiritual DEF and [Supporter] Champions' ATK.",
+      "image": "./globalskill_images/Starfire_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Starbolts - Enhanced",
+        "description": "Reduces cooldown of [Starbolts].",
+        "image": "./upgrade_images/Starfire_sub01_enhanced.png"
+      },
+      {
+        "name": "Healing Energy - Enhanced",
+        "description": "Increases Starfire's ATK.",
+        "image": "./upgrade_images/Starfire_sub02_enhanced.png"
+      },
+      {
+        "name": "Precognition - Enhanced",
+        "description": "Increases Starfire's Spiritual DEF.",
+        "image": "./upgrade_images/Starfire_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "taliaalghul",
+    "name": "Talia al Ghul",
+    "damageType": "Physical",
+    "gameModes": ["Combat Cycle", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["ATK", "Crit Rate", "Crit DMG"],
+    "class": "Assassin",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "tagSynergies": ["league_of_assassins", "metahuman"],
+    "imageHeadshot": "./headshot_images/TaliaalGhul.png",
+    "imageFull": "./full_images/TaliaalGhul_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "fangs_of_the_demon",
+      "gas_derringer",
+      "tectonic_disruptor"
+    ],
+    "quantumsTake": "Talia operates similarly to Ra's with her ability to sacrifice HP to deal damage, and she has the ability to heal herself when enemies are defeated. I would still characterize her as more of a niche champion because her ultimate is too conditional. She does work with Ra's in high-level PvP, but she's more beneficial in Combat Cycle and other PvE modes where champions remain above 50% HP for longer. Personally, I do not think she is worth the investment for non-spenders and lite spenders at this time.",
+    "ultimate": {
+      "name": "Unleashed Rage",
+      "description": "Talia al Ghul draws power from the Lazarus Pit, sacrificing []% of her current HP to deal Physical DMG equal to []% of her ATK to nearby enemies. Targets with more than 50% HP remaining take []% more DMG.",
+      "image": "./skill_images/icon_hero_skill_taliaalghul_main.png"
+    },
+    "skills": [
+      {
+        "name": "Shadow Strike",
+        "description": "Talia al Ghul vanishes in a cloud of smoke, then reappears behind her target to perform a spinning slash, dealing Physical DMG equal to []% of her ATK to enemies within range.",
+        "image": "./skill_images/icon_hero_skill_taliaalghul_sub01.png"
+      },
+
+      {
+        "name": "Recharge",
+        "description": "Talia al Ghul draws power from the Lazarus Pit, sacrificing []% of her Max HP to gain [] Energy.",
+        "image": "./skill_images/icon_hero_skill_taliaalghul_sub02.png"
+      },
+
+      {
+        "name": "Lazarus Boost",
+        "description": "Talia al Ghul receives the Lazarus Pit's blessing, increasing her Crit Rate by []%. When an enemy (excluding summons) is defeated, she restores []% of her Max HP for each [League of Assassings] ally present.",
+        "image": "./skill_images/icon_hero_skill_taliaalghul_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Coordinated Ambush",
+      "description": "Increases all Champions' ATK and [Assassin] Champions' ATK.",
+      "image": "./globalskill_images/Talia_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Shadow Strike - Enhanced",
+        "description": "Reduces cooldown of [Shadow Strike].",
+        "image": "./upgrade_images/Talia_sub01_enhanced.png"
+      },
+      {
+        "name": "Recharge - Enhanced",
+        "description": "Increases Talia al Ghul's Crit DMG.",
+        "image": "./upgrade_images/Talia_sub02_enhanced.png"
+      },
+      {
+        "name": "Lazarus Boost - Enhanced",
+        "description": "Increases Talia al Ghul's ATK.",
+        "image": "./upgrade_images/Talia_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "zatanna",
+    "name": "Zatanna",
+    "tagSynergies": ["justice_league_dark", "energy_wielder"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "ATK", "HP"],
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageHeadshot": "./headshot_images/zatanna.png",
+    "imageFull": "./full_images/Zatanna_full.png",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "wand_of_the_magi",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Zatanna is one of the best supporter champions in the game, especially since she can actually deal a little bit of damage on top of being there to super charge your Constantine. You will hear a lot of people say that she doesn't require a lot of investment, and while it's generally true that she performs well enough at low blue stars or even 5 white stars, getting her to purple stars or better will really ramp up her kit. In my book, she's a certified Whale, though you can get away without buying her legacy piece if you're a non-spender or lite spender.",
+    "ultimate": {
+      "name": "Eht Wohs Tsum Og No",
+      "description": "Zatanna creates a magical stage that increases all allies' damage dealth by [%] for [12s].",
+      "image": "./skill_images/icon_hero_skill_ZatannaZatara_main.png"
+    },
+    "skills": [
+      {
+        "name": "Elbound Elbourt",
+        "description": "Zatanna creates a clone that inherits [%] of her Attack and [%] of her HP. The clone fights independently for up to [10s], dealing single-target spiritual damage equal to [%] of the clone's Attack with ranged basic attacks.",
+        "image": "./skill_images/icon_hero_skill_ZatannaZatara_sub01.png"
+      },
+      {
+        "name": "Delgnis Tuo",
+        "description": "At the start of battle, Zatanna creates a clone that inherits [%] of her Attack and [%] of her HP. The clone fights independently for up to [10s], dealing single-target spiritual damage equal to [%] of the clone's Attack with ranged basic attacks.",
+        "image": "./skill_images/icon_hero_skill_ZatannaZatara_sub02.png"
+      },
+      {
+        "name": "Epon",
+        "description": "After the start of battle, all allies gain [%] Spiritual Amplification every [4s], stacking up to [%]. The bonus is doubled for [Justice League Dark] allies.",
+        "image": "./skill_images/icon_hero_skill_ZatannaZatara_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Ygrene Niag",
+      "description": "Increases all Champions' Physical DEF and [Supporter] Champions' Energy gain bonus.",
+      "image": "./globalskill_images/Zatanna_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Elbound Elbourt - Enhanced",
+        "description": "Reduces cooldown of Elboud Elbuort.",
+        "image": "./upgrade_images/Zatanna_sub01_enhanced.png"
+      },
+      {
+        "name": "Delgnis Tuo - Enhanced",
+        "description": "At the start of battle, Zatanna gains [X] Energy.",
+        "image": "./upgrade_images/Zatanna_sub02_enhanced.png"
+      },
+      {
+        "name": "Epon - Enhanced",
+        "description": "Increases Zatanna's Physical DEF.",
+        "image": "./upgrade_images/Zatanna_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "hippolyta",
+    "name": "Queen Hippolyta",
+    "tagSynergies": ["amazons", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["P DEF", "HP", "Energy Gain Bonus"],
+    "class": "Guardian",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageFull": "./full_images/Hippolyta_full.png",
+    "imageHeadshot": "./headshot_images/queen_hippolyta.png",
+    "quantumsTake": "Queen Hippolyta is the first new Amazons tagged champion to come to the game, and her kit is built around defensive support through granting shields to her teammates and absorbing damage taken by them. Her ultimate is a channeled ability, but it grants her Super Armor, meaning she cannot be interrupted during the cast. We expect her to be used primarily with Amazons once the rest of that team is formed, but she is also one of the more plug-and-play champions we've seen in quite a while. Some have dubbed her Doctor Fate 2.0 and I think that's an apt comparison. I think all rosters should try to incorporate her into their farming plans because she is quite good even at blue stars without her unique legacy piece, but if you want to use her in high-level Meta Brawl or 3v3, you'll need to get her to Yellow 5 with a White 5 unique legacy piece, or Red 5, if you want her to instantly use her ultimate at the start of battle.",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "themysciran_sceptre",
+      "amazonian_alloy_shield",
+      "improved_fear_gas_vial"
+    ],
+    "ultimate": {
+      "name": "Athena's Shield",
+      "description": "Queen Hippolyta stands firm and raises her sceptre, radiating divine power. Absorbs [%] of DMG taken by allies within range for [s], during which she gains [Super Armor] and cannot recover Energy. Also grants a shield equal to [%] of her Physical SEF to all allies for [s]. [Super Armor]: Prevents actions or skills from being interrupted by enemy attacks.",
+      "image": "./skill_images/icon_hero_skill_Hippolyta_main.png"
+    },
+    "skills": [
+      {
+        "name": "Luck of Tyche",
+        "description": "Queen Hippolyta grants a shield equal to [%] of her Physical DEF to the ally with the lowest HP percentage for [s]. The shield strength is increased by [%] for [Amazons] allies.",
+        "image": "./skill_images/icon_hero_skill_Hippolyta_sub01.png"
+      },
+      {
+        "name": "Hera's Protection",
+        "description": "For the first 20s of battle, all allies' Physical DEF is increased by [%]. [Amazons] allies gain an additional [%] for each [Amazons] ally present.",
+        "image": "./skill_images/icon_hero_skill_Hippolyta_sub02.png"
+      },
+      {
+        "name": "Gaea's Gift",
+        "description": "At the start of battle, Queen Hippolyta gains [#] Energy. After casting her Ultimate, she takes [%] less DMG from absorption and [%] less from all other sources for 8s.",
+        "image": "./skill_images/icon_hero_skill_Hippolyta_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Queen's Patronage",
+      "description": "Increases all Champions' HP by [%] and [Guardian] Champions' Physical DEF by [%].",
+      "image": "./globalskill_images/Hippolyta_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Luck of Tyche - Enhanced",
+        "description": "Increases the Shield Strength of [Luck of Tyche].",
+        "image": "./upgrade_images/hippolyta_sub01_enhanced.png"
+      },
+      {
+        "name": "Hera's Protection - Enhanced",
+        "description": "Increases Queen Hippolyta's Max HP.",
+        "image": "./upgrade_images/hippolyta_sub02_enhanced.png"
+      },
+      {
+        "name": "Gaea's Gift - Enhanced",
+        "description": "Increases Queen Hippolyta's Physical DEF.",
+        "image": "./upgrade_images/hippolyta_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "swamp_thing",
+    "name": "Swamp Thing (Alec Holland)",
+    "tagSynergies": ["justice_league_dark", "metahuman"],
+    "damageType": "Spiritual",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "HP", "S DEF"],
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageFull": "./full_images/SwampThing_full.png",
+    "imageHeadshot": "./headshot_images/swampthing.png",
+    "quantumsTake": "Swamp Thing's kit makes it seem like he should be a damage-dealing warrior, but it turns out that his usefulness is more as a support to keep Constantine alive, who is your true win-condition for JLD. His ultimate and first basic skill will both reduce the enemy's current Energy, which will reduce the amount of times they can attack in battle. On top of that, Swamp Thing's [Swamp] ability will create an area of effect damage reduction zone, and he will summon it to start battle. His unique legacy piece Antler Crown is a must-use for him, too, because in addition to providing passive healing over time for the duration of battle, it will further limit your opponent by reducing their ATK and Crit Rate.",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "antler_crown",
+      "gabriel_horn",
+      "improved_fear_gas_vial"
+    ],
+    "ultimate": {
+      "name": "Overgrowth",
+      "description": "Swamp Thing leaps into the air, dealing Spiritual DMG equal to [%] of his ATK to enemies in a circular area and reducing their current Energy by [%]. [Passive]: At the start of battle, Swamp Thing reduces all enemies' curent Energy by [%].",
+      "image": "./skill_images/icon_hero_skill_SwampThing_main.png"
+    },
+    "skills": [
+      {
+        "name": "Vine Lash",
+        "description": "Swamp Thing lashes out with his vines, dealing Spiritual DMG equal to [%] of his ATK to an enemy and reducing their current Energy by [%].",
+        "image": "./skill_images/icon_hero_skill_SwampThing_sub01.png"
+      },
+      {
+        "name": "Natural Remedy",
+        "description": "After the start of battle, Swamp Thing gains [%] Spiritual AMP every 5s, stacking up to 3 times.",
+        "image": "./skill_images/icon_hero_skill_SwampThing_sub02.png"
+      },
+      {
+        "name": "Swamp Surge",
+        "description": "At the start of battle, Swamp Thing summons [Swamp] for 10s. Its effect doubles if at least 3 [Justice League Dark] allies are present.",
+        "image": "./skill_images/icon_hero_skill_SwampThing_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Green Whisper",
+      "description": "Increases all Champions' Spiritual DEF by [%], with an additional [%] for [Warrior] Champions.",
+      "image": "./globalskill_images/SwampThing_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Vine Lash - Enhanced",
+        "description": "Reduces cooldown of [Vine Lash].",
+        "image": "./upgrade_images/swampthing_sub01_enhanced.png"
+      },
+      {
+        "name": "Natural Remedy - Enhanced",
+        "description": "Increases Swamp Thing's Spiritual DEF.",
+        "image": "./upgrade_images/swampthing_sub02_enhanced.png"
+      },
+      {
+        "name": "Swamp Surge - Enhanced",
+        "description": "Increases Swamp Thing's Crit RES.",
+        "image": "./upgrade_images/swampthing_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "DMWW",
+    "name": "Wonder Woman Death Metal (Diana Prince)",
+    "tagSynergies": ["amazons", "metahuman", "deathmetal"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Physical PEN", "P DEF", "ATK", "Crit Rate"],
+    "class": "Warrior",
+    "rarity": "Iconic",
+    "tier": "S",
+    "imageFull": "./full_images/dmww_full.png",
+    "imageHeadshot": "./headshot_images/dmww.png",
+    "quantumsTake": "Death Metal Wonder Woman is one of the most powerful AND most fun champions in the game. Unfortunately, she was behind a massive paywall at the time of her release, and you cannot obtain her in any way unless they do a re-run of her special event. However, if you were fortunate enough to obtain her at purple stars or better, she can be plugged into any team in any game mode for a huge boost. Her kit heavily relies on high Physical DEF and it ramps the more [Amazons] champions you use. Her legacy piece is a must buy for her and provides a large amount of Crit Rate and additional damage output, as well as a large shield.",
+    "sourcesWhereAvailable": ["Special Event"],
+    "recommendedLegacyPieces": ["hells_distortion"],
+    "ultimate": {
+      "name": "Peak Intensity",
+      "description": "Wonder Woman Death Metal enters her ultimate form, continuously consuming Energy until it's depleted (drain rate increases over time). While active, she gains [Super Armor], can recover Energy, and enhances her basic attacks with chain lightning that arcs to up to [5] enemies (including her target), dealing Physical DMG equal to [%] of her ATK plus [%] of her Physical DEF. Upon casting her Ultimate, Wonder Woman Death Metal gains 100% bonus Physical DEF for each [Amazons] ally present, lasting until the state ends. [Super Armor]: Prevents actions or skills from being interrupted by enemy attacks.",
+      "image": "./skill_images/icon_hero_skill_spwonderwoman_main.png"
+    },
+    "skills": [
+      {
+        "name": "Metalwork",
+        "description": "Wonder Woman Death Metal swings her chainsaw, dealing physical damage equal to [%] of her Attack plus [%] of her Physical Defense to nearby enemies. After she casts her Ultimate, this skill is no longer used actively for the duration. Instead, it increases her chain lightning DMG by [%].",
+        "image": "./skill_images/icon_hero_skill_spwonderwoman_sub01.png"
+      },
+      {
+        "name": "Wrought Iron",
+        "description": "Increases Wonder Woman Death Metal's Physical PEN by [%]. When an enemy is defeated nearby, she restores [x] Energy.",
+        "image": "./skill_images/icon_hero_skill_spwonderwoman_sub02.png"
+      },
+      {
+        "name": "Bonds of Sisterhood",
+        "description": "Every [5s] after the start of the battle, Physical DMG taken by [Amazons] Champions is reduced by [%], stacking up to [x] times.",
+        "image": "./skill_images/icon_hero_skill_spwonderwoman_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Heavy Mettle",
+      "description": "Increases all Champions' Physical DEF by [%] and [Warrior] Champions' ATK by [%].",
+      "image": "./globalskill_images/spwonderwoman_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Metalwork - Enhanced",
+        "description": "Casting an active skill additionally grants [x] Energy.",
+        "image": "./upgrade_images/spwonderwoman_sub01_enhanced.png"
+      },
+      {
+        "name": "Wrought Iron - Enhanced",
+        "description": "Increases Wonder Woman Death Metal's Attack by [%].",
+        "image": "./upgrade_images/spwonderwoman_sub02_enhanced.png"
+      },
+      {
+        "name": "Bonds of Sisterhood - Enhanced",
+        "description": "Increases Wonder Woman Death Metal's Physical Defense by [%].",
+        "image": "./upgrade_images/spwonderwoman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "donna_troy",
+    "name": "Wonder Girl (Donna Troy)",
+    "tagSynergies": ["amazons", "teen_titans", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": ["Vehicle Combat", "Training Simulator", "Story Mode"],
+    "transmutePriorities": ["P DEF", "Physical PEN", "ATK"],
+    "class": "Warrior",
+    "rarity": "Mythic",
+    "tier": "B",
+    "imageFull": "./full_images/DonnaTroy_full.png",
+    "imageHeadshot": "./headshot_images/DonnaTroy.png",
+    "quantumsTake": "Wonder Girl was initially panned as a required unit for Amazons, and many wanted that to be the case. Unfortunately, she has turned out to be a very mediocre champion. You could certainly run her in a full Amazons team to try and add a little extra DPS for your DMWW, but she just doesn't really have a spot in the meta right now, and is not worth investing in unless you're a whale who was going to max her out otherwise. She's capable of some chip damage, but her true strength is in making her allies more powerful.",
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shard",
+      "Custom Mythic Shard",
+      "Daily Deals"
+    ],
+    "recommendedLegacyPieces": [
+      "gabriel_horn",
+      "amazonian_alloy_shield",
+      "improved_fear_gas_vial"
+    ],
+    "ultimate": {
+      "name": "Amazonian Resolve",
+      "description": "Donna Troy charges at an enemy and slashes, knocking them down, dealing Physical DMG equal to [%] of her ATK, and applying [x] stacks of [Astral Willpower]. Also permanently reduces the target's Physical DEF by [%] (non-stackable). When an enemy reaches [x] stacks of [Astral Willpower], they take Physical DMG equal to [%] of Donna's ATK plus [%] of her Physical DEF.",
+      "image": "./skill_images/icon_hero_skill_DonnaTroy_main.png"
+    },
+    "skills": [
+      {
+        "name": "Lasso of Persuasion",
+        "description": "Donna Troy unleases a flurry of lashes at an enemy, dealing Physical DMG equal to [%] of her ATK plus [%] of her Physical DEF and applying [x] stacks of [Astral Willpower].",
+        "image": "./skill_images/icon_hero_skill_DonnaTroy_sub01.png"
+      },
+      {
+        "name": "Divine Protection",
+        "description": "When an enemy reaches [x] stacks of [Astral Willpower], Donna Troy gains a shield equal to [%] of her Max HP for [10s], and all [Amazons] allies' DMG dealt is increased by [%] for [10s].",
+        "image": "./skill_images/icon_hero_skill_DonnaTroy_sub02.png"
+      },
+      {
+        "name": "Shield of Unity",
+        "description": "At the start of battle, all [Amazons] and [Teen Titans] allies gain [%] Physical DEF Up.",
+        "image": "./skill_images/icon_hero_skill_DonnaTroy_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Battle Harmony",
+      "description": "Increases [Amazons] Champions' Physical DEF by [%].",
+      "image": "./globalskill_images/DonnaTroy_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Lasso of Persuasion - Enhanced",
+        "description": "Reduces cooldown of [Lasso of Persuasion].",
+        "image": "./upgrade_images/DonnaTroy_sub01_enhanced.png"
+      },
+      {
+        "name": "Divine Protection - Enhanced",
+        "description": "Increases Donna Troy's Attack by [%].",
+        "image": "./upgrade_images/DonnaTroy_sub02_enhanced.png"
+      },
+      {
+        "name": "Shield of Unity - Enhanced",
+        "description": "Increases Donna Troy's Physical DEF by [%].",
+        "image": "./upgrade_images/DonnaTroy_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "nurse_harley",
+    "name": "Nurse Harley (Harley Quinn)",
+    "tagSynergies": ["birds_of_prey", "arkhams_most_wanted", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": [
+      "Physical PEN",
+      "Energy Gain Bonus",
+      "ATK",
+      "Crit Rate"
+    ],
+    "class": "Firepower",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageFull": "./full_images/NurseHarley_full.png",
+    "imageHeadshot": "./headshot_images/NurseHarley.png",
+    "quantumsTake": "Nurse Harley has proven herself to be a formidable champion in the Arkham's Most Wanted lineup. The issue is she costs more than any champion in the game to max out, as she is the current VIP track reward, and her legacy piece (which is also paywalled) is 100% required for her to perform as intended. I really like her kit and the damage over time mechanics, and she's a visually fun champion with the syringe gun. We can only hope she becomes more affordable over time.",
+    "sourcesWhereAvailable": ["VIP Perks"],
+    "recommendedLegacyPieces": [
+      "psycho_syringe",
+      "tectonic_disruptor",
+      "gas_derringer"
+    ],
+    "ultimate": {
+      "name": "Corrosive Sanity",
+      "description": "Nurse Harley enters [Self-Actualization] for [13s]. While in this state, her basic attacks fire corrosive shots, each dealing physical damage equal to [%] of her Attack and inflicting [2] stacks of [Corrosion].",
+      "image": "./skill_images/icon_hero_skill_NurseHarley_main.png"
+    },
+    "skills": [
+      {
+        "name": "Insanity Erosion",
+        "description": "Deals physical damage equal to [%] of Attack and inflicts [4] stacks of [Corrosion].",
+        "image": "./skill_images/icon_hero_skill_NurseHarley_sub01.png"
+      },
+      {
+        "name": "Madness Actualization",
+        "description": "Nurse Harley's active attacks deal [%] more damage. For every stack of debuffs on the target, the damage is increased by an additional [%]. The combined bonus is capped at [%].",
+        "image": "./skill_images/icon_hero_skill_NurseHarley_sub02.png"
+      },
+      {
+        "name": "Arkham's Awakening",
+        "description": "At the start of battle, Nurse Harley gains one stack of [Attack Growth] for each [Arkham's Most Wanted] ally present, up to [5] stacks. Each stack increases her Attack by [%] every second, up to a maximum increase of [%]..",
+        "image": "./skill_images/icon_hero_skill_NurseHarley_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Adrenaline Frenzy",
+      "description": "Increases all Champions' ATK by [%], with an additional [%] for [Firepower] Champions.",
+      "image": "./globalskill_images/NurseHarley_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Insanity Erosion - Enhanced",
+        "description": "Reduces cooldown of [Insanity Erosion].",
+        "image": "./upgrade_images/NurseHarley_sub01_enhanced.png"
+      },
+      {
+        "name": "Madness Actualization - Enhanced",
+        "description": "Increases Nurse Harley's Crit DMG.",
+        "image": "./upgrade_images/NurseHarley_sub02_enhanced.png"
+      },
+      {
+        "name": "Arkham's Awakening - Enhanced",
+        "description": "Increases Nurse Harley's Crit Rate.",
+        "image": "./upgrade_images/NurseHarley_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "the_riddler",
+    "name": "The Riddler",
+    "tagSynergies": ["arkhams_most_wanted", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Energy Gain Bonus", "Healing Bonus", "ATK"],
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "imageFull": "./full_images/TheRiddler_full.png",
+    "imageHeadshot": "./headshot_images/TheRiddler.png",
+    "quantumsTake": "The Riddler certainly shook up the meta when he appeared in the bleed for early servers. Once he shows up, your server will likely already be in a pretty substantial shield meta. Any supporter that has a shield is going to be favored over raw healing, and with Conundrum Cane The Riddler can actually do both! What we love about Riddler's kit is that he can also debuff your enemy. While early in a fight the debuffs are randomized, if you can last through a few of his ultimates, you'll actually be able to max out the stacks of ALL the debuffs he lands. He's an auto include in many top meta PvP lineups.",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "conundrum_cane",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "ultimate": {
+      "name": "The Grand Enigma",
+      "description": "The Riddler unveils his grand enigma, granting all allies a shield equal to [%] of his Attack for [12s].",
+      "image": "./skill_images/icon_hero_skill_Riddler_main.png"
+    },
+    "skills": [
+      {
+        "name": "Riddle Me This",
+        "description": "The Riddler poses a puzzle, inflicting [2] stacks of [Enigma] on each enemy within range. [Enigma]: Randomly applies one of the following (prioritizing effects the target doesn't already have or has the fewest stacks of): (1) Reduces Spiritual AMP by [%] for [10s], stacking up to [4] times; (2) Reduces ATK by [%] for [10s], stacking up to [4] times; and (3) Reduces Physical DEF and Spiritual DEF by [%] for [10s], stacking up to [4] times.",
+        "image": "./skill_images/icon_hero_skill_Riddler_sub01.png"
+      },
+      {
+        "name": "Surprise!",
+        "description": "After The Riddler casts his Ultimate or a skill, there is a [%] chance to inflict additional [Enigma] on all enemies ([3] stacks for the Ultimate, [1] stack for a skill). Affected by Effect Accuracy.",
+        "image": "./skill_images/icon_hero_skill_Riddler_sub02.png"
+      },
+      {
+        "name": "The Arkham Shuffle",
+        "description": "Each [Arkham's Most Wanted] ally present increases the strength of The Riddler's shields by [%]. Lineups with The Riddler are hidden from [preview] in Strategic Challenge and Meta Brawl.",
+        "image": "./skill_images/icon_hero_skill_Riddler_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Riddle Interlude",
+      "description": "Increases all Champions' Physical DEF by [%], with an additional [%] for [Supporter] Champions.",
+      "image": "./globalskill_images/TheRiddler_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Riddle Me This - Enhanced",
+        "description": "Reduces cooldown of [Riddle Me This].",
+        "image": "./upgrade_images/Riddler_sub01_enhanced.png"
+      },
+      {
+        "name": "Surpise! - Enhanced",
+        "description": "Increases the Riddler's Spiritual DEF.",
+        "image": "./upgrade_images/Riddler_sub02_enhanced.png"
+      },
+      {
+        "name": "The Arkham Shuffle - Enhanced",
+        "description": "At the start of battle, The Riddler gains [x] Energy.",
+        "image": "./upgrade_images/Riddler_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "artemis",
+    "name": "Artemis",
+    "tagSynergies": ["amazons", "metahuman"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": ["Physical PEN", "P DEF", "Crit Rate", "Crit DMG"],
+    "class": "Guardian",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageFull": "./full_images/Artemis_full.png",
+    "imageHeadshot": "./headshot_images/Artemis.png",
+    "quantumsTake": "Artemis is a unique champion with a Duel (taunt) mechanic, which makes her a very compelling high-risk-high-reward champion for PvP combat. If she wins her initial duel, it will catapult your team into a victory if you have another high damage win-condition champion, like DMWW. Her unique legacy weapon is a must if you build her, making her an expensive investment.",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "mistress",
+      "amazonian_alloy_shield",
+      "not_so_huge_hammer"
+    ],
+    "ultimate": {
+      "name": "Duel of the Amazons",
+      "description": "Artemis deals physical damage equal to [%] of her ATK plus [%] of her Physical DMG to an enemy, then challenges them to a duel for [10s]. [Duel]: Artemis deals [%] more damage, has {%] less Spiritual DEF, and is immune to control effects. Her target can only attack her with basic attacks.",
+      "image": "./skill_images/icon_hero_skill_Artemis_main.png"
+    },
+    "skills": [
+      {
+        "name": "Blade of Vengeance",
+        "description": "Artemis slashes her target repeatedly, dealing physical DMG equal to [%] of her ATK plus [%] of her Physical DEF.",
+        "image": "./skill_images/icon_hero_skill_Artemis_sub01.png"
+      },
+      {
+        "name": "Lasso of Conquer",
+        "description": "Increases Artemis' Physical DEF by [%]. Also reduces her damage taken by [%] during duels.",
+        "image": "./skill_images/icon_hero_skill_Artemis_sub02.png"
+      },
+      {
+        "name": "Fated Target",
+        "description": "At the start of battle, increases Artemis' ATK and Physical DEF by [%] for each [Amazons] ally present.",
+        "image": "./skill_images/icon_hero_skill_Artemis_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Hunter's Resolve",
+      "description": "Increases all Champions' HP by [%], with an additional [%] for [Guardian] Champions.",
+      "image": "./globalskill_images/Artemis_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "Blade of Vengeance - Enhanced",
+        "description": "Increases Artemis' Physical DEF.",
+        "image": "./upgrade_images/Artemis_sub01_enhanced.png"
+      },
+      {
+        "name": "Lasso of Conquer - Enhanced",
+        "description": "At the start of battle, Artemis gains [x] Energy.",
+        "image": "./upgrade_images/Artemis_sub02_enhanced.png"
+      },
+      {
+        "name": "Fated Target - Enhanced",
+        "description": "Increases Artemis' ATK.",
+        "image": "./upgrade_images/Artemis_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "lobo",
+    "name": "Lobo",
+    "tagSynergies": ["suicide_squad", "weapon_master"],
+    "damageType": "Physical",
+    "gameModes": [
+      "Meta Brawl",
+      "3v3",
+      "Combat Cycle",
+      "Vehicle Combat",
+      "Training Simulator",
+      "Story Mode"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Physical PEN",
+      "Crit Rate"
+    ],
+    "class": "Firepower",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "imageFull": "./full_images/Lobo_full.png",
+    "imageHeadshot": "./headshot_images/Lobo.png",
+    "quantumsTake": "Lobo is a bit of a wildcard for DCDL. We just don't have a good idea where he's going to fit into the meta. He's got the Suicide Squad tag, which has historically been a bad/incomplete team in the game. What we do know is that he can dish out some serious damage. He's just limited by the fact that you have to pull apart better teams to build around him. So he's great with Combat Cycle, but I don't advise you pull for him until we see some more lifter champions for his tag synergy. If you do go for him, make sure you've got the cash to take him to yellow stars or higher, and you MUST buy his legacy weapon.",
+    "sourcesWhereAvailable": ["The Bleed (Limited)"],
+    "recommendedLegacyPieces": [
+      "spacehog",
+      "tectonic_disruptor",
+      "gas_derringer"
+    ],
+    "ultimate": {
+      "name": "Spacehog Rampage",
+      "description": "Lobo charges forward on his bike, dealing physical damage equal to [%] of his ATK to enemies in a rectangular area. For the next [10s], Lobo's basic attacks are empowered, dealing physical damage equal to [%] of his ATK to the target.",
+      "image": "./skill_images/icon_hero_skill_Lobo_main.png"
+    },
+    "skills": [
+      {
+        "name": "My Dawg",
+        "description": "Lobo tosses Dawg forward, dealing physical damage equal to [%] of Lobo's ATK to an enemy.",
+        "image": "./skill_images/icon_hero_skill_Lobo_sub01.png"
+      },
+      {
+        "name": "You Got Fragged",
+        "description": "At the start of battle, Lobo's ATK is increased by [%]. His basic attacks reduce the target's healing received by [%] for [5s].",
+        "image": "./skill_images/icon_hero_skill_Lobo_sub02.png"
+      },
+      {
+        "name": "Lo-Bros",
+        "description": "After Lobo casts his Ultimate, he summons two space dolphins to join the fight every [2s] for [10s]. Each dolphin's attacks deal physical damage equal to [%] of Lobo's ATK (counted as basic attacks).",
+        "image": "./skill_images/icon_hero_skill_Lobo_sub03.png"
+      }
+    ],
+    "globalSkill": {
+      "name": "Main Wingman",
+      "description": "Increases all Champions' ATK by [%] and [Firepower] Champions' HP by [%].",
+      "image": "./globalskill_images/Lobo_global.png"
+    },
+    "upgrades": [
+      {
+        "name": "My Dawg - Enhanced",
+        "description": "Reduces cooldown of [My Dawg].",
+        "image": "./upgrade_images/Lobo_sub01_enhanced.png"
+      },
+      {
+        "name": "You Got Fragged - Enhanced",
+        "description": "Increases Lobo's Crit Rate by [%].",
+        "image": "./upgrade_images/Lobo_sub02_enhanced.png"
+      },
+      {
+        "name": "Lo-Bros - Enhanced",
+        "description": "Increases Lobo's Crit DMG by [%].",
+        "image": "./upgrade_images/Lobo_sub03_enhanced.png"
+      }
+    ]
+  }
+]
