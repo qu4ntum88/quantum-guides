@@ -1,39 +1,29 @@
-'use client'
-
-import { useEffect, useState } from 'react'
 import './about.css'
 
-export default function About() {
-  const [latestVideo, setLatestVideo] = useState(null)
-  const [loading, setLoading] = useState(true)
+export const revalidate = 3600
 
-  useEffect(() => {
-    // Fetch latest video from YouTube API
-    const fetchLatestVideo = async () => {
-      try {
-        // This will be configured with your API key tomorrow
-        // For now, we'll show a placeholder
-        setLatestVideo({
-          title: 'Latest Video',
-          url: 'https://www.youtube.com/@Quantumx86',
-          thumbnail: '/placeholder.jpg'
-        })
-      } catch (error) {
-        console.log('Video fetch will be configured tomorrow')
-      } finally {
-        setLoading(false)
-      }
-    }
+async function getLatestQuantumVideo() {
+  try {
+    const res = await fetch(
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCAEzz9h47VuaGSTgwzavxEA'
+    )
+    const xml = await res.text()
+    const match = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/)
+    return match ? match[1] : null
+  } catch {
+    return null
+  }
+}
 
-    fetchLatestVideo()
-  }, [])
+export default async function About() {
+  const latestVideoId = await getLatestQuantumVideo()
 
   return (
     <main>
       <section className="about-hero">
         <div className="container">
           <h1 className="about-heading">
-            About <img src="/images/site/Q GOLD LOGOTYPE.png" alt="Quantum" className="about-logotype" />
+            <img src="/images/site/Q GOLD LOGOTYPE.png" alt="Quantum" className="about-logotype" />
           </h1>
         </div>
       </section>
@@ -50,26 +40,28 @@ export default function About() {
               <h3>Connect</h3>
               <ul className="connect-links">
                 <li><a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">YouTube Channel</a></li>
-                <li><a href="https://discord.gg" target="_blank" rel="noopener noreferrer">Join Discord Community</a></li>
+                <li><a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer">Join Discord Community</a></li>
                 <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Follow on Twitter</a></li>
               </ul>
             </div>
 
             <div className="video-section">
               <h2>Latest Video</h2>
-              {loading ? (
-                <div className="placeholder">Loading latest video...</div>
-              ) : (
+              {latestVideoId ? (
                 <div className="video-container">
                   <iframe
                     width="100%"
                     height="315"
-                    src="https://www.youtube.com/embed/videoseries?list=UUVTGRJrAuVLh0KEHHYAn6aA"
-                    title="YouTube video player"
+                    src={`https://www.youtube.com/embed/${latestVideoId}`}
+                    title="Latest Quantum video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   ></iframe>
+                </div>
+              ) : (
+                <div className="placeholder">
+                  <p>Visit <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer">Quantum on YouTube</a> for the latest videos.</p>
                 </div>
               )}
               <p className="video-note">
