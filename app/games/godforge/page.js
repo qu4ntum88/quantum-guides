@@ -74,7 +74,7 @@ export default function GodforgePage() {
               <div className="sidebar-card">
                 <h3>Community</h3>
                 <p>Join the Godforge community to discuss strategies, share tips, and stay updated on the latest content.</p>
-                <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
+                <a href="https://discord.gg/RdvnWRBZ8j" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
               </div>
 
               <div className="sidebar-card">
