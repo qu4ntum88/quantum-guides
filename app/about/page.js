@@ -32,7 +32,9 @@ export default function About() {
     <main>
       <section className="about-hero">
         <div className="container">
-          <h1>About Quantum</h1>
+          <h1 className="about-heading">
+            About <img src="/images/site/Q GOLD LOGOTYPE.png" alt="Quantum" className="about-logotype" />
+          </h1>
         </div>
       </section>
 
