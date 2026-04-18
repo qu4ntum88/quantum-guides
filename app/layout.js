@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/">Games</a></li>
-              <li><a href="https://discord.gg" target="_blank" rel="noopener noreferrer">Discord</a></li>
+              <li><a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer">Discord</a></li>
             </ul>
           </div>
         </nav>
