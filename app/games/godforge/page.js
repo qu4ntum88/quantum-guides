@@ -59,7 +59,7 @@ export default function GodforgePage() {
               <section className="resources-section">
                 <h2>Resources</h2>
                 <ul className="resources-list">
-                  <li><a href="https://godforge.gg" target="_blank" rel="noopener noreferrer">Official Godforge Database</a> - Champion stats and information</li>
+                  <li><a href="https://godforge.gg/heroes/aaru" target="_blank" rel="noopener noreferrer">Official Godforge Database</a> - Champion stats and information</li>
                   <li><a href="https://www.hellhades.com" target="_blank" rel="noopener noreferrer">HellHades Guides</a> - Creator and game developer resources</li>
                 </ul>
               </section>
