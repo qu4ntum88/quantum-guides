@@ -1,6 +1,5 @@
 import herosRaw from "../data/heros.json"
 import legacyRaw from "../data/legacy.json"
-import mementosRaw from "../data/mementos.json"
 import synergiesRaw from "../data/synergies.json"
 
 function fixHeroImagePath(path: string | undefined): string | undefined {
@@ -19,11 +18,6 @@ function fixLegacyImagePath(path: string | undefined): string | undefined {
   return path
     .replace(/^\.\/legacy_images_skills\//, "/dcdl/legacy/legacy_images_skills/")
     .replace(/^\.\/legacy_images\//, "/dcdl/legacy/legacy_images/")
-}
-
-function fixMementoImagePath(path: string | undefined): string | undefined {
-  if (!path) return undefined
-  return path.replace(/^\.\/mementos_images\//, "/dcdl/mementos/mementos_images/")
 }
 
 function fixSynergyImagePath(path: string | undefined): string | undefined {
@@ -73,16 +67,6 @@ export type Legacy = {
 
 export type LegacyResolved = Legacy & { champions: HeroResolved[] }
 
-export type Memento = {
-  id: string
-  name: string
-  description?: string
-  rarity?: string
-  collection?: string
-  availability?: string
-  image?: string
-}
-
 export type Synergy = {
   id: string
   name: string
@@ -107,11 +91,6 @@ const legacyData: Legacy[] = (legacyRaw as Legacy[]).map((l) => ({
   legacySkills: l.legacySkills?.map((s) => ({ ...s, image: fixLegacyImagePath(s.image) })),
 }))
 
-const mementosData: Memento[] = (mementosRaw as Memento[]).map((m) => ({
-  ...m,
-  image: fixMementoImagePath(m.image),
-}))
-
 const synergiesData: Synergy[] = (synergiesRaw as Synergy[]).map((s) => ({
   ...s,
   image: fixSynergyImagePath(s.image),
@@ -124,10 +103,6 @@ export function getHeros(): Hero[] {
 
 export function getLegacy(): Legacy[] {
   return legacyData
-}
-
-export function getMementos(): Memento[] {
-  return mementosData
 }
 
 export function getSynergies(): Synergy[] {
