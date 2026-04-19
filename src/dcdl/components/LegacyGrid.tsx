@@ -16,19 +16,74 @@ const sortByValues = [
 
 const tierValues = [
   { value: "All", label: "All tiers" },
+  { value: "S+", label: "S+" },
   { value: "S", label: "S" },
+  { value: "A+", label: "A+" },
   { value: "A", label: "A" },
   { value: "B", label: "B" },
   { value: "C", label: "C" },
   { value: "D", label: "D" },
 ]
 
-const roleValues = [
-  { value: "All", label: "All roles" },
-  { value: "Tank", label: "Guardian/Warrior" },
-  { value: "DPS", label: "Firepower/Assassin/Magical" },
-  { value: "Buffer/Debuffer", label: "Supporter/Intimidator" },
+const ROLES = [
+  { value: "Guardian | Warrior",           classes: ["Guardian", "Warrior"] },
+  { value: "Magical | Assassin | Firepower", classes: ["Magical", "Assassin", "Firepower"] },
+  { value: "Supporter | Intimidator",       classes: ["Supporter", "Intimidator"] },
 ]
+
+function AllButton({ selected, onClick }: { selected: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      title="All"
+      onClick={onClick}
+      style={{
+        background: selected ? "rgba(124,58,237,0.35)" : "transparent",
+        border: selected ? "2px solid var(--gold)" : "2px solid #444",
+        borderRadius: "0.5rem",
+        padding: "0.3rem 0.65rem",
+        cursor: "pointer",
+        color: selected ? "var(--gold)" : "#888",
+        fontFamily: "Unbounded, sans-serif",
+        fontSize: "0.65rem",
+        fontWeight: 700,
+        letterSpacing: "0.05em",
+        transition: "all 0.15s",
+        flexShrink: 0,
+        height: "2.85rem",
+      }}
+    >
+      ALL
+    </button>
+  )
+}
+
+function RoleButton({ classes, selected, onClick }: { classes: string[]; selected: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      title={classes.join(" | ")}
+      onClick={onClick}
+      style={{
+        background: selected ? "rgba(124,58,237,0.35)" : "transparent",
+        border: selected ? "2px solid var(--gold)" : "2px solid #444",
+        borderRadius: "0.5rem",
+        padding: "0.3rem",
+        cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
+        gap: "0.2rem",
+        transition: "all 0.15s",
+        opacity: selected ? 1 : 0.55,
+        flexShrink: 0,
+      }}
+    >
+      {classes.map((c) => (
+        <img key={c} src={`/dcdl/role_images/${c}.png`} alt={c} style={{ width: "2.25rem", height: "2.25rem", objectFit: "contain" }} />
+      ))}
+    </button>
+  )
+}
 
 const rankValues = [
   { value: "All", label: "All ranks" },
@@ -38,7 +93,7 @@ const rankValues = [
   { value: "Epic", label: "Epic" },
 ]
 
-const tierToRank: Record<string, number> = { S: 1, "A+": 2, A: 3, B: 4, C: 5, D: 6, "": 7 }
+const tierToRank: Record<string, number> = { "S+": 0, S: 1, "A+": 2, A: 3, B: 4, C: 5, D: 6, "": 7 }
 const rankToRank: Record<string, number> = { "Mythic +": 1, Mythic: 2, Legendary: 3, Epic: 4, "": 5 }
 
 export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResolved[] }) {
@@ -89,7 +144,7 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
   return (
     <div className="flex flex-col gap-2 md:gap-4">
       <SearchBar placeholder="Search Legacy Pieces" onChange={(e) => setQuery(e.target.value)} />
-      <div className="flex flex-row flex-wrap gap-2 md:gap-4">
+      <div className="flex flex-row flex-wrap gap-2 md:gap-4 items-center">
         <SelectSortBy
           onValueChange={setSortBy}
           values={sortByValues}
@@ -99,9 +154,19 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
           order={sortOrder}
         />
         <SelectFilterBy onValueChange={setTier} defaultValue="All" value={tier} values={tierValues} />
-        <SelectFilterBy onValueChange={setRole} defaultValue="All" value={role} values={roleValues} />
         <SelectFilterBy onValueChange={setRank} defaultValue="All" value={rank} values={rankValues} />
         <Button onClick={resetFilters}>Reset Filters</Button>
+      </div>
+
+      {/* Role filter row */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+        <span style={{ fontSize: "0.72rem", fontFamily: "Unbounded, sans-serif", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--gold)", opacity: 0.8 }}>Role</span>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={role === "All"} onClick={() => setRole("All")} />
+          {ROLES.map(({ value, classes }) => (
+            <RoleButton key={value} classes={classes} selected={role === value} onClick={() => setRole(value)} />
+          ))}
+        </div>
       </div>
       <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
         {filtered.map((piece) => (

@@ -24,14 +24,31 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
         <div style={{ textAlign: 'center', fontSize: '1.25rem', fontWeight: 'bold', color: '#ef4444' }}>{legacy.rank}</div>
         {legacy.tier && <PageTierBadges quantumTier={legacy.tier} entityType="legacy" entityId={id} />}
 
-        {legacy.image && (
-          <img src={legacy.image} alt={legacy.name} style={{ height: '10rem', objectFit: 'contain', alignSelf: 'center' }} />
-        )}
+        {(() => {
+          const roleClassMap: Record<string, string[]> = {
+            'Guardian | Warrior': ['Guardian', 'Warrior'],
+            'Magical | Assassin | Firepower': ['Magical', 'Assassin', 'Firepower'],
+            'Supporter | Intimidator': ['Supporter', 'Intimidator'],
+          }
+          const roleClasses = legacy.role ? (roleClassMap[legacy.role] ?? []) : []
+          return (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
+              {legacy.image && (
+                <img src={legacy.image} alt={legacy.name} style={{ height: '10rem', objectFit: 'contain' }} />
+              )}
+              {roleClasses.length > 0 && (
+                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                  {roleClasses.map((c) => (
+                    <img key={c} src={`/dcdl/role_images/${c}.png`} alt={c} style={{ height: '5rem', objectFit: 'contain' }} />
+                  ))}
+                </div>
+              )}
+            </div>
+          )
+        })()}
 
         <div className="card">
-          <h4>Role</h4>
-          <p>{legacy.role}</p>
-          <h4 style={{ marginTop: '1rem' }}>Recommended Champions</h4>
+          <h4>Recommended Champions</h4>
           <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5" style={{ marginTop: '0.5rem' }}>
             {legacy.champions.map((h) => h && <HeroBox key={h.id} hero={h} />)}
           </div>

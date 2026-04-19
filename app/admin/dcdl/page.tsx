@@ -30,7 +30,7 @@ const SYNERGIES = [
   { id: 'weapon_master', name: 'Weapon Master' },
 ]
 const LEGACY_RANKS = ['Legendary', 'Epic', 'Mythic', 'Mythic +']
-const LEGACY_ROLES = ['DPS', 'Tank', 'Buffer/Debuffer']
+const LEGACY_ROLES = ['Guardian | Warrior', 'Magical | Assassin | Firepower', 'Supporter | Intimidator']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
 type ItemOption = { id: string; name: string }
