@@ -35,16 +35,6 @@ export default function DCDarkLegionPage() {
         </div>
       </section>
 
-      <section style={{ padding: '1rem 0 2rem' }}>
-        <div className="container">
-          <h2>Explore More</h2>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-            <a href="/games/dc-dark-legion/legacy" className="btn">Legacy Pieces</a>
-            <a href="/games/dc-dark-legion/mementos" className="btn">Mementos</a>
-            <a href="/games/dc-dark-legion/guides" className="btn">Guides</a>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }

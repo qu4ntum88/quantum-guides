@@ -1,4 +1,6 @@
 import './globals.css'
+import Navbar from './components/Navbar'
+import { ClerkProvider } from '@clerk/nextjs'
 
 export const metadata = {
   title: 'Quantum Game Guides',
@@ -7,6 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
@@ -16,24 +19,13 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;600;700;900&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <nav className="navbar">
-          <div className="nav-container">
-            <div className="logo">
-              <a href="/"><img src="/images/site/Q GOLD FULL ICON.png" alt="" className="brand-icon" />Quantum Game Guides</a>
-            </div>
-            <ul className="nav-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/">Games</a></li>
-              <li><a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            </ul>
-          </div>
-        </nav>
+        <Navbar />
         {children}
         <footer className="footer">
           <p>&copy; 2026 Quantum Game Guides. All rights reserved.</p>
         </footer>
       </body>
     </html>
+    </ClerkProvider>
   )
 }

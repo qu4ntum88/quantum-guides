@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "./ui/button"
 import SearchBar from "./SearchBar"
 import SelectSortBy from "./SelectSortBy"
@@ -42,7 +42,20 @@ const tierToRank: Record<string, number> = { S: 1, "A+": 2, A: 3, B: 4, C: 5, D:
 const rankToRank: Record<string, number> = { "Mythic +": 1, Mythic: 2, Legendary: 3, Epic: 4, "": 5 }
 
 export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResolved[] }) {
+  const [communityTiers, setCommunityTiers] = useState<Record<string, string>>({})
   const [query, setQuery] = useState("")
+
+  useEffect(() => {
+    fetch('/api/votes/tally?type=legacy')
+      .then((r) => r.json())
+      .then((data: Record<string, { winner: string }>) => {
+        const map: Record<string, string> = {}
+        for (const [id, entry] of Object.entries(data)) {
+          if (entry.winner) map[id] = entry.winner
+        }
+        setCommunityTiers(map)
+      })
+  }, [])
   const [sortBy, setSortBy] = useState("tier")
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
   const [role, setRole] = useState("All")
@@ -92,7 +105,7 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
       </div>
       <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
         {filtered.map((piece) => (
-          <LegacyPieceBox key={piece.id} piece={piece} />
+          <LegacyPieceBox key={piece.id} piece={piece} communityTier={communityTiers[piece.id]} />
         ))}
       </div>
     </div>

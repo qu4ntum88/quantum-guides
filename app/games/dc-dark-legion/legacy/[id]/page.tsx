@@ -1,13 +1,15 @@
 import { notFound } from 'next/navigation'
 import { getResolvedLegacy, getResolvedHeros } from '@/src/dcdl/lib/data'
 import HeroBox from '@/src/dcdl/components/HeroBox'
+import VotingWidget from '@/src/dcdl/components/VotingWidget'
 
 export function generateStaticParams() {
   return getResolvedLegacy().map((l) => ({ id: l.id }))
 }
 
-export default function LegacyDetailPage({ params }: { params: { id: string } }) {
-  const legacy = getResolvedLegacy().find((l) => l.id === params.id)
+export default async function LegacyDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const legacy = getResolvedLegacy().find((l) => l.id === id)
   if (!legacy) return notFound()
 
   const tierSrc = legacy.tier ? '/dcdl/tier_images/' + legacy.tier + '.png' : null
@@ -55,6 +57,8 @@ export default function LegacyDetailPage({ params }: { params: { id: string } })
             ))}
           </div>
         )}
+
+        <VotingWidget entityType="legacy" entityId={id} />
 
         <a href="/games/dc-dark-legion/legacy" style={{ color: 'var(--gold)' }}>← Back to Legacy Pieces</a>
       </div>

@@ -1,7 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkGfm from 'remark-gfm'
+import remarkRehype from 'remark-rehype'
+import rehypeRaw from 'rehype-raw'
+import rehypeStringify from 'rehype-stringify'
 import { notFound } from 'next/navigation'
 
 const guidesDir = path.join(process.cwd(), 'src/dcdl/guides')
@@ -14,77 +19,69 @@ export function generateStaticParams() {
   return getGuideFiles().map((f) => ({ id: f.replace(/\.(mdx|md)$/, '') }))
 }
 
-function processContent(raw: string): { content: string; scope: Record<string, string> } {
-  const lines = raw.split('\n')
-  const scope: Record<string, string> = {}
-  const processed: string[] = []
-  let inFrontmatter = false
-  let frontmatterDone = false
-  let frontmatterCount = 0
-
-  for (const line of lines) {
-    if (line.trim() === '---') {
-      frontmatterCount++
-      if (frontmatterCount <= 2) {
-        processed.push(line)
-        if (frontmatterCount === 2) frontmatterDone = true
-        continue
+function stripAstroSyntax(raw: string): string {
+  return raw
+    .split('\n')
+    .filter((line) => {
+      if (line.includes('from "astro:assets"') || line.includes("from 'astro:assets'")) return false
+      if (/^import\s+\w+\s+from\s+["']/.test(line)) return false
+      return true
+    })
+    .join('\n')
+    .replace(/<Image\s[^/]*/g, (match) => {
+      // Convert <Image src={varName} ... /> to <img src="/dcdl/guides/Infographics/..." />
+      const srcMatch = match.match(/src=\{(\w+)\}/)
+      const altMatch = match.match(/alt="([^"]*)"/)
+      if (srcMatch) {
+        const alt = altMatch ? altMatch[1] : ''
+        return `<img src="/dcdl/guides/Infographics/${srcMatch[1]}" alt="${alt}" style="max-width:100%;height:auto"`
       }
-    }
-
-    // Skip Astro-specific imports
-    if (line.includes('from "astro:assets"') || line.includes("from 'astro:assets'")) {
-      continue
-    }
-
-    // Extract local image imports and map them to public paths
-    const imgImport = line.match(/^import\s+(\w+)\s+from\s+["']\.\/Infographics\/([^"']+)["']/)
-    if (imgImport) {
-      const [, varName, filename] = imgImport
-      scope[varName] = `/dcdl/guides/Infographics/${filename}`
-      continue
-    }
-
-    processed.push(line)
-  }
-
-  return { content: processed.join('\n'), scope }
+      return match
+    })
+    .replace(/<Image\s/g, '<img ')
 }
 
-function GuideImage({ src, alt, width, ...props }: React.ImgHTMLAttributes<HTMLImageElement>) {
-  const resolvedSrc = typeof src === 'string' ? src : String(src ?? '')
-  return (
-    <img
-      src={resolvedSrc}
-      alt={alt ?? ''}
-      style={{ maxWidth: width ? `${width}px` : '100%', height: 'auto' }}
-      {...props}
-    />
-  )
+async function renderMarkdown(content: string): Promise<string> {
+  const result = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
+    .use(rehypeStringify)
+    .process(content)
+  return String(result)
 }
 
-export default function GuideDetailPage({ params }: { params: { id: string } }) {
+export default async function GuideDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
   const files = getGuideFiles()
-  const file = files.find((f) => f.replace(/\.(mdx|md)$/, '') === params.id)
+  const file = files.find((f) => f.replace(/\.(mdx|md)$/, '') === id)
   if (!file) return notFound()
 
   const raw = fs.readFileSync(path.join(guidesDir, file), 'utf8')
   const { data, content: rawContent } = matter(raw)
-  const { content, scope } = processContent(rawContent)
+  const cleaned = stripAstroSyntax(rawContent)
+  const html = await renderMarkdown(cleaned)
 
   return (
     <main>
       <div className="container" style={{ maxWidth: '900px', paddingTop: '2rem', paddingBottom: '4rem' }}>
         {data.title && <h1>{data.title}</h1>}
-        {data.pubDate && <p style={{ color: '#999', marginBottom: '2rem' }}>Published: {String(data.pubDate).slice(0, 10)}</p>}
-        <article style={{ lineHeight: '1.8' }}>
-          <MDXRemote
-            source={content}
-            components={{ Image: GuideImage as React.ElementType }}
-            options={{ scope }}
-          />
-        </article>
-        <a href="/games/dc-dark-legion/guides" style={{ color: 'var(--gold)', marginTop: '2rem', display: 'inline-block' }}>← Back to Guides</a>
+        {data.pubDate && (
+          <p style={{ color: '#999', marginBottom: '2rem' }}>
+            Published: {String(data.pubDate).slice(0, 10)}
+          </p>
+        )}
+        <article
+          style={{ lineHeight: '1.8' }}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+        <a
+          href="/games/dc-dark-legion/guides"
+          style={{ color: 'var(--gold)', marginTop: '2rem', display: 'inline-block' }}
+        >
+          ← Back to Guides
+        </a>
       </div>
     </main>
   )

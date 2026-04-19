@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import HeroBox from "./HeroBox"
 import { Button } from "./ui/button"
 import SearchBar from "./SearchBar"
@@ -78,7 +78,20 @@ const tierToRank: Record<string, number> = {
 }
 
 export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
+  const [communityTiers, setCommunityTiers] = useState<Record<string, string>>({})
   const [query, setQuery] = useState("")
+
+  useEffect(() => {
+    fetch('/api/votes/tally?type=champion')
+      .then((r) => r.json())
+      .then((data: Record<string, { winner: string }>) => {
+        const map: Record<string, string> = {}
+        for (const [id, entry] of Object.entries(data)) {
+          if (entry.winner) map[id] = entry.winner
+        }
+        setCommunityTiers(map)
+      })
+  }, [])
   const [sortBy, setSortBy] = useState("name")
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
   const [cls, setCls] = useState("All")
@@ -133,7 +146,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
       </div>
       <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
         {filtered.map((hero) => (
-          <HeroBox key={hero.id} hero={hero} />
+          <HeroBox key={hero.id} hero={hero} communityTier={communityTiers[hero.id]} />
         ))}
       </div>
     </div>

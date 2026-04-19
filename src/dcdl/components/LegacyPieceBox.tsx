@@ -1,18 +1,19 @@
 'use client'
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
+import TierBadge from "./TierBadge"
 import type { LegacyResolved } from "../lib/data"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
-export default function LegacyPieceBox({ piece }: { piece: LegacyResolved }) {
+export default function LegacyPieceBox({ piece, communityTier }: { piece: LegacyResolved; communityTier?: string }) {
   const tierSrc = piece.tier ? "/dcdl/tier_images/" + piece.tier + ".png" : null
   return (
     <Tooltip>
       <TooltipTrigger asChild>
         <a
           href={"/games/dc-dark-legion/legacy/" + piece.id}
-          className="group relative aspect-[4/5] overflow-hidden border border-white/10 bg-slate-700 bg-gradient-to-b from-purple-900/90 to-purple-500/50 shadow-md"
+          className="group relative aspect-4/5 overflow-hidden border border-white/10 bg-slate-700 bg-linear-to-b from-purple-900/90 to-purple-500/50 shadow-md"
         >
           <img
             src={piece.image ?? PLACEHOLDER}
@@ -30,14 +31,19 @@ export default function LegacyPieceBox({ piece }: { piece: LegacyResolved }) {
           </div>
         </a>
       </TooltipTrigger>
-      <TooltipContent className="text-md">
-        <p className="font-bold text-red-400">Role: <span className="font-normal text-white">{piece.role}</span></p>
-        {piece.champions && piece.champions.length > 0 && (
-          <p className="font-bold text-red-400">
-            Recommended Champions: <span className="font-normal text-white">{piece.champions.map((c) => c.name).join(", ")}</span>
-          </p>
-        )}
-        <p className="font-bold text-red-400">Tier: <span className="font-normal text-white">{piece.tier}</span></p>
+      <TooltipContent style={{ background: '#1a1a2e', border: '1px solid #333', padding: '0.6rem 0.8rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+            <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum" style={{ width: '1.5rem', height: '1.5rem', objectFit: 'contain' }} />
+            <span style={{ color: '#aaa', fontSize: '0.75rem', flex: 1 }}>Quantum&apos;s Tier</span>
+            <TierBadge tier={piece.tier} />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+            <img src="/images/site/JLD.png" alt="Community" style={{ width: '1.5rem', height: '1.5rem', objectFit: 'contain' }} />
+            <span style={{ color: '#aaa', fontSize: '0.75rem', flex: 1 }}>Community Tier</span>
+            <TierBadge tier={communityTier} />
+          </div>
+        </div>
       </TooltipContent>
     </Tooltip>
   )
