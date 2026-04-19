@@ -9,12 +9,12 @@ import { TIER_COLORS } from "./TierBadge"
 import type { HeroResolved } from "../lib/data"
 
 const SORT_OPTIONS = [
-  { value: "name",     label: "Alphabetical" },
-  { value: "class",    label: "Class" },
-  { value: "faction",  label: "Faction" },
-  { value: "rank",     label: "Rarity" },
-  { value: "gameMode", label: "Game Modes" },
-  { value: "tier",     label: "Tier Ranking" },
+  { value: "name",     label: "Alphabetical",  icon: undefined },
+  { value: "class",    label: "Class",          icon: undefined },
+  { value: "faction",  label: "Faction",        icon: undefined },
+  { value: "rank",     label: "Rarity",         icon: undefined },
+  { value: "gameMode", label: "Game Modes",     icon: undefined },
+  { value: "tier",     label: "Tier Ranking",   icon: "/images/site/Q GOLD FULL ICON.png" },
 ]
 
 const CLASSES = [
@@ -81,11 +81,12 @@ const LABEL: CSSProperties = {
   width: "9rem",
 }
 
-function SortButton({ label, selected, onClick }: { label: string; selected: boolean; onClick: () => void }) {
+function SortButton({ label, icon, selected, onClick }: { label: string; icon?: string; selected: boolean; onClick: () => void }) {
   return (
     <button
       type="button"
       onClick={onClick}
+      title={label}
       style={{
         background: selected ? "rgba(124,58,237,0.35)" : "transparent",
         border: selected ? "2px solid var(--gold)" : "2px solid #444",
@@ -100,9 +101,13 @@ function SortButton({ label, selected, onClick }: { label: string; selected: boo
         transition: "all 0.15s",
         flexShrink: 0,
         whiteSpace: "nowrap",
+        display: "flex",
+        alignItems: "center",
       }}
     >
-      {label}
+      {icon
+        ? <img src={icon} alt={label} style={{ height: "1.1rem", objectFit: "contain", opacity: selected ? 1 : 0.55 }} />
+        : label}
     </button>
   )
 }
@@ -259,8 +264,8 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
       <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Sort By</span>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          {SORT_OPTIONS.map(({ value, label }) => (
-            <SortButton key={value} label={label} selected={sortBy === value} onClick={() => setSortBy(value)} />
+          {SORT_OPTIONS.map(({ value, label, icon }) => (
+            <SortButton key={value} label={label} icon={icon} selected={sortBy === value} onClick={() => setSortBy(value)} />
           ))}
           <SortButton label="↑ Asc" selected={sortOrder === "asc"} onClick={() => setSortOrder("asc")} />
           <SortButton label="↓ Desc" selected={sortOrder === "desc"} onClick={() => setSortOrder("desc")} />
@@ -359,7 +364,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
 
       {/* Tier Ranking filter row */}
       <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Tier Ranking</span>
+        <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum's Tier" style={{ height: "2rem", width: "9rem", objectFit: "contain", objectPosition: "left", flexShrink: 0 }} />
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
           <AllButton selected={selectedTiers.length === 0} onClick={() => setSelectedTiers([])} />
           {TIERS.map((t) => (
