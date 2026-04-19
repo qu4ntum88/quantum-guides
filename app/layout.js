@@ -5,6 +5,22 @@ import { ClerkProvider } from '@clerk/nextjs'
 export const metadata = {
   title: 'Quantum Game Guides',
   description: 'Deep-dive guides, tier lists, and meta analysis for mobile gacha and strategy games',
+  metadataBase: new URL('https://www.quantumgameguides.com'),
+  openGraph: {
+    title: 'Quantum Game Guides',
+    description: 'Deep-dive guides, tier lists, and meta analysis for mobile gacha and strategy games',
+    url: 'https://www.quantumgameguides.com',
+    siteName: 'Quantum Game Guides',
+    images: [
+      {
+        url: '/images/site/Q GOLD FULL ICON.png',
+        width: 512,
+        height: 512,
+        alt: 'Quantum Game Guides',
+      },
+    ],
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }) {
