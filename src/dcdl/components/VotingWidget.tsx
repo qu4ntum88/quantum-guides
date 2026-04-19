@@ -46,16 +46,17 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
   async function vote(rating: string) {
     if (!isSignedIn || saving) return
     setSaving(true)
-    await fetch('/api/votes', {
+    const res = await fetch('/api/votes', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ entity_type: entityType, entity_id: entityId, rating }),
     })
-    setMyVote(rating)
-    // Refresh tally
-    fetch(`/api/votes/tally?type=${entityType}`)
-      .then((r) => r.json())
-      .then((data) => setTally(data[entityId] ?? null))
+    if (res.ok) {
+      setMyVote(rating)
+      fetch(`/api/votes/tally?type=${entityType}`)
+        .then((r) => r.json())
+        .then((data) => setTally(data[entityId] ?? null))
+    }
     setSaving(false)
   }
 
