@@ -1,3 +1,4 @@
+import type React from 'react'
 import { notFound } from 'next/navigation'
 import { getResolvedLegacy, getResolvedHeros } from '@/src/dcdl/lib/data'
 import HeroBox from '@/src/dcdl/components/HeroBox'
@@ -17,11 +18,39 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
     <main>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', paddingTop: '2rem', paddingBottom: '4rem' }}>
         {/* Header */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           {legacy.image && <img src={legacy.image} alt={legacy.name} style={{ height: '3rem', objectFit: 'contain' }} />}
           <h1 style={{ fontSize: '3rem', margin: 0 }}>{legacy.name.split('(')[0]}</h1>
+          {legacy.rank && (() => {
+            const rankStyleMap: Record<string, React.CSSProperties> = {
+              'Mythic +': {
+                background: 'linear-gradient(105deg, #b91c1c 0%, #ef4444 30%, #fca5a5 48%, #ef4444 66%, #b91c1c 100%)',
+                boxShadow: '0 0 12px rgba(239,68,68,0.55), inset 0 1px 0 rgba(255,255,255,0.25)',
+                color: 'white',
+              },
+              'Mythic': { background: '#ef4444', color: 'white' },
+              'Legendary': { background: '#FACC15', color: '#1a1a1a' },
+              'Epic': { background: '#a855f7', color: 'white' },
+            }
+            const rankStyle = rankStyleMap[legacy.rank] ?? { background: '#555', color: 'white' }
+            return (
+              <span style={{
+                ...rankStyle,
+                padding: '0.3rem 0.85rem',
+                borderRadius: '0.4rem',
+                fontFamily: 'Unbounded, sans-serif',
+                fontSize: '0.75rem',
+                fontWeight: 700,
+                letterSpacing: '0.06em',
+                textTransform: 'uppercase',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
+              }}>
+                {legacy.rank}
+              </span>
+            )
+          })()}
         </div>
-        <div style={{ textAlign: 'center', fontSize: '1.25rem', fontWeight: 'bold', color: '#ef4444' }}>{legacy.rank}</div>
         {legacy.tier && <PageTierBadges quantumTier={legacy.tier} entityType="legacy" entityId={id} />}
 
         {(() => {

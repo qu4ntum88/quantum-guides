@@ -29,6 +29,7 @@ export default function PageTierBadges({
         <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum" style={{ width: '5.25rem', height: '5.25rem', objectFit: 'contain' }} />
         <TierBadge tier={quantumTier} />
       </div>
+      <div style={{ width: '1px', height: '4rem', background: 'rgba(255,255,255,0.15)', flexShrink: 0 }} />
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
         <img src="/images/site/JLD.png" alt="Community" style={{ width: '5.25rem', height: '5.25rem', objectFit: 'contain' }} />
         <TierBadge tier={communityTier} />
