@@ -6,12 +6,13 @@ import SearchBar from "./SearchBar"
 import SelectSortBy from "./SelectSortBy"
 import SelectFilterBy from "./SelectFilterBy"
 import LegacyPieceBox from "./LegacyPieceBox"
+import { RARITIES, RARITY_STYLE } from "./RarityBadge"
 import type { LegacyResolved } from "../lib/data"
 
 const sortByValues = [
   { value: "tier", label: "Tier" },
   { value: "role", label: "Role" },
-  { value: "rank", label: "Rank" },
+  { value: "rank", label: "Rarity" },
 ]
 
 const tierValues = [
@@ -85,14 +86,6 @@ function RoleButton({ classes, selected, onClick }: { classes: string[]; selecte
   )
 }
 
-const rankValues = [
-  { value: "All", label: "All ranks" },
-  { value: "Iconic", label: "Iconic" },
-  { value: "Mythic +", label: "Mythic +" },
-  { value: "Mythic", label: "Mythic" },
-  { value: "Legendary", label: "Legendary" },
-  { value: "Epic", label: "Epic" },
-]
 
 const tierToRank: Record<string, number> = { "S+": 0, S: 1, "A+": 2, A: 3, B: 4, C: 5, D: 6, "": 7 }
 const rankToRank: Record<string, number> = { Iconic: 1, "Mythic +": 2, Mythic: 3, Legendary: 4, Epic: 5, "": 6 }
@@ -116,14 +109,14 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
   const [role, setRole] = useState("All")
   const [tier, setTier] = useState("All")
-  const [rank, setRank] = useState("All")
+  const [selectedRarities, setSelectedRarities] = useState<string[]>([])
 
   const resetFilters = () => {
     setSortBy("tier")
     setSortOrder("asc")
     setRole("All")
     setTier("All")
-    setRank("All")
+    setSelectedRarities([])
   }
 
   const filtered = legacyPieces
@@ -131,7 +124,7 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
       if (query && !piece.name.toLowerCase().includes(query.toLowerCase())) return false
       if (role !== "All" && piece.role !== role) return false
       if (tier !== "All" && piece.tier !== tier) return false
-      if (rank !== "All" && piece.rank !== rank) return false
+      if (selectedRarities.length > 0 && !selectedRarities.includes(piece.rank ?? "")) return false
       return true
     })
     .sort((a, b) => {
@@ -155,8 +148,46 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
           order={sortOrder}
         />
         <SelectFilterBy onValueChange={setTier} defaultValue="All" value={tier} values={tierValues} />
-        <SelectFilterBy onValueChange={setRank} defaultValue="All" value={rank} values={rankValues} />
         <Button onClick={resetFilters}>Reset Filters</Button>
+      </div>
+
+      {/* Rarity filter row */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+        <span style={{ fontSize: "0.72rem", fontFamily: "Unbounded, sans-serif", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--gold)", opacity: 0.8 }}>Rarity</span>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedRarities.length === 0} onClick={() => setSelectedRarities([])} />
+          {RARITIES.map((r) => {
+            const selected = selectedRarities.includes(r)
+            const s = RARITY_STYLE[r] ?? { background: "#555" }
+            return (
+              <button
+                key={r}
+                type="button"
+                onClick={() => setSelectedRarities((prev) => prev.includes(r) ? prev.filter((x) => x !== r) : [...prev, r])}
+                style={{
+                  background: s.background,
+                  boxShadow: selected ? (s.boxShadow ?? undefined) : undefined,
+                  border: selected ? "2px solid var(--gold)" : "2px solid transparent",
+                  borderRadius: "0.4rem",
+                  padding: "0.3rem 0.85rem",
+                  cursor: "pointer",
+                  fontFamily: "Unbounded, sans-serif",
+                  fontSize: "0.65rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.05em",
+                  textTransform: "uppercase",
+                  color: "white",
+                  textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+                  opacity: selected ? 1 : 0.55,
+                  transition: "all 0.15s",
+                  flexShrink: 0,
+                }}
+              >
+                {r}
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       {/* Role filter row */}

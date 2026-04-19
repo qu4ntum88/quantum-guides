@@ -1,9 +1,9 @@
-import type React from 'react'
 import { notFound } from 'next/navigation'
 import { getResolvedLegacy, getResolvedHeros } from '@/src/dcdl/lib/data'
 import HeroBox from '@/src/dcdl/components/HeroBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
 import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
+import RarityBadge from '@/src/dcdl/components/RarityBadge'
 
 export function generateStaticParams() {
   return getResolvedLegacy().map((l) => ({ id: l.id }))
@@ -21,41 +21,7 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           {legacy.image && <img src={legacy.image} alt={legacy.name} style={{ height: '3rem', objectFit: 'contain' }} />}
           <h1 style={{ fontSize: '3rem', margin: 0 }}>{legacy.name.split('(')[0]}</h1>
-          {legacy.rank && (() => {
-            const rankStyleMap: Record<string, React.CSSProperties> = {
-              'Iconic': {
-                background: 'linear-gradient(105deg, #0e7490 0%, #06b6d4 30%, #a5f3fc 48%, #06b6d4 66%, #0e7490 100%)',
-                boxShadow: '0 0 12px rgba(6,182,212,0.55), inset 0 1px 0 rgba(255,255,255,0.25)',
-                color: 'white',
-              },
-              'Mythic +': {
-                background: 'linear-gradient(105deg, #b91c1c 0%, #ef4444 30%, #fca5a5 48%, #ef4444 66%, #b91c1c 100%)',
-                boxShadow: '0 0 12px rgba(239,68,68,0.55), inset 0 1px 0 rgba(255,255,255,0.25)',
-                color: 'white',
-              },
-              'Mythic': { background: '#ef4444', color: 'white' },
-              'Legendary': { background: '#FACC15', color: 'white' },
-              'Epic': { background: '#a855f7', color: 'white' },
-            }
-            const rankStyle = rankStyleMap[legacy.rank] ?? { background: '#555', color: 'white' }
-            return (
-              <span style={{
-                ...rankStyle,
-                padding: '0.3rem 0.85rem',
-                borderRadius: '0.4rem',
-                fontFamily: 'Unbounded, sans-serif',
-                fontSize: '0.75rem',
-                fontWeight: 700,
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase',
-                whiteSpace: 'nowrap',
-                flexShrink: 0,
-                textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
-              }}>
-                {legacy.rank}
-              </span>
-            )
-          })()}
+          {legacy.rank && <RarityBadge rarity={legacy.rank} />}
         </div>
         {legacy.tier && <PageTierBadges quantumTier={legacy.tier} entityType="legacy" entityId={id} />}
 

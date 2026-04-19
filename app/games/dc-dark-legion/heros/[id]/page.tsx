@@ -3,6 +3,7 @@ import { getResolvedHeros } from '@/src/dcdl/lib/data'
 import LegacyPieceBox from '@/src/dcdl/components/LegacyPieceBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
 import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
+import RarityBadge from '@/src/dcdl/components/RarityBadge'
 import type { LegacyResolved } from '@/src/dcdl/lib/data'
 
 export function generateStaticParams() {
@@ -15,13 +16,6 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
   if (!hero) return notFound()
 
   const classSrc = '/dcdl/role_images/' + hero.class + '.png'
-
-  const rarityMap: Record<string, string> = {
-    'Mythic +': '/dcdl/heros/rarity_images/mythic+.png',
-    Mythic: '/dcdl/heros/rarity_images/Mythic.png',
-    Legendary: '/dcdl/heros/rarity_images/legendary.png',
-  }
-  const raritySrc = rarityMap[hero.rarity] ?? rarityMap['Legendary']
 
   return (
     <main>
@@ -43,10 +37,10 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', paddingTop: '2rem', paddingBottom: '4rem' }}>
         {/* Hero header */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-          <img src={raritySrc} alt={hero.rarity} style={{ height: '1.5rem' }} />
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <img src={classSrc} alt={hero.class} style={{ height: '3rem', objectFit: 'contain' }} />
             <h1 style={{ fontSize: '3rem', margin: 0 }}>{hero.name.split('(')[0]}</h1>
+            {hero.rarity && <RarityBadge rarity={hero.rarity} />}
           </div>
           <PageTierBadges quantumTier={hero.tier} entityType="champion" entityId={id} />
           {hero.name.match(/\((.*)\)/)?.pop() && (

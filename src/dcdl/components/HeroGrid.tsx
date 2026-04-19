@@ -6,6 +6,7 @@ import { Button } from "./ui/button"
 import SearchBar from "./SearchBar"
 import SelectSortBy from "./SelectSortBy"
 import SelectFilterBy from "./SelectFilterBy"
+import { RARITIES, RARITY_STYLE } from "./RarityBadge"
 import type { HeroResolved } from "../lib/data"
 
 const sortByValues = [
@@ -137,6 +138,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
   const [selectedClasses, setSelectedClasses] = useState<string[]>([])
   const [selectedFactions, setSelectedFactions] = useState<string[]>([])
+  const [selectedRarities, setSelectedRarities] = useState<string[]>([])
   const [tier, setTier] = useState("All")
   const [gameMode, setGameMode] = useState("All")
 
@@ -157,6 +159,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
     setSortOrder("asc")
     setSelectedClasses([])
     setSelectedFactions([])
+    setSelectedRarities([])
     setTier("All")
     setGameMode("All")
   }
@@ -178,6 +181,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
       if (query && !hero.name.toLowerCase().includes(query.toLowerCase())) return false
       if (selectedClasses.length > 0 && !selectedClasses.includes(hero.class)) return false
       if (selectedFactions.length > 0 && !hero.tagSynergies.some((s) => selectedFactions.includes(s.id))) return false
+      if (selectedRarities.length > 0 && !selectedRarities.includes(hero.rarity)) return false
       if (tier !== "All" && hero.tier !== tier) return false
       if (gameMode !== "All" && !(hero.gameModes?.includes(gameMode) ?? false)) return false
       return true
@@ -241,6 +245,45 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
               onClick={() => toggleFaction(id)}
             />
           ))}
+        </div>
+      </div>
+
+      {/* Rarity filter row */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+        <span style={{ fontSize: "0.72rem", fontFamily: "Unbounded, sans-serif", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--gold)", opacity: 0.8 }}>Rarity</span>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedRarities.length === 0} onClick={() => setSelectedRarities([])} />
+          {RARITIES.map((r) => {
+            const selected = selectedRarities.includes(r)
+            const s = RARITY_STYLE[r] ?? { background: "#555" }
+            return (
+              <button
+                key={r}
+                type="button"
+                onClick={() => setSelectedRarities((prev) => prev.includes(r) ? prev.filter((x) => x !== r) : [...prev, r])}
+                style={{
+                  background: s.background,
+                  boxShadow: selected ? (s.boxShadow ?? undefined) : undefined,
+                  border: selected ? "2px solid var(--gold)" : "2px solid transparent",
+                  borderRadius: "0.4rem",
+                  padding: "0.3rem 0.85rem",
+                  cursor: "pointer",
+                  fontFamily: "Unbounded, sans-serif",
+                  fontSize: "0.65rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.05em",
+                  textTransform: "uppercase",
+                  color: "white",
+                  textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+                  opacity: selected ? 1 : 0.55,
+                  transition: "all 0.15s",
+                  flexShrink: 0,
+                }}
+              >
+                {r}
+              </button>
+            )
+          })}
         </div>
       </div>
 

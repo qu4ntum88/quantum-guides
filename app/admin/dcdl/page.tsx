@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 'Supporter', 'Warrior']
-const HERO_RARITIES = ['Legendary', 'Iconic', 'Mythic', 'Mythic +']
+const HERO_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
 const DAMAGE_TYPES = ['Physical', 'Magic']
 const GAME_MODES = ['Combat Cycles', 'Training Simulator', 'Meta Brawl', '3v3', 'Vehicle Combat', 'Story Mode']
@@ -29,7 +29,7 @@ const SYNERGIES = [
   { id: 'teen_titans', name: 'Teen Titans' },
   { id: 'weapon_master', name: 'Weapon Master' },
 ]
-const LEGACY_RANKS = ['Legendary', 'Epic', 'Mythic', 'Mythic +', 'Iconic']
+const LEGACY_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const LEGACY_ROLES = ['Guardian | Warrior', 'Magical | Assassin | Firepower', 'Supporter | Intimidator']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
@@ -509,9 +509,9 @@ function LegacyForm() {
             </Field>
           </div>
           <div style={g3}>
-            <Field label="Rank" required>
+            <Field label="Rarity" required>
               <select style={inp} value={rank} required onChange={(e) => setRank(e.target.value)}>
-                <option value="">Select...</option>{LEGACY_RANKS.map((r) => <option key={r}>{r}</option>)}
+                <option value="">Select...</option>{LEGACY_RARITIES.map((r) => <option key={r}>{r}</option>)}
               </select>
             </Field>
             <Field label="Tier" required>
