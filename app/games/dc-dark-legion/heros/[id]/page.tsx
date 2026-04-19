@@ -83,7 +83,11 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         {/* Transmute */}
         {hero.transmutePriorities && hero.transmutePriorities.length > 0 && (
           <div className="card">
-            <h4>Transmute Priorities</h4>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+              <img src="/dcdl/resource_icons/mirror cell.png" alt="Mirror Cell" style={{ height: '2.5rem', objectFit: 'contain' }} />
+              <h2 style={{ margin: 0, fontSize: '1.4rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Transmute Priorities</h2>
+              <img src="/dcdl/resource_icons/inertron.png" alt="Inertron" style={{ height: '2.5rem', objectFit: 'contain' }} />
+            </div>
             <p>{hero.transmutePriorities.join(', ')}</p>
           </div>
         )}
