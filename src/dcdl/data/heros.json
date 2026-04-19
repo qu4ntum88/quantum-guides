@@ -2931,12 +2931,15 @@
   {
     "id": "superman",
     "name": "Superman (Clark Kent)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "damageType": "Physical",
     "tagSynergies": [
       "superman_family",
       "justice_league",
       "metahuman"
     ],
-    "damageType": "Physical",
     "gameModes": [
       "Meta Brawl",
       "3v3",
@@ -2945,29 +2948,32 @@
       "Training Simulator",
       "Story Mode"
     ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
+    ],
     "transmutePriorities": [
       "ATK",
       "Physical PEN",
       "HP"
     ],
-    "class": "Warrior",
-    "rarity": "Mythic +",
-    "tier": "S",
-    "imageFull": "./full_images/Superman_full.png",
-    "imageHeadshot": "./headshot_images/superman.png",
-    "quantumsTake": "Superman is up there with Batman as one of the most iconic DC characters. He's the first Bleed champion you can go after on a fresh server. As far as his kit goes, he's one of the most powerful single-target damage dealers in the game. When fully built, and with the right supporters, he can carry your roster in every game mode. The biggest limitation is that long-term you will need his unique legacy item and purple stars or better to realize his full potential.",
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
-    ],
     "recommendedLegacyPieces": [
       "supermans_cape",
       "not_so_huge_hammer",
-      "promethium_claws"
+      "promethium_claws",
+      "speed_metal_suit"
     ],
+    "quantumsTake": "Superman is up there with Batman as one of the most iconic DC characters. He's the first Bleed champion you can go after on a fresh server. As far as his kit goes, he's one of the most powerful single-target damage dealers in the game. When fully built, and with the right supporters, he can carry your roster in every game mode. The biggest limitation is that long-term you will need his unique legacy item and purple stars or better to realize his full potential.",
+    "imageHeadshot": "./headshot_images/superman.png",
+    "imageFull": "./full_images/Superman_full.png",
     "ultimate": {
       "name": "Under a Yellow Sun",
       "description": "Gain one stack of [Solar Energy]. Deal [Physical DMG] equal to % ATK to an enemy. (Solar Energy: Increases ATK by a set %, stacking up to 3 times.",
       "image": "./skill_images/icon_hero_skill_Superman_main.png"
+    },
+    "globalSkill": {
+      "name": "Hope Restored",
+      "description": "Increases all Champions' HP and [Warrior] Champions' ATK.",
+      "image": "./globalskill_images/Superman_global.png"
     },
     "skills": [
       {
@@ -2986,11 +2992,6 @@
         "image": "./skill_images/icon_hero_skill_Superman_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Hope Restored",
-      "description": "Increases all Champions' HP and [Warrior] Champions' ATK.",
-      "image": "./globalskill_images/Superman_global.png"
-    },
     "upgrades": [
       {
         "name": "Heat Vision - Enhanced",
@@ -4474,7 +4475,225 @@
       "Meta Brawl",
       "3v3"
     ],
+    "sourcesWhereAvailable": [
+      "Special Event"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Spiritual AMP",
+      "Spiritual PEN"
+    ],
+    "recommendedLegacyPieces": [
+      "plastic_explosive",
+      "imp_doll",
+      "blackest_bats"
+    ],
     "quantumsTake": "Death Metal Batman is one of the most powerful champions in the game. As with Death Metal Wonder Woman, though, he was locked behind a massive paywall on release and we expect him to be difficult to obtain on a re-run as well. He has a very unique kit, in that he can't be targeted directly as long as one blackest bat and one ally are still alive. The blackest bat summoning mechanic is incredible, and when most of your team dead, the damage really ramps up. ",
-    "imageHeadshot": "./headshot_images/death_metal_batman.png"
+    "imageHeadshot": "./headshot_images/death_metal_batman.png",
+    "ultimate": {
+      "name": "Raise the Shred",
+      "description": "Death Metal Batman goes wild on his guitar, dealing spiritual damage equal to [X]% of his Attack to enemies within range, then summons two Blackest Bats to join the fight. Each Blackest Bat inherits [X]% Attack and [X]% HP from Death Metal Batman and lasts 15s.",
+      "image": "./skill_images/icon_hero_skill_dmbatman_main.png"
+    },
+    "globalSkill": {
+      "name": "Sword & Sorcery",
+      "description": "Increases all Champions' Physical Defense by [X]% and [Magical] Champions' Attack by [X]%.",
+      "image": "./globalskill_images/icon_hero_skill_dmbatman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Gotham Calling",
+        "description": "Death Metal Batman slams the ground, dealing spiriutal damage equal to [X]% of his Attack to enemies within range.",
+        "image": "./skill_images/icon_hero_skill_dmbatman_sub01.png"
+      },
+      {
+        "name": "Rock After Death",
+        "description": "After the start of battle, whenever an allied Champion is defeated, Death Metal Batman's Ultimate summons an addiitonal Blackest Bat. Each Blackest Bat inherits [X]% Attack and [X]% HP from Death Metal Batman and lasts 15s.",
+        "image": "./skill_images/icon_hero_skill_dmbatman_sub02.png"
+      },
+      {
+        "name": "Heavier Mettle",
+        "description": "At the start of battle, damage dealt by Death Metal Batman and his Blackest Bats is increased by [X]%.",
+        "image": "./skill_images/icon_hero_skill_dmbatman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Gotham Calling - Enhanced",
+        "description": "Reduces the cooldown of [Gotham Calling].",
+        "image": "./upgrade_images/DMBatman_sub01_enhanced.png"
+      },
+      {
+        "name": "Rock After Death - Enhanced",
+        "description": "Increases Death Metal Batman's Spiritual Penetration.",
+        "image": "./upgrade_images/DMBatman_sub02_enhanced.png"
+      },
+      {
+        "name": "Heavier Mettle - Enhanced",
+        "description": "Increases Death Metal Batman's Spiritual Amplification.",
+        "image": "./upgrade_images/DMBatman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "the_flash_wally_west",
+    "name": "The Flash (Wally West)",
+    "class": "Intimidator",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "teen_titans",
+      "the_flash_family",
+      "metahuman"
+    ],
+    "gameModes": [
+      "Training Simulator",
+      "3v3",
+      "Story Mode",
+      "Meta Brawl",
+      "Vehicle Combat"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Physical PEN"
+    ],
+    "recommendedLegacyPieces": [
+      "t_sphere_weakness_analyzer",
+      "cold_gun",
+      "speed_metal_suit"
+    ],
+    "quantumsTake": "Wally West was a highly anticipated champion on release, but he falls flat at all but the highest investment level. He needs high end transmutes to even remotely be useful. We thought he would shut down teams with heavy shield usage (think Hippolyta + Starfire + Riddler comps) and deal massive damage himself, and while he does have some utility to slow down shield teams, his Ultimate takes so long to ramp to the highest damage level that matches usually end before he does much work. ",
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_WallyWest.png",
+    "imageFull": "./full_images/img_hero_pic_WallyWest.png",
+    "ultimate": {
+      "name": "Infinity Mass Punch",
+      "description": "Wally channels the Speed Force to unleash Infinity Mass Punch, dealing physical damage equal to [X]% of his attack to an enemy. Each stack of Speed Force increases the damage multiplier by [X]%, up to a maximum of [X]% of Wally's Attack. Passive: Each basic attack grants Wally [2] stacks of Speed Force.",
+      "image": "./skill_images/icon_hero_skill_wally_main.png"
+    },
+    "globalSkill": {
+      "name": "One Step Ahead",
+      "description": "Increases all Champions' Spiritual Defense by [X]%, with an additional [X]% for [Firepower] Champions.",
+      "image": "./globalskill_images/icon_hero_skill_wally_global.png"
+    },
+    "skills": [
+      {
+        "name": "Everywhere at Once",
+        "description": "Wally blitzes an enemy from all directions, dealing physical damage equal to [X]% of his Attack, plus an additional [X]% if the target has a shield.",
+        "image": "./skill_images/icon_hero_skill_wally_sub01.png"
+      },
+      {
+        "name": "Relentless Attack",
+        "description": "Each stack of Speed force additionally increases Wally's Attack by [X]%, stacking up to [X]%. 1 stack is lost ever 5s.",
+        "image": "./skill_images/icon_hero_skill_wally_sub02.png"
+      },
+      {
+        "name": "Titan of Speed",
+        "description": "At the start of battle, Wally gains [X] stacks of Speed force. Whenever he receives a buff, he also gains 3 stacks of Speed Force, doubled if there are at least 3 [Teen Titans] allies present.",
+        "image": "./skill_images/icon_hero_skill_wally_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Everywhere at Once - Enhanced",
+        "description": "Reduces the cooldown of [Everywhere at Once].",
+        "image": "./upgrade_images/WallyWest_sub01_enhanced.png"
+      },
+      {
+        "name": "Relentless Attack - Enhanced",
+        "description": "Increases Wally's Attack.",
+        "image": "./upgrade_images/WallyWest_sub02_enhanced.png"
+      },
+      {
+        "name": "Titan of Speed - Enhanced",
+        "description": "Increases Wally's Physical Penetration.",
+        "image": "./upgrade_images/WallyWest_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "orphan_cassandra_cain",
+    "name": "Orphan (Cassandra Cain)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "bat_family",
+      "birds_of_prey",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "Training Simulator",
+      "Story Mode",
+      "Meta Brawl",
+      "3v3",
+      "Vehicle Combat"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed"
+    ],
+    "transmutePriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "Dodge",
+      "Physical PEN"
+    ],
+    "recommendedLegacyPieces": [
+      "not_so_huge_hammer",
+      "promethium_claws"
+    ],
+    "quantumsTake": "An interesting take on Cassandra Cain for sure. The Birds of Prey synergy makes me think they wanted her to work with hybrid teams that combine with Bat Family synergy, so I think she works really well with comps that include Nightwing, Hawkgirl, and Batgirl, with a fifth that ramps damage (Zatanna or Superboy) or protects the team (Riddler, Hippolyta, or Starfire). She's not the hypercarry we were expecting, but she certainly makes Bat Family a much more interesting tag synergy. Her legacy piece, as we are noticing with newer champions, is required and needs heavy investment.",
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_cassandracain.png",
+    "imageFull": "./full_images/img_hero_pic_cassandracain.png",
+    "ultimate": {
+      "name": "Mark of Cain",
+      "description": "Cassandra Cain unleashes a powerful slash, dealing physical damage equal to [X]% of her Attack to enemies within range. For 10s after casting, she slashes forward upon each successful dodge, dealing physical damage equal to [X]% of her attack to enemies within range; can trigger once every 1s.",
+      "image": "./skill_images/icon_hero_skill_cassandracain_main.png"
+    },
+    "globalSkill": {
+      "name": "Warrior Spirit",
+      "description": "Increases all Champions' HP by [X]%, with an additional [X]% for [Warrior] Champions.",
+      "image": "./globalskill_images/icon_hero_skill_cassandracain_global.png"
+    },
+    "skills": [
+      {
+        "name": "Shiva's Scion",
+        "description": "Cassandra Cain unleases a flurry of slashes, dealing physical damae equal to [X]% of her Attack to enemies within range.",
+        "image": "./skill_images/icon_hero_skill_cassandracain_sub01.png"
+      },
+      {
+        "name": "Shadow Strike",
+        "description": "Increases Cassandra Cain's Crit Rate by [X]%. After casting her Ultimate, her Crit Damage is increased by [X]% for 10s.",
+        "image": "./skill_images/icon_hero_skill_cassandracain_sub02.png"
+      },
+      {
+        "name": "False Retreat",
+        "description": "Increases Cassandra Cain's dodge by [X]%. At the start of battle, if there are at least 3 [Bat Family] allies present, her Dodge is increased by an additional [X]%.",
+        "image": "./skill_images/icon_hero_skill_cassandracain_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Shiva's Scion - Enhanced",
+        "description": "Reduces the cooldown of [Shiva's Scion].",
+        "image": "./upgrade_images/CassandraCain_sub01_enhanced.png"
+      },
+      {
+        "name": "Shadow Strike - Enhanced",
+        "description": "Increases Cassandra Cain's Dodge.",
+        "image": "./upgrade_images/CassandraCain_sub02_enhanced.png"
+      },
+      {
+        "name": "False Retreat - Enhanced",
+        "description": "Increases Cassandra Cain's Crit DMG.",
+        "image": "./upgrade_images/CassandraCain_sub03_enhanced.png"
+      }
+    ]
   }
 ]
