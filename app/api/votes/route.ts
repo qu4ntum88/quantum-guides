@@ -2,7 +2,7 @@ import { auth } from '@clerk/nextjs/server'
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/src/lib/supabase'
 
-const VALID_RATINGS = ['S', 'A+', 'A', 'B', 'C', 'D']
+const VALID_RATINGS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
 const VALID_TYPES = ['champion', 'legacy']
 
 // GET /api/votes?type=champion — returns the current user's votes
