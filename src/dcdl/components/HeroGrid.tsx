@@ -69,7 +69,7 @@ function factionIconSrc(id: string): string {
 }
 
 const LABEL: CSSProperties = {
-  fontSize: "0.72rem",
+  fontSize: "0.9rem",
   fontFamily: "Unbounded, sans-serif",
   fontWeight: 700,
   letterSpacing: "0.06em",
@@ -252,7 +252,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
     })
 
   return (
-    <div className="flex flex-col gap-2 md:gap-4">
+    <div className="flex flex-col gap-2 md:gap-4 w-full max-w-4xl">
       <SearchBar placeholder="Search heroes" onChange={(e) => setQuery(e.target.value)} />
 
       {/* Sort By row */}

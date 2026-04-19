@@ -27,7 +27,7 @@ const tierToRank: Record<string, number> = { "S+": 0, S: 1, "A+": 2, A: 3, B: 4,
 const rankToRank: Record<string, number> = { Iconic: 0, "Mythic +": 1, Mythic: 2, Legendary: 3, Epic: 4, "": 5 }
 
 const LABEL: CSSProperties = {
-  fontSize: "0.72rem",
+  fontSize: "0.9rem",
   fontFamily: "Unbounded, sans-serif",
   fontWeight: 700,
   letterSpacing: "0.06em",
@@ -202,7 +202,7 @@ export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResol
     })
 
   return (
-    <div className="flex flex-col gap-2 md:gap-4">
+    <div className="flex flex-col gap-2 md:gap-4 w-full max-w-4xl">
       <SearchBar placeholder="Search Legacy Pieces" onChange={(e) => setQuery(e.target.value)} />
 
       {/* Sort By row */}
