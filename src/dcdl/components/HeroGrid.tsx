@@ -78,6 +78,7 @@ const LABEL: CSSProperties = {
   opacity: 0.8,
   flexShrink: 0,
   whiteSpace: "nowrap",
+  width: "9rem",
 }
 
 function SortButton({ label, selected, onClick }: { label: string; selected: boolean; onClick: () => void }) {
@@ -255,109 +256,121 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
       <SearchBar placeholder="Search heroes" onChange={(e) => setQuery(e.target.value)} />
 
       {/* Sort By row */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Sort By</span>
-        {SORT_OPTIONS.map(({ value, label }) => (
-          <SortButton key={value} label={label} selected={sortBy === value} onClick={() => setSortBy(value)} />
-        ))}
-        <SortButton label="↑ Asc" selected={sortOrder === "asc"} onClick={() => setSortOrder("asc")} />
-        <SortButton label="↓ Desc" selected={sortOrder === "desc"} onClick={() => setSortOrder("desc")} />
-        <Button onClick={resetFilters}>Reset Filters</Button>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          {SORT_OPTIONS.map(({ value, label }) => (
+            <SortButton key={value} label={label} selected={sortBy === value} onClick={() => setSortBy(value)} />
+          ))}
+          <SortButton label="↑ Asc" selected={sortOrder === "asc"} onClick={() => setSortOrder("asc")} />
+          <SortButton label="↓ Desc" selected={sortOrder === "desc"} onClick={() => setSortOrder("desc")} />
+          <Button onClick={resetFilters}>Reset Filters</Button>
+        </div>
       </div>
 
       {/* Class filter row */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Class</span>
-        <AllButton selected={selectedClasses.length === 0} onClick={() => setSelectedClasses([])} />
-        {CLASSES.map(({ id, label }) => (
-          <IconFilterButton
-            key={id}
-            src={`/dcdl/role_images/${id}.png`}
-            label={label}
-            selected={selectedClasses.includes(id)}
-            onClick={() => toggle(selectedClasses, id, setSelectedClasses)}
-          />
-        ))}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedClasses.length === 0} onClick={() => setSelectedClasses([])} />
+          {CLASSES.map(({ id, label }) => (
+            <IconFilterButton
+              key={id}
+              src={`/dcdl/role_images/${id}.png`}
+              label={label}
+              selected={selectedClasses.includes(id)}
+              onClick={() => toggle(selectedClasses, id, setSelectedClasses)}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Faction filter row */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Faction</span>
-        <AllButton selected={selectedFactions.length === 0} onClick={() => setSelectedFactions([])} />
-        {FACTIONS.map(({ id, label }) => (
-          <IconFilterButton
-            key={id}
-            src={factionIconSrc(id)}
-            label={label}
-            selected={selectedFactions.includes(id)}
-            onClick={() => toggle(selectedFactions, id, setSelectedFactions)}
-          />
-        ))}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedFactions.length === 0} onClick={() => setSelectedFactions([])} />
+          {FACTIONS.map(({ id, label }) => (
+            <IconFilterButton
+              key={id}
+              src={factionIconSrc(id)}
+              label={label}
+              selected={selectedFactions.includes(id)}
+              onClick={() => toggle(selectedFactions, id, setSelectedFactions)}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Rarity filter row */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Rarity</span>
-        <AllButton selected={selectedRarities.length === 0} onClick={() => setSelectedRarities([])} />
-        {RARITIES.map((r) => {
-          const selected = selectedRarities.includes(r)
-          const s = RARITY_STYLE[r] ?? { background: "#555" }
-          return (
-            <button
-              key={r}
-              type="button"
-              onClick={() => toggle(selectedRarities, r, setSelectedRarities)}
-              style={{
-                background: s.background,
-                boxShadow: selected ? (s.boxShadow ?? undefined) : undefined,
-                border: selected ? "2px solid var(--gold)" : "2px solid transparent",
-                borderRadius: "0.4rem",
-                padding: "0.3rem 0.85rem",
-                cursor: "pointer",
-                fontFamily: "Unbounded, sans-serif",
-                fontSize: "0.65rem",
-                fontWeight: 700,
-                letterSpacing: "0.05em",
-                textTransform: "uppercase",
-                color: "white",
-                textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-                opacity: selected ? 1 : 0.55,
-                transition: "all 0.15s",
-                flexShrink: 0,
-              }}
-            >
-              {r}
-            </button>
-          )
-        })}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedRarities.length === 0} onClick={() => setSelectedRarities([])} />
+          {RARITIES.map((r) => {
+            const selected = selectedRarities.includes(r)
+            const s = RARITY_STYLE[r] ?? { background: "#555" }
+            return (
+              <button
+                key={r}
+                type="button"
+                onClick={() => toggle(selectedRarities, r, setSelectedRarities)}
+                style={{
+                  background: s.background,
+                  boxShadow: selected ? (s.boxShadow ?? undefined) : undefined,
+                  border: selected ? "2px solid var(--gold)" : "2px solid transparent",
+                  borderRadius: "0.4rem",
+                  padding: "0.3rem 0.85rem",
+                  cursor: "pointer",
+                  fontFamily: "Unbounded, sans-serif",
+                  fontSize: "0.65rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.05em",
+                  textTransform: "uppercase",
+                  color: "white",
+                  textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+                  opacity: selected ? 1 : 0.55,
+                  transition: "all 0.15s",
+                  flexShrink: 0,
+                }}
+              >
+                {r}
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       {/* Game Mode filter row */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Game Mode</span>
-        <AllButton selected={selectedGameModes.length === 0} onClick={() => setSelectedGameModes([])} />
-        {GAME_MODES.map((m) => (
-          <SortButton
-            key={m}
-            label={m}
-            selected={selectedGameModes.includes(m)}
-            onClick={() => toggle(selectedGameModes, m, setSelectedGameModes)}
-          />
-        ))}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedGameModes.length === 0} onClick={() => setSelectedGameModes([])} />
+          {GAME_MODES.map((m) => (
+            <SortButton
+              key={m}
+              label={m}
+              selected={selectedGameModes.includes(m)}
+              onClick={() => toggle(selectedGameModes, m, setSelectedGameModes)}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Tier Ranking filter row */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
         <span style={LABEL}>Tier Ranking</span>
-        <AllButton selected={selectedTiers.length === 0} onClick={() => setSelectedTiers([])} />
-        {TIERS.map((t) => (
-          <TierFilterButton
-            key={t}
-            tier={t}
-            selected={selectedTiers.includes(t)}
-            onClick={() => toggle(selectedTiers, t, setSelectedTiers)}
-          />
-        ))}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedTiers.length === 0} onClick={() => setSelectedTiers([])} />
+          {TIERS.map((t) => (
+            <TierFilterButton
+              key={t}
+              tier={t}
+              selected={selectedTiers.includes(t)}
+              onClick={() => toggle(selectedTiers, t, setSelectedTiers)}
+            />
+          ))}
+        </div>
       </div>
 
       <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
