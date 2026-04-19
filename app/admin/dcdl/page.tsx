@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback } from 'react'
 // ── Constants ──────────────────────────────────────────────────────────────────
 const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 'Supporter', 'Warrior']
 const HERO_RARITIES = ['Legendary', 'Iconic', 'Mythic', 'Mythic +']
-const TIERS = ['S', 'A+', 'A', 'B', 'C', 'D']
+const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
 const DAMAGE_TYPES = ['Physical', 'Magic']
 const GAME_MODES = ['Combat Cycles', 'Training Simulator', 'Meta Brawl', '3v3', 'Vehicle Combat', 'Story Mode']
 const SYNERGIES = [
