@@ -87,6 +87,7 @@ function RoleButton({ classes, selected, onClick }: { classes: string[]; selecte
 
 const rankValues = [
   { value: "All", label: "All ranks" },
+  { value: "Iconic", label: "Iconic" },
   { value: "Mythic +", label: "Mythic +" },
   { value: "Mythic", label: "Mythic" },
   { value: "Legendary", label: "Legendary" },
@@ -94,7 +95,7 @@ const rankValues = [
 ]
 
 const tierToRank: Record<string, number> = { "S+": 0, S: 1, "A+": 2, A: 3, B: 4, C: 5, D: 6, "": 7 }
-const rankToRank: Record<string, number> = { "Mythic +": 1, Mythic: 2, Legendary: 3, Epic: 4, "": 5 }
+const rankToRank: Record<string, number> = { Iconic: 1, "Mythic +": 2, Mythic: 3, Legendary: 4, Epic: 5, "": 6 }
 
 export default function LegacyGrid({ legacyPieces }: { legacyPieces: LegacyResolved[] }) {
   const [communityTiers, setCommunityTiers] = useState<Record<string, string>>({})

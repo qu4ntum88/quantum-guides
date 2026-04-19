@@ -29,7 +29,7 @@ const SYNERGIES = [
   { id: 'teen_titans', name: 'Teen Titans' },
   { id: 'weapon_master', name: 'Weapon Master' },
 ]
-const LEGACY_RANKS = ['Legendary', 'Epic', 'Mythic', 'Mythic +']
+const LEGACY_RANKS = ['Legendary', 'Epic', 'Mythic', 'Mythic +', 'Iconic']
 const LEGACY_ROLES = ['Guardian | Warrior', 'Magical | Assassin | Firepower', 'Supporter | Intimidator']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }

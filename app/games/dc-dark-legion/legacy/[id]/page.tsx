@@ -23,13 +23,18 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
           <h1 style={{ fontSize: '3rem', margin: 0 }}>{legacy.name.split('(')[0]}</h1>
           {legacy.rank && (() => {
             const rankStyleMap: Record<string, React.CSSProperties> = {
+              'Iconic': {
+                background: 'linear-gradient(105deg, #0e7490 0%, #06b6d4 30%, #a5f3fc 48%, #06b6d4 66%, #0e7490 100%)',
+                boxShadow: '0 0 12px rgba(6,182,212,0.55), inset 0 1px 0 rgba(255,255,255,0.25)',
+                color: 'white',
+              },
               'Mythic +': {
                 background: 'linear-gradient(105deg, #b91c1c 0%, #ef4444 30%, #fca5a5 48%, #ef4444 66%, #b91c1c 100%)',
                 boxShadow: '0 0 12px rgba(239,68,68,0.55), inset 0 1px 0 rgba(255,255,255,0.25)',
                 color: 'white',
               },
               'Mythic': { background: '#ef4444', color: 'white' },
-              'Legendary': { background: '#FACC15', color: '#1a1a1a' },
+              'Legendary': { background: '#FACC15', color: 'white' },
               'Epic': { background: '#a855f7', color: 'white' },
             }
             const rankStyle = rankStyleMap[legacy.rank] ?? { background: '#555', color: 'white' }
@@ -45,6 +50,7 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
                 textTransform: 'uppercase',
                 whiteSpace: 'nowrap',
                 flexShrink: 0,
+                textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
               }}>
                 {legacy.rank}
               </span>
@@ -53,6 +59,7 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
         </div>
         {legacy.tier && <PageTierBadges quantumTier={legacy.tier} entityType="legacy" entityId={id} />}
 
+        {/* Image + Gear Effects row */}
         {(() => {
           const roleClassMap: Record<string, string[]> = {
             'Guardian | Warrior': ['Guardian', 'Warrior'],
@@ -61,32 +68,34 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
           }
           const roleClasses = legacy.role ? (roleClassMap[legacy.role] ?? []) : []
           return (
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.5rem' }}>
-              {legacy.image && (
-                <img src={legacy.image} alt={legacy.name} style={{ height: '10rem', objectFit: 'contain' }} />
-              )}
-              {roleClasses.length > 0 && (
-                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                  {roleClasses.map((c) => (
-                    <img key={c} src={`/dcdl/role_images/${c}.png`} alt={c} style={{ height: '5rem', objectFit: 'contain' }} />
-                  ))}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+              {/* Gear Effects stacked on the left */}
+              {legacy.gearEffects && legacy.gearEffects.length > 0 && (
+                <div className="card" style={{ margin: 0, minWidth: '8rem' }}>
+                  <h4>Gear Effects</h4>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', marginTop: '0.5rem' }}>
+                    {legacy.gearEffects.map((g) => (
+                      <span key={g} style={{ fontSize: '0.95rem' }}>{g}</span>
+                    ))}
+                  </div>
                 </div>
               )}
+              {/* Centre: large image + role icons */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                {legacy.image && (
+                  <img src={legacy.image} alt={legacy.name} style={{ height: '10rem', objectFit: 'contain' }} />
+                )}
+                {roleClasses.length > 0 && (
+                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                    {roleClasses.map((c) => (
+                      <img key={c} src={`/dcdl/role_images/${c}.png`} alt={c} style={{ height: '5rem', objectFit: 'contain' }} />
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           )
         })()}
-
-        <div className="card">
-          <h4>Recommended Champions</h4>
-          <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5" style={{ marginTop: '0.5rem' }}>
-            {legacy.champions.map((h) => h && <HeroBox key={h.id} hero={h} />)}
-          </div>
-        </div>
-
-        <div className="card">
-          <h4>Gear Effects</h4>
-          <p>{legacy.gearEffects?.join(', ')}</p>
-        </div>
 
         {legacy.legacySkills && legacy.legacySkills.length > 0 && (
           <div className="card">
@@ -102,6 +111,13 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
             ))}
           </div>
         )}
+
+        <div className="card">
+          <h4>Recommended Champions</h4>
+          <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5" style={{ marginTop: '0.5rem' }}>
+            {legacy.champions.map((h) => h && <HeroBox key={h.id} hero={h} />)}
+          </div>
+        </div>
 
         <VotingWidget entityType="legacy" entityId={id} />
 
