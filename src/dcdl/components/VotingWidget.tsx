@@ -64,7 +64,7 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
   return (
     <div className="card">
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.75rem' }}>
-        <img src="/images/site/JLD.png" alt="JLD" style={{ width: '1.75rem', height: '1.75rem', objectFit: 'contain' }} />
+        <img src="/images/site/JLD.png" alt="JLD" style={{ width: '5.25rem', height: '5.25rem', objectFit: 'contain' }} />
         <h4 style={{ margin: 0, fontSize: '0.95rem' }}>Justice League of Discord Community Voted Tier Ranking</h4>
       </div>
 

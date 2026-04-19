@@ -26,11 +26,11 @@ export default function PageTierBadges({
   return (
     <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum" style={{ width: '1.75rem', height: '1.75rem', objectFit: 'contain' }} />
+        <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum" style={{ width: '5.25rem', height: '5.25rem', objectFit: 'contain' }} />
         <TierBadge tier={quantumTier} />
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <img src="/images/site/JLD.png" alt="Community" style={{ width: '1.75rem', height: '1.75rem', objectFit: 'contain' }} />
+        <img src="/images/site/JLD.png" alt="Community" style={{ width: '5.25rem', height: '5.25rem', objectFit: 'contain' }} />
         <TierBadge tier={communityTier} />
       </div>
     </div>

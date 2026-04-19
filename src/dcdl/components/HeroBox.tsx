@@ -32,12 +32,12 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
       <TooltipContent style={{ background: '#1a1a2e', border: '1px solid #333', padding: '0.6rem 0.8rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-            <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum" style={{ width: '1.5rem', height: '1.5rem', objectFit: 'contain' }} />
+            <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum" style={{ width: '4.5rem', height: '4.5rem', objectFit: 'contain' }} />
             <span style={{ color: '#aaa', fontSize: '0.75rem', flex: 1 }}>Quantum&apos;s Tier</span>
             <TierBadge tier={hero.tier} />
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-            <img src="/images/site/JLD.png" alt="Community" style={{ width: '1.5rem', height: '1.5rem', objectFit: 'contain' }} />
+            <img src="/images/site/JLD.png" alt="Community" style={{ width: '4.5rem', height: '4.5rem', objectFit: 'contain' }} />
             <span style={{ color: '#aaa', fontSize: '0.75rem', flex: 1 }}>Community Tier</span>
             <TierBadge tier={communityTier} />
           </div>
