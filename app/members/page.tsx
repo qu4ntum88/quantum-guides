@@ -4,9 +4,18 @@ import { useEffect, useState } from 'react'
 import { useUser } from '@clerk/nextjs'
 import { getResolvedHeros, getResolvedLegacy } from '@/src/dcdl/lib/data'
 
-const RATINGS = ['S', 'A+', 'A', 'B', 'C', 'D']
+const RATINGS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
 const ratingColor: Record<string, string> = {
-  S: '#f59e0b', 'A+': '#84cc16', A: '#22c55e', B: '#3b82f6', C: '#a855f7', D: '#ef4444',
+  'S+': '#FF6EC7', S: '#FF415C', 'A+': '#FA8319', A: '#FDCE3B', B: '#CB4CDA', C: '#43B3ED', D: '#39D196',
+}
+const ratingDesc: Record<string, string> = {
+  'S+': 'The absolute best champions — meta-defining and dominant in every game mode.',
+  S: 'Top tier characters that make an impact in every game mode.',
+  'A+': 'Top tier in one or some game modes, but not all.',
+  A: "Great champions that, while not top tier, are still very good in many situations.",
+  B: "Solid middle of the road champions — don't particularly excel anywhere but still overall good picks.",
+  C: "Champions that excel in the early game but perform considerably worse later on. Also champions that have a well defined niche but don't particularly stand out outside of it, so they aren't worth building unless you have a developed roster.",
+  D: 'Champions that fail to have meaningful impact in any content.',
 }
 
 type VoteMap = Record<string, string>
@@ -105,6 +114,21 @@ export default function MembersPage() {
             </button>
           ))}
         </div>
+
+        {/* Tier key */}
+        <details style={{ marginBottom: '1.5rem' }}>
+          <summary style={{ cursor: 'pointer', fontSize: '0.82rem', color: '#aaa', userSelect: 'none' }}>
+            Tier explanations
+          </summary>
+          <div style={{ marginTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+            {RATINGS.map((r) => (
+              <div key={r} style={{ display: 'flex', gap: '0.6rem', fontSize: '0.82rem', alignItems: 'flex-start' }}>
+                <span style={{ fontWeight: 700, color: ratingColor[r], minWidth: '2.2rem', flexShrink: 0 }}>{r}</span>
+                <span style={{ color: '#ccc' }}>{ratingDesc[r]}</span>
+              </div>
+            ))}
+          </div>
+        </details>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {items.map((item) => {

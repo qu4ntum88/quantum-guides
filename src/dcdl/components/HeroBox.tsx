@@ -8,7 +8,6 @@ const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
 export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; communityTier?: string }) {
   const classSrc = "/dcdl/role_images/" + hero.class + ".png"
-  const tierSrc = "/dcdl/tier_images/" + hero.tier + ".png"
   return (
     <Tooltip>
       <TooltipTrigger asChild>
@@ -24,7 +23,6 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
           />
           <div className="absolute inset-0 flex flex-col justify-end">
             <img className="absolute top-0 left-0 w-8" src={classSrc} alt={hero.class} />
-            <img className="absolute top-1 right-1 w-8" src={tierSrc} alt={hero.tier} />
             <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
               {hero.name}
             </p>

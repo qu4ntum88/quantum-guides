@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { getResolvedLegacy, getResolvedHeros } from '@/src/dcdl/lib/data'
 import HeroBox from '@/src/dcdl/components/HeroBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
+import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
 
 export function generateStaticParams() {
   return getResolvedLegacy().map((l) => ({ id: l.id }))
@@ -12,8 +13,6 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
   const legacy = getResolvedLegacy().find((l) => l.id === id)
   if (!legacy) return notFound()
 
-  const tierSrc = legacy.tier ? '/dcdl/tier_images/' + legacy.tier + '.png' : null
-
   return (
     <main>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', paddingTop: '2rem', paddingBottom: '4rem' }}>
@@ -21,9 +20,9 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center' }}>
           {legacy.image && <img src={legacy.image} alt={legacy.name} style={{ height: '3rem', objectFit: 'contain' }} />}
           <h1 style={{ fontSize: '3rem', margin: 0 }}>{legacy.name.split('(')[0]}</h1>
-          {tierSrc && <img src={tierSrc} alt={legacy.tier} style={{ height: '3rem', width: '4.5rem', objectFit: 'contain' }} />}
         </div>
         <div style={{ textAlign: 'center', fontSize: '1.25rem', fontWeight: 'bold', color: '#ef4444' }}>{legacy.rank}</div>
+        {legacy.tier && <PageTierBadges quantumTier={legacy.tier} entityType="legacy" entityId={id} />}
 
         {legacy.image && (
           <img src={legacy.image} alt={legacy.name} style={{ height: '10rem', objectFit: 'contain', alignSelf: 'center' }} />

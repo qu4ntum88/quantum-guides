@@ -6,7 +6,7 @@ import { useUser } from '@clerk/nextjs'
 const RATINGS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
 
 const ratingColor: Record<string, string> = {
-  'S+': '#ff4d00', S: '#f59e0b', 'A+': '#84cc16', A: '#22c55e', B: '#3b82f6', C: '#a855f7', D: '#ef4444',
+  'S+': '#FF6EC7', S: '#FF415C', 'A+': '#FA8319', A: '#FDCE3B', B: '#CB4CDA', C: '#43B3ED', D: '#39D196',
 }
 
 const ratingDesc: Record<string, string> = {
@@ -63,7 +63,10 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
 
   return (
     <div className="card">
-      <h4 style={{ marginBottom: '0.75rem' }}>Community Tier Vote</h4>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.75rem' }}>
+        <img src="/images/site/JLD.png" alt="JLD" style={{ width: '1.75rem', height: '1.75rem', objectFit: 'contain' }} />
+        <h4 style={{ margin: 0, fontSize: '0.95rem' }}>Justice League of Discord Community Voted Tier Ranking</h4>
+      </div>
 
       {/* Tier key */}
       <details style={{ marginBottom: '1.25rem' }}>

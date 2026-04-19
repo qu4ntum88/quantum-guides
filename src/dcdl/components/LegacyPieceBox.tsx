@@ -22,9 +22,6 @@ export default function LegacyPieceBox({ piece, communityTier }: { piece: Legacy
             style={{ maskImage: "linear-gradient(to bottom, black 30%, transparent)" }}
           />
           <div className="absolute inset-0 flex flex-col justify-end">
-            {tierSrc && (
-              <img className="absolute top-1 right-1 w-8" src={tierSrc} alt={piece.tier} />
-            )}
             <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
               {piece.name}
             </p>

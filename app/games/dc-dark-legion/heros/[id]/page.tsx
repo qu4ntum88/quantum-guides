@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { getResolvedHeros } from '@/src/dcdl/lib/data'
 import LegacyPieceBox from '@/src/dcdl/components/LegacyPieceBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
+import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
 import type { LegacyResolved } from '@/src/dcdl/lib/data'
 
 export function generateStaticParams() {
@@ -13,7 +14,6 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
   const hero = getResolvedHeros().find((h) => h.id === id)
   if (!hero) return notFound()
 
-  const tierSrc = '/dcdl/tier_images/' + hero.tier + '.png'
   const classSrc = '/dcdl/role_images/' + hero.class + '.png'
 
   const rarityMap: Record<string, string> = {
@@ -47,8 +47,8 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
             <img src={classSrc} alt={hero.class} style={{ height: '3rem', objectFit: 'contain' }} />
             <h1 style={{ fontSize: '3rem', margin: 0 }}>{hero.name.split('(')[0]}</h1>
-            <img src={tierSrc} alt={hero.tier} style={{ height: '3rem', width: '4.5rem', objectFit: 'contain' }} />
           </div>
+          <PageTierBadges quantumTier={hero.tier} entityType="champion" entityId={id} />
           {hero.name.match(/\((.*)\)/)?.pop() && (
             <div style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#ef4444' }}>
               {hero.name.match(/\((.*)\)/)?.pop()}
