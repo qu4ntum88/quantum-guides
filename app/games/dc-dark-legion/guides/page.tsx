@@ -26,9 +26,6 @@ const secTitle: React.CSSProperties = {
   borderBottom: '1px solid rgba(204,164,83,0.3)', paddingBottom: '0.5rem', marginBottom: '0.75rem',
 }
 
-// 8-spike starburst polygon
-const STARBURST = 'polygon(50% 0%, 61% 24%, 85% 15%, 76% 39%, 100% 50%, 76% 61%, 85% 85%, 61% 76%, 50% 100%, 39% 76%, 15% 85%, 24% 61%, 0% 50%, 24% 39%, 15% 15%, 39% 24%)'
-
 export default function GuidesPage() {
   const guides = getGuides()
   const { latestServer, patchNotes, gameCodes } = getGameInfo()
@@ -52,10 +49,36 @@ export default function GuidesPage() {
       <section style={{ padding: '2rem 0' }}>
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
-          {latestServer && (
-            <div className="card">
-              <div style={secTitle}>Latest Server</div>
-              <p style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0 }}>{latestServer}</p>
+          {(latestServer || gameCodes.length > 0) && (
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              {latestServer && (
+                <div className="card" style={{ flex: '0 0 auto' }}>
+                  <div style={secTitle}>Latest Server</div>
+                  <p style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0 }}>{latestServer}</p>
+                </div>
+              )}
+              {gameCodes.length > 0 && (
+                <div className="card" style={{ flex: '1 1 auto' }}>
+                  <div style={secTitle}>Active Game Codes</div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center' }}>
+                    {gameCodes.map((code: string) => (
+                      <span key={code} style={{
+                        fontFamily: 'Unbounded, sans-serif',
+                        fontWeight: 800,
+                        fontSize: '1rem',
+                        color: 'var(--gold)',
+                        background: 'rgba(204,164,83,0.1)',
+                        border: '1px solid rgba(204,164,83,0.4)',
+                        borderRadius: '0.375rem',
+                        padding: '0.4rem 0.9rem',
+                        letterSpacing: '0.04em',
+                      }}>
+                        {code}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -77,35 +100,6 @@ export default function GuidesPage() {
               }}>
                 {patchNotes}
               </pre>
-            </div>
-          )}
-
-          {gameCodes.length > 0 && (
-            <div className="card">
-              <div style={secTitle}>Active Game Codes</div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center', justifyContent: 'center', padding: '0.5rem 0' }}>
-                {gameCodes.map((code: string) => (
-                  <div key={code} style={{
-                    clipPath: STARBURST,
-                    background: 'var(--gold)',
-                    color: '#111',
-                    fontWeight: 900,
-                    fontFamily: 'Unbounded, sans-serif',
-                    fontSize: '0.7rem',
-                    width: '140px',
-                    height: '140px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: 'center',
-                    padding: '1.5rem',
-                    wordBreak: 'break-all',
-                    letterSpacing: '0.02em',
-                  }}>
-                    {code}
-                  </div>
-                ))}
-              </div>
             </div>
           )}
 
