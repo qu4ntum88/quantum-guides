@@ -851,52 +851,353 @@ function GuidesForm() {
   )
 }
 
+// ── VH Constants ──────────────────────────────────────────────────────────────
+const VH_CLASSES   = ['Attacker', 'Balanced', 'Support', 'Tank']
+const VH_HOMELANDS = ['Archlands', 'Crucible', 'Dragana', 'Free Tribes', 'Frostheim', 'Holy Order', 'Moonlight Clan', 'Pandemonium']
+const VH_SPECIES   = ['Beastman', 'Construct', 'Creature', 'Dwarf', 'Elf', 'Goblin', 'Human', 'Orc']
+const VH_OTHER     = ['Artificer', 'Assassin', 'Blademaster', 'Consumed', 'Healer', 'Homonculus', 'Inquisition', 'Knight', 'Mimic', 'Miner', 'Minstrel', 'Monk', 'Noble', 'Outlaw', 'Priest', 'Sage', 'Seasoned', 'Sentinel', 'Sharpshooter', 'Tainted', 'Carnivale', 'Wanderer']
+
+// ── Hunter Form ────────────────────────────────────────────────────────────────
+function HunterForm() {
+  const [mode, setMode] = useState<'add' | 'edit'>('add')
+  const [selectedId, setSelectedId] = useState('')
+  const [hunters, setHunters] = useState<ItemOption[]>([])
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  const [name, setName] = useState(''); const [id, setId] = useState(''); const [idManual, setIdManual] = useState(false)
+  const [hunterClass, setHunterClass] = useState(''); const [homeland, setHomeland] = useState('')
+  const [species, setSpecies] = useState(''); const [other, setOther] = useState<string[]>([])
+  const [portraitFile, setPortraitFile] = useState<File | null>(null); const [existingPortrait, setExistingPortrait] = useState('')
+
+  useEffect(() => {
+    fetch('/api/admin/vh/hunters').then((r) => r.json()).then((data) =>
+      setHunters(data.map((h: { id: string; name: string }) => ({ id: h.id, name: h.name })))
+    )
+  }, [])
+
+  const reset = useCallback(() => {
+    setName(''); setId(''); setIdManual(false); setHunterClass(''); setHomeland('')
+    setSpecies(''); setOther([]); setPortraitFile(null); setExistingPortrait(''); setSelectedId('')
+  }, [])
+
+  async function loadHunter(hunterId: string) {
+    if (!hunterId) { reset(); return }
+    const res = await fetch('/api/admin/vh/hunters')
+    if (!res.ok) return
+    const all = await res.json()
+    const h = all.find((x: { id: string }) => x.id === hunterId)
+    if (!h) return
+    setName(h.name ?? ''); setId(h.id ?? ''); setIdManual(true)
+    setHunterClass(h.class ?? ''); setHomeland(h.homeland ?? ''); setSpecies(h.species ?? '')
+    setOther(h.other ?? []); setExistingPortrait(h.portrait ?? '')
+  }
+
+  function toggleOther(val: string) {
+    setOther((prev) => prev.includes(val) ? prev.filter((x) => x !== val) : [...prev, val])
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault(); setLoading(true); setStatus(null)
+    const fd = new FormData()
+    fd.append('id', id); fd.append('name', name)
+    if (hunterClass) fd.append('class', hunterClass)
+    if (homeland) fd.append('homeland', homeland)
+    if (species) fd.append('species', species)
+    other.forEach((o) => fd.append('other', o))
+    if (portraitFile) fd.append('portrait', portraitFile)
+
+    try {
+      const res = await fetch('/api/admin/vh/hunters', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({ type: 'success', message: mode === 'edit' ? `"${name}" updated!` : `"${name}" added!` })
+        if (mode === 'add') reset()
+        fetch('/api/admin/vh/hunters').then((r) => r.json()).then((data) =>
+          setHunters(data.map((h: { id: string; name: string }) => ({ id: h.id, name: h.name })))
+        )
+      } else {
+        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  return (
+    <div>
+      <ModeToggle mode={mode} setMode={setMode} onReset={reset}
+        addLabel="Add New Hunter" editLabel="Edit Existing Hunter" />
+
+      {mode === 'edit' && (
+        <div style={{ ...sec, marginBottom: '1.5rem' }}>
+          <Field label="Select Hunter" required>
+            <select style={inp} value={selectedId} onChange={(e) => { setSelectedId(e.target.value); loadHunter(e.target.value) }}>
+              <option value="">Choose a hunter...</option>
+              {hunters.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+            </select>
+          </Field>
+        </div>
+      )}
+
+      <StatusBanner status={status} />
+
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <div style={sec}>
+          <div style={secTitle}>Basic Info</div>
+          <div style={g2}>
+            <Field label="Name" required>
+              <input style={inp} value={name} required onChange={(e) => { setName(e.target.value); if (!idManual) setId(toId(e.target.value)) }} />
+            </Field>
+            <Field label="ID (URL slug)" required hint="Auto-generated from name">
+              <input style={inp} value={id} required onChange={(e) => { setId(e.target.value); setIdManual(true) }} />
+            </Field>
+          </div>
+          <div style={g3}>
+            <Field label="Class">
+              <select style={inp} value={hunterClass} onChange={(e) => setHunterClass(e.target.value)}>
+                <option value="">Select...</option>
+                {VH_CLASSES.map((c) => <option key={c}>{c}</option>)}
+              </select>
+            </Field>
+            <Field label="Homeland">
+              <select style={inp} value={homeland} onChange={(e) => setHomeland(e.target.value)}>
+                <option value="">Select...</option>
+                {VH_HOMELANDS.map((h) => <option key={h}>{h}</option>)}
+              </select>
+            </Field>
+            <Field label="Species">
+              <select style={inp} value={species} onChange={(e) => setSpecies(e.target.value)}>
+                <option value="">Select...</option>
+                {VH_SPECIES.map((s) => <option key={s}>{s}</option>)}
+              </select>
+            </Field>
+          </div>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Portrait</div>
+          <Field label="Portrait Image" hint={existingPortrait ? `Current: ${existingPortrait.split('/').pop()}` : undefined}>
+            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+              onChange={(e) => setPortraitFile(e.target.files?.[0] ?? null)} />
+            {portraitFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{portraitFile.name}</span>}
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Other Tags</div>
+          <CheckGroup
+            options={VH_OTHER.map((o) => ({ id: o, name: o }))}
+            selected={other}
+            onChange={toggleOther}
+          />
+        </div>
+
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : mode === 'edit' ? 'Save Changes' : 'Add Hunter'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
+// ── Status Effect Form ─────────────────────────────────────────────────────────
+function StatusEffectForm() {
+  const [mode, setMode] = useState<'add' | 'edit'>('add')
+  const [selectedId, setSelectedId] = useState('')
+  const [effects, setEffects] = useState<ItemOption[]>([])
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  const [name, setName] = useState(''); const [id, setId] = useState(''); const [idManual, setIdManual] = useState(false)
+  const [description, setDescription] = useState('')
+  const [imgFile, setImgFile] = useState<File | null>(null); const [existingImg, setExistingImg] = useState('')
+
+  useEffect(() => {
+    fetch('/api/admin/vh/status-effects').then((r) => r.json()).then((data) =>
+      setEffects(data.map((e: { id: string; name: string }) => ({ id: e.id, name: e.name })))
+    )
+  }, [])
+
+  const reset = useCallback(() => {
+    setName(''); setId(''); setIdManual(false); setDescription('')
+    setImgFile(null); setExistingImg(''); setSelectedId('')
+  }, [])
+
+  async function loadEffect(effectId: string) {
+    if (!effectId) { reset(); return }
+    const res = await fetch('/api/admin/vh/status-effects')
+    if (!res.ok) return
+    const all = await res.json()
+    const e = all.find((x: { id: string }) => x.id === effectId)
+    if (!e) return
+    setName(e.name ?? ''); setId(e.id ?? ''); setIdManual(true)
+    setDescription(e.description ?? ''); setExistingImg(e.image ?? '')
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault(); setLoading(true); setStatus(null)
+    const fd = new FormData()
+    fd.append('id', id); fd.append('name', name)
+    if (description) fd.append('description', description)
+    if (imgFile) fd.append('image', imgFile)
+
+    try {
+      const res = await fetch('/api/admin/vh/status-effects', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({ type: 'success', message: mode === 'edit' ? `"${name}" updated!` : `"${name}" added!` })
+        if (mode === 'add') reset()
+        fetch('/api/admin/vh/status-effects').then((r) => r.json()).then((data) =>
+          setEffects(data.map((e: { id: string; name: string }) => ({ id: e.id, name: e.name })))
+        )
+      } else {
+        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  return (
+    <div>
+      <ModeToggle mode={mode} setMode={setMode} onReset={reset}
+        addLabel="Add Status Effect" editLabel="Edit Status Effect" />
+
+      {mode === 'edit' && (
+        <div style={{ ...sec, marginBottom: '1.5rem' }}>
+          <Field label="Select Status Effect" required>
+            <select style={inp} value={selectedId} onChange={(e) => { setSelectedId(e.target.value); loadEffect(e.target.value) }}>
+              <option value="">Choose a status effect...</option>
+              {effects.map((e) => <option key={e.id} value={e.id}>{e.name}</option>)}
+            </select>
+          </Field>
+        </div>
+      )}
+
+      <StatusBanner status={status} />
+
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <div style={sec}>
+          <div style={secTitle}>Basic Info</div>
+          <div style={g2}>
+            <Field label="Name" required>
+              <input style={inp} value={name} required onChange={(e) => { setName(e.target.value); if (!idManual) setId(toId(e.target.value)) }} />
+            </Field>
+            <Field label="ID (URL slug)" required hint="Auto-generated from name">
+              <input style={inp} value={id} required onChange={(e) => { setId(e.target.value); setIdManual(true) }} />
+            </Field>
+          </div>
+          <Field label="Description" hint="Optional — shown as a tooltip on hover">
+            <textarea style={{ ...inp, minHeight: '4rem', resize: 'vertical' }} value={description}
+              onChange={(e) => setDescription(e.target.value)} placeholder="What this status effect does..." />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Image</div>
+          <Field label="Status Effect Image" hint={existingImg ? `Current: ${existingImg.split('/').pop()}` : undefined}>
+            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+              onChange={(e) => setImgFile(e.target.files?.[0] ?? null)} />
+            {imgFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{imgFile.name}</span>}
+          </Field>
+        </div>
+
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : mode === 'edit' ? 'Save Changes' : 'Add Status Effect'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
-type Tab = 'champions' | 'legacy' | 'info' | 'guides'
+type Game = 'dcdl' | 'vh'
+type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides'
+type VhTab = 'hunters' | 'status-effects'
 
 export default function AdminDCDLPage() {
-  const [tab, setTab] = useState<Tab>('champions')
+  const [game, setGame] = useState<Game>('dcdl')
+  const [dcdlTab, setDcdlTab] = useState<DcdlTab>('champions')
+  const [vhTab, setVhTab] = useState<VhTab>('hunters')
   const [legacyOptions, setLegacyOptions] = useState<ItemOption[]>([])
 
   useEffect(() => {
     fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)
   }, [])
 
-  const tabs: { id: Tab; label: string }[] = [
+  const dcdlTabs: { id: DcdlTab; label: string }[] = [
     { id: 'champions', label: 'Champions' },
     { id: 'legacy', label: 'Legacy Pieces' },
     { id: 'info', label: 'Game Info' },
     { id: 'guides', label: 'Guides' },
   ]
 
+  const vhTabs: { id: VhTab; label: string }[] = [
+    { id: 'hunters', label: 'Hunters' },
+    { id: 'status-effects', label: 'Status Effects' },
+  ]
+
+  const gameTabStyle = (g: Game): React.CSSProperties => ({
+    background: game === g ? 'var(--gold)' : 'var(--purple)',
+    color: game === g ? '#111' : '#fff',
+    border: 'none', borderRadius: '0.375rem', cursor: 'pointer',
+    padding: '0.5rem 1.5rem', fontFamily: 'Unbounded, sans-serif',
+    fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.05em',
+  })
+
+  const subTabStyle = (active: boolean): React.CSSProperties => ({
+    background: 'none', border: 'none', cursor: 'pointer', padding: '0.6rem 1.25rem',
+    fontSize: '0.9rem', fontWeight: active ? 700 : 400,
+    color: active ? 'var(--gold)' : '#888',
+    borderBottom: active ? '2px solid var(--gold)' : '2px solid transparent',
+    marginBottom: '-2px', transition: 'color 0.15s',
+    fontFamily: active ? 'Unbounded, sans-serif' : 'inherit',
+  })
+
   return (
     <main>
       <div className="container" style={{ maxWidth: '820px', paddingTop: '2rem', paddingBottom: '4rem' }}>
-        <h1 style={{ marginBottom: '0.25rem' }}>DCDL Admin</h1>
+        <h1 style={{ marginBottom: '0.25rem' }}>Site Admin</h1>
         <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-          Local dev tool — writes directly to JSON data files and saves images to <code>public/dcdl/</code>.
+          Local dev tool — writes directly to JSON/MDX files and saves images to <code>public/</code>.
         </p>
 
-        {/* Tab bar */}
-        <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '2rem', borderBottom: '2px solid #333', paddingBottom: '0' }}>
-          {tabs.map(({ id, label }) => (
-            <button key={id} type="button" onClick={() => setTab(id)} style={{
-              background: 'none', border: 'none', cursor: 'pointer', padding: '0.6rem 1.25rem',
-              fontSize: '0.9rem', fontWeight: tab === id ? 700 : 400,
-              color: tab === id ? 'var(--gold)' : '#888',
-              borderBottom: tab === id ? '2px solid var(--gold)' : '2px solid transparent',
-              marginBottom: '-2px', transition: 'color 0.15s',
-              fontFamily: tab === id ? 'Unbounded, sans-serif' : 'inherit',
-            }}>
-              {label}
-            </button>
-          ))}
+        {/* Game selector */}
+        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+          <button type="button" style={gameTabStyle('dcdl')} onClick={() => setGame('dcdl')}>DC: Dark Legion</button>
+          <button type="button" style={gameTabStyle('vh')} onClick={() => setGame('vh')}>Void Hunters</button>
         </div>
 
-        {tab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)} />}
-        {tab === 'legacy' && <LegacyForm />}
-        {tab === 'info' && <GameInfoForm />}
-        {tab === 'guides' && <GuidesForm />}
+        {/* DCDL sub-tabs */}
+        {game === 'dcdl' && (
+          <>
+            <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '2rem', borderBottom: '2px solid #333' }}>
+              {dcdlTabs.map(({ id, label }) => (
+                <button key={id} type="button" onClick={() => setDcdlTab(id)} style={subTabStyle(dcdlTab === id)}>
+                  {label}
+                </button>
+              ))}
+            </div>
+            {dcdlTab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)} />}
+            {dcdlTab === 'legacy' && <LegacyForm />}
+            {dcdlTab === 'info' && <GameInfoForm />}
+            {dcdlTab === 'guides' && <GuidesForm />}
+          </>
+        )}
+
+        {/* VH sub-tabs */}
+        {game === 'vh' && (
+          <>
+            <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '2rem', borderBottom: '2px solid #333' }}>
+              {vhTabs.map(({ id, label }) => (
+                <button key={id} type="button" onClick={() => setVhTab(id)} style={subTabStyle(vhTab === id)}>
+                  {label}
+                </button>
+              ))}
+            </div>
+            {vhTab === 'hunters' && <HunterForm />}
+            {vhTab === 'status-effects' && <StatusEffectForm />}
+          </>
+        )}
       </div>
     </main>
   )
