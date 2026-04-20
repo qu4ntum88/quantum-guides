@@ -560,8 +560,118 @@ function LegacyForm() {
   )
 }
 
+// ── Game Info form ─────────────────────────────────────────────────────────────
+function GameInfoForm() {
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+  const [latestServer, setLatestServer] = useState('')
+  const [patchNotes, setPatchNotes] = useState('')
+  const [gameCodes, setGameCodes] = useState<string[]>([])
+  const [newCode, setNewCode] = useState('')
+
+  useEffect(() => {
+    fetch('/api/admin/dcdl/game-info')
+      .then((r) => r.json())
+      .then((data) => {
+        setLatestServer(data.latestServer ?? '')
+        setPatchNotes(data.patchNotes ?? '')
+        setGameCodes(data.gameCodes ?? [])
+      })
+  }, [])
+
+  function addCode() {
+    const code = newCode.trim()
+    if (!code || gameCodes.includes(code)) return
+    setGameCodes([...gameCodes, code])
+    setNewCode('')
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    setLoading(true)
+    setStatus(null)
+    try {
+      const res = await fetch('/api/admin/dcdl/game-info', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ latestServer, patchNotes, gameCodes }),
+      })
+      if (res.ok) {
+        setStatus({ type: 'success', message: 'Game info saved! Commit and deploy to publish.' })
+      } else {
+        setStatus({ type: 'error', message: 'Something went wrong.' })
+      }
+    } catch {
+      setStatus({ type: 'error', message: 'Network error.' })
+    }
+    setLoading(false)
+  }
+
+  return (
+    <div>
+      <StatusBanner status={status} />
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+
+        <div style={sec}>
+          <div style={secTitle}>Latest Server</div>
+          <Field label="Server Name / Number">
+            <input style={inp} value={latestServer} onChange={(e) => setLatestServer(e.target.value)} placeholder="e.g. Server 142 — Metropolis" />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Latest Patch Notes</div>
+          <Field label="Patch Notes" hint="Paste the full patch notes text">
+            <textarea
+              style={{ ...inp, minHeight: '16rem', resize: 'vertical', fontFamily: 'monospace' }}
+              value={patchNotes}
+              onChange={(e) => setPatchNotes(e.target.value)}
+              placeholder="Paste patch notes here..."
+            />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Game Codes</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+            {gameCodes.length === 0 && (
+              <span style={{ color: '#666', fontSize: '0.85rem' }}>No active codes.</span>
+            )}
+            {gameCodes.map((code) => (
+              <div key={code} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+                <span style={{ flex: 1, fontFamily: 'monospace', fontSize: '0.9rem', color: 'var(--gold)' }}>{code}</span>
+                <button type="button" onClick={() => setGameCodes(gameCodes.filter((c) => c !== code))}
+                  style={{ background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.8rem' }}>
+                  Remove
+                </button>
+              </div>
+            ))}
+            <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+              <input
+                style={{ ...inp, flex: 1 }}
+                value={newCode}
+                onChange={(e) => setNewCode(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); addCode() } }}
+                placeholder="Enter code and press Add or Enter"
+              />
+              <button type="button" onClick={addCode}
+                style={{ background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.5rem 1rem', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>
+                Add Code
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : 'Save Info'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
-type Tab = 'champions' | 'legacy'
+type Tab = 'champions' | 'legacy' | 'info'
 
 export default function AdminDCDLPage() {
   const [tab, setTab] = useState<Tab>('champions')
@@ -574,6 +684,7 @@ export default function AdminDCDLPage() {
   const tabs: { id: Tab; label: string }[] = [
     { id: 'champions', label: 'Champions' },
     { id: 'legacy', label: 'Legacy Pieces' },
+    { id: 'info', label: 'Game Info' },
   ]
 
   return (
@@ -602,6 +713,7 @@ export default function AdminDCDLPage() {
 
         {tab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)} />}
         {tab === 'legacy' && <LegacyForm />}
+        {tab === 'info' && <GameInfoForm />}
       </div>
     </main>
   )

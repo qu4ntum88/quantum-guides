@@ -11,7 +11,7 @@ const NAV_ITEMS = [
     children: [
       { label: 'Champions', href: '/games/dc-dark-legion' },
       { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
-      { label: 'Guides', href: '/games/dc-dark-legion/guides' },
+      { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
     ],
   },
   { label: 'Void Hunters', href: '#' },
