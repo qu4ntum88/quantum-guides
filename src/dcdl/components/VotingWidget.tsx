@@ -19,7 +19,9 @@ const ratingDesc: Record<string, string> = {
   D: 'Champions that fail to have meaningful impact in any content.',
 }
 
-type Tally = Record<string, number> & { winner: string; total: number }
+const POINTS: Record<string, number> = { 'S+': 7, S: 6, 'A+': 5, A: 4, B: 3, C: 2, D: 1 }
+
+type Tally = Record<string, number> & { winner: string; total: number; weightedAvg: number }
 
 export default function VotingWidget({ entityType, entityId }: { entityType: 'champion' | 'legacy'; entityId: string }) {
   const { isSignedIn, isLoaded } = useUser()
@@ -96,6 +98,7 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
             {RATINGS.map((r) => {
               const count = tally[r] ?? 0
               const pct = total > 0 ? Math.round((count / total) * 100) : 0
+              const pts = count * POINTS[r]
               return (
                 <div key={r} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.82rem' }}>
                   <span style={{ width: '2rem', fontWeight: 700, color: ratingColor[r] }}>{r}</span>
@@ -103,10 +106,25 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
                     <div style={{ width: `${pct}%`, height: '100%', background: ratingColor[r], borderRadius: '3px', transition: 'width 0.4s' }} />
                   </div>
                   <span style={{ width: '2.5rem', color: '#888', textAlign: 'right' }}>{count}</span>
+                  <span style={{ width: '3.5rem', color: '#555', textAlign: 'right', fontSize: '0.75rem' }}>{pts}pts</span>
                 </div>
               )
             })}
           </div>
+          <details style={{ marginTop: '0.6rem' }}>
+            <summary style={{ cursor: 'pointer', fontSize: '0.78rem', color: '#666', userSelect: 'none' }}>
+              How is this calculated?
+            </summary>
+            <div style={{ marginTop: '0.5rem', fontSize: '0.78rem', color: '#888', lineHeight: 1.6, background: '#111', borderRadius: '0.375rem', padding: '0.6rem 0.75rem' }}>
+              Each tier is assigned point values (S+=7, S=6, A+=5, A=4, B=3, C=2, D=1).
+              The weighted average is calculated by dividing the total points by the number of votes.
+              The tier whose midpoint range the average falls into wins.
+              <br />
+              <span style={{ color: '#aaa' }}>
+                Weighted average: <strong style={{ color: 'var(--gold)' }}>{tally.weightedAvg.toFixed(2)}</strong> → <strong style={{ color: ratingColor[tally.winner] }}>{tally.winner}</strong>
+              </span>
+            </div>
+          </details>
         </div>
       )}
 
