@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback } from 'react'
 const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 'Supporter', 'Warrior']
 const HERO_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
-const DAMAGE_TYPES = ['Physical', 'Magic']
+const DAMAGE_TYPES = ['Physical', 'Spiritual']
 const GAME_MODES = ['Combat Cycles', 'Training Simulator', 'Meta Brawl', '3v3', 'Vehicle Combat', 'Story Mode']
 const SYNERGIES = [
   { id: 'arkhams_most_wanted', name: "Arkham's Most Wanted" },
@@ -670,8 +670,172 @@ function GameInfoForm() {
   )
 }
 
+// ── Guides Form ───────────────────────────────────────────────────────────────
+type BlockType = 'subheading' | 'paragraph' | 'image' | 'clearfloat'
+type Block =
+  | { type: 'subheading'; text: string }
+  | { type: 'paragraph'; text: string }
+  | { type: 'image'; src: string; alt: string; alignment: 'left' | 'right' | 'full' }
+  | { type: 'clearfloat' }
+
+function slugify(title: string) {
+  return title.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '')
+}
+
+function GuidesForm() {
+  const [title, setTitle] = useState('')
+  const [filename, setFilename] = useState('')
+  const [author, setAuthor] = useState('')
+  const [pubDate, setPubDate] = useState('')
+  const [description, setDescription] = useState('')
+  const [intro, setIntro] = useState('')
+  const [blocks, setBlocks] = useState<Block[]>([])
+  const [loading, setLoading] = useState(false)
+  const [msg, setMsg] = useState('')
+
+  function autoFilename(t: string) {
+    if (!filename || filename === slugify(title)) setFilename(slugify(t))
+  }
+
+  function addBlock(type: BlockType) {
+    const newBlock: Block =
+      type === 'subheading' ? { type: 'subheading', text: '' }
+      : type === 'paragraph' ? { type: 'paragraph', text: '' }
+      : type === 'image' ? { type: 'image', src: '', alt: '', alignment: 'full' }
+      : { type: 'clearfloat' }
+    setBlocks((b) => [...b, newBlock])
+  }
+
+  function updateBlock(i: number, patch: Partial<Block>) {
+    setBlocks((b) => b.map((block, idx) => idx === i ? { ...block, ...patch } as Block : block))
+  }
+
+  function removeBlock(i: number) {
+    setBlocks((b) => b.filter((_, idx) => idx !== i))
+  }
+
+  function moveBlock(i: number, dir: -1 | 1) {
+    setBlocks((b) => {
+      const arr = [...b]
+      const j = i + dir
+      if (j < 0 || j >= arr.length) return arr
+      ;[arr[i], arr[j]] = [arr[j], arr[i]]
+      return arr
+    })
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    if (!title || !filename) { setMsg('Title and filename are required.'); return }
+    setLoading(true); setMsg('')
+    const res = await fetch('/api/admin/dcdl/guides', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ filename, title, author, pubDate, description, intro, blocks }),
+    })
+    const data = await res.json()
+    setLoading(false)
+    setMsg(data.success ? `Saved as ${data.filename}` : (data.error ?? 'Error saving guide'))
+  }
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        {msg && <div style={{ color: msg.startsWith('Saved') ? '#4ade80' : '#f87171', fontSize: '0.85rem' }}>{msg}</div>}
+
+        <div style={sec}>
+          <div style={secTitle}>Guide Info</div>
+          <Field label="Title">
+            <input style={inp} value={title} onChange={(e) => { setTitle(e.target.value); autoFilename(e.target.value) }} placeholder="e.g. April 2026 Meta Tier List" />
+          </Field>
+          <Field label="Filename (slug)">
+            <input style={inp} value={filename} onChange={(e) => setFilename(e.target.value)} placeholder="e.g. April2026MetaTierList" />
+            <div style={{ fontSize: '0.75rem', color: '#666', marginTop: '0.3rem' }}>Used in the URL. No spaces. Auto-filled from title.</div>
+          </Field>
+          <Field label="Author">
+            <input style={inp} value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="e.g. Quantum" />
+          </Field>
+          <Field label="Publish Date (YYYY/MM/DD)">
+            <input style={inp} value={pubDate} onChange={(e) => setPubDate(e.target.value)} placeholder="e.g. 2026/04/20" />
+          </Field>
+          <Field label="Short Description">
+            <input style={inp} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="One sentence shown on the guides listing page" />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Intro Paragraph (optional)</div>
+          <textarea
+            style={{ ...inp, minHeight: '6rem', resize: 'vertical' }}
+            value={intro}
+            onChange={(e) => setIntro(e.target.value)}
+            placeholder="Opening paragraph shown before any sections..."
+          />
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Content Blocks</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {blocks.map((block, i) => (
+              <div key={i} style={{ background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.75rem 1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
+                  <span style={{ fontSize: '0.75rem', color: '#888', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700 }}>
+                    {block.type === 'clearfloat' ? 'Clear Float' : block.type}
+                  </span>
+                  <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.4rem' }}>
+                    <button type="button" onClick={() => moveBlock(i, -1)} style={{ background: 'none', border: '1px solid #444', borderRadius: '4px', color: '#aaa', cursor: 'pointer', fontSize: '0.75rem', padding: '0.1rem 0.4rem' }}>↑</button>
+                    <button type="button" onClick={() => moveBlock(i, 1)} style={{ background: 'none', border: '1px solid #444', borderRadius: '4px', color: '#aaa', cursor: 'pointer', fontSize: '0.75rem', padding: '0.1rem 0.4rem' }}>↓</button>
+                    <button type="button" onClick={() => removeBlock(i)} style={{ background: 'none', border: '1px solid #f87171', borderRadius: '4px', color: '#f87171', cursor: 'pointer', fontSize: '0.75rem', padding: '0.1rem 0.5rem' }}>✕</button>
+                  </div>
+                </div>
+
+                {block.type === 'subheading' && (
+                  <input style={inp} value={block.text} onChange={(e) => updateBlock(i, { text: e.target.value })} placeholder="Section heading text" />
+                )}
+                {block.type === 'paragraph' && (
+                  <textarea style={{ ...inp, minHeight: '5rem', resize: 'vertical' }} value={block.text} onChange={(e) => updateBlock(i, { text: e.target.value })} placeholder="Paragraph text..." />
+                )}
+                {block.type === 'image' && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <input style={inp} value={block.src} onChange={(e) => updateBlock(i, { src: e.target.value })} placeholder="Image path e.g. /dcdl/guides/my-image.png" />
+                    <input style={inp} value={block.alt} onChange={(e) => updateBlock(i, { alt: e.target.value })} placeholder="Alt text / caption" />
+                    <select style={inp} value={block.alignment} onChange={(e) => updateBlock(i, { alignment: e.target.value as 'left' | 'right' | 'full' })}>
+                      <option value="full">Full width</option>
+                      <option value="left">Text wraps right (image left)</option>
+                      <option value="right">Text wraps left (image right)</option>
+                    </select>
+                    {(block.alignment === 'left' || block.alignment === 'right') && (
+                      <div style={{ fontSize: '0.75rem', color: '#666' }}>Tip: Add a "Clear Float" block after the last paragraph you want wrapping the image.</div>
+                    )}
+                  </div>
+                )}
+                {block.type === 'clearfloat' && (
+                  <div style={{ fontSize: '0.8rem', color: '#555' }}>Stops text from wrapping around a floated image.</div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+            {(['subheading', 'paragraph', 'image', 'clearfloat'] as BlockType[]).map((type) => (
+              <button key={type} type="button" onClick={() => addBlock(type)}
+                style={{ background: '#1a1a2e', border: '1px solid #444', borderRadius: '0.375rem', color: '#ccc', cursor: 'pointer', padding: '0.4rem 0.9rem', fontSize: '0.8rem', textTransform: 'capitalize' }}>
+                + {type === 'clearfloat' ? 'Clear Float' : type}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : 'Save Guide'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
-type Tab = 'champions' | 'legacy' | 'info'
+type Tab = 'champions' | 'legacy' | 'info' | 'guides'
 
 export default function AdminDCDLPage() {
   const [tab, setTab] = useState<Tab>('champions')
@@ -685,6 +849,7 @@ export default function AdminDCDLPage() {
     { id: 'champions', label: 'Champions' },
     { id: 'legacy', label: 'Legacy Pieces' },
     { id: 'info', label: 'Game Info' },
+    { id: 'guides', label: 'Guides' },
   ]
 
   return (
@@ -714,6 +879,7 @@ export default function AdminDCDLPage() {
         {tab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)} />}
         {tab === 'legacy' && <LegacyForm />}
         {tab === 'info' && <GameInfoForm />}
+        {tab === 'guides' && <GuidesForm />}
       </div>
     </main>
   )
