@@ -890,7 +890,7 @@ function HunterForm() {
     if (!h) return
     setName(h.name ?? ''); setId(h.id ?? ''); setIdManual(true)
     setHunterClass(h.class ?? ''); setHomeland(h.homeland ?? ''); setSpecies(h.species ?? '')
-    setOther(h.other ?? []); setExistingPortrait(h.portrait ?? '')
+    setOther(h.other ?? []); setExistingPortrait(h.portrait ?? ''); setPortraitFile(null)
   }
 
   function toggleOther(val: string) {
