@@ -17,8 +17,13 @@ const Null = () => <span style={{ color: '#ef4444', fontWeight: 700 }}>null</spa
 
 export default async function HeroPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const hero = getResolvedHeros().find((h) => h.id === id)
+  const allHeros = getResolvedHeros().slice().sort((a, b) => a.name.localeCompare(b.name))
+  const hero = allHeros.find((h) => h.id === id)
   if (!hero) return notFound()
+
+  const idx = allHeros.indexOf(hero)
+  const prevHero = allHeros[(idx - 1 + allHeros.length) % allHeros.length]
+  const nextHero = allHeros[(idx + 1) % allHeros.length]
 
   const classSrc = '/dcdl/role_images/' + hero.class + '.png'
   const firstName = hero.name.split('(')[0].trim()
@@ -42,6 +47,17 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
       )}
 
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', paddingTop: '2rem', paddingBottom: '4rem' }}>
+        {/* Prev / Next nav — top */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          <a href={`/games/dc-dark-legion/heros/${prevHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            ← {prevHero.name.split('(')[0].trim()}
+          </a>
+          <a href="/games/dc-dark-legion" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Champion List</a>
+          <a href={`/games/dc-dark-legion/heros/${nextHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            {nextHero.name.split('(')[0].trim()} →
+          </a>
+        </div>
+
         {/* Hero header */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -169,7 +185,15 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
 
         <VotingWidget entityType="champion" entityId={id} />
 
-        <a href="/games/dc-dark-legion" style={{ color: 'var(--gold)' }}>← Back to Character List</a>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          <a href={`/games/dc-dark-legion/heros/${prevHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            ← {prevHero.name.split('(')[0].trim()}
+          </a>
+          <a href="/games/dc-dark-legion" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Champion List</a>
+          <a href={`/games/dc-dark-legion/heros/${nextHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            {nextHero.name.split('(')[0].trim()} →
+          </a>
+        </div>
       </div>
     </main>
   )

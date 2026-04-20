@@ -11,12 +11,28 @@ export function generateStaticParams() {
 
 export default async function LegacyDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const legacy = getResolvedLegacy().find((l) => l.id === id)
+  const allLegacy = getResolvedLegacy().slice().sort((a, b) => a.name.localeCompare(b.name))
+  const legacy = allLegacy.find((l) => l.id === id)
   if (!legacy) return notFound()
+
+  const idx = allLegacy.indexOf(legacy)
+  const prevLegacy = allLegacy[(idx - 1 + allLegacy.length) % allLegacy.length]
+  const nextLegacy = allLegacy[(idx + 1) % allLegacy.length]
 
   return (
     <main>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', paddingTop: '2rem', paddingBottom: '4rem' }}>
+        {/* Prev / Next nav — top */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          <a href={`/games/dc-dark-legion/legacy/${prevLegacy.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            ← {prevLegacy.name.split('(')[0].trim()}
+          </a>
+          <a href="/games/dc-dark-legion/legacy" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Legacy Pieces</a>
+          <a href={`/games/dc-dark-legion/legacy/${nextLegacy.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            {nextLegacy.name.split('(')[0].trim()} →
+          </a>
+        </div>
+
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           {legacy.image && <img src={legacy.image} alt={legacy.name} style={{ height: '3rem', objectFit: 'contain' }} />}
@@ -87,7 +103,15 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
 
         <VotingWidget entityType="legacy" entityId={id} />
 
-        <a href="/games/dc-dark-legion/legacy" style={{ color: 'var(--gold)' }}>← Back to Legacy Pieces</a>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          <a href={`/games/dc-dark-legion/legacy/${prevLegacy.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            ← {prevLegacy.name.split('(')[0].trim()}
+          </a>
+          <a href="/games/dc-dark-legion/legacy" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Legacy Pieces</a>
+          <a href={`/games/dc-dark-legion/legacy/${nextLegacy.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
+            {nextLegacy.name.split('(')[0].trim()} →
+          </a>
+        </div>
       </div>
     </main>
   )
