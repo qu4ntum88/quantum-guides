@@ -108,6 +108,7 @@ export default function HunterGrid({ hunters }: { hunters: Hunter[] }) {
       if (sortBy === 'class')    return dir * a.class.localeCompare(b.class)
       if (sortBy === 'homeland') return dir * a.homeland.localeCompare(b.homeland)
       if (sortBy === 'species')  return dir * a.species.localeCompare(b.species)
+      if (sortBy === 'other')    return dir * ((a.other[0] ?? '').localeCompare(b.other[0] ?? ''))
       return dir * a.name.localeCompare(b.name)
     })
 
@@ -116,6 +117,7 @@ export default function HunterGrid({ hunters }: { hunters: Hunter[] }) {
     { value: 'class',    label: 'Class' },
     { value: 'homeland', label: 'Homeland' },
     { value: 'species',  label: 'Species' },
+    { value: 'other',    label: 'Other Tags' },
   ]
 
   return (
@@ -189,7 +191,7 @@ export default function HunterGrid({ hunters }: { hunters: Hunter[] }) {
 
       {/* Other tags filter */}
       <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-        <span style={{ ...LABEL, paddingTop: '0.35rem' }}>Tags</span>
+        <span style={{ ...LABEL, paddingTop: '0.35rem' }}>Other Tags</span>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
           <AllChip selected={selectedOther.length === 0} onClick={() => setSelectedOther([])} />
           {VH_OTHER.map((o) => (
