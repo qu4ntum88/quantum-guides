@@ -797,7 +797,24 @@ function GuidesForm() {
                 )}
                 {block.type === 'image' && (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <input style={inp} value={block.src} onChange={(e) => updateBlock(i, { src: e.target.value })} placeholder="Image path e.g. /dcdl/guides/my-image.png" />
+                    <div style={{ display: 'flex', gap: '0.5rem' }}>
+                      <input style={{ ...inp, flex: 1 }} value={block.src} onChange={(e) => updateBlock(i, { src: e.target.value })} placeholder="Image URL (auto-filled on upload)" />
+                      <label style={{ background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.5rem 0.9rem', fontSize: '0.8rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center' }}>
+                        Upload
+                        <input type="file" accept="image/*" style={{ display: 'none' }} onChange={async (e) => {
+                          const file = e.target.files?.[0]
+                          if (!file || !filename) return
+                          const fd = new FormData()
+                          fd.append('file', file)
+                          fd.append('folder', filename)
+                          const res = await fetch('/api/admin/dcdl/guides/upload', { method: 'POST', body: fd })
+                          const data = await res.json()
+                          if (data.url) updateBlock(i, { src: data.url })
+                        }} />
+                      </label>
+                    </div>
+                    {!filename && <div style={{ fontSize: '0.75rem', color: '#f87171' }}>Set a filename/slug above before uploading images.</div>}
+                    {block.src && <img src={block.src} alt="" style={{ maxHeight: '8rem', objectFit: 'contain', borderRadius: '0.375rem', border: '1px solid #333' }} />}
                     <input style={inp} value={block.alt} onChange={(e) => updateBlock(i, { alt: e.target.value })} placeholder="Alt text / caption" />
                     <select style={inp} value={block.alignment} onChange={(e) => updateBlock(i, { alignment: e.target.value as 'left' | 'right' | 'full' })}>
                       <option value="full">Full width</option>

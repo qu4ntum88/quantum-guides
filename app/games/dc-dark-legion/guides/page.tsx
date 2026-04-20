@@ -8,8 +8,14 @@ function getGuides() {
   return files.map((filename) => {
     const raw = fs.readFileSync(path.join(guidesDir, filename), 'utf8')
     const { data } = matter(raw)
-    return { id: filename.replace(/\.(mdx|md)$/, ''), title: data.title ?? filename, pubDate: data.pubDate ?? null, description: data.description ?? '' }
-  }).sort((a, b) => (b.pubDate ?? '') > (a.pubDate ?? '') ? 1 : -1)
+    const pubDate = data.pubDate ? String(data.pubDate instanceof Date ? data.pubDate.toISOString().slice(0, 10) : data.pubDate) : null
+    return { id: filename.replace(/\.(mdx|md)$/, ''), title: data.title ?? filename, pubDate, author: data.author ?? null, description: data.description ?? '' }
+  }).sort((a, b) => {
+    if (!a.pubDate && !b.pubDate) return 0
+    if (!a.pubDate) return 1
+    if (!b.pubDate) return -1
+    return b.pubDate.localeCompare(a.pubDate)
+  })
 }
 
 function getGameInfo() {
@@ -108,8 +114,12 @@ export default function GuidesPage() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
               {guides.map((guide) => (
                 <div key={guide.id} className="card">
-                  <h3><a href={`/games/dc-dark-legion/guides/${guide.id}`}>{guide.title}</a></h3>
-                  {guide.description && <p style={{ color: '#cccccc', marginTop: '0.25rem' }}>{guide.description}</p>}
+                  <h3 style={{ marginBottom: '0.25rem' }}><a href={`/games/dc-dark-legion/guides/${guide.id}`}>{guide.title}</a></h3>
+                  <div style={{ fontSize: '0.78rem', color: '#666', marginBottom: '0.4rem', display: 'flex', gap: '1rem' }}>
+                    {guide.pubDate && <span>{guide.pubDate}</span>}
+                    {guide.author && <span>by {guide.author}</span>}
+                  </div>
+                  {guide.description && <p style={{ color: '#cccccc', margin: 0 }}>{guide.description}</p>}
                 </div>
               ))}
             </div>
