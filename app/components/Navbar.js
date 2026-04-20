@@ -14,7 +14,14 @@ const NAV_ITEMS = [
       { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
     ],
   },
-  { label: 'Void Hunters', href: '#' },
+  {
+    label: 'Void Hunters',
+    children: [
+      { label: 'Hunters', href: '/games/void-hunters' },
+      { label: 'Status Effects', href: '/games/void-hunters/status-effects' },
+      { label: 'Guides', href: '/games/void-hunters/guides' },
+    ],
+  },
 ]
 
 function DropdownItem({ item }) {
