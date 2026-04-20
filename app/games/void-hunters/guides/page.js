@@ -50,8 +50,16 @@ export default function VoidHuntersGuidesPage() {
               <section className="videos-section">
                 <h2>Video Guides</h2>
                 <p className="section-desc">Watch video walkthroughs and detailed explanations</p>
-                <div className="videos-placeholder">
-                  <p>Video guides coming soon...</p>
+                <div className="video-container">
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLj9TDaSk5Dc-sdI1bxzAO4jbm1Z5LBKhF"
+                    title="Void Hunters Video Guides"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </section>
 
@@ -73,7 +81,7 @@ export default function VoidHuntersGuidesPage() {
               <div className="sidebar-card">
                 <h3>Community</h3>
                 <p>Join the community to discuss strategies, share tips, and stay updated on the latest content.</p>
-                <a href="https://discord.gg/RdvnWRBZ8j" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
+                <a href="https://discord.gg/2McMuE94bC" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
               </div>
             </aside>
           </div>
