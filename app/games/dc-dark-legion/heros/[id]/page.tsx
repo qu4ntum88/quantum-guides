@@ -34,7 +34,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             zIndex: -1,
             backgroundImage: `url('${hero.imageFull}')`,
             backgroundSize: 'auto 100%',
-            backgroundPosition: 'right top',
+            backgroundPosition: '115% top',
             backgroundRepeat: 'no-repeat',
             opacity: 0.2,
           }}

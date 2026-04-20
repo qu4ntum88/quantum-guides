@@ -13,7 +13,7 @@ export default function LegacyPieceBox({ piece, communityTier }: { piece: Legacy
       <TooltipTrigger asChild>
         <a
           href={"/games/dc-dark-legion/legacy/" + piece.id}
-          className="group relative aspect-4/5 overflow-hidden border border-white/10 bg-slate-700 bg-linear-to-b from-purple-900/90 to-purple-500/50 shadow-md"
+          className="block group relative aspect-4/5 overflow-hidden border border-white/10 bg-slate-700 bg-linear-to-b from-purple-900/90 to-purple-500/50 shadow-md"
         >
           <img
             src={piece.image ?? PLACEHOLDER}
