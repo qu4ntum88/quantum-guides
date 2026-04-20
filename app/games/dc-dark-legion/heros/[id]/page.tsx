@@ -33,8 +33,9 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             inset: 0,
             zIndex: -1,
             backgroundImage: `url('${hero.imageFull}')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center top',
+            backgroundSize: 'auto 100%',
+            backgroundPosition: 'right top',
+            backgroundRepeat: 'no-repeat',
             opacity: 0.2,
           }}
         />
@@ -48,22 +49,23 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             <h1 style={{ fontSize: '3rem', margin: 0 }}>{hero.name.split('(')[0]}</h1>
             {hero.rarity && <RarityBadge rarity={hero.rarity} />}
           </div>
-          <PageTierBadges quantumTier={hero.tier} entityType="champion" entityId={id} />
           {hero.name.match(/\((.*)\)/)?.pop() && (
-            <div style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#ef4444' }}>
+            <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--gold)' }}>
               {hero.name.match(/\((.*)\)/)?.pop()}
             </div>
           )}
-        </div>
-
-        {/* Factions */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
-          {hero.tagSynergies.map((t) => (
-            <div key={t.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
-              <img src={t.image} alt={t.name} style={{ width: '2.5rem' }} />
-              <span>{t.name}</span>
+          <PageTierBadges quantumTier={hero.tier} entityType="champion" entityId={id} />
+          {/* Factions */}
+          {hero.tagSynergies.length > 0 && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginTop: '0.5rem' }}>
+              {hero.tagSynergies.map((t) => (
+                <div key={t.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <img src={t.image} alt={t.name} style={{ width: '2.5rem' }} />
+                  <span>{t.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
 
         {/* Quantum's Take */}
