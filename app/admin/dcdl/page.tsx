@@ -866,8 +866,9 @@ function HunterForm() {
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
 
   const [name, setName] = useState(''); const [id, setId] = useState(''); const [idManual, setIdManual] = useState(false)
-  const [hunterClass, setHunterClass] = useState(''); const [homeland, setHomeland] = useState('')
-  const [species, setSpecies] = useState(''); const [other, setOther] = useState<string[]>([])
+  const [rarity, setRarity] = useState(''); const [hunterClass, setHunterClass] = useState<string[]>([])
+  const [homeland, setHomeland] = useState<string[]>([]); const [species, setSpecies] = useState<string[]>([])
+  const [other, setOther] = useState<string[]>([])
   const [portraitFile, setPortraitFile] = useState<File | null>(null); const [existingPortrait, setExistingPortrait] = useState('')
 
   useEffect(() => {
@@ -877,8 +878,8 @@ function HunterForm() {
   }, [])
 
   const reset = useCallback(() => {
-    setName(''); setId(''); setIdManual(false); setHunterClass(''); setHomeland('')
-    setSpecies(''); setOther([]); setPortraitFile(null); setExistingPortrait(''); setSelectedId('')
+    setName(''); setId(''); setIdManual(false); setRarity(''); setHunterClass([])
+    setHomeland([]); setSpecies([]); setOther([]); setPortraitFile(null); setExistingPortrait(''); setSelectedId('')
   }, [])
 
   async function loadHunter(hunterId: string) {
@@ -888,22 +889,23 @@ function HunterForm() {
     const all = await res.json()
     const h = all.find((x: { id: string }) => x.id === hunterId)
     if (!h) return
-    setName(h.name ?? ''); setId(h.id ?? ''); setIdManual(true)
-    setHunterClass(h.class ?? ''); setHomeland(h.homeland ?? ''); setSpecies(h.species ?? '')
+    setName(h.name ?? ''); setId(h.id ?? ''); setIdManual(true); setRarity(h.rarity ?? '')
+    setHunterClass(h.class ?? []); setHomeland(h.homeland ?? []); setSpecies(h.species ?? [])
     setOther(h.other ?? []); setExistingPortrait(h.portrait ?? ''); setPortraitFile(null)
   }
 
-  function toggleOther(val: string) {
-    setOther((prev) => prev.includes(val) ? prev.filter((x) => x !== val) : [...prev, val])
+  function tog(list: string[], set: (v: string[]) => void, val: string) {
+    set(list.includes(val) ? list.filter((x) => x !== val) : [...list, val])
   }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault(); setLoading(true); setStatus(null)
     const fd = new FormData()
     fd.append('id', id); fd.append('name', name)
-    if (hunterClass) fd.append('class', hunterClass)
-    if (homeland) fd.append('homeland', homeland)
-    if (species) fd.append('species', species)
+    if (rarity) fd.append('rarity', rarity)
+    hunterClass.forEach((c) => fd.append('class', c))
+    homeland.forEach((h) => fd.append('homeland', h))
+    species.forEach((s) => fd.append('species', s))
     other.forEach((o) => fd.append('other', o))
     if (portraitFile) fd.append('portrait', portraitFile)
 
@@ -952,26 +954,27 @@ function HunterForm() {
               <input style={inp} value={id} required onChange={(e) => { setId(e.target.value); setIdManual(true) }} />
             </Field>
           </div>
-          <div style={g3}>
-            <Field label="Class">
-              <select style={inp} value={hunterClass} onChange={(e) => setHunterClass(e.target.value)}>
-                <option value="">Select...</option>
-                {VH_CLASSES.map((c) => <option key={c}>{c}</option>)}
-              </select>
-            </Field>
-            <Field label="Homeland">
-              <select style={inp} value={homeland} onChange={(e) => setHomeland(e.target.value)}>
-                <option value="">Select...</option>
-                {VH_HOMELANDS.map((h) => <option key={h}>{h}</option>)}
-              </select>
-            </Field>
-            <Field label="Species">
-              <select style={inp} value={species} onChange={(e) => setSpecies(e.target.value)}>
-                <option value="">Select...</option>
-                {VH_SPECIES.map((s) => <option key={s}>{s}</option>)}
-              </select>
-            </Field>
-          </div>
+          <Field label="Rarity">
+            <select style={inp} value={rarity} onChange={(e) => setRarity(e.target.value)}>
+              <option value="">Select...</option>
+              {['Legendary', 'Epic', 'Rare'].map((r) => <option key={r}>{r}</option>)}
+            </select>
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Class</div>
+          <CheckGroup options={VH_CLASSES.map((c) => ({ id: c, name: c }))} selected={hunterClass} onChange={(v) => tog(hunterClass, setHunterClass, v)} />
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Homeland</div>
+          <CheckGroup options={VH_HOMELANDS.map((h) => ({ id: h, name: h }))} selected={homeland} onChange={(v) => tog(homeland, setHomeland, v)} />
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Species</div>
+          <CheckGroup options={VH_SPECIES.map((s) => ({ id: s, name: s }))} selected={species} onChange={(v) => tog(species, setSpecies, v)} />
         </div>
 
         <div style={sec}>
@@ -985,11 +988,7 @@ function HunterForm() {
 
         <div style={sec}>
           <div style={secTitle}>Other Tags</div>
-          <CheckGroup
-            options={VH_OTHER.map((o) => ({ id: o, name: o }))}
-            selected={other}
-            onChange={toggleOther}
-          />
+          <CheckGroup options={VH_OTHER.map((o) => ({ id: o, name: o }))} selected={other} onChange={(v) => tog(other, setOther, v)} />
         </div>
 
         <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>

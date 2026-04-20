@@ -4,9 +4,10 @@ export type Hunter = {
   id: string
   name: string
   portrait: string
-  class: string
-  homeland: string
-  species: string
+  rarity: string
+  class: string[]
+  homeland: string[]
+  species: string[]
   other: string[]
 }
 

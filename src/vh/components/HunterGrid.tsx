@@ -3,10 +3,13 @@
 import { useState, type CSSProperties } from 'react'
 import HunterBox, { type Hunter } from './HunterBox'
 
+const VH_RARITIES  = ['Legendary', 'Epic', 'Rare']
 const VH_CLASSES   = ['Attacker', 'Balanced', 'Support', 'Tank']
 const VH_HOMELANDS = ['Archlands', 'Crucible', 'Dragana', 'Free Tribes', 'Frostheim', 'Holy Order', 'Moonlight Clan', 'Pandemonium']
 const VH_SPECIES   = ['Beastman', 'Construct', 'Creature', 'Dwarf', 'Elf', 'Goblin', 'Human', 'Orc']
 const VH_OTHER     = ['Artificer', 'Assassin', 'Blademaster', 'Consumed', 'Healer', 'Homonculus', 'Inquisition', 'Knight', 'Mimic', 'Miner', 'Minstrel', 'Monk', 'Noble', 'Outlaw', 'Priest', 'Sage', 'Seasoned', 'Sentinel', 'Sharpshooter', 'Tainted', 'Carnivale', 'Wanderer']
+
+const RARITY_RANK: Record<string, number> = { Legendary: 0, Epic: 1, Rare: 2, '': 3 }
 
 const LABEL: CSSProperties = {
   fontSize: '0.9rem',
@@ -79,46 +82,62 @@ function toggle(arr: string[], val: string, set: (v: string[]) => void) {
 }
 
 export default function HunterGrid({ hunters }: { hunters: Hunter[] }) {
-  const [query, setQuery]                       = useState('')
-  const [sortBy, setSortBy]                     = useState('name')
-  const [sortOrder, setSortOrder]               = useState<'asc' | 'desc'>('asc')
-  const [selectedClasses, setSelectedClasses]   = useState<string[]>([])
+  const [query, setQuery]                         = useState('')
+  const [sortBy, setSortBy]                       = useState('name')
+  const [sortOrder, setSortOrder]                 = useState<'asc' | 'desc'>('asc')
+  const [selectedRarities, setSelectedRarities]   = useState<string[]>([])
+  const [selectedClasses, setSelectedClasses]     = useState<string[]>([])
   const [selectedHomelands, setSelectedHomelands] = useState<string[]>([])
-  const [selectedSpecies, setSelectedSpecies]   = useState<string[]>([])
-  const [selectedOther, setSelectedOther]       = useState<string[]>([])
+  const [selectedSpecies, setSelectedSpecies]     = useState<string[]>([])
+  const [selectedOther, setSelectedOther]         = useState<string[]>([])
 
   const reset = () => {
     setSortBy('name'); setSortOrder('asc')
-    setSelectedClasses([]); setSelectedHomelands([])
-    setSelectedSpecies([]); setSelectedOther([])
-    setQuery('')
+    setSelectedRarities([]); setSelectedClasses([])
+    setSelectedHomelands([]); setSelectedSpecies([])
+    setSelectedOther([]); setQuery('')
   }
 
   const filtered = hunters
     .filter((h) => {
       if (query && !h.name.toLowerCase().includes(query.toLowerCase())) return false
-      if (selectedClasses.length > 0 && !selectedClasses.includes(h.class)) return false
-      if (selectedHomelands.length > 0 && !selectedHomelands.includes(h.homeland)) return false
-      if (selectedSpecies.length > 0 && !selectedSpecies.includes(h.species)) return false
+      if (selectedRarities.length > 0 && !selectedRarities.includes(h.rarity)) return false
+      if (selectedClasses.length > 0 && !selectedClasses.some((c) => h.class.includes(c))) return false
+      if (selectedHomelands.length > 0 && !selectedHomelands.some((hl) => h.homeland.includes(hl))) return false
+      if (selectedSpecies.length > 0 && !selectedSpecies.some((s) => h.species.includes(s))) return false
       if (selectedOther.length > 0 && !selectedOther.some((o) => h.other.includes(o))) return false
       return true
     })
     .sort((a, b) => {
       const dir = sortOrder === 'asc' ? 1 : -1
-      if (sortBy === 'class')    return dir * a.class.localeCompare(b.class)
-      if (sortBy === 'homeland') return dir * a.homeland.localeCompare(b.homeland)
-      if (sortBy === 'species')  return dir * a.species.localeCompare(b.species)
+      if (sortBy === 'rarity')   return dir * ((RARITY_RANK[a.rarity] ?? 3) - (RARITY_RANK[b.rarity] ?? 3))
+      if (sortBy === 'class')    return dir * ((a.class[0] ?? '').localeCompare(b.class[0] ?? ''))
+      if (sortBy === 'homeland') return dir * ((a.homeland[0] ?? '').localeCompare(b.homeland[0] ?? ''))
+      if (sortBy === 'species')  return dir * ((a.species[0] ?? '').localeCompare(b.species[0] ?? ''))
       if (sortBy === 'other')    return dir * ((a.other[0] ?? '').localeCompare(b.other[0] ?? ''))
       return dir * a.name.localeCompare(b.name)
     })
 
   const SORT_OPTIONS = [
     { value: 'name',     label: 'Alphabetical' },
+    { value: 'rarity',   label: 'Rarity' },
     { value: 'class',    label: 'Class' },
     { value: 'homeland', label: 'Homeland' },
     { value: 'species',  label: 'Species' },
     { value: 'other',    label: 'Other Tags' },
   ]
+
+  const filterRow = (label: string, options: string[], selected: string[], setSelected: (v: string[]) => void, alignStart = false) => (
+    <div style={{ display: 'flex', gap: '0.5rem', alignItems: alignStart ? 'flex-start' : 'center' }}>
+      <span style={{ ...LABEL, ...(alignStart ? { paddingTop: '0.35rem' } : {}) }}>{label}</span>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
+        <AllChip selected={selected.length === 0} onClick={() => setSelected([])} />
+        {options.map((o) => (
+          <Chip key={o} label={o} selected={selected.includes(o)} onClick={() => toggle(selected, o, setSelected)} />
+        ))}
+      </div>
+    </div>
+  )
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', width: '100%', maxWidth: '64rem' }}>
@@ -156,51 +175,12 @@ export default function HunterGrid({ hunters }: { hunters: Hunter[] }) {
         </div>
       </div>
 
-      {/* Class filter */}
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <span style={LABEL}>Class</span>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
-          <AllChip selected={selectedClasses.length === 0} onClick={() => setSelectedClasses([])} />
-          {VH_CLASSES.map((c) => (
-            <Chip key={c} label={c} selected={selectedClasses.includes(c)} onClick={() => toggle(selectedClasses, c, setSelectedClasses)} />
-          ))}
-        </div>
-      </div>
+      {filterRow('Rarity',     VH_RARITIES,  selectedRarities,  setSelectedRarities)}
+      {filterRow('Class',      VH_CLASSES,   selectedClasses,   setSelectedClasses)}
+      {filterRow('Homeland',   VH_HOMELANDS, selectedHomelands, setSelectedHomelands)}
+      {filterRow('Species',    VH_SPECIES,   selectedSpecies,   setSelectedSpecies)}
+      {filterRow('Other Tags', VH_OTHER,     selectedOther,     setSelectedOther, true)}
 
-      {/* Homeland filter */}
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <span style={LABEL}>Homeland</span>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
-          <AllChip selected={selectedHomelands.length === 0} onClick={() => setSelectedHomelands([])} />
-          {VH_HOMELANDS.map((h) => (
-            <Chip key={h} label={h} selected={selectedHomelands.includes(h)} onClick={() => toggle(selectedHomelands, h, setSelectedHomelands)} />
-          ))}
-        </div>
-      </div>
-
-      {/* Species filter */}
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <span style={LABEL}>Species</span>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
-          <AllChip selected={selectedSpecies.length === 0} onClick={() => setSelectedSpecies([])} />
-          {VH_SPECIES.map((s) => (
-            <Chip key={s} label={s} selected={selectedSpecies.includes(s)} onClick={() => toggle(selectedSpecies, s, setSelectedSpecies)} />
-          ))}
-        </div>
-      </div>
-
-      {/* Other tags filter */}
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-        <span style={{ ...LABEL, paddingTop: '0.35rem' }}>Other Tags</span>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
-          <AllChip selected={selectedOther.length === 0} onClick={() => setSelectedOther([])} />
-          {VH_OTHER.map((o) => (
-            <Chip key={o} label={o} selected={selectedOther.includes(o)} onClick={() => toggle(selectedOther, o, setSelectedOther)} />
-          ))}
-        </div>
-      </div>
-
-      {/* Grid */}
       {filtered.length === 0
         ? <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '1rem' }}>No hunters match your filters.</p>
         : (

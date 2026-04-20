@@ -9,9 +9,10 @@ export type Hunter = {
   id: string
   name: string
   portrait: string
-  class: string
-  homeland: string
-  species: string
+  rarity: string
+  class: string[]
+  homeland: string[]
+  species: string[]
   other: string[]
 }
 
@@ -54,9 +55,10 @@ async function upsert(req: NextRequest, editing: boolean) {
     id,
     name,
     portrait,
-    class: (fd.get('class') as string) ?? '',
-    homeland: (fd.get('homeland') as string) ?? '',
-    species: (fd.get('species') as string) ?? '',
+    rarity: (fd.get('rarity') as string) ?? '',
+    class: fd.getAll('class') as string[],
+    homeland: fd.getAll('homeland') as string[],
+    species: fd.getAll('species') as string[],
     other: fd.getAll('other') as string[],
   }
 
