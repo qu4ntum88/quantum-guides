@@ -10,12 +10,18 @@ export function generateStaticParams() {
   return getResolvedHeros().map((h) => ({ id: h.id }))
 }
 
+const G = ({ children }: { children: React.ReactNode }) => (
+  <span style={{ color: 'var(--gold)', fontWeight: 700 }}>{children}</span>
+)
+const Null = () => <span style={{ color: '#ef4444', fontWeight: 700 }}>null</span>
+
 export default async function HeroPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const hero = getResolvedHeros().find((h) => h.id === id)
   if (!hero) return notFound()
 
   const classSrc = '/dcdl/role_images/' + hero.class + '.png'
+  const firstName = hero.name.split('(')[0].trim()
 
   return (
     <main>
@@ -63,66 +69,52 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         {/* Quantum's Take */}
         <div className="card">
           <h2>Quantum&apos;s Take</h2>
-          <p>{hero.quantumsTake ?? 'Analysis coming soon.'}</p>
+          <p style={{ marginBottom: hero.quantumsTake ? '1rem' : 0 }}>
+            <G>{firstName}</G> is a{' '}
+            {hero.rarity ? <G>{hero.rarity} </G> : <><Null />{' '}</>}
+            <G>{hero.class}</G> Champion who does{' '}
+            {hero.damageType ? <G>{hero.damageType}</G> : <Null />} damage.{' '}
+            <G>{firstName}</G> is best used in{' '}
+            {hero.gameModes && hero.gameModes.length > 0 ? <G>{hero.gameModes.join(', ')}</G> : <Null />}.{' '}
+            They can be obtained in{' '}
+            {hero.sourcesWhereAvailable && hero.sourcesWhereAvailable.length > 0
+              ? <G>{hero.sourcesWhereAvailable.join(', ')}</G>
+              : <Null />}.{' '}
+            You should focus on the following transmutes for <G>{firstName}</G>:{' '}
+            {hero.transmutePriorities && hero.transmutePriorities.length > 0
+              ? <G>{hero.transmutePriorities.join(', ')}</G>
+              : <Null />}.
+          </p>
+          {hero.quantumsTake && <p style={{ margin: 0 }}>{hero.quantumsTake}</p>}
         </div>
 
-        {/* Stats */}
-        <div className="card">
-          <h4>Damage Type</h4>
-          <p>{hero.damageType}</p>
-          <h4 style={{ marginTop: '1rem' }}>Sources Where Available</h4>
-          <p>{hero.sourcesWhereAvailable?.join(', ')}</p>
-        </div>
-
-        {/* Transmute */}
-        {hero.transmutePriorities && hero.transmutePriorities.length > 0 && (
-          <div className="card">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-              <img src="/dcdl/resource_icons/mirror cell.png" alt="Mirror Cell" style={{ height: '2.5rem', objectFit: 'contain' }} />
-              <h2 style={{ margin: 0, fontSize: '1.4rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Transmute Priorities</h2>
-              <img src="/dcdl/resource_icons/inertron.png" alt="Inertron" style={{ height: '2.5rem', objectFit: 'contain' }} />
-            </div>
-            <p>{hero.transmutePriorities.join(', ')}</p>
-          </div>
-        )}
-
-        {/* Legacy & Upgrades */}
+        {/* Recommended Legacy Pieces */}
         <div className="card">
           <h4>Recommended Legacy Pieces</h4>
-          <div style={{ display: 'flex', gap: '0.5rem', maxWidth: '20rem', marginTop: '0.5rem' }}>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
             {hero.recommendedLegacyPieces?.map((p) => (
-              <LegacyPieceBox key={p.id} piece={p as LegacyResolved} />
+              <div key={p.id} style={{ width: '10rem' }}>
+                <LegacyPieceBox piece={p as LegacyResolved} />
+              </div>
             ))}
           </div>
-          {hero.upgrades && hero.upgrades.length > 0 && (
-            <>
-              <h4 style={{ marginTop: '1.5rem' }}>Multiversal Force Upgrades</h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {hero.upgrades.map((u) => (
-                  <div key={u.name} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <img src={u.image} alt={u.name} style={{ width: '5rem' }} />
-                    <div>
-                      <div style={{ fontWeight: 'bold' }}>{u.name}</div>
-                      <div>{u.description}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
         </div>
 
-        {/* Skills */}
+        {/* Champion Abilities */}
         <div className="card">
-          <h4>Ultimate</h4>
+          <h2>Champion Abilities</h2>
+
           {hero.ultimate && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-              <img src={hero.ultimate.image} alt={hero.ultimate.name} style={{ width: '3.5rem' }} />
-              <div>
-                <div style={{ fontWeight: 'bold' }}>{hero.ultimate.name}</div>
-                <div>{hero.ultimate.description}</div>
+            <>
+              <h4>Ultimate</h4>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                <img src={hero.ultimate.image} alt={hero.ultimate.name} style={{ width: '3.5rem' }} />
+                <div>
+                  <div style={{ fontWeight: 'bold' }}>{hero.ultimate.name}</div>
+                  <div>{hero.ultimate.description}</div>
+                </div>
               </div>
-            </div>
+            </>
           )}
 
           {hero.globalSkill && (
@@ -141,13 +133,30 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           {hero.skills && hero.skills.length > 0 && (
             <>
               <h4>Skills</h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1rem' }}>
                 {hero.skills.map((s) => (
                   <div key={s.name} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img src={s.image} alt={s.name} style={{ width: '3.5rem' }} />
                     <div>
                       <div style={{ fontWeight: 'bold' }}>{s.name}</div>
                       <div>{s.description}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {hero.upgrades && hero.upgrades.length > 0 && (
+            <>
+              <h4>Multiversal Force Enhancements</h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                {hero.upgrades.map((u) => (
+                  <div key={u.name} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <img src={u.image} alt={u.name} style={{ width: '5rem' }} />
+                    <div>
+                      <div style={{ fontWeight: 'bold' }}>{u.name}</div>
+                      <div>{u.description}</div>
                     </div>
                   </div>
                 ))}
