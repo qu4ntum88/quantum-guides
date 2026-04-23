@@ -1225,9 +1225,120 @@ function StatusEffectForm() {
   )
 }
 
+// ── Best Teams Form ────────────────────────────────────────────────────────────
+type BestTeam = { rank: number; explanation: string; required: string[]; optional: string[] }
+
+function HeroSelect({ value, onChange, heroes, placeholder }: {
+  value: string; onChange: (v: string) => void
+  heroes: ItemOption[]; placeholder: string
+}) {
+  return (
+    <select style={inp} value={value} onChange={(e) => onChange(e.target.value)}>
+      <option value="">{placeholder}</option>
+      {heroes.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+    </select>
+  )
+}
+
+function BestTeamsForm() {
+  const [heroes, setHeroes] = useState<ItemOption[]>([])
+  const [teams, setTeams] = useState<BestTeam[]>(
+    Array.from({ length: 10 }, (_, i) => ({ rank: i + 1, explanation: '', required: ['', '', '', '', ''], optional: ['', '', '', '', ''] }))
+  )
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  useEffect(() => {
+    fetch('/api/admin/dcdl/champions').then((r) => r.json()).then((data: { id: string; name: string }[]) =>
+      setHeroes(data.map((h) => ({ id: h.id, name: h.name })).sort((a, b) => a.name.localeCompare(b.name)))
+    )
+    fetch('/api/admin/dcdl/best-teams').then((r) => r.json()).then((data: BestTeam[]) => {
+      setTeams(data.map((t) => ({
+        ...t,
+        required: [...(t.required ?? []), '', '', '', '', ''].slice(0, 5),
+        optional: [...(t.optional ?? []), '', '', '', '', ''].slice(0, 5),
+      })))
+    })
+  }, [])
+
+  function updateTeam(rank: number, field: 'explanation', value: string): void
+  function updateTeam(rank: number, field: 'required' | 'optional', value: string[]): void
+  function updateTeam(rank: number, field: keyof BestTeam, value: string | string[]) {
+    setTeams((prev) => prev.map((t) => t.rank === rank ? { ...t, [field]: value } : t))
+  }
+
+  function updateSlot(rank: number, field: 'required' | 'optional', idx: number, val: string) {
+    const team = teams.find((t) => t.rank === rank)!
+    const next = [...team[field] as string[]]
+    next[idx] = val
+    updateTeam(rank, field, next)
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault(); setLoading(true); setStatus(null)
+    const payload = teams.map((t) => ({
+      rank: t.rank,
+      explanation: t.explanation,
+      required: (t.required as string[]).filter(Boolean),
+      optional: (t.optional as string[]).filter(Boolean),
+    }))
+    try {
+      const res = await fetch('/api/admin/dcdl/best-teams', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      const data = await res.json()
+      setStatus(res.ok ? { type: 'success', message: 'Best teams saved!' } : { type: 'error', message: data.error ?? 'Something went wrong.' })
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  return (
+    <div>
+      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+        Configure up to 10 ranked team compositions. Leave slots empty to skip them on the public page.
+      </p>
+      <StatusBanner status={status} />
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        {teams.map((team) => (
+          <div key={team.rank} style={{ ...sec, border: '1px solid #333' }}>
+            <div style={secTitle}>Team #{team.rank}</div>
+            <Field label="Explanation">
+              <textarea
+                style={{ ...inp, minHeight: '4rem', resize: 'vertical' }}
+                value={team.explanation}
+                onChange={(e) => updateTeam(team.rank, 'explanation', e.target.value)}
+                placeholder="Describe this team's strengths, game modes, playstyle..."
+              />
+            </Field>
+            <div style={g2}>
+              <div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--gold)', fontWeight: 600, marginBottom: '0.5rem' }}>Required Champions (up to 5)</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                  {(team.required as string[]).map((val, i) => (
+                    <HeroSelect key={i} value={val} onChange={(v) => updateSlot(team.rank, 'required', i, v)} heroes={heroes} placeholder={`Required ${i + 1}`} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: '0.75rem', color: '#888', fontWeight: 600, marginBottom: '0.5rem' }}>Optional Champions (up to 5)</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                  {(team.optional as string[]).map((val, i) => (
+                    <HeroSelect key={i} value={val} onChange={(v) => updateSlot(team.rank, 'optional', i, v)} heroes={heroes} placeholder={`Optional ${i + 1}`} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : 'Save All Teams'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
 type Game = 'dcdl' | 'vh'
-type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides'
+type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams'
 type VhTab = 'hunters' | 'status-effects'
 
 export default function AdminDCDLPage() {
@@ -1245,6 +1356,7 @@ export default function AdminDCDLPage() {
     { id: 'legacy', label: 'Legacy Pieces' },
     { id: 'info', label: 'Game Info' },
     { id: 'guides', label: 'Guides' },
+    { id: 'best-teams', label: 'Best Teams' },
   ]
 
   const vhTabs: { id: VhTab; label: string }[] = [
@@ -1297,6 +1409,7 @@ export default function AdminDCDLPage() {
             {dcdlTab === 'legacy' && <LegacyForm />}
             {dcdlTab === 'info' && <GameInfoForm />}
             {dcdlTab === 'guides' && <GuidesForm />}
+            {dcdlTab === 'best-teams' && <BestTeamsForm />}
           </>
         )}
 

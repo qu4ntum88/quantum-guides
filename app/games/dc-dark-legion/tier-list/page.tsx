@@ -1,6 +1,14 @@
 import { getResolvedHeros } from '@/src/dcdl/lib/data'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 
+const RARITY_BG: Record<string, string> = {
+  'Iconic':   '#4a3000',
+  'Mythic +': '#3b0a4a',
+  'Mythic':   '#1a0a3a',
+  'Legendary':'#1a2a10',
+  'Epic':     '#0a1a3a',
+}
+
 const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D'] as const
 
 const COLUMNS: { label: string; classes: string[] }[] = [
@@ -147,6 +155,7 @@ export default function TierListPage() {
                                       borderRadius: '0.4rem',
                                       border: `2px solid ${tierColor}88`,
                                       display: 'block',
+                                      background: RARITY_BG[hero.rarity] ?? '#111',
                                     }}
                                   />
                                 </a>
