@@ -9,11 +9,6 @@ const COLUMNS: { label: string; classes: string[] }[] = [
   { label: 'Supporter | Intimidator',        classes: ['Supporter', 'Intimidator'] },
 ]
 
-function heroHeadshot(raw: string | undefined): string {
-  if (!raw) return ''
-  return '/dcdl/' + raw.replace(/^\.\//, '')
-}
-
 export default function TierListPage() {
   const heroes = getResolvedHeros()
 
@@ -105,9 +100,9 @@ export default function TierListPage() {
                         justifyContent: 'center',
                         color: 'white',
                         fontFamily: 'Unbounded, sans-serif',
-                        fontSize: tier.length > 1 ? '0.7rem' : '1rem',
+                        fontSize: '0.75rem',
                         fontWeight: 700,
-                        letterSpacing: '-0.01em',
+                        letterSpacing: '-0.02em',
                         textShadow: '-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000',
                         margin: '0 auto',
                         flexShrink: 0,
@@ -143,7 +138,7 @@ export default function TierListPage() {
                                   style={{ display: 'block', flexShrink: 0 }}
                                 >
                                   <img
-                                    src={heroHeadshot(hero.imageHeadshot)}
+                                    src={hero.imageHeadshot ?? ''}
                                     alt={hero.name}
                                     style={{
                                       width: '3.5rem',

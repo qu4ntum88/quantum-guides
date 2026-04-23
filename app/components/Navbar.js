@@ -10,6 +10,7 @@ const NAV_ITEMS = [
     label: 'DC: Dark Legion',
     children: [
       { label: 'Champions', href: '/games/dc-dark-legion' },
+      { label: 'Tier List', href: '/games/dc-dark-legion/tier-list' },
       { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
       { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
     ],
