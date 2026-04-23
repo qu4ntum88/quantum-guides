@@ -1,12 +1,13 @@
 import { getResolvedHeros } from '@/src/dcdl/lib/data'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 
+// Dark tints matching the game's rarity palette (Iconic=teal, Mythic+=red, Mythic=pink-red, Legendary=gold, Epic=purple)
 const RARITY_BG: Record<string, string> = {
-  'Iconic':   '#4a3000',
-  'Mythic +': '#3b0a4a',
-  'Mythic':   '#1a0a3a',
-  'Legendary':'#1a2a10',
-  'Epic':     '#0a1a3a',
+  'Iconic':   '#00292a',
+  'Mythic +': '#3a000f',
+  'Mythic':   '#3a0014',
+  'Legendary':'#3a2d00',
+  'Epic':     '#2e0038',
 }
 
 const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D'] as const

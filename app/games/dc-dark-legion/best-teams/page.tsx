@@ -18,11 +18,11 @@ function synergyImagePath(raw: string): string {
 }
 
 const RARITY_BG: Record<string, string> = {
-  'Iconic':   '#4a3000',
-  'Mythic +': '#3b0a4a',
-  'Mythic':   '#1a0a3a',
-  'Legendary':'#1a2a10',
-  'Epic':     '#0a1a3a',
+  'Iconic':   '#00292a',
+  'Mythic +': '#3a000f',
+  'Mythic':   '#3a0014',
+  'Legendary':'#3a2d00',
+  'Epic':     '#2e0038',
 }
 
 const RANK_COLORS: Record<number, string> = {
