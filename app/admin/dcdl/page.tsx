@@ -7,7 +7,7 @@ const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 
 const HERO_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
 const DAMAGE_TYPES = ['Physical', 'Spiritual']
-const GAME_MODES = ['Combat Cycles', 'Training Simulator', 'Meta Brawl', '3v3', 'Vehicle Combat', 'Story Mode']
+const GAME_MODES = ['PvP', 'Devastator CC', 'Drowned CC', 'Merciless CC', 'Dawnbreaker CC', 'Murder Machine CC', 'Killer Tank CC', 'Red Death CC']
 const SYNERGIES = [
   { id: 'arkhams_most_wanted', name: "Arkham's Most Wanted" },
   { id: 'amazons', name: 'Amazons' },
