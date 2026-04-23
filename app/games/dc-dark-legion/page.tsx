@@ -25,7 +25,12 @@ export default function DCDarkLegionPage() {
 
       <section style={{ padding: '2rem 0' }}>
         <div className="container">
-          <h2>Character List</h2>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
+            <h2 style={{ margin: 0 }}>Character List</h2>
+            <a href="/games/dc-dark-legion/tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem', fontFamily: 'Unbounded, sans-serif', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+              View Tier List →
+            </a>
+          </div>
           <p style={{ marginBottom: '1.5rem', color: '#cccccc' }}>
             A complete list of playable characters. Click a portrait for in-depth info.
           </p>
