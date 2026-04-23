@@ -1,10 +1,20 @@
 import { getResolvedHeros } from '@/src/dcdl/lib/data'
 
 type Team = { rank: number; explanation: string; required: string[]; optional: string[] }
+type Synergy = { id: string; name: string; image: string }
 
 function readTeams(): Team[] {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   return require('@/src/dcdl/data/best-teams.json') as Team[]
+}
+
+function readSynergies(): Synergy[] {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  return require('@/src/dcdl/data/synergies.json') as Synergy[]
+}
+
+function synergyImagePath(raw: string): string {
+  return '/dcdl/synergies/' + raw.replace(/^\.\//, '')
 }
 
 const RARITY_BG: Record<string, string> = {
@@ -24,6 +34,8 @@ const RANK_COLORS: Record<number, string> = {
 export default function BestTeamsPage() {
   const heroes = getResolvedHeros()
   const heroMap = Object.fromEntries(heroes.map((h) => [h.id, h]))
+  const synergies = readSynergies()
+  const synergyMap = Object.fromEntries(synergies.map((s) => [s.id, s]))
   const teams = readTeams()
   const filledTeams = teams.filter((t) => t.required.length > 0 || t.optional.length > 0 || t.explanation)
 
@@ -61,6 +73,19 @@ export default function BestTeamsPage() {
               const rankColor = RANK_COLORS[team.rank] ?? 'var(--gold)'
               const requiredHeroes = team.required.map((id) => heroMap[id]).filter(Boolean)
               const optionalHeroes = team.optional.map((id) => heroMap[id]).filter(Boolean)
+
+              // Count synergies across all champions on the team
+              const allHeroes = [...requiredHeroes, ...optionalHeroes]
+              const synCounts: Record<string, number> = {}
+              allHeroes.forEach((h) => {
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                const tags: string[] = (h.tagSynergies as any) ?? []
+                tags.forEach((s) => { synCounts[s] = (synCounts[s] ?? 0) + 1 })
+              })
+              const triggeredSynergies = Object.entries(synCounts)
+                .filter(([, count]) => count >= 3)
+                .map(([id]) => synergyMap[id])
+                .filter(Boolean)
 
               return (
                 <div
@@ -103,7 +128,31 @@ export default function BestTeamsPage() {
                   </div>
 
                   {/* Champions row */}
-                  <div style={{ padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+                  <div style={{ padding: '1rem 1.25rem', display: 'flex', alignItems: 'flex-start', gap: '1.25rem', flexWrap: 'wrap' }}>
+
+                    {/* Synergy icons column */}
+                    {triggeredSynergies.length > 0 && (
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem', paddingTop: '1.25rem', flexShrink: 0 }}>
+                        {triggeredSynergies.map((syn) => (
+                          <div key={syn.id} title={syn.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem' }}>
+                            <img
+                              src={synergyImagePath(syn.image)}
+                              alt={syn.name}
+                              style={{ width: '2.5rem', height: '2.5rem', objectFit: 'contain' }}
+                            />
+                            <span style={{ fontSize: '0.5rem', color: '#666', textAlign: 'center', maxWidth: '3rem', lineHeight: 1.2, textTransform: 'uppercase', fontFamily: 'Unbounded, sans-serif', letterSpacing: '0.04em' }}>
+                              {syn.name}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Vertical divider after synergies */}
+                    {triggeredSynergies.length > 0 && (
+                      <div style={{ width: '1px', background: '#2a2a2a', alignSelf: 'stretch', flexShrink: 0 }} />
+                    )}
+
                     {/* Required */}
                     {requiredHeroes.length > 0 && (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', alignItems: 'flex-start' }}>
@@ -135,9 +184,9 @@ export default function BestTeamsPage() {
                       </div>
                     )}
 
-                    {/* Divider */}
+                    {/* Divider between required and optional */}
                     {requiredHeroes.length > 0 && optionalHeroes.length > 0 && (
-                      <div style={{ width: '1px', height: '5.25rem', background: '#2a2a2a', flexShrink: 0 }} />
+                      <div style={{ width: '1px', background: '#2a2a2a', alignSelf: 'stretch', flexShrink: 0 }} />
                     )}
 
                     {/* Optional */}
@@ -146,7 +195,7 @@ export default function BestTeamsPage() {
                         <span style={{ fontSize: '0.6rem', fontFamily: 'Unbounded, sans-serif', color: '#888', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
                           Optional
                         </span>
-                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
                           {optionalHeroes.map((hero) => (
                             <a key={hero.id} href={`/games/dc-dark-legion/heros/${hero.id}`} title={hero.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', textDecoration: 'none' }}>
                               <img
