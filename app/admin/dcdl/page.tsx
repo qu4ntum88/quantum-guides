@@ -858,6 +858,12 @@ const VH_SPECIES   = ['Beastman', 'Construct', 'Creature', 'Dwarf', 'Elf', 'Gobl
 const VH_OTHER     = ['Artificer', 'Assassin', 'Blademaster', 'Consumed', 'Healer', 'Homonculus', 'Inquisition', 'Knight', 'Mimic', 'Miner', 'Minstrel', 'Monk', 'Noble', 'Outlaw', 'Priest', 'Sage', 'Seasoned', 'Sentinel', 'Sharpshooter', 'Tainted', 'Carnivale', 'Wanderer']
 
 // ── Hunter Form ────────────────────────────────────────────────────────────────
+type HunterSkillState = {
+  order: number; name: string; level: string; type: string
+  cooldown: number | null; tags: string[]; description: string
+  upgrades: string[]; image: string | null; newImage: File | null
+}
+
 function HunterForm() {
   const [mode, setMode] = useState<'add' | 'edit'>('add')
   const [selectedId, setSelectedId] = useState('')
@@ -870,6 +876,13 @@ function HunterForm() {
   const [homeland, setHomeland] = useState<string[]>([]); const [species, setSpecies] = useState<string[]>([])
   const [other, setOther] = useState<string[]>([])
   const [portraitFile, setPortraitFile] = useState<File | null>(null); const [existingPortrait, setExistingPortrait] = useState('')
+  const [fullArtFile, setFullArtFile] = useState<File | null>(null); const [existingFullArt, setExistingFullArt] = useState('')
+  const [title, setTitle] = useState('')
+  const [power, setPower] = useState('')
+  const [statAtk, setStatAtk] = useState(''); const [statDef, setStatDef] = useState('')
+  const [statHp, setStatHp] = useState(''); const [statSpd, setStatSpd] = useState('')
+  const [bioText, setBioText] = useState('')
+  const [skills, setSkills] = useState<HunterSkillState[]>([])
 
   useEffect(() => {
     fetch('/api/admin/vh/hunters').then((r) => r.json()).then((data) =>
@@ -879,7 +892,10 @@ function HunterForm() {
 
   const reset = useCallback(() => {
     setName(''); setId(''); setIdManual(false); setRarity(''); setHunterClass([])
-    setHomeland([]); setSpecies([]); setOther([]); setPortraitFile(null); setExistingPortrait(''); setSelectedId('')
+    setHomeland([]); setSpecies([]); setOther([]); setPortraitFile(null); setExistingPortrait('')
+    setFullArtFile(null); setExistingFullArt(''); setTitle(''); setPower('')
+    setStatAtk(''); setStatDef(''); setStatHp(''); setStatSpd(''); setBioText('')
+    setSkills([]); setSelectedId('')
   }, [])
 
   async function loadHunter(hunterId: string) {
@@ -892,10 +908,22 @@ function HunterForm() {
     setName(h.name ?? ''); setId(h.id ?? ''); setIdManual(true); setRarity(h.rarity ?? '')
     setHunterClass(h.class ?? []); setHomeland(h.homeland ?? []); setSpecies(h.species ?? [])
     setOther(h.other ?? []); setExistingPortrait(h.portrait ?? ''); setPortraitFile(null)
+    setExistingFullArt(h.fullArt ?? ''); setFullArtFile(null)
+    setTitle(h.title ?? ''); setPower(h.power != null ? String(h.power) : '')
+    setStatAtk(h.stats?.attack != null ? String(h.stats.attack) : '')
+    setStatDef(h.stats?.defense != null ? String(h.stats.defense) : '')
+    setStatHp(h.stats?.health != null ? String(h.stats.health) : '')
+    setStatSpd(h.stats?.speed != null ? String(h.stats.speed) : '')
+    setBioText(Array.isArray(h.bio) ? h.bio.join('\n\n') : '')
+    setSkills((h.skills ?? []).map((s: HunterSkillState) => ({ ...s, newImage: null })))
   }
 
   function tog(list: string[], set: (v: string[]) => void, val: string) {
     set(list.includes(val) ? list.filter((x) => x !== val) : [...list, val])
+  }
+
+  function updateSkill(order: number, field: keyof HunterSkillState, value: string | File | null) {
+    setSkills((prev) => prev.map((s) => s.order === order ? { ...s, [field]: value } : s))
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -908,6 +936,26 @@ function HunterForm() {
     species.forEach((s) => fd.append('species', s))
     other.forEach((o) => fd.append('other', o))
     if (portraitFile) fd.append('portrait', portraitFile)
+    if (fullArtFile) fd.append('fullArt', fullArtFile)
+    if (title) fd.append('title', title)
+    if (power) fd.append('power', power)
+    if (statAtk || statDef || statHp || statSpd) {
+      fd.append('stats', JSON.stringify({
+        attack: Number(statAtk) || 0, defense: Number(statDef) || 0,
+        health: Number(statHp) || 0, speed: Number(statSpd) || 0,
+      }))
+    }
+    if (bioText.trim()) {
+      const bioArr = bioText.split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
+      fd.append('bio', JSON.stringify(bioArr))
+    }
+    if (skills.length > 0) {
+      const skillData = skills.map(({ newImage: _, ...s }) => s)
+      fd.append('skills', JSON.stringify(skillData))
+      for (const s of skills) {
+        if (s.newImage) fd.append(`skill_image_${s.order}`, s.newImage)
+      }
+    }
 
     try {
       const res = await fetch('/api/admin/vh/hunters', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
@@ -944,6 +992,7 @@ function HunterForm() {
       <StatusBanner status={status} />
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        {/* Basic Info */}
         <div style={sec}>
           <div style={secTitle}>Basic Info</div>
           <div style={g2}>
@@ -954,42 +1003,110 @@ function HunterForm() {
               <input style={inp} value={id} required onChange={(e) => { setId(e.target.value); setIdManual(true) }} />
             </Field>
           </div>
-          <Field label="Rarity">
-            <select style={inp} value={rarity} onChange={(e) => setRarity(e.target.value)}>
-              <option value="">Select...</option>
-              {['Legendary', 'Epic', 'Rare'].map((r) => <option key={r}>{r}</option>)}
-            </select>
-          </Field>
+          <div style={g2}>
+            <Field label="Rarity">
+              <select style={inp} value={rarity} onChange={(e) => setRarity(e.target.value)}>
+                <option value="">Select...</option>
+                {['Legendary', 'Epic', 'Rare'].map((r) => <option key={r}>{r}</option>)}
+              </select>
+            </Field>
+            <Field label="Title" hint='e.g. "The Banemantle"'>
+              <input style={inp} value={title} onChange={(e) => setTitle(e.target.value)} />
+            </Field>
+          </div>
         </div>
 
+        {/* Tags */}
         <div style={sec}>
           <div style={secTitle}>Class</div>
           <CheckGroup options={VH_CLASSES.map((c) => ({ id: c, name: c }))} selected={hunterClass} onChange={(v) => tog(hunterClass, setHunterClass, v)} />
         </div>
-
         <div style={sec}>
           <div style={secTitle}>Homeland</div>
           <CheckGroup options={VH_HOMELANDS.map((h) => ({ id: h, name: h }))} selected={homeland} onChange={(v) => tog(homeland, setHomeland, v)} />
         </div>
-
         <div style={sec}>
           <div style={secTitle}>Species</div>
           <CheckGroup options={VH_SPECIES.map((s) => ({ id: s, name: s }))} selected={species} onChange={(v) => tog(species, setSpecies, v)} />
         </div>
-
-        <div style={sec}>
-          <div style={secTitle}>Portrait</div>
-          <Field label="Portrait Image" hint={existingPortrait ? `Current: ${existingPortrait.split('/').pop()}` : undefined}>
-            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
-              onChange={(e) => setPortraitFile(e.target.files?.[0] ?? null)} />
-            {portraitFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{portraitFile.name}</span>}
-          </Field>
-        </div>
-
         <div style={sec}>
           <div style={secTitle}>Other Tags</div>
           <CheckGroup options={VH_OTHER.map((o) => ({ id: o, name: o }))} selected={other} onChange={(v) => tog(other, setOther, v)} />
         </div>
+
+        {/* Stats */}
+        <div style={sec}>
+          <div style={secTitle}>Power &amp; Stats</div>
+          <Field label="Max Power">
+            <input style={inp} type="number" value={power} onChange={(e) => setPower(e.target.value)} />
+          </Field>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '1rem' }}>
+            <Field label="Attack"><input style={inp} type="number" value={statAtk} onChange={(e) => setStatAtk(e.target.value)} /></Field>
+            <Field label="Defense"><input style={inp} type="number" value={statDef} onChange={(e) => setStatDef(e.target.value)} /></Field>
+            <Field label="Health"><input style={inp} type="number" value={statHp} onChange={(e) => setStatHp(e.target.value)} /></Field>
+            <Field label="Speed"><input style={inp} type="number" value={statSpd} onChange={(e) => setStatSpd(e.target.value)} /></Field>
+          </div>
+        </div>
+
+        {/* Images */}
+        <div style={sec}>
+          <div style={secTitle}>Images</div>
+          <div style={g2}>
+            <Field label="Portrait Image" hint={existingPortrait ? `Current: ${existingPortrait.split('/').pop()}` : undefined}>
+              <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+                onChange={(e) => setPortraitFile(e.target.files?.[0] ?? null)} />
+              {portraitFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{portraitFile.name}</span>}
+            </Field>
+            <Field label="Full Art Image" hint={existingFullArt ? `Current: ${existingFullArt.split('/').pop()}` : undefined}>
+              <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+                onChange={(e) => setFullArtFile(e.target.files?.[0] ?? null)} />
+              {fullArtFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{fullArtFile.name}</span>}
+            </Field>
+          </div>
+        </div>
+
+        {/* Bio */}
+        <div style={sec}>
+          <div style={secTitle}>Bio / Lore</div>
+          <Field label="Lore Paragraphs" hint="Separate paragraphs with a blank line">
+            <textarea style={{ ...inp, minHeight: '10rem', resize: 'vertical' }}
+              value={bioText} onChange={(e) => setBioText(e.target.value)} />
+          </Field>
+        </div>
+
+        {/* Skills */}
+        {skills.length > 0 && (
+          <div style={sec}>
+            <div style={secTitle}>Skills &amp; Traits — Image Upload</div>
+            <p style={{ margin: 0, fontSize: '0.8rem', color: '#888' }}>
+              Upload images for each skill or trait. Descriptions are preserved from existing data.
+            </p>
+            {skills.map((skill) => (
+              <div key={skill.order} style={{ background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                  {skill.image && (
+                    <img src={skill.image} alt={skill.name} style={{ width: '2rem', height: '2rem', borderRadius: '0.25rem', objectFit: 'cover' }} />
+                  )}
+                  <span style={{ fontWeight: 700, fontSize: '0.85rem', color: '#e8e8e8' }}>{skill.name}</span>
+                  <span style={{ fontSize: '0.72rem', color: '#777', background: '#1a1a1a', padding: '0.15rem 0.4rem', borderRadius: '0.25rem' }}>{skill.type}</span>
+                  {skill.cooldown != null && <span style={{ fontSize: '0.72rem', color: '#666' }}>CD: {skill.cooldown}</span>}
+                </div>
+                <div style={g2}>
+                  <Field label="Skill Image" hint={skill.image ? `Current: ${skill.image.split('/').pop()}` : 'No image yet'}>
+                    <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+                      onChange={(e) => updateSkill(skill.order, 'newImage', e.target.files?.[0] ?? null)} />
+                    {skill.newImage && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{(skill.newImage as File).name}</span>}
+                  </Field>
+                  <Field label="Description">
+                    <textarea style={{ ...inp, minHeight: '4rem', resize: 'vertical' }}
+                      value={skill.description}
+                      onChange={(e) => updateSkill(skill.order, 'description', e.target.value)} />
+                  </Field>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
 
         <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
           {loading ? 'Saving...' : mode === 'edit' ? 'Save Changes' : 'Add Hunter'}
