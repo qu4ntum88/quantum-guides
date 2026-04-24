@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import type { CSSProperties } from 'react'
 
 // ── Map data ────────────────────────────────────────────────────────────────
@@ -39,13 +39,52 @@ const PLAYER_ZONE_RADIUS = 40
 
 // ── SVG Map Component ────────────────────────────────────────────────────────
 
+function clampPan(x: number, y: number, viewSize: number) {
+  return {
+    x: Math.max(0, Math.min(256 - viewSize, x)),
+    y: Math.max(0, Math.min(256 - viewSize, y)),
+  }
+}
+
 function GameMap({ ultimate }: { ultimate: boolean }) {
   const [zoom, setZoom] = useState(1)
+  // pan = top-left corner of the viewBox in map coordinates
+  const [pan, setPan] = useState({ x: 0, y: 0 })
 
-  // Zoom by narrowing the viewBox around the map center
+  const svgRef = useRef<SVGSVGElement>(null)
+  // Stores { startMouse, startPan } while dragging
+  const dragRef = useRef<{ sm: { x: number; y: number }; sp: { x: number; y: number } } | null>(null)
+  const [isDragging, setIsDragging] = useState(false)
+
   const viewSize = 256 / zoom
-  const viewX    = CITY_HALL.x - viewSize / 2
-  const viewY    = CITY_HALL.y - viewSize / 2
+
+  // When zoom changes: keep the current center point, zoom in/out from it
+  const handleZoomChange = (newZoom: number) => {
+    const newViewSize = 256 / newZoom
+    const centerX = pan.x + viewSize / 2
+    const centerY = pan.y + viewSize / 2
+    setPan(clampPan(centerX - newViewSize / 2, centerY - newViewSize / 2, newViewSize))
+    setZoom(newZoom)
+  }
+
+  const startDrag = (mx: number, my: number) => {
+    dragRef.current = { sm: { x: mx, y: my }, sp: { ...pan } }
+    setIsDragging(true)
+  }
+
+  const moveDrag = (mx: number, my: number) => {
+    if (!dragRef.current || !svgRef.current) return
+    const rect = svgRef.current.getBoundingClientRect()
+    const scale = viewSize / rect.width // SVG units per pixel
+    const dx = (mx - dragRef.current.sm.x) * scale
+    const dy = (my - dragRef.current.sm.y) * scale
+    setPan(clampPan(dragRef.current.sp.x - dx, dragRef.current.sp.y - dy, viewSize))
+  }
+
+  const endDrag = () => {
+    dragRef.current = null
+    setIsDragging(false)
+  }
 
   const activeArmories = ultimate ? ARMORIES : ARMORIES.filter(a => !a.ultimateOnly)
 
@@ -65,7 +104,7 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
         <input
           type="range" min="1" max="8" step="0.5"
           value={zoom}
-          onChange={e => setZoom(Number(e.target.value))}
+          onChange={e => handleZoomChange(Number(e.target.value))}
           style={{ flex: 1, accentColor: '#c9a01e', cursor: 'pointer' }}
         />
         <span style={{ color: 'var(--gold)', fontSize: '0.78rem', fontFamily: 'monospace', minWidth: '2.5rem', textAlign: 'right' }}>
@@ -74,9 +113,17 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
       </div>
 
       <svg
-        viewBox={`${viewX} ${viewY} ${viewSize} ${viewSize}`}
+        ref={svgRef}
+        viewBox={`${pan.x} ${pan.y} ${viewSize} ${viewSize}`}
         xmlns="http://www.w3.org/2000/svg"
-        style={{ width: '100%', display: 'block', borderRadius: '0.5rem' }}
+        style={{ width: '100%', display: 'block', borderRadius: '0.5rem', cursor: isDragging ? 'grabbing' : zoom > 1 ? 'grab' : 'default', userSelect: 'none' }}
+        onMouseDown={e => { e.preventDefault(); startDrag(e.clientX, e.clientY) }}
+        onMouseMove={e => moveDrag(e.clientX, e.clientY)}
+        onMouseUp={endDrag}
+        onMouseLeave={endDrag}
+        onTouchStart={e => startDrag(e.touches[0].clientX, e.touches[0].clientY)}
+        onTouchMove={e => moveDrag(e.touches[0].clientX, e.touches[0].clientY)}
+        onTouchEnd={endDrag}
       >
         <defs>
           {/* Player zone mask: full map minus inner circle */}
