@@ -309,6 +309,14 @@ export default function TierListPage() {
               </tbody>
             </table>
           </div>
+          <p style={{
+            marginTop: '0.85rem',
+            fontSize: '0.75rem',
+            color: '#888',
+            fontStyle: 'italic',
+          }}>
+            <strong style={{ color: '#aaa', fontStyle: 'normal' }}>Note:</strong> This Legacy Piece tier list is a collaboration with Tyvokka.
+          </p>
         </div>
       </section>
     </main>
