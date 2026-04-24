@@ -1,12 +1,13 @@
 import { getHeros } from '@/src/dcdl/lib/data'
 
 type CCSkill = { name: string; description: string }
+type CCCurrency = { name: string; image: string }
 
 type CCBoss = {
   id: string
   name: string
   day: string
-  currency: string
+  currencies: CCCurrency[]
   image: string
   mechanics: string
   skills: CCSkill[]
@@ -145,18 +146,26 @@ export default function CombatCyclePage() {
                       }}>
                         📅 {boss.day}
                       </span>
-                      {boss.currency && (
-                        <span style={{
-                          fontFamily: 'Unbounded, sans-serif',
-                          fontSize: '0.7rem',
-                          fontWeight: 600,
-                          color: '#a0c8ff',
-                          textTransform: 'uppercase',
-                          letterSpacing: '0.06em',
-                        }}>
-                          💰 {boss.currency}
-                        </span>
-                      )}
+                      {(boss.currencies ?? []).map((cur) => (
+                        <div key={cur.name} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                          <img
+                            src={`/dcdl/resource_icons/${cur.image}`}
+                            alt={cur.name}
+                            title={cur.name}
+                            style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }}
+                          />
+                          <span style={{
+                            fontFamily: 'Unbounded, sans-serif',
+                            fontSize: '0.65rem',
+                            fontWeight: 600,
+                            color: '#a0c8ff',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                          }}>
+                            {cur.name}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
