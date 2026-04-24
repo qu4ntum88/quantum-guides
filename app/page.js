@@ -26,7 +26,7 @@ export default function Home() {
       slug: 'void-hunters',
       description: 'Turn-based RPG with deep progression systems',
       color: '#2a2a2a',
-      image: null
+      image: '/images/games/voidhuntersmain.jpg'
     }
   ]
 
