@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, type CSSProperties } from "react"
+import { useState, useEffect, useRef, type CSSProperties } from "react"
 import HeroBox from "./HeroBox"
 import { Button } from "./ui/button"
 import SearchBar from "./SearchBar"
@@ -177,13 +177,25 @@ function IconFilterButton({ src, descSrc, label, selected, onClick }: {
   src: string; descSrc?: string; label: string; selected: boolean; onClick: () => void
 }) {
   const [hovered, setHovered] = useState(false)
+  const [coords, setCoords] = useState({ top: 0, left: 0 })
+  const btnRef = useRef<HTMLButtonElement>(null)
+
+  const handleEnter = () => {
+    if (btnRef.current) {
+      const rect = btnRef.current.getBoundingClientRect()
+      setCoords({ top: rect.bottom + 8, left: rect.left + rect.width / 2 })
+    }
+    setHovered(true)
+  }
+
   return (
     <div style={{ position: "relative", flexShrink: 0 }}>
       <button
+        ref={btnRef}
         type="button"
         title={label}
         onClick={onClick}
-        onMouseEnter={() => setHovered(true)}
+        onMouseEnter={handleEnter}
         onMouseLeave={() => setHovered(false)}
         style={{
           background: selected ? "rgba(124,58,237,0.35)" : "transparent",
@@ -202,20 +214,19 @@ function IconFilterButton({ src, descSrc, label, selected, onClick }: {
       </button>
       {hovered && descSrc && (
         <div style={{
-          position: "absolute",
-          top: "calc(100% + 8px)",
-          left: "50%",
+          position: "fixed",
+          top: coords.top,
+          left: coords.left,
           transform: "translateX(-50%)",
-          zIndex: 200,
+          zIndex: 9999,
           pointerEvents: "none",
           background: "#100824",
           border: "1px solid #3a2a5a",
-          borderRadius: "0.6rem",
-          padding: "0.4rem",
-          boxShadow: "0 12px 40px rgba(0,0,0,0.8)",
-          whiteSpace: "nowrap",
+          borderRadius: "0.75rem",
+          padding: "0.5rem",
+          boxShadow: "0 16px 48px rgba(0,0,0,0.85)",
         }}>
-          <img src={descSrc} alt={label} style={{ width: "260px", borderRadius: "0.35rem", display: "block" }} />
+          <img src={descSrc} alt={label} style={{ width: "480px", maxWidth: "85vw", borderRadius: "0.5rem", display: "block" }} />
         </div>
       )}
     </div>
