@@ -1,6 +1,7 @@
 import { getHeros } from '@/src/dcdl/lib/data'
 
-type CCSkill = { name: string; description: string }
+type CCStatusEffect = { name: string; effect: string }
+type CCSkill = { name: string; description: string; type?: string; status_effects?: CCStatusEffect[] }
 type CCCurrency = { name: string; image: string }
 
 type CCBoss = {
@@ -147,16 +148,16 @@ export default function CombatCyclePage() {
                         📅 {boss.day}
                       </span>
                       {(boss.currencies ?? []).map((cur) => (
-                        <div key={cur.name} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                        <div key={cur.name} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                           <img
                             src={`/dcdl/resource_icons/${cur.image}`}
                             alt={cur.name}
                             title={cur.name}
-                            style={{ width: '1.4rem', height: '1.4rem', objectFit: 'contain' }}
+                            style={{ width: '2.75rem', height: '2.75rem', objectFit: 'contain' }}
                           />
                           <span style={{
                             fontFamily: 'Unbounded, sans-serif',
-                            fontSize: '0.65rem',
+                            fontSize: '1rem',
                             fontWeight: 600,
                             color: '#a0c8ff',
                             textTransform: 'uppercase',
@@ -187,30 +188,92 @@ export default function CombatCyclePage() {
                   {boss.skills.length > 0 && (
                     <div>
                       <div style={sectionLabel}>Boss Skills</div>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                         {boss.skills.map((skill, i) => (
                           <div
                             key={i}
                             style={{
                               background: 'rgba(255,255,255,0.04)',
-                              border: '1px solid #222',
-                              borderRadius: '0.5rem',
-                              padding: '0.6rem 1rem',
+                              border: '1px solid #2a2a2a',
+                              borderRadius: '0.6rem',
+                              overflow: 'hidden',
                             }}
                           >
+                            {/* Skill name row */}
                             <div style={{
-                              fontFamily: 'Unbounded, sans-serif',
-                              fontSize: '0.7rem',
-                              fontWeight: 700,
-                              color: 'var(--gold)',
-                              marginBottom: '0.25rem',
-                              textTransform: 'uppercase',
-                              letterSpacing: '0.04em',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '0.6rem',
+                              padding: '0.6rem 1rem',
+                              borderBottom: '1px solid #1e1e1e',
+                              background: 'rgba(255,255,255,0.03)',
                             }}>
-                              {skill.name}
+                              <span style={{
+                                fontFamily: 'Unbounded, sans-serif',
+                                fontSize: '0.72rem',
+                                fontWeight: 700,
+                                color: 'var(--gold)',
+                                textTransform: 'uppercase',
+                                letterSpacing: '0.04em',
+                                flex: 1,
+                              }}>
+                                {skill.name}
+                              </span>
+                              {skill.type && (
+                                <span style={{
+                                  fontSize: '0.55rem',
+                                  fontFamily: 'Unbounded, sans-serif',
+                                  fontWeight: 700,
+                                  color: '#c8a0ff',
+                                  background: 'rgba(130,80,200,0.2)',
+                                  border: '1px solid rgba(130,80,200,0.35)',
+                                  padding: '0.15rem 0.45rem',
+                                  borderRadius: '0.25rem',
+                                  textTransform: 'uppercase',
+                                  letterSpacing: '0.06em',
+                                  flexShrink: 0,
+                                }}>
+                                  {skill.type}
+                                </span>
+                              )}
                             </div>
-                            <div style={{ fontSize: '0.85rem', color: '#b0b0b0', lineHeight: 1.6 }}>
-                              {skill.description}
+                            {/* Description + status effects */}
+                            <div style={{ padding: '0.65rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                              {skill.description && (
+                                <p style={{ margin: 0, fontSize: '0.875rem', color: '#b8b8b8', lineHeight: 1.7 }}>
+                                  {skill.description}
+                                </p>
+                              )}
+                              {(skill.status_effects ?? []).length > 0 && (
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem', marginTop: '0.2rem' }}>
+                                  {skill.status_effects!.map((se, j) => (
+                                    <div key={j} style={{
+                                      background: 'rgba(100,60,180,0.12)',
+                                      border: '1px solid rgba(120,70,200,0.25)',
+                                      borderRadius: '0.35rem',
+                                      padding: '0.35rem 0.75rem',
+                                      display: 'flex',
+                                      gap: '0.5rem',
+                                      alignItems: 'baseline',
+                                      flexWrap: 'wrap',
+                                    }}>
+                                      <span style={{
+                                        fontFamily: 'Unbounded, sans-serif',
+                                        fontSize: '0.6rem',
+                                        fontWeight: 700,
+                                        color: '#c8a0ff',
+                                        whiteSpace: 'nowrap',
+                                        flexShrink: 0,
+                                      }}>
+                                        [{se.name}]
+                                      </span>
+                                      <span style={{ fontSize: '0.82rem', color: '#999', lineHeight: 1.5 }}>
+                                        {se.effect}
+                                      </span>
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
                             </div>
                           </div>
                         ))}

@@ -10,7 +10,12 @@
     ],
     "image": "TheDevastator.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "Ejected",
+        "description": "Strike an enemy with such force they are thrown off the battlefield and unable to return for a time."
+      }
+    ]
   },
   {
     "id": "drowned",
@@ -23,7 +28,28 @@
     ],
     "image": "TheDrowned.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "Dark Wave",
+        "description": "Unleashes a massive pillar of water that deals damage to all enemies and incapacitates them. The more [Dead Water] stacks a target has, the longer the incapacitation lasts."
+      },
+      {
+        "name": "Dark Surge",
+        "description": "Commands seawater to periodically create waves, dealing area damage and knocking back enemies."
+      },
+      {
+        "name": "Water Bomb",
+        "description": "Forms a water sphere and detonates it, dealing damage to all enemies, with a high chance to apply 1 stack of [Dead Water]."
+      },
+      {
+        "name": "Self-Modification",
+        "type": "Passive",
+        "description": "Basic attacks have a low chance to apply [Dead Water]. Also periodically removes all debuffs from itself.",
+        "status_effects": [
+          { "name": "Dead Water", "effect": "Reduces movement speed." }
+        ]
+      }
+    ]
   },
   {
     "id": "merciless",
@@ -36,7 +62,16 @@
     ],
     "image": "TheMerciless.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "Fires of Hades",
+        "description": "Open a pit to Hades itself, unleashing its hellfire upon all who venture too close."
+      },
+      {
+        "name": "Rallying Cry",
+        "description": "A commanding shout summons more controlled Warmongers to join the battle."
+      }
+    ]
   },
   {
     "id": "dawnbreaker",
@@ -49,7 +84,12 @@
     ],
     "image": "TheDawnbreaker.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "The Claw",
+        "description": "Creates a dark zone and uses its green claw to immobilize the target, dealing DMG over time until the target is defeated or the claw is destroyed. The claw takes significantly more Spiritual DMG but less Physical DMG. Also summons green monsters for the duration of this skill."
+      }
+    ]
   },
   {
     "id": "murder_machine",
@@ -62,7 +102,27 @@
     ],
     "image": "MurderMachine.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "Loyal Servant",
+        "description": "Murder Machine activates all Alfred Protocols on the battlefield, gains [Electron Shield], and knocks back all enemies. When [Electron Shield] expires, Murder Machine enters [Self-Repair], removing all [Trojan Virus] and stunning all Alfred Protocols. When [Self-Repair] ends, Murder Machine regains [Electron Shield] and reactivates the Alfred Protocols.",
+        "status_effects": [
+          { "name": "Electron Shield", "effect": "Grants a shield equal to 1000% of Murder Machine's ATK." },
+          { "name": "Self-Repair", "effect": "Becomes incapacitated and increases DMG taken by 100% for 5s." }
+        ]
+      },
+      {
+        "name": "Weakness Analysis",
+        "description": "Murder Machine scans the battlefield and permanently inflicts [Trojan Virus] on all enemies.",
+        "status_effects": [
+          { "name": "Trojan Virus", "effect": "Increases DMG taken by 20%. Stackable up to 5 times." }
+        ]
+      },
+      {
+        "name": "Laser Net",
+        "description": "When [Electron Shield] is active, Murder Machine casts this skill. Murder Machine charges briefly before unleashing two laser sweeps across the battlefield, dealing Physical DMG equal to 180% of his ATK."
+      }
+    ]
   },
   {
     "id": "killer_tank",
@@ -75,7 +135,25 @@
     ],
     "image": "KillerTank.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "Fatal Frenzy",
+        "description": "The Killer Tank goes into frenzy mode and charges through the battlefield, dealing DMG to all enemies in its path."
+      },
+      {
+        "name": "Self-Repair",
+        "type": "Passive",
+        "description": "The Killer Tank takes 50% less DMG while in its normal state. When inflicted with a control effect, it ignores the effect, but one tire is blown. If the control lasts longer than 2s, one additional tire is blown. When all 8 tires are blown, the Killer Tank enters a repair state, disabling its frenzy mode but still allowing it to cast attack skills from its position. During this state, it takes 100% more DMG. Tires self-repair over time. Once fully restored, the Killer Tank will return to frenzy mode. A full repair takes no more than 15s."
+      },
+      {
+        "name": "Scorched Earth",
+        "description": "Unleashes a massive fire blast, dealing DMG to enemies within range."
+      },
+      {
+        "name": "Murder Missiles",
+        "description": "Launches a barrage of missiles, dealing DMG to enemies within range."
+      }
+    ]
   },
   {
     "id": "red_death",
@@ -88,6 +166,23 @@
     ],
     "image": "RedDeath.png",
     "mechanics": "",
-    "skills": []
+    "skills": [
+      {
+        "name": "Space Rifts",
+        "description": "Red Death enters Speed Force mode, tearing open space-time rifts before disappearing. The rifts expand over time and fire projectiles. If not destroyed in time, they'll deal massive AoE damage to your entire squad."
+      },
+      {
+        "name": "One Man Legion",
+        "description": "Red Death blazes across the battlefield, dealing damage to enemies within range in front of him."
+      },
+      {
+        "name": "Quantum Storm",
+        "description": "Red Death tears open a space-time rift that fires projectiles forward, dealing damage. This rift cannot be destroyed."
+      },
+      {
+        "name": "Reduced Healing",
+        "description": "Red Death inflicts Reduced Healing on all enemies."
+      }
+    ]
   }
 ]
