@@ -6,12 +6,12 @@ type CCCurrency = { name: string; image: string }
 type CCBoss = {
   id: string
   name: string
+  ccTag: string
   day: string
   currencies: CCCurrency[]
   image: string
   mechanics: string
   skills: CCSkill[]
-  recommendedChampions: string[]
 }
 
 function readBosses(): CCBoss[] {
@@ -36,10 +36,10 @@ const DAY_ORDER = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satu
 
 export default function CombatCyclePage() {
   const heroes = getHeros()
-  const heroMap = Object.fromEntries(heroes.map((h) => [h.id, h]))
-  const bosses = readBosses().sort(
-    (a, b) => DAY_ORDER.indexOf(a.day) - DAY_ORDER.indexOf(b.day)
-  )
+  const bosses = readBosses().sort((a, b) => {
+    const firstDay = (d: string) => d.split('/')[0].trim()
+    return DAY_ORDER.indexOf(firstDay(a.day)) - DAY_ORDER.indexOf(firstDay(b.day))
+  })
 
   return (
     <main>
@@ -72,9 +72,9 @@ export default function CombatCyclePage() {
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {bosses.map((boss) => {
             const imgSrc = bossImagePath(boss.image)
-            const recommendedHeroes = boss.recommendedChampions
-              .map((id) => heroMap[id])
-              .filter(Boolean)
+            const recommendedHeroes = heroes.filter(
+              (h) => h.gameModes?.includes(boss.ccTag)
+            )
 
             return (
               <div

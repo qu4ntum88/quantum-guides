@@ -18,7 +18,7 @@ const TIER_LABELS: Record<string, string> = {
   'A':  'Niche',
   'B':  'Situational',
   'C':  'Starter',
-  'D':  'Skip',
+  'D':  'New Player',
 }
 
 const COLUMNS: { label: string; classes: string[] }[] = [
@@ -85,7 +85,7 @@ function TierCell({ tier }: { tier: string }) {
         justifyContent: 'center',
         color: 'white',
         fontFamily: 'Unbounded, sans-serif',
-        fontSize: '0.8rem',
+        fontSize: '1.25rem',
         fontWeight: 900,
         letterSpacing: '-0.02em',
         textShadow: '-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000',

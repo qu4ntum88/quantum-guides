@@ -50,12 +50,14 @@ const FACTIONS = [
 ]
 
 const GAME_MODES = [
-  "Combat Cycles",
-  "Training Simulator",
-  "Meta Brawl",
-  "3v3",
-  "Vehicle Combat",
-  "Story Mode",
+  "PvP",
+  "Devastator CC",
+  "Drowned CC",
+  "Merciless CC",
+  "Dawnbreaker CC",
+  "Murder Machine CC",
+  "Killer Tank CC",
+  "Red Death CC",
 ]
 
 const TIERS = ["S+", "S", "A+", "A", "B", "C", "D"]
