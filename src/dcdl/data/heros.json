@@ -167,7 +167,8 @@
       "weapon_master"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Red Death CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed",
@@ -328,7 +329,14 @@
       "weapon_master"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed",
@@ -410,7 +418,8 @@
       "weapon_master"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Killer Tank CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed",
@@ -478,26 +487,26 @@
   {
     "id": "black_adam",
     "name": "Black Adam",
+    "class": "Magical",
+    "rarity": "Legendary",
+    "tier": "C",
+    "damageType": "Spiritual",
     "tagSynergies": [
       "legion_of_doom",
       "metahuman"
     ],
-    "damageType": "Spiritual",
-    "gameModes": [],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "ATK",
-      "Spiritual AMP"
+    "gameModes": [
+      "Dawnbreaker CC"
     ],
-    "class": "Magical",
-    "rarity": "Legendary",
-    "tier": "C",
-    "imageHeadshot": "./headshot_images/black_adam.png",
-    "imageFull": "./full_images/BlackAdam_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Green, Blue, Purple, Yellow)",
       "Random Legendary Shards"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Spiritual AMP"
     ],
     "recommendedLegacyPieces": [
       "sigil_magic",
@@ -505,10 +514,17 @@
       "plastic_explosives"
     ],
     "quantumsTake": "Black Adam is one of the more useful Legendary champions. He's the most obtainable Spiritual DMG champions in the game and the only one you can get as a new player without spending until The Joker shows up in the Bleed. What I like about him is you can build a budget Legion of Doom team using him instead of Sinestro or Deathstroke. As your roster progresses, he's going to taper off, but he's going to be usable in every game mode for the first month or two after you start, and for that reason you can get away with investing in the first level or two of his force.",
+    "imageHeadshot": "./headshot_images/black_adam.png",
+    "imageFull": "./full_images/BlackAdam_full.png",
     "ultimate": {
       "name": "Power of Aten",
       "description": "Deals Spiritual DMG equal to 220% of ATK to enemies within rectangular area in front of self",
       "image": "./skill_images/icon_hero_skill_BlackAdam_main.png"
+    },
+    "globalSkill": {
+      "name": "Wisdom of the Gods",
+      "description": "Increases all Champions'Spiritual DEF.",
+      "image": "./globalskill_images/BlackAdam_global.png"
     },
     "skills": [
       {
@@ -527,11 +543,6 @@
         "image": "./skill_images/icon_hero_skill_BlackAdam_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Wisdom of the Gods",
-      "description": "Increases all Champions'Spiritual DEF.",
-      "image": "./globalskill_images/BlackAdam_global.png"
-    },
     "upgrades": [
       {
         "name": "Wrath - Enhanced",
@@ -784,26 +795,29 @@
   {
     "id": "constantine",
     "name": "Constantine",
+    "class": "Magical",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "damageType": "Spiritual",
     "tagSynergies": [
       "justice_league_dark",
       "energy_wielder"
     ],
-    "damageType": "Spiritual",
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Drowned CC",
+      "Merciless CC",
+      "Dawnbreaker CC",
+      "Murder Machine CC",
+      "Red Death CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
     ],
     "transmutePriorities": [
       "Energy Gain Bonus",
       "P DEF",
       "Crit RES"
-    ],
-    "class": "Magical",
-    "rarity": "Mythic +",
-    "tier": "S",
-    "imageHeadshot": "./headshot_images/constantine.png",
-    "imageFull": "./full_images/Constantine_full.png",
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
     ],
     "recommendedLegacyPieces": [
       "sigil_magic",
@@ -811,10 +825,17 @@
       "plastic_explosives"
     ],
     "quantumsTake": "Constantine is one of the best AoE chmapions in the game, and he's on a team that is relatively obtainable by non-spenders and lite spenders. He has an AoE on both his ultimate and one of his basic skills, and you can get a third AoE if you have his unique legacy piece (which is required if you're building Justice League Dark). He does heavily rely on his teammates (at least a three-tag bonus) to provide additional Spiritual AMP, but he sees plenty of action as a plug-and-play unit when there's a support champion who can boost ATK..",
+    "imageHeadshot": "./headshot_images/constantine.png",
+    "imageFull": "./full_images/Constantine_full.png",
     "ultimate": {
       "name": "Summoned Flame",
       "description": "Deals Spiritual DMG equal to 200% of ATK in a circular area. If [Black Magic Surge] is active, next two Ultimate casts deal Spirtual DMG equal to 400% and 500% of Constantine's ATK",
       "image": "./skill_images/icon_hero_skill_Constantine_main.png"
+    },
+    "globalSkill": {
+      "name": "Unfair Advantage",
+      "description": "Increases all Champions' ATK and [Magical] Champions' HP.",
+      "image": "./globalskill_images/Constantine_global.png"
     },
     "skills": [
       {
@@ -833,11 +854,6 @@
         "image": "./skill_images/icon_hero_skill_Constantine_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Unfair Advantage",
-      "description": "Increases all Champions' ATK and [Magical] Champions' HP.",
-      "image": "./globalskill_images/Constantine_global.png"
-    },
     "upgrades": [
       {
         "name": "Exorcism Blast - Enhanced",
@@ -869,7 +885,13 @@
       "weapon_master"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed",
@@ -939,22 +961,17 @@
   {
     "id": "deadshot",
     "name": "Deadshot",
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "D",
+    "damageType": "Physical",
     "tagSynergies": [
       "suicide_squad",
       "weapon_master"
     ],
-    "damageType": "Physical",
-    "gameModes": [],
-    "transmutePriorities": [
-      "ATK",
-      "Crit Rate",
-      "Crit DMG"
+    "gameModes": [
+      "Drowned CC"
     ],
-    "class": "Firepower",
-    "rarity": "Mythic",
-    "tier": "D",
-    "imageHeadshot": "./headshot_images/deadshot.png",
-    "imageFull": "./full_images/Deadshot_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -962,16 +979,28 @@
       "Custom Mythic Shards",
       "Daily Deals"
     ],
+    "transmutePriorities": [
+      "ATK",
+      "Crit Rate",
+      "Crit DMG"
+    ],
     "recommendedLegacyPieces": [
       "t_sphere_weakness_analyzer",
       "gas_derringer",
       "lawton_rifle_scope"
     ],
     "quantumsTake": "Deadshot has a solid kit for single-target damage, but he seems to be lacking something to make him viable. His only faction tag is Suicide Squad, and with the lack of a meta lineup for that faction, he will continue to be one of the worst mythic champions in the game. I do not recommend building him at this time, but we will monitor the meta with upcoming champion releases and update our rankings accordingly.",
+    "imageHeadshot": "./headshot_images/deadshot.png",
+    "imageFull": "./full_images/Deadshot_full.png",
     "ultimate": {
       "name": "Marked for Death",
       "description": "Deals Physical Dmg equal to 340% of ATK and reduces target's healing by 20% for 15s, during which Deadshot gains 15 Energy if target is defeated",
       "image": "./skill_images/icon_hero_skill_Deadshot_main.png"
+    },
+    "globalSkill": {
+      "name": "Dead Aim",
+      "description": "Increase [Firepower] Champions' ATK.",
+      "image": "./globalskill_images/Deadshot_global.png"
     },
     "skills": [
       {
@@ -990,11 +1019,6 @@
         "image": "./skill_images/icon_hero_skill_Deadshot_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Dead Aim",
-      "description": "Increase [Firepower] Champions' ATK.",
-      "image": "./globalskill_images/Deadshot_global.png"
-    },
     "upgrades": [
       {
         "name": "Maximum Damage - Enhanced",
@@ -1016,27 +1040,26 @@
   {
     "id": "deathstroke",
     "name": "Deathstroke",
+    "class": "Assassin",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "damageType": "Physical",
     "tagSynergies": [
       "legion_of_doom",
       "league_of_assassins",
       "weapon_master"
     ],
-    "damageType": "Physical",
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Drowned CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
     ],
     "transmutePriorities": [
       "ATK",
       "Crit Rate",
       "Crit DMG"
-    ],
-    "class": "Assassin",
-    "rarity": "Mythic +",
-    "tier": "A+",
-    "imageHeadshot": "./headshot_images/deathstroke.png",
-    "imageFull": "./full_images/Deathstroke_full.png",
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
     ],
     "recommendedLegacyPieces": [
       "t_sphere_weakness_analyzer",
@@ -1044,10 +1067,17 @@
       "gas_derringer"
     ],
     "quantumsTake": "Deathstroke is one of the more devisive champions in the game, primarily because he requires heavy investment and isn't very plug-and-play friendly at lower star levels. Yet, he has some of the highest single-target damage of any champion, and Legion of Doom teams continue to make up a large percentage of the top teams in Meta Brawl. You need him at two purple stars for minimum viability, but one you get him there, he's one of the champions that can really carry your account.",
+    "imageHeadshot": "./headshot_images/deathstroke.png",
+    "imageFull": "./full_images/Deathstroke_full.png",
     "ultimate": {
       "name": "Slade's Blade",
       "description": "Deal Physical DMG equal to 900% of his ATK to an enemy",
       "image": "./skill_images/icon_hero_skill_Deathstroke_main.png"
+    },
+    "globalSkill": {
+      "name": "Perfect Soldier",
+      "description": "Increases all Champions' HP and [Assassin] Champions' Dodge.",
+      "image": "./globalskill_images/Deathstroke_global.png"
     },
     "skills": [
       {
@@ -1066,11 +1096,6 @@
         "image": "./skill_images/icon_hero_skill_Deathstroke_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Perfect Soldier",
-      "description": "Increases all Champions' HP and [Assassin] Champions' Dodge.",
-      "image": "./globalskill_images/Deathstroke_global.png"
-    },
     "upgrades": [
       {
         "name": "Eye on You - Enhanced",
@@ -1171,23 +1196,24 @@
   {
     "id": "the_flash",
     "name": "The Flash",
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "A+",
+    "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
       "the_flash_family",
       "metahuman"
     ],
-    "damageType": "Physical",
-    "gameModes": [],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "HP",
-      "P DEF"
+    "gameModes": [
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
     ],
-    "class": "Supporter",
-    "rarity": "Mythic",
-    "tier": "A+",
-    "imageHeadshot": "./headshot_images/flash.png",
-    "imageFull": "./full_images/TheFlash_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -1195,16 +1221,28 @@
       "Custom Mythic Shards",
       "Daily Deals"
     ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "HP",
+      "P DEF"
+    ],
     "recommendedLegacyPieces": [
       "super_six_string",
       "starheart_staff",
       "flash_bulb_kite"
     ],
     "quantumsTake": "The Flash is one of the most important supports in the game for anyone looking to maximize their damage in Combat Cycle. He doesn't need to be on a specific team to provide a massive advantage, because his kit is meant to cycle your other squad members' ultimates. In early tier lists I did not value him highly and I regret it. I see him staying relevant for a long time, and cannot wait to see the rest of the Flash Family.",
+    "imageHeadshot": "./headshot_images/flash.png",
+    "imageFull": "./full_images/TheFlash_full.png",
     "ultimate": {
       "name": "Speed Force Sharing",
       "description": "The Flash channels his Energy to an ally until they are fully charged or his Energy is depleted, and increases the target's ATK by [%] for 15s. Casting the Ultimate costs The Flash at least 40 Energy. In auto mode, the skill targets the ally with the highest ATK.",
       "image": "./skill_images/icon_hero_skill_Flash_main.png"
+    },
+    "globalSkill": {
+      "name": "Speed Healing",
+      "description": "Increases all Champions' HP.",
+      "image": "./globalskill_images/TheFlash_global.png"
     },
     "skills": [
       {
@@ -1223,11 +1261,6 @@
         "image": "./skill_images/icon_hero_skill_Flash_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Speed Healing",
-      "description": "Increases all Champions' HP.",
-      "image": "./globalskill_images/TheFlash_global.png"
-    },
     "upgrades": [
       {
         "name": "What a Rush - Enhanced",
@@ -1409,7 +1442,9 @@
       "birds_of_prey",
       "weapon_master"
     ],
-    "gameModes": [],
+    "gameModes": [
+      "Merciless CC"
+    ],
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -1632,24 +1667,19 @@
   {
     "id": "lex_luthor",
     "name": "Lex Luthor",
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "A",
+    "damageType": "Physical",
     "tagSynergies": [
       "legion_of_doom",
       "weapon_master"
     ],
-    "damageType": "Physical",
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Murder Machine CC",
+      "Merciless CC"
     ],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "ATK",
-      "Crit Rate"
-    ],
-    "class": "Firepower",
-    "rarity": "Mythic",
-    "tier": "A",
-    "imageHeadshot": "./headshot_images/lex_luthor.png",
-    "imageFull": "./full_images/LexLuthor_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -1659,16 +1689,28 @@
       "Path of Justice",
       "Training Simulator"
     ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Crit Rate"
+    ],
     "recommendedLegacyPieces": [
       "tectonic_disruptor",
       "t_sphere_weakness_analyzer",
       "gas_derringer"
     ],
     "quantumsTake": "Lex Luthor is a champion who's most useful in a full Legion of Doom team. You simply can't use him without at least the three tag Legion of Doom synergy, unless you want to see a marked drop off in DPS. However, he is THE reason Legion of Doom is such a powerhouse in PvP.",
+    "imageHeadshot": "./headshot_images/lex_luthor.png",
+    "imageFull": "./full_images/LexLuthor_full.png",
     "ultimate": {
       "name": "Warsuit",
       "description": "Deal Physical DMG equal to 385% of ATK to an entire row of enemies",
       "image": "./skill_images/icon_hero_skill_Luthor_main.png"
+    },
+    "globalSkill": {
+      "name": "LexCorp Bonus",
+      "description": "Increases [Legion of Doom] Champions' HP.",
+      "image": "./globalskill_images/Luthor_global.png"
     },
     "skills": [
       {
@@ -1687,11 +1729,6 @@
         "image": "./skill_images/icon_hero_skill_Luthor_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "LexCorp Bonus",
-      "description": "Increases [Legion of Doom] Champions' HP.",
-      "image": "./globalskill_images/Luthor_global.png"
-    },
     "upgrades": [
       {
         "name": "Ability Analysis - Enhanced",
@@ -1868,27 +1905,31 @@
   {
     "id": "nightwing",
     "name": "Nightwing",
+    "class": "Assassin",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "damageType": "Physical",
     "tagSynergies": [
       "teen_titans",
       "bat_family",
       "weapon_master"
     ],
-    "damageType": "Physical",
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Red Death CC",
+      "Drowned CC",
+      "Merciless CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
     ],
     "transmutePriorities": [
       "Crit Rate",
       "Crit DMG",
       "ATK"
-    ],
-    "class": "Assassin",
-    "rarity": "Mythic +",
-    "tier": "S",
-    "imageHeadshot": "./headshot_images/nightwing.png",
-    "imageFull": "./full_images/Nightwing_full.png",
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
     ],
     "recommendedLegacyPieces": [
       "charged_escrima_sticks",
@@ -1896,10 +1937,17 @@
       "t_sphere_weakness_analyzer"
     ],
     "quantumsTake": "Nightwing is one of the more free-to-play bleed champions due to the versatility in lineups he can fit into. Obviously Bat Family is quite expensive and a long farm if you can't spend, but if you can get him to purple stars or higher and obtain his legacy weapon, it will vastly improve any roster.",
+    "imageHeadshot": "./headshot_images/nightwing.png",
+    "imageFull": "./full_images/Nightwing_full.png",
     "ultimate": {
       "name": "Darkest Knight Strike",
       "description": "Nightwing strikes an enemy in front of him, dealing Physical DMG equal to [%] of his ATK. Nightwing gains 1 stack of 10% Crit DMG AMP Up and 5% Crit Rate Up for each [Bat Family] Ally present. If this attack defeats the target, Nightwing immediately strikes again on another enemy with the lowest HP, dealing DMG equal to [%] of his ATK. Nightwing is untargetable during the leap. Prioritizes the enemy Champion with the lowest HP in auto mode.",
       "image": "./skill_images/icon_hero_skill_Nightwing_main.png"
+    },
+    "globalSkill": {
+      "name": "Son of Gotham",
+      "description": "Increases all Champions' ATK and [Assassin] Champions' Crit Rate.",
+      "image": "./globalskill_images/Nightwing_global.png"
     },
     "skills": [
       {
@@ -1918,11 +1966,6 @@
         "image": "./skill_images/icon_hero_skill_Nightwing_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Son of Gotham",
-      "description": "Increases all Champions' ATK and [Assassin] Champions' Crit Rate.",
-      "image": "./globalskill_images/Nightwing_global.png"
-    },
     "upgrades": [
       {
         "name": "Shadow Flip - Enhanced",
@@ -2105,27 +2148,28 @@
   {
     "id": "red_hood",
     "name": "Red Hood",
+    "class": "Firepower",
+    "rarity": "Legendary",
+    "tier": "C",
+    "damageType": "Physical",
     "tagSynergies": [
       "league_of_assassins",
       "bat_family",
       "weapon_master"
     ],
-    "damageType": "Physical",
-    "gameModes": [],
-    "transmutePriorities": [
-      "ATK",
-      "Crit Rate",
-      "Crit DMG"
+    "gameModes": [
+      "Murder Machine CC",
+      "Merciless CC"
     ],
-    "class": "Firepower",
-    "rarity": "Legendary",
-    "tier": "C",
-    "imageHeadshot": "./headshot_images/red_hood.png",
-    "imageFull": "./full_images/RedHood_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Green, Blue, Purple, Yellow)",
       "Random Legendary Shards"
+    ],
+    "transmutePriorities": [
+      "ATK",
+      "Crit Rate",
+      "Crit DMG"
     ],
     "recommendedLegacyPieces": [
       "dart_with_poison_ivy_poison",
@@ -2133,10 +2177,17 @@
       "gas_derringer"
     ],
     "quantumsTake": "Red Hood is a champion that can be fairly useful when you first start playing, but his kit suffers from one fatal flaw, and that's the fact that when he uses his ultimate, he usually dies soon thereafter. We are hoping that his kit gets refreshed when he ascends to mythic, but until then, he just doesn't slot into any team late game.",
+    "imageHeadshot": "./headshot_images/red_hood.png",
+    "imageFull": "./full_images/RedHood_full.png",
     "ultimate": {
       "name": "Strafe Strife",
       "description": "Deal Physical DMG equal to 280% of ATK to enemies within range",
       "image": "./skill_images/icon_hero_skill_RedHood_main.png"
+    },
+    "globalSkill": {
+      "name": "Ruthless Pursuit",
+      "description": "Increases all Champions' ATK.",
+      "image": "./globalskill_images/RedHood_global.png"
     },
     "skills": [
       {
@@ -2155,11 +2206,6 @@
         "image": "./skill_images/icon_hero_skill_RedHood_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Ruthless Pursuit",
-      "description": "Increases all Champions' ATK.",
-      "image": "./globalskill_images/RedHood_global.png"
-    },
     "upgrades": [
       {
         "name": "Blow the Hood - Enhanced",
@@ -2506,7 +2552,13 @@
       "energy_wielder"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Drowned CC",
+      "Red Death CC",
+      "Merciless CC",
+      "Killer Tank CC",
+      "Dawnbreaker CC",
+      "Devastator CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -2659,7 +2711,14 @@
       "teen_titans"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -2734,7 +2793,10 @@
       "metahuman"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Merciless CC",
+      "Murder Machine CC",
+      "Red Death CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -2810,7 +2872,9 @@
       "metahuman"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Killer Tank CC",
+      "Devastator CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -2885,7 +2949,15 @@
       "arkhams_most_wanted",
       "weapon_master"
     ],
-    "gameModes": [],
+    "gameModes": [
+      "Drowned CC",
+      "Murder Machine CC",
+      "Red Death CC",
+      "Killer Tank CC",
+      "Devastator CC",
+      "Merciless CC",
+      "Dawnbreaker CC"
+    ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
     ],
@@ -2958,7 +3030,10 @@
       "arkhams_most_wanted",
       "weapon_master"
     ],
-    "gameModes": [],
+    "gameModes": [
+      "Dawnbreaker CC",
+      "Devastator CC"
+    ],
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -3027,22 +3102,17 @@
   {
     "id": "two_face",
     "name": "Two Face",
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "B",
+    "damageType": "Physical",
     "tagSynergies": [
       "arkhams_most_wanted",
       "weapon_master"
     ],
-    "damageType": "Physical",
-    "gameModes": [],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "ATK",
-      "HP"
+    "gameModes": [
+      "Devastator CC"
     ],
-    "class": "Firepower",
-    "rarity": "Mythic",
-    "tier": "B",
-    "imageHeadshot": "./headshot_images/two_face.png",
-    "imageFull": "./full_images/TwoFace_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -3050,16 +3120,28 @@
       "Custom Mythic Shards",
       "Daily Deals"
     ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "HP"
+    ],
     "recommendedLegacyPieces": [
       "dart_with_poison_ivy_poison",
       "tectonic_disruptor",
       "gas_derringer"
     ],
     "quantumsTake": "Two Face has seen his ups and downs in our rankings since the game's launch. His kit bolsters Spirutal damage dealers, and he does Physical damage, so it's a bit counterintuitive. Effectively, he's much more of a supporter for a Joker hypercarry than a true damage dealer, but that synergy with The Joker is what makes him useful. he doesn't see play in PvP, but he's especially useful on the Combat Cycle bosses with multiple targets and Training Simulator.",
+    "imageHeadshot": "./headshot_images/two_face.png",
+    "imageFull": "./full_images/TwoFace_full.png",
     "ultimate": {
       "name": "Both Bad Sides",
       "description": "Two-Face fires with dual assault rifles, dealing Physical DMG equal to [%] of his ATK to enemies within a fan-shaped area in front of him and inflicting one stack of [Panic] for [10s]. [Panic]: The target's Spiritual DEF reduces by [%].",
       "image": "./skill_images/icon_hero_skill_TwoFace_main.png"
+    },
+    "globalSkill": {
+      "name": "Lawyer's Advice",
+      "description": "Increases [Arkham's Most Wanted] Champions' ATK.",
+      "image": "./globalskill_images/TwoFace_global.png"
     },
     "skills": [
       {
@@ -3078,11 +3160,6 @@
         "image": "./skill_images/icon_hero_skill_TwoFace_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Lawyer's Advice",
-      "description": "Increases [Arkham's Most Wanted] Champions' ATK.",
-      "image": "./globalskill_images/TwoFace_global.png"
-    },
     "upgrades": [
       {
         "name": "Shoot You Twice - Enhanced",
@@ -3266,7 +3343,7 @@
       "metahuman"
     ],
     "gameModes": [
-      "PvP"
+      "Killer Tank CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed",
@@ -3422,7 +3499,14 @@
       "energy_wielder"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -3570,7 +3654,14 @@
       "energy_wielder"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -3796,7 +3887,11 @@
       "deathmetal"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Drowned CC",
+      "Murder Machine CC",
+      "Merciless CC",
+      "Red Death CC"
     ],
     "sourcesWhereAvailable": [
       "Special Event"
@@ -3941,14 +4036,21 @@
   {
     "id": "nurse_harley",
     "name": "Nurse Harley (Harley Quinn)",
+    "class": "Firepower",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "damageType": "Physical",
     "tagSynergies": [
       "birds_of_prey",
       "arkhams_most_wanted",
       "weapon_master"
     ],
-    "damageType": "Physical",
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Drowned CC"
+    ],
+    "sourcesWhereAvailable": [
+      "VIP Perks"
     ],
     "transmutePriorities": [
       "Physical PEN",
@@ -3956,24 +4058,23 @@
       "ATK",
       "Crit Rate"
     ],
-    "class": "Firepower",
-    "rarity": "Mythic +",
-    "tier": "A+",
-    "imageFull": "./full_images/NurseHarley_full.png",
-    "imageHeadshot": "./headshot_images/NurseHarley.png",
-    "quantumsTake": "Nurse Harley has proven herself to be a formidable champion in the Arkham's Most Wanted lineup. The issue is she costs more than any champion in the game to max out, as she is the current VIP track reward, and her legacy piece (which is also paywalled) is 100% required for her to perform as intended. I really like her kit and the damage over time mechanics, and she's a visually fun champion with the syringe gun. We can only hope she becomes more affordable over time.",
-    "sourcesWhereAvailable": [
-      "VIP Perks"
-    ],
     "recommendedLegacyPieces": [
       "psycho_syringe",
       "tectonic_disruptor",
       "gas_derringer"
     ],
+    "quantumsTake": "Nurse Harley has proven herself to be a formidable champion in the Arkham's Most Wanted lineup. The issue is she costs more than any champion in the game to max out, as she is the current VIP track reward, and her legacy piece (which is also paywalled) is 100% required for her to perform as intended. I really like her kit and the damage over time mechanics, and she's a visually fun champion with the syringe gun. We can only hope she becomes more affordable over time.",
+    "imageHeadshot": "./headshot_images/NurseHarley.png",
+    "imageFull": "./full_images/NurseHarley_full.png",
     "ultimate": {
       "name": "Corrosive Sanity",
       "description": "Nurse Harley enters [Self-Actualization] for [13s]. While in this state, her basic attacks fire corrosive shots, each dealing physical damage equal to [%] of her Attack and inflicting [2] stacks of [Corrosion].",
       "image": "./skill_images/icon_hero_skill_NurseHarley_main.png"
+    },
+    "globalSkill": {
+      "name": "Adrenaline Frenzy",
+      "description": "Increases all Champions' ATK by [%], with an additional [%] for [Firepower] Champions.",
+      "image": "./globalskill_images/NurseHarley_global.png"
     },
     "skills": [
       {
@@ -3992,11 +4093,6 @@
         "image": "./skill_images/icon_hero_skill_NurseHarley_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Adrenaline Frenzy",
-      "description": "Increases all Champions' ATK by [%], with an additional [%] for [Firepower] Champions.",
-      "image": "./globalskill_images/NurseHarley_global.png"
-    },
     "upgrades": [
       {
         "name": "Insanity Erosion - Enhanced",
@@ -4102,7 +4198,9 @@
       "metahuman"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Killer Tank CC",
+      "Devastator CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
@@ -4179,7 +4277,8 @@
       "weapon_master"
     ],
     "gameModes": [
-      "PvP"
+      "PvP",
+      "Devastator CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed (Limited)"
