@@ -173,30 +173,52 @@ function TierFilterButton({ tier, selected, onClick }: { tier: string; selected:
   )
 }
 
-function IconFilterButton({ src, label, selected, onClick }: {
-  src: string; label: string; selected: boolean; onClick: () => void
+function IconFilterButton({ src, descSrc, label, selected, onClick }: {
+  src: string; descSrc?: string; label: string; selected: boolean; onClick: () => void
 }) {
+  const [hovered, setHovered] = useState(false)
   return (
-    <button
-      type="button"
-      title={label}
-      onClick={onClick}
-      style={{
-        background: selected ? "rgba(124,58,237,0.35)" : "transparent",
-        border: selected ? "2px solid var(--gold)" : "2px solid #444",
-        borderRadius: "0.5rem",
-        padding: "0.3rem",
-        cursor: "pointer",
-        display: "flex",
-        alignItems: "center",
-        gap: "0.2rem",
-        transition: "all 0.15s",
-        opacity: selected ? 1 : 0.55,
-        flexShrink: 0,
-      }}
-    >
-      <img src={src} alt={label} style={{ width: "2.25rem", height: "2.25rem", objectFit: "contain" }} />
-    </button>
+    <div style={{ position: "relative", flexShrink: 0 }}>
+      <button
+        type="button"
+        title={label}
+        onClick={onClick}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        style={{
+          background: selected ? "rgba(124,58,237,0.35)" : "transparent",
+          border: selected ? "2px solid var(--gold)" : "2px solid #444",
+          borderRadius: "0.5rem",
+          padding: "0.3rem",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          gap: "0.2rem",
+          transition: "all 0.15s",
+          opacity: selected ? 1 : 0.55,
+        }}
+      >
+        <img src={src} alt={label} style={{ width: "2.25rem", height: "2.25rem", objectFit: "contain" }} />
+      </button>
+      {hovered && descSrc && (
+        <div style={{
+          position: "absolute",
+          top: "calc(100% + 8px)",
+          left: "50%",
+          transform: "translateX(-50%)",
+          zIndex: 200,
+          pointerEvents: "none",
+          background: "#100824",
+          border: "1px solid #3a2a5a",
+          borderRadius: "0.6rem",
+          padding: "0.4rem",
+          boxShadow: "0 12px 40px rgba(0,0,0,0.8)",
+          whiteSpace: "nowrap",
+        }}>
+          <img src={descSrc} alt={label} style={{ width: "260px", borderRadius: "0.35rem", display: "block" }} />
+        </div>
+      )}
+    </div>
   )
 }
 
@@ -204,7 +226,7 @@ function toggle(arr: string[], val: string, set: (v: string[]) => void) {
   set(arr.includes(val) ? arr.filter((x) => x !== val) : [...arr, val])
 }
 
-export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
+export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: HeroResolved[]; synergyDescImages?: Record<string, string> }) {
   const [communityTiers, setCommunityTiers] = useState<Record<string, string>>({})
   const [query, setQuery] = useState("")
   const [sortBy, setSortBy] = useState("name")
@@ -301,6 +323,7 @@ export default function HeroGrid({ heros }: { heros: HeroResolved[] }) {
             <IconFilterButton
               key={id}
               src={factionIconSrc(id)}
+              descSrc={synergyDescImages[id]}
               label={label}
               selected={selectedFactions.includes(id)}
               onClick={() => toggle(selectedFactions, id, setSelectedFactions)}

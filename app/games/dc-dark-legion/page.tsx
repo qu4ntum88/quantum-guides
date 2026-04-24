@@ -1,8 +1,13 @@
-import { getResolvedHeros } from '@/src/dcdl/lib/data'
+import { getResolvedHeros, getSynergies } from '@/src/dcdl/lib/data'
 import HeroGrid from '@/src/dcdl/components/HeroGrid'
 
 export default function DCDarkLegionPage() {
   const heros = getResolvedHeros()
+  const synergyDescImages = Object.fromEntries(
+    getSynergies()
+      .filter((s) => s.descriptionImage)
+      .map((s) => [s.id, s.descriptionImage!])
+  )
 
   return (
     <main>
@@ -35,7 +40,7 @@ export default function DCDarkLegionPage() {
             A complete list of playable characters. Click a portrait for in-depth info.
           </p>
           <div className="flex flex-col items-center justify-start gap-12 px-4 py-4 text-white">
-            <HeroGrid heros={heros} />
+            <HeroGrid heros={heros} synergyDescImages={synergyDescImages} />
           </div>
         </div>
       </section>

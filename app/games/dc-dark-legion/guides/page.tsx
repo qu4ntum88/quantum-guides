@@ -2,6 +2,14 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
+type StarLevel = { stars: number; shardsNeeded: number; totalShards: number; totalCopies: number }
+type StarTier  = { tier: string; hexColor: string; levels: StarLevel[] }
+type ShardsData = { title: string; note: string; starTiers: StarTier[] }
+
+function getShardsData(): ShardsData {
+  return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/shards-per-star.json'), 'utf8'))
+}
+
 function getGuides() {
   const guidesDir = path.join(process.cwd(), 'src/dcdl/guides')
   const files = fs.readdirSync(guidesDir).filter((f) => f.endsWith('.mdx') || f.endsWith('.md'))
@@ -26,6 +34,23 @@ function getGameInfo() {
   }
 }
 
+const thStyle: React.CSSProperties = {
+  padding: '0.35rem 0.5rem',
+  textAlign: 'center',
+  fontFamily: 'Unbounded, sans-serif',
+  fontSize: '0.55rem',
+  fontWeight: 700,
+  color: '#666',
+  textTransform: 'uppercase',
+  letterSpacing: '0.06em',
+}
+
+const tdStyle: React.CSSProperties = {
+  padding: '0.35rem 0.5rem',
+  textAlign: 'center',
+  color: '#aaa',
+}
+
 const secTitle: React.CSSProperties = {
   fontFamily: 'Unbounded, sans-serif', fontSize: '0.75rem', fontWeight: 700,
   letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gold)',
@@ -35,6 +60,7 @@ const secTitle: React.CSSProperties = {
 export default function GuidesPage() {
   const guides = getGuides()
   const { latestServer, patchNotes, gameCodes } = getGameInfo()
+  const shardsData = getShardsData()
 
   return (
     <main>
@@ -88,26 +114,89 @@ export default function GuidesPage() {
             </div>
           )}
 
-          {patchNotes && (
-            <div className="card">
-              <div style={secTitle}>Latest Patch Notes</div>
-              <pre style={{
-                fontFamily: "'VT323', monospace",
-                fontSize: '1.1rem',
-                color: '#39ff88',
-                background: '#040d04',
-                border: '1px solid #1a4d1a',
-                borderRadius: '0.375rem',
-                padding: '1.25rem',
-                whiteSpace: 'pre-wrap',
-                wordBreak: 'break-word',
-                lineHeight: 1.55,
-                margin: 0,
-              }}>
-                {patchNotes}
-              </pre>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            {patchNotes && (
+              <div className="card" style={{ flex: '1 1 280px' }}>
+                <div style={secTitle}>Latest Patch Notes</div>
+                <pre style={{
+                  fontFamily: "'VT323', monospace",
+                  fontSize: '1.1rem',
+                  color: '#39ff88',
+                  background: '#040d04',
+                  border: '1px solid #1a4d1a',
+                  borderRadius: '0.375rem',
+                  padding: '1.25rem',
+                  whiteSpace: 'pre-wrap',
+                  wordBreak: 'break-word',
+                  lineHeight: 1.55,
+                  margin: 0,
+                }}>
+                  {patchNotes}
+                </pre>
+              </div>
+            )}
+
+            {/* Shards Per Star Reference */}
+            <div className="card" style={{ flex: '1 1 280px' }}>
+              <div style={secTitle}>{shardsData.title}</div>
+              <p style={{ fontSize: '0.75rem', color: '#888', fontStyle: 'italic', margin: '0 0 1rem' }}>
+                * {shardsData.note}
+              </p>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid #2a2a2a' }}>
+                    <th style={thStyle}>Tier</th>
+                    <th style={thStyle}>Stars</th>
+                    <th style={thStyle}>Cost</th>
+                    <th style={thStyle}>Total Shards</th>
+                    <th style={thStyle}>Copies</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {shardsData.starTiers.map((tier) =>
+                    tier.levels.map((lvl, i) => (
+                      <tr
+                        key={`${tier.tier}-${lvl.stars}`}
+                        style={{
+                          borderTop: i === 0 ? `2px solid ${tier.hexColor}66` : '1px solid #1e1e1e',
+                          background: i === 0 ? `${tier.hexColor}0a` : 'transparent',
+                        }}
+                      >
+                        {i === 0 && (
+                          <td
+                            rowSpan={5}
+                            style={{
+                              textAlign: 'center',
+                              verticalAlign: 'middle',
+                              padding: '0.4rem 0.6rem',
+                              borderRight: `3px solid ${tier.hexColor}`,
+                            }}
+                          >
+                            <div style={{
+                              width: '1.1rem',
+                              height: '1.1rem',
+                              borderRadius: '50%',
+                              background: tier.hexColor,
+                              margin: '0 auto',
+                              boxShadow: `0 0 6px ${tier.hexColor}88`,
+                            }} />
+                          </td>
+                        )}
+                        <td style={tdStyle}>
+                          <span style={{ color: tier.hexColor, letterSpacing: '-0.05em', fontSize: '1rem' }}>
+                            {'★'.repeat(lvl.stars)}{'☆'.repeat(5 - lvl.stars)}
+                          </span>
+                        </td>
+                        <td style={{ ...tdStyle, fontWeight: 700, color: '#fff' }}>{lvl.shardsNeeded}</td>
+                        <td style={{ ...tdStyle, color: 'var(--gold)', fontWeight: 600 }}>{lvl.totalShards}</td>
+                        <td style={tdStyle}>{lvl.totalCopies}</td>
+                      </tr>
+                    ))
+                  )}
+                </tbody>
+              </table>
             </div>
-          )}
+          </div>
 
           <div>
             <h2>Written Guides</h2>

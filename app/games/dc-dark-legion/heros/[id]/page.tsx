@@ -5,6 +5,7 @@ import VotingWidget from '@/src/dcdl/components/VotingWidget'
 import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
 import RarityBadge from '@/src/dcdl/components/RarityBadge'
 import type { LegacyResolved } from '@/src/dcdl/lib/data'
+import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
 
 export function generateStaticParams() {
   return getResolvedHeros().map((h) => ({ id: h.id }))
@@ -75,10 +76,12 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           {hero.tagSynergies.length > 0 && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginTop: '0.5rem' }}>
               {hero.tagSynergies.map((t) => (
-                <div key={t.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <img src={t.image} alt={t.name} style={{ width: '2.5rem' }} />
-                  <span>{t.name}</span>
-                </div>
+                <SynergyTooltip
+                  key={t.id}
+                  name={t.name}
+                  tagImage={t.image}
+                  descImage={t.descriptionImage}
+                />
               ))}
             </div>
           )}

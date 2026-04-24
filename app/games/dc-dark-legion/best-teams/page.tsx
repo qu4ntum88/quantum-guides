@@ -78,9 +78,7 @@ export default function BestTeamsPage() {
               const allHeroes = [...requiredHeroes, ...optionalHeroes]
               const synCounts: Record<string, number> = {}
               allHeroes.forEach((h) => {
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                const tags: string[] = (h.tagSynergies as any) ?? []
-                tags.forEach((s) => { synCounts[s] = (synCounts[s] ?? 0) + 1 })
+                h.tagSynergies.forEach((s) => { synCounts[s.id] = (synCounts[s.id] ?? 0) + 1 })
               })
               const triggeredSynergies = Object.entries(synCounts)
                 .filter(([, count]) => count >= 3)
