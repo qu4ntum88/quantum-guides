@@ -13,6 +13,7 @@ const NAV_ITEMS = [
       { label: 'Tier List', href: '/games/dc-dark-legion/tier-list' },
       { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
       { label: 'Combat Cycle Guide', href: '/games/dc-dark-legion/combat-cycle' },
+      { label: 'Ship Combat Guides', href: '/games/dc-dark-legion/ship-combat-guides' },
       { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
       { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
     ],
