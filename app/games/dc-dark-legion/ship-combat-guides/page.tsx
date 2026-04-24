@@ -134,7 +134,7 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
         x={SAMPLE_BASE.x + 3.5} y={SAMPLE_BASE.y - 5.5}
         fill="rgba(255,255,255,0.55)" fontSize="5" fontFamily="monospace"
       >
-        Player Base (1 tile)
+        Player Base
       </text>
 
       {/* ── Map border ── */}
@@ -150,17 +150,6 @@ const secTitle: CSSProperties = {
   letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gold)',
   borderBottom: '1px solid rgba(204,164,83,0.3)', paddingBottom: '0.5rem', marginBottom: '0.75rem',
 }
-
-const thSt: CSSProperties = {
-  padding: '0.35rem 0.5rem', textAlign: 'left',
-  color: '#555', fontFamily: 'Unbounded, sans-serif', fontSize: '0.55rem',
-  textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 700,
-}
-
-const thStCenter: CSSProperties = { ...thSt, textAlign: 'center' }
-
-const tdSt: CSSProperties = { padding: '0.35rem 0.5rem', color: '#aaa', borderTop: '1px solid #1e1e3a' }
-const tdStCenter: CSSProperties = { ...tdSt, textAlign: 'center' }
 
 // ── Legend swatch helper ──────────────────────────────────────────────────────
 
@@ -191,21 +180,6 @@ export default function ShipCombatGuidesPage() {
 
       <section style={{ padding: '2rem 0' }}>
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-
-          {/* Map stats */}
-          <div className="card">
-            <div style={secTitle}>Map Info</div>
-            <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', fontSize: '0.9rem', color: '#ccc', marginBottom: '0.75rem' }}>
-              <span><span style={{ color: 'var(--gold)', fontWeight: 700 }}>Map Size:</span> 256m × 256m</span>
-              <span><span style={{ color: 'var(--gold)', fontWeight: 700 }}>Tile Size:</span> 2m × 2m</span>
-              <span><span style={{ color: 'var(--gold)', fontWeight: 700 }}>Grid:</span> 128 × 128 tiles</span>
-              <span><span style={{ color: 'var(--gold)', fontWeight: 700 }}>Player Base:</span> 1 tile (2m × 2m)</span>
-            </div>
-            <p style={{ color: '#888', fontSize: '0.85rem', margin: 0 }}>
-              Player bases can be placed anywhere in the outer zone — from the outskirts of the Armories out to the map edges.
-              The maps below show approximate building positions. A sample player base is marked to illustrate tile scale.
-            </p>
-          </div>
 
           {/* Maps */}
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
@@ -261,7 +235,7 @@ export default function ShipCombatGuidesPage() {
                 <Swatch>
                   <rect x="4" y="4" width="8" height="8" fill="white" stroke="#999" strokeWidth="1" />
                 </Swatch>
-                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Player Base (1 tile)</span>
+                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Player Base</span>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -283,67 +257,6 @@ export default function ShipCombatGuidesPage() {
             </div>
           </div>
 
-          {/* Location tables */}
-          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-
-            {/* City Hall + Plaza */}
-            <div className="card" style={{ flex: '1 1 260px' }}>
-              <div style={secTitle}>City Hall &amp; Gotham Plaza</div>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
-                <thead>
-                  <tr style={{ borderBottom: '1px solid #2a2a4a' }}>
-                    <th style={thSt}>Location</th>
-                    <th style={thStCenter}>X</th>
-                    <th style={thStCenter}>Y</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style={{ ...tdSt, color: '#c9a01e', fontWeight: 700 }}>City Hall</td>
-                    <td style={tdStCenter}>{CITY_HALL.x}</td>
-                    <td style={tdStCenter}>{CITY_HALL.y}</td>
-                  </tr>
-                  {PLAZA.map((p) => (
-                    <tr key={p.dir}>
-                      <td style={{ ...tdSt, color: '#a78bfa' }}>Plaza — {p.dir}</td>
-                      <td style={tdStCenter}>{p.x}</td>
-                      <td style={tdStCenter}>{p.y}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Armories */}
-            <div className="card" style={{ flex: '1 1 260px' }}>
-              <div style={secTitle}>Armories</div>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
-                <thead>
-                  <tr style={{ borderBottom: '1px solid #2a2a4a' }}>
-                    <th style={thSt}>Armory</th>
-                    <th style={thStCenter}>X</th>
-                    <th style={thStCenter}>Y</th>
-                    <th style={thStCenter}>Mode</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {ARMORIES.map((a, i) => (
-                    <tr key={i}>
-                      <td style={{ ...tdSt, color: a.ultimateOnly ? '#f87171' : '#fb923c' }}>
-                        Armory {i + 1}
-                      </td>
-                      <td style={tdStCenter}>{a.x}</td>
-                      <td style={tdStCenter}>{a.y}</td>
-                      <td style={{ ...tdStCenter, color: a.ultimateOnly ? '#f87171' : '#666', fontSize: '0.75rem' }}>
-                        {a.ultimateOnly ? 'Ultimate' : 'Both'}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-          </div>
         </div>
       </section>
     </main>
