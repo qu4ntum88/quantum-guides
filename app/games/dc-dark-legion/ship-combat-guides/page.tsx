@@ -2,14 +2,15 @@
 import { useState, useRef } from 'react'
 import type { CSSProperties } from 'react'
 
-// ── Map data ────────────────────────────────────────────────────────────────
-// Coordinates in meters on a 256m × 256m map (each tile = 2m × 2m)
-// City Hall:   9 tiles = 3×3 tile footprint = 6m × 6m
-// Plaza:       4 tiles = 2×2 tile footprint = 4m × 4m
-// Armory:      4 tiles = 2×2 tile footprint = 4m × 4m
-// Player Base: 1 tile  = 1×1 tile footprint = 2m × 2m
+// Zone boundaries in SVG units (center=128, 1 tile = 2 SVG units)
+// Center no-build: 36×36 tiles = 72×72 SVG units (92 to 164)
+// Buildable ring:  31 tiles = 62 SVG units beyond center zone (30 to 226)
+// Outer no-build:  0–30 and 226–256 (15 tiles each side)
+const CZ = { x1: 92, y1: 92, x2: 164, y2: 164 }  // center no-build
+const BZ = { x1: 30, y1: 30, x2: 226, y2: 226 }  // buildable outer boundary
+const BASE_SIZE = 2
 
-const CITY_HALL = { x: 128, y: 128, size: 6 } // 3×3 tiles
+const CITY_HALL = { x: 128, y: 128, size: 6 }
 
 const PLAZA = [
   { x: 68,  y: 128, dir: 'West',      size: 4 },
@@ -31,14 +32,6 @@ const ARMORIES = [
   { x: 147, y: 108, size: 4, ultimateOnly: true  },
 ]
 
-// Sample player base near bottom-left corner of the map
-const SAMPLE_BASE = { x: 16, y: 232, size: 2 } // 1×1 tile
-
-// Approximate boundary radius (in meters) beyond which player bases can be placed
-const PLAYER_ZONE_RADIUS = 40
-
-// ── SVG Map Component ────────────────────────────────────────────────────────
-
 function clampPan(x: number, y: number, viewSize: number) {
   return {
     x: Math.max(0, Math.min(256 - viewSize, x)),
@@ -46,19 +39,24 @@ function clampPan(x: number, y: number, viewSize: number) {
   }
 }
 
+function isInBuildable(mx: number, my: number) {
+  const inOuter = mx >= BZ.x1 + 1 && mx <= BZ.x2 - 1 && my >= BZ.y1 + 1 && my <= BZ.y2 - 1
+  const inCenter = mx >= CZ.x1 && mx <= CZ.x2 && my >= CZ.y1 && my <= CZ.y2
+  return inOuter && !inCenter
+}
+
 function GameMap({ ultimate }: { ultimate: boolean }) {
   const [zoom, setZoom] = useState(1)
-  // pan = top-left corner of the viewBox in map coordinates
   const [pan, setPan] = useState({ x: 0, y: 0 })
+  const [basePos, setBasePos] = useState({ x: 16, y: 232 })
+  const [isDragging, setIsDragging] = useState(false)
 
   const svgRef = useRef<SVGSVGElement>(null)
-  // Stores { startMouse, startPan } while dragging
   const dragRef = useRef<{ sm: { x: number; y: number }; sp: { x: number; y: number } } | null>(null)
-  const [isDragging, setIsDragging] = useState(false)
+  const didDragRef = useRef(false)
 
   const viewSize = 256 / zoom
 
-  // When zoom changes: keep the current center point, zoom in/out from it
   const handleZoomChange = (newZoom: number) => {
     const newViewSize = 256 / newZoom
     const centerX = pan.x + viewSize / 2
@@ -69,15 +67,17 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
 
   const startDrag = (mx: number, my: number) => {
     dragRef.current = { sm: { x: mx, y: my }, sp: { ...pan } }
+    didDragRef.current = false
     setIsDragging(true)
   }
 
   const moveDrag = (mx: number, my: number) => {
     if (!dragRef.current || !svgRef.current) return
     const rect = svgRef.current.getBoundingClientRect()
-    const scale = viewSize / rect.width // SVG units per pixel
+    const scale = viewSize / rect.width
     const dx = (mx - dragRef.current.sm.x) * scale
     const dy = (my - dragRef.current.sm.y) * scale
+    if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) didDragRef.current = true
     setPan(clampPan(dragRef.current.sp.x - dx, dragRef.current.sp.y - dy, viewSize))
   }
 
@@ -86,14 +86,22 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
     setIsDragging(false)
   }
 
-  const activeArmories = ultimate ? ARMORIES : ARMORIES.filter(a => !a.ultimateOnly)
+  const handleClick = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (didDragRef.current || !svgRef.current) return
+    const pt = svgRef.current.createSVGPoint()
+    pt.x = e.clientX
+    pt.y = e.clientY
+    const svgPt = pt.matrixTransform(svgRef.current.getScreenCTM()!.inverse())
+    if (isInBuildable(svgPt.x, svgPt.y)) {
+      setBasePos({ x: svgPt.x - BASE_SIZE / 2, y: svgPt.y - BASE_SIZE / 2 })
+    }
+  }
 
-  // Unique IDs per map instance to avoid SVG ID collisions
+  const activeArmories = ultimate ? ARMORIES : ARMORIES.filter(a => !a.ultimateOnly)
   const pfx = ultimate ? 'u' : 'b'
 
   return (
     <div>
-      {/* Zoom slider */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
         <span style={{
           color: '#777', fontSize: '0.68rem', fontFamily: 'Unbounded, sans-serif',
@@ -116,23 +124,17 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
         ref={svgRef}
         viewBox={`${pan.x} ${pan.y} ${viewSize} ${viewSize}`}
         xmlns="http://www.w3.org/2000/svg"
-        style={{ width: '100%', display: 'block', borderRadius: '0.5rem', cursor: isDragging ? 'grabbing' : zoom > 1 ? 'grab' : 'default', userSelect: 'none' }}
+        style={{ width: '100%', display: 'block', borderRadius: '0.5rem', cursor: isDragging ? 'grabbing' : 'pointer', userSelect: 'none' }}
         onMouseDown={e => { e.preventDefault(); startDrag(e.clientX, e.clientY) }}
         onMouseMove={e => moveDrag(e.clientX, e.clientY)}
         onMouseUp={endDrag}
         onMouseLeave={endDrag}
+        onClick={handleClick}
         onTouchStart={e => startDrag(e.touches[0].clientX, e.touches[0].clientY)}
         onTouchMove={e => moveDrag(e.touches[0].clientX, e.touches[0].clientY)}
         onTouchEnd={endDrag}
       >
         <defs>
-          {/* Player zone mask: full map minus inner circle */}
-          <mask id={`pzm${pfx}`}>
-            <rect width="256" height="256" fill="white" />
-            <circle cx="128" cy="128" r={PLAYER_ZONE_RADIUS} fill="black" />
-          </mask>
-
-          {/* Gold glow for City Hall */}
           <filter id={`glow${pfx}`} x="-80%" y="-80%" width="260%" height="260%">
             <feGaussianBlur stdDeviation="1.5" result="blur" />
             <feMerge>
@@ -140,35 +142,43 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
-
-          {/* Fine grid: every tile (2m) */}
           <pattern id={`tile${pfx}`} x="0" y="0" width="2" height="2" patternUnits="userSpaceOnUse">
             <path d="M 2 0 L 0 0 0 2" fill="none" stroke="#16163c" strokeWidth="0.2" />
           </pattern>
-
-          {/* Coarse grid: every 8 tiles (16m) */}
           <pattern id={`chunk${pfx}`} x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
             <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#21215a" strokeWidth="0.5" />
           </pattern>
         </defs>
 
-        {/* ── Background ── */}
+        {/* Background */}
         <rect width="256" height="256" fill="#09090f" />
 
-        {/* ── Grid: tile-level then chunk-level ── */}
+        {/* Grid */}
         <rect width="256" height="256" fill={`url(#tile${pfx})`} />
         <rect width="256" height="256" fill={`url(#chunk${pfx})`} />
 
-        {/* ── Player base zone (green tint outside armory ring) ── */}
-        <rect width="256" height="256" fill="rgba(34,197,94,0.07)" mask={`url(#pzm${pfx})`} />
+        {/* Outer non-buildable zone (red tint) */}
+        <rect x="0"   y="0"   width="256" height="30"  fill="rgba(220,38,38,0.10)" />
+        <rect x="0"   y="226" width="256" height="30"  fill="rgba(220,38,38,0.10)" />
+        <rect x="0"   y="30"  width="30"  height="196" fill="rgba(220,38,38,0.10)" />
+        <rect x="226" y="30"  width="30"  height="196" fill="rgba(220,38,38,0.10)" />
 
-        {/* ── Armory ring boundary ── */}
-        <circle cx="128" cy="128" r={PLAYER_ZONE_RADIUS}
-          fill="rgba(220,38,38,0.05)"
-          stroke="rgba(220,38,38,0.25)" strokeWidth="0.5" strokeDasharray="3,2"
-        />
+        {/* Buildable zone (green tint) — 4 pieces around center */}
+        <rect x="30"  y="30"  width="196" height="62"  fill="rgba(34,197,94,0.08)" />
+        <rect x="30"  y="164" width="196" height="62"  fill="rgba(34,197,94,0.08)" />
+        <rect x="30"  y="92"  width="62"  height="72"  fill="rgba(34,197,94,0.08)" />
+        <rect x="164" y="92"  width="62"  height="72"  fill="rgba(34,197,94,0.08)" />
 
-        {/* ── Gotham Plaza (purple, 4 tiles = 4×4m) ── */}
+        {/* Center no-build zone (red tint) */}
+        <rect x="92" y="92" width="72" height="72" fill="rgba(220,38,38,0.10)" />
+
+        {/* Zone boundary lines */}
+        <rect x="30" y="30" width="196" height="196"
+          fill="none" stroke="rgba(34,197,94,0.35)" strokeWidth="0.5" strokeDasharray="2,2" />
+        <rect x="92" y="92" width="72" height="72"
+          fill="none" stroke="rgba(220,38,38,0.45)" strokeWidth="0.5" strokeDasharray="2,2" />
+
+        {/* Gotham Plazas */}
         {PLAZA.map((p) => {
           const half = p.size / 2
           return (
@@ -180,12 +190,11 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
           )
         })}
 
-        {/* ── Armories (image, 4 tiles = 4×4m) ── */}
+        {/* Armories */}
         {activeArmories.map((a, i) => {
           const half = a.size / 2
           return (
             <g key={i}>
-              {/* Fallback bg */}
               <rect x={a.x - half} y={a.y - half} width={a.size} height={a.size}
                 fill={a.ultimateOnly ? '#9f1239' : '#c2410c'} fillOpacity="0.45" />
               <image
@@ -193,7 +202,6 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
                 x={a.x - half} y={a.y - half} width={a.size} height={a.size}
                 preserveAspectRatio="xMidYMid meet"
               />
-              {/* Extra border to distinguish Ultimate-only armories */}
               {a.ultimateOnly && (
                 <rect x={a.x - half} y={a.y - half} width={a.size} height={a.size}
                   fill="none" stroke="#f87171" strokeWidth="0.5" />
@@ -202,13 +210,12 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
           )
         })}
 
-        {/* ── Gotham City Hall (image, 9 tiles = 6×6m) ── */}
+        {/* City Hall */}
         {(() => {
           const half = CITY_HALL.size / 2
           return (
             <g>
               <g filter={`url(#glow${pfx})`}>
-                {/* Fallback bg */}
                 <rect x={CITY_HALL.x - half} y={CITY_HALL.y - half}
                   width={CITY_HALL.size} height={CITY_HALL.size}
                   fill="#92680c" fillOpacity="0.55" />
@@ -219,7 +226,6 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
                   preserveAspectRatio="xMidYMid meet"
                 />
               </g>
-              {/* Gold border */}
               <rect x={CITY_HALL.x - half} y={CITY_HALL.y - half}
                 width={CITY_HALL.size} height={CITY_HALL.size}
                 fill="none" stroke="#c9a01e" strokeWidth="0.75" />
@@ -227,55 +233,49 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
           )
         })()}
 
-        {/* ── Sample player base (image, 1 tile = 2×2m) ── */}
+        {/* Player Base — click green zone to move */}
         <g>
-          {/* Highlight ring */}
           <circle
-            cx={SAMPLE_BASE.x + SAMPLE_BASE.size / 2}
-            cy={SAMPLE_BASE.y + SAMPLE_BASE.size / 2}
+            cx={basePos.x + BASE_SIZE / 2}
+            cy={basePos.y + BASE_SIZE / 2}
             r="5"
             fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="0.4" strokeDasharray="1.5,1.5"
           />
-          {/* Fallback bg */}
-          <rect x={SAMPLE_BASE.x} y={SAMPLE_BASE.y}
-            width={SAMPLE_BASE.size} height={SAMPLE_BASE.size}
-            fill="#1e293b" />
+          <rect x={basePos.x} y={basePos.y} width={BASE_SIZE} height={BASE_SIZE} fill="#1e293b" />
           <image
             href="/dcdl/resource_icons/Gotham_PlayerBase.png"
-            x={SAMPLE_BASE.x} y={SAMPLE_BASE.y}
-            width={SAMPLE_BASE.size} height={SAMPLE_BASE.size}
+            x={basePos.x} y={basePos.y} width={BASE_SIZE} height={BASE_SIZE}
             preserveAspectRatio="xMidYMid meet"
           />
-          {/* Pointer + label */}
           <line
-            x1={SAMPLE_BASE.x + 1} y1={SAMPLE_BASE.y - 5}
-            x2={SAMPLE_BASE.x + 1} y2={SAMPLE_BASE.y}
+            x1={basePos.x + 1} y1={basePos.y - 5}
+            x2={basePos.x + 1} y2={basePos.y}
             stroke="rgba(255,255,255,0.35)" strokeWidth="0.3"
           />
           <text
-            x={SAMPLE_BASE.x + 3.5} y={SAMPLE_BASE.y - 5.5}
+            x={basePos.x + 3.5} y={basePos.y - 5.5}
             fill="rgba(255,255,255,0.55)" fontSize="5" fontFamily="monospace"
           >
             Player Base
           </text>
         </g>
 
-        {/* ── Map border ── */}
+        {/* Map border */}
         <rect width="256" height="256" fill="none" stroke="#2a2a6a" strokeWidth="1" />
       </svg>
+
+      <p style={{ color: '#666', fontSize: '0.72rem', marginTop: '0.4rem', fontFamily: 'monospace' }}>
+        Click the green zone to move your Player Base
+      </p>
     </div>
   )
 }
-
-// ── Shared styles ─────────────────────────────────────────────────────────────
 
 const secTitle: CSSProperties = {
   fontFamily: 'Unbounded, sans-serif', fontSize: '0.75rem', fontWeight: 700,
   letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gold)',
   borderBottom: '1px solid rgba(204,164,83,0.3)', paddingBottom: '0.5rem', marginBottom: '0.75rem',
 }
-
-// ── Legend swatch helper ──────────────────────────────────────────────────────
 
 function Swatch({ children }: { children: React.ReactNode }) {
   return (
@@ -284,8 +284,6 @@ function Swatch({ children }: { children: React.ReactNode }) {
     </svg>
   )
 }
-
-// ── Page ─────────────────────────────────────────────────────────────────────
 
 export default function ShipCombatGuidesPage() {
   return (
@@ -305,16 +303,14 @@ export default function ShipCombatGuidesPage() {
       <section style={{ padding: '2rem 0' }}>
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
-          {/* Maps */}
-          <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-            <div className="card" style={{ flex: '1 1 300px' }}>
-              <div style={secTitle}>Battle For Gotham</div>
-              <GameMap ultimate={false} />
-            </div>
-            <div className="card" style={{ flex: '1 1 300px' }}>
-              <div style={secTitle}>Ultimate Battle For Gotham</div>
-              <GameMap ultimate={true} />
-            </div>
+          <div className="card">
+            <div style={secTitle}>Battle For Gotham</div>
+            <GameMap ultimate={false} />
+          </div>
+
+          <div className="card">
+            <div style={secTitle}>Ultimate Battle For Gotham</div>
+            <GameMap ultimate={true} />
           </div>
 
           {/* Legend */}
@@ -359,23 +355,23 @@ export default function ShipCombatGuidesPage() {
                 <Swatch>
                   <rect x="4" y="4" width="8" height="8" fill="white" stroke="#999" strokeWidth="1" />
                 </Swatch>
-                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Player Base</span>
+                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Player Base (click green zone to place)</span>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Swatch>
                   <rect width="16" height="16" fill="rgba(34,197,94,0.2)" />
-                  <rect width="16" height="16" fill="none" stroke="rgba(34,197,94,0.5)" strokeWidth="0.8" />
+                  <rect width="16" height="16" fill="none" stroke="rgba(34,197,94,0.5)" strokeWidth="0.8" strokeDasharray="2,1.5" />
                 </Swatch>
-                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Player Base Zone</span>
+                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Buildable Zone</span>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Swatch>
-                  <rect width="16" height="16" fill="rgba(220,38,38,0.15)" />
+                  <rect width="16" height="16" fill="rgba(220,38,38,0.2)" />
                   <rect width="16" height="16" fill="none" stroke="rgba(220,38,38,0.5)" strokeWidth="0.8" strokeDasharray="2,1.5" />
                 </Swatch>
-                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Restricted Zone (approx.)</span>
+                <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Restricted Zone</span>
               </div>
 
             </div>
