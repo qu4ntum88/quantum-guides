@@ -1336,15 +1336,136 @@ function BestTeamsForm() {
   )
 }
 
+// ── Godforge Hero Form ─────────────────────────────────────────────────────────
+const GF_AFFINITIES  = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
+const GF_ALLEGIANCES = ['Chaos', 'Order']
+const GF_ARCHETYPES  = ['Brawler', 'Defender', 'Disrupter', 'Invoker', 'Slayer']
+const GF_FACTIONS    = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 'OMEYOCAN', 'TIAN', 'VYRAJ']
+
+type GfHeroData = { id: string; name: string; affinity: string | null; allegiance: string | null; archetype: string | null; faction: string | null }
+
+function GfHeroForm() {
+  const [heroes, setHeroes] = useState<ItemOption[]>([])
+  const [selectedId, setSelectedId] = useState('')
+  const [affinity, setAffinity] = useState('')
+  const [allegiance, setAllegiance] = useState('')
+  const [archetype, setArchetype] = useState('')
+  const [faction, setFaction] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  useEffect(() => {
+    fetch('/api/admin/gf/heroes').then((r) => r.json()).then((data: ItemOption[]) =>
+      setHeroes(data.sort((a, b) => a.name.localeCompare(b.name)))
+    )
+  }, [])
+
+  async function loadHero(id: string) {
+    setSelectedId(id)
+    if (!id) { setAffinity(''); setAllegiance(''); setArchetype(''); setFaction(''); return }
+    const res = await fetch(`/api/admin/gf/heroes?id=${id}`)
+    if (!res.ok) return
+    const h: GfHeroData = await res.json()
+    setAffinity(h.affinity ?? '')
+    setAllegiance(h.allegiance ?? '')
+    setArchetype(h.archetype ?? '')
+    setFaction(h.faction ?? '')
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    if (!selectedId) return
+    setLoading(true); setStatus(null)
+    try {
+      const res = await fetch('/api/admin/gf/heroes', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id: selectedId,
+          affinity: affinity || null,
+          allegiance: allegiance || null,
+          archetype: archetype || null,
+          faction: faction || null,
+        }),
+      })
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({ type: 'success', message: `"${heroes.find(h => h.id === selectedId)?.name}" updated!` })
+      } else {
+        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  return (
+    <div>
+      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+        Select a hero and assign their affinity, allegiance, archetype, and faction. These drive the filter/sort on the heroes grid.
+      </p>
+
+      <div style={{ ...sec, marginBottom: '1.5rem' }}>
+        <Field label="Select Hero" required>
+          <select style={inp} value={selectedId} onChange={(e) => loadHero(e.target.value)}>
+            <option value="">Choose a hero...</option>
+            {heroes.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+          </select>
+        </Field>
+      </div>
+
+      <StatusBanner status={status} />
+
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <div style={sec}>
+          <div style={secTitle}>Attributes</div>
+          <div style={g2}>
+            <Field label="Affinity">
+              <select style={inp} value={affinity} onChange={(e) => setAffinity(e.target.value)}>
+                <option value="">None</option>
+                {GF_AFFINITIES.map((a) => <option key={a}>{a}</option>)}
+              </select>
+            </Field>
+            <Field label="Allegiance">
+              <select style={inp} value={allegiance} onChange={(e) => setAllegiance(e.target.value)}>
+                <option value="">None</option>
+                {GF_ALLEGIANCES.map((a) => <option key={a}>{a}</option>)}
+              </select>
+            </Field>
+            <Field label="Archetype">
+              <select style={inp} value={archetype} onChange={(e) => setArchetype(e.target.value)}>
+                <option value="">None</option>
+                {GF_ARCHETYPES.map((a) => <option key={a}>{a}</option>)}
+              </select>
+            </Field>
+            <Field label="Faction">
+              <select style={inp} value={faction} onChange={(e) => setFaction(e.target.value)}>
+                <option value="">None</option>
+                {GF_FACTIONS.map((f) => <option key={f}>{f}</option>)}
+              </select>
+            </Field>
+          </div>
+        </div>
+
+        <button type="submit" className="btn" disabled={loading || !selectedId}
+          style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : 'Save Hero'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
-type Game = 'dcdl' | 'vh'
+type Game = 'dcdl' | 'vh' | 'gf'
 type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams'
 type VhTab = 'hunters' | 'status-effects'
+type GfTab = 'heroes'
 
 export default function AdminDCDLPage() {
   const [game, setGame] = useState<Game>('dcdl')
   const [dcdlTab, setDcdlTab] = useState<DcdlTab>('champions')
   const [vhTab, setVhTab] = useState<VhTab>('hunters')
+  const [gfTab, setGfTab] = useState<GfTab>('heroes')
   const [legacyOptions, setLegacyOptions] = useState<ItemOption[]>([])
 
   useEffect(() => {
@@ -1362,6 +1483,10 @@ export default function AdminDCDLPage() {
   const vhTabs: { id: VhTab; label: string }[] = [
     { id: 'hunters', label: 'Hunters' },
     { id: 'status-effects', label: 'Status Effects' },
+  ]
+
+  const gfTabs: { id: GfTab; label: string }[] = [
+    { id: 'heroes', label: 'Heroes' },
   ]
 
   const gameTabStyle = (g: Game): React.CSSProperties => ({
@@ -1390,9 +1515,10 @@ export default function AdminDCDLPage() {
         </p>
 
         {/* Game selector */}
-        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
           <button type="button" style={gameTabStyle('dcdl')} onClick={() => setGame('dcdl')}>DC: Dark Legion</button>
           <button type="button" style={gameTabStyle('vh')} onClick={() => setGame('vh')}>Void Hunters</button>
+          <button type="button" style={gameTabStyle('gf')} onClick={() => setGame('gf')}>Godforge</button>
         </div>
 
         {/* DCDL sub-tabs */}
@@ -1425,6 +1551,20 @@ export default function AdminDCDLPage() {
             </div>
             {vhTab === 'hunters' && <HunterForm />}
             {vhTab === 'status-effects' && <StatusEffectForm />}
+          </>
+        )}
+
+        {/* Godforge sub-tabs */}
+        {game === 'gf' && (
+          <>
+            <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '2rem', borderBottom: '2px solid #333' }}>
+              {gfTabs.map(({ id, label }) => (
+                <button key={id} type="button" onClick={() => setGfTab(id)} style={subTabStyle(gfTab === id)}>
+                  {label}
+                </button>
+              ))}
+            </div>
+            {gfTab === 'heroes' && <GfHeroForm />}
           </>
         )}
       </div>

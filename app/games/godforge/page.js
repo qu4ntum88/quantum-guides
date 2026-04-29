@@ -28,6 +28,19 @@ export default async function GodforgePage() {
         </div>
       </section>
 
+      <section style={{ padding: '1.5rem 0 0' }}>
+        <div className="container">
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <a href="/games/godforge/heroes" className="btn" style={{ fontSize: '0.9rem', padding: '0.6rem 1.5rem' }}>
+              Heroes →
+            </a>
+            <a href="/games/godforge/status-effects" className="btn" style={{ fontSize: '0.9rem', padding: '0.6rem 1.5rem' }}>
+              Status Effects →
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="game-content">
         <div className="container">
           <div className="content-grid">
