@@ -10,7 +10,7 @@ npm run build    # Production build
 npm run lint     # ESLint
 ```
 
-There are no tests. Deploy via `npx vercel --prod`.
+There are no tests. Deploy via `git push origin main` — Vercel auto-deploys from GitHub. Do NOT also run `npx vercel --prod`; that creates duplicate deployments and the CLI deploy frequently hangs.
 
 ## What this is
 
@@ -54,6 +54,10 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 
 **Godforge corner icon convention** (on hero cards): faction = top-left, archetype = top-right, affinity = bottom-left, allegiance = bottom-right. Icon paths follow: `/godforge/gf_heroes/factions/{FACTION}.png`, `/godforge/gf_heroes/archetypes/Archetype_{Archetype}.png`, `/godforge/gf_heroes/affinity/{Affinity}.png`, `/godforge/gf_heroes/allegiances/Allegiance_{Allegiance}.png`.
 
+**Gotham map** (`app/games/dc-dark-legion/ship-combat-guides/page.tsx`) — SVG-based interactive map for Battle For Gotham and Ultimate Battle For Gotham. The 256×256 map grid is rotated 45° inside a `<g transform="rotate(45, 128, 128)">` to display as a diamond. The SVG element uses CSS `clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)` to hide the black corner areas. Building images (City Hall, Armories, Player Base) are rendered **outside** the rotation group at pre-computed SVG root coordinates (`toSvg()` helper) so they appear upright. Grid footprint tints remain inside the rotation group. Click-to-place un-rotates screen coordinates back to map space before snapping to the tile grid (`TILE = 2` SVG units). Approximate building sizes: City Hall 10×10 tiles (20 SVG units), Plazas + Armories 6×6 tiles (12 SVG units), Player Base 2×2 tiles (4 SVG units). The player's base image/label is `public/dcdl/resource_icons/Gotham_PlayerBase.png`; City Hall is `Gotham_CityHall.png`; Armory is `Gotham_Armory.png`. Future work: multi-base support (league members), possible 3D tilt (CSS perspective wrapper — coordinate math becomes approximate).
+
+**DCDL copyright footer** — added in `app/games/dc-dark-legion/layout.tsx`; applies to all DCDL sub-pages only.
+
 **Voting** — Supabase `votes` table with columns `user_id`, `entity_type` (`champion` | `legacy`), `entity_id`, `rating` (`S+` | `S` | `A+` | `A` | `B` | `C` | `D`). Unique constraint on `(user_id, entity_type, entity_id)`. The tally route aggregates all votes and picks the plurality winner per entity.
 
 **Auth** — Clerk. `useUser()` / `auth()` for client/server respectively. `supabaseAdmin` uses the service role key and bypasses RLS for all server-side writes.
@@ -62,7 +66,7 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 
 - **Clerk** — auth (env: `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`)
 - **Supabase** — votes storage (env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`)
-- **Vercel** — hosting; deploys automatically on push to `main`, or manually via `npx vercel --prod`
+- **Vercel** — hosting; auto-deploys on push to `main` via GitHub integration (preferred method)
 
 ## Key files
 
@@ -86,3 +90,6 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 | `app/api/admin/gf/heroes/route.ts` | Godforge hero read/update API |
 | `app/admin/dcdl/page.tsx` | Admin panel (DCDL + Void Hunters + Godforge tabs) |
 | `src/lib/supabase.ts` | Supabase client (public) and admin (service role) |
+| `app/games/dc-dark-legion/ship-combat-guides/page.tsx` | Interactive Gotham map (diamond SVG + upright building images) |
+| `app/games/dc-dark-legion/layout.tsx` | DCDL layout — includes copyright footer |
+| `public/ads.txt` | Google AdSense verification file |
