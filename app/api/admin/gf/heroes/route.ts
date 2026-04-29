@@ -8,6 +8,8 @@ type GfHero = {
   id: string
   name: string
   fullArt: string
+  portrait: string | null
+  rarity: string | null
   affinity: string | null
   allegiance: string | null
   archetype: string | null
@@ -43,7 +45,7 @@ export async function PATCH(req: NextRequest) {
   const idx = heroes.findIndex((h) => h.id === body.id)
   if (idx === -1) return NextResponse.json({ error: 'Hero not found' }, { status: 404 })
 
-  const allowed = ['affinity', 'allegiance', 'archetype', 'faction'] as const
+  const allowed = ['portrait', 'rarity', 'affinity', 'allegiance', 'archetype', 'faction'] as const
   for (const key of allowed) {
     if (key in body) heroes[idx][key] = body[key] ?? null
   }

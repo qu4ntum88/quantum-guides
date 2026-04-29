@@ -4,10 +4,20 @@ export type GfHero = {
   id: string
   name: string
   fullArt: string
+  portrait: string | null
+  rarity: 'Legendary' | 'Epic' | 'Rare' | 'Uncommon' | 'Common' | null
   affinity: string | null
   allegiance: string | null
   archetype: string | null
   faction: string | null
+}
+
+const RARITY_STYLES: Record<string, { border: string; glow: string; bg: string }> = {
+  Legendary: { border: '#f59e0b', glow: 'rgba(245,158,11,0.4)',  bg: 'linear-gradient(to bottom, #2d1f00, #111)' },
+  Epic:      { border: '#a855f7', glow: 'rgba(168,85,247,0.4)',  bg: 'linear-gradient(to bottom, #1e0a3c, #111)' },
+  Rare:      { border: '#3b82f6', glow: 'rgba(59,130,246,0.4)',  bg: 'linear-gradient(to bottom, #0a1929, #111)' },
+  Uncommon:  { border: '#22c55e', glow: 'rgba(34,197,94,0.4)',   bg: 'linear-gradient(to bottom, #0a1f0a, #111)' },
+  Common:    { border: '#6b7280', glow: 'rgba(107,114,128,0.3)', bg: 'linear-gradient(to bottom, #1a1a1a, #111)' },
 }
 
 function cornerIcon(src: string, alt: string) {
@@ -27,32 +37,52 @@ function cornerIcon(src: string, alt: string) {
 }
 
 export default function GfHeroBox({ hero }: { hero: GfHero }) {
+  const rarity = hero.rarity ? RARITY_STYLES[hero.rarity] : null
+  const usePortrait = Boolean(hero.portrait)
+
+  const borderStyle = rarity
+    ? { border: `1px solid ${rarity.border}`, boxShadow: `0 0 10px 2px ${rarity.glow}, 0 0 3px 1px ${rarity.border}` }
+    : { border: '1px solid #2a2a2a' }
+
   return (
     <div
       style={{
         position: 'relative',
         borderRadius: '0.5rem',
         overflow: 'hidden',
-        background: '#111',
-        border: '1px solid #2a2a2a',
+        background: usePortrait && rarity ? rarity.bg : '#111',
+        ...borderStyle,
         aspectRatio: '3 / 4',
         cursor: 'default',
         transition: 'transform 0.15s, box-shadow 0.15s',
       }}
       onMouseEnter={(e) => {
-        ;(e.currentTarget as HTMLDivElement).style.transform = 'scale(1.03)'
-        ;(e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 20px rgba(0,0,0,0.6)'
+        const el = e.currentTarget as HTMLDivElement
+        el.style.transform = 'scale(1.03)'
+        if (rarity) {
+          el.style.boxShadow = `0 0 18px 5px ${rarity.glow}, 0 0 6px 2px ${rarity.border}`
+        } else {
+          el.style.boxShadow = '0 4px 20px rgba(0,0,0,0.6)'
+        }
       }}
       onMouseLeave={(e) => {
-        ;(e.currentTarget as HTMLDivElement).style.transform = ''
-        ;(e.currentTarget as HTMLDivElement).style.boxShadow = ''
+        const el = e.currentTarget as HTMLDivElement
+        el.style.transform = ''
+        el.style.boxShadow = rarity
+          ? `0 0 10px 2px ${rarity.glow}, 0 0 3px 1px ${rarity.border}`
+          : ''
       }}
     >
-      {/* Portrait */}
+      {/* Portrait or full art */}
       <img
-        src={hero.fullArt}
+        src={usePortrait ? hero.portrait! : hero.fullArt}
         alt={hero.name}
-        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: usePortrait ? 'contain' : 'cover',
+          display: 'block',
+        }}
       />
 
       {/* Bottom gradient + name */}

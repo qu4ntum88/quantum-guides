@@ -3,12 +3,15 @@
 import { useState, useMemo } from 'react'
 import GfHeroBox, { type GfHero } from './GfHeroBox'
 
+const RARITIES   = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
 const AFFINITIES = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
 const ALLEGIANCES = ['Chaos', 'Order']
 const ARCHETYPES = ['Brawler', 'Defender', 'Disrupter', 'Invoker', 'Slayer']
 const FACTIONS = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 'OMEYOCAN', 'TIAN', 'VYRAJ']
 
-type SortKey = 'name' | 'affinity' | 'allegiance' | 'archetype' | 'faction'
+const RARITY_ORDER: Record<string, number> = { Legendary: 0, Epic: 1, Rare: 2, Uncommon: 3, Common: 4 }
+
+type SortKey = 'name' | 'rarity' | 'affinity' | 'allegiance' | 'archetype' | 'faction'
 
 const btnBase: React.CSSProperties = {
   background: 'none',
@@ -66,6 +69,7 @@ function FilterRow({
 export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('name')
+  const [filterRarity, setFilterRarity] = useState<string[]>([])
   const [filterAffinity, setFilterAffinity] = useState<string[]>([])
   const [filterAllegiance, setFilterAllegiance] = useState<string[]>([])
   const [filterArchetype, setFilterArchetype] = useState<string[]>([])
@@ -82,6 +86,8 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
       const q = query.toLowerCase()
       result = result.filter((h) => h.name.toLowerCase().includes(q))
     }
+    if (filterRarity.length > 0)
+      result = result.filter((h) => h.rarity && filterRarity.includes(h.rarity))
     if (filterAffinity.length > 0)
       result = result.filter((h) => h.affinity && filterAffinity.includes(h.affinity))
     if (filterAllegiance.length > 0)
@@ -93,15 +99,21 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
 
     return [...result].sort((a, b) => {
       if (sortKey === 'name') return a.name.localeCompare(b.name)
+      if (sortKey === 'rarity') {
+        const ar = a.rarity ? (RARITY_ORDER[a.rarity] ?? 99) : 99
+        const br = b.rarity ? (RARITY_ORDER[b.rarity] ?? 99) : 99
+        return ar !== br ? ar - br : a.name.localeCompare(b.name)
+      }
       const av = a[sortKey] ?? 'zzz'
       const bv = b[sortKey] ?? 'zzz'
       const cmp = av.localeCompare(bv)
       return cmp !== 0 ? cmp : a.name.localeCompare(b.name)
     })
-  }, [heroes, query, sortKey, filterAffinity, filterAllegiance, filterArchetype, filterFaction])
+  }, [heroes, query, sortKey, filterRarity, filterAffinity, filterAllegiance, filterArchetype, filterFaction])
 
   const sortKeys: { key: SortKey; label: string }[] = [
     { key: 'name', label: 'Name' },
+    { key: 'rarity', label: 'Rarity' },
     { key: 'faction', label: 'Faction' },
     { key: 'archetype', label: 'Archetype' },
     { key: 'affinity', label: 'Affinity' },
@@ -109,7 +121,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
   ]
 
   const hasFilters =
-    filterAffinity.length > 0 || filterAllegiance.length > 0 ||
+    filterRarity.length > 0 || filterAffinity.length > 0 || filterAllegiance.length > 0 ||
     filterArchetype.length > 0 || filterFaction.length > 0 || query
 
   return (
@@ -143,6 +155,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
 
       {/* Filters */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <FilterRow label="Rarity" options={RARITIES} active={filterRarity} onToggle={(v) => toggle(filterRarity, setFilterRarity, v)} onClear={() => setFilterRarity([])} />
         <FilterRow label="Affinity" options={AFFINITIES} active={filterAffinity} onToggle={(v) => toggle(filterAffinity, setFilterAffinity, v)} onClear={() => setFilterAffinity([])} />
         <FilterRow label="Allegiance" options={ALLEGIANCES} active={filterAllegiance} onToggle={(v) => toggle(filterAllegiance, setFilterAllegiance, v)} onClear={() => setFilterAllegiance([])} />
         <FilterRow label="Archetype" options={ARCHETYPES} active={filterArchetype} onToggle={(v) => toggle(filterArchetype, setFilterArchetype, v)} onClear={() => setFilterArchetype([])} />
@@ -155,7 +168,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
         {hasFilters && (
           <button
             type="button"
-            onClick={() => { setQuery(''); setFilterAffinity([]); setFilterAllegiance([]); setFilterArchetype([]); setFilterFaction([]) }}
+            onClick={() => { setQuery(''); setFilterRarity([]); setFilterAffinity([]); setFilterAllegiance([]); setFilterArchetype([]); setFilterFaction([]) }}
             style={{ ...btnBase, color: '#f87171', borderColor: '#7f1d1d' }}
           >
             Reset filters

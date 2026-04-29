@@ -1337,16 +1337,18 @@ function BestTeamsForm() {
 }
 
 // ── Godforge Hero Form ─────────────────────────────────────────────────────────
+const GF_RARITIES    = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
 const GF_AFFINITIES  = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
 const GF_ALLEGIANCES = ['Chaos', 'Order']
 const GF_ARCHETYPES  = ['Brawler', 'Defender', 'Disrupter', 'Invoker', 'Slayer']
 const GF_FACTIONS    = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 'OMEYOCAN', 'TIAN', 'VYRAJ']
 
-type GfHeroData = { id: string; name: string; affinity: string | null; allegiance: string | null; archetype: string | null; faction: string | null }
+type GfHeroData = { id: string; name: string; portrait: string | null; rarity: string | null; affinity: string | null; allegiance: string | null; archetype: string | null; faction: string | null }
 
 function GfHeroForm() {
   const [heroes, setHeroes] = useState<ItemOption[]>([])
   const [selectedId, setSelectedId] = useState('')
+  const [rarity, setRarity] = useState('')
   const [affinity, setAffinity] = useState('')
   const [allegiance, setAllegiance] = useState('')
   const [archetype, setArchetype] = useState('')
@@ -1362,10 +1364,11 @@ function GfHeroForm() {
 
   async function loadHero(id: string) {
     setSelectedId(id)
-    if (!id) { setAffinity(''); setAllegiance(''); setArchetype(''); setFaction(''); return }
+    if (!id) { setRarity(''); setAffinity(''); setAllegiance(''); setArchetype(''); setFaction(''); return }
     const res = await fetch(`/api/admin/gf/heroes?id=${id}`)
     if (!res.ok) return
     const h: GfHeroData = await res.json()
+    setRarity(h.rarity ?? '')
     setAffinity(h.affinity ?? '')
     setAllegiance(h.allegiance ?? '')
     setArchetype(h.archetype ?? '')
@@ -1382,6 +1385,7 @@ function GfHeroForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           id: selectedId,
+          rarity: rarity || null,
           affinity: affinity || null,
           allegiance: allegiance || null,
           archetype: archetype || null,
@@ -1401,7 +1405,7 @@ function GfHeroForm() {
   return (
     <div>
       <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-        Select a hero and assign their affinity, allegiance, archetype, and faction. These drive the filter/sort on the heroes grid.
+        Select a hero and assign their rarity, affinity, allegiance, archetype, and faction. These drive the filter/sort on the heroes grid.
       </p>
 
       <div style={{ ...sec, marginBottom: '1.5rem' }}>
@@ -1419,6 +1423,12 @@ function GfHeroForm() {
         <div style={sec}>
           <div style={secTitle}>Attributes</div>
           <div style={g2}>
+            <Field label="Rarity">
+              <select style={inp} value={rarity} onChange={(e) => setRarity(e.target.value)}>
+                <option value="">None</option>
+                {GF_RARITIES.map((r) => <option key={r}>{r}</option>)}
+              </select>
+            </Field>
             <Field label="Affinity">
               <select style={inp} value={affinity} onChange={(e) => setAffinity(e.target.value)}>
                 <option value="">None</option>

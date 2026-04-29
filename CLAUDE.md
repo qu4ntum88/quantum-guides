@@ -36,13 +36,15 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 
 **Godforge hero data shape:**
 ```ts
-{ id, name, fullArt, affinity, allegiance, archetype, faction }
+{ id, name, fullArt, portrait, rarity, affinity, allegiance, archetype, faction }
+// portrait: path to transparent-bg portrait PNG | null (falls back to fullArt when null)
+// rarity: 'Legendary' | 'Epic' | 'Rare' | 'Uncommon' | 'Common' | null
 // affinity: 'Cunning' | 'Eternal' | 'Strength' | 'Wisdom' | null
 // allegiance: 'Chaos' | 'Order' | null
 // archetype: 'Brawler' | 'Defender' | 'Disrupter' | 'Invoker' | 'Slayer' | null
 // faction: 'AARU' | 'ASGARD' | 'AVALON' | 'EKUR' | 'IZUMO' | 'OLYMPUS' | 'OMEYOCAN' | 'TIAN' | 'VYRAJ' | null
 ```
-All 206 heroes are pre-seeded from image filenames; affinity/allegiance/archetype/faction start as null and are filled via the admin panel.
+All 206 heroes are pre-seeded from image filenames; all non-id/name/fullArt fields start as null and are filled via the admin panel. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280.
 
 **Godforge status effect data shape:**
 ```ts

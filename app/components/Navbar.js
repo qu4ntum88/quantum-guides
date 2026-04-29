@@ -5,7 +5,14 @@ import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
-  { label: 'Godforge', href: '/games/godforge' },
+  {
+    label: 'Godforge',
+    children: [
+      { label: 'Home', href: '/games/godforge' },
+      { label: 'Heroes', href: '/games/godforge/heroes' },
+      { label: 'Status Effects', href: '/games/godforge/status-effects' },
+    ],
+  },
   {
     label: 'DC: Dark Legion',
     children: [
@@ -31,6 +38,7 @@ const NAV_ITEMS = [
 function DropdownItem({ item }) {
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
+  const closeTimer = useRef(null)
 
   useEffect(() => {
     function handleClick(e) {
@@ -40,8 +48,17 @@ function DropdownItem({ item }) {
     return () => document.removeEventListener('mousedown', handleClick)
   }, [])
 
+  function handleMouseEnter() {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setOpen(true)
+  }
+
+  function handleMouseLeave() {
+    closeTimer.current = setTimeout(() => setOpen(false), 150)
+  }
+
   return (
-    <li ref={ref} className="nav-item-dropdown" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+    <li ref={ref} className="nav-item-dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <button className="nav-dropdown-trigger" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         {item.label}
         <svg width="10" height="6" viewBox="0 0 10 6" style={{ marginLeft: '0.35rem', transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'none' }}>
