@@ -5,7 +5,9 @@ import type { CSSProperties } from 'react'
 // Zone boundaries in map space (0..256 SVG units)
 const CZ = { x1: 92, y1: 92, x2: 164, y2: 164 }
 const BZ = { x1: 30, y1: 30, x2: 226, y2: 226 }
-const BASE_SIZE = 2
+
+const TILE = 2           // SVG units per grid tile
+const BASE_SIZE = TILE * 2  // 2×2 tiles = 4 SVG units
 
 const CITY_HALL = { x: 128, y: 128, size: 6 }
 
@@ -30,8 +32,8 @@ const ARMORIES = [
 ]
 
 // Diamond viewport geometry.
-// Rotating the 256×256 map 45° around its center (128,128) creates a diamond
-// whose bounding box extends MAP_MARGIN units beyond the original square on each side.
+// Rotating the 256×256 map 45° around its center (128,128) creates a diamond.
+// The bounding box of that diamond is ISO_SIZE × ISO_SIZE, offset by ISO_ORIGIN.
 const MAP_MARGIN = Math.round(128 * Math.sqrt(2)) - 128  // ≈ 53
 const ISO_SIZE   = 256 + MAP_MARGIN * 2                  // ≈ 362
 const ISO_ORIGIN = -MAP_MARGIN                           // ≈ -53
@@ -43,13 +45,13 @@ function clampPan(x: number, y: number, viewSize: number) {
   }
 }
 
-function isInBuildable(mx: number, my: number) {
-  const inOuter = mx >= BZ.x1 + 1 && mx <= BZ.x2 - 1 && my >= BZ.y1 + 1 && my <= BZ.y2 - 1
-  const inCenter = mx >= CZ.x1 && mx <= CZ.x2 && my >= CZ.y1 && my <= CZ.y2
-  return inOuter && !inCenter
+// Check that a BASE_SIZE × BASE_SIZE block at (bx, by) is fully inside the buildable ring
+function isInBuildable(bx: number, by: number) {
+  const inOuter = bx >= BZ.x1 && bx + BASE_SIZE <= BZ.x2 && by >= BZ.y1 && by + BASE_SIZE <= BZ.y2
+  const overlapsCenter = bx < CZ.x2 && bx + BASE_SIZE > CZ.x1 && by < CZ.y2 && by + BASE_SIZE > CZ.y1
+  return inOuter && !overlapsCenter
 }
 
-// Rotate a point (px, py) by `angleDeg` degrees around center (cx, cy)
 function rotatePoint(px: number, py: number, cx: number, cy: number, angleDeg: number) {
   const rad = (angleDeg * Math.PI) / 180
   const dx = px - cx
@@ -63,7 +65,8 @@ function rotatePoint(px: number, py: number, cx: number, cy: number, angleDeg: n
 function GameMap({ ultimate }: { ultimate: boolean }) {
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: ISO_ORIGIN, y: ISO_ORIGIN })
-  const [basePos, setBasePos] = useState({ x: 16, y: 232 })
+  // Initial position: bottom-left buildable area, snapped to tile grid
+  const [basePos, setBasePos] = useState({ x: 36, y: 196 })
   const [isDragging, setIsDragging] = useState(false)
 
   const svgRef = useRef<SVGSVGElement>(null)
@@ -106,24 +109,25 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
     const pt = svgRef.current.createSVGPoint()
     pt.x = e.clientX
     pt.y = e.clientY
-    // svgPt is in SVG root coords (the diamond/rotated space)
+    // Convert screen → SVG root coords (diamond space), then un-rotate to map coords
     const svgPt = pt.matrixTransform(svgRef.current.getScreenCTM()!.inverse())
-    // Un-rotate -45° around center to get back into map coords (0..256 space)
     const mapPt = rotatePoint(svgPt.x, svgPt.y, 128, 128, -45)
-    if (isInBuildable(mapPt.x, mapPt.y)) {
-      setBasePos({ x: mapPt.x - BASE_SIZE / 2, y: mapPt.y - BASE_SIZE / 2 })
+    // Snap to tile grid (floor to nearest tile boundary)
+    const snappedX = Math.floor(mapPt.x / TILE) * TILE
+    const snappedY = Math.floor(mapPt.y / TILE) * TILE
+    if (isInBuildable(snappedX, snappedY)) {
+      setBasePos({ x: snappedX, y: snappedY })
     }
   }
 
   const activeArmories = ultimate ? ARMORIES : ARMORIES.filter(a => !a.ultimateOnly)
   const pfx = ultimate ? 'u' : 'b'
 
-  // Diamond border polygon points in SVG root coords
+  // Diamond border polygon in SVG root coords
   const diamondPoints = `128,${ISO_ORIGIN} ${ISO_ORIGIN + ISO_SIZE},128 128,${ISO_ORIGIN + ISO_SIZE} ${ISO_ORIGIN},128`
 
-  // For the player base label: counter-rotate the text so it reads normally
-  const labelAnchorX = basePos.x + 1
-  const labelAnchorY = basePos.y - 5
+  const labelAnchorX = basePos.x + BASE_SIZE / 2
+  const labelAnchorY = basePos.y - 6
 
   return (
     <div>
@@ -149,7 +153,13 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
         ref={svgRef}
         viewBox={`${pan.x} ${pan.y} ${viewSize} ${viewSize}`}
         xmlns="http://www.w3.org/2000/svg"
-        style={{ width: '100%', display: 'block', borderRadius: '0.5rem', cursor: isDragging ? 'grabbing' : 'pointer', userSelect: 'none' }}
+        style={{
+          width: '100%', display: 'block',
+          cursor: isDragging ? 'grabbing' : 'pointer',
+          userSelect: 'none',
+          // Clip the SVG element itself to a diamond so the black corners disappear
+          clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
+        }}
         onMouseDown={e => { e.preventDefault(); startDrag(e.clientX, e.clientY) }}
         onMouseMove={e => moveDrag(e.clientX, e.clientY)}
         onMouseUp={endDrag}
@@ -173,17 +183,13 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
           <pattern id={`chunk${pfx}`} x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
             <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#21215a" strokeWidth="0.5" />
           </pattern>
-          {/* Clip to diamond shape so map content doesn't bleed into corners */}
-          <clipPath id={`diamond${pfx}`}>
-            <polygon points={diamondPoints} />
-          </clipPath>
         </defs>
 
         {/* Full-viewport background */}
         <rect x={ISO_ORIGIN} y={ISO_ORIGIN} width={ISO_SIZE} height={ISO_SIZE} fill="#09090f" />
 
         {/* All map content rotated 45° into diamond orientation */}
-        <g transform="rotate(45, 128, 128)" clipPath={`url(#diamond${pfx})`}>
+        <g transform="rotate(45, 128, 128)">
 
           {/* Background */}
           <rect width="256" height="256" fill="#09090f" />
@@ -268,12 +274,12 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
             )
           })()}
 
-          {/* Player Base — click green zone to move */}
+          {/* Player Base — 2×2 tiles, snaps to grid */}
           <g>
             <circle
               cx={basePos.x + BASE_SIZE / 2}
               cy={basePos.y + BASE_SIZE / 2}
-              r="5"
+              r="7"
               fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="0.4" strokeDasharray="1.5,1.5"
             />
             <rect x={basePos.x} y={basePos.y} width={BASE_SIZE} height={BASE_SIZE} fill="#1e293b" />
@@ -300,7 +306,7 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
 
         </g>{/* end rotation group */}
 
-        {/* Diamond border — drawn in SVG root coords, outside the rotation group */}
+        {/* Diamond border in SVG root coords */}
         <polygon
           points={diamondPoints}
           fill="none" stroke="#2a2a6a" strokeWidth="1"
