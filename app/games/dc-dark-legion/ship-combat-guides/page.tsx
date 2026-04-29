@@ -2,38 +2,37 @@
 import { useState, useRef } from 'react'
 import type { CSSProperties } from 'react'
 
-// Zone boundaries in map space (0..256 SVG units)
+// Zone boundaries in map space (0..256 SVG units, 1 tile = 2 SVG units)
 const CZ = { x1: 92, y1: 92, x2: 164, y2: 164 }
 const BZ = { x1: 30, y1: 30, x2: 226, y2: 226 }
 
 const TILE = 2           // SVG units per grid tile
 const BASE_SIZE = TILE * 2  // 2×2 tiles = 4 SVG units
 
-const CITY_HALL = { x: 128, y: 128, size: 6 }
+// Sizes: 10×10 tiles = 20 SVG units, 6×6 tiles = 12 SVG units
+const CITY_HALL = { x: 128, y: 128, size: 20 }
 
 const PLAZA = [
-  { x: 68,  y: 128, dir: 'West',      size: 4 },
-  { x: 98,  y: 98,  dir: 'Northwest', size: 4 },
-  { x: 128, y: 68,  dir: 'North',     size: 4 },
-  { x: 158, y: 98,  dir: 'Northeast', size: 4 },
-  { x: 188, y: 128, dir: 'East',      size: 4 },
-  { x: 158, y: 158, dir: 'Southeast', size: 4 },
-  { x: 128, y: 188, dir: 'South',     size: 4 },
-  { x: 98,  y: 158, dir: 'Southwest', size: 4 },
+  { x: 68,  y: 128, dir: 'West',      size: 12 },
+  { x: 98,  y: 98,  dir: 'Northwest', size: 12 },
+  { x: 128, y: 68,  dir: 'North',     size: 12 },
+  { x: 158, y: 98,  dir: 'Northeast', size: 12 },
+  { x: 188, y: 128, dir: 'East',      size: 12 },
+  { x: 158, y: 158, dir: 'Southeast', size: 12 },
+  { x: 128, y: 188, dir: 'South',     size: 12 },
+  { x: 98,  y: 158, dir: 'Southwest', size: 12 },
 ]
 
 const ARMORIES = [
-  { x: 100, y: 122, size: 4, ultimateOnly: false },
-  { x: 122, y: 98,  size: 4, ultimateOnly: false },
-  { x: 135, y: 156, size: 4, ultimateOnly: false },
-  { x: 157, y: 135, size: 4, ultimateOnly: false },
-  { x: 108, y: 147, size: 4, ultimateOnly: true  },
-  { x: 147, y: 108, size: 4, ultimateOnly: true  },
+  { x: 100, y: 122, size: 12, ultimateOnly: false },
+  { x: 122, y: 98,  size: 12, ultimateOnly: false },
+  { x: 135, y: 156, size: 12, ultimateOnly: false },
+  { x: 157, y: 135, size: 12, ultimateOnly: false },
+  { x: 108, y: 147, size: 12, ultimateOnly: true  },
+  { x: 147, y: 108, size: 12, ultimateOnly: true  },
 ]
 
-// Diamond viewport geometry.
-// Rotating the 256×256 map 45° around its center (128,128) creates a diamond.
-// The bounding box of that diamond is ISO_SIZE × ISO_SIZE, offset by ISO_ORIGIN.
+// Diamond viewport geometry
 const MAP_MARGIN = Math.round(128 * Math.sqrt(2)) - 128  // ≈ 53
 const ISO_SIZE   = 256 + MAP_MARGIN * 2                  // ≈ 362
 const ISO_ORIGIN = -MAP_MARGIN                           // ≈ -53
@@ -45,13 +44,13 @@ function clampPan(x: number, y: number, viewSize: number) {
   }
 }
 
-// Check that a BASE_SIZE × BASE_SIZE block at (bx, by) is fully inside the buildable ring
 function isInBuildable(bx: number, by: number) {
   const inOuter = bx >= BZ.x1 && bx + BASE_SIZE <= BZ.x2 && by >= BZ.y1 && by + BASE_SIZE <= BZ.y2
   const overlapsCenter = bx < CZ.x2 && bx + BASE_SIZE > CZ.x1 && by < CZ.y2 && by + BASE_SIZE > CZ.y1
   return inOuter && !overlapsCenter
 }
 
+// Rotate a point around (cx, cy) by angleDeg degrees
 function rotatePoint(px: number, py: number, cx: number, cy: number, angleDeg: number) {
   const rad = (angleDeg * Math.PI) / 180
   const dx = px - cx
@@ -62,10 +61,14 @@ function rotatePoint(px: number, py: number, cx: number, cy: number, angleDeg: n
   }
 }
 
+// Convert a map coordinate (0..256 space) to SVG root coordinates (diamond space)
+function toSvg(mx: number, my: number) {
+  return rotatePoint(mx, my, 128, 128, 45)
+}
+
 function GameMap({ ultimate }: { ultimate: boolean }) {
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: ISO_ORIGIN, y: ISO_ORIGIN })
-  // Initial position: bottom-left buildable area, snapped to tile grid
   const [basePos, setBasePos] = useState({ x: 36, y: 196 })
   const [isDragging, setIsDragging] = useState(false)
 
@@ -109,10 +112,9 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
     const pt = svgRef.current.createSVGPoint()
     pt.x = e.clientX
     pt.y = e.clientY
-    // Convert screen → SVG root coords (diamond space), then un-rotate to map coords
     const svgPt = pt.matrixTransform(svgRef.current.getScreenCTM()!.inverse())
+    // Un-rotate from diamond space back to map space, then snap to tile grid
     const mapPt = rotatePoint(svgPt.x, svgPt.y, 128, 128, -45)
-    // Snap to tile grid (floor to nearest tile boundary)
     const snappedX = Math.floor(mapPt.x / TILE) * TILE
     const snappedY = Math.floor(mapPt.y / TILE) * TILE
     if (isInBuildable(snappedX, snappedY)) {
@@ -123,11 +125,11 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
   const activeArmories = ultimate ? ARMORIES : ARMORIES.filter(a => !a.ultimateOnly)
   const pfx = ultimate ? 'u' : 'b'
 
-  // Diamond border polygon in SVG root coords
   const diamondPoints = `128,${ISO_ORIGIN} ${ISO_ORIGIN + ISO_SIZE},128 128,${ISO_ORIGIN + ISO_SIZE} ${ISO_ORIGIN},128`
 
-  const labelAnchorX = basePos.x + BASE_SIZE / 2
-  const labelAnchorY = basePos.y - 6
+  // Pre-compute SVG root positions for buildings
+  const chPos  = toSvg(CITY_HALL.x, CITY_HALL.y)
+  const baseCenter = toSvg(basePos.x + BASE_SIZE / 2, basePos.y + BASE_SIZE / 2)
 
   return (
     <div>
@@ -157,7 +159,6 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
           width: '100%', display: 'block',
           cursor: isDragging ? 'grabbing' : 'pointer',
           userSelect: 'none',
-          // Clip the SVG element itself to a diamond so the black corners disappear
           clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
         }}
         onMouseDown={e => { e.preventDefault(); startDrag(e.clientX, e.clientY) }}
@@ -188,29 +189,26 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
         {/* Full-viewport background */}
         <rect x={ISO_ORIGIN} y={ISO_ORIGIN} width={ISO_SIZE} height={ISO_SIZE} fill="#09090f" />
 
-        {/* All map content rotated 45° into diamond orientation */}
+        {/* ── LAYER 1: rotated map (grid + zones + building footprints) ── */}
         <g transform="rotate(45, 128, 128)">
 
-          {/* Background */}
           <rect width="256" height="256" fill="#09090f" />
-
-          {/* Grid */}
           <rect width="256" height="256" fill={`url(#tile${pfx})`} />
           <rect width="256" height="256" fill={`url(#chunk${pfx})`} />
 
-          {/* Outer non-buildable zone (red tint) */}
+          {/* Outer non-buildable zone */}
           <rect x="0"   y="0"   width="256" height="30"  fill="rgba(220,38,38,0.10)" />
           <rect x="0"   y="226" width="256" height="30"  fill="rgba(220,38,38,0.10)" />
           <rect x="0"   y="30"  width="30"  height="196" fill="rgba(220,38,38,0.10)" />
           <rect x="226" y="30"  width="30"  height="196" fill="rgba(220,38,38,0.10)" />
 
-          {/* Buildable zone (green tint) */}
+          {/* Buildable zone */}
           <rect x="30"  y="30"  width="196" height="62"  fill="rgba(34,197,94,0.08)" />
           <rect x="30"  y="164" width="196" height="62"  fill="rgba(34,197,94,0.08)" />
           <rect x="30"  y="92"  width="62"  height="72"  fill="rgba(34,197,94,0.08)" />
           <rect x="164" y="92"  width="62"  height="72"  fill="rgba(34,197,94,0.08)" />
 
-          {/* Center no-build zone (red tint) */}
+          {/* Center no-build zone */}
           <rect x="92" y="92" width="72" height="72" fill="rgba(220,38,38,0.10)" />
 
           {/* Zone boundary lines */}
@@ -219,30 +217,34 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
           <rect x="92" y="92" width="72" height="72"
             fill="none" stroke="rgba(220,38,38,0.45)" strokeWidth="0.5" strokeDasharray="2,2" />
 
-          {/* Gotham Plazas */}
+          {/* City Hall footprint */}
+          {(() => {
+            const half = CITY_HALL.size / 2
+            return (
+              <rect x={CITY_HALL.x - half} y={CITY_HALL.y - half}
+                width={CITY_HALL.size} height={CITY_HALL.size}
+                fill="#92680c" fillOpacity="0.4" />
+            )
+          })()}
+
+          {/* Plaza footprints */}
           {PLAZA.map((p) => {
             const half = p.size / 2
             return (
               <g key={p.dir}>
                 <rect x={p.x - half} y={p.y - half} width={p.size} height={p.size}
-                  fill="#5b21b6" fillOpacity="0.85" stroke="#8b5cf6" strokeWidth="0.5" />
-                <circle cx={p.x} cy={p.y} r="0.8" fill="#c4b5fd" />
+                  fill="#5b21b6" fillOpacity="0.6" />
               </g>
             )
           })}
 
-          {/* Armories */}
+          {/* Armory footprints */}
           {activeArmories.map((a, i) => {
             const half = a.size / 2
             return (
               <g key={i}>
                 <rect x={a.x - half} y={a.y - half} width={a.size} height={a.size}
-                  fill={a.ultimateOnly ? '#9f1239' : '#c2410c'} fillOpacity="0.45" />
-                <image
-                  href="/dcdl/resource_icons/Gotham_Armory.png"
-                  x={a.x - half} y={a.y - half} width={a.size} height={a.size}
-                  preserveAspectRatio="xMidYMid meet"
-                />
+                  fill={a.ultimateOnly ? '#9f1239' : '#c2410c'} fillOpacity="0.4" />
                 {a.ultimateOnly && (
                   <rect x={a.x - half} y={a.y - half} width={a.size} height={a.size}
                     fill="none" stroke="#f87171" strokeWidth="0.5" />
@@ -251,62 +253,76 @@ function GameMap({ ultimate }: { ultimate: boolean }) {
             )
           })}
 
-          {/* City Hall */}
-          {(() => {
-            const half = CITY_HALL.size / 2
-            return (
-              <g>
-                <g filter={`url(#glow${pfx})`}>
-                  <rect x={CITY_HALL.x - half} y={CITY_HALL.y - half}
-                    width={CITY_HALL.size} height={CITY_HALL.size}
-                    fill="#92680c" fillOpacity="0.55" />
-                  <image
-                    href="/dcdl/resource_icons/Gotham_CityHall.png"
-                    x={CITY_HALL.x - half} y={CITY_HALL.y - half}
-                    width={CITY_HALL.size} height={CITY_HALL.size}
-                    preserveAspectRatio="xMidYMid meet"
-                  />
-                </g>
-                <rect x={CITY_HALL.x - half} y={CITY_HALL.y - half}
-                  width={CITY_HALL.size} height={CITY_HALL.size}
-                  fill="none" stroke="#c9a01e" strokeWidth="0.75" />
-              </g>
-            )
-          })()}
-
-          {/* Player Base — 2×2 tiles, snaps to grid */}
-          <g>
-            <circle
-              cx={basePos.x + BASE_SIZE / 2}
-              cy={basePos.y + BASE_SIZE / 2}
-              r="7"
-              fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="0.4" strokeDasharray="1.5,1.5"
-            />
-            <rect x={basePos.x} y={basePos.y} width={BASE_SIZE} height={BASE_SIZE} fill="#1e293b" />
-            <image
-              href="/dcdl/resource_icons/Gotham_PlayerBase.png"
-              x={basePos.x} y={basePos.y} width={BASE_SIZE} height={BASE_SIZE}
-              preserveAspectRatio="xMidYMid meet"
-            />
-            {/* Counter-rotate label so text reads normally on the diamond */}
-            <g transform={`rotate(-45, ${labelAnchorX}, ${labelAnchorY})`}>
-              <line
-                x1={labelAnchorX} y1={labelAnchorY}
-                x2={labelAnchorX} y2={basePos.y}
-                stroke="rgba(255,255,255,0.35)" strokeWidth="0.3"
-              />
-              <text
-                x={labelAnchorX + 2.5} y={labelAnchorY - 0.5}
-                fill="rgba(255,255,255,0.55)" fontSize="5" fontFamily="monospace"
-              >
-                Player Base
-              </text>
-            </g>
-          </g>
+          {/* Player Base footprint */}
+          <rect x={basePos.x} y={basePos.y} width={BASE_SIZE} height={BASE_SIZE}
+            fill="#1e293b" fillOpacity="0.8" />
 
         </g>{/* end rotation group */}
 
-        {/* Diamond border in SVG root coords */}
+        {/* ── LAYER 2: upright building images, placed at rotated map coords ── */}
+
+        {/* City Hall image — no border */}
+        <g filter={`url(#glow${pfx})`}>
+          <image
+            href="/dcdl/resource_icons/Gotham_CityHall.png"
+            x={chPos.x - CITY_HALL.size / 2}
+            y={chPos.y - CITY_HALL.size / 2}
+            width={CITY_HALL.size}
+            height={CITY_HALL.size}
+            preserveAspectRatio="xMidYMid meet"
+          />
+        </g>
+
+        {/* Armory images */}
+        {activeArmories.map((a, i) => {
+          const pos = toSvg(a.x, a.y)
+          const half = a.size / 2
+          return (
+            <image
+              key={i}
+              href="/dcdl/resource_icons/Gotham_Armory.png"
+              x={pos.x - half}
+              y={pos.y - half}
+              width={a.size}
+              height={a.size}
+              preserveAspectRatio="xMidYMid meet"
+            />
+          )
+        })}
+
+        {/* Player Base image + range indicator + label */}
+        <g>
+          <circle
+            cx={baseCenter.x}
+            cy={baseCenter.y}
+            r="7"
+            fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="0.4" strokeDasharray="1.5,1.5"
+          />
+          <image
+            href="/dcdl/resource_icons/Gotham_PlayerBase.png"
+            x={baseCenter.x - BASE_SIZE / 2}
+            y={baseCenter.y - BASE_SIZE / 2}
+            width={BASE_SIZE}
+            height={BASE_SIZE}
+            preserveAspectRatio="xMidYMid meet"
+          />
+          <line
+            x1={baseCenter.x}
+            y1={baseCenter.y - BASE_SIZE / 2 - 5}
+            x2={baseCenter.x}
+            y2={baseCenter.y - BASE_SIZE / 2}
+            stroke="rgba(255,255,255,0.35)" strokeWidth="0.3"
+          />
+          <text
+            x={baseCenter.x + 2.5}
+            y={baseCenter.y - BASE_SIZE / 2 - 5.5}
+            fill="rgba(255,255,255,0.55)" fontSize="5" fontFamily="monospace"
+          >
+            Player Base
+          </text>
+        </g>
+
+        {/* Diamond border */}
         <polygon
           points={diamondPoints}
           fill="none" stroke="#2a2a6a" strokeWidth="1"
@@ -369,7 +385,7 @@ export default function ShipCombatGuidesPage() {
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Swatch>
-                  <rect x="1" y="1" width="14" height="14" fill="#92680c" stroke="#c9a01e" strokeWidth="1.5" />
+                  <rect x="1" y="1" width="14" height="14" fill="#92680c" fillOpacity="0.7" />
                   <line x1="4" y1="8" x2="12" y2="8" stroke="#f0c040" strokeWidth="1.2" />
                   <line x1="8" y1="4" x2="8" y2="12" stroke="#f0c040" strokeWidth="1.2" />
                 </Swatch>
@@ -378,24 +394,21 @@ export default function ShipCombatGuidesPage() {
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Swatch>
-                  <rect x="2" y="2" width="12" height="12" fill="#5b21b6" stroke="#8b5cf6" strokeWidth="1.2" />
-                  <circle cx="8" cy="8" r="2.5" fill="#c4b5fd" />
+                  <rect x="2" y="2" width="12" height="12" fill="#5b21b6" fillOpacity="0.7" />
                 </Swatch>
                 <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Gotham Plaza (×8)</span>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Swatch>
-                  <rect x="2" y="2" width="12" height="12" fill="#c2410c" stroke="#fb923c" strokeWidth="1.2" />
-                  <circle cx="8" cy="8" r="2.5" fill="#fed7aa" />
+                  <rect x="2" y="2" width="12" height="12" fill="#c2410c" fillOpacity="0.7" />
                 </Swatch>
                 <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Armory (both modes)</span>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Swatch>
-                  <rect x="2" y="2" width="12" height="12" fill="#9f1239" stroke="#f87171" strokeWidth="1.2" />
-                  <circle cx="8" cy="8" r="2.5" fill="#fca5a5" />
+                  <rect x="2" y="2" width="12" height="12" fill="#9f1239" fillOpacity="0.7" stroke="#f87171" strokeWidth="1" />
                 </Swatch>
                 <span style={{ color: '#ccc', fontSize: '0.85rem' }}>Armory (Ultimate only)</span>
               </div>
