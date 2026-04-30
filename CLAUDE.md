@@ -21,7 +21,7 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 **Routing** — Next.js App Router. Key routes:
 - `/games/dc-dark-legion/heros/[id]` — statically generated champion detail pages
 - `/games/dc-dark-legion/legacy/[id]` — statically generated legacy piece pages
-- `/games/godforge/heroes` — Godforge hero grid (206 heroes, filterable by affinity/allegiance/archetype/faction)
+- `/games/godforge/heroes` — Godforge hero grid (202 heroes, filterable by rarity/affinity/allegiance/archetype/faction)
 - `/games/godforge/status-effects` — Godforge status effects grid (105 effects, filterable by buff/debuff/disable)
 - `/games/void-hunters` — Void Hunters hunter grid
 - `/games/void-hunters/status-effects` — Void Hunters status effects
@@ -32,7 +32,7 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 - `/api/admin/dcdl/champions` and `/api/admin/dcdl/legacy` — write champion/legacy data to disk
 - `/api/admin/gf/heroes` — GET (hero list or single hero) / PATCH (update hero attributes)
 
-**Data** — Champion and legacy piece data lives in JSON files at `src/dcdl/data/heros.json` and `src/dcdl/data/legacy.json`. Godforge data lives in `src/gf/data/heroes.json` (206 heroes) and `src/gf/data/status-effects.json` (105 effects). All JSON files are read at build time for static generation and at runtime by admin API routes (which write back to them).
+**Data** — Champion and legacy piece data lives in JSON files at `src/dcdl/data/heros.json` and `src/dcdl/data/legacy.json`. Godforge data lives in `src/gf/data/heroes.json` (202 heroes) and `src/gf/data/status-effects.json` (105 effects). All JSON files are read at build time for static generation and at runtime by admin API routes (which write back to them).
 
 **Godforge hero data shape:**
 ```ts
@@ -44,7 +44,7 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 // archetype: 'Brawler' | 'Defender' | 'Disrupter' | 'Invoker' | 'Slayer' | null
 // faction: 'AARU' | 'ASGARD' | 'AVALON' | 'EKUR' | 'IZUMO' | 'OLYMPUS' | 'OMEYOCAN' | 'TIAN' | 'VYRAJ' | null
 ```
-All 206 heroes are pre-seeded from image filenames; all non-id/name/fullArt fields start as null and are filled via the admin panel. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280.
+202 heroes after removing 4 alt-art duplicates (Bauk, Cleopatra, Fenrir, Geri alts). All non-id/name/fullArt fields filled via the admin panel. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280. Portraits live in `public/godforge/gf_heroes/portrait/` as PNGs with backgrounds removed via edge flood-fill (colour-tolerance 50 from detected bg). A few portraits still have imperfect cutouts and need reprocessing — to redo one: extract original JPG from git commit `2b2a154`, adjust tolerance, re-run the flood-fill script.
 
 **Godforge status effect data shape:**
 ```ts
@@ -57,6 +57,10 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 **Godforge corner icon convention** (on hero cards): faction = top-left, archetype = top-right, affinity = bottom-left, allegiance = bottom-right. Icon paths follow: `/godforge/gf_heroes/factions/{FACTION}.png`, `/godforge/gf_heroes/archetypes/Archetype_{Archetype}.png`, `/godforge/gf_heroes/affinity/{Affinity}.png`, `/godforge/gf_heroes/allegiances/Allegiance_{Allegiance}.png`.
 
 **Gotham map** (`app/games/dc-dark-legion/ship-combat-guides/page.tsx`) — SVG-based interactive map for Battle For Gotham and Ultimate Battle For Gotham. The 256×256 map grid is rotated 45° inside a `<g transform="rotate(45, 128, 128)">` to display as a diamond. The SVG element uses CSS `clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)` to hide the black corner areas. Building images (City Hall, Armories, Player Base) are rendered **outside** the rotation group at pre-computed SVG root coordinates (`toSvg()` helper) so they appear upright. Grid footprint tints remain inside the rotation group. Click-to-place un-rotates screen coordinates back to map space before snapping to the tile grid (`TILE = 2` SVG units). Approximate building sizes: City Hall 10×10 tiles (20 SVG units), Plazas + Armories 6×6 tiles (12 SVG units), Player Base 2×2 tiles (4 SVG units). The player's base image/label is `public/dcdl/resource_icons/Gotham_PlayerBase.png`; City Hall is `Gotham_CityHall.png`; Armory is `Gotham_Armory.png`. Future work: multi-base support (league members), possible 3D tilt (CSS perspective wrapper — coordinate math becomes approximate).
+
+**Godforge nav dropdown** — Godforge entry in `app/components/Navbar.js` is now a dropdown (Home, Heroes, Status Effects), consistent with DCDL and Void Hunters.
+
+**Navbar hover-gap fix** — Desktop dropdowns now use a 150ms close delay (`closeTimer` ref in `DropdownItem`) so the cursor can travel from trigger to menu without the menu snapping shut.
 
 **DCDL copyright footer** — added in `app/games/dc-dark-legion/layout.tsx`; applies to all DCDL sub-pages only.
 
@@ -77,7 +81,7 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 | `src/dcdl/data/heros.json` | All DCDL champion data |
 | `src/dcdl/data/legacy.json` | All DCDL legacy piece data |
 | `src/dcdl/data/synergies.json` | DCDL faction/tag metadata |
-| `src/gf/data/heroes.json` | All Godforge hero data (206 heroes) |
+| `src/gf/data/heroes.json` | All Godforge hero data (202 heroes) |
 | `src/gf/data/status-effects.json` | All Godforge status effects (105 effects) |
 | `src/gf/components/GfHeroBox.tsx` | Godforge hero card with corner attribute icons |
 | `src/gf/components/GfHeroGrid.tsx` | Godforge hero grid with sort/filter |
