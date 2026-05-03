@@ -1346,26 +1346,41 @@ const GF_FACTIONS    = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 
 type GfHeroData = { id: string; name: string; portrait: string | null; rarity: string | null; affinity: string | null; allegiance: string | null; archetype: string | null; faction: string | null }
 
 function GfHeroForm() {
+  const [mode, setMode] = useState<'add' | 'edit'>('edit')
   const [heroes, setHeroes] = useState<ItemOption[]>([])
   const [selectedId, setSelectedId] = useState('')
+  const [name, setName] = useState('')
+  const [id, setId] = useState('')
+  const [idManual, setIdManual] = useState(false)
   const [rarity, setRarity] = useState('')
   const [affinity, setAffinity] = useState('')
   const [allegiance, setAllegiance] = useState('')
   const [archetype, setArchetype] = useState('')
   const [faction, setFaction] = useState('')
+  const [fullArtFile, setFullArtFile] = useState<File | null>(null)
+  const [portraitFile, setPortraitFile] = useState<File | null>(null)
+  const [existingPortrait, setExistingPortrait] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
 
-  useEffect(() => {
+  const refreshHeroes = useCallback(() => {
     fetch('/api/admin/gf/heroes').then((r) => r.json()).then((data: ItemOption[]) =>
       setHeroes(data.sort((a, b) => a.name.localeCompare(b.name)))
     )
   }, [])
 
-  async function loadHero(id: string) {
-    setSelectedId(id)
-    if (!id) { setRarity(''); setAffinity(''); setAllegiance(''); setArchetype(''); setFaction(''); return }
-    const res = await fetch(`/api/admin/gf/heroes?id=${id}`)
+  useEffect(() => { refreshHeroes() }, [refreshHeroes])
+
+  const reset = useCallback(() => {
+    setSelectedId(''); setName(''); setId(''); setIdManual(false)
+    setRarity(''); setAffinity(''); setAllegiance(''); setArchetype(''); setFaction('')
+    setFullArtFile(null); setPortraitFile(null); setExistingPortrait(null); setStatus(null)
+  }, [])
+
+  async function loadHero(heroId: string) {
+    setSelectedId(heroId)
+    if (!heroId) { setRarity(''); setAffinity(''); setAllegiance(''); setArchetype(''); setFaction(''); setExistingPortrait(null); return }
+    const res = await fetch(`/api/admin/gf/heroes?id=${heroId}`)
     if (!res.ok) return
     const h: GfHeroData = await res.json()
     setRarity(h.rarity ?? '')
@@ -1373,28 +1388,46 @@ function GfHeroForm() {
     setAllegiance(h.allegiance ?? '')
     setArchetype(h.archetype ?? '')
     setFaction(h.faction ?? '')
+    setExistingPortrait(h.portrait ?? null)
+    setPortraitFile(null)
   }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (!selectedId) return
+    if (mode === 'edit' && !selectedId) return
+    if (mode === 'add' && (!name.trim() || !id.trim())) return
     setLoading(true); setStatus(null)
     try {
+      const fd = new FormData()
+      if (mode === 'add') {
+        fd.append('id', id.trim())
+        fd.append('name', name.trim())
+        if (fullArtFile) fd.append('fullArt', fullArtFile)
+      } else {
+        fd.append('id', selectedId)
+      }
+      if (portraitFile) fd.append('portrait', portraitFile)
+      fd.append('rarity', rarity)
+      fd.append('affinity', affinity)
+      fd.append('allegiance', allegiance)
+      fd.append('archetype', archetype)
+      fd.append('faction', faction)
+
       const res = await fetch('/api/admin/gf/heroes', {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          id: selectedId,
-          rarity: rarity || null,
-          affinity: affinity || null,
-          allegiance: allegiance || null,
-          archetype: archetype || null,
-          faction: faction || null,
-        }),
+        method: mode === 'add' ? 'POST' : 'PATCH',
+        body: fd,
       })
       const data = await res.json()
       if (res.ok) {
-        setStatus({ type: 'success', message: `"${heroes.find(h => h.id === selectedId)?.name}" updated!` })
+        if (mode === 'add') {
+          setStatus({ type: 'success', message: `"${name.trim()}" added!` })
+          refreshHeroes()
+          reset()
+        } else {
+          setStatus({ type: 'success', message: `"${heroes.find(h => h.id === selectedId)?.name}" updated!` })
+          if (data.hero?.portrait) setExistingPortrait(data.hero.portrait)
+          setPortraitFile(null)
+        }
       } else {
         setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
       }
@@ -1404,22 +1437,55 @@ function GfHeroForm() {
 
   return (
     <div>
-      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-        Select a hero and assign their rarity, affinity, allegiance, archetype, and faction. These drive the filter/sort on the heroes grid.
-      </p>
+      <ModeToggle mode={mode} setMode={setMode} onReset={reset} addLabel="Add Hero" editLabel="Edit Hero" />
 
-      <div style={{ ...sec, marginBottom: '1.5rem' }}>
-        <Field label="Select Hero" required>
-          <select style={inp} value={selectedId} onChange={(e) => loadHero(e.target.value)}>
-            <option value="">Choose a hero...</option>
-            {heroes.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
-          </select>
-        </Field>
-      </div>
+      {mode === 'edit' && (
+        <div style={{ ...sec, marginBottom: '1.5rem' }}>
+          <Field label="Select Hero" required>
+            <select style={inp} value={selectedId} onChange={(e) => loadHero(e.target.value)}>
+              <option value="">Choose a hero...</option>
+              {heroes.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+            </select>
+          </Field>
+        </div>
+      )}
 
       <StatusBanner status={status} />
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        {mode === 'add' && (
+          <div style={sec}>
+            <div style={secTitle}>Identity</div>
+            <div style={g2}>
+              <Field label="Name" required>
+                <input style={inp} value={name} onChange={(e) => {
+                  setName(e.target.value)
+                  if (!idManual) setId(toId(e.target.value))
+                }} />
+              </Field>
+              <Field label="ID" required hint="Auto-generated from name. Edit to override.">
+                <input style={inp} value={id} onChange={(e) => { setId(e.target.value); setIdManual(true) }} />
+              </Field>
+            </div>
+          </div>
+        )}
+
+        <div style={sec}>
+          <div style={secTitle}>{mode === 'add' ? 'Images' : 'Portrait'}</div>
+          {mode === 'add' && (
+            <Field label="Full Art" hint="Main card image (the character splash art PNG)">
+              <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+                onChange={(e) => setFullArtFile(e.target.files?.[0] ?? null)} />
+              {fullArtFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{fullArtFile.name}</span>}
+            </Field>
+          )}
+          <Field label="Portrait" hint={existingPortrait ? `Current: ${existingPortrait.split('/').pop()}` : 'Transparent-bg PNG headshot (optional)'}>
+            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }}
+              onChange={(e) => setPortraitFile(e.target.files?.[0] ?? null)} />
+            {portraitFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{portraitFile.name}</span>}
+          </Field>
+        </div>
+
         <div style={sec}>
           <div style={secTitle}>Attributes</div>
           <div style={g2}>
@@ -1456,9 +1522,10 @@ function GfHeroForm() {
           </div>
         </div>
 
-        <button type="submit" className="btn" disabled={loading || !selectedId}
+        <button type="submit" className="btn"
+          disabled={loading || (mode === 'edit' ? !selectedId : !name.trim() || !id.trim())}
           style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
-          {loading ? 'Saving...' : 'Save Hero'}
+          {loading ? 'Saving...' : mode === 'add' ? 'Add Hero' : 'Save Hero'}
         </button>
       </form>
     </div>
