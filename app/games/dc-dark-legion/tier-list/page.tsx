@@ -237,16 +237,37 @@ export default function TierListPage() {
                 })}
               </tbody>
             </table>
+            <div style={{
+              padding: '1.25rem 1.5rem',
+              borderTop: GOLD_ROW_BORDER,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '2.5rem',
+              flexWrap: 'wrap',
+            }}>
+              <img
+                src="/images/site/Q%20GOLD%20FULL%20ICON.png"
+                alt="Quantum Game Guides"
+                style={{ height: '5rem', objectFit: 'contain' }}
+              />
+              <img
+                src="/dcdl/logos/Game_logo_-_blue_white.png"
+                alt="DC: Dark Legion"
+                style={{ height: '5rem', objectFit: 'contain' }}
+              />
+            </div>
             <img
               src="/dcdl/combat-cycle/LaughBatman.png"
               alt=""
               aria-hidden="true"
               style={{
                 position: 'absolute',
-                bottom: '1.5rem',
-                right: '1.5rem',
-                width: '10rem',
-                opacity: 0.12,
+                bottom: 0,
+                right: 0,
+                height: '100%',
+                width: 'auto',
+                opacity: 0.1,
                 pointerEvents: 'none',
                 userSelect: 'none',
               }}
@@ -323,16 +344,37 @@ export default function TierListPage() {
                 })}
               </tbody>
             </table>
+            <div style={{
+              padding: '1.25rem 1.5rem',
+              borderTop: GOLD_ROW_BORDER,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '2.5rem',
+              flexWrap: 'wrap',
+            }}>
+              <img
+                src="/images/site/Q%20GOLD%20FULL%20ICON.png"
+                alt="Quantum Game Guides"
+                style={{ height: '5rem', objectFit: 'contain' }}
+              />
+              <img
+                src="/dcdl/logos/Game_logo_-_blue_white.png"
+                alt="DC: Dark Legion"
+                style={{ height: '5rem', objectFit: 'contain' }}
+              />
+            </div>
             <img
               src="/dcdl/combat-cycle/LaughBatman.png"
               alt=""
               aria-hidden="true"
               style={{
                 position: 'absolute',
-                bottom: '1.5rem',
-                left: '1.5rem',
-                width: '10rem',
-                opacity: 0.12,
+                bottom: 0,
+                left: 0,
+                height: '100%',
+                width: 'auto',
+                opacity: 0.1,
                 pointerEvents: 'none',
                 userSelect: 'none',
               }}
