@@ -224,6 +224,24 @@ export default function BestTeamsPage() {
           )}
         </div>
       </section>
+
+      {/* Logos Footer */}
+      <section style={{ padding: '2.5rem 0 3rem' }}>
+        <div className="container">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
+            <img
+              src="/images/site/Q%20GOLD%20FULL%20ICON.png"
+              alt="Quantum Game Guides"
+              style={{ height: '6rem', objectFit: 'contain' }}
+            />
+            <img
+              src="/dcdl/logos/Game_logo_-_blue_white.png"
+              alt="DC: Dark Legion"
+              style={{ height: '6rem', objectFit: 'contain' }}
+            />
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

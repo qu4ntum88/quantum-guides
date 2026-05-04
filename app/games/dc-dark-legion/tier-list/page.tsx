@@ -37,6 +37,7 @@ const tableCard: React.CSSProperties = {
   border: `2px solid ${GOLD}88`,
   borderRadius: '0.875rem',
   overflow: 'hidden',
+  position: 'relative',
 }
 
 function TableTitle({ children }: { children: React.ReactNode }) {
@@ -236,6 +237,20 @@ export default function TierListPage() {
                 })}
               </tbody>
             </table>
+            <img
+              src="/dcdl/combat-cycle/LaughBatman.png"
+              alt=""
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                bottom: '1.5rem',
+                right: '1.5rem',
+                width: '10rem',
+                opacity: 0.12,
+                pointerEvents: 'none',
+                userSelect: 'none',
+              }}
+            />
           </div>
         </div>
       </section>
@@ -308,6 +323,20 @@ export default function TierListPage() {
                 })}
               </tbody>
             </table>
+            <img
+              src="/dcdl/combat-cycle/LaughBatman.png"
+              alt=""
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                bottom: '1.5rem',
+                left: '1.5rem',
+                width: '10rem',
+                opacity: 0.12,
+                pointerEvents: 'none',
+                userSelect: 'none',
+              }}
+            />
           </div>
           <p style={{
             marginTop: '0.85rem',
@@ -317,6 +346,24 @@ export default function TierListPage() {
           }}>
             <strong style={{ color: '#aaa', fontStyle: 'normal' }}>Note:</strong> This Legacy Piece tier list is a collaboration with Tyvokka.
           </p>
+        </div>
+      </section>
+
+      {/* Logos Footer */}
+      <section style={{ padding: '2.5rem 0 3rem' }}>
+        <div className="container">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
+            <img
+              src="/images/site/Q%20GOLD%20FULL%20ICON.png"
+              alt="Quantum Game Guides"
+              style={{ height: '6rem', objectFit: 'contain' }}
+            />
+            <img
+              src="/dcdl/logos/Game_logo_-_blue_white.png"
+              alt="DC: Dark Legion"
+              style={{ height: '6rem', objectFit: 'contain' }}
+            />
+          </div>
         </div>
       </section>
     </main>
