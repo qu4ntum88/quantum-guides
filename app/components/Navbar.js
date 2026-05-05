@@ -7,30 +7,33 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   {
     label: 'Godforge',
+    href: '/games/godforge',
     children: [
-      { label: 'Home', href: '/games/godforge' },
+      { label: 'Info & Guides', href: '/games/godforge' },
       { label: 'Heroes', href: '/games/godforge/heroes' },
       { label: 'Status Effects', href: '/games/godforge/status-effects' },
     ],
   },
   {
     label: 'DC: Dark Legion',
+    href: '/games/dc-dark-legion/guides',
     children: [
+      { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
       { label: 'Champions', href: '/games/dc-dark-legion' },
       { label: 'Tier List', href: '/games/dc-dark-legion/tier-list' },
       { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
       { label: 'Combat Cycle Guide', href: '/games/dc-dark-legion/combat-cycle' },
       { label: 'Ship Combat Guides', href: '/games/dc-dark-legion/ship-combat-guides' },
       { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
-      { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
     ],
   },
   {
     label: 'Void Hunters',
+    href: '/games/void-hunters/guides',
     children: [
+      { label: 'Info & Guides', href: '/games/void-hunters/guides' },
       { label: 'Hunters', href: '/games/void-hunters' },
       { label: 'Status Effects', href: '/games/void-hunters/status-effects' },
-      { label: 'Guides', href: '/games/void-hunters/guides' },
     ],
   },
 ]
@@ -59,12 +62,14 @@ function DropdownItem({ item }) {
 
   return (
     <li ref={ref} className="nav-item-dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <button className="nav-dropdown-trigger" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
-        {item.label}
-        <svg width="10" height="6" viewBox="0 0 10 6" style={{ marginLeft: '0.35rem', transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'none' }}>
-          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-        </svg>
-      </button>
+      <div className="nav-dropdown-trigger">
+        <a href={item.href} className="nav-dropdown-label">{item.label}</a>
+        <button className="nav-dropdown-chevron" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`Toggle ${item.label} menu`}>
+          <svg width="10" height="6" viewBox="0 0 10 6" style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'none' }}>
+            <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+          </svg>
+        </button>
+      </div>
       {open && (
         <ul className="nav-dropdown-menu">
           {item.children.map((child) => (

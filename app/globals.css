@@ -87,8 +87,7 @@ h1, h2, h3, h4 {
   border-left: 1px solid var(--border);
 }
 
-.desktop-nav > li > a,
-.nav-dropdown-trigger {
+.desktop-nav > li > a {
   color: var(--text-primary);
   text-decoration: none;
   font-family: 'Unbounded', sans-serif;
@@ -99,16 +98,53 @@ h1, h2, h3, h4 {
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
-  background: none;
-  border: none;
-  cursor: pointer;
   transition: color 0.15s, background 0.15s;
   white-space: nowrap;
   height: 100%;
 }
 
-.desktop-nav > li > a:hover,
-.nav-dropdown-trigger:hover {
+.desktop-nav > li > a:hover {
+  color: var(--gold);
+  background: rgba(255,255,255,0.05);
+  text-decoration: none;
+}
+
+.nav-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-dropdown-label {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.nav-dropdown-chevron {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 0.35rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: color 0.15s, background 0.15s;
+  height: 100%;
+}
+
+.nav-dropdown-label:hover,
+.nav-dropdown-chevron:hover {
   color: var(--gold);
   background: rgba(255,255,255,0.05);
   text-decoration: none;
