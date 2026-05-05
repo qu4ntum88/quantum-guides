@@ -1,5 +1,3 @@
-'use client'
-
 import './page.css'
 
 export default function Home() {
@@ -61,17 +59,21 @@ export default function Home() {
         </section>
       </div>
 
-<section className="email-section">
-        <div className="container email-container">
-          <h2>Stay Updated</h2>
-          <p>Get notified when new guides are published</p>
-          <form className="email-form" onSubmit={(e) => {
-            e.preventDefault()
-            alert('Email signup form will be connected to Mailchimp tomorrow!')
-          }}>
-            <input type="email" placeholder="your@email.com" required />
-            <button type="submit">Sign Up</button>
-          </form>
+      <section className="community-section">
+        <div className="container">
+          <h2>Join the Community</h2>
+          <p className="community-desc">Follow along for guides, tier updates, and game news</p>
+          <div className="community-links">
+            <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <img src="/images/site/yt_logo_mono_dark.png" alt="YouTube" className="community-logo" />
+            </a>
+            <a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <img src="/images/site/Discord-Logo-Blurple.png" alt="Discord" className="community-logo" />
+            </a>
+            <a href="https://x.com/Quantumx86" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src="/images/site/twitter_logo_white.png" alt="X" className="community-logo" />
+            </a>
+          </div>
         </div>
       </section>
     </main>

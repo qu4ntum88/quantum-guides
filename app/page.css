@@ -121,84 +121,40 @@
   text-decoration: underline;
 }
 
-.changelog-section {
-  background-color: #1a1a1a;
-  padding: 3rem 0;
-  margin-bottom: 3rem;
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-}
 
-.changelog-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.changelog {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.changelog-item {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #333333;
-}
-
-.changelog-item:last-child {
-  border-bottom: none;
-}
-
-.date {
-  color: #CCA453;
-  font-weight: 600;
-  min-width: 120px;
-  text-align: right;
-  font-size: 0.9rem;
-}
-
-.change h4 {
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.change p {
-  color: #cccccc;
-  font-size: 0.95rem;
-}
-
-.email-section {
+.community-section {
   padding: 3rem 0;
   text-align: center;
 }
 
-.email-section h2 {
+.community-section h2 {
   margin-bottom: 0.5rem;
 }
 
-.email-section > div > p {
+.community-desc {
   color: #cccccc;
   margin-bottom: 2rem;
 }
 
-.email-container {
-  max-width: 400px;
-}
-
-.email-form {
+.community-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.email-form input {
-  margin-bottom: 0;
+.community-logo {
+  height: 2.5rem;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s, transform 0.2s;
+  display: block;
 }
 
-.email-form button {
-  width: 100%;
+.community-logo:hover {
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -214,12 +170,5 @@
     grid-template-columns: 1fr;
   }
 
-  .changelog-item {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 
-  .date {
-    text-align: left;
-  }
 }
