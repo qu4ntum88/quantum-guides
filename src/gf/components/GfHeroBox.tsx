@@ -29,7 +29,7 @@ function cornerIcon(src: string, alt: string) {
         width: '1.75rem',
         height: '1.75rem',
         objectFit: 'contain',
-        filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.8))',
+        filter: 'drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 8px rgba(255,255,255,0.5)) drop-shadow(0 1px 3px rgba(0,0,0,0.9))',
         flexShrink: 0,
       }}
     />
@@ -80,7 +80,7 @@ export default function GfHeroBox({ hero }: { hero: GfHero }) {
         style={{
           width: '100%',
           height: '100%',
-          objectFit: usePortrait ? 'contain' : 'cover',
+          objectFit: 'cover',
           display: 'block',
         }}
       />
@@ -112,28 +112,28 @@ export default function GfHeroBox({ hero }: { hero: GfHero }) {
       </div>
 
       {/* Top-left: Faction */}
-      <div style={{ position: 'absolute', top: '0.25rem', left: '0.25rem' }}>
+      <div style={{ position: 'absolute', top: '0.1rem', left: '0.1rem' }}>
         {hero.faction
           ? cornerIcon(`/godforge/gf_heroes/factions/${hero.faction}.png`, hero.faction)
           : <div style={{ width: '1.75rem', height: '1.75rem' }} />}
       </div>
 
       {/* Top-right: Archetype */}
-      <div style={{ position: 'absolute', top: '0.25rem', right: '0.25rem' }}>
+      <div style={{ position: 'absolute', top: '0.1rem', right: '0.1rem' }}>
         {hero.archetype
           ? cornerIcon(`/godforge/gf_heroes/archetypes/Archetype_${hero.archetype}.png`, hero.archetype)
           : <div style={{ width: '1.75rem', height: '1.75rem' }} />}
       </div>
 
       {/* Bottom-left: Affinity */}
-      <div style={{ position: 'absolute', bottom: '1.75rem', left: '0.25rem' }}>
+      <div style={{ position: 'absolute', bottom: '0.1rem', left: '0.1rem' }}>
         {hero.affinity
           ? cornerIcon(`/godforge/gf_heroes/affinity/${hero.affinity}.png`, hero.affinity)
           : <div style={{ width: '1.75rem', height: '1.75rem' }} />}
       </div>
 
       {/* Bottom-right: Allegiance */}
-      <div style={{ position: 'absolute', bottom: '1.75rem', right: '0.25rem' }}>
+      <div style={{ position: 'absolute', bottom: '0.1rem', right: '0.1rem' }}>
         {hero.allegiance
           ? cornerIcon(`/godforge/gf_heroes/allegiances/Allegiance_${hero.allegiance}.png`, hero.allegiance)
           : <div style={{ width: '1.75rem', height: '1.75rem' }} />}
