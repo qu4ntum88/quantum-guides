@@ -48,6 +48,13 @@ export default function RootLayout({ children }) {
         {children}
         <footer className="footer">
           <p>&copy; 2026 Quantum Game Guides. All rights reserved.</p>
+          <p className="footer-links">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <span className="sep">·</span>
+            <a href="/terms">Terms &amp; Conditions</a>
+            <span className="sep">·</span>
+            <a href="/disclaimer">Disclaimer</a>
+          </p>
         </footer>
       </body>
     </html>

@@ -138,6 +138,67 @@
   }
 }
 
+.about-site {
+  padding-bottom: 4rem;
+}
+
+.site-section-heading {
+  color: #CCA453;
+  margin-bottom: 1rem;
+}
+
+.site-section-intro {
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 860px;
+  margin-bottom: 2rem;
+}
+
+.games-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.game-overview-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.game-overview-card h3 {
+  color: #CCA453;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.game-overview-card p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.overview-link {
+  color: #CCA453;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.overview-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .games-overview {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .about-hero {
     padding: 2rem 0;

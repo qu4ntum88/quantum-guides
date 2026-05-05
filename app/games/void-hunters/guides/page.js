@@ -16,37 +16,6 @@ export default function VoidHuntersGuidesPage() {
         <div className="container">
           <div className="content-grid">
             <div className="main-content">
-              <section className="guides-section">
-                <h2>Comprehensive Guides</h2>
-                <p className="section-desc">In-depth guides covering all aspects of Void Hunters gameplay</p>
-
-                <div className="guides-list">
-                  <div className="guide-card">
-                    <h3>Beginner&apos;s Guide</h3>
-                    <p>Everything you need to know to get started in Void Hunters — core mechanics, currency, and early progression.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-
-                  <div className="guide-card">
-                    <h3>Hunter Guide</h3>
-                    <p>Breakdown of all hunters, their classes, tags, and how to build effective rosters for different content.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-
-                  <div className="guide-card">
-                    <h3>Team Building</h3>
-                    <p>Advanced strategies for building synergistic hunter teams and optimizing for different game modes.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-
-                  <div className="guide-card">
-                    <h3>Progression Strategy</h3>
-                    <p>Step-by-step guide to efficient progression from early game through endgame content.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-                </div>
-              </section>
-
               <section className="videos-section">
                 <h2>Video Guides</h2>
                 <p className="section-desc">Watch video walkthroughs and detailed explanations</p>

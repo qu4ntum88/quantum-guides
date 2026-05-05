@@ -45,42 +45,19 @@ export default async function GodforgePage() {
         <div className="container">
           <div className="content-grid">
             <div className="main-content">
-              <section className="guides-section">
-                <h2>Comprehensive Guides</h2>
-                <p className="section-desc">In-depth guides covering all aspects of Godforge gameplay</p>
-
-                <div className="guides-list">
-                  <div className="guide-card">
-                    <h3>Mechanics Guide</h3>
-                    <p>Complete walkthrough of Godforge mechanics, progression systems, and core gameplay loops.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-
-                  <div className="guide-card">
-                    <h3>Champion Guide</h3>
-                    <p>Comprehensive breakdown of all champions, their abilities, and optimal team compositions.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-
-                  <div className="guide-card">
-                    <h3>Progression Strategy</h3>
-                    <p>Step-by-step guide to efficient progression from early game through endgame content.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-
-                  <div className="guide-card">
-                    <h3>Team Building</h3>
-                    <p>Advanced strategies for building synergistic teams and optimizing for different content.</p>
-                    <a href="#" className="guide-link">Read Guide →</a>
-                  </div>
-                </div>
-              </section>
-
               <section className="videos-section">
                 <h2>Video Guides</h2>
                 <p className="section-desc">Watch video walkthroughs and detailed explanations</p>
-                <div className="videos-placeholder">
-                  <p>Latest video guides coming during Godforge beta...</p>
+                <div className="video-container">
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLj9TDaSk5Dc8XzeAqwdxx7T_uYb9D_YPH"
+                    title="Godforge Video Guides"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </section>
 

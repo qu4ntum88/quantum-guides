@@ -243,6 +243,26 @@ h1, h2, h3, h4 {
   color: var(--text-secondary);
 }
 
+.footer-links {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-links .sep {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
 /* Container */
 .container {
   max-width: 1200px;
