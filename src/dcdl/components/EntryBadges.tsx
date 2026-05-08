@@ -7,8 +7,8 @@ const TIER_RANK: Record<string, number> = { 'S+': 0, S: 1, 'A+': 2, A: 3, B: 4, 
 type Size = 'sm' | 'md' | 'lg'
 
 const SZ = {
-  sm:  { newFont: '0.75rem', circleSize: '1.3rem',  circleFont: '0.82rem', arrowFont: '1rem'   },
-  md:  { newFont: '1.7rem',  circleSize: '2.4rem',  circleFont: '1.6rem',  arrowFont: '1.8rem' },
+  sm:  { newFont: '0.75rem', circleSize: '1.3rem',  circleFont: '0.82rem', arrowFont: '2rem'   },
+  md:  { newFont: '1.7rem',  circleSize: '2.4rem',  circleFont: '1.6rem',  arrowFont: '3.6rem' },
   lg:  { newFont: '1.75rem', circleSize: '2rem',    circleFont: '1.25rem', arrowFont: '1.4rem' },
 }
 
@@ -79,8 +79,8 @@ function TierChangeBadge({
     >
       <span style={{
         fontSize: s.arrowFont,
-        color: '#fbbf24',
-        textShadow: '0 0 6px #fbbf24, 0 0 14px rgba(251,191,36,0.67), -1px -1px 0 rgba(0,0,0,0.8), 1px 1px 0 rgba(0,0,0,0.8)',
+        color: '#ffffff',
+        textShadow: '0 0 10px rgba(255,255,255,0.9), -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000',
         lineHeight: 1,
         userSelect: 'none' as const,
         cursor: 'default',
@@ -157,7 +157,7 @@ export function EntryBadgeGroup({
         <div style={{
           position: 'absolute',
           bottom: tierBottom,
-          right: '0.25rem',
+          right: 0,
           zIndex: 10,
         }}>
           <TierChangeBadge previousTier={previousTier!} currentTier={currentTier!} size={size} />

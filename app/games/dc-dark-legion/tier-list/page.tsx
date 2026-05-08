@@ -226,7 +226,7 @@ export default function TierListPage() {
                                         background: RARITY_BG[hero.rarity] ?? '#111',
                                       }}
                                     />
-                                    <EntryBadgeGroup isNew={hero.isNew} isP2W={hero.isP2W} previousTier={hero.previousTier} currentTier={hero.tier ?? ''} size="sm" tierBottom="0.25rem" />
+                                    <EntryBadgeGroup isNew={hero.isNew} isP2W={hero.isP2W} previousTier={hero.previousTier} currentTier={hero.tier ?? ''} size="sm" tierBottom="0" />
                                   </a>
                                 ))
                               )}
@@ -334,7 +334,7 @@ export default function TierListPage() {
                                         background: '#1a0a3a',
                                       }}
                                     />
-                                    <EntryBadgeGroup isNew={piece.isNew} isP2W={piece.isP2W} previousTier={piece.previousTier} currentTier={piece.tier ?? ''} size="sm" tierBottom="0.25rem" />
+                                    <EntryBadgeGroup isNew={piece.isNew} isP2W={piece.isP2W} previousTier={piece.previousTier} currentTier={piece.tier ?? ''} size="sm" tierBottom="0" />
                                   </a>
                                 ))
                               )}

@@ -30,7 +30,7 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
               previousTier={hero.previousTier}
               currentTier={hero.tier}
               size="md"
-              tierBottom="2.5rem"
+              tierBottom="0"
             />
             <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
               {hero.name}
