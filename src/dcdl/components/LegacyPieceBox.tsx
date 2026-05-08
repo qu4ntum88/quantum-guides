@@ -29,7 +29,7 @@ export default function LegacyPieceBox({ piece, communityTier }: { piece: Legacy
               previousTier={piece.previousTier}
               currentTier={piece.tier}
               size="md"
-              tierBottom="0"
+              tierBottom="2.5rem"
             />
             <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
               {piece.name}
