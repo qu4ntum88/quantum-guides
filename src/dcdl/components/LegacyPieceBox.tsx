@@ -2,6 +2,7 @@
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
 import TierBadge from "./TierBadge"
+import { EntryBadgeGroup } from "./EntryBadges"
 import type { LegacyResolved } from "../lib/data"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
@@ -22,6 +23,14 @@ export default function LegacyPieceBox({ piece, communityTier }: { piece: Legacy
             style={{ maskImage: "linear-gradient(to bottom, black 30%, transparent)" }}
           />
           <div className="absolute inset-0 flex flex-col justify-end">
+            <EntryBadgeGroup
+              isNew={piece.isNew}
+              isP2W={piece.isP2W}
+              previousTier={piece.previousTier}
+              currentTier={piece.tier}
+              size="md"
+              tierBottom="2.5rem"
+            />
             <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
               {piece.name}
             </p>

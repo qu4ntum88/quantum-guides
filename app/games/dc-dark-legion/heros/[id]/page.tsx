@@ -4,6 +4,7 @@ import LegacyPieceBox from '@/src/dcdl/components/LegacyPieceBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
 import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
 import RarityBadge from '@/src/dcdl/components/RarityBadge'
+import { PageEntryBadges } from '@/src/dcdl/components/EntryBadges'
 import type { LegacyResolved } from '@/src/dcdl/lib/data'
 import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
 
@@ -72,6 +73,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             </div>
           )}
           <PageTierBadges quantumTier={hero.tier} entityType="champion" entityId={id} />
+          <PageEntryBadges isNew={hero.isNew} isP2W={hero.isP2W} previousTier={hero.previousTier} currentTier={hero.tier} />
           {/* Factions */}
           {hero.tagSynergies.length > 0 && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginTop: '0.5rem' }}>

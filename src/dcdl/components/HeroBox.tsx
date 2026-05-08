@@ -2,6 +2,7 @@
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
 import TierBadge from "./TierBadge"
+import { EntryBadgeGroup } from "./EntryBadges"
 import type { HeroResolved } from "../lib/data"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
@@ -23,6 +24,14 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
           />
           <div className="absolute inset-0 flex flex-col justify-end">
             <img className="absolute top-0 left-0 w-8" src={classSrc} alt={hero.class} />
+            <EntryBadgeGroup
+              isNew={hero.isNew}
+              isP2W={hero.isP2W}
+              previousTier={hero.previousTier}
+              currentTier={hero.tier}
+              size="md"
+              tierBottom="2.5rem"
+            />
             <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
               {hero.name}
             </p>

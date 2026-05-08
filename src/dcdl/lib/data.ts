@@ -46,6 +46,9 @@ export type Hero = {
   skills?: { name: string; description: string; image?: string }[]
   globalSkill?: { name: string; description: string; image?: string }
   upgrades?: { name: string; description: string; image?: string }[]
+  isNew?: boolean
+  isP2W?: boolean
+  previousTier?: string
 }
 
 export type HeroResolved = Omit<Hero, "tagSynergies" | "recommendedLegacyPieces"> & {
@@ -63,6 +66,9 @@ export type Legacy = {
   role?: string
   gearEffects?: string[]
   legacySkills?: { name: string; description: string; image?: string }[]
+  isNew?: boolean
+  isP2W?: boolean
+  previousTier?: string
 }
 
 export type LegacyResolved = Legacy & { champions: HeroResolved[] }

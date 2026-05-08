@@ -43,6 +43,9 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
   const role = fd.get('role') as string
   const unique = fd.get('unique') === 'true'
   const gearEffects = fd.get('gearEffects') as string
+  const isNew = fd.get('isNew') === 'true'
+  const isP2W = fd.get('isP2W') === 'true'
+  const clearPreviousTier = fd.get('clearPreviousTier') === 'true'
   const skillCount = parseInt(fd.get('skillCount') as string ?? '0')
 
   const items: Record<string, unknown>[] = JSON.parse(fs.readFileSync(legacyPath, 'utf8'))
@@ -71,6 +74,14 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
     legacySkills.push({ name: sName, description: sDesc ?? '', ...(img ? { image: img } : {}) })
   }
 
+  const previousTier = (() => {
+    if (clearPreviousTier) return undefined
+    if (!isEdit) return undefined
+    const oldTier = existing.tier as string | undefined
+    if (oldTier && tier !== oldTier) return oldTier
+    return existing.previousTier as string | undefined
+  })()
+
   const item: Record<string, unknown> = {
     id, name,
     ...(image && { image }),
@@ -78,6 +89,9 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
     unique,
     ...(tier && { tier }),
     ...(role && { role }),
+    ...(isNew && { isNew: true }),
+    ...(isP2W && { isP2W: true }),
+    ...(previousTier ? { previousTier } : {}),
     ...(gearEffects && { gearEffects: gearEffects.split('\n').map((s) => s.trim()).filter(Boolean) }),
     ...(legacySkills.length > 0 && { legacySkills }),
   }

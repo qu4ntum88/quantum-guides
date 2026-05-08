@@ -205,6 +205,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [globalSkillImage, setGlobalSkillImage] = useState<File | null>(null)
   const [skills, setSkills] = useState<SkillRow[]>([]); const [upgrades, setUpgrades] = useState<SkillRow[]>([])
   const [existingImages, setExistingImages] = useState<Record<string, string>>({})
+  const [isNew, setIsNew] = useState(false); const [isP2W, setIsP2W] = useState(false)
+  const [clearPrevTier, setClearPrevTier] = useState(false); const [existingPreviousTier, setExistingPreviousTier] = useState('')
 
   useEffect(() => {
     fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
@@ -217,6 +219,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setUltimateName(''); setUltimateDesc(''); setUltimateImage(null)
     setGlobalSkillName(''); setGlobalSkillDesc(''); setGlobalSkillImage(null)
     setSkills([]); setUpgrades([]); setExistingImages({}); setSelectedId('')
+    setIsNew(false); setIsP2W(false); setClearPrevTier(false); setExistingPreviousTier('')
   }, [])
 
   async function loadHero(heroId: string) {
@@ -240,6 +243,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
       ...(h.skills ?? []).reduce((a: Record<string, string>, s: { image?: string }, i: number) => { if (s.image) a[`skill_${i}`] = s.image; return a }, {}),
       ...(h.upgrades ?? []).reduce((a: Record<string, string>, u: { image?: string }, i: number) => { if (u.image) a[`upgrade_${i}`] = u.image; return a }, {}),
     })
+    setIsNew(h.isNew ?? false); setIsP2W(h.isP2W ?? false)
+    setExistingPreviousTier(h.previousTier ?? ''); setClearPrevTier(false)
   }
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
@@ -251,6 +256,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     const fd = new FormData()
     fd.append('name', name); fd.append('id', id); fd.append('class', heroClass)
     fd.append('rarity', rarity); fd.append('tier', tier)
+    fd.append('isNew', String(isNew)); fd.append('isP2W', String(isP2W))
+    if (clearPrevTier) fd.append('clearPreviousTier', 'true')
     if (damageType) fd.append('damageType', damageType)
     if (quantumsTake) fd.append('quantumsTake', quantumsTake)
     synergies.forEach((s) => fd.append('tagSynergies', s))
@@ -335,6 +342,25 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
               <option value="">Select...</option>{DAMAGE_TYPES.map((d) => <option key={d}>{d}</option>)}
             </select>
           </Field>
+          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+              <input type="checkbox" checked={isNew} onChange={(e) => setIsNew(e.target.checked)} style={{ accentColor: 'var(--gold)', width: '1rem', height: '1rem' }} />
+              <span style={{ color: '#ef4444', fontWeight: 600, fontSize: '0.82rem' }}>New Champion</span>
+              <span style={{ color: '#888', fontSize: '0.78rem' }}>(shows NEW badge)</span>
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+              <input type="checkbox" checked={isP2W} onChange={(e) => setIsP2W(e.target.checked)} style={{ accentColor: 'var(--gold)', width: '1rem', height: '1rem' }} />
+              <span style={{ color: '#22c55e', fontWeight: 600, fontSize: '0.82rem' }}>Pay to Win</span>
+              <span style={{ color: '#888', fontSize: '0.78rem' }}>(shows $ badge)</span>
+            </label>
+            {mode === 'edit' && existingPreviousTier && (
+              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                <input type="checkbox" checked={clearPrevTier} onChange={(e) => setClearPrevTier(e.target.checked)} style={{ accentColor: '#fbbf24', width: '1rem', height: '1rem' }} />
+                <span style={{ color: '#fbbf24', fontWeight: 600, fontSize: '0.82rem' }}>Clear tier change arrow</span>
+                <span style={{ color: '#888', fontSize: '0.78rem' }}>(currently: {existingPreviousTier} → {tier})</span>
+              </label>
+            )}
+          </div>
         </div>
 
         <div style={sec}>
@@ -430,6 +456,8 @@ function LegacyForm() {
   const [unique, setUnique] = useState(false); const [gearEffects, setGearEffects] = useState('')
   const [imgFile, setImgFile] = useState<File | null>(null); const [existingImg, setExistingImg] = useState('')
   const [skills, setSkills] = useState<SkillRow[]>([]); const [existingSkillImgs, setExistingSkillImgs] = useState<Record<string, string>>({})
+  const [legIsNew, setLegIsNew] = useState(false); const [legIsP2W, setLegIsP2W] = useState(false)
+  const [legClearPrevTier, setLegClearPrevTier] = useState(false); const [legExistingPrevTier, setLegExistingPrevTier] = useState('')
 
   useEffect(() => {
     fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setItems)
@@ -439,6 +467,7 @@ function LegacyForm() {
     setName(''); setId(''); setIdManual(false); setRank(''); setTier(''); setRole('')
     setUnique(false); setGearEffects(''); setImgFile(null); setExistingImg('')
     setSkills([]); setExistingSkillImgs({}); setSelectedId('')
+    setLegIsNew(false); setLegIsP2W(false); setLegClearPrevTier(false); setLegExistingPrevTier('')
   }, [])
 
   async function loadItem(itemId: string) {
@@ -453,6 +482,8 @@ function LegacyForm() {
     setExistingSkillImgs(
       (l.legacySkills ?? []).reduce((a: Record<string, string>, s: { image?: string }, i: number) => { if (s.image) a[`${i}`] = s.image; return a }, {})
     )
+    setLegIsNew(l.isNew ?? false); setLegIsP2W(l.isP2W ?? false)
+    setLegExistingPrevTier(l.previousTier ?? ''); setLegClearPrevTier(false)
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -460,6 +491,8 @@ function LegacyForm() {
     const fd = new FormData()
     fd.append('id', id); fd.append('name', name); fd.append('rank', rank)
     fd.append('tier', tier); fd.append('role', role); fd.append('unique', String(unique))
+    fd.append('isNew', String(legIsNew)); fd.append('isP2W', String(legIsP2W))
+    if (legClearPrevTier) fd.append('clearPreviousTier', 'true')
     if (gearEffects) fd.append('gearEffects', gearEffects)
     if (imgFile) fd.append('image', imgFile)
     fd.append('skillCount', String(skills.length))
@@ -530,6 +563,25 @@ function LegacyForm() {
             <span style={{ color: 'var(--gold)', fontWeight: 600, fontSize: '0.82rem' }}>Unique</span>
             <span style={{ color: '#888', fontSize: '0.78rem' }}>(only one equippable per team)</span>
           </label>
+          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+              <input type="checkbox" checked={legIsNew} onChange={(e) => setLegIsNew(e.target.checked)} style={{ accentColor: 'var(--gold)', width: '1rem', height: '1rem' }} />
+              <span style={{ color: '#ef4444', fontWeight: 600, fontSize: '0.82rem' }}>New Legacy Piece</span>
+              <span style={{ color: '#888', fontSize: '0.78rem' }}>(shows NEW badge)</span>
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+              <input type="checkbox" checked={legIsP2W} onChange={(e) => setLegIsP2W(e.target.checked)} style={{ accentColor: 'var(--gold)', width: '1rem', height: '1rem' }} />
+              <span style={{ color: '#22c55e', fontWeight: 600, fontSize: '0.82rem' }}>Pay to Win</span>
+              <span style={{ color: '#888', fontSize: '0.78rem' }}>(shows $ badge)</span>
+            </label>
+            {mode === 'edit' && legExistingPrevTier && (
+              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                <input type="checkbox" checked={legClearPrevTier} onChange={(e) => setLegClearPrevTier(e.target.checked)} style={{ accentColor: '#fbbf24', width: '1rem', height: '1rem' }} />
+                <span style={{ color: '#fbbf24', fontWeight: 600, fontSize: '0.82rem' }}>Clear tier change arrow</span>
+                <span style={{ color: '#888', fontSize: '0.78rem' }}>(currently: {legExistingPrevTier} → {tier})</span>
+              </label>
+            )}
+          </div>
         </div>
 
         <div style={sec}>

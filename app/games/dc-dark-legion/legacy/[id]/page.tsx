@@ -4,6 +4,7 @@ import HeroBox from '@/src/dcdl/components/HeroBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
 import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
 import RarityBadge from '@/src/dcdl/components/RarityBadge'
+import { PageEntryBadges } from '@/src/dcdl/components/EntryBadges'
 
 export function generateStaticParams() {
   return getResolvedLegacy().map((l) => ({ id: l.id }))
@@ -40,6 +41,7 @@ export default async function LegacyDetailPage({ params }: { params: Promise<{ i
           {legacy.rank && <RarityBadge rarity={legacy.rank} />}
         </div>
         {legacy.tier && <PageTierBadges quantumTier={legacy.tier} entityType="legacy" entityId={id} />}
+        <PageEntryBadges isNew={legacy.isNew} isP2W={legacy.isP2W} previousTier={legacy.previousTier} currentTier={legacy.tier} />
 
         {/* Image + Gear Effects row */}
         {(() => {

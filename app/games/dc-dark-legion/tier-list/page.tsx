@@ -1,5 +1,6 @@
 import { getResolvedHeros, getLegacy } from '@/src/dcdl/lib/data'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
+import { EntryBadgeGroup } from '@/src/dcdl/components/EntryBadges'
 
 const RARITY_BG: Record<string, string> = {
   'Iconic':   '#00292a',
@@ -210,7 +211,7 @@ export default function TierListPage() {
                                     key={hero.id}
                                     href={`/games/dc-dark-legion/heros/${hero.id}`}
                                     title={hero.name}
-                                    style={{ display: 'block', flexShrink: 0 }}
+                                    style={{ display: 'block', flexShrink: 0, position: 'relative' }}
                                   >
                                     <img
                                       src={hero.imageHeadshot ?? ''}
@@ -225,6 +226,7 @@ export default function TierListPage() {
                                         background: RARITY_BG[hero.rarity] ?? '#111',
                                       }}
                                     />
+                                    <EntryBadgeGroup isNew={hero.isNew} isP2W={hero.isP2W} previousTier={hero.previousTier} currentTier={hero.tier ?? ''} size="sm" tierBottom="0.25rem" />
                                   </a>
                                 ))
                               )}
@@ -317,7 +319,7 @@ export default function TierListPage() {
                                     key={piece.id}
                                     href={`/games/dc-dark-legion/legacy/${piece.id}`}
                                     title={piece.name}
-                                    style={{ display: 'block', flexShrink: 0 }}
+                                    style={{ display: 'block', flexShrink: 0, position: 'relative' }}
                                   >
                                     <img
                                       src={piece.image ?? ''}
@@ -332,6 +334,7 @@ export default function TierListPage() {
                                         background: '#1a0a3a',
                                       }}
                                     />
+                                    <EntryBadgeGroup isNew={piece.isNew} isP2W={piece.isP2W} previousTier={piece.previousTier} currentTier={piece.tier ?? ''} size="sm" tierBottom="0.25rem" />
                                   </a>
                                 ))
                               )}

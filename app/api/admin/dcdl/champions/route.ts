@@ -72,6 +72,9 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
   const rarity = formData.get('rarity') as string
   const tier = formData.get('tier') as string
   const damageType = formData.get('damageType') as string
+  const isNew = formData.get('isNew') === 'true'
+  const isP2W = formData.get('isP2W') === 'true'
+  const clearPreviousTier = formData.get('clearPreviousTier') === 'true'
   const quantumsTake = formData.get('quantumsTake') as string
   const tagSynergies = formData.getAll('tagSynergies') as string[]
   const gameModes = formData.getAll('gameModes') as string[]
@@ -151,12 +154,23 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
     upgrades.push({ name: uName, description: uDesc ?? '', ...(img ? { image: img } : {}) })
   }
 
+  const previousTier = (() => {
+    if (clearPreviousTier) return undefined
+    if (!isEdit) return undefined
+    const oldTier = existing.tier as string | undefined
+    if (oldTier && tier !== oldTier) return oldTier
+    return existing.previousTier as string | undefined
+  })()
+
   const hero: Record<string, unknown> = {
     id,
     name,
     class: heroClass,
     rarity,
     tier,
+    ...(isNew && { isNew: true }),
+    ...(isP2W && { isP2W: true }),
+    ...(previousTier ? { previousTier } : {}),
     ...(damageType && { damageType }),
     ...(tagSynergies.length > 0 && { tagSynergies }),
     ...(gameModes.length > 0 && { gameModes }),
