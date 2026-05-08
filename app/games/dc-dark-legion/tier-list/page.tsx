@@ -217,8 +217,8 @@ export default function TierListPage() {
                                       src={hero.imageHeadshot ?? ''}
                                       alt={hero.name}
                                       style={{
-                                        width: '3.5rem',
-                                        height: '3.5rem',
+                                        width: '5.25rem',
+                                        height: '5.25rem',
                                         objectFit: 'cover',
                                         borderRadius: '0.4rem',
                                         border: `2px solid ${tierColor}aa`,
@@ -325,8 +325,8 @@ export default function TierListPage() {
                                       src={piece.image ?? ''}
                                       alt={piece.name}
                                       style={{
-                                        width: '3.5rem',
-                                        height: '3.5rem',
+                                        width: '5.25rem',
+                                        height: '5.25rem',
                                         objectFit: 'contain',
                                         borderRadius: '0.4rem',
                                         border: `2px solid ${tierColor}aa`,

@@ -7,9 +7,9 @@ const TIER_RANK: Record<string, number> = { 'S+': 0, S: 1, 'A+': 2, A: 3, B: 4, 
 type Size = 'sm' | 'md' | 'lg'
 
 const SZ = {
-  sm:  { newFont: '0.5rem',  circleSize: '0.85rem', circleFont: '0.55rem', arrowFont: '0.65rem' },
-  md:  { newFont: '0.85rem', circleSize: '1.2rem',  circleFont: '0.8rem',  arrowFont: '0.9rem'  },
-  lg:  { newFont: '1.75rem', circleSize: '2rem',    circleFont: '1.25rem', arrowFont: '1.4rem'  },
+  sm:  { newFont: '0.75rem', circleSize: '1.3rem',  circleFont: '0.82rem', arrowFont: '1rem'   },
+  md:  { newFont: '1.7rem',  circleSize: '2.4rem',  circleFont: '1.6rem',  arrowFont: '1.8rem' },
+  lg:  { newFont: '1.75rem', circleSize: '2rem',    circleFont: '1.25rem', arrowFont: '1.4rem' },
 }
 
 function NewBadge({ size = 'md' }: { size?: Size }) {
