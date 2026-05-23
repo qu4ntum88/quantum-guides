@@ -1,9 +1,16 @@
 import { notFound } from 'next/navigation'
 import type { Hunter, SkillEntry, BonusBreakdown } from '@/src/vh/components/HunterBox'
+import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
+import RichText from '@/src/vh/components/RichText'
 
 function readHunters(): Hunter[] {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   return require('@/src/vh/data/hunters.json') as Hunter[]
+}
+
+function readStatusEffects(): StatusEffect[] {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  return require('@/src/vh/data/status-effects.json') as StatusEffect[]
 }
 
 export function generateStaticParams() {
@@ -86,7 +93,7 @@ function SectionCard({ title, children, accentColor = 'var(--gold)' }: { title: 
   )
 }
 
-function SkillCard({ skill }: { skill: SkillEntry }) {
+function SkillCard({ skill, effects }: { skill: SkillEntry; effects: StatusEffect[] }) {
   const typeColor = SKILL_TYPE_COLOR[skill.type] ?? '#2a2a2a'
   return (
     <div style={{
@@ -131,7 +138,7 @@ function SkillCard({ skill }: { skill: SkillEntry }) {
       {/* Description */}
       <div style={{ padding: '0.85rem 1rem' }}>
         <p style={{ margin: 0, fontSize: '0.88rem', color: '#c8c8c8', lineHeight: 1.6 }}>
-          {skill.description}
+          <RichText text={skill.description} effects={effects} />
         </p>
 
         {skill.upgrades.length > 0 && (
@@ -141,7 +148,9 @@ function SkillCard({ skill }: { skill: SkillEntry }) {
             </div>
             <ul style={{ margin: 0, paddingLeft: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
               {skill.upgrades.map((u, i) => (
-                <li key={i} style={{ fontSize: '0.8rem', color: '#888', lineHeight: 1.5 }}>{u}</li>
+                <li key={i} style={{ fontSize: '0.8rem', color: '#888', lineHeight: 1.5 }}>
+                  <RichText text={u} effects={effects} />
+                </li>
               ))}
             </ul>
           </div>
@@ -175,6 +184,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
   const { id } = await params
   const allHunters = readHunters().slice().sort((a, b) => a.name.localeCompare(b.name))
   const hunter = allHunters.find((h) => h.id === id)
+  const effects = readStatusEffects()
   if (!hunter) return notFound()
 
   const idx = allHunters.indexOf(hunter)
@@ -288,7 +298,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
               {hunter.bio.map((para, i) => (
                 <p key={i} style={{ margin: 0, fontSize: '0.92rem', color: '#b0b0b0', lineHeight: 1.75, fontStyle: para === 'Coming soon...' ? 'italic' : 'normal' }}>
-                  {para}
+                  <RichText text={para} effects={effects} />
                 </p>
               ))}
             </div>
@@ -299,7 +309,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
         {basicSkills.length > 0 && (
           <SectionCard title="Basic Skills" accentColor="#6b7280">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {basicSkills.map((s) => <SkillCard key={s.order} skill={s} />)}
+              {basicSkills.map((s) => <SkillCard key={s.order} skill={s} effects={effects} />)}
             </div>
           </SectionCard>
         )}
@@ -307,7 +317,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
         {specialSkills.length > 0 && (
           <SectionCard title="Special Skills" accentColor="#7c3aed">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {specialSkills.map((s) => <SkillCard key={s.order} skill={s} />)}
+              {specialSkills.map((s) => <SkillCard key={s.order} skill={s} effects={effects} />)}
             </div>
           </SectionCard>
         )}
@@ -315,7 +325,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
         {traits.length > 0 && (
           <SectionCard title="Traits" accentColor="#10b981">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {traits.map((s) => <SkillCard key={s.order} skill={s} />)}
+              {traits.map((s) => <SkillCard key={s.order} skill={s} effects={effects} />)}
             </div>
           </SectionCard>
         )}
@@ -342,7 +352,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
                           {'★'.repeat(e.stars)}
                         </span>
                         <span style={{ fontSize: '0.82rem', color: '#aaa', lineHeight: 1.5 }}>
-                          <strong style={{ color: '#c8c8c8' }}>{e.skill}</strong> ({e.type}): {e.effect}
+                          <strong style={{ color: '#c8c8c8' }}>{e.skill}</strong> ({e.type}): <RichText text={e.effect} effects={effects} />
                         </span>
                       </div>
                     ))}

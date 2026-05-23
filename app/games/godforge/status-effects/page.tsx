@@ -1,7 +1,10 @@
+import type { Metadata } from 'next'
 import fs from 'fs'
 import path from 'path'
 import GfStatusEffectGrid from '@/src/gf/components/GfStatusEffectGrid'
 import type { GfStatusEffect } from '@/src/gf/components/GfStatusEffectBox'
+
+export const metadata: Metadata = { robots: 'noindex, nofollow' }
 
 function getStatusEffects(): GfStatusEffect[] {
   try {

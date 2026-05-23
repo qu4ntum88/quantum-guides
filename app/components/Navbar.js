@@ -6,19 +6,9 @@ import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   {
-    label: 'Godforge',
-    href: '/games/godforge',
-    children: [
-      { label: 'Info & Guides', href: '/games/godforge' },
-      { label: 'Heroes', href: '/games/godforge/heroes' },
-      { label: 'Status Effects', href: '/games/godforge/status-effects' },
-    ],
-  },
-  {
     label: 'DC: Dark Legion',
     href: '/games/dc-dark-legion/guides',
     children: [
-      { label: 'Info & Guides', href: '/games/dc-dark-legion/guides' },
       { label: 'Champions', href: '/games/dc-dark-legion' },
       { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
       { label: 'Tier List', href: '/games/dc-dark-legion/tier-list' },
@@ -28,12 +18,17 @@ const NAV_ITEMS = [
     ],
   },
   {
+    label: 'Godforge',
+    href: '/games/godforge',
+    children: [
+      { label: 'Heroes', href: '/games/godforge/heroes' },
+    ],
+  },
+  {
     label: 'Void Hunters',
     href: '/games/void-hunters/guides',
     children: [
-      { label: 'Info & Guides', href: '/games/void-hunters/guides' },
       { label: 'Hunters', href: '/games/void-hunters' },
-      { label: 'Status Effects', href: '/games/void-hunters/status-effects' },
     ],
   },
 ]
@@ -140,12 +135,33 @@ export default function Navbar() {
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <div key={item.label}>
-                <button className="mobile-menu-group-btn" onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}>
-                  {item.label}
-                  <svg width="10" height="6" viewBox="0 0 10 6" style={{ marginLeft: '0.35rem', transition: 'transform 0.2s', transform: mobileExpanded === item.label ? 'rotate(180deg)' : 'none' }}>
-                    <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-                  </svg>
-                </button>
+                <div style={{ display: 'flex', alignItems: 'stretch' }}>
+                  <a
+                    href={item.href}
+                    className="mobile-menu-link"
+                    style={{ flex: 1 }}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                  <button
+                    onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
+                    aria-label={`Toggle ${item.label} menu`}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      borderLeft: '1px solid rgba(255,255,255,0.1)',
+                      color: 'inherit',
+                      cursor: 'pointer',
+                      padding: '0.75rem 1rem',
+                      flexShrink: 0,
+                    }}
+                  >
+                    <svg width="10" height="6" viewBox="0 0 10 6" style={{ transition: 'transform 0.2s', transform: mobileExpanded === item.label ? 'rotate(180deg)' : 'none' }}>
+                      <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+                    </svg>
+                  </button>
+                </div>
                 {mobileExpanded === item.label && (
                   <div className="mobile-submenu">
                     {item.children.map((child) => (
