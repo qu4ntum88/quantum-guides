@@ -1,4 +1,4 @@
-import { getResolvedHeros } from '@/src/dcdl/lib/data'
+import { getResolvedHeros, getDataLastUpdated } from '@/src/dcdl/lib/data'
 
 type Team = { rank: number; explanation: string; required: string[]; optional: string[] }
 type Synergy = { id: string; name: string; image: string }
@@ -32,6 +32,7 @@ const RANK_COLORS: Record<number, string> = {
 }
 
 export default function BestTeamsPage() {
+  const lastUpdated = getDataLastUpdated('heros.json', 'best-teams.json')
   const heroes = getResolvedHeros()
   const heroMap = Object.fromEntries(heroes.map((h) => [h.id, h]))
   const synergies = readSynergies()
@@ -54,6 +55,9 @@ export default function BestTeamsPage() {
           <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>DC: Dark Legion — Best Teams</h1>
           <p style={{ color: '#cccccc' }}>
             Quantum&apos;s top 10 team compositions ranked by overall effectiveness.
+          </p>
+          <p style={{ color: '#888', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            Last updated: {lastUpdated}
           </p>
           <a
             href="/games/dc-dark-legion"

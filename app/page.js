@@ -34,7 +34,8 @@ export default function Home() {
         <section className="hero">
           <div className="container">
             <h1><img src="/images/site/Q GOLD FULL ICON.png" alt="" className="brand-icon" />Quantum Game Guides</h1>
-            <p className="tagline">Deep-dive guides, tier lists, and meta analysis for mobile gacha and strategy games</p>
+            <p className="welcome-heading">WELCOME TO QUANTUMGAMEGUIDES.COM</p>
+            <p className="tagline">On this site, you will find deep-dive guides, tier lists, helpful links, and meta analysis for mobile gacha and strategy games, presented to you by Quantum.</p>
           </div>
         </section>
 

@@ -1,4 +1,4 @@
-import { getHeros } from '@/src/dcdl/lib/data'
+import { getHeros, getDataLastUpdated } from '@/src/dcdl/lib/data'
 
 type CCStatusEffect = { name: string; effect: string }
 type CCSkill = { name: string; description: string; type?: string; status_effects?: CCStatusEffect[] }
@@ -32,6 +32,7 @@ const RARITY_BG: Record<string, string> = {
 const DAY_ORDER = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 export default function CombatCyclePage() {
+  const lastUpdated = getDataLastUpdated('heros.json', 'combat-cycle.json')
   const heroes = getHeros()
   const bosses = readBosses().sort((a, b) => {
     const firstDay = (d: string) => d.split('/')[0].trim()
@@ -55,6 +56,9 @@ export default function CombatCyclePage() {
           </h1>
           <p style={{ color: '#cccccc' }}>
             Quantum&apos;s ultimate guide to all 7 Combat Cycle bosses — mechanics, skills, and top counters.
+          </p>
+          <p style={{ color: '#888', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            Last updated: {lastUpdated}
           </p>
           <a
             href="/games/dc-dark-legion"

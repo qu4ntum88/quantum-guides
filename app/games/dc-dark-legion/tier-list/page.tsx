@@ -1,4 +1,4 @@
-import { getResolvedHeros, getLegacy } from '@/src/dcdl/lib/data'
+import { getResolvedHeros, getLegacy, getDataLastUpdated } from '@/src/dcdl/lib/data'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 import { EntryBadgeGroup } from '@/src/dcdl/components/EntryBadges'
 
@@ -144,6 +144,7 @@ function ColHeader({ col }: { col: typeof COLUMNS[number] }) {
 export default function TierListPage() {
   const heroes = getResolvedHeros()
   const legacyPieces = getLegacy()
+  const lastUpdated = getDataLastUpdated('heros.json', 'legacy.json')
 
   return (
     <main>
@@ -161,6 +162,9 @@ export default function TierListPage() {
           <p style={{ color: '#cccccc' }}>
             Quantum&apos;s personal champion and legacy piece rankings across all three role groups.
           </p>
+          <p style={{ color: '#888', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            Last updated: {lastUpdated}
+          </p>
           <a
             href="/games/dc-dark-legion"
             style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginTop: '0.75rem' }}
@@ -173,6 +177,9 @@ export default function TierListPage() {
       {/* Champion Tier List */}
       <section style={{ padding: '2.5rem 0 2rem' }}>
         <div className="container" style={{ overflowX: 'auto' }}>
+          <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.6rem' }}>
+            Clicking a champion opens their individual champion landing page.
+          </p>
           <div style={{ ...tableCard, minWidth: '600px' }}>
             <TableTitle>All Purpose Champion Tier List</TableTitle>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -281,6 +288,12 @@ export default function TierListPage() {
       {/* Legacy Piece Tier List */}
       <section style={{ padding: '0 0 4rem' }}>
         <div className="container" style={{ overflowX: 'auto' }}>
+          <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.6rem' }}>
+            Clicking a legacy piece opens the{' '}
+            <a href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
+              Justice League of Discord community voted tier ranking page
+            </a>{' '}for that item.
+          </p>
           <div style={{ ...tableCard, minWidth: '600px' }}>
             <TableTitle>Legacy Piece Tier List</TableTitle>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>

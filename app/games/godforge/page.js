@@ -104,14 +104,6 @@ export default async function GodforgePage() {
                 <a href="https://discord.gg/RdvnWRBZ8j" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
               </div>
 
-              <div className="sidebar-card">
-                <h3>Latest Updates</h3>
-                <ul className="updates-list">
-                  <li>Champion Balance Update - April 2026</li>
-                  <li>New Campaign Mode Released</li>
-                  <li>Beta Sign-ups Now Open</li>
-                </ul>
-              </div>
             </aside>
           </div>
         </div>

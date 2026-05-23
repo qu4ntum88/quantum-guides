@@ -37,7 +37,7 @@ export default function DCDarkLegionPage() {
             </a>
           </div>
           <p style={{ marginBottom: '1.5rem', color: '#cccccc' }}>
-            A complete list of playable characters. Click a portrait for in-depth info.
+            A complete list of playable characters. Click a champion portrait to open their individual champion landing page for a more in-depth analysis of their kit, recommended transmutes and legacy pieces, and Quantum&apos;s take on whether or not the champion is worth building for various game modes and playstyles.
           </p>
           <div className="flex flex-col items-center justify-start gap-12 px-4 py-4 text-white">
             <HeroGrid heros={heros} synergyDescImages={synergyDescImages} />
