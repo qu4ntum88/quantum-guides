@@ -17,20 +17,8 @@ const NAV_ITEMS = [
       { label: 'Ship Combat Guides', href: '/games/dc-dark-legion/ship-combat-guides' },
     ],
   },
-  {
-    label: 'Godforge',
-    href: '/games/godforge',
-    children: [
-      { label: 'Heroes', href: '/games/godforge/heroes' },
-    ],
-  },
-  {
-    label: 'Void Hunters',
-    href: '/games/void-hunters/guides',
-    children: [
-      { label: 'Hunters', href: '/games/void-hunters' },
-    ],
-  },
+  { label: 'Godforge', href: '/games/godforge' },
+  { label: 'Void Hunters', href: '/games/void-hunters/guides' },
 ]
 
 function DropdownItem({ item }) {
