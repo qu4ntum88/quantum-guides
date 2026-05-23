@@ -2,6 +2,8 @@ import './game.css'
 
 export const revalidate = 3600
 
+const GOLD = 'rgba(201, 160, 30, 0.45)'
+
 async function getLatestFatelessVideo() {
   try {
     const res = await fetch(
@@ -28,23 +30,93 @@ export default async function GodforgePage() {
         </div>
       </section>
 
-      <section style={{ padding: '1.5rem 0 0' }}>
-        <div className="container">
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <a href="/games/godforge/heroes" className="btn" style={{ fontSize: '0.9rem', padding: '0.6rem 1.5rem' }}>
-              Heroes →
-            </a>
-            <a href="/games/godforge/status-effects" className="btn" style={{ fontSize: '0.9rem', padding: '0.6rem 1.5rem' }}>
-              Status Effects →
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section className="game-content">
         <div className="container">
           <div className="content-grid">
             <div className="main-content">
+
+              <section className="resources-section" style={{ marginBottom: '2rem' }}>
+                <h2>Resources</h2>
+                <div style={{ marginTop: '0.75rem' }}>
+
+                  {/* Heroes */}
+                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
+                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
+                      <a href="/games/godforge/heroes" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <img src="/images/site/Q WHITE ICON.png" alt="" style={{ width: '0.95rem', height: '0.95rem', flexShrink: 0 }} />
+                        Heroes →
+                      </a>
+                    </div>
+                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
+                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
+                      Browse all 200+ heroes in a sortable, filterable grid. Filter by rarity, affinity, allegiance, archetype, or faction to find exactly who you&apos;re looking for.
+                    </p>
+                  </div>
+
+                  <div style={{ height: '2px', background: GOLD }} />
+
+                  {/* Status Effects */}
+                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
+                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
+                      <a href="/games/godforge/status-effects" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <img src="/images/site/Q WHITE ICON.png" alt="" style={{ width: '0.95rem', height: '0.95rem', flexShrink: 0 }} />
+                        Status Effects →
+                      </a>
+                    </div>
+                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
+                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
+                      A searchable grid of all status effects in the game, organized by buffs, debuffs, and disables.
+                    </p>
+                  </div>
+
+                  <div style={{ height: '2px', background: GOLD }} />
+
+                  {/* RavenPyros */}
+                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
+                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
+                      <a href="https://www.ravenpyros.com/" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap' }}>
+                        RavenPyros →
+                      </a>
+                    </div>
+                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
+                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
+                      RavenPyros runs a community driven resource hub with tons of tier lists and helpful content.
+                    </p>
+                  </div>
+
+                  <div style={{ height: '2px', background: GOLD }} />
+
+                  {/* Official Godforge Database */}
+                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
+                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
+                      <a href="https://godforge.gg/heroes/aaru" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap' }}>
+                        Official DB →
+                      </a>
+                    </div>
+                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
+                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
+                      The official Godforge hero database — champion stats and information direct from the developers.
+                    </p>
+                  </div>
+
+                  <div style={{ height: '2px', background: GOLD }} />
+
+                  {/* HellHades */}
+                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
+                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
+                      <a href="https://www.hellhades.com" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap' }}>
+                        HellHades →
+                      </a>
+                    </div>
+                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
+                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
+                      Creator and game developer resources for Godforge.
+                    </p>
+                  </div>
+
+                </div>
+              </section>
+
               <section className="videos-section">
                 <h2>Video Guides</h2>
                 <p className="section-desc">Watch video walkthroughs and detailed explanations</p>
@@ -83,19 +155,12 @@ export default async function GodforgePage() {
                 )}
               </section>
 
-              <section className="resources-section">
-                <h2>Resources</h2>
-                <ul className="resources-list">
-                  <li><a href="https://godforge.gg/heroes/aaru" target="_blank" rel="noopener noreferrer">Official Godforge Database</a> - Champion stats and information</li>
-                  <li><a href="https://www.hellhades.com" target="_blank" rel="noopener noreferrer">HellHades Guides</a> - Creator and game developer resources</li>
-                </ul>
-              </section>
             </div>
 
             <aside className="sidebar">
               <div className="sidebar-card">
                 <h3>About Godforge</h3>
-                <p>Godforge is a hero collector RPG from Fateless Studios focused on strategic team composition and deep progression systems. It's a world of gods, myths, and legends.</p>
+                <p>Godforge is a hero collector RPG from Fateless Studios focused on strategic team composition and deep progression systems. It&apos;s a world of gods, myths, and legends.</p>
               </div>
 
               <div className="sidebar-card">
@@ -103,7 +168,6 @@ export default async function GodforgePage() {
                 <p>Join the Godforge community to discuss strategies, share tips, and stay updated on the latest content.</p>
                 <a href="https://discord.gg/RdvnWRBZ8j" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
               </div>
-
             </aside>
           </div>
         </div>
