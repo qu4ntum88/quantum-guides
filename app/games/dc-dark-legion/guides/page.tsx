@@ -173,28 +173,6 @@ export default function GuidesPage() {
               {/* Patch Notes */}
               {patchNotes && <PatchNotesCard patchNotes={patchNotes} />}
 
-              {/* Infographics teaser */}
-              <a href="/games/dc-dark-legion/infographics" style={{ display: 'block', textDecoration: 'none' }}>
-                <div className="gh-info-teaser">
-                  <div style={{ fontSize: '2.5rem', flexShrink: 0 }}>📊</div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.5rem', fontWeight: 700, color: '#4f8ef7', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.35rem' }}>
-                      Visual Resources
-                    </div>
-                    <div style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.95rem', fontWeight: 700, color: '#fff', marginBottom: '0.4rem' }}>
-                      Helpful Infographics
-                    </div>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#777', lineHeight: 1.5 }}>
-                      Charts, tables, and visual guides curated by Quantum and fellow creators.
-                      {infographicsCount > 0 && ` ${infographicsCount} available.`}
-                    </p>
-                  </div>
-                  <div style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.7rem', fontWeight: 700, color: 'var(--gold)', flexShrink: 0 }}>
-                    Browse All →
-                  </div>
-                </div>
-              </a>
-
               {/* Written Guides Grid */}
               {(remaining.length > 0 || guides.length > 0) && (
                 <div>
