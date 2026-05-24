@@ -740,6 +740,8 @@ function GuidesForm() {
   const [author, setAuthor] = useState('')
   const [pubDate, setPubDate] = useState('')
   const [description, setDescription] = useState('')
+  const [coverImage, setCoverImage] = useState('')
+  const [coverImageUploading, setCoverImageUploading] = useState(false)
   const [intro, setIntro] = useState('')
   const [blocks, setBlocks] = useState<Block[]>([])
   const [loading, setLoading] = useState(false)
@@ -783,7 +785,7 @@ function GuidesForm() {
     const res = await fetch('/api/admin/dcdl/guides', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ filename, title, author, pubDate, description, intro, blocks }),
+      body: JSON.stringify({ filename, title, author, pubDate, description, intro, blocks, coverImage: coverImage || undefined }),
     })
     const data = await res.json()
     setLoading(false)
@@ -812,6 +814,38 @@ function GuidesForm() {
           </Field>
           <Field label="Short Description">
             <input style={inp} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="One sentence shown on the guides listing page" />
+          </Field>
+          <Field label="Cover Image" hint="Upload an image to display on the hub page guide card">
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+              <label style={{ background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.45rem 1rem', fontSize: '0.8rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center' }}>
+                {coverImageUploading ? 'Uploading…' : 'Upload Cover Image'}
+                <input
+                  type="file"
+                  accept="image/*"
+                  style={{ display: 'none' }}
+                  disabled={!filename}
+                  onChange={async (e) => {
+                    const file = e.target.files?.[0]
+                    if (!file || !filename) return
+                    setCoverImageUploading(true)
+                    const fd = new FormData()
+                    fd.append('file', file)
+                    fd.append('folder', `${filename}/cover`)
+                    const res = await fetch('/api/admin/dcdl/guides/upload', { method: 'POST', body: fd })
+                    const data = await res.json()
+                    if (data.url) setCoverImage(data.url)
+                    setCoverImageUploading(false)
+                  }}
+                />
+              </label>
+              {coverImage && (
+                <>
+                  <img src={coverImage} alt="" style={{ height: '3rem', borderRadius: '0.25rem', border: '1px solid #333', objectFit: 'cover' }} />
+                  <button type="button" onClick={() => setCoverImage('')} style={{ background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.8rem' }}>Remove</button>
+                </>
+              )}
+              {!filename && <span style={{ fontSize: '0.72rem', color: '#f87171' }}>Set a filename above before uploading.</span>}
+            </div>
           </Field>
         </div>
 
@@ -897,6 +931,122 @@ function GuidesForm() {
 
         <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
           {loading ? 'Saving...' : 'Save Guide'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
+// ── Infographics Form ─────────────────────────────────────────────────────────
+type InfographicItem = { id: string; title: string; description?: string; credit?: string; image: string | null }
+
+function InfographicsForm() {
+  const [items, setItems] = useState<InfographicItem[]>([])
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
+  const [credit, setCredit] = useState('')
+  const [imgFile, setImgFile] = useState<File | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  function refreshItems() {
+    fetch('/api/admin/dcdl/infographics').then((r) => r.json()).then(setItems)
+  }
+
+  useEffect(() => { refreshItems() }, [])
+
+  function reset() {
+    setTitle(''); setDescription(''); setCredit(''); setImgFile(null)
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    if (!title.trim()) { setStatus({ type: 'error', message: 'Title is required.' }); return }
+    setLoading(true); setStatus(null)
+    const fd = new FormData()
+    fd.append('title', title.trim())
+    if (description) fd.append('description', description)
+    if (credit) fd.append('credit', credit)
+    if (imgFile) fd.append('image', imgFile)
+    try {
+      const res = await fetch('/api/admin/dcdl/infographics', { method: 'POST', body: fd })
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({ type: 'success', message: 'Infographic added!' })
+        reset()
+        refreshItems()
+      } else {
+        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  async function handleDelete(id: string, t: string) {
+    if (!confirm(`Delete "${t}"?`)) return
+    await fetch('/api/admin/dcdl/infographics', { method: 'DELETE', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) })
+    refreshItems()
+  }
+
+  return (
+    <div>
+      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+        Add infographics and charts that will appear on the{' '}
+        <a href="/games/dc-dark-legion/infographics" target="_blank" style={{ color: 'var(--gold)' }}>Infographics page</a>.
+        Drop images into <code>public/dcdl/infographics/</code> or upload via this form.
+      </p>
+
+      {/* Existing items */}
+      {items.length > 0 && (
+        <div style={{ ...sec, marginBottom: '1.5rem' }}>
+          <div style={secTitle}>Current Infographics ({items.length})</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+            {items.map((ig) => (
+              <div key={ig.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.6rem 0.75rem' }}>
+                {ig.image && (
+                  <img src={ig.image} alt="" style={{ width: '3.5rem', height: '2rem', objectFit: 'cover', borderRadius: '0.2rem', flexShrink: 0 }} />
+                )}
+                {!ig.image && (
+                  <div style={{ width: '3.5rem', height: '2rem', background: '#1a1a2e', borderRadius: '0.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0 }}>📊</div>
+                )}
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: '0.82rem', color: '#ddd', fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{ig.title}</div>
+                  {ig.credit && <div style={{ fontSize: '0.7rem', color: '#666' }}>by {ig.credit}</div>}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => handleDelete(ig.id, ig.title)}
+                  style={{ background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.8rem', flexShrink: 0 }}
+                >
+                  Delete
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <StatusBanner status={status} />
+
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <div style={sec}>
+          <div style={secTitle}>Add Infographic</div>
+          <Field label="Title" required>
+            <input style={inp} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g. Shards Needed to Star Up" />
+          </Field>
+          <Field label="Description">
+            <textarea style={{ ...inp, minHeight: '3rem', resize: 'vertical' }} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Brief description shown on the card" />
+          </Field>
+          <Field label="Credit / Author">
+            <input style={inp} value={credit} onChange={(e) => setCredit(e.target.value)} placeholder="e.g. Quantum" />
+          </Field>
+          <Field label="Image" hint="Upload the infographic image (JPG, PNG, WebP)">
+            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }} onChange={(e) => setImgFile(e.target.files?.[0] ?? null)} />
+            {imgFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{imgFile.name}</span>}
+          </Field>
+        </div>
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Adding…' : 'Add Infographic'}
         </button>
       </form>
     </div>
@@ -1586,7 +1736,7 @@ function GfHeroForm() {
 
 // ── Root page ──────────────────────────────────────────────────────────────────
 type Game = 'dcdl' | 'vh' | 'gf'
-type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams'
+type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams' | 'infographics'
 type VhTab = 'hunters' | 'status-effects'
 type GfTab = 'heroes'
 
@@ -1607,6 +1757,7 @@ export default function AdminDCDLPage() {
     { id: 'info', label: 'Game Info' },
     { id: 'guides', label: 'Guides' },
     { id: 'best-teams', label: 'Best Teams' },
+    { id: 'infographics', label: 'Infographics' },
   ]
 
   const vhTabs: { id: VhTab; label: string }[] = [
@@ -1665,6 +1816,7 @@ export default function AdminDCDLPage() {
             {dcdlTab === 'info' && <GameInfoForm />}
             {dcdlTab === 'guides' && <GuidesForm />}
             {dcdlTab === 'best-teams' && <BestTeamsForm />}
+            {dcdlTab === 'infographics' && <InfographicsForm />}
           </>
         )}
 

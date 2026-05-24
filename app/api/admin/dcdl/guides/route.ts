@@ -12,7 +12,7 @@ type Block =
   | { type: 'clearfloat' }
 
 function generateMdx(
-  title: string, author: string, pubDate: string, description: string, intro: string, blocks: Block[]
+  title: string, author: string, pubDate: string, description: string, intro: string, blocks: Block[], coverImage?: string
 ): string {
   const fm = [
     '---',
@@ -20,6 +20,7 @@ function generateMdx(
     author ? `author: "${author.replace(/"/g, '\\"')}"` : null,
     pubDate ? `pubDate: ${pubDate}` : null,
     description ? `description: "${description.replace(/"/g, '\\"')}"` : null,
+    coverImage ? `coverImage: "${coverImage}"` : null,
     '---',
   ].filter(Boolean).join('\n')
 
@@ -63,14 +64,14 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   const body = await req.json()
-  const { filename, title, author, pubDate, description, intro, blocks } = body
+  const { filename, title, author, pubDate, description, intro, blocks, coverImage } = body
 
   if (!filename || !title) return NextResponse.json({ error: 'filename and title are required' }, { status: 400 })
 
   const slug = filename.replace(/[^a-zA-Z0-9_-]/g, '')
   if (!slug) return NextResponse.json({ error: 'Invalid filename' }, { status: 400 })
 
-  const mdx = generateMdx(title, author ?? '', pubDate ?? '', description ?? '', intro ?? '', blocks ?? [])
+  const mdx = generateMdx(title, author ?? '', pubDate ?? '', description ?? '', intro ?? '', blocks ?? [], coverImage ?? '')
   fs.writeFileSync(path.join(GUIDES_DIR, slug + '.mdx'), mdx, 'utf8')
 
   return NextResponse.json({ success: true, filename: slug + '.mdx' })

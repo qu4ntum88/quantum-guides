@@ -15,6 +15,7 @@ const NAV_ITEMS = [
       { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
       { label: 'Combat Cycle Guide', href: '/games/dc-dark-legion/combat-cycle' },
       { label: 'Ship Combat Guides', href: '/games/dc-dark-legion/ship-combat-guides' },
+      { label: 'Infographics', href: '/games/dc-dark-legion/infographics' },
     ],
   },
   { label: 'Godforge', href: '/games/godforge' },
