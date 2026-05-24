@@ -3,77 +3,104 @@ import './page.css'
 export default function Home() {
   const games = [
     {
-      id: 'godforge',
-      name: 'Godforge',
-      href: '/games/godforge',
-      description: 'Hero collector RPG focused on strategic team composition',
-      color: '#372061',
-      image: '/images/games/godforgemain.png'
-    },
-    {
       id: 'dcdl',
       name: 'DC: Dark Legion',
       href: '/games/dc-dark-legion/guides',
-      description: 'Strategy game set in the DC Universe with idle and base-building elements',
-      color: '#1a1a1a',
+      description: 'Idle strategy RPG set in the DC Universe — collect champions, build your base, and battle across iconic Gotham.',
+      accent: '#4f8ef7',
       image: '/images/games/dcdlmain.png'
+    },
+    {
+      id: 'godforge',
+      name: 'Godforge',
+      href: '/games/godforge',
+      description: 'Hero collector RPG built around strategic team composition — gods, myths, and legends across deep progression systems.',
+      accent: '#a855f7',
+      image: '/images/games/godforgemain.png'
     },
     {
       id: 'void-hunters',
       name: 'Void Hunters',
       href: '/games/void-hunters/guides',
-      description: 'Turn-based RPG with deep progression systems',
-      color: '#2a2a2a',
+      description: 'Turn-based RPG with deep hunter progression, strategic squad combat, and escalating void threats.',
+      accent: '#06b6d4',
       image: '/images/games/voidhuntersmain.jpg'
     }
   ]
 
   return (
     <main>
-      <div className="page-hero-wrapper">
-        <section className="hero">
-          <div className="container">
-            <h1><img src="/images/site/Q GOLD FULL ICON.png" alt="" className="brand-icon" />Quantum Game Guides</h1>
-            <p className="welcome-heading">WELCOME TO QUANTUMGAMEGUIDES.COM</p>
-            <p className="tagline">On this site, you will find deep-dive guides, tier lists, helpful links, and meta analysis for mobile gacha and strategy games, presented to you by Quantum.</p>
-          </div>
-        </section>
+      <section className="lp-hero">
+        <div className="lp-hero-content">
+          <img src="/images/site/Q GOLD FULL ICON.png" alt="" className="lp-hero-icon" />
+          <p className="lp-overline">Quantum Game Guides</p>
+          <h1 className="lp-title">
+            Your Edge.<br />
+            <span className="lp-title-accent">Your Meta.</span>
+          </h1>
+          <p className="lp-tagline">
+            Deep-dive guides, tier lists, hero databases, and meta analysis — built by players, for players.
+          </p>
+          <div className="lp-divider" />
+        </div>
+      </section>
 
-        <section className="games-section">
-          <div className="container">
-            <h2>GAMES WE COVER</h2>
-            <div className="games-grid">
-              {games.map((game) => (
-                <a key={game.id} href={game.href} className="game-card">
-                  <div className="game-banner" style={{ backgroundColor: game.color }}>
-                    {game.image && <img src={game.image} alt={game.name} />}
-                    <h3>{game.name}</h3>
-                  </div>
-                  <div className="game-info">
-                    <p>{game.description}</p>
-                    <span className="cta">Game Hub →</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section className="community-section">
+      <section className="lp-games">
         <div className="container">
-          <h2>Join the Community</h2>
-          <p className="community-desc">Follow along for guides, tier updates, and game news</p>
-          <div className="community-links">
-            <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-              <img src="/images/site/yt_logo_mono_dark.png" alt="YouTube" className="community-logo" />
-            </a>
-            <a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-              <img src="/images/site/Discord-Logo-Blurple.png" alt="Discord" className="community-logo" />
-            </a>
-            <a href="https://x.com/Quantumx86" target="_blank" rel="noopener noreferrer" aria-label="X">
-              <img src="/images/site/twitter_logo_white.png" alt="X" className="community-logo" />
-            </a>
+          <div className="lp-section-label">
+            <span className="lp-section-line" />
+            <span className="lp-section-text">Games We Cover</span>
+            <span className="lp-section-line lp-section-line-right" />
+          </div>
+          <div className="lp-games-grid">
+            {games.map((game) => (
+              <a
+                key={game.id}
+                href={game.href}
+                className="lp-game-card"
+                style={{ '--game-accent': game.accent }}
+              >
+                <div className="lp-card-banner">
+                  {game.image && (
+                    <img src={game.image} alt={game.name} className="lp-card-img" />
+                  )}
+                  <div className="lp-card-overlay" />
+                  <div className="lp-card-cta-wrap">
+                    <span className="lp-card-cta">Explore Hub →</span>
+                  </div>
+                </div>
+                <div className="lp-card-body">
+                  <div className="lp-card-top-bar" />
+                  <h3 className="lp-card-title">{game.name}</h3>
+                  <p className="lp-card-desc">{game.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="lp-community">
+        <div className="container">
+          <div className="lp-community-card">
+            <div className="lp-community-text">
+              <p className="lp-overline lp-overline--sm">Stay Connected</p>
+              <h2 className="lp-community-heading">Join the Community</h2>
+              <p className="lp-community-desc">
+                Follow for guides, tier updates, game news, and live streams.
+              </p>
+            </div>
+            <div className="lp-social-row">
+              <a href="https://www.youtube.com/@Quantumx86" target="_blank" rel="noopener noreferrer" className="lp-social-btn">
+                <img src="/images/site/yt_logo_mono_dark.png" alt="YouTube" className="lp-social-img" />
+              </a>
+              <a href="https://discord.gg/BSPQuvGdSP" target="_blank" rel="noopener noreferrer" className="lp-social-btn">
+                <img src="/images/site/Discord-Logo-Blurple.png" alt="Discord" className="lp-social-img" />
+              </a>
+              <a href="https://x.com/Quantumx86" target="_blank" rel="noopener noreferrer" className="lp-social-btn">
+                <img src="/images/site/twitter_logo_white.png" alt="X / Twitter" className="lp-social-img" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

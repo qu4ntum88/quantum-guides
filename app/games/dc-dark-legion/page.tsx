@@ -1,5 +1,6 @@
 import { getResolvedHeros, getSynergies } from '@/src/dcdl/lib/data'
 import HeroGrid from '@/src/dcdl/components/HeroGrid'
+import '../godforge/game.css'
 
 export default function DCDarkLegionPage() {
   const heros = getResolvedHeros()
@@ -10,21 +11,13 @@ export default function DCDarkLegionPage() {
   )
 
   return (
-    <main>
-      <section
-        className="game-hero"
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+    <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <section className="gh-hero">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>DC: Dark Legion</h1>
-          <p style={{ color: '#cccccc' }}>
-            Strategy game set in the DC Universe with idle and base-building elements
-          </p>
+          <p className="gh-overline">Champion Database</p>
+          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <p className="gh-hero-sub">A complete list of playable champions. Click any portrait to open their individual page for kit analysis, builds, and tier rankings.</p>
+          <div className="gh-hero-divider" />
         </div>
       </section>
 

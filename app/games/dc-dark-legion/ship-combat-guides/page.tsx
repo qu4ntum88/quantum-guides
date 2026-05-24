@@ -1,6 +1,7 @@
 'use client'
 import { useState, useRef } from 'react'
 import type { CSSProperties } from 'react'
+import '../../godforge/game.css'
 
 // Zone boundaries in map space (0..256 SVG units, 1 tile = 2 SVG units)
 const CZ = { x1: 92, y1: 92, x2: 164, y2: 164 }
@@ -352,16 +353,16 @@ function Swatch({ children }: { children: React.ReactNode }) {
 
 export default function ShipCombatGuidesPage() {
   return (
-    <main>
-      <section
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover', backgroundPosition: 'center', padding: '3rem 0',
-        }}
-      >
+    <main style={{ '--game-accent': '#4f8ef7' } as CSSProperties}>
+      <section className="gh-hero">
         <div className="container">
-          <h1>Ship Combat Guides</h1>
-          <p style={{ color: '#cccccc' }}>Map breakdowns for Battle For Gotham and Ultimate Battle For Gotham</p>
+          <p className="gh-overline">Ship Combat</p>
+          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <p className="gh-hero-sub">Map breakdowns for Battle For Gotham and Ultimate Battle For Gotham.</p>
+          <div className="gh-hero-divider" />
+          <div className="gh-hero-back">
+            <a href="/games/dc-dark-legion" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>← Champion List</a>
+          </div>
         </div>
       </section>
 

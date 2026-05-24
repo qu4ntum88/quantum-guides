@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import '../../godforge/game.css'
 
 type StarLevel = { stars: number; shardsNeeded: number; totalShards: number; totalCopies: number }
 type StarTier  = { tier: string; hexColor: string; levels: StarLevel[] }
@@ -63,18 +64,13 @@ export default function GuidesPage() {
   const shardsData = getShardsData()
 
   return (
-    <main>
-      <section
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+    <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <section className="gh-hero">
         <div className="container">
-          <h1>DC: Dark Legion — Info & Guides</h1>
-          <p style={{ color: '#cccccc' }}>Learn how to dominate DC: Dark Legion!</p>
+          <p className="gh-overline">Game Hub</p>
+          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <p className="gh-hero-sub">Strategy game set in the DC Universe — idle RPG with base-building, champion collection, and PvP combat across iconic Gotham.</p>
+          <div className="gh-hero-divider" />
         </div>
       </section>
 

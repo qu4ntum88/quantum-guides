@@ -20,13 +20,16 @@ export default async function GodforgePage() {
   const latestDevVideoId = await getLatestFatelessVideo()
 
   return (
-    <main>
-      <section className="game-hero" style={{ backgroundImage: "url('/images/site/Quantum Purple Background.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <main style={{ '--game-accent': '#a855f7' }}>
+      <section className="gh-hero">
         <div className="container">
-          <h1 className="game-title">
-            <img src="/images/site/Godforge_LogoPNG.png" alt="Godforge" className="game-title-logo" />Guides
+          <p className="gh-overline">Game Hub</p>
+          <h1 className="gh-hero-title">
+            <img src="/images/site/Godforge_LogoPNG.png" alt="Godforge" className="game-title-logo" />
+            Guides
           </h1>
-          <p className="subtitle">Hero collector RPG focused on strategic team composition and deep progression systems</p>
+          <p className="gh-hero-sub">Hero collector RPG focused on strategic team composition and deep progression systems</p>
+          <div className="gh-hero-divider" />
         </div>
       </section>
 
@@ -35,7 +38,7 @@ export default async function GodforgePage() {
           <div className="content-grid">
             <div className="main-content">
 
-              <section className="resources-section" style={{ marginBottom: '2rem' }}>
+              <section className="resources-section">
                 <h2>Resources</h2>
                 <div style={{ marginTop: '0.75rem' }}>
 

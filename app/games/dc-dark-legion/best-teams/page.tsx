@@ -1,4 +1,5 @@
 import { getResolvedHeros, getDataLastUpdated } from '@/src/dcdl/lib/data'
+import '../../godforge/game.css'
 
 type Team = { rank: number; explanation: string; required: string[]; optional: string[] }
 type Synergy = { id: string; name: string; image: string }
@@ -42,29 +43,16 @@ export default function BestTeamsPage() {
 
   return (
     <main>
-      <section
-        className="game-hero"
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+      <section className="gh-hero" style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>DC: Dark Legion — Best Teams</h1>
-          <p style={{ color: '#cccccc' }}>
-            Quantum&apos;s top 10 team compositions ranked by overall effectiveness.
-          </p>
-          <p style={{ color: '#888', fontSize: '0.8rem', marginTop: '0.4rem' }}>
-            Last updated: {lastUpdated}
-          </p>
-          <a
-            href="/games/dc-dark-legion"
-            style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginTop: '0.75rem' }}
-          >
-            ← Back to Champion List
-          </a>
+          <p className="gh-overline">Best Teams</p>
+          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <p className="gh-hero-sub">Quantum&apos;s top 10 team compositions ranked by overall effectiveness.</p>
+          <div className="gh-hero-divider" />
+          <div style={{ marginTop: '1rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.38)', fontFamily: 'monospace' }}>Updated: {lastUpdated}</span>
+            <a href="/games/dc-dark-legion" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>← Champion List</a>
+          </div>
         </div>
       </section>
 

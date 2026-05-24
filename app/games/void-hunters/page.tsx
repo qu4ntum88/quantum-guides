@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import HunterGrid from '@/src/vh/components/HunterGrid'
 import type { Hunter } from '@/src/vh/components/HunterBox'
+import '../godforge/game.css'
 
 function getHunters(): Hunter[] {
   try {
@@ -13,21 +14,15 @@ export default function VoidHuntersPage() {
   const hunters = getHunters()
 
   return (
-    <main>
-      <section
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+    <main style={{ '--game-accent': '#06b6d4' } as React.CSSProperties}>
+      <section className="gh-hero">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>Void Hunters — Hunter Database</h1>
-          <div style={{ marginTop: '1rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <a href="/games/void-hunters/guides" className="btn" style={{ fontSize: '0.85rem', padding: '0.5rem 1.25rem' }}>
-              ← Back to Hub
-            </a>
+          <p className="gh-overline">Hunter Database</p>
+          <h1 className="gh-hero-title">Void Hunters</h1>
+          <p className="gh-hero-sub">Browse all hunters in a sortable grid, or click any hunter for a dedicated page covering their kit, upgrades, and lore.</p>
+          <div className="gh-hero-divider" />
+          <div className="gh-hero-back">
+            <a href="/games/void-hunters/guides" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← Hub</a>
           </div>
         </div>
       </section>

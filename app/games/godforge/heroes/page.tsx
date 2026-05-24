@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import GfHeroGrid from '@/src/gf/components/GfHeroGrid'
 import type { GfHero } from '@/src/gf/components/GfHeroBox'
+import '../game.css'
 
 function getHeroes(): GfHero[] {
   try {
@@ -13,24 +14,15 @@ export default function GodforgeHeroesPage() {
   const heroes = getHeroes()
 
   return (
-    <main>
-      <section
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+    <main style={{ '--game-accent': '#a855f7' } as React.CSSProperties}>
+      <section className="gh-hero">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>Godforge — Heroes</h1>
-          <p style={{ color: '#cccccc' }}>
-            Browse all {heroes.length} Godforge heroes. Filter by affinity, allegiance, archetype, and faction.
-          </p>
-          <div style={{ marginTop: '1rem' }}>
-            <a href="/games/godforge" className="btn" style={{ fontSize: '0.85rem', padding: '0.5rem 1.25rem' }}>
-              ← Back to Godforge
-            </a>
+          <p className="gh-overline">Hero Database</p>
+          <h1 className="gh-hero-title">Godforge Heroes</h1>
+          <p className="gh-hero-sub">Browse all {heroes.length} heroes — filter by affinity, allegiance, archetype, and faction.</p>
+          <div className="gh-hero-divider" />
+          <div className="gh-hero-back">
+            <a href="/games/godforge" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← Back to Hub</a>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import { getHeros, getDataLastUpdated } from '@/src/dcdl/lib/data'
+import '../../godforge/game.css'
 
 type CCStatusEffect = { name: string; effect: string }
 type CCSkill = { name: string; description: string; type?: string; status_effects?: CCStatusEffect[] }
@@ -40,32 +41,17 @@ export default function CombatCyclePage() {
   })
 
   return (
-    <main>
-      <section
-        className="game-hero"
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+    <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <section className="gh-hero">
         <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>
-            DC: Dark Legion — Combat Cycle Guide
-          </h1>
-          <p style={{ color: '#cccccc' }}>
-            Quantum&apos;s ultimate guide to all 7 Combat Cycle bosses — mechanics, skills, and top counters.
-          </p>
-          <p style={{ color: '#888', fontSize: '0.8rem', marginTop: '0.4rem' }}>
-            Last updated: {lastUpdated}
-          </p>
-          <a
-            href="/games/dc-dark-legion"
-            style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginTop: '0.75rem' }}
-          >
-            ← Back to Champion List
-          </a>
+          <p className="gh-overline">Combat Cycle Guide</p>
+          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <p className="gh-hero-sub">Quantum&apos;s ultimate guide to all 7 Combat Cycle bosses — mechanics, skills, and top counters.</p>
+          <div className="gh-hero-divider" />
+          <div style={{ marginTop: '1rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.38)', fontFamily: 'monospace' }}>Updated: {lastUpdated}</span>
+            <a href="/games/dc-dark-legion" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>← Champion List</a>
+          </div>
         </div>
       </section>
 
