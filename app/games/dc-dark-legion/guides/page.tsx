@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import '../../godforge/game.css'
+import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
 
 type Guide = {
   id: string
@@ -72,7 +73,7 @@ export default function GuidesPage() {
   const featured = guides[0] ?? null
   const remaining = guides.slice(1)
 
-  const hasSidebar = latestServer || gameCodes.length > 0
+  const hasSidebar = true
 
   return (
     <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
@@ -170,26 +171,7 @@ export default function GuidesPage() {
             <div style={{ flex: '1 1 480px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
               {/* Patch Notes */}
-              {patchNotes && (
-                <div className="card">
-                  <div style={secTitle}>Latest Patch Notes</div>
-                  <pre style={{
-                    fontFamily: "'VT323', monospace",
-                    fontSize: '1.1rem',
-                    color: '#39ff88',
-                    background: '#040d04',
-                    border: '1px solid #1a4d1a',
-                    borderRadius: '0.375rem',
-                    padding: '1.25rem',
-                    whiteSpace: 'pre-wrap',
-                    wordBreak: 'break-word',
-                    lineHeight: 1.55,
-                    margin: 0,
-                  }}>
-                    {patchNotes}
-                  </pre>
-                </div>
-              )}
+              {patchNotes && <PatchNotesCard patchNotes={patchNotes} />}
 
               {/* Infographics teaser */}
               <a href="/games/dc-dark-legion/infographics" style={{ display: 'block', textDecoration: 'none' }}>
@@ -323,6 +305,25 @@ export default function GuidesPage() {
                     </div>
                   </div>
                 )}
+
+                {/* Infographics sidebar link */}
+                <a href="/games/dc-dark-legion/infographics" style={{ display: 'block', textDecoration: 'none' }}>
+                  <div className="card" style={{ borderTop: '2px solid rgba(79,142,247,0.4)', transition: 'border-color 0.2s, box-shadow 0.2s' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem' }}>
+                      <span style={{ fontSize: '1.4rem', lineHeight: 1 }}>📊</span>
+                      <span style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)' }}>
+                        Infographics
+                      </span>
+                    </div>
+                    <p style={{ margin: '0 0 0.6rem', fontSize: '0.75rem', color: '#666', lineHeight: 1.5 }}>
+                      Charts, tables, and visual guides curated by Quantum and fellow creators.
+                      {infographicsCount > 0 && ` ${infographicsCount} available.`}
+                    </p>
+                    <span style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.6rem', fontWeight: 700, color: '#4f8ef7', letterSpacing: '0.04em' }}>
+                      Browse All →
+                    </span>
+                  </div>
+                </a>
               </div>
             )}
 
