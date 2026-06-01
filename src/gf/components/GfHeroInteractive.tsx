@@ -327,7 +327,8 @@ export function GfHeroInteractive({ hero, rarityColor = '#a855f7' }: { hero: GfH
   }
   // Apply ascension on top of an already-computed value.
   // ascKey is the key used in ascension_bonuses (may differ from display key, e.g. 'divinity' vs 'initial_divinity')
-  function withAsc(value: number, ascKey: string): number {
+  function withAsc(value: number | null, ascKey: string): number | null {
+    if (value === null) return null
     let v = value
     if (ascMult[ascKey]) v = Math.round(v * (1 + ascMult[ascKey]))
     if (ascFlat[ascKey]) v = v + ascFlat[ascKey]
@@ -337,16 +338,16 @@ export function GfHeroInteractive({ hero, rarityColor = '#a855f7' }: { hero: GfH
   // Stat grid entries
   const stats = hero.stats
   const statEntries = stats ? [
-    { key: 'hp',               label: 'HP',      value: withAsc(calcScaled(stats.hp,  rank, level), 'hp'),               scaling: true  },
-    { key: 'atk',              label: 'ATK',     value: withAsc(calcScaled(stats.atk, rank, level), 'atk'),              scaling: true  },
-    { key: 'def',              label: 'DEF',     value: withAsc(calcScaled(stats.def, rank, level), 'def'),              scaling: true  },
-    { key: 'spd',              label: 'SPD',     value: withAsc(stats.spd,                          'spd'),              scaling: false },
-    { key: 'init',             label: 'FTH',     value: withAsc(stats.init,                         'init'),             scaling: false },
-    { key: 'crate',            label: 'C.Rate',  value: withAsc(10,                                 'crate'),            scaling: false },
-    { key: 'cdmg',             label: 'C.DMG',   value: withAsc(50,                                 'cdmg'),             scaling: false },
-    { key: 'acc',              label: 'ACC',     value: withAsc(stats.acc,                          'acc'),              scaling: false },
-    { key: 'res',              label: 'RES',     value: withAsc(stats.res,                          'res'),              scaling: false },
-    { key: 'initial_divinity', label: 'Divinity',value: withAsc(stats.initial_divinity,             'divinity'),         scaling: false },
+    { key: 'hp',               label: 'HP',      value: stats.hp  !== null ? withAsc(calcScaled(stats.hp,  rank, level), 'hp')  : null, scaling: true  },
+    { key: 'atk',              label: 'ATK',     value: stats.atk !== null ? withAsc(calcScaled(stats.atk, rank, level), 'atk') : null, scaling: true  },
+    { key: 'def',              label: 'DEF',     value: stats.def !== null ? withAsc(calcScaled(stats.def, rank, level), 'def') : null, scaling: true  },
+    { key: 'spd',              label: 'SPD',     value: withAsc(stats.spd,              'spd'),    scaling: false },
+    { key: 'init',             label: 'FTH',     value: withAsc(stats.init,             'init'),   scaling: false },
+    { key: 'crate',            label: 'C.Rate',  value: withAsc(10,                     'crate'),  scaling: false },
+    { key: 'cdmg',             label: 'C.DMG',   value: withAsc(50,                     'cdmg'),   scaling: false },
+    { key: 'acc',              label: 'ACC',     value: withAsc(stats.acc,              'acc'),    scaling: false },
+    { key: 'res',              label: 'RES',     value: withAsc(stats.res,              'res'),    scaling: false },
+    { key: 'initial_divinity', label: 'Divinity',value: withAsc(stats.initial_divinity, 'divinity'), scaling: false },
   ] : []
 
   // Skill resolution
@@ -473,7 +474,7 @@ export function GfHeroInteractive({ hero, rarityColor = '#a855f7' }: { hero: GfH
               {statEntries.map(({ key, label, value, scaling }) => (
                 <div key={key} style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '0.45rem', padding: '0.55rem 0.75rem', textAlign: 'center' }}>
                   <div style={{ fontSize: '0.55rem', color: '#555', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700, marginBottom: '0.2rem' }}>{label}</div>
-                  <div style={{ fontSize: '0.95rem', color: scaling ? '#fff' : '#999', fontWeight: 700 }}>{value.toLocaleString()}</div>
+                  <div style={{ fontSize: '0.95rem', color: value === null ? '#3a3a3a' : scaling ? '#fff' : '#999', fontWeight: 700 }}>{value === null ? '—' : value.toLocaleString()}</div>
                 </div>
               ))}
             </div>
