@@ -30,6 +30,9 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
   const classSrc = '/dcdl/role_images/' + hero.class + '.png'
   const firstName = hero.name.split('(')[0].trim()
 
+  const linkedAscended = hero.ascendsTo ? (allHeros.find((h) => h.id === hero.ascendsTo) ?? null) : null
+  const linkedBase = hero.ascendedFrom ? (allHeros.find((h) => h.id === hero.ascendedFrom) ?? null) : null
+
   return (
     <main>
       {/* Full-art background */}
@@ -88,6 +91,36 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             </div>
           )}
         </div>
+
+        {/* Ascension banner */}
+        {(linkedBase || linkedAscended) && (
+          <div style={{
+            background: 'rgba(168,85,247,0.12)',
+            border: '1px solid rgba(168,85,247,0.4)',
+            borderRadius: '0.5rem',
+            padding: '0.75rem 1.25rem',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.35rem',
+          }}>
+            {linkedBase && (
+              <div style={{ fontSize: '0.9rem' }}>
+                ↑ Ascended from:{' '}
+                <a href={`/games/dc-dark-legion/heros/${linkedBase.id}`} style={{ color: 'var(--gold)', fontWeight: 700 }}>
+                  {linkedBase.name} ({linkedBase.rarity})
+                </a>
+              </div>
+            )}
+            {linkedAscended && (
+              <div style={{ fontSize: '0.9rem' }}>
+                ↑ Ascends to:{' '}
+                <a href={`/games/dc-dark-legion/heros/${linkedAscended.id}`} style={{ color: 'var(--gold)', fontWeight: 700 }}>
+                  {linkedAscended.name} ({linkedAscended.rarity})
+                </a>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Quantum's Take */}
         <div className="card">

@@ -64,6 +64,8 @@ export type Hero = {
   isNew?: boolean
   isP2W?: boolean
   previousTier?: string
+  ascendsTo?: string
+  ascendedFrom?: string
 }
 
 export type HeroResolved = Omit<Hero, "tagSynergies" | "recommendedLegacyPieces"> & {

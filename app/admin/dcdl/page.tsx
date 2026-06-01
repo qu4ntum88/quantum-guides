@@ -207,6 +207,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [existingImages, setExistingImages] = useState<Record<string, string>>({})
   const [isNew, setIsNew] = useState(false); const [isP2W, setIsP2W] = useState(false)
   const [clearPrevTier, setClearPrevTier] = useState(false); const [existingPreviousTier, setExistingPreviousTier] = useState('')
+  const [ascendsTo, setAscendsTo] = useState(''); const [ascendedFrom, setAscendedFrom] = useState('')
 
   useEffect(() => {
     fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
@@ -220,6 +221,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setGlobalSkillName(''); setGlobalSkillDesc(''); setGlobalSkillImage(null)
     setSkills([]); setUpgrades([]); setExistingImages({}); setSelectedId('')
     setIsNew(false); setIsP2W(false); setClearPrevTier(false); setExistingPreviousTier('')
+    setAscendsTo(''); setAscendedFrom('')
   }, [])
 
   async function loadHero(heroId: string) {
@@ -245,6 +247,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     })
     setIsNew(h.isNew ?? false); setIsP2W(h.isP2W ?? false)
     setExistingPreviousTier(h.previousTier ?? ''); setClearPrevTier(false)
+    setAscendsTo(h.ascendsTo ?? ''); setAscendedFrom(h.ascendedFrom ?? '')
   }
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
@@ -275,6 +278,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     skills.forEach((s, i) => { fd.append(`skill_${i}_name`, s.name); fd.append(`skill_${i}_description`, s.description); if (s.image) fd.append(`skill_${i}_image`, s.image) })
     fd.append('upgradeCount', String(upgrades.length))
     upgrades.forEach((u, i) => { fd.append(`upgrade_${i}_name`, u.name); fd.append(`upgrade_${i}_description`, u.description); if (u.image) fd.append(`upgrade_${i}_image`, u.image) })
+    if (ascendsTo) fd.append('ascendsTo', ascendsTo)
+    if (ascendedFrom) fd.append('ascendedFrom', ascendedFrom)
 
     try {
       const res = await fetch('/api/admin/dcdl/champions', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
@@ -360,6 +365,24 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
                 <span style={{ color: '#888', fontSize: '0.78rem' }}>(currently: {existingPreviousTier} → {tier})</span>
               </label>
             )}
+          </div>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Ascension Links</div>
+          <div style={g2}>
+            <Field label="Ascends To" hint="The higher-rarity version this champion can ascend into">
+              <select style={inp} value={ascendsTo} onChange={(e) => setAscendsTo(e.target.value)}>
+                <option value="">None</option>
+                {heroes.filter((h) => h.id !== id).map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+              </select>
+            </Field>
+            <Field label="Ascended From" hint="The lower-rarity version this champion was ascended from">
+              <select style={inp} value={ascendedFrom} onChange={(e) => setAscendedFrom(e.target.value)}>
+                <option value="">None</option>
+                {heroes.filter((h) => h.id !== id).map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+              </select>
+            </Field>
           </div>
         </div>
 

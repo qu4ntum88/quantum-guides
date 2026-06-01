@@ -5,7 +5,11 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(npx vercel *)"
+      "Bash(npx vercel *)",
+      "Bash(node -e \"const h = require\\('./src/dcdl/data/heros.json'\\); const k = Object.keys\\(h[0]\\); console.log\\(k\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const h = require\\('./src/dcdl/data/heros.json'\\); const a = h.find\\(x => x.id === 'lobo'\\); console.log\\('ultimate:', a?.ultimate?.image\\); console.log\\('global:', a?.globalSkill?.image\\); a?.skills?.forEach\\(s => console.log\\(s.image\\)\\);\")",
+      "Bash(npx tsc *)"
     ]
   }
 }

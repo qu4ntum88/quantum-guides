@@ -159,7 +159,8 @@
     "name": "Arsenal",
     "class": "Firepower",
     "rarity": "Mythic",
-    "tier": "D",
+    "tier": "C",
+    "previousTier": "D",
     "damageType": "Physical",
     "tagSynergies": [
       "teen_titans",
@@ -877,7 +878,8 @@
     "name": "Cyborg",
     "class": "Intimidator",
     "rarity": "Mythic",
-    "tier": "B",
+    "tier": "A",
+    "previousTier": "B",
     "damageType": "Physical",
     "tagSynergies": [
       "teen_titans",
@@ -1042,7 +1044,8 @@
     "name": "Deathstroke",
     "class": "Assassin",
     "rarity": "Mythic +",
-    "tier": "A+",
+    "tier": "A",
+    "previousTier": "A+",
     "damageType": "Physical",
     "tagSynergies": [
       "legion_of_doom",
@@ -1988,23 +1991,16 @@
   {
     "id": "poison_ivy",
     "name": "Poison Ivy",
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "tier": "B",
+    "previousTier": "A",
+    "damageType": "Physical",
     "tagSynergies": [
       "birds_of_prey",
       "arkhams_most_wanted",
       "energy_wielder"
     ],
-    "damageType": "Physical",
-    "gameModes": [],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "ATK",
-      "Healing Bonus"
-    ],
-    "class": "Supporter",
-    "rarity": "Mythic",
-    "tier": "A",
-    "imageHeadshot": "./headshot_images/poison_ivy.png",
-    "imageFull": "./full_images/PoisonIvy_full.png",
     "sourcesWhereAvailable": [
       "The Bleed",
       "Motherboxes (Purple +)",
@@ -2015,16 +2011,28 @@
       "Path of Justice",
       "7-Day Login"
     ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Healing Bonus"
+    ],
     "recommendedLegacyPieces": [
       "purple_ray_radiation",
       "cocoon_gun",
       "modified_joker_venom_grenade"
     ],
     "quantumsTake": "Poison Ivy underwent a complete kit overhaul in early 2026. She appears to be a much more efficient healer now, but there are questions about whether her Super Armor is viable anymore or even matters. Superman seems to be a little better agains the vine AI, so that's a downside for PvP, but an upside for Justice League mains in Training Sim going against her. Overall, I think she's a great early game healer, even at low stars, and I would 100% recommend using the free copy you get. However, once Riddler enters the Bleed on your server, she will become utterly irrelevant.",
+    "imageHeadshot": "./headshot_images/poison_ivy.png",
+    "imageFull": "./full_images/PoisonIvy_full.png",
     "ultimate": {
       "name": "Growing Pains",
       "description": "Poison Ivy summons an untargetable Blooming ivy for [10s]. [Blooming Ivy]: Every [2s], heals all allies for [%] of Poison Ivy's Attack.",
       "image": "./skill_images/icon_hero_skill_PoisonIvy_main.png"
+    },
+    "globalSkill": {
+      "name": "Personal Growth",
+      "description": "Increases [Supporter] Champions' healing effect.",
+      "image": "./globalskill_images/PoisonIvy_global.png"
     },
     "skills": [
       {
@@ -2043,11 +2051,6 @@
         "image": "./skill_images/icon_hero_skill_PoisonIvy_sub03.png"
       }
     ],
-    "globalSkill": {
-      "name": "Personal Growth",
-      "description": "Increases [Supporter] Champions' healing effect.",
-      "image": "./globalskill_images/PoisonIvy_global.png"
-    },
     "upgrades": [
       {
         "name": "Poison Embrace - Enhanced",
@@ -2152,6 +2155,7 @@
     "class": "Firepower",
     "rarity": "Legendary",
     "tier": "C",
+    "ascendsTo": "red_hood_mythic",
     "damageType": "Physical",
     "tagSynergies": [
       "league_of_assassins",
@@ -2178,6 +2182,86 @@
       "gas_derringer"
     ],
     "quantumsTake": "Red Hood is a champion that can be fairly useful when you first start playing, but his kit suffers from one fatal flaw, and that's the fact that when he uses his ultimate, he usually dies soon thereafter. We are hoping that his kit gets refreshed when he ascends to mythic, but until then, he just doesn't slot into any team late game.",
+    "imageHeadshot": "./headshot_images/red_hood.png",
+    "imageFull": "./full_images/RedHood_full.png",
+    "ultimate": {
+      "name": "Strafe Strife",
+      "description": "Deal Physical DMG equal to 280% of ATK to enemies within range",
+      "image": "./skill_images/icon_hero_skill_RedHood_main.png"
+    },
+    "globalSkill": {
+      "name": "Ruthless Pursuit",
+      "description": "Increases all Champions' ATK.",
+      "image": "./globalskill_images/RedHood_global.png"
+    },
+    "skills": [
+      {
+        "name": "Blow the Hood",
+        "description": "When basic attacks deal Crit DMG, deal extra Physical DMG equal to 140% of attack to enemies in range. Can be triggered every 5 seconds",
+        "image": "./skill_images/icon_hero_skill_RedHood_sub01.png"
+      },
+      {
+        "name": "Wrong Place, Right Time",
+        "description": "For every enemy within 12 meters, increases Crit Rate by 1.2%, up to 6%",
+        "image": "./skill_images/icon_hero_skill_RedHood_sub02.png"
+      },
+      {
+        "name": "Bat-Family Tree",
+        "description": "After casting [Strafe Strife], increases Dodge by 8% for 8s",
+        "image": "./skill_images/icon_hero_skill_RedHood_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Blow the Hood - Enhanced",
+        "description": "The grenade has a base chance of 50% to additionally reduce the target's Crit RES.",
+        "image": "./upgrade_images/RedHood_sub01_enhanced.png"
+      },
+      {
+        "name": "Wrong Place, Right Time - Enhanced",
+        "description": "Increases Red Hood's Energy restoration speed.",
+        "image": "./upgrade_images/RedHood_sub02_enhanced.png"
+      },
+      {
+        "name": "Bat-Family Tree - Enhanced",
+        "description": "Increases Red Hood's ATK.",
+        "image": "./upgrade_images/RedHood_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "red_hood_mythic",
+    "name": "Red Hood",
+    "class": "Firepower",
+    "rarity": "Mythic",
+    "tier": "B",
+    "ascendedFrom": "red_hood",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "league_of_assassins",
+      "bat_family",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "Murder Machine CC",
+      "Merciless CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shard"
+    ],
+    "transmutePriorities": [
+      "ATK",
+      "Crit Rate",
+      "Crit DMG"
+    ],
+    "recommendedLegacyPieces": [
+      "dart_with_poison_ivy_poison",
+      "t_sphere_weakness_analyzer",
+      "gas_derringer"
+    ],
+    "quantumsTake": "Red Hood's ascended Mythic form brings a refreshed kit that addresses his Legendary version's survivability issues. Update this entry with his full Mythic kit details via the admin panel.",
     "imageHeadshot": "./headshot_images/red_hood.png",
     "imageFull": "./full_images/RedHood_full.png",
     "ultimate": {
@@ -2704,7 +2788,8 @@
     "name": "Superboy (Conner Kent)",
     "class": "Supporter",
     "rarity": "Mythic +",
-    "tier": "A+",
+    "tier": "S",
+    "previousTier": "A+",
     "damageType": "Physical",
     "tagSynergies": [
       "superman_family",
@@ -3259,6 +3344,7 @@
     "class": "Guardian",
     "rarity": "Legendary",
     "tier": "B",
+    "ascendsTo": "wonder_woman_mythic",
     "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
@@ -3285,6 +3371,83 @@
       "amazonium_alloy_shield"
     ],
     "quantumsTake": "Wonder Woman is one of the first champions you're given as you start the game's main campaign, and she maintains her usefulness in your roster well into the late game. With the new Amazons tagged champions being added into the game, she now fits with Justice League, Justice League Dark, or Amazons, making her one of the most verstile champions available. Her stuns can easily win PvP fights, and her tankiness lends her to effective use in Training Simulator as well. Her biggest weakness is Combat Cycle. Note: Once Wonder Woman ascends to Mythic, her shards can currently only be obtained from the Meta Brawl store.",
+    "imageHeadshot": "./headshot_images/wonder_woman.png",
+    "imageFull": "./full_images/WonderWoman_full.png",
+    "ultimate": {
+      "name": "Bracelets of Submission",
+      "description": "Deal Physical DMG equal to 120% of ATK to enemies within fan-shaped area and [Stunning] them for 2s",
+      "image": "./skill_images/icon_hero_skill_WonderWoman_main.png"
+    },
+    "globalSkill": {
+      "name": "Olympian - Athena's Aegis",
+      "description": "Increases all Champions' Physical DEF.",
+      "image": "./globalskill_images/WonderWoman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Amazonian Shield",
+        "description": "Wonder Woman infuses her shield with divine power, granting [Divine Shield] to the ally with the lowest HP percentage for 8s. [Divine Shield]: Absorbs damage equal to [%] of Wonder Woman's Max HP.",
+        "image": "./skill_images/icon_hero_skill_WonderWoman_sub01.png"
+      },
+      {
+        "name": "Lasso of Truth",
+        "description": "Wonder Woman throws her Lasso of Truth, dealing Physical DMG equal to [%] of her ATK to an enemy and inflicting [Stunned] on them for 3s.",
+        "image": "./skill_images/icon_hero_skill_WonderWoman_sub02.png"
+      },
+      {
+        "name": "Amazon Goddess",
+        "description": "When HP is below [%], increases Wonder Woman's Physical DEF by [%]",
+        "image": "./skill_images/icon_hero_skill_WonderWoman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Amazonian Shield - Enhanced",
+        "description": "Increses the [%] of Shield Up.",
+        "image": "./upgrade_images/WonderWoman_sub01_enhanced.png"
+      },
+      {
+        "name": "Lasso of Truth - Enhanced",
+        "description": "Increases Wonder Woman's Physical DEF.",
+        "image": "./upgrade_images/WonderWoman_sub02_enhanced.png"
+      },
+      {
+        "name": "Amazon Goddess - Enhanced",
+        "description": "Increases Wonder Woman's ATK.",
+        "image": "./upgrade_images/WonderWoman_sub03_enhanced.png"
+      }
+    ]
+  },
+  {
+    "id": "wonder_woman_mythic",
+    "name": "Wonder Woman",
+    "class": "Guardian",
+    "rarity": "Mythic",
+    "tier": "B",
+    "ascendedFrom": "wonder_woman",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "justice_league",
+      "justice_league_dark",
+      "metahuman"
+    ],
+    "gameModes": [
+      "PvP"
+    ],
+    "sourcesWhereAvailable": [
+      "Meta Brawl Store (Mythic)"
+    ],
+    "transmutePriorities": [
+      "HP",
+      "P DEF"
+    ],
+    "recommendedLegacyPieces": [
+      "amazonian_alloy_shield",
+      "gabriel_horn",
+      "improved_fear_gas_vial",
+      "amazonium_alloy_shield"
+    ],
+    "quantumsTake": "Wonder Woman's ascended Mythic form retains her role as a tanky Guardian with potent stun utility. Update this entry with her full Mythic kit details via the admin panel.",
     "imageHeadshot": "./headshot_images/wonder_woman.png",
     "imageFull": "./full_images/WonderWoman_full.png",
     "ultimate": {
@@ -3805,7 +3968,8 @@
     "name": "Swamp Thing (Alec Holland)",
     "class": "Warrior",
     "rarity": "Mythic +",
-    "tier": "S",
+    "tier": "S+",
+    "previousTier": "S",
     "damageType": "Spiritual",
     "tagSynergies": [
       "justice_league_dark",
@@ -3880,8 +4044,9 @@
     "name": "Wonder Woman Death Metal (Diana Prince)",
     "class": "Warrior",
     "rarity": "Iconic",
-    "tier": "S+",
+    "tier": "S",
     "isP2W": true,
+    "previousTier": "S+",
     "damageType": "Physical",
     "tagSynergies": [
       "amazons",
@@ -4273,7 +4438,8 @@
     "name": "Lobo",
     "class": "Firepower",
     "rarity": "Mythic +",
-    "tier": "A",
+    "tier": "A+",
+    "previousTier": "A",
     "damageType": "Physical",
     "tagSynergies": [
       "suicide_squad",
@@ -4581,8 +4747,9 @@
     "name": "Mr. Freeze (Victor Fries)",
     "class": "Guardian",
     "rarity": "Mythic +",
-    "tier": "A+",
+    "tier": "S",
     "isNew": true,
+    "previousTier": "A+",
     "damageType": "Spiritual",
     "tagSynergies": [
       "weapon_master",
