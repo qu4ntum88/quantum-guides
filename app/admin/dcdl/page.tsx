@@ -31,6 +31,8 @@ const SYNERGIES = [
 ]
 const LEGACY_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const LEGACY_ROLES = ['Guardian | Warrior', 'Magical | Assassin | Firepower', 'Supporter | Intimidator']
+const STAR_OPTIONS = [1, 2, 3, 4, 5]
+const ACDCPRIORITY_OPTIONS = ['Major 1', 'Major 2', 'Major 3', 'HP Nodes', 'ATK Nodes', 'Healing', 'Energy', 'Crit Nodes', 'Do Not Invest']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
 type ItemOption = { id: string; name: string }
@@ -208,6 +210,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [isNew, setIsNew] = useState(false); const [isP2W, setIsP2W] = useState(false)
   const [clearPrevTier, setClearPrevTier] = useState(false); const [existingPreviousTier, setExistingPreviousTier] = useState('')
   const [ascendsTo, setAscendsTo] = useState(''); const [ascendedFrom, setAscendedFrom] = useState('')
+  const [starBreakpoint, setStarBreakpoint] = useState(''); const [acDcPriority, setAcDcPriority] = useState('')
 
   useEffect(() => {
     fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
@@ -222,6 +225,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setSkills([]); setUpgrades([]); setExistingImages({}); setSelectedId('')
     setIsNew(false); setIsP2W(false); setClearPrevTier(false); setExistingPreviousTier('')
     setAscendsTo(''); setAscendedFrom('')
+    setStarBreakpoint(''); setAcDcPriority('')
   }, [])
 
   async function loadHero(heroId: string) {
@@ -248,6 +252,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setIsNew(h.isNew ?? false); setIsP2W(h.isP2W ?? false)
     setExistingPreviousTier(h.previousTier ?? ''); setClearPrevTier(false)
     setAscendsTo(h.ascendsTo ?? ''); setAscendedFrom(h.ascendedFrom ?? '')
+    setStarBreakpoint(h.starBreakpoint ? String(h.starBreakpoint) : ''); setAcDcPriority(h.acDcPriority ?? '')
   }
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
@@ -280,6 +285,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     upgrades.forEach((u, i) => { fd.append(`upgrade_${i}_name`, u.name); fd.append(`upgrade_${i}_description`, u.description); if (u.image) fd.append(`upgrade_${i}_image`, u.image) })
     if (ascendsTo) fd.append('ascendsTo', ascendsTo)
     if (ascendedFrom) fd.append('ascendedFrom', ascendedFrom)
+    if (starBreakpoint) fd.append('starBreakpoint', starBreakpoint)
+    if (acDcPriority) fd.append('acDcPriority', acDcPriority)
 
     try {
       const res = await fetch('/api/admin/dcdl/champions', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
@@ -374,13 +381,13 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
             <Field label="Ascends To" hint="The higher-rarity version this champion can ascend into">
               <select style={inp} value={ascendsTo} onChange={(e) => setAscendsTo(e.target.value)}>
                 <option value="">None</option>
-                {heroes.filter((h) => h.id !== id).map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+                {heroes.filter((h) => h.id !== id).map((h) => <option key={h.id} value={h.id}>{h.name} ({h.id})</option>)}
               </select>
             </Field>
             <Field label="Ascended From" hint="The lower-rarity version this champion was ascended from">
               <select style={inp} value={ascendedFrom} onChange={(e) => setAscendedFrom(e.target.value)}>
                 <option value="">None</option>
-                {heroes.filter((h) => h.id !== id).map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+                {heroes.filter((h) => h.id !== id).map((h) => <option key={h.id} value={h.id}>{h.name} ({h.id})</option>)}
               </select>
             </Field>
           </div>
@@ -418,6 +425,24 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
             </Field>
             <Field label="Transmute Priorities" hint="One per line">
               <textarea style={{ ...inp, minHeight: '6rem', resize: 'vertical' }} value={transmute} onChange={(e) => setTransmute(e.target.value)} placeholder={'Energy Gain Bonus\nP DEF\nCrit DMG RES'} />
+            </Field>
+          </div>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Investment Guidance</div>
+          <div style={g2}>
+            <Field label="Star Breakpoint" hint="Recommended star level to stop at">
+              <select style={inp} value={starBreakpoint} onChange={(e) => setStarBreakpoint(e.target.value)}>
+                <option value="">None</option>
+                {STAR_OPTIONS.map((n) => <option key={n} value={n}>{n} {n === 1 ? 'Star' : 'Stars'}</option>)}
+              </select>
+            </Field>
+            <Field label="AC/DC Priority" hint="Where this champion falls in your AC/DC investment order">
+              <select style={inp} value={acDcPriority} onChange={(e) => setAcDcPriority(e.target.value)}>
+                <option value="">None</option>
+                {ACDCPRIORITY_OPTIONS.map((o) => <option key={o}>{o}</option>)}
+              </select>
             </Field>
           </div>
         </div>
@@ -1070,6 +1095,88 @@ function InfographicsForm() {
         </div>
         <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
           {loading ? 'Adding…' : 'Add Infographic'}
+        </button>
+      </form>
+    </div>
+  )
+}
+
+// ── Factions Form ─────────────────────────────────────────────────────────────
+type FactionItem = { id: string; name: string; image?: string; infographic?: string }
+
+function FactionsForm() {
+  const [factions, setFactions] = useState<FactionItem[]>([])
+  const [selectedId, setSelectedId] = useState('')
+  const [imgFile, setImgFile] = useState<File | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  function refresh() {
+    fetch('/api/admin/dcdl/factions').then((r) => r.json()).then(setFactions)
+  }
+  useEffect(() => { refresh() }, [])
+
+  const selected = factions.find((f) => f.id === selectedId)
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    if (!selectedId) { setStatus({ type: 'error', message: 'Select a faction first.' }); return }
+    setLoading(true); setStatus(null)
+    const fd = new FormData()
+    fd.append('id', selectedId)
+    if (imgFile) fd.append('image', imgFile)
+    try {
+      const res = await fetch('/api/admin/dcdl/factions', { method: 'POST', body: fd })
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({ type: 'success', message: 'Infographic saved!' })
+        setImgFile(null)
+        refresh()
+      } else {
+        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  return (
+    <div>
+      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+        Upload a star priority infographic for each faction. It will appear at the top of that faction&apos;s page.
+      </p>
+      <StatusBanner status={status} />
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <div style={sec}>
+          <div style={secTitle}>Select Faction</div>
+          <Field label="Faction" required>
+            <select style={inp} value={selectedId} onChange={(e) => { setSelectedId(e.target.value); setImgFile(null); setStatus(null) }}>
+              <option value="">Choose a faction...</option>
+              {factions.map((f) => <option key={f.id} value={f.id}>{f.name}</option>)}
+            </select>
+          </Field>
+          {selected && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+              {selected.image && <img src={selected.image} alt={selected.name} style={{ height: '2.5rem', objectFit: 'contain' }} />}
+              {selected.infographic ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <span style={{ fontSize: '0.75rem', color: '#888' }}>Current infographic:</span>
+                  <img src={selected.infographic} alt="infographic" style={{ maxHeight: '6rem', maxWidth: '100%', borderRadius: '0.375rem', border: '1px solid #444' }} />
+                </div>
+              ) : (
+                <span style={{ fontSize: '0.8rem', color: '#666' }}>No infographic set yet.</span>
+              )}
+            </div>
+          )}
+        </div>
+        <div style={sec}>
+          <div style={secTitle}>Upload Infographic</div>
+          <Field label="Infographic Image" hint="JPG, PNG, or WebP — replaces the existing one if present">
+            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }} onChange={(e) => setImgFile(e.target.files?.[0] ?? null)} />
+            {imgFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{imgFile.name}</span>}
+          </Field>
+        </div>
+        <button type="submit" className="btn" disabled={loading || !selectedId} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving...' : 'Save Infographic'}
         </button>
       </form>
     </div>
@@ -1759,7 +1866,7 @@ function GfHeroForm() {
 
 // ── Root page ──────────────────────────────────────────────────────────────────
 type Game = 'dcdl' | 'vh' | 'gf'
-type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams' | 'infographics'
+type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams' | 'infographics' | 'factions'
 type VhTab = 'hunters' | 'status-effects'
 type GfTab = 'heroes'
 
@@ -1781,6 +1888,7 @@ export default function AdminDCDLPage() {
     { id: 'guides', label: 'Guides' },
     { id: 'best-teams', label: 'Best Teams' },
     { id: 'infographics', label: 'Infographics' },
+    { id: 'factions', label: 'Factions' },
   ]
 
   const vhTabs: { id: VhTab; label: string }[] = [
@@ -1840,6 +1948,7 @@ export default function AdminDCDLPage() {
             {dcdlTab === 'guides' && <GuidesForm />}
             {dcdlTab === 'best-teams' && <BestTeamsForm />}
             {dcdlTab === 'infographics' && <InfographicsForm />}
+            {dcdlTab === 'factions' && <FactionsForm />}
           </>
         )}
 

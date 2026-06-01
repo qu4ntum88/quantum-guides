@@ -40,6 +40,7 @@ function fixSynergyImagePath(path: string | undefined): string | undefined {
   return path
     .replace(/^\.\/tag_images\//, "/dcdl/synergies/tag_images/")
     .replace(/^\.\/description_images\//, "/dcdl/synergies/description_images/")
+    .replace(/^\.\/faction_infographics\//, "/dcdl/synergies/faction_infographics/")
 }
 
 export type Hero = {
@@ -66,6 +67,8 @@ export type Hero = {
   previousTier?: string
   ascendsTo?: string
   ascendedFrom?: string
+  starBreakpoint?: number
+  acDcPriority?: string
 }
 
 export type HeroResolved = Omit<Hero, "tagSynergies" | "recommendedLegacyPieces"> & {
@@ -95,6 +98,7 @@ export type Synergy = {
   name: string
   image?: string
   descriptionImage?: string
+  infographic?: string
 }
 
 // Raw data with fixed image paths
@@ -118,6 +122,7 @@ const synergiesData: Synergy[] = (synergiesRaw as Synergy[]).map((s) => ({
   ...s,
   image: fixSynergyImagePath(s.image),
   descriptionImage: fixSynergyImagePath(s.descriptionImage),
+  infographic: fixSynergyImagePath(s.infographic),
 }))
 
 export function getHeros(): Hero[] {

@@ -77,6 +77,13 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           )}
           <PageTierBadges quantumTier={hero.tier} entityType="champion" entityId={id} />
           <PageEntryBadges isNew={hero.isNew} isP2W={hero.isP2W} previousTier={hero.previousTier} currentTier={hero.tier} />
+          {hero.starBreakpoint && (
+            <div style={{ display: 'flex', gap: '2px', fontSize: '1.6rem', lineHeight: 1 }}>
+              {Array.from({ length: 5 }, (_, i) => (
+                <span key={i} style={{ color: i < hero.starBreakpoint! ? '#f59e0b' : '#3a3a3a' }}>★</span>
+              ))}
+            </div>
+          )}
           {/* Factions */}
           {hero.tagSynergies.length > 0 && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center', justifyContent: 'center', marginTop: '0.5rem' }}>
@@ -142,6 +149,26 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
               : <Null />}.
           </p>
           {hero.quantumsTake && <p style={{ margin: 0 }}>{hero.quantumsTake}</p>}
+          {(hero.starBreakpoint || hero.acDcPriority) && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+              {hero.starBreakpoint && (
+                <div>
+                  <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Star Breakpoint</span>
+                  <div style={{ display: 'flex', gap: '2px', marginTop: '0.2rem' }}>
+                    {Array.from({ length: 5 }, (_, i) => (
+                      <span key={i} style={{ fontSize: '1.25rem', color: i < hero.starBreakpoint! ? '#f59e0b' : '#3a3a3a', lineHeight: 1 }}>★</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {hero.acDcPriority && (
+                <div>
+                  <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>AC/DC Priority</span>
+                  <div style={{ marginTop: '0.2rem', color: 'var(--gold)', fontWeight: 700, fontSize: '0.95rem' }}>{hero.acDcPriority}</div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Recommended Legacy Pieces */}
