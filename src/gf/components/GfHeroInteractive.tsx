@@ -2,6 +2,24 @@
 
 import { useState } from 'react'
 import type { GfHero, GfHeroEffect, GfHeroSkill, GfHeroAscensionBonus, GfHeroAwakeningBonus } from './GfHeroBox'
+import { lookupEffect } from '../lib/statusEffects'
+import { StatusEffectToken } from './StatusEffectToken'
+
+function RichSkillText({ text }: { text: string }) {
+  const parts = text.split(/(\[[^\]]+\])/g)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const m = part.match(/^\[([^\]]+)\]$/)
+        if (m) {
+          const effect = lookupEffect(m[1])
+          if (effect) return <StatusEffectToken key={i} effect={effect} />
+        }
+        return <span key={i}>{part}</span>
+      })}
+    </>
+  )
+}
 
 // ── Scaling ────────────────────────────────────────────────────────────────
 
@@ -91,7 +109,7 @@ function AwakeningBonus({ aw, awakeningLevel }: { aw: { level: number; upgrade_d
         style={{ width: '1.25rem', height: '1.25rem', objectFit: 'contain', flexShrink: 0, marginTop: '0.1rem' }}
       />
       <span style={{ color: unlocked ? '#a78bfa' : '#555', fontSize: '0.75rem', lineHeight: 1.5 }}>
-        {aw.upgrade_description}
+        <RichSkillText text={aw.upgrade_description} />
       </span>
     </div>
   )
@@ -126,7 +144,7 @@ function SkillCard({ skill, awakeningLevel }: { skill: GfHeroSkill; awakeningLev
       </div>
 
       <div style={{ padding: '0.85rem 1rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-        <p style={{ color: '#ccc', fontSize: '0.83rem', lineHeight: 1.65, margin: 0 }}>{skill.description}</p>
+        <p style={{ color: '#ccc', fontSize: '0.83rem', lineHeight: 1.65, margin: 0 }}><RichSkillText text={skill.description} /></p>
         {uniqueEffects.length > 0 && (
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
             {uniqueEffects.map((eff, i) => <EffectBadge key={i} effect={eff} />)}
@@ -168,7 +186,7 @@ function UltimateCard({ skill, awakeningLevel }: { skill: GfHeroSkill; awakening
           {skill.damage_formula && skill.damage_formula.length > 0 && (
             <div style={{ color: '#f87171', fontSize: '0.72rem', marginBottom: '0.65rem', fontFamily: 'monospace', fontWeight: 600 }}>{skill.damage_formula.join(' / ')}</div>
           )}
-          <p style={{ color: '#ccc', fontSize: '0.87rem', lineHeight: 1.7, margin: '0 0 0.75rem' }}>{skill.description}</p>
+          <p style={{ color: '#ccc', fontSize: '0.87rem', lineHeight: 1.7, margin: '0 0 0.75rem' }}><RichSkillText text={skill.description} /></p>
           {uniqueEffects.length > 0 && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
               {uniqueEffects.map((eff, i) => <EffectBadge key={i} effect={eff} />)}
@@ -262,7 +280,7 @@ function AwakeningSection({ bonuses, awakeningLevel }: { bonuses: GfHeroAwakenin
                 ? <span style={{ color: '#3a3a3a', fontSize: '0.78rem' }}>—</span>
                 : bs.map((b, i) => (
                   <div key={i} style={{ color: unlocked ? '#c4b5fd' : '#555', fontSize: '0.82rem', lineHeight: 1.6, marginTop: i > 0 ? '0.3rem' : 0 }}>
-                    {b.type === 'Ability' && b.description && <span>{b.description}</span>}
+                    {b.type === 'Ability' && b.description && <span><RichSkillText text={b.description} /></span>}
                     {b.type === 'Stat' && b.stat && (
                       <span>
                         <span style={{ color: unlocked ? '#777' : '#444' }}>{STAT_LABELS[b.stat] ?? b.stat}: </span>

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import GfHeroBox, { type GfHero } from './GfHeroBox'
+import { STATUS_EFFECTS, extractEffectIds, EFFECT_COLOR } from '../lib/statusEffects'
 
 const RARITIES   = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
 const AFFINITIES = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
@@ -10,6 +11,10 @@ const ARCHETYPES = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer']
 const FACTIONS = ['Aaru', 'Asgard', 'Avalon', 'Ekur', 'Izumo', 'Olympus', 'Omeyocan', 'Tian', 'Vyraj']
 
 const RARITY_ORDER: Record<string, number> = { Legendary: 0, Epic: 1, Rare: 2, Uncommon: 3, Common: 4 }
+
+const BUFFS   = STATUS_EFFECTS.filter(e => e.category === 'buff')
+const DEBUFFS = STATUS_EFFECTS.filter(e => e.category === 'debuff')
+const DISABLES = STATUS_EFFECTS.filter(e => e.category === 'disable')
 
 type SortKey = 'name' | 'rarity' | 'affinity' | 'allegiance' | 'archetype' | 'faction'
 
@@ -29,6 +34,23 @@ const btnActive: React.CSSProperties = {
   background: 'var(--purple, #6d28d9)',
   border: '1px solid var(--purple, #6d28d9)',
   color: '#fff',
+}
+
+const selectStyle: React.CSSProperties = {
+  background: '#1a1a1a',
+  border: '1px solid #333',
+  borderRadius: '0.375rem',
+  color: '#aaa',
+  fontSize: '0.75rem',
+  padding: '0.25rem 0.5rem',
+  cursor: 'pointer',
+  minWidth: '9rem',
+  appearance: 'none' as const,
+  WebkitAppearance: 'none' as const,
+  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E")`,
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'right 0.5rem center',
+  paddingRight: '1.5rem',
 }
 
 function FilterRow({
@@ -66,6 +88,64 @@ function FilterRow({
   )
 }
 
+function EffectSelect({
+  label, effects, value, onChange, color,
+}: {
+  label: string
+  effects: typeof STATUS_EFFECTS
+  value: string
+  onChange: (v: string) => void
+  color: string
+}) {
+  const active = value !== ''
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+      <span style={{ fontSize: '0.7rem', color: '#666', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', minWidth: '5.5rem' }}>
+        {label}
+      </span>
+      <div style={{ position: 'relative' }}>
+        <select
+          value={value}
+          onChange={e => onChange(e.target.value)}
+          style={{
+            ...selectStyle,
+            borderColor: active ? `${color}88` : '#333',
+            color: active ? color : '#aaa',
+          }}
+        >
+          <option value="">All</option>
+          {effects.map(e => (
+            <option key={e.id} value={e.id}>{e.name}</option>
+          ))}
+        </select>
+      </div>
+      {active && (
+        <button
+          type="button"
+          onClick={() => onChange('')}
+          style={{ ...btnBase, color: '#f87171', borderColor: '#7f1d1d', padding: '0.2rem 0.45rem', fontSize: '0.65rem' }}
+        >
+          ✕
+        </button>
+      )}
+    </div>
+  )
+}
+
+function heroSkillText(hero: GfHero): string {
+  const parts: string[] = []
+  for (const skill of (hero.skills ?? [])) {
+    if (skill.description) parts.push(skill.description)
+    for (const aw of (skill.awakening_bonuses ?? [])) {
+      if (aw.upgrade_description) parts.push(aw.upgrade_description)
+    }
+  }
+  for (const aw of (hero.awakening_bonuses ?? [])) {
+    if (aw.description) parts.push(aw.description)
+  }
+  return parts.join(' ')
+}
+
 export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<SortKey>('name')
@@ -74,10 +154,22 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
   const [filterAllegiance, setFilterAllegiance] = useState<string[]>([])
   const [filterArchetype, setFilterArchetype] = useState<string[]>([])
   const [filterFaction, setFilterFaction] = useState<string[]>([])
+  const [filterBuff, setFilterBuff] = useState('')
+  const [filterDebuff, setFilterDebuff] = useState('')
+  const [filterDisable, setFilterDisable] = useState('')
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
     set(list.includes(val) ? list.filter((x) => x !== val) : [...list, val])
   }
+
+  // Pre-compute effect ID sets per hero (stable as long as heroes array is stable)
+  const heroEffectSets = useMemo(() => {
+    const map = new Map<number, Set<string>>()
+    for (const hero of heroes) {
+      map.set(hero.id, extractEffectIds(heroSkillText(hero)))
+    }
+    return map
+  }, [heroes])
 
   const filtered = useMemo(() => {
     let result = heroes
@@ -96,6 +188,12 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
       result = result.filter((h) => h.archetype && filterArchetype.includes(h.archetype))
     if (filterFaction.length > 0)
       result = result.filter((h) => h.faction && filterFaction.includes(h.faction))
+    if (filterBuff)
+      result = result.filter(h => heroEffectSets.get(h.id)?.has(filterBuff))
+    if (filterDebuff)
+      result = result.filter(h => heroEffectSets.get(h.id)?.has(filterDebuff))
+    if (filterDisable)
+      result = result.filter(h => heroEffectSets.get(h.id)?.has(filterDisable))
 
     return [...result].sort((a, b) => {
       if (sortKey === 'name') return a.name.localeCompare(b.name)
@@ -109,7 +207,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
       const cmp = av.localeCompare(bv)
       return cmp !== 0 ? cmp : a.name.localeCompare(b.name)
     })
-  }, [heroes, query, sortKey, filterRarity, filterAffinity, filterAllegiance, filterArchetype, filterFaction])
+  }, [heroes, query, sortKey, filterRarity, filterAffinity, filterAllegiance, filterArchetype, filterFaction, filterBuff, filterDebuff, filterDisable, heroEffectSets])
 
   const sortKeys: { key: SortKey; label: string }[] = [
     { key: 'name', label: 'Name' },
@@ -122,7 +220,8 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
 
   const hasFilters =
     filterRarity.length > 0 || filterAffinity.length > 0 || filterAllegiance.length > 0 ||
-    filterArchetype.length > 0 || filterFaction.length > 0 || query
+    filterArchetype.length > 0 || filterFaction.length > 0 || query ||
+    filterBuff || filterDebuff || filterDisable
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
@@ -153,7 +252,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
         ))}
       </div>
 
-      {/* Filters */}
+      {/* Attribute filters */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
         <FilterRow label="Rarity" options={RARITIES} active={filterRarity} onToggle={(v) => toggle(filterRarity, setFilterRarity, v)} onClear={() => setFilterRarity([])} />
         <FilterRow label="Affinity" options={AFFINITIES} active={filterAffinity} onToggle={(v) => toggle(filterAffinity, setFilterAffinity, v)} onClear={() => setFilterAffinity([])} />
@@ -162,13 +261,25 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
         <FilterRow label="Faction" options={FACTIONS} active={filterFaction} onToggle={(v) => toggle(filterFaction, setFilterFaction, v)} onClear={() => setFilterFaction([])} />
       </div>
 
+      {/* Status effect filters */}
+      <div style={{ borderTop: '1px solid #1e1e1e', paddingTop: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <span style={{ fontSize: '0.7rem', color: '#555', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Filter by Status Effect</span>
+        <EffectSelect label="Buff" effects={BUFFS} value={filterBuff} onChange={setFilterBuff} color={EFFECT_COLOR.buff} />
+        <EffectSelect label="Debuff" effects={DEBUFFS} value={filterDebuff} onChange={setFilterDebuff} color={EFFECT_COLOR.debuff} />
+        <EffectSelect label="Disable" effects={DISABLES} value={filterDisable} onChange={setFilterDisable} color={EFFECT_COLOR.disable} />
+      </div>
+
       {/* Results count + reset */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ fontSize: '0.8rem', color: '#666' }}>{filtered.length} heroes</span>
         {hasFilters && (
           <button
             type="button"
-            onClick={() => { setQuery(''); setFilterRarity([]); setFilterAffinity([]); setFilterAllegiance([]); setFilterArchetype([]); setFilterFaction([]) }}
+            onClick={() => {
+              setQuery(''); setFilterRarity([]); setFilterAffinity([]); setFilterAllegiance([]);
+              setFilterArchetype([]); setFilterFaction([]);
+              setFilterBuff(''); setFilterDebuff(''); setFilterDisable('')
+            }}
             style={{ ...btnBase, color: '#f87171', borderColor: '#7f1d1d' }}
           >
             Reset filters
