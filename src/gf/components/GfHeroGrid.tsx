@@ -6,8 +6,8 @@ import GfHeroBox, { type GfHero } from './GfHeroBox'
 const RARITIES   = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
 const AFFINITIES = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
 const ALLEGIANCES = ['Chaos', 'Order']
-const ARCHETYPES = ['Brawler', 'Defender', 'Disrupter', 'Invoker', 'Slayer']
-const FACTIONS = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 'OMEYOCAN', 'TIAN', 'VYRAJ']
+const ARCHETYPES = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer']
+const FACTIONS = ['Aaru', 'Asgard', 'Avalon', 'Ekur', 'Izumo', 'Olympus', 'Omeyocan', 'Tian', 'Vyraj']
 
 const RARITY_ORDER: Record<string, number> = { Legendary: 0, Epic: 1, Rare: 2, Uncommon: 3, Common: 4 }
 

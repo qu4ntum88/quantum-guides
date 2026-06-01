@@ -6,7 +6,8 @@ import '../game.css'
 
 function getHeroes(): GfHero[] {
   try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/gf/data/heroes.json'), 'utf8'))
+    const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/gf/data/heroes-api.json'), 'utf8'))
+    return (data.heroes as GfHero[]).filter((h: GfHero & { _error?: boolean }) => !h._error)
   } catch { return [] }
 }
 
