@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import GfHeroBox, { type GfHero } from './GfHeroBox'
-import { STATUS_EFFECTS, extractEffectIds, EFFECT_COLOR } from '../lib/statusEffects'
+import { STATUS_EFFECTS, extractEffectIds, EFFECT_COLOR, INSTANT_EFFECTS } from '../lib/statusEffects'
 
 const RARITIES   = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
 const AFFINITIES = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
@@ -132,6 +132,16 @@ function EffectSelect({
   )
 }
 
+function heroInstantEffectSet(hero: GfHero): Set<string> {
+  const set = new Set<string>()
+  for (const skill of (hero.skills ?? [])) {
+    for (const eff of (skill.effects ?? [])) {
+      set.add(eff.effect_name)
+    }
+  }
+  return set
+}
+
 function heroSkillText(hero: GfHero): string {
   const parts: string[] = []
   for (const skill of (hero.skills ?? [])) {
@@ -157,16 +167,25 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
   const [filterBuff, setFilterBuff] = useState('')
   const [filterDebuff, setFilterDebuff] = useState('')
   const [filterDisable, setFilterDisable] = useState('')
+  const [filterInstant, setFilterInstant] = useState('')
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
     set(list.includes(val) ? list.filter((x) => x !== val) : [...list, val])
   }
 
-  // Pre-compute effect ID sets per hero (stable as long as heroes array is stable)
+  // Pre-compute effect ID sets and instant effect sets per hero
   const heroEffectSets = useMemo(() => {
     const map = new Map<number, Set<string>>()
     for (const hero of heroes) {
       map.set(hero.id, extractEffectIds(heroSkillText(hero)))
+    }
+    return map
+  }, [heroes])
+
+  const heroInstantSets = useMemo(() => {
+    const map = new Map<number, Set<string>>()
+    for (const hero of heroes) {
+      map.set(hero.id, heroInstantEffectSet(hero))
     }
     return map
   }, [heroes])
@@ -194,6 +213,8 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
       result = result.filter(h => heroEffectSets.get(h.id)?.has(filterDebuff))
     if (filterDisable)
       result = result.filter(h => heroEffectSets.get(h.id)?.has(filterDisable))
+    if (filterInstant)
+      result = result.filter(h => heroInstantSets.get(h.id)?.has(filterInstant))
 
     return [...result].sort((a, b) => {
       if (sortKey === 'name') return a.name.localeCompare(b.name)
@@ -207,7 +228,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
       const cmp = av.localeCompare(bv)
       return cmp !== 0 ? cmp : a.name.localeCompare(b.name)
     })
-  }, [heroes, query, sortKey, filterRarity, filterAffinity, filterAllegiance, filterArchetype, filterFaction, filterBuff, filterDebuff, filterDisable, heroEffectSets])
+  }, [heroes, query, sortKey, filterRarity, filterAffinity, filterAllegiance, filterArchetype, filterFaction, filterBuff, filterDebuff, filterDisable, filterInstant, heroEffectSets, heroInstantSets])
 
   const sortKeys: { key: SortKey; label: string }[] = [
     { key: 'name', label: 'Name' },
@@ -221,7 +242,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
   const hasFilters =
     filterRarity.length > 0 || filterAffinity.length > 0 || filterAllegiance.length > 0 ||
     filterArchetype.length > 0 || filterFaction.length > 0 || query ||
-    filterBuff || filterDebuff || filterDisable
+    filterBuff || filterDebuff || filterDisable || filterInstant
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
@@ -267,6 +288,27 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
         <EffectSelect label="Buff" effects={BUFFS} value={filterBuff} onChange={setFilterBuff} color={EFFECT_COLOR.buff} />
         <EffectSelect label="Debuff" effects={DEBUFFS} value={filterDebuff} onChange={setFilterDebuff} color={EFFECT_COLOR.debuff} />
         <EffectSelect label="Disable" effects={DISABLES} value={filterDisable} onChange={setFilterDisable} color={EFFECT_COLOR.disable} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+          <span style={{ fontSize: '0.7rem', color: '#666', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', minWidth: '5.5rem' }}>Instant</span>
+          <div style={{ position: 'relative' }}>
+            <select
+              value={filterInstant}
+              onChange={e => setFilterInstant(e.target.value)}
+              style={{ ...selectStyle, borderColor: filterInstant ? '#f59e0b88' : '#333', color: filterInstant ? '#f59e0b' : '#aaa' }}
+            >
+              <option value="">All</option>
+              {INSTANT_EFFECTS.map(name => (
+                <option key={name} value={name}>{name}</option>
+              ))}
+            </select>
+          </div>
+          {filterInstant && (
+            <button type="button" onClick={() => setFilterInstant('')}
+              style={{ ...btnBase, color: '#f87171', borderColor: '#7f1d1d', padding: '0.2rem 0.45rem', fontSize: '0.65rem' }}>
+              ✕
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Results count + reset */}
@@ -278,7 +320,7 @@ export default function GfHeroGrid({ heroes }: { heroes: GfHero[] }) {
             onClick={() => {
               setQuery(''); setFilterRarity([]); setFilterAffinity([]); setFilterAllegiance([]);
               setFilterArchetype([]); setFilterFaction([]);
-              setFilterBuff(''); setFilterDebuff(''); setFilterDisable('')
+              setFilterBuff(''); setFilterDebuff(''); setFilterDisable(''); setFilterInstant('')
             }}
             style={{ ...btnBase, color: '#f87171', borderColor: '#7f1d1d' }}
           >

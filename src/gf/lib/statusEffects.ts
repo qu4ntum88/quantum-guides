@@ -71,6 +71,31 @@ export function lookupEffect(rawName: string): StatusEffect | null {
   return byName.get(key) ?? null
 }
 
+export const INSTANT_EFFECTS: string[] = [
+  'Activate Effect',
+  'Barrier',
+  'Decrease Ability Cooldown',
+  'Decrease Buff Duration',
+  'Decrease Debuff Duration',
+  'Decrease Disable Duration',
+  'Decrease Divinity',
+  'Decrease Turn Meter',
+  'Heal',
+  'Increase Ability Cooldown',
+  'Increase Buff Duration',
+  'Increase Debuff Duration',
+  'Increase Disable Duration',
+  'Increase Turn Meter',
+  'Join Attack',
+  'Mirror',
+  'Remove Buff',
+  'Remove Debuff',
+  'Remove Disable',
+  'Revive',
+  'Steal Divinity',
+  'Steal Turn Meter',
+]
+
 export function extractEffectIds(text: string): Set<string> {
   const ids = new Set<string>()
   const matches = text.match(/\[([^\]]+)\]/g) ?? []
