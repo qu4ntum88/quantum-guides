@@ -19,7 +19,16 @@ const NAV_ITEMS = [
       { label: 'Factions', href: '/games/dc-dark-legion/factions' },
     ],
   },
-  { label: 'Godforge', href: '/games/godforge' },
+  {
+    label: 'Godforge',
+    href: '/games/godforge',
+    children: [
+      { label: 'Home', href: '/games/godforge' },
+      { label: 'Heroes', href: '/games/godforge/heroes' },
+      { label: 'Tier List', href: '/games/godforge/tier-list' },
+      { label: 'Status Effects', href: '/games/godforge/status-effects' },
+    ],
+  },
   { label: 'Void Hunters', href: '/games/void-hunters/guides' },
 ]
 

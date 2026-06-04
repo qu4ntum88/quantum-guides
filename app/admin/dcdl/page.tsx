@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 'Supporter', 'Warrior']
@@ -1672,7 +1673,7 @@ function BestTeamsForm() {
 const GF_RARITIES    = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
 const GF_AFFINITIES  = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
 const GF_ALLEGIANCES = ['Chaos', 'Order']
-const GF_ARCHETYPES  = ['Brawler', 'Defender', 'Disrupter', 'Invoker', 'Slayer']
+const GF_ARCHETYPES  = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer']
 const GF_FACTIONS    = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 'OMEYOCAN', 'TIAN', 'VYRAJ']
 
 type GfHeroData = { id: string; name: string; portrait: string | null; rarity: string | null; affinity: string | null; allegiance: string | null; archetype: string | null; faction: string | null }
@@ -1864,11 +1865,471 @@ function GfHeroForm() {
   )
 }
 
+// ── Tier Ranking form ──────────────────────────────────────────────────────────
+type TierRankItem = { id: string; name: string; img: string | null }
+
+function TierRankingForm() {
+  const [subTab, setSubTab] = useState<'champions' | 'legacy'>('champions')
+  const [champItems, setChampItems] = useState<TierRankItem[]>([])
+  const [legItems, setLegItems] = useState<TierRankItem[]>([])
+  const [champAssign, setChampAssign] = useState<Record<string, string>>({})
+  const [legAssign, setLegAssign] = useState<Record<string, string>>({})
+  const [champOriginal, setChampOriginal] = useState<Record<string, string>>({})
+  const [legOriginal, setLegOriginal] = useState<Record<string, string>>({})
+  const [draggingId, setDraggingId] = useState<string | null>(null)
+  const [dragOverTier, setDragOverTier] = useState<string | null>(null)
+  const [saving, setSaving] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  useEffect(() => {
+    fetch('/api/admin/dcdl/champions/tiers')
+      .then((r) => r.json())
+      .then((data: { id: string; name: string; tier: string; imageHeadshot: string | null }[]) => {
+        setChampItems(data.map((d) => ({ id: d.id, name: d.name, img: d.imageHeadshot })))
+        const a = Object.fromEntries(data.map((d) => [d.id, d.tier]))
+        setChampAssign(a); setChampOriginal(a)
+      })
+  }, [])
+
+  useEffect(() => {
+    fetch('/api/admin/dcdl/legacy/tiers')
+      .then((r) => r.json())
+      .then((data: { id: string; name: string; tier: string; image: string | null }[]) => {
+        setLegItems(data.map((d) => ({ id: d.id, name: d.name, img: d.image })))
+        const a = Object.fromEntries(data.map((d) => [d.id, d.tier]))
+        setLegAssign(a); setLegOriginal(a)
+      })
+  }, [])
+
+  const items = subTab === 'champions' ? champItems : legItems
+  const assign = subTab === 'champions' ? champAssign : legAssign
+  const original = subTab === 'champions' ? champOriginal : legOriginal
+  const setAssign = subTab === 'champions' ? setChampAssign : setLegAssign
+  const setOriginal = subTab === 'champions' ? setChampOriginal : setLegOriginal
+  const apiPath = subTab === 'champions' ? '/api/admin/dcdl/champions/tiers' : '/api/admin/dcdl/legacy/tiers'
+  const isDirty = items.some((item) => assign[item.id] !== original[item.id])
+
+  const grouped = TIERS.reduce((acc, t) => {
+    acc[t] = items.filter((item) => assign[item.id] === t)
+    return acc
+  }, {} as Record<string, TierRankItem[]>)
+  const unranked = items.filter((item) => !assign[item.id])
+
+  function handleDrop(targetTier: string) {
+    if (!draggingId) return
+    setAssign((prev) => ({ ...prev, [draggingId]: targetTier }))
+    setDragOverTier(null)
+    setDraggingId(null)
+  }
+
+  async function save() {
+    setSaving(true); setStatus(null)
+    const updates = items
+      .filter((item) => assign[item.id] !== original[item.id])
+      .map((item) => ({ id: item.id, tier: assign[item.id] ?? '' }))
+    try {
+      const res = await fetch(apiPath, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ updates }),
+      })
+      if (res.ok) {
+        setStatus({ type: 'success', message: `Saved ${updates.length} tier change${updates.length !== 1 ? 's' : ''}.` })
+        setOriginal({ ...assign })
+      } else {
+        setStatus({ type: 'error', message: 'Save failed.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setSaving(false)
+  }
+
+  function Chip({ item }: { item: TierRankItem }) {
+    const isDragging = draggingId === item.id
+    return (
+      <div
+        draggable
+        onDragStart={(e) => { e.dataTransfer.effectAllowed = 'move'; setDraggingId(item.id) }}
+        onDragEnd={() => { setDraggingId(null); setDragOverTier(null) }}
+        title={item.name}
+        style={{
+          width: 56, height: 70, background: '#1a1a1a',
+          border: isDragging ? '2px solid var(--gold)' : '1px solid #444',
+          borderRadius: 4, cursor: 'grab', opacity: isDragging ? 0.35 : 1,
+          overflow: 'hidden', flexShrink: 0, position: 'relative', userSelect: 'none',
+        }}
+      >
+        {item.img
+          ? <img src={item.img} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block', pointerEvents: 'none' }} />
+          : <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.65rem', color: '#555' }}>{item.name.slice(0, 3)}</div>
+        }
+        <div style={{
+          position: 'absolute', bottom: 0, left: 0, right: 0,
+          background: 'rgba(0,0,0,0.78)', padding: '2px 3px',
+          fontSize: '0.5rem', lineHeight: 1.25, color: '#ddd',
+          textAlign: 'center', overflow: 'hidden',
+          whiteSpace: 'nowrap', textOverflow: 'ellipsis',
+          pointerEvents: 'none',
+        }}>{item.name}</div>
+      </div>
+    )
+  }
+
+  function TierRow({ tier, rowItems }: { tier: string; rowItems: TierRankItem[] }) {
+    const isOver = dragOverTier === tier
+    const color = TIER_COLORS[tier]
+    return (
+      <div
+        style={{
+          display: 'flex', alignItems: 'flex-start', gap: '0.5rem',
+          minHeight: '5.25rem',
+          border: `1px solid ${isOver ? color : '#2a2a2a'}`,
+          borderRadius: '0.375rem',
+          background: isOver ? 'rgba(255,255,255,0.04)' : '#111',
+          padding: '0.5rem',
+          transition: 'border-color 0.1s, background 0.1s',
+        }}
+        onDragOver={(e) => { e.preventDefault(); setDragOverTier(tier) }}
+        onDragLeave={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) setDragOverTier(null) }}
+        onDrop={() => handleDrop(tier)}
+      >
+        <div style={{
+          width: 42, height: 42, minWidth: 42, borderRadius: '50%',
+          background: color, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          color: 'white', fontFamily: 'Unbounded, sans-serif',
+          fontSize: tier.length > 1 ? '0.62rem' : '0.85rem',
+          fontWeight: 700, flexShrink: 0, marginTop: 2,
+          textShadow: '-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000',
+        }}>{tier}</div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, flex: 1, alignContent: 'flex-start', minHeight: 42 }}>
+          {rowItems.map((item) => <Chip key={item.id} item={item} />)}
+          {rowItems.length === 0 && (
+            <div style={{ color: '#3a3a3a', fontSize: '0.78rem', alignSelf: 'center', paddingLeft: '0.25rem' }}>Drop here</div>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+        {(['champions', 'legacy'] as const).map((t) => (
+          <button key={t} type="button" onClick={() => { setSubTab(t); setStatus(null) }}
+            className="btn" style={{ background: subTab === t ? 'var(--gold)' : 'var(--purple)', color: subTab === t ? '#111' : '#fff' }}>
+            {t === 'champions' ? 'Champions' : 'Legacy Pieces'}
+          </button>
+        ))}
+      </div>
+
+      <StatusBanner status={status} />
+
+      <p style={{ color: '#888', fontSize: '0.82rem', marginBottom: '1.25rem' }}>
+        Drag portraits into tier rows. Unranked items sit in the bin at the bottom. Save when done — tier changes are tracked for the move arrow.
+      </p>
+
+      {items.length === 0 && (
+        <div style={{ color: '#555', fontSize: '0.85rem', padding: '2rem', textAlign: 'center' }}>Loading...</div>
+      )}
+
+      {items.length > 0 && (
+        <>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+            {TIERS.map((tier) => <TierRow key={tier} tier={tier} rowItems={grouped[tier] ?? []} />)}
+
+            {/* Unranked bin */}
+            <div
+              style={{
+                display: 'flex', alignItems: 'flex-start', gap: '0.5rem',
+                minHeight: '5.25rem',
+                border: dragOverTier === '' ? '1px solid #888' : '1px dashed #2a2a2a',
+                borderRadius: '0.375rem',
+                background: dragOverTier === '' ? 'rgba(255,255,255,0.03)' : '#0a0a0a',
+                padding: '0.5rem', marginTop: '0.5rem',
+                transition: 'border-color 0.1s, background 0.1s',
+              }}
+              onDragOver={(e) => { e.preventDefault(); setDragOverTier('') }}
+              onDragLeave={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) setDragOverTier(null) }}
+              onDrop={() => handleDrop('')}
+            >
+              <div style={{
+                width: 42, height: 42, minWidth: 42, borderRadius: '50%',
+                background: '#2a2a2a', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                color: '#555', fontFamily: 'Unbounded, sans-serif', fontSize: '0.85rem',
+                fontWeight: 700, flexShrink: 0, marginTop: 2,
+              }}>—</div>
+              <div style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: 4 }}>
+                <div style={{ fontSize: '0.72rem', color: '#444' }}>Unranked ({unranked.length})</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                  {unranked.map((item) => <Chip key={item.id} item={item} />)}
+                  {unranked.length === 0 && (
+                    <div style={{ color: '#3a3a3a', fontSize: '0.78rem', alignSelf: 'center' }}>All ranked!</div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+            <button className="btn" onClick={save} disabled={saving || !isDirty}
+              style={{ fontSize: '1rem', padding: '0.75rem 2rem', opacity: isDirty ? 1 : 0.5 }}>
+              {saving ? 'Saving...' : 'Save Changes'}
+            </button>
+            {isDirty && <span style={{ color: '#fbbf24', fontSize: '0.82rem' }}>Unsaved changes</span>}
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+// ── GF Tier Ranking form ───────────────────────────────────────────────────────
+const GF_TR_TIERS = ['S', 'A', 'B', 'C', 'D (Food)'] as const
+const GF_TR_COLS  = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer', 'Imprint'] as const
+const GF_TR_COLORS: Record<string, string> = {
+  S: '#FF415C', A: '#FDCE3B', B: '#CB4CDA', C: '#43B3ED', 'D (Food)': '#39D196',
+}
+type GfRarityTab = 'Legendary' | 'Epic' | 'Rare'
+type GfTierHero = {
+  id: string; name: string; rarity: string | null; archetype: string | null
+  portrait: string | null; fullArt: string
+}
+type GfAssign = { tier: string; col: string }
+
+function GfTierRankingForm() {
+  const [rarityTab, setRarityTab] = useState<GfRarityTab>('Legendary')
+  const [allHeroes, setAllHeroes] = useState<GfTierHero[]>([])
+  const [assigns, setAssigns] = useState<Record<string, GfAssign>>({})
+  const [original, setOriginal] = useState<Record<string, GfAssign>>({})
+  const [dragging, setDragging] = useState<{ id: string; arch: string | null } | null>(null)
+  const [dropTarget, setDropTarget] = useState<{ tier: string; col: string } | null>(null)
+  const [saving, setSaving] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  useEffect(() => {
+    fetch('/api/admin/gf/heroes/tiers')
+      .then((r) => r.json())
+      .then((data: (GfTierHero & { gfTier: string; gfTierColumn: string })[]) => {
+        setAllHeroes(data)
+        const a: Record<string, GfAssign> = {}
+        data.forEach((h) => { a[h.id] = { tier: h.gfTier, col: h.gfTierColumn } })
+        setAssigns(a); setOriginal({ ...a })
+      })
+  }, [])
+
+  const heroes = allHeroes.filter((h) => h.rarity === rarityTab)
+  const isDirty = heroes.some((h) => {
+    const a = assigns[h.id]; const o = original[h.id]
+    return a?.tier !== o?.tier || a?.col !== o?.col
+  })
+
+  function validDrop(col: string) {
+    return !!dragging && (col === 'Imprint' || col === dragging.arch)
+  }
+
+  function handleDrop(tier: string, col: string) {
+    if (!dragging || !validDrop(col)) return
+    setAssigns((prev) => ({ ...prev, [dragging.id]: { tier, col } }))
+    setDropTarget(null); setDragging(null)
+  }
+
+  function handleUnrank() {
+    if (!dragging) return
+    setAssigns((prev) => ({ ...prev, [dragging.id]: { tier: '', col: '' } }))
+    setDropTarget(null); setDragging(null)
+  }
+
+  async function save() {
+    setSaving(true); setStatus(null)
+    const updates = heroes
+      .filter((h) => { const a = assigns[h.id]; const o = original[h.id]; return a?.tier !== o?.tier || a?.col !== o?.col })
+      .map((h) => ({ id: h.id, gfTier: assigns[h.id]?.tier ?? '', gfTierColumn: assigns[h.id]?.col ?? '' }))
+    try {
+      const res = await fetch('/api/admin/gf/heroes/tiers', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ updates }),
+      })
+      if (res.ok) {
+        setStatus({ type: 'success', message: `Saved ${updates.length} change${updates.length !== 1 ? 's' : ''}.` })
+        const next = { ...original }
+        heroes.forEach((h) => { next[h.id] = assigns[h.id] })
+        setOriginal(next)
+      } else {
+        setStatus({ type: 'error', message: 'Save failed.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setSaving(false)
+  }
+
+  const grouped: Record<string, Record<string, GfTierHero[]>> = {}
+  for (const t of GF_TR_TIERS) {
+    grouped[t] = {}
+    for (const c of GF_TR_COLS) {
+      grouped[t][c] = heroes.filter((h) => assigns[h.id]?.tier === t && assigns[h.id]?.col === c)
+    }
+  }
+  const unranked = heroes.filter((h) => !assigns[h.id]?.tier)
+  const unrankedGroups: [string, GfTierHero[]][] = (
+    [
+      ...(['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer'] as const).map((arch): [string, GfTierHero[]] => [arch, unranked.filter((h) => h.archetype === arch)]),
+      ['(no archetype)' as string, unranked.filter((h) => !h.archetype)] as [string, GfTierHero[]],
+    ] satisfies [string, GfTierHero[]][]
+  ).filter(([, items]) => items.length > 0)
+
+  function gfChip(item: GfTierHero, circular = false) {
+    const draggingThis = dragging?.id === item.id
+    const imgSrc = item.portrait ?? item.fullArt
+    return (
+      <div
+        key={item.id}
+        draggable
+        onDragStart={(e) => { e.dataTransfer.effectAllowed = 'move'; setDragging({ id: item.id, arch: item.archetype }) }}
+        onDragEnd={() => { setDragging(null); setDropTarget(null) }}
+        title={item.name}
+        style={{
+          width: 52, height: circular ? 52 : 65, flexShrink: 0,
+          borderRadius: circular ? '50%' : 4, overflow: 'hidden', cursor: 'grab',
+          border: draggingThis ? '2px solid var(--gold)' : (circular ? '2px solid #555' : '1px solid #333'),
+          opacity: draggingThis ? 0.35 : 1,
+          background: '#1a1a1a', position: 'relative', userSelect: 'none',
+        }}
+      >
+        {imgSrc
+          ? <img src={imgSrc} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block', pointerEvents: 'none' }} />
+          : <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.6rem', color: '#555' }}>{item.name.slice(0, 3)}</div>
+        }
+        {!circular && (
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.8)', padding: '2px', fontSize: '0.48rem', color: '#ddd', textAlign: 'center', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', pointerEvents: 'none' }}>{item.name}</div>
+        )}
+      </div>
+    )
+  }
+
+  const LABEL_W = 44
+  const COL_MIN = 118
+
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem' }}>
+        {(['Legendary', 'Epic', 'Rare'] as GfRarityTab[]).map((r) => (
+          <button key={r} type="button" className="btn" onClick={() => { setRarityTab(r); setStatus(null) }}
+            style={{ background: rarityTab === r ? 'var(--gold)' : 'var(--purple)', color: rarityTab === r ? '#111' : '#fff' }}>
+            {r}
+          </button>
+        ))}
+      </div>
+
+      <StatusBanner status={status} />
+      <p style={{ color: '#888', fontSize: '0.82rem', marginBottom: '1.25rem' }}>
+        Drag heroes into their archetype column or Imprint (circular = Imprint). Invalid columns dim while dragging. Drop back in Unranked to clear.
+      </p>
+
+      {allHeroes.length === 0 && <div style={{ color: '#555', fontSize: '0.85rem', padding: '2rem 0' }}>Loading...</div>}
+
+      {allHeroes.length > 0 && (
+        <>
+          <div style={{ overflowX: 'auto' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3, minWidth: LABEL_W + GF_TR_COLS.length * (COL_MIN + 3) + 16 }}>
+
+              {/* Column headers */}
+              <div style={{ display: 'flex', gap: 3 }}>
+                <div style={{ width: LABEL_W, flexShrink: 0 }} />
+                {GF_TR_COLS.map((col) => (
+                  <div key={col} style={{
+                    flex: 1, minWidth: COL_MIN, height: 38,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.3rem',
+                    background: '#1a1a1a', borderRadius: 4,
+                    fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.04em',
+                    color: dragging && !validDrop(col) ? '#2a2a2a' : '#bbb',
+                    fontFamily: 'Unbounded, sans-serif', transition: 'color 0.1s',
+                  }}>
+                    {col !== 'Imprint' && (
+                      <img src={`/godforge/gf_heroes/archetypes/Archetype_${col}.png`} alt={col}
+                        style={{ width: 16, height: 16, objectFit: 'contain', opacity: dragging && !validDrop(col) ? 0.15 : 0.75 }} />
+                    )}
+                    {col}
+                  </div>
+                ))}
+              </div>
+
+              {/* Tier rows */}
+              {GF_TR_TIERS.map((tier) => (
+                <div key={tier} style={{ display: 'flex', gap: 3 }}>
+                  <div style={{
+                    width: LABEL_W, flexShrink: 0, borderRadius: 4, minHeight: 76,
+                    display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                    background: GF_TR_COLORS[tier], color: 'white',
+                    fontFamily: 'Unbounded, sans-serif', fontWeight: 700,
+                    textShadow: '-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000',
+                    gap: 2,
+                  }}>
+                    <span style={{ fontSize: '0.82rem' }}>{tier.split(' ')[0]}</span>
+                    {tier.includes('(') && <span style={{ fontSize: '0.5rem', opacity: 0.85, letterSpacing: '0.02em' }}>{tier.slice(tier.indexOf('('))}</span>}
+                  </div>
+                  {GF_TR_COLS.map((col) => {
+                    const cellItems = grouped[tier][col] ?? []
+                    const isOver = dropTarget?.tier === tier && dropTarget?.col === col
+                    const valid = validDrop(col)
+                    const dimmed = !!dragging && !valid
+                    return (
+                      <div key={col} style={{
+                        flex: 1, minWidth: COL_MIN, minHeight: 76, padding: 4, borderRadius: 4,
+                        background: isOver ? 'rgba(255,255,255,0.06)' : '#111',
+                        border: `1px solid ${isOver ? GF_TR_COLORS[tier] : '#2a2a2a'}`,
+                        display: 'flex', flexWrap: 'wrap', gap: 3, alignContent: 'flex-start',
+                        opacity: dimmed ? 0.2 : 1, transition: 'border-color 0.1s, opacity 0.12s',
+                      }}
+                        onDragOver={(e) => { if (!valid) return; e.preventDefault(); setDropTarget({ tier, col }) }}
+                        onDragLeave={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node) && dropTarget?.tier === tier && dropTarget?.col === col) setDropTarget(null) }}
+                        onDrop={() => handleDrop(tier, col)}
+                      >
+                        {cellItems.map((item) => gfChip(item, col === 'Imprint'))}
+                        {cellItems.length === 0 && <div style={{ fontSize: '0.62rem', color: '#222', width: '100%', textAlign: 'center', alignSelf: 'center' }}>—</div>}
+                      </div>
+                    )
+                  })}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Unranked bin */}
+          <div
+            style={{ marginTop: '1rem', background: '#0a0a0a', border: '1px dashed #222', borderRadius: 6, padding: '0.75rem' }}
+            onDragOver={(e) => { e.preventDefault(); setDropTarget({ tier: '__unranked__', col: '' }) }}
+            onDragLeave={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) setDropTarget(null) }}
+            onDrop={handleUnrank}
+          >
+            <div style={{ fontSize: '0.68rem', color: '#444', marginBottom: '0.5rem', fontFamily: 'Unbounded, sans-serif', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+              Unranked ({unranked.length})
+            </div>
+            {unrankedGroups.length === 0 && <div style={{ fontSize: '0.82rem', color: '#2a2a2a' }}>All ranked!</div>}
+            {unrankedGroups.map(([arch, items]) => (
+              <div key={arch} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.4rem' }}>
+                <div style={{ fontSize: '0.65rem', color: '#444', minWidth: 72, marginTop: 8, fontStyle: 'italic' }}>{arch}</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 3 }}>{items.map((item) => gfChip(item))}</div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+            <button className="btn" onClick={save} disabled={saving || !isDirty}
+              style={{ fontSize: '1rem', padding: '0.75rem 2rem', opacity: isDirty ? 1 : 0.5 }}>
+              {saving ? 'Saving...' : 'Save Changes'}
+            </button>
+            {isDirty && <span style={{ color: '#fbbf24', fontSize: '0.82rem' }}>Unsaved changes</span>}
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
 type Game = 'dcdl' | 'vh' | 'gf'
-type DcdlTab = 'champions' | 'legacy' | 'info' | 'guides' | 'best-teams' | 'infographics' | 'factions'
+type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'infographics' | 'factions'
 type VhTab = 'hunters' | 'status-effects'
-type GfTab = 'heroes'
+type GfTab = 'heroes' | 'tier-ranking'
 
 export default function AdminDCDLPage() {
   const [game, setGame] = useState<Game>('dcdl')
@@ -1884,6 +2345,7 @@ export default function AdminDCDLPage() {
   const dcdlTabs: { id: DcdlTab; label: string }[] = [
     { id: 'champions', label: 'Champions' },
     { id: 'legacy', label: 'Legacy Pieces' },
+    { id: 'tier-ranking', label: 'Tier Ranking' },
     { id: 'info', label: 'Game Info' },
     { id: 'guides', label: 'Guides' },
     { id: 'best-teams', label: 'Best Teams' },
@@ -1898,6 +2360,7 @@ export default function AdminDCDLPage() {
 
   const gfTabs: { id: GfTab; label: string }[] = [
     { id: 'heroes', label: 'Heroes' },
+    { id: 'tier-ranking', label: 'Tier Ranking' },
   ]
 
   const gameTabStyle = (g: Game): React.CSSProperties => ({
@@ -1919,7 +2382,7 @@ export default function AdminDCDLPage() {
 
   return (
     <main>
-      <div className="container" style={{ maxWidth: '820px', paddingTop: '2rem', paddingBottom: '4rem' }}>
+      <div className="container" style={{ maxWidth: game === 'gf' && gfTab === 'tier-ranking' ? '1160px' : '820px', paddingTop: '2rem', paddingBottom: '4rem' }}>
         <h1 style={{ marginBottom: '0.25rem' }}>Site Admin</h1>
         <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
           Local dev tool — writes directly to JSON/MDX files and saves images to <code>public/</code>.
@@ -1944,6 +2407,7 @@ export default function AdminDCDLPage() {
             </div>
             {dcdlTab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)} />}
             {dcdlTab === 'legacy' && <LegacyForm />}
+            {dcdlTab === 'tier-ranking' && <TierRankingForm />}
             {dcdlTab === 'info' && <GameInfoForm />}
             {dcdlTab === 'guides' && <GuidesForm />}
             {dcdlTab === 'best-teams' && <BestTeamsForm />}
@@ -1978,6 +2442,7 @@ export default function AdminDCDLPage() {
               ))}
             </div>
             {gfTab === 'heroes' && <GfHeroForm />}
+            {gfTab === 'tier-ranking' && <GfTierRankingForm />}
           </>
         )}
       </div>

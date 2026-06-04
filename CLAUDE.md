@@ -41,7 +41,7 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 // rarity: 'Legendary' | 'Epic' | 'Rare' | 'Uncommon' | 'Common' | null
 // affinity: 'Cunning' | 'Eternal' | 'Strength' | 'Wisdom' | null
 // allegiance: 'Chaos' | 'Order' | null
-// archetype: 'Brawler' | 'Defender' | 'Disrupter' | 'Invoker' | 'Slayer' | null
+// archetype: 'Brawler' | 'Defender' | 'Disruptor' | 'Invoker' | 'Slayer' | null
 // faction: 'AARU' | 'ASGARD' | 'AVALON' | 'EKUR' | 'IZUMO' | 'OLYMPUS' | 'OMEYOCAN' | 'TIAN' | 'VYRAJ' | null
 ```
 202 heroes after removing 4 alt-art duplicates (Bauk, Cleopatra, Fenrir, Geri alts). All non-id/name/fullArt fields filled via the admin panel. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280. Portraits live in `public/godforge/gf_heroes/portrait/` as PNGs with backgrounds removed via edge flood-fill (colour-tolerance 50 from detected bg). A few portraits still have imperfect cutouts and need reprocessing — to redo one: extract original JPG from git commit `2b2a154`, adjust tolerance, re-run the flood-fill script.
