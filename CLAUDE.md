@@ -12,6 +12,10 @@ npm run lint     # ESLint
 
 There are no tests. Deploy via `git push origin main` — Vercel auto-deploys from GitHub. Do NOT also run `npx vercel --prod`; that creates duplicate deployments and the CLI deploy frequently hangs.
 
+## Future work
+
+- **Godforge Campaign Star Planner** (`/games/godforge/campaign`) — tool is fully built but currently private (returns 404 via `notFound()`). Revisit in a future session to make it public. To re-enable, remove the `notFound()` call at the top of `app/games/godforge/campaign/page.tsx` and add a nav link back in `app/components/Navbar.js`.
+
 ## What this is
 
 Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godforge and Void Hunters. Features a champion/legacy database, community tier voting, MDX guides, and an admin panel for managing game data.

@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation'
 import fs from 'fs'
 import path from 'path'
 import GfCampaignTool from '@/src/gf/components/GfCampaignTool'
@@ -12,6 +13,8 @@ function getHeroes(): GfHero[] {
 }
 
 export default function GodforgeCampaignPage() {
+  notFound()
+
   const heroes = getHeroes()
 
   return (
