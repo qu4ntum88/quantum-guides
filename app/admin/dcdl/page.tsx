@@ -772,12 +772,18 @@ function GameInfoForm() {
 }
 
 // ── Guides Form ───────────────────────────────────────────────────────────────
-type BlockType = 'subheading' | 'paragraph' | 'image' | 'clearfloat'
+type BlockType = 'subheading' | 'paragraph' | 'image' | 'callout' | 'clearfloat'
+type CalloutType = 'TIP' | 'NOTE' | 'WARNING' | 'IMPORTANT' | 'F2P'
 type Block =
   | { type: 'subheading'; text: string }
   | { type: 'paragraph'; text: string }
   | { type: 'image'; src: string; alt: string; alignment: 'left' | 'right' | 'full' }
+  | { type: 'callout'; calloutType: CalloutType; text: string }
   | { type: 'clearfloat' }
+
+const CALLOUT_COLORS: Record<CalloutType, string> = {
+  TIP: '#cca453', NOTE: '#60a5fa', WARNING: '#fb923c', IMPORTANT: '#f87171', F2P: '#22c55e',
+}
 
 function slugify(title: string) {
   return title.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '')
@@ -795,6 +801,11 @@ function GuidesForm() {
   const [blocks, setBlocks] = useState<Block[]>([])
   const [loading, setLoading] = useState(false)
   const [msg, setMsg] = useState('')
+  const [tags, setTags] = useState('')
+  const [eventType, setEventType] = useState('')
+  const [eventDates, setEventDates] = useState('')
+  const [recommendedFor, setRecommendedFor] = useState('')
+  const [keyRewards, setKeyRewards] = useState('')
 
   function autoFilename(t: string) {
     if (!filename || filename === slugify(title)) setFilename(slugify(t))
@@ -805,6 +816,7 @@ function GuidesForm() {
       type === 'subheading' ? { type: 'subheading', text: '' }
       : type === 'paragraph' ? { type: 'paragraph', text: '' }
       : type === 'image' ? { type: 'image', src: '', alt: '', alignment: 'full' }
+      : type === 'callout' ? { type: 'callout', calloutType: 'TIP', text: '' }
       : { type: 'clearfloat' }
     setBlocks((b) => [...b, newBlock])
   }
@@ -834,7 +846,15 @@ function GuidesForm() {
     const res = await fetch('/api/admin/dcdl/guides', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ filename, title, author, pubDate, description, intro, blocks, coverImage: coverImage || undefined }),
+      body: JSON.stringify({
+        filename, title, author, pubDate, description, intro, blocks,
+        coverImage: coverImage || undefined,
+        tags: tags.trim() || undefined,
+        eventType: eventType.trim() || undefined,
+        eventDates: eventDates.trim() || undefined,
+        recommendedFor: recommendedFor.trim() || undefined,
+        keyRewards: keyRewards.trim() || undefined,
+      }),
     })
     const data = await res.json()
     setLoading(false)
@@ -896,6 +916,25 @@ function GuidesForm() {
               {!filename && <span style={{ fontSize: '0.72rem', color: '#f87171' }}>Set a filename above before uploading.</span>}
             </div>
           </Field>
+          <Field label="Tags" hint="Comma-separated — first tag appears as the category label on the guide page (e.g. Events, Season Pass)">
+            <input style={inp} value={tags} onChange={(e) => setTags(e.target.value)} placeholder="Events, Teen Titans, Battle Pass" />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Event Details <span style={{ fontFamily: 'inherit', fontWeight: 400, fontSize: '0.8rem', color: '#666' }}>(optional — shows an &ldquo;at a glance&rdquo; summary card at the top of the guide)</span></div>
+          <Field label="Event Type">
+            <input style={inp} value={eventType} onChange={(e) => setEventType(e.target.value)} placeholder="Monthly Event" />
+          </Field>
+          <Field label="Event Dates">
+            <input style={inp} value={eventDates} onChange={(e) => setEventDates(e.target.value)} placeholder="May 24 – June 3, 2026" />
+          </Field>
+          <Field label="Recommended For">
+            <input style={inp} value={recommendedFor} onChange={(e) => setRecommendedFor(e.target.value)} placeholder="All players · F2P · Light spenders" />
+          </Field>
+          <Field label="Key Rewards" hint="Comma-separated list shown as tags in the summary card">
+            <input style={inp} value={keyRewards} onChange={(e) => setKeyRewards(e.target.value)} placeholder="Character Pack, Premium Currency, Gear" />
+          </Field>
         </div>
 
         <div style={sec}>
@@ -914,8 +953,16 @@ function GuidesForm() {
             {blocks.map((block, i) => (
               <div key={i} style={{ background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.75rem 1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#888', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700 }}>
-                    {block.type === 'clearfloat' ? 'Clear Float' : block.type}
+                  <span style={{
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    fontWeight: 700,
+                    color: block.type === 'callout' ? CALLOUT_COLORS[block.calloutType] : '#888',
+                  }}>
+                    {block.type === 'clearfloat' ? 'Clear Float'
+                      : block.type === 'callout' ? `Callout — ${block.calloutType}`
+                      : block.type}
                   </span>
                   <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.4rem' }}>
                     <button type="button" onClick={() => moveBlock(i, -1)} style={{ background: 'none', border: '1px solid #444', borderRadius: '4px', color: '#aaa', cursor: 'pointer', fontSize: '0.75rem', padding: '0.1rem 0.4rem' }}>↑</button>
@@ -961,6 +1008,27 @@ function GuidesForm() {
                     )}
                   </div>
                 )}
+                {block.type === 'callout' && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <select
+                      style={{ ...inp, color: CALLOUT_COLORS[block.calloutType], fontWeight: 700 }}
+                      value={block.calloutType}
+                      onChange={(e) => updateBlock(i, { calloutType: e.target.value as CalloutType })}
+                    >
+                      <option value="TIP">Tip — short strategy advice</option>
+                      <option value="NOTE">Note — context or clarification</option>
+                      <option value="WARNING">Warning — watch out for this</option>
+                      <option value="IMPORTANT">Important — critical info</option>
+                      <option value="F2P">F2P — free-to-play guidance</option>
+                    </select>
+                    <textarea
+                      style={{ ...inp, minHeight: '4.5rem', resize: 'vertical' }}
+                      value={block.text}
+                      onChange={(e) => updateBlock(i, { text: e.target.value })}
+                      placeholder="Callout text... (plain text, no markdown needed)"
+                    />
+                  </div>
+                )}
                 {block.type === 'clearfloat' && (
                   <div style={{ fontSize: '0.8rem', color: '#555' }}>Stops text from wrapping around a floated image.</div>
                 )}
@@ -969,7 +1037,7 @@ function GuidesForm() {
           </div>
 
           <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1rem' }}>
-            {(['subheading', 'paragraph', 'image', 'clearfloat'] as BlockType[]).map((type) => (
+            {(['subheading', 'paragraph', 'image', 'callout', 'clearfloat'] as BlockType[]).map((type) => (
               <button key={type} type="button" onClick={() => addBlock(type)}
                 style={{ background: '#1a1a2e', border: '1px solid #444', borderRadius: '0.375rem', color: '#ccc', cursor: 'pointer', padding: '0.4rem 0.9rem', fontSize: '0.8rem', textTransform: 'capitalize' }}>
                 + {type === 'clearfloat' ? 'Clear Float' : type}
