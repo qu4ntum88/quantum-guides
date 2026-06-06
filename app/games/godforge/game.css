@@ -87,6 +87,11 @@
   background: linear-gradient(90deg, var(--game-accent, var(--gold)), transparent);
 }
 
+.dungeon-card:hover {
+  border-color: rgba(168, 85, 247, 0.4) !important;
+  transform: translateY(-2px);
+}
+
 /* Back-link used on grid pages */
 .gh-hero-back {
   margin-top: 1.25rem;

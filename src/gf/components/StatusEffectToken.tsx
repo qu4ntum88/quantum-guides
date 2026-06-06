@@ -1,46 +1,56 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import type { StatusEffect } from '../lib/statusEffects'
 import { EFFECT_COLOR } from '../lib/statusEffects'
 
+const TOOLTIP_W = 220
+
 export function StatusEffectToken({ effect }: { effect: StatusEffect }) {
-  const [open, setOpen] = useState(false)
+  const [pos, setPos] = useState<{ x: number; y: number } | null>(null)
+  const ref = useRef<HTMLSpanElement>(null)
   const color = EFFECT_COLOR[effect.category]
+
+  const show = useCallback(() => {
+    if (!ref.current) return
+    const r = ref.current.getBoundingClientRect()
+    // Clamp x so the tooltip never bleeds off screen
+    const x = Math.max(
+      TOOLTIP_W / 2 + 8,
+      Math.min(window.innerWidth - TOOLTIP_W / 2 - 8, r.left + r.width / 2)
+    )
+    setPos({ x, y: r.top })
+  }, [])
 
   return (
     <span
+      ref={ref}
       style={{ position: 'relative', display: 'inline' }}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={show}
+      onMouseLeave={() => setPos(null)}
     >
-      <span style={{
-        color,
-        fontWeight: 600,
-        cursor: 'help',
-        borderBottom: `1px dotted ${color}`,
-      }}>
+      <span style={{ color, fontWeight: 600, cursor: 'help', borderBottom: `1px dotted ${color}` }}>
         [{effect.name}]
       </span>
-      {open && (
+      {pos && createPortal(
         <span style={{
-          position: 'absolute',
-          bottom: 'calc(100% + 4px)',
-          left: '50%',
-          transform: 'translateX(-50%)',
+          position: 'fixed',
+          left: pos.x,
+          top: pos.y - 8,
+          transform: 'translateX(-50%) translateY(-100%)',
           background: '#1a1a1a',
           border: `1px solid ${color}55`,
           borderRadius: '0.5rem',
           padding: '0.55rem 0.75rem',
-          minWidth: '11rem',
-          maxWidth: '15rem',
-          zIndex: 200,
+          width: `${TOOLTIP_W}px`,
+          zIndex: 9999,
           pointerEvents: 'none',
           display: 'inline-flex',
           flexDirection: 'column',
           gap: '0.35rem',
           whiteSpace: 'normal',
-          boxShadow: `0 4px 20px rgba(0,0,0,0.7)`,
+          boxShadow: '0 4px 20px rgba(0,0,0,0.7)',
         }}>
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
             {effect.image && (
@@ -51,7 +61,8 @@ export function StatusEffectToken({ effect }: { effect: StatusEffect }) {
           {effect.description && (
             <span style={{ color: '#aaa', fontSize: '0.7rem', lineHeight: 1.45 }}>{effect.description}</span>
           )}
-        </span>
+        </span>,
+        document.body
       )}
     </span>
   )

@@ -27,6 +27,7 @@ const NAV_ITEMS = [
       { label: 'Heroes', href: '/games/godforge/heroes' },
       { label: 'Tier List', href: '/games/godforge/tier-list' },
       { label: 'Status Effects', href: '/games/godforge/status-effects' },
+      { label: 'Dungeons', href: '/games/godforge/dungeons' },
     ],
   },
   { label: 'Void Hunters', href: '/games/void-hunters/guides' },

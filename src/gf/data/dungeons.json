@@ -1,0 +1,887 @@
+[
+  {
+    "id": 19,
+    "name": "Shrine of Hercules",
+    "slug": "shrine-of-hercules",
+    "type": "ascension_dungeon",
+    "affinity": "strength",
+    "stage_count": 12,
+    "youtube_id": "mhazCXAW-ps",
+    "image_url": "https://www.ravenpyros.com/application/files/4517/7473/2322/Dungeon_-_Shrine_of_Hercules_-_The_Dark_Tempest.jpg",
+    "boss": {
+      "id": 508,
+      "name": "The Dark Tempest",
+      "portrait_url": null,
+      "skills": [
+        {
+          "type": "Basic",
+          "name": "Unrelenting Darkness",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/7817/7998/7252/ICON_TheDarkTempest_Basic.webp",
+          "description": "Attack all enemies (125%DEF+110%ATK) and decrease Turn Meter of each target under [ACC Down] by 10%.",
+          "cooldown": null,
+          "divinity_cost": null
+        },
+        {
+          "type": "Core",
+          "name": "Blinded by Darkness",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/5417/7998/7253/ICON_TheDarkTempest_Core.webp",
+          "description": "Attack all enemies (125%DEF+110%ATK) and place [ACC Down III] on each target for 2 turns.",
+          "cooldown": 3,
+          "divinity_cost": null
+        },
+        {
+          "type": "Ultimate",
+          "name": "Eternal Darkness",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/7517/7998/7255/ICON_TheDarkTempest_Ultimate.webp",
+          "description": "Remove all [Debuff] and heal The Dark Tempest by 50% MAX HP. Also, place [DEF Up III] for 3 turns.",
+          "cooldown": null,
+          "divinity_cost": 3000
+        },
+        {
+          "type": "Passive",
+          "name": "Strength of Corruption",
+          "description": "Reduces incoming damage by 50%. Gains 150 Divinity when attacked without debuffs. Immune to disable effects."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Spirit",
+          "description": "Divinity Reduction Effects apply 1 stack of [Arcane Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Tempo",
+          "description": "Turn Meter Reduction Effects apply 1 stack of [Temporal Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Wrath",
+          "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Resilience",
+          "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+        }
+      ],
+      "minions": [
+        {
+          "name": "Dark Protector",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Dark Purge",
+              "description": "Attack 1 enemy (400%ATK) and remove all [Debuff] on The Dark Tempest."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, place [DEF Down III] on The Dark Tempest for 4 turns which cannot be resisted."
+            }
+          ]
+        },
+        {
+          "name": "Dark Temptress",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Dark Spiral",
+              "description": "Attack 1 enemy (200%ATK) and heal The Dark Tempest by 25% of his MAX HP."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, place [ATK Down III] on The Dark Tempest for 4 turns which cannot be resisted."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Guan Yin's Lotus Temple",
+    "slug": "guan-yins-lotus-temple",
+    "type": "ascension_dungeon",
+    "affinity": "cunning",
+    "stage_count": 12,
+    "youtube_id": "hf24jcUhG_Y",
+    "image_url": "https://www.ravenpyros.com/application/files/4917/7473/2320/Dungeon_-_Guan_Yin_s_Lotus_Temple_-_The_Plague_of_Luxor.jpg",
+    "boss": {
+      "id": null,
+      "name": "The Plague of Luxor",
+      "portrait_url": null,
+      "skills": [
+        {
+          "type": "Basic",
+          "name": "Shared Corruption",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/7517/7998/7258/ICON_ThePlagueOfLuxor_Basic.webp",
+          "description": "Place [Vulnerable III] on all enemies for 2 turns, then attack all enemies (300%ATK).",
+          "cooldown": null,
+          "divinity_cost": null
+        },
+        {
+          "type": "Core",
+          "name": "Plaguebourne",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/2417/7998/7259/ICON_ThePlagueOfLuxor_Core.webp",
+          "description": "Attack all enemies (300%ATK) and activate all [Debuff] on each target without reducing their duration.",
+          "cooldown": 3,
+          "divinity_cost": 1000
+        },
+        {
+          "type": "Ultimate",
+          "name": "Affliction of Aether",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/3117/7998/7263/ICON_ThePlagueOfLuxor_Ultimate.webp",
+          "description": "Attack all enemies (300%ATK) and apply affinity-based debuffs for 3 turns: Cunning → [Acid], Strength → [Bleed], Wisdom → [Blaze], Eternal → [Aetherburn III].",
+          "cooldown": null,
+          "divinity_cost": 3500
+        },
+        {
+          "type": "Passive",
+          "name": "Unstoppable Corruption",
+          "description": "Increases Divinity by 20 whenever an enemy takes debuff damage. Immune to Disable effects."
+        },
+        {
+          "type": "Passive",
+          "name": "Call the Plague",
+          "description": "Activates Affliction of Aether at the start of the wave. Increases Turn Meter by 5% for each debuff placed."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Spirit",
+          "description": "Divinity Reduction Effects apply 1 stack of [Arcane Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Tempo",
+          "description": "Turn Meter Reduction Effects apply 1 stack of [Temporal Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Wrath",
+          "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Resilience",
+          "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+        }
+      ],
+      "minions": [
+        {
+          "name": "Plague Siren",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Plague Call",
+              "description": "Attack 1 enemy (400%ATK) and increase the Turn Meter of The Plague of Luxor by 50%."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, removes all debuffs from The Plague of Luxor."
+            }
+          ]
+        },
+        {
+          "name": "Plague Bearer",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Poisoned Sweep",
+              "description": "Attack 1 enemy (400%ATK) and place [ACC Up III] on The Plague of Luxor for 2 turns."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, reduces The Plague of Luxor's Turn Meter to 0."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Forest Glade of Kitsune",
+    "slug": "forest-glade-of-kitsune",
+    "type": "ascension_dungeon",
+    "affinity": "wisdom",
+    "stage_count": 12,
+    "youtube_id": "ZZ1DYp33NdI",
+    "image_url": "https://www.ravenpyros.com/application/files/1217/7473/2320/Dungeon_-_Forest_Glade_of_Kitsune_-_The_Winged_Reaper.jpg",
+    "boss": {
+      "id": null,
+      "name": "The Winged Reaper",
+      "portrait_url": null,
+      "skills": [
+        {
+          "type": "Basic",
+          "name": "Umbral Weakening",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/1617/7998/7263/ICON_TheWingedReaper_Basic.webp",
+          "description": "Attack all enemies (250%ATK) and place [ATK Down III] on each target for 2 turns. This debuff cannot be removed if the target is under [DEF Down].",
+          "cooldown": null,
+          "divinity_cost": null
+        },
+        {
+          "type": "Core",
+          "name": "Wings of Corruption",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/9917/7998/7264/ICON_TheWingedReaper_Core.webp",
+          "description": "Attack all enemies (250%ATK) and place [DEF Down III] on each target for 2 turns.",
+          "cooldown": 3,
+          "divinity_cost": null
+        },
+        {
+          "type": "Ultimate",
+          "name": "Shadow Siphon",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/5417/7998/7266/ICON_TheWingedReaper_Ultimate.webp",
+          "description": "Attack all enemies (250%ATK) and decrease the Divinity of each target by 30%. Also increase the Divinity Cost of each target by 20%.",
+          "cooldown": null,
+          "divinity_cost": 4000
+        },
+        {
+          "type": "Passive",
+          "name": "Shadow Corruption",
+          "description": "Enemy Basic and Core abilities deal 25% reduced damage to this boss; Ultimates deal 25% increased damage. Immune to disable effects."
+        },
+        {
+          "type": "Passive",
+          "name": "Shadow Escalation",
+          "description": "Gains 5 Faith whenever enemies reduce her Divinity."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Tempo",
+          "description": "Turn Meter Reduction Effects apply 1 stack of [Temporal Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Wrath",
+          "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Resilience",
+          "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+        }
+      ],
+      "minions": [
+        {
+          "name": "Shadow Sorceress",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Shadow Strike",
+              "description": "Attack 1 enemy (400%ATK) and increase the Divinity of The Winged Reaper by 50%."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, reduces enemy Divinity costs by 20%."
+            }
+          ]
+        },
+        {
+          "name": "Shadow Vanguard",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Shadow Guard",
+              "description": "Attack 1 enemy (400%ATK) and place [FTH Up III] on The Winged Reaper for 3 turns."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, places irresistible [FTH Down III] on The Winged Reaper for 4 turns."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Annwn",
+    "slug": "annwn",
+    "type": "ascension_dungeon",
+    "affinity": "eternal",
+    "stage_count": 12,
+    "youtube_id": "iNKtItWi9AU",
+    "image_url": "https://www.ravenpyros.com/application/files/2317/7473/2319/Dungeon_-_Annwn_-_The_Desecrated_Daimyo.jpg",
+    "boss": {
+      "id": null,
+      "name": "The Desecrated Daimyo",
+      "portrait_url": null,
+      "skills": [
+        {
+          "type": "Basic",
+          "name": "Conqueror's Blade",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/4117/7998/7255/ICON_TheDesecratedDaimyo_Basic.webp",
+          "description": "Attack all enemies (250%ATK) and place [FTH Down III] on each target for 1 turn.",
+          "cooldown": null,
+          "divinity_cost": null
+        },
+        {
+          "type": "Core",
+          "name": "Daimyo's Decree",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/1417/7998/7256/ICON_TheDesecratedDaimyo_Core.webp",
+          "description": "Attack all enemies (250%ATK) and place [SPD Down III] on each target for 2 turns.",
+          "cooldown": 3,
+          "divinity_cost": null
+        },
+        {
+          "type": "Ultimate",
+          "name": "Eternal Corruption",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/4517/7998/7258/ICON_TheDesecratedDaimyo_Ultimate.webp",
+          "description": "Remove all [Debuff] on The Desecrated Daimyo, place [Barrier] equal to 30% of MAX HP, and reduce Divinity Cost by 500.",
+          "cooldown": null,
+          "divinity_cost": 4000
+        },
+        {
+          "type": "Passive",
+          "name": "Desecrated Divination",
+          "description": "Increases Divinity by 200 and heals for 10% MAX HP when attacked under [Barrier]. Immune to all Disables."
+        },
+        {
+          "type": "Passive",
+          "name": "Relentless Strike",
+          "description": "Activates Conqueror's Blade when attacked under [Barrier] (100% reduced activation chance if not under [SPD Up] or [FTH Up])."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Spirit",
+          "description": "Divinity Reduction Effects apply 1 stack of [Arcane Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Tempo",
+          "description": "Turn Meter Reduction Effects apply 1 stack of [Temporal Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Wrath",
+          "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Resilience",
+          "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+        }
+      ],
+      "minions": [
+        {
+          "name": "Desecrated Acolyte",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Desecrated Sweep",
+              "description": "Attack 1 enemy (400%ATK) and place [SPD Up III] on The Desecrated Daimyo for 2 turns."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, increases The Desecrated Daimyo's Divinity Cost by 1000."
+            }
+          ]
+        },
+        {
+          "name": "Desecrated Guard",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Aerial Strike",
+              "description": "Attack 1 enemy (400%ATK) and place [FTH Up III] on The Desecrated Daimyo for 2 turns."
+            },
+            {
+              "type": "Passive",
+              "name": "Fallen Guardian",
+              "description": "When defeated, reduces The Desecrated Daimyo's Divinity to 0."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Hag's Hollow",
+    "slug": "hags-hollow",
+    "type": "equipment_dungeon",
+    "affinity": null,
+    "stage_count": 15,
+    "youtube_id": "VVZPVrlfykQ",
+    "image_url": "https://www.ravenpyros.com/application/files/7317/7473/2322/Dungeon_-_Hags_Hollow_-_Gwrach_y_Rhibyn.jpg",
+    "boss": {
+      "id": null,
+      "name": "Gwrach Y Rhibyn",
+      "portrait_url": null,
+      "skills": [
+        {
+          "type": "Basic",
+          "name": "Hag's Reap",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/6017/7998/7217/ICON_GwrachYRhibyn_Basic.webp",
+          "description": "Attack 1 enemy (300%ATK). If an enemy does not [Intercept] the attack, will ignore 30% of the target's DEF and steal 30% of their Turn Meter.",
+          "cooldown": null,
+          "divinity_cost": null
+        },
+        {
+          "type": "Core",
+          "name": "Dread Mist",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/6717/7998/7217/ICON_GwrachYRhibyn_Core.webp",
+          "description": "Attack all enemies (250%ATK) and place [Despair] on each target for 1 turn. Place [Shield] on each Cursed Totem equal to 10% of their MAX HP.",
+          "cooldown": 4,
+          "divinity_cost": null
+        },
+        {
+          "type": "Ultimate",
+          "name": "Vengeance of the Exiled",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/5317/7998/7220/ICON_GwrachYRhibyn_Ultimate.webp",
+          "description": "Attack all enemies (250%ATK). Increase the damage inflicted by 20% for each living Cursed Totem.",
+          "cooldown": null,
+          "divinity_cost": 8000
+        },
+        {
+          "type": "Passive",
+          "name": "Immortal Powers",
+          "description": "Receives 90% reduced damage while at least 1 Cursed Totem is alive. Reflects disable effects to a random Cursed Totem. Without totems, removes Disables and reduces Divinity by 5%."
+        },
+        {
+          "type": "Passive",
+          "name": "Totemic Renewal",
+          "description": "At the start of her turn, revives all Cursed Totems. If no revivals occur, increases the next attack's damage by 25%."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Spirit",
+          "description": "Divinity Reduction Effects apply 1 stack of [Arcane Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Tempo",
+          "description": "Turn Meter Reduction Effects apply 1 stack of [Temporal Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Wrath",
+          "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Resilience",
+          "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+        }
+      ],
+      "minions": [
+        {
+          "name": "Cursed Totem",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Sanctuary of the Hollow",
+              "description": "Heal all allies for 3% of their MAX HP then place [SPD Up III] on this hero for 1 turn."
+            },
+            {
+              "type": "Passive",
+              "name": "Hag's Downfall",
+              "description": "When defeated, inflicts damage equal to 10% of the boss's MAX HP back to Gwrach Y Rhibyn."
+            },
+            {
+              "type": "Passive",
+              "name": "Frailty to Fire",
+              "description": "Takes 100% increased damage when under [Blaze]."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "Fafnir's Lair",
+    "slug": "fafnirs-lair",
+    "type": "equipment_dungeon",
+    "affinity": null,
+    "stage_count": 15,
+    "image_url": "https://www.ravenpyros.com/application/files/8017/7473/2319/Dungeon_-_Fafnir_s_Lair_-_Fafnir.jpg",
+    "boss": {
+      "id": null,
+      "name": "Fafnir",
+      "portrait_url": null,
+      "phases": [
+        {
+          "label": "Phase 1",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Burned to the Core",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/3717/7998/7206/ICON_Fafnir_Basic_Phase1.webp",
+              "description": "Attack all enemies (150%ATK) 2 times. Each hit activates [Blaze] on each target.",
+              "cooldown": null,
+              "divinity_cost": null
+            },
+            {
+              "type": "Core",
+              "name": "Dragonfire",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/9417/7998/7207/ICON_Fafnir_Core_Phase1.webp",
+              "description": "Attack all enemies (300%ATK) and place [Blaze III] on all enemies for 3 turns.",
+              "cooldown": 3,
+              "divinity_cost": null
+            },
+            {
+              "type": "Ultimate",
+              "name": "Flames of Fafnir",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/3317/7998/7209/ICON_Fafnir_Ultimate_Phase1.webp",
+              "description": "Attack all enemies (400%ATK). Continuously activate [Blaze] on enemies until [Blaze] has been consumed. Fafnir heals himself by 30% of his MAX HP and becomes Exhausted.",
+              "cooldown": null,
+              "divinity_cost": 1000
+            },
+            {
+              "type": "Passive",
+              "name": "Burning Breath",
+              "description": "Places [Vulnerable III] on a target (50% chance) before attacking. Deals 50% increased damage to enemies under [Blaze]."
+            },
+            {
+              "type": "Passive",
+              "name": "Enraged",
+              "description": "100% chance to place [Blaze III] when attacking. Chance reduced by 25% per unique enemy archetype in your team."
+            },
+            {
+              "type": "Passive",
+              "name": "Mythic Divinity",
+              "description": "After each Ultimate activation, damage inflicted increases by 10%."
+            },
+            {
+              "type": "Passive",
+              "name": "Mythic Resilience",
+              "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+            }
+          ]
+        },
+        {
+          "label": "Phase 2",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Eternal Being",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/2217/7998/7210/ICON_Fafnir_Basic_Phase2.webp",
+              "description": "Attack all enemies (200%ATK) and increase the duration of all [Debuff] on each target by 1 turn.",
+              "cooldown": null,
+              "divinity_cost": null
+            },
+            {
+              "type": "Core",
+              "name": "Burning Embers",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/6517/7998/7211/ICON_Fafnir_Core_Phase2.webp",
+              "description": "Attack all enemies (200%ATK) and transfer all [Debuff] from Fafnir onto each enemy.",
+              "cooldown": 3,
+              "divinity_cost": null
+            },
+            {
+              "type": "Ultimate",
+              "name": "Tyrant's Hunger",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/7617/7998/7214/ICON_Fafnir_Ultimate_Phase2.webp",
+              "description": "Attack all enemies (300%ATK). Inflicts 25% increased damage to targets under [Vulnerable].",
+              "cooldown": null,
+              "divinity_cost": 1000
+            },
+            {
+              "type": "Passive",
+              "name": "Weakened Scales",
+              "description": "50% chance to place [Acid] and [Vulnerable III] when attacking. Heals 5% MAX HP when attacking debuffed enemies."
+            },
+            {
+              "type": "Passive",
+              "name": "Snake Sorcery",
+              "description": "Gains 50 Divinity per debuff placed on enemies; 20 Divinity if resisted."
+            },
+            {
+              "type": "Passive",
+              "name": "Exhausted",
+              "description": "Takes 20% increased damage while under [Debuff] effects; an additional 5% per unique enemy archetype."
+            },
+            {
+              "type": "Passive",
+              "name": "Mythic Divinity",
+              "description": "After each Ultimate activation, damage inflicted increases by 10%."
+            },
+            {
+              "type": "Passive",
+              "name": "Mythic Resilience",
+              "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+            }
+          ]
+        }
+      ],
+      "minions": []
+    }
+  },
+  {
+    "id": 25,
+    "name": "Svarog's Hoard",
+    "slug": "svarogs-hoard",
+    "type": "equipment_dungeon",
+    "affinity": null,
+    "stage_count": 15,
+    "youtube_id": "5RnAYBVA7Ws",
+    "image_url": "https://www.ravenpyros.com/application/files/1317/7473/2322/Dungeon_-_Svarog_s_Hoard_-_Zmey.jpg",
+    "boss": {
+      "id": null,
+      "name": "Zmey",
+      "portrait_url": null,
+      "skills": [
+        {
+          "type": "Basic",
+          "name": "Mischievous Theft",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/2617/7834/6492/ICON_Zmey_Basic.webp",
+          "description": "Attack all enemies (150%ATK+750%FTH) and steal 1 [Buff] from each target.",
+          "cooldown": null,
+          "divinity_cost": null
+        },
+        {
+          "type": "Core",
+          "name": "Relentless Hunger",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/6217/7834/6491/ICON_Zmey_Core.webp",
+          "description": "Place 2 random [Buffs] on Zmey for 1 turn then gain an [Extra Turn]. If Zmey is under [FTH Down], will place 1 [Buff] instead.",
+          "cooldown": 3,
+          "divinity_cost": null
+        },
+        {
+          "type": "Ultimate",
+          "name": "Union of Greed",
+          "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/9617/7834/6494/ICON_Zmey_Ultimate.webp",
+          "description": "Double the stacks of [Gluttony], then attack all enemies (100%ATK+400%FTH) 3 times. Destroy 5% of the target's MAX HP and a further 5% for every 10 stacks of [Gluttony].",
+          "cooldown": null,
+          "divinity_cost": 500
+        },
+        {
+          "type": "Passive",
+          "name": "Gluttonous",
+          "description": "When Zmey gains a [Buff], gains 2 stacks of [Gluttony] (cannot be removed) and increases Divinity by 2.5%. At the start of Zmey's turn, removes all [Disables] on Zmey."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Spirit",
+          "description": "Divinity Reduction Effects apply 1 stack of [Arcane Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Tempo",
+          "description": "Turn Meter Reduction Effects apply 1 stack of [Temporal Aegis I]."
+        },
+        {
+          "type": "Passive",
+          "name": "Wrath",
+          "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+        },
+        {
+          "type": "Passive",
+          "name": "Mythic Resilience",
+          "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Core], [Lock Ultimate], [Lock Passive], and [Charm]."
+        }
+      ],
+      "minions": [
+        {
+          "name": "Zmey (Young)",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Mischievous Theft",
+              "description": "Attack all enemies (150%ATK) and steal 1 [Buff] from each target."
+            },
+            {
+              "type": "Core",
+              "name": "Relentless Hunger",
+              "description": "Place 1 random [Buff] on Zmey for 2 turns then gain an [Extra Turn]. If Zmey is under [FTH Down], will place 1 [Buff] instead.",
+              "cooldown": 3
+            },
+            {
+              "type": "Ultimate",
+              "name": "Union of Greed",
+              "description": "Double the stacks of [Gluttony], then attack all enemies (50%ATK) 3 times. Destroy 5% of the target's MAX HP and a further 5% for every 10 stacks of [Gluttony].",
+              "divinity_cost": 6500
+            },
+            {
+              "type": "Passive",
+              "name": "Gluttonous",
+              "description": "When Zmey gains a [Buff], gains 1 stack of [Gluttony] which cannot be removed by abilities."
+            },
+            {
+              "type": "Passive",
+              "name": "Multi-Headed Weakness",
+              "description": "Reduces [Gluttony] stacks by: 10 when Zmey loses 33% HP; 6 when a [Buff] is stolen from Zmey; 3 when Zmey receives a [Debuff] or [Disable]."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Workshop of Ptah",
+    "slug": "workshop-of-ptah",
+    "type": "equipment_dungeon",
+    "affinity": null,
+    "stage_count": 15,
+    "youtube_id": "C3euRKXxwhY",
+    "image_url": "https://www.ravenpyros.com/application/files/4117/7473/2322/Dungeon_-_Workshop_of_Ptah_-_The_High_Priest_of_Ptah.jpg",
+    "boss": {
+      "id": null,
+      "name": "High Priest of Ptah",
+      "portrait_url": null,
+      "phases": [
+        {
+          "label": "Ma'at Form",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Purge the Veil",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/4017/7998/7221/ICON_HighPriestOfPtah_Basic_Phase1.webp",
+              "description": "Attack 1 enemy (400%ATK) and place [Acid] for 2 turns.",
+              "cooldown": null,
+              "divinity_cost": null
+            },
+            {
+              "type": "Core",
+              "name": "Consume Knowledge",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/1917/7998/7222/ICON_HighPriestOfPtah_Core_Phase1.webp",
+              "description": "Attack all enemies (250%ATK). If the target has a [Shield] or [Barrier], place [Aetherburn III] for 2 turns; otherwise increase their Divinity Cost by 5%.",
+              "cooldown": 3,
+              "divinity_cost": null
+            },
+            {
+              "type": "Ultimate",
+              "name": "Invoke Isfet",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/4617/7998/7227/ICON_HighPriestOfPtah_Ultimate_Phase1.webp",
+              "description": "Sacrifices all living minions to gain damage bonuses, then attacks all enemies dealing increased damage per ally consumed. Enters Isfet Form and skips next turn.",
+              "cooldown": null,
+              "divinity_cost": 7000
+            },
+            {
+              "type": "Passive",
+              "name": "Protection of Ptah",
+              "description": "When entering Ma'at Form, places 20 stacks of [Might of Ptah] on the High Priest. Once Divinity is full, instantly activates Invoke Isfet."
+            },
+            {
+              "type": "Passive",
+              "name": "Union of Ptah",
+              "description": "Converts damage dealt to the Keeper of Scriptures into [Barrier] (20%) and heals from damage dealt to the Oracle of Maat (20%)."
+            }
+          ]
+        },
+        {
+          "label": "Isfet Form",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Purge All Things!",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/8917/7998/7228/ICON_HighPriestOfPtah_Basic_Phase2.webp",
+              "description": "Attack all enemies (250%ATK) and place [Acid] on each target for 2 turns.",
+              "cooldown": null,
+              "divinity_cost": null
+            },
+            {
+              "type": "Core",
+              "name": "Extinguish Life",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/4117/7998/7228/ICON_HighPriestOfPtah_Core_Phase2.webp",
+              "description": "Executes all living allies and enemies. This effect cannot be blocked by any [Buff].",
+              "cooldown": 3,
+              "divinity_cost": null
+            },
+            {
+              "type": "Ultimate",
+              "name": "Restoration of Ma'at",
+              "icon_url": "https://www.ravenpyros.com/application/files/thumbnails/file_manager_listing/5117/7998/7232/ICON_HighPriestOfPtah_Ultimate_Phase2.webp",
+              "description": "Revives all allies at full health with 50% Turn Meter. Enters Ma'at Form.",
+              "cooldown": null,
+              "divinity_cost": 200
+            },
+            {
+              "type": "Passive",
+              "name": "Dereliction of Ma'at",
+              "description": "No Divinity generation in Isfet Form. Inflicts 50% increased damage."
+            },
+            {
+              "type": "Passive",
+              "name": "Divination of Duat",
+              "description": "Gains 5 Divinity per 1% Turn Meter reduced. Removes Disables and gains 15 Divinity when Turn Meter is reduced."
+            },
+            {
+              "type": "Passive",
+              "name": "Mythic Spirit",
+              "description": "Divinity Reduction Effects apply 1 stack of [Arcane Aegis I]."
+            },
+            {
+              "type": "Passive",
+              "name": "Mythic Resilience",
+              "description": "Incoming damage from [Acid], [Blaze], and [Bleed] is reduced 75%. Immune to [Lock Ultimate], [Lock Passive], and [Charm]."
+            },
+            {
+              "type": "Passive",
+              "name": "Wrath",
+              "description": "After 5 Ultimate activations, increases damage by 200%. Immune to effects that increase Divinity cost."
+            }
+          ]
+        }
+      ],
+      "minions": [
+        {
+          "name": "Oracle of Maat",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Divine Command",
+              "description": "Attack 1 enemy (400%ATK). The Keeper of Scriptures and High Priest of Ptah join the attack."
+            },
+            {
+              "type": "Ultimate",
+              "name": "It Is Forseen!",
+              "description": "Places powerful buffs on all allies.",
+              "divinity_cost": 5000
+            },
+            {
+              "type": "Passive",
+              "name": "Kingdom Collapse",
+              "description": "When defeated, reduces [Might of Ptah] stacks by 15."
+            }
+          ]
+        },
+        {
+          "name": "Keeper of Scriptures",
+          "skills": [
+            {
+              "type": "Basic",
+              "name": "Acid Reflex",
+              "description": "Attack 1 enemy (400%ATK). Prioritizes targets already under [Acid]."
+            },
+            {
+              "type": "Ultimate",
+              "name": "Curse of Ptah",
+              "description": "Increases the High Priest of Ptah's Divinity.",
+              "divinity_cost": 3500
+            },
+            {
+              "type": "Passive",
+              "name": "Kingdom Collapse",
+              "description": "When defeated, reduces [Might of Ptah] stacks by 15."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Forge of Brokkr",
+    "slug": "forge-of-brokkr",
+    "type": "equipment_dungeon",
+    "affinity": null,
+    "stage_count": 15,
+    "image_url": "https://www.ravenpyros.com/application/files/8717/7473/2320/Dungeon_-_Forge_of_Brokkr_-_Colossus_of_Asgard.jpg",
+    "boss": {
+      "id": null,
+      "name": "Colossus of Asgard",
+      "portrait_url": null,
+      "skills": [],
+      "minions": []
+    }
+  }
+]

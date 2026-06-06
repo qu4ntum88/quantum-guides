@@ -2329,7 +2329,7 @@ function GfTierRankingForm() {
 type Game = 'dcdl' | 'vh' | 'gf'
 type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'infographics' | 'factions'
 type VhTab = 'hunters' | 'status-effects'
-type GfTab = 'heroes' | 'tier-ranking'
+type GfTab = 'heroes' | 'tier-ranking' | 'dungeons'
 
 export default function AdminDCDLPage() {
   const [game, setGame] = useState<Game>('dcdl')
@@ -2361,6 +2361,7 @@ export default function AdminDCDLPage() {
   const gfTabs: { id: GfTab; label: string }[] = [
     { id: 'heroes', label: 'Heroes' },
     { id: 'tier-ranking', label: 'Tier Ranking' },
+    { id: 'dungeons', label: 'Dungeon Recs' },
   ]
 
   const gameTabStyle = (g: Game): React.CSSProperties => ({
@@ -2443,9 +2444,219 @@ export default function AdminDCDLPage() {
             </div>
             {gfTab === 'heroes' && <GfHeroForm />}
             {gfTab === 'tier-ranking' && <GfTierRankingForm />}
+            {gfTab === 'dungeons' && <GfDungeonRecsForm />}
           </>
         )}
       </div>
     </main>
+  )
+}
+
+// ── GF Dungeon Recommendations ─────────────────────────────────────────────────
+
+const GF_DUNGEONS = [
+  { slug: 'shrine-of-hercules',     name: 'Shrine of Hercules' },
+  { slug: 'guan-yins-lotus-temple', name: "Guan Yin's Lotus Temple" },
+  { slug: 'forest-glade-of-kitsune',name: 'Forest Glade of Kitsune' },
+  { slug: 'annwn',                  name: 'Annwn' },
+  { slug: 'hags-hollow',            name: "Hag's Hollow" },
+  { slug: 'fafnirs-lair',           name: "Fafnir's Lair" },
+  { slug: 'svarogs-hoard',          name: "Svarog's Hoard" },
+  { slug: 'workshop-of-ptah',       name: 'Workshop of Ptah' },
+  { slug: 'forge-of-brokkr',        name: 'Forge of Brokkr' },
+]
+
+type HeroOption = { id: string; name: string; portrait: string | null; rarity: string | null }
+type DungeonRec = { hero_id: string; writeup: string }
+type AllDungeonRecs = Record<string, DungeonRec[]>
+
+const RARITY_ORDER = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
+
+function GfDungeonRecsForm() {
+  const [slug, setSlug] = useState(GF_DUNGEONS[0].slug)
+  const [allRecs, setAllRecs] = useState<AllDungeonRecs>({})
+  const [heroes, setHeroes] = useState<HeroOption[]>([])
+  const [heroId, setHeroId] = useState('')
+  const [writeup, setWriteup] = useState('')
+  const [editingId, setEditingId] = useState<string | null>(null)
+  const [editWriteup, setEditWriteup] = useState('')
+  const [status, setStatus] = useState<{ msg: string; ok: boolean } | null>(null)
+  const [saving, setSaving] = useState(false)
+
+  const loadRecs = useCallback(async () => {
+    const data = await fetch('/api/admin/gf/dungeon-recommendations').then((r) => r.json())
+    setAllRecs(data)
+  }, [])
+
+  useEffect(() => {
+    Promise.all([
+      fetch('/api/admin/gf/heroes').then((r) => r.json()),
+      fetch('/api/admin/gf/dungeon-recommendations').then((r) => r.json()),
+    ]).then(([heroData, recData]) => {
+      setHeroes(heroData)
+      setAllRecs(recData)
+    })
+  }, [])
+
+  const currentRecs: DungeonRec[] = allRecs[slug] ?? []
+  const heroById = Object.fromEntries(heroes.map((h) => [h.id, h]))
+
+  async function handleAdd() {
+    if (!heroId) { setStatus({ msg: 'Select a hero.', ok: false }); return }
+    if (!writeup.trim()) { setStatus({ msg: 'Enter a writeup.', ok: false }); return }
+    setSaving(true)
+    const res = await fetch('/api/admin/gf/dungeon-recommendations', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug, hero_id: heroId, writeup }),
+    })
+    const data = await res.json()
+    if (res.ok) {
+      setStatus({ msg: 'Added!', ok: true })
+      setHeroId('')
+      setWriteup('')
+      await loadRecs()
+    } else {
+      setStatus({ msg: data.error ?? 'Error', ok: false })
+    }
+    setSaving(false)
+  }
+
+  async function handleSaveEdit(hid: string) {
+    if (!editWriteup.trim()) return
+    setSaving(true)
+    const res = await fetch('/api/admin/gf/dungeon-recommendations', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug, hero_id: hid, writeup: editWriteup }),
+    })
+    if (res.ok) {
+      setEditingId(null)
+      await loadRecs()
+    }
+    setSaving(false)
+  }
+
+  async function handleRemove(hid: string) {
+    await fetch('/api/admin/gf/dungeon-recommendations', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug, hero_id: hid }),
+    })
+    await loadRecs()
+  }
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+
+      {/* Dungeon selector */}
+      <div style={sec}>
+        <div style={secTitle}>Select Dungeon</div>
+        <Field label="Dungeon" required>
+          <select style={inp} value={slug} onChange={(e) => { setSlug(e.target.value); setStatus(null) }}>
+            {GF_DUNGEONS.map((d) => (
+              <option key={d.slug} value={d.slug}>{d.name}</option>
+            ))}
+          </select>
+        </Field>
+      </div>
+
+      {/* Current recommendations */}
+      <div style={sec}>
+        <div style={secTitle}>
+          Current Recommendations — {GF_DUNGEONS.find((d) => d.slug === slug)?.name}
+        </div>
+        {currentRecs.length === 0 ? (
+          <p style={{ color: '#666', fontSize: '0.9rem', margin: 0 }}>No recommendations yet for this dungeon.</p>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {currentRecs.map((rec) => {
+              const hero = heroById[rec.hero_id]
+              const isEditing = editingId === rec.hero_id
+              return (
+                <div key={rec.hero_id} style={{ background: '#111', borderRadius: '8px', padding: '0.85rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+                  {hero?.portrait && (
+                    <img src={hero.portrait} alt="" style={{ width: '44px', height: '44px', borderRadius: '6px', objectFit: 'cover', objectPosition: 'top', flexShrink: 0 }} />
+                  )}
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontWeight: 600, color: '#fff', marginBottom: '0.3rem', fontSize: '0.9rem' }}>
+                      {hero?.name ?? rec.hero_id}
+                      {hero?.rarity && <span style={{ marginLeft: '0.4rem', fontSize: '0.7rem', color: '#888' }}>({hero.rarity})</span>}
+                    </div>
+                    {isEditing ? (
+                      <>
+                        <textarea
+                          style={{ ...inp, minHeight: '80px', resize: 'vertical', marginBottom: '0.5rem' }}
+                          value={editWriteup}
+                          onChange={(e) => setEditWriteup(e.target.value)}
+                        />
+                        <div style={{ display: 'flex', gap: '0.5rem' }}>
+                          <button type="button" className="btn" onClick={() => handleSaveEdit(rec.hero_id)} disabled={saving} style={{ fontSize: '0.78rem', padding: '0.3rem 0.75rem' }}>Save</button>
+                          <button type="button" onClick={() => setEditingId(null)} style={{ background: 'none', border: 'none', color: '#888', cursor: 'pointer', fontSize: '0.78rem' }}>Cancel</button>
+                        </div>
+                      </>
+                    ) : (
+                      <p style={{ margin: 0, fontSize: '0.82rem', color: '#999', lineHeight: 1.55 }}>{rec.writeup}</p>
+                    )}
+                  </div>
+                  {!isEditing && (
+                    <div style={{ display: 'flex', gap: '0.4rem', flexShrink: 0 }}>
+                      <button
+                        type="button"
+                        onClick={() => { setEditingId(rec.hero_id); setEditWriteup(rec.writeup) }}
+                        style={{ background: '#1e3a5f', border: 'none', color: '#93c5fd', borderRadius: '4px', padding: '0.3rem 0.6rem', cursor: 'pointer', fontSize: '0.75rem' }}
+                      >
+                        Edit
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => handleRemove(rec.hero_id)}
+                        style={{ background: '#7f1d1d', border: 'none', color: '#fca5a5', borderRadius: '4px', padding: '0.3rem 0.6rem', cursor: 'pointer', fontSize: '0.75rem' }}
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Add new */}
+      <div style={sec}>
+        <div style={secTitle}>Add Recommendation</div>
+        <Field label="Hero" required>
+          <select style={inp} value={heroId} onChange={(e) => { setHeroId(e.target.value); setStatus(null) }}>
+            <option value="">— Select hero —</option>
+            {RARITY_ORDER.map((rarity) => {
+              const group = heroes.filter((h) => h.rarity === rarity).sort((a, b) => a.name.localeCompare(b.name))
+              if (!group.length) return null
+              return (
+                <optgroup key={rarity} label={rarity}>
+                  {group.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
+                </optgroup>
+              )
+            })}
+          </select>
+        </Field>
+        <Field label="Writeup" required hint="Explain why this champion is recommended for this dungeon.">
+          <textarea
+            style={{ ...inp, minHeight: '110px', resize: 'vertical' }}
+            value={writeup}
+            onChange={(e) => { setWriteup(e.target.value); setStatus(null) }}
+            placeholder="This champion is effective because..."
+          />
+        </Field>
+        {status && (
+          <p style={{ margin: 0, fontSize: '0.85rem', color: status.ok ? '#4ade80' : '#f87171' }}>{status.msg}</p>
+        )}
+        <button type="button" className="btn" onClick={handleAdd} disabled={saving} style={{ alignSelf: 'flex-start' }}>
+          {saving ? 'Saving…' : 'Add Recommendation'}
+        </button>
+      </div>
+
+    </div>
   )
 }

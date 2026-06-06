@@ -47,7 +47,7 @@ export async function GET(req: NextRequest) {
     if (!hero) return NextResponse.json({ error: 'Not found' }, { status: 404 })
     return NextResponse.json(hero)
   }
-  return NextResponse.json(heroes.map((h) => ({ id: h.id, name: h.name })))
+  return NextResponse.json(heroes.map((h) => ({ id: h.id, name: h.name, portrait: h.portrait, rarity: h.rarity })))
 }
 
 // POST: add a new hero
