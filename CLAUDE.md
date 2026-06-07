@@ -16,6 +16,26 @@ There are no tests. Deploy via `git push origin main` — Vercel auto-deploys fr
 
 - **Godforge Campaign Star Planner** (`/games/godforge/campaign`) — tool is fully built but currently private (returns 404 via `notFound()`). Revisit in a future session to make it public. To re-enable, remove the `notFound()` call at the top of `app/games/godforge/campaign/page.tsx` and add a nav link back in `app/components/Navbar.js`.
 
+- **Content Creator Program** — multi-phase feature, not yet started. Full design context below.
+
+  **Phase 1 — Creator requests + infographic submissions** (ready to build when prioritized):
+  - Members page: "Request Content Creator Status" button → Discord name form → submitted to Supabase `creator_requests` table
+  - Admin panel: new "Creators" tab to approve/reject requests; on approve, set `user.publicMetadata.isCreator = true` via Clerk backend SDK
+  - Approved creators get a new tab on the members page to upload DCDL infographics (title + image) to Supabase `creator_submissions`
+  - Admin panel: new "Creator Submissions" tab to approve/reject; approved submissions write through to the main infographics JSON (same flow as the existing admin infographic tool)
+  - **DB tables needed** (run in Supabase before building):
+    - `creator_requests (id uuid pk, user_id text, discord_name text, status text default 'pending', created_at timestamptz default now())`
+    - `creator_submissions (id uuid pk, user_id text, discord_name text, title text, description text, image_url text, status text default 'pending', created_at timestamptz default now())`
+  - Auth pattern: gate creator submission routes with `user.publicMetadata.isCreator === true` check; use `supabaseAdmin` for all writes (bypasses RLS)
+
+  **Phase 2 — Per-creator tier rankings** (think through design before building):
+  - Community tier votes attributed to individual creators so you can view a specific creator's tier list
+  - Likely requires a `creator_id` column on the votes table or a separate `creator_votes` table
+
+  **Phase 3 — Guide creator tier** (think through design before building):
+  - Elevated creator permission (`publicMetadata.isGuideCreator`) allowing submission of written guides through the admin guide tool
+  - Would need a review/draft flow so guides aren't auto-published
+
 ## What this is
 
 Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godforge and Void Hunters. Features a champion/legacy database, community tier voting, MDX guides, and an admin panel for managing game data.
