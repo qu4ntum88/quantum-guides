@@ -114,8 +114,8 @@ export default async function FactionDetailPage({ params }: { params: Promise<{ 
 
                   {/* Info grid */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: '0.4rem 1rem' }}>
-                    {hero.acDcPriority && (
-                      <InfoRow label="AC/DC Priority" value={hero.acDcPriority} highlight />
+                    {hero.acDcPriority && hero.acDcPriority.length > 0 && (
+                      <InfoRow label="AC/DC Priority" value={hero.acDcPriority.join(', ')} highlight />
                     )}
                     {hero.transmutePriorities && hero.transmutePriorities.length > 0 && (
                       <InfoRow label="Transmutes" value={hero.transmutePriorities.join(', ')} />

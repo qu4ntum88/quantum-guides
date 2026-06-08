@@ -149,7 +149,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
               : <Null />}.
           </p>
           {hero.quantumsTake && <p style={{ margin: 0 }}>{hero.quantumsTake}</p>}
-          {(hero.starBreakpoint || hero.acDcPriority) && (
+          {(hero.starBreakpoint || (hero.acDcPriority && hero.acDcPriority.length > 0)) && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
               {hero.starBreakpoint && (
                 <div>
@@ -161,10 +161,10 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
                   </div>
                 </div>
               )}
-              {hero.acDcPriority && (
+              {hero.acDcPriority && hero.acDcPriority.length > 0 && (
                 <div>
                   <span style={{ fontSize: '0.75rem', color: '#888', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>AC/DC Priority</span>
-                  <div style={{ marginTop: '0.2rem', color: 'var(--gold)', fontWeight: 700, fontSize: '0.95rem' }}>{hero.acDcPriority}</div>
+                  <div style={{ marginTop: '0.2rem', color: 'var(--gold)', fontWeight: 700, fontSize: '0.95rem' }}>{hero.acDcPriority.join(', ')}</div>
                 </div>
               )}
             </div>

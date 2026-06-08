@@ -51,3 +51,11 @@ export async function PATCH(req: NextRequest) {
   fs.writeFileSync(legacyPath, JSON.stringify(items, null, 2))
   return NextResponse.json({ ok: true })
 }
+
+export async function DELETE() {
+  const guard = notProd(); if (guard) return guard
+  const items = JSON.parse(fs.readFileSync(legacyPath, 'utf8')) as Record<string, unknown>[]
+  for (const item of items) delete item.previousTier
+  fs.writeFileSync(legacyPath, JSON.stringify(items, null, 2))
+  return NextResponse.json({ ok: true })
+}

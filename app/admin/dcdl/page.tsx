@@ -33,7 +33,7 @@ const SYNERGIES = [
 const LEGACY_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const LEGACY_ROLES = ['Guardian | Warrior', 'Magical | Assassin | Firepower', 'Supporter | Intimidator']
 const STAR_OPTIONS = [1, 2, 3, 4, 5]
-const ACDCPRIORITY_OPTIONS = ['Major 1', 'Major 2', 'Major 3', 'HP Nodes', 'ATK Nodes', 'Healing', 'Energy', 'Crit Nodes', 'Do Not Invest']
+const ACDCPRIORITY_OPTIONS = ['Major 1', 'Major 2', 'Major 3', 'HP Nodes', 'ATK Nodes', 'Healing', 'Energy Gain Bonus', 'Crit DMG', 'Crit Rate', 'Crit RES', 'Crit DMG RES', 'Spiritual PEN', 'Spiritual AMP', 'Physical PEN', 'S. DEF', 'P. DEF', 'Dodge', 'Effect ACC', 'Effect RES', 'Do Not Invest']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
 type ItemOption = { id: string; name: string }
@@ -211,7 +211,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [isNew, setIsNew] = useState(false); const [isP2W, setIsP2W] = useState(false)
   const [clearPrevTier, setClearPrevTier] = useState(false); const [existingPreviousTier, setExistingPreviousTier] = useState('')
   const [ascendsTo, setAscendsTo] = useState(''); const [ascendedFrom, setAscendedFrom] = useState('')
-  const [starBreakpoint, setStarBreakpoint] = useState(''); const [acDcPriority, setAcDcPriority] = useState('')
+  const [starBreakpoint, setStarBreakpoint] = useState(''); const [acDcPriority, setAcDcPriority] = useState<string[]>([])
 
   useEffect(() => {
     fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
@@ -226,7 +226,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setSkills([]); setUpgrades([]); setExistingImages({}); setSelectedId('')
     setIsNew(false); setIsP2W(false); setClearPrevTier(false); setExistingPreviousTier('')
     setAscendsTo(''); setAscendedFrom('')
-    setStarBreakpoint(''); setAcDcPriority('')
+    setStarBreakpoint(''); setAcDcPriority([])
   }, [])
 
   async function loadHero(heroId: string) {
@@ -253,7 +253,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setIsNew(h.isNew ?? false); setIsP2W(h.isP2W ?? false)
     setExistingPreviousTier(h.previousTier ?? ''); setClearPrevTier(false)
     setAscendsTo(h.ascendsTo ?? ''); setAscendedFrom(h.ascendedFrom ?? '')
-    setStarBreakpoint(h.starBreakpoint ? String(h.starBreakpoint) : ''); setAcDcPriority(h.acDcPriority ?? '')
+    setStarBreakpoint(h.starBreakpoint ? String(h.starBreakpoint) : '')
+    setAcDcPriority(Array.isArray(h.acDcPriority) ? h.acDcPriority : h.acDcPriority ? [h.acDcPriority] : [])
   }
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
@@ -287,7 +288,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     if (ascendsTo) fd.append('ascendsTo', ascendsTo)
     if (ascendedFrom) fd.append('ascendedFrom', ascendedFrom)
     if (starBreakpoint) fd.append('starBreakpoint', starBreakpoint)
-    if (acDcPriority) fd.append('acDcPriority', acDcPriority)
+    acDcPriority.forEach((p) => fd.append('acDcPriority', p))
 
     try {
       const res = await fetch('/api/admin/dcdl/champions', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
@@ -439,11 +440,22 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
                 {STAR_OPTIONS.map((n) => <option key={n} value={n}>{n} {n === 1 ? 'Star' : 'Stars'}</option>)}
               </select>
             </Field>
-            <Field label="AC/DC Priority" hint="Where this champion falls in your AC/DC investment order">
-              <select style={inp} value={acDcPriority} onChange={(e) => setAcDcPriority(e.target.value)}>
-                <option value="">None</option>
-                {ACDCPRIORITY_OPTIONS.map((o) => <option key={o}>{o}</option>)}
-              </select>
+            <Field label="AC/DC Priority" hint="Select all that apply">
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                {ACDCPRIORITY_OPTIONS.map((o) => (
+                  <label key={o} style={{
+                    display: 'flex', alignItems: 'center', gap: '0.3rem',
+                    background: acDcPriority.includes(o) ? 'var(--purple)' : '#1a1a1a',
+                    border: '1px solid #444', borderRadius: '0.375rem',
+                    padding: '0.3rem 0.6rem', cursor: 'pointer', fontSize: '0.82rem',
+                  }}>
+                    <input type="checkbox" checked={acDcPriority.includes(o)}
+                      onChange={() => setAcDcPriority(prev => prev.includes(o) ? prev.filter(x => x !== o) : [...prev, o])}
+                      style={{ accentColor: 'var(--gold)' }} />
+                    {o}
+                  </label>
+                ))}
+              </div>
             </Field>
           </div>
         </div>
@@ -1947,6 +1959,8 @@ function TierRankingForm() {
   const [draggingId, setDraggingId] = useState<string | null>(null)
   const [dragOverTier, setDragOverTier] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
+  const [resetting, setResetting] = useState(false)
+  const [confirmReset, setConfirmReset] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
 
   useEffect(() => {
@@ -2009,6 +2023,19 @@ function TierRankingForm() {
       }
     } catch { setStatus({ type: 'error', message: 'Network error.' }) }
     setSaving(false)
+  }
+
+  async function resetTracking() {
+    setResetting(true); setStatus(null); setConfirmReset(false)
+    try {
+      const res = await fetch(apiPath, { method: 'DELETE' })
+      if (res.ok) {
+        setStatus({ type: 'success', message: `Rank tracking arrows cleared for all ${subTab}.` })
+      } else {
+        setStatus({ type: 'error', message: 'Reset failed.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setResetting(false)
   }
 
   function Chip({ item }: { item: TierRankItem }) {
@@ -2137,13 +2164,47 @@ function TierRankingForm() {
             </div>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
             <button className="btn" onClick={save} disabled={saving || !isDirty}
               style={{ fontSize: '1rem', padding: '0.75rem 2rem', opacity: isDirty ? 1 : 0.5 }}>
               {saving ? 'Saving...' : 'Save Changes'}
             </button>
             {isDirty && <span style={{ color: '#fbbf24', fontSize: '0.82rem' }}>Unsaved changes</span>}
+            <button className="btn" type="button" onClick={() => setConfirmReset(true)} disabled={resetting}
+              style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', background: '#7f1d1d', color: '#fca5a5', marginLeft: 'auto' }}>
+              {resetting ? 'Resetting...' : 'Reset Rank Tracking from Prior Month'}
+            </button>
           </div>
+
+          {confirmReset && (
+            <div style={{
+              position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000,
+            }}>
+              <div style={{
+                background: '#1a1a1a', border: '1px solid #444', borderRadius: '0.75rem',
+                padding: '2rem', maxWidth: '420px', width: '90%', textAlign: 'center',
+              }}>
+                <div style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>⚠️</div>
+                <div style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '0.5rem' }}>
+                  Reset rank tracking for all {subTab === 'champions' ? 'champions' : 'legacy pieces'}?
+                </div>
+                <div style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
+                  This will remove all up/down arrows from the tier list. This cannot be undone.
+                </div>
+                <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
+                  <button className="btn" type="button" onClick={() => setConfirmReset(false)}
+                    style={{ background: '#2a2a2a', color: '#ccc', padding: '0.6rem 1.5rem' }}>
+                    Cancel
+                  </button>
+                  <button className="btn" type="button" onClick={resetTracking}
+                    style={{ background: '#7f1d1d', color: '#fca5a5', padding: '0.6rem 1.5rem' }}>
+                    Yes, Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </>
       )}
     </div>

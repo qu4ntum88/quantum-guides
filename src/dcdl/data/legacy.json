@@ -19,7 +19,7 @@
     "image": "./legacy_images/horn.png",
     "rank": "Mythic",
     "unique": false,
-    "tier": "S",
+    "tier": "A+",
     "role": "Guardian | Warrior",
     "gearEffects": [
       "HP",
@@ -32,7 +32,8 @@
         "description": "Increases the weearer's HP by %. At the start of battle, increases all allies' ATK by % for 20s.",
         "image": "./legacy_images_skills/icon_hero_skill_Gabriel_Horn_general.png"
       }
-    ]
+    ],
+    "previousTier": "S"
   },
   {
     "name": "Tectonic Disruptor",
@@ -290,7 +291,6 @@
     "unique": true,
     "tier": "A+",
     "role": "Guardian | Warrior",
-    "previousTier": "B",
     "gearEffects": [
       "ATK",
       "ATK%",
@@ -315,7 +315,7 @@
     "image": "./legacy_images/Icon_sw_44.png",
     "rank": "Mythic",
     "unique": false,
-    "tier": "S",
+    "tier": "A+",
     "role": "Supporter | Intimidator",
     "gearEffects": [
       "HP",
@@ -328,7 +328,8 @@
         "description": "Each time the wearer casts their Ultimate, nearby allies gain a % ATK bonus and a % Physical and Spiritual DEF bonus for 8s.",
         "image": "./legacy_images_skills/icon_hero_skill_Starheart_Staff_general.png"
       }
-    ]
+    ],
+    "previousTier": "S"
   },
   {
     "id": "kuru_pendant",
@@ -390,7 +391,6 @@
     "unique": true,
     "tier": "A",
     "role": "Guardian | Warrior",
-    "previousTier": "A+",
     "gearEffects": [
       "ATK",
       "ATK%",
@@ -444,7 +444,6 @@
     "tier": "C",
     "role": "Supporter | Intimidator",
     "isP2W": true,
-    "previousTier": "B",
     "gearEffects": [
       "HP",
       "ATK%",
@@ -586,7 +585,6 @@
     "unique": true,
     "tier": "A+",
     "role": "Supporter | Intimidator",
-    "previousTier": "A",
     "gearEffects": [
       "ATK",
       "ATK%",
@@ -1169,7 +1167,6 @@
     "unique": true,
     "tier": "A+",
     "role": "Guardian | Warrior",
-    "previousTier": "A",
     "gearEffects": [
       "ATK",
       "ATK %",
@@ -1223,7 +1220,6 @@
     "unique": true,
     "tier": "A+",
     "role": "Guardian | Warrior",
-    "isNew": true,
     "gearEffects": [
       "HP",
       "HP%",
@@ -1239,6 +1235,33 @@
         "name": "Energy Absorption",
         "description": "When the wearer is hit by an enemy basic attack, there is a 50% base chance to restore HP equal to [%] of lost HP.",
         "image": "./legacy_images_skills/icon_hero_skill_Mr_Freeze_general_skills.png"
+      }
+    ]
+  },
+  {
+    "id": "knightbow",
+    "name": "Knightbow",
+    "image": "./legacy_images/Icon_sw_66.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Magical | Assassin | Firepower",
+    "isNew": true,
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Counter-Strike",
+        "description": "When Red Hood Knightfight lands a critical hit, his basic attack switches to rapid fire, dealing physical damage equal to [%] of his Attack plus [%] of the target's Max HP to two enemies. Total damage is capped at [%] of Red Hood Knightfight's Attack. Can trigger once every second.",
+        "image": "./legacy_images_skills/icon_hero_skill_redhoodknightfight_main_exclusive.png"
+      },
+      {
+        "name": "Press the Attack",
+        "description": "When the wearer lands a critical hit, their Attack is increased by [%], stacking up to 10 times.",
+        "image": "./legacy_images_skills/icon_hero_skill_redhoodknightfight_general_skills.png"
       }
     ]
   }

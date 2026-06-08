@@ -4817,5 +4817,92 @@
         "description": "Increases Mr. Freeze's Max HP."
       }
     ]
+  },
+  {
+    "id": "red_hood_knightfight_jason_todd",
+    "name": "Red Hood Knightfight (Jason Todd)",
+    "class": "Firepower",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "isNew": true,
+    "previousTier": "A+",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "bat_family",
+      "league_of_assassins",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "PvP",
+      "Drowned CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK %",
+      "Physical PEN",
+      "Crit Rate"
+    ],
+    "recommendedLegacyPieces": [
+      "t_sphere_weakness_analyzer",
+      "tectonic_disruptor",
+      "knightbow"
+    ],
+    "quantumsTake": "We don't have enough testing data as of the time of this writing to say definitively where Red Hood Knightfight will sit in the meta, but he is shaping up to be a pretty solid physical damage champion and there are definitely going to be ways to build him into a Bat Family team. If they ever give us the al Ghul's again, I think he's going to have some real usability down the road, but League of Assassins is still a largely broken faction tag. I'm still not convinced he's going to have Lobo levels of usability, but he's one of the better champions to pair with Nightwing at this time if you need that extra Bat Family synergy.",
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_redhoodknightfight.png",
+    "imageFull": "./full_images/img_hero_pic_redhoodknightfight.png",
+    "ultimate": {
+      "name": "Gotham's Last Guardian",
+      "description": "Red Hood Knightfight fires a volley of arrows, dealing physical damage equal to [600/750/900/1050/1200%] of his Attack plus [20/25/30/35/40%] of the target's Max HP to enemies within range. Total damage is capped at [1200/1500/1800/2100/2400%] of Red Hood Knightfight's Attack.",
+      "image": "./skill_images/icon_hero_skill_redhoodknightfight_main.png"
+    },
+    "globalSkill": {
+      "name": "Lead by Example",
+      "description": "Increases all Champions' Attack by [1/2/3/4/5%] and [Firepower] Champions' Physical Defense by [2/4/6/8/10%]."
+    },
+    "skills": [
+      {
+        "name": "Red Wing",
+        "description": "Red Hood Knightfight fires a volley of arrows, dealing physical damage equal to [300/420/540/670/800%] of his Attack to enemies in a fan-shaped area.",
+        "image": "./skill_images/icon_hero_skill_redhoodknightfight_sub01.png"
+      },
+      {
+        "name": "Group Tactics",
+        "description": "Increases Red Hood Knightfight's Crit Damage by [20/30/45/60/75%]. Each [Bat Family] and [League of Assassins] ally present increases Red Hood Knightfight's Crit Rate by [3/5/7/10/12%].",
+        "image": "./skill_images/icon_hero_skill_redhoodknightfight_sub02.png"
+      },
+      {
+        "name": "Hold the Line",
+        "description": "When Red Hood Knightfight lands a critical hit, he throws a grenade, dealing physical damage equal to [160/220/280/340/400%] of his Attack plus [6/8/10/12/15%] of the target's Max HP to enemies within range. Total damage is capped at [400/550/700/850/1000%] of Red Hood Knightfight's Attack. Can trigger once every 5s.",
+        "image": "./skill_images/icon_hero_skill_redhoodknightfight_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Red Wing - Enhanced",
+        "description": "Reduces the cooldown of [Red Wing] by up to 2s.",
+        "image": "./upgrade_images/red_wing_enhanced_sub01.png"
+      },
+      {
+        "name": "Group Tactics - Enhanced",
+        "description": "Increases Red Hood Knightfight's Crit Damage by up to 12.5%",
+        "image": "./upgrade_images/group_tactics_enhanced_sub02.png"
+      },
+      {
+        "name": "Hold the Line - Enhanced",
+        "description": "Increases Red Hood Knightfight's Physical Penetration by up to 10%.",
+        "image": "./upgrade_images/hold_the_line_enhanced_sub03.png"
+      }
+    ],
+    "starBreakpoint": 4,
+    "acDcPriority": [
+      "Major 1",
+      "Major 2",
+      "Major 3",
+      "Physical PEN",
+      "Dodge"
+    ]
   }
 ]
