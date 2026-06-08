@@ -7,6 +7,13 @@ import type { HeroResolved } from "../lib/data"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
+const RARITY_INDICATOR: Record<string, { type: 'img' | 'text'; src?: string; symbol?: string; color?: string }> = {
+  'Iconic':    { type: 'img',  src: '/dcdl/resource_icons/bolt_cyan.png' },
+  'Mythic +':  { type: 'img',  src: '/dcdl/resource_icons/bolt_red.png' },
+  'Mythic':    { type: 'text', symbol: 'M', color: '#ef4444' },
+  'Legendary': { type: 'text', symbol: 'L', color: '#eab308' },
+}
+
 export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; communityTier?: string }) {
   const classSrc = "/dcdl/role_images/" + hero.class + ".png"
   return (
@@ -24,6 +31,35 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
           />
           <div className="absolute inset-0 flex flex-col justify-end">
             <img className="absolute top-0 left-0 w-8" src={classSrc} alt={hero.class} />
+            {hero.rarity && RARITY_INDICATOR[hero.rarity] && (() => {
+              const r = RARITY_INDICATOR[hero.rarity]
+              return (
+                <span style={{
+                  position: 'absolute',
+                  bottom: '2.5rem',
+                  left: '0.3rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  userSelect: 'none',
+                  pointerEvents: 'none',
+                  zIndex: 5,
+                }}>
+                  {r.type === 'img'
+                    ? <img src={r.src} alt="" style={{ width: '1.1rem', height: 'auto' }} />
+                    : <span style={{
+                        color: r.color,
+                        fontSize: '1rem',
+                        fontWeight: 900,
+                        lineHeight: 1,
+                        fontFamily: 'Unbounded, sans-serif',
+                        textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 8px currentColor',
+                      }}>
+                        {r.symbol}
+                      </span>
+                  }
+                </span>
+              )
+            })()}
             <EntryBadgeGroup
               isNew={hero.isNew}
               isP2W={hero.isP2W}

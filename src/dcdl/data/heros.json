@@ -2155,7 +2155,6 @@
     "class": "Firepower",
     "rarity": "Legendary",
     "tier": "C",
-    "ascendsTo": "red_hood_mythic",
     "damageType": "Physical",
     "tagSynergies": [
       "league_of_assassins",
@@ -2181,33 +2180,33 @@
       "t_sphere_weakness_analyzer",
       "gas_derringer"
     ],
-    "quantumsTake": "Red Hood is a champion that can be fairly useful when you first start playing, but his kit suffers from one fatal flaw, and that's the fact that when he uses his ultimate, he usually dies soon thereafter. We are hoping that his kit gets refreshed when he ascends to mythic, but until then, he just doesn't slot into any team late game.",
+    "quantumsTake": "Red Hood is a champion that can be fairly useful when you first start playing, but his kit suffers from one fatal flaw, and that's the fact that when he uses his ultimate, he usually dies soon thereafter. Largely useless as a Legendary without significant force investment (which you should save for other champions), he becomes much more usable after he ascends to Mythic. So, be careful investing early, but he does get better as you progress to late game.",
     "imageHeadshot": "./headshot_images/red_hood.png",
     "imageFull": "./full_images/RedHood_full.png",
     "ultimate": {
       "name": "Strafe Strife",
-      "description": "Deal Physical DMG equal to 280% of ATK to enemies within range",
+      "description": "Red Hood leaps to the target area and strafes, dealing Physical DMG equal to [200/260/315/375/435%] of his ATK to enemies within range.",
       "image": "./skill_images/icon_hero_skill_RedHood_main.png"
     },
     "globalSkill": {
       "name": "Ruthless Pursuit",
-      "description": "Increases all Champions' ATK.",
+      "description": "Increases all Champions' ATK by [20/40/60/80/100].",
       "image": "./globalskill_images/RedHood_global.png"
     },
     "skills": [
       {
         "name": "Blow the Hood",
-        "description": "When basic attacks deal Crit DMG, deal extra Physical DMG equal to 140% of attack to enemies in range. Can be triggered every 5 seconds",
+        "description": "When Red Hood's basic attack deals Crit DMG, he throws a grenade upwards, dealing Physical DMG equal to [130/160/200/240/280%] of his Attack to enemies within range. Can be triggered once every 5 seconds.",
         "image": "./skill_images/icon_hero_skill_RedHood_sub01.png"
       },
       {
         "name": "Wrong Place, Right Time",
-        "description": "For every enemy within 12 meters, increases Crit Rate by 1.2%, up to 6%",
+        "description": "For each enemy nearby, Red Hood's Crit Rate increases by [1.2/2.4/3.6/4.8/6%], stacking up to [6/12/18/24/30%].",
         "image": "./skill_images/icon_hero_skill_RedHood_sub02.png"
       },
       {
         "name": "Bat-Family Tree",
-        "description": "After casting [Strafe Strife], increases Dodge by 8% for 8s",
+        "description": "After casting [Strafe Strife], Red Hood's Dodge increases by [8/16/24/32/40%) for 8 seconds.",
         "image": "./skill_images/icon_hero_skill_RedHood_sub03.png"
       }
     ],
@@ -2227,7 +2226,8 @@
         "description": "Increases Red Hood's ATK.",
         "image": "./upgrade_images/RedHood_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "red_hood_mythic"
   },
   {
     "id": "red_hood_mythic",
@@ -3344,7 +3344,6 @@
     "class": "Guardian",
     "rarity": "Legendary",
     "tier": "B",
-    "ascendsTo": "wonder_woman_mythic",
     "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
@@ -3375,28 +3374,28 @@
     "imageFull": "./full_images/WonderWoman_full.png",
     "ultimate": {
       "name": "Bracelets of Submission",
-      "description": "Deal Physical DMG equal to 120% of ATK to enemies within fan-shaped area and [Stunning] them for 2s",
+      "description": "Wonder Woman leaps high and clashes her Bracelets of Submission together to generate a shockwave, dealing Physical DMG equal to [120/175/235/300/355%] of her ATK to enemies within a fan-shaped area and [Stunning] them for 2s. [Stunned]: Incapacitates the target.",
       "image": "./skill_images/icon_hero_skill_WonderWoman_main.png"
     },
     "globalSkill": {
       "name": "Olympian - Athena's Aegis",
-      "description": "Increases all Champions' Physical DEF.",
+      "description": "Increases all Champions' Physical DEF by [20/40/60/80/100].",
       "image": "./globalskill_images/WonderWoman_global.png"
     },
     "skills": [
       {
         "name": "Amazonian Shield",
-        "description": "Wonder Woman infuses her shield with divine power, granting [Divine Shield] to the ally with the lowest HP percentage for 8s. [Divine Shield]: Absorbs damage equal to [%] of Wonder Woman's Max HP.",
+        "description": "Wonder Woman infuses her shield with divine power, granting [Divine Shield] to an ally for 8s. [Divine Shield]: Absorbs damage equal to [8/10/12.5/15/18%] of Wonder Woman's Max HP.",
         "image": "./skill_images/icon_hero_skill_WonderWoman_sub01.png"
       },
       {
         "name": "Lasso of Truth",
-        "description": "Wonder Woman throws her Lasso of Truth, dealing Physical DMG equal to [%] of her ATK to an enemy and inflicting [Stunned] on them for 3s.",
+        "description": "Wonder Woman throws her Lasso of Truth, dealing Physical DMG equal to [70/115/160/205/250%] of her ATK to an enemy and inflicting [Stunned] on them for 2s.",
         "image": "./skill_images/icon_hero_skill_WonderWoman_sub02.png"
       },
       {
         "name": "Amazon Goddess",
-        "description": "When HP is below [%], increases Wonder Woman's Physical DEF by [%]",
+        "description": "When HP is below 75%, Wonder Woman's Physical DEF increases by [12/24/36/48/60%]",
         "image": "./skill_images/icon_hero_skill_WonderWoman_sub03.png"
       }
     ],
@@ -3408,7 +3407,7 @@
       },
       {
         "name": "Lasso of Truth - Enhanced",
-        "description": "Increases Wonder Woman's Physical DEF.",
+        "description": "Increases duration of [Stunned].",
         "image": "./upgrade_images/WonderWoman_sub02_enhanced.png"
       },
       {
@@ -3416,7 +3415,8 @@
         "description": "Increases Wonder Woman's ATK.",
         "image": "./upgrade_images/WonderWoman_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "wonder_woman_mythic"
   },
   {
     "id": "wonder_woman_mythic",
