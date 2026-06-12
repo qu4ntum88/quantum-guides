@@ -1639,61 +1639,259 @@ function StatusEffectForm() {
 }
 
 // ── Best Teams Form ────────────────────────────────────────────────────────────
-type BestTeam = { rank: number; explanation: string; required: string[]; optional: string[] }
+type BtReplacementRow = { required: string; replacements: string[] }
+type BestTeam = { rank: number; name: string; explanation: string; required: string[]; optional: string[]; replacements: BtReplacementRow[] }
+type BtChamp = { id: string; name: string; imageHeadshot: string | null; rarity: string | null }
 
-function HeroSelect({ value, onChange, heroes, placeholder }: {
-  value: string; onChange: (v: string) => void
-  heroes: ItemOption[]; placeholder: string
-}) {
+const BT_RARITY_BG: Record<string, string> = {
+  'Iconic': '#00292a',
+  'Mythic +': '#3a000f',
+  'Mythic': '#3a0014',
+  'Legendary': '#3a2d00',
+  'Epic': '#2e0038',
+}
+
+function BtChampChip({ champ, size, onRemove }: { champ: BtChamp; size: number; onRemove?: () => void }) {
   return (
-    <select style={inp} value={value} onChange={(e) => onChange(e.target.value)}>
-      <option value="">{placeholder}</option>
-      {heroes.map((h) => <option key={h.id} value={h.id}>{h.name}</option>)}
-    </select>
+    <div
+      draggable
+      onDragStart={(e) => { e.dataTransfer.setData('text/plain', champ.id); e.dataTransfer.effectAllowed = 'copy' }}
+      title={champ.name}
+      style={{ position: 'relative', width: size, cursor: 'grab', flexShrink: 0 }}
+    >
+      <img
+        src={champ.imageHeadshot ?? ''}
+        alt={champ.name}
+        style={{
+          width: size, height: size, objectFit: 'cover', borderRadius: '0.4rem',
+          border: '1px solid #555', background: BT_RARITY_BG[champ.rarity ?? ''] ?? '#111',
+          display: 'block', pointerEvents: 'none',
+        }}
+      />
+      <span style={{
+        display: 'block', fontSize: '0.55rem', color: '#aaa', textAlign: 'center', lineHeight: 1.15,
+        marginTop: '0.2rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+      }}>
+        {champ.name.split('(')[0].trim()}
+      </span>
+      {onRemove && (
+        <button
+          type="button"
+          onClick={onRemove}
+          aria-label={`Remove ${champ.name}`}
+          style={{
+            position: 'absolute', top: -7, right: -7, width: 18, height: 18,
+            borderRadius: '50%', border: '1px solid #444', background: '#1a1a1a', color: '#f87171',
+            fontSize: '0.62rem', lineHeight: 1, cursor: 'pointer', display: 'flex',
+            alignItems: 'center', justifyContent: 'center', padding: 0, zIndex: 2,
+          }}
+        >
+          ✕
+        </button>
+      )}
+    </div>
+  )
+}
+
+function BtDropZone({ onDropChamp, disabled, label, isEmpty, minHeight = 96, children }: {
+  onDropChamp: (id: string) => void
+  disabled?: boolean
+  label: string
+  isEmpty: boolean
+  minHeight?: number
+  children?: React.ReactNode
+}) {
+  const [over, setOver] = useState(false)
+  return (
+    <div
+      onDragOver={(e) => { if (disabled || !e.dataTransfer.types.includes('text/plain')) return; e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; setOver(true) }}
+      onDragLeave={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) setOver(false) }}
+      onDrop={(e) => {
+        if (disabled) return
+        e.preventDefault(); setOver(false)
+        const id = e.dataTransfer.getData('text/plain')
+        if (id) onDropChamp(id)
+      }}
+      style={{
+        display: 'flex', flexWrap: 'wrap', gap: '0.65rem', alignItems: 'flex-start', alignContent: 'flex-start',
+        minHeight,
+        padding: '0.6rem',
+        borderRadius: '0.5rem',
+        border: `1.5px dashed ${over ? 'var(--gold)' : disabled ? '#333' : '#4a4a4a'}`,
+        background: over ? 'rgba(204,164,83,0.08)' : disabled ? 'rgba(255,255,255,0.015)' : 'rgba(255,255,255,0.03)',
+        transition: 'border-color 120ms, background 120ms',
+      }}
+    >
+      {children}
+      {isEmpty && (
+        <span style={{ fontSize: '0.7rem', color: disabled ? '#555' : '#777', margin: 'auto', pointerEvents: 'none', textAlign: 'center' }}>
+          {label}
+        </span>
+      )}
+    </div>
+  )
+}
+
+function BtReqSlot({ champ, onDropChamp, onRemove }: {
+  champ?: BtChamp
+  onDropChamp: (id: string) => void
+  onRemove: () => void
+}) {
+  const [over, setOver] = useState(false)
+  if (champ) {
+    return (
+      <div style={{ padding: '0.3rem', border: '1.5px solid var(--gold)', borderRadius: '0.5rem', background: 'rgba(204,164,83,0.06)' }}>
+        <BtChampChip champ={champ} size={64} onRemove={onRemove} />
+      </div>
+    )
+  }
+  return (
+    <div
+      onDragOver={(e) => { if (!e.dataTransfer.types.includes('text/plain')) return; e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; setOver(true) }}
+      onDragLeave={() => setOver(false)}
+      onDrop={(e) => {
+        e.preventDefault(); setOver(false)
+        const id = e.dataTransfer.getData('text/plain')
+        if (id) onDropChamp(id)
+      }}
+      title="Drag a champion here, or leave empty for a FLEX slot"
+      style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        width: 84, height: 84, flexShrink: 0,
+        borderRadius: '0.5rem',
+        border: `1.5px dashed ${over ? 'var(--gold)' : 'rgba(204,164,83,0.35)'}`,
+        background: over ? 'rgba(204,164,83,0.12)' : 'rgba(204,164,83,0.03)',
+        color: 'rgba(204,164,83,0.6)', fontFamily: 'Unbounded, sans-serif',
+        fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.1em',
+        transition: 'border-color 120ms, background 120ms',
+      }}
+    >
+      FLEX
+    </div>
   )
 }
 
 function BestTeamsForm() {
-  const [heroes, setHeroes] = useState<ItemOption[]>([])
+  const [champs, setChamps] = useState<BtChamp[]>([])
   const [teams, setTeams] = useState<BestTeam[]>(
-    Array.from({ length: 10 }, (_, i) => ({ rank: i + 1, explanation: '', required: ['', '', '', '', ''], optional: ['', '', '', '', ''] }))
+    Array.from({ length: 10 }, (_, i) => ({ rank: i + 1, name: '', explanation: '', required: ['', '', '', '', ''], optional: [], replacements: [] }))
   )
+  const [search, setSearch] = useState('')
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+  const [teamDragRank, setTeamDragRank] = useState<number | null>(null)
+  const [teamOverRank, setTeamOverRank] = useState<number | null>(null)
 
   useEffect(() => {
-    fetch('/api/admin/dcdl/champions').then((r) => r.json()).then((data: { id: string; name: string }[]) =>
-      setHeroes(data.map((h) => ({ id: h.id, name: h.name })).sort((a, b) => a.name.localeCompare(b.name)))
+    fetch('/api/admin/dcdl/champions').then((r) => r.json()).then((data: BtChamp[]) =>
+      setChamps([...data].sort((a, b) => a.name.localeCompare(b.name)))
     )
-    fetch('/api/admin/dcdl/best-teams').then((r) => r.json()).then((data: BestTeam[]) => {
-      setTeams(data.map((t) => ({
-        ...t,
-        required: [...(t.required ?? []), '', '', '', '', ''].slice(0, 5),
-        optional: [...(t.optional ?? []), '', '', '', '', ''].slice(0, 5),
-      })))
+    fetch('/api/admin/dcdl/best-teams').then((r) => r.json()).then((data: Partial<BestTeam>[]) => {
+      const count = data.length > 0 ? data.length : 10
+      setTeams(Array.from({ length: count }, (_, i) => {
+        const t = data[i] ?? {}
+        return {
+          rank: i + 1,
+          name: t.name ?? '',
+          explanation: t.explanation ?? '',
+          required: [...(t.required ?? []), '', '', '', '', ''].slice(0, 5),
+          optional: (t.optional ?? []).filter(Boolean),
+          replacements: (t.replacements ?? []).map((r) => ({ required: r.required, replacements: (r.replacements ?? []).filter(Boolean) })),
+        }
+      }))
     })
   }, [])
 
-  function updateTeam(rank: number, field: 'explanation', value: string): void
-  function updateTeam(rank: number, field: 'required' | 'optional', value: string[]): void
-  function updateTeam(rank: number, field: keyof BestTeam, value: string | string[]) {
-    setTeams((prev) => prev.map((t) => t.rank === rank ? { ...t, [field]: value } : t))
+  const champMap: Record<string, BtChamp> = Object.fromEntries(champs.map((c) => [c.id, c]))
+  const filteredChamps = champs.filter((c) => c.name.toLowerCase().includes(search.toLowerCase()))
+
+  function mutateTeam(rank: number, fn: (t: BestTeam) => BestTeam) {
+    setTeams((prev) => prev.map((t) => (t.rank === rank ? fn(t) : t)))
   }
 
-  function updateSlot(rank: number, field: 'required' | 'optional', idx: number, val: string) {
-    const team = teams.find((t) => t.rank === rank)!
-    const next = [...team[field] as string[]]
-    next[idx] = val
-    updateTeam(rank, field, next)
+  function moveTeam(fromRank: number, toRank: number) {
+    if (fromRank === toRank) return
+    setTeams((prev) => {
+      const arr = [...prev]
+      const fromIdx = arr.findIndex((t) => t.rank === fromRank)
+      const toIdx = arr.findIndex((t) => t.rank === toRank)
+      if (fromIdx === -1 || toIdx === -1) return prev
+      const [moved] = arr.splice(fromIdx, 1)
+      arr.splice(toIdx, 0, moved)
+      return arr.map((t, i) => ({ ...t, rank: i + 1 }))
+    })
   }
+
+  // Required is a positional 5-slot array: indices 0-1 = Frontline, 2-4 = Backline.
+  const dropOnReqSlot = (rank: number, slot: number) => (champId: string) => mutateTeam(rank, (t) => {
+    const required = t.required.map((id) => (id === champId ? '' : id)) // champ can't occupy two slots
+    required[slot] = champId
+    return { ...t, required, optional: t.optional.filter((o) => o !== champId) }
+  })
+
+  const removeReqSlot = (rank: number, slot: number) => mutateTeam(rank, (t) => {
+    const removedId = t.required[slot]
+    const required = [...t.required]
+    required[slot] = ''
+    return { ...t, required, replacements: t.replacements.filter((r) => r.required !== removedId) }
+  })
+
+  const dropOnOptional = (rank: number) => (champId: string) => mutateTeam(rank, (t) => {
+    if (t.optional.includes(champId)) return t
+    const required = t.required.map((id) => (id === champId ? '' : id))
+    if (required.filter(Boolean).length >= 5) return t // all required slots filled → optional locked
+    return { ...t, required, optional: [...t.optional, champId], replacements: t.replacements.filter((r) => r.required !== champId) }
+  })
+
+  const removeOptional = (rank: number, champId: string) => mutateTeam(rank, (t) => ({
+    ...t, optional: t.optional.filter((o) => o !== champId),
+  }))
+
+  const clearTeam = (rank: number) => mutateTeam(rank, (t) => ({ ...t, required: ['', '', '', '', ''], optional: [], replacements: [] }))
+
+  const addTeam = () => setTeams((prev) => [
+    ...prev,
+    { rank: prev.length + 1, name: '', explanation: '', required: ['', '', '', '', ''], optional: [], replacements: [] },
+  ])
+
+  const removeTeam = (rank: number) => setTeams((prev) =>
+    prev.filter((t) => t.rank !== rank).map((t, i) => ({ ...t, rank: i + 1 }))
+  )
+
+  const addReplacementRow = (rank: number) => (champId: string) => mutateTeam(rank, (t) => {
+    if (!t.required.includes(champId) || t.replacements.some((r) => r.required === champId)) return t
+    return { ...t, replacements: [...t.replacements, { required: champId, replacements: [] }] }
+  })
+
+  const addReplacement = (rank: number, reqId: string) => (champId: string) => mutateTeam(rank, (t) => ({
+    ...t,
+    replacements: t.replacements.map((r) =>
+      r.required === reqId && champId !== reqId && !r.replacements.includes(champId)
+        ? { ...r, replacements: [...r.replacements, champId] }
+        : r
+    ),
+  }))
+
+  const removeReplacementRow = (rank: number, reqId: string) => mutateTeam(rank, (t) => ({
+    ...t, replacements: t.replacements.filter((r) => r.required !== reqId),
+  }))
+
+  const removeReplacement = (rank: number, reqId: string, champId: string) => mutateTeam(rank, (t) => ({
+    ...t,
+    replacements: t.replacements.map((r) =>
+      r.required === reqId ? { ...r, replacements: r.replacements.filter((c) => c !== champId) } : r
+    ),
+  }))
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault(); setLoading(true); setStatus(null)
     const payload = teams.map((t) => ({
       rank: t.rank,
+      name: t.name,
       explanation: t.explanation,
-      required: (t.required as string[]).filter(Boolean),
-      optional: (t.optional as string[]).filter(Boolean),
+      required: t.required,
+      optional: t.required.length >= 5 ? [] : t.optional,
+      replacements: t.replacements.filter((r) => r.replacements.length > 0),
     }))
     try {
       const res = await fetch('/api/admin/dcdl/best-teams', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
@@ -1703,46 +1901,241 @@ function BestTeamsForm() {
     setLoading(false)
   }
 
+  const zoneLabel = (color: string): React.CSSProperties => ({
+    fontSize: '0.72rem', fontWeight: 600, color, marginBottom: '0.45rem',
+    textTransform: 'uppercase', letterSpacing: '0.06em',
+  })
+
   return (
     <div>
-      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-        Configure up to 10 ranked team compositions. Leave slots empty to skip them on the public page.
+      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.25rem' }}>
+        Drag champion portraits from the palette onto the formation — 2 Frontline + 3 Backline. Any slot you leave empty
+        shows as a FLEX slot on the site, filled by your Optional / Flex picks (unlimited while a FLEX slot is open).
+        Drag the ⠿ handle (or use ▲▼) to move a whole team to a new rank. Use &quot;+ Add Team&quot; / &quot;Remove&quot;
+        to change how many teams there are. Teams left empty are skipped on the public page.
       </p>
+
+      {/* Persistent champion palette */}
+      <div style={{
+        position: 'sticky', top: '4.25rem', zIndex: 50,
+        background: '#141414', border: '1px solid #333', borderRadius: '0.5rem',
+        padding: '0.75rem', marginBottom: '1.5rem',
+        boxShadow: '0 10px 28px rgba(0,0,0,0.55)',
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '0.6rem', flexWrap: 'wrap' }}>
+          <span style={{ ...secTitle, border: 'none', paddingBottom: 0, marginBottom: 0 }}>Champion Palette</span>
+          <input
+            style={{ ...inp, maxWidth: '15rem', padding: '0.35rem 0.6rem', fontSize: '0.8rem' }}
+            placeholder="Search champions..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <span style={{ fontSize: '0.7rem', color: '#777' }}>
+            Drag into any team. Champions can appear on multiple teams.
+          </span>
+        </div>
+        <div style={{
+          display: 'flex', flexWrap: 'wrap', gap: '0.55rem',
+          maxHeight: '11.5rem', overflowY: 'auto', paddingRight: '0.25rem',
+        }}>
+          {filteredChamps.map((c) => <BtChampChip key={c.id} champ={c} size={54} />)}
+          {filteredChamps.length === 0 && <span style={{ fontSize: '0.75rem', color: '#666' }}>No champions match &quot;{search}&quot;</span>}
+        </div>
+      </div>
+
       <StatusBanner status={status} />
+
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-        {teams.map((team) => (
-          <div key={team.rank} style={{ ...sec, border: '1px solid #333' }}>
-            <div style={secTitle}>Team #{team.rank}</div>
-            <Field label="Explanation">
-              <textarea
-                style={{ ...inp, minHeight: '4rem', resize: 'vertical' }}
-                value={team.explanation}
-                onChange={(e) => updateTeam(team.rank, 'explanation', e.target.value)}
-                placeholder="Describe this team's strengths, game modes, playstyle..."
-              />
-            </Field>
-            <div style={g2}>
-              <div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--gold)', fontWeight: 600, marginBottom: '0.5rem' }}>Required Champions (up to 5)</div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  {(team.required as string[]).map((val, i) => (
-                    <HeroSelect key={i} value={val} onChange={(v) => updateSlot(team.rank, 'required', i, v)} heroes={heroes} placeholder={`Required ${i + 1}`} />
-                  ))}
+        {teams.map((team) => {
+          const filledRequired = team.required.filter(Boolean)
+          const locked = filledRequired.length >= 5
+          const teamEmpty = filledRequired.length === 0 && team.optional.length === 0 && team.replacements.length === 0
+          const isDragTarget = teamOverRank === team.rank && teamDragRank !== null && teamDragRank !== team.rank
+          const nudgeBtn: React.CSSProperties = {
+            background: 'none', border: '1px solid #444', borderRadius: '0.375rem',
+            color: '#aaa', cursor: 'pointer', padding: '0.25rem 0.55rem', fontSize: '0.7rem', lineHeight: 1,
+          }
+          return (
+            <div
+              key={team.rank}
+              onDragOver={(e) => {
+                if (!e.dataTransfer.types.includes('application/x-bt-team')) return
+                e.preventDefault(); e.dataTransfer.dropEffect = 'move'; setTeamOverRank(team.rank)
+              }}
+              onDragLeave={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget as Node)) setTeamOverRank((prev) => (prev === team.rank ? null : prev))
+              }}
+              onDrop={(e) => {
+                const from = e.dataTransfer.getData('application/x-bt-team')
+                if (from) { e.preventDefault(); moveTeam(Number(from), team.rank) }
+                setTeamOverRank(null); setTeamDragRank(null)
+              }}
+              style={{
+                ...sec,
+                border: isDragTarget ? '1.5px dashed var(--gold)' : '1px solid #333',
+                opacity: teamDragRank === team.rank ? 0.45 : 1,
+                transition: 'opacity 120ms, border-color 120ms',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', flex: 1, minWidth: 0 }}>
+                  <span
+                    draggable
+                    onDragStart={(e) => {
+                      e.dataTransfer.setData('application/x-bt-team', String(team.rank))
+                      e.dataTransfer.effectAllowed = 'move'
+                      setTeamDragRank(team.rank)
+                    }}
+                    onDragEnd={() => { setTeamDragRank(null); setTeamOverRank(null) }}
+                    title="Drag to move this team to another rank"
+                    style={{ cursor: 'grab', color: '#777', fontSize: '0.95rem', letterSpacing: '0.1em', userSelect: 'none', padding: '0.1rem 0.2rem' }}
+                  >
+                    ⠿
+                  </span>
+                  <div style={{ ...secTitle, border: 'none', paddingBottom: 0, marginBottom: 0, whiteSpace: 'nowrap' }}>Team #{team.rank}</div>
+                  <input
+                    style={{ ...inp, maxWidth: '20rem', padding: '0.35rem 0.6rem', fontSize: '0.82rem' }}
+                    value={team.name}
+                    onChange={(e) => mutateTeam(team.rank, (t) => ({ ...t, name: e.target.value }))}
+                    placeholder="Team name (shown on public page)"
+                  />
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <button type="button" onClick={() => moveTeam(team.rank, team.rank - 1)} disabled={team.rank === 1}
+                    title="Move up one rank" style={{ ...nudgeBtn, opacity: team.rank === 1 ? 0.3 : 1 }}>▲</button>
+                  <button type="button" onClick={() => moveTeam(team.rank, team.rank + 1)} disabled={team.rank === teams.length}
+                    title="Move down one rank" style={{ ...nudgeBtn, opacity: team.rank === teams.length ? 0.3 : 1 }}>▼</button>
+                  <button
+                    type="button"
+                    onClick={() => clearTeam(team.rank)}
+                    disabled={teamEmpty}
+                    style={{
+                      background: 'none', border: '1px solid #6b2727', borderRadius: '0.375rem',
+                      color: '#f87171', cursor: 'pointer', padding: '0.3rem 0.8rem', fontSize: '0.75rem',
+                      marginLeft: '0.4rem',
+                      opacity: teamEmpty ? 0.35 : 1,
+                    }}
+                  >
+                    Clear Team
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { if (teamEmpty || window.confirm(`Remove Team #${team.rank}? This deletes its champions and notes.`)) removeTeam(team.rank) }}
+                    title="Delete this team"
+                    style={{
+                      background: '#3a1414', border: '1px solid #6b2727', borderRadius: '0.375rem',
+                      color: '#f87171', cursor: 'pointer', padding: '0.3rem 0.8rem', fontSize: '0.75rem',
+                    }}
+                  >
+                    Remove
+                  </button>
                 </div>
               </div>
+
+              <Field label="Explanation">
+                <textarea
+                  style={{ ...inp, minHeight: '4rem', resize: 'vertical' }}
+                  value={team.explanation}
+                  onChange={(e) => mutateTeam(team.rank, (t) => ({ ...t, explanation: e.target.value }))}
+                  placeholder="Describe this team's strengths, game modes, playstyle..."
+                />
+              </Field>
+
               <div>
-                <div style={{ fontSize: '0.75rem', color: '#888', fontWeight: 600, marginBottom: '0.5rem' }}>Optional Champions (up to 5)</div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                  {(team.optional as string[]).map((val, i) => (
-                    <HeroSelect key={i} value={val} onChange={(v) => updateSlot(team.rank, 'optional', i, v)} heroes={heroes} placeholder={`Optional ${i + 1}`} />
+                <div style={zoneLabel('var(--gold)')}>Required Core — Formation ({filledRequired.length}/5)</div>
+                <div style={{
+                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem',
+                  padding: '0.85rem', borderRadius: '0.5rem', background: 'rgba(255,255,255,0.02)', border: '1px solid #2a2a2a',
+                }}>
+                  <span style={{ fontSize: '0.6rem', color: '#888', letterSpacing: '0.14em', textTransform: 'uppercase', fontFamily: 'Unbounded, sans-serif' }}>Frontline</span>
+                  <div style={{ display: 'flex', justifyContent: 'center', gap: '0.6rem' }}>
+                    {[0, 1].map((slot) => (
+                      <BtReqSlot key={slot} champ={champMap[team.required[slot]]} onDropChamp={dropOnReqSlot(team.rank, slot)} onRemove={() => removeReqSlot(team.rank, slot)} />
+                    ))}
+                  </div>
+                  <span style={{ fontSize: '0.6rem', color: '#888', letterSpacing: '0.14em', textTransform: 'uppercase', fontFamily: 'Unbounded, sans-serif', marginTop: '0.25rem' }}>Backline</span>
+                  <div style={{ display: 'flex', justifyContent: 'center', gap: '0.6rem' }}>
+                    {[2, 3, 4].map((slot) => (
+                      <BtReqSlot key={slot} champ={champMap[team.required[slot]]} onDropChamp={dropOnReqSlot(team.rank, slot)} onRemove={() => removeReqSlot(team.rank, slot)} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div style={zoneLabel('#888')}>
+                  Optional / Flex Picks {locked ? '— locked' : `(${team.optional.length})`}
+                </div>
+                <BtDropZone
+                  onDropChamp={dropOnOptional(team.rank)}
+                  disabled={locked}
+                  label={locked ? 'Locked — all 5 required slots are filled (no FLEX slots open)' : 'Drag champions here — these fill the FLEX slots (unlimited)'}
+                  isEmpty={team.optional.length === 0}
+                >
+                  {team.optional.map((id) => champMap[id] && (
+                    <BtChampChip key={id} champ={champMap[id]} size={52} onRemove={() => removeOptional(team.rank, id)} />
                   ))}
+                </BtDropZone>
+                {locked && team.optional.length > 0 && (
+                  <p style={{ margin: '0.4rem 0 0', fontSize: '0.7rem', color: '#fbbf24' }}>
+                    All 5 required slots are filled — these optional champions will be removed on save.
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <div style={zoneLabel('#a78bfa')}>Viable Replacements</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  {team.replacements.map((row) => champMap[row.required] && (
+                    <div key={row.required} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <div style={{
+                        padding: '0.45rem', border: '1.5px solid var(--gold)', borderRadius: '0.5rem',
+                        background: 'rgba(204,164,83,0.06)', flexShrink: 0,
+                      }}>
+                        <BtChampChip champ={champMap[row.required]} size={56} onRemove={() => removeReplacementRow(team.rank, row.required)} />
+                      </div>
+                      <span style={{ color: 'var(--gold)', fontSize: '1.3rem', flexShrink: 0 }} aria-hidden>→</span>
+                      <div style={{ flex: 1 }}>
+                        <BtDropZone
+                          onDropChamp={addReplacement(team.rank, row.required)}
+                          label="Drag replacement champions here"
+                          isEmpty={row.replacements.length === 0}
+                          minHeight={76}
+                        >
+                          {row.replacements.map((id) => champMap[id] && (
+                            <BtChampChip key={id} champ={champMap[id]} size={52} onRemove={() => removeReplacement(team.rank, row.required, id)} />
+                          ))}
+                        </BtDropZone>
+                      </div>
+                    </div>
+                  ))}
+                  <BtDropZone
+                    onDropChamp={addReplacementRow(team.rank)}
+                    disabled={team.required.length === 0}
+                    label={team.required.length === 0
+                      ? 'Add required champions first'
+                      : 'Drag a REQUIRED champion here to define its replacements'}
+                    isEmpty
+                    minHeight={52}
+                  />
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
+        <button
+          type="button"
+          onClick={addTeam}
+          style={{
+            alignSelf: 'flex-start', background: 'none', border: '1px dashed #555',
+            borderRadius: '0.5rem', color: 'var(--gold)', cursor: 'pointer',
+            padding: '0.75rem 1.5rem', fontSize: '0.9rem', fontFamily: 'Unbounded, sans-serif',
+          }}
+        >
+          + Add Team
+        </button>
         <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
-          {loading ? 'Saving...' : 'Save All Teams'}
+          {loading ? 'Saving...' : `Save All Teams (${teams.length})`}
         </button>
       </form>
     </div>

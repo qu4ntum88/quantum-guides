@@ -1,7 +1,9 @@
-import { getResolvedHeros, getDataLastUpdated } from '@/src/dcdl/lib/data'
+import { getResolvedHeros, getDataLastUpdated, type HeroResolved } from '@/src/dcdl/lib/data'
 import '../../godforge/game.css'
+import './best-teams.css'
 
-type Team = { rank: number; explanation: string; required: string[]; optional: string[] }
+type ReplacementRow = { required: string; replacements: string[] }
+type Team = { rank: number; name?: string; explanation: string; required: string[]; optional: string[]; replacements?: ReplacementRow[] }
 type Synergy = { id: string; name: string; image: string }
 
 function readTeams(): Team[] {
@@ -26,10 +28,49 @@ const RARITY_BG: Record<string, string> = {
   'Epic':     '#2e0038',
 }
 
-const RANK_COLORS: Record<number, string> = {
-  1: '#FFD700',
-  2: '#C0C0C0',
-  3: '#CD7F32',
+function ChampPortrait({ hero, variant }: { hero: HeroResolved; variant: 'req' | 'opt' | 'sub' }) {
+  return (
+    <a className={`bt-champ bt-champ--${variant}`} href={`/games/dc-dark-legion/heros/${hero.id}`} title={hero.name}>
+      <span className="bt-frame">
+        <img
+          src={hero.imageHeadshot ?? ''}
+          alt={hero.name}
+          style={{ background: RARITY_BG[hero.rarity] ?? '#111' }}
+        />
+      </span>
+      <span className="bt-champ-name">{hero.name.split('(')[0].trim()}</span>
+    </a>
+  )
+}
+
+function ArrowIcon() {
+  return (
+    <svg className="bt-arrow" viewBox="0 0 32 12" aria-hidden="true">
+      <path d="M1 6 H28 M23 1.5 L28.5 6 L23 10.5" />
+    </svg>
+  )
+}
+
+function FlexSlot() {
+  return (
+    <div className="bt-flex">
+      <span className="bt-flex-box">FLEX</span>
+      <span className="bt-champ-name">&nbsp;</span>
+    </div>
+  )
+}
+
+function FormationLine({ label, heroes }: { label: string; heroes: (HeroResolved | null)[] }) {
+  return (
+    <div className="bt-line">
+      <span className="bt-line-label">{label}</span>
+      <div className="bt-line-slots">
+        {heroes.map((hero, i) =>
+          hero ? <ChampPortrait key={hero.id} hero={hero} variant="req" /> : <FlexSlot key={`flex-${i}`} />
+        )}
+      </div>
+    </div>
+  )
 }
 
 export default function BestTeamsPage() {
@@ -40,14 +81,15 @@ export default function BestTeamsPage() {
   const synergyMap = Object.fromEntries(synergies.map((s) => [s.id, s]))
   const teams = readTeams()
   const filledTeams = teams.filter((t) => t.required.length > 0 || t.optional.length > 0 || t.explanation)
+  const hasReplacements = filledTeams.some((t) => (t.replacements ?? []).length > 0)
 
   return (
     <main>
-      <section className="gh-hero" style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <section className="gh-hero" style={{ '--game-accent': '#CCA453' } as React.CSSProperties}>
         <div className="container">
-          <p className="gh-overline">Best Teams</p>
-          <h1 className="gh-hero-title">DC: Dark Legion</h1>
-          <p className="gh-hero-sub">Quantum&apos;s top 10 team compositions ranked by overall effectiveness.</p>
+          <p className="gh-overline">DC: Dark Legion — Ranked Meta</p>
+          <h1 className="gh-hero-title">Best Teams in DC: Dark Legion</h1>
+          <p className="gh-hero-sub">Quantum&apos;s top team compositions ranked by overall effectiveness.</p>
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.38)', fontFamily: 'monospace' }}>Updated: {lastUpdated}</span>
@@ -56,15 +98,31 @@ export default function BestTeamsPage() {
         </div>
       </section>
 
-      <section style={{ padding: '2rem 0 4rem' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+      <section className="bt-section">
+        <div className="container">
+          {filledTeams.length > 0 && (
+            <div className="bt-legend">
+              <span><i className="bt-key bt-key--req" /> Required core</span>
+              <span><i className="bt-key bt-key--opt" /> Optional flex</span>
+              {hasReplacements && <span><ArrowIcon /> Viable replacement</span>}
+            </div>
+          )}
+
           {filledTeams.length === 0 ? (
             <p style={{ color: '#666', fontStyle: 'italic' }}>No teams have been configured yet.</p>
           ) : (
-            filledTeams.map((team) => {
-              const rankColor = RANK_COLORS[team.rank] ?? 'var(--gold)'
-              const requiredHeroes = team.required.map((id) => heroMap[id]).filter(Boolean)
+            filledTeams.map((team, index) => {
+              const requiredSlots = Array.from({ length: 5 }, (_, i) => heroMap[team.required[i] ?? ''] ?? null)
+              const frontline = requiredSlots.slice(0, 2)
+              const backline = requiredSlots.slice(2, 5)
+              const requiredHeroes = requiredSlots.filter(Boolean) as HeroResolved[]
               const optionalHeroes = team.optional.map((id) => heroMap[id]).filter(Boolean)
+              const replacementRows = (team.replacements ?? [])
+                .map((row) => ({
+                  required: heroMap[row.required],
+                  replacements: row.replacements.map((id) => heroMap[id]).filter(Boolean),
+                }))
+                .filter((row) => row.required && row.replacements.length > 0)
 
               // Count synergies across all champions on the team
               const allHeroes = [...requiredHeroes, ...optionalHeroes]
@@ -77,140 +135,69 @@ export default function BestTeamsPage() {
                 .map(([id]) => synergyMap[id])
                 .filter(Boolean)
 
+              const rankNo = String(team.rank).padStart(2, '0')
+
               return (
-                <div
+                <article
                   key={team.rank}
-                  style={{
-                    background: 'rgba(255,255,255,0.03)',
-                    border: '1px solid #222',
-                    borderLeft: `4px solid ${rankColor}`,
-                    borderRadius: '0.75rem',
-                    overflow: 'hidden',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 0,
-                  }}
+                  className="bt-card"
+                  data-rank={team.rank}
+                  style={{ animationDelay: `${index * 80}ms` }}
                 >
-                  {/* Header bar */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '1rem',
-                    padding: '0.75rem 1.25rem',
-                    background: `linear-gradient(90deg, ${rankColor}18 0%, transparent 100%)`,
-                    borderBottom: '1px solid #1e1e1e',
-                    flexWrap: 'wrap',
-                  }}>
-                    <span style={{
-                      fontFamily: 'Unbounded, sans-serif',
-                      fontSize: '1.1rem',
-                      fontWeight: 700,
-                      color: rankColor,
-                      minWidth: '2rem',
-                    }}>
-                      #{team.rank}
-                    </span>
-                    {team.explanation && (
-                      <p style={{ margin: 0, fontSize: '0.9rem', color: '#c0c0c0', lineHeight: 1.6, flex: 1 }}>
-                        {team.explanation}
-                      </p>
-                    )}
-                  </div>
+                  <div className="bt-card-inner">
+                    <span className="bt-watermark" aria-hidden="true">{rankNo}</span>
 
-                  {/* Champions row */}
-                  <div style={{ padding: '1rem 1.25rem', display: 'flex', alignItems: 'flex-start', gap: '1.25rem', flexWrap: 'wrap' }}>
+                    <header className="bt-head">
+                      <div className="bt-plate"><span>#{team.rank}</span></div>
+                      {team.name && <h2 className="bt-team-name">{team.name}</h2>}
+                      {triggeredSynergies.length > 0 && (
+                        <div className="bt-syn">
+                          {triggeredSynergies.map((syn) => (
+                            <div key={syn.id} className="bt-syn-item" title={syn.name}>
+                              <img src={synergyImagePath(syn.image)} alt={syn.name} />
+                              <span>{syn.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </header>
 
-                    {/* Synergy icons column */}
-                    {triggeredSynergies.length > 0 && (
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem', paddingTop: '1.25rem', flexShrink: 0 }}>
-                        {triggeredSynergies.map((syn) => (
-                          <div key={syn.id} title={syn.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem' }}>
-                            <img
-                              src={synergyImagePath(syn.image)}
-                              alt={syn.name}
-                              style={{ width: '2.5rem', height: '2.5rem', objectFit: 'contain' }}
-                            />
-                            <span style={{ fontSize: '0.5rem', color: '#666', textAlign: 'center', maxWidth: '3rem', lineHeight: 1.2, textTransform: 'uppercase', fontFamily: 'Unbounded, sans-serif', letterSpacing: '0.04em' }}>
-                              {syn.name}
-                            </span>
+                    {team.explanation && <p className="bt-expl">{team.explanation}</p>}
+
+                    <div className="bt-roster">
+                      <div className="bt-group bt-group--req">
+                        <div className="bt-group-label">Required Core</div>
+                        <div className="bt-formation">
+                          <FormationLine label="Frontline" heroes={frontline} />
+                          <FormationLine label="Backline" heroes={backline} />
+                        </div>
+                      </div>
+                      {optionalHeroes.length > 0 && (
+                        <div className="bt-group bt-group--opt">
+                          <div className="bt-group-label">Optional</div>
+                          <div className="bt-champs">
+                            {optionalHeroes.map((hero) => <ChampPortrait key={hero.id} hero={hero} variant="opt" />)}
                           </div>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Vertical divider after synergies */}
-                    {triggeredSynergies.length > 0 && (
-                      <div style={{ width: '1px', background: '#2a2a2a', alignSelf: 'stretch', flexShrink: 0 }} />
-                    )}
-
-                    {/* Required */}
-                    {requiredHeroes.length > 0 && (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', alignItems: 'flex-start' }}>
-                        <span style={{ fontSize: '0.6rem', fontFamily: 'Unbounded, sans-serif', color: '#888', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-                          Required
-                        </span>
-                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                          {requiredHeroes.map((hero) => (
-                            <a key={hero.id} href={`/games/dc-dark-legion/heros/${hero.id}`} title={hero.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', textDecoration: 'none' }}>
-                              <img
-                                src={hero.imageHeadshot ?? ''}
-                                alt={hero.name}
-                                style={{
-                                  width: '5.25rem',
-                                  height: '5.25rem',
-                                  objectFit: 'cover',
-                                  borderRadius: '0.5rem',
-                                  border: '2px solid var(--gold)',
-                                  background: RARITY_BG[hero.rarity] ?? '#111',
-                                  display: 'block',
-                                }}
-                              />
-                              <span style={{ fontSize: '0.6rem', color: '#aaa', textAlign: 'center', maxWidth: '5.25rem', lineHeight: 1.2 }}>
-                                {hero.name.split('(')[0].trim()}
-                              </span>
-                            </a>
-                          ))}
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
 
-                    {/* Divider between required and optional */}
-                    {requiredHeroes.length > 0 && optionalHeroes.length > 0 && (
-                      <div style={{ width: '1px', background: '#2a2a2a', alignSelf: 'stretch', flexShrink: 0 }} />
-                    )}
-
-                    {/* Optional */}
-                    {optionalHeroes.length > 0 && (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', alignItems: 'flex-start' }}>
-                        <span style={{ fontSize: '0.6rem', fontFamily: 'Unbounded, sans-serif', color: '#888', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-                          Optional
-                        </span>
-                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
-                          {optionalHeroes.map((hero) => (
-                            <a key={hero.id} href={`/games/dc-dark-legion/heros/${hero.id}`} title={hero.name} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', textDecoration: 'none' }}>
-                              <img
-                                src={hero.imageHeadshot ?? ''}
-                                alt={hero.name}
-                                style={{
-                                  width: '3.5rem',
-                                  height: '3.5rem',
-                                  objectFit: 'cover',
-                                  borderRadius: '0.4rem',
-                                  border: '2px solid #555',
-                                  background: RARITY_BG[hero.rarity] ?? '#111',
-                                  display: 'block',
-                                }}
-                              />
-                              <span style={{ fontSize: '0.55rem', color: '#888', textAlign: 'center', maxWidth: '3.5rem', lineHeight: 1.2 }}>
-                                {hero.name.split('(')[0].trim()}
-                              </span>
-                            </a>
+                    {replacementRows.length > 0 && (
+                      <div className="bt-subs">
+                        <div className="bt-subs-label">Viable Replacements</div>
+                        <div className="bt-sub-rows">
+                          {replacementRows.map((row) => (
+                            <div key={row.required.id} className="bt-sub-row">
+                              <ChampPortrait hero={row.required} variant="sub" />
+                              <ArrowIcon />
+                              {row.replacements.map((hero) => <ChampPortrait key={hero.id} hero={hero} variant="sub" />)}
+                            </div>
                           ))}
                         </div>
                       </div>
                     )}
                   </div>
-                </div>
+                </article>
               )
             })
           )}
@@ -218,7 +205,7 @@ export default function BestTeamsPage() {
       </section>
 
       {/* Logos Footer */}
-      <section style={{ padding: '2.5rem 0 3rem' }}>
+      <section style={{ padding: '2.5rem 0 3rem', background: '#0a0a10' }}>
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
             <img

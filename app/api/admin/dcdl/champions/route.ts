@@ -48,7 +48,12 @@ export async function GET() {
   const guard = notProd()
   if (guard) return guard
   const heros = JSON.parse(fs.readFileSync(herosPath, 'utf8'))
-  return NextResponse.json(heros.map((h: { id: string; name: string }) => ({ id: h.id, name: h.name })))
+  return NextResponse.json(heros.map((h: { id: string; name: string; imageHeadshot?: string; rarity?: string }) => ({
+    id: h.id,
+    name: h.name,
+    imageHeadshot: h.imageHeadshot?.replace(/^\.\/headshot_images\//, '/dcdl/heros/headshot_images/') ?? null,
+    rarity: h.rarity ?? null,
+  })))
 }
 
 export async function POST(req: NextRequest) {
