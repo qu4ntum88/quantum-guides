@@ -103,7 +103,7 @@ export default function BestTeamsPage() {
           {filledTeams.length > 0 && (
             <div className="bt-legend">
               <span><i className="bt-key bt-key--req" /> Required core</span>
-              <span><i className="bt-key bt-key--opt" /> Optional flex</span>
+              <span><i className="bt-key bt-key--opt" /> Flex pick</span>
               {hasReplacements && <span><ArrowIcon /> Viable replacement</span>}
             </div>
           )}
@@ -174,7 +174,7 @@ export default function BestTeamsPage() {
                       </div>
                       {optionalHeroes.length > 0 && (
                         <div className="bt-group bt-group--opt">
-                          <div className="bt-group-label">Optional</div>
+                          <div className="bt-group-label">Flex Picks</div>
                           <div className="bt-champs">
                             {optionalHeroes.map((hero) => <ChampPortrait key={hero.id} hero={hero} variant="opt" />)}
                           </div>

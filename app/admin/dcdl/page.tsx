@@ -1890,7 +1890,7 @@ function BestTeamsForm() {
       name: t.name,
       explanation: t.explanation,
       required: t.required,
-      optional: t.required.length >= 5 ? [] : t.optional,
+      optional: t.required.filter(Boolean).length >= 5 ? [] : t.optional,
       replacements: t.replacements.filter((r) => r.replacements.length > 0),
     }))
     try {
@@ -1910,7 +1910,7 @@ function BestTeamsForm() {
     <div>
       <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.25rem' }}>
         Drag champion portraits from the palette onto the formation — 2 Frontline + 3 Backline. Any slot you leave empty
-        shows as a FLEX slot on the site, filled by your Optional / Flex picks (unlimited while a FLEX slot is open).
+        shows as a FLEX slot on the site, filled by your Flex Picks (unlimited while a FLEX slot is open).
         Drag the ⠿ handle (or use ▲▼) to move a whole team to a new rank. Use &quot;+ Add Team&quot; / &quot;Remove&quot;
         to change how many teams there are. Teams left empty are skipped on the public page.
       </p>
@@ -2064,7 +2064,7 @@ function BestTeamsForm() {
 
               <div>
                 <div style={zoneLabel('#888')}>
-                  Optional / Flex Picks {locked ? '— locked' : `(${team.optional.length})`}
+                  Flex Picks {locked ? '— locked (core is full)' : `(${team.optional.length})`}
                 </div>
                 <BtDropZone
                   onDropChamp={dropOnOptional(team.rank)}
@@ -2078,7 +2078,7 @@ function BestTeamsForm() {
                 </BtDropZone>
                 {locked && team.optional.length > 0 && (
                   <p style={{ margin: '0.4rem 0 0', fontSize: '0.7rem', color: '#fbbf24' }}>
-                    All 5 required slots are filled — these optional champions will be removed on save.
+                    The core is full (all 5 slots filled) — these flex picks will be removed on save. Open a slot to keep them.
                   </p>
                 )}
               </div>
