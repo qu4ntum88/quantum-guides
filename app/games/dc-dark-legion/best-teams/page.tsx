@@ -201,6 +201,11 @@ export default function BestTeamsPage() {
               )
             })
           )}
+          {filledTeams.length > 0 && (
+            <p className="bt-collab-note">
+              Note: These Best Teams recommendations are curated by Quantum, but include data and recommendations provided by Tyvokka as a collaborator.
+            </p>
+          )}
         </div>
       </section>
 
