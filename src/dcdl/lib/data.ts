@@ -69,6 +69,8 @@ export type Hero = {
   ascendedFrom?: string
   starBreakpoint?: number
   acDcPriority?: string[]
+  whaleOrSkipValue?: string
+  uniqueLegacyRequired?: boolean
 }
 
 export type HeroResolved = Omit<Hero, "tagSynergies" | "recommendedLegacyPieces"> & {

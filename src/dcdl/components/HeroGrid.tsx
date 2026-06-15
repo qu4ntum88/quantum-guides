@@ -62,6 +62,15 @@ const GAME_MODES = [
 
 const TIERS = ["S+", "S", "A+", "A", "B", "C", "D"]
 
+const WHALE_SKIP_VALUES = [
+  "Top Tier",
+  "High Value",
+  "Situational / Roster Dependent",
+  "Luxury",
+  "Skip / Do Not Build",
+  "Passively Invest Only",
+]
+
 const tierToRank: Record<string, number> = { "S+": 0, S: 1, "A+": 2, A: 3, B: 4, C: 5, D: 6 }
 const rankToRank: Record<string, number> = { Iconic: 0, "Mythic +": 1, Mythic: 2, Legendary: 3, Epic: 4, "": 5 }
 
@@ -247,6 +256,7 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
   const [selectedRarities, setSelectedRarities] = useState<string[]>([])
   const [selectedTiers, setSelectedTiers] = useState<string[]>([])
   const [selectedGameModes, setSelectedGameModes] = useState<string[]>([])
+  const [selectedWhaleSkip, setSelectedWhaleSkip] = useState<string[]>([])
 
   useEffect(() => {
     fetch('/api/votes/tally?type=champion')
@@ -268,6 +278,7 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
     setSelectedRarities([])
     setSelectedTiers([])
     setSelectedGameModes([])
+    setSelectedWhaleSkip([])
   }
 
   const filtered = heros
@@ -278,6 +289,7 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
       if (selectedRarities.length > 0 && !selectedRarities.includes(hero.rarity)) return false
       if (selectedTiers.length > 0 && !selectedTiers.includes(hero.tier ?? "")) return false
       if (selectedGameModes.length > 0 && !hero.gameModes?.some((m) => selectedGameModes.includes(m))) return false
+      if (selectedWhaleSkip.length > 0 && !selectedWhaleSkip.includes(hero.whaleOrSkipValue ?? "")) return false
       return true
     })
     .sort((a, b) => {
@@ -409,6 +421,22 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
               tier={t}
               selected={selectedTiers.includes(t)}
               onClick={() => toggle(selectedTiers, t, setSelectedTiers)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Whale / Skip filter row */}
+      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+        <span style={LABEL}>Whale / Skip</span>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+          <AllButton selected={selectedWhaleSkip.length === 0} onClick={() => setSelectedWhaleSkip([])} />
+          {WHALE_SKIP_VALUES.map((v) => (
+            <SortButton
+              key={v}
+              label={v}
+              selected={selectedWhaleSkip.includes(v)}
+              onClick={() => toggle(selectedWhaleSkip, v, setSelectedWhaleSkip)}
             />
           ))}
         </div>

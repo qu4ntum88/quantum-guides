@@ -132,17 +132,24 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         {/* Quantum's Take */}
         <div className="card">
           <h2>Quantum&apos;s Take</h2>
-          <p style={{ marginBottom: hero.quantumsTake ? '1rem' : 0 }}>
+          <p style={{ marginBottom: '1rem' }}>
             <G>{firstName}</G> is a{' '}
             {hero.rarity ? <G>{hero.rarity} </G> : <><Null />{' '}</>}
             <G>{hero.class}</G> Champion who does{' '}
             {hero.damageType ? <G>{hero.damageType}</G> : <Null />} damage.{' '}
             <G>{firstName}</G> is best used in{' '}
-            {hero.gameModes && hero.gameModes.length > 0 ? <G>{hero.gameModes.join(', ')}</G> : <Null />}.{' '}
+            {hero.gameModes && hero.gameModes.length > 0 ? <G>{hero.gameModes.join(', ')}</G> : <Null />}.
+          </p>
+          <p style={{ marginBottom: '1rem' }}>
             They can be obtained in{' '}
             {hero.sourcesWhereAvailable && hero.sourcesWhereAvailable.length > 0
               ? <G>{hero.sourcesWhereAvailable.join(', ')}</G>
               : <Null />}.{' '}
+            {hero.whaleOrSkipValue && (
+              <>Based on our analysis, <G>{firstName}</G> is <G>{hero.whaleOrSkipValue}</G>. Plan your spending decisions for Anvils and Selector Shards accordingly.</>
+            )}
+          </p>
+          <p style={{ marginBottom: hero.quantumsTake ? '1rem' : 0 }}>
             You should focus on the following transmutes for <G>{firstName}</G>:{' '}
             {hero.transmutePriorities && hero.transmutePriorities.length > 0
               ? <G>{hero.transmutePriorities.join(', ')}</G>
@@ -174,6 +181,11 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         {/* Recommended Legacy Pieces */}
         <div className="card">
           <h4>Recommended Legacy Pieces</h4>
+          {hero.uniqueLegacyRequired && (
+            <p style={{ marginTop: '0.75rem', marginBottom: 0, lineHeight: 1.65 }}>
+              <G>{firstName}</G> requires their unique legacy piece to operate at full capacity. Until you equip it, this champion may not work as well as intended. The other legacy pieces recommended in this section are simply meant to be placeholders to use until you can afford the magic eye investment if this is a champion you plan to invest heavily into.
+            </p>
+          )}
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
             {hero.recommendedLegacyPieces?.map((p) => (
               <div key={p.id} style={{ width: '10rem' }}>

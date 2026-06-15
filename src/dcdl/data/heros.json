@@ -4431,7 +4431,17 @@
         "description": "Increases Artemis' ATK.",
         "image": "./upgrade_images/Artemis_sub03_enhanced.png"
       }
-    ]
+    ],
+    "starBreakpoint": 1,
+    "acDcPriority": [
+      "Major 1",
+      "Major 2",
+      "Major 3",
+      "Crit Rate",
+      "Physical PEN"
+    ],
+    "whaleOrSkipValue": "Luxury",
+    "uniqueLegacyRequired": true
   },
   {
     "id": "lobo",
@@ -4748,7 +4758,6 @@
     "class": "Guardian",
     "rarity": "Mythic +",
     "tier": "S",
-    "isNew": true,
     "previousTier": "A+",
     "damageType": "Spiritual",
     "tagSynergies": [
@@ -4757,8 +4766,7 @@
     ],
     "gameModes": [
       "PvP",
-      "Devastator CC",
-      "Dawnbreaker CC"
+      "Devastator CC"
     ],
     "sourcesWhereAvailable": [
       "The Bleed"
@@ -4816,7 +4824,16 @@
         "name": "Ice Cold - Enhanced",
         "description": "Increases Mr. Freeze's Max HP."
       }
-    ]
+    ],
+    "starBreakpoint": 1,
+    "acDcPriority": [
+      "Major 1",
+      "Major 2",
+      "Major 3",
+      "P. DEF"
+    ],
+    "whaleOrSkipValue": "High Value",
+    "uniqueLegacyRequired": true
   },
   {
     "id": "red_hood_knightfight_jason_todd",
@@ -4903,6 +4920,7 @@
       "Major 3",
       "Physical PEN",
       "Dodge"
-    ]
+    ],
+    "whaleOrSkipValue": "Luxury"
   }
 ]

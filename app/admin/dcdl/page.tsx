@@ -34,6 +34,7 @@ const LEGACY_RARITIES = ['Iconic', 'Mythic +', 'Mythic', 'Legendary', 'Epic']
 const LEGACY_ROLES = ['Guardian | Warrior', 'Magical | Assassin | Firepower', 'Supporter | Intimidator']
 const STAR_OPTIONS = [1, 2, 3, 4, 5]
 const ACDCPRIORITY_OPTIONS = ['Major 1', 'Major 2', 'Major 3', 'HP Nodes', 'ATK Nodes', 'Healing', 'Energy Gain Bonus', 'Crit DMG', 'Crit Rate', 'Crit RES', 'Crit DMG RES', 'Spiritual PEN', 'Spiritual AMP', 'Physical PEN', 'S. DEF', 'P. DEF', 'Dodge', 'Effect ACC', 'Effect RES', 'Do Not Invest']
+const WHALE_SKIP_OPTIONS = ['Top Tier', 'High Value', 'Situational / Roster Dependent', 'Luxury', 'Skip / Do Not Build', 'Passively Invest Only']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
 type ItemOption = { id: string; name: string }
@@ -212,6 +213,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [clearPrevTier, setClearPrevTier] = useState(false); const [existingPreviousTier, setExistingPreviousTier] = useState('')
   const [ascendsTo, setAscendsTo] = useState(''); const [ascendedFrom, setAscendedFrom] = useState('')
   const [starBreakpoint, setStarBreakpoint] = useState(''); const [acDcPriority, setAcDcPriority] = useState<string[]>([])
+  const [whaleOrSkipValue, setWhaleOrSkipValue] = useState(''); const [uniqueLegacyRequired, setUniqueLegacyRequired] = useState(false)
 
   useEffect(() => {
     fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
@@ -227,6 +229,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setIsNew(false); setIsP2W(false); setClearPrevTier(false); setExistingPreviousTier('')
     setAscendsTo(''); setAscendedFrom('')
     setStarBreakpoint(''); setAcDcPriority([])
+    setWhaleOrSkipValue(''); setUniqueLegacyRequired(false)
   }, [])
 
   async function loadHero(heroId: string) {
@@ -255,6 +258,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setAscendsTo(h.ascendsTo ?? ''); setAscendedFrom(h.ascendedFrom ?? '')
     setStarBreakpoint(h.starBreakpoint ? String(h.starBreakpoint) : '')
     setAcDcPriority(Array.isArray(h.acDcPriority) ? h.acDcPriority : h.acDcPriority ? [h.acDcPriority] : [])
+    setWhaleOrSkipValue(h.whaleOrSkipValue ?? '')
+    setUniqueLegacyRequired(h.uniqueLegacyRequired ?? false)
   }
 
   function toggle(list: string[], set: (v: string[]) => void, val: string) {
@@ -289,6 +294,8 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     if (ascendedFrom) fd.append('ascendedFrom', ascendedFrom)
     if (starBreakpoint) fd.append('starBreakpoint', starBreakpoint)
     acDcPriority.forEach((p) => fd.append('acDcPriority', p))
+    if (whaleOrSkipValue) fd.append('whaleOrSkipValue', whaleOrSkipValue)
+    fd.append('uniqueLegacyRequired', String(uniqueLegacyRequired))
 
     try {
       const res = await fetch('/api/admin/dcdl/champions', { method: mode === 'edit' ? 'PATCH' : 'POST', body: fd })
@@ -458,10 +465,44 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
               </div>
             </Field>
           </div>
+          <Field label="Whale or Skip Value" hint="Select one — click again to deselect">
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+              {WHALE_SKIP_OPTIONS.map((o) => (
+                <label key={o} style={{
+                  display: 'flex', alignItems: 'center', gap: '0.3rem',
+                  background: whaleOrSkipValue === o ? 'var(--purple)' : '#1a1a1a',
+                  border: `1px solid ${whaleOrSkipValue === o ? 'var(--gold)' : '#444'}`,
+                  borderRadius: '0.375rem',
+                  padding: '0.3rem 0.6rem', cursor: 'pointer', fontSize: '0.82rem',
+                }}>
+                  <input
+                    type="radio"
+                    name="whaleOrSkipValue"
+                    checked={whaleOrSkipValue === o}
+                    onChange={() => setWhaleOrSkipValue(whaleOrSkipValue === o ? '' : o)}
+                    onClick={() => { if (whaleOrSkipValue === o) setWhaleOrSkipValue('') }}
+                    style={{ accentColor: 'var(--gold)' }}
+                  />
+                  {o}
+                </label>
+              ))}
+              {whaleOrSkipValue && (
+                <button type="button" onClick={() => setWhaleOrSkipValue('')}
+                  style={{ background: 'none', border: '1px dashed #555', borderRadius: '0.375rem', color: '#888', cursor: 'pointer', padding: '0.3rem 0.6rem', fontSize: '0.78rem' }}>
+                  ✕ Clear
+                </button>
+              )}
+            </div>
+          </Field>
         </div>
 
         <div style={sec}>
           <div style={secTitle}>Recommended Legacy Pieces</div>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', alignSelf: 'flex-start' }}>
+            <input type="checkbox" checked={uniqueLegacyRequired} onChange={(e) => setUniqueLegacyRequired(e.target.checked)} style={{ accentColor: 'var(--gold)', width: '1rem', height: '1rem' }} />
+            <span style={{ color: 'var(--gold)', fontWeight: 600, fontSize: '0.82rem' }}>Unique Legacy Required?</span>
+            <span style={{ color: '#888', fontSize: '0.78rem' }}>(shows unique-required warning on champion page)</span>
+          </label>
           {legacyOptions.length === 0
             ? <span style={{ color: '#888', fontSize: '0.85rem' }}>Loading...</span>
             : <CheckGroup options={legacyOptions} selected={legacyPieces} onChange={(v) => toggle(legacyPieces, setLegacyPieces, v)} />}
@@ -1016,7 +1057,7 @@ function GuidesForm() {
                       <option value="right">Text wraps left (image right)</option>
                     </select>
                     {(block.alignment === 'left' || block.alignment === 'right') && (
-                      <div style={{ fontSize: '0.75rem', color: '#666' }}>Tip: Add a "Clear Float" block after the last paragraph you want wrapping the image.</div>
+                      <div style={{ fontSize: '0.75rem', color: '#666' }}>Tip: Add a &quot;Clear Float&quot; block after the last paragraph you want wrapping the image.</div>
                     )}
                   </div>
                 )}

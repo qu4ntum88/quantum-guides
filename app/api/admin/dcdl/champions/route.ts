@@ -93,6 +93,8 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
   const starBreakpointRaw = formData.get('starBreakpoint') as string | null
   const starBreakpoint = starBreakpointRaw ? parseInt(starBreakpointRaw, 10) : undefined
   const acDcPriority = formData.getAll('acDcPriority') as string[]
+  const whaleOrSkipValue = formData.get('whaleOrSkipValue') as string | null
+  const uniqueLegacyRequired = formData.get('uniqueLegacyRequired') === 'true'
 
   const heros: Record<string, unknown>[] = JSON.parse(fs.readFileSync(herosPath, 'utf8'))
   const existingIdx = heros.findIndex((h) => (h as { id: string }).id === id)
@@ -198,6 +200,8 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
     ...(ascendedFrom && { ascendedFrom }),
     ...(starBreakpoint !== undefined && { starBreakpoint }),
     ...(acDcPriority.length > 0 && { acDcPriority }),
+    ...(whaleOrSkipValue && { whaleOrSkipValue }),
+    ...(uniqueLegacyRequired && { uniqueLegacyRequired: true }),
   }
 
   if (isEdit) {
