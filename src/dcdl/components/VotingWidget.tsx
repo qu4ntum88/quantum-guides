@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { useUser } from '@clerk/nextjs'
 
 const RATINGS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D']
@@ -152,7 +153,7 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
         </div>
       ) : (
         <p style={{ fontSize: '0.85rem', color: '#888' }}>
-          <a href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</a> to cast your vote.
+          <Link href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</Link> to cast your vote.
         </p>
       )}
     </div>

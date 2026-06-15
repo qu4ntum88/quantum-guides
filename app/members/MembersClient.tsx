@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { useUser } from '@clerk/nextjs'
 
 type VotableItem = { id: string; name: string; image?: string }
@@ -79,7 +80,7 @@ export default function MembersClient({ heroes, legacyPieces }: { heroes: Votabl
         <div className="container" style={{ textAlign: 'center', paddingTop: '4rem' }}>
           <h1>Members Area</h1>
           <p style={{ color: '#aaa', marginBottom: '2rem' }}>Sign in to vote on champion and legacy piece tiers.</p>
-          <a href="/sign-in" className="btn">Sign In</a>
+          <Link href="/sign-in" className="btn">Sign In</Link>
         </div>
       </main>
     )

@@ -4,12 +4,10 @@ import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
 import RichText from '@/src/vh/components/RichText'
 
 function readHunters(): Hunter[] {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
   return require('@/src/vh/data/hunters.json') as Hunter[]
 }
 
 function readStatusEffects(): StatusEffect[] {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
   return require('@/src/vh/data/status-effects.json') as StatusEffect[]
 }
 

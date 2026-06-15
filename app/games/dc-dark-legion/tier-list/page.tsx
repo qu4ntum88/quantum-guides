@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { getResolvedHeros, getLegacy, getDataLastUpdated } from '@/src/dcdl/lib/data'
 import '../../godforge/game.css'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
@@ -278,9 +279,9 @@ export default function TierListPage() {
         <div className="container" style={{ overflowX: 'auto' }}>
           <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.6rem' }}>
             Clicking a legacy piece opens the{' '}
-            <a href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
+            <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
               Justice League of Discord community voted tier ranking page
-            </a>{' '}for that item.
+            </Link>{' '}for that item.
           </p>
           <div style={{ ...tableCard, minWidth: '600px' }}>
             <TableTitle>Legacy Piece Tier List</TableTitle>

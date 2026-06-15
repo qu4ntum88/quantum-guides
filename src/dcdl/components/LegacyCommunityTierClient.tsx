@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { useUser } from '@clerk/nextjs'
 import type { LegacyResolved } from '../lib/data'
 
@@ -194,7 +195,7 @@ export default function LegacyCommunityTierClient({ pieces }: { pieces: LegacyRe
                   </div>
                 ) : (
                   <p style={{ fontSize: '0.82rem', color: '#888', margin: 0 }}>
-                    <a href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</a> to cast your vote.
+                    <Link href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</Link> to cast your vote.
                   </p>
                 )}
               </div>

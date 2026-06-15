@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -237,7 +238,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ id
           )}
           <div className="gh-hero-divider" />
           <div className="gh-hero-back">
-            <a href="/games/dc-dark-legion/guides" className="btn">← Back to Guides</a>
+            <Link href="/games/dc-dark-legion/guides" className="btn">← Back to Guides</Link>
           </div>
         </div>
       </section>

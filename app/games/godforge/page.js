@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './game.css'
 
 export const revalidate = 3600
@@ -45,10 +46,10 @@ export default async function GodforgePage() {
                   {/* Heroes */}
                   <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
                     <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
-                      <a href="/games/godforge/heroes" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Link href="/games/godforge/heroes" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                         <img src="/images/site/Q WHITE ICON.png" alt="" style={{ width: '0.95rem', height: '0.95rem', flexShrink: 0 }} />
                         Heroes →
-                      </a>
+                      </Link>
                     </div>
                     <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
                     <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { lookupEffect } from '../lib/statusEffects'
 import { StatusEffectToken } from './StatusEffectToken'
 
@@ -171,7 +172,7 @@ export default function DungeonDetail({
           </p>
           <div className="gh-hero-divider" />
           <div className="gh-hero-back">
-            <a href="/games/godforge/dungeons" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← All Dungeons</a>
+            <Link href="/games/godforge/dungeons" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← All Dungeons</Link>
           </div>
         </div>
       </section>

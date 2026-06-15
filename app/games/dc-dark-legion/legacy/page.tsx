@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { getResolvedLegacy } from '@/src/dcdl/lib/data'
 import LegacyGrid from '@/src/dcdl/components/LegacyGrid'
 import '../../godforge/game.css'
@@ -14,10 +15,10 @@ export default function LegacyPage() {
           <p className="gh-hero-sub">A complete list of legacy pieces — browse, filter, and view community tier rankings.</p>
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem' }}>
-            <a href="/games/dc-dark-legion/legacy/community-tier" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--gold)', fontSize: '0.82rem', textDecoration: 'none', opacity: 0.9 }}>
+            <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--gold)', fontSize: '0.82rem', textDecoration: 'none', opacity: 0.9 }}>
               <img src="/images/site/JLD.png" alt="" style={{ height: '1.5rem', objectFit: 'contain' }} />
               Community Voted Tier Rankings →
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -25,9 +26,9 @@ export default function LegacyPage() {
         <div className="container">
           <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.5rem' }}>
             Clicking a legacy piece opens the{' '}
-            <a href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
+            <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
               Justice League of Discord community voted tier ranking page
-            </a>{' '}for that item.
+            </Link>{' '}for that item.
           </p>
           <div className="flex flex-col items-center justify-start gap-12 px-4 py-4 text-white">
             <LegacyGrid legacyPieces={legacyPieces} />

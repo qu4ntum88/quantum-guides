@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './about.css'
 
 export const revalidate = 3600
@@ -108,7 +109,7 @@ export default async function About() {
               <p>
                 Browse all 202 heroes with filterable grids by rarity, affinity, allegiance, archetype, and faction. Explore the full status effects library covering 105 buffs, debuffs, and disables — useful for team-building and content prep.
               </p>
-              <a href="/games/godforge/heroes" className="overview-link">Explore Godforge →</a>
+              <Link href="/games/godforge/heroes" className="overview-link">Explore Godforge →</Link>
             </div>
             <div className="game-overview-card">
               <h3>Void Hunters</h3>

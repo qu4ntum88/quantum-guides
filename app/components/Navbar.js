@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import Link from 'next/link'
 import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
 
 const NAV_ITEMS = [
@@ -90,9 +91,9 @@ export default function Navbar() {
       <div className="nav-container">
         {/* Logo */}
         <div className="logo">
-          <a href="/">
+          <Link href="/">
             <img src="/images/site/Q GOLD LOGOTYPE.png" alt="Quantum Game Guides" className="brand-logotype" />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop nav */}

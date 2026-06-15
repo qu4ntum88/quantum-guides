@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
 import { notFound } from 'next/navigation'
@@ -107,9 +108,9 @@ export default async function GfHeroDetailPage({ params }: { params: Promise<{ i
       {/* ── Hero Banner (static) ── */}
       <section className="gh-hero" style={{ minHeight: 'auto' }}>
         <div className="container" style={{ paddingTop: '2rem', paddingBottom: '2rem', width: '100%' }}>
-          <a href="/games/godforge/heroes" style={{ color: '#555', fontSize: '0.72rem', textDecoration: 'none', display: 'inline-block', marginBottom: '1.5rem' }}>
+          <Link href="/games/godforge/heroes" style={{ color: '#555', fontSize: '0.72rem', textDecoration: 'none', display: 'inline-block', marginBottom: '1.5rem' }}>
             ← All Heroes
-          </a>
+          </Link>
 
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
 

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
 import InfographicsGrid from '@/src/dcdl/components/InfographicsGrid'
@@ -29,9 +30,9 @@ export default function InfographicsPage() {
           </p>
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem' }}>
-            <a href="/games/dc-dark-legion/guides" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
+            <Link href="/games/dc-dark-legion/guides" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
               ← Hub
-            </a>
+            </Link>
           </div>
         </div>
       </section>

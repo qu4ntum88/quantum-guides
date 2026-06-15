@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getSynergies, getResolvedHeros } from '@/src/dcdl/lib/data'
 import TierBadge from '@/src/dcdl/components/TierBadge'
@@ -58,9 +59,9 @@ export default async function FactionDetailPage({ params }: { params: Promise<{ 
           </div>
         </div>
 
-        <a href="/games/dc-dark-legion/factions" style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginBottom: '2rem' }}>
+        <Link href="/games/dc-dark-legion/factions" style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginBottom: '2rem' }}>
           ← All Factions
-        </a>
+        </Link>
 
         {/* Infographic */}
         {faction.infographic && (
