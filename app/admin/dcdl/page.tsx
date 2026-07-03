@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
+import synergiesJson from '@/src/dcdl/data/synergies.json'
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 'Supporter', 'Warrior']
@@ -37,12 +38,24 @@ const ACDCPRIORITY_OPTIONS = ['Major 1', 'Major 2', 'Major 3', 'HP Nodes', 'ATK 
 const WHALE_SKIP_OPTIONS = ['Top Tier', 'High Value', 'Situational / Roster Dependent', 'Luxury', 'Skip / Do Not Build', 'Passively Invest Only']
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
-type ItemOption = { id: string; name: string }
+type ItemOption = { id: string; name: string; image?: string }
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 function toId(name: string) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '')
 }
+
+// Sort ItemOption lists alphabetically by name (for select dropdowns / icon pickers)
+const byName = (a: ItemOption, b: ItemOption) => a.name.localeCompare(b.name)
+
+// Faction / tag-synergy icon paths, keyed by synergy id (filenames aren't always id-derivable, e.g. deathmetal)
+const SYNERGY_IMG: Record<string, string> = Object.fromEntries(
+  (synergiesJson as { id: string; image?: string }[]).map((s) => [
+    s.id,
+    (s.image ?? '').replace(/^\.\/tag_images\//, '/dcdl/synergies/tag_images/'),
+  ])
+)
+const SYNERGY_OPTIONS: ItemOption[] = SYNERGIES.map((s) => ({ ...s, image: SYNERGY_IMG[s.id] }))
 
 // ── Shared styles ──────────────────────────────────────────────────────────────
 const inp: React.CSSProperties = {
@@ -96,6 +109,50 @@ function CheckGroup({ options, selected, onChange }: {
           {name}
         </label>
       ))}
+    </div>
+  )
+}
+
+function IconCheckGroup({ options, selected, onChange }: {
+  options: ItemOption[]; selected: string[]; onChange: (id: string) => void
+}) {
+  const [hovered, setHovered] = useState<string | null>(null)
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+      {options.map(({ id, name, image }) => {
+        const isSel = selected.includes(id)
+        return (
+          <div key={id} style={{ position: 'relative' }}
+            onMouseEnter={() => setHovered(id)}
+            onMouseLeave={() => setHovered((h) => (h === id ? null : h))}>
+            <button type="button" title={name} onClick={() => onChange(id)}
+              style={{
+                width: '3.4rem', height: '3.4rem', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                padding: '0.25rem', background: isSel ? 'var(--purple)' : '#1a1a1a',
+                border: `2px solid ${isSel ? 'var(--gold)' : '#444'}`, borderRadius: '0.5rem', cursor: 'pointer',
+              }}>
+              {image
+                ? // eslint-disable-next-line @next/next/no-img-element
+                  <img src={image} alt={name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                : <span style={{ fontSize: '0.58rem', textAlign: 'center', color: '#ccc', lineHeight: 1.1 }}>{name}</span>}
+              {isSel && (
+                <span style={{
+                  position: 'absolute', top: '-7px', right: '-7px', background: 'var(--gold)', color: '#111',
+                  borderRadius: '50%', width: '1.15rem', height: '1.15rem', fontSize: '0.7rem', fontWeight: 700,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                }}>✓</span>
+              )}
+            </button>
+            {hovered === id && (
+              <div style={{
+                position: 'absolute', bottom: 'calc(100% + 6px)', left: '50%', transform: 'translateX(-50%)',
+                background: '#000', color: '#fff', border: '1px solid var(--gold)', borderRadius: '0.3rem',
+                padding: '0.2rem 0.5rem', fontSize: '0.72rem', whiteSpace: 'nowrap', zIndex: 10, pointerEvents: 'none',
+              }}>{name}</div>
+            )}
+          </div>
+        )
+      })}
     </div>
   )
 }
@@ -216,7 +273,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [whaleOrSkipValue, setWhaleOrSkipValue] = useState(''); const [uniqueLegacyRequired, setUniqueLegacyRequired] = useState(false)
 
   useEffect(() => {
-    fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
+    fetch('/api/admin/dcdl/champions').then((r) => r.json()).then((d: ItemOption[]) => setHeroes([...d].sort(byName)))
   }, [])
 
   const reset = useCallback(() => {
@@ -303,7 +360,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
       if (res.ok) {
         setStatus({ type: 'success', message: mode === 'edit' ? `"${name}" updated!` : `"${name}" added! Restart dev server to see the card.` })
         if (mode === 'add') reset()
-        fetch('/api/admin/dcdl/champions').then((r) => r.json()).then(setHeroes)
+        fetch('/api/admin/dcdl/champions').then((r) => r.json()).then((d: ItemOption[]) => setHeroes([...d].sort(byName)))
         onRefreshHeroes()
       } else {
         setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
@@ -418,7 +475,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
 
         <div style={sec}>
           <div style={secTitle}>Factions / Tag Synergies</div>
-          <CheckGroup options={SYNERGIES} selected={synergies} onChange={(v) => toggle(synergies, setSynergies, v)} />
+          <IconCheckGroup options={SYNERGY_OPTIONS} selected={synergies} onChange={(v) => toggle(synergies, setSynergies, v)} />
         </div>
 
         <div style={sec}>
@@ -505,7 +562,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
           </label>
           {legacyOptions.length === 0
             ? <span style={{ color: '#888', fontSize: '0.85rem' }}>Loading...</span>
-            : <CheckGroup options={legacyOptions} selected={legacyPieces} onChange={(v) => toggle(legacyPieces, setLegacyPieces, v)} />}
+            : <IconCheckGroup options={legacyOptions} selected={legacyPieces} onChange={(v) => toggle(legacyPieces, setLegacyPieces, v)} />}
         </div>
 
         <div style={sec}>
@@ -562,7 +619,7 @@ function LegacyForm() {
   const [legClearPrevTier, setLegClearPrevTier] = useState(false); const [legExistingPrevTier, setLegExistingPrevTier] = useState('')
 
   useEffect(() => {
-    fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setItems)
+    fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then((d: ItemOption[]) => setItems([...d].sort(byName)))
   }, [])
 
   const reset = useCallback(() => {
@@ -606,7 +663,7 @@ function LegacyForm() {
       if (res.ok) {
         setStatus({ type: 'success', message: mode === 'edit' ? `"${name}" updated!` : `"${name}" added! Restart dev server to see it.` })
         if (mode === 'add') reset()
-        fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setItems)
+        fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then((d: ItemOption[]) => setItems([...d].sort(byName)))
       } else {
         setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
       }
@@ -859,6 +916,50 @@ function GuidesForm() {
   const [eventDates, setEventDates] = useState('')
   const [recommendedFor, setRecommendedFor] = useState('')
   const [keyRewards, setKeyRewards] = useState('')
+  const [guidesList, setGuidesList] = useState<{ filename: string; title: string }[]>([])
+  const [selectedFile, setSelectedFile] = useState('')
+  const [loadingGuide, setLoadingGuide] = useState(false)
+
+  function refreshList() {
+    fetch('/api/admin/dcdl/guides').then((r) => r.json()).then(setGuidesList).catch(() => {})
+  }
+
+  useEffect(() => { refreshList() }, [])
+
+  function resetForm() {
+    setSelectedFile('')
+    setTitle(''); setFilename(''); setAuthor(''); setPubDate(''); setDescription('')
+    setCoverImage(''); setIntro(''); setBlocks([])
+    setTags(''); setEventType(''); setEventDates(''); setRecommendedFor(''); setKeyRewards('')
+    setMsg('')
+  }
+
+  async function loadGuide(file: string) {
+    setSelectedFile(file)
+    if (!file) { resetForm(); return }
+    setLoadingGuide(true); setMsg('')
+    try {
+      const res = await fetch(`/api/admin/dcdl/guides?filename=${encodeURIComponent(file)}`)
+      const d = await res.json()
+      if (d.error) { setMsg(d.error); return }
+      setTitle(d.title ?? '')
+      setFilename((d.filename ?? file).replace(/\.(mdx|md)$/, ''))
+      setAuthor(d.author ?? '')
+      setPubDate(d.pubDate ?? '')
+      setDescription(d.description ?? '')
+      setCoverImage(d.coverImage ?? '')
+      setIntro(d.intro ?? '')
+      setBlocks(Array.isArray(d.blocks) ? d.blocks : [])
+      setTags(d.tags ?? '')
+      setEventType(d.eventType ?? '')
+      setEventDates(d.eventDates ?? '')
+      setRecommendedFor(d.recommendedFor ?? '')
+      setKeyRewards(d.keyRewards ?? '')
+      setMsg(`Loaded ${file} for editing.`)
+    } finally {
+      setLoadingGuide(false)
+    }
+  }
 
   function autoFilename(t: string) {
     if (!filename || filename === slugify(title)) setFilename(slugify(t))
@@ -911,13 +1012,44 @@ function GuidesForm() {
     })
     const data = await res.json()
     setLoading(false)
-    setMsg(data.success ? `Saved as ${data.filename}` : (data.error ?? 'Error saving guide'))
+    if (data.success) {
+      setMsg(`Saved as ${data.filename}`)
+      setSelectedFile(data.filename)
+      refreshList()
+    } else {
+      setMsg(data.error ?? 'Error saving guide')
+    }
   }
 
   return (
     <div>
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-        {msg && <div style={{ color: msg.startsWith('Saved') ? '#4ade80' : '#f87171', fontSize: '0.85rem' }}>{msg}</div>}
+        {msg && <div style={{ color: (msg.startsWith('Saved') || msg.startsWith('Loaded')) ? '#4ade80' : '#f87171', fontSize: '0.85rem' }}>{msg}</div>}
+
+        <div style={sec}>
+          <div style={secTitle}>Edit an Existing Guide</div>
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <select
+              style={{ ...inp, flex: 1, minWidth: '14rem' }}
+              value={selectedFile}
+              onChange={(e) => loadGuide(e.target.value)}
+              disabled={loadingGuide}
+            >
+              <option value="">— New guide —</option>
+              {guidesList.map((g) => (
+                <option key={g.filename} value={g.filename}>{g.title} ({g.filename})</option>
+              ))}
+            </select>
+            {loadingGuide && <span style={{ fontSize: '0.8rem', color: '#888' }}>Loading…</span>}
+            <button type="button" onClick={resetForm}
+              style={{ background: '#1a1a2e', border: '1px solid #444', borderRadius: '0.375rem', color: '#ccc', cursor: 'pointer', padding: '0.45rem 1rem', fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
+              + New Guide
+            </button>
+          </div>
+          <div style={{ fontSize: '0.75rem', color: '#666', marginTop: '0.5rem' }}>
+            Pick a guide to load it into the form below. Keeping the same filename overwrites it on save.
+          </div>
+        </div>
 
         <div style={sec}>
           <div style={secTitle}>Guide Info</div>
@@ -2390,8 +2522,11 @@ function TierRankingForm() {
   const [legAssign, setLegAssign] = useState<Record<string, string>>({})
   const [champOriginal, setChampOriginal] = useState<Record<string, string>>({})
   const [legOriginal, setLegOriginal] = useState<Record<string, string>>({})
+  const [champOrderOrig, setChampOrderOrig] = useState<string[]>([])
+  const [legOrderOrig, setLegOrderOrig] = useState<string[]>([])
   const [draggingId, setDraggingId] = useState<string | null>(null)
   const [dragOverTier, setDragOverTier] = useState<string | null>(null)
+  const [dragOverChip, setDragOverChip] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
   const [resetting, setResetting] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
@@ -2404,6 +2539,7 @@ function TierRankingForm() {
         setChampItems(data.map((d) => ({ id: d.id, name: d.name, img: d.imageHeadshot })))
         const a = Object.fromEntries(data.map((d) => [d.id, d.tier]))
         setChampAssign(a); setChampOriginal(a)
+        setChampOrderOrig(data.map((d) => d.id))
       })
   }, [])
 
@@ -2414,16 +2550,21 @@ function TierRankingForm() {
         setLegItems(data.map((d) => ({ id: d.id, name: d.name, img: d.image })))
         const a = Object.fromEntries(data.map((d) => [d.id, d.tier]))
         setLegAssign(a); setLegOriginal(a)
+        setLegOrderOrig(data.map((d) => d.id))
       })
   }, [])
 
   const items = subTab === 'champions' ? champItems : legItems
   const assign = subTab === 'champions' ? champAssign : legAssign
   const original = subTab === 'champions' ? champOriginal : legOriginal
+  const setItems = subTab === 'champions' ? setChampItems : setLegItems
   const setAssign = subTab === 'champions' ? setChampAssign : setLegAssign
   const setOriginal = subTab === 'champions' ? setChampOriginal : setLegOriginal
+  const orderOriginal = subTab === 'champions' ? champOrderOrig : legOrderOrig
+  const setOrderOriginal = subTab === 'champions' ? setChampOrderOrig : setLegOrderOrig
   const apiPath = subTab === 'champions' ? '/api/admin/dcdl/champions/tiers' : '/api/admin/dcdl/legacy/tiers'
-  const isDirty = items.some((item) => assign[item.id] !== original[item.id])
+  const orderChanged = items.length > 0 && items.map((i) => i.id).join('|') !== orderOriginal.join('|')
+  const isDirty = orderChanged || items.some((item) => assign[item.id] !== original[item.id])
 
   const grouped = TIERS.reduce((acc, t) => {
     acc[t] = items.filter((item) => assign[item.id] === t)
@@ -2431,10 +2572,38 @@ function TierRankingForm() {
   }, {} as Record<string, TierRankItem[]>)
   const unranked = items.filter((item) => !assign[item.id])
 
+  // Drop on empty row space: assign tier and move to the end of the row
   function handleDrop(targetTier: string) {
     if (!draggingId) return
     setAssign((prev) => ({ ...prev, [draggingId]: targetTier }))
+    setItems((prev) => {
+      const dragged = prev.find((i) => i.id === draggingId)
+      if (!dragged) return prev
+      return [...prev.filter((i) => i.id !== draggingId), dragged]
+    })
     setDragOverTier(null)
+    setDragOverChip(null)
+    setDraggingId(null)
+  }
+
+  // Drop on a chip: take that chip's tier and insert just before it (re-rank within tier)
+  function handleDropOnChip(targetId: string) {
+    if (!draggingId || draggingId === targetId) {
+      setDragOverTier(null); setDragOverChip(null); setDraggingId(null)
+      return
+    }
+    const dragId = draggingId
+    setAssign((prev) => ({ ...prev, [dragId]: prev[targetId] ?? '' }))
+    setItems((prev) => {
+      const dragged = prev.find((i) => i.id === dragId)
+      if (!dragged) return prev
+      const without = prev.filter((i) => i.id !== dragId)
+      const idx = without.findIndex((i) => i.id === targetId)
+      if (idx === -1) return prev
+      return [...without.slice(0, idx), dragged, ...without.slice(idx)]
+    })
+    setDragOverTier(null)
+    setDragOverChip(null)
     setDraggingId(null)
   }
 
@@ -2447,11 +2616,15 @@ function TierRankingForm() {
       const res = await fetch(apiPath, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ updates }),
+        body: JSON.stringify({ updates, ...(orderChanged && { order: items.map((i) => i.id) }) }),
       })
       if (res.ok) {
-        setStatus({ type: 'success', message: `Saved ${updates.length} tier change${updates.length !== 1 ? 's' : ''}.` })
+        const parts = []
+        if (updates.length > 0) parts.push(`${updates.length} tier change${updates.length !== 1 ? 's' : ''}`)
+        if (orderChanged) parts.push('new ordering')
+        setStatus({ type: 'success', message: `Saved ${parts.join(' and ')}.` })
         setOriginal({ ...assign })
+        setOrderOriginal(items.map((i) => i.id))
       } else {
         setStatus({ type: 'error', message: 'Save failed.' })
       }
@@ -2474,17 +2647,23 @@ function TierRankingForm() {
 
   function Chip({ item }: { item: TierRankItem }) {
     const isDragging = draggingId === item.id
+    const isDropTarget = dragOverChip === item.id && draggingId !== item.id
     return (
       <div
         draggable
         onDragStart={(e) => { e.dataTransfer.effectAllowed = 'move'; setDraggingId(item.id) }}
-        onDragEnd={() => { setDraggingId(null); setDragOverTier(null) }}
+        onDragEnd={() => { setDraggingId(null); setDragOverTier(null); setDragOverChip(null) }}
+        onDragOver={(e) => { e.preventDefault(); e.stopPropagation(); setDragOverChip(item.id) }}
+        onDragLeave={() => setDragOverChip((c) => (c === item.id ? null : c))}
+        onDrop={(e) => { e.stopPropagation(); handleDropOnChip(item.id) }}
         title={item.name}
         style={{
           width: 56, height: 70, background: '#1a1a1a',
           border: isDragging ? '2px solid var(--gold)' : '1px solid #444',
           borderRadius: 4, cursor: 'grab', opacity: isDragging ? 0.35 : 1,
           overflow: 'hidden', flexShrink: 0, position: 'relative', userSelect: 'none',
+          boxShadow: isDropTarget ? '-3px 0 0 0 var(--gold)' : undefined,
+          marginLeft: isDropTarget ? 3 : 0,
         }}
       >
         {item.img
@@ -2553,7 +2732,7 @@ function TierRankingForm() {
       <StatusBanner status={status} />
 
       <p style={{ color: '#888', fontSize: '0.82rem', marginBottom: '1.25rem' }}>
-        Drag portraits into tier rows. Unranked items sit in the bin at the bottom. Save when done — tier changes are tracked for the move arrow.
+        Drag portraits into tier rows. Drop onto another portrait to insert in front of it and re-rank within a tier; drop on empty row space to add at the end. Unranked items sit in the bin at the bottom. Save when done — tier changes are tracked for the move arrow.
       </p>
 
       {items.length === 0 && (
@@ -2902,7 +3081,7 @@ export default function AdminDCDLPage() {
   const [legacyOptions, setLegacyOptions] = useState<ItemOption[]>([])
 
   useEffect(() => {
-    fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)
+    fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then((d: ItemOption[]) => setLegacyOptions([...d].sort(byName)))
   }, [])
 
   const dcdlTabs: { id: DcdlTab; label: string }[] = [
@@ -2969,7 +3148,7 @@ export default function AdminDCDLPage() {
                 </button>
               ))}
             </div>
-            {dcdlTab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then(setLegacyOptions)} />}
+            {dcdlTab === 'champions' && <ChampionForm legacyOptions={legacyOptions} onRefreshHeroes={() => fetch('/api/admin/dcdl/legacy').then((r) => r.json()).then((d: ItemOption[]) => setLegacyOptions([...d].sort(byName)))} />}
             {dcdlTab === 'legacy' && <LegacyForm />}
             {dcdlTab === 'tier-ranking' && <TierRankingForm />}
             {dcdlTab === 'info' && <GameInfoForm />}

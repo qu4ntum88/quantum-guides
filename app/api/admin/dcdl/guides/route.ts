@@ -83,7 +83,76 @@ function generateMdx(opts: GenerateOptions): string {
   return fmLines + '\n\n' + parts.join('\n\n')
 }
 
-export async function GET() {
+// Reverse of generateMdx: turn a guide body back into the form's block model.
+// The first leading prose chunk becomes the intro; everything else becomes blocks.
+function parseBody(body: string): { intro: string; blocks: Block[] } {
+  // Split on blank lines — matches the `\n\n` join used by generateMdx. Callout
+  // blockquotes have no internal blank line, so each stays a single part.
+  const parts = body.trim().split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean)
+
+  let intro = ''
+  const blocks: Block[] = []
+
+  parts.forEach((part) => {
+    if (part.startsWith('## ')) {
+      blocks.push({ type: 'subheading', text: part.slice(3).trim() })
+    } else if (part.startsWith('<div') && part.includes('clear:both')) {
+      blocks.push({ type: 'clearfloat' })
+    } else if (part.startsWith('<img')) {
+      const src = part.match(/src="([^"]*)"/)?.[1] ?? ''
+      const alt = part.match(/alt="([^"]*)"/)?.[1] ?? ''
+      const alignment: 'left' | 'right' | 'full' =
+        /float:\s*left/.test(part) ? 'left' : /float:\s*right/.test(part) ? 'right' : 'full'
+      blocks.push({ type: 'image', src, alt, alignment })
+    } else if (part.startsWith('> [!')) {
+      const calloutType = (part.match(/\[!(TIP|NOTE|WARNING|IMPORTANT|F2P)\]/)?.[1] ?? 'TIP') as CalloutType
+      const text = part
+        .split('\n')
+        .slice(1) // drop the `> [!TYPE]` marker line
+        .map((l) => l.replace(/^>\s?/, ''))
+        .join('\n')
+        .trim()
+      blocks.push({ type: 'callout', calloutType, text })
+    } else {
+      // Plain prose. The first one becomes the intro; the rest are paragraph blocks.
+      if (!intro && blocks.length === 0) intro = part
+      else blocks.push({ type: 'paragraph', text: part })
+    }
+  })
+
+  return { intro, blocks }
+}
+
+export async function GET(req: NextRequest) {
+  const filename = req.nextUrl.searchParams.get('filename')
+
+  // Single-guide fetch: return full parsed content for editing in the admin form.
+  if (filename) {
+    const slug = filename.replace(/[^a-zA-Z0-9_.-]/g, '')
+    const filePath = path.join(GUIDES_DIR, slug)
+    if (!filePath.startsWith(GUIDES_DIR) || !fs.existsSync(filePath)) {
+      return NextResponse.json({ error: 'Guide not found' }, { status: 404 })
+    }
+    const raw = fs.readFileSync(filePath, 'utf8')
+    const { data, content } = matter(raw)
+    const { intro, blocks } = parseBody(content)
+    return NextResponse.json({
+      filename: slug,
+      title: data.title ?? '',
+      author: data.author ?? '',
+      pubDate: data.pubDate ? String(data.pubDate) : '',
+      description: data.description ?? '',
+      coverImage: data.coverImage ?? '',
+      tags: Array.isArray(data.tags) ? data.tags.join(', ') : (data.tags ?? ''),
+      eventType: data.event_type ?? '',
+      eventDates: data.event_dates ?? '',
+      recommendedFor: data.recommended_for ?? '',
+      keyRewards: Array.isArray(data.key_rewards) ? data.key_rewards.join(', ') : (data.key_rewards ?? ''),
+      intro,
+      blocks,
+    })
+  }
+
   try {
     const files = fs.readdirSync(GUIDES_DIR).filter((f) => f.endsWith('.mdx') || f.endsWith('.md'))
     const guides = files.map((filename) => {

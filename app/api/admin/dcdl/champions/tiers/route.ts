@@ -28,8 +28,8 @@ export async function GET() {
 
 export async function PATCH(req: NextRequest) {
   const guard = notProd(); if (guard) return guard
-  const { updates } = await req.json() as { updates: { id: string; tier: string }[] }
-  const heros = JSON.parse(fs.readFileSync(herosPath, 'utf8')) as Record<string, unknown>[]
+  const { updates, order } = await req.json() as { updates: { id: string; tier: string }[]; order?: string[] }
+  let heros = JSON.parse(fs.readFileSync(herosPath, 'utf8')) as Record<string, unknown>[]
   const updateMap = new Map(updates.map((u) => [u.id, u.tier]))
 
   for (const hero of heros) {
@@ -46,6 +46,14 @@ export async function PATCH(req: NextRequest) {
     } else {
       delete hero.tier
     }
+  }
+
+  // Rewrite the array in the given order — within-tier rank on the public site follows file order
+  if (order && order.length > 0) {
+    const pos = new Map(order.map((id, i) => [id, i]))
+    heros = [...heros].sort((a, b) =>
+      (pos.get(a.id as string) ?? Number.MAX_SAFE_INTEGER) - (pos.get(b.id as string) ?? Number.MAX_SAFE_INTEGER)
+    )
   }
 
   fs.writeFileSync(herosPath, JSON.stringify(heros, null, 2))

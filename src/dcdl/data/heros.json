@@ -1,7 +1,7 @@
 [
   {
     "id": "aquaman",
-    "name": "Aquaman",
+    "name": "Aquaman (Mythic)",
     "damageType": "Physical",
     "gameModes": [
       "PvP"
@@ -77,7 +77,90 @@
         "description": "Increases Aquaman's ATK.",
         "image": "./upgrade_images/aquaman_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "aquaman_mythic_plus"
+  },
+  {
+    "id": "aquaman_mythic_plus",
+    "name": "Aquaman (Mythic +)",
+    "class": "Firepower",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "previousTier": "B",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "justice_league",
+      "atlanteans",
+      "metahuman"
+    ],
+    "gameModes": [
+      "PvP"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shard",
+      "Custom Mythic Shard",
+      "Daily Deals"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "P DEF",
+      "Crit DMG RES"
+    ],
+    "recommendedLegacyPieces": [
+      "dart_with_poison_ivy_poison",
+      "tectonic_disruptor",
+      "cold_gun"
+    ],
+    "quantumsTake": "Aquaman is a champion who was built for crowd control, making him incredibly useful for PvP game modes and certain levels of Training Simulator. He pairs really well with Justice League lineups, particularly ones designed around Superman. He's really more of a Supporter than Firepower, as his damage output is embarassingly low, but he makes up for that with an incapacitate ability in addition to his ultimate, which disrupts enemies by pulling them into a vortex. Overall, he's a solid champion with a niche use, so be careful not to overinvest.",
+    "imageHeadshot": "./headshot_images/img_hero_ult_Aquaman.png",
+    "imageFull": "./full_images/Aquaman_full.png",
+    "ultimate": {
+      "name": "Atlantean Vortex",
+      "description": "Deals Physical DMG equal to 120% of ATK over time while pulling them towards the center",
+      "image": "./skill_images/icon_hero_skill_Aquaman_main.png"
+    },
+    "globalSkill": {
+      "name": "Neptune's Glory",
+      "description": "Increases [Justice League] Champions' Crit Rate.",
+      "image": "./globalskill_images/Aquaman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Trident's Shield",
+        "description": "Inflicts [Water Prison] on an enemy for 2s",
+        "image": "./skill_images/icon_hero_skill_Aquaman_sub01.png"
+      },
+      {
+        "name": "Breath of Atlantis",
+        "description": "Knockbacks enemies in rectangular area in front of Aquaman, dealing Physical DMG equal to 160% of ATK",
+        "image": "./skill_images/icon_hero_skill_Aquaman_sub02.png"
+      },
+      {
+        "name": "Sea King",
+        "description": "With at least 4 [Justice League] allies present, Aquaman basic attacks have a 50% chance to deliver a heavy blow, dealing Physical DMG equal to 260% of his ATK",
+        "image": "./skill_images/icon_hero_skill_Aquaman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Trident's Shield - Enhanced",
+        "description": "Reduces cooldown of [Trident's Shield].",
+        "image": "./upgrade_images/aquaman_sub01_enhanced.png"
+      },
+      {
+        "name": "Breath of Atlantis - Enhanced",
+        "description": "Reduces cooldown of [Breath of Atlantis].",
+        "image": "./upgrade_images/aquaman_sub02_enhanced.png"
+      },
+      {
+        "name": "Sea King - Enhanced",
+        "description": "Increases Aquaman's ATK.",
+        "image": "./upgrade_images/aquaman_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "aquaman"
   },
   {
     "id": "atom",
@@ -160,7 +243,6 @@
     "class": "Firepower",
     "rarity": "Mythic",
     "tier": "C",
-    "previousTier": "D",
     "damageType": "Physical",
     "tagSynergies": [
       "teen_titans",
@@ -319,10 +401,10 @@
   },
   {
     "id": "batgirl",
-    "name": "Batgirl",
+    "name": "Batgirl (Mythic)",
     "class": "Supporter",
     "rarity": "Mythic",
-    "tier": "A",
+    "tier": "B",
     "damageType": "Physical",
     "tagSynergies": [
       "birds_of_prey",
@@ -404,11 +486,104 @@
         "description": "Increases Batgirl's initial Energy.",
         "image": "./upgrade_images/Batgirl_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "batgirl_mythic_plus",
+    "previousTier": "A"
+  },
+  {
+    "id": "batgirl_mythic_plus",
+    "name": "Batgirl (Mythic +)",
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "birds_of_prey",
+      "bat_family",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "Weekly Login",
+      "Path of Justice"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "P DEF",
+      "S DEF"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "Batgirl is a supporter who was out of favor in the meta for quite a while, but has become quite useful in [Bat Family] lineups utilizing Nightwing. She does require some investment to get the full potential from her kit. Fair warning: She's a niche champion at the moment, so make sure you're all-in on [Bat Family] and [Teen Titans] before you commit.",
+    "imageHeadshot": "./headshot_images/img_login_rewards_banner_batgirl.png",
+    "imageFull": "./full_images/Batgirl_full.png",
+    "ultimate": {
+      "name": "Bat Scanner",
+      "description": "Batgirl scans the battlefield and deploys a drone behind each ally, increasing all allies' Crit Rate by [X]% for 15s. She then heals the ally with the lowest HP for [X]% of Batgirl's Attack.",
+      "image": "./skill_images/icon_hero_skill_Batgirl_main.png"
+    },
+    "globalSkill": {
+      "name": "Detective Mode",
+      "description": "Increases [Bat Family] Champions' ATK.",
+      "image": "./globalskill_images/Batgirl_global.png"
+    },
+    "skills": [
+      {
+        "name": "Tactical Drone",
+        "description": "Batgirl deploys a medical drone to heal the ally with the lowest HP for [X]% of Batgirl's Attack.",
+        "image": "./skill_images/icon_hero_skill_Batgirl_sub01.png"
+      },
+      {
+        "name": "Grapple with This",
+        "description": "Upon landing a critical hit, Batgirl heals the ally with the lowest HP for [X]% of Batgirl's Attack.",
+        "image": "./skill_images/icon_hero_skill_Batgirl_sub02.png"
+      },
+      {
+        "name": "Bab's Boost",
+        "description": "Increases Batgirl's healing done by [X]%. At the start of battle, each [Bat Family] ally present increases Batgirl's Energy gain by [X]%.",
+        "image": "./skill_images/icon_hero_skill_Batgirl_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Tactical Drone - Enhanced",
+        "description": "Reduces cooldown of [Tactical Drone].",
+        "image": "./upgrade_images/Batgirl_sub01_enhanced.png"
+      },
+      {
+        "name": "Grapple with This - Enhanced",
+        "description": "Increases Batgirl's Crit Rate.",
+        "image": "./upgrade_images/Batgirl_sub02_enhanced.png"
+      },
+      {
+        "name": "Bab's Boost - Enhanced",
+        "description": "Increases Batgirl's initial Energy.",
+        "image": "./upgrade_images/Batgirl_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "batgirl",
+    "previousTier": "A"
   },
   {
     "id": "batman",
-    "name": "Batman",
+    "name": "Batman (Mythic)",
     "class": "Warrior",
     "rarity": "Mythic",
     "tier": "C",
@@ -483,7 +658,89 @@
         "description": "Increases Batman's Max HP.",
         "image": "./upgrade_images/Batman_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "batman_mythic_plus"
+  },
+  {
+    "id": "batman_mythic_plus",
+    "name": "Batman (Mythic +)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "B",
+    "previousTier": "C",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "bat_family",
+      "justice_league",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "PvP",
+      "Killer Tank CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Rookie Growth/Starter Pack"
+    ],
+    "transmutePriorities": [
+      "HP",
+      "P DEF",
+      "ATK"
+    ],
+    "recommendedLegacyPieces": [
+      "promethium_claws",
+      "gabriel_horn",
+      "not_so_huge_hammer"
+    ],
+    "quantumsTake": "Batman is one of the most iconic DC characters, and a lot of us in the community expected more out of his kit. He was much better in the beta, but he's more mediocre than anything in the current version of the game. He's quite useful in Training Simulator, and I've seen him used to great effect with Nightwing in PvP. Non-spenders who get lucky and obtain a couple copies of him, or lite spenders who are willing to purchase his starter pack can get a good jump on Combat Cycle early on, but there are just too many Bleed champions who can outpace him.",
+    "imageHeadshot": "./headshot_images/img_hero_ult_Batman.png",
+    "imageFull": "./full_images/Batman_full.png",
+    "ultimate": {
+      "name": "Batmobile",
+      "description": "Batman deploys his gadgets, dealing physical damage equal to [X]% of his Attack to enemies in a circular area.",
+      "image": "./skill_images/icon_hero_skill_Batman_main.png"
+    },
+    "globalSkill": {
+      "name": "Bob & Weave",
+      "description": "Increases [Warrior] Champions' Dodge.",
+      "image": "./globalskill_images/Batman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Dark Knight Detective",
+        "description": "Batman throws his Batarangs, dealing Physical DMG equal to a [%] of his ATK to enemies in a fan-shaped area and briefly interrupting their actions.",
+        "image": "./skill_images/icon_hero_skill_Batman_sub01.png"
+      },
+      {
+        "name": "Utlitity Belt",
+        "description": "Upon landing a Critical Hit, Batman throws a smoke bomb at enemies in a circular area, dealing Physical DMG equal to a [%] of his ATK and reducing their ATK by a [%] for 5s. Batman becomes untargetable during this time. Can trigger once every 10s.",
+        "image": "./skill_images/icon_hero_skill_Batman_sub02.png"
+      },
+      {
+        "name": "I Am Vengeance",
+        "description": "At the start of battle, each [Justice League] or [Bat Family] ally present increases Batman’s Crit Rate by a [%].",
+        "image": "./skill_images/icon_hero_skill_Batman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Dark Knight Detective - Enhanced",
+        "description": "Reduces cooldown of [Dark Knight Detective].",
+        "image": "./upgrade_images/Batman_sub01_enhanced.png"
+      },
+      {
+        "name": "Utility Belt - Enhanced",
+        "description": "Increases Batman's Crit Rate.",
+        "image": "./upgrade_images/Batman_sub02_enhanced.png"
+      },
+      {
+        "name": "I Am Vengeance - Enhanced",
+        "description": "Increases Batman's Max HP.",
+        "image": "./upgrade_images/Batman_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "batman"
   },
   {
     "id": "black_adam",
@@ -879,7 +1136,6 @@
     "class": "Intimidator",
     "rarity": "Mythic",
     "tier": "A",
-    "previousTier": "B",
     "damageType": "Physical",
     "tagSynergies": [
       "teen_titans",
@@ -1198,7 +1454,7 @@
   },
   {
     "id": "the_flash",
-    "name": "The Flash",
+    "name": "The Flash (Mythic)",
     "class": "Supporter",
     "rarity": "Mythic",
     "tier": "A+",
@@ -1280,7 +1536,96 @@
         "description": "Upon casting [Fast Friends], The Flash gains [Speed Force Resonance] for 3s.",
         "image": "./upgrade_images/TheFlash_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "the_flash_mythic_plus"
+  },
+  {
+    "id": "the_flash_mythic_plus",
+    "name": "The Flash (Mythic +)",
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "previousTier": "A+",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "justice_league",
+      "the_flash_family",
+      "metahuman"
+    ],
+    "gameModes": [
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "HP",
+      "P DEF"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "The Flash is one of the most important supports in the game for anyone looking to maximize their damage in Combat Cycle. He doesn't need to be on a specific team to provide a massive advantage, because his kit is meant to cycle your other squad members' ultimates. In early tier lists I did not value him highly and I regret it. I see him staying relevant for a long time, and cannot wait to see the rest of the Flash Family.",
+    "imageHeadshot": "./headshot_images/img_warp_hero_theflash.png",
+    "imageFull": "./full_images/TheFlash_full.png",
+    "ultimate": {
+      "name": "Speed Force Sharing",
+      "description": "The Flash channels his Energy to an ally until they are fully charged or his Energy is depleted, and increases the target's ATK by [%] for 15s. Casting the Ultimate costs The Flash at least 40 Energy. In auto mode, the skill targets the ally with the highest ATK.",
+      "image": "./skill_images/icon_hero_skill_Flash_main.png"
+    },
+    "globalSkill": {
+      "name": "Speed Healing",
+      "description": "Increases all Champions' HP.",
+      "image": "./globalskill_images/TheFlash_global.png"
+    },
+    "skills": [
+      {
+        "name": "What a Rush",
+        "description": "The Flash zips to the side of an ally to assist, increasing the target's ATK by [%] for 10s. In auto mode, the skill targets the ally with the highest ATK.",
+        "image": "./skill_images/icon_hero_skill_Flash_sub01.png"
+      },
+      {
+        "name": "Speed Strike",
+        "description": "The Flash attacks enemies while running in circles, dealing Physical DMG equal to [%] of his ATK to enemies within a circular area.",
+        "image": "./skill_images/icon_hero_skill_Flash_sub02.png"
+      },
+      {
+        "name": "Fast Friends",
+        "description": "The Flash runs to an ally's back and grants them [Speed Force Resonance] for 15s. In auto mode, the skill targets the ally with the lowest HP percentag. [Speed Force Resonance]: Increases Dodge %",
+        "image": "./skill_images/icon_hero_skill_Flash_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "What a Rush - Enhanced",
+        "description": "Reduces cooldown of [What a Rush].",
+        "image": "./upgrade_images/TheFlash_sub01_enhanced.png"
+      },
+      {
+        "name": "Speed Strike - Enhanced",
+        "description": "Reduces cooldown of [Speed Strike].",
+        "image": "./upgrade_images/TheFlash_sub02_enhanced.png"
+      },
+      {
+        "name": "Fast Friends - Enhanced",
+        "description": "Upon casting [Fast Friends], The Flash gains [Speed Force Resonance] for 3s.",
+        "image": "./upgrade_images/TheFlash_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "the_flash"
   },
   {
     "id": "green_arrow",
@@ -1359,10 +1704,10 @@
   },
   {
     "id": "green_lantern",
-    "name": "Green Lantern",
+    "name": "Green Lantern (Mythic)",
     "class": "Supporter",
     "rarity": "Mythic",
-    "tier": "A+",
+    "tier": "A",
     "isP2W": true,
     "damageType": "Spiritual",
     "tagSynergies": [
@@ -1432,11 +1777,92 @@
         "description": "Increases Hal Jordan's Physical DEF.",
         "image": "./upgrade_images/GreenLantern_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "green_lantern_mythic_plus",
+    "previousTier": "A+"
+  },
+  {
+    "id": "green_lantern_mythic_plus",
+    "name": "Green Lantern (Mythic +)",
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "isP2W": true,
+    "damageType": "Spiritual",
+    "tagSynergies": [
+      "justice_league",
+      "green_lantern_corps",
+      "energy_wielder"
+    ],
+    "gameModes": [
+      "PvP"
+    ],
+    "sourcesWhereAvailable": [
+      "VIP Perks"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Healing Bonus"
+    ],
+    "recommendedLegacyPieces": [
+      "green_lantern_power_belt",
+      "purple_ray_radiation",
+      "cocoon_gun"
+    ],
+    "quantumsTake": "Obviously Hal Jordan is a pay-to-win champion, but he's an incredible healer at high stars. I can't in good conscience recommend that anyone spend $15,000 to $20,000 USD just to unlock him at five red stars, but if you're able to get him to purple stars over time, you'll finally be able to start inserting him into your Justice League lineups. Mera getting her Justice League tag back does mean that Green Lantern is less needed, but he was S-tier before his legacy piece came out, and now he's solidly entrenched in that ranking.",
+    "imageHeadshot": "./headshot_images/img_hero_ult_Greenlantern.png",
+    "imageFull": "./full_images/GreenLantern_full.png",
+    "ultimate": {
+      "name": "Green Lantern's Light",
+      "description": "Heals allies within a circular area for [%] of Hal Jordan's ATK. 50% excess healing converted to a [Shield].",
+      "image": "./skill_images/icon_hero_skill_GreenLantern_main.png"
+    },
+    "globalSkill": {
+      "name": "Green Guardian",
+      "description": "Increases all Champions' Crit DMG RES.",
+      "image": "./globalskill_images/GreenLantern_global.png"
+    },
+    "skills": [
+      {
+        "name": "Emerald Armory",
+        "description": "Deals Spiritual DMG equal to [%] of ATK to an enemy and [Stunning] them for 2s. [Stunned]: Incapacitates the target.",
+        "image": "./skill_images/icon_hero_skill_GreenLantern_sub01.png"
+      },
+      {
+        "name": "Lantern Shield",
+        "description": "Creates an energy shield that lasts for 5s, healing allies within range for [%] of his ATK per second",
+        "image": "./skill_images/icon_hero_skill_GreenLantern_sub02.png"
+      },
+      {
+        "name": "Green Lantern Corps",
+        "description": "Increases Healing Taken Up by all [Green Lantern Corps] Champions by [%] every 1s, up to a maximum increase of [%]",
+        "image": "./skill_images/icon_hero_skill_GreenLantern_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Emerald Armory - Enhanced",
+        "description": "Hal Jordan gains [X] extra Energy.",
+        "image": "./upgrade_images/GreenLantern_sub01_enhanced.png"
+      },
+      {
+        "name": "Lantern Shield - Enhanced",
+        "description": "Allies in the energy field receive additional [Healing Over Time]. [Healing Over Time]: Grants healing over time equal to [%] of Hal Jordan's ATK.",
+        "image": "./upgrade_images/GreenLantern_sub02_enhanced.png"
+      },
+      {
+        "name": "Green Lantern Corps - Enhanced",
+        "description": "Increases Hal Jordan's Physical DEF.",
+        "image": "./upgrade_images/GreenLantern_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "green_lantern",
+    "previousTier": "A+"
   },
   {
     "id": "harley_quinn",
-    "name": "Harley Quinn",
+    "name": "Harley Quinn (Mythic)",
     "class": "Warrior",
     "rarity": "Mythic",
     "tier": "C",
@@ -1513,7 +1939,91 @@
         "description": "Increases Harley Quinn's Max HP.",
         "image": "./upgrade_images/HarleyQuinn_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendsTo": "harley_quinn_mythic_plus"
+  },
+  {
+    "id": "harley_quinn_mythic_plus",
+    "name": "Harley Quinn (Mythic +)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "B",
+    "previousTier": "C",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "suicide_squad",
+      "birds_of_prey",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "Merciless CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "7-Day Login"
+    ],
+    "transmutePriorities": [
+      "ATK",
+      "HP",
+      "Energy Gain Bonus"
+    ],
+    "recommendedLegacyPieces": [
+      "honkin_huge_hammer",
+      "not_so_huge_hammer",
+      "promethium_claws"
+    ],
+    "quantumsTake": "Harley Quinn is one of the most important early champions for non-spenders and lite spenders. Since you get a copy of her through the 7-day login reward, it means that any additional shards allow you to build her abilities. She does decent AoE damage, especially with her legacy weapon, which is given to you early on in your playthrough. She does taper off as you get access to limite mythics, but I think she will see a resurgence as soon as there's a renewed focus on Suicide Squad champions.",
+    "imageHeadshot": "./headshot_images/img_hero_ult_HarleyQueen.png",
+    "imageFull": "./full_images/HarleyQuinn_full.png",
+    "ultimate": {
+      "name": "Self-Actualization:Relase Self",
+      "description": "Harley Quinn unleashes her full potential and enters a [Self-Actualization] state for 10s, dealing Physical DMG equl to [%] of her ATK to the target and all nearby enemies. [Self-Actualization]: Increases ATK by [%] and enhances attacks to deal AoE damage in a small area.",
+      "image": "./skill_images/icon_hero_skill_HarleyQuinn_main.png"
+    },
+    "globalSkill": {
+      "name": "Reckless Abandon",
+      "description": "Increases [Suicide Squad] Champions' ATK.",
+      "image": "./globalskill_images/HarleyQuinn_global.png"
+    },
+    "skills": [
+      {
+        "name": "Manic Episode",
+        "description": "Deal Physical DMG equal to [%] of ATK to an enemy",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub01.png"
+      },
+      {
+        "name": "Escalation",
+        "description": "Gains HP equal to [%] of Damage Dealt. All [Suicide Squad] allies gain HP equal to [%] of DMG dealt",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub02.png"
+      },
+      {
+        "name": "Special Physiology",
+        "description": "Gain [X] Energy per enemy defeated",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Manic Episode - Enhanced",
+        "description": "[Manic Episode] additionally reduces the target's Physical DEF by [%] for 5s.",
+        "image": "./upgrade_images/HarleyQuinn_sub01_enhanced.png"
+      },
+      {
+        "name": "Escalation - Enhanced",
+        "description": "Increases Harley Quinn's ATK.",
+        "image": "./upgrade_images/HarleyQuinn_sub02_enhanced.png"
+      },
+      {
+        "name": "Special Physiology - Enhanced",
+        "description": "Increases Harley Quinn's Max HP.",
+        "image": "./upgrade_images/HarleyQuinn_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "harley_quinn"
   },
   {
     "id": "hawkgirl",
@@ -1911,7 +2421,7 @@
     "name": "Nightwing",
     "class": "Assassin",
     "rarity": "Mythic +",
-    "tier": "S",
+    "tier": "S+",
     "damageType": "Physical",
     "tagSynergies": [
       "teen_titans",
@@ -1986,7 +2496,8 @@
         "description": "Increases Nightwing's ATK.",
         "image": "./upgrade_images/Nightwing_sub03_enhanced.png"
       }
-    ]
+    ],
+    "previousTier": "S"
   },
   {
     "id": "poison_ivy",
@@ -1994,7 +2505,6 @@
     "class": "Supporter",
     "rarity": "Mythic",
     "tier": "B",
-    "previousTier": "A",
     "damageType": "Physical",
     "tagSynergies": [
       "birds_of_prey",
@@ -2151,7 +2661,7 @@
   },
   {
     "id": "red_hood",
-    "name": "Red Hood",
+    "name": "Red Hood (Jason Todd) (Legendary)",
     "class": "Firepower",
     "rarity": "Legendary",
     "tier": "C",
@@ -2231,11 +2741,10 @@
   },
   {
     "id": "red_hood_mythic",
-    "name": "Red Hood",
+    "name": "Red Hood (Jason Todd) (Mythic)",
     "class": "Firepower",
     "rarity": "Mythic",
     "tier": "B",
-    "ascendedFrom": "red_hood",
     "damageType": "Physical",
     "tagSynergies": [
       "league_of_assassins",
@@ -2262,7 +2771,7 @@
       "gas_derringer"
     ],
     "quantumsTake": "Red Hood's ascended Mythic form brings a refreshed kit that addresses his Legendary version's survivability issues. Update this entry with his full Mythic kit details via the admin panel.",
-    "imageHeadshot": "./headshot_images/red_hood.png",
+    "imageHeadshot": "./headshot_images/img_event_move_explore_hero_RedHood.png",
     "imageFull": "./full_images/RedHood_full.png",
     "ultimate": {
       "name": "Strafe Strife",
@@ -2307,7 +2816,8 @@
         "description": "Increases Red Hood's ATK.",
         "image": "./upgrade_images/RedHood_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendedFrom": "red_hood"
   },
   {
     "id": "red_robin",
@@ -2630,7 +3140,7 @@
     "name": "Sinestro",
     "class": "Magical",
     "rarity": "Mythic +",
-    "tier": "S+",
+    "tier": "S",
     "damageType": "Spiritual",
     "tagSynergies": [
       "legion_of_doom",
@@ -2704,7 +3214,8 @@
         "description": "Increases Sinestro's Spiritual PEN.",
         "image": "./upgrade_images/Sinestro_sub03_enhanced.png"
       }
-    ]
+    ],
+    "previousTier": "S+"
   },
   {
     "id": "stargirl",
@@ -2789,7 +3300,6 @@
     "class": "Supporter",
     "rarity": "Mythic +",
     "tier": "S",
-    "previousTier": "A+",
     "damageType": "Physical",
     "tagSynergies": [
       "superman_family",
@@ -3340,7 +3850,7 @@
   },
   {
     "id": "wonder_woman",
-    "name": "Wonder Woman",
+    "name": "Wonder Woman (Diana Prince) (Legendary)",
     "class": "Guardian",
     "rarity": "Legendary",
     "tier": "B",
@@ -3420,11 +3930,11 @@
   },
   {
     "id": "wonder_woman_mythic",
-    "name": "Wonder Woman",
+    "name": "Wonder Woman (Diana Prince) (Mythic)",
     "class": "Guardian",
     "rarity": "Mythic",
-    "tier": "B",
-    "ascendedFrom": "wonder_woman",
+    "tier": "A",
+    "previousTier": "B",
     "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
@@ -3448,7 +3958,7 @@
       "amazonium_alloy_shield"
     ],
     "quantumsTake": "Wonder Woman's ascended Mythic form retains her role as a tanky Guardian with potent stun utility. Update this entry with her full Mythic kit details via the admin panel.",
-    "imageHeadshot": "./headshot_images/wonder_woman.png",
+    "imageHeadshot": "./headshot_images/img_hero_ult_WonderWoman.png",
     "imageFull": "./full_images/WonderWoman_full.png",
     "ultimate": {
       "name": "Bracelets of Submission",
@@ -3493,7 +4003,8 @@
         "description": "Increases Wonder Woman's ATK.",
         "image": "./upgrade_images/WonderWoman_sub03_enhanced.png"
       }
-    ]
+    ],
+    "ascendedFrom": "wonder_woman"
   },
   {
     "id": "krypto",
@@ -3589,7 +4100,6 @@
     ],
     "class": "Assassin",
     "rarity": "Mythic +",
-    "tier": "A",
     "tagSynergies": [
       "league_of_assassins",
       "metahuman"
@@ -3745,7 +4255,6 @@
     ],
     "class": "Assassin",
     "rarity": "Mythic +",
-    "tier": "A",
     "tagSynergies": [
       "league_of_assassins",
       "metahuman"
@@ -3969,7 +4478,6 @@
     "class": "Warrior",
     "rarity": "Mythic +",
     "tier": "S+",
-    "previousTier": "S",
     "damageType": "Spiritual",
     "tagSynergies": [
       "justice_league_dark",
@@ -4046,7 +4554,6 @@
     "rarity": "Iconic",
     "tier": "S",
     "isP2W": true,
-    "previousTier": "S+",
     "damageType": "Physical",
     "tagSynergies": [
       "amazons",
@@ -4449,7 +4956,6 @@
     "class": "Firepower",
     "rarity": "Mythic +",
     "tier": "A+",
-    "previousTier": "A",
     "damageType": "Physical",
     "tagSynergies": [
       "suicide_squad",
@@ -4758,7 +5264,6 @@
     "class": "Guardian",
     "rarity": "Mythic +",
     "tier": "S",
-    "previousTier": "A+",
     "damageType": "Spiritual",
     "tagSynergies": [
       "weapon_master",
@@ -4841,8 +5346,6 @@
     "class": "Firepower",
     "rarity": "Mythic +",
     "tier": "A",
-    "isNew": true,
-    "previousTier": "A+",
     "damageType": "Physical",
     "tagSynergies": [
       "bat_family",
@@ -4922,5 +5425,95 @@
       "Dodge"
     ],
     "whaleOrSkipValue": "Luxury"
+  },
+  {
+    "id": "supergirl_woman_of_tomorrow_kara_zor_el",
+    "name": "Supergirl Woman of Tomorrow (Kara Zor-El)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "S+",
+    "isNew": true,
+    "isP2W": true,
+    "damageType": "Physical",
+    "tagSynergies": [
+      "superman_family",
+      "justice_league",
+      "metahuman"
+    ],
+    "gameModes": [
+      "Dawnbreaker CC",
+      "PvP"
+    ],
+    "sourcesWhereAvailable": [
+      "Special Event"
+    ],
+    "transmutePriorities": [
+      "Crit Rate",
+      "Crit DMG",
+      "ATK",
+      "Physical PEN"
+    ],
+    "recommendedLegacyPieces": [
+      "gabriel_horn",
+      "not_so_huge_hammer",
+      "absorption_collar"
+    ],
+    "quantumsTake": "Supergirl Woman of Tomorrow (SWOT) has a unique kit, in that she starts out as a healer and then deals massive damage once she awakens. She seems to do best in a Justice League core with Hawkgirl and Martian Manhunter, but she fills the final role in Superman Family as well and makes variations of that team actually PvP viable again. You do need her legacy piece as high as you can get it. The interesting thing about this character is that you can get away with a lower starred champion as long as you're willing to dump enough magic eyes to get her LP to 5 purple or higher. It's unfortunate that she is paywalled, but I have seen people getting her unlocked at 0 stars for free, which is a good step in the right direction, granted that doing so means you don't get any of the other event goodies, which are much better to get for F2P players.",
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_supergirl_sp.png",
+    "imageFull": "./full_images/img_hero_pic_supergirl_sp.png",
+    "ultimate": {
+      "name": "Walk the Dog",
+      "description": "Before awakening: Supergirl Woman of Tomorrow heals allies in a circular area for [300/400/500/600/700%] of her Attack and reduces the targets' spiritual damage taken by [25/30/35/40/45%] for 15s.\r\n\r\nAfter awakening: Supergirl Woman of Tomorrow races through enemy lines at super speed, kicking up a sandstorm that deals physical damage equal to [1500/1800/2200/2600/3000%] of her Attack to enemies in a circular area.\r\n\r\nPassive: When 1 friendly Champion has been defeated, or after Supergirl Woman of Tomorrow casts her Ultimate for the 2nd time, she immediately enters [Awakened] state until the end of battle. [Awakened]: Immediately gains 50 Energy and has [Super Armor] while in this state.",
+      "image": "./skill_images/SupergirlWoT Ultimate.png"
+    },
+    "globalSkill": {
+      "name": "Inspire Confidence",
+      "description": "Increases all Champions Spiritual Defense by [2/4/6/8/10%] and [Warrior] Champions' Spiritual Defense by [2/4/6/8/10%].",
+      "image": "./globalskill_images/Supergirl WoT Global.png"
+    },
+    "skills": [
+      {
+        "name": "Argo City Special",
+        "description": "Before awakening: Supergirl Woman of Tomorrow commands Krypto to heal the ally with the lowest HP percentage for [140/180/220/260/300%] of her Attack, then continue healing the target for an additional [140/180/220/260/300%] of her Attack over 5s.\r\n\r\nAfter awakening: Supergirl Woman of Tomorrow fires Heat Vision, dealing physical damage equal to [450/600/800/1000/1200%] of her Attack to enemies in a fan-shaped area.",
+        "image": "./skill_images/Supergirl WoT Skill 1.png"
+      },
+      {
+        "name": "Build Strength",
+        "description": "Increases Supergirl Woman of Tomorrow's Max HP by [20/30/45/60/75%]. After awakening: Also reduces Supergirl Woman of Tomorrow's spiritual damage taken by [20/30/40/50/60%] until the end of the battle.",
+        "image": "./skill_images/Supergirl WoT Skill 2.png"
+      },
+      {
+        "name": "Resolute",
+        "description": "At the start of the battle, increases all allies' physical damage dealt by [15/20/25/30/35%] until th eend of the battle. This effect is doubled for [Supeman Family] and [Justice League] allies. After awakening: Also increases Supergirl Woman of Tomorrow's Physical Penetration by [20/30/40/50/60%] until the end of the battle.",
+        "image": "./skill_images/Supergirl WoT Skill 3.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Argo City Special - Enhanced",
+        "description": "Reduces cooldown of [Argo City Special] by up to 2s.",
+        "image": "./upgrade_images/swot basic force 01.png"
+      },
+      {
+        "name": "Build Strength - Enhanced",
+        "description": "Increases Supergirl Woman of Tomorrow's Max HP.",
+        "image": "./upgrade_images/swot basic force 02.png"
+      },
+      {
+        "name": "Resolute - Enhanced",
+        "description": "At the start of battle, Supergirl Woman of Tomorrow gains additional Energy.",
+        "image": "./upgrade_images/swot basic force 03.png"
+      }
+    ],
+    "starBreakpoint": 1,
+    "acDcPriority": [
+      "Major 1",
+      "Major 2",
+      "Major 3",
+      "Healing",
+      "Physical PEN"
+    ],
+    "whaleOrSkipValue": "Top Tier",
+    "uniqueLegacyRequired": true
   }
 ]

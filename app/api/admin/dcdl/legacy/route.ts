@@ -21,7 +21,11 @@ async function saveFile(file: File, dir: string): Promise<string> {
 export async function GET() {
   const guard = notProd(); if (guard) return guard
   const data = JSON.parse(fs.readFileSync(legacyPath, 'utf8'))
-  return NextResponse.json(data.map((l: { id: string; name: string }) => ({ id: l.id, name: l.name })))
+  return NextResponse.json(data.map((l: { id: string; name: string; image?: string }) => ({
+    id: l.id,
+    name: l.name,
+    image: l.image ? l.image.replace(/^\.\/legacy_images\//, '/dcdl/legacy/legacy_images/') : undefined,
+  })))
 }
 
 export async function POST(req: NextRequest) {
