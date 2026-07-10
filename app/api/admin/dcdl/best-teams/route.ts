@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { notProd } from '@/src/lib/adminGuard'
 
 const DATA_FILE = path.join(process.cwd(), 'src/dcdl/data/best-teams.json')
 
@@ -36,10 +37,14 @@ function normalizeRequired(raw: unknown): string[] {
 }
 
 export async function GET() {
+  const guard = notProd()
+  if (guard) return guard
   return NextResponse.json(readTeams())
 }
 
 export async function POST(req: NextRequest) {
+  const guard = notProd()
+  if (guard) return guard
   const teams: Team[] = await req.json()
   if (!Array.isArray(teams) || teams.length < 1 || teams.length > 50) {
     return NextResponse.json({ error: 'Expected between 1 and 50 teams' }, { status: 400 })

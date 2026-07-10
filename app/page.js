@@ -1,9 +1,11 @@
 import './page.css'
+import { PUBLIC_SECTIONS } from '@/src/lib/siteConfig'
 
 export default function Home() {
-  const games = [
+  const allGames = [
     {
       id: 'dcdl',
+      section: 'dcdl',
       name: 'DC: Dark Legion',
       href: '/games/dc-dark-legion/guides',
       description: 'Idle strategy RPG set in the DC Universe — collect champions, build your base, and battle across iconic Gotham.',
@@ -12,6 +14,7 @@ export default function Home() {
     },
     {
       id: 'godforge',
+      section: 'godforge',
       name: 'Godforge',
       href: '/games/godforge',
       description: 'Hero collector RPG built around strategic team composition — gods, myths, and legends across deep progression systems.',
@@ -20,6 +23,7 @@ export default function Home() {
     },
     {
       id: 'void-hunters',
+      section: 'voidHunters',
       name: 'Void Hunters',
       href: '/games/void-hunters/guides',
       description: 'Turn-based RPG with deep hunter progression, strategic squad combat, and escalating void threats.',
@@ -27,6 +31,8 @@ export default function Home() {
       image: '/images/games/voidhuntersmain.jpg'
     }
   ]
+
+  const games = allGames.filter((g) => PUBLIC_SECTIONS[g.section])
 
   return (
     <main>
@@ -49,7 +55,7 @@ export default function Home() {
         <div className="container">
           <div className="lp-section-label">
             <span className="lp-section-line" />
-            <span className="lp-section-text">Games We Cover</span>
+            <span className="lp-section-text">What We Cover</span>
             <span className="lp-section-line lp-section-line-right" />
           </div>
           <div className="lp-games-grid">

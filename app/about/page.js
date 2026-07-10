@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import './about.css'
 
 export const revalidate = 3600
@@ -33,7 +32,7 @@ export default async function About() {
             <div className="bio-section">
               <h2>Who I Am</h2>
               <p>
-                Quantum is a gaming content creator focused primarily on mobile hero collector RPGs. He covers DC: Dark Legion, Godforge, and Void Hunters — games where team-building, progression knowledge, and up-to-date tier information actually matter. When he&apos;s not grinding out guides or making videos, you can find him enjoying an ice cold Mountain Dew Baja Blast Zero and wishing he had more time for a proper MMO.
+                Quantum is a gaming content creator focused primarily on mobile hero collector RPGs. He covers DC: Dark Legion — a game where team-building, progression knowledge, and up-to-date tier information actually matter. When he&apos;s not grinding out guides or making videos, you can find him enjoying an ice cold Mountain Dew Baja Blast Zero and wishing he had more time for a proper MMO.
               </p>
               <p>
                 This site exists because good game information is scattered, outdated, or locked behind Discord walls. The goal is to keep it organized, honest, and community-driven — with live tier voting so the wisdom-of-the-crowd stays current as metas shift.
@@ -94,29 +93,15 @@ export default async function About() {
         <div className="container">
           <h2 className="site-section-heading">What You&apos;ll Find Here</h2>
           <p className="site-section-intro">
-            Quantum Game Guides covers three games in depth — a champion database for each, community tier voting, status effect references, and written guides where the meta is settled enough to be useful.
+            Quantum Game Guides covers DC: Dark Legion in depth — a full champion database, community tier voting, legacy piece references, interactive planning tools, and written guides where the meta is settled enough to be useful.
           </p>
           <div className="games-overview">
             <div className="game-overview-card">
               <h3>DC: Dark Legion</h3>
               <p>
-                The most developed section on the site. Browse the full champion roster with synergies, faction tags, and community tier ratings built from real player votes. Explore legacy pieces, use the interactive Gotham battle map for ship combat planning, and check the live community tier list.
+                Browse the full champion roster with synergies, faction tags, and community tier ratings built from real player votes. Explore legacy pieces, use the interactive Gotham battle map for ship combat planning, and check the live community tier list.
               </p>
               <a href="/games/dc-dark-legion" className="overview-link">Explore DCDL →</a>
-            </div>
-            <div className="game-overview-card">
-              <h3>Godforge</h3>
-              <p>
-                Browse all 202 heroes with filterable grids by rarity, affinity, allegiance, archetype, and faction. Explore the full status effects library covering 105 buffs, debuffs, and disables — useful for team-building and content prep.
-              </p>
-              <Link href="/games/godforge/heroes" className="overview-link">Explore Godforge →</Link>
-            </div>
-            <div className="game-overview-card">
-              <h3>Void Hunters</h3>
-              <p>
-                Browse the full hunter roster and the complete status effects database. Community features and written guides are in development as the game&apos;s meta matures.
-              </p>
-              <a href="/games/void-hunters" className="overview-link">Explore Void Hunters →</a>
             </div>
           </div>
         </div>

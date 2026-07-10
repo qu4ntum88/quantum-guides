@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { notProd } from '@/src/lib/adminGuard'
 
 const DATA_FILE  = path.join(process.cwd(), 'src/vh/data/hunters.json')
 const IMG_DIR    = path.join(process.cwd(), 'public/vh/portraits')
@@ -58,6 +59,8 @@ async function saveFile(dir: string, file: File): Promise<string> {
 }
 
 export async function GET() {
+  const guard = notProd()
+  if (guard) return guard
   return NextResponse.json(readHunters())
 }
 
@@ -70,6 +73,8 @@ export async function PATCH(req: NextRequest) {
 }
 
 async function upsert(req: NextRequest, editing: boolean) {
+  const guard = notProd()
+  if (guard) return guard
   const fd = await req.formData()
   const id   = (fd.get('id')   as string)?.trim()
   const name = (fd.get('name') as string)?.trim()

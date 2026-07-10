@@ -54,5 +54,12 @@ export async function GET(req: NextRequest) {
     entry.winner = entry.total > 0 ? scoreToTier(avg) : ''
   }
 
-  return NextResponse.json(tally)
+  // Votes change slowly, so let Vercel's CDN serve this for 5 min (stale up to 30 min
+  // while it refreshes in the background). This stops every grid/detail page view from
+  // re-invoking the function + re-querying Supabase.
+  return NextResponse.json(tally, {
+    headers: {
+      'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=1800',
+    },
+  })
 }

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { notProd } from '@/src/lib/adminGuard'
 
 const DATA_PATH = path.join(process.cwd(), 'src/dcdl/data/infographics.json')
 const IMG_DIR = path.join(process.cwd(), 'public/dcdl/infographics')
@@ -18,10 +19,14 @@ function writeData(data: unknown[]) {
 }
 
 export async function GET() {
+  const guard = notProd()
+  if (guard) return guard
   return NextResponse.json(readData())
 }
 
 export async function POST(req: NextRequest) {
+  const guard = notProd()
+  if (guard) return guard
   const formData = await req.formData()
   const title = (formData.get('title') as string)?.trim()
   const description = (formData.get('description') as string)?.trim() || ''
@@ -50,6 +55,8 @@ export async function POST(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
+  const guard = notProd()
+  if (guard) return guard
   const { id } = await req.json()
   if (!id) return NextResponse.json({ error: 'id required' }, { status: 400 })
   const existing = readData()

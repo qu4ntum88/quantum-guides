@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import { notProd } from '@/src/lib/adminGuard'
 
 const GUIDES_DIR = path.join(process.cwd(), 'src/dcdl/guides')
 
@@ -124,6 +125,8 @@ function parseBody(body: string): { intro: string; blocks: Block[] } {
 }
 
 export async function GET(req: NextRequest) {
+  const guard = notProd()
+  if (guard) return guard
   const filename = req.nextUrl.searchParams.get('filename')
 
   // Single-guide fetch: return full parsed content for editing in the admin form.
@@ -167,6 +170,8 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  const guard = notProd()
+  if (guard) return guard
   const body = await req.json()
   const {
     filename, title, author, pubDate, description, intro, blocks, coverImage,

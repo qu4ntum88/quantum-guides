@@ -20,12 +20,10 @@ export default function Disclaimer() {
 
             <h2>Fan Site — No Affiliation</h2>
             <p>
-              Quantum Game Guides is an independent fan site created by and for players of mobile and hero collector RPGs. We are not affiliated with, endorsed by, sponsored by, or officially connected to any of the game developers or publishers whose games are covered on this site, including:
+              Quantum Game Guides is an independent fan site created by and for players of mobile and hero collector RPGs. We are not affiliated with, endorsed by, sponsored by, or officially connected to any of the game developers or publishers whose game is covered on this site:
             </p>
             <ul>
               <li><strong>DC: Dark Legion</strong> — DC Comics, Warner Bros. Discovery, and any associated developers or publishers</li>
-              <li><strong>Godforge</strong> — Fateless Games and HellHades</li>
-              <li><strong>Void Hunters</strong> — associated developers and publishers</li>
             </ul>
             <p>
               All game names, logos, characters, artwork, and trademarks featured on this site are the property of their respective owners. Their use here is for fan, commentary, and informational purposes and does not imply any ownership or endorsement.

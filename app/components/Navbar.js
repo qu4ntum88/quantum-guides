@@ -3,8 +3,11 @@
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
+import { PUBLIC_SECTIONS } from '@/src/lib/siteConfig'
 
-const NAV_ITEMS = [
+// Items tagged with `section` are only shown when that section is public
+// (see src/lib/siteConfig.ts). DC: Dark Legion is always shown.
+const ALL_NAV_ITEMS = [
   { label: 'Home', href: '/' },
   {
     label: 'DC: Dark Legion',
@@ -21,6 +24,7 @@ const NAV_ITEMS = [
     ],
   },
   {
+    section: 'godforge',
     label: 'Godforge',
     href: '/games/godforge',
     children: [
@@ -31,8 +35,10 @@ const NAV_ITEMS = [
       { label: 'Dungeons', href: '/games/godforge/dungeons' },
     ],
   },
-  { label: 'Void Hunters', href: '/games/void-hunters/guides' },
+  { section: 'voidHunters', label: 'Void Hunters', href: '/games/void-hunters/guides' },
 ]
+
+const NAV_ITEMS = ALL_NAV_ITEMS.filter((item) => !item.section || PUBLIC_SECTIONS[item.section])
 
 function DropdownItem({ item }) {
   const [open, setOpen] = useState(false)

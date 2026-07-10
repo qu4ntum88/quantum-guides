@@ -1,4 +1,11 @@
+import { notFound } from 'next/navigation'
+import { PUBLIC_SECTIONS } from '@/src/lib/siteConfig'
+
 export default function GodforgeLayout({ children }: { children: React.ReactNode }) {
+  // Hidden from the public site while we focus on DCDL for AdSense review.
+  // Data stays editable via /admin/dcdl. Flip PUBLIC_SECTIONS.godforge to re-enable.
+  if (!PUBLIC_SECTIONS.godforge) notFound()
+
   return (
     <>
       {children}

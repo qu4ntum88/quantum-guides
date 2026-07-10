@@ -18,6 +18,8 @@ export default function LegacyPieceBox({ piece, communityTier }: { piece: Legacy
           <img
             src={piece.image ?? PLACEHOLDER}
             alt={piece.name}
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
             style={{ maskImage: "linear-gradient(to bottom, black 30%, transparent)" }}
           />
