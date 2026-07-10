@@ -2,6 +2,7 @@ import './globals.css'
 import Navbar from './components/Navbar'
 import { ClerkProvider } from '@clerk/nextjs'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: 'Quantum Game Guides',
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <Analytics />
         <footer className="footer">
           <p>&copy; 2026 Quantum Game Guides. All rights reserved.</p>
           <p className="footer-links">
