@@ -1962,6 +1962,7 @@ type ScMetropolis = {
 type ScData = {
   intro: string
   reward: { name: string; icon: string }
+  itemIcons?: Record<string, string>
   days: ScDay[]
   pointTables: Record<string, ScPointTable>
   rewardTracks: Record<string, ScRewardTrack>
@@ -1992,6 +1993,7 @@ function ScRewardRows({ rewards, onChange }: { rewards: ScReward[]; onChange: (n
 
 function SupremeCommanderForm() {
   const [data, setData] = useState<ScData | null>(null)
+  const [icons, setIcons] = useState<{ name: string; path: string }[]>([])
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
 
@@ -2000,6 +2002,10 @@ function SupremeCommanderForm() {
       .then((r) => r.json())
       .then((d) => setData(d))
       .catch(() => setStatus({ type: 'error', message: 'Failed to load data.' }))
+    fetch('/api/admin/dcdl/resource-icons')
+      .then((r) => r.json())
+      .then((list) => setIcons(Array.isArray(list) ? list : []))
+      .catch(() => {})
   }, [])
 
   function patch(mut: (draft: ScData) => void) {
@@ -2034,6 +2040,9 @@ function SupremeCommanderForm() {
 
   const pointTableKeys = Object.keys(data.pointTables)
   const rewardTrackKeys = Object.keys(data.rewardTracks)
+  const uniqueItems = Array.from(
+    new Set(pointTableKeys.flatMap((k) => data.pointTables[k].rows.map((r) => r.item)))
+  ).filter(Boolean)
   const removeBtn: React.CSSProperties = { background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.8rem' }
   const addBtn: React.CSSProperties = { background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.4rem 0.9rem', fontSize: '0.82rem', alignSelf: 'flex-start' }
 
@@ -2168,6 +2177,39 @@ function SupremeCommanderForm() {
             </div>
           </div>
         ))}
+
+        {/* Resource icons */}
+        <div style={sec}>
+          <div style={secTitle}>Resource Icons</div>
+          <p style={{ fontSize: '0.8rem', color: '#888', margin: 0 }}>
+            Assign an image to each resource. On the site the image replaces the name in the points tables, with the full name shown as a hover tooltip. Leave as &ldquo;None&rdquo; to keep showing the text name. New art added to <code>public/dcdl/resource_icons/</code> shows up here automatically.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            {uniqueItems.map((item) => {
+              const current = data.itemIcons?.[item] ?? ''
+              return (
+                <div key={item} style={{ display: 'flex', gap: '0.6rem', alignItems: 'center' }}>
+                  <span style={{ width: '2.4rem', height: '2.4rem', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#111', border: '1px solid #333', borderRadius: '0.375rem' }}>
+                    {current
+                      // eslint-disable-next-line @next/next/no-img-element
+                      ? <img src={encodeURI(current)} alt={item} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                      : <span style={{ fontSize: '0.7rem', color: '#555' }}>—</span>}
+                  </span>
+                  <span style={{ flex: 1, fontSize: '0.85rem', color: '#ddd' }}>{item}</span>
+                  <select style={{ ...inp, width: '17rem' }} value={current}
+                    onChange={(e) => patch((d) => {
+                      if (!d.itemIcons) d.itemIcons = {}
+                      if (e.target.value) d.itemIcons[item] = e.target.value
+                      else delete d.itemIcons[item]
+                    })}>
+                    <option value="">— None (show name) —</option>
+                    {icons.map((ic) => <option key={ic.path} value={ic.path}>{ic.name}</option>)}
+                  </select>
+                </div>
+              )
+            })}
+          </div>
+        </div>
 
         {/* Metropolis Maneuvers (Day 6) rewards */}
         {data.metropolis && (

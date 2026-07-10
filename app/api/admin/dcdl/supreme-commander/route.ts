@@ -27,6 +27,7 @@ type Metropolis = {
 type SupremeCommander = {
   intro: string
   reward: { name: string; icon: string }
+  itemIcons?: Record<string, string>
   days: Day[]
   pointTables: Record<string, PointTable>
   rewardTracks: Record<string, RewardTrack>
@@ -101,9 +102,15 @@ function validate(input: SupremeCommander): SupremeCommander {
   )
   const pointTableKeys = new Set(Object.keys(pointTables))
   const rewardTrackKeys = new Set(Object.keys(input.rewardTracks ?? {}))
+  const itemIcons = Object.fromEntries(
+    Object.entries(input.itemIcons ?? {})
+      .map(([k, v]) => [k, str(v)])
+      .filter(([, v]) => v)
+  )
   return {
     intro: str(input.intro),
     reward: { name: str(input.reward?.name), icon: str(input.reward?.icon) },
+    itemIcons,
     days: (Array.isArray(input.days) ? input.days : []).map((d, i) => {
       const pointTable = str(d?.pointTable) && pointTableKeys.has(str(d?.pointTable)) ? str(d?.pointTable) : null
       const rewardTrack = str(d?.rewardTrack)

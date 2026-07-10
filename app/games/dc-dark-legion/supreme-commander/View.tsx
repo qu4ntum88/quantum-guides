@@ -24,6 +24,7 @@ type Metropolis = {
 export type SupremeCommanderData = {
   intro: string
   reward: { name: string; icon: string }
+  itemIcons?: Record<string, string>
   days: Day[]
   pointTables: Record<string, PointTable>
   rewardTracks: Record<string, RewardTrack>
@@ -31,6 +32,23 @@ export type SupremeCommanderData = {
 }
 
 const fmt = (n: number) => n.toLocaleString('en-US')
+
+// Encode only the path segments so spaces in filenames survive as %20.
+const encodeIcon = (p: string) => p.split('/').map(encodeURIComponent).join('/')
+
+// Item icons are assigned in the admin panel (data.itemIcons). Items without an
+// assigned icon fall back to showing their text name.
+function ItemLabel({ name, icon }: { name: string; icon?: string }) {
+  if (!icon) return <span className="sc-ptable-item">{name}</span>
+  return (
+    <span className="sc-ptable-item sc-ptable-item--icon">
+      <span className="sc-item-icon" tabIndex={0}>
+        <img src={encodeIcon(icon)} alt={name} title={name} />
+        <span className="sc-item-tip" role="tooltip">{name}</span>
+      </span>
+    </span>
+  )
+}
 
 function EyeCount({ count, icon, name }: { count: number; icon: string; name: string }) {
   return (
@@ -41,7 +59,7 @@ function EyeCount({ count, icon, name }: { count: number; icon: string; name: st
   )
 }
 
-function PointTableCard({ table, highlight }: { table: PointTable; highlight?: string[] }) {
+function PointTableCard({ table, highlight, icons }: { table: PointTable; highlight?: string[]; icons?: Record<string, string> }) {
   const usable = new Set(highlight ?? [])
   return (
     <div className="sc-ptable">
@@ -52,7 +70,7 @@ function PointTableCard({ table, highlight }: { table: PointTable; highlight?: s
       <ul className="sc-ptable-rows">
         {table.rows.map((r) => (
           <li key={r.item} className={usable.has(r.item) ? 'is-usable' : undefined}>
-            <span className="sc-ptable-item">{r.item}</span>
+            <ItemLabel name={r.item} icon={icons?.[r.item]} />
             <span className={`sc-ptable-val${r.value == null ? ' sc-ptable-val--tbd' : ''}`}>
               {r.value == null ? 'TBD' : fmt(r.value)}
             </span>
@@ -201,7 +219,7 @@ export default function SupremeCommanderView({ data }: { data: SupremeCommanderD
             <aside className="sc-rail">
               {pointTable ? (
                 <div>
-                  <PointTableCard table={pointTable} highlight={day.usableItems} />
+                  <PointTableCard table={pointTable} highlight={day.usableItems} icons={data.itemIcons} />
                   <p className="sc-usable-note">
                     {day.usableItems.length > 0 ? (
                       <><span className="sc-usable-dot" /> Glowing rows can be spent for points on Day {day.day}.</>
@@ -231,7 +249,7 @@ export default function SupremeCommanderView({ data }: { data: SupremeCommanderD
           </p>
           <div className="sc-ref-grid">
             {Object.entries(data.pointTables).map(([key, table]) => (
-              <PointTableCard key={key} table={table} />
+              <PointTableCard key={key} table={table} icons={data.itemIcons} />
             ))}
           </div>
 

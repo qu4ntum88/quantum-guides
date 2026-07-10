@@ -249,7 +249,8 @@
   background: #111118;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0.75rem;
-  overflow: hidden;
+  /* overflow visible so item-name tooltips can escape the card */
+  overflow: visible;
 }
 
 .sc-ptable-head {
@@ -259,6 +260,7 @@
   padding: 0.7rem 1rem;
   background: linear-gradient(90deg, rgba(204, 164, 83, 0.16), transparent);
   border-bottom: 1px solid rgba(204, 164, 83, 0.25);
+  border-radius: 0.75rem 0.75rem 0 0;
   font-family: 'Unbounded', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
@@ -288,6 +290,7 @@
 
 .sc-ptable-rows li:last-child {
   border-bottom: none;
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .sc-ptable-rows li:nth-child(even) {
@@ -309,6 +312,60 @@
   color: rgba(255, 255, 255, 0.3);
   font-size: 0.7rem;
   letter-spacing: 0.05em;
+}
+
+/* Item icon + hover tooltip (falls back to text name when no icon) */
+.sc-ptable-item--icon {
+  display: flex;
+  align-items: center;
+}
+
+.sc-item-icon {
+  position: relative;
+  display: inline-flex;
+  outline: none;
+}
+
+.sc-item-icon img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.12s;
+}
+
+.sc-item-icon:hover img,
+.sc-item-icon:focus img {
+  transform: scale(1.12);
+}
+
+.sc-item-tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  background: #000;
+  color: #fff;
+  border: 1px solid var(--gold);
+  border-radius: 0.35rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
+  font-family: inherit;
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+}
+
+.sc-item-icon:hover .sc-item-tip,
+.sc-item-icon:focus .sc-item-tip {
+  opacity: 1;
+}
+
+.sc-ptable-rows li.is-usable .sc-item-icon img {
+  filter: drop-shadow(0 0 5px rgba(204, 164, 83, 0.85));
 }
 
 /* Usable-today highlight */
