@@ -2040,8 +2040,18 @@ function SupremeCommanderForm() {
 
   const pointTableKeys = Object.keys(data.pointTables)
   const rewardTrackKeys = Object.keys(data.rewardTracks)
+  const metroItems = data.metropolis
+    ? [
+        ...data.metropolis.milestones.reward.map((r) => r.item),
+        ...data.metropolis.leagueOutcomes.outcomes.flatMap((o) => o.rewards.map((r) => r.item)),
+        ...data.metropolis.ranking.tiers.flatMap((t) => t.rewards.map((r) => r.item)),
+      ]
+    : []
   const uniqueItems = Array.from(
-    new Set(pointTableKeys.flatMap((k) => data.pointTables[k].rows.map((r) => r.item)))
+    new Set([
+      ...pointTableKeys.flatMap((k) => data.pointTables[k].rows.map((r) => r.item)),
+      ...metroItems,
+    ])
   ).filter(Boolean)
   const removeBtn: React.CSSProperties = { background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.8rem' }
   const addBtn: React.CSSProperties = { background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.4rem 0.9rem', fontSize: '0.82rem', alignSelf: 'flex-start' }

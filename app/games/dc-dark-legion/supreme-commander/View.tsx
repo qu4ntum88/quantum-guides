@@ -98,19 +98,30 @@ function RewardLadder({ track, reward }: { track: RewardTrack; reward: { name: s
   )
 }
 
-function RewardPills({ rewards }: { rewards: ItemReward[] }) {
+function RewardPills({ rewards, icons }: { rewards: ItemReward[]; icons?: Record<string, string> }) {
   return (
     <div className="sc-reward-pills">
-      {rewards.map((r, i) => (
-        <span key={i} className="sc-reward-pill">
-          <span className="sc-reward-qty">{fmt(r.qty)}×</span> {r.item}
-        </span>
-      ))}
+      {rewards.map((r, i) => {
+        const icon = icons?.[r.item]
+        return (
+          <span key={i} className="sc-reward-pill">
+            <span className="sc-reward-qty">{fmt(r.qty)}×</span>
+            {icon ? (
+              <span className="sc-item-icon sc-reward-pill-icon" tabIndex={0}>
+                <img src={encodeIcon(icon)} alt={r.item} title={r.item} />
+                <span className="sc-item-tip" role="tooltip">{r.item}</span>
+              </span>
+            ) : (
+              <span>{r.item}</span>
+            )}
+          </span>
+        )
+      })}
     </div>
   )
 }
 
-function MetropolisRewards({ metro }: { metro: Metropolis }) {
+function MetropolisRewards({ metro, icons }: { metro: Metropolis; icons?: Record<string, string> }) {
   return (
     <div className="sc-metro">
       {/* Milestones */}
@@ -123,7 +134,7 @@ function MetropolisRewards({ metro }: { metro: Metropolis }) {
           ))}
         </div>
         <div className="sc-metro-reward-label">Reward at each milestone</div>
-        <RewardPills rewards={metro.milestones.reward} />
+        <RewardPills rewards={metro.milestones.reward} icons={icons} />
       </div>
 
       {/* League outcomes */}
@@ -134,7 +145,7 @@ function MetropolisRewards({ metro }: { metro: Metropolis }) {
           {metro.leagueOutcomes.outcomes.map((o) => (
             <div key={o.name} className={`sc-outcome sc-outcome--${o.name.toLowerCase().replace(/[^a-z]+/g, '-')}`}>
               <span className="sc-outcome-name">{o.name}</span>
-              <RewardPills rewards={o.rewards} />
+              <RewardPills rewards={o.rewards} icons={icons} />
             </div>
           ))}
         </div>
@@ -148,7 +159,7 @@ function MetropolisRewards({ metro }: { metro: Metropolis }) {
           {metro.ranking.tiers.map((t) => (
             <div key={t.rank} className="sc-rank">
               <span className="sc-rank-badge">#{t.rank}</span>
-              <RewardPills rewards={t.rewards} />
+              <RewardPills rewards={t.rewards} icons={icons} />
             </div>
           ))}
         </div>
@@ -239,7 +250,7 @@ export default function SupremeCommanderView({ data }: { data: SupremeCommanderD
           </div>
         )}
 
-        {day?.noResources && data.metropolis && <MetropolisRewards metro={data.metropolis} />}
+        {day?.noResources && data.metropolis && <MetropolisRewards metro={data.metropolis} icons={data.itemIcons} />}
 
         {/* Full reference */}
         <div className="sc-reference">

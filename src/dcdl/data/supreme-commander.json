@@ -9,12 +9,25 @@
     "Chip (x1,000)": "/dcdl/resource_icons/Chips.png",
     "Intel": "/dcdl/resource_icons/intel points.png",
     "Drone": "/dcdl/resource_icons/icon_item_uav.png",
-    "Mother Box": "/dcdl/resource_icons/Motherboxes.png",
+    "Mother Box": "/dcdl/resource_icons/icon_item_motherbox_red_01.png",
     "Quantum Component": "/dcdl/resource_icons/icon_item_Quantum_Components.png",
-    "Mythic Champion Shard": "/dcdl/resource_icons/mythic shard.png",
+    "Mythic Champion Shard": "/dcdl/resource_icons/icon_item_Random_fragments_red.png",
     "Magic Eye": "/dcdl/resource_icons/icon_item_Magic_Eye.png",
     "AC/DC Shard": "/dcdl/resource_icons/AC DC Shards.png",
-    "Mirror Cell": "/dcdl/resource_icons/mirror cell.png"
+    "Mirror Cell": "/dcdl/resource_icons/mirror cell.png",
+    "Worldline Particle": "/dcdl/resource_icons/icon_item_WorldlineParticles.png",
+    "Epic Legacy Piece": "/dcdl/resource_icons/bigboy.png",
+    "Legendary Champion Shard": "/dcdl/resource_icons/icon_item_Random_fragments_orange.png",
+    "World Anvil Fragment": "/dcdl/resource_icons/icon_item_OriginFragment.png",
+    "Legendary Legacy Piece": "/dcdl/resource_icons/icon_main_entrance_Illustrations_new.png",
+    "Mythic Legacy Piece": "/dcdl/resource_icons/icon_main_entrance_Illustrations_new2.png",
+    "Firepit Afterburner": "/dcdl/resource_icons/item_vehicle_Firepit_Afterburners.png",
+    "Legendary Truck (Dispatch)": "/dcdl/resource_icons/icon_dispatch_truck_tips_banner_01.png",
+    "Legendary Truck (Infiltrate)": "/dcdl/resource_icons/icon_dispatch_truck_tips_banner_01.png",
+    "Scarab Circuit": "/dcdl/resource_icons/icon_item_Booster.png",
+    "League Contribution": "/dcdl/resource_icons/icon_item_ally_donation.png",
+    "Source Energy Gem": "/dcdl/resource_icons/Gems.png",
+    "Alloy": "/dcdl/resource_icons/alloy.png"
   },
   "days": [
     {
@@ -155,15 +168,254 @@
       ]
     }
   ],
+  "pointTables": {
+    "standard": {
+      "label": "Days 1–4",
+      "rows": [
+        {
+          "item": "Alloy (x1,000)",
+          "value": 3
+        },
+        {
+          "item": "Chip (x1,000)",
+          "value": 3
+        },
+        {
+          "item": "Intel",
+          "value": 15
+        },
+        {
+          "item": "Drone",
+          "value": 30
+        },
+        {
+          "item": "Mother Box",
+          "value": 30
+        },
+        {
+          "item": "Worldline Particle",
+          "value": 90
+        },
+        {
+          "item": "Epic Legacy Piece",
+          "value": 120
+        },
+        {
+          "item": "Legendary Champion Shard",
+          "value": 120
+        },
+        {
+          "item": "Magic Eye",
+          "value": 150
+        },
+        {
+          "item": "World Anvil Fragment",
+          "value": 300
+        },
+        {
+          "item": "Quantum Component",
+          "value": 450
+        },
+        {
+          "item": "Mythic Champion Shard",
+          "value": 600
+        },
+        {
+          "item": "Legendary Legacy Piece",
+          "value": 1200
+        },
+        {
+          "item": "Firepit Afterburner",
+          "value": 2700
+        },
+        {
+          "item": "Mythic Legacy Piece",
+          "value": 6000
+        },
+        {
+          "item": "AC/DC Shard",
+          "value": null
+        },
+        {
+          "item": "Legendary Truck (Dispatch)",
+          "value": null
+        },
+        {
+          "item": "Legendary Truck (Infiltrate)",
+          "value": null
+        },
+        {
+          "item": "Scarab Circuit",
+          "value": null
+        },
+        {
+          "item": "Mirror Cell",
+          "value": null
+        }
+      ]
+    },
+    "finalDay": {
+      "label": "Final Day (Day 5)",
+      "rows": [
+        {
+          "item": "Alloy (x1,000)",
+          "value": 2
+        },
+        {
+          "item": "Chip (x1,000)",
+          "value": 2
+        },
+        {
+          "item": "Intel",
+          "value": 10
+        },
+        {
+          "item": "Drone",
+          "value": 20
+        },
+        {
+          "item": "Mother Box",
+          "value": 20
+        },
+        {
+          "item": "Worldline Particle",
+          "value": 60
+        },
+        {
+          "item": "Epic Legacy Piece",
+          "value": 80
+        },
+        {
+          "item": "Legendary Champion Shard",
+          "value": 80
+        },
+        {
+          "item": "Magic Eye",
+          "value": 100
+        },
+        {
+          "item": "World Anvil Fragment",
+          "value": 200
+        },
+        {
+          "item": "Quantum Component",
+          "value": 300
+        },
+        {
+          "item": "Mythic Champion Shard",
+          "value": 400
+        },
+        {
+          "item": "Legendary Legacy Piece",
+          "value": 800
+        },
+        {
+          "item": "Firepit Afterburner",
+          "value": 1800
+        },
+        {
+          "item": "Mythic Legacy Piece",
+          "value": 4000
+        },
+        {
+          "item": "AC/DC Shard",
+          "value": null
+        },
+        {
+          "item": "Legendary Truck (Dispatch)",
+          "value": null
+        },
+        {
+          "item": "Legendary Truck (Infiltrate)",
+          "value": null
+        },
+        {
+          "item": "Scarab Circuit",
+          "value": null
+        },
+        {
+          "item": "Mirror Cell",
+          "value": null
+        }
+      ]
+    }
+  },
+  "rewardTracks": {
+    "standard": {
+      "label": "Days 1, 2 & 5",
+      "rounds": [
+        {
+          "round": 1,
+          "eyes": 1,
+          "points": 5000
+        },
+        {
+          "round": 2,
+          "eyes": 1,
+          "points": 20000
+        },
+        {
+          "round": 3,
+          "eyes": 2,
+          "points": 50000
+        },
+        {
+          "round": 4,
+          "eyes": 5,
+          "points": 100000
+        }
+      ]
+    },
+    "peak": {
+      "label": "Days 3 & 4",
+      "rounds": [
+        {
+          "round": 1,
+          "eyes": 1,
+          "points": 6000
+        },
+        {
+          "round": 2,
+          "eyes": 1,
+          "points": 24000
+        },
+        {
+          "round": 3,
+          "eyes": 2,
+          "points": 60000
+        },
+        {
+          "round": 4,
+          "eyes": 6,
+          "points": 120000
+        }
+      ]
+    }
+  },
   "metropolis": {
     "milestones": {
       "label": "Battle Milestones",
       "description": "Participate in battles to reach each milestone. Each reward is earned once per milestone.",
-      "thresholds": [2, 4, 6, 9, 12],
+      "thresholds": [
+        2,
+        4,
+        6,
+        9,
+        12
+      ],
       "reward": [
-        { "item": "Quantum Component", "qty": 1 },
-        { "item": "League Contribution", "qty": 200 },
-        { "item": "AC/DC Shard", "qty": 1 }
+        {
+          "item": "Quantum Component",
+          "qty": 1
+        },
+        {
+          "item": "League Contribution",
+          "qty": 200
+        },
+        {
+          "item": "AC/DC Shard",
+          "qty": 1
+        }
       ]
     },
     "leagueOutcomes": {
@@ -173,27 +425,60 @@
         {
           "name": "Victory",
           "rewards": [
-            { "item": "Source Energy Gem", "qty": 100 },
-            { "item": "Quantum Component", "qty": 2 },
-            { "item": "AC/DC Shard", "qty": 10 },
-            { "item": "Alloy", "qty": 100000 }
+            {
+              "item": "Source Energy Gem",
+              "qty": 100
+            },
+            {
+              "item": "Quantum Component",
+              "qty": 2
+            },
+            {
+              "item": "AC/DC Shard",
+              "qty": 10
+            },
+            {
+              "item": "Alloy",
+              "qty": 100000
+            }
           ]
         },
         {
           "name": "Defeat",
           "rewards": [
-            { "item": "Source Energy Gem", "qty": 50 },
-            { "item": "Quantum Component", "qty": 1 },
-            { "item": "AC/DC Shard", "qty": 5 },
-            { "item": "Alloy", "qty": 50000 }
+            {
+              "item": "Source Energy Gem",
+              "qty": 50
+            },
+            {
+              "item": "Quantum Component",
+              "qty": 1
+            },
+            {
+              "item": "AC/DC Shard",
+              "qty": 5
+            },
+            {
+              "item": "Alloy",
+              "qty": 50000
+            }
           ]
         },
         {
           "name": "No Opponent",
           "rewards": [
-            { "item": "Source Energy Gem", "qty": 100 },
-            { "item": "Quantum Component", "qty": 1 },
-            { "item": "Alloy", "qty": 50000 }
+            {
+              "item": "Source Energy Gem",
+              "qty": 100
+            },
+            {
+              "item": "Quantum Component",
+              "qty": 1
+            },
+            {
+              "item": "Alloy",
+              "qty": 50000
+            }
           ]
         }
       ]
@@ -205,110 +490,83 @@
         {
           "rank": "1",
           "rewards": [
-            { "item": "Quantum Component", "qty": 2 },
-            { "item": "League Contribution", "qty": 4000 },
-            { "item": "AC/DC Shard", "qty": 5 },
-            { "item": "Alloy", "qty": 50000 }
+            {
+              "item": "Quantum Component",
+              "qty": 2
+            },
+            {
+              "item": "League Contribution",
+              "qty": 4000
+            },
+            {
+              "item": "AC/DC Shard",
+              "qty": 5
+            },
+            {
+              "item": "Alloy",
+              "qty": 50000
+            }
           ]
         },
         {
           "rank": "2–3",
           "rewards": [
-            { "item": "Quantum Component", "qty": 2 },
-            { "item": "League Contribution", "qty": 2000 },
-            { "item": "AC/DC Shard", "qty": 5 },
-            { "item": "Alloy", "qty": 30000 }
+            {
+              "item": "Quantum Component",
+              "qty": 2
+            },
+            {
+              "item": "League Contribution",
+              "qty": 2000
+            },
+            {
+              "item": "AC/DC Shard",
+              "qty": 5
+            },
+            {
+              "item": "Alloy",
+              "qty": 30000
+            }
           ]
         },
         {
           "rank": "4–10",
           "rewards": [
-            { "item": "Quantum Component", "qty": 1 },
-            { "item": "League Contribution", "qty": 1000 },
-            { "item": "AC/DC Shard", "qty": 5 },
-            { "item": "Alloy", "qty": 20000 }
+            {
+              "item": "Quantum Component",
+              "qty": 1
+            },
+            {
+              "item": "League Contribution",
+              "qty": 1000
+            },
+            {
+              "item": "AC/DC Shard",
+              "qty": 5
+            },
+            {
+              "item": "Alloy",
+              "qty": 20000
+            }
           ]
         },
         {
           "rank": "11–20",
           "rewards": [
-            { "item": "Quantum Component", "qty": 1 },
-            { "item": "League Contribution", "qty": 500 },
-            { "item": "Alloy", "qty": 10000 }
+            {
+              "item": "Quantum Component",
+              "qty": 1
+            },
+            {
+              "item": "League Contribution",
+              "qty": 500
+            },
+            {
+              "item": "Alloy",
+              "qty": 10000
+            }
           ]
         }
-      ]
-    }
-  },
-  "pointTables": {
-    "standard": {
-      "label": "Days 1–4",
-      "rows": [
-        { "item": "Alloy (x1,000)", "value": 3 },
-        { "item": "Chip (x1,000)", "value": 3 },
-        { "item": "Intel", "value": 15 },
-        { "item": "Drone", "value": 30 },
-        { "item": "Mother Box", "value": 30 },
-        { "item": "Worldline Particle", "value": 90 },
-        { "item": "Epic Legacy Piece", "value": 120 },
-        { "item": "Legendary Champion Shard", "value": 120 },
-        { "item": "Magic Eye", "value": 150 },
-        { "item": "World Anvil Fragment", "value": 300 },
-        { "item": "Quantum Component", "value": 450 },
-        { "item": "Mythic Champion Shard", "value": 600 },
-        { "item": "Legendary Legacy Piece", "value": 1200 },
-        { "item": "Firepit Afterburner", "value": 2700 },
-        { "item": "Mythic Legacy Piece", "value": 6000 },
-        { "item": "AC/DC Shard", "value": null },
-        { "item": "Legendary Truck (Dispatch)", "value": null },
-        { "item": "Legendary Truck (Infiltrate)", "value": null },
-        { "item": "Scarab Circuit", "value": null },
-        { "item": "Mirror Cell", "value": null }
-      ]
-    },
-    "finalDay": {
-      "label": "Final Day (Day 5)",
-      "rows": [
-        { "item": "Alloy (x1,000)", "value": 2 },
-        { "item": "Chip (x1,000)", "value": 2 },
-        { "item": "Intel", "value": 10 },
-        { "item": "Drone", "value": 20 },
-        { "item": "Mother Box", "value": 20 },
-        { "item": "Worldline Particle", "value": 60 },
-        { "item": "Epic Legacy Piece", "value": 80 },
-        { "item": "Legendary Champion Shard", "value": 80 },
-        { "item": "Magic Eye", "value": 100 },
-        { "item": "World Anvil Fragment", "value": 200 },
-        { "item": "Quantum Component", "value": 300 },
-        { "item": "Mythic Champion Shard", "value": 400 },
-        { "item": "Legendary Legacy Piece", "value": 800 },
-        { "item": "Firepit Afterburner", "value": 1800 },
-        { "item": "Mythic Legacy Piece", "value": 4000 },
-        { "item": "AC/DC Shard", "value": null },
-        { "item": "Legendary Truck (Dispatch)", "value": null },
-        { "item": "Legendary Truck (Infiltrate)", "value": null },
-        { "item": "Scarab Circuit", "value": null },
-        { "item": "Mirror Cell", "value": null }
-      ]
-    }
-  },
-  "rewardTracks": {
-    "standard": {
-      "label": "Days 1, 2 & 5",
-      "rounds": [
-        { "round": 1, "eyes": 1, "points": 5000 },
-        { "round": 2, "eyes": 1, "points": 20000 },
-        { "round": 3, "eyes": 2, "points": 50000 },
-        { "round": 4, "eyes": 5, "points": 100000 }
-      ]
-    },
-    "peak": {
-      "label": "Days 3 & 4",
-      "rounds": [
-        { "round": 1, "eyes": 1, "points": 6000 },
-        { "round": 2, "eyes": 1, "points": 24000 },
-        { "round": 3, "eyes": 2, "points": 60000 },
-        { "round": 4, "eyes": 6, "points": 120000 }
       ]
     }
   }
