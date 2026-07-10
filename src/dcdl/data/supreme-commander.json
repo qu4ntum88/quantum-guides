@@ -1,0 +1,303 @@
+{
+  "intro": "Supreme Commander is a weekly event that runs for 6 days. On Days 1–5 you earn event points by spending resources — the more valuable the resource, the more points it awards. The 6th day is Metropolis Maneuvers, a no-resource game mode where you attack other players' strategic strongholds on the map. This guide focuses on the most efficient path for an individual player to maximize points and rewards each day.",
+  "reward": {
+    "name": "Magic Eye",
+    "icon": "/dcdl/resource_icons/icon_item_Magic_Eye.png"
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Motherboxes",
+      "pointTable": "standard",
+      "rewardTrack": "standard",
+      "noResources": false,
+      "usableItems": [
+        "Mother Box",
+        "World Anvil Fragment"
+      ],
+      "tips": [
+        "You get 30 event points per Motherbox point, as follows: Green = 1; blue = 10; purple = 20; gold = 50.",
+        "Only use motherboxes on day 1. Do not use them on day 5.",
+        "Use every box in your initial inventory first.",
+        "Then redeem in the top right.",
+        "Redeemed boxes form the foundation of next week's stockpile."
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Champion Shards & Anvils",
+      "pointTable": "standard",
+      "rewardTrack": "standard",
+      "noResources": false,
+      "usableItems": [
+        "Legendary Champion Shard",
+        "Mythic Champion Shard",
+        "Epic Legacy Piece",
+        "Legendary Legacy Piece",
+        "Mythic Legacy Piece",
+        "World Anvil Fragment",
+        "Worldline Particle",
+        "Magic Eye",
+        "AC/DC Shard"
+      ],
+      "tips": [
+        "This is a hard day for end game players who aren't generating as many shards week over week (once you max out stars on the legendaries).",
+        "F2P should upgrade the champs they use the most first and then only use additional shards until you hit max points for the day.",
+        "Use 20 of your 40 weekly Interstellar Visitor anvils.",
+        "Think long-term with those extra shards and consider saving them for next week for champs you don't use."
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Intel & Drones",
+      "pointTable": "standard",
+      "rewardTrack": "peak",
+      "noResources": false,
+      "usableItems": [
+        "Intel",
+        "Drone",
+        "World Anvil Fragment",
+        "Legendary Truck (Dispatch)",
+        "Legendary Truck (Infiltrate)"
+      ],
+      "tips": [
+        "One \"intel point reload\" is 120 intel. Bank all reloads from free side of monitor's legacy, plus any earned from darkest timeline.",
+        "Do not buy intel from league store.",
+        "Use 240 intel from points accumulated during the day.",
+        "F2P - Use 4 reloads per supreme commander",
+        "Lite Spend – buy monitor's legacy pass and you can use 15 reloads per supreme commander.",
+        "Use the rest of your 40 Interstellar Visitor anvils here.",
+        "Use approximately 1,100 drones to finish."
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Chips, Alloy & War Room",
+      "pointTable": "standard",
+      "rewardTrack": "peak",
+      "noResources": false,
+      "usableItems": [
+        "Drone",
+        "Alloy (x1,000)",
+        "Chip (x1,000)",
+        "Quantum Component",
+        "Firepit Afterburner",
+        "World Anvil Fragment",
+        "Scarab Circuit",
+        "Mirror Cell"
+      ],
+      "tips": [
+        "You will generate chips and/or alloy on day three using intel points.",
+        "Early on you need to split 50/50 or 60/40 between stims and alloy to ensure you're progressing your War Room.",
+        "Use all Quantum Components and Firepit Afterburners you've saved for the week.",
+        "May be hard for f2p to max this day.",
+        "Use your drones to augment. The rule of thumb is 1,000 to 1,500 each on Days 3 and 4, then save the excess."
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Legacy Pieces",
+      "pointTable": "finalDay",
+      "rewardTrack": "standard",
+      "noResources": false,
+      "usableItems": [
+        "Intel",
+        "Drone",
+        "World Anvil Fragment",
+        "Mother Box",
+        "Alloy (x1,000)",
+        "Chip (x1,000)",
+        "Quantum Component",
+        "Firepit Afterburner",
+        "Legendary Champion Shard",
+        "Mythic Champion Shard",
+        "Epic Legacy Piece",
+        "Legendary Legacy Piece",
+        "Mythic Legacy Piece",
+        "Worldline Particle",
+        "Magic Eye",
+        "AC/DC Shard",
+        "Scarab Circuit",
+        "Mirror Cell",
+        "Legendary Truck (Dispatch)",
+        "Legendary Truck (Infiltrate)"
+      ],
+      "tips": [
+        "Everything is worth 33.3% less.",
+        "Don't use motherboxes, intel, alloy, or chips. The exception would be lite spenders, who can use some of their extra intel.",
+        "It comes down to legacy pieces primarily, but you'll also need to depend on champion shards and drones here.",
+        "The addition of Quantum Components and Firepit Afterburners does mean you have more options here. If you want to split between here and Day 4 you can."
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Metropolis Maneuvers",
+      "pointTable": null,
+      "rewardTrack": null,
+      "noResources": true,
+      "usableItems": [],
+      "tips": [
+        "The final day of Supreme Commander is Metropolis Maneuvers — a map mode where you attack other players' strategic strongholds. No resources are required.",
+        "Earn Battle Honor by reducing enemy power on the map. Your total Battle Honor sets your individual ranking reward.",
+        "Participate in battles to hit the milestone rewards, and everyone in the league earns rewards based on the match outcome."
+      ]
+    }
+  ],
+  "metropolis": {
+    "milestones": {
+      "label": "Battle Milestones",
+      "description": "Participate in battles to reach each milestone. Each reward is earned once per milestone.",
+      "thresholds": [2, 4, 6, 9, 12],
+      "reward": [
+        { "item": "Quantum Component", "qty": 1 },
+        { "item": "League Contribution", "qty": 200 },
+        { "item": "AC/DC Shard", "qty": 1 }
+      ]
+    },
+    "leagueOutcomes": {
+      "label": "League-Wide Rewards",
+      "description": "Every member of your league receives these based on the match result.",
+      "outcomes": [
+        {
+          "name": "Victory",
+          "rewards": [
+            { "item": "Source Energy Gem", "qty": 100 },
+            { "item": "Quantum Component", "qty": 2 },
+            { "item": "AC/DC Shard", "qty": 10 },
+            { "item": "Alloy", "qty": 100000 }
+          ]
+        },
+        {
+          "name": "Defeat",
+          "rewards": [
+            { "item": "Source Energy Gem", "qty": 50 },
+            { "item": "Quantum Component", "qty": 1 },
+            { "item": "AC/DC Shard", "qty": 5 },
+            { "item": "Alloy", "qty": 50000 }
+          ]
+        },
+        {
+          "name": "No Opponent",
+          "rewards": [
+            { "item": "Source Energy Gem", "qty": 100 },
+            { "item": "Quantum Component", "qty": 1 },
+            { "item": "Alloy", "qty": 50000 }
+          ]
+        }
+      ]
+    },
+    "ranking": {
+      "label": "Individual Ranking Rewards",
+      "description": "Earn Battle Honor by reducing enemy power on the map. Rewards are handed out by your final rank.",
+      "tiers": [
+        {
+          "rank": "1",
+          "rewards": [
+            { "item": "Quantum Component", "qty": 2 },
+            { "item": "League Contribution", "qty": 4000 },
+            { "item": "AC/DC Shard", "qty": 5 },
+            { "item": "Alloy", "qty": 50000 }
+          ]
+        },
+        {
+          "rank": "2–3",
+          "rewards": [
+            { "item": "Quantum Component", "qty": 2 },
+            { "item": "League Contribution", "qty": 2000 },
+            { "item": "AC/DC Shard", "qty": 5 },
+            { "item": "Alloy", "qty": 30000 }
+          ]
+        },
+        {
+          "rank": "4–10",
+          "rewards": [
+            { "item": "Quantum Component", "qty": 1 },
+            { "item": "League Contribution", "qty": 1000 },
+            { "item": "AC/DC Shard", "qty": 5 },
+            { "item": "Alloy", "qty": 20000 }
+          ]
+        },
+        {
+          "rank": "11–20",
+          "rewards": [
+            { "item": "Quantum Component", "qty": 1 },
+            { "item": "League Contribution", "qty": 500 },
+            { "item": "Alloy", "qty": 10000 }
+          ]
+        }
+      ]
+    }
+  },
+  "pointTables": {
+    "standard": {
+      "label": "Days 1–4",
+      "rows": [
+        { "item": "Alloy (x1,000)", "value": 3 },
+        { "item": "Chip (x1,000)", "value": 3 },
+        { "item": "Intel", "value": 15 },
+        { "item": "Drone", "value": 30 },
+        { "item": "Mother Box", "value": 30 },
+        { "item": "Worldline Particle", "value": 90 },
+        { "item": "Epic Legacy Piece", "value": 120 },
+        { "item": "Legendary Champion Shard", "value": 120 },
+        { "item": "Magic Eye", "value": 150 },
+        { "item": "World Anvil Fragment", "value": 300 },
+        { "item": "Quantum Component", "value": 450 },
+        { "item": "Mythic Champion Shard", "value": 600 },
+        { "item": "Legendary Legacy Piece", "value": 1200 },
+        { "item": "Firepit Afterburner", "value": 2700 },
+        { "item": "Mythic Legacy Piece", "value": 6000 },
+        { "item": "AC/DC Shard", "value": null },
+        { "item": "Legendary Truck (Dispatch)", "value": null },
+        { "item": "Legendary Truck (Infiltrate)", "value": null },
+        { "item": "Scarab Circuit", "value": null },
+        { "item": "Mirror Cell", "value": null }
+      ]
+    },
+    "finalDay": {
+      "label": "Final Day (Day 5)",
+      "rows": [
+        { "item": "Alloy (x1,000)", "value": 2 },
+        { "item": "Chip (x1,000)", "value": 2 },
+        { "item": "Intel", "value": 10 },
+        { "item": "Drone", "value": 20 },
+        { "item": "Mother Box", "value": 20 },
+        { "item": "Worldline Particle", "value": 60 },
+        { "item": "Epic Legacy Piece", "value": 80 },
+        { "item": "Legendary Champion Shard", "value": 80 },
+        { "item": "Magic Eye", "value": 100 },
+        { "item": "World Anvil Fragment", "value": 200 },
+        { "item": "Quantum Component", "value": 300 },
+        { "item": "Mythic Champion Shard", "value": 400 },
+        { "item": "Legendary Legacy Piece", "value": 800 },
+        { "item": "Firepit Afterburner", "value": 1800 },
+        { "item": "Mythic Legacy Piece", "value": 4000 },
+        { "item": "AC/DC Shard", "value": null },
+        { "item": "Legendary Truck (Dispatch)", "value": null },
+        { "item": "Legendary Truck (Infiltrate)", "value": null },
+        { "item": "Scarab Circuit", "value": null },
+        { "item": "Mirror Cell", "value": null }
+      ]
+    }
+  },
+  "rewardTracks": {
+    "standard": {
+      "label": "Days 1, 2 & 5",
+      "rounds": [
+        { "round": 1, "eyes": 1, "points": 5000 },
+        { "round": 2, "eyes": 1, "points": 20000 },
+        { "round": 3, "eyes": 2, "points": 50000 },
+        { "round": 4, "eyes": 5, "points": 100000 }
+      ]
+    },
+    "peak": {
+      "label": "Days 3 & 4",
+      "rounds": [
+        { "round": 1, "eyes": 1, "points": 6000 },
+        { "round": 2, "eyes": 1, "points": 24000 },
+        { "round": 3, "eyes": 2, "points": 60000 },
+        { "round": 4, "eyes": 6, "points": 120000 }
+      ]
+    }
+  }
+}

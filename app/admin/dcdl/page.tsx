@@ -1944,6 +1944,311 @@ function BtReqSlot({ champ, onDropChamp, onRemove }: {
   )
 }
 
+// ── Supreme Commander form ──────────────────────────────────────────────────────
+type ScPointRow = { item: string; value: number | null }
+type ScPointTable = { label: string; rows: ScPointRow[] }
+type ScRewardRound = { round: number; eyes: number; points: number }
+type ScRewardTrack = { label: string; rounds: ScRewardRound[] }
+type ScDay = {
+  day: number; title: string; pointTable: string | null; rewardTrack: string | null
+  noResources: boolean; usableItems: string[]; tips: string[]
+}
+type ScReward = { item: string; qty: number }
+type ScMetropolis = {
+  milestones: { label: string; description: string; thresholds: number[]; reward: ScReward[] }
+  leagueOutcomes: { label: string; description: string; outcomes: { name: string; rewards: ScReward[] }[] }
+  ranking: { label: string; description: string; tiers: { rank: string; rewards: ScReward[] }[] }
+}
+type ScData = {
+  intro: string
+  reward: { name: string; icon: string }
+  days: ScDay[]
+  pointTables: Record<string, ScPointTable>
+  rewardTracks: Record<string, ScRewardTrack>
+  metropolis?: ScMetropolis
+}
+
+// Editor for a list of { item, qty } rewards (used across the Metropolis sections).
+function ScRewardRows({ rewards, onChange }: { rewards: ScReward[]; onChange: (next: ScReward[]) => void }) {
+  const removeBtn: React.CSSProperties = { background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.78rem' }
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+      {rewards.map((r, i) => (
+        <div key={i} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <input style={{ ...inp, width: '7rem' }} type="number" value={r.qty} placeholder="Qty"
+            onChange={(e) => onChange(rewards.map((x, xi) => xi === i ? { ...x, qty: Number(e.target.value) } : x))} />
+          <input style={{ ...inp, flex: 1 }} value={r.item} placeholder="Item"
+            onChange={(e) => onChange(rewards.map((x, xi) => xi === i ? { ...x, item: e.target.value } : x))} />
+          <button type="button" style={removeBtn} onClick={() => onChange(rewards.filter((_, xi) => xi !== i))}>Remove</button>
+        </div>
+      ))}
+      <button type="button" onClick={() => onChange([...rewards, { item: '', qty: 1 }])}
+        style={{ background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.35rem 0.8rem', fontSize: '0.8rem', alignSelf: 'flex-start' }}>
+        + Add Reward
+      </button>
+    </div>
+  )
+}
+
+function SupremeCommanderForm() {
+  const [data, setData] = useState<ScData | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  useEffect(() => {
+    fetch('/api/admin/dcdl/supreme-commander')
+      .then((r) => r.json())
+      .then((d) => setData(d))
+      .catch(() => setStatus({ type: 'error', message: 'Failed to load data.' }))
+  }, [])
+
+  function patch(mut: (draft: ScData) => void) {
+    setData((prev) => {
+      if (!prev) return prev
+      const next = JSON.parse(JSON.stringify(prev)) as ScData
+      mut(next)
+      return next
+    })
+  }
+
+  async function handleSave() {
+    if (!data) return
+    setLoading(true)
+    setStatus(null)
+    try {
+      const res = await fetch('/api/admin/dcdl/supreme-commander', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      setStatus(res.ok
+        ? { type: 'success', message: 'Saved! Commit and deploy to publish.' }
+        : { type: 'error', message: 'Something went wrong.' })
+    } catch {
+      setStatus({ type: 'error', message: 'Network error.' })
+    }
+    setLoading(false)
+  }
+
+  if (!data) return <p style={{ color: '#888' }}>Loading…</p>
+
+  const pointTableKeys = Object.keys(data.pointTables)
+  const rewardTrackKeys = Object.keys(data.rewardTracks)
+  const removeBtn: React.CSSProperties = { background: 'none', border: 'none', color: '#f87171', cursor: 'pointer', fontSize: '0.8rem' }
+  const addBtn: React.CSSProperties = { background: 'var(--purple)', border: '1px solid #555', borderRadius: '0.375rem', color: '#fff', cursor: 'pointer', padding: '0.4rem 0.9rem', fontSize: '0.82rem', alignSelf: 'flex-start' }
+
+  return (
+    <div>
+      <StatusBanner status={status} />
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+
+        {/* Intro + reward */}
+        <div style={sec}>
+          <div style={secTitle}>Overview</div>
+          <Field label="Intro / description">
+            <textarea style={{ ...inp, minHeight: '6rem', resize: 'vertical' }} value={data.intro}
+              onChange={(e) => patch((d) => { d.intro = e.target.value })} />
+          </Field>
+          <div style={g2}>
+            <Field label="Reward name">
+              <input style={inp} value={data.reward.name} onChange={(e) => patch((d) => { d.reward.name = e.target.value })} />
+            </Field>
+            <Field label="Reward icon path">
+              <input style={inp} value={data.reward.icon} onChange={(e) => patch((d) => { d.reward.icon = e.target.value })} />
+            </Field>
+          </div>
+        </div>
+
+        {/* Days */}
+        {data.days.map((day, di) => (
+          <div key={di} style={sec}>
+            <div style={secTitle}>Day {day.day}</div>
+            <div style={g2}>
+              <Field label="Title / theme">
+                <input style={inp} value={day.title} onChange={(e) => patch((d) => { d.days[di].title = e.target.value })} />
+              </Field>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#ccc', fontSize: '0.85rem', alignSelf: 'end', paddingBottom: '0.5rem' }}>
+                <input type="checkbox" checked={day.noResources} style={{ accentColor: 'var(--gold)' }}
+                  onChange={(e) => patch((d) => { d.days[di].noResources = e.target.checked })} />
+                No resources required (Metropolis-style day)
+              </label>
+            </div>
+            <div style={g2}>
+              <Field label="Point value table">
+                <select style={inp} value={day.pointTable ?? ''} onChange={(e) => patch((d) => { d.days[di].pointTable = e.target.value || null })}>
+                  <option value="">None</option>
+                  {pointTableKeys.map((k) => <option key={k} value={k}>{data.pointTables[k].label} ({k})</option>)}
+                </select>
+              </Field>
+              <Field label="Reward track">
+                <select style={inp} value={day.rewardTrack ?? ''} onChange={(e) => patch((d) => { d.days[di].rewardTrack = e.target.value || null })}>
+                  <option value="">None</option>
+                  {rewardTrackKeys.map((k) => <option key={k} value={k}>{data.rewardTracks[k].label} ({k})</option>)}
+                </select>
+              </Field>
+            </div>
+            {day.pointTable && data.pointTables[day.pointTable] && (
+              <Field label="Usable items this day" hint="Checked items glow gold in the points table on the site for this day.">
+                <CheckGroup
+                  options={data.pointTables[day.pointTable].rows.map((r) => ({ id: r.item, name: r.item }))}
+                  selected={day.usableItems}
+                  onChange={(id) => patch((d) => {
+                    const set = new Set(d.days[di].usableItems)
+                    if (set.has(id)) set.delete(id); else set.add(id)
+                    d.days[di].usableItems = Array.from(set)
+                  })}
+                />
+              </Field>
+            )}
+            <Field label="Strategy tips">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {day.tips.map((tip, ti) => (
+                  <div key={ti} style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                    <textarea style={{ ...inp, minHeight: '3rem', resize: 'vertical', flex: 1 }} value={tip}
+                      onChange={(e) => patch((d) => { d.days[di].tips[ti] = e.target.value })} />
+                    <button type="button" style={removeBtn} onClick={() => patch((d) => { d.days[di].tips.splice(ti, 1) })}>Remove</button>
+                  </div>
+                ))}
+                <button type="button" style={addBtn} onClick={() => patch((d) => { d.days[di].tips.push('') })}>+ Add Tip</button>
+              </div>
+            </Field>
+          </div>
+        ))}
+
+        {/* Point tables */}
+        {pointTableKeys.map((key) => (
+          <div key={key} style={sec}>
+            <div style={secTitle}>Point Values — {data.pointTables[key].label} ({key})</div>
+            <Field label="Table label">
+              <input style={inp} value={data.pointTables[key].label} onChange={(e) => patch((d) => { d.pointTables[key].label = e.target.value })} />
+            </Field>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              {data.pointTables[key].rows.map((row, ri) => (
+                <div key={ri} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                  <input style={{ ...inp, flex: 1 }} value={row.item} placeholder="Item"
+                    onChange={(e) => patch((d) => { d.pointTables[key].rows[ri].item = e.target.value })} />
+                  <input style={{ ...inp, width: '7rem' }} type="number" value={row.value ?? ''} placeholder="TBD"
+                    onChange={(e) => patch((d) => { d.pointTables[key].rows[ri].value = e.target.value === '' ? null : Number(e.target.value) })} />
+                  <button type="button" style={removeBtn} onClick={() => patch((d) => { d.pointTables[key].rows.splice(ri, 1) })}>Remove</button>
+                </div>
+              ))}
+              <button type="button" style={addBtn} onClick={() => patch((d) => { d.pointTables[key].rows.push({ item: '', value: 0 }) })}>+ Add Item</button>
+            </div>
+          </div>
+        ))}
+
+        {/* Reward tracks */}
+        {rewardTrackKeys.map((key) => (
+          <div key={key} style={sec}>
+            <div style={secTitle}>Reward Track — {data.rewardTracks[key].label} ({key})</div>
+            <Field label="Track label">
+              <input style={inp} value={data.rewardTracks[key].label} onChange={(e) => patch((d) => { d.rewardTracks[key].label = e.target.value })} />
+            </Field>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', fontSize: '0.72rem', color: '#888' }}>
+                <span style={{ width: '5rem' }}>Round</span>
+                <span style={{ width: '6rem' }}>{data.reward.name}s</span>
+                <span style={{ flex: 1 }}>Points threshold</span>
+              </div>
+              {data.rewardTracks[key].rounds.map((rd, ri) => (
+                <div key={ri} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                  <input style={{ ...inp, width: '5rem' }} type="number" value={rd.round}
+                    onChange={(e) => patch((d) => { d.rewardTracks[key].rounds[ri].round = Number(e.target.value) })} />
+                  <input style={{ ...inp, width: '6rem' }} type="number" value={rd.eyes}
+                    onChange={(e) => patch((d) => { d.rewardTracks[key].rounds[ri].eyes = Number(e.target.value) })} />
+                  <input style={{ ...inp, flex: 1 }} type="number" value={rd.points}
+                    onChange={(e) => patch((d) => { d.rewardTracks[key].rounds[ri].points = Number(e.target.value) })} />
+                  <button type="button" style={removeBtn} onClick={() => patch((d) => { d.rewardTracks[key].rounds.splice(ri, 1) })}>Remove</button>
+                </div>
+              ))}
+              <button type="button" style={addBtn} onClick={() => patch((d) => {
+                const rounds = d.rewardTracks[key].rounds
+                rounds.push({ round: rounds.length + 1, eyes: 1, points: 0 })
+              })}>+ Add Round</button>
+            </div>
+          </div>
+        ))}
+
+        {/* Metropolis Maneuvers (Day 6) rewards */}
+        {data.metropolis && (
+          <>
+            <div style={sec}>
+              <div style={secTitle}>Metropolis — Battle Milestones</div>
+              <div style={g2}>
+                <Field label="Label">
+                  <input style={inp} value={data.metropolis.milestones.label}
+                    onChange={(e) => patch((d) => { d.metropolis!.milestones.label = e.target.value })} />
+                </Field>
+                <Field label="Milestones (comma-separated battle counts)">
+                  <input style={inp} value={data.metropolis.milestones.thresholds.join(', ')}
+                    onChange={(e) => patch((d) => {
+                      d.metropolis!.milestones.thresholds = e.target.value.split(',').map((s) => Number(s.trim())).filter((n) => !Number.isNaN(n))
+                    })} />
+                </Field>
+              </div>
+              <Field label="Description">
+                <textarea style={{ ...inp, minHeight: '3rem', resize: 'vertical' }} value={data.metropolis.milestones.description}
+                  onChange={(e) => patch((d) => { d.metropolis!.milestones.description = e.target.value })} />
+              </Field>
+              <Field label="Reward earned at each milestone">
+                <ScRewardRows rewards={data.metropolis.milestones.reward}
+                  onChange={(next) => patch((d) => { d.metropolis!.milestones.reward = next })} />
+              </Field>
+            </div>
+
+            <div style={sec}>
+              <div style={secTitle}>Metropolis — League-Wide Rewards</div>
+              <Field label="Description">
+                <textarea style={{ ...inp, minHeight: '3rem', resize: 'vertical' }} value={data.metropolis.leagueOutcomes.description}
+                  onChange={(e) => patch((d) => { d.metropolis!.leagueOutcomes.description = e.target.value })} />
+              </Field>
+              {data.metropolis.leagueOutcomes.outcomes.map((o, oi) => (
+                <div key={oi} style={{ background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  <Field label="Outcome name">
+                    <input style={inp} value={o.name}
+                      onChange={(e) => patch((d) => { d.metropolis!.leagueOutcomes.outcomes[oi].name = e.target.value })} />
+                  </Field>
+                  <ScRewardRows rewards={o.rewards}
+                    onChange={(next) => patch((d) => { d.metropolis!.leagueOutcomes.outcomes[oi].rewards = next })} />
+                </div>
+              ))}
+            </div>
+
+            <div style={sec}>
+              <div style={secTitle}>Metropolis — Individual Ranking Rewards</div>
+              <Field label="Description">
+                <textarea style={{ ...inp, minHeight: '3rem', resize: 'vertical' }} value={data.metropolis.ranking.description}
+                  onChange={(e) => patch((d) => { d.metropolis!.ranking.description = e.target.value })} />
+              </Field>
+              {data.metropolis.ranking.tiers.map((t, ti) => (
+                <div key={ti} style={{ background: '#111', border: '1px solid #333', borderRadius: '0.375rem', padding: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-end' }}>
+                    <Field label="Rank label (e.g. 1, 2–3, 4–10)">
+                      <input style={{ ...inp, width: '10rem' }} value={t.rank}
+                        onChange={(e) => patch((d) => { d.metropolis!.ranking.tiers[ti].rank = e.target.value })} />
+                    </Field>
+                    <button type="button" style={{ ...removeBtn, marginBottom: '0.5rem' }}
+                      onClick={() => patch((d) => { d.metropolis!.ranking.tiers.splice(ti, 1) })}>Remove tier</button>
+                  </div>
+                  <ScRewardRows rewards={t.rewards}
+                    onChange={(next) => patch((d) => { d.metropolis!.ranking.tiers[ti].rewards = next })} />
+                </div>
+              ))}
+              <button type="button" style={addBtn}
+                onClick={() => patch((d) => { d.metropolis!.ranking.tiers.push({ rank: '', rewards: [] }) })}>+ Add Rank Tier</button>
+            </div>
+          </>
+        )}
+
+        <button type="button" className="btn" disabled={loading} onClick={handleSave}
+          style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
+          {loading ? 'Saving…' : 'Save Supreme Commander'}
+        </button>
+      </div>
+    </div>
+  )
+}
+
 function BestTeamsForm() {
   const [champs, setChamps] = useState<BtChamp[]>([])
   const [teams, setTeams] = useState<BestTeam[]>(
@@ -3069,7 +3374,7 @@ function GfTierRankingForm() {
 
 // ── Root page ──────────────────────────────────────────────────────────────────
 type Game = 'dcdl' | 'vh' | 'gf'
-type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'infographics' | 'factions'
+type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'supreme-commander' | 'infographics' | 'factions'
 type VhTab = 'hunters' | 'status-effects'
 type GfTab = 'heroes' | 'tier-ranking' | 'dungeons'
 
@@ -3091,6 +3396,7 @@ export default function AdminDCDLPage() {
     { id: 'info', label: 'Game Info' },
     { id: 'guides', label: 'Guides' },
     { id: 'best-teams', label: 'Best Teams' },
+    { id: 'supreme-commander', label: 'Supreme Commander' },
     { id: 'infographics', label: 'Infographics' },
     { id: 'factions', label: 'Factions' },
   ]
@@ -3154,6 +3460,7 @@ export default function AdminDCDLPage() {
             {dcdlTab === 'info' && <GameInfoForm />}
             {dcdlTab === 'guides' && <GuidesForm />}
             {dcdlTab === 'best-teams' && <BestTeamsForm />}
+            {dcdlTab === 'supreme-commander' && <SupremeCommanderForm />}
             {dcdlTab === 'infographics' && <InfographicsForm />}
             {dcdlTab === 'factions' && <FactionsForm />}
           </>
