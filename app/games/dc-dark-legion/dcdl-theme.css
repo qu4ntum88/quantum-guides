@@ -1,0 +1,186 @@
+/* ═══════════════════════════════════════════════════════════════
+   DCDL COMIC THEME
+   A base "comic poster" background layer + popping card/button
+   treatment, applied to every DC: Dark Legion page via layout.tsx.
+   Everything is scoped under .dcdl-root so Godforge / Void Hunters /
+   homepage are completely unaffected.
+   ═══════════════════════════════════════════════════════════════ */
+
+.dcdl-root {
+  position: relative;
+  isolation: isolate;                 /* own stacking context for the fixed bg */
+  --dcdl-gold: #cca453;
+  --dcdl-gold-bright: #e7c05f;
+  --dcdl-gold-deep: #b8862f;
+  --dcdl-panel-a: rgba(32, 23, 58, 0.92);
+  --dcdl-panel-b: rgba(14, 11, 24, 0.94);
+  --dcdl-cut: 16px;                   /* card corner cut */
+}
+
+/* ─── BASE LAYER (fixed, viewport-anchored comic poster) ───────── */
+
+.dcdl-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;                        /* behind all page content, above body */
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 800px at 8% -10%, #2a1a5e 0%, transparent 42%),
+    radial-gradient(1200px 900px at 105% 108%, #1a1140 0%, transparent 48%),
+    linear-gradient(160deg, #1a1140 0%, #0c0a16 55%, #060509 100%);
+}
+
+.dcdl-slash { position: absolute; pointer-events: none; }
+
+/* Two large dual-tone angular slashes */
+.dcdl-slash-a {
+  top: -20vh; left: -12vw; width: 72vw; height: 150vh;
+  background: #2a1a5e; opacity: 0.5;
+  transform: skewX(-22deg);
+  clip-path: polygon(0 0, 48% 0, 16% 100%, 0 100%);
+}
+.dcdl-slash-b {
+  top: -20vh; right: -14vw; width: 82vw; height: 170vh;
+  background: #050409; opacity: 0.42;
+  transform: skewX(-22deg);
+  clip-path: polygon(62% 0, 100% 0, 100% 100%, 26% 100%);
+}
+
+/* Glowing gold hairline accents (top-right + bottom-left, like the ref) */
+.dcdl-slash-gold-tr,
+.dcdl-slash-gold-bl {
+  width: 5px; height: 72vh;
+  background: linear-gradient(180deg, transparent, var(--dcdl-gold-bright), transparent);
+  transform: skewX(-22deg);
+  box-shadow: 0 0 24px 2px rgba(204, 164, 83, 0.5);
+}
+.dcdl-slash-gold-tr { top: -12vh; right: 15vw; opacity: 0.7; }
+.dcdl-slash-gold-bl { bottom: -12vh; left: 17vw; opacity: 0.6; }
+
+/* Halftone dot clusters (comic-book texture), masked to fade out */
+.dcdl-halftone {
+  position: absolute;
+  width: min(32vw, 360px);
+  height: min(28vw, 300px);
+  opacity: 0.4;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.85) 1.6px, transparent 1.8px);
+  background-size: 12px 12px;
+}
+.dcdl-halftone-tl {
+  top: 5vh; left: 8vw;
+  -webkit-mask-image: linear-gradient(135deg, #000, transparent 70%);
+          mask-image: linear-gradient(135deg, #000, transparent 70%);
+}
+.dcdl-halftone-br {
+  bottom: 3vh; right: 6vw;
+  -webkit-mask-image: linear-gradient(315deg, #000, transparent 70%);
+          mask-image: linear-gradient(315deg, #000, transparent 70%);
+}
+
+.dcdl-vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(140% 120% at 50% 40%, transparent 52%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+/* ─── HERO: let the comic base flow top-to-bottom ─────────────── */
+/* The shared .gh-hero (game.css) paints the purple star image. Inside
+   DCDL we drop it so the new background shows continuously through the
+   header. The site homepage keeps its star art — it lives outside
+   .dcdl-root and is untouched. */
+.dcdl-root .gh-hero {
+  background: transparent;
+  background-color: transparent;
+}
+.dcdl-root .gh-hero::before { content: none; }   /* remove scanline texture */
+.dcdl-root .gh-hero::after {
+  /* soft top-down scrim, purely for header text legibility — no solid
+     fill that would block the comic background */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.12) 55%, transparent 100%);
+}
+
+/* ─── POPPING PANELS (global .card, scoped) ───────────────────── */
+
+.dcdl-root .card {
+  position: relative;
+  background: linear-gradient(180deg, var(--dcdl-panel-a), var(--dcdl-panel-b));
+  border: 1px solid rgba(204, 164, 83, 0.14);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--dcdl-cut)), calc(100% - var(--dcdl-cut)) 100%, 0 100%);
+  /* drop-shadow (not box-shadow) so the shadow follows the cut corner */
+  filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.55));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+/* Gold accent edge down the left */
+.dcdl-root .card::before {
+  content: "";
+  position: absolute; left: 0; top: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(180deg, var(--dcdl-gold), transparent 82%);
+}
+.dcdl-root .card:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 16px 34px rgba(0, 0, 0, 0.62)) drop-shadow(0 0 12px rgba(204, 164, 83, 0.28));
+}
+
+/* ─── POPPING BUTTONS ─────────────────────────────────────────── */
+
+.dcdl-root .btn,
+.dcdl-root [data-slot="button"] {
+  position: relative;
+  border: 1px solid rgba(204, 164, 83, 0.35);
+  border-radius: 0;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  color: #fff;
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  transition: transform 0.16s ease, filter 0.16s ease, background 0.16s ease, color 0.16s ease;
+}
+/* Purple gradient fill — only where the element isn't setting its own bg inline */
+.dcdl-root .btn { background: linear-gradient(180deg, #46266e, #2c1650); }
+.dcdl-root [data-slot="button"] { background: linear-gradient(180deg, #46266e, #2c1650) !important; }
+
+.dcdl-root .btn:hover,
+.dcdl-root [data-slot="button"]:hover {
+  transform: translateY(-2px);
+  color: #1a1226;
+  filter: drop-shadow(0 8px 18px rgba(204, 164, 83, 0.35));
+}
+.dcdl-root .btn:hover { background: linear-gradient(180deg, var(--dcdl-gold-bright), var(--dcdl-gold-deep)); }
+.dcdl-root [data-slot="button"]:hover { background: linear-gradient(180deg, var(--dcdl-gold-bright), var(--dcdl-gold-deep)) !important; }
+
+/* Optional gold CTA variant for high-intent buttons */
+.dcdl-root .dcdl-btn-gold {
+  background: linear-gradient(180deg, var(--dcdl-gold-bright), var(--dcdl-gold-deep)) !important;
+  color: #1a1226 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.dcdl-root .dcdl-btn-gold:hover { filter: drop-shadow(0 10px 24px rgba(231, 192, 95, 0.4)) brightness(1.06); }
+
+/* ─── GAME-HUB CARDS (game.css classes, scoped enhancements) ──── */
+
+.dcdl-root .gh-guide-card,
+.dcdl-root .gh-info-teaser {
+  border-radius: 0;
+  border-color: rgba(204, 164, 83, 0.16);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--dcdl-cut)), calc(100% - var(--dcdl-cut)) 100%, 0 100%);
+  filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.5));
+  transition: transform 0.2s ease, filter 0.2s ease, border-color 0.2s ease;
+}
+.dcdl-root .gh-guide-card:hover,
+.dcdl-root .gh-info-teaser:hover {
+  transform: translateY(-4px);
+  border-color: rgba(204, 164, 83, 0.5);
+  box-shadow: none;                   /* box-shadow is clipped; use filter instead */
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 12px rgba(204, 164, 83, 0.25));
+}
+
+.dcdl-root .sidebar-card {
+  position: relative;
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--dcdl-cut)), calc(100% - var(--dcdl-cut)) 100%, 0 100%);
+  filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.5));
+}

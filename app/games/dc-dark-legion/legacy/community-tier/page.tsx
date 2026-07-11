@@ -12,14 +12,7 @@ export default function LegacyCommunityTierPage() {
 
   return (
     <main>
-      <section
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
+      <section style={{ padding: '3rem 0' }}>
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
             <img src="/images/site/JLD.png" alt="Justice League of Discord" style={{ height: '5rem', objectFit: 'contain', flexShrink: 0 }} />
