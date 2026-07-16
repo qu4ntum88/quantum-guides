@@ -34,6 +34,14 @@ const ARMORIES = [
   { x: 147, y: 108, size: 12, ultimateOnly: true  },
 ]
 
+// On-map display numbers — bottom-left tile is 1, then counter-clockwise (screen
+// space, after the 45° rotation). Armories: the four always-present ones take 1–4,
+// the two Ultimate-only ones continue as 5–6. Maps keyed by array index.
+const ARMORY_NUMBER: Record<number, number> = { 0: 4, 1: 3, 2: 1, 3: 2, 4: 5, 5: 6 }
+const PLAZA_NUMBER: Record<number, number> = { 0: 7, 1: 6, 2: 5, 3: 4, 4: 3, 5: 2, 6: 1, 7: 8 }
+const armoryNumber = (i: number) => ARMORY_NUMBER[i] ?? i + 1
+const plazaNumber = (i: number) => PLAZA_NUMBER[i] ?? i + 1
+
 // Diamond viewport geometry
 const MAP_MARGIN = Math.round(128 * Math.sqrt(2)) - 128  // ≈ 53
 const ISO_SIZE   = 256 + MAP_MARGIN * 2                  // ≈ 362
@@ -45,15 +53,53 @@ const MAX_ZOOM = 12
 // ─── Groups ──────────────────────────────────────────────────
 type Group = { id: number; name: string; color: string; soft: string }
 const GROUPS: Group[] = [
-  { id: 1, name: 'Group 1', color: '#ef4444', soft: 'rgba(239,68,68,0.16)' },  // red
-  { id: 2, name: 'Group 2', color: '#3b82f6', soft: 'rgba(59,130,246,0.16)' }, // blue
-  { id: 3, name: 'Group 3', color: '#22c55e', soft: 'rgba(34,197,94,0.16)' },  // green
-  { id: 4, name: 'Group 4', color: '#eab308', soft: 'rgba(234,179,8,0.16)' },  // yellow
+  { id: 1, name: 'Group 1', color: '#ef4444', soft: 'rgba(239,68,68,0.16)' },   // red
+  { id: 2, name: 'Group 2', color: '#3b82f6', soft: 'rgba(59,130,246,0.16)' },  // blue
+  { id: 3, name: 'Group 3', color: '#22c55e', soft: 'rgba(34,197,94,0.16)' },   // green
+  { id: 4, name: 'Group 4', color: '#eab308', soft: 'rgba(234,179,8,0.16)' },   // yellow
+  { id: 5, name: 'Group 5', color: '#f97316', soft: 'rgba(249,115,22,0.16)' },  // orange
+  { id: 6, name: 'Group 6', color: '#a855f7', soft: 'rgba(168,85,247,0.16)' },  // purple
+  { id: 7, name: 'Group 7', color: '#06b6d4', soft: 'rgba(6,182,212,0.16)' },   // cyan
+  { id: 8, name: 'Group 8', color: '#ec4899', soft: 'rgba(236,72,153,0.16)' },  // pink
 ]
 const groupById = (id: number) => GROUPS.find(g => g.id === id) ?? GROUPS[0]
 
 type Base = { id: string; name: string; group: number; x: number; y: number }
 type MapMode = 'battle' | 'ultimate'
+
+// ─── Building links ──────────────────────────────────────────
+// A base or a whole group can be tied to a building; a thick white line is drawn
+// from each involved base to the building. 'city' = City Hall, a number = index
+// into ARMORIES.
+type BuildingId = 'city' | number
+type Link =
+  | { kind: 'base'; baseId: string; building: BuildingId }
+  | { kind: 'group'; group: number; building: BuildingId }
+
+function buildingMapPos(b: BuildingId) {
+  if (b === 'city') return { x: CITY_HALL.x, y: CITY_HALL.y }
+  const a = ARMORIES[b]
+  return { x: a.x, y: a.y }
+}
+function buildingLabel(b: BuildingId) {
+  return b === 'city' ? 'City Hall' : `Armory ${armoryNumber(b)}`
+}
+// Buildings available to link in a given mode (ultimate exposes the extra armories),
+// armories ordered by their on-map number so the picker reads 1, 2, 3…
+function buildingsForMode(ultimate: boolean): BuildingId[] {
+  const armories = ARMORIES
+    .map((a, i) => ({ a, i }))
+    .filter(({ a }) => ultimate || !a.ultimateOnly)
+    .map(({ i }) => i)
+    .sort((x, y) => armoryNumber(x) - armoryNumber(y))
+  return ['city', ...armories]
+}
+function sameBuilding(a: BuildingId, b: BuildingId) { return a === b }
+function linkMatchesTarget(l: Link, t: { kind: 'base'; baseId: string } | { kind: 'group'; group: number }) {
+  return l.kind === t.kind && (l.kind === 'base'
+    ? l.baseId === (t as { baseId: string }).baseId
+    : l.group === (t as { group: number }).group)
+}
 
 function clampZoom(z: number) {
   return Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, z))
@@ -148,6 +194,8 @@ function GameMap({
   selectedIds,
   setSelectedIds,
   groupNames,
+  links,
+  soloLabels,
 }: {
   ultimate: boolean
   bases: Base[]
@@ -155,6 +203,8 @@ function GameMap({
   selectedIds: string[]
   setSelectedIds: (next: string[]) => void
   groupNames: Record<number, string>
+  links: Link[]
+  soloLabels: boolean
 }) {
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: ISO_ORIGIN, y: ISO_ORIGIN })
@@ -440,6 +490,45 @@ function GameMap({
     groupLabel = { name: groupNames[groupModeId] || groupById(groupModeId).name, x: cx, y: minY - 8, color: groupById(groupModeId).color }
   }
 
+  // ─── Building link lines (thick white base→building connectors) ───
+  const linkLines: { key: string; x1: number; y1: number; x2: number; y2: number }[] = []
+  for (let li = 0; li < links.length; li++) {
+    const ln = links[li]
+    const bp = buildingMapPos(ln.building)
+    const bpos = toSvg(bp.x, bp.y)
+    const targets = ln.kind === 'base'
+      ? bases.filter(b => b.id === ln.baseId)
+      : bases.filter(b => b.group === ln.group)
+    for (const b of targets) {
+      const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
+      linkLines.push({ key: `${li}-${b.id}`, x1: c.x, y1: c.y, x2: bpos.x, y2: bpos.y })
+    }
+  }
+
+  // ─── Solo-group labels (ultimate only, toggle on) ───
+  // For each group with exactly one member, float the GROUP name (not the player
+  // name) above the base with a short leader line.
+  const soloLabelData = (ultimate && soloLabels)
+    ? GROUPS
+        .map(g => bases.filter(b => b.group === g.id))
+        .filter(m => m.length === 1)
+        .map(m => {
+          const b = m[0]
+          const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
+          return {
+            id: b.id,
+            name: groupNames[b.group] || groupById(b.group).name,
+            color: groupById(b.group).color,
+            cx: c.x,
+            cy: c.y,
+          }
+        })
+    : []
+  const soloIds = new Set(soloLabelData.map(s => s.id))
+  // When a solo-group base is single-selected, its group label already names it —
+  // suppress the player-name plate so the name never shows.
+  const suppressSinglePlate = displayMode === 'single' && soloIds.has(selBases[0].id)
+
   const diamondPoints = `128,${ISO_ORIGIN} ${ISO_ORIGIN + ISO_SIZE},128 128,${ISO_ORIGIN + ISO_SIZE} ${ISO_ORIGIN},128`
   const chPos = toSvg(CITY_HALL.x, CITY_HALL.y)
 
@@ -543,6 +632,14 @@ function GameMap({
           })}
         </g>{/* end rotation group */}
 
+        {/* Building link lines (dark casing under a thick white line) */}
+        {linkLines.map((l) => (
+          <g key={l.key}>
+            <line x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2} stroke="#06060c" strokeOpacity="0.75" strokeWidth="2.1" strokeLinecap="round" />
+            <line x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2} stroke="#ffffff" strokeOpacity="0.95" strokeWidth="1.1" strokeLinecap="round" />
+          </g>
+        ))}
+
         {/* ── LAYER 2: upright building images, placed at rotated map coords ── */}
 
         {/* City Hall image */}
@@ -590,6 +687,27 @@ function GameMap({
           )
         })}
 
+        {/* Plaza + armory number badges (upright, over the buildings) */}
+        {PLAZA.map((p, i) => {
+          const pos = toSvg(p.x, p.y)
+          return (
+            <g key={`pz${i}`}>
+              <circle cx={pos.x} cy={pos.y} r="2.7" fill="rgba(6,6,12,0.82)" stroke="#7c3aed" strokeWidth="0.5" />
+              <text x={pos.x} y={pos.y} fill="#fff" fontSize="3.4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="central">{plazaNumber(i)}</text>
+            </g>
+          )
+        })}
+        {ARMORIES.map((a, i) => {
+          if (!ultimate && a.ultimateOnly) return null
+          const pos = toSvg(a.x, a.y)
+          return (
+            <g key={`am${i}`}>
+              <circle cx={pos.x} cy={pos.y} r="2.7" fill="rgba(6,6,12,0.82)" stroke="#f59e0b" strokeWidth="0.5" />
+              <text x={pos.x} y={pos.y} fill="#fff" fontSize="3.4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="central">{armoryNumber(i)}</text>
+            </g>
+          )
+        })}
+
         {/* White highlight ring on selected bases (group / names / >5 cases) */}
         {showHighlight && selBases.map((b) => {
           const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
@@ -611,12 +729,16 @@ function GameMap({
             <g>
               <circle cx={c.x} cy={c.y} r="7" fill="none" stroke={g.color} strokeOpacity="0.9" strokeWidth="0.7" strokeDasharray="1.5,1.5" />
               <circle cx={c.x} cy={c.y} r="4.2" fill="none" stroke={g.color} strokeWidth="0.6" />
-              <rect x={c.x - (b.name.length * 1.35 + 2)} y={c.y - BASE_SIZE / 2 - 9}
-                width={b.name.length * 2.7 + 4} height="6" rx="1.5"
-                fill="rgba(6,6,12,0.85)" stroke={g.color} strokeOpacity="0.75" strokeWidth="0.25" />
-              <text x={c.x} y={c.y - BASE_SIZE / 2 - 4.7} fill="#fff" fontSize="3.6" fontFamily="Inter, sans-serif" fontWeight="600" textAnchor="middle">
-                {b.name}
-              </text>
+              {!suppressSinglePlate && (
+                <>
+                  <rect x={c.x - (b.name.length * 1.35 + 2)} y={c.y - BASE_SIZE / 2 - 9}
+                    width={b.name.length * 2.7 + 4} height="6" rx="1.5"
+                    fill="rgba(6,6,12,0.85)" stroke={g.color} strokeOpacity="0.75" strokeWidth="0.25" />
+                  <text x={c.x} y={c.y - BASE_SIZE / 2 - 4.7} fill="#fff" fontSize="3.6" fontFamily="Inter, sans-serif" fontWeight="600" textAnchor="middle">
+                    {b.name}
+                  </text>
+                </>
+              )}
             </g>
           )
         })()}
@@ -645,6 +767,23 @@ function GameMap({
             </text>
           </g>
         )}
+
+        {/* Solo-group labels (ultimate + toggle): group name pill + leader line */}
+        {soloLabelData.map((s) => {
+          const py = s.cy - BASE_SIZE / 2 - 11
+          const w = s.name.length * 3 + 6
+          return (
+            <g key={s.id}>
+              <line x1={s.cx} y1={s.cy - BASE_SIZE / 2} x2={s.cx} y2={py + 3.5} stroke={s.color} strokeOpacity="0.8" strokeWidth="0.3" />
+              <circle cx={s.cx} cy={s.cy} r="0.7" fill={s.color} />
+              <rect x={s.cx - w / 2} y={py} width={w} height="7" rx="2"
+                fill="rgba(6,6,12,0.9)" stroke={s.color} strokeWidth="0.4" />
+              <text x={s.cx} y={py + 3.7} fill="#fff" fontSize="4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
+                {s.name}
+              </text>
+            </g>
+          )
+        })}
 
         {/* Diamond border */}
         <polygon points={diamondPoints} fill="none" stroke="#2a2a6a" strokeWidth="1" />
@@ -695,6 +834,7 @@ function Check({
 }
 
 function RosterPanel({
+  ultimate,
   bases,
   setBases,
   selectedIds,
@@ -703,12 +843,17 @@ function RosterPanel({
   setLeague,
   groupNames,
   setGroupName,
+  links,
+  setLinks,
+  soloLabels,
+  setSoloLabels,
   onAdd,
   onImport,
   onExport,
   onReset,
   exporting,
 }: {
+  ultimate: boolean
   bases: Base[]
   setBases: (updater: (prev: Base[]) => Base[]) => void
   selectedIds: string[]
@@ -717,6 +862,10 @@ function RosterPanel({
   setLeague: (name: string) => void
   groupNames: Record<number, string>
   setGroupName: (id: number, name: string) => void
+  links: Link[]
+  setLinks: (updater: (prev: Link[]) => Link[]) => void
+  soloLabels: boolean
+  setSoloLabels: (on: boolean) => void
   onAdd: () => void
   onImport: () => void
   onExport: () => void
@@ -755,10 +904,62 @@ function RosterPanel({
   const remove = (id: string) => {
     setBases(prev => prev.filter(b => b.id !== id))
     setSelectedIds(selectedIds.filter(x => x !== id))
+    setLinks(prev => prev.filter(l => !(l.kind === 'base' && l.baseId === id)))
   }
   const setGroup = (id: string, group: number) => {
     setBases(prev => prev.map(b => (b.id === id ? { ...b, group } : b)))
   }
+
+  // ─── Building links ───
+  // What the current selection can be tied to: a single base, or a whole group.
+  const selBases = bases.filter(b => selSet.has(b.id))
+  let linkTarget:
+    | { kind: 'base'; baseId: string; label: string; color: string }
+    | { kind: 'group'; group: number; label: string; color: string }
+    | null = null
+  if (selBases.length === 1) {
+    const b = selBases[0]
+    linkTarget = { kind: 'base', baseId: b.id, label: b.name, color: groupById(b.group).color }
+  } else if (selBases.length > 1) {
+    const gids = new Set(selBases.map(b => b.group))
+    if (gids.size === 1) {
+      const gid = selBases[0].group
+      if (selBases.length === bases.filter(b => b.group === gid).length) {
+        linkTarget = { kind: 'group', group: gid, label: groupNames[gid] || groupById(gid).name, color: groupById(gid).color }
+      }
+    }
+  }
+  const targetKey = linkTarget && (linkTarget.kind === 'base'
+    ? { kind: 'base' as const, baseId: linkTarget.baseId }
+    : { kind: 'group' as const, group: linkTarget.group })
+  const isLinkedTo = (building: BuildingId) =>
+    !!targetKey && links.some(l => linkMatchesTarget(l, targetKey) && sameBuilding(l.building, building))
+
+  // Click a building: toggle just that building for the current target.
+  // A target can be tied to several buildings at once.
+  const chooseBuilding = (building: BuildingId) => {
+    if (!targetKey) return
+    setLinks(prev => {
+      const exists = prev.some(l => linkMatchesTarget(l, targetKey) && sameBuilding(l.building, building))
+      if (exists) return prev.filter(l => !(linkMatchesTarget(l, targetKey) && sameBuilding(l.building, building)))
+      const nl: Link = targetKey.kind === 'base'
+        ? { kind: 'base', baseId: targetKey.baseId, building }
+        : { kind: 'group', group: targetKey.group, building }
+      return [...prev, nl]
+    })
+  }
+
+  const linkRowLabel = (l: Link) =>
+    l.kind === 'base'
+      ? (bases.find(b => b.id === l.baseId)?.name ?? 'Base')
+      : (groupNames[l.group] || groupById(l.group).name)
+  const linkRowColor = (l: Link) =>
+    l.kind === 'base'
+      ? groupById(bases.find(b => b.id === l.baseId)?.group ?? 1).color
+      : groupById(l.group).color
+  const removeLink = (l: Link) => setLinks(prev => prev.filter(x => x !== l))
+
+  const buildings = buildingsForMode(ultimate)
 
   const selectOnly = (id: string) => setSelectedIds([id])
   const toggle = (id: string) =>
@@ -810,6 +1011,65 @@ function RosterPanel({
           <span className="sc-selcount">{selectedIds.length} selected</span>
           <span className="sc-selhint">drag any selected base to move them together</span>
           <button className="sc-selclear" onClick={() => setSelectedIds([])}>Clear</button>
+        </div>
+      )}
+
+      {/* Solo-group name labels — Ultimate map only */}
+      {ultimate && (
+        <label className="sc-toggle" title="For any group with a single member, show the group name on the map instead of the player name.">
+          <input
+            type="checkbox"
+            className="sc-toggle-input"
+            checked={soloLabels}
+            onChange={e => setSoloLabels(e.target.checked)}
+          />
+          <span className="sc-toggle-track"><span className="sc-toggle-thumb" /></span>
+          <span className="sc-toggle-text">Label solo groups by group name</span>
+        </label>
+      )}
+
+      {/* Building links */}
+      {bases.length > 0 && (
+        <div className="sc-links">
+          <div className="sc-links-head">Building Links</div>
+          {linkTarget ? (
+            <>
+              <div className="sc-link-target">
+                <span className="sc-base-marker" style={{ color: linkTarget.color, background: linkTarget.color }} />
+                Tie <strong>{linkTarget.label}</strong> to:
+              </div>
+              <div className="sc-link-btns">
+                {buildings.map(b => {
+                  const active = isLinkedTo(b)
+                  return (
+                    <button
+                      key={String(b)}
+                      className={`sc-link-btn${active ? ' is-active' : ''}`}
+                      onClick={() => chooseBuilding(b)}
+                    >
+                      {buildingLabel(b)}
+                    </button>
+                  )
+                })}
+              </div>
+            </>
+          ) : (
+            <div className="sc-links-hint">Select a single base, or a whole group, to tie it to a building.</div>
+          )}
+
+          {links.length > 0 && (
+            <div className="sc-link-list">
+              {links.map((l, i) => (
+                <div className="sc-link-row" key={i}>
+                  <span className="sc-base-marker" style={{ color: linkRowColor(l), background: linkRowColor(l) }} />
+                  <span className="sc-link-row-label">{linkRowLabel(l)}</span>
+                  <span className="sc-link-row-arrow">→</span>
+                  <span className="sc-link-row-bldg">{buildingLabel(l.building)}</span>
+                  <button className="sc-del" title="Remove link" onClick={() => removeLink(l)}>✕</button>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
@@ -942,10 +1202,50 @@ function esc(s: string) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 }
 
-function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, string>) {
+function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, string>, links: Link[], soloLabels: boolean, groupNames: Record<number, string>) {
   const activeArmories = ultimate ? ARMORIES : ARMORIES.filter(a => !a.ultimateOnly)
   const chPos = toSvg(CITY_HALL.x, CITY_HALL.y)
   const diamondPoints = `128,${ISO_ORIGIN} ${ISO_ORIGIN + ISO_SIZE},128 128,${ISO_ORIGIN + ISO_SIZE} ${ISO_ORIGIN},128`
+
+  // Building link lines (dark casing + thick white line)
+  const linkSvg = links.map(ln => {
+    const bp = buildingMapPos(ln.building)
+    const bpos = toSvg(bp.x, bp.y)
+    const targets = ln.kind === 'base'
+      ? bases.filter(b => b.id === ln.baseId)
+      : bases.filter(b => b.group === ln.group)
+    return targets.map(b => {
+      const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
+      return `<line x1="${c.x}" y1="${c.y}" x2="${bpos.x}" y2="${bpos.y}" stroke="#06060c" stroke-opacity="0.75" stroke-width="2.1" stroke-linecap="round"/><line x1="${c.x}" y1="${c.y}" x2="${bpos.x}" y2="${bpos.y}" stroke="#ffffff" stroke-opacity="0.95" stroke-width="1.1" stroke-linecap="round"/>`
+    }).join('')
+  }).join('')
+
+  // Plaza + armory number badges (upright)
+  const plazaBadges = PLAZA.map((p, i) => {
+    const pos = toSvg(p.x, p.y)
+    return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#7c3aed" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${plazaNumber(i)}</text>`
+  }).join('')
+  const armoryBadges = ARMORIES.map((a, i) => {
+    if (!ultimate && a.ultimateOnly) return ''
+    const pos = toSvg(a.x, a.y)
+    return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#f59e0b" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${armoryNumber(i)}</text>`
+  }).join('')
+
+  // Solo-group name labels (ultimate + toggle)
+  const soloSvg = (ultimate && soloLabels)
+    ? GROUPS
+        .map(g => bases.filter(b => b.group === g.id))
+        .filter(m => m.length === 1)
+        .map(m => {
+          const b = m[0]
+          const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
+          const name = groupNames[b.group] || groupById(b.group).name
+          const color = groupById(b.group).color
+          const py = c.y - BASE_SIZE / 2 - 11
+          const w = name.length * 3 + 6
+          return `<line x1="${c.x}" y1="${c.y - BASE_SIZE / 2}" x2="${c.x}" y2="${py + 3.5}" stroke="${color}" stroke-opacity="0.8" stroke-width="0.3"/><circle cx="${c.x}" cy="${c.y}" r="0.7" fill="${color}"/><rect x="${c.x - w / 2}" y="${py}" width="${w}" height="7" rx="2" fill="rgba(6,6,12,0.9)" stroke="${color}" stroke-width="0.4"/><text x="${c.x}" y="${py + 3.7}" fill="#fff" font-size="4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">${esc(name)}</text>`
+        }).join('')
+    : ''
 
   const armoryFootprints = activeArmories.map(a =>
     `<rect x="${a.x - a.size / 2}" y="${a.y - a.size / 2}" width="${a.size}" height="${a.size}" fill="${a.ultimateOnly ? '#9f1239' : '#c2410c'}" fill-opacity="0.4"/>`
@@ -1002,9 +1302,13 @@ function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, stri
       ${armoryFootprints}
       ${baseFootprints}
     </g>
+    ${linkSvg}
     <image href="${imgs.cityHall}" x="${chPos.x - CITY_HALL.size / 2}" y="${chPos.y - CITY_HALL.size / 2}" width="${CITY_HALL.size}" height="${CITY_HALL.size}" preserveAspectRatio="xMidYMid meet"/>
     ${armoryImgs}
     ${baseImgs}
+    ${plazaBadges}
+    ${armoryBadges}
+    ${soloSvg}
     <polygon points="${diamondPoints}" fill="none" stroke="#2a2a6a" stroke-width="1"/>
   </svg>`
 }
@@ -1054,14 +1358,14 @@ function drawLegendSwatch(ctx: CanvasRenderingContext2D, type: LegendType, x: nu
   ctx.restore()
 }
 
-async function exportConfig(ultimate: boolean, bases: Base[], league: string, groupNames: Record<number, string>) {
+async function exportConfig(ultimate: boolean, bases: Base[], league: string, groupNames: Record<number, string>, links: Link[], soloLabels: boolean) {
   const [cityHall, armory, base] = await Promise.all([
     toDataUrl('/dcdl/resource_icons/Gotham_CityHall.png'),
     toDataUrl('/dcdl/resource_icons/Gotham_Armory.png'),
     toDataUrl('/dcdl/resource_icons/Gotham_PlayerBase.png'),
   ])
 
-  const svg = buildMapSvg(ultimate, bases, { cityHall, armory, base })
+  const svg = buildMapSvg(ultimate, bases, { cityHall, armory, base }, links, soloLabels, groupNames)
   const svgUrl = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg)
   const mapImg = await loadImage(svgUrl)
 
@@ -1262,7 +1566,12 @@ function Swatch({ children }: { children: React.ReactNode }) {
 const STORAGE_KEY = 'sc-gotham-bases-v1'
 const LEAGUE_KEY = 'sc-gotham-league-v1'
 const GROUPNAMES_KEY = 'sc-gotham-groups-v1'
-const DEFAULT_GROUP_NAMES: Record<number, string> = { 1: 'Group 1', 2: 'Group 2', 3: 'Group 3', 4: 'Group 4' }
+const LINKS_KEY = 'sc-gotham-links-v1'
+const SOLO_KEY = 'sc-gotham-solo-v1'
+const DEFAULT_GROUP_NAMES: Record<number, string> = {
+  1: 'Group 1', 2: 'Group 2', 3: 'Group 3', 4: 'Group 4',
+  5: 'Group 5', 6: 'Group 6', 7: 'Group 7', 8: 'Group 8',
+}
 
 export default function ShipCombatGuidesPage() {
   const [mode, setMode] = useState<MapMode>('battle')
@@ -1270,6 +1579,8 @@ export default function ShipCombatGuidesPage() {
   const [selectedByMode, setSelectedByMode] = useState<Record<MapMode, string[]>>({ battle: [], ultimate: [] })
   const [league, setLeague] = useState('')
   const [groupNames, setGroupNames] = useState<Record<number, string>>(DEFAULT_GROUP_NAMES)
+  const [linksByMode, setLinksByMode] = useState<Record<MapMode, Link[]>>({ battle: [], ultimate: [] })
+  const [soloLabels, setSoloLabels] = useState(false)
   const [exporting, setExporting] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
   const [importOpen, setImportOpen] = useState(false)
@@ -1279,6 +1590,8 @@ export default function ShipCombatGuidesPage() {
   const firstPersist = useRef(true)
   const firstLeaguePersist = useRef(true)
   const firstGroupPersist = useRef(true)
+  const firstLinksPersist = useRef(true)
+  const firstSoloPersist = useRef(true)
 
   // Load persisted state once on mount (client only, so hydration stays consistent)
   useEffect(() => {
@@ -1298,6 +1611,13 @@ export default function ShipCombatGuidesPage() {
         const parsed = JSON.parse(savedGroups)
         if (parsed && typeof parsed === 'object') setGroupNames({ ...DEFAULT_GROUP_NAMES, ...parsed })
       }
+      const savedLinks = localStorage.getItem(LINKS_KEY)
+      if (savedLinks) {
+        const parsed = JSON.parse(savedLinks)
+        if (parsed && Array.isArray(parsed.battle) && Array.isArray(parsed.ultimate)) setLinksByMode(parsed)
+      }
+      const savedSolo = localStorage.getItem(SOLO_KEY)
+      if (savedSolo === '1') setSoloLabels(true)
     } catch {}
   }, [])
 
@@ -1317,8 +1637,19 @@ export default function ShipCombatGuidesPage() {
     try { localStorage.setItem(GROUPNAMES_KEY, JSON.stringify(groupNames)) } catch {}
   }, [groupNames])
 
+  useEffect(() => {
+    if (firstLinksPersist.current) { firstLinksPersist.current = false; return }
+    try { localStorage.setItem(LINKS_KEY, JSON.stringify(linksByMode)) } catch {}
+  }, [linksByMode])
+
+  useEffect(() => {
+    if (firstSoloPersist.current) { firstSoloPersist.current = false; return }
+    try { localStorage.setItem(SOLO_KEY, soloLabels ? '1' : '0') } catch {}
+  }, [soloLabels])
+
   const bases = basesByMode[mode]
   const selectedIds = selectedByMode[mode]
+  const links = linksByMode[mode]
 
   const setBases = useCallback((updater: (prev: Base[]) => Base[]) => {
     setBasesByMode(prev => ({ ...prev, [mode]: updater(prev[mode]) }))
@@ -1326,6 +1657,10 @@ export default function ShipCombatGuidesPage() {
 
   const setSelectedIds = useCallback((next: string[]) => {
     setSelectedByMode(prev => ({ ...prev, [mode]: next }))
+  }, [mode])
+
+  const setLinks = useCallback((updater: (prev: Link[]) => Link[]) => {
+    setLinksByMode(prev => ({ ...prev, [mode]: updater(prev[mode]) }))
   }, [mode])
 
   const addBase = useCallback(() => {
@@ -1342,6 +1677,7 @@ export default function ShipCombatGuidesPage() {
   const resetMap = useCallback(() => {
     setBasesByMode(prev => ({ ...prev, [mode]: [] }))
     setSelectedByMode(prev => ({ ...prev, [mode]: [] }))
+    setLinksByMode(prev => ({ ...prev, [mode]: [] }))
     setConfirmReset(false)
   }, [mode])
 
@@ -1365,6 +1701,7 @@ export default function ShipCombatGuidesPage() {
       const imported = makeImportedBases(names)
       setBasesByMode(prev => ({ ...prev, [mode]: imported }))
       setSelectedByMode(prev => ({ ...prev, [mode]: [] }))
+      setLinksByMode(prev => ({ ...prev, [mode]: [] }))
       setImportOpen(false)
     } catch (err) {
       setImportError(err instanceof Error ? err.message : 'Import failed. Please try again.')
@@ -1376,14 +1713,14 @@ export default function ShipCombatGuidesPage() {
   const handleExport = useCallback(async () => {
     setExporting(true)
     try {
-      await exportConfig(mode === 'ultimate', basesByMode[mode], league, groupNames)
+      await exportConfig(mode === 'ultimate', basesByMode[mode], league, groupNames, linksByMode[mode], soloLabels)
     } catch (e) {
       console.error('Export failed', e)
       alert('Export failed — please try again.')
     } finally {
       setExporting(false)
     }
-  }, [mode, basesByMode, league, groupNames])
+  }, [mode, basesByMode, league, groupNames, linksByMode, soloLabels])
 
   return (
     <main className="sc-root" style={{ '--game-accent': '#4f8ef7' } as CSSProperties}>
@@ -1432,8 +1769,11 @@ export default function ShipCombatGuidesPage() {
               selectedIds={selectedIds}
               setSelectedIds={setSelectedIds}
               groupNames={groupNames}
+              links={links}
+              soloLabels={soloLabels}
             />
             <RosterPanel
+              ultimate={mode === 'ultimate'}
               bases={bases}
               setBases={setBases}
               selectedIds={selectedIds}
@@ -1442,6 +1782,10 @@ export default function ShipCombatGuidesPage() {
               setLeague={setLeague}
               groupNames={groupNames}
               setGroupName={setGroupName}
+              links={links}
+              setLinks={setLinks}
+              soloLabels={soloLabels}
+              setSoloLabels={setSoloLabels}
               onAdd={addBase}
               onImport={openImport}
               onExport={handleExport}
