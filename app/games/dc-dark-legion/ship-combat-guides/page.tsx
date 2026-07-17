@@ -184,6 +184,68 @@ function toSvg(mx: number, my: number) {
   return rotatePoint(mx, my, 128, 128, 45)
 }
 
+// ─── Solo-group label layout ─────────────────────────────────
+// For each group with exactly one member, the GROUP name is floated beside the
+// base. Plates stack outward toward the side of the map the base sits on
+// (left half → a column to the left, right half → to the right) so they sit in
+// the dark edge space instead of covering the middle of the board. Within a
+// side, plates hug their base's row and nudge down only as needed to avoid
+// overlapping each other. Used by both GameMap and the PNG export.
+type SoloLabel = { id: string; name: string; color: string; cx: number; cy: number; px: number; py: number; lx: number; w: number }
+
+// Screen-space extent of the plaza ring: label columns sit just outside the
+// outermost plazas so they clear all the buildings, not just the bases.
+const PLAZA_HALF_DIAG = (PLAZA[0].size / 2) * Math.SQRT2 // rotated square's half-diagonal
+const PLAZA_SCREEN_X = PLAZA.map(p => rotatePoint(p.x, p.y, 128, 128, 45).x)
+const SOLO_COL_LEFT = Math.min(...PLAZA_SCREEN_X) - PLAZA_HALF_DIAG
+const SOLO_COL_RIGHT = Math.max(...PLAZA_SCREEN_X) + PLAZA_HALF_DIAG
+
+function layoutSoloLabels(bases: Base[], groupNames: Record<number, string>): SoloLabel[] {
+  const solos = GROUPS
+    .map(g => bases.filter(b => b.group === g.id))
+    .filter(m => m.length === 1)
+    .map(m => {
+      const b = m[0]
+      const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
+      const name = groupNames[b.group] || groupById(b.group).name
+      return {
+        id: b.id,
+        name,
+        color: groupById(b.group).color,
+        cx: c.x,
+        cy: c.y,
+        w: name.length * 3 + 6,
+      }
+    })
+
+  const out: SoloLabel[] = []
+  const rowH = 8    // vertical footprint of a plate row (plate is 7 tall)
+  const gap = 3.5   // clearance between a base and its plate column
+  for (const side of ['left', 'right'] as const) {
+    const arr = solos
+      .filter(s => (side === 'left' ? s.cx < 128 : s.cx >= 128))
+      .sort((a, b) => a.cy - b.cy)
+    if (arr.length === 0) continue
+    // One clean column outside the outermost plazas — pushed further out only
+    // when a base on this side sits even wider than the plaza ring.
+    const edge = side === 'left'
+      ? Math.min(SOLO_COL_LEFT, Math.min(...arr.map(s => s.cx)) - BASE_SIZE / 2) - gap
+      : Math.max(SOLO_COL_RIGHT, Math.max(...arr.map(s => s.cx)) + BASE_SIZE / 2) + gap
+    let prevBottom = ISO_ORIGIN + 2
+    for (const s of arr) {
+      let py = s.cy - 3.5 // center the plate on the base's row when there's room
+      if (py < prevBottom) py = prevBottom
+      py = Math.min(py, ISO_ORIGIN + ISO_SIZE - 9)
+      prevBottom = py + rowH
+      let px = side === 'left' ? edge - s.w : edge
+      px = Math.max(ISO_ORIGIN + 2, Math.min(px, ISO_ORIGIN + ISO_SIZE - 2 - s.w))
+      const lx = side === 'left' ? px + s.w : px // leader line meets the near plate edge
+      out.push({ ...s, px, py, lx })
+    }
+  }
+  return out
+}
+
 // ══════════════════════════════════════════════════════════════
 //  MAP
 // ══════════════════════════════════════════════════════════════
@@ -196,6 +258,7 @@ function GameMap({
   groupNames,
   links,
   soloLabels,
+  onRemoveBase,
 }: {
   ultimate: boolean
   bases: Base[]
@@ -205,10 +268,17 @@ function GameMap({
   groupNames: Record<number, string>
   links: Link[]
   soloLabels: boolean
+  onRemoveBase: (id: string) => void
 }) {
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: ISO_ORIGIN, y: ISO_ORIGIN })
   const [cursor, setCursor] = useState<'grab' | 'grabbing' | 'move'>('grab')
+
+  // Quick-action context menu (right-click, or press-and-hold on touch)
+  const [ctxMenu, setCtxMenu] = useState<{ baseId: string; x: number; y: number } | null>(null)
+  const [ctxRename, setCtxRename] = useState<string | null>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+  const longPress = useRef<number | null>(null)
 
   const svgRef = useRef<SVGSVGElement>(null)
 
@@ -290,6 +360,49 @@ function GameMap({
     return () => el.removeEventListener('wheel', onWheel)
   }, [clientToSvg, zoomAtFrac])
 
+  // ─── context menu ───
+  const clearLongPress = () => {
+    if (longPress.current != null) {
+      clearTimeout(longPress.current)
+      longPress.current = null
+    }
+  }
+  useEffect(() => () => { if (longPress.current != null) clearTimeout(longPress.current) }, [])
+
+  const openMenu = useCallback((baseId: string, clientX: number, clientY: number) => {
+    const rect = svgRef.current!.getBoundingClientRect()
+    const x = Math.max(8, Math.min(clientX - rect.left, rect.width - 196))
+    const y = Math.max(8, Math.min(clientY - rect.top, rect.height - 200))
+    setCtxRename(null)
+    setCtxMenu({ baseId, x, y })
+    setSelectedIds([baseId])
+  }, [setSelectedIds])
+
+  // Close on any press outside the menu (capture phase so map presses count too)
+  useEffect(() => {
+    if (!ctxMenu) return
+    const onDown = (e: PointerEvent) => {
+      if (menuRef.current && e.target instanceof Node && menuRef.current.contains(e.target)) return
+      setCtxMenu(null)
+    }
+    const onEsc = (e: KeyboardEvent) => { if (e.key === 'Escape') setCtxMenu(null) }
+    document.addEventListener('pointerdown', onDown, true)
+    window.addEventListener('keydown', onEsc)
+    return () => {
+      document.removeEventListener('pointerdown', onDown, true)
+      window.removeEventListener('keydown', onEsc)
+    }
+  }, [ctxMenu])
+
+  const commitCtxRename = (id: string) => {
+    if (ctxRename != null) {
+      const name = ctxRename.trim() || 'Player'
+      setBases(prev => prev.map(x => (x.id === id ? { ...x, name } : x)))
+    }
+    setCtxRename(null)
+    setCtxMenu(null)
+  }
+
   // ─── pointer interactions (mouse + touch unified) ───
   const midOf = () => {
     const pts = [...pointers.current.values()]
@@ -302,10 +415,12 @@ function GameMap({
 
   const onPointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
     e.preventDefault()
+    if (e.pointerType === 'mouse' && e.button !== 0) return // right-click is handled by onContextMenu
     e.currentTarget.setPointerCapture?.(e.pointerId)
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY })
 
     if (pointers.current.size === 2) {
+      clearLongPress()
       const rect = svgRef.current!.getBoundingClientRect()
       const mid = midOf()
       gesture.current = {
@@ -339,6 +454,19 @@ function GameMap({
         moved: false,
       }
       setCursor('move')
+      // Touch/pen: press-and-hold (without dragging) opens the quick-action menu
+      if (e.pointerType !== 'mouse') {
+        const px = e.clientX, py = e.clientY, hid = hit.id
+        clearLongPress()
+        longPress.current = window.setTimeout(() => {
+          const g = gesture.current
+          if (g && g.kind === 'move' && g.baseId === hid && !g.moved) {
+            gesture.current = null
+            setCursor('grab')
+            openMenu(hid, px, py)
+          }
+        }, 500)
+      }
     } else {
       gesture.current = { kind: 'pan', startClient: { x: e.clientX, y: e.clientY }, startPan: { ...stateRef.current.pan }, moved: false }
       setCursor('grabbing')
@@ -365,6 +493,7 @@ function GameMap({
       const dx = snappedX - g.startPos[g.baseId].x
       const dy = snappedY - g.startPos[g.baseId].y
       if (dx === 0 && dy === 0) return
+      clearLongPress() // real drag started — no long-press menu
       const movingSet = new Set(g.ids)
       const others = stateRef.current.bases.filter(b => !movingSet.has(b.id))
       const next: Record<string, { x: number; y: number }> = {}
@@ -395,6 +524,7 @@ function GameMap({
   }
 
   const onPointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
+    clearLongPress()
     const g = gesture.current
     pointers.current.delete(e.pointerId)
 
@@ -506,24 +636,9 @@ function GameMap({
   }
 
   // ─── Solo-group labels (ultimate only, toggle on) ───
-  // For each group with exactly one member, float the GROUP name (not the player
-  // name) above the base with a short leader line.
-  const soloLabelData = (ultimate && soloLabels)
-    ? GROUPS
-        .map(g => bases.filter(b => b.group === g.id))
-        .filter(m => m.length === 1)
-        .map(m => {
-          const b = m[0]
-          const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
-          return {
-            id: b.id,
-            name: groupNames[b.group] || groupById(b.group).name,
-            color: groupById(b.group).color,
-            cx: c.x,
-            cy: c.y,
-          }
-        })
-    : []
+  // Plates stack outward to the side of the map their base is on (see
+  // layoutSoloLabels) so they never obscure the middle of the board.
+  const soloLabelData = (ultimate && soloLabels) ? layoutSoloLabels(bases, groupNames) : []
   const soloIds = new Set(soloLabelData.map(s => s.id))
   // When a solo-group base is single-selected, its group label already names it —
   // suppress the player-name plate so the name never shows.
@@ -550,6 +665,11 @@ function GameMap({
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
+        onContextMenu={e => {
+          e.preventDefault()
+          const hit = baseAt(e.clientX, e.clientY)
+          if (hit) openMenu(hit.id, e.clientX, e.clientY)
+        }}
       >
         <defs>
           <filter id={`glow${pfx}`} x="-80%" y="-80%" width="260%" height="260%">
@@ -567,6 +687,9 @@ function GameMap({
           </pattern>
           <filter id={`whiteGlow${pfx}`} x="-120%" y="-120%" width="340%" height="340%">
             <feDropShadow dx="0" dy="0" stdDeviation="0.9" floodColor="#ffffff" floodOpacity="0.95" />
+          </filter>
+          <filter id={`softsh${pfx}`} x="-40%" y="-40%" width="180%" height="180%">
+            <feDropShadow dx="0.35" dy="0.6" stdDeviation="0.55" floodColor="#000000" floodOpacity="0.6" />
           </filter>
         </defs>
 
@@ -643,49 +766,55 @@ function GameMap({
         {/* ── LAYER 2: upright building images, placed at rotated map coords ── */}
 
         {/* City Hall image */}
-        <g filter={`url(#glow${pfx})`}>
-          <image
-            href="/dcdl/resource_icons/Gotham_CityHall.png"
-            x={chPos.x - CITY_HALL.size / 2}
-            y={chPos.y - CITY_HALL.size / 2}
-            width={CITY_HALL.size}
-            height={CITY_HALL.size}
-            preserveAspectRatio="xMidYMid meet"
-          />
+        <g filter={`url(#softsh${pfx})`}>
+          <g filter={`url(#glow${pfx})`}>
+            <image
+              href="/dcdl/resource_icons/Gotham_CityHall.png"
+              x={chPos.x - CITY_HALL.size / 2}
+              y={chPos.y - CITY_HALL.size / 2}
+              width={CITY_HALL.size}
+              height={CITY_HALL.size}
+              preserveAspectRatio="xMidYMid meet"
+            />
+          </g>
         </g>
 
         {/* Armory images */}
-        {activeArmories.map((a, i) => {
-          const pos = toSvg(a.x, a.y)
-          const half = a.size / 2
-          return (
-            <image
-              key={i}
-              href="/dcdl/resource_icons/Gotham_Armory.png"
-              x={pos.x - half}
-              y={pos.y - half}
-              width={a.size}
-              height={a.size}
-              preserveAspectRatio="xMidYMid meet"
-            />
-          )
-        })}
+        <g filter={`url(#softsh${pfx})`}>
+          {activeArmories.map((a, i) => {
+            const pos = toSvg(a.x, a.y)
+            const half = a.size / 2
+            return (
+              <image
+                key={i}
+                href="/dcdl/resource_icons/Gotham_Armory.png"
+                x={pos.x - half}
+                y={pos.y - half}
+                width={a.size}
+                height={a.size}
+                preserveAspectRatio="xMidYMid meet"
+              />
+            )
+          })}
+        </g>
 
         {/* Player Base images (always drawn) */}
-        {bases.map((b) => {
-          const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
-          return (
-            <image
-              key={b.id}
-              href="/dcdl/resource_icons/Gotham_PlayerBase.png"
-              x={c.x - BASE_SIZE / 2}
-              y={c.y - BASE_SIZE / 2}
-              width={BASE_SIZE}
-              height={BASE_SIZE}
-              preserveAspectRatio="xMidYMid meet"
-            />
-          )
-        })}
+        <g filter={`url(#softsh${pfx})`}>
+          {bases.map((b) => {
+            const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
+            return (
+              <image
+                key={b.id}
+                href="/dcdl/resource_icons/Gotham_PlayerBase.png"
+                x={c.x - BASE_SIZE / 2}
+                y={c.y - BASE_SIZE / 2}
+                width={BASE_SIZE}
+                height={BASE_SIZE}
+                preserveAspectRatio="xMidYMid meet"
+              />
+            )
+          })}
+        </g>
 
         {/* Plaza + armory number badges (upright, over the buildings) */}
         {PLAZA.map((p, i) => {
@@ -713,6 +842,7 @@ function GameMap({
           const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
           return (
             <rect key={b.id}
+              className="sc-anim-pulse"
               x={c.x - BASE_SIZE / 2 - 0.7} y={c.y - BASE_SIZE / 2 - 0.7}
               width={BASE_SIZE + 1.4} height={BASE_SIZE + 1.4} rx="0.9"
               fill="none" stroke="#ffffff" strokeOpacity="0.95" strokeWidth="0.5"
@@ -727,7 +857,7 @@ function GameMap({
           const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
           return (
             <g>
-              <circle cx={c.x} cy={c.y} r="7" fill="none" stroke={g.color} strokeOpacity="0.9" strokeWidth="0.7" strokeDasharray="1.5,1.5" />
+              <circle className="sc-anim-dash" cx={c.x} cy={c.y} r="7" fill="none" stroke={g.color} strokeOpacity="0.9" strokeWidth="0.7" strokeDasharray="1.5,1.5" />
               <circle cx={c.x} cy={c.y} r="4.2" fill="none" stroke={g.color} strokeWidth="0.6" />
               {!suppressSinglePlate && (
                 <>
@@ -768,22 +898,18 @@ function GameMap({
           </g>
         )}
 
-        {/* Solo-group labels (ultimate + toggle): group name pill + leader line */}
-        {soloLabelData.map((s) => {
-          const py = s.cy - BASE_SIZE / 2 - 11
-          const w = s.name.length * 3 + 6
-          return (
-            <g key={s.id}>
-              <line x1={s.cx} y1={s.cy - BASE_SIZE / 2} x2={s.cx} y2={py + 3.5} stroke={s.color} strokeOpacity="0.8" strokeWidth="0.3" />
-              <circle cx={s.cx} cy={s.cy} r="0.7" fill={s.color} />
-              <rect x={s.cx - w / 2} y={py} width={w} height="7" rx="2"
-                fill="rgba(6,6,12,0.9)" stroke={s.color} strokeWidth="0.4" />
-              <text x={s.cx} y={py + 3.7} fill="#fff" fontSize="4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
-                {s.name}
-              </text>
-            </g>
-          )
-        })}
+        {/* Solo-group labels (ultimate + toggle): group name pill stacked to the base's side */}
+        {soloLabelData.map((s) => (
+          <g key={s.id}>
+            <line x1={s.cx} y1={s.cy} x2={s.lx} y2={s.py + 3.5} stroke={s.color} strokeOpacity="0.8" strokeWidth="0.3" />
+            <circle cx={s.cx} cy={s.cy} r="0.7" fill={s.color} />
+            <rect x={s.px} y={s.py} width={s.w} height="7" rx="2"
+              fill="rgba(6,6,12,0.9)" stroke={s.color} strokeWidth="0.4" />
+            <text x={s.px + s.w / 2} y={s.py + 3.7} fill="#fff" fontSize="4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
+              {s.name}
+            </text>
+          </g>
+        ))}
 
         {/* Diamond border */}
         <polygon points={diamondPoints} fill="none" stroke="#2a2a6a" strokeWidth="1" />
@@ -797,7 +923,56 @@ function GameMap({
         <div className="sc-zlevel">{zoom % 1 === 0 ? `${zoom}×` : `${zoom.toFixed(1)}×`}</div>
       </div>
 
-      <span className="sc-hint">Scroll / pinch to zoom · drag to pan · select bases to reveal names</span>
+      {/* Quick-action context menu */}
+      {ctxMenu && (() => {
+        const b = bases.find(x => x.id === ctxMenu.baseId)
+        if (!b) return null
+        const g = groupById(b.group)
+        return (
+          <div ref={menuRef} className="sc-ctxmenu" style={{ left: ctxMenu.x, top: ctxMenu.y }}>
+            <div className="sc-ctx-head">
+              <span className="sc-base-marker" style={{ color: g.color, background: g.color }} />
+              {ctxRename == null ? (
+                <span className="sc-ctx-name">{b.name}</span>
+              ) : (
+                <input
+                  className="sc-base-name-input"
+                  value={ctxRename}
+                  autoFocus
+                  maxLength={20}
+                  onChange={e => setCtxRename(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter') commitCtxRename(b.id) }}
+                  onBlur={() => commitCtxRename(b.id)}
+                />
+              )}
+            </div>
+            {ctxRename == null && (
+              <>
+                <button className="sc-ctx-item" onClick={() => setCtxRename(b.name)}>✎ Rename</button>
+                <div className="sc-ctx-groups">
+                  {GROUPS.map(gr => (
+                    <button
+                      key={gr.id}
+                      className={`sc-swatch${gr.id === b.group ? ' is-current' : ''}`}
+                      style={{ background: gr.color, color: gr.color }}
+                      title={`Move to ${groupNames[gr.id] || gr.name}`}
+                      onClick={() => {
+                        setBases(prev => prev.map(x => (x.id === b.id ? { ...x, group: gr.id } : x)))
+                        setCtxMenu(null)
+                      }}
+                    />
+                  ))}
+                </div>
+                <button className="sc-ctx-item sc-ctx-danger" onClick={() => { onRemoveBase(b.id); setCtxMenu(null) }}>
+                  ✕ Delete Base
+                </button>
+              </>
+            )}
+          </div>
+        )
+      })()}
+
+      <span className="sc-hint">Scroll / pinch to zoom · drag to pan · right-click / hold a base for options</span>
     </div>
   )
 }
@@ -851,6 +1026,13 @@ function RosterPanel({
   onImport,
   onExport,
   onReset,
+  onRemove,
+  onShare,
+  onCopyMode,
+  onUndo,
+  onRedo,
+  canUndo,
+  canRedo,
   exporting,
 }: {
   ultimate: boolean
@@ -870,6 +1052,13 @@ function RosterPanel({
   onImport: () => void
   onExport: () => void
   onReset: () => void
+  onRemove: (id: string) => void
+  onShare: () => void
+  onCopyMode: () => void
+  onUndo: () => void
+  onRedo: () => void
+  canUndo: boolean
+  canRedo: boolean
   exporting: boolean
 }) {
   const [editingId, setEditingId] = useState<string | null>(null)
@@ -901,11 +1090,6 @@ function RosterPanel({
     setEditingGroup(null)
   }
 
-  const remove = (id: string) => {
-    setBases(prev => prev.filter(b => b.id !== id))
-    setSelectedIds(selectedIds.filter(x => x !== id))
-    setLinks(prev => prev.filter(l => !(l.kind === 'base' && l.baseId === id)))
-  }
   const setGroup = (id: string, group: number) => {
     setBases(prev => prev.map(b => (b.id === id ? { ...b, group } : b)))
   }
@@ -996,6 +1180,21 @@ function RosterPanel({
         <button className="sc-btn sc-btn-ghost" onClick={onExport} disabled={exporting || bases.length === 0}>
           {exporting ? 'Rendering…' : '⤓ Export'}
         </button>
+      </div>
+      <div className="sc-actions">
+        <button className="sc-btn sc-btn-ghost" onClick={onShare} title="Share this layout as a code or link — or load one">⤴ Share</button>
+        <button
+          className="sc-btn sc-btn-ghost"
+          onClick={onCopyMode}
+          disabled={bases.length === 0}
+          title={ultimate ? 'Copy this layout to the Battle map' : 'Copy this layout to the Ultimate map'}
+        >
+          ⧉ {ultimate ? 'To Battle' : 'To Ultimate'}
+        </button>
+      </div>
+      <div className="sc-actions">
+        <button className="sc-btn sc-btn-ghost" onClick={onUndo} disabled={!canUndo} title="Undo (Ctrl+Z)">↶ Undo</button>
+        <button className="sc-btn sc-btn-ghost" onClick={onRedo} disabled={!canRedo} title="Redo (Ctrl+Y)">↷ Redo</button>
       </div>
 
       <button
@@ -1168,7 +1367,7 @@ function RosterPanel({
                           />
                         ))}
                       </div>
-                      <button className="sc-del" title="Remove base" onClick={e => { e.stopPropagation(); remove(b.id) }}>✕</button>
+                      <button className="sc-del" title="Remove base" onClick={e => { e.stopPropagation(); onRemove(b.id) }}>✕</button>
                     </div>
                   ))
                 )}
@@ -1231,20 +1430,11 @@ function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, stri
     return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#f59e0b" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${armoryNumber(i)}</text>`
   }).join('')
 
-  // Solo-group name labels (ultimate + toggle)
+  // Solo-group name labels (ultimate + toggle) — same side-stacked layout as on screen
   const soloSvg = (ultimate && soloLabels)
-    ? GROUPS
-        .map(g => bases.filter(b => b.group === g.id))
-        .filter(m => m.length === 1)
-        .map(m => {
-          const b = m[0]
-          const c = toSvg(b.x + BASE_SIZE / 2, b.y + BASE_SIZE / 2)
-          const name = groupNames[b.group] || groupById(b.group).name
-          const color = groupById(b.group).color
-          const py = c.y - BASE_SIZE / 2 - 11
-          const w = name.length * 3 + 6
-          return `<line x1="${c.x}" y1="${c.y - BASE_SIZE / 2}" x2="${c.x}" y2="${py + 3.5}" stroke="${color}" stroke-opacity="0.8" stroke-width="0.3"/><circle cx="${c.x}" cy="${c.y}" r="0.7" fill="${color}"/><rect x="${c.x - w / 2}" y="${py}" width="${w}" height="7" rx="2" fill="rgba(6,6,12,0.9)" stroke="${color}" stroke-width="0.4"/><text x="${c.x}" y="${py + 3.7}" fill="#fff" font-size="4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">${esc(name)}</text>`
-        }).join('')
+    ? layoutSoloLabels(bases, groupNames).map(s =>
+        `<line x1="${s.cx}" y1="${s.cy}" x2="${s.lx}" y2="${s.py + 3.5}" stroke="${s.color}" stroke-opacity="0.8" stroke-width="0.3"/><circle cx="${s.cx}" cy="${s.cy}" r="0.7" fill="${s.color}"/><rect x="${s.px}" y="${s.py}" width="${s.w}" height="7" rx="2" fill="rgba(6,6,12,0.9)" stroke="${s.color}" stroke-width="0.4"/><text x="${s.px + s.w / 2}" y="${s.py + 3.7}" fill="#fff" font-size="4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">${esc(s.name)}</text>`
+      ).join('')
     : ''
 
   const armoryFootprints = activeArmories.map(a =>
@@ -1285,6 +1475,7 @@ function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, stri
     <defs>
       <pattern id="etile" x="0" y="0" width="2" height="2" patternUnits="userSpaceOnUse"><path d="M 2 0 L 0 0 0 2" fill="none" stroke="#16163c" stroke-width="0.2"/></pattern>
       <pattern id="echunk" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M 16 0 L 0 0 0 16" fill="none" stroke="#21215a" stroke-width="0.5"/></pattern>
+      <filter id="esh" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0.35" dy="0.6" stdDeviation="0.55" flood-color="#000000" flood-opacity="0.6"/></filter>
     </defs>
     <g transform="rotate(45, 128, 128)">
       <rect width="256" height="256" fill="#09090f"/>
@@ -1303,9 +1494,9 @@ function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, stri
       ${baseFootprints}
     </g>
     ${linkSvg}
-    <image href="${imgs.cityHall}" x="${chPos.x - CITY_HALL.size / 2}" y="${chPos.y - CITY_HALL.size / 2}" width="${CITY_HALL.size}" height="${CITY_HALL.size}" preserveAspectRatio="xMidYMid meet"/>
-    ${armoryImgs}
-    ${baseImgs}
+    <g filter="url(#esh)"><image href="${imgs.cityHall}" x="${chPos.x - CITY_HALL.size / 2}" y="${chPos.y - CITY_HALL.size / 2}" width="${CITY_HALL.size}" height="${CITY_HALL.size}" preserveAspectRatio="xMidYMid meet"/></g>
+    <g filter="url(#esh)">${armoryImgs}</g>
+    <g filter="url(#esh)">${baseImgs}</g>
     ${plazaBadges}
     ${armoryBadges}
     ${soloSvg}
@@ -1547,6 +1738,192 @@ function makeImportedBases(names: string[]): Base[] {
 }
 
 // ══════════════════════════════════════════════════════════════
+//  SHARE CODES — layout ⇆ compact base64url string
+// ══════════════════════════════════════════════════════════════
+// Format: "G1.<base64url deflate-raw JSON>", or "G0.<base64url JSON>" when
+// CompressionStream isn't available. Base links are stored by base index so
+// codes stay short; base ids are regenerated on load.
+type SharePayload = {
+  v: 1
+  m: 'b' | 'u'
+  b: [string, number, number, number][] // name, group, x, y
+  l?: [0 | 1, number, 'c' | number][]   // [kind (0=base, 1=group), baseIndex|groupId, building]
+  g?: Record<string, string>            // renamed groups only
+  n?: string                            // league name
+  s?: 1                                 // solo labels on
+}
+type DecodedShare = {
+  mode: MapMode
+  bases: Base[]
+  links: Link[]
+  groupNames: Record<number, string>
+  league?: string
+  solo?: boolean
+}
+
+function bytesToB64url(bytes: Uint8Array) {
+  let bin = ''
+  for (let i = 0; i < bytes.length; i += 0x8000) {
+    bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000))
+  }
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+}
+
+function b64urlToBytes(s: string) {
+  const bin = atob(s.replace(/-/g, '+').replace(/_/g, '/'))
+  const out = new Uint8Array(bin.length)
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i)
+  return out
+}
+
+async function pipeBytes(bytes: Uint8Array, ts: GenericTransformStream): Promise<Uint8Array> {
+  const res = new Response(new Blob([bytes as BlobPart]).stream().pipeThrough(ts))
+  return new Uint8Array(await res.arrayBuffer())
+}
+
+async function encodeShare(
+  mode: MapMode, bases: Base[], links: Link[],
+  groupNames: Record<number, string>, league: string, soloLabels: boolean,
+): Promise<string> {
+  const idx = new Map(bases.map((b, i) => [b.id, i]))
+  const payload: SharePayload = {
+    v: 1,
+    m: mode === 'ultimate' ? 'u' : 'b',
+    b: bases.map(b => [b.name, b.group, b.x, b.y]),
+  }
+  const l: NonNullable<SharePayload['l']> = []
+  for (const ln of links) {
+    const bld: 'c' | number = ln.building === 'city' ? 'c' : ln.building
+    if (ln.kind === 'base') {
+      const i = idx.get(ln.baseId)
+      if (i != null) l.push([0, i, bld])
+    } else {
+      l.push([1, ln.group, bld])
+    }
+  }
+  if (l.length) payload.l = l
+  const g: Record<string, string> = {}
+  for (const grp of GROUPS) {
+    const name = groupNames[grp.id]
+    if (name && name !== grp.name) g[grp.id] = name
+  }
+  if (Object.keys(g).length) payload.g = g
+  if (league.trim()) payload.n = league.trim()
+  if (soloLabels) payload.s = 1
+
+  const raw = new TextEncoder().encode(JSON.stringify(payload))
+  if (typeof CompressionStream !== 'undefined') {
+    try {
+      return 'G1.' + bytesToB64url(await pipeBytes(raw, new CompressionStream('deflate-raw')))
+    } catch { /* fall back to uncompressed */ }
+  }
+  return 'G0.' + bytesToB64url(raw)
+}
+
+async function decodeShare(codeRaw: string): Promise<DecodedShare> {
+  // Accept a bare code or a full share URL
+  let code = codeRaw.trim()
+  if (/^https?:\/\//i.test(code)) {
+    try { code = new URL(code).searchParams.get('layout') ?? '' } catch { code = '' }
+  }
+  const m = /^G([01])\.([A-Za-z0-9_-]+)$/.exec(code)
+  if (!m) throw new Error('That doesn’t look like a layout code — paste the full code (it starts with "G").')
+  let raw: Uint8Array
+  try {
+    raw = b64urlToBytes(m[2])
+    if (m[1] === '1') {
+      if (typeof DecompressionStream === 'undefined') throw new Error('unsupported')
+      raw = await pipeBytes(raw, new DecompressionStream('deflate-raw'))
+    }
+  } catch {
+    throw new Error('Could not read that layout code — it may be incomplete or corrupted.')
+  }
+  let p: SharePayload
+  try {
+    p = JSON.parse(new TextDecoder().decode(raw))
+  } catch {
+    throw new Error('Could not read that layout code — it may be incomplete or corrupted.')
+  }
+  if (!p || p.v !== 1 || (p.m !== 'b' && p.m !== 'u') || !Array.isArray(p.b)) {
+    throw new Error('That layout code isn’t compatible with this version of the tool.')
+  }
+  if (p.b.length > 100) throw new Error('That layout has more than 100 bases.')
+
+  // Sanitize bases; anything with a bad or colliding position is re-placed center-out
+  const byIndex: (Base | null)[] = p.b.map(() => null)
+  const placed: Base[] = []
+  const newId = (i: number) => `b${Date.now().toString(36)}${i.toString(36)}${Math.random().toString(36).slice(2, 4)}`
+  const rows = p.b.map((row, i) => {
+    if (!Array.isArray(row)) return null
+    return {
+      i,
+      name: (String(row[0] ?? '').trim() || `Player ${i + 1}`).slice(0, 24),
+      group: GROUPS.some(g => g.id === row[1]) ? (row[1] as number) : 1,
+      x: Math.round(Number(row[2]) / TILE) * TILE,
+      y: Math.round(Number(row[3]) / TILE) * TILE,
+    }
+  })
+  for (const r of rows) {
+    if (!r) continue
+    if (Number.isFinite(r.x) && Number.isFinite(r.y) && isInBuildable(r.x, r.y) && !placed.some(b => basesOverlap(r.x, r.y, b.x, b.y))) {
+      const b: Base = { id: newId(r.i), name: r.name, group: r.group, x: r.x, y: r.y }
+      byIndex[r.i] = b
+      placed.push(b)
+    }
+  }
+  for (const r of rows) {
+    if (!r || byIndex[r.i]) continue
+    const s = findFreeSpot(placed)
+    const b: Base = { id: newId(r.i), name: r.name, group: r.group, x: s.x, y: s.y }
+    byIndex[r.i] = b
+    placed.push(b)
+  }
+  if (placed.length === 0) throw new Error('That layout code contains no bases.')
+
+  const ultimate = p.m === 'u'
+  const links: Link[] = []
+  if (Array.isArray(p.l)) {
+    for (const row of p.l.slice(0, 400)) {
+      if (!Array.isArray(row)) continue
+      const [kind, ref, bld] = row
+      let building: BuildingId | null = null
+      if (bld === 'c') building = 'city'
+      else if (typeof bld === 'number' && ARMORIES[bld] && (ultimate || !ARMORIES[bld].ultimateOnly)) building = bld
+      if (building == null) continue
+      if (kind === 0 && typeof ref === 'number' && byIndex[ref]) {
+        links.push({ kind: 'base', baseId: byIndex[ref]!.id, building })
+      } else if (kind === 1 && GROUPS.some(g => g.id === ref)) {
+        links.push({ kind: 'group', group: ref as number, building })
+      }
+    }
+  }
+
+  const groupNames: Record<number, string> = {}
+  if (p.g && typeof p.g === 'object') {
+    for (const grp of GROUPS) {
+      const v = (p.g as Record<string, unknown>)[String(grp.id)]
+      if (typeof v === 'string' && v.trim()) groupNames[grp.id] = v.trim().slice(0, 24)
+    }
+  }
+
+  return {
+    mode: ultimate ? 'ultimate' : 'battle',
+    bases: byIndex.filter((b): b is Base => b != null),
+    links,
+    groupNames,
+    league: typeof p.n === 'string' && p.n.trim() ? p.n.trim().slice(0, 40) : undefined,
+    solo: p.s === 1 ? true : undefined,
+  }
+}
+
+// Undo/redo snapshot — everything a map edit can touch
+type HistSnap = {
+  basesByMode: Record<MapMode, Base[]>
+  linksByMode: Record<MapMode, Link[]>
+  groupNames: Record<number, string>
+}
+
+// ══════════════════════════════════════════════════════════════
 //  PAGE
 // ══════════════════════════════════════════════════════════════
 const secTitle: CSSProperties = {
@@ -1583,9 +1960,20 @@ export default function ShipCombatGuidesPage() {
   const [soloLabels, setSoloLabels] = useState(false)
   const [exporting, setExporting] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
+  const [helpOpen, setHelpOpen] = useState(false)
   const [importOpen, setImportOpen] = useState(false)
   const [importError, setImportError] = useState<string | null>(null)
   const [importing, setImporting] = useState(false)
+  const [shareOpen, setShareOpen] = useState(false)
+  const [shareCode, setShareCode] = useState<string | null>(null)
+  const [copied, setCopied] = useState<'code' | 'link' | null>(null)
+  const [loadDraft, setLoadDraft] = useState('')
+  const [loadError, setLoadError] = useState<string | null>(null)
+  const [loadBusy, setLoadBusy] = useState(false)
+  const [pendingShare, setPendingShare] = useState<DecodedShare | 'error' | null>(null)
+  const [confirmCopy, setConfirmCopy] = useState(false)
+  const [histSizes, setHistSizes] = useState({ undo: 0, redo: 0 })
+  const copiedTimer = useRef<number | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
   const firstPersist = useRef(true)
   const firstLeaguePersist = useRef(true)
@@ -1651,19 +2039,67 @@ export default function ShipCombatGuidesPage() {
   const selectedIds = selectedByMode[mode]
   const links = linksByMode[mode]
 
+  // ─── Undo / redo ───
+  // Snapshots are pushed lazily before a change; rapid-fire updates (drag
+  // frames) within 600ms coalesce into a single history entry.
+  const histRef = useRef<{ past: HistSnap[]; future: HistSnap[]; last: number }>({ past: [], future: [], last: 0 })
+  const presentRef = useRef<HistSnap>({ basesByMode, linksByMode, groupNames })
+  useEffect(() => { presentRef.current = { basesByMode, linksByMode, groupNames } })
+
+  const recordChange = useCallback(() => {
+    const h = histRef.current
+    const now = Date.now()
+    if (now - h.last > 600) {
+      h.past.push(structuredClone(presentRef.current))
+      if (h.past.length > 50) h.past.shift()
+      h.future = []
+      setHistSizes({ undo: h.past.length, redo: 0 })
+    }
+    h.last = now
+  }, [])
+
+  const undo = useCallback(() => {
+    const h = histRef.current
+    const prev = h.past.pop()
+    if (!prev) return
+    h.future.push(structuredClone(presentRef.current))
+    h.last = 0
+    setBasesByMode(prev.basesByMode)
+    setLinksByMode(prev.linksByMode)
+    setGroupNames(prev.groupNames)
+    setSelectedByMode({ battle: [], ultimate: [] })
+    setHistSizes({ undo: h.past.length, redo: h.future.length })
+  }, [])
+
+  const redo = useCallback(() => {
+    const h = histRef.current
+    const next = h.future.pop()
+    if (!next) return
+    h.past.push(structuredClone(presentRef.current))
+    h.last = 0
+    setBasesByMode(next.basesByMode)
+    setLinksByMode(next.linksByMode)
+    setGroupNames(next.groupNames)
+    setSelectedByMode({ battle: [], ultimate: [] })
+    setHistSizes({ undo: h.past.length, redo: h.future.length })
+  }, [])
+
   const setBases = useCallback((updater: (prev: Base[]) => Base[]) => {
+    recordChange()
     setBasesByMode(prev => ({ ...prev, [mode]: updater(prev[mode]) }))
-  }, [mode])
+  }, [mode, recordChange])
 
   const setSelectedIds = useCallback((next: string[]) => {
     setSelectedByMode(prev => ({ ...prev, [mode]: next }))
   }, [mode])
 
   const setLinks = useCallback((updater: (prev: Link[]) => Link[]) => {
+    recordChange()
     setLinksByMode(prev => ({ ...prev, [mode]: updater(prev[mode]) }))
-  }, [mode])
+  }, [mode, recordChange])
 
   const addBase = useCallback(() => {
+    recordChange()
     setBasesByMode(prev => {
       const current = prev[mode]
       const spot = findFreeSpot(current)
@@ -1672,18 +2108,123 @@ export default function ShipCombatGuidesPage() {
       setSelectedByMode(s => ({ ...s, [mode]: [id] }))
       return { ...prev, [mode]: [...current, nb] }
     })
-  }, [mode])
+  }, [mode, recordChange])
+
+  const removeBase = useCallback((id: string) => {
+    recordChange()
+    setBasesByMode(prev => ({ ...prev, [mode]: prev[mode].filter(b => b.id !== id) }))
+    setSelectedByMode(prev => ({ ...prev, [mode]: prev[mode].filter(x => x !== id) }))
+    setLinksByMode(prev => ({ ...prev, [mode]: prev[mode].filter(l => !(l.kind === 'base' && l.baseId === id)) }))
+  }, [mode, recordChange])
 
   const resetMap = useCallback(() => {
+    recordChange()
     setBasesByMode(prev => ({ ...prev, [mode]: [] }))
     setSelectedByMode(prev => ({ ...prev, [mode]: [] }))
     setLinksByMode(prev => ({ ...prev, [mode]: [] }))
     setConfirmReset(false)
-  }, [mode])
+  }, [mode, recordChange])
 
   const setGroupName = useCallback((id: number, name: string) => {
+    recordChange()
     setGroupNames(prev => ({ ...prev, [id]: name }))
+  }, [recordChange])
+
+  // ─── Copy layout to the other map ───
+  const otherMode: MapMode = mode === 'battle' ? 'ultimate' : 'battle'
+  const doCopyToOther = useCallback(() => {
+    recordChange()
+    const srcBases = structuredClone(basesByMode[mode])
+    // Ultimate-only armory links can't exist on the battle map
+    const srcLinks = structuredClone(linksByMode[mode].filter(l =>
+      otherMode === 'ultimate' || l.building === 'city' || !ARMORIES[l.building].ultimateOnly
+    ))
+    setBasesByMode(prev => ({ ...prev, [otherMode]: srcBases }))
+    setLinksByMode(prev => ({ ...prev, [otherMode]: srcLinks }))
+    setSelectedByMode(prev => ({ ...prev, [otherMode]: [] }))
+    setMode(otherMode)
+    setConfirmCopy(false)
+  }, [mode, otherMode, basesByMode, linksByMode, recordChange])
+
+  const requestCopyToOther = useCallback(() => {
+    if (basesByMode[otherMode].length > 0) setConfirmCopy(true)
+    else doCopyToOther()
+  }, [basesByMode, otherMode, doCopyToOther])
+
+  // ─── Share codes ───
+  const applyShared = useCallback((d: DecodedShare) => {
+    recordChange()
+    setMode(d.mode)
+    setBasesByMode(prev => ({ ...prev, [d.mode]: d.bases }))
+    setLinksByMode(prev => ({ ...prev, [d.mode]: d.links }))
+    setSelectedByMode(prev => ({ ...prev, [d.mode]: [] }))
+    if (Object.keys(d.groupNames).length > 0) setGroupNames(prev => ({ ...prev, ...d.groupNames }))
+    if (d.league) setLeague(d.league)
+    if (d.solo) setSoloLabels(true)
+  }, [recordChange])
+
+  const openShare = useCallback(() => {
+    setShareOpen(true)
+    setShareCode(null)
+    setCopied(null)
+    setLoadError(null)
+    if (basesByMode[mode].length > 0) {
+      encodeShare(mode, basesByMode[mode], linksByMode[mode], groupNames, league, soloLabels)
+        .then(setShareCode)
+        .catch(() => {})
+    }
+  }, [mode, basesByMode, linksByMode, groupNames, league, soloLabels])
+
+  const copyToClipboard = useCallback((text: string, which: 'code' | 'link') => {
+    navigator.clipboard?.writeText(text).then(() => {
+      setCopied(which)
+      if (copiedTimer.current != null) clearTimeout(copiedTimer.current)
+      copiedTimer.current = window.setTimeout(() => setCopied(null), 1600)
+    }).catch(() => {})
   }, [])
+
+  const handleLoadCode = useCallback(async () => {
+    setLoadBusy(true)
+    setLoadError(null)
+    try {
+      const d = await decodeShare(loadDraft)
+      applyShared(d)
+      setShareOpen(false)
+      setLoadDraft('')
+    } catch (err) {
+      setLoadError(err instanceof Error ? err.message : 'Could not load that code.')
+    } finally {
+      setLoadBusy(false)
+    }
+  }, [loadDraft, applyShared])
+
+  const dismissPending = useCallback(() => {
+    setPendingShare(null)
+    try { window.history.replaceState(null, '', window.location.pathname) } catch {}
+  }, [])
+
+  // A ?layout= param means someone followed a share link — confirm before loading
+  useEffect(() => {
+    try {
+      const code = new URLSearchParams(window.location.search).get('layout')
+      if (!code) return
+      decodeShare(code).then(d => setPendingShare(d)).catch(() => setPendingShare('error'))
+    } catch {}
+  }, [])
+
+  // Ctrl+Z / Ctrl+Y (or Ctrl+Shift+Z) — skipped while typing in a field
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const t = e.target as HTMLElement | null
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return
+      if (!(e.ctrlKey || e.metaKey)) return
+      const k = e.key.toLowerCase()
+      if (k === 'z' && !e.shiftKey) { e.preventDefault(); undo() }
+      else if (k === 'y' || (k === 'z' && e.shiftKey)) { e.preventDefault(); redo() }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [undo, redo])
 
   const openImport = useCallback(() => {
     setImportError(null)
@@ -1699,6 +2240,7 @@ export default function ShipCombatGuidesPage() {
     try {
       const names = await parseNamesFile(file)
       const imported = makeImportedBases(names)
+      recordChange()
       setBasesByMode(prev => ({ ...prev, [mode]: imported }))
       setSelectedByMode(prev => ({ ...prev, [mode]: [] }))
       setLinksByMode(prev => ({ ...prev, [mode]: [] }))
@@ -1708,7 +2250,23 @@ export default function ShipCombatGuidesPage() {
     } finally {
       setImporting(false)
     }
-  }, [mode])
+  }, [mode, recordChange])
+
+  // Escape: close whichever modal is open, otherwise clear the selection
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      if (helpOpen) setHelpOpen(false)
+      else if (shareOpen) setShareOpen(false)
+      else if (pendingShare) dismissPending()
+      else if (importOpen) setImportOpen(false)
+      else if (confirmReset) setConfirmReset(false)
+      else if (confirmCopy) setConfirmCopy(false)
+      else setSelectedByMode(prev => ({ ...prev, [mode]: [] }))
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [helpOpen, shareOpen, pendingShare, importOpen, confirmReset, confirmCopy, mode, dismissPending])
 
   const handleExport = useCallback(async () => {
     setExporting(true)
@@ -1739,23 +2297,28 @@ export default function ShipCombatGuidesPage() {
       <section style={{ padding: '2rem 0' }}>
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
-          {/* Mode switcher */}
-          <div className="sc-modes" role="tablist" aria-label="Map mode">
-            <button
-              role="tab"
-              aria-selected={mode === 'battle'}
-              className={`sc-mode${mode === 'battle' ? ' is-active' : ''}`}
-              onClick={() => setMode('battle')}
-            >
-              <span className="sc-dot" />Battle For Gotham
-            </button>
-            <button
-              role="tab"
-              aria-selected={mode === 'ultimate'}
-              className={`sc-mode${mode === 'ultimate' ? ' is-active' : ''}`}
-              onClick={() => setMode('ultimate')}
-            >
-              <span className="sc-dot" />Ultimate Battle For Gotham
+          {/* Mode switcher + instructions */}
+          <div className="sc-topbar">
+            <div className="sc-modes" role="tablist" aria-label="Map mode">
+              <button
+                role="tab"
+                aria-selected={mode === 'battle'}
+                className={`sc-mode${mode === 'battle' ? ' is-active' : ''}`}
+                onClick={() => setMode('battle')}
+              >
+                <span className="sc-dot" />Battle For Gotham
+              </button>
+              <button
+                role="tab"
+                aria-selected={mode === 'ultimate'}
+                className={`sc-mode${mode === 'ultimate' ? ' is-active' : ''}`}
+                onClick={() => setMode('ultimate')}
+              >
+                <span className="sc-dot" />Ultimate Battle For Gotham
+              </button>
+            </div>
+            <button className="sc-instr-btn" onClick={() => setHelpOpen(true)}>
+              <span className="sc-instr-icon">?</span> Instructions
             </button>
           </div>
 
@@ -1771,6 +2334,7 @@ export default function ShipCombatGuidesPage() {
               groupNames={groupNames}
               links={links}
               soloLabels={soloLabels}
+              onRemoveBase={removeBase}
             />
             <RosterPanel
               ultimate={mode === 'ultimate'}
@@ -1790,6 +2354,13 @@ export default function ShipCombatGuidesPage() {
               onImport={openImport}
               onExport={handleExport}
               onReset={() => setConfirmReset(true)}
+              onRemove={removeBase}
+              onShare={openShare}
+              onCopyMode={requestCopyToOther}
+              onUndo={undo}
+              onRedo={redo}
+              canUndo={histSizes.undo > 0}
+              canRedo={histSizes.redo > 0}
               exporting={exporting}
             />
           </div>
@@ -1875,6 +2446,197 @@ export default function ShipCombatGuidesPage() {
           </div>
         </div>
       </section>
+
+      {helpOpen && (
+        <div className="sc-modal-backdrop" onClick={() => setHelpOpen(false)}>
+          <div className="sc-modal sc-modal-info sc-modal-help" onClick={e => e.stopPropagation()} role="dialog" aria-modal="true">
+            <div className="sc-help-head">
+              <div className="sc-modal-title">How To Use The Planner</div>
+              <button className="sc-help-close" title="Close" onClick={() => setHelpOpen(false)}>✕</button>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">The Basics</div>
+              <ul className="sc-help-list">
+                <li>There are two maps — <strong>Battle For Gotham</strong> and <strong>Ultimate Battle For Gotham</strong> (which adds Armories 5 &amp; 6). Switch between them with the tabs up top; each map keeps its own layout.</li>
+                <li>Everything you place is saved automatically in this browser, so you can leave and pick up where you left off.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Map Controls</div>
+              <ul className="sc-help-list">
+                <li><strong>Zoom</strong> with the scroll wheel, a two-finger pinch, or the + / − buttons. The ⤢ button resets the view.</li>
+                <li><strong>Pan</strong> by dragging any empty part of the map.</li>
+                <li><strong>Select</strong> a base by tapping it. Tap empty space (or press Esc) to deselect.</li>
+                <li><strong>Right-click</strong> a base (or press-and-hold on touch) for a quick menu — rename, change group, or delete without leaving the map.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Adding Your League</div>
+              <ul className="sc-help-list">
+                <li><strong>+ Add Base</strong> adds bases one at a time (up to 100), auto-placed near City Hall.</li>
+                <li><strong>Import</strong> uploads a .csv or .xlsx with player names in Column A (rows 1–100) and fills the map automatically — it replaces whatever is currently placed.</li>
+                <li><strong>Drag</strong> any base to move it. Bases snap to the grid and can never sit on restricted zones, buildings, or other bases.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Groups &amp; Names</div>
+              <ul className="sc-help-list">
+                <li>Click a player&apos;s name in the roster to rename them; click the color swatches on their row to move them between the 8 groups.</li>
+                <li>Click a group&apos;s name to rename it. Group names are shared across both maps.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Multi-Select &amp; Moving Together</div>
+              <ul className="sc-help-list">
+                <li>Use the roster checkboxes to select several bases at once — a group&apos;s header checkbox selects the whole group.</li>
+                <li>Drag any selected base and the <strong>entire selection moves as one</strong>, keeping its spacing. The move is blocked if anyone would land somewhere invalid.</li>
+                <li>On-map labels follow your selection: one base shows its name and range rings, a full group shows the group name, 2–5 bases show name callouts, and bigger selections just highlight.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Building Links</div>
+              <ul className="sc-help-list">
+                <li>Select a single base or a whole group, then use <strong>Building Links</strong> to tie it to City Hall or any Armory — a white line is drawn on the map for each linked base.</li>
+                <li>A target can be tied to several buildings at once. Click a highlighted building to unlink it, or remove links from the list below the buttons.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Solo Group Labels (Ultimate Only)</div>
+              <ul className="sc-help-list">
+                <li>Turn on <strong>Label solo groups by group name</strong> to permanently show the group name beside any group with exactly one base. Labels stack toward the left or right edge — whichever side the base is on — so they stay off the board.</li>
+                <li>The purpose of this functionality is so that you can create a graphic to show the top 8 leagues where their teams should place their bases (the general area) and what buildings they should go after.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Sharing, Copying &amp; Undo</div>
+              <ul className="sc-help-list">
+                <li><strong>Share</strong> generates a layout code and link for the current map. Anyone can paste the code (or open the link) to load your exact layout — bases, groups, links, and all.</li>
+                <li><strong>To Ultimate / To Battle</strong> copies the current map&apos;s layout onto the other map, so you don&apos;t have to rebuild it twice.</li>
+                <li><strong>Undo / Redo</strong> steps back through your last 50 changes — moves, deletes, imports, even a reset. Ctrl+Z and Ctrl+Y (or Ctrl+Shift+Z) work too.</li>
+              </ul>
+            </div>
+
+            <div className="sc-help-sec">
+              <div className="sc-help-h">Export &amp; Reset</div>
+              <ul className="sc-help-list">
+                <li><strong>Export</strong> downloads a shareable PNG of the current map with a legend and your full roster. Set a <strong>League Name</strong> to brand it.</li>
+                <li>Building links and solo-group labels are drawn on the exported image exactly as they appear on screen — perfect for posting a deployment graphic to your league.</li>
+                <li><strong>Reset Map</strong> clears every base on the current map only (it asks for confirmation first).</li>
+              </ul>
+            </div>
+
+            <div className="sc-modal-actions">
+              <button className="sc-btn" onClick={() => setHelpOpen(false)}>Got It</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {shareOpen && (
+        <div className="sc-modal-backdrop" onClick={() => setShareOpen(false)}>
+          <div className="sc-modal sc-modal-info" onClick={e => e.stopPropagation()} role="dialog" aria-modal="true">
+            <div className="sc-modal-title">Share Layout</div>
+            {bases.length > 0 ? (
+              <>
+                <p className="sc-modal-text" style={{ marginBottom: '0.7rem' }}>
+                  Send this code or link to your league — loading it replaces the recipient&apos;s{' '}
+                  <strong style={{ color: '#fff' }}>{mode === 'ultimate' ? 'Ultimate Battle For Gotham' : 'Battle For Gotham'}</strong> map.
+                </p>
+                <textarea
+                  className="sc-share-code"
+                  readOnly
+                  value={shareCode ?? 'Generating code…'}
+                  onFocus={e => e.currentTarget.select()}
+                />
+                <div className="sc-modal-actions" style={{ marginBottom: '0.4rem' }}>
+                  <button className="sc-btn" disabled={!shareCode} onClick={() => shareCode && copyToClipboard(shareCode, 'code')}>
+                    {copied === 'code' ? '✓ Copied' : 'Copy Code'}
+                  </button>
+                  <button
+                    className="sc-btn"
+                    disabled={!shareCode}
+                    onClick={() => shareCode && copyToClipboard(`${window.location.origin}${window.location.pathname}?layout=${shareCode}`, 'link')}
+                  >
+                    {copied === 'link' ? '✓ Copied' : 'Copy Link'}
+                  </button>
+                </div>
+              </>
+            ) : (
+              <p className="sc-modal-text" style={{ marginBottom: '0.4rem' }}>
+                Place some bases on this map first to generate a share code.
+              </p>
+            )}
+            <div className="sc-share-divider">Load a shared layout</div>
+            {loadError && <p className="sc-modal-error">{loadError}</p>}
+            <textarea
+              className="sc-share-code"
+              placeholder="Paste a layout code (or share link) here…"
+              value={loadDraft}
+              onChange={e => { setLoadDraft(e.target.value); setLoadError(null) }}
+            />
+            <div className="sc-modal-actions">
+              <button className="sc-btn sc-btn-ghost" onClick={() => setShareOpen(false)}>Close</button>
+              <button className="sc-btn" disabled={!loadDraft.trim() || loadBusy} onClick={handleLoadCode}>
+                {loadBusy ? 'Loading…' : 'Load Code'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {pendingShare && (
+        <div className="sc-modal-backdrop" onClick={dismissPending}>
+          <div className="sc-modal sc-modal-info" onClick={e => e.stopPropagation()} role="dialog" aria-modal="true">
+            {pendingShare === 'error' ? (
+              <>
+                <div className="sc-modal-title">Invalid Layout Link</div>
+                <p className="sc-modal-text">This link&apos;s layout code couldn&apos;t be read — it may be incomplete or from a newer version of the tool.</p>
+                <div className="sc-modal-actions">
+                  <button className="sc-btn" onClick={dismissPending}>OK</button>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="sc-modal-title">Load Shared Layout?</div>
+                <p className="sc-modal-text">
+                  This link contains a <strong style={{ color: '#fff' }}>{pendingShare.bases.length}-base</strong> layout for{' '}
+                  <strong style={{ color: '#fff' }}>{pendingShare.mode === 'ultimate' ? 'Ultimate Battle For Gotham' : 'Battle For Gotham'}</strong>.
+                  Loading it replaces your current layout on that map (you can undo).
+                </p>
+                <div className="sc-modal-actions">
+                  <button className="sc-btn sc-btn-ghost" onClick={dismissPending}>Cancel</button>
+                  <button className="sc-btn" onClick={() => { applyShared(pendingShare); dismissPending() }}>Load Layout</button>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+
+      {confirmCopy && (
+        <div className="sc-modal-backdrop" onClick={() => setConfirmCopy(false)}>
+          <div className="sc-modal" onClick={e => e.stopPropagation()} role="dialog" aria-modal="true">
+            <div className="sc-modal-title">Overwrite {otherMode === 'ultimate' ? 'Ultimate' : 'Battle'} Map?</div>
+            <p className="sc-modal-text">
+              The <strong style={{ color: '#fff' }}>{otherMode === 'ultimate' ? 'Ultimate Battle For Gotham' : 'Battle For Gotham'}</strong> map
+              already has {basesByMode[otherMode].length} base{basesByMode[otherMode].length === 1 ? '' : 's'}. Copying replaces that
+              layout with this one (you can undo).
+            </p>
+            <div className="sc-modal-actions">
+              <button className="sc-btn sc-btn-ghost" onClick={() => setConfirmCopy(false)}>Cancel</button>
+              <button className="sc-btn" onClick={doCopyToOther}>Copy Layout</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {confirmReset && (
         <div className="sc-modal-backdrop" onClick={() => setConfirmReset(false)}>
