@@ -11,7 +11,7 @@ export async function GET() {
   if (guard) return guard
   let files: string[] = []
   try {
-    files = fs.readdirSync(ICON_DIR).filter((f) => /\.(png|jpg|jpeg|webp|gif)$/i.test(f))
+    files = fs.readdirSync(ICON_DIR).filter((f) => /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(f))
   } catch {
     files = []
   }

@@ -1963,6 +1963,7 @@ type ScData = {
   intro: string
   reward: { name: string; icon: string }
   itemIcons?: Record<string, string>
+  itemNotes?: Record<string, string>
   days: ScDay[]
   pointTables: Record<string, ScPointTable>
   rewardTracks: Record<string, ScRewardTrack>
@@ -2190,13 +2191,14 @@ function SupremeCommanderForm() {
 
         {/* Resource icons */}
         <div style={sec}>
-          <div style={secTitle}>Resource Icons</div>
+          <div style={secTitle}>Resource Icons &amp; Notes</div>
           <p style={{ fontSize: '0.8rem', color: '#888', margin: 0 }}>
-            Assign an image to each resource. On the site the image replaces the name in the points tables, with the full name shown as a hover tooltip. Leave as &ldquo;None&rdquo; to keep showing the text name. New art added to <code>public/dcdl/resource_icons/</code> shows up here automatically.
+            Assign an image to each resource. On the site the image replaces the name in the points tables, with the full name shown as a hover tooltip. Leave as &ldquo;None&rdquo; to keep showing the text name. The optional <em>note</em> is appended to that tooltip (e.g. &ldquo;(per VIP Point gained)&rdquo;). New art added to <code>public/dcdl/resource_icons/</code> shows up here automatically.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {uniqueItems.map((item) => {
               const current = data.itemIcons?.[item] ?? ''
+              const note = data.itemNotes?.[item] ?? ''
               return (
                 <div key={item} style={{ display: 'flex', gap: '0.6rem', alignItems: 'center' }}>
                   <span style={{ width: '2.4rem', height: '2.4rem', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#111', border: '1px solid #333', borderRadius: '0.375rem' }}>
@@ -2206,7 +2208,13 @@ function SupremeCommanderForm() {
                       : <span style={{ fontSize: '0.7rem', color: '#555' }}>—</span>}
                   </span>
                   <span style={{ flex: 1, fontSize: '0.85rem', color: '#ddd' }}>{item}</span>
-                  <select style={{ ...inp, width: '17rem' }} value={current}
+                  <input style={{ ...inp, width: '12rem' }} value={note} placeholder="Tooltip note (optional)"
+                    onChange={(e) => patch((d) => {
+                      if (!d.itemNotes) d.itemNotes = {}
+                      if (e.target.value) d.itemNotes[item] = e.target.value
+                      else delete d.itemNotes[item]
+                    })} />
+                  <select style={{ ...inp, width: '15rem' }} value={current}
                     onChange={(e) => patch((d) => {
                       if (!d.itemIcons) d.itemIcons = {}
                       if (e.target.value) d.itemIcons[item] = e.target.value
