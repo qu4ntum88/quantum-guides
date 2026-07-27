@@ -17,12 +17,13 @@ export const CONSENT_VERSION = 1
 export const CONSENT_CHANGE_EVENT = 'qgg:consent-change'
 export const OPEN_PREFERENCES_EVENT = 'qgg:open-cookie-preferences'
 
-export type OptionalCategory = 'analytics' | 'advertising'
+export type OptionalCategory = 'analytics' | 'advertising' | 'errorTracking'
 
 export type ConsentCategories = {
   essential: true
   analytics: boolean
   advertising: boolean
+  errorTracking: boolean
 }
 
 export type StoredConsent = {
@@ -35,12 +36,14 @@ export const DENY_OPTIONAL: ConsentCategories = {
   essential: true,
   analytics: false,
   advertising: false,
+  errorTracking: false,
 }
 
 export const ALLOW_ALL: ConsentCategories = {
   essential: true,
   analytics: true,
   advertising: true,
+  errorTracking: true,
 }
 
 export const CATEGORY_META: {
@@ -60,13 +63,19 @@ export const CATEGORY_META: {
     key: 'analytics',
     label: 'Analytics',
     blurb:
-      'Google Analytics. Anonymous usage stats so we can see which guides and pages people actually read.',
+      'Google Analytics 4 and Microsoft Clarity. Anonymous usage stats and session insights so we can see which guides and pages people actually read.',
   },
   {
     key: 'advertising',
     label: 'Advertising',
     blurb:
-      'Google AdSense. Lets Google use cookies to serve and measure ads. With this off, ads (once enabled) run in a non-personalized, cookieless mode.',
+      'Google AdSense. Lets Google use cookies to serve and measure ads. With this off, ads run in a non-personalized, cookieless mode.',
+  },
+  {
+    key: 'errorTracking',
+    label: 'Error tracking',
+    blurb:
+      'Sentry. Captures a stack trace when something on the page breaks so we can fix it. No personal information.',
   },
 ]
 
@@ -89,6 +98,7 @@ export function readConsent(): StoredConsent | null {
         essential: true,
         analytics: Boolean(parsed.categories.analytics),
         advertising: Boolean(parsed.categories.advertising),
+        errorTracking: Boolean(parsed.categories.errorTracking),
       },
     }
   } catch {
@@ -157,9 +167,12 @@ export function pushConsentToDataLayer(categories: ConsentCategories): void {
     ad_personalization: signal(categories.advertising),
   })
 
+  // Error tracking (Sentry) isn't a Google Consent Mode signal, so a GTM tag
+  // triggers on this custom event + flag instead.
   window.dataLayer.push({
     event: 'consent_update',
     consent_analytics: categories.analytics,
     consent_advertising: categories.advertising,
+    consent_error_tracking: categories.errorTracking,
   })
 }

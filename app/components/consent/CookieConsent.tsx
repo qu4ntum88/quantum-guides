@@ -17,8 +17,8 @@ import {
 
 type OptionalState = Record<OptionalCategory, boolean>
 
-function toOptional(all: { analytics: boolean; advertising: boolean }): OptionalState {
-  return { analytics: all.analytics, advertising: all.advertising }
+function toOptional(all: { analytics: boolean; advertising: boolean; errorTracking: boolean }): OptionalState {
+  return { analytics: all.analytics, advertising: all.advertising, errorTracking: all.errorTracking }
 }
 
 const gold = 'var(--gold)'
@@ -119,8 +119,9 @@ function ConsentBanner({
       >
         <p style={{ margin: 0, maxWidth: '640px', fontSize: '0.85rem', color: '#c9c9c9', lineHeight: 1.6 }}>
           We use essential cookies to keep the site working and to remember this choice. With your OK
-          we&rsquo;ll also enable anonymous <strong style={{ color: '#fff' }}>analytics</strong> and{' '}
-          <strong style={{ color: '#fff' }}>advertising</strong> cookies. Nothing optional loads until you accept.{' '}
+          we&rsquo;ll also enable <strong style={{ color: '#fff' }}>analytics</strong>,{' '}
+          <strong style={{ color: '#fff' }}>advertising</strong>, and{' '}
+          <strong style={{ color: '#fff' }}>error-tracking</strong> cookies. Nothing optional loads until you accept.{' '}
           <Link href="/cookies" style={{ color: gold, textDecoration: 'underline' }}>Cookie Policy</Link>
         </p>
         <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
