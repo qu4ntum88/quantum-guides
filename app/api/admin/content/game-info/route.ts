@@ -24,10 +24,12 @@ export async function PUT(req: NextRequest) {
   const denied = await guard()
   if (denied) return denied
   const b = await req.json()
+  // Patch notes now live in their own dated `patch_notes` table, so this route
+  // only manages the server + game codes and leaves game_info.patch_notes as an
+  // untouched fallback (omitting it from the upsert preserves the column).
   const row = {
     id: 1,
     latest_server: String(b.latestServer ?? ''),
-    patch_notes: String(b.patchNotes ?? ''),
     game_codes: Array.isArray(b.gameCodes) ? b.gameCodes.map(String).filter(Boolean) : [],
     updated_at: new Date().toISOString(),
   }

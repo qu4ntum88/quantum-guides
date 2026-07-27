@@ -134,6 +134,40 @@ a "Not authorized" notice; signed-out visitors are redirected to sign in.
 - The old local-only admin panel (`/admin/dcdl`) is untouched; it still manages
   champions, legacy pieces, best teams, etc. from the local dev server.
 
+---
+
+## Patch notes archive (added later)
+
+Patch notes are now a list of **dated entries** — publishing a new one archives
+the previous (it stays in the list; the newest-dated entry is what shows on the
+guides hub). A public archive page lives at `/games/dc-dark-legion/patch-notes`.
+
+If you set up the CMS before this feature existed, run this once in the SQL
+Editor to add the table and carry your current patch notes over as the first
+entry (safe to re-run — it won't duplicate):
+
+```sql
+create table if not exists public.patch_notes (
+  id           uuid primary key default gen_random_uuid(),
+  title        text default 'Patch Notes',
+  body         text not null,
+  published_at date,
+  created_at   timestamptz default now()
+);
+alter table public.patch_notes enable row level security;
+create policy "public read patch_notes" on public.patch_notes for select using (true);
+
+-- Seed the archive with the current patch notes as the first (current) entry.
+insert into public.patch_notes (title, body, published_at)
+select 'Patch Notes', patch_notes, current_date
+from public.game_info
+where id = 1 and coalesce(patch_notes, '') <> ''
+  and not exists (select 1 from public.patch_notes);
+```
+
+Until this table exists, the patch-notes card falls back to the single
+`game_info.patch_notes` value, so nothing breaks in the meantime.
+
 ### Cleanup (optional, later)
 
 Once you're confident everything reads from the database, the seed files

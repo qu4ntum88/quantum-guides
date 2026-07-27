@@ -262,17 +262,26 @@ function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
 
 // ── Patch notes / game info ──────────────────────────────────────────────────
 function PatchTab({ setStatus }: { setStatus: (s: string) => void }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', maxWidth: '760px' }}>
+      <GameInfoForm setStatus={setStatus} />
+      <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }} />
+      <PatchNotesManager setStatus={setStatus} />
+    </div>
+  )
+}
+
+// Latest server + active game codes (patch notes live in their own table now).
+function GameInfoForm({ setStatus }: { setStatus: (s: string) => void }) {
   const [latestServer, setLatestServer] = useState('')
-  const [patchNotes, setPatchNotes] = useState('')
   const [gameCodes, setGameCodes] = useState('')
 
   useEffect(() => {
-    (async () => {
+    void (async () => {
       const res = await fetch('/api/admin/content/game-info')
       if (!res.ok) { setStatus(`Load failed: ${res.status}`); return }
       const j = await res.json()
       setLatestServer(j.latest_server ?? '')
-      setPatchNotes(j.patch_notes ?? '')
       setGameCodes((j.game_codes ?? []).join(', '))
     })()
   }, [setStatus])
@@ -283,7 +292,6 @@ function PatchTab({ setStatus }: { setStatus: (s: string) => void }) {
       method: 'PUT', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         latestServer,
-        patchNotes,
         gameCodes: gameCodes.split(',').map((s) => s.trim()).filter(Boolean),
       }),
     })
@@ -293,25 +301,108 @@ function PatchTab({ setStatus }: { setStatus: (s: string) => void }) {
   }
 
   return (
-    <form onSubmit={(e) => { e.preventDefault(); save() }} style={{ maxWidth: '760px' }}>
+    <form onSubmit={(e) => { e.preventDefault(); save() }}>
+      <h3 style={{ marginTop: 0 }}>Server &amp; codes</h3>
       <label style={label}>Latest server</label>
       <input style={{ ...input, maxWidth: '160px' }} value={latestServer} onChange={(e) => setLatestServer(e.target.value)} />
-
       <label style={label}>Active game codes (comma-separated)</label>
       <input style={input} value={gameCodes} onChange={(e) => setGameCodes(e.target.value)} />
-
-      <label style={label}>Patch notes</label>
-      <textarea
-        style={{ ...input, minHeight: '18rem', lineHeight: 1.55 }}
-        value={patchNotes}
-        onChange={(e) => setPatchNotes(e.target.value)}
-      />
-      <p style={hint}>Line breaks and commas are used to split sections, matching the current patch-notes card rendering.</p>
-
-      <div style={{ marginTop: '1.5rem' }}>
-        <button type="submit" style={btn}>Save &amp; publish</button>
+      <div style={{ marginTop: '1rem' }}>
+        <button type="submit" style={btn}>Save server &amp; codes</button>
       </div>
     </form>
+  )
+}
+
+type PatchRow = { id: string; title: string; body: string; published_at: string | null }
+const blankPatch = (): PatchRow => ({ id: '', title: 'Patch Notes', body: '', published_at: new Date().toISOString().slice(0, 10) })
+
+// Dated patch-note entries: publishing a new one archives the previous (the
+// newest-dated entry is the one shown on the guides hub).
+function PatchNotesManager({ setStatus }: { setStatus: (s: string) => void }) {
+  const [rows, setRows] = useState<PatchRow[]>([])
+  const [editing, setEditing] = useState<PatchRow | null>(null)
+
+  const load = useCallback(async () => {
+    const res = await fetch('/api/admin/content/patch-notes')
+    if (!res.ok) { setStatus(`Load failed: ${res.status}`); return }
+    setRows(await res.json())
+  }, [setStatus])
+  useEffect(() => { void (async () => { await load() })() }, [load])
+
+  const set = (patch: Partial<PatchRow>) => setEditing((e) => (e ? { ...e, ...patch } : e))
+
+  const save = async () => {
+    if (!editing) return
+    if (!editing.body.trim()) { setStatus('Patch notes body is required'); return }
+    setStatus('Saving…')
+    const res = await fetch('/api/admin/content/patch-notes', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: editing.id || undefined, title: editing.title, body: editing.body, publishedAt: editing.published_at }),
+    })
+    const json = await res.json()
+    if (!res.ok) { setStatus(`Save failed: ${json.error ?? res.status}`); return }
+    setStatus('Published. The live site updates within a minute.')
+    setEditing(null)
+    load()
+  }
+
+  const remove = async (row: PatchRow) => {
+    if (!row.id || !window.confirm('Delete this patch-notes entry? This can\'t be undone.')) return
+    const res = await fetch(`/api/admin/content/patch-notes?id=${encodeURIComponent(row.id)}`, { method: 'DELETE' })
+    if (!res.ok) { setStatus(`Delete failed: ${res.status}`); return }
+    setStatus('Deleted.')
+    setEditing(null)
+    load()
+  }
+
+  if (editing) {
+    return (
+      <form onSubmit={(e) => { e.preventDefault(); save() }}>
+        <h3 style={{ marginTop: 0 }}>{editing.id ? 'Edit patch notes' : 'New patch notes'}</h3>
+        <label style={label}>Title</label>
+        <input style={input} value={editing.title} onChange={(e) => set({ title: e.target.value })} />
+        <label style={label}>Publish date</label>
+        <input style={{ ...input, maxWidth: '180px' }} type="date" value={editing.published_at ?? ''} onChange={(e) => set({ published_at: e.target.value })} />
+        <p style={hint}>The newest-dated entry shows on the guides hub; older entries move to the archive automatically.</p>
+        <label style={label}>Patch notes</label>
+        <textarea style={{ ...input, minHeight: '18rem', lineHeight: 1.55 }} value={editing.body} onChange={(e) => set({ body: e.target.value })} />
+        <p style={hint}>Line breaks and commas split sections, matching the patch-notes card rendering.</p>
+        <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
+          <button type="submit" style={btn}>{editing.id ? 'Save' : 'Publish'}</button>
+          <button type="button" style={btnQuiet} onClick={() => setEditing(null)}>Cancel</button>
+          {editing.id && rows.some((r) => r.id === editing.id) && (
+            <button type="button" style={{ ...btnDanger, marginLeft: 'auto' }} onClick={() => remove(editing)}>Delete</button>
+          )}
+        </div>
+      </form>
+    )
+  }
+
+  return (
+    <div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
+        <h3 style={{ margin: 0 }}>Patch notes</h3>
+        <button style={btn} onClick={() => setEditing(blankPatch())}>+ New patch notes</button>
+      </div>
+      <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
+        {rows.map((r, i) => (
+          <li key={r.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', padding: '0.75rem 0', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+            <div style={{ minWidth: 0 }}>
+              <div style={{ fontWeight: 700, color: '#fff' }}>
+                {r.title || 'Patch Notes'}
+                {i === 0 && (
+                  <span style={{ marginLeft: '0.6rem', fontSize: '0.6rem', color: gold, border: '1px solid rgba(204,164,83,0.4)', borderRadius: '0.3rem', padding: '0.1rem 0.4rem', verticalAlign: 'middle' }}>CURRENT</span>
+                )}
+              </div>
+              <div style={{ ...hint, marginTop: 0 }}>{r.published_at ?? 'no date'}</div>
+            </div>
+            <button style={btnQuiet} onClick={() => setEditing(r)}>Edit</button>
+          </li>
+        ))}
+        {rows.length === 0 && <p style={hint}>No patch notes yet.</p>}
+      </ul>
+    </div>
   )
 }
 

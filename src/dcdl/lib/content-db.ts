@@ -57,6 +57,13 @@ export type GameInfo = {
   gameCodes: string[]
 }
 
+export type PatchNote = {
+  id: string
+  title: string
+  body: string
+  publishedAt: string | null
+}
+
 export type Infographic = {
   id: string
   title: string
@@ -219,6 +226,32 @@ export async function getGameInfo(): Promise<GameInfo> {
     }
   }
   return readGameInfoFile()
+}
+
+type PatchNoteRow = {
+  id: string
+  title: string | null
+  body: string
+  published_at: string | null
+  created_at: string | null
+}
+
+// Patch notes are a list of dated entries, newest first. The first entry is the
+// "current" one shown on the guides hub; the rest are the archive. Falls back to
+// a single synthesized entry from game_info/file patch notes before the
+// patch_notes table exists or is seeded.
+export async function getPatchNotes(): Promise<PatchNote[]> {
+  const rows = await fetchTable<PatchNoteRow>('patch_notes', 'published_at.desc.nullslast,created_at.desc')
+  if (rows && rows.length > 0) {
+    return rows.map((r) => ({
+      id: r.id,
+      title: r.title ?? '',
+      body: r.body,
+      publishedAt: normDate(r.published_at),
+    }))
+  }
+  const gi = await getGameInfo()
+  return gi.patchNotes ? [{ id: 'current', title: 'Patch Notes', body: gi.patchNotes, publishedAt: null }] : []
 }
 
 export async function getInfographics(): Promise<Infographic[]> {

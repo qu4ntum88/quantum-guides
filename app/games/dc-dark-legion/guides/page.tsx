@@ -1,6 +1,6 @@
 import '../../godforge/game.css'
 import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
-import { getGuidesList, getGameInfo, getInfographics } from '@/src/dcdl/lib/content-db'
+import { getGuidesList, getGameInfo, getInfographics, getPatchNotes } from '@/src/dcdl/lib/content-db'
 
 // Read published content from Supabase (with a file fallback); refresh at most
 // once a minute so editor changes appear without a redeploy.
@@ -21,7 +21,9 @@ const secTitle: React.CSSProperties = {
 
 export default async function GuidesPage() {
   const guides = await getGuidesList()
-  const { latestServer, patchNotes, gameCodes } = await getGameInfo()
+  const { latestServer, gameCodes } = await getGameInfo()
+  const patchEntries = await getPatchNotes()
+  const latestPatch = patchEntries[0] ?? null
   const infographicsCount = (await getInfographics()).length
 
   const featured = guides[0] ?? null
@@ -124,8 +126,13 @@ export default async function GuidesPage() {
             {/* Main column */}
             <div style={{ flex: '1 1 480px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
-              {/* Patch Notes */}
-              {patchNotes && <PatchNotesCard patchNotes={patchNotes} />}
+              {/* Patch Notes — latest entry, with a link to the full archive */}
+              {latestPatch && (
+                <PatchNotesCard
+                  patchNotes={latestPatch.body}
+                  archiveHref={patchEntries.length > 1 ? '/games/dc-dark-legion/patch-notes' : undefined}
+                />
+              )}
 
               {/* Written Guides Grid */}
               {(remaining.length > 0 || guides.length > 0) && (

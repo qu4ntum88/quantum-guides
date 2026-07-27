@@ -6,13 +6,28 @@ const secTitle: React.CSSProperties = {
   letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)',
 }
 
-export default function PatchNotesCard({ patchNotes }: { patchNotes: string }) {
+export default function PatchNotesCard({
+  patchNotes,
+  title = 'Latest Patch Notes',
+  archiveHref,
+}: {
+  patchNotes: string
+  title?: string
+  archiveHref?: string
+}) {
   const [expanded, setExpanded] = useState(false)
 
   return (
     <div className="card">
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(204,164,83,0.2)', paddingBottom: '0.5rem', marginBottom: '0.85rem' }}>
-        <span style={secTitle}>Latest Patch Notes</span>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(204,164,83,0.2)', paddingBottom: '0.5rem', marginBottom: '0.85rem', gap: '0.75rem' }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.85rem', flexWrap: 'wrap', minWidth: 0 }}>
+          <span style={secTitle}>{title}</span>
+          {archiveHref && (
+            <a href={archiveHref} style={{ fontSize: '0.7rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+              View all →
+            </a>
+          )}
+        </div>
         <button
           onClick={() => setExpanded(e => !e)}
           aria-label={expanded ? 'Collapse patch notes' : 'Expand patch notes'}
