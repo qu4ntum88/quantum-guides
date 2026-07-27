@@ -94,6 +94,10 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 
 **Auth** — Clerk. `useUser()` / `auth()` for client/server respectively. `supabaseAdmin` uses the service role key and bypasses RLS for all server-side writes.
 
+**On-site content CMS** (guides, patch notes, infographics) — a second editing path that works on the LIVE site from any device, alongside the local-only `/admin/dcdl` panel. Content lives in Supabase tables (`guides`, `game_info`, `infographics`); public pages read them through `src/dcdl/lib/content-db.ts` (REST fetch with `revalidate=60`) and **fall back to the on-disk files** (`src/dcdl/guides/*`, `game-info.json`, `infographics.json`) whenever a table is empty or unreachable — so the site is unchanged until the tables are provisioned + seeded. Editor at `/admin/content` (`app/admin/content/page.tsx` → `src/dcdl/components/admin/ContentEditor.tsx`, client, Markdown body for guides). Admin gate: `getIsAdmin()` (`src/lib/adminAuth.ts`) checks Clerk `publicMetadata.role==='admin'` or the `ADMIN_USER_IDS` env allowlist; `/admin/content` is added to `isProtectedRoute` in `proxy.ts`. Writes go through Clerk-gated routes under `app/api/admin/content/{guides,game-info,infographics,upload}/route.ts` using `supabaseAdmin`; image uploads land in the public `content-images` Storage bucket. **Setup (one-time, done by Tyler): `docs/CONTENT-CMS-SETUP.md`** — create the tables + public-read RLS + bucket, run `node scripts/migrate-content.mjs` to seed from the current files, and set the Clerk role. The old `/admin/dcdl` panel (champions, legacy, best teams, etc.) is unchanged and still local-dev-only via `notProd()`.
+
+**Cookie consent** — banner + preferences modal (`app/components/consent/CookieConsent.tsx`, mounted once in `app/layout.js`) backed by `src/lib/consent.ts` (versioned localStorage `qgg:cookie-consent-v1`). Categories: essential / analytics (GA) / advertising (AdSense). An inline **Google Consent Mode v2** default script in `layout.js` sets `ad_storage`/`analytics_storage` to `denied` before GA + AdSense load, then re-applies the saved choice; `writeConsent` pushes updates to the dataLayer. Footer has a `/cookies` policy link + a `ManageCookiesButton` (reopens the modal via a window event).
+
 ## External services
 
 - **Clerk** — auth (env: `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`)
@@ -124,4 +128,12 @@ Arcane Aegis and Temporal Aegis each have 3 tiered entries (I/II/III) sharing on
 | `src/lib/supabase.ts` | Supabase client (public) and admin (service role) |
 | `app/games/dc-dark-legion/ship-combat-guides/page.tsx` | Interactive Gotham map (diamond SVG + upright building images) |
 | `app/games/dc-dark-legion/layout.tsx` | DCDL layout — includes copyright footer |
+| `src/dcdl/lib/content-db.ts` | CMS read layer (Supabase → file fallback) for guides/patch-notes/infographics |
+| `src/lib/adminAuth.ts` | `getIsAdmin()` — Clerk admin gate for content routes |
+| `src/dcdl/components/admin/ContentEditor.tsx` | On-site content editor UI (`/admin/content`) |
+| `app/api/admin/content/*/route.ts` | Clerk-gated CRUD + image upload for CMS content |
+| `src/lib/consent.ts` | Cookie-consent state + Google Consent Mode v2 bridge |
+| `app/components/consent/CookieConsent.tsx` | Consent banner + preferences modal |
+| `docs/CONTENT-CMS-SETUP.md` | One-time Supabase/Clerk setup steps for the CMS |
+| `scripts/migrate-content.mjs` | One-time seed of CMS tables from existing files |
 | `public/ads.txt` | Google AdSense verification file |
