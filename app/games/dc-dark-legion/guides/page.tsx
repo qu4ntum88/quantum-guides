@@ -1,56 +1,10 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
 import '../../godforge/game.css'
 import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
+import { getGuidesList, getGameInfo, getInfographics } from '@/src/dcdl/lib/content-db'
 
-type Guide = {
-  id: string
-  title: string
-  pubDate: string | null
-  author: string | null
-  description: string
-  coverImage: string | null
-}
-
-function getGuides(): Guide[] {
-  const guidesDir = path.join(process.cwd(), 'src/dcdl/guides')
-  const files = fs.readdirSync(guidesDir).filter((f) => f.endsWith('.mdx') || f.endsWith('.md'))
-  return files.map((filename) => {
-    const raw = fs.readFileSync(path.join(guidesDir, filename), 'utf8')
-    const { data } = matter(raw)
-    const pubDate = data.pubDate
-      ? String(data.pubDate instanceof Date ? data.pubDate.toISOString().slice(0, 10) : data.pubDate)
-      : null
-    return {
-      id: filename.replace(/\.(mdx|md)$/, ''),
-      title: data.title ?? filename,
-      pubDate,
-      author: data.author ?? null,
-      description: data.description ?? '',
-      coverImage: data.coverImage ?? null,
-    }
-  }).sort((a, b) => {
-    if (!a.pubDate && !b.pubDate) return 0
-    if (!a.pubDate) return 1
-    if (!b.pubDate) return -1
-    return b.pubDate.localeCompare(a.pubDate)
-  })
-}
-
-function getGameInfo() {
-  try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/game-info.json'), 'utf8'))
-  } catch {
-    return { latestServer: '', patchNotes: '', gameCodes: [] }
-  }
-}
-
-function getInfographicsCount(): number {
-  try {
-    return (JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/infographics.json'), 'utf8')) as unknown[]).length
-  } catch { return 0 }
-}
+// Read published content from Supabase (with a file fallback); refresh at most
+// once a minute so editor changes appear without a redeploy.
+export const revalidate = 60
 
 const GUIDE_GRADIENTS = [
   'linear-gradient(135deg, #0a1628 0%, #1a0a2e 100%)',
@@ -65,10 +19,10 @@ const secTitle: React.CSSProperties = {
   borderBottom: '1px solid rgba(204,164,83,0.2)', paddingBottom: '0.5rem', marginBottom: '0.85rem',
 }
 
-export default function GuidesPage() {
-  const guides = getGuides()
-  const { latestServer, patchNotes, gameCodes } = getGameInfo()
-  const infographicsCount = getInfographicsCount()
+export default async function GuidesPage() {
+  const guides = await getGuidesList()
+  const { latestServer, patchNotes, gameCodes } = await getGameInfo()
+  const infographicsCount = (await getInfographics()).length
 
   const featured = guides[0] ?? null
   const remaining = guides.slice(1)

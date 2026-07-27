@@ -1,7 +1,4 @@
 import Link from 'next/link'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkGfm from 'remark-gfm'
@@ -10,17 +7,18 @@ import rehypeRaw from 'rehype-raw'
 import rehypeStringify from 'rehype-stringify'
 import { notFound } from 'next/navigation'
 import GuideToc from '../GuideToc'
+import { getGuide, getGuidesFull } from '@/src/dcdl/lib/content-db'
 import '../../../godforge/game.css'
 import '../guide-prose.css'
 
-const guidesDir = path.join(process.cwd(), 'src/dcdl/guides')
+// Read published guides from Supabase (with a file fallback); refresh at most
+// once a minute so editor changes appear without a redeploy. Guides created
+// after build time render on-demand (dynamicParams defaults to true).
+export const revalidate = 60
 
-function getGuideFiles() {
-  return fs.readdirSync(guidesDir).filter((f) => f.endsWith('.mdx') || f.endsWith('.md'))
-}
-
-export function generateStaticParams() {
-  return getGuideFiles().map((f) => ({ id: f.replace(/\.(mdx|md)$/, '') }))
+export async function generateStaticParams() {
+  const guides = await getGuidesFull()
+  return guides.map((g) => ({ id: g.id }))
 }
 
 function stripAstroSyntax(raw: string): string {
@@ -176,26 +174,49 @@ function EventSummaryBox({ data }: { data: FrontmatterData }) {
 
 // ── Page ─────────────────────────────────────────────────────────────────────
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const guide = await getGuide(id)
+  if (!guide) return {}
+  const canonical = `/games/dc-dark-legion/guides/${guide.id}`
+  return {
+    title: `${guide.title} · DC: Dark Legion Guide | Quantum Game Guides`,
+    description: guide.description || undefined,
+    alternates: { canonical },
+    openGraph: {
+      title: guide.title,
+      description: guide.description || undefined,
+      url: canonical,
+      type: 'article',
+      ...(guide.coverImage ? { images: [{ url: guide.coverImage, alt: guide.title }] } : {}),
+    },
+  }
+}
+
 export default async function GuideDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const files = getGuideFiles()
-  const file = files.find((f) => f.replace(/\.(mdx|md)$/, '') === id)
-  if (!file) return notFound()
+  const guide = await getGuide(id)
+  if (!guide) return notFound()
 
-  const raw = fs.readFileSync(path.join(guidesDir, file), 'utf8')
-  const { data, content: rawContent } = matter(raw)
-  const cleaned = stripAstroSyntax(rawContent)
+  const cleaned = stripAstroSyntax(guide.body)
   const rawHtml = await renderMarkdown(cleaned)
   const { html: htmlWithIds, headings } = extractAndIdHeadings(rawHtml)
   const html = processCallouts(htmlWithIds)
 
+  const data = {
+    event_type: guide.eventType,
+    event_dates: guide.eventDates,
+    recommended_for: guide.recommendedFor,
+    key_rewards: guide.keyRewards,
+  }
+
   const hasToc = headings.length >= 2
-  const hasSummary = !!(data.event_type || data.event_dates || data.recommended_for || data.key_rewards)
-  const coverImage = data.coverImage ? String(data.coverImage) : null
-  const title = data.title ? String(data.title) : null
-  const tags = Array.isArray(data.tags) ? (data.tags as string[]) : []
-  const pubDate = data.pubDate ? String(data.pubDate).slice(0, 10) : null
-  const author = data.author ? String(data.author) : null
+  const hasSummary = !!(guide.eventType || guide.eventDates || guide.recommendedFor || (guide.keyRewards && guide.keyRewards.length > 0))
+  const coverImage = guide.coverImage
+  const title = guide.title
+  const tags = guide.tags
+  const pubDate = guide.pubDate
+  const author = guide.author
 
   return (
     <main style={{ '--game-accent': 'var(--gold)' } as React.CSSProperties}>

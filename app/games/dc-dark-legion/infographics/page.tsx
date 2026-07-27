@@ -3,20 +3,21 @@ import fs from 'fs'
 import path from 'path'
 import InfographicsGrid from '@/src/dcdl/components/InfographicsGrid'
 import type { Infographic, ShardsData } from '@/src/dcdl/components/InfographicsGrid'
+import { getInfographics as getInfographicsData } from '@/src/dcdl/lib/content-db'
 import '../../godforge/game.css'
 
-function getInfographics(): Infographic[] {
-  try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/infographics.json'), 'utf8'))
-  } catch { return [] }
-}
+// Refresh at most once a minute so editor changes appear without a redeploy.
+export const revalidate = 60
 
 function getShardsData(): ShardsData {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/shards-per-star.json'), 'utf8'))
 }
 
-export default function InfographicsPage() {
-  const infographics = getInfographics()
+export default async function InfographicsPage() {
+  const infographics: Infographic[] = (await getInfographicsData()).map((i) => ({
+    id: i.id, title: i.title, description: i.description,
+    image: i.image, builtin: i.builtin ?? undefined, credit: i.credit,
+  }))
   const shardsData = getShardsData()
 
   return (
