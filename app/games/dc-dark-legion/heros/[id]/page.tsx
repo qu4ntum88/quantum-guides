@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getResolvedHeros } from '@/src/dcdl/lib/data'
 import LegacyPieceBox from '@/src/dcdl/components/LegacyPieceBox'
@@ -10,6 +11,42 @@ import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
 
 export function generateStaticParams() {
   return getResolvedHeros().map((h) => ({ id: h.id }))
+}
+
+// Unique per-champion metadata, assembled only from existing champion data
+// (no invented copy). Keeps each of the ~69 champion pages distinct for search
+// engines instead of inheriting the generic site title/description.
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params
+  const hero = getResolvedHeros().find((h) => h.id === id)
+  if (!hero) return {}
+
+  const canonical = `/games/dc-dark-legion/heros/${hero.id}`
+
+  // Build a factual description from fields that are actually present.
+  let desc = `${hero.name} is a`
+  if (hero.rarity) desc += ` ${hero.rarity}`
+  desc += ` ${hero.class} champion in DC: Dark Legion`
+  if (hero.damageType) desc += ` dealing ${hero.damageType} damage`
+  if (hero.gameModes && hero.gameModes.length > 0) desc += `, best used in ${hero.gameModes.join(', ')}`
+  desc += '.'
+  if (hero.tier) desc += ` Quantum's tier rating: ${hero.tier}.`
+  desc += ' Abilities, recommended legacy pieces, and community tier votes.'
+
+  const ogImage = hero.imageFull || hero.imageHeadshot
+
+  return {
+    title: `${hero.name} — DC: Dark Legion Tier & Guide | Quantum Game Guides`,
+    description: desc,
+    alternates: { canonical },
+    openGraph: {
+      title: `${hero.name} — DC: Dark Legion`,
+      description: desc,
+      url: canonical,
+      type: 'article',
+      ...(ogImage ? { images: [{ url: ogImage, alt: hero.name }] } : {}),
+    },
+  }
 }
 
 const G = ({ children }: { children: React.ReactNode }) => (
