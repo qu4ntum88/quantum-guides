@@ -1,35 +1,24 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import BlockEditor from './BlockEditor'
+import { btn, btnDanger, btnQuiet, gold, hint, ImageField, input, label } from './editor-ui'
+import {
+  type Block,
+  blocksToMarkdown,
+  markdownToBlocks,
+  parseGuideBody,
+  serializeBlocks,
+} from '@/src/dcdl/lib/guide-blocks'
 
 /**
  * On-site content editor for DC: Dark Legion guides, patch notes / game info,
  * and infographics. Talks to the Clerk-gated /api/admin/content/* routes, which
  * re-verify admin server-side before writing to Supabase. Edits publish to the
  * live site within ~1 minute (pages revalidate every 60s).
+ *
+ * Shared styles, the image-upload hook, and <ImageField> live in ./editor-ui.
  */
-
-// ── Shared styles ────────────────────────────────────────────────────────────
-const gold = 'var(--gold)'
-const label: React.CSSProperties = {
-  display: 'block', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.08em',
-  textTransform: 'uppercase', color: gold, marginBottom: '0.35rem', marginTop: '1rem',
-}
-const input: React.CSSProperties = {
-  width: '100%', padding: '0.55rem 0.7rem', borderRadius: '0.4rem',
-  border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(0,0,0,0.35)',
-  color: '#fff', fontSize: '0.9rem', fontFamily: 'inherit',
-}
-const hint: React.CSSProperties = { fontSize: '0.7rem', color: '#888', marginTop: '0.25rem' }
-const btn: React.CSSProperties = {
-  padding: '0.5rem 1.1rem', borderRadius: '0.4rem', border: `1px solid ${gold}`,
-  background: gold, color: '#0a0a14', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer',
-  fontFamily: 'Unbounded, sans-serif',
-}
-const btnQuiet: React.CSSProperties = {
-  ...btn, background: 'transparent', color: '#ccc', borderColor: 'rgba(255,255,255,0.2)',
-}
-const btnDanger: React.CSSProperties = { ...btnQuiet, color: '#ef4444', borderColor: 'rgba(239,68,68,0.4)' }
 
 type Tab = 'guides' | 'patch' | 'infographics'
 
@@ -67,53 +56,6 @@ export default function ContentEditor() {
   )
 }
 
-// ── Image upload helper ──────────────────────────────────────────────────────
-function useImageUpload(setStatus: (s: string) => void) {
-  return useCallback(async (file: File): Promise<string | null> => {
-    setStatus('Uploading image…')
-    const fd = new FormData()
-    fd.append('file', file)
-    const res = await fetch('/api/admin/content/upload', { method: 'POST', body: fd })
-    const json = await res.json()
-    if (!res.ok) { setStatus(`Upload failed: ${json.error ?? res.status}`); return null }
-    setStatus('Image uploaded.')
-    return json.url as string
-  }, [setStatus])
-}
-
-function ImageField({
-  value, onChange, setStatus,
-}: { value: string; onChange: (url: string) => void; setStatus: (s: string) => void }) {
-  const upload = useImageUpload(setStatus)
-  const ref = useRef<HTMLInputElement>(null)
-  return (
-    <div>
-      {value ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={value} alt="" style={{ maxHeight: '9rem', borderRadius: '0.4rem', border: '1px solid rgba(255,255,255,0.15)', marginBottom: '0.5rem', display: 'block' }} />
-      ) : (
-        <p style={{ ...hint, marginBottom: '0.5rem' }}>No image yet.</p>
-      )}
-      <input
-        ref={ref} type="file" accept="image/*" style={{ display: 'none' }}
-        onChange={async (e) => {
-          const f = e.target.files?.[0]
-          if (f) { const url = await upload(f); if (url) onChange(url) }
-          if (ref.current) ref.current.value = ''
-        }}
-      />
-      <button type="button" style={btnQuiet} onClick={() => ref.current?.click()}>
-        {value ? 'Replace image' : 'Upload image'}
-      </button>
-      {value && (
-        <button type="button" style={{ ...btnQuiet, marginLeft: '0.5rem' }} onClick={() => onChange('')}>
-          Remove
-        </button>
-      )}
-    </div>
-  )
-}
-
 // ── Guides ───────────────────────────────────────────────────────────────────
 type GuideRow = {
   id: string; title: string; description: string; body: string; author: string | null
@@ -125,6 +67,64 @@ type GuideRow = {
 const blankGuide: GuideRow = {
   id: '', title: '', description: '', body: '', author: '', pub_date: '', cover_image: '',
   tags: [], event_type: '', event_dates: '', recommended_for: '', key_rewards: [],
+}
+
+// Body editor: a visual block editor by default. Legacy Markdown guides open in
+// a raw text box with a one-click "convert to the visual editor" path, so
+// nothing already written is lost. Keeps `editing.body` (a string) in sync — a
+// blocks envelope in visual mode, or raw Markdown in markdown mode.
+function GuideBodyEditor({
+  value, onChange, setStatus,
+}: { value: string; onChange: (body: string) => void; setStatus: (s: string) => void }) {
+  // Parse the incoming body ONCE on mount; parent re-renders (from onChange)
+  // must not reset the editor.
+  const initial = useMemo(() => parseGuideBody(value), []) // eslint-disable-line react-hooks/exhaustive-deps
+  const startVisual = initial.format === 'blocks' || (initial.format === 'markdown' && !initial.markdown.trim())
+  const [mode, setMode] = useState<'visual' | 'markdown'>(startVisual ? 'visual' : 'markdown')
+  const [blocks, setBlocks] = useState<Block[]>(initial.format === 'blocks' ? initial.blocks : [])
+  const [markdown, setMarkdown] = useState<string>(initial.format === 'markdown' ? initial.markdown : '')
+
+  // Mirror whichever mode is active back into the parent's body string.
+  useEffect(() => {
+    onChange(mode === 'visual' ? serializeBlocks(blocks) : markdown)
+  }, [mode, blocks, markdown]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const toMarkdown = () => { setMarkdown(blocksToMarkdown(blocks)); setMode('markdown') }
+  const toVisual = () => {
+    if (markdown.trim() && !window.confirm('Convert this Markdown into visual blocks? Complex formatting (tables, callouts, emphasis) may be simplified to plain text.')) return
+    setBlocks(markdownToBlocks(markdown))
+    setMode('visual')
+  }
+
+  return (
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '0.5rem' }}>
+        {mode === 'visual' ? (
+          <button type="button" style={{ ...btnQuiet, fontSize: '0.68rem', padding: '0.3rem 0.7rem' }} onClick={toMarkdown}>
+            Switch to Markdown
+          </button>
+        ) : (
+          <button type="button" style={{ ...btnQuiet, fontSize: '0.68rem', padding: '0.3rem 0.7rem' }} onClick={toVisual}>
+            Convert to the visual editor
+          </button>
+        )}
+      </div>
+
+      {mode === 'visual' ? (
+        <BlockEditor blocks={blocks} onChange={setBlocks} setStatus={setStatus} />
+      ) : (
+        <>
+          <textarea
+            style={{ ...input, minHeight: '22rem', fontFamily: 'ui-monospace, monospace', fontSize: '0.82rem', lineHeight: 1.55 }}
+            value={markdown}
+            onChange={(e) => setMarkdown(e.target.value)}
+            placeholder="Markdown. Headings (##), lists, images, and callouts ([!TIP], [!NOTE], [!WARNING], [!IMPORTANT], [!F2P]) all render."
+          />
+          <p style={hint}>Legacy Markdown mode. New guides use the visual editor above.</p>
+        </>
+      )}
+    </div>
+  )
 }
 
 function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
@@ -208,13 +208,8 @@ function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
         <label style={label}>Cover image</label>
         <ImageField value={editing.cover_image ?? ''} onChange={(url) => set({ cover_image: url })} setStatus={setStatus} />
 
-        <label style={label}>Body (Markdown)</label>
-        <textarea
-          style={{ ...input, minHeight: '22rem', fontFamily: 'ui-monospace, monospace', fontSize: '0.82rem', lineHeight: 1.55 }}
-          value={editing.body}
-          onChange={(e) => set({ body: e.target.value })}
-          placeholder="Write in Markdown. Headings (##), lists, images, and callouts ([!TIP], [!NOTE], [!WARNING], [!IMPORTANT], [!F2P]) all render."
-        />
+        <label style={label}>Body</label>
+        <GuideBodyEditor value={editing.body} onChange={(body) => set({ body })} setStatus={setStatus} />
 
         <details style={{ marginTop: '1.25rem' }}>
           <summary style={{ ...label, marginTop: 0, cursor: 'pointer' }}>Event summary box (optional)</summary>

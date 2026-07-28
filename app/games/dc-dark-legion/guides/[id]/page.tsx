@@ -8,6 +8,7 @@ import rehypeStringify from 'rehype-stringify'
 import { notFound } from 'next/navigation'
 import GuideToc from '../GuideToc'
 import { getGuide, getGuidesFull } from '@/src/dcdl/lib/content-db'
+import { blocksToHtml, parseGuideBody } from '@/src/dcdl/lib/guide-blocks'
 import '../../../godforge/game.css'
 import '../guide-prose.css'
 
@@ -198,10 +199,22 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ id
   const guide = await getGuide(id)
   if (!guide) return notFound()
 
-  const cleaned = stripAstroSyntax(guide.body)
-  const rawHtml = await renderMarkdown(cleaned)
-  const { html: htmlWithIds, headings } = extractAndIdHeadings(rawHtml)
-  const html = processCallouts(htmlWithIds)
+  // New guides store structured blocks; legacy guides store raw Markdown. Render
+  // blocks directly (already safe/escaped), otherwise run the Markdown pipeline.
+  // Both go through extractAndIdHeadings so the table of contents works the same.
+  const parsed = parseGuideBody(guide.body)
+  let html: string
+  let headings: Heading[]
+  if (parsed.format === 'blocks') {
+    const withIds = extractAndIdHeadings(blocksToHtml(parsed.blocks))
+    html = withIds.html
+    headings = withIds.headings
+  } else {
+    const cleaned = stripAstroSyntax(parsed.markdown)
+    const withIds = extractAndIdHeadings(await renderMarkdown(cleaned))
+    html = processCallouts(withIds.html)
+    headings = withIds.headings
+  }
 
   const data = {
     event_type: guide.eventType,
