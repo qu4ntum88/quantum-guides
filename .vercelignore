@@ -1,2 +1,13 @@
-app/admin
-app/api/admin
+# Keep the on-site content CMS in the production build:
+#   app/admin/content        (the live editor page)
+#   app/api/admin/content/*  (its Clerk-gated save/upload routes)
+#
+# Exclude ONLY the local-dev-only admin panel and its write routes
+# (DCDL / Godforge / Void Hunters), which are guarded by notProd() and
+# are meant to run on localhost only. Do NOT ignore `app/admin` or
+# `app/api/admin` wholesale — that also removes the content CMS and makes
+# /admin/content 404 in production.
+app/admin/dcdl
+app/api/admin/dcdl
+app/api/admin/gf
+app/api/admin/vh
