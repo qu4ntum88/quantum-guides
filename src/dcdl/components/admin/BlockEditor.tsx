@@ -1,7 +1,83 @@
 'use client'
 
-import type { Block } from '@/src/dcdl/lib/guide-blocks'
+import { useEffect, useRef } from 'react'
+import { type Block, sanitizeInline } from '@/src/dcdl/lib/guide-blocks'
 import { btn, btnQuiet, gold, hint, ImageField, input, label } from './editor-ui'
+
+type ParagraphBlock = Extract<Block, { type: 'paragraph' }>
+
+/**
+ * Rich paragraph: a contentEditable box with a Bold / Italic / Link toolbar.
+ * Kept UNCONTROLLED (initial HTML set once via ref) so React never re-writes the
+ * DOM mid-edit and jumps the cursor; edits are read back, sanitized, and pushed
+ * up as rich inline HTML. Paste is forced to plain text and Enter inserts a line
+ * break, so only the safe inline subset (bold/italic/link/br) can ever exist.
+ */
+function RichParagraph({
+  block, onChange,
+}: { block: ParagraphBlock; onChange: (patch: Partial<ParagraphBlock>) => void }) {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    if (block.rich) el.innerHTML = sanitizeInline(block.text)
+    else el.textContent = block.text // legacy plain paragraph → shown literally
+    // Load once on mount; parent updates must not reset the live editing DOM.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const emit = () => {
+    const el = ref.current
+    if (!el) return
+    onChange({ text: sanitizeInline(el.innerHTML), rich: true })
+  }
+
+  const exec = (command: string, value?: string) => {
+    ref.current?.focus()
+    document.execCommand(command, false, value)
+    emit()
+  }
+
+  const addLink = () => {
+    let url = window.prompt('Link URL')?.trim()
+    if (!url) return
+    if (!/^(https?:\/\/|\/|mailto:)/i.test(url)) url = `https://${url}`
+    exec('createLink', url)
+  }
+
+  const fmtBtn: React.CSSProperties = {
+    ...btnQuiet, padding: '0.2rem 0.6rem', fontSize: '0.8rem', minWidth: '2rem',
+    fontFamily: 'Georgia, serif', lineHeight: 1,
+  }
+
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: '0.3rem', marginBottom: '0.4rem' }}>
+        <button type="button" style={fmtBtn} title="Bold (Ctrl+B)" onMouseDown={(e) => e.preventDefault()} onClick={() => exec('bold')}><b>B</b></button>
+        <button type="button" style={fmtBtn} title="Italic (Ctrl+I)" onMouseDown={(e) => e.preventDefault()} onClick={() => exec('italic')}><i>I</i></button>
+        <button type="button" style={{ ...fmtBtn, fontFamily: 'inherit' }} title="Add link" onMouseDown={(e) => e.preventDefault()} onClick={addLink}>🔗 Link</button>
+      </div>
+      <div
+        ref={ref}
+        className="qgg-rte"
+        contentEditable
+        suppressContentEditableWarning
+        data-placeholder="Write a paragraph…"
+        onInput={emit}
+        onBlur={emit}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') { e.preventDefault(); document.execCommand('insertLineBreak'); emit() }
+        }}
+        onPaste={(e) => {
+          e.preventDefault()
+          document.execCommand('insertText', false, e.clipboardData.getData('text/plain'))
+        }}
+        style={{ ...input, minHeight: '5rem', lineHeight: 1.6, whiteSpace: 'pre-wrap' }}
+      />
+    </div>
+  )
+}
 
 /**
  * Visual, block-based body editor for guides. The author adds typed blocks —
@@ -101,12 +177,7 @@ export default function BlockEditor({
           )}
 
           {b.type === 'paragraph' && (
-            <textarea
-              style={{ ...input, minHeight: '5rem', lineHeight: 1.6 }}
-              value={b.text}
-              placeholder="Write a paragraph…"
-              onChange={(e) => update(i, { text: e.target.value })}
-            />
+            <RichParagraph block={b} onChange={(patch) => update(i, patch)} />
           )}
 
           {b.type === 'list' && (

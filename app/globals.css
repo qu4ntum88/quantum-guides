@@ -400,3 +400,14 @@ h3 {
   .mobile-menu { display: none; }
   .nav-hamburger { display: none; }
 }
+
+/* Rich-text paragraph editor (admin content editor) — empty-state placeholder */
+.qgg-rte:empty::before {
+  content: attr(data-placeholder);
+  color: #666;
+  pointer-events: none;
+}
+.qgg-rte:focus {
+  outline: 1px solid rgba(204, 164, 83, 0.5);
+}
+.qgg-rte a { color: var(--gold); text-decoration: underline; }

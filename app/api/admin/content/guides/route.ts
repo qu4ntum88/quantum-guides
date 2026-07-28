@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getIsAdmin } from '@/src/lib/adminAuth'
 import { supabaseAdmin } from '@/src/lib/supabase'
+import { sanitizeGuideBody } from '@/src/dcdl/lib/guide-blocks'
 
 // Admin-only CRUD for guides. Writes go through the service-role key AFTER the
 // Clerk admin check below — the key is never exposed to the browser.
@@ -37,7 +38,8 @@ export async function POST(req: NextRequest) {
     id,
     title,
     description: String(b.description ?? ''),
-    body: String(b.body ?? ''),
+    // Re-sanitize rich paragraph HTML server-side before it is persisted.
+    body: sanitizeGuideBody(String(b.body ?? '')),
     author: b.author ? String(b.author) : null,
     pub_date: b.pubDate ? String(b.pubDate).slice(0, 10) : null,
     cover_image: b.coverImage ? String(b.coverImage) : null,

@@ -11,16 +11,37 @@
  * `blocksToHtml()` and still falls back to the Markdown pipeline for legacy
  * bodies, so nothing that already exists breaks.
  *
- * This module is isomorphic (no fs / no DOM) — imported by the client editor
- * and the server-rendered guide page alike.
+ * Imported by the client editor and the server-rendered guide page alike.
+ * Inline formatting (bold / italic / links) inside paragraphs is stored as a
+ * small, sanitized HTML subset — `sanitizeInline()` (DOMPurify) is the single
+ * gate, run in the editor, on save, and at render.
  */
+
+import DOMPurify from 'isomorphic-dompurify'
 
 export type Block =
   | { type: 'heading'; text: string } // section header → <h2>
   | { type: 'subheading'; text: string } // sub header → <h3>
-  | { type: 'paragraph'; text: string } // body copy → <p>
+  | { type: 'paragraph'; text: string; rich?: boolean } // body copy → <p>; rich ⇒ text is sanitized inline HTML
   | { type: 'list'; items: string[] } // bulleted list → <ul>
   | { type: 'image'; url: string; caption: string } // <figure> + italic <figcaption>
+
+// ── Inline sanitization ───────────────────────────────────────────────────────
+
+/**
+ * Reduce a snippet of paragraph HTML to a safe inline subset: bold, italic,
+ * links, and line breaks only. DOMPurify strips everything else (scripts, event
+ * handlers, javascript: URLs, block tags). Anchors are normalized to open in a
+ * new tab with a safe rel. This is the ONLY place inline markup is trusted.
+ */
+export function sanitizeInline(html: string): string {
+  const clean = DOMPurify.sanitize(html ?? '', {
+    ALLOWED_TAGS: ['strong', 'em', 'b', 'i', 'a', 'br'],
+    ALLOWED_ATTR: ['href'],
+  })
+  // DOMPurify already rejects unsafe hrefs; force a safe rel/target on links.
+  return clean.replace(/<a\s+href=/gi, '<a target="_blank" rel="noopener noreferrer nofollow" href=')
+}
 
 export type ParsedBody =
   | { format: 'blocks'; blocks: Block[] }
@@ -33,6 +54,20 @@ const ENVELOPE_VERSION = 1
 
 export function serializeBlocks(blocks: Block[]): string {
   return JSON.stringify({ format: ENVELOPE_FORMAT, version: ENVELOPE_VERSION, blocks })
+}
+
+/**
+ * Server-side save gate: re-sanitize every rich paragraph in a guide body so a
+ * crafted request can never store unsafe markup. Legacy Markdown bodies pass
+ * through untouched (they render through the trusted, admin-only Markdown path).
+ */
+export function sanitizeGuideBody(body: string): string {
+  const parsed = parseGuideBody(body)
+  if (parsed.format !== 'blocks') return body
+  const blocks = parsed.blocks.map((b) =>
+    b.type === 'paragraph' && b.rich ? { ...b, text: sanitizeInline(b.text) } : b,
+  )
+  return serializeBlocks(blocks)
 }
 
 function isBlock(b: unknown): b is Block {
@@ -95,8 +130,13 @@ export function blocksToHtml(blocks: Block[]): string {
           return b.text.trim() ? `<h2>${esc(b.text)}</h2>` : ''
         case 'subheading':
           return b.text.trim() ? `<h3>${esc(b.text)}</h3>` : ''
-        case 'paragraph':
-          return b.text.trim() ? `<p>${escMultiline(b.text)}</p>` : ''
+        case 'paragraph': {
+          // Rich paragraphs hold sanitized inline HTML; re-sanitize at render as
+          // a last line of defense. Plain paragraphs are HTML-escaped.
+          const innerP = b.rich ? sanitizeInline(b.text) : escMultiline(b.text)
+          const textOnly = innerP.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim()
+          return textOnly ? `<p>${innerP}</p>` : ''
+        }
         case 'list': {
           const items = (b.items ?? []).filter((i) => i.trim())
           if (items.length === 0) return ''
@@ -127,7 +167,7 @@ export function blocksToMarkdown(blocks: Block[]): string {
         case 'subheading':
           return `### ${b.text}`
         case 'paragraph':
-          return b.text
+          return b.rich ? htmlInlineToMd(b.text) : b.text
         case 'list':
           return (b.items ?? []).filter((i) => i.trim()).map((i) => `- ${i}`).join('\n')
         case 'image':
@@ -138,6 +178,30 @@ export function blocksToMarkdown(blocks: Block[]): string {
     })
     .filter((s) => s.trim())
     .join('\n\n')
+}
+
+// Inline Markdown (**bold**, *italic*, [text](url)) → sanitized inline HTML.
+function inlineMdToHtml(text: string): string {
+  let s = esc(text)
+  s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g, (_m, t, url) => `<a href="${escAttr(url)}">${t}</a>`)
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+  s = s.replace(/(?<!\*)\*([^*\n]+)\*(?!\*)/g, '<em>$1</em>')
+  s = s.replace(/\r?\n/g, '<br />')
+  return sanitizeInline(s)
+}
+
+// Sanitized inline HTML → inline Markdown (for the editor's "Switch to Markdown").
+function htmlInlineToMd(html: string): string {
+  return String(html ?? '')
+    .replace(/<\s*br\s*\/?>/gi, '\n')
+    .replace(/<\s*(strong|b)\s*>(.*?)<\s*\/\s*\1\s*>/gi, '**$2**')
+    .replace(/<\s*(em|i)\s*>(.*?)<\s*\/\s*\1\s*>/gi, '*$2*')
+    .replace(/<a\s+[^>]*href="([^"]*)"[^>]*>(.*?)<\/a>/gi, '[$2]($1)')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
 }
 
 // ── Convert: Markdown → blocks (best-effort import of legacy guides) ──────────
@@ -156,8 +220,8 @@ export function markdownToBlocks(md: string): Block[] {
 
   const flushPara = () => {
     if (para.length) {
-      const text = para.join('\n').trim()
-      if (text) blocks.push({ type: 'paragraph', text })
+      const raw = para.join('\n').trim()
+      if (raw) blocks.push({ type: 'paragraph', text: inlineMdToHtml(raw), rich: true })
       para = []
     }
   }
@@ -206,10 +270,10 @@ export function markdownToBlocks(md: string): Block[] {
       continue
     }
 
-    // Regular prose line: strip the most common inline Markdown markers so the
-    // visual paragraph reads cleanly.
+    // Regular prose line: kept raw; inline Markdown is converted to rich HTML
+    // when the paragraph is flushed.
     flushList()
-    para.push(line.replace(/\*\*(.+?)\*\*/g, '$1').replace(/(?<!\*)\*(?!\*)(.+?)\*/g, '$1'))
+    para.push(line)
   }
   flushPara()
   flushList()
