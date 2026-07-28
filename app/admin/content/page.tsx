@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { auth } from '@clerk/nextjs/server'
 import { getIsAdmin } from '@/src/lib/adminAuth'
 import ContentEditor from '@/src/dcdl/components/admin/ContentEditor'
 
@@ -11,7 +13,10 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic'
 
 export default async function ContentAdminPage() {
-  const isAdmin = await getIsAdmin()
+  // Auth is gated here (not in the middleware) — see proxy.ts. Signed-out
+  // visitors get a sign-in link; signed-in non-admins get a notice.
+  const { userId } = await auth()
+  const isAdmin = userId ? await getIsAdmin() : false
 
   return (
     <main className="container" style={{ paddingTop: '2.5rem', paddingBottom: '4rem', maxWidth: '900px' }}>
@@ -26,6 +31,14 @@ export default async function ContentAdminPage() {
       <div style={{ marginTop: '2rem' }}>
         {isAdmin ? (
           <ContentEditor />
+        ) : !userId ? (
+          <div className="card">
+            <h3 style={{ marginTop: 0 }}>Please sign in</h3>
+            <p style={{ color: '#aaa', margin: '0 0 1rem' }}>
+              You need to be signed in as an editor to use this page.
+            </p>
+            <Link href="/sign-in?redirect_url=/admin/content" className="btn">Sign in</Link>
+          </div>
         ) : (
           <div className="card" style={{ borderColor: 'rgba(239,68,68,0.4)' }}>
             <h3 style={{ marginTop: 0 }}>Not authorized</h3>
