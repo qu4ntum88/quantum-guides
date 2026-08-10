@@ -75,8 +75,7 @@
         "image": "./upgrade_images/GreenLantern_sub03_enhanced.png"
       }
     ],
-    "ascendsTo": "green_lantern_mythic_plus",
-    "previousTier": "A"
+    "ascendsTo": "green_lantern_mythic_plus"
   },
   {
     "id": "aquaman",
@@ -165,7 +164,6 @@
     "class": "Firepower",
     "rarity": "Mythic +",
     "tier": "A",
-    "previousTier": "B",
     "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
@@ -392,8 +390,7 @@
         "description": "Increases Mera's ATK.",
         "image": "./upgrade_images/Mera_sub03_enhanced.png"
       }
-    ],
-    "previousTier": "B"
+    ]
   },
   {
     "id": "atom",
@@ -639,8 +636,7 @@
         "image": "./upgrade_images/Batgirl_sub03_enhanced.png"
       }
     ],
-    "ascendsTo": "batgirl_mythic_plus",
-    "previousTier": "A"
+    "ascendsTo": "batgirl_mythic_plus"
   },
   {
     "id": "martian_manhunter",
@@ -807,8 +803,7 @@
         "image": "./upgrade_images/Batgirl_sub03_enhanced.png"
       }
     ],
-    "ascendedFrom": "batgirl",
-    "previousTier": "A"
+    "ascendedFrom": "batgirl"
   },
   {
     "id": "stargirl",
@@ -885,8 +880,7 @@
         "description": "Stargirl gains an additional [%] Effect RES.",
         "image": "./upgrade_images/Stargirl_sub03_enhanced.png"
       }
-    ],
-    "previousTier": "C"
+    ]
   },
   {
     "id": "black_canary",
@@ -1539,7 +1533,6 @@
     "class": "Warrior",
     "rarity": "Mythic +",
     "tier": "B",
-    "previousTier": "C",
     "damageType": "Physical",
     "tagSynergies": [
       "suicide_squad",
@@ -1775,7 +1768,6 @@
     "class": "Warrior",
     "rarity": "Mythic +",
     "tier": "S+",
-    "isNew": true,
     "isP2W": true,
     "damageType": "Physical",
     "tagSynergies": [
@@ -1937,6 +1929,88 @@
     ]
   },
   {
+    "id": "sinestro",
+    "name": "Sinestro",
+    "class": "Magical",
+    "rarity": "Mythic +",
+    "tier": "S+",
+    "damageType": "Spiritual",
+    "tagSynergies": [
+      "legion_of_doom",
+      "energy_wielder"
+    ],
+    "gameModes": [
+      "PvP",
+      "Drowned CC",
+      "Red Death CC",
+      "Merciless CC",
+      "Killer Tank CC",
+      "Dawnbreaker CC",
+      "Devastator CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
+    ],
+    "transmutePriorities": [
+      "ATK",
+      "Spiritual PEN",
+      "Spiritual AMP"
+    ],
+    "recommendedLegacyPieces": [
+      "sinestro_corps_ring",
+      "dart_with_poison_ivy_poison",
+      "imp_doll"
+    ],
+    "quantumsTake": "Many people assume that Deathstroke is the primary win-condition for Legion of Doom PvP teams. However, Sinestro is who really shuts down enemy teams. His ultimate is one of the best burst damage abilities in the game, and it's even better with his unique legacy Sinestro Corps Ring. He's an S-tier champion because not only is he the star of LoD, but he can also be added to JLD teams to bolster Constantine's ability to deal Spiritual damage.",
+    "imageHeadshot": "./headshot_images/sinestro.png",
+    "imageFull": "./full_images/Sinestro_full.png",
+    "ultimate": {
+      "name": "Mind over Matter",
+      "description": "Deal Spiritual DMG equal to 800% of ATK to enemy, then chains nearest addition target, and so on. Each chain attack's Spiritual DMG dealt reduces by 40%, affecting up to 3 targets",
+      "image": "./skill_images/icon_hero_skill_Sinestro_main.png"
+    },
+    "globalSkill": {
+      "name": "Sinestro's Might",
+      "description": "Increases all Champions' Spiritual DEF and [Magical] Champions' Spiritual AMP.",
+      "image": "./globalskill_images/Sinestro_global.png"
+    },
+    "skills": [
+      {
+        "name": "Bondage of Fear",
+        "description": "Deal Spiritual DMG equal to 300% of ATK to enemy",
+        "image": "./skill_images/icon_hero_skill_Sinestro_sub01.png"
+      },
+      {
+        "name": "Strong Will",
+        "description": "Restore own energy by 30",
+        "image": "./skill_images/icon_hero_skill_Sinestro_sub02.png"
+      },
+      {
+        "name": "Fear Grows",
+        "description": "When allies defeat an enemy, Sinestro's ATK increases by 5% for 10s per [Legion of Doom] ally present",
+        "image": "./skill_images/icon_hero_skill_Sinestro_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Bondage of Fear - Enhanced",
+        "description": "Each time Sinestro attacks, there is a chance to reduce the target's Spiritual DEF.",
+        "image": "./upgrade_images/Sinestro_sub01_enhanced.png"
+      },
+      {
+        "name": "Strong Will - Enhanced",
+        "description": "Reduces cooldown of [Strong Will].",
+        "image": "./upgrade_images/Sinestro_sub02_enhanced.png"
+      },
+      {
+        "name": "Fear Grows - Enhanced",
+        "description": "Increases Sinestro's Spiritual PEN.",
+        "image": "./upgrade_images/Sinestro_sub03_enhanced.png"
+      }
+    ],
+    "previousTier": "S"
+  },
+  {
     "id": "nightwing",
     "name": "Nightwing",
     "class": "Assassin",
@@ -2016,8 +2090,7 @@
         "description": "Increases Nightwing's ATK.",
         "image": "./upgrade_images/Nightwing_sub03_enhanced.png"
       }
-    ],
-    "previousTier": "S"
+    ]
   },
   {
     "id": "poison_ivy",
@@ -2257,88 +2330,6 @@
         "image": "./upgrade_images/Shazam_sub03_enhanced.png"
       }
     ]
-  },
-  {
-    "id": "sinestro",
-    "name": "Sinestro",
-    "class": "Magical",
-    "rarity": "Mythic +",
-    "tier": "S",
-    "damageType": "Spiritual",
-    "tagSynergies": [
-      "legion_of_doom",
-      "energy_wielder"
-    ],
-    "gameModes": [
-      "PvP",
-      "Drowned CC",
-      "Red Death CC",
-      "Merciless CC",
-      "Killer Tank CC",
-      "Dawnbreaker CC",
-      "Devastator CC"
-    ],
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
-    ],
-    "transmutePriorities": [
-      "ATK",
-      "Spiritual PEN",
-      "Spiritual AMP"
-    ],
-    "recommendedLegacyPieces": [
-      "sinestro_corps_ring",
-      "dart_with_poison_ivy_poison",
-      "imp_doll"
-    ],
-    "quantumsTake": "Many people assume that Deathstroke is the primary win-condition for Legion of Doom PvP teams. However, Sinestro is who really shuts down enemy teams. His ultimate is one of the best burst damage abilities in the game, and it's even better with his unique legacy Sinestro Corps Ring. He's an S-tier champion because not only is he the star of LoD, but he can also be added to JLD teams to bolster Constantine's ability to deal Spiritual damage.",
-    "imageHeadshot": "./headshot_images/sinestro.png",
-    "imageFull": "./full_images/Sinestro_full.png",
-    "ultimate": {
-      "name": "Mind over Matter",
-      "description": "Deal Spiritual DMG equal to 800% of ATK to enemy, then chains nearest addition target, and so on. Each chain attack's Spiritual DMG dealt reduces by 40%, affecting up to 3 targets",
-      "image": "./skill_images/icon_hero_skill_Sinestro_main.png"
-    },
-    "globalSkill": {
-      "name": "Sinestro's Might",
-      "description": "Increases all Champions' Spiritual DEF and [Magical] Champions' Spiritual AMP.",
-      "image": "./globalskill_images/Sinestro_global.png"
-    },
-    "skills": [
-      {
-        "name": "Bondage of Fear",
-        "description": "Deal Spiritual DMG equal to 300% of ATK to enemy",
-        "image": "./skill_images/icon_hero_skill_Sinestro_sub01.png"
-      },
-      {
-        "name": "Strong Will",
-        "description": "Restore own energy by 30",
-        "image": "./skill_images/icon_hero_skill_Sinestro_sub02.png"
-      },
-      {
-        "name": "Fear Grows",
-        "description": "When allies defeat an enemy, Sinestro's ATK increases by 5% for 10s per [Legion of Doom] ally present",
-        "image": "./skill_images/icon_hero_skill_Sinestro_sub03.png"
-      }
-    ],
-    "upgrades": [
-      {
-        "name": "Bondage of Fear - Enhanced",
-        "description": "Each time Sinestro attacks, there is a chance to reduce the target's Spiritual DEF.",
-        "image": "./upgrade_images/Sinestro_sub01_enhanced.png"
-      },
-      {
-        "name": "Strong Will - Enhanced",
-        "description": "Reduces cooldown of [Strong Will].",
-        "image": "./upgrade_images/Sinestro_sub02_enhanced.png"
-      },
-      {
-        "name": "Fear Grows - Enhanced",
-        "description": "Increases Sinestro's Spiritual PEN.",
-        "image": "./upgrade_images/Sinestro_sub03_enhanced.png"
-      }
-    ],
-    "previousTier": "S+"
   },
   {
     "id": "superboy",
@@ -2897,87 +2888,6 @@
     ]
   },
   {
-    "id": "batman_mythic_plus",
-    "name": "Batman (Mythic +)",
-    "class": "Warrior",
-    "rarity": "Mythic +",
-    "tier": "B",
-    "previousTier": "C",
-    "damageType": "Physical",
-    "tagSynergies": [
-      "bat_family",
-      "justice_league",
-      "weapon_master"
-    ],
-    "gameModes": [
-      "PvP",
-      "Killer Tank CC"
-    ],
-    "sourcesWhereAvailable": [
-      "The Bleed",
-      "Motherboxes (Purple +)",
-      "Rookie Growth/Starter Pack"
-    ],
-    "transmutePriorities": [
-      "HP",
-      "P DEF",
-      "ATK"
-    ],
-    "recommendedLegacyPieces": [
-      "promethium_claws",
-      "gabriel_horn",
-      "not_so_huge_hammer"
-    ],
-    "quantumsTake": "Batman is one of the most iconic DC characters, and a lot of us in the community expected more out of his kit. He was much better in the beta, but he's more mediocre than anything in the current version of the game. He's quite useful in Training Simulator, and I've seen him used to great effect with Nightwing in PvP. Non-spenders who get lucky and obtain a couple copies of him, or lite spenders who are willing to purchase his starter pack can get a good jump on Combat Cycle early on, but there are just too many Bleed champions who can outpace him.",
-    "imageHeadshot": "./headshot_images/img_hero_ult_Batman.png",
-    "imageFull": "./full_images/Batman_full.png",
-    "ultimate": {
-      "name": "Batmobile",
-      "description": "Batman deploys his gadgets, dealing physical damage equal to [X]% of his Attack to enemies in a circular area.",
-      "image": "./skill_images/icon_hero_skill_Batman_main.png"
-    },
-    "globalSkill": {
-      "name": "Bob & Weave",
-      "description": "Increases [Warrior] Champions' Dodge.",
-      "image": "./globalskill_images/Batman_global.png"
-    },
-    "skills": [
-      {
-        "name": "Dark Knight Detective",
-        "description": "Batman throws his Batarangs, dealing Physical DMG equal to a [%] of his ATK to enemies in a fan-shaped area and briefly interrupting their actions.",
-        "image": "./skill_images/icon_hero_skill_Batman_sub01.png"
-      },
-      {
-        "name": "Utlitity Belt",
-        "description": "Upon landing a Critical Hit, Batman throws a smoke bomb at enemies in a circular area, dealing Physical DMG equal to a [%] of his ATK and reducing their ATK by a [%] for 5s. Batman becomes untargetable during this time. Can trigger once every 10s.",
-        "image": "./skill_images/icon_hero_skill_Batman_sub02.png"
-      },
-      {
-        "name": "I Am Vengeance",
-        "description": "At the start of battle, each [Justice League] or [Bat Family] ally present increases Batman’s Crit Rate by a [%].",
-        "image": "./skill_images/icon_hero_skill_Batman_sub03.png"
-      }
-    ],
-    "upgrades": [
-      {
-        "name": "Dark Knight Detective - Enhanced",
-        "description": "Reduces cooldown of [Dark Knight Detective].",
-        "image": "./upgrade_images/Batman_sub01_enhanced.png"
-      },
-      {
-        "name": "Utility Belt - Enhanced",
-        "description": "Increases Batman's Crit Rate.",
-        "image": "./upgrade_images/Batman_sub02_enhanced.png"
-      },
-      {
-        "name": "I Am Vengeance - Enhanced",
-        "description": "Increases Batman's Max HP.",
-        "image": "./upgrade_images/Batman_sub03_enhanced.png"
-      }
-    ],
-    "ascendedFrom": "batman"
-  },
-  {
     "id": "wonder_woman",
     "name": "Wonder Woman (Diana Prince) (Legendary)",
     "class": "Guardian",
@@ -3058,88 +2968,11 @@
     "ascendsTo": "wonder_woman_mythic"
   },
   {
-    "id": "scarecrow",
-    "name": "Scarecrow",
-    "class": "Guardian",
-    "rarity": "Mythic +",
-    "tier": "A",
-    "damageType": "Spiritual",
-    "tagSynergies": [
-      "legion_of_doom",
-      "arkhams_most_wanted",
-      "weapon_master"
-    ],
-    "gameModes": [
-      "PvP"
-    ],
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
-    ],
-    "transmutePriorities": [
-      "HP",
-      "Energy Gain Bonus",
-      "S DEF"
-    ],
-    "recommendedLegacyPieces": [
-      "fear_reaper",
-      "improved_fear_gas_vial",
-      "duplication_mirror"
-    ],
-    "quantumsTake": "Scarecrow was the best tank in the game until early 2026, when his kit was gutted due to how overpowered his stun mechanic was at the beginning of fights. They went further, though, and made him very good against physical damage, but a joke against spiritual damage. He's still usable, as he's required for LOD in PvP and he's still decent with Arkham.",
-    "imageHeadshot": "./headshot_images/scarecrow.png",
-    "imageFull": "./full_images/Scarecrow_full.png",
-    "ultimate": {
-      "name": "The Scent of Fear",
-      "description": "Scarecrow turns into a towering phantom, dealing spiritual damage equal to [%] of his Attack to enemies in a circular area and inflicting one stack of [Fear]. [Fear]: Reduces physical damage dealt by [%], stacking up to [3] times and lasting [20s].",
-      "image": "./skill_images/icon_hero_skill_Scarecrow_main.png"
-    },
-    "globalSkill": {
-      "name": "Frightener",
-      "description": "Increases all Champions' Spiritual DEF and [Guardian] Champions' HP.",
-      "image": "./globalskill_images/Scarecrow_global.png"
-    },
-    "skills": [
-      {
-        "name": "Terror Strike",
-        "description": "Scarecrow intimidates enemies in a fan-shaped area, dealing spiritual damage equal to [%] of his Attack and inflicting one stack of [Fear].",
-        "image": "./skill_images/icon_hero_skill_Scarecrow_sub01.png"
-      },
-      {
-        "name": "Haunting Visions",
-        "description": "Every time Scarecrow inflicts [Fear], he gains a permanent [%] Attack Up and [%] Physical Defense Up for each stack inflicted, stacking up to [60] times.",
-        "image": "./skill_images/icon_hero_skill_Scarecrow_sub02.png"
-      },
-      {
-        "name": "Growing Terror",
-        "description": "Increases Scarecrow's Max HP by [%]. After the start of battle, every [6s], all [Arkham's Most Wanted] allies gain Physical Defense equal to [%] of Scarecrow's base Physical Defense, stacking up to [%].",
-        "image": "./skill_images/icon_hero_skill_Scarecrow_sub03.png"
-      }
-    ],
-    "upgrades": [
-      {
-        "name": "Terror Strike - Enhanced",
-        "description": "Reduces cooldown of [Terror Strike].",
-        "image": "./upgrade_images/Scarecrow_sub01_enhanced.png"
-      },
-      {
-        "name": "Haunting Visions - Enhanced",
-        "description": "Increases Scarecrow's Physical Defense.",
-        "image": "./upgrade_images/Scarecrow_sub02_enhanced.png"
-      },
-      {
-        "name": "Growing Terror - Enhanced",
-        "description": "Increases Scarecrow's HP.",
-        "image": "./upgrade_images/Scarecrow_sub03_enhanced.png"
-      }
-    ]
-  },
-  {
     "id": "wonder_woman_mythic",
     "name": "Wonder Woman (Diana Prince) (Mythic)",
     "class": "Guardian",
     "rarity": "Mythic",
     "tier": "A",
-    "previousTier": "B",
     "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
@@ -3594,89 +3427,6 @@
         "name": "Epon - Enhanced",
         "description": "Increases Zatanna's Physical DEF.",
         "image": "./upgrade_images/Zatanna_sub03_enhanced.png"
-      }
-    ]
-  },
-  {
-    "id": "starfire",
-    "name": "Starfire",
-    "class": "Supporter",
-    "rarity": "Mythic +",
-    "tier": "S+",
-    "damageType": "Spiritual",
-    "tagSynergies": [
-      "outsiders",
-      "teen_titans",
-      "energy_wielder"
-    ],
-    "gameModes": [
-      "PvP",
-      "Devastator CC",
-      "Murder Machine CC",
-      "Killer Tank CC",
-      "Drowned CC",
-      "Merciless CC",
-      "Red Death CC",
-      "Dawnbreaker CC"
-    ],
-    "sourcesWhereAvailable": [
-      "The Bleed (Limited)"
-    ],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "ATK",
-      "Healing Bonus"
-    ],
-    "recommendedLegacyPieces": [
-      "starfires_starbolts",
-      "mind_control_hat",
-      "cocoon_gun"
-    ],
-    "quantumsTake": "Starfire is the first Limited Mythic healer added to the game, and accordingly has pretty powerful stat scaling. She does perform best when used with Titans, particularly Nightwing, but she can be inserted into a lot of lineups and be quite efficient. She's good in both PvP and Combat Cycle and has solidified herself as an S-tier champion. You can get away with taking her to purple stars for most players. Her legacy piece is a must buy, even before you have her unlocked. Note that she received a slight rework in early 2026, but so far that rework has resulted in either net neutral or net positive effects. In other words, early advice still stands. She's the best healer in the game.",
-    "imageHeadshot": "./headshot_images/starfire.png",
-    "imageFull": "./full_images/Starfire_full.png",
-    "ultimate": {
-      "name": "Energy Absorption Field",
-      "description": "Starfire absorbs ultraviolet light energy to create an Energy Absorption Field, reducing damage taken by allies inside by a % for 20s. This effect is non-stackable.\r\nAdditionally, [Teen Titans] or [Outsiders] allies gain a % Spiritual Damage Reduction, stacking up to 3 times.",
-      "image": "./skill_images/icon_hero_skill_Starfire_main.png"
-    },
-    "globalSkill": {
-      "name": "Empathic Perception",
-      "description": "Increases all Champions' Spiritual DEF and [Supporter] Champions' ATK.",
-      "image": "./globalskill_images/Starfire_global.png"
-    },
-    "skills": [
-      {
-        "name": "Starbolts",
-        "description": "Starfire unleashes a beam of light, dealing Spiritual DMG equal to [X]% of her ATK to enemies within range and increasing all allies' Attack by [X]% for 10s.",
-        "image": "./skill_images/icon_hero_skill_Starfire_sub01.png"
-      },
-      {
-        "name": "Healing Energy",
-        "description": "While the Energy Absorption Field is active, allies inside it restores HP equal to [X]% of Starfire's ATK per second.",
-        "image": "./skill_images/icon_hero_skill_Starfire_sub02.png"
-      },
-      {
-        "name": "Precognition",
-        "description": "At the start of battle, each [Outsiders] or [Teen Titans] ally present increases Starfire’s Energy Gain by [X]%.",
-        "image": "./skill_images/icon_hero_skill_Starfire_sub03.png"
-      }
-    ],
-    "upgrades": [
-      {
-        "name": "Starbolts - Enhanced",
-        "description": "Reduces cooldown of [Starbolts].",
-        "image": "./upgrade_images/Starfire_sub01_enhanced.png"
-      },
-      {
-        "name": "Healing Energy - Enhanced",
-        "description": "Increases Starfire's ATK.",
-        "image": "./upgrade_images/Starfire_sub02_enhanced.png"
-      },
-      {
-        "name": "Precognition - Enhanced",
-        "description": "Increases Starfire's Spiritual DEF.",
-        "image": "./upgrade_images/Starfire_sub03_enhanced.png"
       }
     ]
   },
@@ -4230,6 +3980,90 @@
     ]
   },
   {
+    "id": "starfire",
+    "name": "Starfire",
+    "class": "Supporter",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "damageType": "Spiritual",
+    "tagSynergies": [
+      "outsiders",
+      "teen_titans",
+      "energy_wielder"
+    ],
+    "gameModes": [
+      "PvP",
+      "Devastator CC",
+      "Murder Machine CC",
+      "Killer Tank CC",
+      "Drowned CC",
+      "Merciless CC",
+      "Red Death CC",
+      "Dawnbreaker CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "ATK",
+      "Healing Bonus"
+    ],
+    "recommendedLegacyPieces": [
+      "starfires_starbolts",
+      "mind_control_hat",
+      "cocoon_gun"
+    ],
+    "quantumsTake": "Starfire is the first Limited Mythic healer added to the game, and accordingly has pretty powerful stat scaling. She does perform best when used with Titans, particularly Nightwing, but she can be inserted into a lot of lineups and be quite efficient. She's good in both PvP and Combat Cycle and has solidified herself as an S-tier champion. You can get away with taking her to purple stars for most players. Her legacy piece is a must buy, even before you have her unlocked. Note that she received a slight rework in early 2026, but so far that rework has resulted in either net neutral or net positive effects. In other words, early advice still stands. She's the best healer in the game.",
+    "imageHeadshot": "./headshot_images/starfire.png",
+    "imageFull": "./full_images/Starfire_full.png",
+    "ultimate": {
+      "name": "Energy Absorption Field",
+      "description": "Starfire absorbs ultraviolet light energy to create an Energy Absorption Field, reducing damage taken by allies inside by a % for 20s. This effect is non-stackable.\r\nAdditionally, [Teen Titans] or [Outsiders] allies gain a % Spiritual Damage Reduction, stacking up to 3 times.",
+      "image": "./skill_images/icon_hero_skill_Starfire_main.png"
+    },
+    "globalSkill": {
+      "name": "Empathic Perception",
+      "description": "Increases all Champions' Spiritual DEF and [Supporter] Champions' ATK.",
+      "image": "./globalskill_images/Starfire_global.png"
+    },
+    "skills": [
+      {
+        "name": "Starbolts",
+        "description": "Starfire unleashes a beam of light, dealing Spiritual DMG equal to [X]% of her ATK to enemies within range and increasing all allies' Attack by [X]% for 10s.",
+        "image": "./skill_images/icon_hero_skill_Starfire_sub01.png"
+      },
+      {
+        "name": "Healing Energy",
+        "description": "While the Energy Absorption Field is active, allies inside it restores HP equal to [X]% of Starfire's ATK per second.",
+        "image": "./skill_images/icon_hero_skill_Starfire_sub02.png"
+      },
+      {
+        "name": "Precognition",
+        "description": "At the start of battle, each [Outsiders] or [Teen Titans] ally present increases Starfire’s Energy Gain by [X]%.",
+        "image": "./skill_images/icon_hero_skill_Starfire_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Starbolts - Enhanced",
+        "description": "Reduces cooldown of [Starbolts].",
+        "image": "./upgrade_images/Starfire_sub01_enhanced.png"
+      },
+      {
+        "name": "Healing Energy - Enhanced",
+        "description": "Increases Starfire's ATK.",
+        "image": "./upgrade_images/Starfire_sub02_enhanced.png"
+      },
+      {
+        "name": "Precognition - Enhanced",
+        "description": "Increases Starfire's Spiritual DEF.",
+        "image": "./upgrade_images/Starfire_sub03_enhanced.png"
+      }
+    ],
+    "previousTier": "S+"
+  },
+  {
     "id": "mr_freeze",
     "name": "Mr. Freeze (Victor Fries)",
     "class": "Guardian",
@@ -4557,8 +4391,7 @@
         "description": "Increases Donna Troy's Physical DEF by [%].",
         "image": "./upgrade_images/DonnaTroy_sub03_enhanced.png"
       }
-    ],
-    "previousTier": "B"
+    ]
   },
   {
     "id": "red_robin",
@@ -4719,8 +4552,7 @@
         "description": "Increases Robin's Crit Rate.",
         "image": "./upgrade_images/Robin_sub03_enhanced.png"
       }
-    ],
-    "previousTier": "B"
+    ]
   },
   {
     "id": "red_hood",
@@ -4800,8 +4632,7 @@
         "image": "./upgrade_images/RedHood_sub03_enhanced.png"
       }
     ],
-    "ascendsTo": "red_hood_mythic",
-    "previousTier": "C"
+    "ascendsTo": "red_hood_mythic"
   },
   {
     "id": "orphan_cassandra_cain",
@@ -4878,8 +4709,7 @@
         "description": "Increases Cassandra Cain's Crit DMG.",
         "image": "./upgrade_images/CassandraCain_sub03_enhanced.png"
       }
-    ],
-    "previousTier": "A+"
+    ]
   },
   {
     "id": "the_flash_mythic_plus",
@@ -4887,7 +4717,6 @@
     "class": "Supporter",
     "rarity": "Mythic +",
     "tier": "S",
-    "previousTier": "A+",
     "damageType": "Physical",
     "tagSynergies": [
       "justice_league",
@@ -5045,8 +4874,7 @@
         "image": "./upgrade_images/GreenLantern_sub03_enhanced.png"
       }
     ],
-    "ascendedFrom": "green_lantern",
-    "previousTier": "A+"
+    "ascendedFrom": "green_lantern"
   },
   {
     "id": "lex_luthor",
@@ -5137,7 +4965,6 @@
     "class": "Assassin",
     "rarity": "Mythic +",
     "tier": "A",
-    "previousTier": "A+",
     "damageType": "Physical",
     "tagSynergies": [
       "legion_of_doom",
@@ -5521,5 +5348,286 @@
         "image": "./upgrade_images/Catwoman_sub03_enhanced.png"
       }
     ]
+  },
+  {
+    "id": "scarecrow",
+    "name": "Scarecrow",
+    "class": "Guardian",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "damageType": "Spiritual",
+    "tagSynergies": [
+      "legion_of_doom",
+      "arkhams_most_wanted",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "PvP"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed (Limited)"
+    ],
+    "transmutePriorities": [
+      "HP",
+      "Energy Gain Bonus",
+      "S DEF"
+    ],
+    "recommendedLegacyPieces": [
+      "fear_reaper",
+      "improved_fear_gas_vial",
+      "duplication_mirror"
+    ],
+    "quantumsTake": "Scarecrow was the best tank in the game until early 2026, when his kit was gutted due to how overpowered his stun mechanic was at the beginning of fights. They went further, though, and made him very good against physical damage, but a joke against spiritual damage. He's still usable, as he's required for LOD in PvP and he's still decent with Arkham.",
+    "imageHeadshot": "./headshot_images/scarecrow.png",
+    "imageFull": "./full_images/Scarecrow_full.png",
+    "ultimate": {
+      "name": "The Scent of Fear",
+      "description": "Scarecrow turns into a towering phantom, dealing spiritual damage equal to [%] of his Attack to enemies in a circular area and inflicting one stack of [Fear]. [Fear]: Reduces physical damage dealt by [%], stacking up to [3] times and lasting [20s].",
+      "image": "./skill_images/icon_hero_skill_Scarecrow_main.png"
+    },
+    "globalSkill": {
+      "name": "Frightener",
+      "description": "Increases all Champions' Spiritual DEF and [Guardian] Champions' HP.",
+      "image": "./globalskill_images/Scarecrow_global.png"
+    },
+    "skills": [
+      {
+        "name": "Terror Strike",
+        "description": "Scarecrow intimidates enemies in a fan-shaped area, dealing spiritual damage equal to [%] of his Attack and inflicting one stack of [Fear].",
+        "image": "./skill_images/icon_hero_skill_Scarecrow_sub01.png"
+      },
+      {
+        "name": "Haunting Visions",
+        "description": "Every time Scarecrow inflicts [Fear], he gains a permanent [%] Attack Up and [%] Physical Defense Up for each stack inflicted, stacking up to [60] times.",
+        "image": "./skill_images/icon_hero_skill_Scarecrow_sub02.png"
+      },
+      {
+        "name": "Growing Terror",
+        "description": "Increases Scarecrow's Max HP by [%]. After the start of battle, every [6s], all [Arkham's Most Wanted] allies gain Physical Defense equal to [%] of Scarecrow's base Physical Defense, stacking up to [%].",
+        "image": "./skill_images/icon_hero_skill_Scarecrow_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Terror Strike - Enhanced",
+        "description": "Reduces cooldown of [Terror Strike].",
+        "image": "./upgrade_images/Scarecrow_sub01_enhanced.png"
+      },
+      {
+        "name": "Haunting Visions - Enhanced",
+        "description": "Increases Scarecrow's Physical Defense.",
+        "image": "./upgrade_images/Scarecrow_sub02_enhanced.png"
+      },
+      {
+        "name": "Growing Terror - Enhanced",
+        "description": "Increases Scarecrow's HP.",
+        "image": "./upgrade_images/Scarecrow_sub03_enhanced.png"
+      }
+    ],
+    "previousTier": "A"
+  },
+  {
+    "id": "batman_mythic_plus",
+    "name": "Batman (Mythic +)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "bat_family",
+      "justice_league",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "PvP",
+      "Killer Tank CC"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Rookie Growth/Starter Pack"
+    ],
+    "transmutePriorities": [
+      "HP",
+      "P DEF",
+      "ATK"
+    ],
+    "recommendedLegacyPieces": [
+      "promethium_claws",
+      "gabriel_horn",
+      "not_so_huge_hammer"
+    ],
+    "quantumsTake": "Batman is one of the most iconic DC characters, and a lot of us in the community expected more out of his kit. He was much better in the beta, but he's more mediocre than anything in the current version of the game. He's quite useful in Training Simulator, and I've seen him used to great effect with Nightwing in PvP. Non-spenders who get lucky and obtain a couple copies of him, or lite spenders who are willing to purchase his starter pack can get a good jump on Combat Cycle early on, but there are just too many Bleed champions who can outpace him.",
+    "imageHeadshot": "./headshot_images/img_hero_ult_Batman.png",
+    "imageFull": "./full_images/Batman_full.png",
+    "ultimate": {
+      "name": "Batmobile",
+      "description": "Batman deploys his gadgets, dealing physical damage equal to [X]% of his Attack to enemies in a circular area.",
+      "image": "./skill_images/icon_hero_skill_Batman_main.png"
+    },
+    "globalSkill": {
+      "name": "Bob & Weave",
+      "description": "Increases [Warrior] Champions' Dodge.",
+      "image": "./globalskill_images/Batman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Dark Knight Detective",
+        "description": "Batman throws his Batarangs, dealing Physical DMG equal to a [%] of his ATK to enemies in a fan-shaped area and briefly interrupting their actions.",
+        "image": "./skill_images/icon_hero_skill_Batman_sub01.png"
+      },
+      {
+        "name": "Utlitity Belt",
+        "description": "Upon landing a Critical Hit, Batman throws a smoke bomb at enemies in a circular area, dealing Physical DMG equal to a [%] of his ATK and reducing their ATK by a [%] for 5s. Batman becomes untargetable during this time. Can trigger once every 10s.",
+        "image": "./skill_images/icon_hero_skill_Batman_sub02.png"
+      },
+      {
+        "name": "I Am Vengeance",
+        "description": "At the start of battle, each [Justice League] or [Bat Family] ally present increases Batman’s Crit Rate by a [%].",
+        "image": "./skill_images/icon_hero_skill_Batman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Dark Knight Detective - Enhanced",
+        "description": "Reduces cooldown of [Dark Knight Detective].",
+        "image": "./upgrade_images/Batman_sub01_enhanced.png"
+      },
+      {
+        "name": "Utility Belt - Enhanced",
+        "description": "Increases Batman's Crit Rate.",
+        "image": "./upgrade_images/Batman_sub02_enhanced.png"
+      },
+      {
+        "name": "I Am Vengeance - Enhanced",
+        "description": "Increases Batman's Max HP.",
+        "image": "./upgrade_images/Batman_sub03_enhanced.png"
+      }
+    ],
+    "ascendedFrom": "batman",
+    "previousTier": "B"
+  },
+  {
+    "id": "red_robin_mythic",
+    "name": "Red Robin (Mythic +)",
+    "class": "Guardian",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "isNew": true,
+    "damageType": "Physical",
+    "tagSynergies": [
+      "teen_titans",
+      "weapon_master",
+      "bat_family"
+    ],
+    "recommendedLegacyPieces": [
+      "rocket_wings"
+    ],
+    "imageHeadshot": "./headshot_images/img_hero_ult_RedRobin.png",
+    "imageFull": "./full_images/img_hero_pic_RedRobin.png",
+    "ascendedFrom": "red_robin",
+    "whaleOrSkipValue": "Situational / Roster Dependent"
+  },
+  {
+    "id": "doctor_fate_mythic",
+    "name": "Doctor Fate (Mythic +)",
+    "class": "Guardian",
+    "rarity": "Mythic +",
+    "tier": "S",
+    "isNew": true,
+    "damageType": "Spiritual",
+    "tagSynergies": [
+      "justice_league_dark"
+    ],
+    "recommendedLegacyPieces": [
+      "cloak_of_destiny"
+    ],
+    "imageHeadshot": "./headshot_images/Doctor_Fate.png",
+    "ascendedFrom": "doctor_fate",
+    "whaleOrSkipValue": "Top Tier"
+  },
+  {
+    "id": "batman_knightfight",
+    "name": "Batman Knightfight",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "A",
+    "isNew": true,
+    "damageType": "Physical",
+    "tagSynergies": [
+      "bat_family",
+      "weapon_master"
+    ],
+    "gameModes": [
+      "PvP"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "Crit DMG",
+      "Crit Rate",
+      "ATK%"
+    ],
+    "recommendedLegacyPieces": [
+      "knight_moonblade"
+    ],
+    "quantumsTake": "We are currently evaluating this champion in order to give you the best analysis and recommendation for your account. So far what we are seeing is that he needs to be paired with Red Hood Knightfight and at least one of their legacy pieces needs to be heavily invested. Please check back later for more information.",
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_kfbatman.png",
+    "imageFull": "./full_images/img_hero_pic_kfbatman.png",
+    "ultimate": {
+      "name": "Knight's Reckoning",
+      "description": "Batman Knightfight sweeps his blade, dealing physical damage equal to [1000/1250/1500/1750/2000%] of his Attack to enemies within range. If the attack fails to defeat any enemy, he immediately follows up with another strike that deals physical damage equal to [500/625/750/875/1000%] of his Attack.",
+      "image": "./skill_images/icon_hero_skill_kfbatman_main.png"
+    },
+    "globalSkill": {
+      "name": "Battlefield Doctrine",
+      "description": "Increases all Champions' HP and Warrior Champions' ATK.",
+      "image": "./globalskill_images/icon_hero_skill_kfbatman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Whirling Verdict",
+        "description": "Batman Knightfight whirls his blade around him, dealing physical damage equal to [300/450/600/750/900%] of his Attack to enemies within range.",
+        "image": "./skill_images/icon_hero_skill_kfbatman_sub01.png"
+      },
+      {
+        "name": "Legacy of the Bat",
+        "description": "At the start of battle, all [Bat Family] allies' Crit Damage is increased by [20/30/40/50/60%]. When Batman Knightfight lands a critical hit, [Whirling Verdict]'s cooldown is reduced by 1s. This can trigger once every 1s.",
+        "image": "./skill_images/icon_hero_skill_kfbatman_sub02.png"
+      },
+      {
+        "name": "Unbroken Resolve",
+        "description": "Increases Batman Knightfight's Max HP by [20/30/40/50/60%]. His Attack increases by [0.2/0.4/0.6/0.8/1%] for every 1% of HP lost, stacking up to [20/40/60/80/100%].",
+        "image": "./skill_images/icon_hero_skill_kfbatman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Whirling Verdict - Enhanced",
+        "description": "Increases Batman Knightfight's Attack.",
+        "image": "./upgrade_images/bmkf skill 1 enhanced.png"
+      },
+      {
+        "name": "Legacy of the Bat - Enhanced",
+        "description": "Increases Batman Knightfight's Crit Rate.",
+        "image": "./upgrade_images/bmkf skill 2 enhanced.png"
+      },
+      {
+        "name": "Unbroken Resolve - Enhanced",
+        "description": "Increases Batman Knightfight's Max HP.",
+        "image": "./upgrade_images/bmkf skill 3 enhanced.png"
+      }
+    ],
+    "starBreakpoint": 1,
+    "acDcPriority": [
+      "Crit Rate",
+      "Physical PEN",
+      "Major 1",
+      "Major 2",
+      "Major 3"
+    ],
+    "whaleOrSkipValue": "Situational / Roster Dependent"
   }
 ]

@@ -81,6 +81,33 @@
     ]
   },
   {
+    "name": "Demon's Sword",
+    "id": "demons_sword",
+    "image": "./legacy_images/DemonsSword.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "C",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "No Quarter",
+        "description": "Activates only when equipped by Ra's al Ghul. Increases ATK by %. For every [%] of Ra's al Ghul's Max HP lost, single-target DMG is increased by %.",
+        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_main_exclusive.png"
+      },
+      {
+        "name": "Deadlier Cornered",
+        "description": "Increases Physical DMG by %. Before the wearer casts their Ultimate, if HP is below 50%, the wearer gains an additional % Physical DMG bonus for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_general_skills.png"
+      }
+    ],
+    "previousTier": "B"
+  },
+  {
     "id": "dual_katanas",
     "name": "Dual Katanas",
     "image": "./legacy_images/Icon_sw_DualKatanas.png",
@@ -167,7 +194,6 @@
     "unique": true,
     "tier": "C",
     "role": "Guardian | Warrior",
-    "isNew": true,
     "gearEffects": [
       "ATK",
       "ATK%",
@@ -234,7 +260,6 @@
     "unique": true,
     "tier": "S",
     "role": "Guardian | Warrior",
-    "isNew": true,
     "gearEffects": [
       "ATK",
       "ATK%",
@@ -251,8 +276,7 @@
         "description": "Increases the wearer's Physical Penetration by [%]. After casting the Ultimate, the wearer restores [%] o their Max HP.",
         "image": "./legacy_images_skills/Absorption Collar General Skill.png"
       }
-    ],
-    "previousTier": "S+"
+    ]
   },
   {
     "id": "blackest_bats",
@@ -334,32 +358,6 @@
     ]
   },
   {
-    "id": "kuru_pendant",
-    "name": "Kuru Pendant",
-    "image": "./legacy_images/Icon_sw_45.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "HP",
-      "HP%",
-      "Spiritual AMP"
-    ],
-    "legacySkills": [
-      {
-        "name": "H'ronmeer's Vengeance",
-        "description": "Activates only when equipped by Martian Manhunter. Every time an enemy casts a skill or their Ultimate, Martian Manhunter restores % of his Max HP. Cooldown: 5s.",
-        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_main_exclusive.png"
-      },
-      {
-        "name": "Piercing Gaze",
-        "description": "Every time an ally casts their Ultimate, the wearer's ATK and Phsyical DEF are permanently increased by %, stacking up to %.",
-        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_general.png"
-      }
-    ]
-  },
-  {
     "id": "starfires_starbolts",
     "name": "Starfire's Starbolts",
     "image": "./legacy_images/Icon_sw_46.png",
@@ -383,8 +381,7 @@
         "description": "Increases the wearer's ATK by %. Each time the wearer casts their Ultimate, nearby allies restore HP equal to % of the wearer's ATK plus % of the target's lost HP.",
         "image": "./legacy_images_skills/icon_hero_skill_Starfire_general_skills.png"
       }
-    ],
-    "previousTier": "S+"
+    ]
   },
   {
     "id": "house_of_el_symbol",
@@ -481,33 +478,6 @@
     ]
   },
   {
-    "id": "solar_recovery_suit",
-    "name": "Solar Recovery Suit",
-    "image": "./legacy_images/SolarRecoverySuit.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "B",
-    "role": "Guardian | Warrior",
-    "isP2W": true,
-    "gearEffects": [
-      "ATK",
-      "ATK %",
-      "Crit Rate"
-    ],
-    "legacySkills": [
-      {
-        "name": "Kryptonian Shockwave",
-        "description": "Atcivates only when equipped by Superman. After Superman casts his Ultimate, he calls down a meteor, dealing physical damage equal to [X]% of his Attack to enemies in a circular area and stunning them for 1s. [Stunned]: Incapacitates the target.",
-        "image": "./legacy_images_skills/icon_hero_skill_Superman_main_exclusive_02.png"
-      },
-      {
-        "name": "Kryptonian Solar Recharge",
-        "description": "After casting the Ultimate, the wearer restores HP equal to [X]% of their Attack.",
-        "image": "./legacy_images_skills/icon_hero_skill_Superman_general_02.png"
-      }
-    ]
-  },
-  {
     "id": "spacehog",
     "name": "Spacehog",
     "image": "./legacy_images/Icon_sw_58_Spacehog.png",
@@ -559,6 +529,19 @@
       "ATK",
       "ATK%",
       "Effect ACC"
+    ]
+  },
+  {
+    "id": "rocket_wings",
+    "name": "Rocket Wings",
+    "image": "./legacy_images/Icon_sw_69.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Guardian | Warrior",
+    "isNew": true,
+    "gearEffects": [
+      "HP, ATK%, HP%"
     ]
   },
   {
@@ -637,8 +620,7 @@
         "description": "Increases the wearer's Crit Damage by [X]%. Upon landing a critical hit, Crit Damage is increased by an additional [X]% for 5s.",
         "image": "./legacy_images_skills/icon_hero_skill_cassandracain_general_skills.png"
       }
-    ],
-    "previousTier": "A+"
+    ]
   },
   {
     "id": "noras_embrace",
@@ -664,36 +646,7 @@
         "description": "When the wearer is hit by an enemy basic attack, there is a 50% base chance to restore HP equal to [%] of lost HP.",
         "image": "./legacy_images_skills/icon_hero_skill_Mr_Freeze_general_skills.png"
       }
-    ],
-    "previousTier": "A+"
-  },
-  {
-    "id": "knightbow",
-    "name": "Knightbow",
-    "image": "./legacy_images/Icon_sw_66.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "B",
-    "role": "Magical | Assassin | Firepower",
-    "isNew": true,
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit DMG"
-    ],
-    "legacySkills": [
-      {
-        "name": "Counter-Strike",
-        "description": "When Red Hood Knightfight lands a critical hit, his basic attack switches to rapid fire, dealing physical damage equal to [%] of his Attack plus [%] of the target's Max HP to two enemies. Total damage is capped at [%] of Red Hood Knightfight's Attack. Can trigger once every second.",
-        "image": "./legacy_images_skills/icon_hero_skill_redhoodknightfight_main_exclusive.png"
-      },
-      {
-        "name": "Press the Attack",
-        "description": "When the wearer lands a critical hit, their Attack is increased by [%], stacking up to 10 times.",
-        "image": "./legacy_images_skills/icon_hero_skill_redhoodknightfight_general_skills.png"
-      }
-    ],
-    "previousTier": "A"
+    ]
   },
   {
     "name": "Sigil Magic",
@@ -719,8 +672,7 @@
         "description": "Increases the wearer's Spiritual PEN by %. After casting the Ultimate, the wearer's ATK is permanently increased by %, stacking up to %.",
         "image": "./legacy_images_skills/icon_hero_skill_Constantine_general_skills.png"
       }
-    ],
-    "previousTier": "S"
+    ]
   },
   {
     "id": "oracle_drone",
@@ -730,13 +682,11 @@
     "unique": true,
     "tier": "A+",
     "role": "Supporter | Intimidator",
-    "isNew": true,
     "gearEffects": [
       "HP",
       "ATK%",
       "HP%"
-    ],
-    "previousTier": "A"
+    ]
   },
   {
     "id": "themysciran_sceptre",
@@ -762,8 +712,7 @@
         "description": "Increases the wearer's Physical DEF by %. After the wearer casts their Ultimate, all other allies gain [X] Energy.",
         "image": "./legacy_images_skills/icon_hero_skill_hippolyta_general_skills.png"
       }
-    ],
-    "previousTier": "S+"
+    ]
   },
   {
     "id": "speedster_suit",
@@ -773,11 +722,23 @@
     "unique": true,
     "tier": "S",
     "role": "Supporter | Intimidator",
-    "isNew": true,
     "gearEffects": [
       "HP",
       "ATK%",
       "HP%"
+    ]
+  },
+  {
+    "id": "knight_moonblade",
+    "name": "Knight Moonblade",
+    "image": "./legacy_images/Icon_sw_70.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Guardian | Warrior",
+    "isNew": true,
+    "gearEffects": [
+      "ATK, ATK%, Crit Rate"
     ]
   },
   {
@@ -788,13 +749,11 @@
     "unique": true,
     "tier": "B",
     "role": "Magical | Assassin | Firepower",
-    "isNew": true,
     "gearEffects": [
       "ATK",
       "ATK%",
       "Crit DMG"
-    ],
-    "previousTier": "A"
+    ]
   },
   {
     "id": "super_six_string",
@@ -971,30 +930,31 @@
     ]
   },
   {
-    "name": "Demon's Sword",
-    "id": "demons_sword",
-    "image": "./legacy_images/DemonsSword.png",
+    "id": "kuru_pendant",
+    "name": "Kuru Pendant",
+    "image": "./legacy_images/Icon_sw_45.png",
     "rank": "Mythic +",
     "unique": true,
     "tier": "B",
-    "role": "Magical | Assassin | Firepower",
+    "role": "Guardian | Warrior",
     "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit DMG"
+      "HP",
+      "HP%",
+      "Spiritual AMP"
     ],
     "legacySkills": [
       {
-        "name": "No Quarter",
-        "description": "Activates only when equipped by Ra's al Ghul. Increases ATK by %. For every [%] of Ra's al Ghul's Max HP lost, single-target DMG is increased by %.",
-        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_main_exclusive.png"
+        "name": "H'ronmeer's Vengeance",
+        "description": "Activates only when equipped by Martian Manhunter. Every time an enemy casts a skill or their Ultimate, Martian Manhunter restores % of his Max HP. Cooldown: 5s.",
+        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_main_exclusive.png"
       },
       {
-        "name": "Deadlier Cornered",
-        "description": "Increases Physical DMG by %. Before the wearer casts their Ultimate, if HP is below 50%, the wearer gains an additional % Physical DMG bonus for 8s.",
-        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_general_skills.png"
+        "name": "Piercing Gaze",
+        "description": "Every time an ally casts their Ultimate, the wearer's ATK and Phsyical DEF are permanently increased by %, stacking up to %.",
+        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_general.png"
       }
-    ]
+    ],
+    "previousTier": "A"
   },
   {
     "name": "Fangs of the Demon",
@@ -1086,6 +1046,28 @@
     ]
   },
   {
+    "id": "promethium_claws",
+    "name": "Promethium Claws",
+    "image": "./legacy_images/Icon_sw_27.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "B",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "HP",
+      "ATK%",
+      "Crit RES"
+    ],
+    "legacySkills": [
+      {
+        "name": "Deadly Digits",
+        "description": "Increases the wearer's ATK by %. When HP drops below 50%, the wearer gains a shield equal to % of Max HP for 12s. Can be triggered once per battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_Promethium_Claws_general.png"
+      }
+    ],
+    "previousTier": "A"
+  },
+  {
     "id": "psycho_syringe",
     "name": "Psycho Syringe",
     "image": "./legacy_images/Icon_sw_55_psycho_syringe.png",
@@ -1113,23 +1095,57 @@
     ]
   },
   {
-    "id": "dart_with_poison_ivy_poison",
-    "name": "Dart with Poison Ivy Poison",
-    "image": "./legacy_images/Icon_sw_PoisonedDart.png",
-    "rank": "Mythic",
-    "unique": false,
+    "id": "solar_recovery_suit",
+    "name": "Solar Recovery Suit",
+    "image": "./legacy_images/SolarRecoverySuit.png",
+    "rank": "Mythic +",
+    "unique": true,
     "tier": "A",
-    "role": "Magical | Assassin | Firepower",
+    "role": "Guardian | Warrior",
+    "isP2W": true,
     "gearEffects": [
       "ATK",
-      "ATK%",
-      "Energy Gain Bonus"
+      "ATK %",
+      "Crit Rate"
     ],
     "legacySkills": [
       {
-        "name": "Ivy's Kiss",
-        "description": "Increases the wearer's Spiritual PEN by %. Each time the wearer casts their Ultimate, there is a 50% chance to inflict [Ivy's Kiss] on the target. [Ivy's Kiss]: Increases DMG taken by % for 8s.",
-        "image": "./legacy_images_skills/icon_hero_skill_poison_ivy_dart_general.png"
+        "name": "Kryptonian Shockwave",
+        "description": "Atcivates only when equipped by Superman. After Superman casts his Ultimate, he calls down a meteor, dealing physical damage equal to [X]% of his Attack to enemies in a circular area and stunning them for 1s. [Stunned]: Incapacitates the target.",
+        "image": "./legacy_images_skills/icon_hero_skill_Superman_main_exclusive_02.png"
+      },
+      {
+        "name": "Kryptonian Solar Recharge",
+        "description": "After casting the Ultimate, the wearer restores HP equal to [X]% of their Attack.",
+        "image": "./legacy_images_skills/icon_hero_skill_Superman_general_02.png"
+      }
+    ],
+    "previousTier": "B"
+  },
+  {
+    "id": "knightbow",
+    "name": "Knightbow",
+    "image": "./legacy_images/Icon_sw_66.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Magical | Assassin | Firepower",
+    "previousTier": "B",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Counter-Strike",
+        "description": "When Red Hood Knightfight lands a critical hit, his basic attack switches to rapid fire, dealing physical damage equal to [%] of his Attack plus [%] of the target's Max HP to two enemies. Total damage is capped at [%] of Red Hood Knightfight's Attack. Can trigger once every second.",
+        "image": "./legacy_images_skills/icon_hero_skill_redhoodknightfight_main_exclusive.png"
+      },
+      {
+        "name": "Press the Attack",
+        "description": "When the wearer lands a critical hit, their Attack is increased by [%], stacking up to 10 times.",
+        "image": "./legacy_images_skills/icon_hero_skill_redhoodknightfight_general_skills.png"
       }
     ]
   },
@@ -1172,27 +1188,6 @@
         "name": "Panacea",
         "description": "Increases the wearer's healing effect by %. The effect is increased by an additional % on targets with less than 50% HP.",
         "image": "./legacy_images_skills/icon_hero_skill_Purple_ray_radiation_general.png"
-      }
-    ]
-  },
-  {
-    "id": "promethium_claws",
-    "name": "Promethium Claws",
-    "image": "./legacy_images/Icon_sw_27.png",
-    "rank": "Mythic",
-    "unique": false,
-    "tier": "A",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "HP",
-      "ATK%",
-      "Crit RES"
-    ],
-    "legacySkills": [
-      {
-        "name": "Deadly Digits",
-        "description": "Increases the wearer's ATK by %. When HP drops below 50%, the wearer gains a shield equal to % of Max HP for 12s. Can be triggered once per battle.",
-        "image": "./legacy_images_skills/icon_hero_skill_Promethium_Claws_general.png"
       }
     ]
   },
@@ -1241,8 +1236,7 @@
         "description": "Each time the wearer casts their Ultimate, nearby allies gain a % ATK bonus and a % Physical and Spiritual DEF bonus for 8s.",
         "image": "./legacy_images_skills/icon_hero_skill_Starheart_Staff_general.png"
       }
-    ],
-    "previousTier": "S"
+    ]
   },
   {
     "id": "t_sphere_weakness_analyzer",
@@ -1263,8 +1257,29 @@
         "description": "Increases the wearer's Crit Rate by %. Upon casting the Ultimate, the wearer gains [Analyze Vulnerability]. [Analyze Vulnerability]: Increases Crit DMG by % for 8s.",
         "image": "./legacy_images_skills/icon_hero_skill_T_Sphere_Weakness_Analyzer_general.png"
       }
+    ]
+  },
+  {
+    "id": "dart_with_poison_ivy_poison",
+    "name": "Dart with Poison Ivy Poison",
+    "image": "./legacy_images/Icon_sw_PoisonedDart.png",
+    "rank": "Mythic",
+    "unique": false,
+    "tier": "A+",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Energy Gain Bonus"
     ],
-    "previousTier": "S"
+    "legacySkills": [
+      {
+        "name": "Ivy's Kiss",
+        "description": "Increases the wearer's Spiritual PEN by %. Each time the wearer casts their Ultimate, there is a 50% chance to inflict [Ivy's Kiss] on the target. [Ivy's Kiss]: Increases DMG taken by % for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_poison_ivy_dart_general.png"
+      }
+    ],
+    "previousTier": "A"
   },
   {
     "id": "gabriel_horn",
@@ -1285,8 +1300,7 @@
         "description": "Increases the weearer's HP by %. At the start of battle, increases all allies' ATK by % for 20s.",
         "image": "./legacy_images_skills/icon_hero_skill_Gabriel_Horn_general.png"
       }
-    ],
-    "previousTier": "S"
+    ]
   },
   {
     "id": "amazonium_alloy_shield",
@@ -1307,8 +1321,7 @@
         "description": "Increases the wearer's Physical and Spiritual DEF by %. The wearer gains [X] stacks of [Amazonian Protection] when attacked.",
         "image": "./legacy_images_skills/icon_hero_skill_Amazon_Alloy_Shield_general.png"
       }
-    ],
-    "previousTier": "S"
+    ]
   },
   {
     "name": "Antler Crown",
@@ -1361,6 +1374,19 @@
         "description": "Increases the wearer's Physical Defense by [%]. After casting their Ultimate, the wearer gains a shield equal to [%] of their Physical Defense for [10s].",
         "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_general_skills.png"
       }
+    ]
+  },
+  {
+    "id": "cloak_of_destiny",
+    "name": "Cloak of Destiny",
+    "image": "./legacy_images/Icon_sw_71.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Guardian | Warrior",
+    "isNew": true,
+    "gearEffects": [
+      "HP, HP%, Crit RES"
     ]
   }
 ]
