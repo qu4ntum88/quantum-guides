@@ -98,7 +98,9 @@
       "Bash(jq --version)",
       "Bash(git restore *)",
       "Bash(curl -s \"https://www.quantumgameguides.com/games/dc-dark-legion/tier-list\")",
-      "Bash(node scripts/stamp-data-dates.mjs --seed)"
+      "Bash(node scripts/stamp-data-dates.mjs --seed)",
+      "Bash(curl -s https://www.quantumgameguides.com/)",
+      "Bash(grep -o \"pk_test_[A-Za-z0-9]\\\\{0,12\\\\}\\\\|pk_live_[A-Za-z0-9]\\\\{0,12\\\\}\")"
     ]
   }
 }

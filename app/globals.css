@@ -411,3 +411,38 @@ h3 {
   outline: 1px solid rgba(204, 164, 83, 0.5);
 }
 .qgg-rte a { color: var(--gold); text-decoration: underline; }
+
+/* ── Guide rich-text formatting vocabulary ──────────────────────────────────
+   The closed set of classes the guide sanitizer allows (see guide-blocks.ts).
+   Defined once, globally, so the same rules style BOTH the live editor
+   (.qgg-rte) and the published guide (.guide-prose) — what an author sees is
+   what readers get. Deliberately class-based: the sanitizer permits no inline
+   `style`, so arbitrary CSS can never reach a published page.
+   Fonts here are already loaded by the layout or are system stacks — adding a
+   typeface option must not mean shipping another webfont. */
+
+/* Size — relative so it scales with each context's base size */
+.qgg-sm { font-size: 0.85em; }
+.qgg-lg { font-size: 1.25em; }
+
+/* Colour */
+.qgg-c-gold   { color: var(--gold); }
+.qgg-c-red    { color: #ef4444; }
+.qgg-c-green  { color: #22c55e; }
+.qgg-c-blue   { color: #38bdf8; }
+.qgg-c-purple { color: #a855f7; }
+.qgg-c-muted  { color: #8a8a8a; }
+
+/* Typeface */
+.qgg-f-serif   { font-family: Georgia, "Times New Roman", serif; }
+.qgg-f-display { font-family: Unbounded, sans-serif; }
+.qgg-f-mono    { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+/* Alignment — block level. Scoped copies win over guide-prose's own
+   text-align rules without needing !important. */
+.qgg-al-center  { text-align: center; }
+.qgg-al-right   { text-align: right; }
+.qgg-al-justify { text-align: justify; }
+.guide-prose .qgg-al-center  { text-align: center; }
+.guide-prose .qgg-al-right   { text-align: right; }
+.guide-prose .qgg-al-justify { text-align: justify; }

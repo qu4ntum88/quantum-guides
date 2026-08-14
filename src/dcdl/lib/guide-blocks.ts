@@ -19,28 +19,99 @@
 
 import DOMPurify from 'isomorphic-dompurify'
 
+/** Paragraph / heading alignment. 'left' is the default and is never stored. */
+export type Align = 'left' | 'center' | 'right' | 'justify'
+
+export const ALIGNMENTS: Align[] = ['left', 'center', 'right', 'justify']
+
 export type Block =
-  | { type: 'heading'; text: string } // section header → <h2>
-  | { type: 'subheading'; text: string } // sub header → <h3>
-  | { type: 'paragraph'; text: string; rich?: boolean } // body copy → <p>; rich ⇒ text is sanitized inline HTML
+  | { type: 'heading'; text: string; align?: Align } // section header → <h2>
+  | { type: 'subheading'; text: string; align?: Align } // sub header → <h3>
+  | { type: 'paragraph'; text: string; rich?: boolean; align?: Align } // body copy → <p>; rich ⇒ sanitized inline HTML
   | { type: 'list'; items: string[] } // bulleted list → <ul>
   | { type: 'image'; url: string; caption: string } // <figure> + italic <figcaption>
+
+// ── Inline formatting vocabulary ─────────────────────────────────────────────
+
+/**
+ * Inline formatting is expressed as a FIXED SET OF CLASSES, never inline
+ * `style` attributes.
+ *
+ * That is a deliberate security choice: allowing `style` through the sanitizer
+ * would let an author (or a crafted request) inject arbitrary CSS —
+ * `position:fixed` overlays, off-site `url()` fetches, and so on. A closed
+ * allowlist of class names cannot express any of that, and it keeps every guide
+ * on the site's own type scale and palette.
+ *
+ * Anything not on this list is stripped at save AND at render.
+ */
+export const TEXT_SIZES = [
+  { id: '', label: 'Normal' },
+  { id: 'qgg-sm', label: 'Small' },
+  { id: 'qgg-lg', label: 'Large' },
+] as const
+
+export const TEXT_COLORS = [
+  { id: '', label: 'Default', swatch: '#e8e8e8' },
+  { id: 'qgg-c-gold', label: 'Gold', swatch: '#c9a01e' },
+  { id: 'qgg-c-red', label: 'Red', swatch: '#ef4444' },
+  { id: 'qgg-c-green', label: 'Green', swatch: '#22c55e' },
+  { id: 'qgg-c-blue', label: 'Blue', swatch: '#38bdf8' },
+  { id: 'qgg-c-purple', label: 'Purple', swatch: '#a855f7' },
+  { id: 'qgg-c-muted', label: 'Muted', swatch: '#8a8a8a' },
+] as const
+
+export const TEXT_FONTS = [
+  { id: '', label: 'Default' },
+  { id: 'qgg-f-serif', label: 'Serif' },
+  { id: 'qgg-f-display', label: 'Display' },
+  { id: 'qgg-f-mono', label: 'Mono' },
+] as const
+
+/** Every class the sanitizer will keep on an inline <span>. */
+const ALLOWED_CLASSES = new Set<string>([
+  ...TEXT_SIZES.map((s) => s.id),
+  ...TEXT_COLORS.map((c) => c.id),
+  ...TEXT_FONTS.map((f) => f.id),
+].filter(Boolean))
+
+/** Strip any class token that is not in the allowlist; drop empty attributes. */
+function filterClasses(html: string): string {
+  // Runs on DOMPurify output, so attributes are already normalized to double
+  // quotes and the markup is well-formed.
+  return html.replace(/\sclass="([^"]*)"/gi, (_full, value: string) => {
+    const kept = value.split(/\s+/).filter((c) => ALLOWED_CLASSES.has(c))
+    return kept.length > 0 ? ` class="${kept.join(' ')}"` : ''
+  })
+}
 
 // ── Inline sanitization ───────────────────────────────────────────────────────
 
 /**
  * Reduce a snippet of paragraph HTML to a safe inline subset: bold, italic,
- * links, and line breaks only. DOMPurify strips everything else (scripts, event
- * handlers, javascript: URLs, block tags). Anchors are normalized to open in a
- * new tab with a safe rel. This is the ONLY place inline markup is trusted.
+ * underline, links, line breaks, and <span> carrying an allowlisted formatting
+ * class. DOMPurify strips everything else (scripts, event handlers,
+ * javascript: URLs, block tags, and every `style` attribute). Anchors are
+ * normalized to open in a new tab with a safe rel.
+ *
+ * This is the ONLY place inline markup is trusted.
  */
 export function sanitizeInline(html: string): string {
   const clean = DOMPurify.sanitize(html ?? '', {
-    ALLOWED_TAGS: ['strong', 'em', 'b', 'i', 'a', 'br'],
-    ALLOWED_ATTR: ['href'],
+    ALLOWED_TAGS: ['strong', 'em', 'b', 'i', 'u', 'span', 'a', 'br'],
+    // NOTE: `style` is deliberately absent — see the comment on ALLOWED_CLASSES.
+    ALLOWED_ATTR: ['href', 'class'],
   })
   // DOMPurify already rejects unsafe hrefs; force a safe rel/target on links.
-  return clean.replace(/<a\s+href=/gi, '<a target="_blank" rel="noopener noreferrer nofollow" href=')
+  return filterClasses(clean).replace(
+    /<a\s+href=/gi,
+    '<a target="_blank" rel="noopener noreferrer nofollow" href=',
+  )
+}
+
+/** Alignment → class, or '' for the default. */
+export function alignClass(align?: Align): string {
+  return align && align !== 'left' && ALIGNMENTS.includes(align) ? ` class="qgg-al-${align}"` : ''
 }
 
 export type ParsedBody =
@@ -127,15 +198,15 @@ export function blocksToHtml(blocks: Block[]): string {
     .map((b) => {
       switch (b.type) {
         case 'heading':
-          return b.text.trim() ? `<h2>${esc(b.text)}</h2>` : ''
+          return b.text.trim() ? `<h2${alignClass(b.align)}>${esc(b.text)}</h2>` : ''
         case 'subheading':
-          return b.text.trim() ? `<h3>${esc(b.text)}</h3>` : ''
+          return b.text.trim() ? `<h3${alignClass(b.align)}>${esc(b.text)}</h3>` : ''
         case 'paragraph': {
           // Rich paragraphs hold sanitized inline HTML; re-sanitize at render as
           // a last line of defense. Plain paragraphs are HTML-escaped.
           const innerP = b.rich ? sanitizeInline(b.text) : escMultiline(b.text)
           const textOnly = innerP.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim()
-          return textOnly ? `<p>${innerP}</p>` : ''
+          return textOnly ? `<p${alignClass(b.align)}>${innerP}</p>` : ''
         }
         case 'list': {
           const items = (b.items ?? []).filter((i) => i.trim())
