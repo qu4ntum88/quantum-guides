@@ -1,8 +1,11 @@
 import Link from 'next/link'
-import { getResolvedHeros, getLegacy, getDataLastUpdated } from '@/src/dcdl/lib/data'
+import { getDataLastUpdated } from '@/src/dcdl/lib/data'
+import { getOfficialHeros, getOfficialLegacy, getOfficialTiersUpdatedAt, getPublishedTierLists } from '@/src/dcdl/lib/tier-db'
 import '../../godforge/game.css'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 import { EntryBadgeGroup } from '@/src/dcdl/components/EntryBadges'
+import ExportTierListButton from '@/src/dcdl/components/tier/ExportTierListButton'
+import CommunityTierLists from '@/src/dcdl/components/tier/CommunityTierLists'
 
 const RARITY_BG: Record<string, string> = {
   'Iconic':   '#00292a',
@@ -143,10 +146,25 @@ function ColHeader({ col }: { col: typeof COLUMNS[number] }) {
   )
 }
 
-export default function TierListPage() {
-  const heroes = getResolvedHeros()
-  const legacyPieces = getLegacy()
-  const lastUpdated = getDataLastUpdated('heros.json', 'legacy.json')
+export default async function TierListPage() {
+  // Tier assignments come from Supabase once the list has been saved from the
+  // Creator Studio, and from heros.json / legacy.json until then.
+  const [heroes, legacyPieces, savedAt, communityLists] = await Promise.all([
+    getOfficialHeros(),
+    getOfficialLegacy(),
+    getOfficialTiersUpdatedAt(),
+    getPublishedTierLists(),
+  ])
+  const lastUpdated = savedAt
+    ? new Date(savedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    : getDataLastUpdated('heros.json', 'legacy.json')
+
+  const heroExport = heroes
+    .filter((h) => h.tier)
+    .map((h) => ({ id: h.id, name: h.name, img: h.imageHeadshot ?? null, tier: h.tier as string }))
+  const legacyExport = legacyPieces
+    .filter((l) => l.tier)
+    .map((l) => ({ id: l.id, name: l.name, img: l.image ?? null, tier: l.tier as string }))
 
   return (
     <main>
@@ -166,9 +184,18 @@ export default function TierListPage() {
       {/* Champion Tier List */}
       <section style={{ padding: '2.5rem 0 2rem' }}>
         <div className="container" style={{ overflowX: 'auto' }}>
-          <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.6rem' }}>
-            Clicking a champion opens their individual champion landing page.
-          </p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.6rem' }}>
+            <p style={{ fontSize: '0.78rem', color: '#888', margin: 0 }}>
+              Clicking a champion opens their individual champion landing page.
+            </p>
+            <ExportTierListButton
+              title="Quantum's Champion Tier List"
+              subtitle="quantumgameguides.com"
+              tiers={TIERS}
+              items={heroExport}
+              filename="quantum-champion-tier-list"
+            />
+          </div>
           <div style={{ ...tableCard, minWidth: '600px' }}>
             <TableTitle>All Purpose Champion Tier List</TableTitle>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -277,12 +304,22 @@ export default function TierListPage() {
       {/* Legacy Piece Tier List */}
       <section style={{ padding: '0 0 4rem' }}>
         <div className="container" style={{ overflowX: 'auto' }}>
-          <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.6rem' }}>
-            Clicking a legacy piece opens the{' '}
-            <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
-              Justice League of Discord community voted tier ranking page
-            </Link>{' '}for that item.
-          </p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.6rem' }}>
+            <p style={{ fontSize: '0.78rem', color: '#888', margin: 0 }}>
+              Clicking a legacy piece opens the{' '}
+              <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
+                Justice League of Discord community voted tier ranking page
+              </Link>{' '}for that item.
+            </p>
+            <ExportTierListButton
+              title="Quantum's Legacy Piece Tier List"
+              subtitle="quantumgameguides.com"
+              tiers={TIERS}
+              items={legacyExport}
+              fit="contain"
+              filename="quantum-legacy-piece-tier-list"
+            />
+          </div>
           <div style={{ ...tableCard, minWidth: '600px' }}>
             <TableTitle>Legacy Piece Tier List</TableTitle>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -395,6 +432,8 @@ export default function TierListPage() {
           </p>
         </div>
       </section>
+
+      <CommunityTierLists lists={communityLists} />
 
       {/* Logos Footer */}
       <section style={{ padding: '2.5rem 0 3rem' }}>

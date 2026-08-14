@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { getResolvedHeros, getSynergies } from '@/src/dcdl/lib/data'
 import HeroGrid from '@/src/dcdl/components/HeroGrid'
 import '../godforge/game.css'
@@ -25,9 +26,9 @@ export default function DCDarkLegionPage() {
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'baseline', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
             <h2 style={{ margin: 0 }}>Character List</h2>
-            <a href="/games/dc-dark-legion/tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem', fontFamily: 'Unbounded, sans-serif', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+            <Link href="/games/dc-dark-legion/tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem', fontFamily: 'Unbounded, sans-serif', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
               View Tier List →
-            </a>
+            </Link>
           </div>
           <p style={{ marginBottom: '1.5rem', color: '#cccccc' }}>
             A complete list of playable characters. Click a champion portrait to open their individual champion landing page for a more in-depth analysis of their kit, recommended transmutes and legacy pieces, and Quantum&apos;s take on whether or not the champion is worth building for various game modes and playstyles.

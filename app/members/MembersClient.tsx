@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useUser } from '@clerk/nextjs'
+import ApplyPanel from './ApplyPanel'
 
 type VotableItem = { id: string; name: string; image?: string }
 
@@ -97,6 +98,8 @@ export default function MembersClient({ heroes, legacyPieces }: { heroes: Votabl
           Welcome, {user?.firstName ?? user?.username ?? 'member'}! Vote on the tier ranking for each champion and legacy piece.
           Your vote can be changed at any time.
         </p>
+
+        <ApplyPanel />
 
         {/* Tab toggle */}
         <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '2rem', borderBottom: '2px solid #333' }}>

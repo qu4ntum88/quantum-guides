@@ -6,7 +6,7 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 // /api/admin/content/* route independently enforce getIsAdmin(). Gating it in
 // the page (via auth()) instead of the middleware (via auth.protect()) avoids
 // the failing handshake path.
-const isProtectedRoute = createRouteMatcher(['/members(.*)'])
+const isProtectedRoute = createRouteMatcher(['/members(.*)', '/studio(.*)'])
 
 export default clerkMiddleware(async (auth, req) => {
   if (isProtectedRoute(req)) await auth.protect()

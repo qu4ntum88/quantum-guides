@@ -17,10 +17,10 @@ import matter from 'gray-matter'
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-async function fetchTable<T>(table: string, order = 'sort.asc'): Promise<T[] | null> {
+async function fetchTable<T>(table: string, order = 'sort.asc', filter = ''): Promise<T[] | null> {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) return null
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}?select=*&order=${order}`, {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}?select=*&order=${order}${filter}`, {
       headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
       next: { revalidate: 60 },
     })
@@ -200,7 +200,10 @@ function sortGuides<T extends { pubDate: string | null }>(guides: T[]): T[] {
 // ── Public API ───────────────────────────────────────────────────────────────
 
 export async function getGuidesFull(): Promise<GuideFull[]> {
-  const rows = await fetchTable<GuideRow>('guides', 'pub_date.desc')
+  // Only approved rows are public. RLS already hides pending editor
+  // submissions from the anon key; the explicit filter makes that intent
+  // visible at the call site rather than depending on policy alone.
+  const rows = await fetchTable<GuideRow>('guides', 'pub_date.desc', '&status=eq.approved')
   const guides = rows && rows.length > 0 ? rows.map(rowToGuideFull) : readGuideFiles()
   return sortGuides(guides)
 }
@@ -255,7 +258,7 @@ export async function getPatchNotes(): Promise<PatchNote[]> {
 }
 
 export async function getInfographics(): Promise<Infographic[]> {
-  const rows = await fetchTable<InfographicRow>('infographics', 'sort.asc')
+  const rows = await fetchTable<InfographicRow>('infographics', 'sort.asc', '&status=eq.approved')
   if (rows && rows.length > 0) {
     return rows.map((r) => ({
       id: r.id,

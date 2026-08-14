@@ -127,7 +127,7 @@ function GuideBodyEditor({
   )
 }
 
-function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
+export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
   const [rows, setRows] = useState<GuideRow[]>([])
   const [editing, setEditing] = useState<GuideRow | null>(null)
 
@@ -408,7 +408,7 @@ type InfoRow = {
 }
 const blankInfo: InfoRow = { id: '', title: '', description: '', image: '', builtin: null, credit: '', sort: 0 }
 
-function InfographicsTab({ setStatus }: { setStatus: (s: string) => void }) {
+export function InfographicsTab({ setStatus }: { setStatus: (s: string) => void }) {
   const [rows, setRows] = useState<InfoRow[]>([])
   const [editing, setEditing] = useState<InfoRow | null>(null)
 
