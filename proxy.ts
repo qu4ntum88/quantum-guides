@@ -1,16 +1,20 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { clerkMiddleware } from '@clerk/nextjs/server'
 
-// NOTE: /admin/content is intentionally NOT protected here. Clerk's
-// auth.protect() was returning a 404 on the current (development) Clerk
-// instance, and it's redundant anyway — app/admin/content/page.tsx and every
-// /api/admin/content/* route independently enforce getIsAdmin(). Gating it in
-// the page (via auth()) instead of the middleware (via auth.protect()) avoids
-// the failing handshake path.
-const isProtectedRoute = createRouteMatcher(['/members(.*)', '/studio(.*)'])
-
-export default clerkMiddleware(async (auth, req) => {
-  if (isProtectedRoute(req)) await auth.protect()
-})
+// NOTHING is protected via auth.protect() here, deliberately.
+//
+// On the current Clerk instance auth.protect() returns a 404 to signed-out
+// visitors instead of redirecting them to sign-in. /admin/content was already
+// excluded for that reason; /members had the same bug (any signed-out visitor
+// hitting it got a 404 rather than the sign-in prompt the page renders), and
+// /studio inherited it when it was added alongside.
+//
+// Every one of these pages gates itself client-side via useUser() and renders a
+// proper signed-out state, and every /api/** route re-resolves the caller's
+// role server-side (requireRole / getIsAdmin) before touching data — so the
+// middleware check was redundant as well as broken.
+//
+// clerkMiddleware still runs, which is what makes auth() and useUser() work.
+export default clerkMiddleware()
 
 export const config = {
   matcher: [
