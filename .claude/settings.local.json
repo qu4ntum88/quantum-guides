@@ -96,7 +96,9 @@
       "Skill(update-config:*)",
       "Bash(command -v jq)",
       "Bash(jq --version)",
-      "Bash(git restore *)"
+      "Bash(git restore *)",
+      "Bash(curl -s \"https://www.quantumgameguides.com/games/dc-dark-legion/tier-list\")",
+      "Bash(node scripts/stamp-data-dates.mjs --seed)"
     ]
   }
 }

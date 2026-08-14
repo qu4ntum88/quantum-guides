@@ -14,6 +14,7 @@ export type BoardItem = { id: string; name: string; img: string | null; tier: st
 export default function TierBoard({
   title,
   subtitle,
+  dateLine,
   items,
   tiers,
   fit = 'cover',
@@ -22,6 +23,7 @@ export default function TierBoard({
 }: {
   title: string
   subtitle?: string
+  dateLine?: string
   items: BoardItem[]
   tiers: readonly string[]
   fit?: 'cover' | 'contain'
@@ -55,7 +57,7 @@ export default function TierBoard({
         </div>
         {showExport && (
           <ExportTierListButton
-            title={title} subtitle={subtitle} tiers={tiers} fit={fit} filename={filename}
+            title={title} subtitle={subtitle} dateLine={dateLine} tiers={tiers} fit={fit} filename={filename}
             items={items.map((i) => ({ id: i.id, name: i.name, img: i.img, tier: i.tier }))}
           />
         )}

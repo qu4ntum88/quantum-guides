@@ -190,7 +190,7 @@ export default async function TierListPage() {
             </p>
             <ExportTierListButton
               title="Quantum's Champion Tier List"
-              subtitle="quantumgameguides.com"
+              dateLine={lastUpdated ? `Updated ${lastUpdated}` : undefined}
               tiers={TIERS}
               items={heroExport}
               filename="quantum-champion-tier-list"
@@ -313,7 +313,7 @@ export default async function TierListPage() {
             </p>
             <ExportTierListButton
               title="Quantum's Legacy Piece Tier List"
-              subtitle="quantumgameguides.com"
+              dateLine={lastUpdated ? `Updated ${lastUpdated}` : undefined}
               tiers={TIERS}
               items={legacyExport}
               fit="contain"

@@ -16,8 +16,10 @@ export type ExportItem = { id: string; name: string; img: string | null; tier: s
 
 export type ExportOptions = {
   title: string
-  /** Shown under the title — e.g. "by Tyvokka" or the list description. */
+  /** The list's own description, when it has one. */
   subtitle?: string
+  /** Publication / last-updated date, e.g. "Updated August 10, 2026". */
+  dateLine?: string
   items: ExportItem[]
   tiers: readonly string[]
   /** Fit portraits to the box (champions) or letterbox them (legacy icons). */
@@ -108,7 +110,7 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): st
 }
 
 export async function exportTierListPng(opts: ExportOptions): Promise<void> {
-  const { title, subtitle, items, tiers, fit = 'cover' } = opts
+  const { title, subtitle, dateLine, items, tiers, fit = 'cover' } = opts
 
   // Wait for webfonts so the canvas does not fall back to a system face.
   try { await document.fonts.ready } catch { /* older browsers: draw anyway */ }
@@ -121,7 +123,8 @@ export async function exportTierListPng(opts: ExportOptions): Promise<void> {
     return { tier, items: rowItems, height: lines * (CELL + GAP) + GAP + 18 }
   }).filter((r) => r.items.length > 0)
 
-  const headerH = subtitle ? 176 : 138
+  // Title, then the description (if any), then the date line — each adds a row.
+  const headerH = 138 + (subtitle ? 38 : 0) + (dateLine ? 30 : 0)
   const bodyH = rows.reduce((sum, r) => sum + r.height + GAP, 0)
   const footerH = 208
   const H = headerH + bodyH + footerH
@@ -156,10 +159,17 @@ export async function exportTierListPng(opts: ExportOptions): Promise<void> {
   ctx.fillText(truncate(ctx, title.toUpperCase(), W - PAD * 2), W / 2, 78)
   ctx.shadowBlur = 0
 
+  let headY = 118
   if (subtitle) {
     ctx.fillStyle = 'rgba(255,255,255,0.72)'
     ctx.font = '600 22px Montserrat, sans-serif'
-    ctx.fillText(truncate(ctx, subtitle, W - PAD * 2), W / 2, 118)
+    ctx.fillText(truncate(ctx, subtitle, W - PAD * 2), W / 2, headY)
+    headY += 34
+  }
+  if (dateLine) {
+    ctx.fillStyle = 'rgba(255,255,255,0.45)'
+    ctx.font = '500 17px Montserrat, sans-serif'
+    ctx.fillText(truncate(ctx, dateLine, W - PAD * 2), W / 2, headY)
   }
 
   ctx.strokeStyle = `${GOLD}55`

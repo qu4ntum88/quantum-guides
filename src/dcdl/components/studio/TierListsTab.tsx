@@ -251,6 +251,8 @@ function ListEditor({
         <ExportTierListButton
           title={publicTitle}
           subtitle={description || undefined}
+          // Previewing the board as it stands right now, saved or not.
+          dateLine={`Updated ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
           tiers={TIERS}
           fit={list.entity_type === 'legacy' ? 'contain' : 'cover'}
           items={items.filter((i) => assign[i.id]).map((i) => ({ id: i.id, name: i.name, img: i.img, tier: assign[i.id] }))}

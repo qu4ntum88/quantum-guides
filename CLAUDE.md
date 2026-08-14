@@ -12,7 +12,9 @@ npm run lint     # ESLint
 
 There are no tests. Deploy via `git push origin main` — Vercel auto-deploys from GitHub. Do NOT also run `npx vercel --prod`; that creates duplicate deployments and the CLI deploy frequently hangs.
 
-**Commit hook:** `.claude/settings.json` registers a `PreToolUse`/`Bash` hook running `scripts/hooks/pre-commit-pull-tiers.mjs`. Before any `git commit`, it pulls live official tier rankings out of Supabase into `heros.json`/`legacy.json` and stages them (see the Creator Program section). It is silent when there's nothing to sync and never blocks a commit — don't work around it, and if tier JSON shows up unexpectedly in a commit, that's the hook doing its job.
+**Commit hook:** `.claude/settings.json` registers a `PreToolUse`/`Bash` hook running `scripts/hooks/pre-commit-pull-tiers.mjs`. Before any `git commit` it does two things: (1) pulls live official tier rankings out of Supabase into `heros.json`/`legacy.json` (see the Creator Program section), and (2) stamps today's date into `src/dcdl/data/data-updated.json` for every data file the commit touches. Both are staged into the same commit. It is silent when there's nothing to do and never blocks a commit — don't work around it, and if tier JSON or the stamp file shows up unexpectedly in a commit, that's the hook doing its job.
+
+**"Updated:" dates** (tier list, best teams, combat cycle, supreme commander) come from `getDataLastUpdated()` in `src/dcdl/lib/data.ts`, which reads the committed `src/dcdl/data/data-updated.json` (filename → ISO date, max across the files a page names). It must NOT go back to `fs.statSync().mtimeMs` — build systems normalise mtimes, so that reported **October 20, 2018** on every deployed page. `scripts/stamp-data-dates.mjs` maintains the file: `--seed` backfills missing entries from git history, and passing filenames stamps them with today (what the commit hook does).
 
 ## Future work
 

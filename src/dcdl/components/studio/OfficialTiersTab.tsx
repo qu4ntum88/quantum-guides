@@ -109,6 +109,8 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
         </button>
         <ExportTierListButton
           title={`Quantum's ${type === 'legacy' ? 'Legacy Piece' : 'Champion'} Tier List`}
+          // Previewing the board as it stands right now, saved or not.
+          dateLine={`Updated ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
           tiers={TIERS}
           fit={type === 'legacy' ? 'contain' : 'cover'}
           items={items.filter((i) => assign[i.id]).map((i) => ({ id: i.id, name: i.name, img: i.img, tier: assign[i.id] }))}

@@ -1,20 +1,33 @@
-import fs from 'fs'
-import nodePath from 'path'
 import herosRaw from "../data/heros.json"
 import legacyRaw from "../data/legacy.json"
 import synergiesRaw from "../data/synergies.json"
+import dataUpdated from "../data/data-updated.json"
 
+/**
+ * The "Updated:" stamp shown on the tier list, best teams, combat cycle, and
+ * supreme commander pages.
+ *
+ * Reads `data-updated.json`, a committed record of when each data file last
+ * changed, maintained by `scripts/stamp-data-dates.mjs` (the pre-commit hook
+ * stamps whichever data files a commit touches).
+ *
+ * This used to use `fs.statSync().mtimeMs`, but build systems normalise file
+ * mtimes — in production every page reported the same bogus date (October 20,
+ * 2018), years before the game existed. A committed stamp is the only value
+ * that survives a deploy intact.
+ */
 export function getDataLastUpdated(...fileNames: string[]): string {
   const files = fileNames.length > 0 ? fileNames : ['heros.json', 'legacy.json']
-  const mtimes = files.map((f) => {
-    try {
-      return fs.statSync(nodePath.join(process.cwd(), 'src/dcdl/data', f)).mtimeMs
-    } catch {
-      return 0
-    }
+  const dates = files
+    .map((f) => (dataUpdated as Record<string, string>)[f])
+    .filter(Boolean)
+    .sort()
+  const latest = dates[dates.length - 1]
+  if (!latest) return ''
+  // Parsed as UTC so the date never slips a day depending on server timezone.
+  return new Date(`${latest}T00:00:00Z`).toLocaleDateString('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
   })
-  const latest = new Date(Math.max(...mtimes))
-  return latest.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
 }
 
 function fixHeroImagePath(path: string | undefined): string | undefined {

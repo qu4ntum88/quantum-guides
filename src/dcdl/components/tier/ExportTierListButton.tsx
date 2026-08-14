@@ -10,6 +10,7 @@ import { exportTierListPng, type ExportItem } from '@/src/dcdl/lib/tier-export'
 export default function ExportTierListButton({
   title,
   subtitle,
+  dateLine,
   items,
   tiers,
   fit = 'cover',
@@ -18,6 +19,7 @@ export default function ExportTierListButton({
 }: {
   title: string
   subtitle?: string
+  dateLine?: string
   items: ExportItem[]
   tiers: readonly string[]
   fit?: 'cover' | 'contain'
@@ -30,7 +32,7 @@ export default function ExportTierListButton({
   async function run() {
     setBusy(true); setError('')
     try {
-      await exportTierListPng({ title, subtitle, items, tiers, fit, filename })
+      await exportTierListPng({ title, subtitle, dateLine, items, tiers, fit, filename })
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Export failed.')
     }

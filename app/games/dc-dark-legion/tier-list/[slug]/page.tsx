@@ -57,6 +57,9 @@ export default async function CommunityTierListPage({ params }: Params) {
       }))
 
   const title = `${list.creatorName}'s ${list.title}`
+  const updated = list.updatedAt
+    ? new Date(list.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    : null
 
   return (
     <main>
@@ -67,9 +70,9 @@ export default async function CommunityTierListPage({ params }: Params) {
           {list.description && <p className="gh-hero-sub">{list.description}</p>}
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            {list.updatedAt && (
+            {updated && (
               <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.38)', fontFamily: 'monospace' }}>
-                Updated: {new Date(list.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                Updated: {updated}
               </span>
             )}
             <Link href="/games/dc-dark-legion/tier-list" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
@@ -84,6 +87,7 @@ export default async function CommunityTierListPage({ params }: Params) {
           <TierBoard
             title={title}
             subtitle={list.description || undefined}
+            dateLine={updated ? `Updated ${updated}` : undefined}
             items={items}
             tiers={TIERS}
             fit={isLegacy ? 'contain' : 'cover'}
