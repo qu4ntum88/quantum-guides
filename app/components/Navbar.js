@@ -2,8 +2,13 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { SignInButton, UserButton, useUser } from '@clerk/nextjs'
+import { UserButton, useUser } from '@clerk/nextjs'
 import { PUBLIC_SECTIONS } from '@/src/lib/siteConfig'
+
+// Sign In is a plain link to /sign-in, NOT <SignInButton mode="modal">.
+// SignInButton's click calls clerk.openSignIn(); if clerk-js hasn't loaded that call is
+// dropped silently, so the button does nothing at all — no modal, no error, no way out.
+// A link can't fail that way.
 
 // Items tagged with `section` are only shown when that section is public
 // (see src/lib/siteConfig.ts). DC: Dark Legion is always shown.
@@ -121,9 +126,7 @@ export default function Navbar() {
                 <UserButton afterSignOutUrl="/" />
               </>
             ) : (
-              <SignInButton mode="modal">
-                <button className="btn" style={{ padding: '0.4rem 1rem', fontSize: '0.78rem' }}>Sign In</button>
-              </SignInButton>
+              <Link href="/sign-in" className="btn" style={{ padding: '0.4rem 1rem', fontSize: '0.78rem', textDecoration: 'none' }}>Sign In</Link>
             )}
             <a href="/about">About</a>
           </li>
@@ -189,9 +192,7 @@ export default function Navbar() {
           {isSignedIn ? (
             <a href="/members" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Members</a>
           ) : (
-            <SignInButton mode="modal">
-              <button className="mobile-menu-link" style={{ border: 'none', cursor: 'pointer', width: '100%', textAlign: 'left' }}>Sign In</button>
-            </SignInButton>
+            <Link href="/sign-in" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Sign In</Link>
           )}
           <a href="/about" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>About</a>
         </div>
