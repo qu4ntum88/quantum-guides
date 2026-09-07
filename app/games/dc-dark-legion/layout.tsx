@@ -8,8 +8,6 @@ export default function DCDLLayout({ children }: { children: React.ReactNode }) 
       <div className="dcdl-bg" aria-hidden="true">
         <span className="dcdl-slash dcdl-slash-a" />
         <span className="dcdl-slash dcdl-slash-b" />
-        <span className="dcdl-slash dcdl-slash-gold-tr" />
-        <span className="dcdl-slash dcdl-slash-gold-bl" />
         <span className="dcdl-halftone dcdl-halftone-tl" />
         <span className="dcdl-halftone dcdl-halftone-br" />
         <span className="dcdl-vignette" />

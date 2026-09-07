@@ -1355,88 +1355,6 @@ function InfographicsForm() {
   )
 }
 
-// ── Factions Form ─────────────────────────────────────────────────────────────
-type FactionItem = { id: string; name: string; image?: string; infographic?: string }
-
-function FactionsForm() {
-  const [factions, setFactions] = useState<FactionItem[]>([])
-  const [selectedId, setSelectedId] = useState('')
-  const [imgFile, setImgFile] = useState<File | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
-
-  function refresh() {
-    fetch('/api/admin/dcdl/factions').then((r) => r.json()).then(setFactions)
-  }
-  useEffect(() => { refresh() }, [])
-
-  const selected = factions.find((f) => f.id === selectedId)
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (!selectedId) { setStatus({ type: 'error', message: 'Select a faction first.' }); return }
-    setLoading(true); setStatus(null)
-    const fd = new FormData()
-    fd.append('id', selectedId)
-    if (imgFile) fd.append('image', imgFile)
-    try {
-      const res = await fetch('/api/admin/dcdl/factions', { method: 'POST', body: fd })
-      const data = await res.json()
-      if (res.ok) {
-        setStatus({ type: 'success', message: 'Infographic saved!' })
-        setImgFile(null)
-        refresh()
-      } else {
-        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
-      }
-    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
-    setLoading(false)
-  }
-
-  return (
-    <div>
-      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-        Upload a star priority infographic for each faction. It will appear at the top of that faction&apos;s page.
-      </p>
-      <StatusBanner status={status} />
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-        <div style={sec}>
-          <div style={secTitle}>Select Faction</div>
-          <Field label="Faction" required>
-            <select style={inp} value={selectedId} onChange={(e) => { setSelectedId(e.target.value); setImgFile(null); setStatus(null) }}>
-              <option value="">Choose a faction...</option>
-              {factions.map((f) => <option key={f.id} value={f.id}>{f.name}</option>)}
-            </select>
-          </Field>
-          {selected && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-              {selected.image && <img src={selected.image} alt={selected.name} style={{ height: '2.5rem', objectFit: 'contain' }} />}
-              {selected.infographic ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#888' }}>Current infographic:</span>
-                  <img src={selected.infographic} alt="infographic" style={{ maxHeight: '6rem', maxWidth: '100%', borderRadius: '0.375rem', border: '1px solid #444' }} />
-                </div>
-              ) : (
-                <span style={{ fontSize: '0.8rem', color: '#666' }}>No infographic set yet.</span>
-              )}
-            </div>
-          )}
-        </div>
-        <div style={sec}>
-          <div style={secTitle}>Upload Infographic</div>
-          <Field label="Infographic Image" hint="JPG, PNG, or WebP — replaces the existing one if present">
-            <input type="file" accept="image/*" style={{ ...inp, padding: '0.35rem' }} onChange={(e) => setImgFile(e.target.files?.[0] ?? null)} />
-            {imgFile && <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{imgFile.name}</span>}
-          </Field>
-        </div>
-        <button type="submit" className="btn" disabled={loading || !selectedId} style={{ alignSelf: 'flex-start', fontSize: '1rem', padding: '0.75rem 2rem' }}>
-          {loading ? 'Saving...' : 'Save Infographic'}
-        </button>
-      </form>
-    </div>
-  )
-}
-
 // ── VH Constants ──────────────────────────────────────────────────────────────
 const VH_CLASSES   = ['Attacker', 'Balanced', 'Support', 'Tank']
 const VH_HOMELANDS = ['Archlands', 'Crucible', 'Dragana', 'Free Tribes', 'Frostheim', 'Holy Order', 'Moonlight Clan', 'Pandemonium']
@@ -3432,9 +3350,287 @@ function GfTierRankingForm() {
   )
 }
 
+// ── Combat Cycle Form ─────────────────────────────────────────────────────────
+type CCStatusEffectItem = { name: string; effect: string }
+type CCSkillItem = { name: string; description: string; type?: string; status_effects?: CCStatusEffectItem[] }
+type CCCurrencyItem = { name: string; image: string }
+type CCBossItem = {
+  id: string; name: string; ccTag: string; day: string
+  currencies: CCCurrencyItem[]; image: string; portrait: string
+  mechanics: string; skills: CCSkillItem[]
+}
+
+function CombatCycleForm() {
+  const [bosses, setBosses] = useState<CCBossItem[]>([])
+  const [icons, setIcons] = useState<string[]>([])
+  const [selectedId, setSelectedId] = useState('')
+  const [draft, setDraft] = useState<CCBossItem | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
+
+  useEffect(() => {
+    fetch('/api/admin/dcdl/combat-cycle')
+      .then((r) => r.json())
+      .then((d: { bosses: CCBossItem[]; icons: string[] }) => {
+        setBosses(d.bosses ?? [])
+        setIcons(d.icons ?? [])
+        if ((d.bosses ?? []).length > 0) {
+          setSelectedId(d.bosses[0].id)
+          setDraft(structuredClone(d.bosses[0]))
+        }
+      })
+  }, [])
+
+  function pick(id: string) {
+    const boss = bosses.find((b) => b.id === id)
+    if (!boss) return
+    setSelectedId(id)
+    setDraft(structuredClone(boss))
+    setStatus(null)
+  }
+
+  function edit(patch: Partial<CCBossItem>) {
+    setDraft((d) => (d ? { ...d, ...patch } : d))
+  }
+
+  function editSkill(i: number, patch: Partial<CCSkillItem>) {
+    setDraft((d) => {
+      if (!d) return d
+      return { ...d, skills: d.skills.map((s, j) => (j === i ? { ...s, ...patch } : s)) }
+    })
+  }
+
+  function moveSkill(i: number, dir: -1 | 1) {
+    setDraft((d) => {
+      if (!d) return d
+      const j = i + dir
+      if (j < 0 || j >= d.skills.length) return d
+      const skills = [...d.skills]
+      const tmp = skills[i]
+      skills[i] = skills[j]
+      skills[j] = tmp
+      return { ...d, skills }
+    })
+  }
+
+  function editEffect(si: number, ei: number, patch: Partial<CCStatusEffectItem>) {
+    setDraft((d) => {
+      if (!d) return d
+      const skills = d.skills.map((s, j) => {
+        if (j !== si) return s
+        return { ...s, status_effects: (s.status_effects ?? []).map((e, k) => (k === ei ? { ...e, ...patch } : e)) }
+      })
+      return { ...d, skills }
+    })
+  }
+
+  async function save(e: React.FormEvent) {
+    e.preventDefault()
+    if (!draft) return
+    setLoading(true); setStatus(null)
+    try {
+      const res = await fetch('/api/admin/dcdl/combat-cycle', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(draft),
+      })
+      const data = await res.json()
+      if (res.ok) {
+        setStatus({ type: 'success', message: 'Saved ' + draft.name + '.' })
+        setBosses((prev) => prev.map((b) => (b.id === data.boss.id ? data.boss : b)))
+        setDraft(structuredClone(data.boss))
+      } else {
+        setStatus({ type: 'error', message: data.error ?? 'Something went wrong.' })
+      }
+    } catch { setStatus({ type: 'error', message: 'Network error.' }) }
+    setLoading(false)
+  }
+
+  if (!draft) {
+    return <p style={{ color: '#888', fontSize: '0.85rem' }}>Loading Combat Cycle bosses…</p>
+  }
+
+  return (
+    <div>
+      <p style={{ color: '#888', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+        Edit each Combat Cycle boss&apos;s days, mechanics, rewards and skills. Pick a boss, make changes, then save — a save only writes that one boss, so the other six can&apos;t be affected.
+      </p>
+      <StatusBanner status={status} />
+
+      {/* Boss picker */}
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+        {bosses.map((b) => (
+          <button
+            key={b.id}
+            type="button"
+            onClick={() => pick(b.id)}
+            style={{
+              display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem',
+              padding: '0.4rem', width: '6rem', cursor: 'pointer',
+              background: selectedId === b.id ? 'rgba(204,164,83,0.15)' : '#1a1a1a',
+              border: selectedId === b.id ? '1px solid var(--gold)' : '1px solid #444',
+              borderRadius: '0.5rem',
+            }}
+          >
+            {b.portrait && (
+              <img
+                src={'/dcdl/combat-cycle/' + b.portrait}
+                alt=""
+                style={{ width: '100%', aspectRatio: '4 / 5', objectFit: 'cover', borderRadius: '0.3rem' }}
+              />
+            )}
+            <span style={{ fontSize: '0.65rem', color: selectedId === b.id ? 'var(--gold)' : '#bbb', textAlign: 'center', lineHeight: 1.2 }}>
+              {b.name}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      <form onSubmit={save} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <div style={sec}>
+          <div style={secTitle}>Basics</div>
+          <div style={g2}>
+            <Field label="Boss Name" required>
+              <input style={inp} value={draft.name} onChange={(e) => edit({ name: e.target.value })} />
+            </Field>
+            <Field label="Days" hint="e.g. Monday / Tuesday">
+              <input style={inp} value={draft.day} onChange={(e) => edit({ day: e.target.value })} />
+            </Field>
+          </div>
+          <Field label="Game Mode Tag" hint="Matches a champion's Game Modes value to build the Top Counters list — only change this if the in-game tag changed">
+            <input style={inp} value={draft.ccTag} onChange={(e) => edit({ ccTag: e.target.value })} />
+          </Field>
+          <Field label="Boss Mechanics" hint="Shown above the skills on the guide page">
+            <textarea
+              style={{ ...inp, minHeight: '7rem', resize: 'vertical' }}
+              value={draft.mechanics}
+              onChange={(e) => edit({ mechanics: e.target.value })}
+            />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Rewards</div>
+          {draft.currencies.length === 0 && <span style={{ fontSize: '0.8rem', color: '#666' }}>No rewards listed.</span>}
+          {draft.currencies.map((cur, i) => (
+            <div key={i} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+              <img src={'/dcdl/resource_icons/' + cur.image} alt="" style={{ width: '2.25rem', height: '2.25rem', objectFit: 'contain', flexShrink: 0 }} />
+              <input
+                style={{ ...inp, flex: 1 }}
+                value={cur.name}
+                placeholder="Reward name"
+                onChange={(e) => edit({ currencies: draft.currencies.map((c, j) => (j === i ? { ...c, name: e.target.value } : c)) })}
+              />
+              <select
+                style={{ ...inp, flex: 1 }}
+                value={cur.image}
+                onChange={(e) => edit({ currencies: draft.currencies.map((c, j) => (j === i ? { ...c, image: e.target.value } : c)) })}
+              >
+                {!icons.includes(cur.image) && <option value={cur.image}>{cur.image} (missing)</option>}
+                {icons.map((ic) => <option key={ic} value={ic}>{ic}</option>)}
+              </select>
+              <button
+                type="button"
+                className="btn"
+                style={{ background: '#7f1d1d', flexShrink: 0 }}
+                onClick={() => edit({ currencies: draft.currencies.filter((_, j) => j !== i) })}
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+          <button
+            type="button"
+            className="btn"
+            style={{ alignSelf: 'flex-start', background: 'var(--purple)' }}
+            onClick={() => edit({ currencies: [...draft.currencies, { name: '', image: icons[0] ?? '' }] })}
+          >
+            + Add Reward
+          </button>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>Boss Skills</div>
+          {draft.skills.length === 0 && <span style={{ fontSize: '0.8rem', color: '#666' }}>No skills yet.</span>}
+          {draft.skills.map((skill, i) => (
+            <div key={i} style={{ border: '1px solid #444', borderRadius: '0.5rem', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '0.7rem', color: '#888', fontWeight: 700 }}>#{i + 1}</span>
+                <input style={{ ...inp, flex: 2, minWidth: '10rem' }} placeholder="Skill name" value={skill.name} onChange={(e) => editSkill(i, { name: e.target.value })} />
+                <input style={{ ...inp, flex: 1, minWidth: '7rem' }} placeholder="Type (e.g. Passive)" value={skill.type ?? ''} onChange={(e) => editSkill(i, { type: e.target.value })} />
+                <button type="button" className="btn" style={{ background: 'var(--purple)', padding: '0.35rem 0.6rem' }} onClick={() => moveSkill(i, -1)} disabled={i === 0}>▲</button>
+                <button type="button" className="btn" style={{ background: 'var(--purple)', padding: '0.35rem 0.6rem' }} onClick={() => moveSkill(i, 1)} disabled={i === draft.skills.length - 1}>▼</button>
+                <button
+                  type="button"
+                  className="btn"
+                  style={{ background: '#7f1d1d', padding: '0.35rem 0.6rem' }}
+                  onClick={() => edit({ skills: draft.skills.filter((_, j) => j !== i) })}
+                >
+                  Remove
+                </button>
+              </div>
+              <textarea
+                style={{ ...inp, minHeight: '5rem', resize: 'vertical' }}
+                placeholder="Skill description"
+                value={skill.description}
+                onChange={(e) => editSkill(i, { description: e.target.value })}
+              />
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', paddingLeft: '1rem', borderLeft: '2px solid var(--purple)' }}>
+                <span style={{ fontSize: '0.68rem', color: '#c8a0ff', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Status Effects
+                </span>
+                {(skill.status_effects ?? []).map((se, j) => (
+                  <div key={j} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <input style={{ ...inp, flex: 1, minWidth: '8rem' }} placeholder="Effect name" value={se.name} onChange={(e) => editEffect(i, j, { name: e.target.value })} />
+                    <input style={{ ...inp, flex: 2, minWidth: '10rem' }} placeholder="What it does" value={se.effect} onChange={(e) => editEffect(i, j, { effect: e.target.value })} />
+                    <button
+                      type="button"
+                      className="btn"
+                      style={{ background: '#7f1d1d', padding: '0.35rem 0.6rem', flexShrink: 0 }}
+                      onClick={() => editSkill(i, { status_effects: (skill.status_effects ?? []).filter((_, k) => k !== j) })}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                ))}
+                <button
+                  type="button"
+                  className="btn"
+                  style={{ alignSelf: 'flex-start', background: 'var(--purple)', fontSize: '0.75rem' }}
+                  onClick={() => editSkill(i, { status_effects: [...(skill.status_effects ?? []), { name: '', effect: '' }] })}
+                >
+                  + Add Status Effect
+                </button>
+              </div>
+            </div>
+          ))}
+          <button
+            type="button"
+            className="btn"
+            style={{ alignSelf: 'flex-start', background: 'var(--purple)' }}
+            onClick={() => edit({ skills: [...draft.skills, { name: '', description: '', type: '', status_effects: [] }] })}
+          >
+            + Add Skill
+          </button>
+        </div>
+
+        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <button type="submit" className="btn" disabled={loading} style={{ fontSize: '1rem', padding: '0.75rem 2rem' }}>
+            {loading ? 'Saving…' : 'Save ' + draft.name}
+          </button>
+          <button type="button" className="btn" style={{ background: 'var(--purple)' }} onClick={() => pick(selectedId)} disabled={loading}>
+            Revert Changes
+          </button>
+        </div>
+      </form>
+    </div>
+  )
+}
+
 // ── Root page ──────────────────────────────────────────────────────────────────
 type Game = 'dcdl' | 'vh' | 'gf'
-type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'supreme-commander' | 'infographics' | 'factions'
+type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'supreme-commander' | 'infographics' | 'combat-cycle'
 type VhTab = 'hunters' | 'status-effects'
 type GfTab = 'heroes' | 'tier-ranking' | 'dungeons'
 
@@ -3458,7 +3654,7 @@ export default function AdminDCDLPage() {
     { id: 'best-teams', label: 'Best Teams' },
     { id: 'supreme-commander', label: 'Supreme Commander' },
     { id: 'infographics', label: 'Infographics' },
-    { id: 'factions', label: 'Factions' },
+    { id: 'combat-cycle', label: 'Combat Cycle' },
   ]
 
   const vhTabs: { id: VhTab; label: string }[] = [
@@ -3522,7 +3718,7 @@ export default function AdminDCDLPage() {
             {dcdlTab === 'best-teams' && <BestTeamsForm />}
             {dcdlTab === 'supreme-commander' && <SupremeCommanderForm />}
             {dcdlTab === 'infographics' && <InfographicsForm />}
-            {dcdlTab === 'factions' && <FactionsForm />}
+            {dcdlTab === 'combat-cycle' && <CombatCycleForm />}
           </>
         )}
 

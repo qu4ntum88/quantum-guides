@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import fs from 'fs'
 import path from 'path'
-import { getResolvedHeros, getSynergies } from '@/src/dcdl/lib/data'
+import { getResolvedHeros } from '@/src/dcdl/lib/data'
 
 const BASE = 'https://www.quantumgameguides.com'
 
@@ -25,11 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/games/dc-dark-legion/combat-cycle',
     '/games/dc-dark-legion/ship-combat-guides',
     '/games/dc-dark-legion/infographics',
-    '/games/dc-dark-legion/factions',
   ]
 
   const heroPaths = getResolvedHeros().map((h) => `/games/dc-dark-legion/heros/${h.id}`)
-  const factionPaths = getSynergies().map((s) => `/games/dc-dark-legion/factions/${s.id}`)
 
   let guidePaths: string[] = []
   try {
@@ -40,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .map((f) => `/games/dc-dark-legion/guides/${f.replace(/\.(mdx|md)$/, '')}`)
   } catch {}
 
-  return [...staticPaths, ...heroPaths, ...factionPaths, ...guidePaths].map((p) => ({
+  return [...staticPaths, ...heroPaths, ...guidePaths].map((p) => ({
     url: `${BASE}${p}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,

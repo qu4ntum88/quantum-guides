@@ -8,6 +8,8 @@ import RarityBadge from '@/src/dcdl/components/RarityBadge'
 import { PageEntryBadges } from '@/src/dcdl/components/EntryBadges'
 import type { LegacyResolved } from '@/src/dcdl/lib/data'
 import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
+import AbilityKit from '@/src/dcdl/components/AbilityKit'
+import '../abilities.css'
 
 export function generateStaticParams() {
   return getResolvedHeros().map((h) => ({ id: h.id }))
@@ -233,69 +235,12 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         </div>
 
         {/* Champion Abilities */}
-        <div className="card">
-          <h2>Champion Abilities</h2>
-
-          {hero.ultimate && (
-            <>
-              <h4>Ultimate</h4>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                <img src={hero.ultimate.image} alt={hero.ultimate.name} style={{ width: '3.5rem' }} />
-                <div>
-                  <div style={{ fontWeight: 'bold' }}>{hero.ultimate.name}</div>
-                  <div>{hero.ultimate.description}</div>
-                </div>
-              </div>
-            </>
-          )}
-
-          {hero.globalSkill && (
-            <>
-              <h4>Global Skill</h4>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                <img src={hero.globalSkill.image} alt={hero.globalSkill.name} style={{ width: '3.5rem' }} />
-                <div>
-                  <div style={{ fontWeight: 'bold' }}>{hero.globalSkill.name}</div>
-                  <div>{hero.globalSkill.description}</div>
-                </div>
-              </div>
-            </>
-          )}
-
-          {hero.skills && hero.skills.length > 0 && (
-            <>
-              <h4>Skills</h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1rem' }}>
-                {hero.skills.map((s) => (
-                  <div key={s.name} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <img src={s.image} alt={s.name} style={{ width: '3.5rem' }} />
-                    <div>
-                      <div style={{ fontWeight: 'bold' }}>{s.name}</div>
-                      <div>{s.description}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-
-          {hero.upgrades && hero.upgrades.length > 0 && (
-            <>
-              <h4>Multiversal Force Enhancements</h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {hero.upgrades.map((u) => (
-                  <div key={u.name} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <img src={u.image} alt={u.name} style={{ width: '5rem' }} />
-                    <div>
-                      <div style={{ fontWeight: 'bold' }}>{u.name}</div>
-                      <div>{u.description}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
+        <AbilityKit
+          ultimate={hero.ultimate ?? null}
+          globalSkill={hero.globalSkill ?? null}
+          skills={hero.skills ?? []}
+          upgrades={hero.upgrades ?? []}
+        />
 
         <VotingWidget entityType="champion" entityId={id} />
 
