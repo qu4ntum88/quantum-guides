@@ -1,11 +1,20 @@
 'use client'
 
 import { useState } from 'react'
-import { exportTierListPng, type ExportItem } from '@/src/dcdl/lib/tier-export'
+import {
+  exportTierListPng,
+  type ExportColumn,
+  type ExportItem,
+  type ExportShowcase,
+} from '@/src/dcdl/lib/tier-export'
 
 /**
  * Download-as-PNG button. Shared by the official tier list, every creator list,
- * and the studio preview so all three produce an identical graphic.
+ * and the studio preview.
+ *
+ * `layout` picks which of the two body renderings the PNG uses so the download
+ * matches the page it was taken from: 'columns' for the official role-group
+ * table, the default 'rows' for <TierBoard>-style lists.
  */
 export default function ExportTierListButton({
   title,
@@ -15,6 +24,12 @@ export default function ExportTierListButton({
   tiers,
   fit = 'cover',
   filename,
+  layout,
+  columns,
+  tierLabels,
+  boardTitle,
+  showcases,
+  watermark,
   style,
 }: {
   title: string
@@ -24,6 +39,12 @@ export default function ExportTierListButton({
   tiers: readonly string[]
   fit?: 'cover' | 'contain'
   filename?: string
+  layout?: 'rows' | 'columns'
+  columns?: ExportColumn[]
+  tierLabels?: Record<string, string>
+  boardTitle?: string
+  showcases?: ExportShowcase[]
+  watermark?: { src: string; side: 'left' | 'right' }
   style?: React.CSSProperties
 }) {
   const [busy, setBusy] = useState(false)
@@ -32,7 +53,10 @@ export default function ExportTierListButton({
   async function run() {
     setBusy(true); setError('')
     try {
-      await exportTierListPng({ title, subtitle, dateLine, items, tiers, fit, filename })
+      await exportTierListPng({
+        title, subtitle, dateLine, items, tiers, fit, filename,
+        layout, columns, tierLabels, boardTitle, showcases, watermark,
+      })
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Export failed.')
     }

@@ -2,10 +2,12 @@ import Link from 'next/link'
 import { getDataLastUpdated } from '@/src/dcdl/lib/data'
 import { getOfficialHeros, getOfficialLegacy, getOfficialTiersUpdatedAt, getPublishedTierLists } from '@/src/dcdl/lib/tier-db'
 import '../../godforge/game.css'
+import './tier-list.css'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 import { EntryBadgeGroup } from '@/src/dcdl/components/EntryBadges'
 import ExportTierListButton from '@/src/dcdl/components/tier/ExportTierListButton'
 import CommunityTierLists from '@/src/dcdl/components/tier/CommunityTierLists'
+import LegacyShowcase, { buildShowcases } from '@/src/dcdl/components/tier/LegacyShowcase'
 
 const RARITY_BG: Record<string, string> = {
   'Iconic':   '#00292a',
@@ -18,14 +20,25 @@ const RARITY_BG: Record<string, string> = {
 const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D'] as const
 
 const TIER_LABELS: Record<string, string> = {
-  'S+': 'Elite Meta',
-  'S':  'Must Build',
-  'A+': 'Must Build',
-  'A':  'Niche',
-  'B':  'Situational',
-  'C':  'Starter',
+  'S+': 'Universal',
+  'S':  'Meta',
+  'A+': 'Sub-Meta',
+  'A':  'Off-Meta',
+  'B':  'Whale',
+  'C':  'Skip',
   'D':  'New Player',
 }
+
+// The legacy table's D row is where the late-game Mythic pieces sit, so it gets
+// its own caption. Every other tier reads the same as the champion table.
+const LEGACY_TIER_LABELS: Record<string, string> = {
+  ...TIER_LABELS,
+  'D': 'Late Game Mythics',
+}
+
+// The legacy list is a joint ranking with Tyvokka, so both names carry through
+// the on-page banner, the export header and the download filename.
+const LEGACY_TITLE = "Quantum & Tyvokka's Legacy Piece Tier List"
 
 const COLUMNS: { label: string; classes: string[] }[] = [
   { label: 'Assassin | Firepower | Magical', classes: ['Assassin', 'Firepower', 'Magical'] },
@@ -69,9 +82,9 @@ function TableTitle({ children }: { children: React.ReactNode }) {
   )
 }
 
-function TierCell({ tier }: { tier: string }) {
+function TierCell({ tier, labels = TIER_LABELS }: { tier: string; labels?: Record<string, string> }) {
   const color = TIER_COLORS[tier] ?? '#888'
-  const label = TIER_LABELS[tier] ?? ''
+  const label = labels[tier] ?? ''
   return (
     <td style={{
       padding: '0.5rem 0.6rem',
@@ -159,12 +172,24 @@ export default async function TierListPage() {
     ? new Date(savedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     : getDataLastUpdated('heros.json', 'legacy.json')
 
+  // The export draws the same column table the page does, so it needs each
+  // item's role group alongside its tier.
   const heroExport = heroes
     .filter((h) => h.tier)
-    .map((h) => ({ id: h.id, name: h.name, img: h.imageHeadshot ?? null, tier: h.tier as string }))
+    .map((h) => ({
+      id: h.id, name: h.name, img: h.imageHeadshot ?? null, tier: h.tier as string,
+      group: h.class ?? '', isNew: h.isNew, isP2W: h.isP2W, previousTier: h.previousTier,
+    }))
   const legacyExport = legacyPieces
     .filter((l) => l.tier)
-    .map((l) => ({ id: l.id, name: l.name, img: l.image ?? null, tier: l.tier as string }))
+    .map((l) => ({
+      id: l.id, name: l.name, img: l.image ?? null, tier: l.tier as string,
+      group: l.role ?? '', isNew: l.isNew, isP2W: l.isP2W, previousTier: l.previousTier,
+    }))
+
+  // Mythic / Legendary / Epic pieces sit outside the ranked table as bracket
+  // recommendations — see <LegacyShowcase>.
+  const showcases = buildShowcases(legacyPieces)
 
   return (
     <main>
@@ -172,7 +197,7 @@ export default async function TierListPage() {
         <div className="container">
           <p className="gh-overline">Tier List</p>
           <h1 className="gh-hero-title">DC: Dark Legion</h1>
-          <p className="gh-hero-sub">Quantum&apos;s personal champion and legacy piece rankings across all three role groups.</p>
+          <p className="gh-hero-sub">Quantum&apos;s personal champion rankings, plus the legacy piece list he builds with Tyvokka — across all three role groups.</p>
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
             <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.38)', fontFamily: 'monospace' }}>Updated: {lastUpdated}</span>
@@ -194,6 +219,11 @@ export default async function TierListPage() {
               tiers={TIERS}
               items={heroExport}
               filename="quantum-champion-tier-list"
+              layout="columns"
+              columns={COLUMNS}
+              tierLabels={TIER_LABELS}
+              boardTitle="All Purpose Champion Tier List"
+              watermark={{ src: '/dcdl/combat-cycle/LaughBatman.png', side: 'right' }}
             />
           </div>
           <div style={{ ...tableCard, minWidth: '600px' }}>
@@ -312,16 +342,29 @@ export default async function TierListPage() {
               </Link>{' '}for that item.
             </p>
             <ExportTierListButton
-              title="Quantum's Legacy Piece Tier List"
+              title={LEGACY_TITLE}
               dateLine={lastUpdated ? `Updated ${lastUpdated}` : undefined}
               tiers={TIERS}
               items={legacyExport}
               fit="contain"
-              filename="quantum-legacy-piece-tier-list"
+              filename="quantum-tyvokka-legacy-piece-tier-list"
+              layout="columns"
+              columns={COLUMNS}
+              tierLabels={LEGACY_TIER_LABELS}
+              boardTitle={LEGACY_TITLE}
+              watermark={{ src: '/dcdl/combat-cycle/LaughBatman.png', side: 'left' }}
+              showcases={showcases.map((s) => ({
+                title: s.title,
+                rank: s.rank,
+                accent: s.accent,
+                bg: s.bg,
+                total: s.total,
+                cards: s.cards.map((c) => ({ name: c.name, img: c.img })),
+              }))}
             />
           </div>
           <div style={{ ...tableCard, minWidth: '600px' }}>
-            <TableTitle>Legacy Piece Tier List</TableTitle>
+            <TableTitle>{LEGACY_TITLE}</TableTitle>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ borderBottom: GOLD_ROW_BORDER }}>
@@ -334,7 +377,7 @@ export default async function TierListPage() {
                   const tierColor = TIER_COLORS[tier] ?? '#888'
                   return (
                     <tr key={tier} style={{ borderTop: GOLD_ROW_BORDER }}>
-                      <TierCell tier={tier} />
+                      <TierCell tier={tier} labels={LEGACY_TIER_LABELS} />
                       {COLUMNS.map((col) => {
                         const cell = legacyPieces.filter(
                           (l) => l.tier === tier && col.classes.some((cls) => (l.role ?? '').includes(cls))
@@ -386,6 +429,7 @@ export default async function TierListPage() {
                 })}
               </tbody>
             </table>
+            <LegacyShowcase showcases={showcases} />
             <div style={{
               padding: '1.25rem 1.5rem',
               borderTop: GOLD_ROW_BORDER,

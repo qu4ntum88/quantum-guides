@@ -1,0 +1,157 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Legacy piece showcase — the three "hand of cards" panels that sit under the
+   legacy tier table for the ranks that are deliberately left off it (Mythic /
+   Legendary / Epic bracket picks).
+
+   Each panel fans its cards around a pivot well below the panel, the way a
+   hand of playing cards splays. The per-card angle is passed in as `--a` so
+   the hover rule can reuse it while adding the lift.
+   ────────────────────────────────────────────────────────────────────────── */
+
+.lsc-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.5rem 1.25rem 1.75rem;
+  border-top: 2px solid rgba(201, 160, 30, 0.25);
+}
+
+.lsc-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.05rem 0.75rem 1.15rem;
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--lsc-accent) 45%, transparent);
+  background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--lsc-accent) 16%, transparent) 0%, transparent 70%),
+    var(--lsc-bg, #1a0a3a);
+  overflow: hidden;
+}
+
+/* Faint diagonal sheen so the three panels read as felt, not empty boxes. */
+.lsc-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.05) 0%, transparent 38%);
+  pointer-events: none;
+}
+
+.lsc-title {
+  font-family: Unbounded, sans-serif;
+  font-size: clamp(0.68rem, 1.5vw, 0.92rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.25;
+  color: var(--lsc-accent);
+  text-shadow: 0 0 18px color-mix(in srgb, var(--lsc-accent) 45%, transparent);
+  margin: 0;
+}
+
+.lsc-rank {
+  margin-top: 0.45rem;
+  padding: 0.16rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--lsc-accent) 55%, transparent);
+  background: color-mix(in srgb, var(--lsc-accent) 14%, transparent);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--lsc-accent) 80%, #fff);
+}
+
+.lsc-fan {
+  position: relative;
+  width: 100%;
+  height: 186px;
+  margin-top: 0.9rem;
+}
+
+.lsc-card {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  width: 92px;
+  height: 116px;
+  margin-left: -46px;
+  transform-origin: 50% 215%;
+  transform: translateY(0) rotate(var(--a));
+  transition: transform 0.24s cubic-bezier(0.34, 1.3, 0.64, 1), filter 0.24s ease;
+  text-decoration: none;
+  will-change: transform;
+}
+
+.lsc-card:hover,
+.lsc-card:focus-visible {
+  transform: translateY(-18px) rotate(var(--a)) scale(1.07);
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.55));
+  z-index: 30;
+  outline: none;
+}
+
+.lsc-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid color-mix(in srgb, var(--lsc-accent) 70%, transparent);
+  background:
+    linear-gradient(165deg, color-mix(in srgb, var(--lsc-accent) 28%, transparent) 0%, transparent 55%),
+    var(--lsc-bg, #1a0a3a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.3rem 0.25rem 0;
+  overflow: hidden;
+}
+
+.lsc-face img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.lsc-name {
+  margin-top: 0.15rem;
+  font-size: 0.46rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.82);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lsc-more {
+  margin-top: 0.15rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 860px) {
+  .lsc-wrap {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lsc-card { transition: none; }
+  .lsc-card:hover,
+  .lsc-card:focus-visible { transform: translateY(0) rotate(var(--a)); }
+}
