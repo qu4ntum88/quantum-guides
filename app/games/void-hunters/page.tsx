@@ -1,8 +1,16 @@
+import type { Metadata } from 'next'
 import fs from 'fs'
 import path from 'path'
 import HunterGrid from '@/src/vh/components/HunterGrid'
 import type { Hunter } from '@/src/vh/components/HunterBox'
 import '../godforge/game.css'
+
+export const metadata: Metadata = {
+  title: 'Hunter Database — Void Hunters | Quantum Game Guides',
+  description:
+    'Every Void Hunters hunter in one sortable, filterable grid — rarity, class, species, and homeland, with a dedicated page for each hunter covering skills, stats, upgrades, and lore.',
+  alternates: { canonical: '/games/void-hunters' },
+}
 
 function getHunters(): Hunter[] {
   try {

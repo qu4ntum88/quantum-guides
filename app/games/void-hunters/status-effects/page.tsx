@@ -4,7 +4,12 @@ import path from 'path'
 import StatusEffectGrid from '@/src/vh/components/StatusEffectGrid'
 import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
 
-export const metadata: Metadata = { robots: 'noindex, nofollow' }
+export const metadata: Metadata = {
+  title: 'Status Effects — Void Hunters | Quantum Game Guides',
+  description:
+    'Full reference for every Void Hunters status effect — buffs, debuffs, and disables with what each one does and how it stacks.',
+  alternates: { canonical: '/games/void-hunters/status-effects' },
+}
 
 function getStatusEffects(): StatusEffect[] {
   try {

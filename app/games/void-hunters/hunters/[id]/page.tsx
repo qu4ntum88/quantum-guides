@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import type { Hunter, SkillEntry, BonusBreakdown } from '@/src/vh/components/HunterBox'
 import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
@@ -13,6 +14,47 @@ function readStatusEffects(): StatusEffect[] {
 
 export function generateStaticParams() {
   return readHunters().map((h) => ({ id: h.id }))
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params
+  const hunter = readHunters().find((h) => h.id === id)
+  if (!hunter) return {}
+
+  const canonical = `/games/void-hunters/hunters/${hunter.id}`
+  const first = (v: unknown) => (Array.isArray(v) && v.length > 0 ? String(v[0]) : '')
+
+  // Build a factual description from fields that are actually present.
+  const cls = first(hunter.class)
+  const species = first(hunter.species)
+  const homeland = first(hunter.homeland)
+
+  // "an Epic Attacker" / "a Rare Support" — pick the article off the first word.
+  const article = (w: string) => (/^[aeiou]/i.test(w) ? 'an' : 'a')
+  const lead = [hunter.rarity, cls].filter(Boolean).join(' ')
+
+  let desc = `${hunter.name} is `
+  desc += lead ? `${article(lead)} ${lead} hunter in Void Hunters` : 'a hunter in Void Hunters'
+  if (species) desc += `, ${article(species)} ${species}`
+  if (homeland) desc += ` from ${homeland}`
+  desc += '.'
+  desc += ' Full skill breakdown, stats, upgrade bonuses, and lore.'
+
+  const ogImage = hunter.fullArt || hunter.portrait
+  const heading = hunter.title ? `${hunter.name}, ${hunter.title}` : hunter.name
+
+  return {
+    title: `${heading} — Void Hunters Guide | Quantum Game Guides`,
+    description: desc,
+    alternates: { canonical },
+    openGraph: {
+      title: `${heading} — Void Hunters`,
+      description: desc,
+      url: canonical,
+      type: 'article',
+      ...(ogImage ? { images: [{ url: ogImage, alt: hunter.name }] } : {}),
+    },
+  }
 }
 
 // ── Rarity colours ──────────────────────────────────────────────────────────

@@ -2,6 +2,13 @@ import '../../godforge/game.css'
 
 export const revalidate = 3600
 
+export const metadata = {
+  title: 'Void Hunters Guides, Hunters & Status Effects | Quantum Game Guides',
+  description:
+    'The Void Hunters hub — browse the full hunter database, the complete status effects reference, and video guides for the turn-based squad RPG.',
+  alternates: { canonical: '/games/void-hunters/guides' },
+}
+
 const GOLD = 'rgba(201, 160, 30, 0.45)'
 
 export default function VoidHuntersGuidesPage() {

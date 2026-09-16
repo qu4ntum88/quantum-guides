@@ -11,7 +11,7 @@
 export const PUBLIC_SECTIONS = {
   dcdl: true,
   godforge: false,
-  voidHunters: false,
+  voidHunters: true,
 } as const
 
 export type GameSection = keyof typeof PUBLIC_SECTIONS
