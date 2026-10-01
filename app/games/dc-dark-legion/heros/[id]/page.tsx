@@ -9,6 +9,7 @@ import { PageEntryBadges } from '@/src/dcdl/components/EntryBadges'
 import type { LegacyResolved } from '@/src/dcdl/lib/data'
 import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
 import AbilityKit from '@/src/dcdl/components/AbilityKit'
+import TakeBody from '@/src/dcdl/components/TakeBody'
 import '../abilities.css'
 
 export function generateStaticParams() {
@@ -194,7 +195,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
               ? <G>{hero.transmutePriorities.join(', ')}</G>
               : <Null />}.
           </p>
-          {hero.quantumsTake && <p style={{ margin: 0 }}>{hero.quantumsTake}</p>}
+          {hero.quantumsTake && <TakeBody text={hero.quantumsTake} />}
           {(hero.starBreakpoint || (hero.acDcPriority && hero.acDcPriority.length > 0)) && (
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
               {hero.starBreakpoint && (

@@ -13,11 +13,20 @@
  *
  * Imported by the client editor and the server-rendered guide page alike.
  * Inline formatting (bold / italic / links) inside paragraphs is stored as a
- * small, sanitized HTML subset — `sanitizeInline()` (DOMPurify) is the single
- * gate, run in the editor, on save, and at render.
+ * small, sanitized HTML subset — `sanitizeInline()` (rehype-sanitize) is the
+ * single gate, run in the editor, on save, and at render.
+ *
+ * The sanitizer must stay jsdom-free: this module is imported by the server-
+ * rendered guide page, and isomorphic-dompurify's jsdom dependency chain threw
+ * ERR_REQUIRE_ESM in the Vercel function, 500ing every on-demand guide URL.
+ * rehype-parse uses parse5 (pure JS), so the same code runs in the browser
+ * editor and on the server.
  */
 
-import DOMPurify from 'isomorphic-dompurify'
+import { unified } from 'unified'
+import rehypeParse from 'rehype-parse'
+import rehypeSanitize, { type Options as SanitizeSchema } from 'rehype-sanitize'
+import rehypeStringify from 'rehype-stringify'
 
 /** Paragraph / heading alignment. 'left' is the default and is never stored. */
 export type Align = 'left' | 'center' | 'right' | 'justify'
@@ -68,45 +77,49 @@ export const TEXT_FONTS = [
   { id: 'qgg-f-mono', label: 'Mono' },
 ] as const
 
-/** Every class the sanitizer will keep on an inline <span>. */
-const ALLOWED_CLASSES = new Set<string>([
+/** Every class the sanitizer will keep on an inline element. */
+const ALLOWED_CLASSES = [
   ...TEXT_SIZES.map((s) => s.id),
   ...TEXT_COLORS.map((c) => c.id),
   ...TEXT_FONTS.map((f) => f.id),
-].filter(Boolean))
-
-/** Strip any class token that is not in the allowlist; drop empty attributes. */
-function filterClasses(html: string): string {
-  // Runs on DOMPurify output, so attributes are already normalized to double
-  // quotes and the markup is well-formed.
-  return html.replace(/\sclass="([^"]*)"/gi, (_full, value: string) => {
-    const kept = value.split(/\s+/).filter((c) => ALLOWED_CLASSES.has(c))
-    return kept.length > 0 ? ` class="${kept.join(' ')}"` : ''
-  })
-}
+].filter(Boolean)
 
 // ── Inline sanitization ───────────────────────────────────────────────────────
 
 /**
+ * Closed allowlist schema. Disallowed elements are unwrapped (their text is
+ * kept); script/style are dropped with their contents. `className` lists its
+ * allowed values, so any class token outside the vocabulary is stripped.
+ * NOTE: `style` is deliberately absent — see the comment on TEXT_SIZES.
+ */
+const INLINE_SCHEMA: SanitizeSchema = {
+  tagNames: ['strong', 'em', 'b', 'i', 'u', 'span', 'a', 'br'],
+  attributes: {
+    a: ['href'],
+    '*': [['className', ...ALLOWED_CLASSES]],
+  },
+  protocols: { href: ['http', 'https', 'mailto'] },
+  strip: ['script', 'style'],
+}
+
+const inlineProcessor = unified()
+  .use(rehypeParse, { fragment: true })
+  .use(rehypeSanitize, INLINE_SCHEMA)
+  .use(rehypeStringify, { characterReferences: { useNamedReferences: true } })
+
+/**
  * Reduce a snippet of paragraph HTML to a safe inline subset: bold, italic,
- * underline, links, line breaks, and <span> carrying an allowlisted formatting
- * class. DOMPurify strips everything else (scripts, event handlers,
- * javascript: URLs, block tags, and every `style` attribute). Anchors are
+ * underline, links, line breaks, and elements carrying an allowlisted
+ * formatting class. Everything else (scripts, event handlers, javascript:
+ * URLs, block tags, and every `style` attribute) is stripped. Anchors are
  * normalized to open in a new tab with a safe rel.
  *
  * This is the ONLY place inline markup is trusted.
  */
 export function sanitizeInline(html: string): string {
-  const clean = DOMPurify.sanitize(html ?? '', {
-    ALLOWED_TAGS: ['strong', 'em', 'b', 'i', 'u', 'span', 'a', 'br'],
-    // NOTE: `style` is deliberately absent — see the comment on ALLOWED_CLASSES.
-    ALLOWED_ATTR: ['href', 'class'],
-  })
-  // DOMPurify already rejects unsafe hrefs; force a safe rel/target on links.
-  return filterClasses(clean).replace(
-    /<a\s+href=/gi,
-    '<a target="_blank" rel="noopener noreferrer nofollow" href=',
-  )
+  const clean = String(inlineProcessor.processSync(html ?? ''))
+  // The schema already rejects unsafe hrefs; force a safe rel/target on links.
+  return clean.replace(/<as+href=/gi, '<a target="_blank" rel="noopener noreferrer nofollow" href=')
 }
 
 /** Alignment → class, or '' for the default. */
