@@ -1,4 +1,4 @@
-import { getResolvedHeros, getLegacy, type HeroResolved, type Legacy } from './data'
+import { getResolvedHeros, getResolvedLegacy, getLegacy, type HeroResolved, type Legacy, type LegacyResolved } from './data'
 
 /**
  * Read layer for tier data.
@@ -89,6 +89,11 @@ export async function getOfficialHeros(): Promise<HeroResolved[]> {
 /** Legacy pieces with the official tier list applied. */
 export async function getOfficialLegacy(): Promise<Legacy[]> {
   return merge(getLegacy(), await getOfficialTiers('legacy'))
+}
+
+/** Legacy pieces with tiers applied and recommended champions resolved (for the tile tooltips). */
+export async function getOfficialLegacyResolved(): Promise<LegacyResolved[]> {
+  return merge(getResolvedLegacy(), await getOfficialTiers('legacy'))
 }
 
 /** Have tiers ever been saved from the site? Drives the "Updated" stamp. */

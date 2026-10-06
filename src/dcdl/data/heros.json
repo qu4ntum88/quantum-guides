@@ -4039,7 +4039,7 @@
   },
   {
     "id": "robin",
-    "name": "Robin",
+    "name": "Robin (Damian Wayne)",
     "class": "Assassin",
     "rarity": "Mythic",
     "tier": "C",
@@ -5747,5 +5747,81 @@
       }
     ],
     "previousTier": "A"
+  },
+  {
+    "id": "robin_dick_grayson",
+    "name": "Robin (Dick Grayson)",
+    "class": "Warrior",
+    "rarity": "Mythic +",
+    "tier": "A+",
+    "isNew": true,
+    "damageType": "Physical",
+    "tagSynergies": [
+      "teen_titans",
+      "bat_family",
+      "weapon_master"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed"
+    ],
+    "transmutePriorities": [
+      "HP%",
+      "Crit Rate",
+      "Crit DMG",
+      "ATK%"
+    ],
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_robing1.png",
+    "imageFull": "./full_images/img_hero_pic_robing1.png",
+    "ultimate": {
+      "name": "The flying Grayson",
+      "description": "Robin enters [Afterimage] for 12s, then launches into a powerful flying kick, dealing physical damage equal to [1200/1500/1800/2100/2400%] of his Attack to an enemy. \r\n\r\n[Afterimage]: Whenever Robin uses a basic attack, skill, or his Ultimate, an afterimage strikes the same target at high speed, dealing damage equal to [50/60/70/85/100%] of that action's damage multiplier.",
+      "image": "./skill_images/icon_hero_skill_robing1_main.png"
+    },
+    "globalSkill": {
+      "name": "Boy Wonder",
+      "description": "Increases all Champions' Attack by [1/2/3/4/5%] and [Warrior] Champions' HP by [1/2/3/4/5%].",
+      "image": "./globalskill_images/icon_hero_skill_robing1_global.png"
+    },
+    "skills": [
+      {
+        "name": "Acrobatic Barrage",
+        "description": "Robin unleases a rapid flurry, dealing physical damage equal to [400/550/700/850/1000%] of his Attack to an enemy. While [Afterimage] is active, this has a fixed 50% chance to inflict [Off Balance] for 8s.\r\n\r\n[Off Balance]: Reduces Physical Defense by [20/25/30/35/40%].",
+        "image": "./skill_images/icon_hero_skill_robing1_sub01.png"
+      },
+      {
+        "name": "Family Ties",
+        "description": "Increases Robin's Max HP by [16/24/36/48/60%]. At the start of the battle, each [Teen Titans] ally present increases Robin's Spiritual Resistance by [3/6/9/12/15%], while each [Bat Family] ally present increases his Crit Rate by [1.5/3/4.5/6/7.5%].",
+        "image": "./skill_images/icon_hero_skill_robing1_sub02.png"
+      },
+      {
+        "name": "Kinetic Flow",
+        "description": "Increases Robin's Attack by [16/24/36/48/60%]. While [Afterimage] is active, his physical damage dealt is increased by [20/30/45/60/75%]. Each afterimage strike reduces this bonus by [4/6/9/12/15%].",
+        "image": "./skill_images/icon_hero_skill_robing1_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Acrobatic Barrage - Enhanced",
+        "description": "Reduces cooldown of [Acrobatic Barrage]."
+      },
+      {
+        "name": "Family Ties - Enhanced",
+        "description": "Increases Robin's Max HP."
+      },
+      {
+        "name": "Kinetic Flow - Enhanced",
+        "description": "Increases Robin's Physical Damage."
+      }
+    ],
+    "starBreakpoint": 1,
+    "acDcPriority": [
+      "Major 1",
+      "Major 2",
+      "Major 3",
+      "ATK Nodes",
+      "HP Nodes",
+      "S. DEF"
+    ],
+    "whaleOrSkipValue": "Situational / Roster Dependent"
   }
 ]

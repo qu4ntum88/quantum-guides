@@ -7,7 +7,8 @@ import type { LegacyResolved } from "../lib/data"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
-export default function LegacyPieceBox({ piece, communityTier }: { piece: LegacyResolved; communityTier?: string }) {
+// `compact` is the downsized tile used inside the Tier List view's cells.
+export default function LegacyPieceBox({ piece, communityTier, compact = false }: { piece: LegacyResolved; communityTier?: string; compact?: boolean }) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
@@ -29,10 +30,12 @@ export default function LegacyPieceBox({ piece, communityTier }: { piece: Legacy
               isP2W={piece.isP2W}
               previousTier={piece.previousTier}
               currentTier={piece.tier}
-              size="md"
-              tierBottom="2.5rem"
+              size={compact ? "sm" : "md"}
+              tierBottom={compact ? "1.5rem" : "2.5rem"}
             />
-            <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
+            <p className={compact
+              ? "w-full line-clamp-2 bg-black/40 px-0.5 py-1 text-center text-[0.6rem] leading-tight font-medium text-white"
+              : "w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white"}>
               {piece.name}
             </p>
           </div>

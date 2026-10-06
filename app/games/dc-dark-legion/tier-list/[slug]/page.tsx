@@ -75,8 +75,8 @@ export default async function CommunityTierListPage({ params }: Params) {
                 Updated: {updated}
               </span>
             )}
-            <Link href="/games/dc-dark-legion/tier-list" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
-              ← All tier lists
+            <Link href="/games/dc-dark-legion/infographics" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
+              ← Community tier lists
             </Link>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default async function CommunityTierListPage({ params }: Params) {
           <p style={{ marginTop: '1rem', fontSize: '0.75rem', color: '#888', fontStyle: 'italic', lineHeight: 1.6 }}>
             This ranking is the opinion of {list.creatorName}, a Quantum Game Guides{' '}
             {isLegacy ? 'contributor' : 'contributor'} — not the site&rsquo;s official list. See{' '}
-            <Link href="/games/dc-dark-legion/tier-list" style={{ color: 'var(--gold)', fontStyle: 'normal' }}>
+            <Link href={isLegacy ? '/games/dc-dark-legion/legacy?view=tier' : '/games/dc-dark-legion?view=tier'} style={{ color: 'var(--gold)', fontStyle: 'normal' }}>
               Quantum&rsquo;s tier list
             </Link>{' '}for that.
           </p>

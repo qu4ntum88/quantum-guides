@@ -2,9 +2,9 @@ import Link from 'next/link'
 import type { TierListMeta } from '@/src/dcdl/lib/tier-db'
 
 /**
- * "Community Tier Lists" — the card strip at the bottom of the tier list page,
- * one card per published creator/editor list. Styled to sit alongside the
- * infographic cards rather than compete with the official tables above.
+ * "Community Tier Lists" — the card strip under the infographics on
+ * /games/dc-dark-legion/infographics, one card per published creator/editor
+ * list. Styled to sit alongside the infographic cards.
  */
 
 const GOLD = '#c9a01e'

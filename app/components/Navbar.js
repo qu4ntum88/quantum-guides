@@ -20,7 +20,6 @@ const ALL_NAV_ITEMS = [
     children: [
       { label: 'Champions', href: '/games/dc-dark-legion' },
       { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
-      { label: 'Tier List', href: '/games/dc-dark-legion/tier-list' },
       { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
       { label: 'Supreme Commander', href: '/games/dc-dark-legion/supreme-commander' },
       { label: 'Combat Cycle Guide', href: '/games/dc-dark-legion/combat-cycle' },

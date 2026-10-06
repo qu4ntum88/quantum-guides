@@ -22,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/games/dc-dark-legion',
     '/games/dc-dark-legion/legacy',
     '/games/dc-dark-legion/legacy/community-tier',
-    '/games/dc-dark-legion/tier-list',
     '/games/dc-dark-legion/best-teams',
     '/games/dc-dark-legion/combat-cycle',
     '/games/dc-dark-legion/ship-combat-guides',

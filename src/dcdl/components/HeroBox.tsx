@@ -8,7 +8,8 @@ import type { HeroResolved } from "../lib/data"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
-export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; communityTier?: string }) {
+// `compact` is the downsized tile used inside the Tier List view's cells.
+export default function HeroBox({ hero, communityTier, compact = false }: { hero: HeroResolved; communityTier?: string; compact?: boolean }) {
   const classSrc = "/dcdl/role_images/" + hero.class + ".png"
   return (
     <Tooltip>
@@ -26,14 +27,14 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
             style={{ maskImage: "linear-gradient(to bottom, black 30%, transparent)" }}
           />
           <div className="absolute inset-0 flex flex-col justify-end">
-            <img className="absolute top-0 left-0 w-8" src={classSrc} alt={hero.class} />
+            <img className={`absolute top-0 left-0 ${compact ? "w-5" : "w-8"}`} src={classSrc} alt={hero.class} />
             <EntryBadgeGroup
               isNew={hero.isNew}
               isP2W={hero.isP2W}
               previousTier={hero.previousTier}
               currentTier={hero.tier}
-              size="md"
-              tierBottom="2.5rem"
+              size={compact ? "sm" : "md"}
+              tierBottom={compact ? "1.5rem" : "2.5rem"}
             />
             {hero.rarity && RARITY_STYLE[hero.rarity] && (
               <span
@@ -41,7 +42,9 @@ export default function HeroBox({ hero, communityTier }: { hero: HeroResolved; c
                 style={{ ...RARITY_STYLE[hero.rarity], display: 'block', width: '100%', height: '3px' }}
               />
             )}
-            <p className="w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white">
+            <p className={compact
+              ? "w-full line-clamp-2 bg-black/40 px-0.5 py-1 text-center text-[0.6rem] leading-tight font-medium text-white"
+              : "w-full bg-black/40 p-1 py-2 text-center text-sm leading-tight font-medium text-white"}>
               {hero.name}
             </p>
           </div>

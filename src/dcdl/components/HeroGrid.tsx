@@ -1,19 +1,23 @@
 'use client'
 
-import { useState, useEffect, useRef, type CSSProperties } from "react"
+import { useState, useEffect, useRef } from "react"
 import HeroBox from "./HeroBox"
 import { Button } from "./ui/button"
 import SearchBar from "./SearchBar"
 import { RARITIES, RARITY_STYLE } from "./RarityBadge"
 import { TIER_COLORS } from "./TierBadge"
 import type { HeroResolved } from "../lib/data"
+import FilterBar, { type FilterGroup, type FilterPill } from "./FilterBar"
+import TierView from "./tier/TierView"
+import TierExportBar from "./tier/TierExportBar"
+import ViewToggle, { useViewMode, CONTROL_BUTTON, CONTROL_INPUT } from "./tier/ViewToggle"
+import { CHAMPION_ROWS, CHAMPION_TITLE, TIER_COLUMNS, championRow } from "../lib/tier-rows"
 
 const SORT_OPTIONS = [
   { value: "name",     label: "Alphabetical",  icon: undefined },
   { value: "class",    label: "Class",          icon: undefined },
   { value: "faction",  label: "Faction",        icon: undefined },
   { value: "rank",     label: "Rarity",         icon: undefined },
-  { value: "gameMode", label: "Game Modes",     icon: undefined },
   { value: "tier",     label: "Tier Ranking",   icon: "/images/site/Q GOLD FULL ICON.png" },
 ]
 
@@ -49,17 +53,6 @@ const FACTIONS = [
   { id: "weapon_master",       label: "Weapon Master" },
 ]
 
-const GAME_MODES = [
-  "PvP",
-  "Devastator CC",
-  "Drowned CC",
-  "Merciless CC",
-  "Dawnbreaker CC",
-  "Murder Machine CC",
-  "Killer Tank CC",
-  "Red Death CC",
-]
-
 const TIERS = ["S+", "S", "A+", "A", "B", "C", "D"]
 
 const WHALE_SKIP_VALUES = [
@@ -77,19 +70,6 @@ const rankToRank: Record<string, number> = { Iconic: 0, "Mythic +": 1, Mythic: 2
 function factionIconSrc(id: string): string {
   const override: Record<string, string> = { deathmetal: "death_metal" }
   return `/dcdl/synergies/tag_images/${override[id] ?? id}.png`
-}
-
-const LABEL: CSSProperties = {
-  fontSize: "0.9rem",
-  fontFamily: "Unbounded, sans-serif",
-  fontWeight: 700,
-  letterSpacing: "0.06em",
-  textTransform: "uppercase",
-  color: "var(--gold)",
-  opacity: 0.8,
-  flexShrink: 0,
-  whiteSpace: "nowrap",
-  width: "9rem",
 }
 
 function SortButton({ label, icon, selected, onClick }: { label: string; icon?: string; selected: boolean; onClick: () => void }) {
@@ -119,32 +99,6 @@ function SortButton({ label, icon, selected, onClick }: { label: string; icon?: 
       {icon
         ? <img src={icon} alt={label} style={{ height: "1.1rem", objectFit: "contain", opacity: selected ? 1 : 0.55 }} />
         : label}
-    </button>
-  )
-}
-
-function AllButton({ selected, onClick }: { selected: boolean; onClick: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        background: selected ? "rgba(124,58,237,0.35)" : "transparent",
-        border: selected ? "2px solid var(--gold)" : "2px solid #444",
-        borderRadius: "0.5rem",
-        padding: "0.3rem 0.65rem",
-        cursor: "pointer",
-        color: selected ? "var(--gold)" : "#888",
-        fontFamily: "Unbounded, sans-serif",
-        fontSize: "0.65rem",
-        fontWeight: 700,
-        letterSpacing: "0.05em",
-        transition: "all 0.15s",
-        flexShrink: 0,
-        height: "2.85rem",
-      }}
-    >
-      ALL
     </button>
   )
 }
@@ -242,11 +196,47 @@ function IconFilterButton({ src, descSrc, label, selected, onClick }: {
   )
 }
 
+function RarityButton({ rarity, selected, onClick }: { rarity: string; selected: boolean; onClick: () => void }) {
+  const s = RARITY_STYLE[rarity] ?? { background: "#555" }
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        background: s.background,
+        boxShadow: selected ? (s.boxShadow ?? undefined) : undefined,
+        border: selected ? "2px solid var(--gold)" : "2px solid transparent",
+        borderRadius: "0.4rem",
+        padding: "0.3rem 0.85rem",
+        cursor: "pointer",
+        fontFamily: "Unbounded, sans-serif",
+        fontSize: "0.65rem",
+        fontWeight: 700,
+        letterSpacing: "0.05em",
+        textTransform: "uppercase",
+        color: "white",
+        textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+        opacity: selected ? 1 : 0.55,
+        transition: "all 0.15s",
+        flexShrink: 0,
+      }}
+    >
+      {rarity}
+    </button>
+  )
+}
+
 function toggle(arr: string[], val: string, set: (v: string[]) => void) {
   set(arr.includes(val) ? arr.filter((x) => x !== val) : [...arr, val])
 }
 
-export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: HeroResolved[]; synergyDescImages?: Record<string, string> }) {
+export default function HeroGrid({ heros, synergyDescImages = {}, dateLine }: {
+  heros: HeroResolved[]
+  synergyDescImages?: Record<string, string>
+  /** "Updated ..." line for the tier list export. */
+  dateLine?: string
+}) {
+  const [view, setView] = useViewMode("qgg:dcdl-champions-view")
   const [communityTiers, setCommunityTiers] = useState<Record<string, string>>({})
   const [query, setQuery] = useState("")
   const [sortBy, setSortBy] = useState("name")
@@ -255,7 +245,6 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
   const [selectedFactions, setSelectedFactions] = useState<string[]>([])
   const [selectedRarities, setSelectedRarities] = useState<string[]>([])
   const [selectedTiers, setSelectedTiers] = useState<string[]>([])
-  const [selectedGameModes, setSelectedGameModes] = useState<string[]>([])
   const [selectedWhaleSkip, setSelectedWhaleSkip] = useState<string[]>([])
 
   useEffect(() => {
@@ -277,21 +266,37 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
     setSelectedFactions([])
     setSelectedRarities([])
     setSelectedTiers([])
-    setSelectedGameModes([])
     setSelectedWhaleSkip([])
   }
 
+  const isTier = view === "tier"
+
+  // One predicate for both views: the grid drops non-matches, the tier list
+  // dims them. The tier filter only exists in the grid; on the tier list the
+  // rows already are the tiers.
+  const matches = (hero: HeroResolved) => {
+    if (query && !hero.name.toLowerCase().includes(query.toLowerCase())) return false
+    if (selectedClasses.length > 0 && !selectedClasses.includes(hero.class)) return false
+    if (selectedFactions.length > 0 && !hero.tagSynergies.some((s) => selectedFactions.includes(s.id))) return false
+    if (selectedRarities.length > 0 && !selectedRarities.includes(hero.rarity)) return false
+    if (!isTier && selectedTiers.length > 0 && !selectedTiers.includes(hero.tier ?? "")) return false
+    if (selectedWhaleSkip.length > 0 && !selectedWhaleSkip.includes(hero.whaleOrSkipValue ?? "")) return false
+    return true
+  }
+
+  // Names the active filters for the "Export Highlighted" header.
+  const highlightParts = [
+    query.trim() && `"${query.trim()}"`,
+    ...selectedClasses,
+    ...selectedFactions.map((id) => FACTIONS.find((f) => f.id === id)?.label ?? id),
+    ...selectedRarities,
+    ...selectedWhaleSkip,
+  ].filter(Boolean) as string[]
+  const highlight = highlightParts.length > 0 ? highlightParts.join(", ") : null
+  const matchCount = heros.filter(matches).length
+
   const filtered = heros
-    .filter((hero) => {
-      if (query && !hero.name.toLowerCase().includes(query.toLowerCase())) return false
-      if (selectedClasses.length > 0 && !selectedClasses.includes(hero.class)) return false
-      if (selectedFactions.length > 0 && !hero.tagSynergies.some((s) => selectedFactions.includes(s.id))) return false
-      if (selectedRarities.length > 0 && !selectedRarities.includes(hero.rarity)) return false
-      if (selectedTiers.length > 0 && !selectedTiers.includes(hero.tier ?? "")) return false
-      if (selectedGameModes.length > 0 && !hero.gameModes?.some((m) => selectedGameModes.includes(m))) return false
-      if (selectedWhaleSkip.length > 0 && !selectedWhaleSkip.includes(hero.whaleOrSkipValue ?? "")) return false
-      return true
-    })
+    .filter(matches)
     .sort((a, b) => {
       const dir = sortOrder === "asc" ? 1 : -1
       if (sortBy === "name")     return dir * a.name.localeCompare(b.name)
@@ -299,154 +304,162 @@ export default function HeroGrid({ heros, synergyDescImages = {} }: { heros: Her
       if (sortBy === "class")    return dir * a.class.localeCompare(b.class)
       if (sortBy === "faction")  return dir * ((a.tagSynergies[0]?.name ?? "").localeCompare(b.tagSynergies[0]?.name ?? ""))
       if (sortBy === "rank")     return dir * ((rankToRank[a.rarity ?? ""] ?? 5) - (rankToRank[b.rarity ?? ""] ?? 5))
-      if (sortBy === "gameMode") return dir * ((a.gameModes?.[0] ?? "").localeCompare(b.gameModes?.[0] ?? ""))
       return 0
     })
 
-  return (
-    <div className="flex flex-col gap-2 md:gap-4 w-full max-w-4xl">
-      <SearchBar placeholder="Search heroes" onChange={(e) => setQuery(e.target.value)} />
+  const sortLabel = SORT_OPTIONS.find((o) => o.value === sortBy)?.label ?? ""
 
-      {/* Sort By row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Sort By</span>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
+  const groups: FilterGroup[] = [
+    ...(!isTier ? [{
+      id: "sort",
+      label: "Sort",
+      value: `${sortLabel} ${sortOrder === "asc" ? "↑" : "↓"}`,
+      content: (
+        <>
           {SORT_OPTIONS.map(({ value, label, icon }) => (
             <SortButton key={value} label={label} icon={icon} selected={sortBy === value} onClick={() => setSortBy(value)} />
           ))}
           <SortButton label="↑ Asc" selected={sortOrder === "asc"} onClick={() => setSortOrder("asc")} />
           <SortButton label="↓ Desc" selected={sortOrder === "desc"} onClick={() => setSortOrder("desc")} />
-          <Button onClick={resetFilters}>Reset Filters</Button>
+        </>
+      ),
+    }] : []),
+    {
+      id: "class",
+      label: "Class",
+      count: selectedClasses.length,
+      onClear: () => setSelectedClasses([]),
+      content: CLASSES.map(({ id, label }) => (
+        <IconFilterButton
+          key={id}
+          src={`/dcdl/role_images/${id}.png`}
+          label={label}
+          selected={selectedClasses.includes(id)}
+          onClick={() => toggle(selectedClasses, id, setSelectedClasses)}
+        />
+      )),
+    },
+    {
+      id: "faction",
+      label: "Faction",
+      count: selectedFactions.length,
+      onClear: () => setSelectedFactions([]),
+      content: FACTIONS.map(({ id, label }) => (
+        <IconFilterButton
+          key={id}
+          src={factionIconSrc(id)}
+          descSrc={synergyDescImages[id]}
+          label={label}
+          selected={selectedFactions.includes(id)}
+          onClick={() => toggle(selectedFactions, id, setSelectedFactions)}
+        />
+      )),
+    },
+    {
+      id: "rarity",
+      label: "Rarity",
+      count: selectedRarities.length,
+      onClear: () => setSelectedRarities([]),
+      content: RARITIES.map((r) => (
+        <RarityButton key={r} rarity={r} selected={selectedRarities.includes(r)} onClick={() => toggle(selectedRarities, r, setSelectedRarities)} />
+      )),
+    },
+    {
+      id: "whale",
+      label: "Whale / Skip",
+      count: selectedWhaleSkip.length,
+      onClear: () => setSelectedWhaleSkip([]),
+      content: WHALE_SKIP_VALUES.map((v) => (
+        <SortButton key={v} label={v} selected={selectedWhaleSkip.includes(v)} onClick={() => toggle(selectedWhaleSkip, v, setSelectedWhaleSkip)} />
+      )),
+    },
+    // Tier filter: grid only, since on the tier list the rows already are the tiers.
+    ...(!isTier ? [{
+      id: "tier",
+      label: "Quantum Tier",
+      count: selectedTiers.length,
+      onClear: () => setSelectedTiers([]),
+      content: TIERS.map((t) => (
+        <TierFilterButton key={t} tier={t} selected={selectedTiers.includes(t)} onClick={() => toggle(selectedTiers, t, setSelectedTiers)} />
+      )),
+    }] : []),
+  ]
+
+  const remove = (arr: string[], val: string, set: (v: string[]) => void) => () => set(arr.filter((x) => x !== val))
+  const pills: FilterPill[] = [
+    ...selectedClasses.map((c) => ({ key: `c-${c}`, label: c, icon: `/dcdl/role_images/${c}.png`, onRemove: remove(selectedClasses, c, setSelectedClasses) })),
+    ...selectedFactions.map((f) => ({
+      key: `f-${f}`, label: FACTIONS.find((x) => x.id === f)?.label ?? f, icon: factionIconSrc(f),
+      onRemove: remove(selectedFactions, f, setSelectedFactions),
+    })),
+    ...selectedRarities.map((r) => ({ key: `r-${r}`, label: r, onRemove: remove(selectedRarities, r, setSelectedRarities) })),
+    ...selectedWhaleSkip.map((v) => ({ key: `w-${v}`, label: v, onRemove: remove(selectedWhaleSkip, v, setSelectedWhaleSkip) })),
+    ...(!isTier ? selectedTiers.map((t) => ({ key: `t-${t}`, label: `Tier ${t}`, onRemove: remove(selectedTiers, t, setSelectedTiers) })) : []),
+  ]
+
+  return (
+    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col gap-3 w-full max-w-4xl self-center">
+      <div style={{ display: "flex", gap: "0.6rem", alignItems: "center", flexWrap: "wrap" }}>
+        <ViewToggle view={view} onChange={setView} />
+        <div style={{ flex: "1 1 12rem", minWidth: 0 }}>
+          <SearchBar placeholder="Search heroes" onChange={(e) => setQuery(e.target.value)} style={CONTROL_INPUT} />
         </div>
+        <Button onClick={resetFilters} style={CONTROL_BUTTON}>Reset</Button>
       </div>
 
-      {/* Class filter row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Class</span>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          <AllButton selected={selectedClasses.length === 0} onClick={() => setSelectedClasses([])} />
-          {CLASSES.map(({ id, label }) => (
-            <IconFilterButton
-              key={id}
-              src={`/dcdl/role_images/${id}.png`}
-              label={label}
-              selected={selectedClasses.includes(id)}
-              onClick={() => toggle(selectedClasses, id, setSelectedClasses)}
-            />
+      <FilterBar
+        groups={groups}
+        pills={pills}
+        after={isTier && highlight ? (
+          <span style={{ fontSize: "0.75rem", color: "#aaa", marginLeft: "0.25rem" }}>
+            Highlighting {matchCount} of {heros.length}
+          </span>
+        ) : undefined}
+      />
+
+      {!isTier && (
+        <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
+          {filtered.map((hero) => (
+            <HeroBox key={hero.id} hero={hero} communityTier={communityTiers[hero.id]} />
           ))}
         </div>
-      </div>
+      )}
+    </div>
 
-      {/* Faction filter row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Faction</span>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          <AllButton selected={selectedFactions.length === 0} onClick={() => setSelectedFactions([])} />
-          {FACTIONS.map(({ id, label }) => (
-            <IconFilterButton
-              key={id}
-              src={factionIconSrc(id)}
-              descSrc={synergyDescImages[id]}
-              label={label}
-              selected={selectedFactions.includes(id)}
-              onClick={() => toggle(selectedFactions, id, setSelectedFactions)}
+      {isTier && (
+        <>
+          <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
+            <TierExportBar
+              title="Quantum's Champion Tier List"
+              filename="quantum-champion-tier-list"
+              dateLine={dateLine}
+              rows={CHAMPION_ROWS}
+              columns={TIER_COLUMNS}
+              highlight={highlight}
+              watermark={{ src: "/dcdl/combat-cycle/LaughBatman.png", side: "right" }}
+              items={heros.map((h) => ({
+                id: h.id, name: h.name, img: h.imageHeadshot ?? null, tier: championRow(h),
+                group: h.class ?? "", isNew: h.isNew, isP2W: h.isP2W, previousTier: h.previousTier,
+                dimmed: !matches(h),
+              }))}
             />
-          ))}
-        </div>
-      </div>
-
-      {/* Rarity filter row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Rarity</span>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          <AllButton selected={selectedRarities.length === 0} onClick={() => setSelectedRarities([])} />
-          {RARITIES.map((r) => {
-            const selected = selectedRarities.includes(r)
-            const s = RARITY_STYLE[r] ?? { background: "#555" }
-            return (
-              <button
-                key={r}
-                type="button"
-                onClick={() => toggle(selectedRarities, r, setSelectedRarities)}
-                style={{
-                  background: s.background,
-                  boxShadow: selected ? (s.boxShadow ?? undefined) : undefined,
-                  border: selected ? "2px solid var(--gold)" : "2px solid transparent",
-                  borderRadius: "0.4rem",
-                  padding: "0.3rem 0.85rem",
-                  cursor: "pointer",
-                  fontFamily: "Unbounded, sans-serif",
-                  fontSize: "0.65rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.05em",
-                  textTransform: "uppercase",
-                  color: "white",
-                  textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-                  opacity: selected ? 1 : 0.55,
-                  transition: "all 0.15s",
-                  flexShrink: 0,
-                }}
-              >
-                {r}
-              </button>
-            )
-          })}
-        </div>
-      </div>
-
-      {/* Game Mode filter row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Game Mode</span>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          <AllButton selected={selectedGameModes.length === 0} onClick={() => setSelectedGameModes([])} />
-          {GAME_MODES.map((m) => (
-            <SortButton
-              key={m}
-              label={m}
-              selected={selectedGameModes.includes(m)}
-              onClick={() => toggle(selectedGameModes, m, setSelectedGameModes)}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Tier Ranking filter row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <img src="/images/site/Q GOLD FULL ICON.png" alt="Quantum's Tier" style={{ height: "2rem", width: "9rem", objectFit: "contain", objectPosition: "left", flexShrink: 0 }} />
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          <AllButton selected={selectedTiers.length === 0} onClick={() => setSelectedTiers([])} />
-          {TIERS.map((t) => (
-            <TierFilterButton
-              key={t}
-              tier={t}
-              selected={selectedTiers.includes(t)}
-              onClick={() => toggle(selectedTiers, t, setSelectedTiers)}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Whale / Skip filter row */}
-      <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-        <span style={LABEL}>Whale / Skip</span>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", alignItems: "center" }}>
-          <AllButton selected={selectedWhaleSkip.length === 0} onClick={() => setSelectedWhaleSkip([])} />
-          {WHALE_SKIP_VALUES.map((v) => (
-            <SortButton
-              key={v}
-              label={v}
-              selected={selectedWhaleSkip.includes(v)}
-              onClick={() => toggle(selectedWhaleSkip, v, setSelectedWhaleSkip)}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-5">
-        {filtered.map((hero) => (
-          <HeroBox key={hero.id} hero={hero} communityTier={communityTiers[hero.id]} />
-        ))}
-      </div>
+          </div>
+          <TierView
+            title={CHAMPION_TITLE}
+            rows={CHAMPION_ROWS}
+            columns={TIER_COLUMNS}
+            watermark={{ src: "/dcdl/combat-cycle/LaughBatman.png", side: "right" }}
+            entries={heros.map((hero) => ({
+              id: hero.id,
+              row: championRow(hero),
+              group: hero.class ?? "",
+              dim: !matches(hero),
+              node: <HeroBox hero={hero} communityTier={communityTiers[hero.id]} compact />,
+            }))}
+          />
+        </>
+      )}
     </div>
   )
 }

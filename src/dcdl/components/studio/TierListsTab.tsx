@@ -92,7 +92,7 @@ export default function TierListsTab({ setStatus }: { setStatus: (s: string) => 
       {lists.length === 0 && (
         <p style={{ color: '#888', fontSize: '0.88rem', lineHeight: 1.6 }}>
           You haven&rsquo;t published a tier list yet. Create one and it appears on the{' '}
-          <Link href="/games/dc-dark-legion/tier-list" style={{ color: gold }}>DC: Dark Legion tier list page</Link> under
+          <Link href="/games/dc-dark-legion/infographics" style={{ color: gold }}>DC: Dark Legion infographics page</Link> under
           Community Tier Lists, credited to you.
         </p>
       )}

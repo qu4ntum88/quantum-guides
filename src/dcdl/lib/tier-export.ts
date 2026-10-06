@@ -15,7 +15,7 @@ import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
  *               studio preview.
  *   'columns' — the official tier table: a tier badge column plus one column
  *               per role group, with the role icons in the header. Matches the
- *               table on /games/dc-dark-legion/tier-list.
+ *               Tier List view (<TierView>) on the champion and legacy pages.
  *
  * Every image involved is served from this origin, so the canvas is never
  * tainted and toBlob() works.
@@ -32,6 +32,8 @@ export type ExportItem = {
   isNew?: boolean
   isP2W?: boolean
   previousTier?: string
+  /** Drawn faded and greyed — a filtered-out entry on a highlighted export. */
+  dimmed?: boolean
 }
 
 /** One role-group column of the official table. */
@@ -64,6 +66,10 @@ export type ExportOptions = {
   columns?: ExportColumn[]
   /** 'columns' only — the small caption under each tier badge. */
   tierLabels?: Record<string, string>
+  /** Badge colour for rows that aren't standard tiers (e.g. "F2P"). */
+  tierColors?: Record<string, string>
+  /** Badge text when it differs from the row key. */
+  tierBadges?: Record<string, string>
   /** 'columns' only — the gold banner across the top of the table. */
   boardTitle?: string
   /** 'columns' only — fanned rank panels drawn beneath the table. */
@@ -210,7 +216,7 @@ function drawTierBadge(
   ctx.stroke()
 
   ctx.fillStyle = '#fff'
-  ctx.font = `900 ${tier.length > 1 ? size * 0.4 : size * 0.48}px Unbounded, Montserrat, sans-serif`
+  ctx.font = `900 ${tier.length > 2 ? size * 0.3 : tier.length > 1 ? size * 0.4 : size * 0.48}px Unbounded, Montserrat, sans-serif`
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
   ctx.lineWidth = 4
@@ -451,7 +457,7 @@ function drawColumns(
   // Tier rows.
   let y = headerTop + COL_HEADER_H
   for (const row of plan.rows) {
-    const color = TIER_COLORS[row.tier] ?? '#888'
+    const color = opts.tierColors?.[row.tier] ?? TIER_COLORS[row.tier] ?? '#888'
 
     ctx.strokeStyle = `${GOLD}40`
     ctx.lineWidth = 2
@@ -461,7 +467,7 @@ function drawColumns(
     ctx.stroke()
 
     drawTierBadge(
-      ctx, row.tier, color,
+      ctx, opts.tierBadges?.[row.tier] ?? row.tier, color,
       left + LABEL_COL / 2, y + row.height / 2, 56,
       opts.tierLabels?.[row.tier]
     )
@@ -495,6 +501,11 @@ function drawColumns(
         const lineW = slice.length * COL_CELL + (slice.length - 1) * GAP
         let ix = cx + (plan.colW - lineW) / 2
         for (const item of slice) {
+          ctx.save()
+          if (item.dimmed) {
+            ctx.globalAlpha = 0.2
+            ctx.filter = 'grayscale(1)'
+          }
           ctx.fillStyle = bgFill
           roundRect(ctx, ix, iy, COL_CELL, COL_CELL, 7)
           ctx.fill()
@@ -505,6 +516,7 @@ function drawColumns(
           roundRect(ctx, ix, iy, COL_CELL, COL_CELL, 7)
           ctx.stroke()
           drawEntryBadges(ctx, item, ix, iy, COL_CELL)
+          ctx.restore()
           ix += COL_CELL + GAP
         }
         iy += COL_CELL + GAP

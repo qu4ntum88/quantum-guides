@@ -27,10 +27,13 @@ export default function ExportTierListButton({
   layout,
   columns,
   tierLabels,
+  tierColors,
+  tierBadges,
   boardTitle,
   showcases,
   watermark,
   style,
+  label = '⤓ Export PNG',
 }: {
   title: string
   subtitle?: string
@@ -42,10 +45,13 @@ export default function ExportTierListButton({
   layout?: 'rows' | 'columns'
   columns?: ExportColumn[]
   tierLabels?: Record<string, string>
+  tierColors?: Record<string, string>
+  tierBadges?: Record<string, string>
   boardTitle?: string
   showcases?: ExportShowcase[]
   watermark?: { src: string; side: 'left' | 'right' }
   style?: React.CSSProperties
+  label?: string
 }) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
@@ -55,7 +61,7 @@ export default function ExportTierListButton({
     try {
       await exportTierListPng({
         title, subtitle, dateLine, items, tiers, fit, filename,
-        layout, columns, tierLabels, boardTitle, showcases, watermark,
+        layout, columns, tierLabels, tierColors, tierBadges, boardTitle, showcases, watermark,
       })
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Export failed.')
@@ -77,7 +83,7 @@ export default function ExportTierListButton({
           ...style,
         }}
       >
-        {busy ? 'Rendering…' : '⤓ Export PNG'}
+        {busy ? 'Rendering…' : label}
       </button>
       {error && <span style={{ color: '#f87171', fontSize: '0.75rem' }}>{error}</span>}
     </span>

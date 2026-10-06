@@ -4,6 +4,8 @@ import path from 'path'
 import InfographicsGrid from '@/src/dcdl/components/InfographicsGrid'
 import type { Infographic, ShardsData } from '@/src/dcdl/components/InfographicsGrid'
 import { getInfographics as getInfographicsData } from '@/src/dcdl/lib/content-db'
+import { getPublishedTierLists } from '@/src/dcdl/lib/tier-db'
+import CommunityTierLists from '@/src/dcdl/components/tier/CommunityTierLists'
 import '../../godforge/game.css'
 
 // Refresh at most once a minute so editor changes appear without a redeploy.
@@ -14,7 +16,8 @@ function getShardsData(): ShardsData {
 }
 
 export default async function InfographicsPage() {
-  const infographics: Infographic[] = (await getInfographicsData()).map((i) => ({
+  const [infographicRows, communityLists] = await Promise.all([getInfographicsData(), getPublishedTierLists()])
+  const infographics: Infographic[] = infographicRows.map((i) => ({
     id: i.id, title: i.title, description: i.description,
     image: i.image, builtin: i.builtin ?? undefined, credit: i.credit,
   }))
@@ -43,6 +46,8 @@ export default async function InfographicsPage() {
           <InfographicsGrid infographics={infographics} shardsData={shardsData} />
         </div>
       </section>
+
+      <CommunityTierLists lists={communityLists} />
 
       <section style={{ padding: '2.5rem 0 3rem' }}>
         <div className="container">
