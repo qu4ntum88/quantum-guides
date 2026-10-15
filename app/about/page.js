@@ -1,4 +1,12 @@
 import './about.css'
+import { pageMeta } from '@/src/lib/seo'
+
+export const metadata = pageMeta({
+  title: 'About Quantum',
+  description:
+    'Quantum is a gacha and strategy game content creator behind Quantum Game Guides: DC: Dark Legion tier lists, team building, guides and YouTube videos.',
+  path: '/about',
+})
 
 export const revalidate = 3600
 

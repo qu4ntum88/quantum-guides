@@ -6,6 +6,8 @@ import type { Infographic, ShardsData } from '@/src/dcdl/components/Infographics
 import { getInfographics as getInfographicsData } from '@/src/dcdl/lib/content-db'
 import { getPublishedTierLists } from '@/src/dcdl/lib/tier-db'
 import CommunityTierLists from '@/src/dcdl/components/tier/CommunityTierLists'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
 
 // Refresh at most once a minute so editor changes appear without a redeploy.
@@ -14,6 +16,15 @@ export const revalidate = 60
 function getShardsData(): ShardsData {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/shards-per-star.json'), 'utf8'))
 }
+
+const PATH = '/games/dc-dark-legion/infographics'
+
+export const metadata = pageMeta({
+  title: 'DC: Dark Legion Infographics & Community Tier Lists',
+  description:
+    'Quick-reference DC: Dark Legion infographics from Quantum and fellow creators, including shards needed per star, plus tier lists built by the community.',
+  path: PATH,
+})
 
 export default async function InfographicsPage() {
   const [infographicRows, communityLists] = await Promise.all([getInfographicsData(), getPublishedTierLists()])
@@ -25,10 +36,11 @@ export default async function InfographicsPage() {
 
   return (
     <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Infographics', PATH]])} />
       <section className="gh-hero">
         <div className="container">
           <p className="gh-overline">DC: Dark Legion</p>
-          <h1 className="gh-hero-title">Helpful Infographics</h1>
+          <h1 className="gh-hero-title">DC: Dark Legion Infographics</h1>
           <p className="gh-hero-sub">
             Quantum has curated some of his most helpful infographics and the infographics of his friends and fellow creators to help you get ahead of the competition!
           </p>

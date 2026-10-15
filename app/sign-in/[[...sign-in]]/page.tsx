@@ -1,6 +1,8 @@
 import { SignIn } from '@clerk/nextjs'
 import SignInLoadGuard from './SignInLoadGuard'
 
+export const metadata = { title: 'Sign In | Quantum Game Guides', robots: { index: false, follow: true } }
+
 export default function SignInPage() {
   return (
     <main style={{ display: 'flex', justifyContent: 'center', padding: '4rem 1rem' }}>

@@ -1,6 +1,8 @@
 import '../../godforge/game.css'
 import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
 import { getGuidesList, getGameInfo, getInfographics, getPatchNotes } from '@/src/dcdl/lib/content-db'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 
 // Read published content from Supabase (with a file fallback); refresh at most
 // once a minute so editor changes appear without a redeploy.
@@ -19,6 +21,20 @@ const secTitle: React.CSSProperties = {
   borderBottom: '1px solid rgba(204,164,83,0.2)', paddingBottom: '0.5rem', marginBottom: '0.85rem',
 }
 
+const PATH = '/games/dc-dark-legion/guides'
+
+export async function generateMetadata() {
+  const { gameCodes } = await getGameInfo()
+  return pageMeta({
+    title: gameCodes.length > 0 ? 'DC: Dark Legion Guides, Codes & Patch Notes' : 'DC: Dark Legion Guides & Patch Notes',
+    description:
+      'Written DC: Dark Legion guides by Quantum, the latest patch notes' +
+      (gameCodes.length > 0 ? ', active game codes' : '') +
+      ', the newest server, and links to every tier list, team and planning tool on the site.',
+    path: PATH,
+  })
+}
+
 export default async function GuidesPage() {
   const guides = await getGuidesList()
   const { latestServer, gameCodes } = await getGameInfo()
@@ -33,10 +49,11 @@ export default async function GuidesPage() {
 
   return (
     <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB])} />
       <section className="gh-hero">
         <div className="container">
           <p className="gh-overline">Game Hub</p>
-          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <h1 className="gh-hero-title">DC: Dark Legion Guides</h1>
           <p className="gh-hero-sub">
             Strategy game set in the DC Universe — idle RPG with base-building, champion collection, and PvP combat across iconic Gotham.
           </p>

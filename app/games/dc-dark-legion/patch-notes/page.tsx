@@ -1,17 +1,20 @@
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
 import { getPatchNotes } from '@/src/dcdl/lib/content-db'
 import '../../godforge/game.css'
 
 export const revalidate = 60
 
-export const metadata: Metadata = {
-  title: 'Patch Notes Archive — DC: Dark Legion | Quantum Game Guides',
+const PATH = '/games/dc-dark-legion/patch-notes'
+
+export const metadata = pageMeta({
+  title: 'DC: Dark Legion Patch Notes Archive',
   description:
     'A running archive of DC: Dark Legion patch notes and update summaries, newest first — every balance change, event, and fix as it shipped.',
-  alternates: { canonical: '/games/dc-dark-legion/patch-notes' },
-}
+  path: PATH,
+})
 
 function formatDate(d: string | null): string {
   if (!d) return ''
@@ -25,6 +28,7 @@ export default async function PatchNotesArchivePage() {
 
   return (
     <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Patch Notes', PATH]])} />
       <section className="gh-hero">
         <div className="container">
           <p className="gh-overline">DC: Dark Legion</p>

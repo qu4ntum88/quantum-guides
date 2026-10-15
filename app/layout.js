@@ -6,14 +6,17 @@ import CookieConsent from './components/consent/CookieConsent'
 import ManageCookiesButton from './components/consent/ManageCookiesButton'
 import { CONSENT_STORAGE_KEY } from '@/src/lib/consent'
 
+// Site-wide fallbacks only. Each public page sets its own title, description,
+// canonical and openGraph via pageMeta() in src/lib/seo.ts; a page that doesn't
+// would otherwise show search engines this generic copy.
 export const metadata = {
   title: 'Quantum Game Guides',
-  description: 'Deep-dive guides, tier lists, and meta analysis for mobile gacha and strategy games',
+  description: 'DC: Dark Legion tier lists, champion and legacy database, best teams, guides and planning tools, plus Void Hunters guides.',
   metadataBase: new URL('https://www.quantumgameguides.com'),
+  twitter: { card: 'summary_large_image', site: '@Quantumx86', creator: '@Quantumx86' },
   openGraph: {
     title: 'Quantum Game Guides',
-    description: 'Deep-dive guides, tier lists, and meta analysis for mobile gacha and strategy games',
-    url: 'https://www.quantumgameguides.com',
+    description: 'DC: Dark Legion tier lists, champion and legacy database, best teams, guides and planning tools, plus Void Hunters guides.',
     siteName: 'Quantum Game Guides',
     images: [
       {

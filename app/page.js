@@ -1,5 +1,24 @@
 import './page.css'
 import { PUBLIC_SECTIONS } from '@/src/lib/siteConfig'
+import { pageMeta, organizationLd, websiteLd } from '@/src/lib/seo'
+import JsonLd from './components/JsonLd'
+
+export const metadata = pageMeta({
+  title: 'Quantum Game Guides: DC: Dark Legion Tier Lists & Guides',
+  description:
+    'DC: Dark Legion champion and legacy tier lists, best teams, Combat Cycle boss guides, a Battle for Gotham planner and written guides, plus Void Hunters guides.',
+  path: '/',
+})
+
+// Direct links from the homepage to the pages people search for most.
+const POPULAR = [
+  { label: 'Champion Tier List', href: '/games/dc-dark-legion' },
+  { label: 'Legacy Tier List', href: '/games/dc-dark-legion/legacy' },
+  { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
+  { label: 'Combat Cycle Bosses', href: '/games/dc-dark-legion/combat-cycle' },
+  { label: 'Gotham Planner', href: '/games/dc-dark-legion/ship-combat-guides' },
+  { label: 'Guides', href: '/games/dc-dark-legion/guides' },
+]
 
 export default function Home() {
   const allGames = [
@@ -36,6 +55,7 @@ export default function Home() {
 
   return (
     <main>
+      <JsonLd data={[organizationLd, websiteLd]} />
       <section className="lp-hero">
         <div className="lp-hero-content">
           <img src="/images/site/Q GOLD FULL ICON.png" alt="" className="lp-hero-icon" />
@@ -83,6 +103,16 @@ export default function Home() {
               </a>
             ))}
           </div>
+          {PUBLIC_SECTIONS.dcdl && (
+            <nav className="lp-popular" aria-label="Popular DC: Dark Legion pages">
+              <span className="lp-section-text">Popular for DC: Dark Legion</span>
+              <div className="lp-popular-links">
+                {POPULAR.map((p) => (
+                  <a key={p.href} href={p.href} className="lp-popular-link">{p.label}</a>
+                ))}
+              </div>
+            </nav>
+          )}
         </div>
       </section>
 

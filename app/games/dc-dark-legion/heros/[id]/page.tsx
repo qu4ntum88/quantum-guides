@@ -14,6 +14,8 @@ import ExpandableTake from '@/src/dcdl/components/ExpandableTake'
 import ChampionGameData, { type ChampionGameDataProps } from '@/src/dcdl/components/champion/ChampionGameData'
 import { LegacyDetailProvider } from '@/src/dcdl/components/legacy/LegacyDetail'
 import StrategyGuide, { type InGameGuide } from '@/src/dcdl/components/champion/StrategyGuide'
+import JsonLd from '@/app/components/JsonLd'
+import { breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import fs from 'fs'
 import path from 'path'
 
@@ -50,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (hero.gameModes && hero.gameModes.length > 0) desc += `, best used in ${hero.gameModes.join(', ')}`
   desc += '.'
   if (hero.tier) desc += ` Quantum's tier rating: ${hero.tier}.`
-  desc += ' Abilities, recommended legacy pieces, and community tier votes.'
+  desc += ' Skills, base stats, Force talents, recommended legacy pieces and community tier votes.'
 
   const ogImage = hero.imageFull || hero.imageHeadshot
 
@@ -94,6 +96,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
 
   return (
     <main>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Champion Tier List', '/games/dc-dark-legion'], [hero.name, `/games/dc-dark-legion/heros/${hero.id}`]])} />
       {/* Full-art background */}
       {hero.imageFull && (
         <div

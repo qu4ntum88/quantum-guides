@@ -1,4 +1,6 @@
 import { getResolvedHeros, getDataLastUpdated, type HeroResolved } from '@/src/dcdl/lib/data'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
 import './best-teams.css'
 
@@ -73,6 +75,21 @@ function FormationLine({ label, heroes }: { label: string; heroes: (HeroResolved
   )
 }
 
+const PATH = '/games/dc-dark-legion/best-teams'
+
+export function generateMetadata() {
+  const heroMap = Object.fromEntries(getResolvedHeros().map((h) => [h.id, h]))
+  const top = readTeams()[0]
+  const topNames = (top?.required ?? []).filter(Boolean).map((id) => heroMap[id]?.name.split('(')[0].trim()).filter(Boolean)
+  return pageMeta({
+    title: 'Best Teams in DC: Dark Legion: Top Team Comps Ranked',
+    description:
+      'The best DC: Dark Legion team compositions, ranked by Quantum, with frontline and backline positions, flex picks and viable replacements.' +
+      (topNames.length ? ` #1 right now: ${topNames.join(', ')}.` : ''),
+    path: PATH,
+  })
+}
+
 export default function BestTeamsPage() {
   const lastUpdated = getDataLastUpdated('heros.json', 'best-teams.json')
   const heroes = getResolvedHeros()
@@ -85,6 +102,7 @@ export default function BestTeamsPage() {
 
   return (
     <main>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Best Teams', PATH]])} />
       <section className="gh-hero" style={{ '--game-accent': '#CCA453' } as React.CSSProperties}>
         <div className="container">
           <p className="gh-overline">DC: Dark Legion — Ranked Meta</p>

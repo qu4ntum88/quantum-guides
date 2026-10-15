@@ -1,25 +1,49 @@
 import Link from 'next/link'
 import { getDataLastUpdated } from '@/src/dcdl/lib/data'
-import { getOfficialLegacyResolved, getOfficialTiersUpdatedAt } from '@/src/dcdl/lib/tier-db'
+import { getOfficialLegacyResolved, getOfficialTiersUpdatedAt, TIERS } from '@/src/dcdl/lib/tier-db'
 import LegacyGrid from '@/src/dcdl/components/LegacyGrid'
 import { LegacyDetailProvider } from '@/src/dcdl/components/legacy/LegacyDetail'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, monthYear, breadcrumbLd, itemListLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
 
 // Official tiers are read from Supabase, so pick up Studio edits within a minute.
 export const revalidate = 60
+
+const PATH = '/games/dc-dark-legion/legacy'
+
+export async function generateMetadata() {
+  const savedAt = await getOfficialTiersUpdatedAt()
+  const month = monthYear(savedAt ?? getDataLastUpdated('legacy.json'))
+  return pageMeta({
+    title: `DC: Dark Legion Legacy Tier List${month ? ` (${month})` : ''}: Every Piece Ranked`,
+    description:
+      `Every DC: Dark Legion legacy piece ranked S+ to D by Quantum and Tyvokka${month ? `, updated ${month}` : ''}, ` +
+      'with F2P and new-player picks. See Gear Effects at every star, skill upgrades and which champions use each piece.',
+    path: PATH,
+  })
+}
 
 export default async function LegacyPage() {
   const [legacyPieces, savedAt] = await Promise.all([getOfficialLegacyResolved(), getOfficialTiersUpdatedAt()])
   const lastUpdated = savedAt
     ? new Date(savedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     : getDataLastUpdated('legacy.json')
+  const rankOf = (t?: string) => { const i = (TIERS as readonly string[]).indexOf(t ?? ''); return i === -1 ? TIERS.length : i }
+  const ranked = [...legacyPieces].sort((a, b) => rankOf(a.tier) - rankOf(b.tier))
 
   return (
     <main>
+      <JsonLd
+        data={[
+          breadcrumbLd([DCDL_CRUMB, ['Legacy Tier List', PATH]]),
+          itemListLd('DC: Dark Legion Legacy Tier List', ranked.map((l) => ({ name: l.name, path: `${PATH}/${l.id}` }))),
+        ]}
+      />
       <section className="gh-hero" style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
         <div className="container">
           <p className="gh-overline">Legacy Pieces</p>
-          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <h1 className="gh-hero-title">DC: Dark Legion Legacy Tier List</h1>
           <p className="gh-hero-sub">
             Every legacy piece, ranked by Quantum &amp; Tyvokka, plus F2P and New Player brackets. Filter to highlight,
             or switch to Grid to sort.

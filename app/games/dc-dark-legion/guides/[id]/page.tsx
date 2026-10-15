@@ -9,6 +9,8 @@ import { notFound } from 'next/navigation'
 import GuideToc from '../GuideToc'
 import { getGuide, getGuidesFull } from '@/src/dcdl/lib/content-db'
 import { blocksToHtml, parseGuideBody } from '@/src/dcdl/lib/guide-blocks'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, articleLd, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../../godforge/game.css'
 import '../guide-prose.css'
 
@@ -179,19 +181,13 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params
   const guide = await getGuide(id)
   if (!guide) return {}
-  const canonical = `/games/dc-dark-legion/guides/${guide.id}`
-  return {
-    title: `${guide.title} · DC: Dark Legion Guide | Quantum Game Guides`,
-    description: guide.description || undefined,
-    alternates: { canonical },
-    openGraph: {
-      title: guide.title,
-      description: guide.description || undefined,
-      url: canonical,
-      type: 'article',
-      ...(guide.coverImage ? { images: [{ url: guide.coverImage, alt: guide.title }] } : {}),
-    },
-  }
+  return pageMeta({
+    title: /dark legion/i.test(guide.title) ? guide.title : `${guide.title}: DC: Dark Legion Guide`,
+    description: guide.description || `${guide.title}, a DC: Dark Legion guide by ${guide.author || 'Quantum'}.`,
+    path: `/games/dc-dark-legion/guides/${guide.id}`,
+    image: guide.coverImage,
+    type: 'article',
+  })
 }
 
 export default async function GuideDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -233,6 +229,19 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ id
 
   return (
     <main style={{ '--game-accent': 'var(--gold)' } as React.CSSProperties}>
+      <JsonLd
+        data={[
+          breadcrumbLd([DCDL_CRUMB, [guide.title, `/games/dc-dark-legion/guides/${guide.id}`]]),
+          articleLd({
+            title: guide.title,
+            description: guide.description,
+            path: `/games/dc-dark-legion/guides/${guide.id}`,
+            image: guide.coverImage,
+            author: guide.author,
+            published: guide.pubDate,
+          }),
+        ]}
+      />
 
       {/* ── Hero header ─────────────────────────────────────────────────────── */}
       <section className="gh-hero">

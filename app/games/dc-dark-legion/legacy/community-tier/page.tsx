@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import { getResolvedLegacy } from '@/src/dcdl/lib/data'
 import LegacyCommunityTierClient from '@/src/dcdl/components/LegacyCommunityTierClient'
+import { pageMeta } from '@/src/lib/seo'
 
-export const metadata = {
-  title: 'Justice League of Discord Community Tier Ranking — DC: Dark Legion Legacy Pieces',
-  description: 'Community voted tier rankings for all DC: Dark Legion legacy pieces, powered by the Justice League of Discord.',
-}
+export const metadata = pageMeta({
+  title: 'DC: Dark Legion Legacy Community Tier Votes',
+  description: 'Community voted tier rankings for all DC: Dark Legion legacy pieces, powered by the Justice League of Discord. Sign in and cast your own vote.',
+  path: '/games/dc-dark-legion/legacy/community-tier',
+})
 
 export default function LegacyCommunityTierPage() {
   const pieces = getResolvedLegacy().sort((a, b) => a.name.localeCompare(b.name))

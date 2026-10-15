@@ -10,14 +10,14 @@ const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
 // `compact` is the downsized tile used inside the Tier List view's cells.
 export default function LegacyPieceBox({ piece, communityTier, compact = false }: { piece: LegacyResolved; communityTier?: string; compact?: boolean }) {
-  // Inside a <LegacyDetailProvider> the tile opens the detail pop-up; elsewhere it keeps
-  // linking to the community tier page (also the no-JS / open-in-new-tab fallback).
+  // Inside a <LegacyDetailProvider> the tile opens the detail pop-up; elsewhere (and for
+  // crawlers, no-JS and open-in-new-tab) it links to the piece's own page.
   const openDetail = useLegacyDetail()
   return (
     <Tooltip>
       <TooltipTrigger asChild>
         <a
-          href={`/games/dc-dark-legion/legacy/community-tier#${piece.id}`}
+          href={`/games/dc-dark-legion/legacy/${piece.id}`}
           onClick={openDetail ? (e) => {
             if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return
             e.preventDefault()

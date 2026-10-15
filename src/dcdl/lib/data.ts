@@ -30,6 +30,15 @@ export function getDataLastUpdated(...fileNames: string[]): string {
   })
 }
 
+/** Latest ISO date (YYYY-MM-DD) across the named data files, or null. Used for sitemap lastmod. */
+export function getDataUpdatedISO(...fileNames: string[]): string | null {
+  const dates = fileNames
+    .map((f) => (dataUpdated as Record<string, string>)[f])
+    .filter(Boolean)
+    .sort()
+  return dates[dates.length - 1] ?? null
+}
+
 function fixHeroImagePath(path: string | undefined): string | undefined {
   if (!path) return undefined
   return path

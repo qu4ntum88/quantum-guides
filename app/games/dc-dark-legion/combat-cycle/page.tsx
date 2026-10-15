@@ -1,5 +1,7 @@
 import { getHeros, getDataLastUpdated } from '@/src/dcdl/lib/data'
 import CombatCycleBosses from '@/src/dcdl/components/CombatCycleBosses'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
 import './combat-cycle.css'
 
@@ -26,6 +28,19 @@ function readBosses(): CCBoss[] {
 
 const DAY_ORDER = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
+const PATH = '/games/dc-dark-legion/combat-cycle'
+
+export function generateMetadata() {
+  const names = readBosses().map((b) => b.name)
+  return pageMeta({
+    title: 'DC: Dark Legion Combat Cycle Guide: All Bosses & Best Counters',
+    description:
+      `Every DC: Dark Legion Combat Cycle boss with its day, skills, mechanics and the best champions to counter it` +
+      (names.length ? `: ${names.join(', ')}.` : '.'),
+    path: PATH,
+  })
+}
+
 export default function CombatCyclePage() {
   const lastUpdated = getDataLastUpdated('heros.json', 'combat-cycle.json')
   const heroes = getHeros()
@@ -50,6 +65,7 @@ export default function CombatCyclePage() {
 
   return (
     <main style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Combat Cycle', PATH]])} />
       <section className="gh-hero">
         <div className="container">
           <h1 className="gh-hero-title">DC: Dark Legion Combat Cycle Guide</h1>

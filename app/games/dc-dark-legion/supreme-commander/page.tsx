@@ -1,13 +1,18 @@
 import { getDataLastUpdated } from '@/src/dcdl/lib/data'
+import JsonLd from '@/app/components/JsonLd'
+import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
 import './supreme-commander.css'
 import SupremeCommanderView, { type SupremeCommanderData } from './View'
 
-export const metadata = {
-  title: 'Supreme Commander Guide — DC: Dark Legion',
+const PATH = '/games/dc-dark-legion/supreme-commander'
+
+export const metadata = pageMeta({
+  title: 'Supreme Commander Guide: DC: Dark Legion',
   description:
     'Day-by-day strategy for the weekly Supreme Commander event in DC: Dark Legion — point values, reward tracks, and the most efficient path for individual players.',
-}
+  path: PATH,
+})
 
 function readData(): SupremeCommanderData {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -20,6 +25,7 @@ export default function SupremeCommanderPage() {
 
   return (
     <main>
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Supreme Commander', PATH]])} />
       <section className="gh-hero" style={{ '--game-accent': '#CCA453' } as React.CSSProperties}>
         <div className="container">
           <p className="gh-overline">DC: Dark Legion — Weekly Event</p>

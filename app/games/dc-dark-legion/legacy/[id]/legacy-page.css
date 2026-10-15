@@ -1,0 +1,35 @@
+/* Standalone legacy piece page. The detail card itself reuses the pop-up's
+   .ld-panel styles from legacy-detail.css. */
+
+.lgp-page { padding: 2rem 0 4rem; }
+.lgp-wrap { max-width: 56rem; }
+
+.lgp-crumbs {
+  display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center;
+  font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 1rem;
+}
+.lgp-crumbs a { color: var(--gold); text-decoration: none; }
+.lgp-crumbs a:hover { text-decoration: underline; }
+
+.lgp-summary { margin: 1.5rem 0 0; color: #cfcae0; line-height: 1.65; font-size: 0.95rem; }
+
+.lgp-block { margin-top: 2rem; }
+.lgp-block h2 {
+  font-family: 'Unbounded', sans-serif; font-size: 0.95rem; letter-spacing: 0.04em;
+  color: var(--gold); margin: 0 0 0.9rem;
+}
+
+.lgp-champs, .lgp-related {
+  display: grid; gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+}
+.lgp-champ, .lgp-rel {
+  display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  padding: 0.6rem 0.4rem; border-radius: 0.5rem; text-decoration: none;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e9e6f2; font-size: 0.75rem; text-align: center; line-height: 1.25;
+  transition: border-color 0.2s ease;
+}
+.lgp-champ:hover, .lgp-rel:hover { border-color: var(--gold); }
+.lgp-champ img { width: 3.5rem; height: 3.5rem; object-fit: cover; border-radius: 0.4rem; }
+.lgp-rel img { width: 3.5rem; height: 4.4rem; object-fit: cover; border-radius: 0.3rem; }

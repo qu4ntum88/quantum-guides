@@ -2284,8 +2284,8 @@ export default function ShipCombatGuidesPage() {
     <main className="sc-root" style={{ '--game-accent': '#4f8ef7' } as CSSProperties}>
       <section className="gh-hero">
         <div className="container">
-          <p className="gh-overline">Ship Combat</p>
-          <h1 className="gh-hero-title">DC: Dark Legion</h1>
+          <p className="gh-overline">DC: Dark Legion · Ship Combat</p>
+          <h1 className="gh-hero-title">Battle for Gotham Planner</h1>
           <p className="gh-hero-sub">Plan your Gotham deployment — place league bases, group them by squad, and export a battle-ready layout.</p>
           <div className="gh-hero-divider" />
           <div className="gh-hero-back">

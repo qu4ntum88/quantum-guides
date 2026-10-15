@@ -438,3 +438,35 @@
     padding: 0.75rem 1rem;
   }
 }
+
+/* ─── POPULAR LINKS ────────────────────────────────────────── */
+
+.lp-popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.lp-popular-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.lp-popular-link {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(204, 164, 83, 0.3);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.lp-popular-link:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
