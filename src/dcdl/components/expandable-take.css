@@ -1,0 +1,16 @@
+/* ExpandableTake.tsx — collapsed preview of a long Quantum's Take */
+.xt-body.is-clamped { max-height: 13rem; overflow: hidden; }
+.xt-body.has-fade {
+  -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent);
+  mask-image: linear-gradient(to bottom, #000 60%, transparent);
+}
+.xt-toggle {
+  display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.6rem; padding: 0.4rem 0.9rem;
+  border-radius: 999px; border: 1px solid rgba(245, 197, 24, 0.45); background: rgba(245, 197, 24, 0.08);
+  color: var(--gold); font-weight: 700; font-size: 0.82rem; cursor: pointer;
+}
+.xt-toggle:hover { background: rgba(245, 197, 24, 0.16); }
+.xt-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.xt-chev { transition: transform 0.2s ease; }
+.xt-chev.is-open { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .xt-chev { transition: none; } }
