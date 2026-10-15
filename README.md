@@ -13,10 +13,17 @@ A modern website for game guides and community resources.
 
 ### Local Development
 
+Requires **Node 20.9+** (Next.js 16).
+
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Run development server: `npm run dev`
-4. Open http://localhost:3000
+3. Copy `.env.example` to `.env.local` and fill in the keys
+4. Run development server: `npm run dev`
+5. Open http://localhost:3000
+
+Setting up a second machine? Run `bash scripts/mac-setup.sh` — see
+[docs/MAC-SETUP.md](docs/MAC-SETUP.md), which covers the install, the secrets,
+and which tasks can be done from the live site vs. a clone vs. the PC only.
 
 ### Deployment
 
