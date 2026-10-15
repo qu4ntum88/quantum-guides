@@ -10,6 +10,9 @@ import type { Metadata } from 'next'
 export const SITE_URL = 'https://www.quantumgameguides.com'
 export const SITE_NAME = 'Quantum Game Guides'
 export const SITE_LOGO = '/images/site/Q GOLD FULL ICON.png'
+// 1200×630 logo card rendered by app/og-default.png/route.tsx — the share image for any
+// page without its own (champion and legacy pages have opengraph-image.tsx files).
+export const DEFAULT_OG = { url: '/og-default.png', width: 1200, height: 630, alt: 'Quantum Game Guides' }
 
 const SUFFIX = ` | ${SITE_NAME}`
 // Google truncates titles around 60 characters; past that the brand suffix only
@@ -27,7 +30,8 @@ export function pageMeta({
   title: string
   description: string
   path: string
-  image?: string | null
+  /** An image URL; `false` when the route has its own opengraph-image.tsx (config images would override it). */
+  image?: string | null | false
   type?: 'website' | 'article'
   noindex?: boolean
 }): Metadata {
@@ -42,7 +46,7 @@ export function pageMeta({
       url: path,
       siteName: SITE_NAME,
       type,
-      images: [image ? { url: image, alt: title } : { url: SITE_LOGO, width: 512, height: 512, alt: SITE_NAME }],
+      ...(image === false ? {} : { images: [image ? { url: image, alt: title } : DEFAULT_OG] }),
     },
     ...(noindex ? { robots: { index: false, follow: true } } : {}),
   }

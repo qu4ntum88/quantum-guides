@@ -5,7 +5,6 @@
 import type { ReactNode } from 'react'
 import LegacyPieceBox from '../LegacyPieceBox'
 import TakeBody from '../TakeBody'
-import { LegacyDetailProvider } from '../legacy/LegacyDetail'
 import type { HeroResolved, LegacyResolved } from '../../lib/data'
 import './champion-data.css'
 
@@ -61,7 +60,6 @@ export default function StrategyGuide({ guide, notes, legacy, heros, children }:
       {guide.legacyPieces.length > 0 && (
         <>
           <h3 className="sg-h3">Recommended Legacy Pieces</h3>
-          <LegacyDetailProvider>
             <div className="sg-pieces">
               {guide.legacyPieces.map((p) => {
                 const l = piece(p.id)
@@ -94,7 +92,6 @@ export default function StrategyGuide({ guide, notes, legacy, heros, children }:
                 </div>
               </div>
             )}
-          </LegacyDetailProvider>
         </>
       )}
 

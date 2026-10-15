@@ -80,6 +80,49 @@ With four games on the site this is where the biggest jumps come from. Each game
 
 ---
 
+## Game hub SEO plans
+
+Every game hub gets the same skeleton as DC: Dark Legion, because that page set is what people search for in a gacha game. Use the **target searches** to name pages and write titles. Then check them against real numbers in **Performance → Queries** a few weeks after launch, and adjust titles toward what people actually type.
+
+**The standard page set for every game:**
+
+| Page | URL pattern | Target searches | Title pattern |
+|---|---|---|---|
+| Hub | `/games/<game>/guides` | "<game> guide", "<game> beginner guide" | `<Game> Guides & Tools` |
+| Tier list | `/games/<game>/tier-list` (or the database with a tier view) | "<game> tier list", "<game> best heroes" | `<Game> Tier List (Month Year): All Heroes Ranked` |
+| Hero database | `/games/<game>/heroes` | "<game> heroes list", "<game> characters" | `<Game> Hero Database` |
+| One page per hero | `/games/<game>/heroes/<id>` | "<hero> <game>", "<hero> build", "<hero> guide" | `<Hero>: <Game> Build, Skills & Tier` |
+| Best teams | `/games/<game>/best-teams` | "<game> best team", "<game> team comp" | `Best Teams in <Game>: Top Team Comps` |
+| Status effects / glossary | `/games/<game>/status-effects` | "<game> buffs and debuffs", "<effect> <game>" | `<Game> Status Effects: Every Buff & Debuff` |
+| Mode/boss guides | `/games/<game>/<mode>` | "<game> <boss/mode> guide", "how to beat <boss>" | `<Boss> Guide: <Game> Best Counters` |
+
+Every page also gets: `pageMeta()`, breadcrumb JSON-LD, a sitemap entry, a share image (`opengraph-image.tsx` next to entity pages, the logo card everywhere else), and **unique text**, not just a grid of images.
+
+### DC: Dark Legion — live (October 2026)
+Has the full set: champion and legacy tier lists, a page per champion and per legacy piece, best teams, Combat Cycle, the Gotham planner, Supreme Commander, guides and patch notes.
+- **Grow it with:** guides aimed at what Performance shows people searching for, and Quantum's Takes on every champion.
+- **Next ideas to check against Search Console:** a guide page per Combat Cycle boss (only Devastator and Merciless have one), and "how to get <champion>" sections on champion pages.
+
+### Void Hunters — live
+Has the hub, hunter database, a page per hunter and status effects.
+- **Missing from the standard set:** a tier list and a best-teams page. Those are the two most-searched page types for any gacha game, so they're the first things to add.
+- The hunter pages should be brought onto `pageMeta()`, breadcrumbs and share images, the same as the DC: Dark Legion champion pages.
+
+### Godforge — hidden until the rebuild
+Data comes from the pipeline export, with **godforge.gg as the source of truth**. Planned page set:
+- hub, a hero database with a tier view, and a page per hero (stats, kit, rarity/affinity/archetype/faction)
+- the tier list, status effects, and the dungeons (a page per dungeon/boss: "<dungeon> Godforge guide")
+- the Campaign Star Planner, once it's made public. Tools like this pull links and repeat visits.
+
+Hero pages need **unique text** before launch (Quantum's Take or a short role summary). 200+ near-identical pages that are only stats can be flagged as low-value by Google and AdSense.
+
+### Invokers — not on the site yet
+The data covers kits at all levels, stats and 32 official tier lists. **Creator-program NDA: only already-released content goes on the site.**
+- Planned page set: the standard set above, built on the official data.
+- The 32 official tier lists are a strong angle: "Invokers tier list by mode/<role>" pages with Quantum's commentary beside the official rankings.
+
+---
+
 ## Priority indexing list (current — DC: Dark Legion)
 
 Request these once after a major deploy, about 10 a day, top to bottom. Day 1 is the most important.

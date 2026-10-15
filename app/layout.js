@@ -20,9 +20,9 @@ export const metadata = {
     siteName: 'Quantum Game Guides',
     images: [
       {
-        url: '/images/site/Q GOLD FULL ICON.png',
-        width: 512,
-        height: 512,
+        url: '/og-default.png',
+        width: 1200,
+        height: 630,
         alt: 'Quantum Game Guides',
       },
     ],

@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title: `${piece.name}: DC: Dark Legion Legacy Piece Stats & Skills`,
     description: desc,
     path: `${BASE}/${piece.id}`,
-    image: d?.art || piece.image,
+    image: false, // ./opengraph-image.tsx
     type: 'article',
   })
 }
@@ -127,8 +127,6 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
           <LegacyDetailView
             piece={piece}
             data={d}
-            failed={!d}
-            standalone
             footer={
               <footer className="ld-foot">
                 <Link href={`${BASE}/community-tier#${piece.id}`}>Community tier votes →</Link>

@@ -12,7 +12,6 @@ import AbilityKit from '@/src/dcdl/components/AbilityKit'
 import TakeBody from '@/src/dcdl/components/TakeBody'
 import ExpandableTake from '@/src/dcdl/components/ExpandableTake'
 import ChampionGameData, { type ChampionGameDataProps } from '@/src/dcdl/components/champion/ChampionGameData'
-import { LegacyDetailProvider } from '@/src/dcdl/components/legacy/LegacyDetail'
 import StrategyGuide, { type InGameGuide } from '@/src/dcdl/components/champion/StrategyGuide'
 import JsonLd from '@/app/components/JsonLd'
 import { breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
@@ -54,8 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (hero.tier) desc += ` Quantum's tier rating: ${hero.tier}.`
   desc += ' Skills, base stats, Force talents, recommended legacy pieces and community tier votes.'
 
-  const ogImage = hero.imageFull || hero.imageHeadshot
-
+  // The share image comes from ./opengraph-image.tsx.
   return {
     title: `${hero.name} — DC: Dark Legion Tier & Guide | Quantum Game Guides`,
     description: desc,
@@ -65,7 +63,6 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       description: desc,
       url: canonical,
       type: 'article',
-      ...(ogImage ? { images: [{ url: ogImage, alt: hero.name }] } : {}),
     },
   }
 }
@@ -263,7 +260,6 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
               <G>{firstName}</G> requires their unique legacy piece to operate at full capacity. Until you equip it, this champion may not work as well as intended. The other legacy pieces recommended in this section are simply meant to be placeholders to use until you can afford the magic eye investment if this is a champion you plan to invest heavily into.
             </p>
           )}
-          <LegacyDetailProvider>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
               {hero.recommendedLegacyPieces?.map((p) => (
                 <div key={p.id} style={{ width: '10rem' }}>
@@ -271,7 +267,6 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
                 </div>
               ))}
             </div>
-          </LegacyDetailProvider>
         </div>
         )}
 

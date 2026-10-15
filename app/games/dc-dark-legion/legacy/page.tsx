@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { getDataLastUpdated } from '@/src/dcdl/lib/data'
 import { getOfficialLegacyResolved, getOfficialTiersUpdatedAt, TIERS } from '@/src/dcdl/lib/tier-db'
 import LegacyGrid from '@/src/dcdl/components/LegacyGrid'
-import { LegacyDetailProvider } from '@/src/dcdl/components/legacy/LegacyDetail'
 import JsonLd from '@/app/components/JsonLd'
 import { pageMeta, monthYear, breadcrumbLd, itemListLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
@@ -70,12 +69,10 @@ export default async function LegacyPage() {
             </Link>.
           </p>
           <div className="flex flex-col items-center justify-start gap-12 py-4 text-white md:px-4">
-            <LegacyDetailProvider>
               <LegacyGrid
                 legacyPieces={legacyPieces}
                 dateLine={lastUpdated ? `Updated ${lastUpdated}` : undefined}
               />
-            </LegacyDetailProvider>
           </div>
           <p style={{ marginTop: '0.5rem', fontSize: '0.75rem', color: '#888', fontStyle: 'italic' }}>
             <strong style={{ color: '#aaa', fontStyle: 'normal' }}>Note:</strong> This Legacy Piece tier list is a collaboration with Tyvokka.

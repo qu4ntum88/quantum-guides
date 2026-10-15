@@ -1,13 +1,12 @@
 'use client'
 
-// Legacy piece detail. Wrap any area that renders <LegacyPieceBox> in <LegacyDetailProvider>
-// and clicking a tile opens this panel as a pop-up instead of navigating away. Per-piece game
-// data (Gear Effects per star, skill upgrade paths, classes, art, in-game guidance) is fetched
-// on demand from /dcdl/legacy/details/<id>.json, written by scripts/sync-dcdl-kits.mjs.
-// The same body (<LegacyDetailView>) renders server-side as the piece's own page at
-// /games/dc-dark-legion/legacy/<id>, which is what search engines index.
+// The body of a legacy piece's page (/games/dc-dark-legion/legacy/<id>): Gear Effects per
+// star, skill upgrade paths, classes, art and the in-game guidance, all from
+// public/dcdl/legacy/details/<id>.json (written by scripts/sync-dcdl-kits.mjs). The page
+// reads that file at build time and passes it in, so everything is in the HTML; this is a
+// client component only for the star scrubber.
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { useMemo, useState } from 'react'
 import TierBadge from '../TierBadge'
 import type { Legacy } from '../../lib/data'
 import { STAR_TIERS, UNLOCK_COLOR, starLabelColor } from '../../lib/star-tiers'
@@ -24,84 +23,16 @@ export type LegacyDetails = {
   // `signature` marks the champion whose signature (unique) piece it is.
   guide: { champion: string; signature: boolean; text: string }[]
 }
-type Open = { piece: Legacy; communityTier?: string }
-const Ctx = createContext<((o: Open) => void) | null>(null)
-
-export function useLegacyDetail() {
-  return useContext(Ctx)
-}
-
-export function LegacyDetailProvider({ children }: { children: React.ReactNode }) {
-  const [open, setOpen] = useState<Open | null>(null)
-  const show = useCallback((o: Open) => setOpen(o), [])
-  return (
-    <Ctx.Provider value={show}>
-      {children}
-      {open && <LegacyDetailModal {...open} onClose={() => setOpen(null)} />}
-    </Ctx.Provider>
-  )
-}
 
 export const LEGACY_QUALITY: Record<string, string> = { Red: 'Mythic', Orange: 'Legendary', Purple: 'Epic' }
 
-function LegacyDetailModal({ piece, communityTier, onClose }: Open & { onClose: () => void }) {
-  const [data, setData] = useState<LegacyDetails | null>(null)
-  const [failed, setFailed] = useState(false)
-  const panel = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    let live = true
-    fetch(`/dcdl/legacy/details/${encodeURIComponent(piece.id)}.json`)
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d: LegacyDetails) => { if (live) setData(d) })
-      .catch(() => live && setFailed(true))
-    return () => { live = false }
-  }, [piece.id])
-
-  // Esc closes; focus the panel so keyboard users land inside it; lock page scroll.
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
-    document.addEventListener('keydown', onKey)
-    const prev = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    panel.current?.focus()
-    return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = prev }
-  }, [onClose])
-
-  return (
-    <div className="ld-backdrop" onMouseDown={(e) => { if (e.target === e.currentTarget) onClose() }}>
-      <div className="ld-panel" role="dialog" aria-modal="true" aria-labelledby="ld-title" tabIndex={-1} ref={panel}>
-        <button type="button" className="ld-close" onClick={onClose} aria-label="Close">×</button>
-        {/* Keyed so the star scrubber starts at max once the data arrives. */}
-        <LegacyDetailView key={data ? 'data' : 'loading'} piece={piece} communityTier={communityTier} data={data} failed={failed} />
-      </div>
-    </div>
-  )
-}
-
-/**
- * The detail body. In the pop-up `data` arrives after a fetch; on the standalone
- * page it is read at build time and passed in, so the whole thing is in the HTML.
- * `standalone` makes the name the page's h1, opens the every-star table, and drops
- * the community badge (votes are loaded client-side on the community page).
- */
-export function LegacyDetailView({
-  piece,
-  communityTier,
-  data,
-  failed = false,
-  standalone = false,
-  footer,
-}: Open & { data: LegacyDetails | null; failed?: boolean; standalone?: boolean; footer?: React.ReactNode }) {
+export function LegacyDetailView({ piece, data, footer }: { piece: Legacy; data: LegacyDetails | null; footer?: React.ReactNode }) {
   const rows = data?.gearEffects?.rows ?? []
   const [star, setStar] = useState(Math.max(rows.length - 1, 0))
-  const [showAll, setShowAll] = useState(standalone)
+  const [showAll, setShowAll] = useState(true)
 
   const rank = piece.rank || (data ? LEGACY_QUALITY[data.quality] : undefined)
   const current = rows[star]
-  const Title = standalone ? 'h1' : 'h2'
-  const H = standalone ? 'h2' : 'h3'
-  const H4 = standalone ? 'h3' : 'h4'
 
   return (
     <>
@@ -109,13 +40,13 @@ export function LegacyDetailView({
       <header className="ld-head">
         <div className="ld-art">
           {data?.art
-            ? <img src={data.art} alt={standalone ? `${piece.name} legacy piece art` : ''} />
+            ? <img src={data.art} alt={`${piece.name} legacy piece art`} />
             : piece.image && <img src={piece.image} alt="" className="ld-art--icon" />}
         </div>
         <div className="ld-head__body">
           <div className="ld-title-row">
             {piece.image && <img className="ld-icon" src={piece.image} alt="" />}
-            <Title id="ld-title" className="ld-title">{piece.name}</Title>
+            <h1 className="ld-title">{piece.name}</h1>
           </div>
           <div className="ld-chips">
             {rank && <span className={`ld-chip ld-chip--rank ld-chip--${(data?.quality || 'Red').toLowerCase()}`}>{rank}</span>}
@@ -132,19 +63,17 @@ export function LegacyDetailView({
           )}
           <div className="ld-tiers">
             <span className="ld-tier"><span className="ld-label">Quantum</span><TierBadge tier={piece.tier} /></span>
-            {!standalone && <span className="ld-tier"><span className="ld-label">Community</span><TierBadge tier={communityTier} /></span>}
           </div>
         </div>
       </header>
 
-      {failed && <p className="ld-note">Detailed game data isn&apos;t available for this piece yet.</p>}
-      {!data && !failed && <p className="ld-note">Loading…</p>}
+      {!data && <p className="ld-note">Detailed game data isn&apos;t available for this piece yet.</p>}
 
       {/* Gear Effects, scrubbable by star */}
       {data?.gearEffects && current && (
         <section className="ld-section">
           <div className="ld-section__head">
-            <H className="ld-h">Gear Effects</H>
+            <h2 className="ld-h">Gear Effects</h2>
             <span className="ld-star-label" style={{ color: starLabelColor(current[0]) }}>{current[0]}</span>
           </div>
           <StarTrack count={rows.length} value={star} onChange={setStar} />
@@ -180,7 +109,7 @@ export function LegacyDetailView({
       {/* Skills with their upgrade paths */}
       {data && data.skills.length > 0 && (
         <section className="ld-section">
-          <H className="ld-h">Skills</H>
+          <h2 className="ld-h">Skills</h2>
           {data.skills.map((s) => {
             const icon = piece.legacySkills?.find((x) => x.name.toLowerCase() === (s.name || '').toLowerCase())?.image
               ?? piece.legacySkills?.find((x) => (s.kind === 'general') === /general/i.test(x.image || ''))?.image
@@ -190,7 +119,7 @@ export function LegacyDetailView({
                   {icon && <img src={icon} alt="" />}
                   <div>
                     <span className="ld-skill__kind">{s.kind === 'exclusive' ? `Exclusive${data.uniqueTo ? ` · ${data.uniqueTo} only` : ''}` : 'General · any wearer'}</span>
-                    <H4 className="ld-skill__name">{s.name || 'Unnamed skill'}</H4>
+                    <h3 className="ld-skill__name">{s.name || 'Unnamed skill'}</h3>
                   </div>
                 </div>
                 <ol className="ld-steps">
@@ -209,7 +138,7 @@ export function LegacyDetailView({
 
       {data && data.guide.length > 0 && (
         <section className="ld-section">
-          <H className="ld-h">In-game recommendations</H>
+          <h2 className="ld-h">In-game recommendations</h2>
           <p className="ld-sub">Champions the game&apos;s own champion guide recommends this piece for, and why.</p>
           <ul className="ld-recs">
             {data.guide.map((g) => (
@@ -225,12 +154,7 @@ export function LegacyDetailView({
         </section>
       )}
 
-      {footer ?? (
-        <footer className="ld-foot">
-          <a href={`/games/dc-dark-legion/legacy/${piece.id}`}>Open full page →</a>
-          <a href={`/games/dc-dark-legion/legacy/community-tier#${piece.id}`}>Community tier votes →</a>
-        </footer>
-      )}
+      {footer}
     </>
   )
 }

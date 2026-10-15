@@ -1,14 +1,6 @@
-/* Legacy piece pop-up and standalone page (LegacyDetail.tsx). Heading levels differ between
-   the two (h2/h3/h4 in the pop-up, h1/h2/h3 on the page), so style by class, never by tag. */
-/* Dark DC panel: purple gradient, gold accents,
-   star-tier colours White → Blue → Purple → Yellow → Red. */
+/* Legacy piece page body (LegacyDetail.tsx): dark DC card with a purple gradient and gold
+   accents; star-tier colours White → Blue → Purple → Yellow → Red. */
 
-.ld-backdrop {
-  position: fixed; inset: 0; z-index: 1000;
-  background: rgba(6, 4, 14, 0.78); backdrop-filter: blur(3px);
-  display: flex; align-items: flex-start; justify-content: center;
-  padding: 4vh 1rem; overflow-y: auto;
-}
 .ld-panel {
   position: relative; width: 100%; max-width: 54rem; outline: none;
   background: linear-gradient(160deg, #241a3d 0%, #160f27 55%, #120c1f 100%);
@@ -16,12 +8,6 @@
   border-radius: 0.6rem; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
   padding: 1.5rem 1.75rem 1.25rem; color: #e9e6f2;
 }
-.ld-close {
-  position: absolute; top: 0.6rem; right: 0.8rem; background: none; border: none;
-  color: #9d93b5; font-size: 1.8rem; line-height: 1; cursor: pointer;
-}
-.ld-close:hover { color: #fff; }
-
 /* Header */
 .ld-head { display: flex; gap: 1.5rem; align-items: stretch; }
 .ld-art {
@@ -32,7 +18,7 @@
 .ld-art img { display: block; width: 100%; height: auto; }
 .ld-art .ld-art--icon { padding: 1rem; }
 .ld-head__body { flex: 1; display: flex; flex-direction: column; gap: 0.7rem; min-width: 0; }
-.ld-title-row { display: flex; align-items: center; gap: 0.75rem; padding-right: 2rem; }
+.ld-title-row { display: flex; align-items: center; gap: 0.75rem; }
 .ld-icon { width: 3.25rem; height: 3.25rem; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.45)); }
 .ld-title { font-family: 'Unbounded', sans-serif; font-size: 1.45rem; line-height: 1.2; margin: 0; color: #fff; }
 .ld-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
