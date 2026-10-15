@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { getDataLastUpdated } from '@/src/dcdl/lib/data'
 import { getOfficialLegacyResolved, getOfficialTiersUpdatedAt } from '@/src/dcdl/lib/tier-db'
 import LegacyGrid from '@/src/dcdl/components/LegacyGrid'
+import { LegacyDetailProvider } from '@/src/dcdl/components/legacy/LegacyDetail'
 import '../../godforge/game.css'
 
 // Official tiers are read from Supabase, so pick up Studio edits within a minute.
@@ -38,16 +39,19 @@ export default async function LegacyPage() {
       <section style={{ padding: '2rem 0' }}>
         <div className="container">
           <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.5rem' }}>
-            Clicking a legacy piece opens the{' '}
+            Click a legacy piece for its Gear Effects at every star, both skills and how they upgrade, and who can equip it.
+            Community votes live on the{' '}
             <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
               Justice League of Discord community voted tier ranking page
-            </Link>{' '}for that item.
+            </Link>.
           </p>
           <div className="flex flex-col items-center justify-start gap-12 py-4 text-white md:px-4">
-            <LegacyGrid
-              legacyPieces={legacyPieces}
-              dateLine={lastUpdated ? `Updated ${lastUpdated}` : undefined}
-            />
+            <LegacyDetailProvider>
+              <LegacyGrid
+                legacyPieces={legacyPieces}
+                dateLine={lastUpdated ? `Updated ${lastUpdated}` : undefined}
+              />
+            </LegacyDetailProvider>
           </div>
           <p style={{ marginTop: '0.5rem', fontSize: '0.75rem', color: '#888', fontStyle: 'italic' }}>
             <strong style={{ color: '#aaa', fontStyle: 'normal' }}>Note:</strong> This Legacy Piece tier list is a collaboration with Tyvokka.

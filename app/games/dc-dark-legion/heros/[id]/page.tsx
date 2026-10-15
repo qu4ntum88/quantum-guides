@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getResolvedHeros } from '@/src/dcdl/lib/data'
+import { getResolvedHeros, getResolvedLegacy } from '@/src/dcdl/lib/data'
 import LegacyPieceBox from '@/src/dcdl/components/LegacyPieceBox'
 import VotingWidget from '@/src/dcdl/components/VotingWidget'
 import PageTierBadges from '@/src/dcdl/components/PageTierBadges'
@@ -10,6 +10,21 @@ import type { LegacyResolved } from '@/src/dcdl/lib/data'
 import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
 import AbilityKit from '@/src/dcdl/components/AbilityKit'
 import TakeBody from '@/src/dcdl/components/TakeBody'
+import ChampionGameData, { type ChampionGameDataProps } from '@/src/dcdl/components/champion/ChampionGameData'
+import { LegacyDetailProvider } from '@/src/dcdl/components/legacy/LegacyDetail'
+import StrategyGuide, { type InGameGuide } from '@/src/dcdl/components/champion/StrategyGuide'
+import fs from 'fs'
+import path from 'path'
+
+// Game-data extras (stats, Force talents, lore) live one file per champion, written by
+// scripts/sync-dcdl-kits.mjs; read only this champion's file at build time.
+function readGameData(id: string): (ChampionGameDataProps & { guide?: InGameGuide }) | null {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/game/champions', `${id}.json`), 'utf8'))
+  } catch {
+    return null
+  }
+}
 import '../abilities.css'
 
 export function generateStaticParams() {
@@ -69,6 +84,9 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
 
   const classSrc = '/dcdl/role_images/' + hero.class + '.png'
   const firstName = hero.name.split('(')[0].trim()
+
+  // Absent for a champion the export couldn't match; those sections then don't render.
+  const gameData = readGameData(hero.id)
 
   const linkedAscended = hero.ascendsTo ? (allHeros.find((h) => h.id === hero.ascendsTo) ?? null) : null
   const linkedBase = hero.ascendedFrom ? (allHeros.find((h) => h.id === hero.ascendedFrom) ?? null) : null
@@ -218,7 +236,22 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           )}
         </div>
 
-        {/* Recommended Legacy Pieces */}
+        {/* The game's own Strategy Guide (with Quantum's notes) replaces the hand-picked legacy
+            list; champions the guide doesn't cover keep the hand-picked list. */}
+        {gameData?.guide ? (
+          <StrategyGuide
+            guide={gameData.guide}
+            notes={hero.guideNotes}
+            legacy={getResolvedLegacy()}
+            heros={allHeros}
+          >
+            {hero.uniqueLegacyRequired && (
+              <p style={{ margin: hero.guideNotes ? '0 0 1rem' : 0, lineHeight: 1.65 }}>
+                <G>{firstName}</G> requires their unique legacy piece to operate at full capacity. Until you equip it, this champion may not work as well as intended. Treat the other pieces here as placeholders until you can afford the magic eye investment, if this is a champion you plan to invest heavily into.
+              </p>
+            )}
+          </StrategyGuide>
+        ) : (
         <div className="card">
           <h4>Recommended Legacy Pieces</h4>
           {hero.uniqueLegacyRequired && (
@@ -226,14 +259,17 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
               <G>{firstName}</G> requires their unique legacy piece to operate at full capacity. Until you equip it, this champion may not work as well as intended. The other legacy pieces recommended in this section are simply meant to be placeholders to use until you can afford the magic eye investment if this is a champion you plan to invest heavily into.
             </p>
           )}
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
-            {hero.recommendedLegacyPieces?.map((p) => (
-              <div key={p.id} style={{ width: '10rem' }}>
-                <LegacyPieceBox piece={p as LegacyResolved} />
-              </div>
-            ))}
-          </div>
+          <LegacyDetailProvider>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
+              {hero.recommendedLegacyPieces?.map((p) => (
+                <div key={p.id} style={{ width: '10rem' }}>
+                  <LegacyPieceBox piece={p as LegacyResolved} />
+                </div>
+              ))}
+            </div>
+          </LegacyDetailProvider>
         </div>
+        )}
 
         {/* Champion Abilities */}
         <AbilityKit
@@ -242,6 +278,10 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           skills={hero.skills ?? []}
           upgrades={hero.upgrades ?? []}
         />
+
+        {gameData && (
+          <ChampionGameData curves={gameData.curves} firstLevel={gameData.firstLevel} maxLevel={gameData.maxLevel} talents={gameData.talents} lore={gameData.lore} />
+        )}
 
         <VotingWidget entityType="champion" entityId={id} />
 

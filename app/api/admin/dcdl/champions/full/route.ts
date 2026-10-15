@@ -10,5 +10,10 @@ export async function GET(req: NextRequest) {
   const heros = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/heros.json'), 'utf8'))
   const hero = heros.find((h: { id: string }) => h.id === id)
   if (!hero) return NextResponse.json({ error: 'Not found' }, { status: 404 })
-  return NextResponse.json(hero)
+  // The in-game Strategy Guide, shown read-only next to the notes field (not saved back).
+  let gameGuide = null
+  try {
+    gameGuide = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/game/champions', `${hero.id}.json`), 'utf8')).guide ?? null
+  } catch {}
+  return NextResponse.json({ ...hero, gameGuide })
 }

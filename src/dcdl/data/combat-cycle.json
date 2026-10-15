@@ -18,8 +18,20 @@
     "mechanics": "",
     "skills": [
       {
-        "name": "Ejected",
-        "description": "Strike an enemy with such force they are thrown off the battlefield and unable to return for a time."
+        "name": "Doom Crash",
+        "description": "The Devastator deals physical damage to an enemy."
+      },
+      {
+        "name": "Boneshaker",
+        "description": "The Devastator deals physical damage to all enemies and inflicts [Stunned]."
+      },
+      {
+        "name": "Devastating Howl",
+        "description": "The Devastator reflects physical damage he takes."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_TheDevastator.png"
@@ -43,27 +55,24 @@
     "mechanics": "",
     "skills": [
       {
-        "name": "Dark Wave",
-        "description": "Unleashes a massive pillar of water that deals damage to all enemies and incapacitates them. The more [Dead Water] stacks a target has, the longer the incapacitation lasts."
-      },
-      {
         "name": "Dark Surge",
-        "description": "Commands seawater to periodically create waves, dealing area damage and knocking back enemies."
+        "description": "The Drowned deals spiritual damage to all enemies."
       },
       {
         "name": "Water Bomb",
-        "description": "Forms a water sphere and detonates it, dealing damage to all enemies, with a high chance to apply 1 stack of [Dead Water]."
+        "description": "The Drowned deals spiritual damage to all enemies."
+      },
+      {
+        "name": "Dark Wave",
+        "description": "The Drowned removes all debuffs from herself and gains a shield."
       },
       {
         "name": "Self-Modification",
-        "type": "Passive",
-        "description": "Basic attacks have a low chance to apply [Dead Water]. Also periodically removes all debuffs from itself.",
-        "status_effects": [
-          {
-            "name": "Dead Water",
-            "effect": "Reduces movement speed."
-          }
-        ]
+        "description": "The Drowned takes increased physical damage."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_TheDrowned.png"
@@ -88,11 +97,15 @@
     "skills": [
       {
         "name": "Fires of Hades",
-        "description": "Open a pit to Hades itself, unleashing its hellfire upon all who venture too close."
+        "description": "The Merciless summons Amazon warriors to join the battle. Amazon warriors take increased physical damage."
       },
       {
         "name": "Rallying Cry",
-        "description": "A commanding shout summons more controlled Warmongers to join the battle."
+        "description": "The Merciless deals physical damage to enemies within range."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_TheMerciless.png"
@@ -117,7 +130,19 @@
     "skills": [
       {
         "name": "The Claw",
-        "description": "Creates a dark zone and uses its green claw to immobilize the target, dealing DMG over time until the target is defeated or the claw is destroyed. The claw takes significantly more Spiritual DMG but less Physical DMG. Also summons green monsters for the duration of this skill."
+        "description": "The Dawnbreaker summons his followers to join the battle. The Dawnbreaker and his followers take increased physical damage and are immune to damage over time."
+      },
+      {
+        "name": "Lantern of the Abyss",
+        "description": "The Dawnbreaker deals physical damage to all enemies."
+      },
+      {
+        "name": "Nightfall Talon",
+        "description": "The Dawnbreaker deals physical damage to enemies within range."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_Dawnbreaker.png"
@@ -146,11 +171,15 @@
       },
       {
         "name": "Loyal Servant",
-        "description": "The Murder Machine and robots take increased spiritual damage and are immune to damage over time"
+        "description": "The Murder Machine and robots take increased spiritual damage and are immune to damage over time."
       },
       {
         "name": "Weakness Analysis",
         "description": "The Murder Machine deals spiritual damage to enemies within range."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_TheMurderMachine.png"
@@ -175,20 +204,23 @@
     "skills": [
       {
         "name": "Fatal Frenzy",
-        "description": "The Killer Tank goes into frenzy mode and charges through the battlefield, dealing DMG to all enemies in its path."
-      },
-      {
-        "name": "Self-Repair",
-        "type": "Passive",
-        "description": "The Killer Tank takes 50% less DMG while in its normal state. When inflicted with a control effect, it ignores the effect, but one tire is blown. If the control lasts longer than 2s, one additional tire is blown. When all 8 tires are blown, the Killer Tank enters a repair state, disabling its frenzy mode but still allowing it to cast attack skills from its position. During this state, it takes 100% more DMG. Tires self-repair over time. Once fully restored, the Killer Tank will return to frenzy mode. A full repair takes no more than 15s."
+        "description": "The Killer Tank charges through the battlefield, dealing physical damage to all enemies. All enemy Champions then instantly regain full Energy, and the Killer Tank enters a repair state, during which it takes increased Ultimate damage."
       },
       {
         "name": "Scorched Earth",
-        "description": "Unleashes a massive fire blast, dealing DMG to enemies within range."
+        "description": "The Killer Tank deals physical damage to all enemies."
       },
       {
         "name": "Murder Missiles",
-        "description": "Launches a barrage of missiles, dealing DMG to enemies within range."
+        "description": "The Killer Tank deals physical damage to all enemies."
+      },
+      {
+        "name": "Self-Repair",
+        "description": "The Killer Tank is immune to damage over time."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_KillingChariot.png"
@@ -213,7 +245,7 @@
     "skills": [
       {
         "name": "One Man Legion",
-        "description": "The Red Death deals Spiritual Damage to all enemies."
+        "description": "The Red Death deals spiritual damage to all enemies."
       },
       {
         "name": "Space Rifts",
@@ -225,7 +257,11 @@
       },
       {
         "name": "Windshear",
-        "description": "The Red Death takes increased Physical Damage."
+        "description": "The Red Death takes increased physical damage."
+      },
+      {
+        "name": "Phase II Power-Up",
+        "description": "The boss becomes stronger with significantly increased attributes."
       }
     ],
     "portrait": "icon_fight_hero_head_reddeath.png"

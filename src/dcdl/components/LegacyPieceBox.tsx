@@ -4,16 +4,25 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
 import TierBadge from "./TierBadge"
 import { EntryBadgeGroup } from "./EntryBadges"
 import type { LegacyResolved } from "../lib/data"
+import { useLegacyDetail } from "./legacy/LegacyDetail"
 
 const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
 
 // `compact` is the downsized tile used inside the Tier List view's cells.
 export default function LegacyPieceBox({ piece, communityTier, compact = false }: { piece: LegacyResolved; communityTier?: string; compact?: boolean }) {
+  // Inside a <LegacyDetailProvider> the tile opens the detail pop-up; elsewhere it keeps
+  // linking to the community tier page (also the no-JS / open-in-new-tab fallback).
+  const openDetail = useLegacyDetail()
   return (
     <Tooltip>
       <TooltipTrigger asChild>
         <a
           href={`/games/dc-dark-legion/legacy/community-tier#${piece.id}`}
+          onClick={openDetail ? (e) => {
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return
+            e.preventDefault()
+            openDetail({ piece, communityTier })
+          } : undefined}
           className="block group relative aspect-4/5 overflow-hidden border border-white/10 bg-slate-700 bg-linear-to-b from-purple-900/90 to-purple-500/50 shadow-md"
         >
           <img

@@ -66,6 +66,8 @@ export type Hero = {
   gameModes?: string[]
   transmutePriorities?: string[]
   quantumsTake?: string
+  // Quantum's notes on the in-game Strategy Guide, shown inside that section.
+  guideNotes?: string
   tagSynergies: string[]
   imageHeadshot?: string
   imageFull?: string

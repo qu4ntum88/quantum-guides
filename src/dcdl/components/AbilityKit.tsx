@@ -26,7 +26,10 @@ const RANKS = [
 // [Awakened], filled scaling values such as [300/400/500%], and placeholders
 // such as [%] where per-star values haven't been entered yet. Each gets its
 // own treatment instead of rendering as flat body text.
-function renderDescription(text: string) {
+// `ranked` marks text whose scaling tokens have one value per star rank (skills, Ultimates,
+// Global Skills): a five-value token then shows each value behind a star in its rank colour.
+// Enhancement levels are talent levels, not ranks, so they render as plain values.
+function renderDescription(text: string, ranked = false) {
   return text.split(/(\[[^\]]*\])/g).map((part, i) => {
     if (!part.startsWith('[') || !part.endsWith(']')) return <span key={i}>{part}</span>
 
@@ -42,6 +45,20 @@ function renderDescription(text: string) {
     }
     // Real numbers: single values like 10s or 50%, and per-star scaling like 20/30/40/50/60%.
     if (/\d/.test(inner) && /^[\d.,/\s%sx+×-]+$/.test(inner)) {
+      const unit = /%\s*$/.test(inner) ? '%' : /\ds\s*$/.test(inner) ? 's' : ''
+      const vals = inner.replace(/[%s]\s*$/, '').split('/').map((v) => v.trim().replace(/%$/, ''))
+      if (ranked && vals.length === RANKS.length) {
+        return (
+          <span key={i} className="ak-tok ak-tok--ranked" aria-label={vals.map((v, j) => `${RANKS[j].name} ${v}${unit}`).join(', ')}>
+            {vals.map((v, j) => (
+              <span key={j} className="ak-rk" title={`${RANKS[j].name} rank`}>
+                <span className="ak-rk__star" style={{ color: RANKS[j].color }} aria-hidden="true">★</span>
+                {v}{unit}
+              </span>
+            ))}
+          </span>
+        )
+      }
       return <span key={i} className="ak-tok ak-tok--value">{inner}</span>
     }
     // Keyword / status / ability references.
@@ -150,7 +167,7 @@ export default function AbilityKit({
                   <RankPips />
                 </div>
                 <h3 className="ak-card__name">{s.ability.name}</h3>
-                <p className="ak-card__desc">{renderDescription(s.ability.description)}</p>
+                <p className="ak-card__desc">{renderDescription(s.ability.description, true)}</p>
               </div>
             </div>
 

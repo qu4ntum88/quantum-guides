@@ -26,6 +26,17 @@ There are no tests. Deploy via `git push origin main` — Vercel auto-deploys fr
 
 - **Godforge Campaign Star Planner** (`/games/godforge/campaign`) — tool is fully built but currently private (returns 404 via `notFound()`). Revisit in a future session to make it public. To re-enable, remove the `notFound()` call at the top of `app/games/godforge/campaign/page.tsx` and add a nav link back in `app/components/Navbar.js`.
 
+- **Game-data pipeline (in progress since 2026-10-14)** — client data for each game is extracted into `E:\GameAssets\Exports\<game>\` by the scripts in `E:\GameAssets\Exports\_pipeline\<game>\update.mjs` (see `E:\GameAssets\Exports\README.md`). All four games are built (2026-10-15): Godforge (game files + godforge.gg), DCDL (game files), Void Hunters (text + art only; stats are server-side), Invokers (invokers.com: kits at all levels, stats, 32 official tier lists). The site has no Invokers section yet. Only already-released content goes on the site (creator-program NDA). **Up next once all four games are extracted:** a per-game site rebuild on this data. For DCDL that means showing the newly available data: champion base stats per level, lore, talents, legacy **Gear Effects per star** (unlock → 5★ Red) and each legacy skill's **upgrade path** by star, the in-game legacy guidance text, and the current Combat Cycle boss kits (`dcdl\game-modes\combat-cycle\`).
+  - DCDL kit text on the site is refreshed from the export with `node scripts/sync-dcdl-kits.mjs --write` (champion + legacy descriptions only, plus spelling fixes for near-miss skill names; images, tiers and Quantum's Take are never touched; Combat Cycle bosses get their current kit names + in-game text). Re-run it after each game update.
+  - **Admin "Game Data" tab** (`/admin/dcdl` → Game Data, `src/dcdl/components/admin/GameDataPanel.tsx` + `app/api/admin/pipeline/route.ts`): buttons for every pipeline job (DCDL/Godforge extraction, kit refresh preview/apply) with a live log and the latest review report. The route runs only the whitelisted `JOBS` (never a client-supplied command) and is `notProd()`-blocked. **New AssetStudio/pipeline automation goes here** — add a `JOBS` entry rather than a new page.
+  - **Held back from the site for now (Tyler is deciding how to approach it):** Combat Cycle skill cooldowns, damage factors, and the "detailed" text variants (not shown in game). Damage factor = per-hit multiple of the caster's ATK (verified: Batman Skill 1 factor 2.0 = 200%; his Ultimate 1.8 × 5 hits = 900%); `DamageType` AD = physical, AP = spiritual; `SkillCd` is seconds. Boss ATK itself comes from the stage/monster tables and isn't extracted yet.
+  - **DCDL site rebuild — BUILT locally 2026-10-15 (awaiting Tyler's review, not committed):** `sync-dcdl-kits.mjs --write` now also writes `src/dcdl/data/game/champions/<id>.json` (one per site champion, read with fs at build time: full stat curves level 1–700, Force talents with per-level effect + champion-level requirement + AC/DC Shard/Dollar cost, lore + unlock stars), `public/dcdl/legacy/details/<id>.json` (one per legacy piece: Gear Effects per star as `{stats, rows}`, skill upgrade steps, classes, art, guidance) and `public/dcdl/legacy/legacy_art/*.webp`. Champion page: `src/dcdl/components/champion/ChampionGameData.tsx` (Base Stats with a 1–700 slider, Force Talents with costs, Lore chapters); `AbilityKit` renders each five-value `[a/b/c/d/e]` token in skills/Ultimates/Global Skills with a rank-coloured ★ per value (enhancement values are talent levels, so they stay plain). The sync also fills Global Skill text with per-rank values and Multiversal Force Enhancement (`upgrades`) text with per-level values, and generates hexagon enhancement icons (`_pipeline/dcdl/force-icon.mjs`: recreated purple fill + the game's `img_hero_talent_blue_outline_big` + skill icon) for any enhancement without an image. Enhanced-talent name keys are scrambled in the game data; the export names them from the skill whose icon they carry. Legacy: `src/dcdl/components/legacy/LegacyDetail.tsx` — wrap any area rendering `LegacyPieceBox` in `<LegacyDetailProvider>` and tile clicks open the pop-up (star scrubber over Gear Effects, skills with changed values highlighted per step); without the provider the tile still links to the community tier page. Star-tier colours live in `src/dcdl/lib/star-tiers.ts`. **Strategy Guide:** the game's own per-champion A.C.C. guide (`AccHeroCultivate` + `AccLineUp`; overview, recommended stats, best-for modes, strengths, recommended legacy pieces with reasons + alternatives, recommended champions, lineup) is exported as `guide` and synced into the champion's game file with site ids; `src/dcdl/components/champion/StrategyGuide.tsx` renders it on the champion page **in place of** the hand-picked `recommendedLegacyPieces` list (that list stays in the JSON and still drives `getResolvedLegacy().champions`). Tyler's commentary on it is `guideNotes` in heros.json (TakeBody syntax), edited in the admin champion form next to a read-only view of the game's picks. The sync matches enhancements by name, else through the skill they enhance (by icon), and corrects names within 3 letters of the game's spelling (fixed "Bab's Boost", "Elbuod Elbourt", "Judgement of Osiris"); audited 2026-10-15: all 222 site enhancement texts equal their champion's game text.
+  - **Gotham planner sizes need a check:** the game data gives City Hall 8×8 and the plaza/armory buildings 4×4 (`GothamWarFortress.SizeGridX/Y`, map 256×256, GridSize 2), while the planner uses 10×10 and 6×6 tiles. Confirm the unit against an in-game screenshot before changing anything. Building *positions* are server-side and not in the client.
+
+- **Force Talent Planner (DCDL, Tyler wants this built)** — an interactive calculator: pick a champion, set each Force talent's current → target level, and total the AC/DC Shards + Dollars and the champion level each step needs. All the data already exists per champion in `src/dcdl/data/game/champions/<id>.json` → `talents[].upgrades[]` (`level`, `championLevel`, `acdc`, `dollars`, `effect`); normal talents peak at 50 shards per level, enhanced (Multiversal Force Enhancement) at 200. The champion page's Force Talents section (`ChampionGameData.tsx`) already shows the per-level table, so the planner can reuse its `Cost` display.
+
+- **Strategy Guide overrides (revisit with Tyler)** — the champion-page Strategy Guide (`StrategyGuide.tsx`) currently shows the game's A.C.C. data as-is, and Tyler may disagree with its recommended stats, legacy pieces, champions and lineups. Planned shape: start from the game data, then let Tyler override any of those lists from the admin champion form (e.g. per-field overrides stored on the champion in heros.json, falling back to the game's list when unset), with `guideNotes` for commentary. Design the details with Tyler before building. Do NOT pitch a page built on the game's `AccLineUp` team lineups: Tyler curates **Best Teams** himself because the in-game recommendations aren't the top meta teams.
+
 - **Creator Program** — BUILT (2026-08-14). See the "Creator Program" section under Architecture and `docs/CREATOR-PROGRAM.md`. Remaining ideas not yet built: per-creator attribution on *community votes* (a `creator_id` on the votes table, so a creator's voted list can be viewed separately from their hand-built tier list), and email/Discord notification when an application or submission is approved.
 
 ## What this is
@@ -37,7 +48,7 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 **Routing** — Next.js App Router. Key routes:
 - `/games/dc-dark-legion/heros/[id]` — statically generated champion detail pages
 - `/games/dc-dark-legion/legacy/[id]` — statically generated legacy piece pages
-- `/games/godforge/heroes` — Godforge hero grid (202 heroes, filterable by rarity/affinity/allegiance/archetype/faction)
+- `/games/godforge/heroes` — Godforge hero grid (204 heroes, filterable by rarity/affinity/allegiance/archetype/faction)
 - `/games/godforge/status-effects` — Godforge status effects grid (105 effects, filterable by buff/debuff/disable)
 - `/games/void-hunters` — Void Hunters hunter grid
 - `/games/void-hunters/status-effects` — Void Hunters status effects
@@ -48,19 +59,20 @@ Quantum Game Guides — a community hub for DC: Dark Legion (primary) plus Godfo
 - `/api/admin/dcdl/champions` and `/api/admin/dcdl/legacy` — write champion/legacy data to disk
 - `/api/admin/gf/heroes` — GET (hero list or single hero) / PATCH (update hero attributes)
 
-**Data** — Champion and legacy piece data lives in JSON files at `src/dcdl/data/heros.json` and `src/dcdl/data/legacy.json`. Godforge data lives in `src/gf/data/heroes.json` (202 heroes) and `src/gf/data/status-effects.json` (105 effects). All JSON files are read at build time for static generation and at runtime by admin API routes (which write back to them).
+**Data** — Champion and legacy piece data lives in JSON files at `src/dcdl/data/heros.json` and `src/dcdl/data/legacy.json`. Godforge data lives in `src/gf/data/heroes.json` (208 entries: 204 heroes + dungeon bosses) and `src/gf/data/status-effects.json` (105 effects). All JSON files are read at build time for static generation and at runtime by admin API routes (which write back to them).
 
 **Godforge hero data shape:**
 ```ts
 { id, name, fullArt, portrait, rarity, affinity, allegiance, archetype, faction }
 // portrait: path to transparent-bg portrait PNG | null (falls back to fullArt when null)
 // rarity: 'Legendary' | 'Epic' | 'Rare' | 'Uncommon' | 'Common' | null
-// affinity: 'Cunning' | 'Eternal' | 'Strength' | 'Wisdom' | null
+// affinity: 'Cunning' | 'Strength' | 'Valor' | 'Wisdom' | 'Wrath' | null   (Eternal was split into Valor + Wrath; godforge.gg is the source)
 // allegiance: 'Chaos' | 'Order' | null
 // archetype: 'Brawler' | 'Defender' | 'Disruptor' | 'Invoker' | 'Slayer' | null
 // faction: 'AARU' | 'ASGARD' | 'AVALON' | 'EKUR' | 'IZUMO' | 'OLYMPUS' | 'OMEYOCAN' | 'TIAN' | 'VYRAJ' | null
 ```
-202 heroes after removing 4 alt-art duplicates (Bauk, Cleopatra, Fenrir, Geri alts). All non-id/name/fullArt fields filled via the admin panel. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280. Portraits live in `public/godforge/gf_heroes/portrait/` as PNGs with backgrounds removed via edge flood-fill (colour-tolerance 50 from detected bg). A few portraits still have imperfect cutouts and need reprocessing — to redo one: extract original JPG from git commit `2b2a154`, adjust tolerance, re-run the flood-fill script.
+**Source of truth is godforge.gg** (2026-10-14): names, rarity, affinity, allegiance, archetype and realm were aligned to it, and the 24 heroes on neither godforge.gg nor the game files (Thor, Medusa, Merlin, Lilith, Takeda Shingen, Tefnut, …) were removed and archived to `E:\GameAssets\Exports\godforge\not-in-game\` — restore one only when a datamine shows it in the live game. `heroes-api.json` (hero grid + detail pages) still carries ravenpyros-era stats and kits until the hero pages are rebuilt on the pipeline export. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280. Portraits live in `public/godforge/gf_heroes/portrait/` as PNGs with backgrounds removed via edge flood-fill (colour-tolerance 50 from detected bg). A few portraits still have imperfect cutouts and need reprocessing — to redo one: extract original JPG from git commit `2b2a154`, adjust tolerance, re-run the flood-fill script.
+ot-in-game` — restore one only when a datamine shows it in the live game. `heroes-api.json` (hero grid + detail pages) still carries ravenpyros-era stats and kits until the hero pages are rebuilt on the pipeline export. When `portrait` is set (transparent-bg PNG), the card shows the portrait with a rarity-colored gradient background instead of the full art. Rarity glow colors: Legendary=#f59e0b, Epic=#a855f7, Rare=#3b82f6, Uncommon=#22c55e, Common=#6b7280. Portraits live in `public/godforge/gf_heroes/portrait/` as PNGs with backgrounds removed via edge flood-fill (colour-tolerance 50 from detected bg). A few portraits still have imperfect cutouts and need reprocessing — to redo one: extract original JPG from git commit `2b2a154`, adjust tolerance, re-run the flood-fill script.
 
 **Godforge status effect data shape:**
 ```ts
@@ -115,7 +127,7 @@ Separately, a build-ordering fact that remains true regardless: `generateStaticP
 | `src/dcdl/data/heros.json` | All DCDL champion data |
 | `src/dcdl/data/legacy.json` | All DCDL legacy piece data |
 | `src/dcdl/data/synergies.json` | DCDL faction/tag metadata |
-| `src/gf/data/heroes.json` | All Godforge hero data (202 heroes) |
+| `src/gf/data/heroes.json` | All Godforge hero data (204 heroes + bosses) |
 | `src/gf/data/status-effects.json` | All Godforge status effects (105 effects) |
 | `src/gf/components/GfHeroBox.tsx` | Godforge hero card with corner attribute icons |
 | `src/gf/components/GfHeroGrid.tsx` | Godforge hero grid with sort/filter |
@@ -144,6 +156,8 @@ Separately, a build-ordering fact that remains true regardless: `generateStaticP
 | `src/dcdl/lib/tier-rows.ts` | Tier rows/columns + row assignment (HR / F2P / New Players) |
 | `app/api/admin/roles/route.ts` | Application review + role management |
 | `scripts/pull-tiers.mjs` | Fold live official tiers back into heros.json/legacy.json |
+| `scripts/sync-dcdl-kits.mjs` | Refresh DCDL champion/legacy/Combat Cycle kit text from the game-data export |
+| `app/api/admin/pipeline/route.ts` | Whitelisted game-data pipeline jobs for the admin Game Data tab |
 | `docs/CREATOR-PROGRAM.md` | Creator Program setup + role matrix |
 | `src/dcdl/components/admin/ContentEditor.tsx` | On-site content editor UI (`/admin/content`) |
 | `app/api/admin/content/*/route.ts` | Clerk-gated CRUD + image upload for CMS content |
@@ -152,3 +166,6 @@ Separately, a build-ordering fact that remains true regardless: `generateStaticP
 | `docs/CONTENT-CMS-SETUP.md` | One-time Supabase/Clerk setup steps for the CMS |
 | `scripts/migrate-content.mjs` | One-time seed of CMS tables from existing files |
 | `public/ads.txt` | Google AdSense verification file |
+
+## Location note
+Moved from `C:\Users\tyler\quantum-guides` to `E:\Projects\quantum-guides` on 2026-10-09 during a cleanup of the user folder (to free space on C:). Nothing else changed; git remotes and history are intact. If GitHub Desktop or VS Code still lists the old path, re-point it here.

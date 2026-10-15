@@ -81,6 +81,7 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
   const isP2W = formData.get('isP2W') === 'true'
   const clearPreviousTier = formData.get('clearPreviousTier') === 'true'
   const quantumsTake = formData.get('quantumsTake') as string
+  const guideNotes = formData.get('guideNotes') as string
   const tagSynergies = formData.getAll('tagSynergies') as string[]
   const gameModes = formData.getAll('gameModes') as string[]
   const sources = formData.get('sourcesWhereAvailable') as string
@@ -190,6 +191,7 @@ async function handleSave(req: NextRequest, isEdit: boolean) {
     ...(transmute && { transmutePriorities: transmute.split('\n').map((s) => s.trim()).filter(Boolean) }),
     ...(legacyPieces.length > 0 && { recommendedLegacyPieces: legacyPieces }),
     ...(quantumsTake && { quantumsTake }),
+    ...(guideNotes && { guideNotes }),
     ...(imageHeadshot && { imageHeadshot }),
     ...(imageFull && { imageFull }),
     ...(ultimate && { ultimate }),

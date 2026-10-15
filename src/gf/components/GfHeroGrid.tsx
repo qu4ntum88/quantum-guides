@@ -5,7 +5,7 @@ import GfHeroBox, { type GfHero } from './GfHeroBox'
 import { STATUS_EFFECTS, extractEffectIds, EFFECT_COLOR, INSTANT_EFFECTS } from '../lib/statusEffects'
 
 const RARITIES   = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
-const AFFINITIES = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
+const AFFINITIES = ['Cunning', 'Strength', 'Valor', 'Wisdom', 'Wrath']
 const ALLEGIANCES = ['Chaos', 'Order']
 const ARCHETYPES = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer']
 const FACTIONS = ['Aaru', 'Asgard', 'Avalon', 'Ekur', 'Izumo', 'Olympus', 'Omeyocan', 'Tian', 'Vyraj']

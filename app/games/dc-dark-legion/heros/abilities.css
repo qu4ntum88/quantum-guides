@@ -232,6 +232,20 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* Per-rank values: each value follows a star in its rank's colour (White → Red),
+   so a reader can see which number applies at which rank without a separate chart. */
+.ak-tok--ranked {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.45rem;
+  color: #e5e7eb;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-variant-numeric: tabular-nums;
+}
+.ak-rk { white-space: nowrap; }
+.ak-rk__star { font-size: 0.85em; margin-right: 0.12rem; text-shadow: 0 0 6px currentColor; }
+
 /* Unfilled source values — quiet enough not to read as broken, visible
    enough to show which numbers aren't published yet. */
 .ak-tok--todo {

@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
 import synergiesJson from '@/src/dcdl/data/synergies.json'
+import GameDataPanel from '@/src/dcdl/components/admin/GameDataPanel'
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 const CLASSES = ['Assassin', 'Firepower', 'Guardian', 'Intimidator', 'Magical', 'Supporter', 'Warrior']
@@ -39,6 +40,15 @@ const WHALE_SKIP_OPTIONS = ['Top Tier', 'High Value', 'Situational / Roster Depe
 // ── Types ──────────────────────────────────────────────────────────────────────
 type SkillRow = { name: string; description: string; image: File | null }
 type ItemOption = { id: string; name: string; image?: string }
+// The in-game Strategy Guide for the champion being edited (read-only reference).
+type GameGuideRef = {
+  overview: string
+  legacyPieces: { name: string; reason: string | null; signature: boolean }[]
+  alternatives: { name: string }[]
+  champions: { name: string }[]
+  bestFor: string[]
+  recommendedStats: string[]
+}
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
 function toId(name: string) {
@@ -259,7 +269,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const [damageType, setDamageType] = useState(''); const [synergies, setSynergies] = useState<string[]>([])
   const [gameModes, setGameModes] = useState<string[]>([]); const [sources, setSources] = useState('')
   const [transmute, setTransmute] = useState(''); const [legacyPieces, setLegacyPieces] = useState<string[]>([])
-  const [quantumsTake, setQuantumsTake] = useState(''); const [headshotFile, setHeadshotFile] = useState<File | null>(null)
+  const [quantumsTake, setQuantumsTake] = useState(''); const [guideNotes, setGuideNotes] = useState(''); const [gameGuide, setGameGuide] = useState<GameGuideRef | null>(null); const [headshotFile, setHeadshotFile] = useState<File | null>(null)
   const [fullArtFile, setFullArtFile] = useState<File | null>(null); const [ultimateName, setUltimateName] = useState('')
   const [ultimateDesc, setUltimateDesc] = useState(''); const [ultimateImage, setUltimateImage] = useState<File | null>(null)
   const [globalSkillName, setGlobalSkillName] = useState(''); const [globalSkillDesc, setGlobalSkillDesc] = useState('')
@@ -279,7 +289,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
   const reset = useCallback(() => {
     setName(''); setId(''); setIdManual(false); setHeroClass(''); setRarity(''); setTier('')
     setDamageType(''); setSynergies([]); setGameModes([]); setSources(''); setTransmute('')
-    setLegacyPieces([]); setQuantumsTake(''); setHeadshotFile(null); setFullArtFile(null)
+    setLegacyPieces([]); setQuantumsTake(''); setGuideNotes(''); setGameGuide(null); setHeadshotFile(null); setFullArtFile(null)
     setUltimateName(''); setUltimateDesc(''); setUltimateImage(null)
     setGlobalSkillName(''); setGlobalSkillDesc(''); setGlobalSkillImage(null)
     setSkills([]); setUpgrades([]); setExistingImages({}); setSelectedId('')
@@ -299,7 +309,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     setSynergies(h.tagSynergies ?? []); setGameModes(h.gameModes ?? [])
     setSources((h.sourcesWhereAvailable ?? []).join('\n'))
     setTransmute((h.transmutePriorities ?? []).join('\n'))
-    setLegacyPieces(h.recommendedLegacyPieces ?? []); setQuantumsTake(h.quantumsTake ?? '')
+    setLegacyPieces(h.recommendedLegacyPieces ?? []); setQuantumsTake(h.quantumsTake ?? ''); setGuideNotes(h.guideNotes ?? ''); setGameGuide(h.gameGuide ?? null)
     setUltimateName(h.ultimate?.name ?? ''); setUltimateDesc(h.ultimate?.description ?? '')
     setGlobalSkillName(h.globalSkill?.name ?? ''); setGlobalSkillDesc(h.globalSkill?.description ?? '')
     setSkills((h.skills ?? []).map((s: { name: string; description: string }) => ({ name: s.name, description: s.description, image: null })))
@@ -332,6 +342,7 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
     if (clearPrevTier) fd.append('clearPreviousTier', 'true')
     if (damageType) fd.append('damageType', damageType)
     if (quantumsTake) fd.append('quantumsTake', quantumsTake)
+    if (guideNotes) fd.append('guideNotes', guideNotes)
     synergies.forEach((s) => fd.append('tagSynergies', s))
     gameModes.forEach((m) => fd.append('gameModes', m))
     if (sources) fd.append('sourcesWhereAvailable', sources)
@@ -569,6 +580,30 @@ function ChampionForm({ legacyOptions, onRefreshHeroes }: { legacyOptions: ItemO
           <div style={secTitle}>{"Quantum's Take"}</div>
           <Field label="Analysis">
             <textarea style={{ ...inp, minHeight: '9rem', resize: 'vertical' }} value={quantumsTake} onChange={(e) => setQuantumsTake(e.target.value)} placeholder="Your analysis of this champion..." />
+          </Field>
+        </div>
+
+        <div style={sec}>
+          <div style={secTitle}>In-game Strategy Guide</div>
+          {gameGuide ? (
+            <div style={{ fontSize: '0.82rem', color: '#bbb', lineHeight: 1.55, display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '0.75rem' }}>
+              <div>{gameGuide.overview.replace(/\*\*/g, '')}</div>
+              <div><strong style={{ color: '#ddd' }}>Stats:</strong> {gameGuide.recommendedStats.join(', ') || '—'} · <strong style={{ color: '#ddd' }}>Best for:</strong> {gameGuide.bestFor.join(', ') || '—'}</div>
+              <div>
+                <strong style={{ color: '#ddd' }}>Legacy:</strong>{' '}
+                {gameGuide.legacyPieces.map((p) => p.name + (p.signature ? ' (signature)' : '')).join(', ')}
+                {gameGuide.alternatives.length > 0 && <> · <strong style={{ color: '#ddd' }}>Alternatives:</strong> {gameGuide.alternatives.map((a) => a.name).join(', ')}</>}
+              </div>
+              {gameGuide.champions.length > 0 && <div><strong style={{ color: '#ddd' }}>Champions:</strong> {gameGuide.champions.map((c) => c.name).join(', ')}</div>}
+              <div style={{ color: '#888' }}>This is the game&apos;s guide, shown on the champion page in place of the hand-picked legacy list above. Add your context below.</div>
+            </div>
+          ) : (
+            <div style={{ fontSize: '0.82rem', color: '#888', marginBottom: '0.75rem' }}>
+              {selectedId ? 'The game has no Strategy Guide for this champion; the page keeps the hand-picked legacy list.' : 'Load a champion to see the game’s guide.'}
+            </div>
+          )}
+          <Field label="Quantum's notes on the guide">
+            <textarea style={{ ...inp, minHeight: '6rem', resize: 'vertical' }} value={guideNotes} onChange={(e) => setGuideNotes(e.target.value)} placeholder="Where you agree or disagree with the game's picks (supports **bold**, - lists, blank-line paragraphs)..." />
           </Field>
         </div>
 
@@ -2600,7 +2635,7 @@ function BestTeamsForm() {
 
 // ── Godforge Hero Form ─────────────────────────────────────────────────────────
 const GF_RARITIES    = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common']
-const GF_AFFINITIES  = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
+const GF_AFFINITIES  = ['Cunning', 'Strength', 'Valor', 'Wisdom', 'Wrath']
 const GF_ALLEGIANCES = ['Chaos', 'Order']
 const GF_ARCHETYPES  = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer']
 const GF_FACTIONS    = ['AARU', 'ASGARD', 'AVALON', 'EKUR', 'IZUMO', 'OLYMPUS', 'OMEYOCAN', 'TIAN', 'VYRAJ']
@@ -3629,7 +3664,7 @@ function CombatCycleForm() {
 }
 
 // ── Root page ──────────────────────────────────────────────────────────────────
-type Game = 'dcdl' | 'vh' | 'gf'
+type Game = 'dcdl' | 'vh' | 'gf' | 'data'
 type DcdlTab = 'champions' | 'legacy' | 'tier-ranking' | 'info' | 'guides' | 'best-teams' | 'supreme-commander' | 'infographics' | 'combat-cycle'
 type VhTab = 'hunters' | 'status-effects'
 type GfTab = 'heroes' | 'tier-ranking' | 'dungeons'
@@ -3698,7 +3733,10 @@ export default function AdminDCDLPage() {
           <button type="button" style={gameTabStyle('dcdl')} onClick={() => setGame('dcdl')}>DC: Dark Legion</button>
           <button type="button" style={gameTabStyle('vh')} onClick={() => setGame('vh')}>Void Hunters</button>
           <button type="button" style={gameTabStyle('gf')} onClick={() => setGame('gf')}>Godforge</button>
+          <button type="button" style={gameTabStyle('data')} onClick={() => setGame('data')}>Game Data</button>
         </div>
+
+        {game === 'data' && <GameDataPanel />}
 
         {/* DCDL sub-tabs */}
         {game === 'dcdl' && (

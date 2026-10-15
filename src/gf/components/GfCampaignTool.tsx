@@ -6,7 +6,7 @@ import { STORY_CHAPTERS, ADVENTURE_CHAPTERS, type ChapterData, type StageData, t
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
-const AFFINITIES  = ['Cunning', 'Eternal', 'Strength', 'Wisdom']
+const AFFINITIES  = ['Cunning', 'Strength', 'Valor', 'Wisdom', 'Wrath']
 const ALLEGIANCES = ['Chaos', 'Order']
 const ARCHETYPES  = ['Brawler', 'Defender', 'Disruptor', 'Invoker', 'Slayer']
 const FACTIONS    = ['Aaru', 'Asgard', 'Avalon', 'Ekur', 'Izumo', 'Olympus', 'Omeyocan', 'Tian', 'Vyraj']
