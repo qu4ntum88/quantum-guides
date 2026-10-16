@@ -16,8 +16,10 @@ export const OG_CONTENT_TYPE = 'image/png'
 const GOLD = '#CCA453'
 const BG = 'linear-gradient(135deg, #120c1f 0%, #1c1330 45%, #2a1c48 100%)'
 
-// Paths stay statically scoped (fonts folder, public/) so the bundler traces only those
-// folders rather than the whole project.
+// Every share image is prerendered at build time, so these files are never read by the
+// deployed functions. Reading public/ with a computed path makes the bundler pack the WHOLE
+// folder (1.3 GB) into each route, past Vercel's 250 MB limit — `outputFileTracingExcludes`
+// in next.config.js strips it. Add any new route that imports this file there too.
 const font = (file: string) => fs.readFileSync(path.join(process.cwd(), 'src/assets/fonts', file))
 
 const fonts = () => [

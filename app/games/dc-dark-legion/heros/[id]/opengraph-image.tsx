@@ -5,6 +5,8 @@ import { renderCard, renderLogoCard, publicImage, OG_SIZE, OG_CONTENT_TYPE } fro
 export const size = OG_SIZE
 export const contentType = OG_CONTENT_TYPE
 export const alt = 'DC: Dark Legion champion on Quantum Game Guides'
+// Prerendered only: the source files aren't shipped with the function (see src/lib/og.tsx).
+export const dynamicParams = false
 
 export function generateStaticParams() {
   return getResolvedHeros().map((h) => ({ id: h.id }))
