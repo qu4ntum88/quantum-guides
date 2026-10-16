@@ -26,8 +26,8 @@ A repeatable checklist for keeping the site climbing in Google. Most of it lives
    - **Position 1–5 with low CTR (under ~3%)** = people see you but don't click. Rewrite that page's title or description to be more specific, for example with the month, a champion name, or a number.
    - **A search you rank for with no page built for it** = an idea for a new guide.
 2. **Tier list updates.** If you changed the champion or legacy tiers this week, request indexing for:
-   - https://www.quantumgameguides.com/games/dc-dark-legion
-   - https://www.quantumgameguides.com/games/dc-dark-legion/legacy
+   - https://www.quantumgameguides.com/games/dc-dark-legion/champion-tier-list
+   - https://www.quantumgameguides.com/games/dc-dark-legion/legacy-tier-list
 3. **New guide published?** Request indexing for its URL, which is shown in `/admin/content`. Give it a real one-to-two sentence **description**, because that is what Google shows under the link.
 4. **Share links to specific pages, not just the homepage**, in Discord, Reddit and your YouTube descriptions/pinned comments. For example, link the champion page in a video about that champion. Links from other sites are still one of Google's strongest ranking signals.
 
@@ -89,8 +89,8 @@ Every game hub gets the same skeleton as DC: Dark Legion, because that page set 
 | Page | URL pattern | Target searches | Title pattern |
 |---|---|---|---|
 | Hub | `/games/<game>/guides` | "<game> guide", "<game> beginner guide" | `<Game> Guides & Tools` |
-| Tier list | `/games/<game>/tier-list` (or the database with a tier view) | "<game> tier list", "<game> best heroes" | `<Game> Tier List (Month Year): All Heroes Ranked` |
-| Hero database | `/games/<game>/heroes` | "<game> heroes list", "<game> characters" | `<Game> Hero Database` |
+| Tier list | `/games/<game>/<hero-word>-tier-list` — the hero database with a Tier List / Grid toggle, like DCDL's `champion-tier-list` | "<game> tier list", "<game> best heroes" | `<Game> Tier List (Month Year): All Heroes Ranked` |
+| Hero database | Same page as the tier list (its Grid view): mention "database" / "all heroes" in the description so it ranks for both | "<game> heroes list", "<game> characters" | (shares the tier list title) |
 | One page per hero | `/games/<game>/heroes/<id>` | "<hero> <game>", "<hero> build", "<hero> guide" | `<Hero>: <Game> Build, Skills & Tier` |
 | Best teams | `/games/<game>/best-teams` | "<game> best team", "<game> team comp" | `Best Teams in <Game>: Top Team Comps` |
 | Status effects / glossary | `/games/<game>/status-effects` | "<game> buffs and debuffs", "<effect> <game>" | `<Game> Status Effects: Every Buff & Debuff` |
@@ -129,8 +129,8 @@ Request these once after a major deploy, about 10 a day, top to bottom. Day 1 is
 
 **Day 1 — hubs and tier lists**
 1. https://www.quantumgameguides.com/
-2. https://www.quantumgameguides.com/games/dc-dark-legion
-3. https://www.quantumgameguides.com/games/dc-dark-legion/legacy
+2. https://www.quantumgameguides.com/games/dc-dark-legion/champion-tier-list
+3. https://www.quantumgameguides.com/games/dc-dark-legion/legacy-tier-list
 4. https://www.quantumgameguides.com/games/dc-dark-legion/best-teams
 5. https://www.quantumgameguides.com/games/dc-dark-legion/combat-cycle
 6. https://www.quantumgameguides.com/games/dc-dark-legion/guides

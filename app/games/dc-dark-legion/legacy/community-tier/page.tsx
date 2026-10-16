@@ -25,7 +25,7 @@ export default function LegacyCommunityTierPage() {
           <p style={{ color: '#cccccc', marginTop: '0.75rem' }}>
             Community votes for all DC: Dark Legion legacy pieces. Sign in to cast your vote.
           </p>
-          <Link href="/games/dc-dark-legion/legacy" style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginTop: '0.5rem' }}>
+          <Link href="/games/dc-dark-legion/legacy-tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem', display: 'inline-block', marginTop: '0.5rem' }}>
             ← Back to Legacy Pieces
           </Link>
         </div>

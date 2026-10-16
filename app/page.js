@@ -12,8 +12,8 @@ export const metadata = pageMeta({
 
 // Direct links from the homepage to the pages people search for most.
 const POPULAR = [
-  { label: 'Champion Tier List', href: '/games/dc-dark-legion' },
-  { label: 'Legacy Tier List', href: '/games/dc-dark-legion/legacy' },
+  { label: 'Champion Tier List', href: '/games/dc-dark-legion/champion-tier-list' },
+  { label: 'Legacy Tier List', href: '/games/dc-dark-legion/legacy-tier-list' },
   { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
   { label: 'Combat Cycle Bosses', href: '/games/dc-dark-legion/combat-cycle' },
   { label: 'Gotham Planner', href: '/games/dc-dark-legion/ship-combat-guides' },

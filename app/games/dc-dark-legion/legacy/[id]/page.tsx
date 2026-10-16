@@ -16,6 +16,7 @@ import './legacy-page.css'
 export const dynamicParams = false
 
 const BASE = '/games/dc-dark-legion/legacy'
+const LIST = '/games/dc-dark-legion/legacy-tier-list'
 const PLACEHOLDER = '/dcdl/heros/headshot_images/_placeholder.png'
 
 export function generateStaticParams() {
@@ -113,12 +114,12 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
 
   return (
     <main className="lgp-page">
-      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Legacy Tier List', BASE], [piece.name, path_]])} />
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Legacy Tier List', LIST], [piece.name, path_]])} />
       <div className="container lgp-wrap">
         <nav className="lgp-crumbs" aria-label="Breadcrumb">
           <Link href="/games/dc-dark-legion/guides">DC: Dark Legion</Link>
           <span aria-hidden="true">›</span>
-          <Link href={BASE}>Legacy Tier List</Link>
+          <Link href={LIST}>Legacy Tier List</Link>
           <span aria-hidden="true">›</span>
           <span aria-current="page">{piece.name}</span>
         </nav>
@@ -130,7 +131,7 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
             footer={
               <footer className="ld-foot">
                 <Link href={`${BASE}/community-tier#${piece.id}`}>Community tier votes →</Link>
-                <Link href={BASE}>Full legacy tier list →</Link>
+                <Link href={LIST}>Full legacy tier list →</Link>
               </footer>
             }
           />

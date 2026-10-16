@@ -3,8 +3,8 @@
 import { usePathname } from 'next/navigation'
 
 const links = [
-  { label: 'Champions', href: '/games/dc-dark-legion' },
-  { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
+  { label: 'Champions', href: '/games/dc-dark-legion/champion-tier-list' },
+  { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy-tier-list' },
   { label: 'Mementos', href: '/games/dc-dark-legion/mementos' },
   { label: 'Guides', href: '/games/dc-dark-legion/guides' },
 ]
@@ -40,9 +40,7 @@ export default function DCDLSidebar() {
         DC: Dark Legion
       </div>
       {links.map(({ label, href }) => {
-        const isActive = href === '/games/dc-dark-legion'
-          ? pathname === href
-          : pathname.startsWith(href)
+        const isActive = pathname.startsWith(href)
         return (
           <a
             key={href}

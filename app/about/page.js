@@ -109,7 +109,7 @@ export default async function About() {
               <p>
                 Browse the full champion roster with synergies, faction tags, and community tier ratings built from real player votes. Explore legacy pieces, use the interactive Gotham battle map for ship combat planning, and check the live community tier list.
               </p>
-              <a href="/games/dc-dark-legion" className="overview-link">Explore DCDL →</a>
+              <a href="/games/dc-dark-legion/guides" className="overview-link">Explore DCDL →</a>
             </div>
             <div className="game-overview-card">
               <h3>Void Hunters</h3>

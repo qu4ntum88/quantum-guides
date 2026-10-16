@@ -96,7 +96,7 @@ export default async function CommunityTierListPage({ params }: Params) {
           <p style={{ marginTop: '1rem', fontSize: '0.75rem', color: '#888', fontStyle: 'italic', lineHeight: 1.6 }}>
             This ranking is the opinion of {list.creatorName}, a Quantum Game Guides{' '}
             {isLegacy ? 'contributor' : 'contributor'} — not the site&rsquo;s official list. See{' '}
-            <Link href={isLegacy ? '/games/dc-dark-legion/legacy?view=tier' : '/games/dc-dark-legion?view=tier'} style={{ color: 'var(--gold)', fontStyle: 'normal' }}>
+            <Link href={isLegacy ? '/games/dc-dark-legion/legacy-tier-list?view=tier' : '/games/dc-dark-legion/champion-tier-list?view=tier'} style={{ color: 'var(--gold)', fontStyle: 'normal' }}>
               Quantum&rsquo;s tier list
             </Link>{' '}for that.
           </p>

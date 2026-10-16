@@ -93,7 +93,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
 
   return (
     <main>
-      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Champion Tier List', '/games/dc-dark-legion'], [hero.name, `/games/dc-dark-legion/heros/${hero.id}`]])} />
+      <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Champion Tier List', '/games/dc-dark-legion/champion-tier-list'], [hero.name, `/games/dc-dark-legion/heros/${hero.id}`]])} />
       {/* Full-art background */}
       {hero.imageFull && (
         <div
@@ -116,7 +116,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           <a href={`/games/dc-dark-legion/heros/${prevHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
             ← {prevHero.name.split('(')[0].trim()}
           </a>
-          <a href="/games/dc-dark-legion" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Champion List</a>
+          <a href="/games/dc-dark-legion/champion-tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Champion List</a>
           <a href={`/games/dc-dark-legion/heros/${nextHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
             {nextHero.name.split('(')[0].trim()} →
           </a>
@@ -288,7 +288,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
           <a href={`/games/dc-dark-legion/heros/${prevHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
             ← {prevHero.name.split('(')[0].trim()}
           </a>
-          <a href="/games/dc-dark-legion" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Champion List</a>
+          <a href="/games/dc-dark-legion/champion-tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Champion List</a>
           <a href={`/games/dc-dark-legion/heros/${nextHero.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
             {nextHero.name.split('(')[0].trim()} →
           </a>

@@ -2289,7 +2289,7 @@ export default function ShipCombatGuidesPage() {
           <p className="gh-hero-sub">Plan your Gotham deployment — place league bases, group them by squad, and export a battle-ready layout.</p>
           <div className="gh-hero-divider" />
           <div className="gh-hero-back">
-            <a href="/games/dc-dark-legion" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>← Champion List</a>
+            <a href="/games/dc-dark-legion/champion-tier-list" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>← Champion List</a>
           </div>
         </div>
       </section>

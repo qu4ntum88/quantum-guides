@@ -3,12 +3,12 @@ import { getOfficialHeros, getOfficialTiersUpdatedAt, TIERS } from '@/src/dcdl/l
 import HeroGrid from '@/src/dcdl/components/HeroGrid'
 import JsonLd from '@/app/components/JsonLd'
 import { pageMeta, monthYear, breadcrumbLd, itemListLd, DCDL_CRUMB } from '@/src/lib/seo'
-import '../godforge/game.css'
+import '../../godforge/game.css'
 
 // Official tiers are read from Supabase, so pick up Studio edits within a minute.
 export const revalidate = 60
 
-const PATH = '/games/dc-dark-legion'
+const PATH = '/games/dc-dark-legion/champion-tier-list'
 
 // The month in the title tracks the last tier change, so searchers can see the
 // list is current. `?view=` variants all canonicalise to the bare URL.

@@ -18,8 +18,8 @@ const ALL_NAV_ITEMS = [
     label: 'DC: Dark Legion',
     href: '/games/dc-dark-legion/guides',
     children: [
-      { label: 'Champions', href: '/games/dc-dark-legion' },
-      { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy' },
+      { label: 'Champions', href: '/games/dc-dark-legion/champion-tier-list' },
+      { label: 'Legacy Pieces', href: '/games/dc-dark-legion/legacy-tier-list' },
       { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
       { label: 'Supreme Commander', href: '/games/dc-dark-legion/supreme-commander' },
       { label: 'Combat Cycle Guide', href: '/games/dc-dark-legion/combat-cycle' },

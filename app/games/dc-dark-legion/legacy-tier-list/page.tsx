@@ -9,7 +9,7 @@ import '../../godforge/game.css'
 // Official tiers are read from Supabase, so pick up Studio edits within a minute.
 export const revalidate = 60
 
-const PATH = '/games/dc-dark-legion/legacy'
+const PATH = '/games/dc-dark-legion/legacy-tier-list'
 
 export async function generateMetadata() {
   const savedAt = await getOfficialTiersUpdatedAt()
@@ -36,7 +36,7 @@ export default async function LegacyPage() {
       <JsonLd
         data={[
           breadcrumbLd([DCDL_CRUMB, ['Legacy Tier List', PATH]]),
-          itemListLd('DC: Dark Legion Legacy Tier List', ranked.map((l) => ({ name: l.name, path: `${PATH}/${l.id}` }))),
+          itemListLd('DC: Dark Legion Legacy Tier List', ranked.map((l) => ({ name: l.name, path: `/games/dc-dark-legion/legacy/${l.id}` }))),
         ]}
       />
       <section className="gh-hero" style={{ '--game-accent': '#4f8ef7' } as React.CSSProperties}>
