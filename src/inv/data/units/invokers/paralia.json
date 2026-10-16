@@ -1,0 +1,555 @@
+{
+ "slug": "paralia",
+ "kind": "Invoker",
+ "name": "Paralia",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/paralia/portrait.webp",
+ "fullArt": "/invokers/units/invokers/paralia/full.webp",
+ "stats": {
+  "base": {
+   "Health": "550",
+   "Attack": "55",
+   "Defense": "50",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "120"
+  },
+  "max": {
+   "Health": "6,905",
+   "Attack": "680",
+   "Defense": "570",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "145"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/paralia/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 45.5% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 38 damage.\nDamage: 69% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.2% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 73.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 51% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 77.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 55.5% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 84.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 51 damage.\nDamage: 92.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 99.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 71% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 107.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 75.5% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 114.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 81% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 68 damage.\nDamage: 122.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 85.5% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 71 damage.\nDamage: 129.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 91% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 76 damage.\nDamage: 138% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Righteous Thrust",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/paralia/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Staggering Justice",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/paralia/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+61",
+    "titan": "+33"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Casts a [Stun] debuff on the target, lasting 2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 135% ATK\n#2 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 79 damage per hit. Casts a [Stun] debuff on the target, lasting 2.2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 143.1% ATK\n#2 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 83 damage per hit. Casts a [Stun] debuff on the target, lasting 2.2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 151.2% ATK\n#2 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 91 damage per hit. Casts a [Stun] debuff on the target, lasting 2.4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 164.7% ATK\n#2 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 99 damage per hit. Casts a [Stun] debuff on the target, lasting 2.4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 180.9% ATK\n#2 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 107 damage per hit. Casts a [Stun] debuff on the target, lasting 2.6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 194.4% ATK\n#2 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 116 damage per hit. Casts a [Stun] debuff on the target, lasting 2.6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 210.6% ATK\n#2 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 123 damage per hit. Casts a [Stun] debuff on the target, lasting 2.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 224.1% ATK\n#2 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 132 damage per hit. Casts a [Stun] debuff on the target, lasting 2.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 240.3% ATK\n#2 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 140 damage per hit. Casts a [Stun] debuff on the target, lasting 3s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 253.8% ATK\n#2 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 149 damage per hit. Casts a [Stun] debuff on the target, lasting 3s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 270% ATK\n#2 Damage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Protector's Lament",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/paralia/skills/3.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 272.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 288.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 168 damage. Casts a [25% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 305.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Casts a [25% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 332.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 201 damage. Casts a [25% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 365.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 216 damage. Casts a [25% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 392.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Casts a [25% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 425.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 249 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 452.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 267 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 485% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 282 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 512.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 300 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 14s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 545% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Royal Recourse",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/paralia/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 128 damage. Launches the targets for 3.1s.\nAccuracy required for: Launch\n#1 Damage: 232.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 136 damage. Launches the targets for 3.3s.\nAccuracy required for: Launch\n#1 Damage: 246.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 143 damage. Launches the targets for 3.3s.\nAccuracy required for: Launch\n#1 Damage: 260.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 156 damage. Launches the targets for 3.6s.\nAccuracy required for: Launch\n#1 Damage: 283.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 171 damage. Launches the targets for 3.6s.\nAccuracy required for: Launch\n#1 Damage: 311.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 184 damage. Launches the targets for 3.9s.\nAccuracy required for: Launch\n#1 Damage: 334.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 199 damage. Launches the targets for 4.4s.\nAccuracy required for: Launch\n#1 Damage: 362.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 212 damage. Launches the targets for 4.4s.\nAccuracy required for: Launch\n#1 Damage: 386% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 228 damage. Launches the targets for 4.7s.\nAccuracy required for: Launch\n#1 Damage: 413.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 240 damage. Launches the targets for 5s.\nAccuracy required for: Launch\n#1 Damage: 437.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy, dealing 256 damage. Launches the targets for 5s.\nAccuracy required for: Launch\n#1 Damage: 465% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Paralia fought to join the Royal Guard all her life, but on the cusp of success, she was betrayed by her dearest friend. Cast out and disgraced, Paralia still managed to uncover a plot against the royal family, and she alone swept in to save them at the last moment. Now, they name her hero.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "D",
+  "omnissi-dark": "C",
+  "omnissi-earth": "D",
+  "omnissi-fire": "D",
+  "omnissi-light": "D",
+  "omnissi-water": "D",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "D",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 17,
+  "lists": 16
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "id": 48,
+ "slug": "isis",
+ "name": "Isis",
+ "title": "Divine Mother",
+ "summary": "Bring your team back from the afterlife and bless them with buffs!",
+ "lore": "Isis is healer, protector, teacher, and sorceress. She prefers to remain uninvolved in the War of Pyramids, instead picking up the slack across Aaru where many of her fellow gods are distracted by the ongoing conflict. She has begun to hear Destiny’s calls, though so far she remains equally allied to Destiny and Order both, rather than choosing one over the other.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Isis.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Isis_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 60,
+  "def": 92,
+  "spd": 109,
+  "init": 99,
+  "acc": 15,
+  "res": 50,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Steal Buff will ignore the target's RES.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also, place [Mend] on all allies for 3 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "After reviving place [Immortal] on all allies for 2 turns.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Theft of Thebes",
+   "description": "Attack 1 enemy 320%ATK with a 35% chance to steal a random Buff, then spread the Buff to all allies.",
+   "icon_url": "/godforge/abilities/isis/ICON_Isis_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "320%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Steal Buff will ignore the target's RES.",
+     "upgrade_description": "Steal Buff will ignore the target's RES."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Ankh Haven",
+   "description": "Place [Shield] 20%HP on all allies then place [DEF Up II] on all allies for 3 turns. This hero gains an Extra Turn.",
+   "icon_url": "/godforge/abilities/isis/ICON_Isis_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also, place Mend on all allies for 3 turns.",
+     "upgrade_description": "Also, place [Mend] on all allies for 3 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "50 RES in All Battles",
+   "icon_url": "/godforge/abilities/isis/ICON_Leader_Resistance.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Mother's Embrace",
+   "description": "At the start of this hero’s turn, remove all Debuffs and Disables from the ally with the lowest HP, then heal 10%HP them.",
+   "icon_url": "/godforge/abilities/isis/ICON_Isis_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Divine Intervention",
+   "description": "Revive all allies with 50% HP and 50% Turn Meter. If Horus is revived by this ability, place [Radiance II] on him for 2 turns.",
+   "icon_url": "/godforge/abilities/isis/ICON_Isis_Ultimate.webp",
+   "divinity_cost": 3725,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Immortal",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "After reviving place Immortal on all allies for 2 turns.",
+     "upgrade_description": "After reviving place [Immortal] on all allies for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Mother's Embrace",
+   "description": "At the start of this hero’s turn, remove all Debuffs and Disables from the ally with the lowest HP, then heal 5%HP them.",
+   "icon_url": "/godforge/abilities/isis/ICON_Isis_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

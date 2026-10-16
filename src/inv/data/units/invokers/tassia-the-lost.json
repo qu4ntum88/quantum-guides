@@ -1,0 +1,582 @@
+{
+ "slug": "tassia-the-lost",
+ "kind": "Invoker",
+ "name": "Tassia the Lost",
+ "faction": "Freeborn",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/tassia-the-lost/portrait.webp",
+ "fullArt": "/invokers/units/invokers/tassia-the-lost/full.webp",
+ "stats": {
+  "base": {
+   "Health": "1,032",
+   "Attack": "78",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "102"
+  },
+  "max": {
+   "Health": "11,060",
+   "Attack": "953",
+   "Defense": "741",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "132"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tassia-the-lost/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+101",
+    "titan": "+55"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 16% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 21% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 26.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage. Shortens the duration of 1 random buff on the targets by 0.5s.\nAccuracy required for: Buff Duration Shortening\nDamage: 15% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 17% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 22.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 28.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage. Shortens the duration of 1 random buff on the targets by 0.6s.\nAccuracy required for: Buff Duration Shortening\nDamage: 15.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 17.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 23.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 29.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Shortens the duration of 1 random buff on the targets by 0.6s.\nAccuracy required for: Buff Duration Shortening\nDamage: 16.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 11% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 19.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 25.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 32.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Shortens the duration of 1 random buff on the targets by 0.7s.\nAccuracy required for: Buff Duration Shortening\nDamage: 18.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 12.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 21.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 35.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 16 damage. Shortens the duration of 1 random buff on the targets by 0.7s.\nAccuracy required for: Buff Duration Shortening\nDamage: 20.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 13% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 23% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 30.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 38.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage. Shortens the duration of 1 random buff on the targets by 0.8s.\nAccuracy required for: Buff Duration Shortening\nDamage: 21.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 14% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 25% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 32.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 41.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage. Shortens the duration of 1 random buff on the targets by 0.8s.\nAccuracy required for: Buff Duration Shortening\nDamage: 23.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 14.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 26.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 34.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 44% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage. Shortens the duration of 1 random buff on the targets by 0.9s.\nAccuracy required for: Buff Duration Shortening\nDamage: 24.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 16% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 28.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 37.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 47.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage. Shortens the duration of 1 random buff on the targets by 0.9s.\nAccuracy required for: Buff Duration Shortening\nDamage: 26.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 30.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 39.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 49.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage. Shortens the duration of 1 random buff on the targets by 1s.\nAccuracy required for: Buff Duration Shortening\nDamage: 28.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 18% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 32% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 42% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 53% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 23 damage. Shortens the duration of up to 2 random buffs on the targets by 1s.\nAccuracy required for: Buff Duration Shortening\nDamage: 30% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Seasick",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tassia-the-lost/skills/1.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+53",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [6% Combo SPD Down] debuff on 1 enemy, lasting 3s. Attacks the target from a distance of 9m, dealing 75 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 96.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [7% Combo SPD Down] debuff on 1 enemy, lasting 3s. Attacks the target from a distance of 9m, dealing 80 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 102.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [7% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target from a distance of 9m, dealing 84 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 108.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target from a distance of 9m, dealing 92 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 117.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 4.5s. Attacks the target from a distance of 9m, dealing 101 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 129.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [9% Combo SPD Down] debuff on 1 enemy, lasting 4.5s. Attacks the target from a distance of 9m, dealing 108 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 139% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [9% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target from a distance of 9m, dealing 117 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 150.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [11% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target from a distance of 9m, dealing 125 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 160.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target from a distance of 9m, dealing 134 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 171.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 6s. Attacks the target from a distance of 9m, dealing 142 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 181.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [13% Combo SPD Down] debuff on 1 enemy, lasting 6s. Attacks the target from a distance of 9m, dealing 151 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 193% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Watchful Eye",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tassia-the-lost/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+78",
+    "titan": "+42"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 234 HP. Removes a random debuff from the target.\n#1 Heal: 300% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 234 HP. Removes a random debuff from the target.\n#1 Heal: 300% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 273 HP. Removes a random debuff from the target.\n#1 Heal: 350% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "18s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 273 HP. Removes a random debuff from the target.\n#1 Heal: 350% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "17s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 273 HP. Removes a random debuff from the target.\n#1 Heal: 350% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "17s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 273 HP. Removes 2 random debuffs from the target.\n#1 Heal: 350% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "16s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 273 HP. Removes 2 random debuffs from the target.\n#1 Heal: 350% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "16s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 312 HP. Removes 2 random debuffs from the target.\n#1 Heal: 400% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 312 HP. Removes 2 random debuffs from the target.\n#1 Heal: 400% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 390 HP. Removes 2 random debuffs from the target.\n#1 Heal: 500% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "13s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 468 HP. Removes 2 random debuffs from the target.\n#1 Heal: 600% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Thalassic Terror",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tassia-the-lost/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Shock",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 125% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+100",
+    "titan": "+55"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 80 damage. Casts a [25% ATK Down] debuff on the targets, lasting 8s. Then, casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 102.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 85 damage. Casts a [30% ATK Down] debuff on the targets, lasting 8s. Then, casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 108.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 90 damage. Casts a [35% ATK Down] debuff on the targets, lasting 9s. Then, casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 114.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 98 damage. Casts a [35% ATK Down] debuff on the targets, lasting 10s. Then, casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 125.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 107 damage. Casts a [35% ATK Down] debuff on the targets, lasting 11s. Then, casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 137.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 115 damage. Casts a [35% ATK Down] debuff on the targets, lasting 11s. Then, casts a [Shock] debuff on the targets, lasting 5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 147.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 125 damage. Casts a [35% ATK Down] debuff on the targets, lasting 12s. Then, casts a [Shock] debuff on the targets, lasting 5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 159.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 133 damage. Casts a [40% ATK Down] debuff on the targets, lasting 12s. Then, casts a [Shock] debuff on the targets, lasting 5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 170.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 142 damage. Casts a [40% ATK Down] debuff on the targets, lasting 13s. Then, casts a [Shock] debuff on the targets, lasting 5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 182.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 150 damage. Casts a [40% ATK Down] debuff on the targets, lasting 14s. Then, casts a [Shock] debuff on the targets, lasting 6s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 192.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 9m, dealing 160 damage. Casts a [45% ATK Down] debuff on the targets, lasting 14s. Then, casts a [Shock] debuff on the targets, lasting 6s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: ATK Down, Shock\n#1 Damage: 205% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Blinding Storm",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tassia-the-lost/skills/4.webp",
+   "effects": [
+    {
+     "label": "Blind",
+     "group": "Debuffs",
+     "description": "The recipient has a percentage chance to miss their Combo Attacks, and not deal any damage. Combo Attacks that are missed do not generate any Mana for the attacker. Miss chance stacks along with any Miss chance from other sources, such as from skills."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 60 damage per hit. The first hit launches the targets for 5s. Then, casts a [10% Blind] debuff on the targets, lasting 12s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Launch, Blind\n#1 Damage: 76.5% ATK\n#2 Damage: 76.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 63 damage per hit. The first hit launches the targets for 5.8s. Then, casts a [10% Blind] debuff on the targets, lasting 12s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Launch, Blind\n#1 Damage: 81.1% ATK\n#2 Damage: 81.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 67 damage per hit. The first hit launches the targets for 5.8s. Then, casts a [12% Blind] debuff on the targets, lasting 12s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Launch, Blind\n#1 Damage: 85.7% ATK\n#2 Damage: 85.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 73 damage per hit. The first hit launches the targets for 6.3s. Then, casts a [12% Blind] debuff on the targets, lasting 14s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Launch, Blind\n#1 Damage: 93.3% ATK\n#2 Damage: 93.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 80 damage per hit. The first hit launches the targets for 6.3s. Then, casts a [14% Blind] debuff on the targets, lasting 14s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Launch, Blind\n#1 Damage: 102.5% ATK\n#2 Damage: 102.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 86 damage per hit. The first hit launches the targets for 6.8s. Then, casts a [14% Blind] debuff on the targets, lasting 14s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Revives the 1 dead allies with 30% HP.\nAccuracy required for: Launch, Blind\n#1 Damage: 110.2% ATK\n#2 Damage: 110.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 93 damage per hit. The first hit launches the targets for 6.8s. Then, casts a [16% Blind] debuff on the targets, lasting 14s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Revives the 1 dead allies with 30% HP.\nAccuracy required for: Launch, Blind\n#1 Damage: 119.3% ATK\n#2 Damage: 119.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 99 damage per hit. The first hit launches the targets for 6.8s. Then, casts a [16% Blind] debuff on the targets, lasting 14s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Revives the 1 dead allies with 30% HP.\nAccuracy required for: Launch, Blind\n#1 Damage: 127% ATK\n#2 Damage: 127% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 106 damage per hit. The first hit launches the targets for 7.8s. Then, casts a [18% Blind] debuff on the targets, lasting 14s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Revives the 1 dead allies with 30% HP.\nAccuracy required for: Launch, Blind\n#1 Damage: 136.2% ATK\n#2 Damage: 136.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 112 damage per hit. The first hit launches the targets for 7.8s. Then, casts a [18% Blind] debuff on the targets, lasting 18s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Revives the 1 dead allies with 30% HP.\nAccuracy required for: Launch, Blind\n#1 Damage: 143.8% ATK\n#2 Damage: 143.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 10 enemies in a 14m radius, from a distance of 9m, 2 times, dealing 119 damage per hit. The first hit launches the targets for 9s. Then, casts a [18% Blind] debuff on the targets, lasting 18s, on the second hit, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Revives the 1 dead allies with 30% HP.\nAccuracy required for: Launch, Blind\n#1 Damage: 153% ATK\n#2 Damage: 153% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Tassia, before she was “the Lost”, was a master navigator and stormbreaker. But betrayal, shipwreck, and terrible adversity would transform her: now Tassia is a peerless weather-witch… and she carries a real thirst for vengeance.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "S",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "E",
+  "omnissi-light": "S+",
+  "omnissi-water": "E",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "E",
+  "ulgorim": "S+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 55.4,
+  "lists": 16
+ }
+}

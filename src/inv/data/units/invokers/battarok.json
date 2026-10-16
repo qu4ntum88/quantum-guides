@@ -1,0 +1,565 @@
+{
+ "slug": "battarok",
+ "kind": "Invoker",
+ "name": "Battarok",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": "Tank",
+ "element": "Earth",
+ "soulSign": "Sign of Actia",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/battarok/portrait.webp",
+ "fullArt": "/invokers/units/invokers/battarok/full.webp",
+ "stats": {
+  "base": {
+   "Health": "693",
+   "Attack": "23",
+   "Defense": "67",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "108"
+  },
+  "max": {
+   "Health": "8,606",
+   "Attack": "264",
+   "Defense": "845",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "148"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/battarok/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 12.5% ATK + 9% DEF\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 21.5% ATK + 14% DEF\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 27% ATK + 18.5% DEF\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 33.5% ATK + 23% DEF\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 42% ATK + 28% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 13.2% ATK + 9.5% DEF\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 22.8% ATK + 14.8% DEF\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 28.6% ATK + 19.6% DEF\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 35.5% ATK + 24.4% DEF\n#5 Attacks 1 enemy, dealing 30 damage.\nDamage: 44.5% ATK + 29.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 14% ATK + 10.1% DEF\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 24.1% ATK + 15.7% DEF\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 30.2% ATK + 20.7% DEF\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 37.5% ATK + 25.8% DEF\n#5 Attacks 1 enemy, dealing 32 damage.\nDamage: 47% ATK + 31.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 15.2% ATK + 11% DEF\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 26.2% ATK + 17.1% DEF\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 32.9% ATK + 22.6% DEF\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 40.9% ATK + 28.1% DEF\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 51.2% ATK + 34.2% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 16.8% ATK + 12.1% DEF\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 28.8% ATK + 18.8% DEF\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 36.2% ATK + 24.8% DEF\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 44.9% ATK + 30.8% DEF\n#5 Attacks 1 enemy, dealing 38 damage.\nDamage: 56.3% ATK + 37.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 18% ATK + 13% DEF\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 31% ATK + 20.2% DEF\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 38.9% ATK + 26.6% DEF\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 48.2% ATK + 33.1% DEF\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 60.5% ATK + 40.3% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 19.5% ATK + 14% DEF\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 33.5% ATK + 21.8% DEF\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 42.1% ATK + 28.9% DEF\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 52.3% ATK + 35.9% DEF\n#5 Attacks 1 enemy, dealing 44 damage.\nDamage: 65.5% ATK + 43.7% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 20.8% ATK + 14.9% DEF\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 35.7% ATK + 23.2% DEF\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 44.8% ATK + 30.7% DEF\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 55.6% ATK + 38.2% DEF\n#5 Attacks 1 enemy, dealing 47 damage.\nDamage: 69.7% ATK + 46.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 22.2% ATK + 16% DEF\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 38.3% ATK + 24.9% DEF\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 48.1% ATK + 32.9% DEF\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 59.6% ATK + 40.9% DEF\n#5 Attacks 1 enemy, dealing 51 damage.\nDamage: 74.8% ATK + 49.8% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 23.5% ATK + 16.9% DEF\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 40.4% ATK + 26.3% DEF\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 50.8% ATK + 34.8% DEF\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 63% ATK + 43.2% DEF\n#5 Attacks 1 enemy, dealing 53 damage.\nDamage: 79% ATK + 52.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 25% ATK + 18% DEF\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 43% ATK + 28% DEF\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 54% ATK + 37% DEF\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 67% ATK + 46% DEF\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 84% ATK + 56% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Ghostly Jackhammer",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/battarok/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 56 damage.\n#1 Damage: 82.5% ATK + 55% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 59 damage.\n#1 Damage: 87.4% ATK + 58.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 63 damage.\n#1 Damage: 92.4% ATK + 61.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 68 damage.\n#1 Damage: 100.7% ATK + 67.1% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 75 damage.\n#1 Damage: 110.6% ATK + 73.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 118.8% ATK + 79.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage.\n#1 Damage: 128.7% ATK + 85.8% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 93 damage.\n#1 Damage: 136.9% ATK + 91.3% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 99 damage.\n#1 Damage: 146.8% ATK + 97.9% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 155.1% ATK + 103.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 112 damage.\n#1 Damage: 165% ATK + 110% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Ghostgranite Piledrive",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/battarok/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage. \nHeals Battarok, restoring (10% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 170% ATK + 112.5% DEF\n#2 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage. \nHeals Battarok, restoring (10% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 180.2% ATK + 119.2% DEF\n#2 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 128 damage. \nHeals Battarok, restoring (12% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 190.4% ATK + 126% DEF\n#2 Heal: 12% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage. \nHeals Battarok, restoring (12% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 207.4% ATK + 137.2% DEF\n#2 Heal: 12% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 153 damage. \nHeals Battarok, restoring (12% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 227.8% ATK + 150.8% DEF\n#2 Heal: 12% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 165 damage. \nHeals Battarok, restoring (14% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 244.8% ATK + 162% DEF\n#2 Heal: 14% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 179 damage. \nHeals Battarok, restoring (14% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 265.2% ATK + 175.5% DEF\n#2 Heal: 14% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 190 damage. \nHeals Battarok, restoring (16% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 282.2% ATK + 186.8% DEF\n#2 Heal: 16% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 204 damage. \nHeals Battarok, restoring (16% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 302.6% ATK + 200.2% DEF\n#2 Heal: 16% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 215 damage. \nHeals Battarok, restoring (18% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 319.6% ATK + 211.5% DEF\n#2 Heal: 18% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 229 damage. \nHeals Battarok, restoring (20% * Damage Dealt) HP, if the target has no buffs.\n#1 Damage: 340% ATK + 225% DEF\n#2 Heal: 20% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Haunted Landslide",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/battarok/skills/3.webp",
+   "effects": [
+    {
+     "label": "Jinx",
+     "group": "Debuffs",
+     "description": "Blocks Buffs from being applied to the recipient.Jinx Buffs will not block Control Buffs, and each Jinx buff will only negate a single Buff before expiring. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+54",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 58 damage. Casts a [Jinx] debuff on the targets, lasting 9s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 85% ATK + 57.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 62 damage. Casts a [Jinx] debuff on the targets, lasting 9s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 90.1% ATK + 60.9% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 65 damage. Casts a [Jinx] debuff on the targets, lasting 9s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 95.2% ATK + 64.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 71 damage. Casts a [Jinx] debuff on the targets, lasting 10s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 103.7% ATK + 70.2% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 78 damage. Casts a [Jinx] debuff on the targets, lasting 10s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 113.9% ATK + 77.1% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 84 damage. Casts a [Jinx] debuff on the targets, lasting 11s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 122.4% ATK + 82.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 91 damage. Casts a [Jinx] debuff on the targets, lasting 11s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 132.6% ATK + 89.7% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 96 damage. Casts a [Jinx] debuff on the targets, lasting 12s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 141.1% ATK + 95.4% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 103 damage. Casts a [Jinx] debuff on the targets, lasting 12s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 151.3% ATK + 102.3% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 109 damage. Casts a [Jinx] debuff on the targets, lasting 13s, blocking them from receiving 2 buffs.\nAccuracy required for: Jinx\n#1 Damage: 159.8% ATK + 108.1% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6x10m area in front of Battarok, dealing 116 damage. Casts a [Jinx] debuff on the targets, lasting 13s, blocking them from receiving 3 buffs.\nAccuracy required for: Jinx\n#1 Damage: 170% ATK + 115% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Revenant Crush",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/battarok/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Skill SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Skill Speed stat by the indicated percentage."
+    },
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 63 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [15% DEF Down] debuff on the target, lasting 10s, on the second hit. \nCasts a [10% Skill SPD Down] debuff on the target, lasting 10s, on the third hit. \nEach hit damage increases by 30% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 92.5% ATK + 62.5% DEF\n#2 Damage: 92.5% ATK + 62.5% DEF\n#3 Damage: 92.5% ATK + 62.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 67 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [15% DEF Down] debuff on the target, lasting 10s, on the second hit. \nCasts a [10% Skill SPD Down] debuff on the target, lasting 10s, on the third hit. \nEach hit damage increases by 30% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 98% ATK + 66.2% DEF\n#2 Damage: 98% ATK + 66.2% DEF\n#3 Damage: 98% ATK + 66.2% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 71 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [15% DEF Down] debuff on the target, lasting 11s, on the second hit. \nCasts a [10% Skill SPD Down] debuff on the target, lasting 11s, on the third hit. \nEach hit damage increases by 40% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 103.6% ATK + 70% DEF\n#2 Damage: 103.6% ATK + 70% DEF\n#3 Damage: 103.6% ATK + 70% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 77 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [20% DEF Down] debuff on the target, lasting 11s, on the second hit. \nCasts a [12% Skill SPD Down] debuff on the target, lasting 11s, on the third hit. \nEach hit damage increases by 40% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 112.9% ATK + 76.2% DEF\n#2 Damage: 112.9% ATK + 76.2% DEF\n#3 Damage: 112.9% ATK + 76.2% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 85 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [20% DEF Down] debuff on the target, lasting 11s, on the second hit. \nCasts a [12% Skill SPD Down] debuff on the target, lasting 11s, on the third hit. \nEach hit damage increases by 40% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 124% ATK + 83.8% DEF\n#2 Damage: 124% ATK + 83.8% DEF\n#3 Damage: 124% ATK + 83.8% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 91 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [20% DEF Down] debuff on the target, lasting 13s, on the second hit. \nCasts a [12% Skill SPD Down] debuff on the target, lasting 13s, on the third hit. \nEach hit damage increases by 55% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 133.2% ATK + 90% DEF\n#2 Damage: 133.2% ATK + 90% DEF\n#3 Damage: 133.2% ATK + 90% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 99 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [25% DEF Down] debuff on the target, lasting 13s, on the second hit. \nCasts a [12% Skill SPD Down] debuff on the target, lasting 13s, on the third hit. \nEach hit damage increases by 55% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 144.3% ATK + 97.5% DEF\n#2 Damage: 144.3% ATK + 97.5% DEF\n#3 Damage: 144.3% ATK + 97.5% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 105 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [25% DEF Down] debuff on the target, lasting 13s, on the second hit. \nCasts a [12% Skill SPD Down] debuff on the target, lasting 13s, on the third hit. \nEach hit damage increases by 55% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 153.6% ATK + 103.8% DEF\n#2 Damage: 153.6% ATK + 103.8% DEF\n#3 Damage: 153.6% ATK + 103.8% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 112 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [25% DEF Down] debuff on the target, lasting 15s, on the second hit. \nCasts a [12% Skill SPD Down] debuff on the target, lasting 15s, on the third hit. \nEach hit damage increases by 55% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 164.6% ATK + 111.2% DEF\n#2 Damage: 164.6% ATK + 111.2% DEF\n#3 Damage: 164.6% ATK + 111.2% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 119 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [25% DEF Down] debuff on the target, lasting 15s, on the second hit. \nCasts a [15% Skill SPD Down] debuff on the target, lasting 15s, on the third hit. \nEach hit damage increases by 55% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 173.9% ATK + 117.5% DEF\n#2 Damage: 173.9% ATK + 117.5% DEF\n#3 Damage: 173.9% ATK + 117.5% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 126 damage per hit. \nThe first hit casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nCasts a [25% DEF Down] debuff on the target, lasting 15s, on the second hit. \nCasts a [15% Skill SPD Down] debuff on the target, lasting 15s, on the third hit. \nEach hit damage increases by 75% if the target is immune to Crowd Control debuffs.\nAccuracy required for: Stun, DEF Down, Skill SPD Down\n#1 Damage: 185% ATK + 125% DEF\n#2 Damage: 185% ATK + 125% DEF\n#3 Damage: 185% ATK + 125% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Battarok didn't become a mighty Invoker by doing great deeds. He did it by collecting mushrooms. Well, and smashing a cabal of necromancer ghosts with a magic pillar. He hasn’t really stopped the ghost-smashing, and now that stone pillar has a whole lot of ghosts in it. It suits Battarok just fine.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "D",
+  "hyxxis": "A",
+  "koltmos": "D",
+  "omnissi-astral": "C",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "D",
+  "omnissi-light": "D",
+  "omnissi-water": "D",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "C",
+  "sorgott": "D",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 23.2,
+  "lists": 16
+ }
+}

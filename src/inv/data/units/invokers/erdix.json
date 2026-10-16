@@ -1,0 +1,565 @@
+{
+ "slug": "erdix",
+ "kind": "Invoker",
+ "name": "Erdix",
+ "faction": "Eldrin",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/erdix/portrait.webp",
+ "fullArt": "/invokers/units/invokers/erdix/full.webp",
+ "stats": {
+  "base": {
+   "Health": "864",
+   "Attack": "95",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "110"
+  },
+  "max": {
+   "Health": "9,331",
+   "Attack": "1,142",
+   "Defense": "747",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "110"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/erdix/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 25.5% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 39.5% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 49.5% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 62.5% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 38 damage. Shortens the duration of 1 random buff on the targets by 0.5s.\nAccuracy required for: Buff Duration Shortening\nDamage: 40% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 27% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 41.9% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 66.2% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 40 damage. Shortens the duration of 1 random buff on the targets by 0.6s.\nAccuracy required for: Buff Duration Shortening\nDamage: 42.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 28.6% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 44.2% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 55.4% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 70% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 43 damage. Shortens the duration of 1 random buff on the targets by 0.7s.\nAccuracy required for: Buff Duration Shortening\nDamage: 44.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 31.1% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 60.4% ATK\n#4 Attacks 1 enemy, dealing 72 damage.\nDamage: 76.2% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 46 damage. Shortens the duration of 1 random buff on the targets by 0.8s.\nAccuracy required for: Buff Duration Shortening\nDamage: 48.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 34.2% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 52.9% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy, dealing 80 damage.\nDamage: 83.8% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 51 damage. Shortens the duration of 1 random buff on the targets by 0.9s.\nAccuracy required for: Buff Duration Shortening\nDamage: 53.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 56.9% ATK\n#3 Attacks 1 enemy, dealing 68 damage.\nDamage: 71.3% ATK\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 90% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 55 damage. Shortens the duration of 1 random buff on the targets by 1s.\nAccuracy required for: Buff Duration Shortening\nDamage: 57.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 59 damage.\nDamage: 61.6% ATK\n#3 Attacks 1 enemy, dealing 73 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy, dealing 93 damage.\nDamage: 97.5% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 59 damage. Shortens the duration of 1 random buff on the targets by 1.1s.\nAccuracy required for: Buff Duration Shortening\nDamage: 62.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 62 damage.\nDamage: 65.6% ATK\n#3 Attacks 1 enemy, dealing 78 damage.\nDamage: 82.2% ATK\n#4 Attacks 1 enemy, dealing 99 damage.\nDamage: 103.8% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 63 damage. Shortens the duration of 1 random buff on the targets by 1.2s.\nAccuracy required for: Buff Duration Shortening\nDamage: 66.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 45.4% ATK\n#2 Attacks 1 enemy, dealing 67 damage.\nDamage: 70.3% ATK\n#3 Attacks 1 enemy, dealing 84 damage.\nDamage: 88.1% ATK\n#4 Attacks 1 enemy, dealing 106 damage.\nDamage: 111.2% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 68 damage. Shortens the duration of 1 random buff on the targets by 1.3s.\nAccuracy required for: Buff Duration Shortening\nDamage: 71.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 46 damage.\nDamage: 47.9% ATK\n#2 Attacks 1 enemy, dealing 71 damage.\nDamage: 74.3% ATK\n#3 Attacks 1 enemy, dealing 88 damage.\nDamage: 93.1% ATK\n#4 Attacks 1 enemy, dealing 112 damage.\nDamage: 117.5% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 71 damage. Shortens the duration of 1 random buff on the targets by 1.4s.\nAccuracy required for: Buff Duration Shortening\nDamage: 75.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 48 damage.\nDamage: 51% ATK\n#2 Attacks 1 enemy, dealing 75 damage.\nDamage: 79% ATK\n#3 Attacks 1 enemy, dealing 94 damage.\nDamage: 99% ATK\n#4 Attacks 1 enemy, dealing 119 damage.\nDamage: 125% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 76 damage. Shortens the duration of up to 2 random buffs on the targets by 1.5s.\nAccuracy required for: Buff Duration Shortening\nDamage: 80% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Umbra Slash",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/erdix/skills/1.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Casts a [30% ACC Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 77.5% ATK\n#2 Damage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 78 damage per hit. Casts a [35% ACC Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 82.1% ATK\n#2 Damage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 82 damage per hit. Casts a [40% ACC Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 86.8% ATK\n#2 Damage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 90 damage per hit. Casts a [40% ACC Down] debuff on the target, lasting 4.5s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 94.6% ATK\n#2 Damage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 99 damage per hit. Casts a [45% ACC Down] debuff on the target, lasting 4.5s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 103.8% ATK\n#2 Damage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 106 damage per hit. Casts a [45% ACC Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 111.6% ATK\n#2 Damage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 115 damage per hit. Casts a [50% ACC Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 120.9% ATK\n#2 Damage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 122 damage per hit. Casts a [50% ACC Down] debuff on the target, lasting 5.5s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 128.6% ATK\n#2 Damage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 131 damage per hit. Casts a [50% ACC Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 137.9% ATK\n#2 Damage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 138 damage per hit. Casts a [55% ACC Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 145.7% ATK\n#2 Damage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 147 damage per hit. Casts a [60% ACC Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: ACC Down\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shadow Arcs",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/erdix/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 150 damage. Erdix gains 7 Ultimate Mana. \nErdix gains 15 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 157.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 159 damage. Erdix gains 8 Ultimate Mana. \nErdix gains 17 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 166.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 168 damage. Erdix gains 8 Ultimate Mana. \nErdix gains 17 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 176.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 183 damage. Erdix gains 9 Ultimate Mana. \nErdix gains 19 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 192.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 200 damage. Erdix gains 9 Ultimate Mana. \nErdix gains 19 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 211.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 215 damage. Erdix gains 10 Ultimate Mana. \nErdix gains 21 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 226.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 233 damage. Erdix gains 10 Ultimate Mana. \nErdix gains 21 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 245.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 248 damage. Erdix gains 11 Ultimate Mana. \nErdix gains 23 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 261.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 266 damage. Erdix gains 11 Ultimate Mana. \nErdix gains 23 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 280.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 281 damage. Erdix gains 12 Ultimate Mana. \nErdix gains 25 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 296.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m semicircle in front of Erdix, dealing 299 damage. Erdix gains 12 Ultimate Mana. \nErdix gains 25 Ultimate Mana if the hit lands as a critical hit instead.\n#1 Damage: 315% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Assassin Flip",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/erdix/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+42",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 157 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 4s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 165% ATK\n#2 Damage: 165% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 166 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 4.5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 174.9% ATK\n#2 Damage: 174.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 176 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 4.5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 184.8% ATK\n#2 Damage: 184.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 191 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 201.3% ATK\n#2 Damage: 201.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 210 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 221.1% ATK\n#2 Damage: 221.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 226 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 237.6% ATK\n#2 Damage: 237.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 245 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 5.5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 257.4% ATK\n#2 Damage: 257.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 260 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 5.5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 273.9% ATK\n#2 Damage: 273.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 279 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 5.5s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 293.7% ATK\n#2 Damage: 293.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 295 damage per hit. Transfers a random debuff to the target. \nTransfers a random debuff to 1 enemy, increasing its duration by 6s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 310.2% ATK\n#2 Damage: 310.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 313 damage per hit. Transfers 2 random debuffs to the target. \nTransfers 2 random debuffs to 1 enemy, increasing their duration by 6s if the hit lands as a critical hit instead.\nAccuracy required for: Debuff Transfer\n#1 Damage: 330% ATK\n#2 Damage: 330% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shredderglaive",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/erdix/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 50 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 1s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 53% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 53 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 1.25s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 56.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 56 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 1.5s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 59.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 61 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 1.75s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 64.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 67 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 1.75s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 71% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 73 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 2s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 76.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 79 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 2.25s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 82.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 84 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 2.25s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 88% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 90 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 2.5s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 94.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 95 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 3s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 99.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 10 times, dealing 101 damage per hit. Steals a random buff from the target 10 times. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Erdix by 3s as well.\nAccuracy required for: Buff Steal\n#1 Damage: 106% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "As High Prince Malkanis' spymaster, any information on Erdix is highly classified. His assignments are top secret, any details of his private life or family connections have been expunged from the Emerald Kingdom's archives, even his name might be fake. On paper, he might as well not exist. All that is publicly known is that if you're on Erdix's hitlist, your fate is sealed.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "A+",
+  "hyxxis": "E",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "S",
+  "omnissi-earth": "E",
+  "omnissi-fire": "S",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "E",
+  "ulgorim": "A+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 61.6,
+  "lists": 16
+ }
+}

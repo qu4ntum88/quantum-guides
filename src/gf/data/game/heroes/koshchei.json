@@ -1,0 +1,265 @@
+{
+ "id": 202,
+ "slug": "koshchei",
+ "name": "Koshchei",
+ "title": "Soulbound Enchanter",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Already called “Deathless” for the spells that prolong his life, the sorcerer Koshchei seeks not only greater power but true immortality. He has engaged in conspiracy with Morgan Le Fay of Avalon. If successful, they would reshape the flow of aether itself to their liking—and never mind that it would cost the lives of not merely innocent mortals, but any number of gods.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Koshchei.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Koshchei_main.png",
+ "stats": {
+  "hp": 1185,
+  "atk": 69,
+  "def": 83,
+  "spd": 101,
+  "init": 100,
+  "acc": 35,
+  "res": 20,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "At the start of this hero’s turn, reduce each enemy’s ATK and DEF by 5% (up to 4 times) which remains active whilst this hero is alive.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If the target is under RES Down or FTH Down, increase their Core ability Cooldown by 2 turns and place [Lock Ultimate] for 1 turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Consume the Soul",
+   "description": "Attack 1 enemy 350%ATK with a 75% chance to steal 10% of the target’s Divinity.",
+   "icon_url": "/godforge/abilities/koshchei/ICON_Koshchei_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "350%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Soul Nullification",
+   "description": "Attack all enemies 285%ATK with a 50% chance to place [RES Down II] and [FTH Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/koshchei/ICON_Koshchei_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "RES Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Withering Aura",
+   "description": "Enemies under RES Down or FTH Down inflict 20% less damage when attacking this hero or allies.",
+   "icon_url": "/godforge/abilities/koshchei/ICON_Koshchei_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "At the start of this hero’s turn, reduce each enemy’s ATK and DEF by 5% (up to 4 times) which remains active whilst this hero is alive.",
+     "upgrade_description": "At the start of this hero’s turn, reduce each enemy’s ATK and DEF by 5% (up to 4 times) which remains active whilst this hero is alive."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Immortal Siphon",
+   "description": "Attack 1 enemy 500%ATK. Equalize the HP of all allies equal to the HP of the enemy before attacking. If the target HP falls below 50% HP, also reduce their Divinity by 30%.",
+   "icon_url": "/godforge/abilities/koshchei/ICON_Koshchei_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "500%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Lock Ultimate",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If the target is under RES Down or FTH Down, increase their Core ability Cooldown by 2 turns and place Lock Ultimate for 1 turn.",
+     "upgrade_description": "If the target is under RES Down or FTH Down, increase their Core ability Cooldown by 2 turns and place [Lock Ultimate] for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Withering Aura",
+   "description": "Enemies under RES Down or FTH Down inflict 10% less damage when attacking this hero.",
+   "icon_url": "/godforge/abilities/koshchei/ICON_Koshchei_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

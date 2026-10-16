@@ -1,0 +1,295 @@
+{
+ "id": 213,
+ "slug": "apollo",
+ "name": "Apollo",
+ "title": "Light of Olympus",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A deity of broad influence—light and the sun, art and poetry, song and prophecy, archery and disease—Apollo has become a vital element of Olympus’s diplomatic efforts. He is considered most likely to find common ground with, or at least charm, neighboring pantheons, while also being able to spot danger in advance and to defend himself if negotiations go sour.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Apollo.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Apollo_main.png",
+ "stats": {
+  "hp": 1515,
+  "atk": 58,
+  "def": 95,
+  "spd": 107,
+  "init": 100,
+  "acc": 15,
+  "res": 45,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Placing [Acid] cannot be resisted.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increase the ally’s Turn Meter by 15% after using their Core Ability.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When an ally’s Divinity is Equalized, their next attack will ignore 15% DEF.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Twin Arrows of Delphi",
+   "description": "Attack 1 enemy 185%ATK 2 times. The first hit places [Mend] on all allies for 1 turn. The second hit has a 50% chance to place [Acid] on the target for 2 turns. If Artemis is an ally, she will join in the attack.",
+   "icon_url": "/godforge/abilities/apollo/ICON_Apollo_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "185%ATK",
+    "185%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Placing Acid cannot be resisted.",
+     "upgrade_description": "Placing [Acid] cannot be resisted."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Solar Mandate",
+   "description": "Attack 1 enemy480%ATK then place [ATK Up II] on all allies for 2 turns. Also, equalize the Divinity of the ally with the lowest Divinity to this hero’s Divinity. If Artemis is an ally, also equalize her Divinity.",
+   "icon_url": "/godforge/abilities/apollo/ICON_Apollo_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "480%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When an ally’s Divinity is Equalized, their next attack will ignore 15% DEF.",
+     "upgrade_description": "When an ally’s Divinity is Equalized, their next attack will ignore 15% DEF."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Prophetic Wisdom",
+   "description": "Whenever an ally uses a Core Ability, increases the damage of their Core Ability by 10%. Stacks resets on each wave.",
+   "icon_url": "/godforge/abilities/apollo/ICON_Apollo_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increase the ally’s Turn Meter by 15% after using their Core Ability.",
+     "upgrade_description": "Also increase the ally’s Turn Meter by 15% after using their Core Ability."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Equinox of Purity and Rot",
+   "description": "Attack all enemies 275%ATK. Reduce the cooldown of each ally Core Ability by 1 turn. For each ally under [Mend], increase their Divinity by 15%. For each enemy under [Acid], decrease their Divinity by 15%.",
+   "icon_url": "/godforge/abilities/apollo/ICON_Apollo_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "275%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Prophetic Wisdom",
+   "description": "Whenever an ally uses a Core Ability, increases the damage of their Core Ability by 5%. Stacks resets on each wave",
+   "icon_url": "/godforge/abilities/apollo/ICON_Apollo_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

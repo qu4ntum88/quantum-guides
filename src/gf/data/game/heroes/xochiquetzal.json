@@ -1,0 +1,275 @@
+{
+ "id": 128,
+ "slug": "xochiquetzal",
+ "name": "Xochiquetzal",
+ "title": "Feather Blossom",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Goddess of love, beauty, and the arts, Xochiquetzal attempted to use her charms to entice the mortals and gods of other realms into following the ways of Omeyocan. When most reacted with horror—for Xochiquetzal is no less reliant on mass sacrifice than her brethren—she retreated home, a new and unfamiliar sense of resentment for outsiders now smoldering in her breast.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Xochiquetzal.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Xochiquetzal_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 54,
+  "def": 86,
+  "spd": 106,
+  "init": 93,
+  "acc": 10,
+  "res": 35,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increase this hero's Shielding and Healing by 2% (stacking up to 10 times).",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase 2 random Buff instead.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Rite of Petals",
+   "description": "Attack 1 enemy 170%ATK 2 times. Each hit has a 40% chance to increase the duration of 1 random Buff on all allies by 1 turn.",
+   "icon_url": "/godforge/abilities/xochiquetzal/ICON_Xochiquetzal_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "170%ATK",
+    "170%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase 2 random Buff instead.",
+     "upgrade_description": "Increase 2 random Buff instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Grove of the Raingod",
+   "description": "Attack all enemies 255%ATK, then place [ATK Up II] on all allies for 2 turns. If Tlaloc is an ally, increase Tlaloc's Turn Meter by 20%.",
+   "icon_url": "/godforge/abilities/xochiquetzal/ICON_Xochiquetzal_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "255%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Floral Growth",
+   "description": "When this hero places a Buff on an ally, heal 6%HP that ally. If the ally is at full HP, place a [Shield] 10%HP on that ally instead.",
+   "icon_url": "/godforge/abilities/xochiquetzal/ICON_Xochiquetzal_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increase this hero's Shielding and Healing by 2% (stacking up to 10 times).",
+     "upgrade_description": "Also increase this hero's Shielding and Healing by 2% (stacking up to 10 times)."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Marriage of Storms",
+   "description": "Attack all enemies 255%ATK, then place Block Debuff and [ACC Up II] on all allies for 2 turns. If Tlaloc is an ally, place [Immortal] on Tlaloc for 2 turns.",
+   "icon_url": "/godforge/abilities/xochiquetzal/ICON_Xochiquetzal_Ultimate.webp",
+   "divinity_cost": 2875,
+   "damage_formula": [
+    "255%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ACC Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Immortal",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Floral Growth",
+   "description": "When this hero places a Buff on an ally, heal 5%HP that ally. If the ally is at full HP, place a [Shield] 5%HP on that ally instead.",
+   "icon_url": "/godforge/abilities/xochiquetzal/ICON_Xochiquetzal_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

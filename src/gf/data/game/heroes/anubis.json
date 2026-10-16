@@ -1,0 +1,314 @@
+{
+ "id": 1,
+ "slug": "anubis",
+ "name": "Anubis",
+ "title": "Shepherd of Shadows",
+ "summary": "Balance the scales as you defeat your foes and drain their Turn Meter and Divinity.",
+ "lore": "Guide to the dead of Aaru and guardian of the underworld’s gates, Anubis has always been a grim deity, but he grew ever more distant in the years preceding the Shattering. Yet he seems, peculiarly, to have regained a new sense of purpose since the world was remade, though it is one that often keeps him traveling, away from his sacred duties.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Anubis.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Anubis_main.png",
+ "stats": {
+  "hp": 1650,
+  "atk": 94,
+  "def": 96,
+  "spd": 94,
+  "init": 96,
+  "acc": 30,
+  "res": 55,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If an enemy is defeated, Decrease the cooldown of this ability by 1 turn.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If the enemy is defeated, also steal 20% Divinity from all enemies.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If the hero is an enemy, place [Banish] for 1 turn. If the hero is an ally, gain 200 Divinity.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Soul Guide",
+   "description": "Attack 1 enemy 5%HP+75%ATK. Place [Vanish] on the ally with the lowest Current HP for 1 turn.",
+   "icon_url": "/godforge/abilities/anubis/ICON_Anubis_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+75%ATK",
+    "5%HP+75%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If the enemy is defeated, also steal 20% Divinity from all enemies.",
+     "upgrade_description": "If the enemy is defeated, also steal 20% Divinity from all enemies."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Embalming Blast",
+   "description": "Place [DEF Up II] on all allies for 2 turns and [Protect II] on all allies except this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/anubis/ICON_Anubis_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If an enemy is defeated, Decrease the cooldown of this ability by 1 turn.",
+     "upgrade_description": "If an enemy is defeated, Decrease the cooldown of this ability by 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "28% DEF in All Battles",
+   "icon_url": "/godforge/abilities/anubis/ICON_Leader_Health.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Weigh the Scales",
+   "description": "For every 10% Divinity on this hero, reduce incoming damage to allies by 3%.",
+   "icon_url": "/godforge/abilities/anubis/ICON_Anubis_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If the hero is an enemy, place Banish for 1 turn. If the hero is an ally, gain 200 Divinity.",
+     "upgrade_description": "If the hero is an enemy, place [Banish] for 1 turn. If the hero is an ally, gain 200 Divinity."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Tomb Watcher",
+   "description": "Place [Phoenix] on all allies for 2 turns, then all allies except this hero attack 1 target enemy. Heal each ally under [Protect II] for 30% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/anubis/ICON_Anubis_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Weigh the Scales",
+   "description": "For every 10% Divinity on this hero, reduce incoming damage to this hero by 1.5%.",
+   "icon_url": "/godforge/abilities/anubis/ICON_Anubis_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

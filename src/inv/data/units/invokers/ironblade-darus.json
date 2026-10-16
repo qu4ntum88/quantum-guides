@@ -1,0 +1,555 @@
+{
+ "slug": "ironblade-darus",
+ "kind": "Invoker",
+ "name": "Ironblade Darus",
+ "faction": "Lightseekers",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/ironblade-darus/portrait.webp",
+ "fullArt": "/invokers/units/invokers/ironblade-darus/full.webp",
+ "stats": {
+  "base": {
+   "Health": "320",
+   "Attack": "36",
+   "Defense": "32",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "4,115",
+   "Attack": "528",
+   "Defense": "402",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "136"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ironblade-darus/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 20.5% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 31% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 42% ATK\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 52.5% ATK\n#5 Attacks 1 enemy, dealing 23 damage.\nDamage: 62.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 21.7% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 32.9% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 44.5% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 55.6% ATK\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 66.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 34.7% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 47% ATK\n#4 Attacks 1 enemy, dealing 21 damage.\nDamage: 58.8% ATK\n#5 Attacks 1 enemy, dealing 25 damage.\nDamage: 70% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 37.8% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 51.2% ATK\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 64% ATK\n#5 Attacks 1 enemy, dealing 27 damage.\nDamage: 76.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 41.5% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 56.3% ATK\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 70.3% ATK\n#5 Attacks 1 enemy, dealing 30 damage.\nDamage: 83.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 44.6% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 60.5% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 75.6% ATK\n#5 Attacks 1 enemy, dealing 32 damage.\nDamage: 90% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 32% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 48.4% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 81.9% ATK\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 97.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 34% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 51.5% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 69.7% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 87.1% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 103.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 55.2% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 74.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 93.4% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 111.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 38.5% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 58.3% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 79% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 98.7% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 117.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 41% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 62% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 84% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 105% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 125% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Iron Kick",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ironblade-darus/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 44 damage.\n#1 Damage: 122.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 47 damage.\n#1 Damage: 129.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 137.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 54 damage.\n#1 Damage: 149.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 59 damage.\n#1 Damage: 164.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 64 damage.\n#1 Damage: 176.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 69 damage.\n#1 Damage: 191.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 203.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 218.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage.\n#1 Damage: 230.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage.\n#1 Damage: 245% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Iron Swing",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ironblade-darus/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 45 damage.\n#1 Damage: 125% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 48 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 50 damage.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 55 damage.\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 60 damage.\n#1 Damage: 167.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 65 damage.\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 70 damage.\n#1 Damage: 195% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 75 damage.\n#1 Damage: 207.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 80 damage.\n#1 Damage: 222.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 85 damage.\n#1 Damage: 235% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 7 enemies in a 120°, 4m cone in front of Darus, dealing 90 damage.\n#1 Damage: 250% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Iron Wrath",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ironblade-darus/skills/3.webp",
+   "effects": [
+    {
+     "label": "Crit DMG Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Damage stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage. Casts a [10% Crit DMG Up] buff on Darus, lasting 5s, if the hit lands as a critical hit.\n#1 Damage: 255% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 97 damage. Casts a [11% Crit DMG Up] buff on Darus, lasting 5s, if the hit lands as a critical hit.\n#1 Damage: 270.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage. Casts a [12% Crit DMG Up] buff on Darus, lasting 5s, if the hit lands as a critical hit.\n#1 Damage: 285.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 112 damage. Casts a [13% Crit DMG Up] buff on Darus, lasting 5s, if the hit lands as a critical hit.\n#1 Damage: 311.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Casts a [14% Crit DMG Up] buff on Darus, lasting 5s, if the hit lands as a critical hit.\n#1 Damage: 341.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 132 damage. Casts a [15% Crit DMG Up] buff on Darus, lasting 5s, if the hit lands as a critical hit.\n#1 Damage: 367.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 143 damage. Casts a [16% Crit DMG Up] buff on Darus, lasting 6s, if the hit lands as a critical hit.\n#1 Damage: 397.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 152 damage. Casts a [16% Crit DMG Up] buff on Darus, lasting 6s, if the hit lands as a critical hit.\n#1 Damage: 423.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Casts a [16% Crit DMG Up] buff on Darus, lasting 7s, if the hit lands as a critical hit.\n#1 Damage: 453.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 173 damage. Casts a [17% Crit DMG Up] buff on Darus, lasting 7s, if the hit lands as a critical hit.\n#1 Damage: 479.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 184 damage. Casts a [17% Crit DMG Up] buff on Darus, lasting 8s, if the hit lands as a critical hit.\n#1 Damage: 510% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Iron Whirlwind",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ironblade-darus/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 82 damage. Casts a [13% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 227.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 87 damage. Casts a [13% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 241.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 92 damage. Casts a [14% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 254.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 100 damage. Casts a [14% DEF Down] debuff on the targets, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 277.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 110 damage. Casts a [14% DEF Down] debuff on the targets, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 304.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 118 damage. Casts a [15% DEF Down] debuff on the targets, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 128 damage. Casts a [15% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 354.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 136 damage. Casts a [16% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 377.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 146 damage. Casts a [16% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 405% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 154 damage. Casts a [18% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 427.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 7 enemies in a 3.5m radius around Darus, dealing 164 damage. Casts a [18% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 455% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "For most who become Lightseekers, the day they invoke their first Titan is the greatest day of their careers, earned after years of contemplation, commitment, and righteous action. For Darus, though, it wasn’t his greatest day: it was his first.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

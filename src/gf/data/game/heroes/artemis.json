@@ -1,0 +1,298 @@
+{
+ "id": 10,
+ "slug": "artemis",
+ "name": "Artemis",
+ "title": "Lunar Huntress",
+ "summary": "WIP",
+ "lore": "Mercurial Artemis is a goddess of contradictions: guardian of beasts, yet patron of hunters; goddess of the moon, though the moon is its own deity; chaste, yet associated with childbirth; protector, yet swift to curse mortals in anger; erratic, yet loyal to Order. Since the Shattering, even her priests and fellow gods are often uncertain what to expect of her.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/5017/6703/4397/Artemis.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/1917/7889/1045/2026-05-15_19_21_55-Artemis___Hero_Index___Godforge.png",
+ "stats": {
+  "hp": 1260,
+  "atk": 122,
+  "def": 94,
+  "spd": 101,
+  "init": 101,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If an ally is defeated, this hero’s next attack will inflict 100% increase damage.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Increase the Divinity by an additional 5% for each enemy defeated",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [Banish] on all defeated enemies for 1 turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Moonlight Union",
+   "description": "Attack 1 enemy 240%ATK 2 times. Has a 50% chance to place [DEF Down II] on the target for 2 turns. If Apollo is an ally, he will join in the attack.",
+   "icon_url": "/godforge/abilities/artemis/ICON_Artemis_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "240%ATK",
+    "240%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Lunar Barrage",
+   "description": "Attack all enemies 140%ATK 3 times. Increase this hero’s Divinity by 1% for each enemy hit.",
+   "icon_url": "/godforge/abilities/artemis/ICON_Artemis_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "140%ATK",
+    "140%ATK",
+    "140%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Increase the Divinity by an additional 5% for each enemy defeated",
+     "upgrade_description": "Increase the Divinity by an additional 5% for each enemy defeated"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% ATK in Dungeon Battles",
+   "icon_url": "/godforge/abilities/artemis/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Thrill of the Hunt",
+   "description": "After defeating an enemy, this hero’s next attack will inflict 50% increased damage.",
+   "icon_url": "/godforge/abilities/artemis/ICON_Artemis_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If an ally is defeated, this hero’s next attack will inflict 100% increase damage.",
+     "upgrade_description": "If an ally is defeated, this hero’s next attack will inflict 100% increase damage."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Wrath of the Wild",
+   "description": "Attack 1 enemy 620%ATK. Increase the damage inflicted by 10% for each defeated enemy.",
+   "icon_url": "/godforge/abilities/artemis/ICON_Artemis_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "620%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "AllEnemyDead",
+     "target_label": "AllEnemyDead",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place Banish on all defeated enemies for 1 turn.",
+     "upgrade_description": "Place [Banish] on all defeated enemies for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Thrill of the Hunt",
+   "description": "After defeating an enemy, this hero’s next attack will inflict 25% increased damage.",
+   "icon_url": "/godforge/abilities/artemis/ICON_Artemis_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,507 @@
+{
+ "slug": "reltalis",
+ "kind": "Titan",
+ "name": "Reltalis",
+ "faction": "Lightseekers",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/reltalis/portrait.webp",
+ "fullArt": "/invokers/units/titans/reltalis/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+590",
+   "Bonus ATK": "+92",
+   "Bonus DEF": "+59",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,546",
+   "Bonus ATK": "+553",
+   "Bonus DEF": "+355",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/titans/reltalis/skills/0.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 127 damage. Casts a [45% DEF Down] debuff on the target, lasting 5s.\nAccuracy required for: DEF Down\nDamage: 137.5% ATK\n#2 Attacks 1 enemy, dealing 64 damage, damage increases by 20% per debuff on the target.\n#1 Damage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 134 damage. Casts a [47% DEF Down] debuff on the target, lasting 5s.\nAccuracy required for: DEF Down\nDamage: 145.7% ATK\n#2 Attacks 1 enemy, dealing 68 damage, damage increases by 20% per debuff on the target.\n#1 Damage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 142 damage. Casts a [47% DEF Down] debuff on the target, lasting 6s.\nAccuracy required for: DEF Down\nDamage: 154% ATK\n#2 Attacks 1 enemy, dealing 72 damage, damage increases by 20% per debuff on the target.\n#1 Damage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 154 damage. Casts a [50% DEF Down] debuff on the target, lasting 6s.\nAccuracy required for: DEF Down\nDamage: 167.8% ATK\n#2 Attacks 1 enemy, dealing 79 damage, damage increases by 25% per debuff on the target.\n#1 Damage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 170 damage. Casts a [50% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 184.2% ATK\n#2 Attacks 1 enemy, dealing 86 damage, damage increases by 25% per debuff on the target.\n#1 Damage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 182 damage. Casts a [53% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 198% ATK\n#2 Attacks 1 enemy, dealing 93 damage, damage increases by 25% per debuff on the target.\n#1 Damage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 197 damage. Casts a [53% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 214.5% ATK\n#2 Attacks 1 enemy, dealing 100 damage, damage increases by 30% per debuff on the target.\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 210 damage. Casts a [56% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 228.2% ATK\n#2 Attacks 1 enemy, dealing 107 damage, damage increases by 30% per debuff on the target.\n#1 Damage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 225 damage. Casts a [56% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 244.8% ATK\n#2 Attacks 1 enemy, dealing 115 damage, damage increases by 40% per debuff on the target.\n#1 Damage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 238 damage. Casts a [56% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\nDamage: 258.5% ATK\n#2 Attacks 1 enemy, dealing 121 damage, damage increases by 40% per debuff on the target.\n#1 Damage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 253 damage. Casts a [60% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\nDamage: 275% ATK\n#2 Attacks 1 enemy, dealing 129 damage, damage increases by 40% per debuff on the target.\n#1 Damage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sanction of Haste",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/reltalis/skills/1.webp",
+   "effects": [
+    {
+     "label": "Skill SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Skill Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 255 damage. Casts a [15% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 14s if the hit lands as a critical hit.\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 271 damage. Casts a [16% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 14s if the hit lands as a critical hit.\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 286 damage. Casts a [16% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 15s if the hit lands as a critical hit.\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 311 damage. Casts a [18% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 15s if the hit lands as a critical hit.\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 342 damage. Casts a [18% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 16s if the hit lands as a critical hit.\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 368 damage. Casts a [20% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 16s if the hit lands as a critical hit.\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 398 damage. Casts a [20% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 18s if the hit lands as a critical hit.\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 424 damage. Casts a [22% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 18s if the hit lands as a critical hit.\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 454 damage. Casts a [22% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 19s if the hit lands as a critical hit.\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 480 damage. Casts a [26% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 19s if the hit lands as a critical hit.\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 511 damage. Casts a [26% Skill SPD Up] buff on 10 allies in a 12m radius around Reltalis, lasting 20s if the hit lands as a critical hit.\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sanction of Life",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/reltalis/skills/2.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 129 damage. Casts a [1% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 140% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 137 damage. Casts a [1.25% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 148.4% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 144 damage. Casts a [1.25% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 156.8% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 157 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 170.8% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 173 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 187.6% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 185 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 201.6% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 201 damage. Casts a [2% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Bleed\n#1 Damage: 218.4% ATK\n#2 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 214 damage. Casts a [2% Bleed] debuff on the targets, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Bleed\n#1 Damage: 232.4% ATK\n#2 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 229 damage. Casts a [2% Bleed] debuff on the targets, lasting 11s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Bleed\n#1 Damage: 249.2% ATK\n#2 Bleed Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 242 damage. Casts a [2% Bleed] debuff on the targets, lasting 12s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Bleed\n#1 Damage: 263.2% ATK\n#2 Bleed Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7m semicircle in front of Reltalis, dealing 258 damage. Casts a [2% Bleed] debuff on the targets, lasting 12s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Bleed\n#1 Damage: 280% ATK\n#2 Bleed Damage Limit: 500% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/reltalis/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 214 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 232.5% ATK\nINVOKATION END\nExtends the duration of up to 2 random buffs on the Bound Invoker by 12s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 227 damage. Casts a [Stun] debuff on the targets, lasting 3.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 246.4% ATK\nINVOKATION END\nExtends the duration of up to 2 random buffs on the Bound Invoker by 13s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 240 damage. Casts a [Stun] debuff on the targets, lasting 3.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 260.4% ATK\nINVOKATION END\nExtends the duration of up to 2 random buffs on the Bound Invoker by 13.5s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 261 damage. Casts a [Stun] debuff on the targets, lasting 3.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 283.7% ATK\nINVOKATION END\nExtends the duration of up to 2 random buffs on the Bound Invoker by 14s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 287 damage. Casts a [Stun] debuff on the targets, lasting 3.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 311.6% ATK\nINVOKATION END\nExtends the duration of up to 2 random buffs on the Bound Invoker by 14.5s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 308 damage. Casts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 334.8% ATK\nINVOKATION END\nExtends the duration of up to 3 random buffs on the Bound Invoker by 14.5s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 334 damage. Casts a [Stun] debuff on the targets, lasting 4.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 362.7% ATK\nINVOKATION END\nExtends the duration of up to 3 random buffs on the Bound Invoker by 15s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 355 damage. Casts a [Stun] debuff on the targets, lasting 4.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 386% ATK\nINVOKATION END\nExtends the duration of up to 3 random buffs on the Bound Invoker by 16s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 381 damage. Casts a [Stun] debuff on the targets, lasting 4.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 413.9% ATK\nINVOKATION END\nExtends the duration of up to 3 random buffs on the Bound Invoker by 17s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 402 damage. Casts a [Stun] debuff on the targets, lasting 4.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 437.1% ATK\nINVOKATION END\nExtends the duration of up to 3 random buffs on the Bound Invoker by 18s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 13m radius, from a distance of 13m, dealing 428 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 465% ATK\nINVOKATION END\nExtends the duration of up to 4 random buffs on the Bound Invoker by 18s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/reltalis/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +20% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +22% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +24% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +28% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +32% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +36% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +40% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "When the Archangel Shaliat was near death, he promised his armor to the most worthy of the Lightseekers. But none among the Faction would take it, unwilling to elevate themselves above their peers. When the last refused, the armor took on life of its own, fighting in humble defense of the Light.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "S+",
+  "hyxxis": "S+",
+  "koltmos": "S+",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S+",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "S+",
+  "ulgorim": "S+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 97.3,
+  "lists": 16
+ }
+}

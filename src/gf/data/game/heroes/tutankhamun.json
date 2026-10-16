@@ -1,0 +1,338 @@
+{
+ "id": 64,
+ "slug": "tutankhamun",
+ "name": "Tutankhamun",
+ "title": "Curse of the Pharaoh",
+ "summary": "Spread curses and corrode your foes on the Desert Sands dealing terror to grave robbers and looters!",
+ "lore": "The “boy king,” whose predecessors had turned to other faiths, restored worship of Aaru’s pantheon. Although deathly ill before his eighteenth birthday, Tutankhamun awoke in Ryven rather than dying. Here he mastered the curses meant to protect his tomb, turning them against Aaru’s enemies—but also, in newly inflated zealotry, against some of his own people who he feels are lacking in faith.",
+ "rarity": "Rare",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tutankhamun.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tutankhamun_main.png",
+ "stats": {
+  "hp": 1110,
+  "atk": 90,
+  "def": 73,
+  "spd": 91,
+  "init": 87,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also, has a 50% chance to place [Acid] on all targets under Curse for 1 turn.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Blighted Strike",
+   "description": "Attack 1 enemy 215%ATK 2 times with a 30% chance to place [Acid] on the target for 1 turn. If the target is under Curse, will place [Acid] for 2 turns.",
+   "icon_url": "/godforge/abilities/tutankhamun/ICON_Tutankhamun_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "215%ATK",
+    "215%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Eternal Curse",
+   "description": "Attack all enemies 320%ATK with a 50% chance to extend the duration of Curse and [Acid] on each target by 1 turn.",
+   "icon_url": "/godforge/abilities/tutankhamun/ICON_Tutankhamun_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "320%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also, has a 50% chance to place Acid on all targets under Curse for 1 turn.",
+     "upgrade_description": "Also, has a 50% chance to place [Acid] on all targets under Curse for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "15% CRIT in Dungeon Battles",
+   "icon_url": "/godforge/abilities/tutankhamun/ICON_Leader_CriticalRate.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Curse of the Pharaoh",
+   "description": "Attacks have a 100% chance to place [Curse I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/tutankhamun/ICON_Tutankhamun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Curse I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "All Things Must Perish",
+   "description": "Attack 1 enemy 220%ATK 3 times. The first hit has a 70% chance to place [Drain I] on the target for 2turns. The second hit has 70% chance to place [Vulnerable I] on the target for 2 turns.\n\nIf the target is under Vulnerable and Curse, activate [Acid] on the target.",
+   "icon_url": "/godforge/abilities/tutankhamun/ICON_Tutankhamun_Ultimate.webp",
+   "divinity_cost": 1800,
+   "damage_formula": [
+    "220%ATK",
+    "220%ATK",
+    "220%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 70,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Curse of the Pharaoh",
+   "description": "Attacks have a 50% chance to place [Curse I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/tutankhamun/ICON_Tutankhamun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Curse I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

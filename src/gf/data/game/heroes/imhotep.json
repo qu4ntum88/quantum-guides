@@ -1,0 +1,290 @@
+{
+ "id": 4,
+ "slug": "imhotep",
+ "name": "Imhotep",
+ "title": "Architect of Ascension",
+ "summary": "Ascend your allies reducing their Divinity Requirements and Restoring their Health",
+ "lore": "Advisor to pharaohs, Imhotep held great authority and respect in his prior life. Since the Shattering, he has discovered that his reputation had grown in his absence, until many revere him as a god. While he labors on Aaru’s behalf, he finds himself uncertain what is expected of him, or how to wield this new influence that has been thrust upon him.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Imhotep.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Imhotep_main.png",
+ "stats": {
+  "hp": 1380,
+  "atk": 51,
+  "def": 85,
+  "spd": 104,
+  "init": 92,
+  "acc": 10,
+  "res": 35,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place Block Debuff on all allies for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the Divinity Cost Reduction by 1% and stacks across waves.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Bane of Sorcery",
+   "description": "Attack 1 enemy 335%ATK, then heal 5%HP all allies.",
+   "icon_url": "/godforge/abilities/imhotep/ICON_Imhotep_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "335%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Pillar of Support",
+   "description": "Heal all allies 25% of their MAX HP and place [Stalwart] on each ally for 2 turns.",
+   "icon_url": "/godforge/abilities/imhotep/ICON_Imhotep_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Block Debuff on all allies for 2 turns.",
+     "upgrade_description": "Place Block Debuff on all allies for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Grand Architect",
+   "description": "At the start of each wave, place [Ward] on the ally with the lowest HP for 2 turns.",
+   "icon_url": "/godforge/abilities/imhotep/ICON_Imhotep_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Ward",
+     "target": "AllyWithLeastStat",
+     "target_label": "AllyWithLeastStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Steps of Ascension",
+   "description": "Place [Radiance II] and [FTH Up II] on all allies for 2 turn then reduce each target's Divinity Cost by 3% (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/imhotep/ICON_Imhotep_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the Divinity Cost Reduction by 1% and stacks across waves.",
+     "upgrade_description": "Increase the Divinity Cost Reduction by 1% and stacks across waves."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Grand Architect",
+   "description": "At the start of each wave, place [Ward] on the ally with the lowest HP for 1 turn.",
+   "icon_url": "/godforge/abilities/imhotep/ICON_Imhotep_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Ward",
+     "target": "AllyWithLeastStat",
+     "target_label": "AllyWithLeastStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

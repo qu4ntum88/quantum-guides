@@ -3,6 +3,7 @@ import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole, type Viewer } from '@/src/lib/roles-server'
 import { hasRole } from '@/src/lib/roles'
 import { sanitizeGuideBody } from '@/src/dcdl/lib/guide-blocks'
+import { toGuideGame } from '@/src/lib/guide-games'
 
 // CRUD for guides, open to editors and admins. Writes go through the
 // service-role key AFTER the role check below — the key is never exposed to the
@@ -52,7 +53,7 @@ export async function POST(req: NextRequest) {
   // re-publish one that has already been approved.
   const { data: existing } = await supabaseAdmin
     .from('guides')
-    .select('author_user_id, status')
+    .select('author_user_id, status, game')
     .eq('id', id)
     .maybeSingle()
   if (existing && !isAdmin && existing.author_user_id !== viewer.userId) {
@@ -62,6 +63,8 @@ export async function POST(req: NextRequest) {
   const row = {
     id,
     title,
+    // Which game's guide section lists it; keep the stored game if a client doesn't send one.
+    game: b.game !== undefined ? toGuideGame(b.game) : toGuideGame(existing?.game),
     description: String(b.description ?? ''),
     // Re-sanitize rich paragraph HTML server-side before it is persisted.
     body: sanitizeGuideBody(String(b.body ?? '')),

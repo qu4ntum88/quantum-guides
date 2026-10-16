@@ -1,0 +1,331 @@
+{
+ "id": 32,
+ "slug": "pangu",
+ "name": "Pangu",
+ "title": "The First Being",
+ "summary": "Balances Yin and Yang to empower his abilities and crush enemies, especially in the early game.",
+ "lore": "A primordial being older even than Tian’s other gods, Pangu shaped much of reality, and his body itself forms many of the realm’s earth and mountains. Since the Shattering, a portion of him has awakened and manifested, providing aid and advice to gods of Order. Should he awaken in his entirety, the results to Tian could be nothing short of apocalyptic.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Pangu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Pangu_main.png",
+ "stats": {
+  "hp": 1890,
+  "atk": 97,
+  "def": 95,
+  "spd": 96,
+  "init": 96,
+  "acc": 30,
+  "res": 55,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 18
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also, Increase ACC by 1% when FTH is more than SPD and increase ATK by 1% when SPD is more than FTH.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.15,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If this hero has more FTH than SPD, place [ATK Down II] otherwise place a random Lock on each target for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also Increase this hero’s HP by 10% (stacking up to 5 times).",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "World Splitter",
+   "description": "Attack 1 enemy 10%HP+135%ATK. If this hero has more FTH than SPD, increase their RES by 1%. Otherwise, increase DEF by 1%.",
+   "icon_url": "/godforge/abilities/pangu/ICON_Pangu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+135%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also, Increase ACC by 1% when FTH is more than SPD and increase ATK by 1% when SPD is more than FTH.",
+     "upgrade_description": "Also, Increase ACC by 1% when FTH is more than SPD and increase ATK by 1% when SPD is more than FTH."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Heaven and Earth",
+   "description": "Place [ACC Up II] on this hero for 2 turns then attack all enemies 10%HP+110%ATK.\n\nIf this hero has more FTH than SPD, place [DEF Down II] on each target for 2 turns and increase this hero’s SPD by 50. Otherwise, place [FTH Down II] on each target hit for 2 turns and decrease this hero’s SPD by 50.",
+   "icon_url": "/godforge/abilities/pangu/ICON_Pangu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "ACC Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If this hero has more FTH than SPD, place ATK Down II otherwise place a random Lock on each target for 2 turns.",
+     "upgrade_description": "If this hero has more FTH than SPD, place [ATK Down II] otherwise place a random Lock on each target for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "35% HP in Dungeon Battles",
+   "icon_url": "/godforge/abilities/pangu/ICON_Leader_Health.webp",
+   "divinity_cost": 500,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Balance of Force",
+   "description": "If this hero has more FTH than SPD, attacks steal 10% Turn Meter from the target. Otherwise, they steal 10% Divinity from the target.",
+   "icon_url": "/godforge/abilities/pangu/ICON_Pangu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Yin and Yang",
+   "description": "Place [RES Up II] on this hero for 2 turns then attack all enemies 10%HP+110%ATK.\n\nIf this hero has more SPD than FTH, then place [Drain II] on each target for 2 turns and increase this hero’s FTH by 50. Otherwise, place [SPD Down II] on each target hit for 2 turns and decrease this hero’s FTH by 50.",
+   "icon_url": "/godforge/abilities/pangu/ICON_Pangu_Ultimate.webp",
+   "divinity_cost": 2600,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "RES Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Drain II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also Increase this hero’s HP by 10% (stacking up to 5 times).",
+     "upgrade_description": "Also Increase this hero’s HP by 10% (stacking up to 5 times)."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Balance of Force",
+   "description": "If this hero has more FTH than SPD, attacks steal 5% Turn Meter from the target. Otherwise, they steal 5% Divinity from the target.",
+   "icon_url": "/godforge/abilities/pangu/ICON_Pangu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

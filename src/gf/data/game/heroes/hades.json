@@ -1,0 +1,343 @@
+{
+ "id": 9,
+ "slug": "hades",
+ "name": "Hades",
+ "title": "The Unseen One",
+ "summary": "Curse enemies with debuffs and lockouts and drag them to their afterlife.",
+ "lore": "Lord of the Olympian underworld, Hades is normally a cold, implacable deity. Indeed, for a time, even the upheaval of the Shattering scarcely drew his attention. Now that he has decided to act, he dithers over whether the invitation to join Osiris’s “Shadow Council” of underworlds is the proper course. This uncharacteristic indecision threatens to distract him from other vital concerns…",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hades.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Hades_main.png",
+ "stats": {
+  "hp": 1395,
+  "atk": 81,
+  "def": 94,
+  "spd": 101,
+  "init": 106,
+  "acc": 50,
+  "res": 35,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also has a 75% chance to increase the cooldown of the enemy’s Core Ability by 2 turns if the enemy is under [Corrupt]",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "The duration of the [Sleep] is no longer reduced when activated.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the end of this hero's turn, place [ACC Down II], [Hex II] or [RES Down II] on each target under [Corrupt] for 1 turn.\nThe duration of the [Corrupt] is no longer reduced when activated.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Lethe’s Lament",
+   "description": "Attack 1 enemy 355%ATK, then has a 30% chance to place [Sleep] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/hades/ICON_Hades_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "355%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sleep",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sleep",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "The duration of the Sleep is no longer reduced when activated.",
+     "upgrade_description": "The duration of the [Sleep] is no longer reduced when activated."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Torment of Souls",
+   "description": "Attack all enemies 295%ATK, then has a 75% chance to place [Despair] on each target for 1 turn.\n\nAlso place [Lock Ultimate] on each target under [Corrupt] for 1 turn.",
+   "icon_url": "/godforge/abilities/hades/ICON_Hades_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "295%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Ultimate",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also has a 75% chance to increase the cooldown of the enemy’s Core Ability by 2 turns if the enemy is under Corrupt",
+     "upgrade_description": "Also has a 75% chance to increase the cooldown of the enemy’s Core Ability by 2 turns if the enemy is under [Corrupt]"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Charon Awaits",
+   "description": "At the start of this hero's turn, place [Corrupt] on the enemy with the highest ATK for 2 turns.\n\nThe [Corrupt] cannot be removed or resisted.",
+   "icon_url": "/godforge/abilities/hades/ICON_Hades_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Corrupt",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the end of this hero's turn, place ACC Down II, Hex II or RES Down II on each target under Corrupt for 1 turn.\nThe duration of the Corrupt is no longer reduced when activated.",
+     "upgrade_description": "At the end of this hero's turn, place [ACC Down II], [Hex II] or [RES Down II] on each target under [Corrupt] for 1 turn.\nThe duration of the [Corrupt] is no longer reduced when activated."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Misery of Acheron",
+   "description": "Attack all enemies 165%ATK 2 times. On the first attack, decrease the Turn Meter of all enemies by 20%. On the second attack, place [SPD Down II] on each target for 2 turns.\n\nAlso place [FTH Down II] on each target under [Corrupt] for 2 turns.",
+   "icon_url": "/godforge/abilities/hades/ICON_Hades_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "165%ATK",
+    "165%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Charon Awaits",
+   "description": "At the start of this hero's turn, place [Corrupt] on the enemy with the highest ATK for 1 turn.\n\nThe [Corrupt] cannot be removed or resisted.",
+   "icon_url": "/godforge/abilities/hades/ICON_Hades_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

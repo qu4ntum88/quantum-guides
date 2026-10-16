@@ -1,0 +1,298 @@
+{
+ "id": 33,
+ "slug": "lady_xoc",
+ "name": "Lady Xoc",
+ "title": "Consort of Yaxchilan",
+ "summary": "Sacrifice your enemies dealing additional damage to enemies under Bleed.",
+ "lore": "Xoc was a priestess, beseeching the gods to bless her land’s soldiers. After the Shattering, however, she found Omeyocan’s warriors had no advantage over others—not because her gods failed to heed, but because the enemy’s gods held power just as real. Offended, Lady Xoc now raises weapons of her own, wielding magic and blade against worshipers that she deems “false” gods.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Lady Xoc.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Lady Xoc_main.png",
+ "stats": {
+  "hp": 1140,
+  "atk": 92,
+  "def": 74,
+  "spd": 100,
+  "init": 90,
+  "acc": 30,
+  "res": 15,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy is defeated, reduce the cooldown of the Core Ability by 1 turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Bloodletting",
+   "description": "Attack 1 enemy 375%ATK with a 35% chance to place 2 stacks of [Bleed] on the target.",
+   "icon_url": "/godforge/abilities/lady_xoc/ICON_LadyXoc_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "375%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 35,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Vision Serpent",
+   "description": "Attack all enemies 310%ATK with a 25% additional chance to strong hit. Has an 80% chance to place 3 stacks of [Bleed] on each target.",
+   "icon_url": "/godforge/abilities/lady_xoc/ICON_LadyXoc_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "310%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% ATK in All Battles",
+   "icon_url": "/godforge/abilities/lady_xoc/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Mouth of Thorns",
+   "description": "Increase damage inflicted by 2% for each stack of [Bleed] on the target.",
+   "icon_url": "/godforge/abilities/lady_xoc/ICON_LadyXoc_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Sacrificial Rite",
+   "description": "Attack all enemies 170%ATK 2 times. If an enemy is defeated, place [SPD Up II] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/lady_xoc/ICON_LadyXoc_Ultimate.webp",
+   "divinity_cost": 2250,
+   "damage_formula": [
+    "170%ATK",
+    "170%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy is defeated, reduce the cooldown of the Core Ability by 1 turn.",
+     "upgrade_description": "If an enemy is defeated, reduce the cooldown of the Core Ability by 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Mouth of Thorns",
+   "description": "Increase damage inflicted by 1% for each stack of [Bleed] on the target.",
+   "icon_url": "/godforge/abilities/lady_xoc/ICON_LadyXoc_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

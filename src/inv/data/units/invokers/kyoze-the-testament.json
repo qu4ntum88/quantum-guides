@@ -1,0 +1,581 @@
+{
+ "slug": "kyoze-the-testament",
+ "kind": "Invoker",
+ "name": "Kyoze the Testament",
+ "faction": "Cambion",
+ "rarity": "Legendary",
+ "class": "Tank",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/kyoze-the-testament/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kyoze-the-testament/full.webp",
+ "stats": {
+  "base": {
+   "Health": "1,068",
+   "Attack": "37",
+   "Defense": "108",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "109"
+  },
+  "max": {
+   "Health": "11,445",
+   "Attack": "454",
+   "Defense": "1,130",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "139"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kyoze-the-testament/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 10% ATK + 15.5% DEF\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 15.5% ATK + 24% DEF\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 21% ATK + 32.5% DEF\n#4 Attacks 1 enemy, dealing 53 damage.\nDamage: 26% ATK + 40% DEF\n#5 Attacks 1 enemy, dealing 63 damage. Heals Kyoze, restoring 5 HP.\nDamage: 31.5% ATK + 47.5% DEF\nHeal: 0.5% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 10.6% ATK + 16.4% DEF\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 16.4% ATK + 25.4% DEF\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 22.3% ATK + 34.4% DEF\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 27.6% ATK + 42.4% DEF\n#5 Attacks 1 enemy, dealing 67 damage. Heals Kyoze, restoring 6 HP.\nDamage: 33.4% ATK + 50.3% DEF\nHeal: 0.6% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 11.2% ATK + 17.4% DEF\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 17.4% ATK + 26.9% DEF\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 23.5% ATK + 36.4% DEF\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 29.1% ATK + 44.8% DEF\n#5 Attacks 1 enemy, dealing 71 damage. Heals Kyoze, restoring 6 HP.\nDamage: 35.3% ATK + 53.2% DEF\nHeal: 0.6% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 12.2% ATK + 18.9% DEF\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 18.9% ATK + 29.3% DEF\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 25.6% ATK + 39.6% DEF\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 31.7% ATK + 48.8% DEF\n#5 Attacks 1 enemy, dealing 77 damage. Heals Kyoze, restoring 7 HP.\nDamage: 38.4% ATK + 58% DEF\nHeal: 0.7% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 13.4% ATK + 20.8% DEF\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 20.8% ATK + 32.2% DEF\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 28.1% ATK + 43.5% DEF\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 34.8% ATK + 53.6% DEF\n#5 Attacks 1 enemy, dealing 84 damage. Heals Kyoze, restoring 7 HP.\nDamage: 42.2% ATK + 63.7% DEF\nHeal: 0.7% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 14.4% ATK + 22.3% DEF\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 22.3% ATK + 34.6% DEF\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 30.2% ATK + 46.8% DEF\n#4 Attacks 1 enemy, dealing 76 damage.\nDamage: 37.4% ATK + 57.6% DEF\n#5 Attacks 1 enemy, dealing 91 damage. Heals Kyoze, restoring 8 HP.\nDamage: 45.4% ATK + 68.4% DEF\nHeal: 0.8% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 15.6% ATK + 24.2% DEF\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 24.2% ATK + 37.4% DEF\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 32.8% ATK + 50.7% DEF\n#4 Attacks 1 enemy, dealing 82 damage.\nDamage: 40.6% ATK + 62.4% DEF\n#5 Attacks 1 enemy, dealing 98 damage. Heals Kyoze, restoring 9 HP.\nDamage: 49.1% ATK + 74.1% DEF\nHeal: 0.8% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 16.6% ATK + 25.7% DEF\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 25.7% ATK + 39.8% DEF\n#3 Attacks 1 enemy, dealing 71 damage.\nDamage: 34.9% ATK + 53.9% DEF\n#4 Attacks 1 enemy, dealing 88 damage.\nDamage: 43.2% ATK + 66.4% DEF\n#5 Attacks 1 enemy, dealing 105 damage. Heals Kyoze, restoring 9 HP.\nDamage: 52.3% ATK + 78.8% DEF\nHeal: 0.8% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 17.8% ATK + 27.6% DEF\n#2 Attacks 1 enemy, dealing 56 damage.\nDamage: 27.6% ATK + 42.7% DEF\n#3 Attacks 1 enemy, dealing 76 damage.\nDamage: 37.4% ATK + 57.8% DEF\n#4 Attacks 1 enemy, dealing 94 damage.\nDamage: 46.3% ATK + 71.2% DEF\n#5 Attacks 1 enemy, dealing 112 damage. Heals Kyoze, restoring 10 HP.\nDamage: 56.1% ATK + 84.5% DEF\nHeal: 0.9% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 18.8% ATK + 29.1% DEF\n#2 Attacks 1 enemy, dealing 60 damage.\nDamage: 29.1% ATK + 45.1% DEF\n#3 Attacks 1 enemy, dealing 81 damage.\nDamage: 39.5% ATK + 61.1% DEF\n#4 Attacks 1 enemy, dealing 99 damage.\nDamage: 48.9% ATK + 75.2% DEF\n#5 Attacks 1 enemy, dealing 118 damage. Heals Kyoze, restoring 10 HP.\nDamage: 59.2% ATK + 89.3% DEF\nHeal: 0.9% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 41 damage.\nDamage: 20% ATK + 31% DEF\n#2 Attacks 1 enemy, dealing 63 damage.\nDamage: 31% ATK + 48% DEF\n#3 Attacks 1 enemy, dealing 86 damage.\nDamage: 42% ATK + 65% DEF\n#4 Attacks 1 enemy, dealing 106 damage.\nDamage: 52% ATK + 80% DEF\n#5 Attacks 1 enemy, dealing 126 damage. Heals Kyoze, restoring 11 HP.\nDamage: 63% ATK + 95% DEF\nHeal: 1% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "Barbican Blade",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kyoze-the-testament/skills/1.webp",
+   "effects": [
+    {
+     "label": "Lifeboost",
+     "group": "Buffs",
+     "description": "Increases the recipient's current HP and MAX HP by either a flat amount of HP, or an indicated percentage.When the Buff expires, the recipient's HP percentage remains the same as it was when the Lifeboost was active."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Casts a [(20% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 5s, temporarily increasing the target's current and MAX HP by (20% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 62.5% ATK + 92.5% DEF\n#2 Lifeboost: 20% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage. Casts a [(22% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 5s, temporarily increasing the target's current and MAX HP by (22% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 66.2% ATK + 98% DEF\n#2 Lifeboost: 22% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 138 damage. Casts a [(24% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 5s, temporarily increasing the target's current and MAX HP by (24% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 70% ATK + 103.6% DEF\n#2 Lifeboost: 24% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Casts a [(26% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 5s, temporarily increasing the target's current and MAX HP by (26% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 76.2% ATK + 112.9% DEF\n#2 Lifeboost: 26% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 165 damage. Casts a [(28% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 5s, temporarily increasing the target's current and MAX HP by (28% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 83.8% ATK + 124% DEF\n#2 Lifeboost: 28% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 177 damage. Casts a [(30% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 5s, temporarily increasing the target's current and MAX HP by (30% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 90% ATK + 133.2% DEF\n#2 Lifeboost: 30% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 192 damage. Casts a [(30% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 6s, temporarily increasing the target's current and MAX HP by (30% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 97.5% ATK + 144.3% DEF\n#2 Lifeboost: 30% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 204 damage. Casts a [(32% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 6s, temporarily increasing the target's current and MAX HP by (32% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 103.8% ATK + 153.6% DEF\n#2 Lifeboost: 32% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 219 damage. Casts a [(35% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 6s, temporarily increasing the target's current and MAX HP by (35% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 111.2% ATK + 164.6% DEF\n#2 Lifeboost: 35% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 231 damage. Casts a [(40% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 6s, temporarily increasing the target's current and MAX HP by (40% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 117.5% ATK + 173.9% DEF\n#2 Lifeboost: 40% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 246 damage. Casts a [(40% * Damage Dealt) Lifeboost] buff on Kyoze, lasting 7s, temporarily increasing the target's current and MAX HP by (40% * Damage Dealt) HP. When the [Lifeboost] expires, the target will remain at the same current HP percentage.\n#1 Damage: 125% ATK + 185% DEF\n#2 Lifeboost: 40% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Radial Mortality",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kyoze-the-testament/skills/2.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Combo Speed stat by the indicated percentage."
+    },
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Taunt",
+     "group": "Debuffs",
+     "description": "The recipient is forced to attack whoever cast the Taunt debuff on them.The recipient can move freely, but can only use their Combo Attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 126 damage. Casts a [Taunt] debuff on the targets, lasting 4s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [30% ATK Down] debuff on the targets, lasting 8s. Then, casts a [15% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 64% ATK + 95% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 134 damage. Casts a [Taunt] debuff on the targets, lasting 4s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [30% ATK Down] debuff on the targets, lasting 8s. Then, casts a [16% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 67.8% ATK + 100.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 141 damage. Casts a [Taunt] debuff on the targets, lasting 4s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [35% ATK Down] debuff on the targets, lasting 8s. Then, casts a [16% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 71.7% ATK + 106.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 154 damage. Casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [35% ATK Down] debuff on the targets, lasting 9s. Then, casts a [18% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 78.1% ATK + 115.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 169 damage. Casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [40% ATK Down] debuff on the targets, lasting 9s. Then, casts a [18% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 85.8% ATK + 127.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 182 damage. Casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [40% ATK Down] debuff on the targets, lasting 9s. Then, casts a [20% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 92.2% ATK + 136.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 197 damage. Casts a [Taunt] debuff on the targets, lasting 6s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [50% ATK Down] debuff on the targets, lasting 9s. Then, casts a [20% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 99.8% ATK + 148.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 210 damage. Casts a [Taunt] debuff on the targets, lasting 6s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [50% ATK Down] debuff on the targets, lasting 11s. Then, casts a [25% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 106.2% ATK + 157.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 225 damage. Casts a [Taunt] debuff on the targets, lasting 6s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [55% ATK Down] debuff on the targets, lasting 11s. Then, casts a [25% Combo SPD Up] buff on the targets, lasting 2s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 113.9% ATK + 169.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 237 damage. Casts a [Taunt] debuff on the targets, lasting 7s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [55% ATK Down] debuff on the targets, lasting 11s. Then, casts a [30% Combo SPD Up] buff on the targets, lasting 3s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 120.3% ATK + 178.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8m radius around Kyoze, dealing 253 damage. Casts a [Taunt] debuff on the targets, lasting 7s, forcing them to continuously attack Kyoze using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [60% ATK Down] debuff on the targets, lasting 14s. Then, casts a [30% Combo SPD Up] buff on the targets, lasting 3s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 128% ATK + 190% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Channel Apocalypse",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kyoze-the-testament/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 129 damage. Launches the targets, knocking them 5m away, for 3s.\nAccuracy required for: Launch\n#1 Damage: 65% ATK + 97.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 137 damage. Launches the targets, knocking them 5m away, for 3.2s.\nAccuracy required for: Launch\n#1 Damage: 68.9% ATK + 103.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 145 damage. Launches the targets, knocking them 5m away, for 3.4s.\nAccuracy required for: Launch\n#1 Damage: 72.8% ATK + 109.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 158 damage. Launches the targets, knocking them 5m away, for 3.6s.\nAccuracy required for: Launch\n#1 Damage: 79.3% ATK + 119% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 173 damage. Launches the targets, knocking them 5m away, for 3.8s.\nAccuracy required for: Launch\n#1 Damage: 87.1% ATK + 130.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 186 damage. Launches the targets, knocking them 5m away, for 4s.\nAccuracy required for: Launch\n#1 Damage: 93.6% ATK + 140.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 202 damage. Launches the targets, knocking them 5m away, for 4.2s.\nAccuracy required for: Launch\n#1 Damage: 101.4% ATK + 152.1% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 215 damage. Launches the targets, knocking them 5m away, for 4.2s.\nAccuracy required for: Launch\n#1 Damage: 107.9% ATK + 161.9% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 230 damage. Launches the targets, knocking them 5m away, for 4.6s.\nAccuracy required for: Launch\n#1 Damage: 115.7% ATK + 173.6% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 243 damage. Launches the targets, knocking them 5m away, for 5s.\nAccuracy required for: Launch\n#1 Damage: 122.2% ATK + 183.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 10m radius, tracking them for 5s. If Kyoze reaches the target, attacks the 10 enemies with the lowest current HP in a 6m radius around Kyoze, dealing 259 damage. Launches the targets, knocking them 5m away, for 5s.\nAccuracy required for: Launch\n#1 Damage: 130% ATK + 195% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Shredding Eye",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kyoze-the-testament/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 425 damage. Heals Kyoze, restoring (40% * Damage Dealt) HP. \nHeals Kyoze, restoring 267 HP, if this attack kills the target.\n#1 Damage: 215% ATK + 320% DEF\n#2 Heal: 40% * Damage Dealt\n#3 Heal: 25% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 451 damage. Heals Kyoze, restoring (42% * Damage Dealt) HP. \nHeals Kyoze, restoring 267 HP, if this attack kills the target.\n#1 Damage: 227.9% ATK + 339.2% DEF\n#2 Heal: 42% * Damage Dealt\n#3 Heal: 25% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 476 damage. Heals Kyoze, restoring (44% * Damage Dealt) HP. \nHeals Kyoze, restoring 267 HP, if this attack kills the target.\n#1 Damage: 240.8% ATK + 358.4% DEF\n#2 Heal: 44% * Damage Dealt\n#3 Heal: 25% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 519 damage. Heals Kyoze, restoring (46% * Damage Dealt) HP. \nHeals Kyoze, restoring 299 HP, if this attack kills the target.\n#1 Damage: 262.3% ATK + 390.4% DEF\n#2 Heal: 46% * Damage Dealt\n#3 Heal: 28% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 570 damage. Heals Kyoze, restoring (46% * Damage Dealt) HP. \nHeals Kyoze, restoring 299 HP, if this attack kills the target.\n#1 Damage: 288.1% ATK + 428.8% DEF\n#2 Heal: 46% * Damage Dealt\n#3 Heal: 28% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 612 damage. Heals Kyoze, restoring (48% * Damage Dealt) HP. \nHeals Kyoze, restoring 320 HP, if this attack kills the target.\n#1 Damage: 309.6% ATK + 460.8% DEF\n#2 Heal: 48% * Damage Dealt\n#3 Heal: 30% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 663 damage. Heals Kyoze, restoring (50% * Damage Dealt) HP. \nHeals Kyoze, restoring 320 HP, if this attack kills the target.\n#1 Damage: 335.4% ATK + 499.2% DEF\n#2 Heal: 50% * Damage Dealt\n#3 Heal: 30% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 706 damage. Heals Kyoze, restoring (50% * Damage Dealt) HP. \nHeals Kyoze, restoring 320 HP, if this attack kills the target.\n#1 Damage: 356.9% ATK + 531.2% DEF\n#2 Heal: 50% * Damage Dealt\n#3 Heal: 30% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 757 damage. Heals Kyoze, restoring (55% * Damage Dealt) HP. \nHeals Kyoze, restoring 374 HP, if this attack kills the target.\n#1 Damage: 382.7% ATK + 569.6% DEF\n#2 Heal: 55% * Damage Dealt\n#3 Heal: 35% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 799 damage. Heals Kyoze, restoring (60% * Damage Dealt) HP. \nHeals Kyoze, restoring 374 HP, if this attack kills the target.\n#1 Damage: 404.2% ATK + 601.6% DEF\n#2 Heal: 60% * Damage Dealt\n#3 Heal: 35% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 850 damage. Heals Kyoze, restoring (60% * Damage Dealt) HP. \nHeals Kyoze, restoring 481 HP, if this attack kills the target.\n#1 Damage: 430% ATK + 640% DEF\n#2 Heal: 60% * Damage Dealt\n#3 Heal: 45% * MAX HP"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "The Broken Reach and the Voidscar are kept apart by one fortress: the Fell Barbican. Kyoze built it. Kyoze holds it. He gave up all ambition for the sake of this duty, but the act was not entirely selfless – he erased his future to be forgiven for his past, and his was a past that needed forgiving.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "A+",
+  "hyxxis": "E",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S",
+  "omnissi-fire": "E",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "E",
+  "ulgorim": "A+",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 54.5,
+  "lists": 16
+ }
+}

@@ -1,0 +1,314 @@
+{
+ "id": 47,
+ "slug": "dracula",
+ "name": "Dracula",
+ "title": "The Impaler",
+ "summary": "Summon the darkness and drain the life essence as you cast forth tides of Bleeds onto your foes.",
+ "lore": "Even before the Shattering, the undead prince Dracula possessed enormous supernatural power. When the world broke, that power grew greater still, until he found himself equal to some of Vyraj’s gods. While he still defends the Realm, he works to expand his power over its mortal population, and engages in multiple schemes—including a conspiracy with Omeyocan’s Camazotz—toward his own ends.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Dracula.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Dracula_main.png",
+ "stats": {
+  "hp": 1695,
+  "atk": 95,
+  "def": 94,
+  "spd": 93,
+  "init": 90,
+  "acc": 30,
+  "res": 45,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Place 2 stacks of [Bleed] on all enemies instead.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also, Destroy each target's HP for 10% of the damage inflicted (up to 60% of the target's HP)",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the start of an ally's turn, steal 5% of their current HP and increase this hero's Divinity by 2%",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Transfusion",
+   "description": "Attack 1 enemy 5%HP+80%ATK 2 times. Each hit has a 75% chance to place 2 stacks of [Bleed] on the target. Also, heal 5%HP this hero if the target under [Bleed].",
+   "icon_url": "/godforge/abilities/dracula/ICON_Dracula_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+80%ATK",
+    "5%HP+80%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Place 2 stacks of Bleed on all enemies instead.",
+     "upgrade_description": "Place 2 stacks of [Bleed] on all enemies instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Blood Mist",
+   "description": "Place 4 stacks of [Bleed] on all enemies, then has a 80% chance to place [Taunt] on each target for 2 turns. Also remove 1 random Buff from each target and gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/dracula/ICON_Dracula_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Symphony of the Night",
+   "description": "At the start of an enemy’s turn, if they are under [Bleed] increase the damage of this hero’s next attack by 10%.",
+   "icon_url": "/godforge/abilities/dracula/ICON_Dracula_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the start of an ally's turn, steal 5% of their current HP and increase this hero's Divinity by 2%",
+     "upgrade_description": "At the start of an ally's turn, steal 5% of their current HP and increase this hero's Divinity by 2%"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Sanguine Tides",
+   "description": "Attack all enemies 5%HP+35%ATK 4 times. Before attacking, consumes all stacks of [Bleed] on each target and increases the damage inflicted by 8% per stack of [Bleed] consumed.",
+   "icon_url": "/godforge/abilities/dracula/ICON_Dracula_Ultimate.webp",
+   "divinity_cost": 4725,
+   "damage_formula": [
+    "5%HP+35%ATK",
+    "5%HP+35%ATK",
+    "5%HP+35%ATK",
+    "5%HP+35%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also, Destroy each target's HP for 10% of the damage inflicted (up to 60% of the target's HP)",
+     "upgrade_description": "Also, Destroy each target's HP for 10% of the damage inflicted (up to 60% of the target's HP)"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Symphony of the Night",
+   "description": "At the start of an enemy’s turn, if they are under [Bleed] increase the damage of this hero’s next attack by 5%.",
+   "icon_url": "/godforge/abilities/dracula/ICON_Dracula_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

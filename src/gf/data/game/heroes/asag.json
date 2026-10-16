@@ -1,0 +1,296 @@
+{
+ "id": 63,
+ "slug": "asag",
+ "name": "Asag",
+ "title": "Grotesque Golem",
+ "summary": "Petrify your opponents and burn them as you attack your foes.",
+ "lore": "A great demon of burning malice, Asag was once bound to the mountains of Ekur, able to descend only in the winter. Since the Shattering, however, his nature has shifted and he is no longer bound by location or season. His rampages are unpredictable, and so violent they can leave entire communities obliterated in his wake.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/8217/6703/4396/Asag.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/2817/7277/6916/2026-03-06_00_00_52-Asag_Abilities_Stats_and_Scaling___Godforge_Hero_Index.png",
+ "stats": {
+  "hp": 1140,
+  "atk": 68,
+  "def": 73,
+  "spd": 95,
+  "init": 90,
+  "acc": 25,
+  "res": 15,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If the target is under Blaze when attacking this hero, also has a 50% chance to place [Petrify] on them for 1 turn.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Crushing Force",
+   "description": "Attack 1 enemy 315%ATK. If the target is under Blaze or [Petrify], increase the damage inflicted by 20%.",
+   "icon_url": "/godforge/abilities/asag/ICON_Asag_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "315%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Seismic Surge",
+   "description": "Attack 1 enemy 445%ATK. If the target is under Blaze, heal 10%HP this hero. If the target is under [Petrify], has a 10% additional chance to Strong Hit.",
+   "icon_url": "/godforge/abilities/asag/ICON_Asag_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "445%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Magmaburn",
+   "description": "At the end of an enemy turn, if they are under Blaze, has a 50% chance to place [Petrify] on them for 1 turn.",
+   "icon_url": "/godforge/abilities/asag/ICON_Asag_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Petrify",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Petrify",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If the target is under Blaze when attacking this hero, also has a 50% chance to place Petrify on them for 1 turn.",
+     "upgrade_description": "If the target is under Blaze when attacking this hero, also has a 50% chance to place [Petrify] on them for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Molten Smash",
+   "description": "Attack all enemies 255%ATK with a 75% chance to place [Blaze I] on each target for 1 turn. If the target is under [Petrify], will place [Blaze II] instead.",
+   "icon_url": "/godforge/abilities/asag/ICON_Asag_Ultimate.webp",
+   "divinity_cost": 2700,
+   "damage_formula": [
+    "255%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blaze I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blaze II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Magmaburn",
+   "description": "At the end of an enemy turn, if they are under Blaze, has a 25% chance to place [Petrify] on them for 1 turn.",
+   "icon_url": "/godforge/abilities/asag/ICON_Asag_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Petrify",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 25,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

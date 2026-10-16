@@ -1,0 +1,304 @@
+{
+ "id": 230,
+ "slug": "fujin",
+ "name": "Fujin",
+ "title": "Guardian of Air",
+ "summary": "Use Wind Strikes to Deflect AoE Damage and Protect your Allies from Debuffs and Disables.",
+ "lore": "Both demon and god, Fujin carries the Four Winds, using them to fly and leaving powerful gusts and gales in his wake. Although a source of destruction, Fujin is not a being of evil per se. Rather, Fujin simply does not care, traveling where he will and brawling with whoever he likes, in utter disregard of the damage his winds cause.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Fujin.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Fujin_main.png",
+ "stats": {
+  "hp": 1470,
+  "atk": 67,
+  "def": 111,
+  "spd": 103,
+  "init": 96,
+  "acc": 25,
+  "res": 75,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If an ally is attacked by AoE Attacks while under Protect, place [Barrier] 50% DEF on them",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Reflect 25% of the reduced damage back to the attacker. If Raijin is an ally, reflect 100% of the damage reduced by him.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Transfer all Debuff from all allies instead. If Raijin is an ally, increase his Turn Meter by 20% for each Debuff transferred.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Gust of Wind",
+   "description": "Attack all enemies 95%DEF+95%ATK with a 30% chance to place [RES Down II] on each target for 2 turns. If Raijin is an ally, he will also join the attack.",
+   "icon_url": "/godforge/abilities/fujin/ICON_Fujin_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "95%DEF+95%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "RES Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 30,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Windwall",
+   "description": "Attack all enemies 140%DEF+140%ATK and place [Protect II] on all allies except this hero for 2 turns. Then place [Stalwart] on all allies for 2 turns. If Raijin is an ally, place [Ward] on him for 2 turns.",
+   "icon_url": "/godforge/abilities/fujin/ICON_Fujin_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "140%DEF+140%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Ward",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If an ally is attacked by AoE Attacks while under Protect, place Barrier 50% DEF on them",
+     "upgrade_description": "If an ally is attacked by AoE Attacks while under Protect, place [Barrier] 50% DEF on them"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "50 RES in All Battles",
+   "icon_url": "/godforge/abilities/fujin/ICON_Leader_Resistance.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Cyclone Barrier",
+   "description": "Allies receive 30% decreased damage from AoE attacks.",
+   "icon_url": "/godforge/abilities/fujin/ICON_Fujin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Reflect 25% of the reduced damage back to the attacker. If Raijin is an ally, reflect 100% of the damage reduced by him.",
+     "upgrade_description": "Reflect 25% of the reduced damage back to the attacker. If Raijin is an ally, reflect 100% of the damage reduced by him."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Winds of Change",
+   "description": "Transfer 1 Debuff from each ally to this hero, then attack 1 enemy 240%DEF+240%ATK and transfer all Debuffs from this hero to the target. For each Debuff transferred, increase all allies Barrier50% DEF. If Raijin is an ally, transfer all Debuffs to this hero instead.",
+   "icon_url": "/godforge/abilities/fujin/ICON_Fujin_Ultimate.webp",
+   "divinity_cost": 4400,
+   "damage_formula": [
+    "240%DEF+240%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Transfer all Debuff from all allies instead. If Raijin is an ally, increase his Turn Meter by 20% for each Debuff transferred.",
+     "upgrade_description": "Transfer all Debuff from all allies instead. If Raijin is an ally, increase his Turn Meter by 20% for each Debuff transferred."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Cyclone Barrier",
+   "description": "Reduce the damage this hero receives from AoE Attacks by 15%.",
+   "icon_url": "/godforge/abilities/fujin/ICON_Fujin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

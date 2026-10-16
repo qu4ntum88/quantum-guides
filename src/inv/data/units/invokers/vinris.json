@@ -1,0 +1,555 @@
+{
+ "slug": "vinris",
+ "kind": "Invoker",
+ "name": "Vinris",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/vinris/portrait.webp",
+ "fullArt": "/invokers/units/invokers/vinris/full.webp",
+ "stats": {
+  "base": {
+   "Health": "418",
+   "Attack": "69",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "91"
+  },
+  "max": {
+   "Health": "5,248",
+   "Attack": "857",
+   "Defense": "557",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "116"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/vinris/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 35.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 59% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 25 damage.\nDamage: 36.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 37.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 62.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 27 damage.\nDamage: 38.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 66.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 28 damage.\nDamage: 40.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 43.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 53.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 72% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 31 damage.\nDamage: 44.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 47.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 79.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 34 damage.\nDamage: 48.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 51.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 63.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 85% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 36 damage.\nDamage: 52.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 68.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 64 damage.\nDamage: 92% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 39 damage.\nDamage: 56.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 58.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 73% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 68 damage.\nDamage: 97.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 42 damage.\nDamage: 60.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 63.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 54 damage.\nDamage: 78.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 72 damage.\nDamage: 105% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 45 damage.\nDamage: 65% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 66.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 77 damage.\nDamage: 110.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 47 damage.\nDamage: 68.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 71% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 61 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 81 damage.\nDamage: 118% ATK\n#5 Selects 1 enemy up to 14m away. Attacks all enemies in a 3.5m radius around the target, from a distance of 9m, dealing 50 damage.\nDamage: 73% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Filri's Ire",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vinris/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 95 damage.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 101 damage.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 106 damage.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 116 damage.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 127 damage.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 137 damage.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 148 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 157 damage.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 169 damage.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 178 damage.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 190 damage.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Twisting Tangle",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vinris/skills/2.webp",
+   "effects": [
+    {
+     "label": "Chain",
+     "group": "Debuffs",
+     "description": "The recipient cannot move, but can still use Combo Attacks, Active and Ultimate Skills, and Invoke their Titan.The Chain debuff is removed if the recipient Invokes a Titan."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 185 damage. Casts a [Chain] debuff on the target, lasting 3s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 267.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 196 damage. Casts a [Chain] debuff on the target, lasting 3s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 283.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 207 damage. Casts a [Chain] debuff on the target, lasting 3.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 299.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 225 damage. Casts a [Chain] debuff on the target, lasting 3.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 326.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 247 damage. Casts a [Chain] debuff on the target, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 358.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 266 damage. Casts a [Chain] debuff on the target, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 385.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 288 damage. Casts a [Chain] debuff on the target, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 417.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 306 damage. Casts a [Chain] debuff on the target, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 444% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 329 damage. Casts a [Chain] debuff on the target, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 476.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 347 damage. Casts a [Chain] debuff on the target, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 369 damage. Casts a [Chain] debuff on the target, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 535% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Agony Thorns",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vinris/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+53",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 195 damage. Casts a [25% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 282.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 207 damage. Casts a [28% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 299.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 218 damage. Casts a [28% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 316.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 238 damage. Casts a [28% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 344.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 261 damage. Casts a [28% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 378.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 281 damage. Casts a [30% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 406.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 304 damage. Casts a [30% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 440.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 324 damage. Casts a [30% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 469% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 347 damage. Casts a [33% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 366 damage. Casts a [35% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 531.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 390 damage. Casts a [35% ATK Down] debuff on the target, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 565% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Writhing Vines",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/vinris/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 5 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 32 damage.\n#1 Damage: 46% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 5 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 34 damage.\n#1 Damage: 48.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 5 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 36 damage.\n#1 Damage: 51.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 6 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 39 damage.\n#1 Damage: 56.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 6 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 43 damage.\n#1 Damage: 61.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 7 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 46 damage.\n#1 Damage: 66.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 7 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 50 damage.\n#1 Damage: 71.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 7 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 53 damage.\n#1 Damage: 76.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 8 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 56 damage.\n#1 Damage: 81.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 9 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 60 damage.\n#1 Damage: 86.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Creates a 3x12m zone centered on the target, ticking 9 times. Damages the 8 enemies with the lowest current HP in the zone every tick, dealing 63 damage.\n#1 Damage: 92% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Vinris is half-Dryad, and her mother’s gifts left her with the power of life itself. She created her companion, Filri, when she was only a child, and this monster of a vine has come to be her best friend, greatest protector, and most powerful weapon. The two are inseparable – and terribly lethal.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "A+",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "A+",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "C",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 42,
+  "lists": 16
+ }
+}

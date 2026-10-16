@@ -1,0 +1,495 @@
+{
+ "slug": "carchus",
+ "kind": "Titan",
+ "name": "Carchus",
+ "faction": "Freeborn",
+ "rarity": "Epic",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/carchus/portrait.webp",
+ "fullArt": "/invokers/units/titans/carchus/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+40%",
+   "Bound Invoker's Crit Rate": "+10%",
+   "Bound Invoker's Crit DMG": "+20%",
+   "Bonus HP": "+520",
+   "Bonus ATK": "+78",
+   "Bonus DEF": "+45",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+360%",
+   "Bound Invoker's Crit Rate": "+16%",
+   "Bound Invoker's Crit DMG": "+60%",
+   "Bonus HP": "+3,125",
+   "Bonus ATK": "+469",
+   "Bonus DEF": "+270",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/carchus/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 103 damage.\nDamage: 132.5% ATK\n#2 Attacks 1 enemy, dealing 113 damage. Reduces the cooldown of Active Skill 2 on Carchus by 1s.\nDamage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 110 damage.\nDamage: 140.4% ATK\n#2 Attacks 1 enemy, dealing 120 damage. Reduces the cooldown of Active Skill 2 on Carchus by 1.2s.\nDamage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 116 damage.\nDamage: 148.4% ATK\n#2 Attacks 1 enemy, dealing 127 damage. Reduces the cooldown of Active Skill 2 on Carchus by 1.4s.\nDamage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 126 damage.\nDamage: 161.7% ATK\n#2 Attacks 1 enemy, dealing 138 damage. Reduces the cooldown of Active Skill 2 on Carchus by 1.6s.\nDamage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 138 damage.\nDamage: 177.6% ATK\n#2 Attacks 1 enemy, dealing 152 damage. Reduces the cooldown of Active Skill 2 on Carchus by 1.8s.\nDamage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 149 damage.\nDamage: 190.8% ATK\n#2 Attacks 1 enemy, dealing 163 damage. Reduces the cooldown of Active Skill 2 on Carchus by 2s.\nDamage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 161 damage.\nDamage: 206.7% ATK\n#2 Attacks 1 enemy, dealing 176 damage. Reduces the cooldown of Active Skill 2 on Carchus by 2.2s.\nDamage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 172 damage.\nDamage: 219.9% ATK\n#2 Attacks 1 enemy, dealing 188 damage. Reduces the cooldown of Active Skill 2 on Carchus by 2.4s.\nDamage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 184 damage.\nDamage: 235.9% ATK\n#2 Attacks 1 enemy, dealing 201 damage. Reduces the cooldown of Active Skill 2 on Carchus by 2.6s.\nDamage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 194 damage.\nDamage: 249.1% ATK\n#2 Attacks 1 enemy, dealing 213 damage. Reduces the cooldown of Active Skill 2 on Carchus by 2.8s.\nDamage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 207 damage.\nDamage: 265% ATK\n#2 Attacks 1 enemy, dealing 226 damage. Reduces the cooldown of Active Skill 2 on Carchus by 3s.\nDamage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Depth Charge",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/carchus/skills/1.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 111 damage. Casts a [Stun] debuff on each target hit, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 118 damage. Casts a [Stun] debuff on each target hit, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 124 damage. Casts a [Stun] debuff on each target hit, lasting 3.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 136 damage. Casts a [Stun] debuff on each target hit, lasting 3.9s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 149 damage. Casts a [Stun] debuff on each target hit, lasting 4.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 160 damage. Casts a [Stun] debuff on each target hit, lasting 4.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 173 damage. Casts a [Stun] debuff on each target hit, lasting 4.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 185 damage. Casts a [Stun] debuff on each target hit, lasting 5.1s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 198 damage. Casts a [Stun] debuff on each target hit, lasting 5.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 209 damage. Casts a [Stun] debuff on each target hit, lasting 5.7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards 1 enemy, damaging each enemy hit, dealing 222 damage. Casts a [Stun] debuff on each target hit, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Chum The Water",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/carchus/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+53",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 113 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 8s in a 15m radius 2 times.\n#1 Damage: 145% ATK\n#2 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 120 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 8.5s in a 15m radius 2 times.\n#1 Damage: 153.7% ATK\n#2 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 127 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 9s in a 15m radius 2 times.\n#1 Damage: 162.4% ATK\n#2 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 138 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 9.5s in a 15m radius 2 times.\n#1 Damage: 176.9% ATK\n#2 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 152 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 10s in a 15m radius 2 times.\n#1 Damage: 194.3% ATK\n#2 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 163 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 10.5s in a 15m radius 2 times.\n#1 Damage: 208.8% ATK\n#2 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 176 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 11s in a 15m radius 2 times.\n#1 Damage: 226.2% ATK\n#2 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 188 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 11.5s in a 15m radius 2 times.\n#1 Damage: 240.7% ATK\n#2 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 201 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 12s in a 15m radius 2 times.\n#1 Damage: 258.1% ATK\n#2 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 213 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 12.5s in a 15m radius 2 times.\n#1 Damage: 272.6% ATK\n#2 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 226 damage per hit. Reduces the cooldown of a random Active Skill on 1 random ally by 13s in a 15m radius 2 times.\n#1 Damage: 290% ATK\n#2 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/carchus/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 181 damage. Casts a [30% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 232.5% ATK\nINVOKATION END\nCasts a [52 HP Shield] buff on Carchus, lasting 12s.\n#1 Shield: 10% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 192 damage. Casts a [35% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 246.4% ATK\nINVOKATION END\nCasts a [62 HP Shield] buff on Carchus, lasting 12s.\n#1 Shield: 12% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 203 damage. Casts a [40% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 260.4% ATK\nINVOKATION END\nCasts a [62 HP Shield] buff on Carchus, lasting 13s.\n#1 Shield: 12% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 221 damage. Casts a [40% Move SPD Down] debuff on the targets, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 283.7% ATK\nINVOKATION END\nCasts a [73 HP Shield] buff on Carchus, lasting 13s.\n#1 Shield: 14% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 243 damage. Casts a [40% Move SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 311.6% ATK\nINVOKATION END\nCasts a [73 HP Shield] buff on Carchus, lasting 14s.\n#1 Shield: 14% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 261 damage. Casts a [45% Move SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 334.8% ATK\nINVOKATION END\nCasts a [94 HP Shield] buff on Carchus, lasting 14s.\n#1 Shield: 18% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 283 damage. Casts a [50% Move SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 362.7% ATK\nINVOKATION END\nCasts a [94 HP Shield] buff on Carchus, lasting 15s.\n#1 Shield: 18% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 301 damage. Casts a [50% Move SPD Down] debuff on the targets, lasting 13s.\nAccuracy required for: Move SPD Down\n#1 Damage: 386% ATK\nINVOKATION END\nCasts a [114 HP Shield] buff on Carchus, lasting 15s.\n#1 Shield: 22% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 323 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 13s.\nAccuracy required for: Move SPD Down\n#1 Damage: 413.9% ATK\nINVOKATION END\nCasts a [114 HP Shield] buff on Carchus, lasting 16s.\n#1 Shield: 22% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 341 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 14s.\nAccuracy required for: Move SPD Down\n#1 Damage: 437.1% ATK\nINVOKATION END\nCasts a [130 HP Shield] buff on Carchus, lasting 16s.\n#1 Shield: 25% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius, dealing 363 damage. Casts a [60% Move SPD Down] debuff on the targets, lasting 15s.\nAccuracy required for: Move SPD Down\n#1 Damage: 465% ATK\nINVOKATION END\nCasts a [130 HP Shield] buff on Carchus, lasting 18s.\n#1 Shield: 25% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "HP Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/carchus/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +18% Health."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +19.8% Health."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +21.6% Health."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +25.2% Health."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +28.8% Health."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +32.4% Health."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +36% Health."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "While many sailors claim to have the ocean running through their veins, they'll never match up to their fellow Freeborn who actually have gills. It's these aquatic members of the Free Armada who birthed Carchus – a Titan devoted to keeping Amara's seas wild and untamed. Despite Carchus' command of the waves, even it doesn't truly know what lies on the seafloor...",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "A",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 44.6,
+  "lists": 16
+ }
+}

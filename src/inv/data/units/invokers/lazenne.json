@@ -1,0 +1,577 @@
+{
+ "slug": "lazenne",
+ "kind": "Invoker",
+ "name": "Lazenne",
+ "faction": "Magi",
+ "rarity": "Epic",
+ "class": "Tank",
+ "element": "Fire",
+ "soulSign": "Sign of Actia",
+ "gender": "Female",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/lazenne/portrait.webp",
+ "fullArt": "/invokers/units/invokers/lazenne/full.webp",
+ "stats": {
+  "base": {
+   "Health": "897",
+   "Attack": "28",
+   "Defense": "84",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "97"
+  },
+  "max": {
+   "Health": "10,655",
+   "Attack": "301",
+   "Defense": "1,012",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "137"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lazenne/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+96",
+    "titan": "+52"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 12.5% ATK + 12.5% DEF\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 18% ATK + 18% DEF\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 24.5% ATK + 24.5% DEF\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 30% ATK + 30% DEF\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 36.5% ATK + 36.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 13.2% ATK + 13.2% DEF\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 19.1% ATK + 19.1% DEF\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 26% ATK + 26% DEF\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 31.8% ATK + 31.8% DEF\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 38.7% ATK + 38.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 14% ATK + 14% DEF\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 20.2% ATK + 20.2% DEF\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 27.4% ATK + 27.4% DEF\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 33.6% ATK + 33.6% DEF\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 40.9% ATK + 40.9% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 15.2% ATK + 15.2% DEF\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 22% ATK + 22% DEF\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 29.9% ATK + 29.9% DEF\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 36.6% ATK + 36.6% DEF\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 44.5% ATK + 44.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 16.8% ATK + 16.8% DEF\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 24.1% ATK + 24.1% DEF\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 32.8% ATK + 32.8% DEF\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 40.2% ATK + 40.2% DEF\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 48.9% ATK + 48.9% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 18% ATK + 18% DEF\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 25.9% ATK + 25.9% DEF\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 35.3% ATK + 35.3% DEF\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 43.2% ATK + 43.2% DEF\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 52.6% ATK + 52.6% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 19.5% ATK + 19.5% DEF\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 28.1% ATK + 28.1% DEF\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 38.2% ATK + 38.2% DEF\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 46.8% ATK + 46.8% DEF\n#5 Attacks 1 enemy, dealing 64 damage.\nDamage: 56.9% ATK + 56.9% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 20.8% ATK + 20.8% DEF\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 29.9% ATK + 29.9% DEF\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 40.7% ATK + 40.7% DEF\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 49.8% ATK + 49.8% DEF\n#5 Attacks 1 enemy, dealing 68 damage.\nDamage: 60.6% ATK + 60.6% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 22.2% ATK + 22.2% DEF\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 32% ATK + 32% DEF\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 43.6% ATK + 43.6% DEF\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 53.4% ATK + 53.4% DEF\n#5 Attacks 1 enemy, dealing 73 damage.\nDamage: 65% ATK + 65% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 23.5% ATK + 23.5% DEF\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 33.8% ATK + 33.8% DEF\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 46.1% ATK + 46.1% DEF\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 56.4% ATK + 56.4% DEF\n#5 Attacks 1 enemy, dealing 77 damage.\nDamage: 68.6% ATK + 68.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 25% ATK + 25% DEF\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 36% ATK + 36% DEF\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 49% ATK + 49% DEF\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 60% ATK + 60% DEF\n#5 Attacks 1 enemy, dealing 82 damage.\nDamage: 73% ATK + 73% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Champion's Glory",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lazenne/skills/1.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [5% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 81 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 72.5% ATK + 72.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [5% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 86 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 76.8% ATK + 76.8% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [6% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 91 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 81.2% ATK + 81.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [7% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 99 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 88.5% ATK + 88.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 109 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 97.2% ATK + 97.2% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 117 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 104.4% ATK + 104.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [9% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 127 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 113.1% ATK + 113.1% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 135 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 120.3% ATK + 120.3% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 145 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 129.1% ATK + 129.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 153 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 136.3% ATK + 136.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 7s. Attacks the target, dealing 162 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 145% ATK + 145% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Justiciar's Condemnation",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lazenne/skills/2.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 162 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 145% ATK + 145% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 153.7% ATK + 153.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 182 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 162.4% ATK + 162.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 198 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 176.9% ATK + 176.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 218 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 194.3% ATK + 194.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 208.8% ATK + 208.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 253 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 226.2% ATK + 226.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 270 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 14s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 240.7% ATK + 240.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 289 damage. Casts a [90% Heal Reduction] debuff on the target, lasting 14s, decreasing the size of all heals received by 90%.\nAccuracy required for: Heal Reduction\n#1 Damage: 258.1% ATK + 258.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 305 damage. Casts a [90% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 90%.\nAccuracy required for: Heal Reduction\n#1 Damage: 272.6% ATK + 272.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 325 damage. Casts a [100% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 100%.\nAccuracy required for: Heal Reduction\n#1 Damage: 290% ATK + 290% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Mage-Knight's Power",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/lazenne/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+58",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 84 damage. Extends the duration of up to 2 random debuffs on the targets by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 75% ATK + 75% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 89 damage. Extends the duration of up to 2 random debuffs on the targets by 3.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 79.5% ATK + 79.5% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 94 damage. Extends the duration of up to 2 random debuffs on the targets by 3.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 84% ATK + 84% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 102 damage. Extends the duration of up to 2 random debuffs on the targets by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 91.5% ATK + 91.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 113 damage. Extends the duration of up to 2 random debuffs on the targets by 4.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 100.5% ATK + 100.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 121 damage. Extends the duration of up to 2 random debuffs on the targets by 4.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 108% ATK + 108% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 131 damage. Extends the duration of up to 2 random debuffs on the targets by 5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 117% ATK + 117% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 139 damage. Extends the duration of up to 2 random debuffs on the targets by 5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 124.5% ATK + 124.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 150 damage. Extends the duration of up to 2 random debuffs on the targets by 5.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 133.5% ATK + 133.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 158 damage. Extends the duration of up to 2 random debuffs on the targets by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 141% ATK + 141% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6x12m area centered on the target, from a distance of 3m, dealing 168 damage. Extends the duration of up to 3 random debuffs on the targets by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 150% ATK + 150% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Indomitable Princess",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lazenne/skills/4.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 136 damage per hit. The first hit casts a [135 HP Shield] buff on Lazenne, lasting 10s. Then, extends the duration of up to 2 random buffs on Lazenne by 4s on the second hit.\n#1 Damage: 121% ATK + 121% DEF\n#2 Shield: 15% * MAX HP\n#3 Damage: 121% ATK + 121% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 144 damage per hit. The first hit casts a [152 HP Shield] buff on Lazenne, lasting 10s. Then, extends the duration of up to 2 random buffs on Lazenne by 4s on the second hit.\n#1 Damage: 128.3% ATK + 128.3% DEF\n#2 Shield: 17% * MAX HP\n#3 Damage: 128.3% ATK + 128.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 152 damage per hit. The first hit casts a [152 HP Shield] buff on Lazenne, lasting 12s. Then, extends the duration of up to 2 random buffs on Lazenne by 4s on the second hit.\n#1 Damage: 135.5% ATK + 135.5% DEF\n#2 Shield: 17% * MAX HP\n#3 Damage: 135.5% ATK + 135.5% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 165 damage per hit. The first hit casts a [179 HP Shield] buff on Lazenne, lasting 12s. Then, extends the duration of up to 2 random buffs on Lazenne by 4s on the second hit.\n#1 Damage: 147.6% ATK + 147.6% DEF\n#2 Shield: 20% * MAX HP\n#3 Damage: 147.6% ATK + 147.6% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 182 damage per hit. The first hit casts a [224 HP Shield] buff on Lazenne, lasting 12s. Then, extends the duration of up to 2 random buffs on Lazenne by 4s on the second hit.\n#1 Damage: 162.1% ATK + 162.1% DEF\n#2 Shield: 25% * MAX HP\n#3 Damage: 162.1% ATK + 162.1% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 195 damage per hit. The first hit casts a [224 HP Shield] buff on Lazenne, lasting 14s. Then, extends the duration of up to 2 random buffs on Lazenne by 5s on the second hit.\n#1 Damage: 174.2% ATK + 174.2% DEF\n#2 Shield: 25% * MAX HP\n#3 Damage: 174.2% ATK + 174.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 211 damage per hit. The first hit casts a [224 HP Shield] buff on Lazenne, lasting 16s. Then, extends the duration of up to 2 random buffs on Lazenne by 5s on the second hit.\n#1 Damage: 188.8% ATK + 188.8% DEF\n#2 Shield: 25% * MAX HP\n#3 Damage: 188.8% ATK + 188.8% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 225 damage per hit. The first hit casts a [224 HP Shield] buff on Lazenne, lasting 16s. Then, extends the duration of up to 2 random buffs on Lazenne by 5s on the second hit.\n#1 Damage: 200.9% ATK + 200.9% DEF\n#2 Shield: 25% * MAX HP\n#3 Damage: 200.9% ATK + 200.9% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 241 damage per hit. The first hit casts a [269 HP Shield] buff on Lazenne, lasting 16s. Then, extends the duration of up to 2 random buffs on Lazenne by 5s on the second hit.\n#1 Damage: 215.4% ATK + 215.4% DEF\n#2 Shield: 30% * MAX HP\n#3 Damage: 215.4% ATK + 215.4% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 255 damage per hit. The first hit casts a [269 HP Shield] buff on Lazenne, lasting 18s. Then, extends the duration of up to 2 random buffs on Lazenne by 6s on the second hit.\n#1 Damage: 227.5% ATK + 227.5% DEF\n#2 Shield: 30% * MAX HP\n#3 Damage: 227.5% ATK + 227.5% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 271 damage per hit. The first hit casts a [269 HP Shield] buff on Lazenne, lasting 20s. Then, extends the duration of up to 3 random buffs on Lazenne by 6s on the second hit.\n#1 Damage: 242% ATK + 242% DEF\n#2 Shield: 30% * MAX HP\n#3 Damage: 242% ATK + 242% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "A princess dreamed her whole life of joining her knights and riding into a fairytale adventure – but her reality was one of courtly etiquette and restraint. Adventure was only a dream… until a visiting Magi unlocked her Arcana, and Lazenne could leap from her tower to forge storytales of her very own.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "C",
+  "hyxxis": "A",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "A",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 37.5,
+  "lists": 16
+ }
+}

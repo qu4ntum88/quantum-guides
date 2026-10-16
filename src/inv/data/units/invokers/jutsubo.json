@@ -1,0 +1,577 @@
+{
+ "slug": "jutsubo",
+ "kind": "Invoker",
+ "name": "Jutsubo",
+ "faction": "Cambion",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Light",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/jutsubo/portrait.webp",
+ "fullArt": "/invokers/units/invokers/jutsubo/full.webp",
+ "stats": {
+  "base": {
+   "Health": "948",
+   "Attack": "85",
+   "Defense": "72",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "10,909",
+   "Attack": "967",
+   "Defense": "760",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/jutsubo/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 14.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 20% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 24.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Extends the duration of 1 random debuff on the targets by 1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 15% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 15.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 21.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 26% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Extends the duration of 1 random debuff on the targets by 1.1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 15.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 16.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 22.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 27.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Extends the duration of 1 random debuff on the targets by 1.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 16.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 11.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 17.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 24.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 29.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 16 damage. Extends the duration of 1 random debuff on the targets by 1.3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 18.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 12.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 19.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 26.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 32.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage. Extends the duration of 1 random debuff on the targets by 1.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 20.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 13.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 20.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 28.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 35.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage. Extends the duration of 1 random debuff on the targets by 1.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 21.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 14.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 22.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 31.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 38.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage. Extends the duration of 1 random debuff on the targets by 1.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 23.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 15.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 24.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 33.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 40.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage. Extends the duration of up to 2 random debuffs on the targets by 1.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 24.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 25.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 35.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 43.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 23 damage. Extends the duration of up to 2 random debuffs on the targets by 2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 26.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 17.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 27.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 37.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 46.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage. Extends the duration of up to 2 random debuffs on the targets by 2.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 28.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 19% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 29% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 40% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 49% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage. Extends the duration of up to 3 random debuffs on the targets by 2.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 30% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Secret of Dreams",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jutsubo/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 79 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 28 HP.\n#1 Damage: 93.5% ATK\n#2 Heal: 3% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 84 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 38 HP.\n#1 Damage: 99.1% ATK\n#2 Heal: 4% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 89 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 47 HP.\n#1 Damage: 104.7% ATK\n#2 Heal: 5% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 97 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 57 HP.\n#1 Damage: 114.1% ATK\n#2 Heal: 6% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 106 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 66 HP.\n#1 Damage: 125.3% ATK\n#2 Heal: 7% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 114 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 76 HP.\n#1 Damage: 134.6% ATK\n#2 Heal: 8% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 124 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 85 HP.\n#1 Damage: 145.9% ATK\n#2 Heal: 9% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 132 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 95 HP.\n#1 Damage: 155.2% ATK\n#2 Heal: 10% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 141 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 104 HP.\n#1 Damage: 166.4% ATK\n#2 Heal: 11% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 149 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 114 HP.\n#1 Damage: 175.8% ATK\n#2 Heal: 12% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 159 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 123 HP.\n#1 Damage: 187% ATK\n#2 Heal: 13% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "Secret of Hurt",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jutsubo/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 164 damage. Casts a [20% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 192.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 173 damage. Casts a [22% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 204% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 183 damage. Casts a [25% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 215.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 200 damage. Casts a [30% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 234.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 219 damage. Casts a [35% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 258% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 236 damage. Casts a [40% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 277.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 255 damage. Casts a [40% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 300.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 272 damage. Casts a [40% DEF Down] debuff on the target, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 319.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 291 damage. Casts a [45% DEF Down] debuff on the target, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 342.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 308 damage. Casts a [50% DEF Down] debuff on the target, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 361.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 327 damage. Casts a [50% DEF Down] debuff on the target, lasting 18s.\nAccuracy required for: DEF Down\n#1 Damage: 385% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Secret of Despair",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/jutsubo/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 82 damage. Casts a [45% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 96.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 87 damage. Casts a [45% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 102.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 92 damage. Casts a [47% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 108.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 100 damage. Casts a [47% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 117.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 110 damage. Casts a [49% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 129.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 118 damage. Casts a [49% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 139% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 128 damage. Casts a [52% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 150.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 136 damage. Casts a [55% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 160.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 146 damage. Casts a [55% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 171.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 154 damage. Casts a [60% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 181.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 6m radius around the target, from a distance of 9m, dealing 164 damage. Casts a [60% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 193% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Secret of Hope",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/jutsubo/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 122 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 15s. \nCasts a [45% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 15s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 190 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 143.5% ATK\n#2 Heal: 20% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 129 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 15s. \nCasts a [45% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 15s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 218 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 152.1% ATK\n#2 Heal: 23% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 137 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 15s. \nCasts a [47% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 15s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 218 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 160.7% ATK\n#2 Heal: 23% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 149 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 16s. \nCasts a [47% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 16s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 246 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 175.1% ATK\n#2 Heal: 26% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 163 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 16s. \nCasts a [50% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 16s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 246 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 192.3% ATK\n#2 Heal: 26% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 176 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 16s. \nCasts a [50% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 16s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 275 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 206.6% ATK\n#2 Heal: 29% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 190 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 18s. \nCasts a [50% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 16s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 275 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 223.9% ATK\n#2 Heal: 29% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 202 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 18s. \nCasts a [55% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 16s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 275 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 238.2% ATK\n#2 Heal: 29% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 217 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 18s. \nCasts a [55% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 17s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 303 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 255.4% ATK\n#2 Heal: 32% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 229 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 20s. \nCasts a [60% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 17s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 303 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 269.8% ATK\n#2 Heal: 32% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 10m radius around the target, from a distance of 9m, dealing 244 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 20s. \nCasts a [60% DEF Up] buff on 10 allies in a 10m radius around the target, lasting 18s. \nHeals the 10 allies with the lowest MAX HP in a 15m radius, restoring 332 HP.\nAccuracy required for: Cooldown Increase\n#1 Damage: 287% ATK\n#2 Heal: 35% * MAX HP"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Jutsubo holds a disturbing power: the ability to imprison spirits and steal their magic by inscribing their secrets on her enchanted papers. The spells she has captured over the years are nearly uncountable, and she does not hesitate to use them in defense of the Cambion.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "S+",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "E",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "E",
+  "ulgorim": "S+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 56.3,
+  "lists": 16
+ }
+}

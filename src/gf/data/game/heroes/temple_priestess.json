@@ -1,0 +1,221 @@
+{
+ "id": 170,
+ "slug": "temple_priestess",
+ "name": "Temple Priestess",
+ "title": "Servant of Ishtar",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "In days of old, temple priestesses of various goddesses wielded surprising authority in Ekur. Their religious and communal education and their authority to conduct certain ceremonies earned the respect and the ear of the populace. Since the Shattering, that learning and those rites have bestowed upon them genuine magical power, which they now use at the behest of their gods.",
+ "rarity": "Uncommon",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Temple Priestess.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_TemplePriestess_main.png",
+ "stats": {
+  "hp": 1230,
+  "atk": 40,
+  "def": 70,
+  "spd": 91,
+  "init": 83,
+  "acc": 0,
+  "res": 15,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Temple Strike",
+   "description": "Attack 1 enemy 165%ATK 2 times then heal 10%HP this hero.",
+   "icon_url": "/godforge/abilities/temple_priestess/ICON_TemplePriestess_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "165%ATK",
+    "165%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Power of Devotion",
+   "description": "Attack 1 enemy 430%ATK then heal 10%HP the ally with the lowest HP.",
+   "icon_url": "/godforge/abilities/temple_priestess/ICON_TemplePriestess_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "430%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Ishtar's Blessing",
+   "description": "Increase this hero’s Turn Meter by 10% then heal 10%HP all allies.",
+   "icon_url": "/godforge/abilities/temple_priestess/ICON_TemplePriestess_Ultimate.webp",
+   "divinity_cost": 2100,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

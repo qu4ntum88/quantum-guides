@@ -1,0 +1,555 @@
+{
+ "slug": "silanth",
+ "kind": "Invoker",
+ "name": "Silanth",
+ "faction": "Nocturna",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/silanth/portrait.webp",
+ "fullArt": "/invokers/units/invokers/silanth/full.webp",
+ "stats": {
+  "base": {
+   "Health": "517",
+   "Attack": "59",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "115"
+  },
+  "max": {
+   "Health": "6,044",
+   "Attack": "792",
+   "Defense": "552",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "145"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/silanth/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+109",
+    "titan": "+59"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 43.5% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 55% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 19 damage.\nDamage: 32.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 46.1% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 58.3% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 20 damage.\nDamage: 34.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 48.7% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 61.6% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 21 damage.\nDamage: 36.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 53.1% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 67.1% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 23 damage.\nDamage: 39.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 58.3% ATK\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 73.7% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 26 damage.\nDamage: 43.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 62.6% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 79.2% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 28 damage.\nDamage: 46.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 67.9% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 85.8% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 30 damage.\nDamage: 50.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 72.2% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 91.3% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 32 damage.\nDamage: 53.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 77.4% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 97.9% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 34 damage.\nDamage: 57.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 81.8% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 103.4% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 36 damage.\nDamage: 61.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 87% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 110% ATK\n#5 Attacks 8 enemies in a 2m radius around Silanth, dealing 38 damage.\nDamage: 65% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Bloomshred",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/silanth/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 27 damage per hit.\n#1 Damage: 45.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 28 damage per hit.\n#1 Damage: 48.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 30 damage per hit.\n#1 Damage: 51% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 33 damage per hit.\n#1 Damage: 55.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 36 damage per hit.\n#1 Damage: 61% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 39 damage per hit.\n#1 Damage: 65.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 42 damage per hit.\n#1 Damage: 71% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 45 damage per hit.\n#1 Damage: 75.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 48 damage per hit.\n#1 Damage: 81% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 50 damage per hit.\n#1 Damage: 85.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 54 damage per hit.\n#1 Damage: 91% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Reaping Crescent",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/silanth/skills/2.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 78 damage per hit. The first hit launches the target for 1.5s. Then, casts a [15% RES Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 132.5% ATK\n#2 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 83 damage per hit. The first hit launches the target for 1.5s. Then, casts a [16% RES Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 140.4% ATK\n#2 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 88 damage per hit. The first hit launches the target for 1.6s. Then, casts a [16% RES Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 148.4% ATK\n#2 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 95 damage per hit. The first hit launches the target for 1.6s. Then, casts a [16% RES Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 161.7% ATK\n#2 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 105 damage per hit. The first hit launches the target for 1.7s. Then, casts a [18% RES Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 177.6% ATK\n#2 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 113 damage per hit. The first hit launches the target for 1.7s. Then, casts a [18% RES Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 190.8% ATK\n#2 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 122 damage per hit. The first hit launches the target for 1.8s. Then, casts a [20% RES Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 206.7% ATK\n#2 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 130 damage per hit. The first hit launches the target for 1.9s. Then, casts a [20% RES Down] debuff on the target, lasting 8s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 219.9% ATK\n#2 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 139 damage per hit. The first hit launches the target for 1.9s. Then, casts a [22% RES Down] debuff on the target, lasting 8s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 235.9% ATK\n#2 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 147 damage per hit. The first hit launches the target for 2s. Then, casts a [22% RES Down] debuff on the target, lasting 8s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 249.1% ATK\n#2 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 156 damage per hit. The first hit launches the target for 2s. Then, casts a [25% RES Down] debuff on the target, lasting 8s, on the second hit.\nAccuracy required for: Launch, RES Down\n#1 Damage: 265% ATK\n#2 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Bloodpetal Harvest",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/silanth/skills/3.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 21 damage per hit. Casts a [1% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 35% ATK\n#2 Damage: 35% ATK\n#3 Damage: 35% ATK\n#4 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 22 damage per hit. Casts a [1% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 37.1% ATK\n#2 Damage: 37.1% ATK\n#3 Damage: 37.1% ATK\n#4 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 23 damage per hit. Casts a [1% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 39.2% ATK\n#2 Damage: 39.2% ATK\n#3 Damage: 39.2% ATK\n#4 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 25 damage per hit. Casts a [1.1% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 42.7% ATK\n#2 Damage: 42.7% ATK\n#3 Damage: 42.7% ATK\n#4 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 28 damage per hit. Casts a [1.2% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 46.9% ATK\n#2 Damage: 46.9% ATK\n#3 Damage: 46.9% ATK\n#4 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 30 damage per hit. Casts a [1.2% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 50.4% ATK\n#2 Damage: 50.4% ATK\n#3 Damage: 50.4% ATK\n#4 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 32 damage per hit. Casts a [1.3% Bleed] debuff on the targets, lasting 6s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 54.6% ATK\n#2 Damage: 54.6% ATK\n#3 Damage: 54.6% ATK\n#4 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 34 damage per hit. Casts a [1.4% Bleed] debuff on the targets, lasting 7s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 58.1% ATK\n#2 Damage: 58.1% ATK\n#3 Damage: 58.1% ATK\n#4 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 37 damage per hit. Casts a [1.4% Bleed] debuff on the targets, lasting 7s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 62.3% ATK\n#2 Damage: 62.3% ATK\n#3 Damage: 62.3% ATK\n#4 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 39 damage per hit. Casts a [1.4% Bleed] debuff on the targets, lasting 8s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 65.8% ATK\n#2 Damage: 65.8% ATK\n#3 Damage: 65.8% ATK\n#4 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m radius around Silanth 3 times, dealing 41 damage per hit. Casts a [1.5% Bleed] debuff on the targets, lasting 8s, on the third hit. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 70% ATK\n#2 Damage: 70% ATK\n#3 Damage: 70% ATK\n#4 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Sanguine Thorns",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/silanth/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 68 damage per hit. Damage increases by 8% per debuff on the target, limited up to +50% damage.\n#1 Damage: 115% ATK\n#2 Damage: 115% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 72 damage per hit. Damage increases by 8% per debuff on the target, limited up to +53% damage.\n#1 Damage: 121.9% ATK\n#2 Damage: 121.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 76 damage per hit. Damage increases by 9% per debuff on the target, limited up to +53% damage.\n#1 Damage: 128.8% ATK\n#2 Damage: 128.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 83 damage per hit. Damage increases by 9% per debuff on the target, limited up to +55% damage.\n#1 Damage: 140.3% ATK\n#2 Damage: 140.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 91 damage per hit. Damage increases by 9% per debuff on the target, limited up to +55% damage.\n#1 Damage: 154.1% ATK\n#2 Damage: 154.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 98 damage per hit. Damage increases by 9% per debuff on the target, limited up to +60% damage.\n#1 Damage: 165.6% ATK\n#2 Damage: 165.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 106 damage per hit. Damage increases by 10% per debuff on the target, limited up to +60% damage.\n#1 Damage: 179.4% ATK\n#2 Damage: 179.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 113 damage per hit. Damage increases by 10% per debuff on the target, limited up to +65% damage.\n#1 Damage: 190.9% ATK\n#2 Damage: 190.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 121 damage per hit. Damage increases by 12% per debuff on the target, limited up to +65% damage.\n#1 Damage: 204.7% ATK\n#2 Damage: 204.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 128 damage per hit. Damage increases by 15% per debuff on the target, limited up to +70% damage.\n#1 Damage: 216.2% ATK\n#2 Damage: 216.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around the closest enemy 2 times, dealing 136 damage per hit. Damage increases by 15% per debuff on the target, limited up to +75% damage.\n#1 Damage: 230% ATK\n#2 Damage: 230% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Silanth always did what she wanted. And when the rebel Princess heard of a vampire lord that could hold the secret to halting the curse burning in her veins, she headed straight over. She got him to give her exactly what she wanted – all the power of the Roseblood Curse, none of the downsides.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "B",
+  "omnissi-water": "C",
+  "omnissi-wind": "D",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 28.6,
+  "lists": 16
+ }
+}

@@ -1,0 +1,322 @@
+{
+ "id": 225,
+ "slug": "enki",
+ "name": "Enki",
+ "title": "Flood Father",
+ "summary": "Bring the waters of Ekur and Mend your allies Spirit restoring them from death.",
+ "lore": "Lord of the Sweet Waters, Enki is creator of life in Ekur. Stubborn and curmudgeonly, he has isolated himself since the Shattering, which he views as the other gods’ failure. Opposed to both the current Order and Destiny’s view of the future, he is content to see Chaos run rampant until a replacement of which he personally approves should appear.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Enki.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Enki_main.png",
+ "stats": {
+  "hp": 1425,
+  "atk": 60,
+  "def": 92,
+  "spd": 106,
+  "init": 96,
+  "acc": 15,
+  "res": 50,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "At the start of the turn, place [Mend] on all allies for 1 turn.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also remove Disable from all allies.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also revive 1 defeated ally with 100% HP and 100% Turn Meter.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Aqua Surge",
+   "description": "Attack 1 enemy 320%ATK. Increase the Turn Meter of all allies by 5%. If an ally is under [Mend], increase that ally's Turn Meter by 10% instead.",
+   "icon_url": "/godforge/abilities/enki/ICON_Enki_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "320%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "River's Blessing",
+   "description": "Remove all Debuffs from all allies, then attack all enemies 265%ATK. Also, place 2 stacks of [Mend] on all allies for 3 turns. If an ally is already under [Mend], increase that ally's MAX HP by 4% (stacking up to 5 times).",
+   "icon_url": "/godforge/abilities/enki/ICON_Enki_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "265%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also remove Disable from all allies.",
+     "upgrade_description": "Also remove Disable from all allies."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "33% HP in All Battles",
+   "icon_url": "/godforge/abilities/enki/ICON_Leader_Health.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Gift of Ingenuity",
+   "description": "Increase the healing from [Mend] placed by this hero by 50%. At the start of this hero's Turn, activate 1 [Mend] on each ally.",
+   "icon_url": "/godforge/abilities/enki/ICON_Enki_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Unknown",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "At the start of the turn, place Mend on all allies for 1 turn.",
+     "upgrade_description": "At the start of the turn, place [Mend] on all allies for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Temple of Abzu",
+   "description": "Heal 30% HP all allies, then increase the duration of [Mend] on all allies by 1 turn. If an ally is below 50% HP, increase that ally's Turn Meter by 20%. If an ally is above 50% HP, place [SPD Up II] on that ally for 2 turns.",
+   "icon_url": "/godforge/abilities/enki/ICON_Enki_Ultimate.webp",
+   "divinity_cost": 3725,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also revive 1 defeated ally with 100% HP and 100% Turn Meter.",
+     "upgrade_description": "Also revive 1 defeated ally with 100% HP and 100% Turn Meter."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Gift of Ingenuity",
+   "description": "Increase the healing from [Mend] placed by this hero by 25%. At the start of this hero's Turn, activate 1 [Mend] on this hero.",
+   "icon_url": "/godforge/abilities/enki/ICON_Enki_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Unknown",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

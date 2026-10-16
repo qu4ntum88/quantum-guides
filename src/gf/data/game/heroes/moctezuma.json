@@ -1,0 +1,315 @@
+{
+ "id": 194,
+ "slug": "moctezuma",
+ "name": "Moctezuma",
+ "title": "The Conqueror",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The greatest Aztec Emperor who expanded his kingdom and made Tenochtitlan the jewel of his world. Empowered by the divine aether released after the Shattering, Moctezuma has become akin to a god. He is one of Omeyocan’s staunchest defenders, wary of other Realms and determined to protect his people against invasion.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Moctezuma.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Moctezuma_main.png",
+ "stats": {
+  "hp": 1665,
+  "atk": 91,
+  "def": 91,
+  "spd": 100,
+  "init": 89,
+  "acc": 35,
+  "res": 50,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Place [Taunt] for 2 Turns instead.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If an ally is defeated, activate this hero’s Core Ability.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the [Shield] limit to 50,000 and reflects 100% of the damage inflicted to the shield. This will always be a Normal hit and ignore 100% DEF.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Obsidian Judgement",
+   "description": "Attack 1 enemy 10%HP+70%ATK 2 times. Each hit inflicts 50% increased damage to [Barrier] and [Shield]. If the target is not under [Barrier] and [Shield] increase this hero’s Turn Meter by 10% instead.",
+   "icon_url": "/godforge/abilities/moctezuma/ICON_Moctezuma_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+70%ATK",
+    "10%HP+70%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Moctezuma’s Revenge",
+   "description": "Attack all enemies 5%HP+55%ATK 2 times. Before each hit, has a 75% chance to remove [Barrier] and [Shield] from each target.\n\nIf the target is not under [Barrier] or [Shield] after attacking, has a 75% chance to place [Curse II] on each target for 2 turns otherwise place [Acid] on each target for 2 turns.\n\nAlso place [Taunt] on each target for 1 turn.",
+   "icon_url": "/godforge/abilities/moctezuma/ICON_Moctezuma_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Place Taunt for 2 Turns instead.",
+     "upgrade_description": "Place [Taunt] for 2 Turns instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% DEF in Arena Battles",
+   "icon_url": "/godforge/abilities/moctezuma/ICON_Leader_Defence.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Sacrificial Vow",
+   "description": "When an enemy attacks an ally, decrease the damage received by 20% and increase the damage this hero inflicts on their next ability by 5%. This is doubled if the enemy is under [Barrier] or [Shield].",
+   "icon_url": "/godforge/abilities/moctezuma/ICON_Moctezuma_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If an ally is defeated, activate this hero’s Core Ability.",
+     "upgrade_description": "If an ally is defeated, activate this hero’s Core Ability."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Dance of Tenochtitlan",
+   "description": "Place [Ward] on all allies for 2 turns, then attack all enemies 10%HP+100%ATK. Also place [Shield] on all allies equal to 30% of the damage inflicted. The [Shield] cannot exceed 25,000.",
+   "icon_url": "/godforge/abilities/moctezuma/ICON_Moctezuma_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "10%HP+100%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Ward",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the Shield limit to 50,000 and reflects 100% of the damage inflicted to the shield. This will always be a Normal hit and ignore 100% DEF.",
+     "upgrade_description": "Increase the [Shield] limit to 50,000 and reflects 100% of the damage inflicted to the shield. This will always be a Normal hit and ignore 100% DEF."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Sacrificial Vow",
+   "description": "When an enemy attacks this hero, decrease the damage received by 10% and increase the damage this hero inflicts on their next ability by 2.5%. This is doubled if the enemy is under [Barrier] or [Shield].",
+   "icon_url": "/godforge/abilities/moctezuma/ICON_Moctezuma_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

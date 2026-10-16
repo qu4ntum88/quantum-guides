@@ -1,0 +1,555 @@
+{
+ "slug": "syrenna",
+ "kind": "Invoker",
+ "name": "Syrenna",
+ "faction": "Lightseekers",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/syrenna/portrait.webp",
+ "fullArt": "/invokers/units/invokers/syrenna/full.webp",
+ "stats": {
+  "base": {
+   "Health": "550",
+   "Attack": "58",
+   "Defense": "46",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "110"
+  },
+  "max": {
+   "Health": "6,480",
+   "Attack": "766",
+   "Defense": "531",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "110"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/syrenna/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 47.5% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 71% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 50.3% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 44 damage.\nDamage: 75.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 53.2% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 79.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 58% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 86.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 63.7% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 95.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 68.4% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 102.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 74.1% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 64 damage.\nDamage: 110.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 78.8% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 68 damage.\nDamage: 117.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 84.5% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 73 damage.\nDamage: 126.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 89.3% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 77 damage.\nDamage: 133.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 95% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 82 damage.\nDamage: 142% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Blademaster",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/syrenna/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+23",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 75 damage.\n#1 Damage: 130% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 137.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 145.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage.\n#1 Damage: 158.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage.\n#1 Damage: 174.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage.\n#1 Damage: 187.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 118 damage.\n#1 Damage: 202.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage.\n#1 Damage: 215.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage.\n#1 Damage: 231.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 142 damage.\n#1 Damage: 244.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage.\n#1 Damage: 260% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Mighty Rend",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/syrenna/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+20",
+    "titan": "+11"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 78 damage.\n#1 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 83 damage.\n#1 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 88 damage.\n#1 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 96 damage.\n#1 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 105 damage.\n#1 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 113 damage.\n#1 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 122 damage.\n#1 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 130 damage.\n#1 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 139 damage.\n#1 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "17s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 147 damage.\n#1 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Syrenna, dealing 157 damage.\n#1 Damage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Broken Oath",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/syrenna/skills/3.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+23",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 161 damage. Casts a [10% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 171 damage. Casts a [11% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 180 damage. Casts a [11% DEF Down] debuff on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 196 damage. Casts a [12% DEF Down] debuff on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 216 damage. Casts a [12% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 232 damage. Casts a [14% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. Casts a [14% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 267 damage. Casts a [14% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 286 damage. Casts a [16% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 303 damage. Casts a [16% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 322 damage. Casts a [18% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Raging Truth",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/syrenna/skills/4.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 67 damage. Casts a [1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK). \nHeals Syrenna, restoring (10% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 115% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick\n#4 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 71 damage. Casts a [1.05% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.05% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.53% of their MAX HP per tick (up to 150% ATK). \nHeals Syrenna, restoring (10% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 121.9% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick\n#4 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 75 damage. Casts a [1.1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 175% ATK). \nHeals Syrenna, restoring (15% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 128.8% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick\n#4 Heal: 15% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 81 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 175% ATK). \nHeals Syrenna, restoring (15% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 140.3% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick\n#4 Heal: 15% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 89 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 200% ATK). \nHeals Syrenna, restoring (15% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 154.1% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Heal: 15% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 96 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 200% ATK). \nHeals Syrenna, restoring (20% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 165.6% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 104 damage. Casts a [1.35% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.35% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.68% of their MAX HP per tick (up to 225% ATK). \nHeals Syrenna, restoring (20% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 179.4% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick\n#4 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 111 damage. Casts a [1.35% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.35% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.68% of their MAX HP per tick (up to 225% ATK). \nHeals Syrenna, restoring (20% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 190.9% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick\n#4 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 119 damage. Casts a [1.35% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.35% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.68% of their MAX HP per tick (up to 250% ATK). \nHeals Syrenna, restoring (20% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 204.7% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 125 damage. Casts a [1.4% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.7% of their MAX HP per tick (up to 250% ATK). \nHeals Syrenna, restoring (25% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 216.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Heal: 25% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 60°, 6m cone in front of Syrenna, from a distance of 2m, dealing 133 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK). \nHeals Syrenna, restoring (25% * Damage Dealt) HP.\nAccuracy required for: Burn\n#1 Damage: 230% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\n#4 Heal: 25% * Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Syrenna was a fighter from the very beginning; she used to use sticks to protect her gentler sister, Arissa. All grown up, she still fights for her family – but now her blades are fire and steel, and her foes don’t live to try twice.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "C",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "B",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "D",
+  "omnissi-wind": "B",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 32.1,
+  "lists": 16
+ }
+}

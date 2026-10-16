@@ -1,0 +1,495 @@
+{
+ "slug": "mekiddo",
+ "kind": "Titan",
+ "name": "Mekiddo",
+ "faction": "Cambion",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/mekiddo/portrait.webp",
+ "fullArt": "/invokers/units/titans/mekiddo/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+640",
+   "Bonus ATK": "+85",
+   "Bonus DEF": "+61",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,846",
+   "Bonus ATK": "+511",
+   "Bonus DEF": "+367",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/mekiddo/skills/0.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 64 damage per hit.\nDamage: 75% ATK\nDamage: 75% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 68 damage per hit. Casts a [25% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 80% ATK\nDamage: 80% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 68 damage per hit.\nDamage: 79.5% ATK\nDamage: 79.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 72 damage per hit. Casts a [27% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 84.8% ATK\nDamage: 84.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 71 damage per hit.\nDamage: 84% ATK\nDamage: 84% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 76 damage per hit. Casts a [29% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 89.6% ATK\nDamage: 89.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 78 damage per hit.\nDamage: 91.5% ATK\nDamage: 91.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 83 damage per hit. Casts a [29% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 97.6% ATK\nDamage: 97.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 85 damage per hit.\nDamage: 100.5% ATK\nDamage: 100.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 91 damage per hit. Casts a [31% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 107.2% ATK\nDamage: 107.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 92 damage per hit.\nDamage: 108% ATK\nDamage: 108% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 98 damage per hit. Casts a [34% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 115.2% ATK\nDamage: 115.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 99 damage per hit.\nDamage: 117% ATK\nDamage: 117% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 106 damage per hit. Casts a [37% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 124.8% ATK\nDamage: 124.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 106 damage per hit.\nDamage: 124.5% ATK\nDamage: 124.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 113 damage per hit. Casts a [40% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 132.8% ATK\nDamage: 132.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 113 damage per hit.\nDamage: 133.5% ATK\nDamage: 133.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 121 damage per hit. Casts a [40% DEF Down] debuff on the target, lasting 16s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 142.4% ATK\nDamage: 142.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 120 damage per hit.\nDamage: 141% ATK\nDamage: 141% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 128 damage per hit. Casts a [45% DEF Down] debuff on the target, lasting 16s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 150.4% ATK\nDamage: 150.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, 2 times, dealing 128 damage per hit.\nDamage: 150% ATK\nDamage: 150% ATK\n#2 Attacks 1 enemy from a distance of 12m, 2 times, dealing 136 damage per hit. Casts a [50% DEF Down] debuff on the target, lasting 16s, on the second hit.\nAccuracy required for: DEF Down\nDamage: 160% ATK\nDamage: 160% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wheel of Creation",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/mekiddo/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 134 damage per hit. 1 random ally gains 10% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 10% Ultimate Mana in a 20m radius instead.\n#1 Damage: 157.5% ATK\n#2 Damage: 157.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 142 damage per hit. 1 random ally gains 11% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 11% Ultimate Mana in a 20m radius instead.\n#1 Damage: 166.9% ATK\n#2 Damage: 166.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 150 damage per hit. 1 random ally gains 12% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 12% Ultimate Mana in a 20m radius instead.\n#1 Damage: 176.4% ATK\n#2 Damage: 176.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 163 damage per hit. 1 random ally gains 13% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 13% Ultimate Mana in a 20m radius instead.\n#1 Damage: 192.2% ATK\n#2 Damage: 192.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 179 damage per hit. 1 random ally gains 14% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 14% Ultimate Mana in a 20m radius instead.\n#1 Damage: 211.1% ATK\n#2 Damage: 211.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 193 damage per hit. 1 random ally gains 15% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 15% Ultimate Mana in a 20m radius instead.\n#1 Damage: 226.8% ATK\n#2 Damage: 226.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 209 damage per hit. 1 random ally gains 16% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 16% Ultimate Mana in a 20m radius instead.\n#1 Damage: 245.7% ATK\n#2 Damage: 245.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 222 damage per hit. 1 random ally gains 17% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 17% Ultimate Mana in a 20m radius instead.\n#1 Damage: 261.5% ATK\n#2 Damage: 261.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 238 damage per hit. 1 random ally gains 18% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 18% Ultimate Mana in a 20m radius instead.\n#1 Damage: 280.4% ATK\n#2 Damage: 280.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 252 damage per hit. 1 random ally gains 19% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 19% Ultimate Mana in a 20m radius instead.\n#1 Damage: 296.1% ATK\n#2 Damage: 296.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 2 times, dealing 268 damage per hit. 1 random ally gains 20% Ultimate Mana in a 20m radius. \nIf the hit lands as a critical hit 2 random allies gain 20% Ultimate Mana in a 20m radius instead.\n#1 Damage: 315% ATK\n#2 Damage: 315% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Gentle Obliteration",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/mekiddo/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 140 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1s if the hit lands as a critical hit.\n#1 Damage: 165% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 149 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.1s if the hit lands as a critical hit.\n#1 Damage: 174.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 157 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.2s if the hit lands as a critical hit.\n#1 Damage: 184.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 171 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.3s if the hit lands as a critical hit.\n#1 Damage: 201.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 188 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.4s if the hit lands as a critical hit.\n#1 Damage: 221.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 202 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.5s if the hit lands as a critical hit.\n#1 Damage: 237.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 219 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.6s if the hit lands as a critical hit.\n#1 Damage: 257.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 233 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.7s if the hit lands as a critical hit.\n#1 Damage: 273.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 250 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.8s if the hit lands as a critical hit.\n#1 Damage: 293.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 264 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 1.9s if the hit lands as a critical hit.\n#1 Damage: 310.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 280 damage. Reduces the cooldown of Active Skill 1 on Mekiddo by 2s if the hit lands as a critical hit.\n#1 Damage: 330% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/mekiddo/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 227 damage. Casts a [25% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 267.5% ATK\nINVOKATION END\nCasts a [25% ATK Up] buff on Mekiddo, lasting 12s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 241 damage. Casts a [27% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 283.5% ATK\nINVOKATION END\nCasts a [27% ATK Up] buff on Mekiddo, lasting 12s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 255 damage. Casts a [29% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 299.6% ATK\nINVOKATION END\nCasts a [29% ATK Up] buff on Mekiddo, lasting 12s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 277 damage. Casts a [29% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 326.4% ATK\nINVOKATION END\nCasts a [29% ATK Up] buff on Mekiddo, lasting 14s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 305 damage. Casts a [31% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 358.5% ATK\nINVOKATION END\nCasts a [31% ATK Up] buff on Mekiddo, lasting 14s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 327 damage. Casts a [34% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 385.2% ATK\nINVOKATION END\nCasts a [34% ATK Up] buff on Mekiddo, lasting 14s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 355 damage. Casts a [37% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 417.3% ATK\nINVOKATION END\nCasts a [37% ATK Up] buff on Mekiddo, lasting 14s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 377 damage. Casts a [40% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 444% ATK\nINVOKATION END\nCasts a [40% ATK Up] buff on Mekiddo, lasting 14s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 405 damage. Casts a [40% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 476.1% ATK\nINVOKATION END\nCasts a [40% ATK Up] buff on Mekiddo, lasting 16s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 427 damage. Casts a [45% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 502.9% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on Mekiddo, lasting 16s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 455 damage. Casts a [50% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 535% ATK\nINVOKATION END\nCasts a [50% ATK Up] buff on Mekiddo, lasting 16s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/mekiddo/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +20% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +22% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +24% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +28% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +32% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +36% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +40% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Should you see the multi-armed form of Mekiddo bearing down upon you, remain tranquil – for blissful annihilation soon awaits. Born from the mind of a Cambion sage, who meditated atop a stone pillar for a thousand years, Mekiddo's eternal tranquility is matched by its ability to inflict total destruction on its enemies. Perfectly balanced, as all things should be.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "S+",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S",
+  "pentiax": "S+",
+  "sakiel": "S",
+  "sorgott": "S+",
+  "ulgorim": "S+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 94.6,
+  "lists": 16
+ }
+}

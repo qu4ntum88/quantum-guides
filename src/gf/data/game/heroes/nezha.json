@@ -1,0 +1,274 @@
+{
+ "id": 187,
+ "slug": "nezha",
+ "name": "Nezha",
+ "title": "Heaven’s Rebel",
+ "summary": "Fight in Defiance as you Aetherburn foes and are Reborn from the Flames.",
+ "lore": "A born warrior, Nezha slew divine beings even as a child—sometimes accidentally, sometimes for pride. Deified by the common folk, he is immensely popular, for he protects them and proves swift to answer prayers. To Tian’s celestial bureaucracy, however, he is a danger to be watched, for his prideful temper may cause further death, or even war with other realms.",
+ "rarity": "Epic",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Nezha.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Nezha_main.png",
+ "stats": {
+  "hp": 1635,
+  "atk": 87,
+  "def": 93,
+  "spd": 92,
+  "init": 86,
+  "acc": 20,
+  "res": 35,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If the first 2 hits are Strong Hits, the final hit is guaranteed to be a Strong Hit and inflict 30% increased damage.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Can also place [Retaliate] on this hero for 2 turns and gain 2 effects instead of 1.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Windfire Wager",
+   "description": "Attack 1 enemy 5%HP+50%ATK 3 times. Each hit has a 35% chance to steal 3% of the target's Divinity. If all 3 hits steal Divinity, gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/nezha/ICON_Nezha_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+50%ATK",
+    "5%HP+50%ATK",
+    "5%HP+50%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If the first 2 hits are Strong Hits, the final hit is guaranteed to be a Strong Hit and inflict 30% increased damage.",
+     "upgrade_description": "If the first 2 hits are Strong Hits, the final hit is guaranteed to be a Strong Hit and inflict 30% increased damage."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Heaven's Grand Draw",
+   "description": "Place [ATK Up II] and [Precision] on this hero for 2 turns, then attack a random enemy 5%HP+50%ATK 4 times. Each hit has a 50% chance to heal this hero for 50% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/nezha/ICON_Nezha_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+50%ATK",
+    "5%HP+50%ATK",
+    "5%HP+50%ATK",
+    "5%HP+50%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Precision",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Loaded Fortune",
+   "description": "At the start of turn gain 1 of these effects:\nIncrease Divinity by 100\nIncrease Turn Meter by 10%\nPlace [SPD Up II] on this hero for 2 turns\nPlace [Phoenix] on this hero for 2 turns",
+   "icon_url": "/godforge/abilities/nezha/ICON_Nezha_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Can also place Retaliate on this hero for 2 turns and gain 2 effects instead of 1.",
+     "upgrade_description": "Can also place [Retaliate] on this hero for 2 turns and gain 2 effects instead of 1."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Double or Nothing",
+   "description": "Sacrifice 20% of this hero's Current HP, then attack a random enemy 5%HP+50%ATK 5 times. Each hit has a 50% chance to inflict bonus damage equal to 100% of the sacrificed HP amount. This bonus damage ignores 100% of the target's DEF but cannot be critical.",
+   "icon_url": "/godforge/abilities/nezha/ICON_Nezha_Ultimate.webp",
+   "divinity_cost": 3450,
+   "damage_formula": [
+    "5%HP+50%ATK",
+    "5%HP+50%ATK",
+    "5%HP+50%ATK",
+    "5%HP+50%ATK",
+    "5%HP+50%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sacrifice Health",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Loaded Fortune",
+   "description": "At the start of turn gain 1 of these effects:\nIncrease Divinity by 50\nIncrease Turn Meter by 5%\nPlace [SPD Up II] on this hero for 1 turn\nPlace [Phoenix] on this hero for 1 turn",
+   "icon_url": "/godforge/abilities/nezha/ICON_Nezha_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

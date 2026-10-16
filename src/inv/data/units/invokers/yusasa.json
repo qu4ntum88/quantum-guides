@@ -1,0 +1,571 @@
+{
+ "slug": "yusasa",
+ "kind": "Invoker",
+ "name": "Yusasa",
+ "faction": "Cambion",
+ "rarity": "Epic",
+ "class": "Support",
+ "element": "Earth",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/yusasa/portrait.webp",
+ "fullArt": "/invokers/units/invokers/yusasa/full.webp",
+ "stats": {
+  "base": {
+   "Health": "736",
+   "Attack": "69",
+   "Defense": "59",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "8,838",
+   "Attack": "817",
+   "Defense": "645",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/yusasa/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+99",
+    "titan": "+54"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 15% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 19% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 25% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 15.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 15.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 20.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 26.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 16.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 16.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 21.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 17.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 11.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 18.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 18.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 12.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 20.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 25.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 33.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage.\nDamage: 20.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 13.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 21.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 27.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 36% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage.\nDamage: 22.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 14.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 29.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage.\nDamage: 24.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 15.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 24.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 31.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 41.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage.\nDamage: 25.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 26.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 33.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 44.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage.\nDamage: 27.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 17.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 35.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 47% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 29.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 19% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 38% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 50% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage.\nDamage: 31% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Spirit Branch",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/yusasa/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 68 damage. Extends the duration of 1 random debuff on the target by 1s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 99% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 72 damage. Extends the duration of 1 random debuff on the target by 1.1s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 104.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage. Extends the duration of 1 random debuff on the target by 1.2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 110.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 83 damage. Extends the duration of 1 random debuff on the target by 1.3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 120.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 92 damage. Extends the duration of 1 random debuff on the target by 1.4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 132.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 98 damage. Extends the duration of 1 random debuff on the target by 1.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 142.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 107 damage. Extends the duration of 1 random debuff on the target by 1.6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 154.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 113 damage. Extends the duration of 1 random debuff on the target by 1.7s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 164.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 122 damage. Extends the duration of 1 random debuff on the target by 1.8s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 176.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 128 damage. Extends the duration of 1 random debuff on the target by 1.9s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 186.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 137 damage. Extends the duration of up to 2 random debuffs on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 198% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Windshoot Field",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/yusasa/skills/2.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 71 damage. Casts a [15% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 103.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 76 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 109.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 80 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 115.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 87 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 126.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 96 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 138.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 103 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 149% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 111 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 161.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 119 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 171.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 127 damage. Casts a [30% Move SPD Down] debuff on the targets, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 134 damage. Casts a [30% Move SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 194.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 143 damage. Casts a [30% Move SPD Down] debuff on the targets, lasting 14s.\nAccuracy required for: Move SPD Down\n#1 Damage: 207% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Swift Life Chant",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/yusasa/skills/3.webp",
+   "effects": [
+    {
+     "label": "Regeneration",
+     "group": "Buffs",
+     "description": "Heals the recipient by a percentage of their MAX HP, once per tick, for the duration of the buff. The number of ticks per second increases with Skill Speed. This buff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.2% * Target's MAX HP) HP."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.2% * Target's MAX HP) HP."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4.8% * Target's MAX HP) HP."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4.8% * Target's MAX HP) HP."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "18s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 10s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5.5% * Target's MAX HP) HP."
+    }
+   ]
+  },
+  {
+   "name": "Sky Forest Blessing",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/yusasa/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 21 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 24 HP per heal.\n#1 Damage: 30% ATK\n#2 Heal: 35% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 22 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 28 HP per heal.\n#1 Damage: 31.8% ATK\n#2 Heal: 40% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 23 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 31 HP per heal.\n#1 Damage: 33.6% ATK\n#2 Heal: 45% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 25 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 35 HP per heal.\n#1 Damage: 36.6% ATK\n#2 Heal: 50% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 28 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 38 HP per heal.\n#1 Damage: 40.2% ATK\n#2 Heal: 55% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 30 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 41 HP per heal.\n#1 Damage: 43.2% ATK\n#2 Heal: 60% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 32 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 45 HP per heal.\n#1 Damage: 46.8% ATK\n#2 Heal: 65% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 34 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 48 HP per heal.\n#1 Damage: 49.8% ATK\n#2 Heal: 70% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 37 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 55 HP per heal.\n#1 Damage: 53.4% ATK\n#2 Heal: 80% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 39 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 62 HP per heal.\n#1 Damage: 56.4% ATK\n#2 Heal: 90% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 9m, 10 times, dealing 41 damage per hit. Heals the ally with the lowest current HP 10 times, restoring 69 HP per heal.\n#1 Damage: 60% ATK\n#2 Heal: 100% * ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Yusasa is a cheerful soul known best for her boundless curiosity and love of nature. Both, she learned from her homeland: a Shred of flying islands connected by giant bamboo forests. Now those forests are plagued with blight, and Yusasa seeks the cure in Pelanna, among the cultists of the Black Sun.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "S",
+  "hyxxis": "A",
+  "koltmos": "A",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "S",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "A",
+  "omnissi-light": "A",
+  "omnissi-water": "S",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "A+",
+  "sorgott": "A",
+  "ulgorim": "A+",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 59.8,
+  "lists": 16
+ }
+}

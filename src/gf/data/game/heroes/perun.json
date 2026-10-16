@@ -1,0 +1,374 @@
+{
+ "id": 126,
+ "slug": "perun",
+ "name": "Perun",
+ "title": "Storm-Caller",
+ "summary": "Call the storms to your aid as you reduce your foes Turn Meters and Slow their advance in Battle.",
+ "lore": "Perun, god of war and storm, is king of Vyraj’s deities—so far as they acknowledge a king. His recent efforts at uniting the pantheon have met strong resistance, not only from his brethren but his own fiercely independent nature. He seeks means of increasing his own strength, that he might cow the others into submission.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Perun.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Perun_main.png",
+ "stats": {
+  "hp": 1290,
+  "atk": 86,
+  "def": 84,
+  "spd": 103,
+  "init": 108,
+  "acc": 50,
+  "res": 30,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also has a 50% to place [FTH Down II] on the target for 2 turns.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If a target’s Turn Meter is reduced to 0%, place [Stun] on them for 1 turn.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If a target’s Turn Meter is above 50% reduce their Turn Meter by 40% instead.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Static Slash",
+   "description": "Attack 1 enemy 185%ATK+50%SPD 2 times with a 50% chance to place [SPD Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/perun/ICON_Perun_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "185%ATK",
+    "185%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also has a 50% to place FTH Down II on the target for 2 turns.",
+     "upgrade_description": "Also has a 50% to place [FTH Down II] on the target for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Lightning Strike",
+   "description": "Attack all enemies 275%ATK+50%SPD with a 75% chance to reduce the Turn Meter of each target by 20%.",
+   "icon_url": "/godforge/abilities/perun/ICON_Perun_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "275%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If a target’s Turn Meter is above 50% reduce their Turn Meter by 40% instead.",
+     "upgrade_description": "If a target’s Turn Meter is above 50% reduce their Turn Meter by 40% instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "25% FTH in Dungeon Battles",
+   "icon_url": "/godforge/abilities/perun/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Storm Surge",
+   "description": "When an enemy hero has their Turn Meter decreased, increase this hero’s Turn Meter by 4%",
+   "icon_url": "/godforge/abilities/perun/ICON_Perun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Sky Fury",
+   "description": "Attack 90%ATK+50%SPD 7 times at random. Each hit has a 35% chance to decrease the target’s Turn Meter by 10%. Additional attacks against the same target reduces Turn Meter by 5%.",
+   "icon_url": "/godforge/abilities/perun/ICON_Perun_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "90%ATK",
+    "90%ATK",
+    "90%ATK",
+    "90%ATK",
+    "90%ATK",
+    "90%ATK",
+    "90%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If a target’s Turn Meter is reduced to 0%, place Stun on them for 1 turn.",
+     "upgrade_description": "If a target’s Turn Meter is reduced to 0%, place [Stun] on them for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Storm Surge",
+   "description": "When an enemy hero has their Turn Meter decreased, increase this hero’s Turn Meter by 2%.",
+   "icon_url": "/godforge/abilities/perun/ICON_Perun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

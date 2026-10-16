@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { TIER_COLORS } from '@/src/dcdl/components/TierBadge'
+import { TIER_COLORS } from '@/src/qgg/tiers'
 
 /**
  * Drag-and-drop tier ranking board, shared by the official (admin) list and by
@@ -34,6 +34,7 @@ export default function TierListEditor({
   onChange,
   onReorder,
   unrankedLabel = 'Unranked',
+  tiers = TIERS,
 }: {
   /** Ordered list — array order is the within-tier rank, as on the public site. */
   items: EditorItem[]
@@ -41,6 +42,8 @@ export default function TierListEditor({
   onChange: (next: TierAssignment) => void
   onReorder: (next: EditorItem[]) => void
   unrankedLabel?: string
+  /** Tier rows, best first. DC: Dark Legion's S+…D by default; the other games use S…F. */
+  tiers?: readonly string[]
 }) {
   const [dragId, setDragId] = useState<string | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -55,7 +58,7 @@ export default function TierListEditor({
 
   const grouped = useMemo(() => {
     const acc: Record<string, EditorItem[]> = {}
-    for (const t of TIERS) acc[t] = []
+    for (const t of tiers) acc[t] = []
     const unranked: EditorItem[] = []
     for (const item of items) {
       const t = assign[item.id]
@@ -63,7 +66,7 @@ export default function TierListEditor({
       else unranked.push(item)
     }
     return { acc, unranked }
-  }, [items, assign])
+  }, [items, assign, tiers])
 
   /** Move `id` into `tier`, either before `beforeId` or at the end of the row. */
   const place = useCallback(
@@ -237,7 +240,7 @@ export default function TierListEditor({
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-        {TIERS.map((tier) => <Row key={tier} tier={tier} rowItems={grouped.acc[tier]} />)}
+        {tiers.map((tier) => <Row key={tier} tier={tier} rowItems={grouped.acc[tier]} />)}
 
         {/* Unranked bin */}
         <div

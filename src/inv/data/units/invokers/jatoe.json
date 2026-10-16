@@ -1,0 +1,549 @@
+{
+ "slug": "jatoe",
+ "kind": "Invoker",
+ "name": "Jatoe",
+ "faction": "Cambion",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/jatoe/portrait.webp",
+ "fullArt": "/invokers/units/invokers/jatoe/full.webp",
+ "stats": {
+  "base": {
+   "Health": "380",
+   "Attack": "33",
+   "Defense": "29",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "109"
+  },
+  "max": {
+   "Health": "4,925",
+   "Attack": "477",
+   "Defense": "367",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "109"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jatoe/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+75",
+    "titan": "+41"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 19.5% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 30.5% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 41% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 50% ATK\n#5 Attacks 1 enemy, dealing 20 damage.\nDamage: 59.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 20.7% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 32.3% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 43.5% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 53% ATK\n#5 Attacks 1 enemy, dealing 21 damage.\nDamage: 63.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 21.8% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 34.2% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 45.9% ATK\n#4 Attacks 1 enemy, dealing 18 damage.\nDamage: 56% ATK\n#5 Attacks 1 enemy, dealing 22 damage.\nDamage: 66.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 37.2% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 50% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 61% ATK\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 72.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 26.1% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 40.9% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 67% ATK\n#5 Attacks 1 enemy, dealing 26 damage.\nDamage: 79.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 72% ATK\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 85.7% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 30.4% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 47.6% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 64% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 78% ATK\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 92.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 50.6% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 68.1% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 83% ATK\n#5 Attacks 1 enemy, dealing 33 damage.\nDamage: 98.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 34.7% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 54.3% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 73% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 89% ATK\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 105.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 77.1% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 94% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 111.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 61% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 82% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 100% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 119% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sunder Mist",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jatoe/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 40 damage.\n#1 Damage: 120.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 42 damage.\n#1 Damage: 127.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 45 damage.\n#1 Damage: 135% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 147% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 53 damage.\n#1 Damage: 161.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 57 damage.\n#1 Damage: 173.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 62 damage.\n#1 Damage: 188% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 200% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 71 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 75 damage.\n#1 Damage: 226.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 241% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Recovery Stance",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jatoe/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage. Heals Jatoe, restoring (5% * Damage Dealt) HP.\n#1 Damage: 238% ATK\n#2 Heal: 5% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage. Heals Jatoe, restoring (5% * Damage Dealt) HP.\n#1 Damage: 252.3% ATK\n#2 Heal: 5% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage. Heals Jatoe, restoring (6% * Damage Dealt) HP.\n#1 Damage: 266.6% ATK\n#2 Heal: 6% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 96 damage. Heals Jatoe, restoring (6% * Damage Dealt) HP.\n#1 Damage: 290.4% ATK\n#2 Heal: 6% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage. Heals Jatoe, restoring (6% * Damage Dealt) HP.\n#1 Damage: 318.9% ATK\n#2 Heal: 6% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 113 damage. Heals Jatoe, restoring (7% * Damage Dealt) HP.\n#1 Damage: 342.7% ATK\n#2 Heal: 7% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Heals Jatoe, restoring (7% * Damage Dealt) HP.\n#1 Damage: 371.3% ATK\n#2 Heal: 7% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage. Heals Jatoe, restoring (8% * Damage Dealt) HP.\n#1 Damage: 395.1% ATK\n#2 Heal: 8% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage. Heals Jatoe, restoring (8% * Damage Dealt) HP.\n#1 Damage: 423.6% ATK\n#2 Heal: 8% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 148 damage. Heals Jatoe, restoring (9% * Damage Dealt) HP.\n#1 Damage: 447.4% ATK\n#2 Heal: 9% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 157 damage. Heals Jatoe, restoring (9% * Damage Dealt) HP.\n#1 Damage: 476% ATK\n#2 Heal: 9% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Empowering Flurry",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jatoe/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+73",
+    "titan": "+40"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 41 damage per hit. Jatoe gains 15 Ultimate Mana on each hit.\n#1 Damage: 124% ATK\n#2 Damage: 124% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 43 damage per hit. Jatoe gains 17 Ultimate Mana on each hit.\n#1 Damage: 131.4% ATK\n#2 Damage: 131.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 46 damage per hit. Jatoe gains 17 Ultimate Mana on each hit.\n#1 Damage: 138.9% ATK\n#2 Damage: 138.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 50 damage per hit. Jatoe gains 19 Ultimate Mana on each hit.\n#1 Damage: 151.3% ATK\n#2 Damage: 151.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 55 damage per hit. Jatoe gains 19 Ultimate Mana on each hit.\n#1 Damage: 166.2% ATK\n#2 Damage: 166.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 59 damage per hit. Jatoe gains 21 Ultimate Mana on each hit.\n#1 Damage: 178.6% ATK\n#2 Damage: 178.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 64 damage per hit. Jatoe gains 21 Ultimate Mana on each hit.\n#1 Damage: 193.4% ATK\n#2 Damage: 193.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 68 damage per hit. Jatoe gains 23 Ultimate Mana on each hit.\n#1 Damage: 205.8% ATK\n#2 Damage: 205.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 73 damage per hit. Jatoe gains 23 Ultimate Mana on each hit.\n#1 Damage: 220.7% ATK\n#2 Damage: 220.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 77 damage per hit. Jatoe gains 25 Ultimate Mana on each hit.\n#1 Damage: 233.1% ATK\n#2 Damage: 233.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 82 damage per hit. Jatoe gains 25 Ultimate Mana on each hit.\n#1 Damage: 248% ATK\n#2 Damage: 248% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Perfect Feint",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jatoe/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 138 damage. Casts a [9% DEF Down] debuff on the target, lasting 7s.\nAccuracy required for: DEF Down\n#1 Damage: 417.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 146 damage. Casts a [10% DEF Down] debuff on the target, lasting 7s.\nAccuracy required for: DEF Down\n#1 Damage: 442.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 154 damage. Casts a [11% DEF Down] debuff on the target, lasting 7s.\nAccuracy required for: DEF Down\n#1 Damage: 467.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 168 damage. Casts a [11% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 509.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 185 damage. Casts a [11% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 559.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 198 damage. Casts a [12% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 601.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 215 damage. Casts a [12% DEF Down] debuff on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 651.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 229 damage. Casts a [12% DEF Down] debuff on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 693% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 245 damage. Casts a [13% DEF Down] debuff on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 743.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 259 damage. Casts a [13% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 784.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 276 damage. Casts a [13% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 835% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Jatoe wanted to be a martial arts master all his life – until he met Red Mellia and discovered the life of a pirate. The pay was great, the freedom was greater – and, of course, the ladies were best of all. Jatoe sold his dojo and bought himself a boat the very next morning.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

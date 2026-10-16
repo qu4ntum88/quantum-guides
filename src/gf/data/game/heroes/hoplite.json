@@ -1,0 +1,145 @@
+{
+ "id": 101,
+ "slug": "hoplite",
+ "name": "Hoplite",
+ "title": "Phalanx Warrior",
+ "summary": "Pierce single enemies inflicting heavy Bleeds.",
+ "lore": "With spear and shield and crested helm, the hoplite is a common sight on the battlefields of Olympus. These citizen-soldiers, drawn from families wealthy enough to afford the best equipment and training, serve as the backbone of the Realm’s military. In the world before, most hoplites served only in times of need, but since the Shattering, many more have become full-time soldiers.",
+ "rarity": "Common",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hoplite.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Hoplite_main.png",
+ "stats": {
+  "hp": 915,
+  "atk": 76,
+  "def": 61,
+  "spd": 84,
+  "init": 80,
+  "acc": 0,
+  "res": 0,
+  "initial_divinity": 125,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Thracian Tactics",
+   "description": "Attack 1 enemy 355%ATK with a 20% chance to place 1 stack of [Bleed].",
+   "icon_url": "/godforge/abilities/hoplite/ICON_Hoplite_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "355%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 20,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Reveal Weakness",
+   "description": "Attack 1 enemy 505%ATK. Heals by 30% of damage inflicted if the target is under 5 or more stacks of [Bleed].",
+   "icon_url": "/godforge/abilities/hoplite/ICON_Hoplite_Ultimate.webp",
+   "divinity_cost": 1350,
+   "damage_formula": [
+    "505%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,577 @@
+{
+ "slug": "sawtooth-veyna",
+ "kind": "Invoker",
+ "name": "Sawtooth Veyna",
+ "faction": "Freeborn",
+ "rarity": "Epic",
+ "class": "Ranged Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/sawtooth-veyna/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sawtooth-veyna/full.webp",
+ "stats": {
+  "base": {
+   "Health": "575",
+   "Attack": "89",
+   "Defense": "55",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "117"
+  },
+  "max": {
+   "Health": "6,430",
+   "Attack": "1,128",
+   "Defense": "603",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "147"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sawtooth-veyna/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+133",
+    "titan": "+73"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 24.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 46.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 60% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 33 damage.\nDamage: 37% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 26% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 38.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 63.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 35 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 27.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 52.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 67.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 37 damage.\nDamage: 41.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 29.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 56.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 65 damage.\nDamage: 73.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 40 damage.\nDamage: 45.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 32.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 62.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 72 damage.\nDamage: 80.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 44 damage.\nDamage: 49.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 35.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 51.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 77 damage.\nDamage: 86.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 47 damage.\nDamage: 53.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 56.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 65 damage.\nDamage: 72.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 83 damage.\nDamage: 93.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 51 damage.\nDamage: 57.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 40.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 59.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 89 damage.\nDamage: 99.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 55 damage.\nDamage: 61.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 43.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 64.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 74 damage.\nDamage: 82.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 95 damage.\nDamage: 106.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 59 damage.\nDamage: 65.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 46.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 67.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 78 damage.\nDamage: 87.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 100 damage.\nDamage: 112.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 62 damage.\nDamage: 69.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 49% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 64 damage.\nDamage: 72% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 83 damage.\nDamage: 93% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 107 damage.\nDamage: 120% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 66 damage.\nDamage: 74% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vengeful Blade",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sawtooth-veyna/skills/1.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 121 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 136% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 128 damage. Casts a [45% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 45%.\nAccuracy required for: Heal Reduction\n#1 Damage: 144.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 136 damage. Casts a [45% Heal Reduction] debuff on the target, lasting 4.5s, decreasing the size of all heals received by 45%.\nAccuracy required for: Heal Reduction\n#1 Damage: 152.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 148 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 4.5s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 165.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 162 damage. Casts a [55% Heal Reduction] debuff on the target, lasting 4.5s, decreasing the size of all heals received by 55%.\nAccuracy required for: Heal Reduction\n#1 Damage: 182.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 174 damage. Casts a [55% Heal Reduction] debuff on the target, lasting 5s, decreasing the size of all heals received by 55%.\nAccuracy required for: Heal Reduction\n#1 Damage: 195.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 189 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 5s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 212.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 201 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 5s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 225.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 215 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 242.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 228 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 255.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 242 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 7s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 272% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hateshot",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sawtooth-veyna/skills/2.webp",
+   "effects": [
+    {
+     "label": "Disable",
+     "group": "Debuffs",
+     "description": "Prevents the recipient from using Active Skills."
+    }
+   ],
+   "manaGen": {
+    "ult": "+56",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 252 damage. Casts a [Disable] debuff on the target, lasting 7s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 283% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 267 damage. Casts a [Disable] debuff on the target, lasting 7s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 300% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 282 damage. Casts a [Disable] debuff on the target, lasting 8s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 317% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 307 damage. Casts a [Disable] debuff on the target, lasting 8s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 345.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 338 damage. Casts a [Disable] debuff on the target, lasting 9s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 379.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 363 damage. Casts a [Disable] debuff on the target, lasting 9s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 407.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 393 damage. Casts a [Disable] debuff on the target, lasting 10s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 441.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 418 damage. Casts a [Disable] debuff on the target, lasting 11s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 469.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 448 damage. Casts a [Disable] debuff on the target, lasting 11s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 503.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 474 damage. Casts a [Disable] debuff on the target, lasting 12s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 532% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 504 damage. Casts a [Disable] debuff on the target, lasting 12s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 566% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hookshot",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sawtooth-veyna/skills/3.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 259 damage. Casts a [40% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 290.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 274 damage. Casts a [40% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 307.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 290 damage. Casts a [50% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 325.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 315 damage. Casts a [50% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 354.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 346 damage. Casts a [60% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 389.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 372 damage. Casts a [60% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 418.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 403 damage. Casts a [60% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 453.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 429 damage. Casts a [70% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 482.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 460 damage. Casts a [70% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 517.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 486 damage. Casts a [70% RES Down] debuff on the target, lasting 14s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 546.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Pulls 1 enemy to Veyna. Attacks the target, dealing 517 damage. Casts a [70% RES Down] debuff on the target, lasting 14s.\nAccuracy required for: Pull, RES Down\n#1 Damage: 581% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Final Revenge",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sawtooth-veyna/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 435 damage. Removes 2 random buffs from the target. Damage increases by 30% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 488.5% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 461 damage. Removes 2 random buffs from the target. Damage increases by 35% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 517.8% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 487 damage. Removes 2 random buffs from the target. Damage increases by 40% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 547.1% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 530 damage. Removes 2 random buffs from the target. Damage increases by 45% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 596% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 583 damage. Removes 2 random buffs from the target. Damage increases by 45% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 654.6% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 626 damage. Removes 2 random buffs from the target. Damage increases by 50% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 703.4% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 678 damage. Removes 2 random buffs from the target. Damage increases by 55% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 762.1% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 722 damage. Removes 2 random buffs from the target. Damage increases by 55% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 810.9% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 774 damage. Removes 4 random buffs from the target. Damage increases by 55% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 869.5% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 817 damage. Removes 4 random buffs from the target. Damage increases by 60% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 918.4% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 870 damage. Removes 4 random buffs from the target. Damage increases by 60% against targets with MAX HP higher than Veyna's MAX HP.\nAccuracy required for: Buff Removal\n#1 Damage: 977% * ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Revenge is an ugly business, but Veyna sees the beauty in it. She lost everything, and she knows forty-one people responsible. Well, fewer than that now – she’s got a count on her arm, one for every man who she… no longer owes a death.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "A",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "A",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "E",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 39.3,
+  "lists": 16
+ }
+}

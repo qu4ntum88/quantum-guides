@@ -1,0 +1,571 @@
+{
+ "slug": "almea",
+ "kind": "Invoker",
+ "name": "Almea",
+ "faction": "Eldrin",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/almea/portrait.webp",
+ "fullArt": "/invokers/units/invokers/almea/full.webp",
+ "stats": {
+  "base": {
+   "Health": "655",
+   "Attack": "75",
+   "Defense": "61",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "7,387",
+   "Attack": "940",
+   "Defense": "671",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "105"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/almea/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 24.5% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 49.5% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 61% ATK\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 26% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 38.2% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 64.7% ATK\n#5 Attacks 1 enemy, dealing 56 damage.\nDamage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 27.4% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 55.4% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 68.3% ATK\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 29.9% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 60.4% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 74.4% ATK\n#5 Attacks 1 enemy, dealing 64 damage.\nDamage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 32.8% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 81.7% ATK\n#5 Attacks 1 enemy, dealing 70 damage.\nDamage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 35.3% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 51.8% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 71.3% ATK\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 87.8% ATK\n#5 Attacks 1 enemy, dealing 76 damage.\nDamage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 56.2% ATK\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 95.2% ATK\n#5 Attacks 1 enemy, dealing 82 damage.\nDamage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 40.7% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 59.8% ATK\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 82.2% ATK\n#4 Attacks 1 enemy, dealing 76 damage.\nDamage: 101.3% ATK\n#5 Attacks 1 enemy, dealing 87 damage.\nDamage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 33 damage.\nDamage: 43.6% ATK\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 64.1% ATK\n#3 Attacks 1 enemy, dealing 66 damage.\nDamage: 88.1% ATK\n#4 Attacks 1 enemy, dealing 81 damage.\nDamage: 108.6% ATK\n#5 Attacks 1 enemy, dealing 93 damage.\nDamage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 46.1% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 67.7% ATK\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 93.1% ATK\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 114.7% ATK\n#5 Attacks 1 enemy, dealing 99 damage.\nDamage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 49% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 72% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 99% ATK\n#4 Attacks 1 enemy, dealing 92 damage.\nDamage: 122% ATK\n#5 Attacks 1 enemy, dealing 105 damage.\nDamage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Azure Thrust",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/almea/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+20",
+    "titan": "+11"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage.\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 115 damage.\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage.\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage.\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage.\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 157 damage.\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage.\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 181 damage.\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 194 damage.\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 204 damage.\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 218 damage.\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Helm Breaker",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/almea/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 221 damage. Casts a [15% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 295% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 235 damage. Casts a [20% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 312.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 248 damage. Casts a [20% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 330.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 270 damage. Casts a [25% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 359.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 296 damage. Casts a [25% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 395.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 319 damage. Casts a [30% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 424.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 345 damage. Casts a [30% ATK Down] debuff on the target, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 460.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 367 damage. Casts a [35% ATK Down] debuff on the target, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 489.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 394 damage. Casts a [35% ATK Down] debuff on the target, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 525.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 416 damage. Casts a [35% ATK Down] debuff on the target, lasting 15s.\nAccuracy required for: ATK Down\n#1 Damage: 554.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 443 damage. Casts a [35% ATK Down] debuff on the target, lasting 15s.\nAccuracy required for: ATK Down\n#1 Damage: 590% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ice Field",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/almea/skills/3.webp",
+   "effects": [
+    {
+     "label": "Freeze",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns are paused.The recipient will take 75% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 114 damage. Casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 121 damage. Casts a [Freeze] debuff on the targets, lasting 3.3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 161.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 128 damage. Casts a [Freeze] debuff on the targets, lasting 3.3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 140 damage. Casts a [Freeze] debuff on the targets, lasting 3.6s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 186.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 153 damage. Casts a [Freeze] debuff on the targets, lasting 3.6s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 204.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 165 damage. Casts a [Freeze] debuff on the targets, lasting 3.9s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 219.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 178 damage. Casts a [Freeze] debuff on the targets, lasting 3.9s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 237.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 190 damage. Casts a [Freeze] debuff on the targets, lasting 4.2s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 253.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 204 damage. Casts a [Freeze] debuff on the targets, lasting 4.2s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 271.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 215 damage. Casts a [Freeze] debuff on the targets, lasting 4.5s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 286.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 6m radius around Almea, dealing 229 damage. Casts a [Freeze] debuff on the targets, lasting 5s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped.\nAccuracy required for: Freeze\n#1 Damage: 305% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sever Evil",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/almea/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 193 damage per hit. Heals Almea, restoring (30% * Damage Dealt) HP. \nDamage increases by 50% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 257.5% ATK\n#2 Damage: 257.5% ATK\n#3 Heal: 30% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 205 damage per hit. Heals Almea, restoring (35% * Damage Dealt) HP. \nDamage increases by 50% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 272.9% ATK\n#2 Damage: 272.9% ATK\n#3 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 216 damage per hit. Heals Almea, restoring (35% * Damage Dealt) HP. \nDamage increases by 60% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 288.4% ATK\n#2 Damage: 288.4% ATK\n#3 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 236 damage per hit. Heals Almea, restoring (40% * Damage Dealt) HP. \nDamage increases by 60% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 314.2% ATK\n#2 Damage: 314.2% ATK\n#3 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 259 damage per hit. Heals Almea, restoring (40% * Damage Dealt) HP. \nDamage increases by 60% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 345.1% ATK\n#2 Damage: 345.1% ATK\n#3 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 278 damage per hit. Heals Almea, restoring (45% * Damage Dealt) HP. \nDamage increases by 60% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 370.8% ATK\n#2 Damage: 370.8% ATK\n#3 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 301 damage per hit. Heals Almea, restoring (50% * Damage Dealt) HP. \nDamage increases by 75% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 401.7% ATK\n#2 Damage: 401.7% ATK\n#3 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 321 damage per hit. Heals Almea, restoring (50% * Damage Dealt) HP. \nDamage increases by 75% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 427.5% ATK\n#2 Damage: 427.5% ATK\n#3 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 344 damage per hit. Heals Almea, restoring (60% * Damage Dealt) HP. \nDamage increases by 75% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 458.4% ATK\n#2 Damage: 458.4% ATK\n#3 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 363 damage per hit. Heals Almea, restoring (60% * Damage Dealt) HP. \nDamage increases by 100% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 484.1% ATK\n#2 Damage: 484.1% ATK\n#3 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 386 damage per hit. Heals Almea, restoring (60% * Damage Dealt) HP. \nDamage increases by 100% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 515% ATK\n#2 Damage: 515% ATK\n#3 Heal: 60% * Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Frost",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Almea's destiny was to become a member of the Royal Conclave, like her parents and their parents before them. She hated the sound of that destiny. So as soon as she turned 18, she stole her family's heirloom frost sword and hightailed it out of the Emerald Kingdom. She's now a travelling mercenary, fighting across Amara with two Orcs as her muscle. If her parents could see her now.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "B",
+  "hyxxis": "A",
+  "koltmos": "B",
+  "omnissi-astral": "A",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "A",
+  "omnissi-light": "A",
+  "omnissi-water": "A",
+  "omnissi-wind": "A",
+  "pentiax": "A",
+  "sakiel": "A",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "A",
+  "score": 49.1,
+  "lists": 16
+ }
+}

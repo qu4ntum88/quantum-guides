@@ -1,0 +1,577 @@
+{
+ "slug": "gyllad",
+ "kind": "Invoker",
+ "name": "Gyllad",
+ "faction": "Eldrin",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/gyllad/portrait.webp",
+ "fullArt": "/invokers/units/invokers/gyllad/full.webp",
+ "stats": {
+  "base": {
+   "Health": "655",
+   "Attack": "77",
+   "Defense": "59",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "108"
+  },
+  "max": {
+   "Health": "7,330",
+   "Attack": "982",
+   "Defense": "640",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "138"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gyllad/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+109",
+    "titan": "+59"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 37% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 49.5% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 60% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 29 damage.\nDamage: 37.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 63.6% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 31 damage.\nDamage: 39.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 41.4% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 55.4% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 67.2% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 32 damage.\nDamage: 42% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 45.1% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 60.4% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 73.2% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 35 damage.\nDamage: 45.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 49.6% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 80.4% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 39 damage.\nDamage: 50.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 53.3% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 71.3% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 86.4% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 42 damage.\nDamage: 54% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 57.7% ATK\n#3 Attacks 1 enemy, dealing 59 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy, dealing 72 damage.\nDamage: 93.6% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 45 damage.\nDamage: 58.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 61.4% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 82.2% ATK\n#4 Attacks 1 enemy, dealing 77 damage.\nDamage: 99.6% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 48 damage.\nDamage: 62.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 65.9% ATK\n#3 Attacks 1 enemy, dealing 68 damage.\nDamage: 88.1% ATK\n#4 Attacks 1 enemy, dealing 82 damage.\nDamage: 106.8% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 51 damage.\nDamage: 66.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 69.6% ATK\n#3 Attacks 1 enemy, dealing 72 damage.\nDamage: 93.1% ATK\n#4 Attacks 1 enemy, dealing 87 damage.\nDamage: 112.8% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 54 damage.\nDamage: 70.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 39 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 74% ATK\n#3 Attacks 1 enemy, dealing 76 damage.\nDamage: 99% ATK\n#4 Attacks 1 enemy, dealing 92 damage.\nDamage: 120% ATK\n#5 Attacks 9 enemies in a 2m radius around Gyllad, dealing 58 damage.\nDamage: 75% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vicious Halberd",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gyllad/skills/1.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+19",
+    "titan": "+10"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage. Casts a [15% Move SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 120 damage. Casts a [17% Move SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 127 damage. Casts a [17% Move SPD Down] debuff on the target, lasting 5.5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage. Casts a [19% Move SPD Down] debuff on the target, lasting 5.5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 152 damage. Casts a [19% Move SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Move SPD Down\n#1 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 164 damage. Casts a [21% Move SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Move SPD Down\n#1 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 177 damage. Casts a [21% Move SPD Down] debuff on the target, lasting 6.5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 189 damage. Casts a [23% Move SPD Down] debuff on the target, lasting 6.5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 202 damage. Casts a [23% Move SPD Down] debuff on the target, lasting 7s.\nAccuracy required for: Move SPD Down\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 214 damage. Casts a [25% Move SPD Down] debuff on the target, lasting 7s.\nAccuracy required for: Move SPD Down\n#1 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 227 damage. Casts a [25% Move SPD Down] debuff on the target, lasting 7.5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Streaming Sun",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gyllad/skills/2.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 237 damage. Casts a [30% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 307.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. Casts a [35% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 325.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 265 damage. Casts a [35% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 344.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 289 damage. Casts a [40% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 375.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 317 damage. Casts a [40% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 412.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 341 damage. Casts a [45% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 442.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 369 damage. Casts a [45% RES Down] debuff on the target, lasting 13s.\nAccuracy required for: RES Down\n#1 Damage: 479.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 393 damage. Casts a [50% RES Down] debuff on the target, lasting 13s.\nAccuracy required for: RES Down\n#1 Damage: 510.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 421 damage. Casts a [50% RES Down] debuff on the target, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 547.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 445 damage. Casts a [60% RES Down] debuff on the target, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 578.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 474 damage. Casts a [60% RES Down] debuff on the target, lasting 15s.\nAccuracy required for: RES Down\n#1 Damage: 615% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Luster Wave",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gyllad/skills/3.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 60 damage. Casts a [1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 77.5% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 63 damage. Casts a [1.1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 82.1% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 67 damage. Casts a [1.1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 86.8% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 73 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 94.6% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 80 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 103.8% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 86 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 111.6% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 93 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 120.9% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 99 damage. Casts a [1.5% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 128.6% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 106 damage. Casts a [1.5% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 137.9% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 112 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 145.7% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m semicircle in front of Gyllad, dealing 119 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 155% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Shining Dragoon",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gyllad/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 131 damage per hit. Damage increases by 10% per debuff on the target, limited up to +50% damage. \nThe first hit Transfers a random debuff to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 170% ATK\n#2 Damage: 170% ATK\n#3 Damage: 170% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 139 damage per hit. Damage increases by 15% per debuff on the target, limited up to +50% damage. \nThe first hit Transfers a random debuff to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 180.2% ATK\n#2 Damage: 180.2% ATK\n#3 Damage: 180.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 147 damage per hit. Damage increases by 15% per debuff on the target, limited up to +75% damage. \nThe first hit Transfers a random debuff to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 190.4% ATK\n#2 Damage: 190.4% ATK\n#3 Damage: 190.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 160 damage per hit. Damage increases by 15% per debuff on the target, limited up to +75% damage. \nThe first hit Transfers 2 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 207.4% ATK\n#2 Damage: 207.4% ATK\n#3 Damage: 207.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 175 damage per hit. Damage increases by 15% per debuff on the target, limited up to +75% damage. \nThe first hit Transfers 2 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 227.8% ATK\n#2 Damage: 227.8% ATK\n#3 Damage: 227.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 188 damage per hit. Damage increases by 20% per debuff on the target, limited up to +75% damage. \nThe first hit Transfers 2 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 244.8% ATK\n#2 Damage: 244.8% ATK\n#3 Damage: 244.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 204 damage per hit. Damage increases by 20% per debuff on the target, limited up to +100% damage. \nThe first hit Transfers 2 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 265.2% ATK\n#2 Damage: 265.2% ATK\n#3 Damage: 265.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 217 damage per hit. Damage increases by 20% per debuff on the target, limited up to +100% damage. \nThe first hit Transfers 2 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 282.2% ATK\n#2 Damage: 282.2% ATK\n#3 Damage: 282.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 233 damage per hit. Damage increases by 20% per debuff on the target, limited up to +100% damage. \nThe first hit Transfers 3 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 302.6% ATK\n#2 Damage: 302.6% ATK\n#3 Damage: 302.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 246 damage per hit. Damage increases by 25% per debuff on the target, limited up to +100% damage. \nThe first hit Transfers 3 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 319.6% ATK\n#2 Damage: 319.6% ATK\n#3 Damage: 319.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 262 damage per hit. Damage increases by 25% per debuff on the target, limited up to +125% damage. \nThe first hit Transfers 3 random debuffs to 1 enemy.\nAccuracy required for: Debuff Transfer\n#1 Damage: 340% ATK\n#2 Damage: 340% ATK\n#3 Damage: 340% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Leader of the Shining Dragoons, Gyllad cuts an imposing figure. With his halberd gleaming like the midday sun, he leads his unit with steely resolve, giving no quarter to the Darkborn. It's the grisly relish that Gyllad takes at dispatching Malice's forces that have seen him and his number officially banished from the Emerald Kingdom. Yet they are often called upon for more 'covert' missions.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "B",
+  "omnissi-wind": "E",
+  "pentiax": "B",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 33,
+  "lists": 16
+ }
+}

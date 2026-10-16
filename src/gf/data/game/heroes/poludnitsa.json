@@ -1,0 +1,269 @@
+{
+ "id": 71,
+ "slug": "poludnitsa",
+ "name": "Poludnitsa",
+ "title": "Lady Midday",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The name of Lady Midday is spoken with reverence and fear by field-workers. As protector goddess of crops and of custom, she strikes down, with heat or sickle, those who work when it is time to rest, or otherwise flout tradition. She cares little that other realms practice customs different from Vyraj’s, and now takes out her wrath on other pantheons’ worshipers.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Poludnitsa.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Poludnitsa_main.png",
+ "stats": {
+  "hp": 1260,
+  "atk": 98,
+  "def": 84,
+  "spd": 99,
+  "init": 96,
+  "acc": 25,
+  "res": 25,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increase this hero's Turn Meter by 10%.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If the target already has Aetherburn, increase its duration by 1 turn then activate Aetherburn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Midday Madness",
+   "description": "Attack 1 enemy 310%ATK 2 times. If the target's Turn Meter is above 50%, steal 20% of the target's Turn Meter. If the target's Turn Meter is below 50%, inflict 1 extra hit.",
+   "icon_url": "/godforge/abilities/poludnitsa/ICON_Poludnitsa_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "310%ATK",
+    "210%ATK",
+    "310%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Midday Reaping",
+   "description": "Attack all enemies 175%ATK 2 times. If the target's HP is above 50%, inflict an additional 2.5% of the target's MAX HP. If the target's HP is below 50%, ignore 10% of the target's DEF.",
+   "icon_url": "/godforge/abilities/poludnitsa/ICON_Poludnitsa_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Midday Judgment",
+   "description": "When an enemy's Divinity reaches 50%, increase the damage of this hero's next ability by 10%.",
+   "icon_url": "/godforge/abilities/poludnitsa/ICON_Poludnitsa_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increase this hero's Turn Meter by 10%.",
+     "upgrade_description": "Also increase this hero's Turn Meter by 10%."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Noon's Wrath",
+   "description": "Attack all enemies 125%ATK 3 times. If the target's Divinity is above 50%, each hit steals 10% of the target's Divinity. If the target's Divinity is below 50%, each hit has a 50% chance to place [Aetherburn II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/poludnitsa/ICON_Poludnitsa_Ultimate.webp",
+   "divinity_cost": 3275,
+   "damage_formula": [
+    "125%ATK",
+    "125%ATK",
+    "125%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If the target already has Aetherburn, increase its duration by 1 turn then activate Aetherburn.",
+     "upgrade_description": "If the target already has Aetherburn, increase its duration by 1 turn then activate Aetherburn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Midday Judgment",
+   "description": "When an enemy's Divinity reaches 50%, increase the damage of this hero's next ability by 5%.",
+   "icon_url": "/godforge/abilities/poludnitsa/ICON_Poludnitsa_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

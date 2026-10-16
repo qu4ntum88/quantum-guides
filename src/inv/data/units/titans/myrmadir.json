@@ -1,0 +1,506 @@
+{
+ "slug": "myrmadir",
+ "kind": "Titan",
+ "name": "Myrmadir",
+ "faction": "Freeborn",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/myrmadir/portrait.webp",
+ "fullArt": "/invokers/units/titans/myrmadir/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+630",
+   "Bonus ATK": "+77",
+   "Bonus DEF": "+70",
+   "Movement speed": "200"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,786",
+   "Bonus ATK": "+463",
+   "Bonus DEF": "+421",
+   "Movement speed": "200"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/myrmadir/skills/0.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 102 damage. Casts a [15% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 132.5% ATK\n#2 Attacks 1 enemy 3 times, dealing 35 damage per hit. 1 random ally gains 20 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 45.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 108 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 140.4% ATK\n#2 Attacks 1 enemy 3 times, dealing 37 damage per hit. 1 random ally gains 20 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 48.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 114 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 148.4% ATK\n#2 Attacks 1 enemy 3 times, dealing 39 damage per hit. 1 random ally gains 20 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 51% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 124 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 161.7% ATK\n#2 Attacks 1 enemy 3 times, dealing 43 damage per hit. 1 random ally gains 22 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 55.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 137 damage. Casts a [17% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 177.6% ATK\n#2 Attacks 1 enemy 3 times, dealing 47 damage per hit. 1 random ally gains 22 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 61% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 147 damage. Casts a [17% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 190.8% ATK\n#2 Attacks 1 enemy 3 times, dealing 50 damage per hit. 1 random ally gains 22 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 65.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 159 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 206.7% ATK\n#2 Attacks 1 enemy 3 times, dealing 55 damage per hit. 1 random ally gains 22 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 71% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 169 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 219.9% ATK\n#2 Attacks 1 enemy 3 times, dealing 58 damage per hit. 1 random ally gains 25 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 75.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 182 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 7s.\nAccuracy required for: Combo SPD Down\nDamage: 235.9% ATK\n#2 Attacks 1 enemy 3 times, dealing 62 damage per hit. 1 random ally gains 25 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 81% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 192 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Combo SPD Down\nDamage: 249.1% ATK\n#2 Attacks 1 enemy 3 times, dealing 66 damage per hit. 1 random ally gains 25 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 85.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 204 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Combo SPD Down\nDamage: 265% ATK\n#2 Attacks 1 enemy 3 times, dealing 70 damage per hit. 1 random ally gains 30 Ultimate Mana in a 15m radius if the hit lands as a critical hit.\n#1 Damage: 91% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Depthcaller",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/myrmadir/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 116 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 58 damage.\nAccuracy required for: Pull\n#1 Damage: 150% ATK\n#2 Damage: 75% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 61 damage.\nAccuracy required for: Pull\n#1 Damage: 159% ATK\n#2 Damage: 79.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 129 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 65 damage.\nAccuracy required for: Pull\n#1 Damage: 168% ATK\n#2 Damage: 84% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 141 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 70 damage.\nAccuracy required for: Pull\n#1 Damage: 183% ATK\n#2 Damage: 91.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 155 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 77 damage.\nAccuracy required for: Pull\n#1 Damage: 201% ATK\n#2 Damage: 100.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 166 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 83 damage.\nAccuracy required for: Pull\n#1 Damage: 216% ATK\n#2 Damage: 108% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 180 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 90 damage.\nAccuracy required for: Pull\n#1 Damage: 234% ATK\n#2 Damage: 117% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 192 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 96 damage.\nAccuracy required for: Pull\n#1 Damage: 249% ATK\n#2 Damage: 124.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 206 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 103 damage.\nAccuracy required for: Pull\n#1 Damage: 267% ATK\n#2 Damage: 133.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 217 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 109 damage.\nAccuracy required for: Pull\n#1 Damage: 282% ATK\n#2 Damage: 141% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 231 damage. The first hit pulls 10 enemies in a 8m radius around the target to Myrmadir. Attacks the targets, dealing 116 damage.\nAccuracy required for: Pull\n#1 Damage: 300% ATK\n#2 Damage: 150% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dreadwake",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/myrmadir/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+29",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 108 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [50% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 114 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [55% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 121 damage. Casts a [Stun] debuff on the targets, lasting 6.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [55% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 132 damage. Casts a [Stun] debuff on the targets, lasting 6.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [55% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 144 damage. Casts a [Stun] debuff on the targets, lasting 6.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [60% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 155 damage. Casts a [Stun] debuff on the targets, lasting 6.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [60% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 168 damage. Casts a [Stun] debuff on the targets, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [60% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 179 damage. Casts a [Stun] debuff on the targets, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [70% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 192 damage. Casts a [Stun] debuff on the targets, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [70% DEF Down] debuff on the targets, lasting 15s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 203 damage. Casts a [Stun] debuff on the targets, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [70% DEF Down] debuff on the targets, lasting 18s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 12x4m area centered on the target, from a distance of 5m, dealing 216 damage. Casts a [Stun] debuff on the targets, lasting 10s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [75% DEF Down] debuff on the targets, lasting 18s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/myrmadir/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 187 damage. Casts a [50% Move SPD Down] debuff on the targets, lasting 5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 242.5% ATK\nINVOKATION END\nCasts a [15% Move SPD Up] buff on the Bound Invoker, lasting 12s. Then, casts a [10% Combo SPD Up] buff on the bound Invoker, lasting 12s. Then, casts a [8% Evasion] buff on the bound Invoker, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 198 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 5s.\nAccuracy required for: Move SPD Down\n#1 Damage: 257% ATK\nINVOKATION END\nCasts a [17% Move SPD Up] buff on the Bound Invoker, lasting 12s. Then, casts a [10% Combo SPD Up] buff on the bound Invoker, lasting 12s. Then, casts a [8% Evasion] buff on the bound Invoker, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 209 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 6s.\nAccuracy required for: Move SPD Down\n#1 Damage: 271.6% ATK\nINVOKATION END\nCasts a [17% Move SPD Up] buff on the Bound Invoker, lasting 12s. Then, casts a [12% Combo SPD Up] buff on the bound Invoker, lasting 12s. Then, casts a [8% Evasion] buff on the bound Invoker, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 228 damage. Casts a [60% Move SPD Down] debuff on the targets, lasting 6s.\nAccuracy required for: Move SPD Down\n#1 Damage: 295.9% ATK\nINVOKATION END\nCasts a [17% Move SPD Up] buff on the Bound Invoker, lasting 13s. Then, casts a [12% Combo SPD Up] buff on the bound Invoker, lasting 13s. Then, casts a [10% Evasion] buff on the bound Invoker, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 250 damage. Casts a [60% Move SPD Down] debuff on the targets, lasting 7s.\nAccuracy required for: Move SPD Down\n#1 Damage: 325% ATK\nINVOKATION END\nCasts a [20% Move SPD Up] buff on the Bound Invoker, lasting 13s. Then, casts a [12% Combo SPD Up] buff on the bound Invoker, lasting 13s. Then, casts a [10% Evasion] buff on the bound Invoker, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 269 damage. Casts a [65% Move SPD Down] debuff on the targets, lasting 7s.\nAccuracy required for: Move SPD Down\n#1 Damage: 349.2% ATK\nINVOKATION END\nCasts a [20% Move SPD Up] buff on the Bound Invoker, lasting 14s. Then, casts a [15% Combo SPD Up] buff on the bound Invoker, lasting 14s. Then, casts a [10% Evasion] buff on the bound Invoker, lasting 14s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 291 damage. Casts a [70% Move SPD Down] debuff on the targets, lasting 7s.\nAccuracy required for: Move SPD Down\n#1 Damage: 378.3% ATK\nINVOKATION END\nCasts a [20% Move SPD Up] buff on the Bound Invoker, lasting 14s. Then, casts a [15% Combo SPD Up] buff on the bound Invoker, lasting 14s. Then, casts a [10% Evasion] buff on the bound Invoker, lasting 14s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 310 damage. Casts a [70% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 402.5% ATK\nINVOKATION END\nCasts a [20% Move SPD Up] buff on the Bound Invoker, lasting 15s. Then, casts a [15% Combo SPD Up] buff on the bound Invoker, lasting 15s. Then, casts a [10% Evasion] buff on the bound Invoker, lasting 15s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 332 damage. Casts a [70% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 431.6% ATK\nINVOKATION END\nCasts a [25% Move SPD Up] buff on the Bound Invoker, lasting 15s. Then, casts a [15% Combo SPD Up] buff on the bound Invoker, lasting 15s. Then, casts a [10% Evasion] buff on the bound Invoker, lasting 15s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 351 damage. Casts a [75% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 455.9% ATK\nINVOKATION END\nCasts a [25% Move SPD Up] buff on the Bound Invoker, lasting 15s. Then, casts a [15% Combo SPD Up] buff on the bound Invoker, lasting 15s. Then, casts a [15% Evasion] buff on the bound Invoker, lasting 15s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Myrmadir, dealing 373 damage. Casts a [75% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 485% ATK\nINVOKATION END\nCasts a [25% Move SPD Up] buff on the Bound Invoker, lasting 18s. Then, casts a [15% Combo SPD Up] buff on the bound Invoker, lasting 18s. Then, casts a [15% Evasion] buff on the bound Invoker, lasting 18s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage."
+    }
+   ]
+  },
+  {
+   "name": "ACC Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/myrmadir/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +98 Accuracy.\nOutside Dungeon mode: +56 Accuracy."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +107.8 Accuracy.\nOutside Dungeon mode: +61.6 Accuracy."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +117.6 Accuracy.\nOutside Dungeon mode: +67.2 Accuracy."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +137.2 Accuracy.\nOutside Dungeon mode: +78.4 Accuracy."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +156.8 Accuracy.\nOutside Dungeon mode: +89.6 Accuracy."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +176.4 Accuracy.\nOutside Dungeon mode: +100.8 Accuracy."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +196 Accuracy.\nOutside Dungeon mode: +112 Accuracy."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "There are few things more honored among the Freeborn than revenge. It’s nearly sacred – one of the only forms of justice they can agree on. So important was vengeance that one of the first Titans they created was Myrmadir – a weapon that any true Freeborn can Invoke, even if revenge is out of reach.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "S+",
+  "hyxxis": "S",
+  "koltmos": "S+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "S",
+  "omnissi-wind": "S+",
+  "pentiax": "S",
+  "sakiel": "S",
+  "sorgott": "A+",
+  "ulgorim": "S",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 86.6,
+  "lists": 16
+ }
+}

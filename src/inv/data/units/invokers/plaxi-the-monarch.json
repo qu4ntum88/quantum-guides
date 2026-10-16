@@ -1,0 +1,576 @@
+{
+ "slug": "plaxi-the-monarch",
+ "kind": "Invoker",
+ "name": "Plaxi The Monarch",
+ "faction": "Eldrin",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Fire",
+ "soulSign": "Sign of Pirea",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/plaxi-the-monarch/portrait.webp",
+ "fullArt": "/invokers/units/invokers/plaxi-the-monarch/full.webp",
+ "stats": {
+  "base": {
+   "Health": "900",
+   "Attack": "82",
+   "Defense": "80",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "13",
+   "Combo speed": "4",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "96"
+  },
+  "max": {
+   "Health": "10,845",
+   "Attack": "867",
+   "Defense": "862",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "45",
+   "Combo speed": "26",
+   "Skill speed": "54",
+   "Skill recovery": "0",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "131"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/plaxi-the-monarch/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 10% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 15.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 19.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 25% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 2s.\nDamage: 15.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 16.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 20.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 26.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 2.2s.\nDamage: 16.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 11.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 17.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 21.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 28% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 2.4s.\nDamage: 17.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 12.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 18.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 23.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 30.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 16 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 2.6s.\nDamage: 18.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 13.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 20.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 26.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 33.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 2.8s.\nDamage: 20.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 14.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 22.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 36% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 3s.\nDamage: 22.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 15.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 24.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 30.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 39% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 3.2s.\nDamage: 24.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 16.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 25.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 32.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 41.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 3.4s.\nDamage: 25.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 17.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 27.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 34.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 44.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 23 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 3.6s.\nDamage: 27.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 18.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 29.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 36.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 47% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage. Extends the duration of 1 random buff on 1 random ally in a 15m radius around the target by 3.8s.\nDamage: 29.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 31% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 39% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 50% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 25 damage. Extends the duration of up to 2 random buffs on 1 random ally in a 15m radius around the target by 4s.\nDamage: 31% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Glowburst",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/plaxi-the-monarch/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+32",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 80 damage. Plaxi gains Ultimate Mana (5 per debuff on the target).\n#1 Damage: 97.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 85 damage. Plaxi gains Ultimate Mana (6 per debuff on the target).\n#1 Damage: 103.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 90 damage. Plaxi gains Ultimate Mana (7 per debuff on the target).\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 98 damage. Plaxi gains Ultimate Mana (8 per debuff on the target).\n#1 Damage: 119% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 107 damage. Plaxi gains Ultimate Mana (9 per debuff on the target).\n#1 Damage: 130.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 115 damage. Plaxi gains Ultimate Mana (10 per debuff on the target).\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 125 damage. Plaxi gains Ultimate Mana (11 per debuff on the target).\n#1 Damage: 152.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 133 damage. Plaxi gains Ultimate Mana (12 per debuff on the target). 1 random ally gains Ultimate Mana (12 per debuff on the target) in a 15m radius.\n#1 Damage: 161.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 142 damage. Plaxi gains Ultimate Mana (13 per debuff on the target). 1 random ally gains Ultimate Mana (13 per debuff on the target) in a 15m radius.\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 150 damage. Plaxi gains Ultimate Mana (14 per debuff on the target). 1 random ally gains Ultimate Mana (14 per debuff on the target) in a 15m radius.\n#1 Damage: 183.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 160 damage. Plaxi gains Ultimate Mana (15 per debuff on the target). 1 random ally gains Ultimate Mana (15 per debuff on the target) in a 15m radius.\n#1 Damage: 195% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cinderlily Spark",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/plaxi-the-monarch/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Skill Recovery Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Skill Recovery stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 84 damage per hit. Casts a [35% ATK Up] buff on 10 random allies in a 15m radius, lasting 10s. Then, casts a [15% Skill Recovery Up] buff on the targets, lasting 10s.\n#1 Damage: 102.5% ATK\n#2 Damage: 102.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 89 damage per hit. Casts a [40% ATK Up] buff on 10 random allies in a 15m radius, lasting 10s. Then, casts a [15% Skill Recovery Up] buff on the targets, lasting 10s.\n#1 Damage: 108.6% ATK\n#2 Damage: 108.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 94 damage per hit. Casts a [40% ATK Up] buff on 10 random allies in a 15m radius, lasting 11s. Then, casts a [15% Skill Recovery Up] buff on the targets, lasting 11s.\n#1 Damage: 114.8% ATK\n#2 Damage: 114.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 103 damage per hit. Casts a [40% ATK Up] buff on 10 random allies in a 15m radius, lasting 11s. Then, casts a [20% Skill Recovery Up] buff on the targets, lasting 11s.\n#1 Damage: 125.1% ATK\n#2 Damage: 125.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 113 damage per hit. Casts a [40% ATK Up] buff on 10 random allies in a 15m radius, lasting 13s. Then, casts a [20% Skill Recovery Up] buff on the targets, lasting 13s.\n#1 Damage: 137.4% ATK\n#2 Damage: 137.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 121 damage per hit. Casts a [45% ATK Up] buff on 10 random allies in a 15m radius, lasting 13s. Then, casts a [20% Skill Recovery Up] buff on the targets, lasting 13s.\n#1 Damage: 147.6% ATK\n#2 Damage: 147.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 131 damage per hit. Casts a [45% ATK Up] buff on 10 random allies in a 15m radius, lasting 13s. Then, casts a [25% Skill Recovery Up] buff on the targets, lasting 13s.\n#1 Damage: 159.9% ATK\n#2 Damage: 159.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 140 damage per hit. Casts a [50% ATK Up] buff on 10 random allies in a 15m radius, lasting 13s. Then, casts a [25% Skill Recovery Up] buff on the targets, lasting 13s.\n#1 Damage: 170.1% ATK\n#2 Damage: 170.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 150 damage per hit. Casts a [50% ATK Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [25% Skill Recovery Up] buff on the targets, lasting 16s.\n#1 Damage: 182.4% ATK\n#2 Damage: 182.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 158 damage per hit. Casts a [50% ATK Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [30% Skill Recovery Up] buff on the targets, lasting 16s.\n#1 Damage: 192.7% ATK\n#2 Damage: 192.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 168 damage per hit. Casts a [55% ATK Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [30% Skill Recovery Up] buff on the targets, lasting 16s.\n#1 Damage: 205% ATK\n#2 Damage: 205% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Flutterflash",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/plaxi-the-monarch/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 172 damage. Plaxi gains 10 Titan Mana per debuff on the target, limited up to +200 Titan Mana. \nPlaxi gains 150 Titan Mana.\n#1 Damage: 210% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 183 damage. Plaxi gains 10 Titan Mana per debuff on the target, limited up to +200 Titan Mana. \nPlaxi gains 175 Titan Mana.\n#1 Damage: 222.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 193 damage. Plaxi gains 12 Titan Mana per debuff on the target, limited up to +250 Titan Mana. \nPlaxi gains 175 Titan Mana.\n#1 Damage: 235.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 210 damage. Plaxi gains 12 Titan Mana per debuff on the target, limited up to +250 Titan Mana. \nPlaxi gains 200 Titan Mana.\n#1 Damage: 256.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 231 damage. Plaxi gains 14 Titan Mana per debuff on the target, limited up to +250 Titan Mana. \nPlaxi gains 200 Titan Mana.\n#1 Damage: 281.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 248 damage. Plaxi gains 14 Titan Mana per debuff on the target, limited up to +300 Titan Mana. \nPlaxi gains 225 Titan Mana.\n#1 Damage: 302.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 269 damage. Plaxi gains 16 Titan Mana per debuff on the target, limited up to +300 Titan Mana. \nPlaxi gains 225 Titan Mana.\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 286 damage. Plaxi gains 16 Titan Mana per debuff on the target, limited up to +350 Titan Mana. \nPlaxi gains 250 Titan Mana.\n#1 Damage: 348.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 307 damage. Plaxi gains 18 Titan Mana per debuff on the target, limited up to +350 Titan Mana. \nPlaxi gains 250 Titan Mana.\n#1 Damage: 373.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 324 damage. Plaxi gains 20 Titan Mana per debuff on the target, limited up to +350 Titan Mana. \nPlaxi gains 250 Titan Mana.\n#1 Damage: 394.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 344 damage. Plaxi gains 20 Titan Mana per debuff on the target, limited up to +400 Titan Mana. \nPlaxi gains 300 Titan Mana.\n#1 Damage: 420% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Monarch's Mark",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/plaxi-the-monarch/skills/4.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 131 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 12s. The [Shield] is equal to (30% * Damage Dealt + 15% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 4s.\n#1 Damage: 160% ATK\n#2 Shield: 30% * Damage Dealt + 15% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 139 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 12s. The [Shield] is equal to (30% * Damage Dealt + 17% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 4s.\n#1 Damage: 169.6% ATK\n#2 Shield: 30% * Damage Dealt + 17% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 147 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 14s. The [Shield] is equal to (35% * Damage Dealt + 17% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 4s.\n#1 Damage: 179.2% ATK\n#2 Shield: 35% * Damage Dealt + 17% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 160 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 14s. The [Shield] is equal to (35% * Damage Dealt + 19% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 5s.\n#1 Damage: 195.2% ATK\n#2 Shield: 35% * Damage Dealt + 19% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 176 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 14s. The [Shield] is equal to (40% * Damage Dealt + 19% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 5s.\n#1 Damage: 214.4% ATK\n#2 Shield: 40% * Damage Dealt + 19% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 189 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 16s. The [Shield] is equal to (40% * Damage Dealt + 21% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 5s.\n#1 Damage: 230.4% ATK\n#2 Shield: 40% * Damage Dealt + 21% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 205 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 16s. The [Shield] is equal to (50% * Damage Dealt + 21% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 6s.\n#1 Damage: 249.6% ATK\n#2 Shield: 50% * Damage Dealt + 21% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 218 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 16s. The [Shield] is equal to (50% * Damage Dealt + 23% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 6s.\n#1 Damage: 265.6% ATK\n#2 Shield: 50% * Damage Dealt + 23% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 234 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 18s. The [Shield] is equal to (60% * Damage Dealt + 23% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 6s.\n#1 Damage: 284.8% ATK\n#2 Shield: 60% * Damage Dealt + 23% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 247 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 18s. The [Shield] is equal to (60% * Damage Dealt + 25% * MAX HP). \nFor each target hit Extends the duration of 1 random buff on 1 random ally in a 15m radius by 8s.\n#1 Damage: 300.8% ATK\n#2 Shield: 60% * Damage Dealt + 25% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, dealing 262 damage. Casts a [Shield] buff on 10 random allies in a 15m radius around the target, lasting 18s. The [Shield] is equal to (60% * Damage Dealt + 25% * MAX HP). \nFor each target hit Extends the duration of up to 2 random buffs on 1 random ally in a 15m radius by 8s.\n#1 Damage: 320% ATK\n#2 Shield: 60% * Damage Dealt + 25% * MAX HP"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "From a chrysalis deep in the Wanewood, Plaxi the Monarch sprang forth. Risen from her eons-long slumber by Malice's machinations, she quickly departed the Emerald Kingdom to help soothe the world's wounds. A chorus of wingbeats herald her arrival, along with the gentle glow of a thousand glimmerwing butterflies.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "S",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "S",
+  "sorgott": "S+",
+  "ulgorim": "S+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 68.8,
+  "lists": 16
+ }
+}

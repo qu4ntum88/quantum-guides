@@ -1,0 +1,598 @@
+{
+ "slug": "roxxi-gumm",
+ "kind": "Invoker",
+ "name": "Roxxi & Gumm",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/roxxi-gumm/portrait.webp",
+ "fullArt": "/invokers/units/invokers/roxxi-gumm/full.webp",
+ "stats": {
+  "base": {
+   "Health": "888",
+   "Attack": "92",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "100"
+  },
+  "max": {
+   "Health": "9,590",
+   "Attack": "1,113",
+   "Defense": "747",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "100"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/roxxi-gumm/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 26% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 40% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 54% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 63% ATK\n#5 Attacks 1 enemy, dealing 74 damage. The target loses 25 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 80% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 27.6% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 42.4% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 57.2% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 66.8% ATK\n#5 Attacks 1 enemy, dealing 78 damage. The target loses 27 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 84.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 29.1% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 44.8% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 60.5% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 70.6% ATK\n#5 Attacks 1 enemy, dealing 82 damage. The target loses 29 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 89.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 48.8% ATK\n#3 Attacks 1 enemy, dealing 61 damage.\nDamage: 65.9% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 76.9% ATK\n#5 Attacks 1 enemy, dealing 90 damage. The target loses 31 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 97.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 34.8% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 53.6% ATK\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 72.4% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 84.4% ATK\n#5 Attacks 1 enemy, dealing 99 damage. The target loses 33 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 107.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 57.6% ATK\n#3 Attacks 1 enemy, dealing 72 damage.\nDamage: 77.8% ATK\n#4 Attacks 1 enemy, dealing 83 damage.\nDamage: 90.7% ATK\n#5 Attacks 1 enemy, dealing 106 damage. The target loses 35 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 115.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 40.6% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 62.4% ATK\n#3 Attacks 1 enemy, dealing 78 damage.\nDamage: 84.2% ATK\n#4 Attacks 1 enemy, dealing 90 damage.\nDamage: 98.3% ATK\n#5 Attacks 1 enemy, dealing 115 damage. The target loses 37 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 124.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 61 damage.\nDamage: 66.4% ATK\n#3 Attacks 1 enemy, dealing 82 damage.\nDamage: 89.6% ATK\n#4 Attacks 1 enemy, dealing 96 damage.\nDamage: 104.6% ATK\n#5 Attacks 1 enemy, dealing 122 damage. The target loses 39 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 132.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 46.3% ATK\n#2 Attacks 1 enemy, dealing 66 damage.\nDamage: 71.2% ATK\n#3 Attacks 1 enemy, dealing 88 damage.\nDamage: 96.1% ATK\n#4 Attacks 1 enemy, dealing 103 damage.\nDamage: 112.1% ATK\n#5 Attacks 1 enemy, dealing 131 damage. The target loses 41 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 142.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 48.9% ATK\n#2 Attacks 1 enemy, dealing 69 damage.\nDamage: 75.2% ATK\n#3 Attacks 1 enemy, dealing 93 damage.\nDamage: 101.5% ATK\n#4 Attacks 1 enemy, dealing 109 damage.\nDamage: 118.4% ATK\n#5 Attacks 1 enemy, dealing 138 damage. The target loses 45 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 150.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 48 damage.\nDamage: 52% ATK\n#2 Attacks 1 enemy, dealing 74 damage.\nDamage: 80% ATK\n#3 Attacks 1 enemy, dealing 99 damage.\nDamage: 108% ATK\n#4 Attacks 1 enemy, dealing 116 damage.\nDamage: 126% ATK\n#5 Attacks 1 enemy, dealing 147 damage. The target loses 50 Titan Mana.\nAccuracy required for: Mana Loss\nDamage: 160% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Double Trouble",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/roxxi-gumm/skills/1.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 71 damage. The first hit casts a [Stun] debuff on the target, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 71 damage. Casts a [Stun] debuff on the target, lasting 2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 77.5% ATK\n#2 Damage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 76 damage. The first hit casts a [Stun] debuff on the target, lasting 2.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 76 damage. Casts a [Stun] debuff on the target, lasting 2.2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 82.1% ATK\n#2 Damage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 80 damage. The first hit casts a [Stun] debuff on the target, lasting 2.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 80 damage. Casts a [Stun] debuff on the target, lasting 2.4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 86.8% ATK\n#2 Damage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 87 damage. The first hit casts a [Stun] debuff on the target, lasting 2.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 87 damage. Casts a [Stun] debuff on the target, lasting 2.6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 94.6% ATK\n#2 Damage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 96 damage. The first hit casts a [Stun] debuff on the target, lasting 2.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 96 damage. Casts a [Stun] debuff on the target, lasting 2.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 103.8% ATK\n#2 Damage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 103 damage. The first hit casts a [Stun] debuff on the target, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 103 damage. Casts a [Stun] debuff on the target, lasting 3s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 111.6% ATK\n#2 Damage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 111 damage. The first hit casts a [Stun] debuff on the target, lasting 3.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 111 damage. Casts a [Stun] debuff on the target, lasting 3.2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 120.9% ATK\n#2 Damage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 118 damage. The first hit casts a [Stun] debuff on the target, lasting 3.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 118 damage. Casts a [Stun] debuff on the target, lasting 3.4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 128.6% ATK\n#2 Damage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 127 damage. The first hit casts a [Stun] debuff on the target, lasting 3.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 127 damage. Casts a [Stun] debuff on the target, lasting 3.6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 137.9% ATK\n#2 Damage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 134 damage. The first hit casts a [Stun] debuff on the target, lasting 3.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 134 damage. Casts a [Stun] debuff on the target, lasting 3.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 145.7% ATK\n#2 Damage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2.5m, dealing 143 damage. The first hit casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Attacks 1 random enemy in a 5m radius, from a distance of 2.5m, dealing 143 damage. Casts a [Stun] debuff on the target, lasting 4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Spike Splat",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/roxxi-gumm/skills/2.webp",
+   "effects": [
+    {
+     "label": "Skill Recovery Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Skill Recovery stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 147 damage. Casts a [15% Skill Recovery Down] debuff on the targets, lasting 10s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 160% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 156 damage. Casts a [20% Skill Recovery Down] debuff on the targets, lasting 10s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 169.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 165 damage. Casts a [20% Skill Recovery Down] debuff on the targets, lasting 10s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 179.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 180 damage. Casts a [20% Skill Recovery Down] debuff on the targets, lasting 12s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 195.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 197 damage. Casts a [20% Skill Recovery Down] debuff on the targets, lasting 12s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 214.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 212 damage. Casts a [25% Skill Recovery Down] debuff on the targets, lasting 12s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 230.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 230 damage. Casts a [25% Skill Recovery Down] debuff on the targets, lasting 12s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 249.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 244 damage. Casts a [25% Skill Recovery Down] debuff on the targets, lasting 14s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 265.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 262 damage. Casts a [25% Skill Recovery Down] debuff on the targets, lasting 14s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 284.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 277 damage. Casts a [30% Skill Recovery Down] debuff on the targets, lasting 14s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 300.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Roxxi & Gumm, from a distance of 3m, dealing 294 damage. Casts a [30% Skill Recovery Down] debuff on the targets, lasting 16s.\nAccuracy required for: Skill Recovery Down\n#1 Damage: 320% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Gumm Sling",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/roxxi-gumm/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Rate stat by the indicated percentage."
+    },
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 94 damage per hit. The first hit casts a [35% ATK Down] debuff on the target, lasting 10s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 10s, on the second hit. Then, launches the target, knocking them 10m away, for 3s on the third hit. Then, casts a [25% Move SPD Down] debuff on the target, lasting 3s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 102.5% ATK\n#2 Damage: 102.5% ATK\n#3 Damage: 102.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 100 damage per hit. The first hit casts a [40% ATK Down] debuff on the target, lasting 10s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 10s, on the second hit. Then, launches the target, knocking them 10m away, for 3s on the third hit. Then, casts a [25% Move SPD Down] debuff on the target, lasting 3s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 108.6% ATK\n#2 Damage: 108.6% ATK\n#3 Damage: 108.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 106 damage per hit. The first hit casts a [40% ATK Down] debuff on the target, lasting 12s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 12s, on the second hit. Then, launches the target, knocking them 10m away, for 4s on the third hit. Then, casts a [25% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 114.8% ATK\n#2 Damage: 114.8% ATK\n#3 Damage: 114.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 115 damage per hit. The first hit casts a [40% ATK Down] debuff on the target, lasting 12s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 12s, on the second hit. Then, launches the target, knocking them 10m away, for 4s on the third hit. Then, casts a [25% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 125.1% ATK\n#2 Damage: 125.1% ATK\n#3 Damage: 125.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 126 damage per hit. The first hit casts a [40% ATK Down] debuff on the target, lasting 12s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 12s, on the second hit. Then, launches the target, knocking them 10m away, for 4s on the third hit. Then, casts a [30% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 137.4% ATK\n#2 Damage: 137.4% ATK\n#3 Damage: 137.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 136 damage per hit. The first hit casts a [50% ATK Down] debuff on the target, lasting 12s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 12s, on the second hit. Then, launches the target, knocking them 10m away, for 4s on the third hit. Then, casts a [30% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 147.6% ATK\n#2 Damage: 147.6% ATK\n#3 Damage: 147.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 147 damage per hit. The first hit casts a [50% ATK Down] debuff on the target, lasting 14s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 14s, on the second hit. Then, launches the target, knocking them 10m away, for 5s on the third hit. Then, casts a [30% Move SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 159.9% ATK\n#2 Damage: 159.9% ATK\n#3 Damage: 159.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 157 damage per hit. The first hit casts a [50% ATK Down] debuff on the target, lasting 14s. Then, casts a [30% Crit Rate Down] debuff on the target, lasting 14s, on the second hit. Then, launches the target, knocking them 10m away, for 5s on the third hit. Then, casts a [40% Move SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 170.1% ATK\n#2 Damage: 170.1% ATK\n#3 Damage: 170.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 168 damage per hit. The first hit casts a [50% ATK Down] debuff on the target, lasting 14s. Then, casts a [30% Crit Rate Down] debuff on the target, lasting 14s, on the second hit. Then, launches the target, knocking them 10m away, for 6s on the third hit. Then, casts a [40% Move SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 182.4% ATK\n#2 Damage: 182.4% ATK\n#3 Damage: 182.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 177 damage per hit. The first hit casts a [60% ATK Down] debuff on the target, lasting 14s. Then, casts a [30% Crit Rate Down] debuff on the target, lasting 14s, on the second hit. Then, launches the target, knocking them 10m away, for 6s on the third hit. Then, casts a [40% Move SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 192.7% ATK\n#2 Damage: 192.7% ATK\n#3 Damage: 192.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 189 damage per hit. The first hit casts a [60% ATK Down] debuff on the target, lasting 16s. Then, casts a [40% Crit Rate Down] debuff on the target, lasting 16s, on the second hit. Then, launches the target, knocking them 10m away, for 6s on the third hit. Then, casts a [50% Move SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: ATK Down, Crit Rate Down, Launch, Move SPD Down\n#1 Damage: 205% ATK\n#2 Damage: 205% ATK\n#3 Damage: 205% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Chomp, Chomp, Chomp!",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/roxxi-gumm/skills/4.webp",
+   "effects": [
+    {
+     "label": "Immunity",
+     "group": "Buffs",
+     "description": "Blocks Debuffs from being applied to the recipient.Immunity Buffs will not block Control Debuffs, and each Immunity buff will only negate a single Debuff before expiring. This buff can be stacked."
+    },
+    {
+     "label": "Willpower",
+     "group": "Buffs",
+     "description": "Blocks Control Debuffs from being applied to the recipient.Each Willpower buff will only negate a single Debuff before expiring. This buff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 10s, protecting the target against 1 Control debuff. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 10s, protecting the target against 2 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 251 damage. Each target hit loses 100 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 7s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 272.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 12s, protecting the target against 1 Control debuff. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 12s, protecting the target against 2 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 266 damage. Each target hit loses 100 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 7s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 288.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 12s, protecting the target against 1 Control debuff. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 12s, protecting the target against 2 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 281 damage. Each target hit loses 125 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 7s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 305.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 12s, protecting the target against 1 Control debuff. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 12s, protecting the target against 2 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 306 damage. Each target hit loses 125 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 9s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 332.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 12s, protecting the target against 1 Control debuff. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 12s, protecting the target against 2 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 336 damage. Each target hit loses 125 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 9s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 365.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 14s, protecting the target against 1 Control debuff. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 14s, protecting the target against 3 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 361 damage. Each target hit loses 125 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 9s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 392.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 14s, protecting the target against 2 Control debuffs. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 14s, protecting the target against 3 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 391 damage. Each target hit loses 150 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 9s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 425.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 14s, protecting the target against 2 Control debuffs. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 14s, protecting the target against 3 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 416 damage. Each target hit loses 150 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 11s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 452.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 14s, protecting the target against 2 Control debuffs. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 14s, protecting the target against 3 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 446 damage. Each target hit loses 175 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 11s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 485% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 16s, protecting the target against 2 Control debuffs. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 16s, protecting the target against 3 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 471 damage. Each target hit loses 175 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 11s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 512.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Casts a [Willpower] buff on Roxxi & Gumm, lasting 16s, protecting the target against 2 Control debuffs. Then, casts an [Immunity] buff on Roxxi & Gumm, lasting 16s, protecting the target against 4 debuffs. \nCharges through a 14x8m path towards 1 enemy, damaging each enemy hit, dealing 501 damage. Each target hit loses 200 Ultimate Mana. Then, reduces the cooldown of all Active Skills on Roxxi & Gumm by 14s, if the target is a Miniboss or if the target is a Boss.\nAccuracy required for: Mana Loss\n#1 Damage: 545% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "You wouldn't think a girl with bubblegum hair, riding a bear made of slime, would be Shadespire's most notorious bouncer. Nor would you think that this duo are key players in Shadespire's criminal underworld, yet Roxxi & Gumm are both. Roxxi rose to power by creating Gumm from a nigh-indestructible goo of her own design. Now everyone wants a taste - but power doesn't come cheap.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "S",
+  "hyxxis": "E",
+  "koltmos": "S",
+  "omnissi-astral": "E",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "E",
+  "omnissi-light": "S+",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "E",
+  "ulgorim": "S",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 45.5,
+  "lists": 16
+ }
+}

@@ -1,0 +1,549 @@
+{
+ "slug": "runeshield-brotten",
+ "kind": "Invoker",
+ "name": "Runeshield Brotten",
+ "faction": "Stonehearts",
+ "rarity": "Rare",
+ "class": "Tank",
+ "element": "Earth",
+ "soulSign": "Sign of Actia",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/runeshield-brotten/portrait.webp",
+ "fullArt": "/invokers/units/invokers/runeshield-brotten/full.webp",
+ "stats": {
+  "base": {
+   "Health": "704",
+   "Attack": "22",
+   "Defense": "67",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "91"
+  },
+  "max": {
+   "Health": "8,742",
+   "Attack": "251",
+   "Defense": "845",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "131"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/runeshield-brotten/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+96",
+    "titan": "+52"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 14% ATK + 9% DEF\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 20.5% ATK + 14% DEF\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 27% ATK + 18% DEF\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 34% ATK + 23% DEF\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 41% ATK + 28% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 14.8% ATK + 9.5% DEF\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 21.7% ATK + 14.8% DEF\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 28.6% ATK + 19.1% DEF\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 36% ATK + 24.4% DEF\n#5 Attacks 1 enemy, dealing 29 damage.\nDamage: 43.5% ATK + 29.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 15.7% ATK + 10.1% DEF\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 23% ATK + 15.7% DEF\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 30.2% ATK + 20.2% DEF\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 38.1% ATK + 25.8% DEF\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 45.9% ATK + 31.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 17.1% ATK + 11% DEF\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 25% ATK + 17.1% DEF\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 32.9% ATK + 22% DEF\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 41.5% ATK + 28.1% DEF\n#5 Attacks 1 enemy, dealing 34 damage.\nDamage: 50% ATK + 34.2% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 18.8% ATK + 12.1% DEF\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 27.5% ATK + 18.8% DEF\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 36.2% ATK + 24.1% DEF\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 45.6% ATK + 30.8% DEF\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 54.9% ATK + 37.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 20.2% ATK + 13% DEF\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 29.5% ATK + 20.2% DEF\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 38.9% ATK + 25.9% DEF\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 49% ATK + 33.1% DEF\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 59% ATK + 40.3% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 21.8% ATK + 14% DEF\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 32% ATK + 21.8% DEF\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 42.1% ATK + 28.1% DEF\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 53% ATK + 35.9% DEF\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 64% ATK + 43.7% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 23.2% ATK + 14.9% DEF\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 34% ATK + 23.2% DEF\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 44.8% ATK + 29.9% DEF\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 56.4% ATK + 38.2% DEF\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 68.1% ATK + 46.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 24.9% ATK + 16% DEF\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 36.5% ATK + 24.9% DEF\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 48.1% ATK + 32% DEF\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 60.5% ATK + 40.9% DEF\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 73% ATK + 49.8% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 26.3% ATK + 16.9% DEF\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 38.5% ATK + 26.3% DEF\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 50.8% ATK + 33.8% DEF\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 63.9% ATK + 43.2% DEF\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 77.1% ATK + 52.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 28% ATK + 18% DEF\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 41% ATK + 28% DEF\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 54% ATK + 36% DEF\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 68% ATK + 46% DEF\n#5 Attacks 1 enemy, dealing 56 damage.\nDamage: 82% ATK + 56% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Halt, Miscreant!",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/runeshield-brotten/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 54 damage.\n#1 Damage: 82.5% ATK + 54% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 58 damage.\n#1 Damage: 87.4% ATK + 57.2% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 61 damage.\n#1 Damage: 92.4% ATK + 60.5% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 100.7% ATK + 65.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 110.6% ATK + 72.4% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 118.8% ATK + 77.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 85 damage.\n#1 Damage: 128.7% ATK + 84.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage.\n#1 Damage: 136.9% ATK + 89.6% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 97 damage.\n#1 Damage: 146.8% ATK + 96.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 102 damage.\n#1 Damage: 155.1% ATK + 101.5% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage.\n#1 Damage: 165% ATK + 108% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Face Justice!",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/runeshield-brotten/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 164% ATK + 110% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 116 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 173.8% ATK + 116.6% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 183.7% ATK + 123.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 200.1% ATK + 134.2% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 147 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 219.8% ATK + 147.4% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 158 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 236.2% ATK + 158.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 171 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 255.8% ATK + 171.6% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 182 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 272.2% ATK + 182.6% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 195 damage. Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 291.9% ATK + 195.8% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 206 damage. Removes 2 random buffs from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 308.3% ATK + 206.8% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Removes 2 random buffs from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 328% ATK + 220% DEF"
+    }
+   ]
+  },
+  {
+   "name": "And Be Judged!",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/runeshield-brotten/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage. Heals Brotten, restoring 70 HP.\n#1 Damage: 170% ATK + 114% DEF\n#2 Heal: MAX HP * 10%"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage. Heals Brotten, restoring 77 HP.\n#1 Damage: 180.2% ATK + 120.8% DEF\n#2 Heal: MAX HP * 11%"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 127 damage. Heals Brotten, restoring 77 HP.\n#1 Damage: 190.4% ATK + 127.7% DEF\n#2 Heal: MAX HP * 11%"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage. Heals Brotten, restoring 84 HP.\n#1 Damage: 207.4% ATK + 139.1% DEF\n#2 Heal: MAX HP * 12%"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 152 damage. Heals Brotten, restoring 84 HP.\n#1 Damage: 227.8% ATK + 152.8% DEF\n#2 Heal: MAX HP * 12%"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 164 damage. Heals Brotten, restoring 92 HP.\n#1 Damage: 244.8% ATK + 164.2% DEF\n#2 Heal: MAX HP * 13%"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 177 damage. Heals Brotten, restoring 92 HP.\n#1 Damage: 265.2% ATK + 177.8% DEF\n#2 Heal: MAX HP * 13%"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 189 damage. Heals Brotten, restoring 99 HP.\n#1 Damage: 282.2% ATK + 189.2% DEF\n#2 Heal: MAX HP * 14%"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 203 damage. Heals Brotten, restoring 99 HP.\n#1 Damage: 302.6% ATK + 202.9% DEF\n#2 Heal: MAX HP * 14%"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 214 damage. Heals Brotten, restoring 106 HP.\n#1 Damage: 319.6% ATK + 214.3% DEF\n#2 Heal: MAX HP * 15%"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 228 damage. Heals Brotten, restoring 106 HP.\n#1 Damage: 340% ATK + 228% DEF\n#2 Heal: MAX HP * 15%"
+    }
+   ]
+  },
+  {
+   "name": "In The King's Name!",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/runeshield-brotten/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 94 damage. Casts a [15% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 137.5% ATK + 95% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 100 damage. Casts a [16% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 145.7% ATK + 100.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 105 damage. Casts a [16% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 154% ATK + 106.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 115 damage. Casts a [17% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 167.8% ATK + 115.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 126 damage. Casts a [17% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 184.2% ATK + 127.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 135 damage. Casts a [17% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 198% ATK + 136.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 146 damage. Casts a [18% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 214.5% ATK + 148.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 156 damage. Casts a [18% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 228.2% ATK + 157.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 167 damage. Casts a [19% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 244.8% ATK + 169.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 177 damage. Casts a [20% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 258.5% ATK + 178.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 5m semicircle in front of Brotten, dealing 188 damage. Casts a [20% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 275% ATK + 190% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Never a hair out of place. Never a dent on his shield. Never a second late. In his mind, Brotten is the model guard. Such is his devotion, he's been known to stop mid-brawl to clean any muck besmirching the King's face on his shield. All the while, keeping miscreants at bay. Talk about loving your job.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "B",
+  "hyxxis": "A+",
+  "koltmos": "D",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "C",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 35.7,
+  "lists": 16
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "id": 24,
+ "slug": "kunoichi",
+ "name": "Kunoichi",
+ "title": "Shadow Dancer",
+ "summary": "Throw poisonous tricks at your foes and cast tricks to control the battle.",
+ "lore": "The kunoichi are women who practice specific methods of the shadow arts. By taking advantage of cultural expectations regarding gender roles, they infiltrate locations where even other shinobi have difficulty. Through disguise, deception, and sometimes their mere presence, they are masters of gathering intelligence, and should their true allegiances be discovered, they are equally as adept at combat as their brethren.",
+ "rarity": "Uncommon",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Kunoichi.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Kunoichi_main.png",
+ "stats": {
+  "hp": 1035,
+  "atk": 61,
+  "def": 69,
+  "spd": 87,
+  "init": 89,
+  "acc": 10,
+  "res": 10,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Venomous Strike",
+   "description": "Attack 1 enemy 305%ATK with a 30% chance to place [Acid] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/kunoichi/ICON_Kunoichi_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "305%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 35,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Dance of Shadows",
+   "description": "Attack 1 enemy 435%ATK with a 25% chance to place [Sleep] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/kunoichi/ICON_Kunoichi_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "435%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Sleep",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 25,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Toxic Veil",
+   "description": "Place [Vanish] on this hero for 1 turn, then has a 60% chance to place [Vulnerable I] on enemies under [Acid] for 2 turns.",
+   "icon_url": "/godforge/abilities/kunoichi/ICON_Kunoichi_Ultimate.webp",
+   "divinity_cost": 1800,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 60,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

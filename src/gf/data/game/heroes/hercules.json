@@ -1,0 +1,313 @@
+{
+ "id": 15,
+ "slug": "hercules",
+ "name": "Hercules",
+ "title": "Mighty Redeemer",
+ "summary": "Complete Twelve Labors and Deal Devastating Damage to Enemies",
+ "lore": "Olympus’s greatest hero and a god in his own right, Hercules stalks the monsters of Ryven, protecting his home realm from their depredations. Sadly, the altered magics of this world also render him susceptible to bouts of violent madness inspired by servants of Chaos, forcing him to isolate himself from those he loves and making his efforts an exercise in loneliness.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hercules.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Hercules_main.png",
+ "stats": {
+  "hp": 1890,
+  "atk": 89,
+  "def": 94,
+  "spd": 93,
+  "init": 95,
+  "acc": 30,
+  "res": 55,
+  "initial_divinity": 225,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also place [Barrier] 30%HP on this hero.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.15,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Decrease the target ATK by 5%, if the target is under [Acid] (stacking up to 5 times).",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also increase this hero's FTH by 5% (stacking up to 12 times).",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Hydra Club",
+   "description": "Attack all enemies 5%HP+75%ATK, then has a 50% chance to place [Acid] on each target for 2 turns. Increase the damage inflicted by 1% for each 1% of missing HP on this hero.",
+   "icon_url": "/godforge/abilities/hercules/ICON_Hercules_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+75%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Decrease the target ATK by 5%, if the target is under Acid (stacking up to 5 times).",
+     "upgrade_description": "Decrease the target ATK by 5%, if the target is under [Acid] (stacking up to 5 times)."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Herc Smash",
+   "description": "Attack 1 enemy 15%HP+180%ATK, then has an 80% chance to place [Taunt] on the target for 2 turns. Increase the damage inflicted by 50%, then place [Taunt] on that target for 3 turns instead if this hero is under [Immortal].",
+   "icon_url": "/godforge/abilities/hercules/ICON_Hercules_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+180%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Zero to Hero",
+   "description": "Prevent this hero's defeat. When this triggers, gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/hercules/ICON_Hercules_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also place Barrier 30%HP on this hero.",
+     "upgrade_description": "Also place [Barrier] 30%HP on this hero."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Twelve Labors",
+   "description": "Sacrifice 10% of this hero's Current HP, then increase ATK by 5% (stacking up to 12 times). Stacks do not reset between waves.\n\nAlso place [Barrier] 5%HP on this hero.\n\nWhen at max stacks, place [Immortal] and [ATK Up II] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/hercules/ICON_Hercules_Ultimate.webp",
+   "divinity_cost": 1575,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Sacrifice Health",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also increase this hero's FTH by 5% (stacking up to 12 times).",
+     "upgrade_description": "Also increase this hero's FTH by 5% (stacking up to 12 times)."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Zero to Hero",
+   "description": "Prevent this hero's defeat. When this triggers, gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/hercules/ICON_Hercules_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

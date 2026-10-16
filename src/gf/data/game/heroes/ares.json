@@ -1,0 +1,288 @@
+{
+ "id": 214,
+ "slug": "ares",
+ "name": "Ares",
+ "title": "God of War",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The war god’s lust for violence and his berserk rages turn fields into carnage, fortresses into charnel houses. As a lover and instigator of conflict, Ares adores the post-Shattering world. Thus far he has contented himself with the slaughter of monsters and with the bloodshed of small skirmishes, but he hopes to ignite ongoing wars between Olympus and other Realms.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/4217/6702/9971/Ares.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/4017/7889/0096/2026-05-15_19_07_12-Ares___Hero_Index___Godforge.png",
+ "stats": {
+  "hp": 1425,
+  "atk": 114,
+  "def": 96,
+  "spd": 104,
+  "init": 102,
+  "acc": 45,
+  "res": 25,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also increase this hero’s Turn Meter by 10% when an enemy is defeated.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Block Revive] on enemies defeated by this ability.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each time this hero receives a Buff, increase the damage of his next ability by 10%.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Furious Onslaught",
+   "description": "Attack 1 enemy 3 times 155%ATK and decrease the target’s DEF by 2% (stacking up to 10 times). Each Strong Hit also decreases the target’s FTH by 5 (stacking up to 10 times).",
+   "icon_url": "/godforge/abilities/ares/ICON_Ares_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "155%ATK",
+    "155%ATK",
+    "155%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Brutal Cleave",
+   "description": "Attack all enemies 325%ATK and ignore [Shield] and [Barrier] on each target. If the attack is a Strong Hit, remove all [Shield] and [Barrier] from each target. If an enemy is defeated, increase this hero’s Divinity by 10%.",
+   "icon_url": "/godforge/abilities/ares/ICON_Ares_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "325%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also increase this hero’s Turn Meter by 10% when an enemy is defeated.",
+     "upgrade_description": "Also increase this hero’s Turn Meter by 10% when an enemy is defeated."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% CDMG in Arena Battles",
+   "icon_url": "/godforge/abilities/ares/ICON_Leader_CriticalDamage.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Warborn Frenzy",
+   "description": "Each time an enemy receives a Debuff, increases this hero’s chance to Strong Hit by 5% on their next ability.",
+   "icon_url": "/godforge/abilities/ares/ICON_Ares_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each time this hero receives a Buff, increase the damage of his next ability by 10%.",
+     "upgrade_description": "Each time this hero receives a Buff, increase the damage of his next ability by 10%."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Carnage Momentum",
+   "description": "Attack 1 enemy 2 times 315%ATK. Each hit ignores Protect, [Intercept], [Immortal] and [Ward]. If the attack is a Strong Hit, also ignores 20% of the target’s DEF.",
+   "icon_url": "/godforge/abilities/ares/ICON_Ares_Ultimate.webp",
+   "divinity_cost": 3275,
+   "damage_formula": [
+    "315%ATK",
+    "315%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Block Revive",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Block Revive",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Block Revive on enemies defeated by this ability.",
+     "upgrade_description": "Place [Block Revive] on enemies defeated by this ability."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Warborn Frenzy",
+   "description": "Each time an enemy receives a Debuff, increases this hero’s chance to Strong Hit by 2.5% on their next ability.",
+   "icon_url": "/godforge/abilities/ares/ICON_Ares_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

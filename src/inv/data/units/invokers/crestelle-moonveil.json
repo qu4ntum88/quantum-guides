@@ -1,0 +1,593 @@
+{
+ "slug": "crestelle-moonveil",
+ "kind": "Invoker",
+ "name": "Crestelle Moonveil",
+ "faction": "Eldrin",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Light",
+ "soulSign": "Sign of Pirea",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/crestelle-moonveil/portrait.webp",
+ "fullArt": "/invokers/units/invokers/crestelle-moonveil/full.webp",
+ "stats": {
+  "base": {
+   "Health": "960",
+   "Attack": "85",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "13",
+   "Combo speed": "4",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "93"
+  },
+  "max": {
+   "Health": "11,568",
+   "Attack": "906",
+   "Defense": "759",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "45",
+   "Combo speed": "26",
+   "Skill speed": "54",
+   "Skill recovery": "0",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "128"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/crestelle-moonveil/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 10% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 15.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 19.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 26% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1s.\nDamage: 16% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 16.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 20.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 27.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.1s.\nDamage: 17% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 11.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 17.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 21.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 29.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.2s.\nDamage: 17.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 12.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 18.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 23.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 31.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.3s.\nDamage: 19.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 13.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 20.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 26.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 34.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.4s.\nDamage: 21.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 14.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 22.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 37.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.5s.\nDamage: 23% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 15.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 24.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 30.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 40.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.6s.\nDamage: 25% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 16.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 25.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 32.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 43.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 23 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.7s.\nDamage: 26.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 17.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 27.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 34.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 46.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.8s.\nDamage: 28.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 18.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 29.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 36.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 48.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage. Extends the duration of 1 random buff on the 10 allies with the lowest current HP in a 15m radius around the target by 1.9s.\nDamage: 30.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 31% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 39% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 52% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 27 damage. Extends the duration of up to 2 random buffs on the 10 allies with the lowest current HP in a 15m radius around the target by 2s.\nDamage: 32% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Moonlight Lantern",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/crestelle-moonveil/skills/1.webp",
+   "effects": [
+    {
+     "label": "Evasion",
+     "group": "Buffs",
+     "description": "The recipient has a percentage chance to evade Combo Attacks, and avoid taking damage. Combo Attacks that are evaded do not generate any Mana for the attacker. Evasion chance stacks along with Evasion from other sources, such as from skills."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 94 damage. Casts a [10% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 4s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 110% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 99 damage. Casts a [12% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 4s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 116.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 105 damage. Casts a [12% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 4.5s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 123.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 114 damage. Casts a [14% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 4.5s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 134.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 125 damage. Casts a [14% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 5s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 147.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 135 damage. Casts a [16% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 5s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 158.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 146 damage. Casts a [16% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 5.5s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 171.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 155 damage. Casts a [18% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 5.5s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 182.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 166 damage. Casts a [18% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 6s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 195.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 176 damage. Casts a [20% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 6s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 206.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 187 damage. Casts a [20% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 7s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 220% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Lunar Veil",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/crestelle-moonveil/skills/2.webp",
+   "effects": [
+    {
+     "label": "Immunity",
+     "group": "Buffs",
+     "description": "Blocks Debuffs from being applied to the recipient.Immunity Buffs will not block Control Debuffs, and each Immunity buff will only negate a single Debuff before expiring. This buff can be stacked."
+    },
+    {
+     "label": "Willpower",
+     "group": "Buffs",
+     "description": "Blocks Control Debuffs from being applied to the recipient.Each Willpower buff will only negate a single Debuff before expiring. This buff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 8s, protecting the target against 2 debuffs. Then, casts a [Willpower] buff on the targets, lasting 8s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 8s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 8s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 9s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 9s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 9s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 9s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 9s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 9s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 10s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 10s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 11s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 11s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 12s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, protecting the target against 3 debuffs. Then, casts a [Willpower] buff on the targets, lasting 12s, protecting the target against 3 Control debuffs."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Casts an [Immunity] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s, protecting the target against 4 debuffs. Then, casts a [Willpower] buff on the targets, lasting 14s, protecting the target against 3 Control debuffs."
+    }
+   ]
+  },
+  {
+   "name": "Crescent Blessing",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/crestelle-moonveil/skills/3.webp",
+   "effects": [
+    {
+     "label": "DEF Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Harden",
+     "group": "Buffs",
+     "description": "Decreases the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [30% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s. Then, casts a [15% Harden] buff on the targets, lasting 12s, decreasing all damage taken by 15%."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [35% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s. Then, casts a [15% Harden] buff on the targets, lasting 12s, decreasing all damage taken by 15%."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [35% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s. Then, casts a [15% Harden] buff on the targets, lasting 13s, decreasing all damage taken by 15%."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [40% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s. Then, casts a [20% Harden] buff on the targets, lasting 13s, decreasing all damage taken by 20%."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [40% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s. Then, casts a [20% Harden] buff on the targets, lasting 15s, decreasing all damage taken by 20%."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [45% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s. Then, casts a [20% Harden] buff on the targets, lasting 15s, decreasing all damage taken by 20%."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [45% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s. Then, casts a [25% Harden] buff on the targets, lasting 15s, decreasing all damage taken by 25%."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [50% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s. Then, casts a [25% Harden] buff on the targets, lasting 15s, decreasing all damage taken by 25%."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [50% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 17s. Then, casts a [25% Harden] buff on the targets, lasting 17s, decreasing all damage taken by 25%."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [60% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 17s. Then, casts a [25% Harden] buff on the targets, lasting 17s, decreasing all damage taken by 25%."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [60% DEF Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 17s. Then, casts a [30% Harden] buff on the targets, lasting 17s, decreasing all damage taken by 30%."
+    }
+   ]
+  },
+  {
+   "name": "Wreathed in Silver",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/crestelle-moonveil/skills/4.webp",
+   "effects": [
+    {
+     "label": "Invincibility",
+     "group": "Buffs",
+     "description": "Prevents the recipient from taking any damage, and blocks all Debuffs from being applied to the recipientThe duration of this Buff cannot be extended by other skills or effects."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Removes 2 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 4s, blocking all incoming damage. Heals the targets, restoring 125 HP.\n#1 Heal: 10% * MAX HP + 3% * MAX HP *"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Removes 3 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 4s, blocking all incoming damage. Heals the targets, restoring 125 HP.\n#1 Heal: 10% * MAX HP + 3% * MAX HP *"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Removes 3 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 5s, blocking all incoming damage. Heals the targets, restoring 134 HP.\n#1 Heal: 10% * MAX HP + 4% * MAX HP *"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Removes 3 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 5s, blocking all incoming damage. Heals the targets, restoring 182 HP.\n#1 Heal: 15% * MAX HP + 4% * MAX HP *"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Removes 3 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 5s, blocking all incoming damage. Heals the targets, restoring 182 HP.\n#1 Heal: 15% * MAX HP + 4% * MAX HP *"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Removes 4 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 5s, blocking all incoming damage. Heals the targets, restoring 182 HP.\n#1 Heal: 15% * MAX HP + 4% * MAX HP *"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Removes 4 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 6s, blocking all incoming damage. Heals the targets, restoring 192 HP.\n#1 Heal: 15% * MAX HP + 5% * MAX HP *"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Removes 4 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 6s, blocking all incoming damage. Heals the targets, restoring 192 HP.\n#1 Heal: 15% * MAX HP + 5% * MAX HP *"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Removes 5 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 6s, blocking all incoming damage. Heals the targets, restoring 240 HP.\n#1 Heal: 20% * MAX HP + 5% * MAX HP *"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Removes 5 random debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 8s, blocking all incoming damage. Heals the targets, restoring 240 HP.\n#1 Heal: 20% * MAX HP + 5% * MAX HP *"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Removes all debuffs from the 10 allies with the lowest current HP in a 15m radius. Then, casts an [Invincibility] buff on the targets, lasting 8s, blocking all incoming damage. Heals the targets, restoring 250 HP.\n#1 Heal: 20% * MAX HP + 6% * MAX HP *"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Riding atop a gem that twinkles with moonlight, Crestelle is an enigma, even to her fellow Eldrin. She speaks in riddles, often vexing her fellow lunar witches who just want to know about the next full moon. But if you're ever in danger within the Emerald Kingdom, look to the skies! For by the light of the moon, Crestelle will fly to your aid!",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "S",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "E",
+  "omnissi-light": "S",
+  "omnissi-water": "E",
+  "omnissi-wind": "S",
+  "pentiax": "S",
+  "sakiel": "S+",
+  "sorgott": "E",
+  "ulgorim": "S+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 45.5,
+  "lists": 16
+ }
+}

@@ -1,0 +1,500 @@
+{
+ "slug": "cairnai",
+ "kind": "Titan",
+ "name": "Cairnai",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/cairnai/portrait.webp",
+ "fullArt": "/invokers/units/titans/cairnai/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+440",
+   "Bonus ATK": "+62",
+   "Bonus DEF": "+39",
+   "Movement speed": "106"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,644",
+   "Bonus ATK": "+373",
+   "Bonus DEF": "+234",
+   "Movement speed": "106"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cairnai/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+62",
+    "titan": "+34"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 85 damage.\nDamage: 137.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 43 damage per hit. Damage increases by 15% if the target has no buffs.\n#1 Damage: 70% ATK\n#2 Damage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 90 damage.\nDamage: 145.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 46 damage per hit. Damage increases by 17% if the target has no buffs.\n#1 Damage: 74.2% ATK\n#2 Damage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 95 damage.\nDamage: 154% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 49 damage per hit. Damage increases by 19% if the target has no buffs.\n#1 Damage: 78.4% ATK\n#2 Damage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 104 damage.\nDamage: 167.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 53 damage per hit. Damage increases by 21% if the target has no buffs.\n#1 Damage: 85.4% ATK\n#2 Damage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 114 damage.\nDamage: 184.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 58 damage per hit. Damage increases by 23% if the target has no buffs.\n#1 Damage: 93.8% ATK\n#2 Damage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 123 damage.\nDamage: 198% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 62 damage per hit. Damage increases by 25% if the target has no buffs.\n#1 Damage: 100.8% ATK\n#2 Damage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 133 damage.\nDamage: 214.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 68 damage per hit. Damage increases by 27% if the target has no buffs.\n#1 Damage: 109.2% ATK\n#2 Damage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 142 damage.\nDamage: 228.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 72 damage per hit. Damage increases by 29% if the target has no buffs.\n#1 Damage: 116.2% ATK\n#2 Damage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 152 damage.\nDamage: 244.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 77 damage per hit. Damage increases by 31% if the target has no buffs.\n#1 Damage: 124.6% ATK\n#2 Damage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 160 damage.\nDamage: 258.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 82 damage per hit. Damage increases by 33% if the target has no buffs.\n#1 Damage: 131.6% ATK\n#2 Damage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 171 damage.\nDamage: 275% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 87 damage per hit. Damage increases by 35% if the target has no buffs.\n#1 Damage: 140% ATK\n#2 Damage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ancient Whirl",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cairnai/skills/1.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 87 damage per hit. The first hit casts a [50% RES Down] debuff on the target, lasting 10s. Then, casts a [30% DEF Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 140% ATK\n#2 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 92 damage per hit. The first hit casts a [60% RES Down] debuff on the target, lasting 10s. Then, casts a [30% DEF Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 148.4% ATK\n#2 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 97 damage per hit. The first hit casts a [60% RES Down] debuff on the target, lasting 11s. Then, casts a [30% DEF Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 156.8% ATK\n#2 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 106 damage per hit. The first hit casts a [60% RES Down] debuff on the target, lasting 11s. Then, casts a [35% DEF Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 170.8% ATK\n#2 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 116 damage per hit. The first hit casts a [70% RES Down] debuff on the target, lasting 11s. Then, casts a [35% DEF Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 187.6% ATK\n#2 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 125 damage per hit. The first hit casts a [70% RES Down] debuff on the target, lasting 11s. Then, casts a [40% DEF Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 201.6% ATK\n#2 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 135 damage per hit. The first hit casts a [70% RES Down] debuff on the target, lasting 11s. Then, casts a [45% DEF Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 218.4% ATK\n#2 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 144 damage per hit. The first hit casts a [70% RES Down] debuff on the target, lasting 13s. Then, casts a [45% DEF Down] debuff on the target, lasting 13s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 232.4% ATK\n#2 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 155 damage per hit. The first hit casts a [80% RES Down] debuff on the target, lasting 13s. Then, casts a [45% DEF Down] debuff on the target, lasting 13s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 249.2% ATK\n#2 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 163 damage per hit. The first hit casts a [80% RES Down] debuff on the target, lasting 13s. Then, casts a [50% DEF Down] debuff on the target, lasting 13s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 263.2% ATK\n#2 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 174 damage per hit. The first hit casts a [80% RES Down] debuff on the target, lasting 15s. Then, casts a [55% DEF Down] debuff on the target, lasting 15s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 280% ATK\n#2 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Column Clobber",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cairnai/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+42",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 172 damage. Steals 2 random buffs from the target, increasing their duration by 3s.\nAccuracy required for: Buff Steal\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 182 damage. Steals 2 random buffs from the target, increasing their duration by 3.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 193 damage. Steals 2 random buffs from the target, increasing their duration by 4s.\nAccuracy required for: Buff Steal\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 210 damage. Steals 2 random buffs from the target, increasing their duration by 4.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 231 damage. Steals 3 random buffs from the target, increasing their duration by 4.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 248 damage. Steals 3 random buffs from the target, increasing their duration by 4.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 268 damage. Steals 3 random buffs from the target, increasing their duration by 5s.\nAccuracy required for: Buff Steal\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 286 damage. Steals 3 random buffs from the target, increasing their duration by 5.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 306 damage. Steals 3 random buffs from the target, increasing their duration by 6s.\nAccuracy required for: Buff Steal\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 323 damage. Steals 3 random buffs from the target, increasing their duration by 6.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 344 damage. Steals 4 random buffs from the target, increasing their duration by 7s.\nAccuracy required for: Buff Steal\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/cairnai/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 147 damage. Casts a [Stun] debuff on the targets, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 237.5% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 10s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 156 damage. Casts a [Stun] debuff on the targets, lasting 2.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 251.7% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 10.5s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 165 damage. Casts a [Stun] debuff on the targets, lasting 2.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 266% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 11s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 180 damage. Casts a [Stun] debuff on the targets, lasting 2.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 289.8% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 11.5s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 197 damage. Casts a [Stun] debuff on the targets, lasting 2.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 318.2% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 11.5s, protecting the target against 3 debuffs."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 212 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 342% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 12s, protecting the target against 3 debuffs."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 230 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 370.5% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 12.5s, protecting the target against 3 debuffs."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 244 damage. Casts a [Stun] debuff on the targets, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 394.2% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 13s, protecting the target against 3 debuffs."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 262 damage. Casts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 422.8% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 14s, protecting the target against 3 debuffs."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 277 damage. Casts a [Stun] debuff on the targets, lasting 3.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 446.5% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 14s, protecting the target against 4 debuffs."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 295 damage. Casts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 475% ATK\nINVOKATION END\nCasts an [Immunity] buff on the Bound Invoker, lasting 15s, protecting the target against 4 debuffs."
+    }
+   ]
+  },
+  {
+   "name": "ACC Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cairnai/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +52 Accuracy."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +57.2 Accuracy."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +62.4 Accuracy."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +72.8 Accuracy."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +83.2 Accuracy."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +93.6 Accuracy."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +104 Accuracy."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Cairnai was a Titan formed by curiosity. The Eldrin were long fascinated by the mysterious stone circles that dotted their kingdom, and hoped performing a Titan Rite would reveal their true purpose. While they didn't get an answer, what they got was a towering stone golem, whose might could crush any interloper.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "B",
+  "hyxxis": "D",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "B",
+  "sakiel": "C",
+  "sorgott": "A",
+  "ulgorim": "C",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 31.3,
+  "lists": 16
+ }
+}

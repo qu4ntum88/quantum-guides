@@ -1,0 +1,555 @@
+{
+ "slug": "hara",
+ "kind": "Invoker",
+ "name": "Hara",
+ "faction": "Beastbloods",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/hara/portrait.webp",
+ "fullArt": "/invokers/units/invokers/hara/full.webp",
+ "stats": {
+  "base": {
+   "Health": "605",
+   "Attack": "55",
+   "Defense": "44",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "101"
+  },
+  "max": {
+   "Health": "7,595",
+   "Attack": "680",
+   "Defense": "506",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "126"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/hara/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+71",
+    "titan": "+39"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 34% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 68% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 72.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 38.1% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 76.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 41.5% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 83% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 45.6% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 91.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 49% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 97.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 53% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 106.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.4% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 62 damage.\nDamage: 112.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 60.5% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 121% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 70 damage.\nDamage: 127.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 68% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 75 damage.\nDamage: 136% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Volcano's Flare",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/hara/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Volcano's Touch",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/hara/skills/2.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 77 damage per hit. Casts a [25% Heal Reduction] debuff on the target, lasting 8s, on the second hit, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 140% ATK\n#2 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 82 damage per hit. Casts a [25% Heal Reduction] debuff on the target, lasting 8.5s, on the second hit, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 148.4% ATK\n#2 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 86 damage per hit. Casts a [25% Heal Reduction] debuff on the target, lasting 8.5s, on the second hit, decreasing the size of all heals received by 25%.\nAccuracy required for: Heal Reduction\n#1 Damage: 156.8% ATK\n#2 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 94 damage per hit. Casts a [26% Heal Reduction] debuff on the target, lasting 8.5s, on the second hit, decreasing the size of all heals received by 26%.\nAccuracy required for: Heal Reduction\n#1 Damage: 170.8% ATK\n#2 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 103 damage per hit. Casts a [27% Heal Reduction] debuff on the target, lasting 9s, on the second hit, decreasing the size of all heals received by 27%.\nAccuracy required for: Heal Reduction\n#1 Damage: 187.6% ATK\n#2 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 111 damage per hit. Casts a [27% Heal Reduction] debuff on the target, lasting 9s, on the second hit, decreasing the size of all heals received by 27%.\nAccuracy required for: Heal Reduction\n#1 Damage: 201.6% ATK\n#2 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 120 damage per hit. Casts a [28% Heal Reduction] debuff on the target, lasting 9s, on the second hit, decreasing the size of all heals received by 28%.\nAccuracy required for: Heal Reduction\n#1 Damage: 218.4% ATK\n#2 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 128 damage per hit. Casts a [28% Heal Reduction] debuff on the target, lasting 9.5s, on the second hit, decreasing the size of all heals received by 28%.\nAccuracy required for: Heal Reduction\n#1 Damage: 232.4% ATK\n#2 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 137 damage per hit. Casts a [30% Heal Reduction] debuff on the target, lasting 9.5s, on the second hit, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 249.2% ATK\n#2 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 145 damage per hit. Casts a [35% Heal Reduction] debuff on the target, lasting 9.5s, on the second hit, decreasing the size of all heals received by 35%.\nAccuracy required for: Heal Reduction\n#1 Damage: 263.2% ATK\n#2 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 154 damage per hit. Casts a [35% Heal Reduction] debuff on the target, lasting 10s, on the second hit, decreasing the size of all heals received by 35%.\nAccuracy required for: Heal Reduction\n#1 Damage: 280% ATK\n#2 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Volcano's Breath",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/hara/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 78 damage. Extends the duration of 1 random debuff on the targets by 1.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 83 damage. Extends the duration of 1 random debuff on the targets by 1.75s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 88 damage. Extends the duration of 1 random debuff on the targets by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 96 damage. Extends the duration of 1 random debuff on the targets by 2.25s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 105 damage. Extends the duration of 1 random debuff on the targets by 2.25s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 113 damage. Extends the duration of 1 random debuff on the targets by 2.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 122 damage. Extends the duration of 1 random debuff on the targets by 2.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 130 damage. Extends the duration of 1 random debuff on the targets by 2.75s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 140 damage. Extends the duration of 1 random debuff on the targets by 2.75s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 147 damage. Extends the duration of 1 random debuff on the targets by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Hara, dealing 157 damage. Extends the duration of up to 2 random debuffs on the targets by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Volcano's Rage",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/hara/skills/4.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 61 damage. Casts a [1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 110% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 64 damage. Casts a [1.1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 116.6% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 68 damage. Casts a [1.2% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 123.2% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 74 damage. Casts a [1.2% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 134.2% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 81 damage. Casts a [1.2% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 147.4% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 87 damage. Casts a [1.3% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 158.4% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 94 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 171.6% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 100 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 182.6% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 108 damage. Casts a [1.3% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 195.8% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 114 damage. Casts a [1.5% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 206.8% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 5m radius around Hara, dealing 121 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 220% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "None can hold back the dancing flame. Hara, born sharing the spirit of a roaring volcano, was no exception – she could never bear the quiet life her Clan laid out for her. She left as soon as she could, to wander the breadth of Amara calming the spirits… or exacting revenge on their behalf.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "C",
+  "hyxxis": "D",
+  "koltmos": "C",
+  "omnissi-astral": "B",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "D",
+  "omnissi-light": "C",
+  "omnissi-water": "D",
+  "omnissi-wind": "C",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 25,
+  "lists": 16
+ }
+}

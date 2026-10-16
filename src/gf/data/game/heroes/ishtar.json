@@ -1,0 +1,264 @@
+{
+ "id": 136,
+ "slug": "ishtar",
+ "name": "Ishtar",
+ "title": "Queen of Heaven",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Impetuous Ishtar seeks conquests both martial and carnal. A goddess of love and war, she is equally delighted by either, sometimes treating one as the other. She views the current circumstances of Ryven as an opportunity, always at the forefront of skirmishes with hostile realms and taking partners from friendlier ones, but always more enticed by the next encounter than the current.",
+ "rarity": "Epic",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ishtar.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ishtar_main.png",
+ "stats": {
+  "hp": 1260,
+  "atk": 102,
+  "def": 86,
+  "spd": 95,
+  "init": 97,
+  "acc": 30,
+  "res": 25,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "[Retaliate] cannot be removed or its duration reduced.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If this attack is caused by [Retaliate], increase this hero’s next Core Ability by 5%.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Queen's Rebuke",
+   "description": "Attack all enemies 225%ATK with a 75% chance to decrease the duration of a random Buff on each target by 1 turn. If the target has no Buff, inflict 10% increased damage.",
+   "icon_url": "/godforge/abilities/ishtar/ICON_Ishtar_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "225%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If this attack is caused by Retaliate, increase this hero’s next Core Ability by 5%.",
+     "upgrade_description": "If this attack is caused by [Retaliate], increase this hero’s next Core Ability by 5%."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Unyielding Desire",
+   "description": "Attack all enemies 320%ATK with an 80% chance to increase the duration of a random Debuff on each target by 1 turn. If Anu is an ally, increase the duration of all Debuff on each target by 1 turn instead.\nIf the target has no Debuff then decrease the target’s RES by 5% (stacking up to 4 times).",
+   "icon_url": "/godforge/abilities/ishtar/ICON_Ishtar_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "320%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Carnal Acolytes",
+   "description": "When this hero is attacked, has a 50% chance to redirect the damage to a random ally. If Anu or Gilgamesh is an ally, will always redirect the damage.",
+   "icon_url": "/godforge/abilities/ishtar/ICON_Ishtar_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Scorned Wrath",
+   "description": "Attack 1 enemy 555%ATK 2 times. If the target is defeated, increase the damage of this hero's next AoE attack by 50%.",
+   "icon_url": "/godforge/abilities/ishtar/ICON_Ishtar_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "555%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Charm",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Retaliate cannot be removed or its duration reduced.",
+     "upgrade_description": "[Retaliate] cannot be removed or its duration reduced."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Carnal Acolytes",
+   "description": "When this hero is attacked, has a 25% chance to redirect the damage to a random ally. If Anu or Gilgamesh is an ally, will always redirect the damage.",
+   "icon_url": "/godforge/abilities/ishtar/ICON_Ishtar_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

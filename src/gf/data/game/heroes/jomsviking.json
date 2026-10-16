@@ -1,0 +1,232 @@
+{
+ "id": 204,
+ "slug": "jomsviking",
+ "name": "Jomsviking",
+ "title": "Viking Mercenary",
+ "summary": "Thrives in the thick of battle bolstering his own defence whilst dealing bonus damage to shields.",
+ "lore": "Skilled and surprisingly disciplined mercenaries, the Jomsvikings fight for almost anyone who meets their price. To date, they primarily serve various jarls and nobles of Asgard, but small bands have been spotted in neighboring Realms. Whether they would remain loyal to an employer who targeted Asgard itself is an open question that troubles many defenders of that Realm.",
+ "rarity": "Uncommon",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Joms Viking.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Jomsviking_main.png",
+ "stats": {
+  "hp": 1455,
+  "atk": 65,
+  "def": 71,
+  "spd": 86,
+  "init": 78,
+  "acc": 5,
+  "res": 15,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Axe Whirl",
+   "description": "Attack 1 enemy 10%HP+105%ATK, then has a 75% chance to place [DEF Down I] on the target for 1 turn. This ability has a 25% additional chance to Crushing Hit if this hero's HP is below 50%.",
+   "icon_url": "/godforge/abilities/jomsviking/ICON_Jomsviking_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+105%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Shatter Strike",
+   "description": "Attack 1 enemy 15%HP+150%ATK, then heal this hero for 20% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/jomsviking/ICON_Jomsviking_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+150%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Shieldbreaker",
+   "description": "Attack 1 enemy 15%HP+150%ATK. Increase the damage inflicted by 30% if the target is under a [Shield] or [Barrier].",
+   "icon_url": "/godforge/abilities/jomsviking/ICON_Jomsviking_Ultimate.webp",
+   "divinity_cost": 1800,
+   "damage_formula": [
+    "15%HP+150%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

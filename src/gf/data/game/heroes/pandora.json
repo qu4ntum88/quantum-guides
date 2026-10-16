@@ -1,0 +1,277 @@
+{
+ "id": 45,
+ "slug": "pandora",
+ "name": "Pandora",
+ "title": "Keeper of Chaos",
+ "summary": "Unleash chaos upon your enemies with dark spells from the forbidden box of Pandora.",
+ "lore": "Although not entirely recovered from the guilty madness that overcame her after Olympus’s gods used her to inflict evils upon humanity, Pandora now travels Ryven working to right what wrongs she can. Using the divinely crafted box she was given, she traps fragments of the sorrows she released so she can unleash them later upon villains and monsters who most deserve them.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/1017/6703/4351/Pandora.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/9217/7276/9744/2026-03-05_22_01_27-Pandora_Abilities_Stats_and_Scaling___Godforge_Hero_Index.png",
+ "stats": {
+  "hp": 1155,
+  "atk": 76,
+  "def": 76,
+  "spd": 95,
+  "init": 98,
+  "acc": 35,
+  "res": 25,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Each hit also steals 5% Turn Meter",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Has a 50% chance to extend the duration of all Debuff on the target by 1 turn after attacking.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Whims of Fate",
+   "description": "Attack 185%ATK 2 enemies at random. Each hit has a 60% chance to steal 1 random Buff.",
+   "icon_url": "/godforge/abilities/pandora/ICON_Pandora_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "185%ATK",
+    "185%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Turmoil Cascade",
+   "description": "Equalize the Divinity of the enemy with the highest Divinity to the enemy with the lowest Divinity then attack 145%ATK 4 random enemies.\n\nEach hit has a 50% chance to place [FTH Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/pandora/ICON_Pandora_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "145%ATK",
+    "145%ATK",
+    "145%ATK",
+    "145%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Each hit also steals 5% Turn Meter",
+     "upgrade_description": "Each hit also steals 5% Turn Meter"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Chaotic Diffusion",
+   "description": "When attacking enemies, transfer 1 Debuff from this hero to the target. Can occur once per turn.",
+   "icon_url": "/godforge/abilities/pandora/ICON_Pandora_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Has a 50% chance to extend the duration of all Debuff on the target by 1 turn after attacking.",
+     "upgrade_description": "Has a 50% chance to extend the duration of all Debuff on the target by 1 turn after attacking."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Unsealed Chaos",
+   "description": "Attack all enemies 270%ATK with a 75% chance to place a random Disable for 2 turns.\n\nRefund 5% of this hero's Divinity for each Disable placed on a target.",
+   "icon_url": "/godforge/abilities/pandora/ICON_Pandora_Ultimate.webp",
+   "divinity_cost": 2600,
+   "damage_formula": [
+    "270%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Chaotic Diffusion",
+   "description": "When attacking enemies, transfer 1 Debuff from this hero to the target. Can occur once per turn.",
+   "icon_url": "/godforge/abilities/pandora/ICON_Pandora_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

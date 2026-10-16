@@ -1,0 +1,299 @@
+{
+ "id": 235,
+ "slug": "hattori_hanzo",
+ "name": "Hattori Hanzo",
+ "title": "Second Hanzo",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Samurai and shinobi, swordsman and spy, Hattori Hanzo can purportedly enter any stronghold and slay any foe. Since the Shattering, he divides his efforts between Izumo and other realms. In the latter he targets any who threaten Izumo, but when in his home Realm he devotes his time to thwarting Oda Nobunaga, against whom he holds a longstanding vendetta.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/2717/6703/0057/HattoriHanzo.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/4117/7277/3866/2026-03-05_23_10_15-Hattori_Hanzo_Abilities_Stats_and_Scaling___Godforge_Hero_Index.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 100,
+  "def": 84,
+  "spd": 92,
+  "init": 90,
+  "acc": 25,
+  "res": 25,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.07,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "This hero starts with maximum divinity at the start of the battle.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the end of this Hero’s Turn, place [Vanish] on this hero for 1 turn.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Shuriken Barrage",
+   "description": "Attack 1 enemy 125%ATK 3 times. Each hit will increase the damage of the subsequent hit by 10%. If this hero is under [Vanish], remove [Vanish] and attack 1 additional time.",
+   "icon_url": "/godforge/abilities/hattori_hanzo/ICON_HattoriHanzo_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "125%ATK",
+    "125%ATK",
+    "125%ATK",
+    "125%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Toxic Stars",
+   "description": "Attack 180%ATK 4 enemies at random with a 50% chance to place [Acid] on the target for 2 turns.\n\nIf this hero is under [Vanish], remove [Vanish] and inflict an additional 3% Enemy MAX HP to all enemies.",
+   "icon_url": "/godforge/abilities/hattori_hanzo/ICON_HattoriHanzo_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "180%ATK",
+    "180%ATK",
+    "180%ATK",
+    "180%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Lethal Shadow",
+   "description": "When this hero gains [Vanish] their next attack will ignore 20% of the target’s DEF and will be a guaranteed Strong Hit.",
+   "icon_url": "/godforge/abilities/hattori_hanzo/ICON_HattoriHanzo_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the end of this Hero’s Turn, place Vanish on this hero for 1 turn.",
+     "upgrade_description": "At the end of this Hero’s Turn, place [Vanish] on this hero for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Silent Assassin",
+   "description": "Place [Vanish] on this hero for 2 turns then attack 1 enemy 580%ATK and inflict increased damage by up to 60% of the target’s missing HP%. If the attack is a Strong Hit, refunds 20% of this hero’s Divinity.",
+   "icon_url": "/godforge/abilities/hattori_hanzo/ICON_HattoriHanzo_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "580%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "This hero starts with maximum divinity at the start of the battle.",
+     "upgrade_description": "This hero starts with maximum divinity at the start of the battle."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Lethal Shadow",
+   "description": "When this hero gains [Vanish] their next attack will ignore 10% of the target’s DEF and will be a guaranteed Strong Hit.",
+   "icon_url": "/godforge/abilities/hattori_hanzo/ICON_HattoriHanzo_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

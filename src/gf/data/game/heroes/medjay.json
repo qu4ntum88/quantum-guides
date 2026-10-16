@@ -1,0 +1,240 @@
+{
+ "id": 104,
+ "slug": "medjay",
+ "name": "Medjay",
+ "title": "Desert Nomad",
+ "summary": "Protect and Shield your allies from harm.",
+ "lore": "While initially referring to a specific ethnic group, “Medjay” has become the designation of multiple tribes of desert nomads who practice potent martial techniques. They patrol the borders and protect areas of import such as temples, palaces, and tombs. Those who invade Aaru can expect to find their scouts slain, their supplies destroyed, and their flanks bloodied by these desert rangers.",
+ "rarity": "Uncommon",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Medjay.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Medjay_main.png",
+ "stats": {
+  "hp": 1185,
+  "atk": 46,
+  "def": 81,
+  "spd": 89,
+  "init": 83,
+  "acc": 5,
+  "res": 30,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Sandstorm Fury",
+   "description": "Attack 1 enemy 145%DEF+130%ATK, then place [Protect I] on a random ally for 1 turn.",
+   "icon_url": "/godforge/abilities/medjay/ICON_Medjay_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "145%DEF+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Protect I",
+     "target": "RandomAllyAliveExceptSelf",
+     "target_label": "RandomAllyAliveExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Desert of Doubt",
+   "description": "Attack all enemies 120%DEF+105%ATK, then has a 50% chance to place [Blunt I] on each target for 2 turns.",
+   "icon_url": null,
+   "divinity_cost": null,
+   "damage_formula": [
+    "120%DEF+105%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Blunt I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Desert Shroud",
+   "description": "Place [Shield] 150%DEF on all allies.",
+   "icon_url": "/godforge/abilities/medjay/ICON_Medjay_Ultimate.webp",
+   "divinity_cost": 1800,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

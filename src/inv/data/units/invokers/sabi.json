@@ -1,0 +1,583 @@
+{
+ "slug": "sabi",
+ "kind": "Invoker",
+ "name": "Sabi",
+ "faction": "Nocturna",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/sabi/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sabi/full.webp",
+ "stats": {
+  "base": {
+   "Health": "667",
+   "Attack": "77",
+   "Defense": "57",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "7,517",
+   "Attack": "969",
+   "Defense": "633",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "106"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sabi/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+71",
+    "titan": "+39"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 49% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 62.5% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 75% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 51.9% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 66.2% ATK\n#5 Attacks 1 enemy, dealing 61 damage.\nDamage: 79.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 70% ATK\n#5 Attacks 1 enemy, dealing 65 damage.\nDamage: 84% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 59.8% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 76.2% ATK\n#5 Attacks 1 enemy, dealing 70 damage.\nDamage: 91.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 65.7% ATK\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 83.8% ATK\n#5 Attacks 1 enemy, dealing 77 damage.\nDamage: 100.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 54 damage.\nDamage: 70.6% ATK\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 90% ATK\n#5 Attacks 1 enemy, dealing 83 damage.\nDamage: 108% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 59 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 97.5% ATK\n#5 Attacks 1 enemy, dealing 90 damage.\nDamage: 117% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 81.3% ATK\n#4 Attacks 1 enemy, dealing 80 damage.\nDamage: 103.8% ATK\n#5 Attacks 1 enemy, dealing 96 damage.\nDamage: 124.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 87.2% ATK\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 111.2% ATK\n#5 Attacks 1 enemy, dealing 103 damage.\nDamage: 133.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 71 damage.\nDamage: 92.1% ATK\n#4 Attacks 1 enemy, dealing 90 damage.\nDamage: 117.5% ATK\n#5 Attacks 1 enemy, dealing 109 damage.\nDamage: 141% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 39 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 75 damage.\nDamage: 98% ATK\n#4 Attacks 1 enemy, dealing 96 damage.\nDamage: 125% ATK\n#5 Attacks 1 enemy, dealing 116 damage.\nDamage: 150% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Blood Scythe",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sabi/skills/1.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+23",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 50 damage. Casts a [8% Weaken] debuff on the targets, lasting 3s, increasing all damage taken by 8%.\nAccuracy required for: Weaken\n#1 Damage: 65% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 53 damage. Casts a [9% Weaken] debuff on the targets, lasting 3s, increasing all damage taken by 9%.\nAccuracy required for: Weaken\n#1 Damage: 68.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 56 damage. Casts a [9% Weaken] debuff on the targets, lasting 3.5s, increasing all damage taken by 9%.\nAccuracy required for: Weaken\n#1 Damage: 72.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 61 damage. Casts a [10% Weaken] debuff on the targets, lasting 3.5s, increasing all damage taken by 10%.\nAccuracy required for: Weaken\n#1 Damage: 79.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 67 damage. Casts a [11% Weaken] debuff on the targets, lasting 3.5s, increasing all damage taken by 11%.\nAccuracy required for: Weaken\n#1 Damage: 87.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 72 damage. Casts a [11% Weaken] debuff on the targets, lasting 4s, increasing all damage taken by 11%.\nAccuracy required for: Weaken\n#1 Damage: 93.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 78 damage. Casts a [12% Weaken] debuff on the targets, lasting 4s, increasing all damage taken by 12%.\nAccuracy required for: Weaken\n#1 Damage: 101.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 83 damage. Casts a [13% Weaken] debuff on the targets, lasting 4s, increasing all damage taken by 13%.\nAccuracy required for: Weaken\n#1 Damage: 107.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 89 damage. Casts a [13% Weaken] debuff on the targets, lasting 5s, increasing all damage taken by 13%.\nAccuracy required for: Weaken\n#1 Damage: 115.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 94 damage. Casts a [14% Weaken] debuff on the targets, lasting 5s, increasing all damage taken by 14%.\nAccuracy required for: Weaken\n#1 Damage: 122.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Sabi, dealing 100 damage. Casts a [14% Weaken] debuff on the targets, lasting 6s, increasing all damage taken by 14%.\nAccuracy required for: Weaken\n#1 Damage: 130% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Soulshredder",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sabi/skills/2.webp",
+   "effects": [
+    {
+     "label": "Move SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [20% Move SPD Up] buff on Sabi, lasting 10s. Attacks 1 enemy, dealing 214 damage. Casts a [20% Move SPD Up] buff on 9 allies in a 15m radius, lasting 10s if this attack kills the target.\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [20% Move SPD Up] buff on Sabi, lasting 11s. Attacks 1 enemy, dealing 226 damage. Casts a [20% Move SPD Up] buff on 9 allies in a 15m radius, lasting 11s if this attack kills the target.\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [22% Move SPD Up] buff on Sabi, lasting 11s. Attacks 1 enemy, dealing 239 damage. Casts a [22% Move SPD Up] buff on 9 allies in a 15m radius, lasting 11s if this attack kills the target.\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [22% Move SPD Up] buff on Sabi, lasting 11s. Attacks 1 enemy, dealing 261 damage. Casts a [22% Move SPD Up] buff on 9 allies in a 15m radius, lasting 11s if this attack kills the target.\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [22% Move SPD Up] buff on Sabi, lasting 13s. Attacks 1 enemy, dealing 286 damage. Casts a [22% Move SPD Up] buff on 9 allies in a 15m radius, lasting 13s if this attack kills the target.\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [24% Move SPD Up] buff on Sabi, lasting 13s. Attacks 1 enemy, dealing 308 damage. Casts a [24% Move SPD Up] buff on 9 allies in a 15m radius, lasting 13s if this attack kills the target.\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [24% Move SPD Up] buff on Sabi, lasting 13s. Attacks 1 enemy, dealing 333 damage. Casts a [24% Move SPD Up] buff on 9 allies in a 15m radius, lasting 13s if this attack kills the target.\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [26% Move SPD Up] buff on Sabi, lasting 13s. Attacks 1 enemy, dealing 355 damage. Casts a [26% Move SPD Up] buff on 9 allies in a 15m radius, lasting 13s if this attack kills the target.\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts a [26% Move SPD Up] buff on Sabi, lasting 15s. Attacks 1 enemy, dealing 380 damage. Casts a [26% Move SPD Up] buff on 9 allies in a 15m radius, lasting 15s if this attack kills the target.\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts a [28% Move SPD Up] buff on Sabi, lasting 15s. Attacks 1 enemy, dealing 402 damage. Casts a [28% Move SPD Up] buff on 9 allies in a 15m radius, lasting 15s if this attack kills the target.\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Casts a [30% Move SPD Up] buff on Sabi, lasting 15s. Attacks 1 enemy, dealing 427 damage. Casts a [30% Move SPD Up] buff on 9 allies in a 15m radius, lasting 15s if this attack kills the target.\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hellfall",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sabi/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+46",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 219 damage. Casts a [25% Move SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 285% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 233 damage. Casts a [25% Move SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 302.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 246 damage. Casts a [25% Move SPD Down] debuff on the target, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 319.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 268 damage. Casts a [25% Move SPD Down] debuff on the target, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 347.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 294 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 381.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 316 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 410.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 342 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 444.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 364 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 473.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 391 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 14s.\nAccuracy required for: Move SPD Down\n#1 Damage: 507.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 413 damage. Casts a [35% Move SPD Down] debuff on the target, lasting 14s.\nAccuracy required for: Move SPD Down\n#1 Damage: 535.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "18s",
+     "cost": "0",
+     "text": "Teleports to the furthest enemy within a 10m radius. Attacks the target, dealing 439 damage. Casts a [35% Move SPD Down] debuff on the target, lasting 14s.\nAccuracy required for: Move SPD Down\n#1 Damage: 570% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deathcharm",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sabi/skills/4.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 39 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 39 damage. Casts a [0.75% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick (up to 200% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 50% ATK\n#2 Damage: 50% ATK\n#3 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 41 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 41 damage. Casts a [1% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 53% ATK\n#2 Damage: 53% ATK\n#3 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 43 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 43 damage. Casts a [1.25% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 225% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 56% ATK\n#2 Damage: 56% ATK\n#3 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 47 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 47 damage. Casts a [1.25% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 225% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 61% ATK\n#2 Damage: 61% ATK\n#3 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 52 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 52 damage. Casts a [1.25% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 67% ATK\n#2 Damage: 67% ATK\n#3 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 55 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 55 damage. Casts a [1.25% Bleed] debuff on the targets, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 72% ATK\n#2 Damage: 72% ATK\n#3 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 60 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 60 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 78% ATK\n#2 Damage: 78% ATK\n#3 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 64 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 64 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 83% ATK\n#2 Damage: 83% ATK\n#3 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 69 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 69 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 11s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 89% ATK\n#2 Damage: 89% ATK\n#3 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 72 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 72 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 12s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 94% ATK\n#2 Damage: 94% ATK\n#3 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Pulls 9 enemies in a 8.5m radius around Sabi to Sabi. Attacks the targets, dealing 77 damage. \nAttacks 9 enemies in a 2.5m radius around Sabi, from a distance of 5m, dealing 77 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 12s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 400% ATK). On the second hit.\nAccuracy required for: Pull, Bleed\n#1 Damage: 100% ATK\n#2 Damage: 100% ATK\n#3 Bleed Damage Limit: 400% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Frost",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Sabi is the queen of the Hellpit – a sacrificial arena where she held a spectacle of death for huge crowds of adoring nobility. They loved her stylish skill and brutal bloodlust… right up until she came for the nobles herself.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "A",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "A",
+  "pentiax": "A",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 43.8,
+  "lists": 16
+ }
+}

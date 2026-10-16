@@ -1,0 +1,495 @@
+{
+ "slug": "amprix",
+ "kind": "Titan",
+ "name": "Amprix",
+ "faction": "Nocturna",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/amprix/portrait.webp",
+ "fullArt": "/invokers/units/titans/amprix/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+400",
+   "Bonus ATK": "+58",
+   "Bonus DEF": "+47",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,404",
+   "Bonus ATK": "+349",
+   "Bonus DEF": "+282",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/amprix/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 80 damage.\nDamage: 137.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 82 damage. Extends the duration of 1 random debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 141.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 85 damage.\nDamage: 145.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 87 damage. Extends the duration of 1 random debuff on the target by 2.25s.\nAccuracy required for: Debuff Duration Extension\nDamage: 150% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 89 damage.\nDamage: 154% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 92 damage. Extends the duration of 1 random debuff on the target by 2.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 158.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 97 damage.\nDamage: 167.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 100 damage. Extends the duration of 1 random debuff on the target by 2.75s.\nAccuracy required for: Debuff Duration Extension\nDamage: 172.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 107 damage.\nDamage: 184.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 110 damage. Extends the duration of 1 random debuff on the target by 3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 189.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 115 damage.\nDamage: 198% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 118 damage. Extends the duration of 1 random debuff on the target by 3.25s.\nAccuracy required for: Debuff Duration Extension\nDamage: 203.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 124 damage.\nDamage: 214.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 128 damage. Extends the duration of 1 random debuff on the target by 3.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 220.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 132 damage.\nDamage: 228.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 136 damage. Extends the duration of 1 random debuff on the target by 3.75s.\nAccuracy required for: Debuff Duration Extension\nDamage: 234.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 142 damage.\nDamage: 244.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 146 damage. Extends the duration of 1 random debuff on the target by 4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 251.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 150 damage.\nDamage: 258.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 154 damage. Extends the duration of 1 random debuff on the target by 4.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 266% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 160 damage.\nDamage: 275% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 164 damage. Extends the duration of up to 2 random debuffs on the target by 4.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 283% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Voltaic Fist",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/amprix/skills/1.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 160 damage. Casts a [15% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 15%.\nAccuracy required for: Weaken\n#1 Damage: 275.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 169 damage. Casts a [16% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 16%.\nAccuracy required for: Weaken\n#1 Damage: 292% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 179 damage. Casts a [16% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 16%.\nAccuracy required for: Weaken\n#1 Damage: 308.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 195 damage. Casts a [17% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 17%.\nAccuracy required for: Weaken\n#1 Damage: 336.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 214 damage. Casts a [18% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 18%.\nAccuracy required for: Weaken\n#1 Damage: 369.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 230 damage. Casts a [18% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 18%.\nAccuracy required for: Weaken\n#1 Damage: 396.7% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 249 damage. Casts a [19% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 19%.\nAccuracy required for: Weaken\n#1 Damage: 429.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 265 damage. Casts a [20% Weaken] debuff on the target, lasting 13s, increasing all damage taken by 20%.\nAccuracy required for: Weaken\n#1 Damage: 457.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 284 damage. Casts a [21% Weaken] debuff on the target, lasting 13s, increasing all damage taken by 21%.\nAccuracy required for: Weaken\n#1 Damage: 490.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 300 damage. Casts a [23% Weaken] debuff on the target, lasting 15s, increasing all damage taken by 23%.\nAccuracy required for: Weaken\n#1 Damage: 517.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 320 damage. Casts a [25% Weaken] debuff on the target, lasting 15s, increasing all damage taken by 25%.\nAccuracy required for: Weaken\n#1 Damage: 551% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crackling Coils",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/amprix/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+29",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 82 damage. Launches the targets for 3s.\nAccuracy required for: Launch\n#1 Damage: 141% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 87 damage. Launches the targets for 3.3s.\nAccuracy required for: Launch\n#1 Damage: 149.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 92 damage. Launches the targets for 3.5s.\nAccuracy required for: Launch\n#1 Damage: 157.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 100 damage. Launches the targets for 3.8s.\nAccuracy required for: Launch\n#1 Damage: 172% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 110 damage. Launches the targets for 4s.\nAccuracy required for: Launch\n#1 Damage: 188.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 118 damage. Launches the targets for 4s.\nAccuracy required for: Launch\n#1 Damage: 203% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 128 damage. Launches the targets for 4.5s.\nAccuracy required for: Launch\n#1 Damage: 220% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 136 damage. Launches the targets for 5s.\nAccuracy required for: Launch\n#1 Damage: 234.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 146 damage. Launches the targets for 5.5s.\nAccuracy required for: Launch\n#1 Damage: 251% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 154 damage. Launches the targets for 6s.\nAccuracy required for: Launch\n#1 Damage: 265.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 7m radius around Amprix, from a distance of 2m, dealing 164 damage. Launches the targets for 6s.\nAccuracy required for: Launch\n#1 Damage: 282% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/amprix/skills/3.webp",
+   "effects": [
+    {
+     "label": "Shock",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 125% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 138 damage. Casts a [Shock] debuff on the targets, lasting 2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 237.5% ATK\nINVOKATION END\nCasts a [20% Crit Rate Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 146 damage. Casts a [Shock] debuff on the targets, lasting 2.1s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 251.7% ATK\nINVOKATION END\nCasts a [22% Crit Rate Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 154 damage. Casts a [Shock] debuff on the targets, lasting 2.2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 266% ATK\nINVOKATION END\nCasts a [24% Crit Rate Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 168 damage. Casts a [Shock] debuff on the targets, lasting 2.3s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 289.8% ATK\nINVOKATION END\nCasts a [26% Crit Rate Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 185 damage. Casts a [Shock] debuff on the targets, lasting 2.4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 318.2% ATK\nINVOKATION END\nCasts a [28% Crit Rate Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 198 damage. Casts a [Shock] debuff on the targets, lasting 2.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 342% ATK\nINVOKATION END\nCasts a [30% Crit Rate Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 215 damage. Casts a [Shock] debuff on the targets, lasting 2.6s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 370.5% ATK\nINVOKATION END\nCasts a [32% Crit Rate Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 229 damage. Casts a [Shock] debuff on the targets, lasting 2.8s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 394.2% ATK\nINVOKATION END\nCasts a [34% Crit Rate Up] buff on the Bound Invoker, lasting 13s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 245 damage. Casts a [Shock] debuff on the targets, lasting 2.9s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 422.8% ATK\nINVOKATION END\nCasts a [36% Crit Rate Up] buff on the Bound Invoker, lasting 13s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 259 damage. Casts a [Shock] debuff on the targets, lasting 3.2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 446.5% ATK\nINVOKATION END\nCasts a [38% Crit Rate Up] buff on the Bound Invoker, lasting 13s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 276 damage. Casts a [Shock] debuff on the targets, lasting 3.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 475% ATK\nINVOKATION END\nCasts a [40% Crit Rate Up] buff on the Bound Invoker, lasting 15s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/amprix/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +15% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +16.5% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +18% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +21% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +24% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +27% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +30% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "As experiments go, Amprix is one of the most dangerous undertaken in Amara. He is, according to his creator, an \"artificial\" Titan – powered by an untested memorium dynamo. He has, so far, performed his role of the Evernight Basin's eternal watchman well, but those who Invoke him complain of voices in their heads, yearning to be free...",
+ "ratings": {
+  "althar": "C",
+  "galvos": "C",
+  "hyxxis": "B",
+  "koltmos": "D",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 34.8,
+  "lists": 16
+ }
+}

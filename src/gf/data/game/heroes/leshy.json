@@ -1,0 +1,284 @@
+{
+ "id": 199,
+ "slug": "leshy",
+ "name": "Leshy",
+ "title": "Vanishing Woodwalker",
+ "summary": "Poison and Sleep your foes and protect the forest from interlopers whilst also striking from the Shadows.",
+ "lore": "Mystical giant-god of the woodlands, the Leshy is normally a figure of terror, punishing most who intrude upon his domain, though he occasionally whisks away mistreated children to grow up among the wild spirits. Since the Shattering, he has begun to appear in forests outside Vyraj, though none can say why, nor whether this is voluntary or a phenomenon beyond his control.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Leshy.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Leshy_main.png",
+ "stats": {
+  "hp": 1215,
+  "atk": 98,
+  "def": 89,
+  "spd": 97,
+  "init": 93,
+  "acc": 25,
+  "res": 25,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "After attacking, place [Vanish] on this hero for 2 turns.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If this hero is under [Vanish], has a 35% chance to place [Vulnerable II] on all enemies for 1 turn.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Vengeful Vines",
+   "description": "Attack 1 enemy 410%ATK with a 35% chance to place [Vulnerable II] for 2 turns.",
+   "icon_url": "/godforge/abilities/leshy/ICON_Leshy_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "410%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vulnerable II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 35,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable II",
+     "target": "AllEnemyExceptMainTarget",
+     "target_label": "AllEnemyExceptMainTarget",
+     "chance": 35,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If this hero is under Vanish, has a 35% chance to place Vulnerable II on all enemies for 1 turn.",
+     "upgrade_description": "If this hero is under [Vanish], has a 35% chance to place [Vulnerable II] on all enemies for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Tainted Overgrowth",
+   "description": "Attack all enemies 340%ATK with a 75% chance to place [Acid] for 2 turns.",
+   "icon_url": "/godforge/abilities/leshy/ICON_Leshy_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "340%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Veiled Vengeance",
+   "description": "Attacks have a 50% chance to increase Divinity by 5% when attacking under [Vanish]",
+   "icon_url": "/godforge/abilities/leshy/ICON_Leshy_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Forest Illusions",
+   "description": "Attack all enemies 340%ATK. If this attack defeats an enemy, has a 75% chance to place [Sleep] on all enemies for 1 turn.",
+   "icon_url": "/godforge/abilities/leshy/ICON_Leshy_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "340%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sleep",
+     "target": "AllEnemyExceptMainTarget",
+     "target_label": "AllEnemyExceptMainTarget",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "After attacking, place Vanish on this hero for 2 turns.",
+     "upgrade_description": "After attacking, place [Vanish] on this hero for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Veiled Vengeance",
+   "description": "Attacks have a 50% chance to increase Divinity by 2.5% when attacking under [Vanish]",
+   "icon_url": "/godforge/abilities/leshy/ICON_Leshy_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

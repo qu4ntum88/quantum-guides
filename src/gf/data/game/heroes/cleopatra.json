@@ -1,0 +1,255 @@
+{
+ "id": 97,
+ "slug": "cleopatra",
+ "name": "Cleopatra",
+ "title": "Queen of the Nile",
+ "summary": "Boosts ally speed and sustains the vitality of your team",
+ "lore": "Perhaps the most famous of Aaru’s queens, Cleopatra is underestimated by many who attribute her success to beauty and wiles. In fact, she is a clever politician and a brilliant tactician. Cleopatra orchestrates much of Aaru’s military defense today, though some nobles and generals still mistrust her due to her foreign heritage, a prejudice that weakens the realm’s war effort.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Cleopatra.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Cleopatra_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 53,
+  "def": 90,
+  "spd": 105,
+  "init": 94,
+  "acc": 10,
+  "res": 35,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Additionally, revive the ally with 40% Divinity.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also, equalize the HP of all allies to the ally with the highest Current HP.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Royal Mandate",
+   "description": "Attack 1 enemy 145%ATK+50%SPD 2 times. Each hit increases the Turn Meter of all allies by 3%.",
+   "icon_url": "/godforge/abilities/cleopatra/ICON_Cleopatra_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "145%ATK",
+    "145%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Soothing Sands",
+   "description": "Heal 1500%SPD all allies, then restore 50% of each ally's Destroyed MAX HP.",
+   "icon_url": "/godforge/abilities/cleopatra/ICON_Cleopatra_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also, equalize the HP of all allies to the ally with the highest Current HP.",
+     "upgrade_description": "Also, equalize the HP of all allies to the ally with the highest Current HP."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% SPD in All Battles",
+   "icon_url": "/godforge/abilities/cleopatra/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Nile's Blessing",
+   "description": "When a Buff on an ally expires or is removed, restore 10% of that ally's Destroyed MAX HP.",
+   "icon_url": "/godforge/abilities/cleopatra/ICON_Cleopatra_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Viper's Antidote",
+   "description": "Revive 1 ally with 40% HP and 40% Turn Meter, then attack all enemies 210%ATK+50%SPD. Also place [RES Up II] on each ally for 2 turns.",
+   "icon_url": "/godforge/abilities/cleopatra/ICON_Cleopatra_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [
+    "210%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "RES Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Additionally, revive the ally with 40% Divinity.",
+     "upgrade_description": "Additionally, revive the ally with 40% Divinity."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Nile's Blessing",
+   "description": "When a Buff on this hero expires or is removed, restore 5% of this hero's Destroyed MAX HP.",
+   "icon_url": "/godforge/abilities/cleopatra/ICON_Cleopatra_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

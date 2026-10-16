@@ -108,18 +108,17 @@ Has the hub, hunter database, a page per hunter and status effects.
 - **Missing from the standard set:** a tier list and a best-teams page. Those are the two most-searched page types for any gacha game, so they're the first things to add.
 - The hunter pages should be brought onto `pageMeta()`, breadcrumbs and share images, the same as the DC: Dark Legion champion pages.
 
-### Godforge — hidden until the rebuild
-Data comes from the pipeline export, with **godforge.gg as the source of truth**. Planned page set:
+### Godforge — live again (October 16, 2026)
+Hub, hero database, a page per hero (now with the summary and lore from the export), tier list, status effects and a page per dungeon, all with `pageMeta()` and in the sitemap. Still to do: rebuild the hero pages on the pipeline export, with **godforge.gg as the source of truth**. Planned page set:
 - hub, a hero database with a tier view, and a page per hero (stats, kit, rarity/affinity/archetype/faction)
 - the tier list, status effects, and the dungeons (a page per dungeon/boss: "<dungeon> Godforge guide")
-- the Campaign Star Planner, once it's made public. Tools like this pull links and repeat visits.
 
 Hero pages need **unique text** before launch (Quantum's Take or a short role summary). 200+ near-identical pages that are only stats can be flagged as low-value by Google and AdSense.
 
-### Invokers — not on the site yet
-The data covers kits at all levels, stats and 32 official tier lists. **Creator-program NDA: only already-released content goes on the site.**
-- Planned page set: the standard set above, built on the official data.
-- The 32 official tier lists are a strong angle: "Invokers tier list by mode/<role>" pages with Quantum's commentary beside the official rankings.
+### Invokers — live (October 16, 2026)
+Hub (`/games/invokers/guides`), Invoker and Titan tier lists (overall + one page per boss, 34 pages), a page per Invoker and Titan (272), and status effects. **Creator-program NDA: only already-released content goes on the site.**
+- **Launch-day indexing:** the hub, `/games/invokers/invoker-tier-list`, `/games/invokers/titan-tier-list`, and a few popular boss lists (e.g. `/invoker-tier-list/althar`).
+- **Next:** Quantum's own re-ranked tier list and commentary beside the official rankings, a best-teams page, share images for unit pages.
 
 ---
 

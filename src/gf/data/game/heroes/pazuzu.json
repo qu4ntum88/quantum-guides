@@ -1,0 +1,369 @@
+{
+ "id": 179,
+ "slug": "pazuzu",
+ "name": "Pazuzu",
+ "title": "Wind Tyrant",
+ "summary": "Counter enemy buffs with Corrupt and Debuff whilst and manipulating their Turn Meter in your favour.",
+ "lore": "Pazuzu is among the most puzzling of Ekur’s deities. He is a demonic, destructive god, rider of plague-bearing winds. Yet, when properly invoked, he serves also as protector—not merely against those same plagues, but against other evils such as Lamashtu. Nobody knows whether this is due to ego and rivalry, or if his true nature is as contradictory as his behavior.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Pazuzu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Pazuzu_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 86,
+  "def": 86,
+  "spd": 106,
+  "init": 100,
+  "acc": 40,
+  "res": 35,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 9
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If the target is under any Buff, decrease the target’s Turn Meter by 10% and increase this hero’s Divinity by 10%.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also, increase this hero’s ACC by 5 (stacking up to 100) when an enemy gains a Buff.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If each Debuff is placed on an enemy, steal 20% of the target’s Turn Meter.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Blinding Gale",
+   "description": "Attack 1 enemy 355%ATK with a 75% chance to place [ACC Down II] on the target for 2 turns. Also has a 75% chance to remove 1 random Buff from the target.",
+   "icon_url": "/godforge/abilities/pazuzu/ICON_Pazuzu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "355%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ACC Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Withering Storms",
+   "description": "Attack all enemies 295%ATK with a 75% chance to place [Corrupt] on each target for 2 turns. If the target is aligned with Order, place [Despair] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/pazuzu/ICON_Pazuzu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "295%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If the target is under any Buff, decrease the target’s Turn Meter by 10% and increase this hero’s Divinity by 10%.",
+     "upgrade_description": "If the target is under any Buff, decrease the target’s Turn Meter by 10% and increase this hero’s Divinity by 10%."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Tempest Winds",
+   "description": "When an enemy gains a Buff, increase this hero’s Turn Meter by 10%. If the enemy gains 3 Buff in one turn, this hero gains an Extra Turn.",
+   "icon_url": "/godforge/abilities/pazuzu/ICON_Pazuzu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also, increase this hero’s ACC by 5 (stacking up to 100) when an enemy gains a Buff.",
+     "upgrade_description": "Also, increase this hero’s ACC by 5 (stacking up to 100) when an enemy gains a Buff."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Demon King's Command",
+   "description": "Attack all enemies 115%ATK 3 times. Each hit has a 50% chance to place [Vulnerable II], [Acid] and [Curse II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/pazuzu/ICON_Pazuzu_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "115%ATK",
+    "115%ATK",
+    "115%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vulnerable II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Acid",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If each Debuff is placed on an enemy, steal 20% of the target’s Turn Meter.",
+     "upgrade_description": "If each Debuff is placed on an enemy, steal 20% of the target’s Turn Meter."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Tempest Winds",
+   "description": "When an enemy gains a Buff, increase this hero’s Turn Meter by 5%. If the enemy gains 3 Buff in one turn, this hero gains an Extra Turn.",
+   "icon_url": "/godforge/abilities/pazuzu/ICON_Pazuzu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

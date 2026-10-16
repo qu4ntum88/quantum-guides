@@ -1,0 +1,597 @@
+{
+ "slug": "ravizia",
+ "kind": "Invoker",
+ "name": "Ravizia",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Fire",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/ravizia/portrait.webp",
+ "fullArt": "/invokers/units/invokers/ravizia/full.webp",
+ "stats": {
+  "base": {
+   "Health": "900",
+   "Attack": "85",
+   "Defense": "77",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "110"
+  },
+  "max": {
+   "Health": "10,357",
+   "Attack": "967",
+   "Defense": "810",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "135"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ravizia/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+70",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 10.5% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 15% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 21% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 26% ATK\n#5 Attacks 1 enemy, dealing 27 damage. Extends the duration of 1 random debuff on the target by 1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 31.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 11.1% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 15.9% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 22.3% ATK\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 27.6% ATK\n#5 Attacks 1 enemy, dealing 28 damage. Extends the duration of 1 random debuff on the target by 1.1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 33.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 11.8% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 16.8% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 23.5% ATK\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 29.1% ATK\n#5 Attacks 1 enemy, dealing 30 damage. Extends the duration of 1 random debuff on the target by 1.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 35.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 12.8% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 18.3% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 25.6% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 31.7% ATK\n#5 Attacks 1 enemy, dealing 33 damage. Extends the duration of 1 random debuff on the target by 1.3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 38.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 14.1% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 20.1% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 34.8% ATK\n#5 Attacks 1 enemy, dealing 36 damage. Extends the duration of 1 random debuff on the target by 1.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 42.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 15.1% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 21.6% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 30.2% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 37.4% ATK\n#5 Attacks 1 enemy, dealing 39 damage. Extends the duration of 1 random debuff on the target by 1.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 45.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 16.4% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 23.4% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 32.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 40.6% ATK\n#5 Attacks 1 enemy, dealing 42 damage. Extends the duration of 1 random debuff on the target by 1.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 49.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 17.4% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 24.9% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 34.9% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 43.2% ATK\n#5 Attacks 1 enemy, dealing 44 damage. Extends the duration of 1 random debuff on the target by 1.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 52.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 18.7% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 26.7% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 37.4% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 46.3% ATK\n#5 Attacks 1 enemy, dealing 48 damage. Extends the duration of 1 random debuff on the target by 1.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 56.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 19.7% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 28.2% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 39.5% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 48.9% ATK\n#5 Attacks 1 enemy, dealing 50 damage. Extends the duration of 1 random debuff on the target by 1.9s.\nAccuracy required for: Debuff Duration Extension\nDamage: 59.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 21% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 30% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 42% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 52% ATK\n#5 Attacks 1 enemy, dealing 54 damage. Extends the duration of up to 2 random debuffs on the target by 2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 63% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Essence Spike",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ravizia/skills/1.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 85 damage. Casts a [25% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 100% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage. Casts a [30% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 106% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 95 damage. Casts a [30% ACC Down] debuff on the target, lasting 5.5s.\nAccuracy required for: ACC Down\n#1 Damage: 112% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 104 damage. Casts a [35% ACC Down] debuff on the target, lasting 5.5s.\nAccuracy required for: ACC Down\n#1 Damage: 122% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage. Casts a [35% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 134% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage. Casts a [35% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\n#1 Damage: 144% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage. Casts a [40% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\n#1 Damage: 156% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 141 damage. Casts a [40% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\n#1 Damage: 166% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage. Casts a [45% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\n#1 Damage: 178% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 160 damage. Casts a [45% ACC Down] debuff on the target, lasting 8s.\nAccuracy required for: ACC Down\n#1 Damage: 188% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage. Casts a [50% ACC Down] debuff on the target, lasting 8s.\nAccuracy required for: ACC Down\n#1 Damage: 200% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Curse Drinker",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ravizia/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 91 damage per hit. Ravizia gains 20 Ultimate Mana on each hit if the target has 4 or more debuffs.\n#1 Damage: 107.5% ATK\n#2 Damage: 107.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 97 damage per hit. Ravizia gains 22 Ultimate Mana on each hit if the target has 4 or more debuffs.\n#1 Damage: 113.9% ATK\n#2 Damage: 113.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 102 damage per hit. Ravizia gains 24 Ultimate Mana on each hit if the target has 4 or more debuffs.\n#1 Damage: 120.4% ATK\n#2 Damage: 120.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 111 damage per hit. Ravizia gains 26 Ultimate Mana on each hit if the target has 4 or more debuffs.\n#1 Damage: 131.2% ATK\n#2 Damage: 131.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 122 damage per hit. Ravizia gains 28 Ultimate Mana on each hit if the target has 4 or more debuffs.\n#1 Damage: 144.1% ATK\n#2 Damage: 144.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 132 damage per hit. Ravizia gains 30 Ultimate Mana on each hit if the target has 3 or more debuffs.\n#1 Damage: 154.8% ATK\n#2 Damage: 154.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 143 damage per hit. Ravizia gains 32 Ultimate Mana on each hit if the target has 3 or more debuffs.\n#1 Damage: 167.7% ATK\n#2 Damage: 167.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 152 damage per hit. Ravizia gains 34 Ultimate Mana on each hit if the target has 3 or more debuffs.\n#1 Damage: 178.4% ATK\n#2 Damage: 178.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 163 damage per hit. Ravizia gains 36 Ultimate Mana on each hit if the target has 3 or more debuffs.\n#1 Damage: 191.4% ATK\n#2 Damage: 191.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 172 damage per hit. Ravizia gains 38 Ultimate Mana on each hit if the target has 3 or more debuffs.\n#1 Damage: 202.1% ATK\n#2 Damage: 202.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 183 damage per hit. Ravizia gains 40 Ultimate Mana on each hit if the target has 2 or more debuffs.\n#1 Damage: 215% ATK\n#2 Damage: 215% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Strength Scour",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ravizia/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+66",
+    "titan": "+36"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 45 damage per hit. Casts a [40% ATK Down] debuff on the targets, lasting 9s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 52.5% ATK\n#2 Damage: 52.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 47 damage per hit. Casts a [45% ATK Down] debuff on the targets, lasting 9s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 55.6% ATK\n#2 Damage: 55.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 50 damage per hit. Casts a [45% ATK Down] debuff on the targets, lasting 9s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 58.8% ATK\n#2 Damage: 58.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 54 damage per hit. Casts a [45% ATK Down] debuff on the targets, lasting 10s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 64% ATK\n#2 Damage: 64% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 60 damage per hit. Casts a [45% ATK Down] debuff on the targets, lasting 11s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 70.3% ATK\n#2 Damage: 70.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 64 damage per hit. Casts a [45% ATK Down] debuff on the targets, lasting 12s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 75.6% ATK\n#2 Damage: 75.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 70 damage per hit. Casts a [45% ATK Down] debuff on the targets, lasting 13s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 81.9% ATK\n#2 Damage: 81.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 74 damage per hit. Casts a [50% ATK Down] debuff on the targets, lasting 13s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 87.1% ATK\n#2 Damage: 87.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 79 damage per hit. Casts a [50% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 93.4% ATK\n#2 Damage: 93.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 84 damage per hit. Casts a [55% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 98.7% ATK\n#2 Damage: 98.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Ravizia, from a distance of 3m, 2 times, dealing 89 damage per hit. Casts a [60% ATK Down] debuff on the targets, lasting 15s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 105% ATK\n#2 Damage: 105% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Unleash Stolen Life",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ravizia/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Regeneration",
+     "group": "Buffs",
+     "description": "Heals the recipient by a percentage of their MAX HP, once per tick, for the duration of the buff. The number of ticks per second increases with Skill Speed. This buff can be stacked."
+    },
+    {
+     "label": "RES Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Resistance stat by the indicated percentage."
+    },
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    },
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 134 damage. Casts a [10% Combo SPD Down] debuff on the targets, lasting 10s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 10s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP. Then, casts a [40% ATK Up] buff on the targets, lasting 10s. Then, casts a [50% RES Up] buff on the targets, lasting 10s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 157.5% ATK\n#2 Decrease HP: 5% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 142 damage. Casts a [13% Combo SPD Down] debuff on the targets, lasting 10s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 10s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP. Then, casts a [40% ATK Up] buff on the targets, lasting 10s. Then, casts a [50% RES Up] buff on the targets, lasting 10s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 166.9% ATK\n#2 Decrease HP: 5% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 150 damage. Casts a [13% Combo SPD Down] debuff on the targets, lasting 10s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 10s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP. Then, casts a [50% ATK Up] buff on the targets, lasting 10s. Then, casts a [50% RES Up] buff on the targets, lasting 10s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 176.4% ATK\n#2 Decrease HP: 10% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 163 damage. Casts a [13% Combo SPD Down] debuff on the targets, lasting 12s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 11s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP. Then, casts a [50% ATK Up] buff on the targets, lasting 12s. Then, casts a [60% RES Up] buff on the targets, lasting 12s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 192.2% ATK\n#2 Decrease HP: 10% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 179 damage. Casts a [13% Combo SPD Down] debuff on the targets, lasting 12s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 11s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP. Then, casts a [60% ATK Up] buff on the targets, lasting 12s. Then, casts a [60% RES Up] buff on the targets, lasting 12s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 211.1% ATK\n#2 Decrease HP: 10% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 193 damage. Casts a [16% Combo SPD Down] debuff on the targets, lasting 12s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 11s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP. Then, casts a [60% ATK Up] buff on the targets, lasting 12s. Then, casts a [70% RES Up] buff on the targets, lasting 12s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 226.8% ATK\n#2 Decrease HP: 10% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 209 damage. Casts a [16% Combo SPD Down] debuff on the targets, lasting 14s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 12s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [60% ATK Up] buff on the targets, lasting 14s. Then, casts a [70% RES Up] buff on the targets, lasting 14s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 245.7% ATK\n#2 Decrease HP: 10% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 222 damage. Casts a [16% Combo SPD Down] debuff on the targets, lasting 16s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 13s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [70% ATK Up] buff on the targets, lasting 16s. Then, casts a [70% RES Up] buff on the targets, lasting 16s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 261.5% ATK\n#2 Decrease HP: 10% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 238 damage. Casts a [16% Combo SPD Down] debuff on the targets, lasting 16s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 13s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [70% ATK Up] buff on the targets, lasting 16s. Then, casts a [80% RES Up] buff on the targets, lasting 16s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 280.4% ATK\n#2 Decrease HP: 15% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 252 damage. Casts a [20% Combo SPD Down] debuff on the targets, lasting 18s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 15s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [70% ATK Up] buff on the targets, lasting 18s. Then, casts a [80% RES Up] buff on the targets, lasting 18s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 296.1% ATK\n#2 Decrease HP: 15% * Target's HP\n#3 Shield: Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "800 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 10m radius, from a distance of 4m, dealing 268 damage. Casts a [20% Combo SPD Down] debuff on the targets, lasting 18s. \nDecreases HP of the 10 allies with the lowest current HP in a 15m radius, from a distance of 4m, dealing HP based Raw damage. Casts a [Shield] buff on the targets, lasting 15s. The [Shield] is equal to (Damage Dealt). Then, casts a [Regeneration] on the targets, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (6% * Target's MAX HP) HP. Then, casts a [70% ATK Up] buff on the targets, lasting 18s. Then, casts a [100% RES Up] buff on the targets, lasting 18s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 315% ATK\n#2 Decrease HP: 15% * Target's HP\n#3 Shield: Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Paralysis",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Ravizia was a Cambion, but she tried to use her healing powers to end the food crisis in the Evernight Baronies. The Barons couldn’t have that – she was imprisoned and turned Dusklit. Now a Nocturna Invoker, her healing powers turned dark… and her captors proved no match for her new strength.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "E",
+  "hyxxis": "S",
+  "koltmos": "S",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "S+",
+  "omnissi-light": "E",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "E",
+  "sorgott": "S",
+  "ulgorim": "S+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 65.2,
+  "lists": 16
+ }
+}

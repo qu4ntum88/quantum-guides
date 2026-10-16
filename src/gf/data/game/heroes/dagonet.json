@@ -1,0 +1,266 @@
+{
+ "id": 43,
+ "slug": "dagonet",
+ "name": "Dagonet",
+ "title": "Jester Knight",
+ "summary": "Fool your foes as you lock their abilities and weaken their defenses whilst joining your allies in attacks.",
+ "lore": "Elevated to knighthood by King Arthur, Dagonet served as jester and advisor more often than warrior, partly for his particular skills, but in part because he never seemed entirely stable. That madness has only grown since the Shattering, causing episodes of incomprehension—and more rarely, of murder. His king may have no choice but to take drastic steps, and soon.",
+ "rarity": "Rare",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Dagonet.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Dagonet_main.png",
+ "stats": {
+  "hp": 1140,
+  "atk": 63,
+  "def": 79,
+  "spd": 91,
+  "init": 94,
+  "acc": 20,
+  "res": 15,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy has no Buff at the end of their turn has a 50% to attack the enemy with the Basic Ability.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Opportunity Knocks",
+   "description": "Attack 1 enemy 305%ATK with a 50% chance to place either [Lock Core] or [Lock Ultimate] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/dagonet/ICON_Dagonet_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "305%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Disappearing Act",
+   "description": "Place [Vanish] on this hero for 2 turns, then has a 75% chance to place [DEF Down I] on all enemies for 2 turns.",
+   "icon_url": "/godforge/abilities/dagonet/ICON_Dagonet_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Fools Courage",
+   "description": "When an enemy Buff activates or is removed, decrease 10% of their Turn Meter. When an enemy Debuff expires or is removed, decrease 10% of their Divinity.",
+   "icon_url": "/godforge/abilities/dagonet/ICON_Dagonet_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy has no Buff at the end of their turn has a 50% to attack the enemy with the Basic Ability.",
+     "upgrade_description": "If an enemy has no Buff at the end of their turn has a 50% to attack the enemy with the Basic Ability."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Jester Dance",
+   "description": "Attack 1 enemy 435%ATK, then attack 435%ATK each enemy under DEF Down. Each hit has a 50% chance to steal 1 random Buff from the target.",
+   "icon_url": "/godforge/abilities/dagonet/ICON_Dagonet_Ultimate.webp",
+   "divinity_cost": 2375,
+   "damage_formula": [
+    "435%ATK",
+    "435%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Fools Courage",
+   "description": "When an enemy Buff expires or is removed, decrease 5% of their Turn Meter. When an enemy Debuff expires or is removed, decrease 5% of their Divinity.",
+   "icon_url": "/godforge/abilities/dagonet/ICON_Dagonet_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

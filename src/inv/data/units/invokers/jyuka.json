@@ -1,0 +1,555 @@
+{
+ "slug": "jyuka",
+ "kind": "Invoker",
+ "name": "Jyuka",
+ "faction": "Cambion",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/jyuka/portrait.webp",
+ "fullArt": "/invokers/units/invokers/jyuka/full.webp",
+ "stats": {
+  "base": {
+   "Health": "350",
+   "Attack": "32",
+   "Defense": "33",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "112"
+  },
+  "max": {
+   "Health": "4,501",
+   "Attack": "469",
+   "Defense": "414",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "142"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jyuka/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy, dealing 9 damage.\nDamage: 29% ATK\n#3 Attacks 1 enemy, dealing 13 damage.\nDamage: 42% ATK\n#4 Attacks 1 enemy, dealing 16 damage.\nDamage: 51.5% ATK\n#5 Attacks 1 enemy, dealing 21 damage.\nDamage: 64.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 21.2% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 30.7% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 44.5% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 54.6% ATK\n#5 Attacks 1 enemy, dealing 22 damage.\nDamage: 68.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 22.4% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 32.5% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 47% ATK\n#4 Attacks 1 enemy, dealing 18 damage.\nDamage: 57.7% ATK\n#5 Attacks 1 enemy, dealing 23 damage.\nDamage: 72.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 35.4% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 51.2% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 62.8% ATK\n#5 Attacks 1 enemy, dealing 25 damage.\nDamage: 78.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 38.9% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 56.3% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 69% ATK\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 86.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 28.8% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 41.8% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 60.5% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 74.2% ATK\n#5 Attacks 1 enemy, dealing 30 damage.\nDamage: 92.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 31.2% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 45.2% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 80.3% ATK\n#5 Attacks 1 enemy, dealing 32 damage.\nDamage: 100.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 33.2% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 48.1% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 69.7% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 85.5% ATK\n#5 Attacks 1 enemy, dealing 34 damage.\nDamage: 107.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 35.6% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 51.6% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 74.8% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 91.7% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 114.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 37.6% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 54.5% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 79% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 96.8% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 121.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 58% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 84% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 103% ATK\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 129% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Tainted Might",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jyuka/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 39 damage.\n#1 Damage: 120.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 41 damage.\n#1 Damage: 127.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 43 damage.\n#1 Damage: 135% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 47 damage.\n#1 Damage: 147% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 52 damage.\n#1 Damage: 161.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 56 damage.\n#1 Damage: 173.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 60 damage.\n#1 Damage: 188% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 64 damage.\n#1 Damage: 200% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 69 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 72 damage.\n#1 Damage: 226.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 241% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cursed Fury",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jyuka/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [8% ATK Up] buff on Jyuka, lasting 7s. Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 246.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [8% ATK Up] buff on Jyuka, lasting 7.1s. Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 261.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [9% ATK Up] buff on Jyuka, lasting 7.1s. Attacks 1 enemy, dealing 88 damage.\n#1 Damage: 276.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [9% ATK Up] buff on Jyuka, lasting 7.1s. Attacks 1 enemy, dealing 96 damage.\n#1 Damage: 300.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [10% ATK Up] buff on Jyuka, lasting 7.3s. Attacks 1 enemy, dealing 106 damage.\n#1 Damage: 330.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% ATK Up] buff on Jyuka, lasting 7.3s. Attacks 1 enemy, dealing 114 damage.\n#1 Damage: 355% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [11% ATK Up] buff on Jyuka, lasting 7.5s. Attacks 1 enemy, dealing 123 damage.\n#1 Damage: 384.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [11% ATK Up] buff on Jyuka, lasting 7.5s. Attacks 1 enemy, dealing 131 damage.\n#1 Damage: 409.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% ATK Up] buff on Jyuka, lasting 7.8s. Attacks 1 enemy, dealing 140 damage.\n#1 Damage: 438.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% ATK Up] buff on Jyuka, lasting 8s. Attacks 1 enemy, dealing 148 damage.\n#1 Damage: 463.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [14% ATK Up] buff on Jyuka, lasting 9s. Attacks 1 enemy, dealing 158 damage.\n#1 Damage: 493% ATK"
+    }
+   ]
+  },
+  {
+   "name": "True Disdain",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/jyuka/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 40 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2s 2 times.\n#1 Damage: 123.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 42 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2s 2 times.\n#1 Damage: 130.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 44 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2s 2 times.\n#1 Damage: 138.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 48 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2.1s 2 times.\n#1 Damage: 150.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 53 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2.3s 2 times.\n#1 Damage: 165.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 57 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2.5s 2 times.\n#1 Damage: 177.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 62 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2.7s 2 times.\n#1 Damage: 192.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 66 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 2.9s 2 times.\n#1 Damage: 205% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 70 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 3.2s 2 times.\n#1 Damage: 219.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 3.5s 2 times.\n#1 Damage: 232.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 79 damage per hit. Reduces the cooldown of a random Active Skill on Jyuka by 4s 2 times.\n#1 Damage: 247% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dynast Unleashed",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/jyuka/skills/4.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 34 damage. Casts a [1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 105% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 36 damage. Casts a [1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 111.3% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 38 damage. Casts a [1.1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 117.6% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 41 damage. Casts a [1.1% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 128.1% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 45 damage. Casts a [1.1% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 140.7% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 48 damage. Casts a [1.1% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 151.2% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 52 damage. Casts a [1.2% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 163.8% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 56 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 174.3% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 60 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 186.9% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 63 damage. Casts a [1.3% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 197.4% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 7 enemies in a 4m radius around the closest enemy, dealing 67 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 210% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "All Cambion battle the Demon blood in their veins, but Jyuka nearly lost. He began to transform, and he feared the worst – until he met Jutsubo, and she helped bind his inner monster to his weapon, halting his corruption. The two Cambion have been faithful friends ever since.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

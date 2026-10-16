@@ -1,0 +1,495 @@
+{
+ "slug": "visciant",
+ "kind": "Titan",
+ "name": "Visciant",
+ "faction": "Lightseekers",
+ "rarity": "Epic",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/visciant/portrait.webp",
+ "fullArt": "/invokers/units/titans/visciant/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+40%",
+   "Bound Invoker's Crit Rate": "+10%",
+   "Bound Invoker's Crit DMG": "+20%",
+   "Bonus HP": "+460",
+   "Bonus ATK": "+74",
+   "Bonus DEF": "+55",
+   "Movement speed": "180"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+360%",
+   "Bound Invoker's Crit Rate": "+16%",
+   "Bound Invoker's Crit DMG": "+60%",
+   "Bonus HP": "+2,765",
+   "Bonus ATK": "+445",
+   "Bonus DEF": "+331",
+   "Movement speed": "180"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/visciant/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 96 damage, damage increases by 2% per debuff on the target.\n#1 Damage: 130% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 107 damage. Extends the duration of up to 2 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 102 damage, damage increases by 3% per debuff on the target.\n#1 Damage: 137.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 114 damage. Extends the duration of up to 2 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 108 damage, damage increases by 3% per debuff on the target.\n#1 Damage: 145.6% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 120 damage. Extends the duration of up to 3 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 117 damage, damage increases by 3% per debuff on the target.\n#1 Damage: 158.6% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 131 damage. Extends the duration of up to 3 random debuffs on the target by 3.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 129 damage, damage increases by 3% per debuff on the target.\n#1 Damage: 174.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 144 damage. Extends the duration of up to 3 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 139 damage, damage increases by 4% per debuff on the target.\n#1 Damage: 187.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 155 damage. Extends the duration of up to 3 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 150 damage, damage increases by 4% per debuff on the target.\n#1 Damage: 202.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 167 damage. Extends the duration of up to 3 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 160 damage, damage increases by 4% per debuff on the target.\n#1 Damage: 215.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 178 damage. Extends the duration of up to 4 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 171 damage, damage increases by 4% per debuff on the target.\n#1 Damage: 231.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 191 damage. Extends the duration of up to 4 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 181 damage, damage increases by 5% per debuff on the target.\n#1 Damage: 244.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 202 damage. Extends the duration of up to 4 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 192 damage, damage increases by 5% per debuff on the target.\n#1 Damage: 260% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 215 damage. Extends the duration of up to 5 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Due Punishment",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/visciant/skills/1.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+42",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 209 damage. Casts a [45% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 282.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 222 damage. Casts a [45% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 299.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 234 damage. Casts a [46% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 316.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 255 damage. Casts a [47% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 344.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 280 damage. Casts a [47% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 378.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 301 damage. Casts a [47% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 406.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 326 damage. Casts a [49% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 440.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 347 damage. Casts a [52% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 469% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 372 damage. Casts a [52% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 393 damage. Casts a [55% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 531.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 418 damage. Casts a [60% DEF Down] debuff on the target, lasting 15s.\nAccuracy required for: DEF Down\n#1 Damage: 565% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Seal of Serenity",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/visciant/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 215 damage, damage increases by 5% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 227 damage, damage increases by 10% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 240 damage, damage increases by 20% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 262 damage, damage increases by 30% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 288 damage, damage increases by 40% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 309 damage, damage increases by 50% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 335 damage, damage increases by 60% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 356 damage, damage increases by 70% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 382 damage, damage increases by 80% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 403 damage, damage increases by 90% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 429 damage, damage increases by 100% if the target has 1 or more [DEF Down] debuff and 1 [Weaken] debuff or more.\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/visciant/skills/3.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 170 damage. Casts a [20% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 20%.\nAccuracy required for: Weaken\n#1 Damage: 230% ATK\nINVOKATION END\nThe Bound Invoker gains 75 Ultimate Mana."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 180 damage. Casts a [21% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 21%.\nAccuracy required for: Weaken\n#1 Damage: 243.8% ATK\nINVOKATION END\nThe Bound Invoker gains 80 Ultimate Mana."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 191 damage. Casts a [22% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 22%.\nAccuracy required for: Weaken\n#1 Damage: 257.6% ATK\nINVOKATION END\nThe Bound Invoker gains 85 Ultimate Mana."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 208 damage. Casts a [22% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 22%.\nAccuracy required for: Weaken\n#1 Damage: 280.6% ATK\nINVOKATION END\nThe Bound Invoker gains 90 Ultimate Mana."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 228 damage. Casts a [23% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 23%.\nAccuracy required for: Weaken\n#1 Damage: 308.2% ATK\nINVOKATION END\nThe Bound Invoker gains 95 Ultimate Mana."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 245 damage. Casts a [24% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 24%.\nAccuracy required for: Weaken\n#1 Damage: 331.2% ATK\nINVOKATION END\nThe Bound Invoker gains 100 Ultimate Mana."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 266 damage. Casts a [24% Weaken] debuff on the targets, lasting 13s, increasing all damage taken by 24%.\nAccuracy required for: Weaken\n#1 Damage: 358.8% ATK\nINVOKATION END\nThe Bound Invoker gains 105 Ultimate Mana."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 283 damage. Casts a [26% Weaken] debuff on the targets, lasting 13s, increasing all damage taken by 26%.\nAccuracy required for: Weaken\n#1 Damage: 381.8% ATK\nINVOKATION END\nThe Bound Invoker gains 110 Ultimate Mana."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 303 damage. Casts a [28% Weaken] debuff on the targets, lasting 13s, increasing all damage taken by 28%.\nAccuracy required for: Weaken\n#1 Damage: 409.4% ATK\nINVOKATION END\nThe Bound Invoker gains 115 Ultimate Mana."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 320 damage. Casts a [28% Weaken] debuff on the targets, lasting 15s, increasing all damage taken by 28%.\nAccuracy required for: Weaken\n#1 Damage: 432.4% ATK\nINVOKATION END\nThe Bound Invoker gains 120 Ultimate Mana."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius around Visciant, dealing 340 damage. Casts a [30% Weaken] debuff on the targets, lasting 15s, increasing all damage taken by 30%.\nAccuracy required for: Weaken\n#1 Damage: 460% ATK\nINVOKATION END\nThe Bound Invoker gains 125 Ultimate Mana."
+    }
+   ]
+  },
+  {
+   "name": "HP Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/visciant/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +18% Health."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +19.8% Health."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +21.6% Health."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +25.2% Health."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +28.8% Health."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +32.4% Health."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +36% Health."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Visciant is the pure spirit of the Light. Long ago, corrupt High Angel Sariel blackmailed his way to the top of the Lightseekers, then began to use his power to exile true believers. A young acolyte prayed to Serenity for answers – and Visciant was her answer. Sariel did not last long after that.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S+",
+  "hyxxis": "S",
+  "koltmos": "S+",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "A",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "A+",
+  "sorgott": "S",
+  "ulgorim": "S+",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 92,
+  "lists": 16
+ }
+}

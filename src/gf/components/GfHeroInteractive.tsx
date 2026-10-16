@@ -62,6 +62,9 @@ const STAT_LABELS: Record<string, string> = {
   cdmg: 'C.DMG', crate: 'C.Rate', divinity: 'Divinity', ignore_res: 'Ignore RES',
   barrier_mult: 'Barrier', heal_mult: 'Heal', attunement_mult: 'Attunement',
   armor_mult: 'Armor', weapon_mult: 'Weapon',
+  ignore_def: 'Ignore DEF', turnmeter_mult: 'Turn Meter', divinity_mult: 'Divinity Gain', shield_mult: 'Shield',
+  dmg_mult: 'Damage', damage_reduction_mult: 'Damage Reduction', strong_hit_chance_mult: 'Strong Hit Chance',
+  incoming_turnmeter_mult: 'Turn Meter Received', incoming_divinity_mult: 'Divinity Received',
 }
 
 const SKILL_COLORS: Record<string, string> = {
@@ -125,7 +128,7 @@ function SkillCard({ skill, awakeningLevel }: { skill: GfHeroSkill; awakeningLev
   )
 
   return (
-    <div style={{ background: '#0f0f0f', border: `1px solid ${color}33`, borderRadius: '0.75rem', overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
+    <div style={{ background: 'var(--w-panel, #0f0f0f)', border: `1px solid ${color}33`, borderRadius: '0.75rem', overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
       <div style={{ background: `${color}14`, borderBottom: `1px solid ${color}2a`, padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
         {skill.icon_url
           ? <img src={skill.icon_url} alt={skill.name ?? skill.type} style={{ width: '2.75rem', height: '2.75rem', borderRadius: '0.4rem', objectFit: 'cover', flexShrink: 0 }} />
@@ -168,7 +171,7 @@ function UltimateCard({ skill, awakeningLevel }: { skill: GfHeroSkill; awakening
   )
 
   return (
-    <div style={{ background: '#0f0f0f', border: `1px solid ${color}55`, borderRadius: '0.75rem', overflow: 'hidden', boxShadow: `0 0 28px ${color}14` }}>
+    <div style={{ background: 'var(--w-panel, #0f0f0f)', border: `1px solid ${color}55`, borderRadius: '0.75rem', overflow: 'hidden', boxShadow: `0 0 28px ${color}14` }}>
       <div style={{ height: '3px', background: `linear-gradient(90deg, ${color}, ${color}55, transparent)` }} />
       <div style={{ padding: '1.25rem 1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
         {skill.icon_url
@@ -343,8 +346,8 @@ export function GfHeroInteractive({ hero, rarityColor = '#a855f7' }: { hero: GfH
     { key: 'def',              label: 'DEF',     value: stats.def !== null ? withAsc(calcScaled(stats.def, rank, level), 'def') : null, scaling: true  },
     { key: 'spd',              label: 'SPD',     value: withAsc(stats.spd,              'spd'),    scaling: false },
     { key: 'init',             label: 'FTH',     value: withAsc(stats.init,             'init'),   scaling: false },
-    { key: 'crate',            label: 'C.Rate',  value: withAsc(10,                     'crate'),  scaling: false },
-    { key: 'cdmg',             label: 'C.DMG',   value: withAsc(50,                     'cdmg'),   scaling: false },
+    { key: 'crate',            label: 'C.Rate',  value: withAsc(stats.crate ?? 10,        'crate'),  scaling: false },
+    { key: 'cdmg',             label: 'C.DMG',   value: withAsc(stats.cdmg ?? 50,         'cdmg'),   scaling: false },
     { key: 'acc',              label: 'ACC',     value: withAsc(stats.acc,              'acc'),    scaling: false },
     { key: 'res',              label: 'RES',     value: withAsc(stats.res,              'res'),    scaling: false },
     { key: 'initial_divinity', label: 'Divinity',value: withAsc(stats.initial_divinity, 'divinity'), scaling: false },
@@ -367,7 +370,7 @@ export function GfHeroInteractive({ hero, rarityColor = '#a855f7' }: { hero: GfH
         <div
           className="gf-sliders"
           style={{
-            background: '#0d0d0d',
+            background: 'var(--w-panel, #0d0d0d)',
             borderBottom: '1px solid #181818',
             '--rc': rarityColor,
             '--rp': `${rankPct}%`,

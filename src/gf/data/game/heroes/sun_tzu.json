@@ -1,0 +1,280 @@
+{
+ "id": 172,
+ "slug": "sun_tzu",
+ "name": "Sun Tzu",
+ "title": "Master of War",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "As Tian’s most famous general and martial philosopher, Sun Tzu swiftly obtained a position of authority in the realm’s largest post-Shattering army. Yet he is wise enough to recognize that war between realms should be avoided. He has recently become aware of Odysseus’s efforts in Tian, and works to make contact with the Olympian hero in hopes of cementing an alliance.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Sun Tzu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_SunTzu_main.png",
+ "stats": {
+  "hp": 1335,
+  "atk": 53,
+  "def": 97,
+  "spd": 106,
+  "init": 93,
+  "acc": 10,
+  "res": 35,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Mirror to all allies instead.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also increase the ACC of all allies by 5% (stacking up to 3 times).",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Philosophy Scroll",
+   "description": "Attack 1 enemy 345%ATK+50%FTH with a 35% chance to mirror 1 random Buff from the target onto this hero.",
+   "icon_url": "/godforge/abilities/sun_tzu/ICON_SunTzu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Mirror to all allies instead.",
+     "upgrade_description": "Mirror to all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Practical Teachings",
+   "description": "Place [ACC Up II] and [FTH Up II] on all allies for 2 turns.",
+   "icon_url": "/godforge/abilities/sun_tzu/ICON_SunTzu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ACC Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also increase the ACC of all allies by 5% (stacking up to 3 times).",
+     "upgrade_description": "Also increase the ACC of all allies by 5% (stacking up to 3 times)."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% FTH in All Battles",
+   "icon_url": "/godforge/abilities/sun_tzu/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Art of War",
+   "description": "When an enemy's Turn Meter or Divinity is increased, all allies gain 50% of the amount increased. Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/sun_tzu/ICON_SunTzu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Win Without Fighting",
+   "description": "Place [Vanish] on all allies except this hero for 2 turns then increase the Divinity of all allies by 20%. Also place [Backfire] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/sun_tzu/ICON_SunTzu_Ultimate.webp",
+   "divinity_cost": 3150,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Backfire",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Art of War",
+   "description": "When an enemy's Turn Meter or Divinity is increased, this hero gains 50% of the amount increased. Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/sun_tzu/ICON_SunTzu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

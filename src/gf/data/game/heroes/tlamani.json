@@ -1,0 +1,155 @@
+{
+ "id": 166,
+ "slug": "tlamani",
+ "name": "Tlamani",
+ "title": "Jungle Warrior",
+ "summary": "Attack with frenzy and precise strikes, weakening your enemies Defence.",
+ "lore": "While members of elite martial orders such as the jaguar warriors and eagle archers are expected to bring back prisoners for sacrifice to Omeyocan’s gods, sometimes less elite soldiers, or even commoners, manage to capture an enemy. These individuals are granted the title of tlamani, or “captor,” and are then provided additional training so they may more readily repeat their accomplishments.",
+ "rarity": "Common",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tlamani.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tlamani_main.png",
+ "stats": {
+  "hp": 945,
+  "atk": 76,
+  "def": 61,
+  "spd": 82,
+  "init": 82,
+  "acc": 0,
+  "res": 0,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Obsidian Wound",
+   "description": "Attack 1 enemy 330%ATK with a 40% chance to place [DEF Down I] for 1 turn.",
+   "icon_url": "/godforge/abilities/tlamani/ICON_Tlamani_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Bravery Unleashed",
+   "description": "Attack 1 enemy 470%ATK. Place [Sharpen I] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/tlamani/ICON_Tlamani_Ultimate.webp",
+   "divinity_cost": 1700,
+   "damage_formula": [
+    "470%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sharpen I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

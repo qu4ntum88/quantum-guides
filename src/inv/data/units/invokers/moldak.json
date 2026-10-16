@@ -1,0 +1,577 @@
+{
+ "slug": "moldak",
+ "kind": "Invoker",
+ "name": "MOLDAK",
+ "faction": "Ironbands",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/moldak/portrait.webp",
+ "fullArt": "/invokers/units/invokers/moldak/full.webp",
+ "stats": {
+  "base": {
+   "Health": "644",
+   "Attack": "72",
+   "Defense": "64",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "120"
+  },
+  "max": {
+   "Health": "7,734",
+   "Attack": "857",
+   "Defense": "709",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "145"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/moldak/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+70",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 22.5% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 75% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 79.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 25.2% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 60 damage.\nDamage: 84% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 66 damage.\nDamage: 91.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 30.1% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 72 damage.\nDamage: 100.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 78 damage.\nDamage: 108% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 35.1% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 84 damage.\nDamage: 117% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 37.3% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 90 damage.\nDamage: 124.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 59 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 74 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 96 damage.\nDamage: 133.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 102 damage.\nDamage: 141% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 45% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 66 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 83 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 108 damage.\nDamage: 150% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Void Punish",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/moldak/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 115 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 148 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 160 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 193 damage. Instantly ticks 1 [Bleed] debuff on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 205 damage. Instantly ticks 2 [Bleed] debuffs on the target.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Void Clap",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/moldak/skills/2.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage. Casts a [0.75% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 125% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 95 damage. Casts a [0.8% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 132.5% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage. Casts a [0.8% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 140% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage. Casts a [1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 152.5% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage. Casts a [1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 167.5% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage. Casts a [1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 180% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage. Casts a [1% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 195% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage. Casts a [1.25% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 207.5% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 160 damage. Casts a [1.25% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Bleed\n#1 Damage: 222.5% ATK\n#2 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 169 damage. Casts a [1.25% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Bleed\n#1 Damage: 235% ATK\n#2 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 180 damage. Casts a [1.25% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Bleed\n#1 Damage: 250% ATK\n#2 Bleed Damage Limit: 400% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Void Crash",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/moldak/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 106 damage. Casts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 113 damage. Casts a [Stun] debuff on the targets, lasting 4.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 119 damage. Casts a [Stun] debuff on the targets, lasting 4.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 130 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 142 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 153 damage. Casts a [Stun] debuff on the targets, lasting 5.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 166 damage. Casts a [Stun] debuff on the targets, lasting 5.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 176 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 189 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 200 damage. Casts a [Stun] debuff on the targets, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 120°, 5m cone in front of MOLDAK, dealing 212 damage. Casts a [Stun] debuff on the targets, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Void Fury",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/moldak/skills/4.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 58 damage per hit. Each hit casts a [1% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 80% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 61 damage per hit. Each hit casts a [1.25% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 84.8% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 65 damage per hit. Each hit casts a [1.25% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 89.6% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 70 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 97.6% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 77 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 107.2% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 83 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 115.2% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 90 damage per hit. Each hit casts a [1.75% Bleed] debuff on the target, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 124.8% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 96 damage per hit. Each hit casts a [1.75% Bleed] debuff on the target, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 132.8% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 103 damage per hit. Each hit casts a [2% Bleed] debuff on the target, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Bleed\n#1 Damage: 142.4% ATK\n#2 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 108 damage per hit. Each hit casts a [2% Bleed] debuff on the target, lasting 11s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Bleed\n#1 Damage: 150.4% ATK\n#2 Bleed Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 115 damage per hit. Each hit casts a [2% Bleed] debuff on the target, lasting 12s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Bleed\n#1 Damage: 160% ATK\n#2 Bleed Damage Limit: 400% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Crush",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "MOLDAK - Self-proclaimed Demon Wrestling Supreme Champion.\n\nMOLDAK FACT #1: Spelled MOLDAK, pronounced MOLDAK.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "A",
+  "hyxxis": "B",
+  "koltmos": "C",
+  "omnissi-astral": "E",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "C",
+  "sorgott": "A",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 39.3,
+  "lists": 16
+ }
+}

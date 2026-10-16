@@ -1,0 +1,549 @@
+{
+ "slug": "professor-orielle",
+ "kind": "Invoker",
+ "name": "Professor Orielle",
+ "faction": "Magi",
+ "rarity": "Rare",
+ "class": "Support",
+ "element": "Wind",
+ "soulSign": "Sign of Pirea",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/professor-orielle/portrait.webp",
+ "fullArt": "/invokers/units/invokers/professor-orielle/full.webp",
+ "stats": {
+  "base": {
+   "Health": "627",
+   "Attack": "51",
+   "Defense": "46",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "13",
+   "Combo speed": "4",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "103"
+  },
+  "max": {
+   "Health": "8,242",
+   "Attack": "587",
+   "Defense": "540",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "45",
+   "Combo speed": "26",
+   "Skill speed": "54",
+   "Skill recovery": "0",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "138"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/professor-orielle/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+99",
+    "titan": "+54"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 8.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 14% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 18% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 23% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 7 damage.\nDamage: 13.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 14.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 19.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 24.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 7 damage.\nDamage: 14.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 15.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 20.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 25.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 15.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 10.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 17.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 22% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 28.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 16.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 11.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 18.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 24.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 30.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 9 damage.\nDamage: 18.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 12.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 20.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 25.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 33.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 10 damage.\nDamage: 19.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 13.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 21.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 35.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 21.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 14.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 23.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 29.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 38.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 22.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 15.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 24.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 32% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 40.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 24% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 16% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 26.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 33.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 43.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 25.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 17% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 28% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 36% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 46% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage.\nDamage: 27% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Starstrike",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/professor-orielle/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+42",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 47 damage.\n#1 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 50 damage.\n#1 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 53 damage.\n#1 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 58 damage.\n#1 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 63 damage.\n#1 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 68 damage.\n#1 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 74 damage.\n#1 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 78 damage.\n#1 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 84 damage.\n#1 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 89 damage.\n#1 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 94 damage.\n#1 Damage: 185% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Mana Glimmer",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/professor-orielle/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 33 damage per hit. For each target without buffs Orielle gains 15 Ultimate Mana.\n#1 Damage: 65% ATK\n#2 Damage: 65% ATK\n#3 Damage: 65% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 35 damage per hit. For each target without buffs Orielle gains 16 Ultimate Mana.\n#1 Damage: 68.9% ATK\n#2 Damage: 68.9% ATK\n#3 Damage: 68.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 37 damage per hit. For each target without buffs Orielle gains 17 Ultimate Mana.\n#1 Damage: 72.8% ATK\n#2 Damage: 72.8% ATK\n#3 Damage: 72.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 40 damage per hit. For each target without buffs Orielle gains 18 Ultimate Mana.\n#1 Damage: 79.3% ATK\n#2 Damage: 79.3% ATK\n#3 Damage: 79.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 44 damage per hit. For each target without buffs Orielle gains 19 Ultimate Mana.\n#1 Damage: 87.1% ATK\n#2 Damage: 87.1% ATK\n#3 Damage: 87.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 48 damage per hit. For each target without buffs Orielle gains 20 Ultimate Mana.\n#1 Damage: 93.6% ATK\n#2 Damage: 93.6% ATK\n#3 Damage: 93.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 52 damage per hit. For each target without buffs Orielle gains 21 Ultimate Mana.\n#1 Damage: 101.4% ATK\n#2 Damage: 101.4% ATK\n#3 Damage: 101.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 55 damage per hit. For each target without buffs Orielle gains 22 Ultimate Mana.\n#1 Damage: 107.9% ATK\n#2 Damage: 107.9% ATK\n#3 Damage: 107.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 59 damage per hit. For each target without buffs Orielle gains 23 Ultimate Mana.\n#1 Damage: 115.7% ATK\n#2 Damage: 115.7% ATK\n#3 Damage: 115.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 62 damage per hit. For each target without buffs Orielle gains 24 Ultimate Mana.\n#1 Damage: 122.2% ATK\n#2 Damage: 122.2% ATK\n#3 Damage: 122.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 random enemy in a 12m radius, from a distance of 9m, 3 times, dealing 66 damage per hit. For each target without buffs Orielle gains 25 Ultimate Mana.\n#1 Damage: 130% ATK\n#2 Damage: 130% ATK\n#3 Damage: 130% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Starlight Shield",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/professor-orielle/skills/3.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Casts a [77 HP Shield] buff on 8 random allies in a 10m radius, lasting 8s.\n#1 Shield: 150% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Casts a [89 HP Shield] buff on 8 random allies in a 10m radius, lasting 8s.\n#1 Shield: 175% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Casts a [89 HP Shield] buff on 8 random allies in a 10m radius, lasting 9s.\n#1 Shield: 175% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [89 HP Shield] buff on 8 random allies in a 10m radius, lasting 9s.\n#1 Shield: 175% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [102 HP Shield] buff on 8 random allies in a 10m radius, lasting 9s.\n#1 Shield: 200% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [102 HP Shield] buff on 8 random allies in a 10m radius, lasting 10s.\n#1 Shield: 200% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [128 HP Shield] buff on 8 random allies in a 10m radius, lasting 10s.\n#1 Shield: 250% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [128 HP Shield] buff on 8 random allies in a 10m radius, lasting 10s.\n#1 Shield: 250% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [128 HP Shield] buff on 8 random allies in a 10m radius, lasting 11s.\n#1 Shield: 250% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [153 HP Shield] buff on 8 random allies in a 10m radius, lasting 11s.\n#1 Shield: 300% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [153 HP Shield] buff on 8 random allies in a 10m radius, lasting 12s.\n#1 Shield: 300% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Astral Incantation",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/professor-orielle/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 35 damage per hit. Removes a random debuff from 8 random allies in a 15m radius.\n#1 Damage: 69.5% ATK\n#2 Damage: 69.5% ATK\n#3 Damage: 69.5% ATK\n#4 Damage: 69.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 38 damage per hit. Removes a random debuff from 8 random allies in a 15m radius.\n#1 Damage: 73.7% ATK\n#2 Damage: 73.7% ATK\n#3 Damage: 73.7% ATK\n#4 Damage: 73.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 40 damage per hit. Removes a random debuff from 8 random allies in a 15m radius.\n#1 Damage: 77.8% ATK\n#2 Damage: 77.8% ATK\n#3 Damage: 77.8% ATK\n#4 Damage: 77.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 43 damage per hit. Removes a random debuff from 8 random allies in a 15m radius.\n#1 Damage: 84.8% ATK\n#2 Damage: 84.8% ATK\n#3 Damage: 84.8% ATK\n#4 Damage: 84.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 47 damage per hit. Removes a random debuff from 8 random allies in a 15m radius.\n#1 Damage: 93.1% ATK\n#2 Damage: 93.1% ATK\n#3 Damage: 93.1% ATK\n#4 Damage: 93.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 51 damage per hit. Removes a random debuff from 8 random allies in a 15m radius.\n#1 Damage: 100.1% ATK\n#2 Damage: 100.1% ATK\n#3 Damage: 100.1% ATK\n#4 Damage: 100.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 55 damage per hit. Removes 2 random debuffs from 8 random allies in a 15m radius.\n#1 Damage: 108.4% ATK\n#2 Damage: 108.4% ATK\n#3 Damage: 108.4% ATK\n#4 Damage: 108.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 59 damage per hit. Removes 2 random debuffs from 8 random allies in a 15m radius.\n#1 Damage: 115.4% ATK\n#2 Damage: 115.4% ATK\n#3 Damage: 115.4% ATK\n#4 Damage: 115.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 63 damage per hit. Removes 2 random debuffs from 8 random allies in a 15m radius.\n#1 Damage: 123.7% ATK\n#2 Damage: 123.7% ATK\n#3 Damage: 123.7% ATK\n#4 Damage: 123.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 67 damage per hit. Removes 2 random debuffs from 8 random allies in a 15m radius.\n#1 Damage: 130.7% ATK\n#2 Damage: 130.7% ATK\n#3 Damage: 130.7% ATK\n#4 Damage: 130.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 4 times, dealing 71 damage per hit. Removes 2 random debuffs from 8 random allies in a 15m radius.\n#1 Damage: 139% ATK\n#2 Damage: 139% ATK\n#3 Damage: 139% ATK\n#4 Damage: 139% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Professor Orielle rarely lectures these days – while she spent many years teaching summoning and astronomy at the Academy, she recently changed specialties. Her new love is astromancy: using the magic of the stars to blow things up. It’s a new field… and her techniques always need more testing.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "E",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "A",
+  "omnissi-light": "A",
+  "omnissi-water": "A",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "A+",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 45.5,
+  "lists": 16
+ }
+}

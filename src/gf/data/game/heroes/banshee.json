@@ -1,0 +1,276 @@
+{
+ "id": 135,
+ "slug": "banshee",
+ "name": "Banshee",
+ "title": "Harbinger of Death",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A fey spirit in woman’s form, the banshee is the harbinger of grief. Prior to the Shattering, each banshee was associated with a given bloodline, and would wail hideously when death approached for one of the family. Now, however, the shifting aether has transformed some into bringers of death. They have become hostile, murdering victims with their hellish keening.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Banshee.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Banshee_main.png",
+ "stats": {
+  "hp": 1155,
+  "atk": 111,
+  "def": 81,
+  "spd": 94,
+  "init": 90,
+  "acc": 25,
+  "res": 20,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also has a 75% chance to place [DEF Down II] on each target for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy is defeated under Blaze, [Acid] or Aetherburn increase this hero’s Turn Meter and Divinity by 25%.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Wraith Drain",
+   "description": "Attack 1 enemy 430%ATK with a 50% chance to place [Acid] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/banshee/ICON_Banshee_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "430%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Haunted Scream",
+   "description": "Attack all enemies 350%ATK with a 75% chance to place [Aetherburn II] on each turn for 2 turns.",
+   "icon_url": "/godforge/abilities/banshee/ICON_Banshee_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "350%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also has a 75% chance to place DEF Down II on each target for 2 turns.",
+     "upgrade_description": "Also has a 75% chance to place [DEF Down II] on each target for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Tormented Blight",
+   "description": "Inflicting damage to an enemy under Blaze, [Acid] or Aetherburn has a 50% chance to inflict an additional 2% MAX HP.",
+   "icon_url": "/godforge/abilities/banshee/ICON_Banshee_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy is defeated under Blaze, Acid or Aetherburn increase this hero’s Turn Meter and Divinity by 25%.",
+     "upgrade_description": "If an enemy is defeated under Blaze, [Acid] or Aetherburn increase this hero’s Turn Meter and Divinity by 25%."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Phantom Burn",
+   "description": "Attack all enemies 195%ATK 2 times. The first hit has a 75% chance to place [Blaze II] on each target for 2 turns. The second hit has a 75% chance to increase the duration of Blaze, [Acid] or Aetherburn on each target by 1 turn.",
+   "icon_url": "/godforge/abilities/banshee/ICON_Banshee_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [
+    "195%ATK",
+    "195%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blaze II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Tormented Blight",
+   "description": "Inflicting damage to an enemy under Blaze, [Acid] or Aetherburn has a 50% chance to inflict an additional 1% MAX HP.",
+   "icon_url": "/godforge/abilities/banshee/ICON_Banshee_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

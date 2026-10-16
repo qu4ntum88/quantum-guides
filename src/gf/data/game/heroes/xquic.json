@@ -1,0 +1,266 @@
+{
+ "id": 129,
+ "slug": "xquic",
+ "name": "Xquic",
+ "title": "Blood Mother",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Daughter of one on Omeyocan’s many death gods, Xquic is most famous as the mother of the hero twins Hunahpu and Xbalanque. Escaping the dread fate decreed by her father god and now all but forgotten since the Shattering, she pursues her own agenda—which includes ruining the schemes of the underworld gods as vengeance, regardless of potential consequences.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Xquic.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Xquic_main.png",
+ "stats": {
+  "hp": 1200,
+  "atk": 97,
+  "def": 88,
+  "spd": 94,
+  "init": 97,
+  "acc": 25,
+  "res": 25,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.07,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If the next ability also defeats an enemy, increase this hero's CDMG% by 10% and decrease this hero's Divinity Cost by 10% (stacking up to 3 times). This effect stacks across waves. If Hunahpu or Xbalanque are on the team, they also gain these effects.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Swap HP with the enemy with the Highest HP instead of Equalize. If Hunahpu or Xbalanque are on the team, Equalize their HP to this hero's HP instead.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Soul Rend",
+   "description": "Attack 1 enemy 240%ATK 2 times. Each hit increases the target's Divinity Cost by 2%. If the target is defeated, increase this hero's Divinity by 30%. If Hunahpu or Xbalanque are on the team, also increase the Divinity of Hunahpu and Xbalanque by 15%.",
+   "icon_url": "/godforge/abilities/xquic/ICON_Xquic_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "240%ATK",
+    "240%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Bone Cleave",
+   "description": "Steal 50% of the target's [Shield], then attack 1 enemy 610%ATK and ignore 15% of the target's DEF. If the target's Divinity is below 50%, ignore 30% of the target's DEF instead.",
+   "icon_url": "/godforge/abilities/xquic/ICON_Xquic_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "610%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "25% CDMG in Dungeon Battles",
+   "icon_url": "/godforge/abilities/xquic/ICON_Leader_CriticalDamage.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Soul Harvest",
+   "description": "When this hero defeats an enemy, the next ability inflicts 30% increased damage and steals 10% Divinity from the target.",
+   "icon_url": "/godforge/abilities/xquic/ICON_Xquic_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If the next ability also defeats an enemy, increase this hero's CDMG% by 10% and decrease this hero's Divinity Cost by 10% (stacking up to 3 times). This effect stacks across waves. If Hunahpu or Xbalanque are on the team, they also gain these effects.",
+     "upgrade_description": "If the next ability also defeats an enemy, increase this hero's CDMG% by 10% and decrease this hero's Divinity Cost by 10% (stacking up to 3 times). This effect stacks across waves. If Hunahpu or Xbalanque are on the team, they also gain these effects."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Escape from Xibalba",
+   "description": "Equalize this hero's HP to the enemy with the highest HP, then attack all enemies 350%ATK with an 80% chance to place [DEF Down II] on each target for 2 turns. Place [Vanish] on this hero for 3 turns. If Hunahpu or Xbalanque are on the team, also equalize the HP of Hunahpu and Xbalanque.",
+   "icon_url": "/godforge/abilities/xquic/ICON_Xquic_Ultimate.webp",
+   "divinity_cost": 4500,
+   "damage_formula": [
+    "350%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Swap HP with the enemy with the Highest HP instead of Equalize. If Hunahpu or Xbalanque are on the team, Equalize their HP to this hero's HP instead.",
+     "upgrade_description": "Swap HP with the enemy with the Highest HP instead of Equalize. If Hunahpu or Xbalanque are on the team, Equalize their HP to this hero's HP instead."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Soul Harvest",
+   "description": "When this hero defeats an enemy, the next ability inflicts 15% increased damage and steals 10% Divinity from the target.",
+   "icon_url": "/godforge/abilities/xquic/ICON_Xquic_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

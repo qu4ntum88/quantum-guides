@@ -116,7 +116,7 @@ export default async function About() {
               <p>
                 Browse the full hunter roster and the complete status effects database. Community features and written guides are in development as the game&apos;s meta matures.
               </p>
-              <a href="/games/void-hunters" className="overview-link">Explore Void Hunters →</a>
+              <a href="/games/void-hunters/guides" className="overview-link">Explore Void Hunters →</a>
             </div>
           </div>
         </div>

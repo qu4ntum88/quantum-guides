@@ -1,0 +1,576 @@
+{
+ "slug": "gawara-the-united",
+ "kind": "Invoker",
+ "name": "Gawara the United",
+ "faction": "Cambion",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/gawara-the-united/portrait.webp",
+ "fullArt": "/invokers/units/invokers/gawara-the-united/full.webp",
+ "stats": {
+  "base": {
+   "Health": "900",
+   "Attack": "90",
+   "Defense": "72",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "9,720",
+   "Attack": "1,084",
+   "Defense": "760",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "106"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gawara-the-united/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 37.5% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 50% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 62.5% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 34 damage. Extends the duration of 1 random debuff on the targets by 0.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 37.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 39.7% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 53% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 66.2% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 36 damage. Extends the duration of 1 random debuff on the targets by 0.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 39.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 42% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 56% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 70% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 38 damage. Extends the duration of 1 random debuff on the targets by 0.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 42% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 45.8% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 76.2% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 41 damage. Extends the duration of 1 random debuff on the targets by 0.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 45.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 50.2% ATK\n#3 Attacks 1 enemy, dealing 60 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 83.8% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 45 damage. Extends the duration of 1 random debuff on the targets by 0.9s.\nAccuracy required for: Debuff Duration Extension\nDamage: 50.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 54% ATK\n#3 Attacks 1 enemy, dealing 65 damage.\nDamage: 72% ATK\n#4 Attacks 1 enemy, dealing 81 damage.\nDamage: 90% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 49 damage. Extends the duration of 1 random debuff on the targets by 1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 54% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 58.5% ATK\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 88 damage.\nDamage: 97.5% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 53 damage. Extends the duration of 1 random debuff on the targets by 1.1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 58.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 56 damage.\nDamage: 62.2% ATK\n#3 Attacks 1 enemy, dealing 75 damage.\nDamage: 83% ATK\n#4 Attacks 1 enemy, dealing 93 damage.\nDamage: 103.8% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 56 damage. Extends the duration of 1 random debuff on the targets by 1.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 62.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 60 damage.\nDamage: 66.8% ATK\n#3 Attacks 1 enemy, dealing 80 damage.\nDamage: 89% ATK\n#4 Attacks 1 enemy, dealing 100 damage.\nDamage: 111.2% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 60 damage. Extends the duration of 1 random debuff on the targets by 1.3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 66.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 63 damage.\nDamage: 70.5% ATK\n#3 Attacks 1 enemy, dealing 85 damage.\nDamage: 94% ATK\n#4 Attacks 1 enemy, dealing 106 damage.\nDamage: 117.5% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 63 damage. Extends the duration of 1 random debuff on the targets by 1.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 70.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 68 damage.\nDamage: 75% ATK\n#3 Attacks 1 enemy, dealing 90 damage.\nDamage: 100% ATK\n#4 Attacks 1 enemy, dealing 113 damage.\nDamage: 125% ATK\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 68 damage. Extends the duration of up to 2 random debuffs on the targets by 1.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 75% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Duo Kick",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gawara-the-united/skills/1.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 135 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 150% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 143 damage. Casts a [55% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 55%.\nAccuracy required for: Heal Reduction\n#1 Damage: 159% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 168% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 165 damage. Casts a [65% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 65%.\nAccuracy required for: Heal Reduction\n#1 Damage: 183% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 181 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 4s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 201% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 194 damage. Casts a [70% Heal Reduction] debuff on the target, lasting 5s, decreasing the size of all heals received by 70%.\nAccuracy required for: Heal Reduction\n#1 Damage: 216% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 211 damage. Casts a [75% Heal Reduction] debuff on the target, lasting 5s, decreasing the size of all heals received by 75%.\nAccuracy required for: Heal Reduction\n#1 Damage: 234% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 224 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 5s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 249% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 240 damage. Casts a [80% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 80%.\nAccuracy required for: Heal Reduction\n#1 Damage: 267% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 254 damage. Casts a [90% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 90%.\nAccuracy required for: Heal Reduction\n#1 Damage: 282% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 270 damage. Casts a [100% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 100%.\nAccuracy required for: Heal Reduction\n#1 Damage: 300% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Duality Slash",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gawara-the-united/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 139 damage per hit. The first hit casts a [30% RES Down] debuff on the target, lasting 10s. Then, casts a [25% DEF Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 148 damage per hit. The first hit casts a [40% RES Down] debuff on the target, lasting 10s. Then, casts a [25% DEF Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 164.3% ATK\n#2 Damage: 164.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 156 damage per hit. The first hit casts a [40% RES Down] debuff on the target, lasting 12s. Then, casts a [25% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 173.6% ATK\n#2 Damage: 173.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 170 damage per hit. The first hit casts a [40% RES Down] debuff on the target, lasting 12s. Then, casts a [30% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 189.1% ATK\n#2 Damage: 189.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 187 damage per hit. The first hit casts a [40% RES Down] debuff on the target, lasting 12s. Then, casts a [30% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 207.7% ATK\n#2 Damage: 207.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 201 damage per hit. The first hit casts a [50% RES Down] debuff on the target, lasting 12s. Then, casts a [30% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 223.2% ATK\n#2 Damage: 223.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 218 damage per hit. The first hit casts a [50% RES Down] debuff on the target, lasting 12s. Then, casts a [40% DEF Down] debuff on the target, lasting 12s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 241.8% ATK\n#2 Damage: 241.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 232 damage per hit. The first hit casts a [50% RES Down] debuff on the target, lasting 14s. Then, casts a [40% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 257.3% ATK\n#2 Damage: 257.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 248 damage per hit. The first hit casts a [50% RES Down] debuff on the target, lasting 14s. Then, casts a [40% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 275.9% ATK\n#2 Damage: 275.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 262 damage per hit. The first hit casts a [60% RES Down] debuff on the target, lasting 14s. Then, casts a [40% DEF Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 291.4% ATK\n#2 Damage: 291.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 279 damage per hit. The first hit casts a [60% RES Down] debuff on the target, lasting 16s. Then, casts a [50% DEF Down] debuff on the target, lasting 16s, on the second hit.\nAccuracy required for: RES Down, DEF Down\n#1 Damage: 310% ATK\n#2 Damage: 310% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ebb and Flow",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gawara-the-united/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 144 damage per hit. Gawara gains 50 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 50 Titan Mana as well.\n#1 Damage: 160% ATK\n#2 Damage: 160% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 153 damage per hit. Gawara gains 60 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 50 Titan Mana as well.\n#1 Damage: 169.6% ATK\n#2 Damage: 169.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 161 damage per hit. Gawara gains 60 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 60 Titan Mana as well.\n#1 Damage: 179.2% ATK\n#2 Damage: 179.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 176 damage per hit. Gawara gains 70 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 60 Titan Mana as well.\n#1 Damage: 195.2% ATK\n#2 Damage: 195.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 193 damage per hit. Gawara gains 70 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 70 Titan Mana as well.\n#1 Damage: 214.4% ATK\n#2 Damage: 214.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 207 damage per hit. Gawara gains 80 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 70 Titan Mana as well.\n#1 Damage: 230.4% ATK\n#2 Damage: 230.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 225 damage per hit. Gawara gains 80 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 80 Titan Mana as well.\n#1 Damage: 249.6% ATK\n#2 Damage: 249.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 239 damage per hit. Gawara gains 90 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 80 Titan Mana as well.\n#1 Damage: 265.6% ATK\n#2 Damage: 265.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 256 damage per hit. Gawara gains 90 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 90 Titan Mana as well.\n#1 Damage: 284.8% ATK\n#2 Damage: 284.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 271 damage per hit. Gawara gains 100 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 90 Titan Mana as well.\n#1 Damage: 300.8% ATK\n#2 Damage: 300.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 288 damage per hit. Gawara gains 100 Ultimate Mana. \nIf the hit lands as a critical hit Gawara gains 100 Titan Mana as well.\n#1 Damage: 320% ATK\n#2 Damage: 320% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Judgment Nexus",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gawara-the-united/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 119 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 3s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 3s as well.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 126 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 3.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 3s as well.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 134 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 3.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 3.5s as well.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 145 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 4s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 3.5s as well.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 160 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 4s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 4s as well.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 172 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 4.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 4s as well.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 186 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 4.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 4.5s as well.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 198 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 4.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 4.5s as well.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 212 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 4.5s as well.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 224 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 5s as well.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 random enemy in a 15m radius, from a distance of 5m, 4 times, dealing 239 damage per hit. Each hit reduces the cooldown of Active Skill 3 on Gawara by 5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 2 on Gawara by 5s as well.\n#1 Damage: 265% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Daze",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Gawara was once two brothers: one pure of heart, one tainted by evil, both afflicted by the same curse. The Blades of Duality provided the only cure, fusing the two into a single, two-headed being. Their fusion led to a lot of intense arguing, which soon lead to intense internal reflection. Gawara is now much calmer – a requirement to fight the Demons and Cambion who rather they didn't exist.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "A+",
+  "hyxxis": "A+",
+  "koltmos": "E",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "S",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "E",
+  "sorgott": "A+",
+  "ulgorim": "E",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 51.8,
+  "lists": 16
+ }
+}

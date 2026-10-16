@@ -1,0 +1,294 @@
+{
+ "id": 171,
+ "slug": "sun_wukong",
+ "name": "Sun Wukong",
+ "title": "Monkey King",
+ "summary": "Summon Clones of Sun Wukong and Mirror the Power of your Foes with Cyclonic Attacks.",
+ "lore": "The famous Monkey King, central figure of countless myths, spends more time outside Tian than within. Ever curious and ever mischievous, he engages the people and gods of other realms in all manner of games, schemes, and pranks, many of which are ill-appreciated by their unwilling participants. His antics threaten to cause dangerous enmity between these realms and his own.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Sun Wukong.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_SunWukong_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 112,
+  "def": 86,
+  "spd": 97,
+  "init": 100,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Each hit has a 50% chance to mirror 1 random Buff from the target.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.15,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If a clone strikes the same target more than once, has a 50% chance to inflict additional damage 72%ATK to all other enemies.\n\nIf there are no other enemies has a 50% chance to inflict the damage to the initial target instead.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Will always join the attack with a hero from Tian.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Ruyi Jingu Bang",
+   "description": "Attack 1 enemy 430%ATK, then increase this hero's Divinity by 3%. Increase this hero's Divinity by an additional 3% if joining an attack. Also mirror 1 random Buff from that target onto this hero.",
+   "icon_url": "/godforge/abilities/sun_wukong/ICON_Sunwukong_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "430%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Spinning Gale",
+   "description": "Attack all enemies 195%ATK 2 times. For each Buff on this hero, increase the damage inflicted by 5%.",
+   "icon_url": "/godforge/abilities/sun_wukong/ICON_Sunwukong_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "195%ATK",
+    "195%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Each hit has a 50% chance to mirror 1 random Buff from the target.",
+     "upgrade_description": "Each hit has a 50% chance to mirror 1 random Buff from the target."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "21% SPD in All Battles",
+   "icon_url": "/godforge/abilities/sun_wukong/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Unyielding Trickster",
+   "description": "Place [Immortal] on this hero for 1 turn when hit by fatal damage for the first time. Also has a 20% chance to join an ally's attack.",
+   "icon_url": "/godforge/abilities/sun_wukong/ICON_Sunwukong_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Will always join the attack with a hero from Tian.",
+     "upgrade_description": "Will always join the attack with a hero from Tian."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Clone Rampage",
+   "description": "Attack a random enemy 72%ATK 8 times. Each hit has a 40% chance to heal this hero for 8% of the damage inflicted, then decrease the target's Turn Meter by 8%.\n\nAdditional hits inflict 50% decreased damage if a target is hit more than 5 times.",
+   "icon_url": "/godforge/abilities/sun_wukong/ICON_Sunwukong_Ultimate.webp",
+   "divinity_cost": 3725,
+   "damage_formula": [
+    "72%ATK",
+    "72%ATK",
+    "72%ATK",
+    "72%ATK",
+    "72%ATK",
+    "72%ATK",
+    "72%ATK",
+    "72%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If a clone strikes the same target more than once, has a 50% chance to inflict additional damage 72%ATK to all other enemies.\n\nIf there are no other enemies has a 50% chance to inflict the damage to the initial target instead.",
+     "upgrade_description": "If a clone strikes the same target more than once, has a 50% chance to inflict additional damage 72%ATK to all other enemies.\n\nIf there are no other enemies has a 50% chance to inflict the damage to the initial target instead."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Unyielding Trickster",
+   "description": "Place [Immortal] on this hero for 1 turn when hit by fatal damage for the first time. Also has a 20% chance to join an ally's attack.",
+   "icon_url": "/godforge/abilities/sun_wukong/ICON_Sunwukong_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

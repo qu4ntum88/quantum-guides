@@ -1,0 +1,549 @@
+{
+ "slug": "leander-the-searazor",
+ "kind": "Invoker",
+ "name": "Leander the Searazor",
+ "faction": "Freeborn",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/leander-the-searazor/portrait.webp",
+ "fullArt": "/invokers/units/invokers/leander-the-searazor/full.webp",
+ "stats": {
+  "base": {
+   "Health": "528",
+   "Attack": "56",
+   "Defense": "51",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "6,221",
+   "Attack": "737",
+   "Defense": "582",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "106"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/leander-the-searazor/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 45% ATK\n#5 Attacks 1 enemy, dealing 20 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.6% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 47.7% ATK\n#5 Attacks 1 enemy, dealing 21 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.4% ATK\n#5 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 53.7% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 54.9% ATK\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 60.3% ATK\n#5 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 63.4% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 64.8% ATK\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 68.6% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 73% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 74.7% ATK\n#5 Attacks 1 enemy, dealing 33 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 78.3% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 80.1% ATK\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 84.6% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy, dealing 50 damage.\nDamage: 90% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Jade Spike",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/leander-the-searazor/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 71 damage.\n#1 Damage: 127.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 76 damage.\n#1 Damage: 135.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 142.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage.\n#1 Damage: 155.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 96 damage.\n#1 Damage: 170.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage.\n#1 Damage: 183.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 111 damage.\n#1 Damage: 198.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 119 damage.\n#1 Damage: 211.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 127 damage.\n#1 Damage: 226.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage.\n#1 Damage: 239.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 143 damage.\n#1 Damage: 255% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Underhanded",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/leander-the-searazor/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+64",
+    "titan": "+35"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 50 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 90% ATK\n#2 Damage: 90% ATK\n#3 Damage: 90% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 53 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 95.4% ATK\n#2 Damage: 95.4% ATK\n#3 Damage: 95.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 56 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 100.8% ATK\n#2 Damage: 100.8% ATK\n#3 Damage: 100.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 61 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 109.8% ATK\n#2 Damage: 109.8% ATK\n#3 Damage: 109.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 68 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 120.6% ATK\n#2 Damage: 120.6% ATK\n#3 Damage: 120.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 73 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 129.6% ATK\n#2 Damage: 129.6% ATK\n#3 Damage: 129.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 79 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 140.4% ATK\n#2 Damage: 140.4% ATK\n#3 Damage: 140.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 84 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 149.4% ATK\n#2 Damage: 149.4% ATK\n#3 Damage: 149.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 90 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 160.2% ATK\n#2 Damage: 160.2% ATK\n#3 Damage: 160.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 95 damage per hit. Steals a random buff from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 169.2% ATK\n#2 Damage: 169.2% ATK\n#3 Damage: 169.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 101 damage per hit. Steals 2 random buffs from the target on the third hit.\nAccuracy required for: Buff Steal\n#1 Damage: 180% ATK\n#2 Damage: 180% ATK\n#3 Damage: 180% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deceit",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/leander-the-searazor/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 77 damage. Leander gains 4 Ultimate Mana on critical hits.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 82 damage. Leander gains 4 Ultimate Mana on critical hits.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 86 damage. Leander gains 4 Ultimate Mana on critical hits.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 94 damage. Leander gains 5 Ultimate Mana on critical hits.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 103 damage. Leander gains 5 Ultimate Mana on critical hits.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 111 damage. Leander gains 6 Ultimate Mana on critical hits.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 120 damage. Leander gains 6 Ultimate Mana on critical hits.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 128 damage. Leander gains 7 Ultimate Mana on critical hits.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 137 damage. Leander gains 7 Ultimate Mana on critical hits.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 145 damage. Leander gains 8 Ultimate Mana on critical hits.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 8m cone in front of Leander, from a distance of 3m, dealing 154 damage. Leander gains 8 Ultimate Mana on critical hits.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Showoff",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/leander-the-searazor/skills/4.webp",
+   "effects": [
+    {
+     "label": "Crit DMG Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Damage stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [15% Crit DMG Up] buff on Leander, lasting 7s. \nAttacks 1 enemy 3 times, dealing 87 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 5s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 5s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 5s on the third hit if the hit lands as a critical hit.\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK\n#3 Damage: 155% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 7s. \nAttacks 1 enemy 3 times, dealing 92 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 5s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 5s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 5s on the third hit if the hit lands as a critical hit.\n#1 Damage: 164.3% ATK\n#2 Damage: 164.3% ATK\n#3 Damage: 164.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 8s. \nAttacks 1 enemy 3 times, dealing 97 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 5s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 5s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 5s on the third hit if the hit lands as a critical hit.\n#1 Damage: 173.6% ATK\n#2 Damage: 173.6% ATK\n#3 Damage: 173.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 8s. \nAttacks 1 enemy 3 times, dealing 106 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 6s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 6s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 6s on the third hit if the hit lands as a critical hit.\n#1 Damage: 189.1% ATK\n#2 Damage: 189.1% ATK\n#3 Damage: 189.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 8s. \nAttacks 1 enemy 3 times, dealing 116 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 6s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 6s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 6s on the third hit if the hit lands as a critical hit.\n#1 Damage: 207.7% ATK\n#2 Damage: 207.7% ATK\n#3 Damage: 207.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 9s. \nAttacks 1 enemy 3 times, dealing 125 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 6s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 6s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 6s on the third hit if the hit lands as a critical hit.\n#1 Damage: 223.2% ATK\n#2 Damage: 223.2% ATK\n#3 Damage: 223.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 9s. \nAttacks 1 enemy 3 times, dealing 135 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 8s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 8s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 8s on the third hit if the hit lands as a critical hit.\n#1 Damage: 241.8% ATK\n#2 Damage: 241.8% ATK\n#3 Damage: 241.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [20% Crit DMG Up] buff on Leander, lasting 9s. \nAttacks 1 enemy 3 times, dealing 144 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 8s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 8s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 8s on the third hit if the hit lands as a critical hit.\n#1 Damage: 257.3% ATK\n#2 Damage: 257.3% ATK\n#3 Damage: 257.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [30% Crit DMG Up] buff on Leander, lasting 9s. \nAttacks 1 enemy 3 times, dealing 155 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 8s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 8s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 8s on the third hit if the hit lands as a critical hit.\n#1 Damage: 275.9% ATK\n#2 Damage: 275.9% ATK\n#3 Damage: 275.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [30% Crit DMG Up] buff on Leander, lasting 10s. \nAttacks 1 enemy 3 times, dealing 163 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 8s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 8s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 8s on the third hit if the hit lands as a critical hit.\n#1 Damage: 291.4% ATK\n#2 Damage: 291.4% ATK\n#3 Damage: 291.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Casts a [30% Crit DMG Up] buff on Leander, lasting 10s. \nAttacks 1 enemy 3 times, dealing 174 damage per hit. \nThe first hit Reduces the cooldown of Active Skill 1 on Leander by 10s if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 2 on Leander by 10s on the second hit if the hit lands as a critical hit. \nReduces the cooldown of Active Skill 3 on Leander by 10s on the third hit if the hit lands as a critical hit.\n#1 Damage: 310% ATK\n#2 Damage: 310% ATK\n#3 Damage: 310% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Leander grew up following the footsteps of his brother Zalasi, the best con artist in Freeport. But now he’s as good as his brother – better even – and he’s going to prove it, whether that stubborn fool will accept it or not.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "B",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "B",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "D",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "D",
+  "sakiel": "C",
+  "sorgott": "A+",
+  "ulgorim": "D",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 29.5,
+  "lists": 16
+ }
+}

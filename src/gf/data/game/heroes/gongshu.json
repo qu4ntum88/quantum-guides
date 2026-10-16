@@ -1,0 +1,145 @@
+{
+ "id": 232,
+ "slug": "gongshu",
+ "name": "Gongshu",
+ "title": "Jade Archer",
+ "summary": "Decrease your foes Divine power and reduce their Faith with precise arrows.",
+ "lore": "The gongshu are skilled crossbowmen, normally assembled in units that serve as vital elements in Tian’s disparate armies. Their massive weapons, though slow and strenuous to operate, deliver brutal force with astonishing accuracy. Specially trained gongshu learn to operate their unwieldy weapons even from horseback or chariot, offering a startling degree of mobility.",
+ "rarity": "Common",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Gonshu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Gongshu_main.png",
+ "stats": {
+  "hp": 945,
+  "atk": 50,
+  "def": 64,
+  "spd": 84,
+  "init": 83,
+  "acc": 0,
+  "res": 0,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Jade Arrow",
+   "description": "Attack 1 enemy 300%ATK, then has a 35% chance to place [FTH Down I] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/gongshu/ICON_Gongshu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "300%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 35,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Precision Volley",
+   "description": "Attack all enemies 250%ATK, then has a 75% chance to decrease the Divinity of each target by 10%.",
+   "icon_url": "/godforge/abilities/gongshu/ICON_Gongshu_Ultimate.webp",
+   "divinity_cost": 2375,
+   "damage_formula": [
+    "250%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

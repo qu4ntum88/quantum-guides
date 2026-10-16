@@ -1,0 +1,285 @@
+{
+ "id": 74,
+ "slug": "xipe_totec",
+ "name": "Xipe Totec",
+ "title": "The Flayed One",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The Flayed One represents conflicting elements that feed one another, such as war and agriculture, death and sustenance, opposing seasons. Indirectly, he symbolizes the core of Omeyocan faith: power from sacrifice. Thus, the existence of realms that function differently is not only a cosmic danger but, for him, a personal affront, driving him to lead battles against them and terrify their worshipers.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Xipe Totec.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_XipeTotec_main.png",
+ "stats": {
+  "hp": 1155,
+  "atk": 105,
+  "def": 82,
+  "spd": 98,
+  "init": 92,
+  "acc": 30,
+  "res": 20,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Increase this hero’s Divinity by 1% for each stack of [Bleed] that was activated. Strong Hits also increase this hero’s Turn Meter by 5%.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If this hero gain’s an Extra Turn, reset the Core Ability.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Haemorrhage",
+   "description": "Attack 1 enemy 395%ATK with a 75% chance to place 2 stacks of [Bleed] on the target. Strong Hits place 3 stacks instead.",
+   "icon_url": "/godforge/abilities/xipe_totec/ICON_XipeTotec_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "395%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Ritual Flay",
+   "description": "Attack 1 enemy 565%ATK with an 80% chance to place 3 stacks of [Bleed] on the target then attack all enemies 325%ATK. If the initial target has 10 stacks of [Bleed] the second hit will activate all stacks of [Bleed] on all targets.",
+   "icon_url": "/godforge/abilities/xipe_totec/ICON_XipeTotec_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "565%ATK",
+    "325%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Increase this hero’s Divinity by 1% for each stack of Bleed that was activated. Strong Hits also increase this hero’s Turn Meter by 5%.",
+     "upgrade_description": "Increase this hero’s Divinity by 1% for each stack of [Bleed] that was activated. Strong Hits also increase this hero’s Turn Meter by 5%."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Flayed Feast",
+   "description": "When below 50% HP, attacks remove 2 stacks of [Bleed] and heal 10%HP per stack removed. When above 50% HP, increase Strong Hit chance by 2% per [Bleed] on target.",
+   "icon_url": "/godforge/abilities/xipe_totec/ICON_XipeTotec_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Expose Flesh",
+   "description": "Attack all enemies 325%ATK with an 80% chance to place [Curse II] on all targets for 2 turns. If a target is defeated, spread 3 stacks of [Bleed] to all targets. If a target is defeated with 10 stacks of [Bleed], this hero gains an Extra Turn.",
+   "icon_url": "/godforge/abilities/xipe_totec/ICON_XipeTotec_Ultimate.webp",
+   "divinity_cost": 3325,
+   "damage_formula": [
+    "325%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If this hero gain’s an Extra Turn, reset the Core Ability.",
+     "upgrade_description": "If this hero gain’s an Extra Turn, reset the Core Ability."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Flayed Feast",
+   "description": "When below 50% HP, attacks remove 2 stacks of [Bleed] and heal 5%HP per stack removed. When above 50% HP, increase Strong Hit chance by 2% per [Bleed] on target.",
+   "icon_url": "/godforge/abilities/xipe_totec/ICON_XipeTotec_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,325 @@
+{
+ "id": 123,
+ "slug": "enkidu",
+ "name": "Enkidu",
+ "title": "Companion of Kings",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Unique among all creatures, Enkidu’s soul was Shattered along with the world itself; refracted into nine separate “avatars” across the Realms, each a portion of the original. Now that he has been restored, the wild warrior struggles to process his experience, to regain his sense of self—and to forgive his beloved companion Gilgamesh for the horrors wrought in his name.",
+ "rarity": "Rare",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Enkidu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Enkidu_main.png",
+ "stats": {
+  "hp": 1455,
+  "atk": 70,
+  "def": 83,
+  "spd": 88,
+  "init": 86,
+  "acc": 15,
+  "res": 25,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Strong Hits ignore 10% of the target’s DEF.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Clay Resilience",
+   "description": "Attack 1 enemy 5%HP+70%ATK 2 times. Each hit will heal for 30% of the damage inflicted. If Gilgamesh is an ally, he will join the attack.",
+   "icon_url": "/godforge/abilities/enkidu/ICON_Enkidu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+70%ATK",
+    "5%HP+70%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Kings Rival",
+   "description": "Attack 1 enemy 15%HP+185%ATK and reduce the target’s SPD by 10 (stacking up to 4 times). If the attack is a Strong Hit will increase the damage inflicted by 20% of the target’s ATK.",
+   "icon_url": "/godforge/abilities/enkidu/ICON_Enkidu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Wildman",
+   "description": "Increase this hero’s chance to Strong Hit by 15%.",
+   "icon_url": "/godforge/abilities/enkidu/ICON_Enkidu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Strong Hits ignore 10% of the target’s DEF.",
+     "upgrade_description": "Strong Hits ignore 10% of the target’s DEF."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Feral Rage",
+   "description": "Attack 5%HP+55%ATK 4 random enemies. Each hit has a 50% chance to place [Blunt I] on the target for 2 turns. If the attack is a Strong Hit place [Blunt II] instead.",
+   "icon_url": "/godforge/abilities/enkidu/ICON_Enkidu_Ultimate.webp",
+   "divinity_cost": 3275,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blunt I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Wildman",
+   "description": "Increase this hero’s chance to Strong Hit by 7.5%.",
+   "icon_url": "/godforge/abilities/enkidu/ICON_Enkidu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

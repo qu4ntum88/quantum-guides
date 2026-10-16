@@ -1,0 +1,284 @@
+{
+ "id": 60,
+ "slug": "tristain",
+ "name": "Tristan",
+ "title": "Tortured Heart",
+ "summary": "Shield your allies from harm whilst devoting your Protection to Isolde.",
+ "lore": "Sent to retrieve Princess Isolde, betrothed of King Mark, Sir Tristan instead found himself bound to her by a love potion. They traveled and adventured together, until the Shattering saved them from Mark’s vengeance. Now Tristan ignores his duties to the land as he works to stop Isolde who—for reasons Tristan cannot comprehend—strives to undo the potion’s effects.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tristan.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tristain_main.png",
+ "stats": {
+  "hp": 1170,
+  "atk": 53,
+  "def": 85,
+  "spd": 94,
+  "init": 87,
+  "acc": 10,
+  "res": 50,
+  "initial_divinity": 850,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also place [Protect I] on all allies for 2 turns. If Isolde is an ally, place [Protect II] on her for 2 turns.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Valiant Thrust",
+   "description": "Attack 1 enemy 165%DEF+135%ATK with a 25% chance to transfer 1 Debuff from a random ally to this hero. If Isolde is an ally, also transfer all Debuff to this hero from Isolde.",
+   "icon_url": "/godforge/abilities/tristain/ICON_Tristan_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "165%DEF+135%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Shield of Cornwall",
+   "description": "Place [Shield] 200%DEF on all allies. If Isolde is an ally, increase the [Shield] placed on Isolde by 50%.",
+   "icon_url": "/godforge/abilities/tristain/ICON_Tristan_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Protect I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also place Protect I on all allies for 2 turns. If Isolde is an ally, place Protect II on her for 2 turns.",
+     "upgrade_description": "Also place [Protect I] on all allies for 2 turns. If Isolde is an ally, place [Protect II] on her for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Lover's Resolve",
+   "description": "Each Debuff on this hero reduces incoming damage by 10%.",
+   "icon_url": "/godforge/abilities/tristain/ICON_Tristan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Spear Wall",
+   "description": "Attack all enemies 135%DEF+110%ATK, then place [Radiance I] on all allies for 2 turns. If Isolde is an ally, place [Radiance II] on Isolde for 2 turns.",
+   "icon_url": "/godforge/abilities/tristain/ICON_Tristan_Ultimate.webp",
+   "divinity_cost": 2700,
+   "damage_formula": [
+    "135%DEF+110%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Radiance I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Lover's Resolve",
+   "description": "Each Debuff on this hero reduces incoming damage by 5%.",
+   "icon_url": "/godforge/abilities/tristain/ICON_Tristan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

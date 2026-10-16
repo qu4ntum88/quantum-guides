@@ -1,0 +1,577 @@
+{
+ "slug": "sanctus-the-valiant",
+ "kind": "Invoker",
+ "name": "Sanctus the Valiant",
+ "faction": "Lightseekers",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Actia",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/sanctus-the-valiant/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sanctus-the-valiant/full.webp",
+ "stats": {
+  "base": {
+   "Health": "701",
+   "Attack": "76",
+   "Defense": "55",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "109"
+  },
+  "max": {
+   "Health": "8,333",
+   "Attack": "829",
+   "Defense": "665",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "149"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sanctus-the-valiant/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 37% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 48% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 61% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 72.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 50.9% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 64.7% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 76.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 41.4% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 53.8% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 68.3% ATK\n#5 Attacks 1 enemy, dealing 62 damage.\nDamage: 81.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 45.1% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 58.6% ATK\n#4 Attacks 1 enemy, dealing 57 damage.\nDamage: 74.4% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 88.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 49.6% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 64.3% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 81.7% ATK\n#5 Attacks 1 enemy, dealing 74 damage.\nDamage: 97.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 53.3% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 69.1% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 87.8% ATK\n#5 Attacks 1 enemy, dealing 79 damage.\nDamage: 104.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 57.7% ATK\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 74.9% ATK\n#4 Attacks 1 enemy, dealing 72 damage.\nDamage: 95.2% ATK\n#5 Attacks 1 enemy, dealing 86 damage.\nDamage: 113.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 61.4% ATK\n#3 Attacks 1 enemy, dealing 61 damage.\nDamage: 79.7% ATK\n#4 Attacks 1 enemy, dealing 77 damage.\nDamage: 101.3% ATK\n#5 Attacks 1 enemy, dealing 91 damage.\nDamage: 120.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 65.9% ATK\n#3 Attacks 1 enemy, dealing 65 damage.\nDamage: 85.4% ATK\n#4 Attacks 1 enemy, dealing 83 damage.\nDamage: 108.6% ATK\n#5 Attacks 1 enemy, dealing 98 damage.\nDamage: 129.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 69.6% ATK\n#3 Attacks 1 enemy, dealing 69 damage.\nDamage: 90.2% ATK\n#4 Attacks 1 enemy, dealing 87 damage.\nDamage: 114.7% ATK\n#5 Attacks 1 enemy, dealing 104 damage.\nDamage: 136.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy, dealing 56 damage.\nDamage: 74% ATK\n#3 Attacks 1 enemy, dealing 73 damage.\nDamage: 96% ATK\n#4 Attacks 1 enemy, dealing 93 damage.\nDamage: 122% ATK\n#5 Attacks 1 enemy, dealing 110 damage.\nDamage: 145% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Scourge And Protect",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sanctus-the-valiant/skills/1.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 3s. The [Shield] is equal to (35% * Damage Dealt + 5% * MAX HP).\n#1 Damage: 145% ATK\n#2 Shield: 35% * Damage Dealt + 5% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 3s. The [Shield] is equal to (40% * Damage Dealt + 6% * MAX HP).\n#1 Damage: 153.7% ATK\n#2 Shield: 40% * Damage Dealt + 6% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 3s. The [Shield] is equal to (40% * Damage Dealt + 7% * MAX HP).\n#1 Damage: 162.4% ATK\n#2 Shield: 40% * Damage Dealt + 7% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 3s. The [Shield] is equal to (45% * Damage Dealt + 8% * MAX HP).\n#1 Damage: 176.9% ATK\n#2 Shield: 45% * Damage Dealt + 8% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 148 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 3s. The [Shield] is equal to (45% * Damage Dealt + 9% * MAX HP).\n#1 Damage: 194.3% ATK\n#2 Shield: 45% * Damage Dealt + 9% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 3s. The [Shield] is equal to (50% * Damage Dealt + 10% * MAX HP).\n#1 Damage: 208.8% ATK\n#2 Shield: 50% * Damage Dealt + 10% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 4s. The [Shield] is equal to (50% * Damage Dealt + 10% * MAX HP).\n#1 Damage: 226.2% ATK\n#2 Shield: 50% * Damage Dealt + 10% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 4s. The [Shield] is equal to (55% * Damage Dealt + 11% * MAX HP).\n#1 Damage: 240.7% ATK\n#2 Shield: 55% * Damage Dealt + 11% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 196 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 4s. The [Shield] is equal to (55% * Damage Dealt + 12% * MAX HP).\n#1 Damage: 258.1% ATK\n#2 Shield: 55% * Damage Dealt + 12% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 207 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 4s. The [Shield] is equal to (65% * Damage Dealt + 13% * MAX HP).\n#1 Damage: 272.6% ATK\n#2 Shield: 65% * Damage Dealt + 13% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Casts a [Shield] buff on 1 random ally in a 15m radius, lasting 5s. The [Shield] is equal to (65% * Damage Dealt + 15% * MAX HP).\n#1 Damage: 290% ATK\n#2 Shield: 65% * Damage Dealt + 15% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "Surge And Purge",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sanctus-the-valiant/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 219 damage. Removes a random debuff from 1 ally in a 10m radius. Removes a random debuff from Sanctus if the hit lands as a critical hit.\n#1 Damage: 287.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 232 damage. Removes a random debuff from 1 ally in a 10m radius. Removes a random debuff from Sanctus if the hit lands as a critical hit.\n#1 Damage: 304.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 245 damage. Removes a random debuff from 1 ally in a 10m radius. Removes a random debuff from Sanctus if the hit lands as a critical hit.\n#1 Damage: 322% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 267 damage. Removes a random debuff from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 350.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 293 damage. Removes a random debuff from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 385.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 315 damage. Removes a random debuff from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 414% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 341 damage. Removes a random debuff from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 448.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 363 damage. Removes 2 random debuffs from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 477.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 389 damage. Removes 2 random debuffs from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 511.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 411 damage. Removes 2 random debuffs from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 540.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 437 damage. Removes 2 random debuffs from 1 ally in a 10m radius. Removes 2 random debuffs from Sanctus if the hit lands as a critical hit.\n#1 Damage: 575% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Restrain And Detain",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sanctus-the-valiant/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+69",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 112 damage per hit. The first hit launches the target for 0.5s. Then, casts a [Stun] debuff on the target, lasting 3s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 147.5% ATK\n#2 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 119 damage per hit. The first hit launches the target for 0.5s. Then, casts a [Stun] debuff on the target, lasting 4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 156.3% ATK\n#2 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 126 damage per hit. The first hit launches the target for 0.6s. Then, casts a [Stun] debuff on the target, lasting 4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 165.2% ATK\n#2 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 137 damage per hit. The first hit launches the target for 0.7s. Then, casts a [Stun] debuff on the target, lasting 4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 180% ATK\n#2 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 150 damage per hit. The first hit launches the target for 0.8s. Then, casts a [Stun] debuff on the target, lasting 5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 197.7% ATK\n#2 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 161 damage per hit. The first hit launches the target for 0.9s. Then, casts a [Stun] debuff on the target, lasting 5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 212.4% ATK\n#2 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 175 damage per hit. The first hit launches the target for 1.1s. Then, casts a [Stun] debuff on the target, lasting 5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 230.1% ATK\n#2 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 186 damage per hit. The first hit launches the target for 1.2s. Then, casts a [Stun] debuff on the target, lasting 5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 244.9% ATK\n#2 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 200 damage per hit. The first hit launches the target for 1.2s. Then, casts a [Stun] debuff on the target, lasting 5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 262.5% ATK\n#2 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 211 damage per hit. The first hit launches the target for 1.3s. Then, casts a [Stun] debuff on the target, lasting 5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 277.3% ATK\n#2 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 224 damage per hit. The first hit launches the target for 1.5s. Then, casts a [Stun] debuff on the target, lasting 6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Launch, Stun\n#1 Damage: 295% ATK\n#2 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wield And Shield",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sanctus-the-valiant/skills/4.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 61 damage per hit. \nThe first hit Removes a random debuff from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 61 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 10s. The [Shield] is equal to (50% * Damage Dealt + 10% * MAX HP) on the second hit. \n Launches the targets for 4s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 80% ATK\n#2 Damage: 80% ATK\n#3 Damage: 80% ATK\n#4 Damage: 80% ATK\n#5 Shield: 50% * Damage Dealt + 10% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 64 damage per hit. \nThe first hit Removes a random debuff from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 64 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 10s. The [Shield] is equal to (60% * Damage Dealt + 12% * MAX HP) on the second hit. \n Launches the targets for 4s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 84.8% ATK\n#2 Damage: 84.8% ATK\n#3 Damage: 84.8% ATK\n#4 Damage: 84.8% ATK\n#5 Shield: 60% * Damage Dealt + 12% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 68 damage per hit. \nThe first hit Removes a random debuff from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 68 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 11s. The [Shield] is equal to (60% * Damage Dealt + 14% * MAX HP) on the second hit. \n Launches the targets for 4s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 89.6% ATK\n#2 Damage: 89.6% ATK\n#3 Damage: 89.6% ATK\n#4 Damage: 89.6% ATK\n#5 Shield: 60% * Damage Dealt + 14% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 74 damage per hit. \nThe first hit Removes a random debuff from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 74 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 11s. The [Shield] is equal to (70% * Damage Dealt + 14% * MAX HP) on the second hit. \n Launches the targets for 5s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 97.6% ATK\n#2 Damage: 97.6% ATK\n#3 Damage: 97.6% ATK\n#4 Damage: 97.6% ATK\n#5 Shield: 70% * Damage Dealt + 14% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 81 damage per hit. \nThe first hit Removes 2 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 81 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 11s. The [Shield] is equal to (70% * Damage Dealt + 14% * MAX HP) on the second hit. \n Launches the targets for 5s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 107.2% ATK\n#2 Damage: 107.2% ATK\n#3 Damage: 107.2% ATK\n#4 Damage: 107.2% ATK\n#5 Shield: 70% * Damage Dealt + 14% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 88 damage per hit. \nThe first hit Removes 2 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 88 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 12s. The [Shield] is equal to (80% * Damage Dealt + 14% * MAX HP) on the second hit. \n Launches the targets for 5s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 115.2% ATK\n#2 Damage: 115.2% ATK\n#3 Damage: 115.2% ATK\n#4 Damage: 115.2% ATK\n#5 Shield: 80% * Damage Dealt + 14% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 95 damage per hit. \nThe first hit Removes 2 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 95 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 12s. The [Shield] is equal to (80% * Damage Dealt + 16% * MAX HP) on the second hit. \n Launches the targets for 5s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 124.8% ATK\n#2 Damage: 124.8% ATK\n#3 Damage: 124.8% ATK\n#4 Damage: 124.8% ATK\n#5 Shield: 80% * Damage Dealt + 16% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 101 damage per hit. \nThe first hit Removes 2 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 101 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 12s. The [Shield] is equal to (90% * Damage Dealt + 16% * MAX HP) on the second hit. \n Launches the targets for 6s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 132.8% ATK\n#2 Damage: 132.8% ATK\n#3 Damage: 132.8% ATK\n#4 Damage: 132.8% ATK\n#5 Shield: 90% * Damage Dealt + 16% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 108 damage per hit. \nThe first hit Removes 2 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 108 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 13s. The [Shield] is equal to (90% * Damage Dealt + 16% * MAX HP) on the second hit. \n Launches the targets for 6s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 142.4% ATK\n#2 Damage: 142.4% ATK\n#3 Damage: 142.4% ATK\n#4 Damage: 142.4% ATK\n#5 Shield: 90% * Damage Dealt + 16% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 114 damage per hit. \nThe first hit Removes 2 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 114 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 14s. The [Shield] is equal to (100% * Damage Dealt + 20% * MAX HP) on the second hit. \n Launches the targets for 6s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 150.4% ATK\n#2 Damage: 150.4% ATK\n#3 Damage: 150.4% ATK\n#4 Damage: 150.4% ATK\n#5 Shield: 100% * Damage Dealt + 20% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 9 enemies in a 6m radius around Sanctus 3 times, dealing 122 damage per hit. \nThe first hit Removes 3 random debuffs from 9 allies in a 15m radius. \nAttacks 9 enemies in a 6m radius around Sanctus, dealing 122 damage. Casts a [Shield] buff on 9 allies in a 15m radius around Sanctus, lasting 14s. The [Shield] is equal to (100% * Damage Dealt + 20% * MAX HP) on the second hit. \n Launches the targets for 7s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 160% ATK\n#2 Damage: 160% ATK\n#3 Damage: 160% ATK\n#4 Damage: 160% ATK\n#5 Shield: 100% * Damage Dealt + 20% * MAX HP"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Legion Inquisitor Sanctus the Valiant is everything one expects from a holy knight: calm, powerful, righteous, skilled, and honor-bound. But the man beneath the armor has done insidious deeds, and even he has begun to doubt.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "A",
+  "omnissi-astral": "A",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "A",
+  "omnissi-light": "A+",
+  "omnissi-water": "A",
+  "omnissi-wind": "A",
+  "pentiax": "A",
+  "sakiel": "A",
+  "sorgott": "A",
+  "ulgorim": "E",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "A",
+  "score": 50.9,
+  "lists": 16
+ }
+}

@@ -1,0 +1,555 @@
+{
+ "slug": "krakenblood-stonn",
+ "kind": "Invoker",
+ "name": "Krakenblood Stonn",
+ "faction": "Freeborn",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/krakenblood-stonn/portrait.webp",
+ "fullArt": "/invokers/units/invokers/krakenblood-stonn/full.webp",
+ "stats": {
+  "base": {
+   "Health": "616",
+   "Attack": "53",
+   "Defense": "45",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "7,202",
+   "Attack": "704",
+   "Defense": "515",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "136"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/krakenblood-stonn/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+109",
+    "titan": "+59"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22.5% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 47.5% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 58% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 18 damage.\nDamage: 34% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 50.3% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 61.5% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 19 damage.\nDamage: 36% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 25.2% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 53.2% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 65% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 20 damage.\nDamage: 38.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 58% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 70.8% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 22 damage.\nDamage: 41.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 30.1% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 63.7% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 77.7% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 24 damage.\nDamage: 45.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 68.4% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 83.5% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 26 damage.\nDamage: 49% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 35.1% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 74.1% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 90.5% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 28 damage.\nDamage: 53% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 37.3% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 78.8% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 96.3% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 30 damage.\nDamage: 56.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 84.5% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 103.2% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 32 damage.\nDamage: 60.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 89.3% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 109% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 34 damage.\nDamage: 63.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 45% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 95% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 116% ATK\n#5 Attacks 8 enemies in a 2m radius around Stonn, dealing 36 damage.\nDamage: 68% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deep Hook",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/krakenblood-stonn/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage.\n#1 Damage: 131.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 74 damage.\n#1 Damage: 139.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 147.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 85 damage.\n#1 Damage: 160.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 93 damage.\n#1 Damage: 176.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 100 damage.\n#1 Damage: 189.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage.\n#1 Damage: 205.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 116 damage.\n#1 Damage: 218.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 124 damage.\n#1 Damage: 234.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 131 damage.\n#1 Damage: 247.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage.\n#1 Damage: 263% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crushing Waters",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/krakenblood-stonn/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+41",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 141 damage. Casts a [Stun] debuff on the target, lasting 1.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 265.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage. Casts a [Stun] debuff on the target, lasting 1.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 281.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 158 damage. Casts a [Stun] debuff on the target, lasting 1.7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 297.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Casts a [Stun] debuff on the target, lasting 1.7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 323.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 189 damage. Casts a [Stun] debuff on the target, lasting 1.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 355.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 203 damage. Casts a [Stun] debuff on the target, lasting 1.9s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 382.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Casts a [Stun] debuff on the target, lasting 1.9s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 414.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Casts a [Stun] debuff on the target, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 440.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 250 damage. Casts a [Stun] debuff on the target, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 472.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 265 damage. Casts a [Stun] debuff on the target, lasting 2.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 499.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 281 damage. Casts a [Stun] debuff on the target, lasting 2.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 531% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Drowning Whirl",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/krakenblood-stonn/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+56",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 72 damage. Casts a [10% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 136% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 76 damage. Casts a [11% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 144.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 81 damage. Casts a [11% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 152.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 88 damage. Casts a [11% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 165.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 97 damage. Casts a [11% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 182.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 104 damage. Casts a [12% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 195.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 112 damage. Casts a [12% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 212.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 120 damage. Casts a [13% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 225.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 128 damage. Casts a [13% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 242.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 136 damage. Casts a [14% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 255.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 2.5m radius around Stonn, dealing 144 damage. Casts a [15% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 272% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wrath of the Krakens",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/krakenblood-stonn/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 61 damage per hit. Damage increases by 25% if the target has debuffs on the second hit.\n#1 Damage: 115.5% ATK\n#2 Damage: 115.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 65 damage per hit. Damage increases by 30% if the target has debuffs on the second hit.\n#1 Damage: 122.4% ATK\n#2 Damage: 122.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 69 damage per hit. Damage increases by 35% if the target has debuffs on the second hit.\n#1 Damage: 129.4% ATK\n#2 Damage: 129.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 75 damage per hit. Damage increases by 40% if the target has debuffs on the second hit.\n#1 Damage: 140.9% ATK\n#2 Damage: 140.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 82 damage per hit. Damage increases by 40% if the target has debuffs on the second hit.\n#1 Damage: 154.8% ATK\n#2 Damage: 154.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 88 damage per hit. Damage increases by 45% if the target has debuffs on the second hit.\n#1 Damage: 166.3% ATK\n#2 Damage: 166.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 95 damage per hit. Damage increases by 50% if the target has debuffs on the second hit.\n#1 Damage: 180.2% ATK\n#2 Damage: 180.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 102 damage per hit. Damage increases by 50% if the target has debuffs on the second hit.\n#1 Damage: 191.7% ATK\n#2 Damage: 191.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 109 damage per hit. Damage increases by 60% if the target has debuffs on the second hit.\n#1 Damage: 205.6% ATK\n#2 Damage: 205.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 115 damage per hit. Damage increases by 75% if the target has debuffs on the second hit.\n#1 Damage: 217.1% ATK\n#2 Damage: 217.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around Stonn 2 times, dealing 122 damage per hit. Damage increases by 75% if the target has debuffs on the second hit.\n#1 Damage: 231% ATK\n#2 Damage: 231% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Stonn was once a simple fisherman, unpretentious and content. Then, well, he caught a magic fish, and there was something with tentacles, and he ate some wishes, and… now he’s an Invoker-squid sorcerer-pirate. It’s much better than fishing.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "D",
+  "omnissi-dark": "C",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "D",
+  "omnissi-wind": "B",
+  "pentiax": "D",
+  "sakiel": "C",
+  "sorgott": "D",
+  "ulgorim": "C",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 23.2,
+  "lists": 16
+ }
+}

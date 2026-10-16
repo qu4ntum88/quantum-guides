@@ -1,0 +1,289 @@
+{
+ "id": 120,
+ "slug": "yddraiggoch",
+ "name": "Y Ddraig Goch",
+ "title": "Protector of Avalon",
+ "summary": "Burn your enemies and Protect your Allies from Harmful Blaze and Burns.",
+ "lore": "The terrible Red Dragon is the fiercest protector Avalon has—and a last resort nobody wants to invoke. When roused to the realm’s defense, Y Ddraig Goch devastates surrounding lands, armies, and communities, and though the bulk of it is inflicted on the enemy, swathes of Avalon also suffer. It seems to wreak such destruction deliberately, as though demanding a sacrifice for its aid.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Yddraiggoch.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Yddraiggoch_main.png",
+ "stats": {
+  "hp": 1335,
+  "atk": 112,
+  "def": 92,
+  "spd": 103,
+  "init": 99,
+  "acc": 35,
+  "res": 30,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 18
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Before attacking, increase the duration of any Blaze by 1 turn then activate Blaze.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Blocks any Debuff or Disable placed on this hero from enemies under Blaze or Aetherburn.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Transfers all Debuffs from all allies onto all enemies.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Searing Jaws",
+   "description": "Attack 1 enemy 445%ATK. Ignores 15% of the target’s DEF if they are under Blaze. Place [ATK Up II] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/yddraiggoch/ICON_YDdraigGoch_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "445%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Call of Cadwaladr",
+   "description": "Attack all enemies 200%ATK 2 times. The first attack has a 75% chance to place [Blaze II] on each target for 2 turns. The second attack decreases each target’s DEF by 5% (stacking up to 4 times).",
+   "icon_url": "/godforge/abilities/yddraiggoch/ICON_YDdraigGoch_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "200%ATK",
+    "200%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Blaze II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Before attacking, increase the duration of any Blaze by 1 turn then activate Blaze.",
+     "upgrade_description": "Before attacking, increase the duration of any Blaze by 1 turn then activate Blaze."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% ATK in All Battles",
+   "icon_url": "/godforge/abilities/yddraiggoch/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Ancient Power",
+   "description": "Inflicts 30% more damage and receives 30% less damage from enemies under Blaze or Aetherburn.",
+   "icon_url": "/godforge/abilities/yddraiggoch/ICON_YDdraigGoch_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Blocks any Debuff or Disable placed on this hero from enemies under Blaze or Aetherburn.",
+     "upgrade_description": "Blocks any Debuff or Disable placed on this hero from enemies under Blaze or Aetherburn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Take Flight",
+   "description": "Transfers all Blaze and Aetherburn from allies onto all enemies then attacks all enemies 145%ATK 3 times. Place [Shield] 150%ATK on all allies. The strength of the [Shield] is increased by 2% for each Debuff transferred to enemies.",
+   "icon_url": "/godforge/abilities/yddraiggoch/ICON_YDdraigGoch_Ultimate.webp",
+   "divinity_cost": 4500,
+   "damage_formula": [
+    "145%ATK",
+    "145%ATK",
+    "145%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Transfers all Debuffs from all allies onto all enemies.",
+     "upgrade_description": "Transfers all Debuffs from all allies onto all enemies."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Ancient Power",
+   "description": "Inflicts 15% more damage and receives 15% less damage from enemies under Blaze or Aetherburn.",
+   "icon_url": "/godforge/abilities/yddraiggoch/ICON_YDdraigGoch_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

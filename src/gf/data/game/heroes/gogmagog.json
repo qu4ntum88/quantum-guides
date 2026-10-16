@@ -1,0 +1,283 @@
+{
+ "id": 84,
+ "slug": "gogmagog",
+ "name": "Gogmagog",
+ "title": "Grove Guardian",
+ "summary": "Spring roots from the ground Intercepting attacks for your allies whilst defending the grove against invaders.",
+ "lore": "A great beast of an ogre, Gogmagog is most famous not for his own feats but for his defeat by the hero Corineus. Incensed, mortified, and enraged, Gogmagog now hunts for champions of Avalon and surrounding realms so he might prove his prowess by slaughtering them. Between bouts, he feeds on the flesh of farmers and villagers.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Gogmagog.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Gogmagog_main.png",
+ "stats": {
+  "hp": 1350,
+  "atk": 62,
+  "def": 101,
+  "spd": 97,
+  "init": 87,
+  "acc": 15,
+  "res": 65,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also heal 100%DEF this hero.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [Stalwart] on all allies for 2 turns.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Titan Smash",
+   "description": "Attack 1 enemy 95%DEF+85%ATK 2 times with a 50% chance to place [ATK Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/gogmagog/ICON_Gogmagog_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "95%DEF+85%ATK",
+    "95%DEF+85%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Rockbreaker",
+   "description": "Attack 1 enemy 250%DEF+220%ATK with a 75% chance to place [Blunt II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/gogmagog/ICON_Gogmagog_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "250%DEF+220%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Colossal Resilience",
+   "description": "When damage is inflicted on this hero, increase this hero's DEF and RES by 6% (up to 5 stacks).",
+   "icon_url": "/godforge/abilities/gogmagog/ICON_Gogmagog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also heal 100%DEF this hero.",
+     "upgrade_description": "Also heal 100%DEF this hero."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Roots of Life",
+   "description": "Place [Intercept] on all allies except this hero for 2 turns. Also place [Phoenix] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/gogmagog/ICON_Gogmagog_Ultimate.webp",
+   "divinity_cost": 2700,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Phoenix",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place Stalwart on all allies for 2 turns.",
+     "upgrade_description": "Place [Stalwart] on all allies for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Colossal Resilience",
+   "description": "When damage is inflicted on this hero, increase this hero's DEF and RES by 3% (up to 5 stacks).",
+   "icon_url": "/godforge/abilities/gogmagog/ICON_Gogmagog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,576 @@
+{
+ "slug": "raziel",
+ "kind": "Invoker",
+ "name": "Raziel",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/raziel/portrait.webp",
+ "fullArt": "/invokers/units/invokers/raziel/full.webp",
+ "stats": {
+  "base": {
+   "Health": "876",
+   "Attack": "88",
+   "Defense": "77",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "110"
+  },
+  "max": {
+   "Health": "9,461",
+   "Attack": "1,056",
+   "Defense": "810",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "110"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/raziel/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+106",
+    "titan": "+58"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 25.5% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 37.5% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy, dealing 57 damage. Raziel gains Ultimate Mana (1 per debuff on the target).\nDamage: 65% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 35 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.4s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 40% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 27% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 39.7% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 55.6% ATK\n#4 Attacks 1 enemy, dealing 61 damage. Raziel gains Ultimate Mana (1.1 per debuff on the target).\nDamage: 68.9% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 37 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.5s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 42.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 28.6% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 42% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 58.8% ATK\n#4 Attacks 1 enemy, dealing 64 damage. Raziel gains Ultimate Mana (1.2 per debuff on the target).\nDamage: 72.8% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 39 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.5s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 44.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 31.1% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 45.8% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 64% ATK\n#4 Attacks 1 enemy, dealing 70 damage. Raziel gains Ultimate Mana (1.3 per debuff on the target).\nDamage: 79.3% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 43 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.6s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 48.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 34.2% ATK\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 50.2% ATK\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 70.3% ATK\n#4 Attacks 1 enemy, dealing 77 damage. Raziel gains Ultimate Mana (1.4 per debuff on the target).\nDamage: 87.1% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 47 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.6s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 53.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 54% ATK\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 75.6% ATK\n#4 Attacks 1 enemy, dealing 82 damage. Raziel gains Ultimate Mana (1.5 per debuff on the target).\nDamage: 93.6% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 51 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.7s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 57.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 58.5% ATK\n#3 Attacks 1 enemy, dealing 72 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 89 damage. Raziel gains Ultimate Mana (1.6 per debuff on the target).\nDamage: 101.4% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 55 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.7s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 62.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 55 damage.\nDamage: 62.2% ATK\n#3 Attacks 1 enemy, dealing 77 damage.\nDamage: 87.1% ATK\n#4 Attacks 1 enemy, dealing 95 damage. Raziel gains Ultimate Mana (1.7 per debuff on the target).\nDamage: 107.9% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 58 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.8s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 66.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 45.4% ATK\n#2 Attacks 1 enemy, dealing 59 damage.\nDamage: 66.8% ATK\n#3 Attacks 1 enemy, dealing 82 damage.\nDamage: 93.4% ATK\n#4 Attacks 1 enemy, dealing 102 damage. Raziel gains Ultimate Mana (1.8 per debuff on the target).\nDamage: 115.7% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 63 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.8s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 71.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 47.9% ATK\n#2 Attacks 1 enemy, dealing 62 damage.\nDamage: 70.5% ATK\n#3 Attacks 1 enemy, dealing 87 damage.\nDamage: 98.7% ATK\n#4 Attacks 1 enemy, dealing 108 damage. Raziel gains Ultimate Mana (1.9 per debuff on the target).\nDamage: 122.2% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 66 damage. \nReduces the cooldown of all Active Skills on Raziel by 0.9s if the target has 4 debuffs. \nRaziel gains 1 Ultimate Mana per debuff on the target.\n#1 Damage: 75.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 51% ATK\n#2 Attacks 1 enemy, dealing 66 damage.\nDamage: 75% ATK\n#3 Attacks 1 enemy, dealing 92 damage.\nDamage: 105% ATK\n#4 Attacks 1 enemy, dealing 114 damage. Raziel gains Ultimate Mana (2 per debuff on the target).\nDamage: 130% ATK\n#5 Attacks 10 enemies in a 2m radius around Raziel, dealing 70 damage. \nReduces the cooldown of all Active Skills on Raziel by 1s if the target has 4 debuffs. \nRaziel gains 2 Ultimate Mana per debuff on the target.\n#1 Damage: 80% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Eclipse Piercer",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/raziel/skills/1.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+17",
+    "titan": "+9"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage. Casts a [25% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 138 damage. Casts a [26% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 145 damage. Casts a [27% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 158 damage. Casts a [29% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 174 damage. Casts a [31% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 187 damage. Casts a [33% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 202 damage. Casts a [33% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 215 damage. Casts a [35% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 231 damage. Casts a [37% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 244 damage. Casts a [37% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 260 damage. Casts a [40% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Callous Sorrow",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/raziel/skills/2.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    },
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+21",
+    "titan": "+11"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 12s. Then, casts a [75% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 75%. Attacks the target, dealing 268 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 305% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 12s. Then, casts a [80% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 80%. Attacks the target, dealing 285 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 323.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 12s. Then, casts a [80% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 80%. Attacks the target, dealing 301 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 341.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 13s. Then, casts a [80% Heal Reduction] debuff on the target, lasting 13s, decreasing the size of all heals received by 80%. Attacks the target, dealing 327 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 372.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 13s. Then, casts a [90% Heal Reduction] debuff on the target, lasting 13s, decreasing the size of all heals received by 90%. Attacks the target, dealing 360 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 408.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 13s. Then, casts a [90% Heal Reduction] debuff on the target, lasting 13s, decreasing the size of all heals received by 90%. Attacks the target, dealing 386 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 439.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 13s. Then, casts a [90% Heal Reduction] debuff on the target, lasting 13s, decreasing the size of all heals received by 90%. Attacks the target, dealing 419 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 475.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 13s. Then, casts a [100% Heal Reduction] debuff on the target, lasting 13s, decreasing the size of all heals received by 100%. Attacks the target, dealing 446 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 506.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 15s. Then, casts a [100% Heal Reduction] debuff on the target, lasting 15s, decreasing the size of all heals received by 100%. Attacks the target, dealing 478 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 542.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts a [20% Combo SPD Down] debuff on 1 enemy, lasting 15s. Then, casts a [100% Heal Reduction] debuff on the target, lasting 15s, decreasing the size of all heals received by 100%. Attacks the target, dealing 505 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 573.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Casts a [20% Combo SPD Down] debuff on 1 enemy, lasting 18s. Then, casts a [100% Heal Reduction] debuff on the target, lasting 18s, decreasing the size of all heals received by 100%. Attacks the target, dealing 537 damage.\nAccuracy required for: Combo SPD Down, Heal Reduction\n#1 Damage: 610% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Trinity Torment",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/raziel/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 90 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 102.5% ATK\n#2 Damage: 102.5% ATK\n#3 Damage: 102.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 96 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 4.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 108.6% ATK\n#2 Damage: 108.6% ATK\n#3 Damage: 108.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 101 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 4.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 114.8% ATK\n#2 Damage: 114.8% ATK\n#3 Damage: 114.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 110 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 125.1% ATK\n#2 Damage: 125.1% ATK\n#3 Damage: 125.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 121 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 137.4% ATK\n#2 Damage: 137.4% ATK\n#3 Damage: 137.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 130 damage per hit. Each hit Extends the duration of up to 4 random debuffs on the target by 5.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 147.6% ATK\n#2 Damage: 147.6% ATK\n#3 Damage: 147.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 141 damage per hit. Each hit Extends the duration of up to 4 random debuffs on the target by 5.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 159.9% ATK\n#2 Damage: 159.9% ATK\n#3 Damage: 159.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 150 damage per hit. Each hit Extends the duration of up to 4 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 170.1% ATK\n#2 Damage: 170.1% ATK\n#3 Damage: 170.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 161 damage per hit. Each hit Extends the duration of up to 5 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 182.4% ATK\n#2 Damage: 182.4% ATK\n#3 Damage: 182.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 170 damage per hit. Each hit Extends the duration of up to 5 random debuffs on the target by 7s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 192.7% ATK\n#2 Damage: 192.7% ATK\n#3 Damage: 192.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 180 damage per hit. Each hit Extends the duration of up to 6 random debuffs on the target by 7s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 205% ATK\n#2 Damage: 205% ATK\n#3 Damage: 205% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Remorse and Regret",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/raziel/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 231 damage per hit. Damage increases by 8% per debuff on the target, limited up to +40% damage. Damage increases by 5% for each 10% of the target's lost HP.\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 245 damage per hit. Damage increases by 10% per debuff on the target, limited up to +40% damage. Damage increases by 5% for each 10% of the target's lost HP.\n#1 Damage: 278.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 259 damage per hit. Damage increases by 10% per debuff on the target, limited up to +50% damage. Damage increases by 6% for each 10% of the target's lost HP.\n#1 Damage: 294% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 282 damage per hit. Damage increases by 10% per debuff on the target, limited up to +50% damage. Damage increases by 7% for each 10% of the target's lost HP.\n#1 Damage: 320.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 310 damage per hit. Damage increases by 12% per debuff on the target, limited up to +50% damage. Damage increases by 7% for each 10% of the target's lost HP.\n#1 Damage: 351.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 333 damage per hit. Damage increases by 12% per debuff on the target, limited up to +60% damage. Damage increases by 9% for each 10% of the target's lost HP.\n#1 Damage: 378% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 360 damage per hit. Damage increases by 14% per debuff on the target, limited up to +60% damage. Damage increases by 9% for each 10% of the target's lost HP.\n#1 Damage: 409.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 383 damage per hit. Damage increases by 14% per debuff on the target, limited up to +70% damage. Damage increases by 9% for each 10% of the target's lost HP.\n#1 Damage: 435.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 411 damage per hit. Damage increases by 16% per debuff on the target, limited up to +70% damage. Damage increases by 9% for each 10% of the target's lost HP.\n#1 Damage: 467.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 434 damage per hit. Damage increases by 16% per debuff on the target, limited up to +80% damage. Damage increases by 10% for each 10% of the target's lost HP.\n#1 Damage: 493.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 462 damage per hit. Damage increases by 16% per debuff on the target, limited up to +80% damage. Damage increases by 10% for each 10% of the target's lost HP.\n#1 Damage: 525% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Daze",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Once a Lightseeker Angel, Raziel fell from grace, and he fell hard. He hit rock bottom in an Evernight gutter, and he never really left – Raziel found the underworld to his taste. Now he runs it, as kingpin of the New Blood rebellion.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "E",
+  "hyxxis": "A+",
+  "koltmos": "E",
+  "omnissi-astral": "S",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "A+",
+  "omnissi-wind": "E",
+  "pentiax": "S",
+  "sakiel": "E",
+  "sorgott": "S",
+  "ulgorim": "E",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 41.1,
+  "lists": 16
+ }
+}

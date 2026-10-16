@@ -1,0 +1,245 @@
+{
+ "id": 169,
+ "slug": "terracotta_warrior",
+ "name": "Terracotta Warrior",
+ "title": "Living Statue",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "When first created, the army of terracotta warriors made up some of the funeral goods buried with an ancient emperor, intended to symbolically protect him in the afterlife. In Ryven, the changes in aether have rendered such figures susceptible to magical animation. They are now sculpted as mindless but mighty soldiers of Tian’s military leaders, serving as perfectly obedient shock troops.",
+ "rarity": "Uncommon",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Terracotta Warrior.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_TerracottaWarrior_main.png",
+ "stats": {
+  "hp": 1350,
+  "atk": 70,
+  "def": 76,
+  "spd": 86,
+  "init": 78,
+  "acc": 5,
+  "res": 15,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Earthen Restoration",
+   "description": "Attack 1 enemy 5%HP+55%ATK 2 times. Each hit heals this hero for 10% of the damage inflicted if the attack is a Crushing Hit.",
+   "icon_url": "/godforge/abilities/terracotta_warrior/ICON_TerracottaWarrior_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Ancient Vanguard",
+   "description": "Attack 1 enemy 10%HP+80%ATK 2 times. Each hit has a 50% chance to place [SPD Down I] on the target for 2 turns.\n\nThis ability has a 25% additional chance to Crushing Hit if this hero's HP is below 50%.",
+   "icon_url": "/godforge/abilities/terracotta_warrior/ICON_TerracottaWarrior_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+80%ATK",
+    "10%HP+80%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "SPD Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Eternal Mandate",
+   "description": "Attack 1 enemy 5%HP+55%ATK 3 times. Each hit decreases the target's Turn Meter by 10% if the attack is a Crushing Hit.",
+   "icon_url": "/godforge/abilities/terracotta_warrior/ICON_TerracottaWarrior_Ultimate.webp",
+   "divinity_cost": 2650,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

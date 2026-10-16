@@ -1,0 +1,156 @@
+{
+ "id": 96,
+ "slug": "desert_raider",
+ "name": "Desert Raider",
+ "title": "Nomadic Warrior",
+ "summary": "Use the knowledge of the desert to poison enemies and strike down your foes.",
+ "lore": "To supplement their own soldiers, nobles of Ekur often hire tribal mercenaries from beyond their borders. These outsiders are skilled warriors with even fiercer reputations, often capable of routing larger forces through blade-skill and intimidation. They are also, however, loyal to their own leaders, and may turn on their employers should greater opportunities present themselves.",
+ "rarity": "Common",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Desert Raider.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_DesertRaider_main.png",
+ "stats": {
+  "hp": 900,
+  "atk": 68,
+  "def": 65,
+  "spd": 83,
+  "init": 78,
+  "acc": 0,
+  "res": 0,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Poison Blades",
+   "description": "Attack 1 enemy 185%ATK 2 times with a 15% chance to place [Acid] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/desert_raider/ICON_DesertRaider_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "185%ATK",
+    "185%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Acid",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 15,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Nomadic Wisdom",
+   "description": "Attack 1 enemy 470%ATK, then place [ACC Up I] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/desert_raider/ICON_DesertRaider_Ultimate.webp",
+   "divinity_cost": 1350,
+   "damage_formula": [
+    "470%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ACC Up I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

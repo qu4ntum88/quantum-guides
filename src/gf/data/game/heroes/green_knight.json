@@ -1,0 +1,273 @@
+{
+ "id": 6,
+ "slug": "green_knight",
+ "name": "Green Knight",
+ "title": "Emerald Warden",
+ "summary": "Challenge your opponents to a Duel whilst Reflecting Damage back upon those who are unworthy.",
+ "lore": "Sir Bertilak de Hautdesert was transformed into something more than human by an entity of the faerie courts to test Arthur and his vassals. Gawain eventually passed his trials, but neither that nor the Shattering itself altered the Green Knight’s course. He still considers it his duty to judge the knights of Avalon, and his methods have grown even more lethal.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Green Knight.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Green Knight_main.png",
+ "stats": {
+  "hp": 1605,
+  "atk": 87,
+  "def": 93,
+  "spd": 90,
+  "init": 91,
+  "acc": 20,
+  "res": 45,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 11
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If this hero’s HP falls below 50%, place 2 [Mend] on this hero for 1 turns.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When [Taunt] expires on an enemy, attack the target using Curse of Gawain. Will not put Curse of Gawain on cooldown.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Curse of Gawain",
+   "description": "Attack 1 enemy 5%HP+55%ATK 3 times. Before attacking, has a 75% chance to place [Drain I] on the target for 3 turns.",
+   "icon_url": "/godforge/abilities/green_knight/ICON_GreenKnight_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Trial of Chivalry",
+   "description": "Steals all Buffs from an enemy then has a 75% chance to place [Taunt] on the target for 3 turns which cannot be blocked or removed. Also place [Retaliate] for 3 turns on this hero.",
+   "icon_url": "/godforge/abilities/green_knight/ICON_GreenKnight_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When Taunt expires on an enemy, attack the target using Curse of Gawain. Will not put Curse of Gawain on cooldown.",
+     "upgrade_description": "When [Taunt] expires on an enemy, attack the target using Curse of Gawain. Will not put Curse of Gawain on cooldown."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Exchange of Blows",
+   "description": "Reflects 30% of the damage inflicted to this hero back to the enemy.",
+   "icon_url": "/godforge/abilities/green_knight/ICON_GreenKnight_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Mend",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If this hero’s HP falls below 50%, place 2 Mend on this hero for 1 turns.",
+     "upgrade_description": "If this hero’s HP falls below 50%, place 2 [Mend] on this hero for 1 turns."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Great Cleave",
+   "description": "Attack 1 enemy 20%HP+200%ATK. Inflicts 50% of the damage dealt to enemies under [Taunt]. This attack is always normal hit and ignores the target's DEF.",
+   "icon_url": "/godforge/abilities/green_knight/ICON_GreenKnight_Ultimate.webp",
+   "divinity_cost": 2475,
+   "damage_formula": [
+    "20%HP+200%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "id": 59,
+ "slug": "seeress",
+ "name": "Seeress",
+ "title": "Wyrd-Weaver",
+ "summary": "Cast prophetic spells and predict the future gaining Extra Turns and casting Hex to your foes.",
+ "lore": "In the old world, these witches could peer along the strands of fate, telling fortunes and reading omens. Heroes, rulers, and even gods consulted them. Alas, when time Shattered along with the world, most seeresses of Asgard went mad. Some now spout nonsense, while others phrase their prophecies to trick their listeners—yet the clever can still find truth in their words.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Seeress.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Seeress_main.png",
+ "stats": {
+  "hp": 1110,
+  "atk": 89,
+  "def": 74,
+  "spd": 87,
+  "init": 88,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If all enemies receive [Hex I], gain an Extra Turn.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Temporal Distortion",
+   "description": "Attack 1 enemy 400%ATK. Decrease the target's Divinity by 10% if the target is not defeated. Increase this hero's Divinity by 10% if the target is defeated.",
+   "icon_url": "/godforge/abilities/seeress/ICON_Seeress_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "400%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Runic Echo",
+   "description": "Attack all enemies 330%ATK, then has a 75% chance to place [Hex I] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/seeress/ICON_Seeress_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Hex I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If all enemies receive Hex I, gain an Extra Turn.",
+     "upgrade_description": "If all enemies receive [Hex I], gain an Extra Turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Clairvoyance",
+   "description": "Has a 20% chance to gain an Extra Turn when inflicting a Crushing Hit.",
+   "icon_url": "/godforge/abilities/seeress/ICON_Seeress_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Butterfly Effect",
+   "description": "Place either [Sharpen I] or [ACC Up I] on this hero for 1 turn, then attack all enemies 330%ATK. Gain a 20% additional chance to place a Crushing Hit on each target under Hex.",
+   "icon_url": "/godforge/abilities/seeress/ICON_Seeress_Ultimate.webp",
+   "divinity_cost": 2025,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Clairvoyance",
+   "description": "Has a 10% chance to gain an Extra Turn when inflicting a Crushing Hit.",
+   "icon_url": "/godforge/abilities/seeress/ICON_Seeress_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

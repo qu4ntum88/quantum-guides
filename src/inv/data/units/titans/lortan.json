@@ -1,0 +1,501 @@
+{
+ "slug": "lortan",
+ "kind": "Titan",
+ "name": "Lortan",
+ "faction": "Beastbloods",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/lortan/portrait.webp",
+ "fullArt": "/invokers/units/titans/lortan/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+390",
+   "Bonus ATK": "+64",
+   "Bonus DEF": "+42",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,344",
+   "Bonus ATK": "+385",
+   "Bonus DEF": "+252",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/lortan/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 80 damage.\nDamage: 125% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 86 damage. Extends the duration of up to 2 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 85 damage.\nDamage: 132.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 92 damage. Extends the duration of up to 2 random debuffs on the target by 3.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 90 damage.\nDamage: 140% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 97 damage. Extends the duration of up to 2 random debuffs on the target by 3.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 98 damage.\nDamage: 152.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 105 damage. Extends the duration of up to 2 random debuffs on the target by 3.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 107 damage.\nDamage: 167.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 116 damage. Extends the duration of up to 2 random debuffs on the target by 3.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 115 damage.\nDamage: 180% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 124 damage. Extends the duration of up to 3 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 125 damage.\nDamage: 195% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 135 damage. Extends the duration of up to 3 random debuffs on the target by 4.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 133 damage.\nDamage: 207.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 143 damage. Extends the duration of up to 3 random debuffs on the target by 4.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 142 damage.\nDamage: 222.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 154 damage. Extends the duration of up to 3 random debuffs on the target by 4.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 150 damage.\nDamage: 235% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 162 damage. Extends the duration of up to 3 random debuffs on the target by 4.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 160 damage.\nDamage: 250% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 173 damage. Extends the duration of up to 4 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Celestial Burst",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/lortan/skills/1.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 176 damage. Casts a [15% Combo SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 187 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 197 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 9s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 215 damage. Casts a [17% Combo SPD Down] debuff on the target, lasting 9s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 236 damage. Casts a [18% Combo SPD Down] debuff on the target, lasting 9s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 253 damage. Casts a [18% Combo SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 275 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 292 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 11s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 313 damage. Casts a [22% Combo SPD Down] debuff on the target, lasting 11s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 331 damage. Casts a [22% Combo SPD Down] debuff on the target, lasting 13s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 352 damage. Casts a [25% Combo SPD Down] debuff on the target, lasting 13s.\nAccuracy required for: Combo SPD Down\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Starlight Pulse",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/lortan/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 85 damage. Casts a [25% ATK Down] debuff on the targets, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 90 damage. Casts a [27% ATK Down] debuff on the targets, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 95 damage. Casts a [27% ATK Down] debuff on the targets, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 103 damage. Casts a [29% ATK Down] debuff on the targets, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 114 damage. Casts a [31% ATK Down] debuff on the targets, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 122 damage. Casts a [31% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 132 damage. Casts a [33% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 141 damage. Casts a [33% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 151 damage. Casts a [36% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 159 damage. Casts a [36% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 7m semicircle in front of Lortan, from a distance of 2m, dealing 170 damage. Casts a [40% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/lortan/skills/3.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 136 damage. Casts a [0.75% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 3m radius by 0.38% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 212.5% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick\nINVOKATION END\nRemoves 2 random debuffs from the Bound Invoker. Then, extends the duration of up to 2 random buffs on the bound Invoker by 4s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 144 damage. Casts a [1% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 3m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 225.2% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick\nINVOKATION END\nRemoves 2 random debuffs from the Bound Invoker. Then, extends the duration of up to 2 random buffs on the bound Invoker by 4.4s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 152 damage. Casts a [1.1% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 3m radius by 0.55% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 238% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick\nINVOKATION END\nRemoves 2 random debuffs from the Bound Invoker. Then, extends the duration of up to 2 random buffs on the bound Invoker by 4.8s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 166 damage. Casts a [1.2% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 3m radius by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 259.2% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick\nINVOKATION END\nRemoves 2 random debuffs from the Bound Invoker. Then, extends the duration of up to 2 random buffs on the bound Invoker by 5.2s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 182 damage. Casts a [1.2% Burn] debuff on the targets, lasting 9s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 3m radius by 0.6% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 284.8% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\nINVOKATION END\nRemoves 2 random debuffs from the Bound Invoker. Then, extends the duration of up to 2 random buffs on the bound Invoker by 5.6s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 196 damage. Casts a [1.3% Burn] debuff on the targets, lasting 9s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 3m radius by 0.65% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 306% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\nINVOKATION END\nRemoves 3 random debuffs from the Bound Invoker. Then, extends the duration of up to 3 random buffs on the bound Invoker by 6s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 212 damage. Casts a [1.3% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 3m radius by 0.65% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 331.5% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick\nINVOKATION END\nRemoves 3 random debuffs from the Bound Invoker. Then, extends the duration of up to 3 random buffs on the bound Invoker by 6.4s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 226 damage. Casts a [1.4% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 3m radius by 0.7% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 352.8% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick\nINVOKATION END\nRemoves 3 random debuffs from the Bound Invoker. Then, extends the duration of up to 3 random buffs on the bound Invoker by 6.8s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 242 damage. Casts a [1.4% Burn] debuff on the targets, lasting 11s. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 3m radius by 0.7% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 378.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\nINVOKATION END\nRemoves 3 random debuffs from the Bound Invoker. Then, extends the duration of up to 3 random buffs on the bound Invoker by 7.2s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 256 damage. Casts a [1.5% Burn] debuff on the targets, lasting 11s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 3m radius by 0.75% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 399.5% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\nINVOKATION END\nRemoves 3 random debuffs from the Bound Invoker. Then, extends the duration of up to 3 random buffs on the bound Invoker by 7.6s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Lortan, dealing 272 damage. Casts a [1.5% Burn] debuff on the targets, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 3m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 425% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\nINVOKATION END\nRemoves 4 random debuffs from the Bound Invoker. Then, extends the duration of up to 4 random buffs on the bound Invoker by 8s."
+    }
+   ]
+  },
+  {
+   "name": "ACC Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/lortan/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +74 Accuracy.\nOutside Dungeon mode: +42 Accuracy."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +81.4 Accuracy.\nOutside Dungeon mode: +46.2 Accuracy."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +88.8 Accuracy.\nOutside Dungeon mode: +50.4 Accuracy."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +103.6 Accuracy.\nOutside Dungeon mode: +58.8 Accuracy."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +118.4 Accuracy.\nOutside Dungeon mode: +67.2 Accuracy."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +133.2 Accuracy.\nOutside Dungeon mode: +75.6 Accuracy."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +148 Accuracy.\nOutside Dungeon mode: +84 Accuracy."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Remnant once had a monastery of astrologers, who believed it was their purpose to care for the stars. That obsession drove them to create a Titan that could commune with the heavens. They spent even their souls, with no survivors. Lortan is their sole legacy.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "B",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "D",
+  "omnissi-dark": "B",
+  "omnissi-earth": "C",
+  "omnissi-fire": "D",
+  "omnissi-light": "D",
+  "omnissi-water": "D",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "D",
+  "sorgott": "D",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 25,
+  "lists": 16
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "id": 100,
+ "slug": "berserker",
+ "name": "Berserker",
+ "title": "Frenzied Norseman",
+ "summary": "Single Target Warrior capable of cleaving his foes and causing targets to bleed.",
+ "lore": "Worshiping the strength and ferocity of the bear, these fearsome soldiers are frenzied slayers on the battlefield. Shouting, howling, ignoring the pain of injury, they tear through enemy ranks. Since the Shattering, berserkers have grown more common as Asgard’s warriors turn wherever they can in search not only of strength, but an anchor for their emotions and faith in this unpredictable world.",
+ "rarity": "Common",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Berserker.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Berserker_main.png",
+ "stats": {
+  "hp": 885,
+  "atk": 73,
+  "def": 60,
+  "spd": 82,
+  "init": 82,
+  "acc": 0,
+  "res": 0,
+  "initial_divinity": 125,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Relentless Assault",
+   "description": "Attack 1 enemy 195%ATK 2 times with a 20% chance to gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/berserker/ICON_Berserker_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "195%ATK",
+    "195%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Skullsplitter",
+   "description": "Attack 1 enemy 500%ATK. Place [Sharpen I] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/berserker/ICON_Berserker_Ultimate.webp",
+   "divinity_cost": 1125,
+   "damage_formula": [
+    "500%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sharpen I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

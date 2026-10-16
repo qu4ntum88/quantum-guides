@@ -1,0 +1,290 @@
+{
+ "id": 25,
+ "slug": "brynhild",
+ "name": "Brynhild",
+ "title": "Exiled Valkyrie",
+ "summary": "Protect your allies with Radiant Power whilst reflecting Blaze back upon your foes.",
+ "lore": "Banished from the ranks of the Valkyrie, Brynhild proved a fearsome warrior, but the anger that drove her grew only greater as she was deceived and manipulated by various mortal factions. In Ryven, she has been restored to her former glory, but her greatest battles are not against Asgard’s foes, but against her own rage and jealous pride.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Brynhild.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Brynhild_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 63,
+  "def": 99,
+  "spd": 100,
+  "init": 86,
+  "acc": 15,
+  "res": 55,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Shield] 15%HP on all allies.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [Intercept] on all allies except this hero instead.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Power Lance",
+   "description": "Attack 1 enemy 155%DEF+165%ATK. Has a 50% chance to place [ATK Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/brynhild/ICON_Brynhild_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "155%DEF+165%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Reading the Runes",
+   "description": "Place Def Up II for 2 turns on all allies, then place [Intercept] on the ally with the lowest HP for 2 turns.",
+   "icon_url": "/godforge/abilities/brynhild/ICON_Brynhild_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Intercept",
+     "target": "AllyWithLeastStatExceptSelf",
+     "target_label": "AllyWithLeastStatExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place Intercept on all allies except this hero instead.",
+     "upgrade_description": "Place [Intercept] on all allies except this hero instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% DEF in All Battles",
+   "icon_url": "/godforge/abilities/brynhild/ICON_Leader_Defence.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Valkyrie's Aegis",
+   "description": "When an ally's HP falls below 50%, place [Shield] 20%HP on them.",
+   "icon_url": "/godforge/abilities/brynhild/ICON_Brynhild_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Ring of Flames",
+   "description": "Remove all Disables from this hero, then place [Radiance II] on all allies for 2 turns. Can be used while under a Disable.",
+   "icon_url": "/godforge/abilities/brynhild/ICON_Brynhild_Ultimate.webp",
+   "divinity_cost": 1700,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Shield 15%HP on all allies.",
+     "upgrade_description": "Also place [Shield] 15%HP on all allies."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Valkyrie's Aegis",
+   "description": "When this hero's HP falls below 50%, place [Shield] 10%HP on them.",
+   "icon_url": "/godforge/abilities/brynhild/ICON_Brynhild_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

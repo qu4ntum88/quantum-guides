@@ -1,0 +1,565 @@
+{
+ "slug": "icehound-torann",
+ "kind": "Invoker",
+ "name": "Icehound Torann",
+ "faction": "Ironbands",
+ "rarity": "Uncommon",
+ "class": "Tank",
+ "element": "Water",
+ "soulSign": "Sign of Actia",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/icehound-torann/portrait.webp",
+ "fullArt": "/invokers/units/invokers/icehound-torann/full.webp",
+ "stats": {
+  "base": {
+   "Health": "525",
+   "Attack": "19",
+   "Defense": "55",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "108"
+  },
+  "max": {
+   "Health": "6,830",
+   "Attack": "226",
+   "Defense": "721",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "148"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/icehound-torann/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+96",
+    "titan": "+52"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 13% ATK + 9% DEF\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 18% ATK + 13.5% DEF\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.5% ATK + 17.5% DEF\n#4 Attacks 1 enemy, dealing 18 damage.\nDamage: 32.5% ATK + 21.5% DEF\n#5 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.5% ATK + 26% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 13.8% ATK + 9.5% DEF\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 19.1% ATK + 14.3% DEF\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 27% ATK + 18.5% DEF\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.4% ATK + 22.8% DEF\n#5 Attacks 1 enemy, dealing 23 damage.\nDamage: 41.9% ATK + 27.6% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 14.6% ATK + 10.1% DEF\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 20.2% ATK + 15.1% DEF\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 28.6% ATK + 19.6% DEF\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 36.4% ATK + 24.1% DEF\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 44.2% ATK + 29.1% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 15.9% ATK + 11% DEF\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 22% ATK + 16.5% DEF\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 31.1% ATK + 21.4% DEF\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.6% ATK + 26.2% DEF\n#5 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.2% ATK + 31.7% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 17.4% ATK + 12.1% DEF\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 24.1% ATK + 18.1% DEF\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.2% ATK + 23.5% DEF\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 43.5% ATK + 28.8% DEF\n#5 Attacks 1 enemy, dealing 29 damage.\nDamage: 52.9% ATK + 34.8% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 18.7% ATK + 13% DEF\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 25.9% ATK + 19.4% DEF\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 36.7% ATK + 25.2% DEF\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.8% ATK + 31% DEF\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.9% ATK + 37.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 20.3% ATK + 14% DEF\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 28.1% ATK + 21.1% DEF\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 39.8% ATK + 27.3% DEF\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.7% ATK + 33.5% DEF\n#5 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.6% ATK + 40.6% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 21.6% ATK + 14.9% DEF\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 29.9% ATK + 22.4% DEF\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 42.3% ATK + 29% DEF\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 53.9% ATK + 35.7% DEF\n#5 Attacks 1 enemy, dealing 36 damage.\nDamage: 65.6% ATK + 43.2% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.1% ATK + 16% DEF\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 32% ATK + 24% DEF\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 45.4% ATK + 31.1% DEF\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 57.8% ATK + 38.3% DEF\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 70.3% ATK + 46.3% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK + 16.9% DEF\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 33.8% ATK + 25.4% DEF\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 47.9% ATK + 32.9% DEF\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.1% ATK + 40.4% DEF\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 74.3% ATK + 48.9% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 26% ATK + 18% DEF\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 36% ATK + 27% DEF\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 51% ATK + 35% DEF\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 65% ATK + 43% DEF\n#5 Attacks 1 enemy, dealing 44 damage.\nDamage: 79% ATK + 52% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Frostbite",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/icehound-torann/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 44 damage.\n#1 Damage: 77.5% ATK + 53.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 47 damage.\n#1 Damage: 82.1% ATK + 56.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 86.8% ATK + 59.9% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 54 damage.\n#1 Damage: 94.6% ATK + 65.3% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 59 damage.\n#1 Damage: 103.8% ATK + 71.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 64 damage.\n#1 Damage: 111.6% ATK + 77% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 69 damage.\n#1 Damage: 120.9% ATK + 83.5% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 128.6% ATK + 88.8% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 137.9% ATK + 95.2% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage.\n#1 Damage: 145.7% ATK + 100.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage.\n#1 Damage: 155% ATK + 107% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Ice Fang",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/icehound-torann/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+54",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage. Launches the target for 1.3s.\nAccuracy required for: Launch\n#1 Damage: 155% ATK + 105% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage. Launches the target for 1.3s.\nAccuracy required for: Launch\n#1 Damage: 164.3% ATK + 111.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage. Launches the target for 1.4s.\nAccuracy required for: Launch\n#1 Damage: 173.6% ATK + 117.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 106 damage. Launches the target for 1.5s.\nAccuracy required for: Launch\n#1 Damage: 189.1% ATK + 128.1% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage. Launches the target for 1.5s.\nAccuracy required for: Launch\n#1 Damage: 207.7% ATK + 140.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 126 damage. Launches the target for 1.6s.\nAccuracy required for: Launch\n#1 Damage: 223.2% ATK + 151.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 136 damage. Launches the target for 1.6s.\nAccuracy required for: Launch\n#1 Damage: 241.8% ATK + 163.8% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 145 damage. Launches the target for 1.8s.\nAccuracy required for: Launch\n#1 Damage: 257.3% ATK + 174.3% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 155 damage. Launches the target for 1.8s.\nAccuracy required for: Launch\n#1 Damage: 275.9% ATK + 186.9% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 164 damage. Launches the target for 2s.\nAccuracy required for: Launch\n#1 Damage: 291.4% ATK + 197.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 174 damage. Launches the target for 2s.\nAccuracy required for: Launch\n#1 Damage: 310% ATK + 210% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Icebreaker",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/icehound-torann/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+41",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 45 damage. Casts a [13% Move SPD Down] debuff on the targets, lasting 7s.\nAccuracy required for: Move SPD Down\n#1 Damage: 80% ATK + 54.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 48 damage. Casts a [13% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 84.8% ATK + 57.8% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 51 damage. Casts a [13% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 89.6% ATK + 61% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 55 damage. Casts a [14% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 97.6% ATK + 66.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 61 damage. Casts a [14% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 107.2% ATK + 73% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 65 damage. Casts a [14% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 115.2% ATK + 78.5% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 70 damage. Casts a [15% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 124.8% ATK + 85% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 75 damage. Casts a [15% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 132.8% ATK + 90.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 80 damage. Casts a [15% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 142.4% ATK + 97% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 85 damage. Casts a [16% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 150.4% ATK + 102.5% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 6m cone in front of Torann, dealing 90 damage. Casts a [18% Move SPD Down] debuff on the targets, lasting 11s.\nAccuracy required for: Move SPD Down\n#1 Damage: 160% ATK + 109% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Cold Rage",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/icehound-torann/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Crit DMG Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Damage stat by the indicated percentage."
+    },
+    {
+     "label": "Freeze",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns are paused.The recipient will take 75% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 10s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 10s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 147 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 265% ATK + 175% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 11s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 10s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 155 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 280.9% ATK + 185.5% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 11s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 11s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 164 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 296.8% ATK + 196% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 12s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 11s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 179 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 323.3% ATK + 213.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 12s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 12s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 196 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 355.1% ATK + 234.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 12s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 13s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 211 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 381.6% ATK + 252% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [10% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 13s. Then, casts a [10% Crit DMG Down] debuff on the targets, lasting 13s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 229 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 413.4% ATK + 273% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [12% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 13s. Then, casts a [12% Crit DMG Down] debuff on the targets, lasting 13s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 243 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 439.9% ATK + 290.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [12% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 13s. Then, casts a [12% Crit DMG Down] debuff on the targets, lasting 13s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 261 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 471.7% ATK + 311.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [12% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 13s. Then, casts a [15% Crit DMG Down] debuff on the targets, lasting 13s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 276 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 498.2% ATK + 329% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Casts a [15% ATK Down] debuff on 7 enemies in a 5.5m radius around Torann, lasting 13s. Then, casts a [15% Crit DMG Down] debuff on the targets, lasting 13s. Then, casts a [Freeze] debuff on the targets, lasting 3s. Frozen targets cannot move or use Skills, take reduced damage from attacks (75%), and their Skill Cooldowns will be stopped. \nAttacks 1 enemy, dealing 293 damage.\nAccuracy required for: ATK Down, Crit DMG Down, Freeze\n#1 Damage: 530% ATK + 350% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Torann used to be like any other Winterguard – boastful, arrogant, skilled. But after a Cold Iron spear ripped through his chest, nicking his heart, he became the Icehound; an unrelenting hunter, as cold and tenacious as a winter storm.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

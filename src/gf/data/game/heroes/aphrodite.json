@@ -1,0 +1,311 @@
+{
+ "id": 12,
+ "slug": "aphrodite",
+ "name": "Aphrodite",
+ "title": "Heavenly Desire",
+ "summary": "Charms and Dazes her foes with spells of her beauty while empowering her allies to fight for her.",
+ "lore": "The Olympian goddess of love and beauty, Aphrodite is often mistaken for a gentle or even meek goddess. In truth, her wrath when she is spurned or slighted—sometimes to only the faintest degree—is dreadful. This tendency has only increased since the Shattering, as her obsessions with certain gods or heroes of other domains is not always returned in kind.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/5917/6703/4397/Aphrodite.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/1517/7888/9146/2026-05-15_18_51_33-Aphrodite___Hero_Index___Godforge.png",
+ "stats": {
+  "hp": 1440,
+  "atk": 55,
+  "def": 101,
+  "spd": 105,
+  "init": 93,
+  "acc": 15,
+  "res": 50,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "[SPD Up II] and [FTH Up II] cannot be removed or blocked.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Remove all Disable and Debuff from allies under [SPD Up II] and [FTH Up II].",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Allies under [SPD Up II] and [FTH Up II] gain 20% increased incoming healing and inflict 20% increased damage.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Lovers Duet",
+   "description": "Attack 1 enemy 330%ATK+50%SPD. Allies under [SPD Up II] and [FTH Up II] will join this attack, using their Basic Ability.\n\nAfter attacking, place [SPD Up II] for 2 turns on this hero.",
+   "icon_url": "/godforge/abilities/aphrodite/ICON_Aphrodite_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Divine Sacrament",
+   "description": "Target 1 ally and place [SPD Up II] and [FTH Up II] for 2 turns, then gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/aphrodite/ICON_Aphrodite_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Up II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "SPD Up II and FTH Up II cannot be removed or blocked.",
+     "upgrade_description": "[SPD Up II] and [FTH Up II] cannot be removed or blocked."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "24% SPD in All Battles",
+   "icon_url": "/godforge/abilities/aphrodite/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Motivation",
+   "description": "Allies gain 5% Turn Meter when inflicting damage to an enemy. This effect is doubled on allies who are under [SPD Up II] and [FTH Up II].",
+   "icon_url": "/godforge/abilities/aphrodite/ICON_Aphrodite_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Allies under SPD Up II and FTH Up II gain 20% increased incoming healing and inflict 20% increased damage.",
+     "upgrade_description": "Allies under [SPD Up II] and [FTH Up II] gain 20% increased incoming healing and inflict 20% increased damage."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Eternal Bonds",
+   "description": "Attack all enemies 270%ATK+50%SPD then extends the duration of any [SPD Up II] and [FTH Up II] on all allies by 1 turn.\n\nAlso increases the Turn Meter and Divinity of all allies by 25%. This effect is doubled on allies who are under [SPD Up II] and [FTH Up II].",
+   "icon_url": "/godforge/abilities/aphrodite/ICON_Aphrodite_Ultimate.webp",
+   "divinity_cost": 4500,
+   "damage_formula": [
+    "270%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Remove all Disable and Debuff from allies under SPD Up II and FTH Up II.",
+     "upgrade_description": "Remove all Disable and Debuff from allies under [SPD Up II] and [FTH Up II]."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Motivation",
+   "description": "This hero gains 5% Turn Meter when inflicting damage to an enemy. This effect is doubled if this hero is under [SPD Up II] and [FTH Up II].",
+   "icon_url": "/godforge/abilities/aphrodite/ICON_Aphrodite_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

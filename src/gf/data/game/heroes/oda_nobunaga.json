@@ -1,0 +1,296 @@
+{
+ "id": 86,
+ "slug": "oda_nobunaga",
+ "name": "Oda Nobunaga",
+ "title": "Demon Daimyo",
+ "summary": "Lead your clan to victory with powerful self-buffs, stat gains and joint Attacks",
+ "lore": "A great daimyo before the Shattering, Oda Nobunaga led a series of wars that largely unified the provinces. Now he is a figure around which much of Izumo’s mortal population has rallied—but some lords of the realm choose to remain independent. Believing only a united Izumo can survive Ryven, Oda Nobunaga again readies himself to lead a war of unification.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Oda Nobunaga.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_OdaNobunaga_main.png",
+ "stats": {
+  "hp": 1590,
+  "atk": 57,
+  "def": 98,
+  "spd": 106,
+  "init": 94,
+  "acc": 15,
+  "res": 50,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 9
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also, place [Precision] on all allies for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Turn Meter increase is now 100% when defeating an enemy.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Revive 1 random ally with 50% HP and 100% Divinity when an enemy is defeated. Can only occur once per turn.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Daimyo Claim",
+   "description": "Attack 1 enemy 335%ATK+50%SPD, then increase the duration of 1 random Buff on all allies by 1 turn and decrease the duration of 1 random Debuff on all allies by 1 turn.",
+   "icon_url": "/godforge/abilities/oda_nobunaga/ICON_OdaNobunaga_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "335%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Unyielding Ambition",
+   "description": "Attack all enemies 275%ATK+50%SPD, then place [SPD Up II] and [ATK Up II] on all allies for 2 turns.",
+   "icon_url": "/godforge/abilities/oda_nobunaga/ICON_OdaNobunaga_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "275%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Precision",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also, place Precision on all allies for 2 turns.",
+     "upgrade_description": "Also, place [Precision] on all allies for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "24% SPD in All Battles",
+   "icon_url": "/godforge/abilities/oda_nobunaga/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Unify the Realms",
+   "description": "Each time an enemy is defeated, the ally with the highest ATK gains an Extra Turn.",
+   "icon_url": "/godforge/abilities/oda_nobunaga/ICON_OdaNobunaga_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Revive 1 random ally with 50% HP and 100% Divinity when an enemy is defeated. Can only occur once per turn.",
+     "upgrade_description": "Revive 1 random ally with 50% HP and 100% Divinity when an enemy is defeated. Can only occur once per turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Imperial Conquest",
+   "description": "Attack 1 enemy 480%ATK+50%SPD. All allies join the attack with the Basic Ability. Allies from Izumo ignore 10% of the target's DEF. Increase this hero's Turn Meter by 50% if an enemy is defeated.",
+   "icon_url": "/godforge/abilities/oda_nobunaga/ICON_OdaNobunaga_Ultimate.webp",
+   "divinity_cost": 3300,
+   "damage_formula": [
+    "480%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Turn Meter increase is now 100% when defeating an enemy.",
+     "upgrade_description": "Turn Meter increase is now 100% when defeating an enemy."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Unify the Realms",
+   "description": "Each time this hero defeats an enemy, gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/oda_nobunaga/ICON_OdaNobunaga_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

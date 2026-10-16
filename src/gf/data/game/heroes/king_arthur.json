@@ -1,0 +1,330 @@
+{
+ "id": 7,
+ "slug": "king_arthur",
+ "name": "King Arthur",
+ "title": "Lord of Camelot",
+ "summary": "Stalwart protector that’s capable of retaliating often while protecting allies.",
+ "lore": "The Once and Future King has returned, yet he has not accomplished what many expected. Though he rules a portion of Avalon, he has made no move to unite its disparate domains, nor has he launched attacks against the Realm’s enemies. Whether his recalcitrance is due to the Morrigan’s other plans, or his own unspoken ambitions or fears, remains an oft-debated question.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/King Arthur.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_King Arthur_main.png",
+ "stats": {
+  "hp": 1320,
+  "atk": 68,
+  "def": 115,
+  "spd": 108,
+  "init": 93,
+  "acc": 20,
+  "res": 75,
+  "initial_divinity": 850,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Additionally, place [Intercept] on allies from Avalon for 1 turn.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Damage from [Intercept] is reduced by 100%.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When an ally under [Vanish] is attacked, reduce the damage received by 25% and increase this hero’s Divinity by 5%.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Loyal Strike",
+   "description": "Attack 1 enemy 160%DEF+160%ATK. Place [Intercept] on the ally with the Highest FTH for 2 turns.",
+   "icon_url": "/godforge/abilities/king_arthur/ICON_KingArthur_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "160%DEF+160%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "AllyWithHighestStatExceptSelf",
+     "target_label": "AllyWithHighestStatExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Additionally, place Intercept on allies from Avalon for 1 turn.",
+     "upgrade_description": "Additionally, place [Intercept] on allies from Avalon for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Excaliburs Call",
+   "description": "Attack all enemies 130%DEF+130%ATK with a 75% chance to place [ATK Down II] and [FTH Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/king_arthur/ICON_KingArthur_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "130%DEF+130%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% HP in Dungeon Battles",
+   "icon_url": "/godforge/abilities/king_arthur/ICON_Leader_Health.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Blessing of the Grail",
+   "description": "When this hero Intercepts an attack, reduce the damage taken by 50% and heal 10%HP this hero.",
+   "icon_url": "/godforge/abilities/king_arthur/ICON_KingArthur_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Damage from Intercept is reduced by 100%.",
+     "upgrade_description": "Damage from [Intercept] is reduced by 100%."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Kings Oath",
+   "description": "Place [Ward] for 2 turns on this hero then place [Vanish] on all allies except this hero for 2 turns.\n\nAlso has an 80% chance to place [Taunt] on all enemies for 1 turn.",
+   "icon_url": "/godforge/abilities/king_arthur/ICON_KingArthur_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Ward",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vanish",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When an ally under Vanish is attacked, reduce the damage received by 25% and increase this hero’s Divinity by 5%.",
+     "upgrade_description": "When an ally under [Vanish] is attacked, reduce the damage received by 25% and increase this hero’s Divinity by 5%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Blessing of the Grail",
+   "description": "When this hero Intercepts an attack, reduce the damage taken by 25% and heal 10%HP this hero.",
+   "icon_url": "/godforge/abilities/king_arthur/ICON_KingArthur_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

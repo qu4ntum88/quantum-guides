@@ -1,0 +1,277 @@
+{
+ "id": 223,
+ "slug": "diao_chan",
+ "name": "Diao Chan",
+ "title": "Sable Lady",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Once a courtesan and adroit politician, Diao Chan shaped history by turning ambitious leaders such as Lu Bu against one another. Over time, however, she has grown tired of such indirect methods. Now she uses her skills to infiltrate and assassinate, gradually molding the mortal governments of Tian—though to what precise end, or on whose behalf, are secrets she holds close.",
+ "rarity": "Rare",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Diao Chan.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Diao Chan_main.png",
+ "stats": {
+  "hp": 1170,
+  "atk": 68,
+  "def": 75,
+  "spd": 92,
+  "init": 93,
+  "acc": 25,
+  "res": 15,
+  "initial_divinity": 400,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_turnmeter_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_turnmeter_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the start of the wave, place [Charm] on the enemy with the highest ATK for 2 turns.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Stolen Devotion",
+   "description": "Attack 1 enemy 310%ATK and decrease the target’s Divinity by 10%. If the target is under [Charm], will steal the Divinity instead.",
+   "icon_url": "/godforge/abilities/diao_chan/ICON_DiaoChan_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "310%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Alluring Presence",
+   "description": "Place [Charm] on the target for 3 turns then decrease the Divinity of all enemies by 15%. If a target’s Divinity falls below 10% then place [Sleep] on the target for 2 turn.",
+   "icon_url": "/godforge/abilities/diao_chan/ICON_DiaoChan_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Charm",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sleep",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Courtesan's Guile",
+   "description": "When an enemy under [Charm] has their Turn Meter or Divinity increased, this hero gains the same amount.",
+   "icon_url": "/godforge/abilities/diao_chan/ICON_DiaoChan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Charm",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the start of the wave, place Charm on the enemy with the highest ATK for 2 turns.",
+     "upgrade_description": "At the start of the wave, place [Charm] on the enemy with the highest ATK for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Dance of Falling Petals",
+   "description": "Attack 1 enemy 175%ATK 3 times. Each hit decreases the target’s Turn Meter by 5%. If the target is under [Charm], decrease the Turn Meter of all enemies instead.",
+   "icon_url": "/godforge/abilities/diao_chan/ICON_DiaoChan_Ultimate.webp",
+   "divinity_cost": 2150,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK",
+    "175%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Courtesan's Guile",
+   "description": "When an enemy under [Charm] has their Turn Meter or Divinity increased, this hero gains 50% of that amount.",
+   "icon_url": "/godforge/abilities/diao_chan/ICON_DiaoChan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

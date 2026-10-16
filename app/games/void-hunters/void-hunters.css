@@ -1,0 +1,13 @@
+/* ─── Void Hunters hub ────────────────────────────────────────────────────────
+   Palette and display face come from src/qgg/worlds.css ([data-world='voidhunters']). */
+.vh-resources { display: grid; }
+.vh-resource { display: flex; align-items: center; gap: 1.25rem; padding: 0.8rem 0; border-bottom: 1px solid var(--w-line); }
+.vh-resource:last-child { border-bottom: 0; }
+.vh-resource .btn { flex: 0 0 11rem; text-align: center; font-size: 0.85rem; padding: 0.6rem 1rem; white-space: nowrap; }
+.vh-resource p { margin: 0; color: color-mix(in srgb, var(--w-text) 82%, transparent); line-height: 1.65; font-size: 0.92rem; }
+.vh-tight { grid-template-columns: repeat(auto-fill, minmax(5.2rem, 1fr)); padding: 0; }
+.main-content .w-card, .sidebar .w-card { margin-bottom: 0; }
+@media (max-width: 640px) {
+  .vh-resource { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+  .vh-resource .btn { flex-basis: auto; }
+}

@@ -22,6 +22,8 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 export type EntityType = 'champion' | 'legacy'
+/** Official (Quantum) lists in `official_tiers`: DCDL's two plus the other games' (src/qgg/game-tiers.ts). */
+export type OfficialType = EntityType | 'gf_hero' | 'vh_hunter'
 
 export const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D'] as const
 
@@ -46,7 +48,7 @@ type OfficialRow = { entity_type: string; entity_id: string; tier: string | null
 export type TierOverride = { tier: string; previousTier?: string; position: number }
 
 /** null = no overrides saved yet (or DB unreachable) → use the JSON as-is. */
-export async function getOfficialTiers(type: EntityType): Promise<Map<string, TierOverride> | null> {
+export async function getOfficialTiers(type: OfficialType): Promise<Map<string, TierOverride> | null> {
   const rows = await rest<OfficialRow>(
     `official_tiers?select=entity_id,tier,previous_tier,position&entity_type=eq.${type}&order=position.asc`
   )

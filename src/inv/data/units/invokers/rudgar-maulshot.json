@@ -1,0 +1,543 @@
+{
+ "slug": "rudgar-maulshot",
+ "kind": "Invoker",
+ "name": "Rudgar Maulshot",
+ "faction": "Stonehearts",
+ "rarity": "Uncommon",
+ "class": "Ranged Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/rudgar-maulshot/portrait.webp",
+ "fullArt": "/invokers/units/invokers/rudgar-maulshot/full.webp",
+ "stats": {
+  "base": {
+   "Health": "325",
+   "Attack": "58",
+   "Defense": "36",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "101"
+  },
+  "max": {
+   "Health": "3,956",
+   "Attack": "811",
+   "Defense": "427",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "126"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/rudgar-maulshot/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+134",
+    "titan": "+73"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 21.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 32.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 42% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 51.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 34% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 22.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 34.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 44.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 54.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage.\nDamage: 36% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 24.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 36.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 47% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 57.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage.\nDamage: 38.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 26.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 39.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 51.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 62.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage.\nDamage: 41.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 28.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 43.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 56.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 69% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage.\nDamage: 45.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 31% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 46.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 60.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 74.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 28 damage.\nDamage: 49% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 50.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 80.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 31 damage.\nDamage: 53% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 35.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 53.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 69.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 85.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 33 damage.\nDamage: 56.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 38.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 57.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 74.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 91.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 35 damage.\nDamage: 60.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 40.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 61.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 79% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 96.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 37 damage.\nDamage: 63.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 43% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 65% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 84% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 103% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 39 damage.\nDamage: 68% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cannon Blast",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rudgar-maulshot/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 76 damage.\n#1 Damage: 130.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 80 damage.\n#1 Damage: 138.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 85 damage.\n#1 Damage: 146.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 92 damage.\n#1 Damage: 159.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 101 damage.\n#1 Damage: 174.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 109 damage.\n#1 Damage: 187.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 118 damage.\n#1 Damage: 203.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 126 damage.\n#1 Damage: 216.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 135 damage.\n#1 Damage: 232.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 142 damage.\n#1 Damage: 245.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 151 damage.\n#1 Damage: 261% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Iron Rain",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rudgar-maulshot/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 155 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 2s if the hit lands as a critical hit.\n#1 Damage: 267% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 164 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 2.5s if the hit lands as a critical hit.\n#1 Damage: 283% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 173 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 2.5s if the hit lands as a critical hit.\n#1 Damage: 299% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 189 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 3s if the hit lands as a critical hit.\n#1 Damage: 325.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 208 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 3s if the hit lands as a critical hit.\n#1 Damage: 357.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 223 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 3.5s if the hit lands as a critical hit.\n#1 Damage: 384.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 242 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 3.5s if the hit lands as a critical hit.\n#1 Damage: 416.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 257 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 4s if the hit lands as a critical hit.\n#1 Damage: 443.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 276 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 4s if the hit lands as a critical hit.\n#1 Damage: 475.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 291 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 5s if the hit lands as a critical hit.\n#1 Damage: 502% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 310 damage. Reduces the cooldown of Active Skill 3 on Rudgar by 5s if the hit lands as a critical hit.\n#1 Damage: 534% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Savage Claw",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/rudgar-maulshot/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+47",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 77 damage. Rudgar gains 5 Ultimate Mana for each critical hit.\n#1 Damage: 133% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 82 damage. Rudgar gains 6 Ultimate Mana for each critical hit.\n#1 Damage: 141% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 86 damage. Rudgar gains 6 Ultimate Mana for each critical hit.\n#1 Damage: 149% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 94 damage. Rudgar gains 7 Ultimate Mana for each critical hit.\n#1 Damage: 162.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 103 damage. Rudgar gains 7 Ultimate Mana for each critical hit.\n#1 Damage: 178.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 111 damage. Rudgar gains 8 Ultimate Mana for each critical hit.\n#1 Damage: 191.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 120 damage. Rudgar gains 8 Ultimate Mana for each critical hit.\n#1 Damage: 207.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 128 damage. Rudgar gains 9 Ultimate Mana for each critical hit.\n#1 Damage: 220.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 137 damage. Rudgar gains 9 Ultimate Mana for each critical hit.\n#1 Damage: 236.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 145 damage. Rudgar gains 10 Ultimate Mana for each critical hit.\n#1 Damage: 250% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 154 damage. Rudgar gains 10 Ultimate Mana for each critical hit.\n#1 Damage: 266% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ursine Tremor",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rudgar-maulshot/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 130 damage per hit. Damage increases by 10% per debuff on the target, limited up to +75% damage.\n#1 Damage: 224% ATK\n#2 Damage: 224% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 138 damage per hit. Damage increases by 12% per debuff on the target, limited up to +75% damage.\n#1 Damage: 237.4% ATK\n#2 Damage: 237.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 146 damage per hit. Damage increases by 14% per debuff on the target, limited up to +75% damage.\n#1 Damage: 250.9% ATK\n#2 Damage: 250.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 159 damage per hit. Damage increases by 14% per debuff on the target, limited up to +100% damage.\n#1 Damage: 273.3% ATK\n#2 Damage: 273.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 174 damage per hit. Damage increases by 14% per debuff on the target, limited up to +100% damage.\n#1 Damage: 300.2% ATK\n#2 Damage: 300.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 187 damage per hit. Damage increases by 16% per debuff on the target, limited up to +100% damage.\n#1 Damage: 322.6% ATK\n#2 Damage: 322.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 203 damage per hit. Damage increases by 18% per debuff on the target, limited up to +100% damage.\n#1 Damage: 349.4% ATK\n#2 Damage: 349.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 216 damage per hit. Damage increases by 18% per debuff on the target, limited up to +125% damage.\n#1 Damage: 371.8% ATK\n#2 Damage: 371.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 231 damage per hit. Damage increases by 18% per debuff on the target, limited up to +150% damage.\n#1 Damage: 398.7% ATK\n#2 Damage: 398.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 244 damage per hit. Damage increases by 20% per debuff on the target, limited up to +150% damage.\n#1 Damage: 421.1% ATK\n#2 Damage: 421.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 260 damage per hit. Damage increases by 20% per debuff on the target, limited up to +150% damage.\n#1 Damage: 448% ATK\n#2 Damage: 448% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "With a heavy-hitting portable cannon, a claw that makes dragons jealous, and a cozy pelt to keep him safe no matter how cold it gets, Rudgar is ready for anything. Except puzzles. Unless he can “solve” it with a cannon – or maul it.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "D",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "D",
+  "omnissi-wind": "E",
+  "pentiax": "D",
+  "sakiel": "E",
+  "sorgott": "D",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 3.6,
+  "lists": 16
+ }
+}

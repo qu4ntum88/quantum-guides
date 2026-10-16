@@ -1,0 +1,296 @@
+{
+ "id": 52,
+ "slug": "eurydice",
+ "name": "Eurydice",
+ "title": "Vengeful Muse",
+ "summary": "Disruptor who lowers divinity and tandems with Orpheus.",
+ "lore": "Of all the shades in Hades’ realm, few have as much cause to hate him as Eurydice. When her husband Orpheus charmed his way into the underworld to retrieve her, she was permitted to go—then yanked back at the last moment. Eurydice now seeks any opportunity for vengeance against Hades and Persephone, though so far none has presented itself.",
+ "rarity": "Rare",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Eurydice.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Eurydice_main.png",
+ "stats": {
+  "hp": 1215,
+  "atk": 70,
+  "def": 76,
+  "spd": 94,
+  "init": 94,
+  "acc": 20,
+  "res": 15,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Enemies under a Disable generate 50% less Divinity.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Lyric of Silence",
+   "description": "Attack 1 enemy 335%ATK with a 35% chance to place [Sleep] for 2 turns.\n\nIf Orpheus is an ally, increase the chance to place [Sleep] by 50%.",
+   "icon_url": "/godforge/abilities/eurydice/ICON_Eurydice_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "335%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sleep",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 35,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sleep",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 85,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Lyric of Binding",
+   "description": "Attack 1 enemy 480%ATK with a 50% chance to place [Stun] on the target for 1 turn.\n\nIf Orpheus is an ally, increase the chance to place [Stun] by 50%.",
+   "icon_url": "/godforge/abilities/eurydice/ICON_Eurydice_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "480%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Lyric of Vengeance",
+   "description": "When an enemy with a Disable takes a turn, decrease their Divinity by 10%.",
+   "icon_url": "/godforge/abilities/eurydice/ICON_Eurydice_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Enemies under a Disable generate 50% less Divinity.",
+     "upgrade_description": "Enemies under a Disable generate 50% less Divinity."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Lyric of Orpheus",
+   "description": "Attack all enemies 275%ATK with an 80% chance to decrease each target’s Turn Meter by 10% and place [SPD Down I] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/eurydice/ICON_Eurydice_Ultimate.webp",
+   "divinity_cost": 2800,
+   "damage_formula": [
+    "275%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Lyric of Vengeance",
+   "description": "When an enemy with a Disable takes a turn, decrease their Divinity by 5%.",
+   "icon_url": "/godforge/abilities/eurydice/ICON_Eurydice_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

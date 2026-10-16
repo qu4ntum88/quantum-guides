@@ -1,0 +1,555 @@
+{
+ "slug": "anarose",
+ "kind": "Invoker",
+ "name": "Anarose",
+ "faction": "Magi",
+ "rarity": "Rare",
+ "class": "Support",
+ "element": "Earth",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/anarose/portrait.webp",
+ "fullArt": "/invokers/units/invokers/anarose/full.webp",
+ "stats": {
+  "base": {
+   "Health": "594",
+   "Attack": "56",
+   "Defense": "44",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "7,457",
+   "Attack": "694",
+   "Defense": "506",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/anarose/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+108",
+    "titan": "+59"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 5 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy, dealing 8 damage.\nDamage: 13.5% ATK\n#3 Attacks 1 enemy, dealing 10 damage.\nDamage: 17.5% ATK\n#4 Attacks 1 enemy, dealing 13 damage.\nDamage: 23% ATK\n#5 Attacks 1 enemy, dealing 15 damage.\nDamage: 27% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy, dealing 8 damage.\nDamage: 14.3% ATK\n#3 Attacks 1 enemy, dealing 10 damage.\nDamage: 18.5% ATK\n#4 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK\n#5 Attacks 1 enemy, dealing 16 damage.\nDamage: 28.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy, dealing 8 damage.\nDamage: 15.1% ATK\n#3 Attacks 1 enemy, dealing 11 damage.\nDamage: 19.6% ATK\n#4 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.8% ATK\n#5 Attacks 1 enemy, dealing 17 damage.\nDamage: 30.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 11.6% ATK\n#2 Attacks 1 enemy, dealing 9 damage.\nDamage: 16.5% ATK\n#3 Attacks 1 enemy, dealing 12 damage.\nDamage: 21.4% ATK\n#4 Attacks 1 enemy, dealing 16 damage.\nDamage: 28.1% ATK\n#5 Attacks 1 enemy, dealing 18 damage.\nDamage: 32.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 12.7% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 18.1% ATK\n#3 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.5% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 30.8% ATK\n#5 Attacks 1 enemy, dealing 20 damage.\nDamage: 36.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 13.7% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 19.4% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.2% ATK\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 33.1% ATK\n#5 Attacks 1 enemy, dealing 22 damage.\nDamage: 38.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 14.8% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 21.1% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 27.3% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 35.9% ATK\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 42.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 15.8% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 22.4% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 29% ATK\n#4 Attacks 1 enemy, dealing 21 damage.\nDamage: 38.2% ATK\n#5 Attacks 1 enemy, dealing 25 damage.\nDamage: 44.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 24% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 31.1% ATK\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 40.9% ATK\n#5 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 17.9% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.4% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 32.9% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 43.2% ATK\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 19% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 27% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 35% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 46% ATK\n#5 Attacks 1 enemy, dealing 30 damage.\nDamage: 54% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Fell Sweep",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/anarose/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+23",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 87.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 52 damage.\n#1 Damage: 92.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 55 damage.\n#1 Damage: 98% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 60 damage.\n#1 Damage: 106.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 117.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 71 damage.\n#1 Damage: 126% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 76 damage.\n#1 Damage: 136.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 81 damage.\n#1 Damage: 145.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage.\n#1 Damage: 155.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage.\n#1 Damage: 164.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage.\n#1 Damage: 175% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Call Torpor",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/anarose/skills/2.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 102 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 182.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 108 damage. Casts a [30% Move SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 193.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage. Casts a [35% Move SPD Down] debuff on the target, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 204.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage. Casts a [35% Move SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 222.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Casts a [35% Move SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 244.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 147 damage. Casts a [40% Move SPD Down] debuff on the target, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 262.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Casts a [40% Move SPD Down] debuff on the target, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 284.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage. Casts a [45% Move SPD Down] debuff on the target, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 303% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 182 damage. Casts a [50% Move SPD Down] debuff on the target, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 324.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 192 damage. Casts a [60% Move SPD Down] debuff on the target, lasting 12s.\nAccuracy required for: Move SPD Down\n#1 Damage: 343.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 204 damage. Casts a [60% Move SPD Down] debuff on the target, lasting 15s.\nAccuracy required for: Move SPD Down\n#1 Damage: 365% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Destiny Chance",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/anarose/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 20%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 20%) HP.\n#1 Damage: 194.5% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 20%\n#3 Heal: (Target's MAX HP - Target's HP) * 20%"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 115 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 20%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 20%) HP.\n#1 Damage: 206.2% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 20%\n#3 Heal: (Target's MAX HP - Target's HP) * 20%"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 20%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 20%) HP.\n#1 Damage: 217.8% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 20%\n#3 Heal: (Target's MAX HP - Target's HP) * 20%"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 22%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 22%) HP.\n#1 Damage: 237.3% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 22%\n#3 Heal: (Target's MAX HP - Target's HP) * 22%"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 22%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 22%) HP.\n#1 Damage: 260.6% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 22%\n#3 Heal: (Target's MAX HP - Target's HP) * 22%"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 157 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 25%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 25%) HP.\n#1 Damage: 280.1% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 25%\n#3 Heal: (Target's MAX HP - Target's HP) * 25%"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 25%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 25%) HP.\n#1 Damage: 303.4% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 25%\n#3 Heal: (Target's MAX HP - Target's HP) * 25%"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 181 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 30%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 30%) HP.\n#1 Damage: 322.9% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 30%\n#3 Heal: (Target's MAX HP - Target's HP) * 30%"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 194 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 30%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 30%) HP.\n#1 Damage: 346.2% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 30%\n#3 Heal: (Target's MAX HP - Target's HP) * 30%"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 205 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 35%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 35%) HP.\n#1 Damage: 365.7% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 35%\n#3 Heal: (Target's MAX HP - Target's HP) * 35%"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 218 damage. \nIf the hit lands as a critical hit Heals the 2 allies with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 35%) HP. \nIf the hit lands as a non-critical hit Heals the ally with the lowest current HP in a 14m radius, restoring ((Target's MAX HP - Target's HP) * 35%) HP.\n#1 Damage: 389% ATK\n#2 Heal: (Target's MAX HP - Target's HP) * 35%\n#3 Heal: (Target's MAX HP - Target's HP) * 35%"
+    }
+   ]
+  },
+  {
+   "name": "Twist Fate",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/anarose/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 162 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (40% * Damage Dealt) HP. \nCasts a [25% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 10s. If the hit lands as a critical hit.\n#1 Damage: 289% ATK\n#2 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 172 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (40% * Damage Dealt) HP. \nCasts a [27% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 10s. If the hit lands as a critical hit.\n#1 Damage: 306.3% ATK\n#2 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 181 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (40% * Damage Dealt) HP. \nCasts a [27% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 10s. If the hit lands as a critical hit.\n#1 Damage: 323.7% ATK\n#2 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 197 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (45% * Damage Dealt) HP. \nCasts a [27% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 11s. If the hit lands as a critical hit.\n#1 Damage: 352.6% ATK\n#2 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 217 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (45% * Damage Dealt) HP. \nCasts a [29% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 11s. If the hit lands as a critical hit.\n#1 Damage: 387.3% ATK\n#2 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 233 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (50% * Damage Dealt) HP. \nCasts a [29% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 12s. If the hit lands as a critical hit.\n#1 Damage: 416.2% ATK\n#2 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 252 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (50% * Damage Dealt) HP. \nCasts a [31% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 12s. If the hit lands as a critical hit.\n#1 Damage: 450.8% ATK\n#2 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 269 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (50% * Damage Dealt) HP. \nCasts a [31% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 13s. If the hit lands as a critical hit.\n#1 Damage: 479.7% ATK\n#2 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 288 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (55% * Damage Dealt) HP. \nCasts a [33% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 13s. If the hit lands as a critical hit.\n#1 Damage: 514.4% ATK\n#2 Heal: 55% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 304 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (55% * Damage Dealt) HP. \nCasts a [33% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 15s. If the hit lands as a critical hit.\n#1 Damage: 543.3% ATK\n#2 Heal: 55% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 324 damage. Heals the 7 allies with the lowest current HP in a 15m radius, restoring (60% * Damage Dealt) HP. \nCasts a [35% DEF Up] buff on the 7 allies with the lowest current HP in a 15m radius, lasting 15s. If the hit lands as a critical hit.\n#1 Damage: 578% ATK\n#2 Heal: 60% * Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Nobody expects a powerful wizard to cheat at cards, but Anarose has never let chance dictate her fate… which might be fine, if she didn’t keep sneaking off to the worst gambling dens in Freeport to remind ‘chance’ of her opinion. She’d be dead long ago – but her magic goes far beyond card games.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "A+",
+  "hyxxis": "B",
+  "koltmos": "C",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "B",
+  "omnissi-earth": "A",
+  "omnissi-fire": "A",
+  "omnissi-light": "B",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "B",
+  "sakiel": "A",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 51.8,
+  "lists": 16
+ }
+}

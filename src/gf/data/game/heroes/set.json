@@ -1,0 +1,283 @@
+{
+ "id": 87,
+ "slug": "set",
+ "name": "Set",
+ "title": "Master of Disorder",
+ "summary": "Poisons enemies and increases the damage they take from debuffs.",
+ "lore": "Dreaded Set is the god of storm, upheaval, and violence. Although loyal to Aaru, he bears no love for his fellow gods. He plots his own ascension even as he defends his territory and his brethren from rival realms and the forces of the Primal Powers. Empowered by the bloodshed of the War of Pyramids, he secretly conspires to extend the conflict.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Set.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Set_main.png",
+ "stats": {
+  "hp": 1200,
+  "atk": 75,
+  "def": 85,
+  "spd": 101,
+  "init": 96,
+  "acc": 30,
+  "res": 20,
+  "initial_divinity": 500,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 9
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Has a chance to steal 2 random Buffs.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also, increase the cooldown of the Core Ability on a random enemy by 1 turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Chaos Strike",
+   "description": "Attack 1 enemy 335%ATK with a 50% chance to place [FTH Down II] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/set/ICON_Set_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "335%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Jealous Retribution",
+   "description": "Attack 1 enemy 480%ATK with a 50% chance to steal a random Buff. Decrease the cooldown of this ability by 1 turn if a Buff is not stolen.",
+   "icon_url": "/godforge/abilities/set/ICON_Set_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "480%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Has a chance to steal 2 random Buffs.",
+     "upgrade_description": "Has a chance to steal 2 random Buffs."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Eternal Spite",
+   "description": "When an enemy places a Debuff on this hero, increase their Ultimate Divinity cost 2%.",
+   "icon_url": "/godforge/abilities/set/ICON_Set_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Seeds of Chaos",
+   "description": "Attack all enemies 275%ATK with a 50% chance to place [Despair] on each target for 1 turn, and a 75% chance to place [ACC Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/set/ICON_Set_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "275%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ACC Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also, increase the cooldown of the Core Ability on a random enemy by 1 turn.",
+     "upgrade_description": "Also, increase the cooldown of the Core Ability on a random enemy by 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Eternal Spite",
+   "description": "When an enemy places a Debuff on this hero, increase their Ultimate Divinity cost 1%.",
+   "icon_url": "/godforge/abilities/set/ICON_Set_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

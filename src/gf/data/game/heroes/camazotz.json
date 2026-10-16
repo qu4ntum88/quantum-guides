@@ -1,0 +1,288 @@
+{
+ "id": 219,
+ "slug": "camazotz",
+ "name": "Camazotz",
+ "title": "Shadow of Xibalba",
+ "summary": "Strike enemies with feral strikes decreasing and stealing their turn meter bringing them to Despair.",
+ "lore": "The “bat of death” is an agent of Omeyocan’s underworld gods, carrying their words and performing their tasks in the lands of the living. As such, he frequently appears not only throughout Omeyocan but in other realms as well—especially lately, as he has entered into some manner of scheme with the dreaded Count Dracula of Vyraj.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Camazotz.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Camazotz_main.png",
+ "stats": {
+  "hp": 1365,
+  "atk": 81,
+  "def": 88,
+  "spd": 102,
+  "init": 107,
+  "acc": 45,
+  "res": 35,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If a target is already under [Drain II], also decrease their Turn Meter by 10%.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.15,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also decrease the target’s FTH and SPD by 5 (stacking up to 50) each time this hero steals Turn Meter.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each hit is a guaranteed Strong Critical.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Dreaded Claws",
+   "description": "Attack 1 enemy 140%ATK 3 times. Each hit has a 75% chance to reduce the target’s Turn Meter by 5%.",
+   "icon_url": "/godforge/abilities/camazotz/ICON_Camazotz_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "140%ATK",
+    "140%ATK",
+    "140%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Nocturnal Hunger",
+   "description": "Attack all enemies 290%ATK with an 80% chance to place [Drain II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/camazotz/ICON_Camazotz_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "290%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Drain II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If a target is already under Drain II, also decrease their Turn Meter by 10%.",
+     "upgrade_description": "If a target is already under [Drain II], also decrease their Turn Meter by 10%."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Nightmare Theft",
+   "description": "When this hero inflicts a Critical Hit, steal 5% of the target’s Turn Meter. If the attack is Strong Critical, steal a further 5% Turn Meter.",
+   "icon_url": "/godforge/abilities/camazotz/ICON_Camazotz_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also decrease the target’s FTH and SPD by 5 (stacking up to 50) each time this hero steals Turn Meter.",
+     "upgrade_description": "Also decrease the target’s FTH and SPD by 5 (stacking up to 50) each time this hero steals Turn Meter."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Screech of Doom",
+   "description": "Attack all enemies 160%ATK 2 times. Each hit has an 80% chance to reduce the target’s Turn Meter by 10%. If the target is above 50% Turn Meter, place [SPD Down II] on them for 2 turns, otherwise place [Despair] on them for 1 turn.",
+   "icon_url": "/godforge/abilities/camazotz/ICON_Camazotz_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "160%ATK",
+    "160%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each hit is a guaranteed Strong Critical.",
+     "upgrade_description": "Each hit is a guaranteed Strong Critical."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Nightmare Theft",
+   "description": "When this hero inflicts a Critical Hit, steal 2.5% of the target’s Turn Meter. If the attack is Strong Critical, steal a further 2.5% Turn Meter.",
+   "icon_url": "/godforge/abilities/camazotz/ICON_Camazotz_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

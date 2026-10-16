@@ -1,0 +1,305 @@
+{
+ "id": 95,
+ "slug": "tlaloc",
+ "name": "Tlaloc",
+ "title": "Rain-Maker",
+ "summary": "Bring the storms of the sea to the battle and cast Ricochet bolts of energy to all enemies.",
+ "lore": "One of Omeyocan’s eldest gods, the Rain-Maker has long worked to influence the natural and cosmic cycles. He wishes to more freely grant his blessings to mortals, and despite his own temper and need for blood sacrifice, he disdains those who revel in the tumult of Ryven. He collaborates with other servants of Order to calm the chaos of the post-Shattering world.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tialoc.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tlaloc_main.png",
+ "stats": {
+  "hp": 1350,
+  "atk": 107,
+  "def": 97,
+  "spd": 99,
+  "init": 96,
+  "acc": 35,
+  "res": 30,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 20
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Place [ACC Up II] and [Immortal] for 2 turns on this hero before attacking.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.15,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increase this hero’s ATK 2% (Max 25 Stacks) for successful [Ricochet].",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Enemies under Hex will always receive the extra damage.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Ceremonial Spear",
+   "description": "Attack 1 enemy 175%ATK 3 times. Each hit ignores 5% of the target’s DEF, which is doubled if the target is under [Hex II].",
+   "icon_url": "/godforge/abilities/tlaloc/ICON_Tlaloc_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK",
+    "175%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Typhoon Cycle",
+   "description": "Attack all enemies 360%ATK. Has an 80% chance to place [Hex II] on each target for 2 turns. Also place 2 stacks of [Banish] on enemies defeated by this ability.",
+   "icon_url": "/godforge/abilities/tlaloc/ICON_Tlaloc_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "360%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "ACC Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Banish",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Place ACC Up II and Immortal for 2 turns on this hero before attacking.",
+     "upgrade_description": "Place [ACC Up II] and [Immortal] for 2 turns on this hero before attacking."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "33% ATK in All Battles",
+   "icon_url": "/godforge/abilities/tlaloc/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Static Torrent",
+   "description": "Each hit from this hero has a 50% chance to inflict additional damage 100%ATK to a random enemy.",
+   "icon_url": "/godforge/abilities/tlaloc/ICON_Tlaloc_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Enemies under Hex will always receive the extra damage.",
+     "upgrade_description": "Enemies under Hex will always receive the extra damage."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Revered Harbinger",
+   "description": "Attack all enemies 360%ATK. Each enemy hit will also [Ricochet] to a random enemy inflicting damage 360%ATK and increasing the target’s Divinity Cost by 3%.",
+   "icon_url": "/godforge/abilities/tlaloc/ICON_Tlaloc_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "360%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increase this hero’s ATK 2% (Max 25 Stacks) for successful Ricochet.",
+     "upgrade_description": "Also increase this hero’s ATK 2% (Max 25 Stacks) for successful [Ricochet]."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Static Torrent",
+   "description": "Each hit from this hero has a 25% chance to inflict extra damage to a random enemy for 10% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/tlaloc/ICON_Tlaloc_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

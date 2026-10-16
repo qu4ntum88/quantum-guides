@@ -1,0 +1,268 @@
+{
+ "id": 30,
+ "slug": "bastet",
+ "name": "Bastet",
+ "title": "Daughter of the Sun",
+ "summary": "Unleash the fires of Ra upon your enemies and bathe in the glory of Ra’s Ultimate Power",
+ "lore": "The goddess of Aaru’s cats—and through them, protector of its people—is discontent with this new world. Ryven’s threats and sheer chaos are threats too great for her to defend against. As such, Bastet reaches beyond the bounds of her realm using her cats as messengers and spies, seeking other like-minded gods to help the ascendance of Order over Chaos.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Bastet.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Bastet_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 108,
+  "def": 87,
+  "spd": 96,
+  "init": 90,
+  "acc": 25,
+  "res": 25,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Increase this hero’s and Ra’s Divinity by 100 for each Blaze placed.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the Turn Meter of all allies instead.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Mystical Sistrum",
+   "description": "Attack 1 enemy 150%ATK 3 times. If the target is under Blaze, each hit has a 50% chance to increase the duration of Blaze by 1 turn and heal 50%ATK this hero.",
+   "icon_url": "/godforge/abilities/bastet/ICON_Bastet_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "150%ATK",
+    "150%ATK",
+    "150%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Eclipse Reckoning",
+   "description": "Attack all enemies 315%ATK with a 75% chance to place [DEF Down II] on each target for 2 turns. If Ra is an ally, increase the damage inflicted by 20%.",
+   "icon_url": "/godforge/abilities/bastet/ICON_Bastet_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "315%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "24% ATK in Dungeon Battles",
+   "icon_url": "/godforge/abilities/bastet/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Purifed in Flames",
+   "description": "Increase this hero's Turn Meter by 5% when inflicting damage to enemies under Blaze.",
+   "icon_url": "/godforge/abilities/bastet/ICON_Bastet_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the Turn Meter of all allies instead.",
+     "upgrade_description": "Increase the Turn Meter of all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Feline Firestorm",
+   "description": "Attack all enemies 315%ATK with an 80% chance to place [Blaze II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/bastet/ICON_Bastet_Ultimate.webp",
+   "divinity_cost": 2475,
+   "damage_formula": [
+    "315%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blaze II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Increase this hero’s and Ra’s Divinity by 100 for each Blaze placed.",
+     "upgrade_description": "Increase this hero’s and Ra’s Divinity by 100 for each Blaze placed."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Purifed in Flames",
+   "description": "Increase this hero's Turn Meter by 2.5% when inflicting damage to enemies under Blaze.",
+   "icon_url": "/godforge/abilities/bastet/ICON_Bastet_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

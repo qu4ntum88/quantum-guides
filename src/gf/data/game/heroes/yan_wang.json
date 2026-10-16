@@ -1,0 +1,304 @@
+{
+ "id": 19,
+ "slug": "yan_wang",
+ "name": "Yan Wang",
+ "title": "Damned King of Diyu",
+ "summary": "Lockout your enemies abilities whilst stealing their divine powers",
+ "lore": "Merciless judge of Diyu, Tian’s underworld, Yan Wang oversees the disposition of the dead. He views Ryven as an affront, for Destiny’s reordering removed some souls from his domain through resurrection, and prevented others from dying when they should have. He has petitioned the Celestial Bureaucracy to correct this wrongdoing, an endeavor that might see his influence spread far beyond Diyu.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Yan Wang.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Yan Wang_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 77,
+  "def": 86,
+  "spd": 100,
+  "init": 108,
+  "acc": 45,
+  "res": 30,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If an enemy is already under [SPD Down II], has a 35% chance to place [Sleep] for 1 turn instead.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "For each Debuff on an enemy, reduce the damage they inflict by 5%, up to a maximum of 25%.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy is already under [SPD Down II] has a 75% chance to place an additional Debuff.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Spirit Shackles",
+   "description": "Attack all enemies 200%ATK+50%FTH with a 35% chance to place [SPD Down II] on each target for 1 turn.",
+   "icon_url": "/godforge/abilities/yan_wang/ICON_YanWang_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "200%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 35,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sleep",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 35,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If an enemy is already under SPD Down II, has a 35% chance to place Sleep for 1 turn instead.",
+     "upgrade_description": "If an enemy is already under [SPD Down II], has a 35% chance to place [Sleep] for 1 turn instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Dreadful Omen",
+   "description": "Attack all enemies 285%ATK+50%FTH with a 75% chance to place a random [DEF Down II], [ATK Down II], [ACC Down II], or [RES Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/yan_wang/ICON_YanWang_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy is already under SPD Down II has a 75% chance to place an additional Debuff.",
+     "upgrade_description": "If an enemy is already under [SPD Down II] has a 75% chance to place an additional Debuff."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "25% FTH in Arena Battles",
+   "icon_url": "/godforge/abilities/yan_wang/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Judgement of Diyu",
+   "description": "Increase this hero’s FTH by 2% (stacking up to 30%) after placing a Debuff.",
+   "icon_url": "/godforge/abilities/yan_wang/ICON_YanWang_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "For each Debuff on an enemy, reduce the damage they inflict by 5%, up to a maximum of 25%.",
+     "upgrade_description": "For each Debuff on an enemy, reduce the damage they inflict by 5%, up to a maximum of 25%."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Infernal Silence",
+   "description": "Attack all enemies 285%ATK+50%FTH, then has a 50% chance to place [Lock Core], and [Lock Ultimate] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/yan_wang/ICON_YanWang_Ultimate.webp",
+   "divinity_cost": 3825,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Lock Core",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Ultimate",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Judgement of Diyu",
+   "description": "Increase this hero’s FTH by 1% (stacking up to 15%) after placing a Debuff.",
+   "icon_url": null,
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,494 @@
+{
+ "slug": "goros",
+ "kind": "Titan",
+ "name": "Goros",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/goros/portrait.webp",
+ "fullArt": "/invokers/units/titans/goros/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+460",
+   "Bonus ATK": "+55",
+   "Bonus DEF": "+44",
+   "Movement speed": "180"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,765",
+   "Bonus ATK": "+331",
+   "Bonus DEF": "+264",
+   "Movement speed": "180"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/goros/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 69 damage, damage increases by 2% per buff on Goros.\n#1 Damage: 125% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 74 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 2s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 2s.\nDamage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 73 damage, damage increases by 2.5% per buff on Goros.\n#1 Damage: 132.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 79 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 2s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 2s.\nDamage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 77 damage, damage increases by 2.5% per buff on Goros.\n#1 Damage: 140% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 83 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 2.25s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 2.25s.\nDamage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 84 damage, damage increases by 2.5% per buff on Goros.\n#1 Damage: 152.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 91 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 2.5s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 2.5s.\nDamage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 92 damage, damage increases by 3% per buff on Goros.\n#1 Damage: 167.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 99 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 2.5s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 2.5s.\nDamage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 99 damage, damage increases by 3% per buff on Goros.\n#1 Damage: 180% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 107 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 2.75s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 2.75s.\nDamage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 107 damage, damage increases by 3% per buff on Goros.\n#1 Damage: 195% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 116 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 3s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 3s.\nDamage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 114 damage, damage increases by 3.5% per buff on Goros.\n#1 Damage: 207.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 123 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 3s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 3s.\nDamage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 122 damage, damage increases by 3.5% per buff on Goros.\n#1 Damage: 222.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 132 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 3.5s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 3.5s.\nDamage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 129 damage, damage increases by 3.5% per buff on Goros.\n#1 Damage: 235% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 140 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 4s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 4s.\nDamage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 138 damage, damage increases by 4% per buff on Goros.\n#1 Damage: 250% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 149 damage. Extends the duration of all [Crit Rate Up] buffs on Goros by 4s. Then, extends the duration of all [Crit DMG Up] buffs on Goros by 4s.\nDamage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Impelled Rage",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/goros/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 151 damage, damage increases by 20% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 160 damage, damage increases by 22% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 169 damage, damage increases by 24% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 185 damage, damage increases by 26% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 203 damage, damage increases by 28% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 218 damage, damage increases by 30% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 236 damage, damage increases by 32% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 251 damage, damage increases by 34% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 269 damage, damage increases by 36% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 284 damage, damage increases by 38% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 303 damage, damage increases by 40% if the target is a Boss or if the target is a Miniboss.\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Impelled Justice",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/goros/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+62",
+    "titan": "+34"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 74 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 2s if the hit lands as a critical hit.\n#1 Damage: 135% ATK\n#2 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 79 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 2.2s if the hit lands as a critical hit.\n#1 Damage: 143.1% ATK\n#2 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 83 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 2.4s if the hit lands as a critical hit.\n#1 Damage: 151.2% ATK\n#2 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 91 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 2.6s if the hit lands as a critical hit.\n#1 Damage: 164.7% ATK\n#2 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 99 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 2.8s if the hit lands as a critical hit.\n#1 Damage: 180.9% ATK\n#2 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 107 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 3s if the hit lands as a critical hit.\n#1 Damage: 194.4% ATK\n#2 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 116 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 3.2s if the hit lands as a critical hit.\n#1 Damage: 210.6% ATK\n#2 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 123 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 3.4s if the hit lands as a critical hit.\n#1 Damage: 224.1% ATK\n#2 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 132 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 3.6s if the hit lands as a critical hit.\n#1 Damage: 240.3% ATK\n#2 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 140 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 3.8s if the hit lands as a critical hit.\n#1 Damage: 253.8% ATK\n#2 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 149 damage per hit. Each hit Reduces the cooldown of Active Skill 2 on Goros by 4s if the hit lands as a critical hit.\n#1 Damage: 270% ATK\n#2 Damage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/goros/skills/3.webp",
+   "effects": [
+    {
+     "label": "Crit DMG Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Damage stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 117 damage. Casts a [15% Crit Rate Up] buff on Goros, lasting 12s. Then, casts a [50% Crit DMG Up] buff on Goros, lasting 12s.\n#1 Damage: 212.5% ATK\nINVOKATION END\nCasts a [30% ATK Up] buff on the Bound Invoker, lasting 7s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 124 damage. Casts a [20% Crit Rate Up] buff on Goros, lasting 12s. Then, casts a [50% Crit DMG Up] buff on Goros, lasting 12s.\n#1 Damage: 225.2% ATK\nINVOKATION END\nCasts a [33% ATK Up] buff on the Bound Invoker, lasting 7s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 131 damage. Casts a [20% Crit Rate Up] buff on Goros, lasting 12s. Then, casts a [60% Crit DMG Up] buff on Goros, lasting 12s.\n#1 Damage: 238% ATK\nINVOKATION END\nCasts a [33% ATK Up] buff on the Bound Invoker, lasting 8s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 143 damage. Casts a [20% Crit Rate Up] buff on Goros, lasting 14s. Then, casts a [60% Crit DMG Up] buff on Goros, lasting 14s.\n#1 Damage: 259.2% ATK\nINVOKATION END\nCasts a [36% ATK Up] buff on the Bound Invoker, lasting 8s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 157 damage. Casts a [25% Crit Rate Up] buff on Goros, lasting 14s. Then, casts a [60% Crit DMG Up] buff on Goros, lasting 14s.\n#1 Damage: 284.8% ATK\nINVOKATION END\nCasts a [36% ATK Up] buff on the Bound Invoker, lasting 9s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 168 damage. Casts a [25% Crit Rate Up] buff on Goros, lasting 14s. Then, casts a [70% Crit DMG Up] buff on Goros, lasting 14s.\n#1 Damage: 306% ATK\nINVOKATION END\nCasts a [39% ATK Up] buff on the Bound Invoker, lasting 9s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 182 damage. Casts a [25% Crit Rate Up] buff on Goros, lasting 16s. Then, casts a [70% Crit DMG Up] buff on Goros, lasting 16s.\n#1 Damage: 331.5% ATK\nINVOKATION END\nCasts a [39% ATK Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 194 damage. Casts a [30% Crit Rate Up] buff on Goros, lasting 16s. Then, casts a [70% Crit DMG Up] buff on Goros, lasting 16s.\n#1 Damage: 352.8% ATK\nINVOKATION END\nCasts a [42% ATK Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 208 damage. Casts a [30% Crit Rate Up] buff on Goros, lasting 16s. Then, casts a [80% Crit DMG Up] buff on Goros, lasting 16s.\n#1 Damage: 378.2% ATK\nINVOKATION END\nCasts a [42% ATK Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 220 damage. Casts a [30% Crit Rate Up] buff on Goros, lasting 18s. Then, casts a [80% Crit DMG Up] buff on Goros, lasting 18s.\n#1 Damage: 399.5% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 234 damage. Casts a [35% Crit Rate Up] buff on Goros, lasting 18s. Then, casts a [100% Crit DMG Up] buff on Goros, lasting 18s.\n#1 Damage: 425% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 12s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/goros/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +21% Attack.\nOutside Dungeon mode: +12% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +23.1% Attack.\nOutside Dungeon mode: +13.2% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +25.2% Attack.\nOutside Dungeon mode: +14.4% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +29.4% Attack.\nOutside Dungeon mode: +16.8% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +33.6% Attack.\nOutside Dungeon mode: +19.2% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +37.8% Attack.\nOutside Dungeon mode: +21.6% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +42% Attack.\nOutside Dungeon mode: +24% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Goros is the living remnant of the fury of doomed soldiers. The Ironband of Redcrag Fortress ritually consigned themselves to annihilation, so long as they could destroy their besiegers. The ritual worked: they invoked Goros… and it was the sole “survivor\" on either side.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "A",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "A",
+  "pentiax": "B",
+  "sakiel": "A",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 44.6,
+  "lists": 16
+ }
+}

@@ -1,0 +1,258 @@
+{
+ "id": 184,
+ "slug": "nitocris",
+ "name": "Nitocris",
+ "title": "Hand of Vengeance",
+ "summary": "Steals buffs from enemies and transfers debuffs back.",
+ "lore": "Nitocris served for decades as Wife of Amun, a high priestly office that also granted political authority—authority that allowed her father, the pharaoh, to unite a divided kingdom. Now a determined woman in a Shattered world, Nitocris continues to combine ecclesiastical and secular power, working to grant the priesthood direct control over the various provinces and communities of Aaru.",
+ "rarity": "Rare",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Nitocris.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Nitocris_main.png",
+ "stats": {
+  "hp": 1155,
+  "atk": 69,
+  "def": 71,
+  "spd": 91,
+  "init": 96,
+  "acc": 20,
+  "res": 15,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also heal 10%HP this hero for each debuff transferred.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Queen’s Vengeance",
+   "description": "Attack 1 enemy 300%ATK with a 75% chance to steal 1 random Buff.",
+   "icon_url": "/godforge/abilities/nitocris/ICON_Nitocris_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "300%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Reclaim Glory",
+   "description": "Attack 1 enemy 430%ATK with a 75% chance to transfer all debuff from this hero to the target.",
+   "icon_url": "/godforge/abilities/nitocris/ICON_Nitocris_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "430%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30 ACC in Campaign Battles",
+   "icon_url": "/godforge/abilities/nitocris/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Unwilling Usurper",
+   "description": "At the start of this hero’s turn, steal 10% Divinity from the enemy with the highest Turn Meter.",
+   "icon_url": "/godforge/abilities/nitocris/ICON_Nitocris_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Drowned Banquet",
+   "description": "Transfer 1 random debuff from all allies to this hero then attack all enemies 245%ATK. Increase this hero’s Turn Meter by 10% for each debuff transferred to this hero.",
+   "icon_url": "/godforge/abilities/nitocris/ICON_Nitocris_Ultimate.webp",
+   "divinity_cost": 2875,
+   "damage_formula": [
+    "245%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also heal 10%HP this hero for each debuff transferred.",
+     "upgrade_description": "Also heal 10%HP this hero for each debuff transferred."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Unwilling Usurper",
+   "description": "At the start of this hero’s turn, steal 5% Divinity from the enemy with the highest Turn Meter.",
+   "icon_url": "/godforge/abilities/nitocris/ICON_Nitocris_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

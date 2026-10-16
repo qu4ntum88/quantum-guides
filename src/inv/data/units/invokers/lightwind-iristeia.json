@@ -1,0 +1,593 @@
+{
+ "slug": "lightwind-iristeia",
+ "kind": "Invoker",
+ "name": "Lightwind Iristeia",
+ "faction": "Lightseekers",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/lightwind-iristeia/portrait.webp",
+ "fullArt": "/invokers/units/invokers/lightwind-iristeia/full.webp",
+ "stats": {
+  "base": {
+   "Health": "876",
+   "Attack": "89",
+   "Defense": "76",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "111"
+  },
+  "max": {
+   "Health": "9,388",
+   "Attack": "1,085",
+   "Defense": "791",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "141"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lightwind-iristeia/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+77",
+    "titan": "+42"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25.5% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 38.5% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 47.5% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 61% ATK\n#5 Attacks 1 enemy, dealing 68 damage. Extends the duration of 1 random debuff on the target by 0.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 76.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 27% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 40.8% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 50.3% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 64.7% ATK\n#5 Attacks 1 enemy, dealing 72 damage. Extends the duration of 1 random debuff on the target by 0.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 81.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 28.6% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 43.1% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 53.2% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 68.3% ATK\n#5 Attacks 1 enemy, dealing 76 damage. Extends the duration of 1 random debuff on the target by 0.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 85.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 31.1% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 47% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 58% ATK\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 74.4% ATK\n#5 Attacks 1 enemy, dealing 83 damage. Extends the duration of 1 random debuff on the target by 0.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 93.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 34.2% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 51.6% ATK\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 63.7% ATK\n#4 Attacks 1 enemy, dealing 73 damage.\nDamage: 81.7% ATK\n#5 Attacks 1 enemy, dealing 91 damage. Extends the duration of 1 random debuff on the target by 0.9s.\nAccuracy required for: Debuff Duration Extension\nDamage: 102.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 33 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy, dealing 61 damage.\nDamage: 68.4% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 87.8% ATK\n#5 Attacks 1 enemy, dealing 98 damage. Extends the duration of 1 random debuff on the target by 1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 110.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 60.1% ATK\n#3 Attacks 1 enemy, dealing 66 damage.\nDamage: 74.1% ATK\n#4 Attacks 1 enemy, dealing 85 damage.\nDamage: 95.2% ATK\n#5 Attacks 1 enemy, dealing 106 damage. Extends the duration of 1 random debuff on the target by 1.1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 119.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 78.8% ATK\n#4 Attacks 1 enemy, dealing 90 damage.\nDamage: 101.3% ATK\n#5 Attacks 1 enemy, dealing 113 damage. Extends the duration of 1 random debuff on the target by 1.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 127% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 45.4% ATK\n#2 Attacks 1 enemy, dealing 61 damage.\nDamage: 68.5% ATK\n#3 Attacks 1 enemy, dealing 75 damage.\nDamage: 84.5% ATK\n#4 Attacks 1 enemy, dealing 97 damage.\nDamage: 108.6% ATK\n#5 Attacks 1 enemy, dealing 121 damage. Extends the duration of 1 random debuff on the target by 1.3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 136.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 47.9% ATK\n#2 Attacks 1 enemy, dealing 64 damage.\nDamage: 72.4% ATK\n#3 Attacks 1 enemy, dealing 79 damage.\nDamage: 89.3% ATK\n#4 Attacks 1 enemy, dealing 102 damage.\nDamage: 114.7% ATK\n#5 Attacks 1 enemy, dealing 128 damage. Extends the duration of 1 random debuff on the target by 1.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 143.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 51% ATK\n#2 Attacks 1 enemy, dealing 69 damage.\nDamage: 77% ATK\n#3 Attacks 1 enemy, dealing 85 damage.\nDamage: 95% ATK\n#4 Attacks 1 enemy, dealing 109 damage.\nDamage: 122% ATK\n#5 Attacks 1 enemy, dealing 136 damage. Extends the duration of up to 2 random debuffs on the target by 1.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 153% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Seraphic Smite",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lightwind-iristeia/skills/1.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 136 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [9% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 144 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 161.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [9% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 152 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 166 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 186.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [11% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 182 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 204.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 4s. Attacks the target, dealing 195 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 219.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 212 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 237.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [13% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 225 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 253.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [14% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 242 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 271.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 5s. Attacks the target, dealing 255 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 286.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 6s. Attacks the target, dealing 271 damage.\nAccuracy required for: Combo SPD Down\n#1 Damage: 305% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Radiant Onslaught",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lightwind-iristeia/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+58",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 140 damage per hit. \nThe first hit casts a [35% RES Down] debuff on 1 enemy, lasting 10s. \nCasts a [30% ATK Down] debuff on 1 enemy, lasting 10s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 157.5% ATK\n#2 Damage: 157.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 149 damage per hit. \nThe first hit casts a [38% RES Down] debuff on 1 enemy, lasting 10s. \nCasts a [30% ATK Down] debuff on 1 enemy, lasting 11s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 166.9% ATK\n#2 Damage: 166.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 157 damage per hit. \nThe first hit casts a [38% RES Down] debuff on 1 enemy, lasting 11s. \nCasts a [30% ATK Down] debuff on 1 enemy, lasting 11s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 176.4% ATK\n#2 Damage: 176.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 171 damage per hit. \nThe first hit casts a [42% RES Down] debuff on 1 enemy, lasting 11s. \nCasts a [30% ATK Down] debuff on 1 enemy, lasting 11s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 192.2% ATK\n#2 Damage: 192.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 188 damage per hit. \nThe first hit casts a [42% RES Down] debuff on 1 enemy, lasting 13s. \nCasts a [35% ATK Down] debuff on 1 enemy, lasting 11s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 211.1% ATK\n#2 Damage: 211.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 202 damage per hit. \nThe first hit casts a [42% RES Down] debuff on 1 enemy, lasting 13s. \nCasts a [35% ATK Down] debuff on 1 enemy, lasting 13s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 226.8% ATK\n#2 Damage: 226.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 219 damage per hit. \nThe first hit casts a [42% RES Down] debuff on 1 enemy, lasting 15s. \nCasts a [40% ATK Down] debuff on 1 enemy, lasting 13s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 245.7% ATK\n#2 Damage: 245.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 233 damage per hit. \nThe first hit casts a [45% RES Down] debuff on 1 enemy, lasting 15s. \nCasts a [40% ATK Down] debuff on 1 enemy, lasting 13s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 261.5% ATK\n#2 Damage: 261.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 250 damage per hit. \nThe first hit casts a [45% RES Down] debuff on 1 enemy, lasting 15s. \nCasts a [45% ATK Down] debuff on 1 enemy, lasting 13s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 280.4% ATK\n#2 Damage: 280.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 264 damage per hit. \nThe first hit casts a [45% RES Down] debuff on 1 enemy, lasting 15s. \nCasts a [45% ATK Down] debuff on 1 enemy, lasting 15s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 296.1% ATK\n#2 Damage: 296.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 280 damage per hit. \nThe first hit casts a [50% RES Down] debuff on 1 enemy, lasting 15s. \nCasts a [50% ATK Down] debuff on 1 enemy, lasting 15s, on the second hit.\nAccuracy required for: RES Down, ATK Down\n#1 Damage: 315% ATK\n#2 Damage: 315% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shattered Requiem",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/lightwind-iristeia/skills/3.webp",
+   "effects": [
+    {
+     "label": "Disable",
+     "group": "Debuffs",
+     "description": "Prevents the recipient from using Active Skills."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 140 damage. Casts a [Disable] debuff on the targets, lasting 8s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 157% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 148 damage. Casts a [Disable] debuff on the targets, lasting 9s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 166.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 156 damage. Casts a [Disable] debuff on the targets, lasting 10s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 175.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 170 damage. Casts a [Disable] debuff on the targets, lasting 10s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 191.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 187 damage. Casts a [Disable] debuff on the targets, lasting 11s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 210.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 201 damage. Casts a [Disable] debuff on the targets, lasting 11s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 226.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 218 damage. Casts a [Disable] debuff on the targets, lasting 12s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 244.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 232 damage. Casts a [Disable] debuff on the targets, lasting 12s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 260.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 249 damage. Casts a [Disable] debuff on the targets, lasting 13s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 279.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 263 damage. Casts a [Disable] debuff on the targets, lasting 13s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 295.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 8.5m radius around Iristeia, dealing 279 damage. Casts a [Disable] debuff on the targets, lasting 13s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 314% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Exalted Reckoning",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/lightwind-iristeia/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Hex",
+     "group": "Debuffs",
+     "description": "If killed while under this debuff, the recipient of the debuff cannot be Revived."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 234 damage. Casts a [35% DEF Down] debuff on the targets, lasting 10s. Then, casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 248 damage. Casts a [36% DEF Down] debuff on the targets, lasting 10s. Then, casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 278.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 262 damage. Casts a [38% DEF Down] debuff on the targets, lasting 11s. Then, casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 294% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 285 damage. Casts a [40% DEF Down] debuff on the targets, lasting 11s. Then, casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 320.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 313 damage. Casts a [42% DEF Down] debuff on the targets, lasting 12s. Then, casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 351.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 336 damage. Casts a [44% DEF Down] debuff on the targets, lasting 12s. Then, casts a [Hex] debuff on the targets, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 378% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 364 damage. Casts a [44% DEF Down] debuff on the targets, lasting 13s. Then, casts a [Hex] debuff on the targets, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 409.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 388 damage. Casts a [44% DEF Down] debuff on the targets, lasting 14s. Then, casts a [Hex] debuff on the targets, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 435.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 416 damage. Casts a [46% DEF Down] debuff on the targets, lasting 14s. Then, casts a [Hex] debuff on the targets, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 467.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 439 damage. Casts a [46% DEF Down] debuff on the targets, lasting 15s. Then, casts a [Hex] debuff on the targets, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 493.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 10 enemies in a 6x12m area in front of Iristeia, dealing 467 damage. Casts a [50% DEF Down] debuff on the targets, lasting 17s. Then, casts a [Hex] debuff on the targets, lasting 20s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: DEF Down, Hex\n#1 Damage: 525% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Iristeia was raised in the Sacriat to be the ultimate war cleric: an Exarch-General and their personal imperial enforcer. But, Iristeia was too good at it. She led from the front, and her heroism soon earned her an Angel’s wings… putting her in charge of those who had once sought to control her.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "S",
+  "omnissi-astral": "S",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "S+",
+  "omnissi-wind": "E",
+  "pentiax": "S",
+  "sakiel": "S+",
+  "sorgott": "S",
+  "ulgorim": "S",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 66.1,
+  "lists": 16
+ }
+}

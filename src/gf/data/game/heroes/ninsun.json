@@ -1,0 +1,261 @@
+{
+ "id": 186,
+ "slug": "ninsun",
+ "name": "Ninsun",
+ "title": "Mistress of Dreams",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Ninsun is symbolically mother to Ekur’s rulers, and literally mother of roughly a dozen gods, as well as the great hero Gilgamesh. She interprets dreams and omens for her children and for the Realm’s mortal sovereigns, and intercedes with other gods on their behalf. Recently, however, prayers and petitions have gone unanswered, as if Ninsun were suddenly distracted or unavailable…",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ninsun.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ninsun_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 51,
+  "def": 89,
+  "spd": 103,
+  "init": 89,
+  "acc": 10,
+  "res": 30,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Remove all Debuffs from this hero.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Convert 100% of the excess healing allies receive into a [Shield].",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Nurturing Touch",
+   "description": "Attack 1 enemy 320%ATK then heal all allies equal to 10% of their MAX HP.",
+   "icon_url": "/godforge/abilities/ninsun/ICON_Ninsun_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "320%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Convert 100% of the excess healing allies receive into a Shield.",
+     "upgrade_description": "Convert 100% of the excess healing allies receive into a [Shield]."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Mother’s Embrace",
+   "description": "Remove 1 random Debuff from all allies, then place [Mend] on all allies for 2 turns.\n\nIf Gilgamesh, is an ally, remove 2 Debuff and place 2 [Mend] instead.",
+   "icon_url": "/godforge/abilities/ninsun/ICON_Ninsun_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Remove all Debuffs from this hero.",
+     "upgrade_description": "Remove all Debuffs from this hero."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Maternal Aura",
+   "description": "Allies receive 30% more from healing effects.",
+   "icon_url": "/godforge/abilities/ninsun/ICON_Ninsun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Compassionate Spirit",
+   "description": "Revive 1 ally with 30% HP and 30% Turn Meter. Place [Block Debuffs] on all allies for 2 turns and restore 20% of all allies destroyed HP.\n\nWill place [Block Debuffs] even if there are no dead allies.",
+   "icon_url": "/godforge/abilities/ninsun/ICON_Ninsun_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Maternal Aura",
+   "description": "This hero receives 30% more from healing effects.",
+   "icon_url": "/godforge/abilities/ninsun/ICON_Ninsun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

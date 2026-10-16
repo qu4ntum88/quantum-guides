@@ -1,0 +1,305 @@
+{
+ "id": 46,
+ "slug": "izanami",
+ "name": "Izanami",
+ "title": "Great Mother",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Initially one of Izumo’s creator deities, Izanami died giving birth. She waited in Yomi, the underworld, for her husband Izanagi to retrieve her—yet when he attempted to do so, he fled, horrified at her newly decayed appearance. Now that the Shattering has weakened the barriers between worlds, she wreaks her vengeance by sending monstrous horrors into the realm of the living.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Izanami.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Izanami_main.png",
+ "stats": {
+  "hp": 1350,
+  "atk": 81,
+  "def": 93,
+  "spd": 107,
+  "init": 108,
+  "acc": 45,
+  "res": 30,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also decrease the target’s Divinity by 100.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If an enemy is defeated when under FTH Down, place [Banish] on them for 1 Turn.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Will steal Turn Meter from all enemies instead.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Fading Slash",
+   "description": "Attack 1 enemy 340%ATK+50%ACC with a 40% chance to place [FTH Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/izanami/ICON_Izanami_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "340%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also decrease the target’s Divinity by 100.",
+     "upgrade_description": "Also decrease the target’s Divinity by 100."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Withering Essence",
+   "description": "Remove [Shield] from all enemies then attack all enemies 280%ATK+50%ACC with a 75% chance to place [Corrupt] on the target with the highest HP for 3 turns. If Izanagi is an ally, he will join the attack using his Core ability.",
+   "icon_url": "/godforge/abilities/izanami/ICON_Izanami_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "280%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 75,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Eternal Decay",
+   "description": "When this hero attacks an enemy under FTH Down decrease their Turn Meter by 5%.",
+   "icon_url": "/godforge/abilities/izanami/ICON_Izanami_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If an enemy is defeated when under FTH Down, place Banish on them for 1 Turn.",
+     "upgrade_description": "If an enemy is defeated when under FTH Down, place [Banish] on them for 1 Turn."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Yomi Malediction",
+   "description": "Attack all enemies 280%ATK+50%ACC with a 75% chance to place [SPD Down II] and [Curse II] on each target for 2 turns then decrease their Turn Meter by 20%.",
+   "icon_url": "/godforge/abilities/izanami/ICON_Izanami_Ultimate.webp",
+   "divinity_cost": 3825,
+   "damage_formula": [
+    "280%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Will steal Turn Meter from all enemies instead.",
+     "upgrade_description": "Will steal Turn Meter from all enemies instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Eternal Decay",
+   "description": "When attacking enemies under FTH Down decrease their Turn Meter by 2.5%.",
+   "icon_url": "/godforge/abilities/izanami/ICON_Izanami_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

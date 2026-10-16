@@ -1,0 +1,306 @@
+{
+ "id": 75,
+ "slug": "himiko",
+ "name": "Himiko",
+ "title": "Shaman Queen",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The shaman-queen of Yamatai has long been a figure of myth and mystery; taken as fact by some, sheer fairy tale by others. Only after the Shattering did the isle of Yamatai reappear in the waters of Izumo. Himiko works great magics that often aid Izumo’s forces, but whether out of patriotism or her own agenda remains a mystery.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Himiko.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Himiko_main.png",
+ "stats": {
+  "hp": 1230,
+  "atk": 75,
+  "def": 83,
+  "spd": 100,
+  "init": 100,
+  "acc": 30,
+  "res": 25,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "At max stacks, decrease each target’s Divinity by 30%.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "This hero steals 10% Divinity instead.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Sun Touch",
+   "description": "Attack 1 enemy 340%ATK with a 50% chance to place [Corrupt] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/himiko/ICON_Himiko_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "340%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Spirit Chains",
+   "description": "Attack 4 times at random 150%ATK. Each hit has a 50% chance to place [FTH Down II] for 2 turns. if the same target is hit, has a 50% chance to increase the duration of a random Debuff on the target.",
+   "icon_url": "/godforge/abilities/himiko/ICON_Himiko_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "150%ATK",
+    "150%ATK",
+    "150%ATK",
+    "150%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "50 ACC in All Battles",
+   "icon_url": "/godforge/abilities/himiko/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Shamanic Theft",
+   "description": "When an enemy receives a Debuff, decrease their Divinity by 10%.",
+   "icon_url": "/godforge/abilities/himiko/ICON_Himiko_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "This hero steals 10% Divinity instead.",
+     "upgrade_description": "This hero steals 10% Divinity instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Dance of Shadows",
+   "description": "Attack all enemies 280%ATK with an 80% chance to place [Confuse] on each target for 1 turn. If the target is under a Disable, increase their Divinity Cost by 5% (stacking up to 4 times).",
+   "icon_url": "/godforge/abilities/himiko/ICON_Himiko_Ultimate.webp",
+   "divinity_cost": 3825,
+   "damage_formula": [
+    "280%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Confuse",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "At max stacks, decrease each target’s Divinity by 30%.",
+     "upgrade_description": "At max stacks, decrease each target’s Divinity by 30%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Shamanic Theft",
+   "description": "When an enemy receives a Debuff from this hero, decrease their Divinity by 5%.",
+   "icon_url": "/godforge/abilities/himiko/ICON_Himiko_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

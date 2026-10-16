@@ -1,0 +1,308 @@
+{
+ "id": 34,
+ "slug": "guan_yu",
+ "name": "Guan Yu",
+ "title": "Unyielding General",
+ "summary": "Carve through foes dealing damage based on their health and regenerating your health.",
+ "lore": "A brilliant general, Guan Yu gives his all to serve the needs of Tian’s leaders and gods. Yet he fears the plodding Celestial Bureaucracy is ill-suited to the rigors of battle, and will prove insufficient in the event of open war. Thus far he has taken no steps, save to share his concerns, but desperation may soon force some unpleasant choices.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Guan Yu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Guan Yu_main.png",
+ "stats": {
+  "hp": 1095,
+  "atk": 94,
+  "def": 70,
+  "spd": 97,
+  "init": 90,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy is defeated, reduce the cooldown of the Core Ability by 1 turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Cold Steel",
+   "description": "Attack 1 enemy 395%ATK. If the target is under Drain then inflict additional damage equal to 5% of the target’s MAX HP.",
+   "icon_url": "/godforge/abilities/guan_yu/ICON_GuanYu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "395%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Crescent Slash",
+   "description": "Attack all enemies 325%ATK with a 25% additional chance to Strong Hit. Has an 80% chance to place [Drain II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/guan_yu/ICON_GuanYu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "325%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Drain II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% ATK in All Battles",
+   "icon_url": "/godforge/abilities/guan_yu/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Relentless Resolve",
+   "description": "Inflicts 20% increased damage to enemies under Drain.",
+   "icon_url": "/godforge/abilities/guan_yu/ICON_GuanYu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Frostfair Blade Dance",
+   "description": "Attack 175%ATK 4 random enemies. If an enemy is defeated, place [FTH Up II] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/guan_yu/ICON_GuanYu_Ultimate.webp",
+   "divinity_cost": 2250,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK",
+    "175%ATK",
+    "175%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy is defeated, reduce the cooldown of the Core Ability by 1 turn.",
+     "upgrade_description": "If an enemy is defeated, reduce the cooldown of the Core Ability by 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Relentless Resolve",
+   "description": "Inflict 10% increased damage to enemies under Drain.",
+   "icon_url": "/godforge/abilities/guan_yu/ICON_GuanYu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

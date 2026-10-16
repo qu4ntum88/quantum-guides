@@ -1,0 +1,495 @@
+{
+ "slug": "wolrath",
+ "kind": "Titan",
+ "name": "Wolrath",
+ "faction": "Nocturna",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Tank",
+ "portrait": "/invokers/units/titans/wolrath/portrait.webp",
+ "fullArt": "/invokers/units/titans/wolrath/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's HP": "+30%",
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's DEF": "+30%",
+   "Bonus HP": "+490",
+   "Bonus ATK": "+41",
+   "Bonus DEF": "+55",
+   "Movement speed": "250"
+  },
+  "max": {
+   "Bound Invoker's HP": "+275%",
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's DEF": "+275%",
+   "Bonus HP": "+2,945",
+   "Bonus ATK": "+246",
+   "Bonus DEF": "+331",
+   "Movement speed": "250"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/titans/wolrath/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 54 damage.\nDamage: 132.5% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 28 damage.\nDamage: 69% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 58 damage.\nDamage: 140.4% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 30 damage.\nDamage: 73.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 61 damage.\nDamage: 148.4% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 32 damage.\nDamage: 77.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 66 damage.\nDamage: 161.7% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 35 damage.\nDamage: 84.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 73 damage.\nDamage: 177.6% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 38 damage.\nDamage: 92.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 78 damage.\nDamage: 190.8% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 41 damage.\nDamage: 99.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 85 damage.\nDamage: 206.7% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 44 damage.\nDamage: 107.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 90 damage.\nDamage: 219.9% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 47 damage.\nDamage: 114.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 97 damage.\nDamage: 235.9% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 50 damage.\nDamage: 122.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 102 damage.\nDamage: 249.1% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 53 damage.\nDamage: 129.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 109 damage.\nDamage: 265% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 5m radius around the target, from a distance of 2m, dealing 57 damage.\nDamage: 138% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Veil Ripper",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/wolrath/skills/1.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 111 damage. Casts a [45% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 270% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 117 damage. Casts a [48% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 286.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 124 damage. Casts a [48% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 302.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 135 damage. Casts a [51% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 329.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 148 damage. Casts a [54% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 361.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 159 damage. Casts a [54% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 388.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 173 damage. Casts a [54% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 421.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 184 damage. Casts a [57% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 448.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 197 damage. Casts a [57% DEF Down] debuff on the target, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 480.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 208 damage. Casts a [60% DEF Down] debuff on the target, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 507.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 221 damage. Casts a [60% DEF Down] debuff on the target, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 540% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Nightfire Surge",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/wolrath/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 56 damage. Casts a [0.75% Burn] debuff on the targets, lasting 12s. The [Burn] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.38% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 137.5% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 60 damage. Casts a [0.9% Burn] debuff on the targets, lasting 12s. The [Burn] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.45% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 145.7% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 63 damage. Casts a [0.9% Burn] debuff on the targets, lasting 13s. The [Burn] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.45% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 154% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 69 damage. Casts a [1% Burn] debuff on the targets, lasting 13s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 167.8% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 76 damage. Casts a [1% Burn] debuff on the targets, lasting 14s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 184.2% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 81 damage. Casts a [1% Burn] debuff on the targets, lasting 14s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 198% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 88 damage. Casts a [1.25% Burn] debuff on the targets, lasting 14s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 214.5% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 94 damage. Casts a [1.25% Burn] debuff on the targets, lasting 15s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 228.2% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 100 damage. Casts a [1.25% Burn] debuff on the targets, lasting 16s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 244.8% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 106 damage. Casts a [1.5% Burn] debuff on the targets, lasting 16s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 258.5% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 90°, 7m cone in front of Wolrath, from a distance of 2m, dealing 113 damage. Casts a [1.5% Burn] debuff on the targets, lasting 18s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 275% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/wolrath/skills/3.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 89 damage.\n#1 Damage: 217.5% ATK\nINVOKATION END\nCasts a [45% DEF Up] buff on the Bound Invoker, lasting 8s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 95 damage.\n#1 Damage: 230.5% ATK\nINVOKATION END\nCasts a [48% DEF Up] buff on the Bound Invoker, lasting 8s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 100 damage.\n#1 Damage: 243.6% ATK\nINVOKATION END\nCasts a [51% DEF Up] buff on the Bound Invoker, lasting 8s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 109 damage.\n#1 Damage: 265.4% ATK\nINVOKATION END\nCasts a [54% DEF Up] buff on the Bound Invoker, lasting 8s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 119 damage.\n#1 Damage: 291.5% ATK\nINVOKATION END\nCasts a [54% DEF Up] buff on the Bound Invoker, lasting 9s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 128 damage.\n#1 Damage: 313.2% ATK\nINVOKATION END\nCasts a [57% DEF Up] buff on the Bound Invoker, lasting 9s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 139 damage.\n#1 Damage: 339.3% ATK\nINVOKATION END\nCasts a [57% DEF Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 148 damage.\n#1 Damage: 361% ATK\nINVOKATION END\nCasts a [60% DEF Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 159 damage.\n#1 Damage: 387.1% ATK\nINVOKATION END\nCasts a [60% DEF Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 168 damage.\n#1 Damage: 408.9% ATK\nINVOKATION END\nCasts a [60% DEF Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Wolrath, from a distance of 2m, dealing 178 damage.\n#1 Damage: 435% ATK\nINVOKATION END\nCasts a [65% DEF Up] buff on the Bound Invoker, lasting 14s."
+    }
+   ]
+  },
+  {
+   "name": "HP Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/wolrath/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +21% Health.\nOutside Dungeon mode: +12% Health."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +23.1% Health.\nOutside Dungeon mode: +13.2% Health."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +25.2% Health.\nOutside Dungeon mode: +14.4% Health."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +29.4% Health.\nOutside Dungeon mode: +16.8% Health."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +33.6% Health.\nOutside Dungeon mode: +19.2% Health."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +37.8% Health.\nOutside Dungeon mode: +21.6% Health."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +42% Health.\nOutside Dungeon mode: +24% Health."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "“The Beast of Neversun” was only a story – a monster that haunted the deep woods, never seen but always feared. But for Invokers, fears are not only the products of the mind. The Nocturna performed a Titan Rite to forge a protector, and instead they birthed a horror… and they wield it anyway.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "A",
+  "hyxxis": "A",
+  "koltmos": "A",
+  "omnissi-astral": "C",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "D",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "D",
+  "ulgorim": "B",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 37.5,
+  "lists": 16
+ }
+}

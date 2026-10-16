@@ -1,0 +1,577 @@
+{
+ "slug": "tenso-the-fixer",
+ "kind": "Invoker",
+ "name": "Tenso the Fixer",
+ "faction": "Nocturna",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/tenso-the-fixer/portrait.webp",
+ "fullArt": "/invokers/units/invokers/tenso-the-fixer/full.webp",
+ "stats": {
+  "base": {
+   "Health": "713",
+   "Attack": "64",
+   "Defense": "66",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "8,035",
+   "Attack": "810",
+   "Defense": "721",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "106"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tenso-the-fixer/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 49% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 59.5% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 23 damage.\nDamage: 36% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 38.2% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 51.9% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 63.1% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 24 damage.\nDamage: 38.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 66.6% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 26 damage.\nDamage: 40.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 59.8% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 72.6% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 28 damage.\nDamage: 43.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 65.7% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 79.7% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 31 damage.\nDamage: 48.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 51.8% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 70.6% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 85.7% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 33 damage.\nDamage: 51.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 56.2% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 92.8% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 36 damage.\nDamage: 56.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 59.8% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 81.3% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 98.8% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 38 damage.\nDamage: 59.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 64.1% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 87.2% ATK\n#4 Attacks 1 enemy, dealing 68 damage.\nDamage: 105.9% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 41 damage.\nDamage: 64.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy, dealing 43 damage.\nDamage: 67.7% ATK\n#3 Attacks 1 enemy, dealing 59 damage.\nDamage: 92.1% ATK\n#4 Attacks 1 enemy, dealing 72 damage.\nDamage: 111.9% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 43 damage.\nDamage: 67.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 72% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 98% ATK\n#4 Attacks 1 enemy, dealing 76 damage.\nDamage: 119% ATK\n#5 Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 46 damage.\nDamage: 72% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hack Job",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tenso-the-fixer/skills/1.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage. Casts a [15% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 144% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage. Casts a [16% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 152.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage. Casts a [18% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 161.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 112 damage. Casts a [20% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 175.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Casts a [22% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 193% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage. Casts a [22% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 207.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 144 damage. Casts a [24% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 224.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 153 damage. Casts a [26% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 239% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 164 damage. Casts a [28% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 256.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 173 damage. Casts a [28% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 270.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 184 damage. Casts a [30% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 288% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Drop Chop",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tenso-the-fixer/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+22",
+    "titan": "+12"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 187 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 292.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 198 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 310% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 210 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 228 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 356.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 392% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 270 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 421.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 292 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 456.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 311 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 485.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 333 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 520.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 352 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 549.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 374 damage. Pushes the target 7m away. Then, casts a [Stun] debuff on the target, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Push, Stun\n#1 Damage: 585% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Razor Cleave",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tenso-the-fixer/skills/3.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 93 damage. Casts a [22% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 98 damage. Casts a [23% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 104 damage. Casts a [23% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 113 damage. Casts a [24% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 124 damage. Casts a [24% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 134 damage. Casts a [26% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 145 damage. Casts a [26% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 154 damage. Casts a [28% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 165 damage. Casts a [28% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 174 damage. Casts a [30% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 6m semicircle in front of Tenso, dealing 186 damage. Casts a [30% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dragon Wings",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tenso-the-fixer/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 157 damage. Damage increases by 20% per debuff on the target, limited up to +150% damage.\n#1 Damage: 245% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 166 damage. Damage increases by 22% per debuff on the target, limited up to +150% damage.\n#1 Damage: 259.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 176 damage. Damage increases by 24% per debuff on the target, limited up to +175% damage.\n#1 Damage: 274.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 191 damage. Damage increases by 26% per debuff on the target, limited up to +175% damage.\n#1 Damage: 298.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 210 damage. Damage increases by 28% per debuff on the target, limited up to +175% damage.\n#1 Damage: 328.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 226 damage. Damage increases by 30% per debuff on the target, limited up to +200% damage.\n#1 Damage: 352.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 245 damage. Damage increases by 32% per debuff on the target, limited up to +200% damage.\n#1 Damage: 382.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 260 damage. Damage increases by 34% per debuff on the target, limited up to +200% damage.\n#1 Damage: 406.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 279 damage. Damage increases by 36% per debuff on the target, limited up to +250% damage.\n#1 Damage: 436.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 295 damage. Damage increases by 38% per debuff on the target, limited up to +250% damage.\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around Tenso, over 0.45000002s, dealing 314 damage. Damage increases by 40% per debuff on the target, limited up to +300% damage.\n#1 Damage: 490% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Tenso the Fixer is the adopted son of Kingpin Tatsulow, and he has been the old Baron’s solid right hand for most of his life. His loyalty is absolute – even when everyone else abandoned Tatsulow, Tenso remained steadfast. Tenso is trusted without question to do Tatsulow’s work – dirty or clean.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "A",
+  "omnissi-fire": "B",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "B",
+  "sakiel": "A",
+  "sorgott": "C",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 38.4,
+  "lists": 16
+ }
+}

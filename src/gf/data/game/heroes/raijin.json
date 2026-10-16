@@ -1,0 +1,290 @@
+{
+ "id": 149,
+ "slug": "raijin",
+ "name": "Raijin",
+ "title": "Herald of Storms",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Demon-god of the tempest, Raijin delights in devastation. Although driven by both his own nature and by rage at Izanagi, Raijin still feels some sense of ownership over Izumo. He often directs his storms against the realm’s enemies, not to spare his own people suffering—he still batters them fiercely—but because he feels Izumo is his to harrow, no one else’s.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Raijin.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Raijin_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 107,
+  "def": 89,
+  "spd": 98,
+  "init": 101,
+  "acc": 45,
+  "res": 25,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If an enemy is under Hex, each hit has a 25% increased chance to Strong Hit",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If an enemy receives both [Hex II] and [DEF Down II] from this ability, increase their duration by 1 turn.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "No longer limits to 1 trigger per hero turn.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Scattered Thunder",
+   "description": "Attack 3 random targets 155%ATK. If the target is under a Debuff, each hit places [Barrier] 50%ATK on this hero. If Fujin is an ally, he will also gain the [Barrier] and join the attack.",
+   "icon_url": "/godforge/abilities/raijin/ICON_Raijin_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "155%ATK",
+    "155%ATK",
+    "155%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Harnessed Tempest",
+   "description": "Attack all enemies 2 times 180%ATK. The first hit has a 75% chance to place [Hex II] on each target for 2 turns. The second hit has a 75% chance to place [DEF Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/raijin/ICON_Raijin_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "180%ATK",
+    "180%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Hex II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If an enemy receives both Hex II and DEF Down II from this ability, increase their duration by 1 turn.",
+     "upgrade_description": "If an enemy receives both [Hex II] and [DEF Down II] from this ability, increase their duration by 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "28% ATK in All Battles",
+   "icon_url": "/godforge/abilities/raijin/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Eye of the Storm",
+   "description": "When an enemy receives a Debuff, shock them, inflicting damage 100% ATK. This can trigger up to 1 time per hero turn.",
+   "icon_url": "/godforge/abilities/raijin/ICON_Raijin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "No longer limits to 1 trigger per hero turn.",
+     "upgrade_description": "No longer limits to 1 trigger per hero turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Supercharged Pulse",
+   "description": "Attack all enemies 3 times 125%ATK. Increase this hero’s Divinity by 10% for each enemy defeated. If Fujin is an ally, also increase his Divinity by the same amount.",
+   "icon_url": "/godforge/abilities/raijin/ICON_Raijin_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "125%ATK",
+    "125%ATK",
+    "125%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If an enemy is under Hex, each hit has a 25% increased chance to Strong Hit",
+     "upgrade_description": "If an enemy is under Hex, each hit has a 25% increased chance to Strong Hit"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Eye of the Storm",
+   "description": "When an enemy receives a Debuff, shock them, inflicting damage 50% ATK. This can trigger up to 1 time per hero turn.",
+   "icon_url": "/godforge/abilities/raijin/ICON_Raijin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

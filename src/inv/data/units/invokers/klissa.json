@@ -1,0 +1,555 @@
+{
+ "slug": "klissa",
+ "kind": "Invoker",
+ "name": "Klissa",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/klissa/portrait.webp",
+ "fullArt": "/invokers/units/invokers/klissa/full.webp",
+ "stats": {
+  "base": {
+   "Health": "572",
+   "Attack": "55",
+   "Defense": "47",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "109"
+  },
+  "max": {
+   "Health": "6,687",
+   "Attack": "733",
+   "Defense": "540",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "139"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/klissa/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.5% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 57.5% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 19 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 36.6% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 60.9% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 20 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 38.6% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 64.4% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 22 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 42.1% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 70.2% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 23 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 46.2% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 77.1% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 26 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 49.7% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 82.8% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 28 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 53.8% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 89.7% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 30 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 95.4% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 32 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.4% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 102.3% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 34 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 64.9% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 108.1% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 36 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 69% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 115% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 38 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Frostshatter",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/klissa/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Fracture",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/klissa/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 76 damage per hit. Casts 2 [12% DEF Down] debuffs on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 80 damage per hit. Casts 2 [12% DEF Down] debuffs on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage per hit. Casts 2 [13% DEF Down] debuffs on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 92 damage per hit. Casts 2 [13% DEF Down] debuffs on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 101 damage per hit. Casts 2 [14% DEF Down] debuffs on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 109 damage per hit. Casts 2 [14% DEF Down] debuffs on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 118 damage per hit. Casts 2 [14% DEF Down] debuffs on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 126 damage per hit. Casts 2 [15% DEF Down] debuffs on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 135 damage per hit. Casts 2 [15% DEF Down] debuffs on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 142 damage per hit. Casts 2 [15% DEF Down] debuffs on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 151 damage per hit. Casts 2 [20% DEF Down] debuffs on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cold Iron Swing",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/klissa/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 160 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 169 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 185 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 203 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 218 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 236 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 269 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 284 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 303 damage. Pushes the target 7m away.\nAccuracy required for: Push\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Death Blizzard",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/klissa/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [35% ATK Up] buff on Klissa, lasting 10s. \nAttacks 1 enemy, dealing 257 damage.\n#1 Damage: 467.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [35% ATK Up] buff on Klissa, lasting 11s. \nAttacks 1 enemy, dealing 273 damage.\n#1 Damage: 495.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [37% ATK Up] buff on Klissa, lasting 11s. \nAttacks 1 enemy, dealing 288 damage.\n#1 Damage: 523.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Casts a [37% ATK Up] buff on Klissa, lasting 12s. \nAttacks 1 enemy, dealing 314 damage.\n#1 Damage: 570.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [38% ATK Up] buff on Klissa, lasting 12s. \nAttacks 1 enemy, dealing 345 damage.\n#1 Damage: 626.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [38% ATK Up] buff on Klissa, lasting 13s. \nAttacks 1 enemy, dealing 370 damage.\n#1 Damage: 673.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Casts a [39% ATK Up] buff on Klissa, lasting 13s. \nAttacks 1 enemy, dealing 401 damage.\n#1 Damage: 729.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [39% ATK Up] buff on Klissa, lasting 13s. \nAttacks 1 enemy, dealing 427 damage.\n#1 Damage: 776% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [39% ATK Up] buff on Klissa, lasting 15s. \nAttacks 1 enemy, dealing 458 damage.\n#1 Damage: 832.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Casts a [40% ATK Up] buff on Klissa, lasting 15s. \nAttacks 1 enemy, dealing 483 damage.\n#1 Damage: 878.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Casts a [45% ATK Up] buff on Klissa, lasting 18s. \nAttacks 1 enemy, dealing 514 damage.\n#1 Damage: 935% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Klissa is a master of Cold Iron – the art of forging steel with frost instead of fire. But control of ice and iron came not from passion, but fate: she needed it to shatter her frozen prison - and her Icebound jailors.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "C",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 33,
+  "lists": 16
+ }
+}

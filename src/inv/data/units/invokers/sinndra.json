@@ -1,0 +1,543 @@
+{
+ "slug": "sinndra",
+ "kind": "Invoker",
+ "name": "Sinndra",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Duthra",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/sinndra/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sinndra/full.webp",
+ "stats": {
+  "base": {
+   "Health": "583",
+   "Attack": "53",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "95"
+  },
+  "max": {
+   "Health": "6,763",
+   "Attack": "708",
+   "Defense": "552",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "120"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sinndra/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+61"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22.5% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 55% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 58.3% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 25.2% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 61.6% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 67.1% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 30.1% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 73.7% ATK\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 79.2% ATK\n#5 Attacks 1 enemy, dealing 53 damage.\nDamage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 35.1% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 85.8% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 37.3% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 91.3% ATK\n#5 Attacks 1 enemy, dealing 62 damage.\nDamage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 97.9% ATK\n#5 Attacks 1 enemy, dealing 66 damage.\nDamage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 103.4% ATK\n#5 Attacks 1 enemy, dealing 70 damage.\nDamage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 45% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 110% ATK\n#5 Attacks 1 enemy, dealing 74 damage.\nDamage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cinderfall",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sinndra/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 74 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 86 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 94 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 132 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Emberfang",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sinndra/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 2s if the hit lands as a critical hit.\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 154 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 2s if the hit lands as a critical hit.\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 2.25s if the hit lands as a critical hit.\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 178 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 2.5s if the hit lands as a critical hit.\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 195 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 2.5s if the hit lands as a critical hit.\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 210 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 2.75s if the hit lands as a critical hit.\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 227 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 3s if the hit lands as a critical hit.\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 242 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 3s if the hit lands as a critical hit.\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 259 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 3.5s if the hit lands as a critical hit.\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 274 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 4s if the hit lands as a critical hit.\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 292 damage. Reduces the cooldown of Active Skill 3 on Sinndra by 4s if the hit lands as a critical hit.\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Pyroclas",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sinndra/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Sinndra gains 25 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 282.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Sinndra gains 27 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 299.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 168 damage. Sinndra gains 28 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 316.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Sinndra gains 28 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 344.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 201 damage. Sinndra gains 29 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 378.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 216 damage. Sinndra gains 31 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 406.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Sinndra gains 33 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 440.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 249 damage. Sinndra gains 33 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 469% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 267 damage. Sinndra gains 35 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 281 damage. Sinndra gains 40 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 531.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 299 damage. Sinndra gains 40 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 565% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Incanis",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sinndra/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 246 damage. Reduces the cooldown of all Active Skills on Sinndra by 6s.\n#1 Damage: 465% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 261 damage. Reduces the cooldown of all Active Skills on Sinndra by 6.5s.\n#1 Damage: 492.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 276 damage. Reduces the cooldown of all Active Skills on Sinndra by 7s.\n#1 Damage: 520.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 301 damage. Reduces the cooldown of all Active Skills on Sinndra by 7.5s.\n#1 Damage: 567.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 330 damage. Reduces the cooldown of all Active Skills on Sinndra by 7.5s.\n#1 Damage: 623.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 355 damage. Reduces the cooldown of all Active Skills on Sinndra by 8s.\n#1 Damage: 669.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 384 damage. Reduces the cooldown of all Active Skills on Sinndra by 8.5s.\n#1 Damage: 725.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 409 damage. Reduces the cooldown of all Active Skills on Sinndra by 8.5s.\n#1 Damage: 771.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 439 damage. Reduces the cooldown of all Active Skills on Sinndra by 9s.\n#1 Damage: 827.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 463 damage. Reduces the cooldown of all Active Skills on Sinndra by 10s.\n#1 Damage: 874.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 493 damage. Reduces the cooldown of all Active Skills on Sinndra by 10s.\n#1 Damage: 930% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "The honorable, stoic, oath-bound Magmabloods are not known for showing off. Sinndra is. Fortunately, she earned the right to it ages ago, and for every boast and promise, there’s fire and steel to back it up.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "C",
+  "omnissi-astral": "D",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "D",
+  "pentiax": "B",
+  "sakiel": "D",
+  "sorgott": "C",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 24.1,
+  "lists": 16
+ }
+}

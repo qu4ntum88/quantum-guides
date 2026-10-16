@@ -1,0 +1,501 @@
+{
+ "slug": "geodoz",
+ "kind": "Titan",
+ "name": "Geodoz",
+ "faction": "Stonehearts",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/geodoz/portrait.webp",
+ "fullArt": "/invokers/units/titans/geodoz/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+430",
+   "Bonus ATK": "+56",
+   "Bonus DEF": "+46",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,584",
+   "Bonus ATK": "+337",
+   "Bonus DEF": "+276",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/titans/geodoz/skills/0.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 76 damage.\nDamage: 135% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 39 damage. Casts a [10% Move SPD Down] debuff on the targets, lasting 5s.\nAccuracy required for: Move SPD Down\nDamage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 80 damage.\nDamage: 143.1% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 42 damage. Casts a [10% Move SPD Down] debuff on the targets, lasting 5.5s.\nAccuracy required for: Move SPD Down\nDamage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 85 damage.\nDamage: 151.2% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 44 damage. Casts a [12% Move SPD Down] debuff on the targets, lasting 5.5s.\nAccuracy required for: Move SPD Down\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 92 damage.\nDamage: 164.7% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 48 damage. Casts a [12% Move SPD Down] debuff on the targets, lasting 6s.\nAccuracy required for: Move SPD Down\nDamage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 101 damage.\nDamage: 180.9% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 53 damage. Casts a [14% Move SPD Down] debuff on the targets, lasting 6s.\nAccuracy required for: Move SPD Down\nDamage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 109 damage.\nDamage: 194.4% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 56 damage. Casts a [14% Move SPD Down] debuff on the targets, lasting 6.5s.\nAccuracy required for: Move SPD Down\nDamage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 118 damage.\nDamage: 210.6% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 61 damage. Casts a [16% Move SPD Down] debuff on the targets, lasting 6.5s.\nAccuracy required for: Move SPD Down\nDamage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 125 damage.\nDamage: 224.1% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 65 damage. Casts a [16% Move SPD Down] debuff on the targets, lasting 7s.\nAccuracy required for: Move SPD Down\nDamage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 135 damage.\nDamage: 240.3% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 70 damage. Casts a [18% Move SPD Down] debuff on the targets, lasting 7s.\nAccuracy required for: Move SPD Down\nDamage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 142 damage.\nDamage: 253.8% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 74 damage. Casts a [18% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\nDamage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 151 damage.\nDamage: 270% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around Geodoz, dealing 78 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\nDamage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Bedrock Demolisher",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/geodoz/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 80 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 142.5% ATK\n#2 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 151% ATK\n#2 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 89 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 159.6% ATK\n#2 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 97 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 173.8% ATK\n#2 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 107 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 190.9% ATK\n#2 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 115 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 205.2% ATK\n#2 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 124 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 222.3% ATK\n#2 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 132 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 236.5% ATK\n#2 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 142 damage per hit. Each hit Removes a random buff from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 253.6% ATK\n#2 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 150 damage per hit. Each hit Removes 2 random buffs from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 267.9% ATK\n#2 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 160 damage per hit. Each hit Removes 2 random buffs from the target.\nAccuracy required for: Buff Removal\n#1 Damage: 285% ATK\n#2 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Gargantuan Hammer",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/geodoz/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 162 damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Casts a [Stun] debuff on the target, lasting 5.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 182 damage. Casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 198 damage. Casts a [Stun] debuff on the target, lasting 6.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 218 damage. Casts a [Stun] debuff on the target, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Casts a [Stun] debuff on the target, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 253 damage. Casts a [Stun] debuff on the target, lasting 7.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 270 damage. Casts a [Stun] debuff on the target, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 289 damage. Casts a [Stun] debuff on the target, lasting 8.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 305 damage. Casts a [Stun] debuff on the target, lasting 9s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 325 damage. Casts a [Stun] debuff on the target, lasting 9s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/geodoz/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 126 damage. Casts a [Stun] debuff on the targets, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 225% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 10s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 134 damage. Casts a [Stun] debuff on the targets, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 238.5% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 10.5s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 141 damage. Casts a [Stun] debuff on the targets, lasting 2.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 252% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 11s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 154 damage. Casts a [Stun] debuff on the targets, lasting 2.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 274.5% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 11.5s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 169 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 301.5% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 12s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 181 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 324% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 12.5s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 197 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 351% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 13s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 209 damage. Casts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 373.5% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 14s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 224 damage. Casts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 400.5% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 15s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 237 damage. Casts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 423% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 15s, protecting the target against 3 Control debuffs."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 252 damage. Casts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 450% ATK\nINVOKATION END\nCasts a [Willpower] buff on the Bound Invoker, lasting 16s, protecting the target against 3 Control debuffs."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/geodoz/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +21% Attack.\nOutside Dungeon mode: +12% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +23.1% Attack.\nOutside Dungeon mode: +13.2% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +25.2% Attack.\nOutside Dungeon mode: +14.4% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +29.4% Attack.\nOutside Dungeon mode: +16.8% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +33.6% Attack.\nOutside Dungeon mode: +19.2% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +37.8% Attack.\nOutside Dungeon mode: +21.6% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +42% Attack.\nOutside Dungeon mode: +24% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Geodoz is the patron guardian of the Deepcast Dwarves who toil in the Pits – the endless rocky netherrealm that lies beneath Stoneloom. While Geodoz's hulking form often terrifies members of the Goldcast, its glowing red protrusions are a comforting sight to Deepcast miners. It means help is at hand, and that hand is actually an enormous hammer.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "D",
+  "sakiel": "C",
+  "sorgott": "B",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 23.2,
+  "lists": 16
+ }
+}

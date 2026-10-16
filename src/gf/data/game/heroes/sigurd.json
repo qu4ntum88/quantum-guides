@@ -1,0 +1,267 @@
+{
+ "id": 91,
+ "slug": "sigurd",
+ "name": "Sigurd",
+ "title": "Dragonbane",
+ "summary": "Quintessential Brawler that dishes out big damage when taking damage.",
+ "lore": "Sigurd is most famous as a dragon-slayer, but his greatest challenge lay in the jealous machinations of Brynhild. Any relief Sigurd may find from those schemes since the Shattering, however, is tempered by the return of Fafnir the dragon. Sigurd takes the reversal of his greatest triumph as a personal affront, and seeks to regain his former glory at any cost.",
+ "rarity": "Rare",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Sigurd.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Sigurd_main.png",
+ "stats": {
+  "hp": 1500,
+  "atk": 75,
+  "def": 78,
+  "spd": 88,
+  "init": 81,
+  "acc": 15,
+  "res": 30,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Has a 50% chance to counterattack when this hero is attacked with a weak hit.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Fateful Desire",
+   "description": "Attack 1 enemy 10%HP+135%ATK and place [Barrier] [Barrier] equal to 5% of the damage inflicted. If Brynhild is an ally, also place the [Barrier] on her.",
+   "icon_url": "/godforge/abilities/sigurd/ICON_Sigurd_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+135%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Majestic Leap",
+   "description": "Attack 1 enemy 15%HP+190%ATK then place [FTH Up I] on this hero for 1 turn. If Brynhild is an ally, also place FTH Up Ion her. Will always Strong Hit against Bosses.",
+   "icon_url": "/godforge/abilities/sigurd/ICON_Sigurd_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+190%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "FTH Up I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Dragonhorn Skin",
+   "description": "When this hero is attacked, heal for 30% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/sigurd/ICON_Sigurd_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Has a 50% chance to counterattack when this hero is attacked with a weak hit.",
+     "upgrade_description": "Has a 50% chance to counterattack when this hero is attacked with a weak hit."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Dragonslayer",
+   "description": "Attack 1 enemy 15%HP+190%ATK. Inflicts 20% increased damage to Bosses. If the target is defeated, decrease the damage this hero receives by 10% (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/sigurd/ICON_Sigurd_Ultimate.webp",
+   "divinity_cost": 1925,
+   "damage_formula": [
+    "15%HP+190%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Dragonhorn Skin",
+   "description": "When this hero is attacked, heal for 15% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/sigurd/ICON_Sigurd_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

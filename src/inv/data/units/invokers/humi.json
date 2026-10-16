@@ -1,0 +1,555 @@
+{
+ "slug": "humi",
+ "kind": "Invoker",
+ "name": "Humi",
+ "faction": "Beastbloods",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/humi/portrait.webp",
+ "fullArt": "/invokers/units/invokers/humi/full.webp",
+ "stats": {
+  "base": {
+   "Health": "462",
+   "Attack": "64",
+   "Defense": "50",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "5,800",
+   "Attack": "790",
+   "Defense": "570",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "131"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/humi/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+130",
+    "titan": "+71"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 35.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 68.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 37.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 72.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 39.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 76.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 43.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 83.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 47.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 91.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 51.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 63 damage.\nDamage: 98.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 68 damage.\nDamage: 106.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 58.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 61 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 73 damage.\nDamage: 113.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 63.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 52 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 66 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 78 damage.\nDamage: 121.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 66.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 82 damage.\nDamage: 128.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 71% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 74 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 88 damage.\nDamage: 137% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wildshot",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/humi/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 83 damage.\n#1 Damage: 130% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 88 damage.\n#1 Damage: 137.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 93 damage.\n#1 Damage: 145.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 102 damage.\n#1 Damage: 158.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 111 damage.\n#1 Damage: 174.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 120 damage.\n#1 Damage: 187.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 130 damage.\n#1 Damage: 202.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 138 damage.\n#1 Damage: 215.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 148 damage.\n#1 Damage: 231.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 156 damage.\n#1 Damage: 244.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 166 damage.\n#1 Damage: 260% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Preybreaker",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/humi/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 166 damage. Casts a [15% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 260% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 176 damage. Casts a [16% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 275.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 186 damage. Casts a [16% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 291.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 203 damage. Casts a [17% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 317.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 223 damage. Casts a [17% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 348.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 240 damage. Casts a [17% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 374.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 260 damage. Casts a [18% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 405.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 276 damage. Casts a [18% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 431.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 296 damage. Casts a [19% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 462.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 313 damage. Casts a [19% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 488.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 333 damage. Casts a [20% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 520% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Maimbarb",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/humi/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+46",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 179 damage. Casts a [15% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 280% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 190 damage. Casts a [15% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 296.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 201 damage. Casts a [15% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 313.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 219 damage. Casts a [16% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 341.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 240 damage. Casts a [16% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 375.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 258 damage. Casts a [17% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 403.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 280 damage. Casts a [17% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 436.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 297 damage. Casts a [18% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 464.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 319 damage. Casts a [18% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 498.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 337 damage. Casts a [18% ATK Down] debuff on the target, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 526.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 358 damage. Casts a [20% ATK Down] debuff on the target, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 560% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deathquiver",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/humi/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 294 damage. Damage increases by 10% per debuff on the target, limited up to +100% damage.\n#1 Damage: 460% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 312 damage. Damage increases by 11% per debuff on the target, limited up to +100% damage.\n#1 Damage: 487.6% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 330 damage. Damage increases by 11% per debuff on the target, limited up to +110% damage.\n#1 Damage: 515.2% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 359 damage. Damage increases by 12% per debuff on the target, limited up to +110% damage.\n#1 Damage: 561.2% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 394 damage. Damage increases by 12% per debuff on the target, limited up to +120% damage.\n#1 Damage: 616.4% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 424 damage. Damage increases by 13% per debuff on the target, limited up to +120% damage.\n#1 Damage: 662.4% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 459 damage. Damage increases by 13% per debuff on the target, limited up to +130% damage.\n#1 Damage: 717.6% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 489 damage. Damage increases by 14% per debuff on the target, limited up to +130% damage.\n#1 Damage: 763.6% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 524 damage. Damage increases by 14% per debuff on the target, limited up to +140% damage.\n#1 Damage: 818.8% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 553 damage. Damage increases by 15% per debuff on the target, limited up to +140% damage.\n#1 Damage: 864.8% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 589 damage. Damage increases by 15% per debuff on the target, limited up to +150% damage.\n#1 Damage: 920% * ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Remnant’s forested undercity is nearly forgotten by the rest of the Beastbloods, but Humi knows every branch in those dark woods. She hunts those who don’t belong among the vines, doing all she can to keep the tenuous balance between the scattered villages above and the crumbling wilds below.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "B",
+  "hyxxis": "C",
+  "koltmos": "A",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "C",
+  "ulgorim": "B",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 33,
+  "lists": 16
+ }
+}

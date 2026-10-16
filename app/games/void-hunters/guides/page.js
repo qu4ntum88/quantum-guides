@@ -1,95 +1,90 @@
+import Link from 'next/link'
 import '../../godforge/game.css'
+import '../void-hunters.css'
+import JsonLd from '../../../components/JsonLd'
+import WorldHero from '@/src/qgg/components/WorldHero'
+import QTile from '@/src/qgg/components/QTile'
+import { breadcrumbLd, pageMeta, VH_CRUMB } from '@/src/lib/seo'
+import { getVhTieredRoster, vhEntities } from '@/src/vh/lib/hunters'
 
 export const revalidate = 3600
 
-export const metadata = {
-  title: 'Void Hunters Guides, Hunters & Status Effects | Quantum Game Guides',
+export const metadata = pageMeta({
+  title: 'Void Hunters Guides: Tier List, Hunters & Status Effects',
   description:
-    'The Void Hunters hub — browse the full hunter database, the complete status effects reference, and video guides for the turn-based squad RPG.',
-  alternates: { canonical: '/games/void-hunters/guides' },
-}
+    'The Void Hunters hub: a tier list ranked by class, a page for every hunter with skills, upgrades and lore, the status effect reference, and video guides.',
+  path: '/games/void-hunters/guides',
+})
 
-const GOLD = 'rgba(201, 160, 30, 0.45)'
+const RESOURCES = [
+  { href: '/games/void-hunters/hunter-tier-list', label: 'Hunter Tier List', text: 'Every hunter ranked S to F within their class. Switch to Grid to filter the database by rarity, homeland and species, and open any hunter for their kit, upgrades and lore.' },
+  { href: '/games/void-hunters/status-effects', label: 'Status Effects', text: 'Every buff, debuff and disable in the game, in one searchable grid.' },
+]
 
-export default function VoidHuntersGuidesPage() {
+export default async function VoidHuntersGuidesPage() {
+  const roster = await getVhTieredRoster()
+  const top = vhEntities(roster.filter((h) => h.tier === 'S').slice(0, 12))
+
   return (
-    <main style={{ '--game-accent': '#06b6d4' }}>
-      <section className="gh-hero">
-        <div className="container">
-          <p className="gh-overline">Game Hub</p>
-          <h1 className="gh-hero-title">Void Hunters</h1>
-          <p className="gh-hero-sub">Dark fantasy turn-based RPG — build your hunter roster, master strategic combat, and take on escalating void threats.</p>
-          <div className="gh-hero-divider" />
-        </div>
-      </section>
+    <main>
+      <JsonLd data={breadcrumbLd([VH_CRUMB])} />
+      <WorldHero
+        world="voidhunters"
+        overline="Game Hub"
+        title="Void Hunters Guides"
+        sub="Dark fantasy turn-based RPG: build your hunter roster, master the fight, and hold the line against the void."
+      />
 
-      <section className="game-content">
-        <div className="container">
-          <div className="content-grid">
-            <div className="main-content">
-
-              <section className="resources-section" style={{ marginBottom: '2rem' }}>
-                <h2>Resources</h2>
-                <div style={{ marginTop: '0.75rem' }}>
-                  {/* Hunter Database row */}
-                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
-                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
-                      <a href="/games/void-hunters" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap' }}>
-                        Hunter Database →
-                      </a>
-                    </div>
-                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
-                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
-                      Want to come up with your own builds and theorycraft? We&apos;ve got a sortable grid where you can filter through all of the Hunters and find the ones you need. And if you want to learn more about those hunters, you can click on each one to go to their dedicated page to learn more about their kits, lore, and upgrades.
-                    </p>
+      <div className="container w-section">
+        <div className="content-grid">
+          <div className="main-content">
+            <section className="w-card">
+              <h2>On Quantum</h2>
+              <div className="vh-resources">
+                {RESOURCES.map((r) => (
+                  <div key={r.href} className="vh-resource">
+                    <Link href={r.href} className="btn">{r.label}</Link>
+                    <p>{r.text}</p>
                   </div>
-
-                  {/* Row divider */}
-                  <div style={{ height: '2px', background: GOLD }} />
-
-                  {/* Status Effects row */}
-                  <div style={{ display: 'flex', alignItems: 'center', padding: '1rem 0' }}>
-                    <div style={{ flexShrink: 0, width: '13rem', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '1.25rem' }}>
-                      <a href="/games/void-hunters/status-effects" className="btn" style={{ fontSize: '0.85rem', padding: '0.6rem 1.25rem', whiteSpace: 'nowrap' }}>
-                        Status Effects →
-                      </a>
-                    </div>
-                    <div style={{ width: '2px', height: '2.5rem', background: GOLD, flexShrink: 0, alignSelf: 'center' }} />
-                    <p style={{ margin: 0, paddingLeft: '1.25rem', color: '#cccccc', lineHeight: 1.7, fontSize: '0.92rem' }}>
-                      We&apos;ve compiled a list of all the status effects in the game in a searchable grid.
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section className="videos-section">
-                <h2>Video Guides</h2>
-                <p className="section-desc">Watch video walkthroughs and detailed explanations</p>
-                <div className="video-container">
-                  <iframe
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/videoseries?list=PLj9TDaSk5Dc-sdI1bxzAO4jbm1Z5LBKhF"
-                    title="Void Hunters Video Guides"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </section>
-
-            </div>
-
-            <aside className="sidebar">
-              <div className="sidebar-card">
-                <h3>Community</h3>
-                <p>Join the community to discuss strategies, share tips, and stay updated on the latest content.</p>
-                <a href="https://discord.gg/2McMuE94bC" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
+                ))}
               </div>
-            </aside>
+            </section>
+
+            {top.length > 0 && (
+              <section className="w-card">
+                <h2>S-tier hunters</h2>
+                <p className="w-muted">The top of Quantum&apos;s tier list right now.</p>
+                <div className="qtb-grid vh-tight">
+                  {top.map((e) => <QTile key={e.id} e={e} tier="S" size="sm" />)}
+                </div>
+              </section>
+            )}
+
+            <section className="w-card">
+              <h2>Video guides</h2>
+              <div className="video-container">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/videoseries?list=PLj9TDaSk5Dc-sdI1bxzAO4jbm1Z5LBKhF"
+                  title="Void Hunters Video Guides"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </section>
           </div>
+
+          <aside className="sidebar">
+            <div className="w-card">
+              <h3>Community</h3>
+              <p className="w-muted">Join the community to discuss strategies, share tips and stay updated on the latest content.</p>
+              <a href="https://discord.gg/2McMuE94bC" target="_blank" rel="noopener noreferrer" className="btn">Join Discord</a>
+            </div>
+          </aside>
         </div>
-      </section>
+      </div>
     </main>
   )
 }

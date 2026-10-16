@@ -1,0 +1,549 @@
+{
+ "slug": "prisella-the-bloodmoon",
+ "kind": "Invoker",
+ "name": "Prisella the Bloodmoon",
+ "faction": "Nocturna",
+ "rarity": "Uncommon",
+ "class": "Ranged Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/prisella-the-bloodmoon/portrait.webp",
+ "fullArt": "/invokers/units/invokers/prisella-the-bloodmoon/full.webp",
+ "stats": {
+  "base": {
+   "Health": "367",
+   "Attack": "54",
+   "Defense": "36",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "85"
+  },
+  "max": {
+   "Health": "4,536",
+   "Attack": "737",
+   "Defense": "431",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "85"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/prisella-the-bloodmoon/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 22.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 33% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 55.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage.\nDamage: 33% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 46.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 58.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 25.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 37% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 62.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 37% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 53.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 67.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage.\nDamage: 40.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 30.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 44.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 74.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage.\nDamage: 44.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 47.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 63.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 79.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage.\nDamage: 47.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 35.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 51.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 68.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 86.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 28 damage.\nDamage: 51.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 37.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 54.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 73% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 92.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 30 damage.\nDamage: 54.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 58.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 78.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 98.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 32 damage.\nDamage: 58.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 62% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 104.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 34 damage.\nDamage: 62% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 45% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 66% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 111% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 36 damage.\nDamage: 66% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Falling Moon",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/prisella-the-bloodmoon/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 69 damage.\n#1 Damage: 127.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 73 damage.\n#1 Damage: 135.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage.\n#1 Damage: 142.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 84 damage.\n#1 Damage: 155.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 92 damage.\n#1 Damage: 170.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 99 damage.\n#1 Damage: 183.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 107 damage.\n#1 Damage: 198.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 114 damage.\n#1 Damage: 211.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 123 damage.\n#1 Damage: 226.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 129 damage.\n#1 Damage: 239.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 138 damage.\n#1 Damage: 255% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Life Phase",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/prisella-the-bloodmoon/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+42",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 73 damage per hit. Heals Prisella 2 times, restoring (10% * Damage Dealt) HP per heal.\n#1 Damage: 135% ATK\n#2 Heal: 10% * Damage Dealt\n#3 Damage: 135% ATK\n#4 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 77 damage per hit. Heals Prisella 2 times, restoring (12.5% * Damage Dealt) HP per heal.\n#1 Damage: 143.1% ATK\n#2 Heal: 12.5% * Damage Dealt\n#3 Damage: 143.1% ATK\n#4 Heal: 12.5% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 82 damage per hit. Heals Prisella 2 times, restoring (12.5% * Damage Dealt) HP per heal.\n#1 Damage: 151.2% ATK\n#2 Heal: 12.5% * Damage Dealt\n#3 Damage: 151.2% ATK\n#4 Heal: 12.5% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 89 damage per hit. Heals Prisella 2 times, restoring (15% * Damage Dealt) HP per heal.\n#1 Damage: 164.7% ATK\n#2 Heal: 15% * Damage Dealt\n#3 Damage: 164.7% ATK\n#4 Heal: 15% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 98 damage per hit. Heals Prisella 2 times, restoring (15% * Damage Dealt) HP per heal.\n#1 Damage: 180.9% ATK\n#2 Heal: 15% * Damage Dealt\n#3 Damage: 180.9% ATK\n#4 Heal: 15% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 105 damage per hit. Heals Prisella 2 times, restoring (17.5% * Damage Dealt) HP per heal.\n#1 Damage: 194.4% ATK\n#2 Heal: 17.5% * Damage Dealt\n#3 Damage: 194.4% ATK\n#4 Heal: 17.5% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 114 damage per hit. Heals Prisella 2 times, restoring (17.5% * Damage Dealt) HP per heal.\n#1 Damage: 210.6% ATK\n#2 Heal: 17.5% * Damage Dealt\n#3 Damage: 210.6% ATK\n#4 Heal: 17.5% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 121 damage per hit. Heals Prisella 2 times, restoring (20% * Damage Dealt) HP per heal.\n#1 Damage: 224.1% ATK\n#2 Heal: 20% * Damage Dealt\n#3 Damage: 224.1% ATK\n#4 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 130 damage per hit. Heals Prisella 2 times, restoring (20% * Damage Dealt) HP per heal.\n#1 Damage: 240.3% ATK\n#2 Heal: 20% * Damage Dealt\n#3 Damage: 240.3% ATK\n#4 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 137 damage per hit. Heals Prisella 2 times, restoring (25% * Damage Dealt) HP per heal.\n#1 Damage: 253.8% ATK\n#2 Heal: 25% * Damage Dealt\n#3 Damage: 253.8% ATK\n#4 Heal: 25% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 146 damage per hit. Heals Prisella 2 times, restoring (25% * Damage Dealt) HP per heal.\n#1 Damage: 270% ATK\n#2 Heal: 25% * Damage Dealt\n#3 Damage: 270% ATK\n#4 Heal: 25% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Curse Orbit",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/prisella-the-bloodmoon/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 149 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 157 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 166 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 181 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 199 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 214 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 232 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 247 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 264 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 279 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 297 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Broken Bloodnight",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/prisella-the-bloodmoon/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 120 damage. Casts a [10% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 222.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 127 damage. Casts a [12% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 235.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 135 damage. Casts a [14% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 147 damage. Casts a [14% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 271.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 161 damage. Casts a [14% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 298.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 173 damage. Casts a [16% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 320.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 187 damage. Casts a [18% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 347.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 199 damage. Casts a [18% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 369.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 214 damage. Casts a [18% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 226 damage. Casts a [20% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 418.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 240 damage. Casts a [20% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 445% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "One Bloodmoon wasn't enough for Prisella. She had to bask in its glow at all times. After much experimentation, she concentrated the Bloodmoon's undying energy into three perfectly shaped \"mini-moons\". They now orbit Prisella – bathing her in darklight as she leaps into the furthest Shreds – where no Nocturna's gone before.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0.9,
+  "lists": 16
+ }
+}

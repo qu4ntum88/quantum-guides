@@ -1,0 +1,549 @@
+{
+ "slug": "ranath",
+ "kind": "Invoker",
+ "name": "Ranath",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/ranath/portrait.webp",
+ "fullArt": "/invokers/units/invokers/ranath/full.webp",
+ "stats": {
+  "base": {
+   "Health": "539",
+   "Attack": "59",
+   "Defense": "46",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "102"
+  },
+  "max": {
+   "Health": "6,252",
+   "Attack": "797",
+   "Defense": "527",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "127"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ranath/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+87",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 58.5% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 21 damage.\nDamage: 36% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 62% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 23 damage.\nDamage: 38.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 65.5% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 24 damage.\nDamage: 40.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 71.4% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 26 damage.\nDamage: 43.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 78.4% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 28 damage.\nDamage: 48.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 50 damage.\nDamage: 84.2% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 31 damage.\nDamage: 51.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 91.3% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 33 damage.\nDamage: 56.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 57 damage.\nDamage: 97.1% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 35 damage.\nDamage: 59.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 104.1% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 38 damage.\nDamage: 64.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 110% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 40 damage.\nDamage: 67.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 54 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 117% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 42 damage.\nDamage: 72% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Resonant Crash",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ranath/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+42",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 97 damage.\n#1 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 107 damage.\n#1 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 115 damage.\n#1 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 124 damage.\n#1 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 132 damage.\n#1 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 142 damage.\n#1 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage.\n#1 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage.\n#1 Damage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Strength of Amber",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ranath/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 162 damage. Ranath gains 25 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Ranath gains 25 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 182 damage. Ranath gains 25 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 198 damage. Ranath gains 30 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 217 damage. Ranath gains 30 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Ranath gains 35 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 253 damage. Ranath gains 35 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 269 damage. Ranath gains 40 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 289 damage. Ranath gains 40 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 305 damage. Ranath gains 45 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 325 damage. Ranath gains 50 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deep Ignition",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ranath/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+67",
+    "titan": "+36"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Casts a [15% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 5s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 84 damage.\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Casts a [15% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 5s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 89 damage.\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [15% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 6s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 94 damage.\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [20% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 6s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 103 damage.\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [20% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 6s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 113 damage.\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [20% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 7s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 121 damage.\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [25% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 7s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 131 damage.\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [25% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 7s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 140 damage.\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [25% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 7s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 150 damage.\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [30% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 7s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 158 damage.\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [30% Move SPD Up] buff on 8 allies in a 8m radius around Ranath, lasting 8s. \nAttacks 8 enemies in a 3x10m area in front of Ranath, dealing 168 damage.\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Greenfire Within",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ranath/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 136 damage per hit. Extends the duration of 1 random buff on Ranath by 3s on critical hits.\n#1 Damage: 230% ATK\n#2 Damage: 230% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 144 damage per hit. Extends the duration of 1 random buff on Ranath by 3.5s on critical hits.\n#1 Damage: 243.8% ATK\n#2 Damage: 243.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 152 damage per hit. Extends the duration of 1 random buff on Ranath by 4s on critical hits.\n#1 Damage: 257.6% ATK\n#2 Damage: 257.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 166 damage per hit. Extends the duration of 1 random buff on Ranath by 4.5s on critical hits.\n#1 Damage: 280.6% ATK\n#2 Damage: 280.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 182 damage per hit. Extends the duration of 1 random buff on Ranath by 4.5s on critical hits.\n#1 Damage: 308.2% ATK\n#2 Damage: 308.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 195 damage per hit. Extends the duration of up to 2 random buffs on Ranath by 4.5s on critical hits.\n#1 Damage: 331.2% ATK\n#2 Damage: 331.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 212 damage per hit. Extends the duration of up to 2 random buffs on Ranath by 5s on critical hits.\n#1 Damage: 358.8% ATK\n#2 Damage: 358.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 225 damage per hit. Extends the duration of up to 2 random buffs on Ranath by 5s on critical hits.\n#1 Damage: 381.8% ATK\n#2 Damage: 381.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 242 damage per hit. Extends the duration of up to 2 random buffs on Ranath by 6s on critical hits.\n#1 Damage: 409.4% ATK\n#2 Damage: 409.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 255 damage per hit. Extends the duration of up to 2 random buffs on Ranath by 7s on critical hits.\n#1 Damage: 432.4% ATK\n#2 Damage: 432.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 271 damage per hit. Extends the duration of up to 3 random buffs on Ranath by 7s on critical hits.\n#1 Damage: 460% ATK\n#2 Damage: 460% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Ranath goes where others fear to tread. He leads expeditions into the Underroot, a living maze that runs deep beneath the Emerald Kingdom. To survive, he wields the Greenfire – a magic so dangerous that most Eldrin oppose its use. But Ranath has no time for their games. He has wars to win.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "B",
+  "omnissi-water": "D",
+  "omnissi-wind": "C",
+  "pentiax": "D",
+  "sakiel": "C",
+  "sorgott": "B",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 28.6,
+  "lists": 16
+ }
+}

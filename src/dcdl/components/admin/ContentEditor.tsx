@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import BlockEditor from './BlockEditor'
 import { btn, btnDanger, btnQuiet, gold, hint, ImageField, input, label } from './editor-ui'
+import { DEFAULT_GUIDE_GAME, GUIDE_GAMES, guidePath, toGuideGame } from '@/src/lib/guide-games'
 import {
   type Block,
   blocksToMarkdown,
@@ -62,12 +63,19 @@ type GuideRow = {
   pub_date: string | null; cover_image: string | null; tags: string[] | null
   event_type: string | null; event_dates: string | null; recommended_for: string | null
   key_rewards: string[] | null
+  game?: string // which game's guide section lists it (GUIDE_GAMES)
+  status?: string // 'pending' = draft, hidden from the public site until approved
 }
+
+const isDraft = (r: GuideRow) => r.status === 'pending'
 
 const blankGuide: GuideRow = {
   id: '', title: '', description: '', body: '', author: '', pub_date: '', cover_image: '',
   tags: [], event_type: '', event_dates: '', recommended_for: '', key_rewards: [],
+  game: DEFAULT_GUIDE_GAME,
 }
+
+const gameLabel = (g?: string) => GUIDE_GAMES.find((x) => x.id === toGuideGame(g))!.label
 
 // Body editor: a visual block editor by default. Legacy Markdown guides open in
 // a raw text box with a one-click "convert to the visual editor" path, so
@@ -146,6 +154,7 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
       body: JSON.stringify({
         id: editing.id || undefined,
         title: editing.title,
+        game: toGuideGame(editing.game),
         description: editing.description,
         body: editing.body,
         author: editing.author,
@@ -160,7 +169,9 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
     })
     const json = await res.json()
     if (!res.ok) { setStatus(`Save failed: ${json.error ?? res.status}`); return }
-    setStatus('Saved. The live site updates within a minute.')
+    setStatus(json.status === 'pending'
+      ? 'Draft saved. It stays off the public site until it is approved in Studio → Review Queue.'
+      : 'Saved. The live site updates within a minute.')
     setEditing(null)
     load()
   }
@@ -183,6 +194,12 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
       <form onSubmit={(e) => { e.preventDefault(); save() }} style={{ maxWidth: '760px' }}>
         <label style={label}>Title</label>
         <input style={input} value={editing.title} onChange={(e) => set({ title: e.target.value })} />
+
+        <label style={label}>Game</label>
+        <select style={input} value={toGuideGame(editing.game)} onChange={(e) => set({ game: e.target.value })}>
+          {GUIDE_GAMES.map((g) => <option key={g.id} value={g.id}>{g.label}</option>)}
+        </select>
+        <p style={hint}>Which game&apos;s guide section lists it.{editing.id ? ` Its page: ${guidePath(toGuideGame(editing.game), editing.id)}` : ''}</p>
 
         <label style={label}>Slug (URL id)</label>
         <input style={input} value={editing.id} onChange={(e) => set({ id: e.target.value })} placeholder="auto-generated from title if left blank" />
@@ -226,7 +243,7 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
         </details>
 
         <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
-          <button type="submit" style={btn}>Save &amp; publish</button>
+          <button type="submit" style={btn}>{isDraft(editing) ? 'Save draft' : 'Save & publish'}</button>
           <button type="button" style={btnQuiet} onClick={() => setEditing(null)}>Cancel</button>
           {editing.id && rows.some((r) => r.id === editing.id) && (
             <button type="button" style={{ ...btnDanger, marginLeft: 'auto' }} onClick={() => remove(editing)}>Delete</button>
@@ -243,8 +260,11 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
         {rows.map((r) => (
           <li key={r.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', padding: '0.75rem 0', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
             <div>
-              <div style={{ fontWeight: 700, color: '#fff' }}>{r.title}</div>
-              <div style={{ ...hint, marginTop: 0 }}>{r.pub_date ?? 'no date'} · {r.id}</div>
+              <div style={{ fontWeight: 700, color: '#fff' }}>
+                {r.title}
+                {isDraft(r) && <span style={{ ...hint, display: 'inline', marginLeft: '0.6rem', color: gold }}>DRAFT · not public</span>}
+              </div>
+              <div style={{ ...hint, marginTop: 0 }}>{gameLabel(r.game)} · {r.pub_date ?? 'no date'} · {r.id}</div>
             </div>
             <button style={btnQuiet} onClick={() => setEditing(r)}>Edit</button>
           </li>

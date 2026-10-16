@@ -1,0 +1,598 @@
+{
+ "slug": "kryxa-the-giantfeller",
+ "kind": "Invoker",
+ "name": "Kryxa the Giantfeller",
+ "faction": "Ironbands",
+ "rarity": "Legendary",
+ "class": "Tank",
+ "element": "Dark",
+ "soulSign": "Sign of Actia",
+ "gender": "Female",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/kryxa-the-giantfeller/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kryxa-the-giantfeller/full.webp",
+ "stats": {
+  "base": {
+   "Health": "864",
+   "Attack": "56",
+   "Defense": "109",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "100"
+  },
+  "max": {
+   "Health": "9,835",
+   "Attack": "591",
+   "Defense": "1,261",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "140"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kryxa-the-giantfeller/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 26% DEF\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 38.5% DEF\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 52.5% DEF\n#4 Attacks 1 enemy, dealing 70 damage.\nDamage: 64.5% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 43 damage.\nDamage: 39% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 27.6% DEF\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 40.8% DEF\n#3 Attacks 1 enemy, dealing 61 damage.\nDamage: 55.6% DEF\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 68.4% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 45 damage.\nDamage: 41.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 29.1% DEF\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 43.1% DEF\n#3 Attacks 1 enemy, dealing 64 damage.\nDamage: 58.8% DEF\n#4 Attacks 1 enemy, dealing 79 damage.\nDamage: 72.2% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 48 damage.\nDamage: 43.7% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 31.7% DEF\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 47% DEF\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 64% DEF\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 78.7% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 52 damage.\nDamage: 47.6% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 34.8% DEF\n#2 Attacks 1 enemy, dealing 56 damage.\nDamage: 51.6% DEF\n#3 Attacks 1 enemy, dealing 77 damage.\nDamage: 70.3% DEF\n#4 Attacks 1 enemy, dealing 94 damage.\nDamage: 86.4% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 57 damage.\nDamage: 52.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 41 damage.\nDamage: 37.4% DEF\n#2 Attacks 1 enemy, dealing 60 damage.\nDamage: 55.4% DEF\n#3 Attacks 1 enemy, dealing 82 damage.\nDamage: 75.6% DEF\n#4 Attacks 1 enemy, dealing 101 damage.\nDamage: 92.9% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 61 damage.\nDamage: 56.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 44 damage.\nDamage: 40.6% DEF\n#2 Attacks 1 enemy, dealing 65 damage.\nDamage: 60.1% DEF\n#3 Attacks 1 enemy, dealing 89 damage.\nDamage: 81.9% DEF\n#4 Attacks 1 enemy, dealing 110 damage.\nDamage: 100.6% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 66 damage.\nDamage: 60.8% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 47 damage.\nDamage: 43.2% DEF\n#2 Attacks 1 enemy, dealing 70 damage.\nDamage: 63.9% DEF\n#3 Attacks 1 enemy, dealing 95 damage.\nDamage: 87.1% DEF\n#4 Attacks 1 enemy, dealing 117 damage.\nDamage: 107.1% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 71 damage.\nDamage: 64.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 50 damage.\nDamage: 46.3% DEF\n#2 Attacks 1 enemy, dealing 75 damage.\nDamage: 68.5% DEF\n#3 Attacks 1 enemy, dealing 102 damage.\nDamage: 93.4% DEF\n#4 Attacks 1 enemy, dealing 125 damage.\nDamage: 114.8% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 76 damage.\nDamage: 69.4% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 53 damage.\nDamage: 48.9% DEF\n#2 Attacks 1 enemy, dealing 79 damage.\nDamage: 72.4% DEF\n#3 Attacks 1 enemy, dealing 108 damage.\nDamage: 98.7% DEF\n#4 Attacks 1 enemy, dealing 132 damage.\nDamage: 121.3% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 80 damage.\nDamage: 73.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 57 damage.\nDamage: 52% DEF\n#2 Attacks 1 enemy, dealing 84 damage.\nDamage: 77% DEF\n#3 Attacks 1 enemy, dealing 114 damage.\nDamage: 105% DEF\n#4 Attacks 1 enemy, dealing 141 damage.\nDamage: 129% DEF\n#5 Attacks 10 enemies in a 3.5m radius around the closest enemy, dealing 85 damage.\nDamage: 78% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Heinous Chop",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kryxa-the-giantfeller/skills/1.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 161 damage. Casts a [35% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 147.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage. Casts a [38% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 156.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 180 damage. Casts a [41% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 165.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 196 damage. Casts a [41% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 180% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 215 damage. Casts a [44% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 197.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 232 damage. Casts a [47% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 212.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. Casts a [50% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 230.1% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 267 damage. Casts a [55% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 244.9% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 286 damage. Casts a [60% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 262.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 302 damage. Casts a [65% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 277.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 322 damage. Casts a [70% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\n#1 Damage: 295% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Signature Cut",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kryxa-the-giantfeller/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit Rate Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Rate stat by the indicated percentage."
+    },
+    {
+     "label": "Skill Recovery Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Skill Recovery stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 169 damage per hit. The first hit casts a [20% Crit Rate Down] debuff on the target, lasting 10s. Then, casts a [10% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 155% DEF\n#2 Damage: 155% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 179 damage per hit. The first hit casts a [25% Crit Rate Down] debuff on the target, lasting 10s. Then, casts a [10% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 164.3% DEF\n#2 Damage: 164.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 189 damage per hit. The first hit casts a [25% Crit Rate Down] debuff on the target, lasting 10s. Then, casts a [12% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 173.6% DEF\n#2 Damage: 173.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 206 damage per hit. The first hit casts a [30% Crit Rate Down] debuff on the target, lasting 10s. Then, casts a [12% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 189.1% DEF\n#2 Damage: 189.1% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 226 damage per hit. The first hit casts a [30% Crit Rate Down] debuff on the target, lasting 11s. Then, casts a [12% Skill Recovery Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 207.7% DEF\n#2 Damage: 207.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 243 damage per hit. The first hit casts a [30% Crit Rate Down] debuff on the target, lasting 11s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 223.2% DEF\n#2 Damage: 223.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 264 damage per hit. The first hit casts a [30% Crit Rate Down] debuff on the target, lasting 11s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 241.8% DEF\n#2 Damage: 241.8% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 280 damage per hit. The first hit casts a [35% Crit Rate Down] debuff on the target, lasting 11s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 257.3% DEF\n#2 Damage: 257.3% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 301 damage per hit. The first hit casts a [35% Crit Rate Down] debuff on the target, lasting 11s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 11s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 275.9% DEF\n#2 Damage: 275.9% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 318 damage per hit. The first hit casts a [35% Crit Rate Down] debuff on the target, lasting 14s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 291.4% DEF\n#2 Damage: 291.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 338 damage per hit. The first hit casts a [35% Crit Rate Down] debuff on the target, lasting 14s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 14s, on the second hit.\nAccuracy required for: Crit Rate Down, Skill Recovery Down\n#1 Damage: 310% DEF\n#2 Damage: 310% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Giantskull Charge",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kryxa-the-giantfeller/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Taunt",
+     "group": "Debuffs",
+     "description": "The recipient is forced to attack whoever cast the Taunt debuff on them.The recipient can move freely, but can only use their Combo Attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+58",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 172 damage. Casts a [40% ATK Down] debuff on each target hit, lasting 12s. Then, casts a [Taunt] debuff on each target hit, lasting 4s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 157.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 182 damage. Casts a [40% ATK Down] debuff on each target hit, lasting 12s. Then, casts a [Taunt] debuff on each target hit, lasting 5s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 166.9% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 192 damage. Casts a [45% ATK Down] debuff on each target hit, lasting 12s. Then, casts a [Taunt] debuff on each target hit, lasting 5s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 176.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 209 damage. Casts a [45% ATK Down] debuff on each target hit, lasting 13s. Then, casts a [Taunt] debuff on each target hit, lasting 5s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 192.2% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 230 damage. Casts a [45% ATK Down] debuff on each target hit, lasting 13s. Then, casts a [Taunt] debuff on each target hit, lasting 6s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 211.1% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 247 damage. Casts a [50% ATK Down] debuff on each target hit, lasting 13s. Then, casts a [Taunt] debuff on each target hit, lasting 6s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 226.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 268 damage. Casts a [50% ATK Down] debuff on each target hit, lasting 14s. Then, casts a [Taunt] debuff on each target hit, lasting 6s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 245.7% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 285 damage. Casts a [50% ATK Down] debuff on each target hit, lasting 14s. Then, casts a [Taunt] debuff on each target hit, lasting 7s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 261.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 306 damage. Casts a [55% ATK Down] debuff on each target hit, lasting 14s. Then, casts a [Taunt] debuff on each target hit, lasting 7s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 280.4% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 323 damage. Casts a [55% ATK Down] debuff on each target hit, lasting 16s. Then, casts a [Taunt] debuff on each target hit, lasting 7s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 296.1% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards 1 enemy, damaging each enemy hit, dealing 343 damage. Casts a [60% ATK Down] debuff on each target hit, lasting 16s. Then, casts a [Taunt] debuff on each target hit, lasting 8s, forcing them to continuously attack Kryxa using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: ATK Down, Taunt\n#1 Damage: 315% DEF"
+    }
+   ]
+  },
+  {
+   "name": "This Land's Mine!",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kryxa-the-giantfeller/skills/4.webp",
+   "effects": [
+    {
+     "label": "Deflection",
+     "group": "Buffs",
+     "description": "Redirects a percentage of all incoming damage from the recipient of the buff to the caster of the buff. The recipient takes the remainder of the damage as normal."
+    },
+    {
+     "label": "Immunity",
+     "group": "Buffs",
+     "description": "Blocks Debuffs from being applied to the recipient.Immunity Buffs will not block Control Debuffs, and each Immunity buff will only negate a single Debuff before expiring. This buff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 144 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 10s, protecting the target against 3 debuffs. Casts a [20% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 10s, on the second hit. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 132% DEF\n#2 Damage: 132% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 153 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 11s, protecting the target against 3 debuffs. Casts a [20% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 10s, on the second hit. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 139.9% DEF\n#2 Damage: 139.9% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 161 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 11s, protecting the target against 4 debuffs. Casts a [20% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 10s, on the second hit. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 147.8% DEF\n#2 Damage: 147.8% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 176 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 11s, protecting the target against 4 debuffs. Casts a [25% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 10s, on the second hit. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 161% DEF\n#2 Damage: 161% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 193 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 13s, protecting the target against 4 debuffs. Casts a [25% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 13s, on the second hit. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 176.9% DEF\n#2 Damage: 176.9% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 207 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 13s, protecting the target against 4 debuffs. Casts a [30% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 13s, on the second hit. Targets under [Deflection] buffs will redirect 30% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 190.1% DEF\n#2 Damage: 190.1% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 224 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 13s, protecting the target against 5 debuffs. Casts a [30% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 13s, on the second hit. Targets under [Deflection] buffs will redirect 30% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 205.9% DEF\n#2 Damage: 205.9% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 239 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 15s, protecting the target against 5 debuffs. Casts a [30% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 15s, on the second hit. Targets under [Deflection] buffs will redirect 30% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 219.1% DEF\n#2 Damage: 219.1% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 256 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 15s, protecting the target against 5 debuffs. Casts a [35% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 15s, on the second hit. Targets under [Deflection] buffs will redirect 35% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 235% DEF\n#2 Damage: 235% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 270 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 15s, protecting the target against 5 debuffs. Casts a [40% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 15s, on the second hit. Targets under [Deflection] buffs will redirect 40% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 248.2% DEF\n#2 Damage: 248.2% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8.5m radius around Kryxa, from a distance of 4m, 2 times, dealing 288 damage per hit. The first hit casts an [Immunity] buff on Kryxa, lasting 17s, protecting the target against 6 debuffs. Casts a [50% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius around Kryxa, lasting 17s, on the second hit. Targets under [Deflection] buffs will redirect 50% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 264% DEF\n#2 Damage: 264% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Daze",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "After years working as a giant slayer-for-hire, Kryxa realized she was selling herself short. Her real destiny? Her own kingdom. So she set off, weapons in hand, to claim and plant her flag in as many lands as she could. She now proclaims to have 100 cantons under her control. No-one dare to disagree.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "E",
+  "hyxxis": "S",
+  "koltmos": "A+",
+  "omnissi-astral": "E",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "E",
+  "ulgorim": "A+",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 60.7,
+  "lists": 16
+ }
+}

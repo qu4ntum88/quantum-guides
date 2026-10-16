@@ -1,0 +1,290 @@
+{
+ "id": 159,
+ "slug": "xiwangmu",
+ "name": "Xiwangmu",
+ "title": "Queen Mother",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The Queen Mother of the West oversees matters of life and death, prosperity and calamity. Since the Shattering, she is one of Tian’s busiest gods, working to repair the many aspects of Ryven that remain out of balance. She communes with emperors and heroes, granting fortune—and in rare cases, immortality—to those who prove helpful in her efforts.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Xiwangmu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Xiwangmu_main.png",
+ "stats": {
+  "hp": 1335,
+  "atk": 59,
+  "def": 94,
+  "spd": 101,
+  "init": 92,
+  "acc": 15,
+  "res": 65,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Taunt] for 2 turns instead.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When [Immortal] activates on a hero, increase their Turn Meter by 50%.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Imperial Restraint",
+   "description": "Attack 1 enemy 160%DEF+155%ATK then has a 50% chance to place [Taunt] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/xiwangmu/ICON_Xiwangmu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "160%DEF+155%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Taunt for 2 turns instead.",
+     "upgrade_description": "Place [Taunt] for 2 turns instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Kunlun's Blessing",
+   "description": "Place [ACC Up II] and [RES Up II] on all allies for 2 turns then gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/xiwangmu/ICON_Xiwangmu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ACC Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "RES Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Peach of Immortality",
+   "description": "At the start of each wave, place [Immortal] on all allies for 2 turns.",
+   "icon_url": "/godforge/abilities/xiwangmu/ICON_Xiwangmu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Immortal",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When Immortal activates on a hero, increase their Turn Meter by 50%.",
+     "upgrade_description": "When [Immortal] activates on a hero, increase their Turn Meter by 50%."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Nurturing Balance",
+   "description": "Remove 1 random Debuff from all allies then equalise this hero’s HP to the enemy with the highest current HP, and place [Shield] on all allies equal to 25% of this hero’s current HP.",
+   "icon_url": "/godforge/abilities/xiwangmu/ICON_Xiwangmu_Ultimate.webp",
+   "divinity_cost": 3825,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Peach of Immortality",
+   "description": "At the start of each wave, place [Immortal] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/xiwangmu/ICON_Xiwangmu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

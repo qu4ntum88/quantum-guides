@@ -1,0 +1,283 @@
+{
+ "id": 220,
+ "slug": "ceridwen",
+ "name": "Ceridwen",
+ "title": "Guardian of Secrets",
+ "summary": "Enchant your allies with Turn Meter and Divinity gains whilst casting judgement on their Allegiance.",
+ "lore": "Although believed by some to be a goddess, Ceridwen is a mortal sorceress, albeit a potent one. She can grant mystical wisdom, and transform herself and others. She guards many of Avalon’s secret magics, not only from outsiders but from her countrymen, reserving their powers to benefit her children—of which she has several, both natural and through sorcerous accident.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ceridwen.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ceridwen_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 44,
+  "def": 85,
+  "spd": 98,
+  "init": 84,
+  "acc": 5,
+  "res": 25,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also increase the Divinity of all allies by 10%.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Blessed Staff",
+   "description": "Attack 1 enemy 295%ATK. Increase the Turn Meter of 1 random ally by 10%.",
+   "icon_url": "/godforge/abilities/ceridwen/ICON_Ceridwen_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "295%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Enchantress Elixir",
+   "description": "Heal 20%HP 1 ally, then place [FTH Up I] and [SPD Up I] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/ceridwen/ICON_Ceridwen_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "FTH Up I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Up I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "15% FTH in Dungeon Battles",
+   "icon_url": "/godforge/abilities/ceridwen/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Judgement's Call",
+   "description": "When an enemy reaches 100% Turn Meter, increase the Turn Meter of all allies by 10%.",
+   "icon_url": "/godforge/abilities/ceridwen/ICON_Ceridwen_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Cauldron's Brew",
+   "description": "Increase the Turn Meter of all allies by 10%, then place [Sharpen I] on each ally for 2 turns.",
+   "icon_url": "/godforge/abilities/ceridwen/ICON_Ceridwen_Ultimate.webp",
+   "divinity_cost": 2750,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Sharpen I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also increase the Divinity of all allies by 10%.",
+     "upgrade_description": "Also increase the Divinity of all allies by 10%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Judgement's Call",
+   "description": "When an enemy reaches 100% Turn Meter, increase the Turn Meter of this hero by 10%.",
+   "icon_url": "/godforge/abilities/ceridwen/ICON_Ceridwen_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

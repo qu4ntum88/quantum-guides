@@ -1,0 +1,592 @@
+{
+ "slug": "syzoa-shockbubble",
+ "kind": "Invoker",
+ "name": "Syzoa Shockbubble",
+ "faction": "Freeborn",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Water",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/syzoa-shockbubble/portrait.webp",
+ "fullArt": "/invokers/units/invokers/syzoa-shockbubble/full.webp",
+ "stats": {
+  "base": {
+   "Health": "960",
+   "Attack": "74",
+   "Defense": "82",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "95"
+  },
+  "max": {
+   "Health": "11,048",
+   "Attack": "844",
+   "Defense": "861",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "120"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/syzoa-shockbubble/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 14% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 20% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 25.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage. Extends the duration of 1 random debuff on the targets by 1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 15.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 14.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 21.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 27% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage. Extends the duration of 1 random debuff on the targets by 1.1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 16.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 15.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 22.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 28.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Extends the duration of 1 random debuff on the targets by 1.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 17.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 11.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 17.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 24.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 31.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Extends the duration of 1 random debuff on the targets by 1.3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 18.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 12.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 18.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 26.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 34.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage. Extends the duration of 1 random debuff on the targets by 1.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 20.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 13.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 20.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 28.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 36.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage. Extends the duration of 1 random debuff on the targets by 1.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 22.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 14.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 21.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 31.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 39.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage. Extends the duration of 1 random debuff on the targets by 1.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 24.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 15.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 23.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 33.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 42.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage. Extends the duration of 1 random debuff on the targets by 1.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 25.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 24.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 35.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 45.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage. Extends the duration of 1 random debuff on the targets by 1.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 27.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 17.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 26.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 37.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 47.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage. Extends the duration of 1 random debuff on the targets by 1.9s.\nAccuracy required for: Debuff Duration Extension\nDamage: 29.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 19% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 28% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 40% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 51% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 23 damage. Extends the duration of up to 2 random debuffs on the targets by 2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 31% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Jetstream",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/syzoa-shockbubble/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 68 damage. Syzoa gains Ultimate Mana (3 per debuff on the target).\n#1 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 73 damage. Syzoa gains Ultimate Mana (3.25 per debuff on the target).\n#1 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage. Syzoa gains Ultimate Mana (3.5 per debuff on the target).\n#1 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 84 damage. Syzoa gains Ultimate Mana (3.75 per debuff on the target).\n#1 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 92 damage. Syzoa gains Ultimate Mana (4 per debuff on the target).\n#1 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 99 damage. Syzoa gains Ultimate Mana (4.25 per debuff on the target).\n#1 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 107 damage. Syzoa gains Ultimate Mana (4.5 per debuff on the target).\n#1 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 114 damage. Syzoa gains Ultimate Mana (4.75 per debuff on the target).\n#1 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 122 damage. Syzoa gains Ultimate Mana (5 per debuff on the target).\n#1 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 129 damage. Syzoa gains Ultimate Mana (5.5 per debuff on the target).\n#1 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 137 damage. Syzoa gains Ultimate Mana (6 per debuff on the target).\n#1 Damage: 185% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shock Shoal",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/syzoa-shockbubble/skills/2.webp",
+   "effects": [
+    {
+     "label": "ACC Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Accuracy stat by the indicated percentage."
+    },
+    {
+     "label": "Shock",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 125% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [35% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 72 damage. Casts a [Shock] debuff on the targets, lasting 1s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 97.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [40% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 76 damage. Casts a [Shock] debuff on the targets, lasting 1s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 103.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [40% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 81 damage. Casts a [Shock] debuff on the targets, lasting 1.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [40% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 11s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 88 damage. Casts a [Shock] debuff on the targets, lasting 1.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 119% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [45% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 11s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 97 damage. Casts a [Shock] debuff on the targets, lasting 1.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 130.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [50% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 11s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 104 damage. Casts a [Shock] debuff on the targets, lasting 2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [50% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 11s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 113 damage. Casts a [Shock] debuff on the targets, lasting 2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 152.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [50% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 120 damage. Casts a [Shock] debuff on the targets, lasting 2.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 161.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [55% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 128 damage. Casts a [Shock] debuff on the targets, lasting 2.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [55% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 136 damage. Casts a [Shock] debuff on the targets, lasting 3s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 183.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [60% ACC Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s. Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 144 damage. Casts a [Shock] debuff on the targets, lasting 3s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 195% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Jellyfish Flop",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/syzoa-shockbubble/skills/3.webp",
+   "effects": [
+    {
+     "label": "Hex",
+     "group": "Debuffs",
+     "description": "If killed while under this debuff, the recipient of the debuff cannot be Revived."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 74 damage. Casts a [Hex] debuff on the targets, lasting 10s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [10% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 10%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 100% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 78 damage. Casts a [Hex] debuff on the targets, lasting 10s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [12% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 12%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 106% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 83 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [12% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 12%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 112% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 90 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [14% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 14%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 122% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 99 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [14% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 14%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 134% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 107 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [16% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 16%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 144% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 115 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [16% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 16%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 156% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 123 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [18% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 18%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 166% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 132 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [18% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 18%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 178% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 139 damage. Casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [18% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 18%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 188% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 10m radius around the target, from a distance of 9m, dealing 148 damage. Casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [20% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 20%.\nAccuracy required for: Hex, Weaken\n#1 Damage: 200% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deepblue Bolt",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/syzoa-shockbubble/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Skill Recovery Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Skill Recovery stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 78 damage per hit. The first hit casts a [25% DEF Down] debuff on the target, lasting 10s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 105% ATK\n#2 Damage: 105% ATK\n#3 Damage: 105% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 82 damage per hit. The first hit casts a [30% DEF Down] debuff on the target, lasting 10s. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 111.3% ATK\n#2 Damage: 111.3% ATK\n#3 Damage: 111.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 87 damage per hit. The first hit casts a [30% DEF Down] debuff on the target, lasting 10s. Then, casts a [17% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 117.6% ATK\n#2 Damage: 117.6% ATK\n#3 Damage: 117.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 95 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 10s. Then, casts a [17% Skill Recovery Down] debuff on the target, lasting 10s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 128.1% ATK\n#2 Damage: 128.1% ATK\n#3 Damage: 128.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 104 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 12s. Then, casts a [17% Skill Recovery Down] debuff on the target, lasting 12s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 140.7% ATK\n#2 Damage: 140.7% ATK\n#3 Damage: 140.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 112 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 12s. Then, casts a [21% Skill Recovery Down] debuff on the target, lasting 12s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1.5 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 151.2% ATK\n#2 Damage: 151.2% ATK\n#3 Damage: 151.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 121 damage per hit. The first hit casts a [40% DEF Down] debuff on the target, lasting 12s. Then, casts a [21% Skill Recovery Down] debuff on the target, lasting 12s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1.5 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 163.8% ATK\n#2 Damage: 163.8% ATK\n#3 Damage: 163.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 129 damage per hit. The first hit casts a [40% DEF Down] debuff on the target, lasting 14s. Then, casts a [21% Skill Recovery Down] debuff on the target, lasting 14s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1.5 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 174.3% ATK\n#2 Damage: 174.3% ATK\n#3 Damage: 174.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 138 damage per hit. The first hit casts a [40% DEF Down] debuff on the target, lasting 14s. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 14s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1.5 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 186.9% ATK\n#2 Damage: 186.9% ATK\n#3 Damage: 186.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 146 damage per hit. The first hit casts a [45% DEF Down] debuff on the target, lasting 16s. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 16s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (1.5 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 197.4% ATK\n#2 Damage: 197.4% ATK\n#3 Damage: 197.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 155 damage per hit. The first hit casts a [45% DEF Down] debuff on the target, lasting 16s. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 16s, on the second hit. Then, reduces the cooldown of Active Skill 3 on Syzoa by (2 per debuff on the target) seconds on the third hit.\nAccuracy required for: DEF Down, Skill Recovery Down\n#1 Damage: 210% ATK\n#2 Damage: 210% ATK\n#3 Damage: 210% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Among the ill-mannered Freeborn, Syzoa is a vision of grace. Always flanked by her attendants, Zap and Zop, she acts as an ambassador to the Free Armada's Small Council, speaking for the sea creatures who dwell in and around Freeport's waters. Do not take her elegance for weakness – her stingers will have you jibbering like a wreck.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "S",
+  "hyxxis": "A+",
+  "koltmos": "A+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "A+",
+  "ulgorim": "S",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 71.4,
+  "lists": 16
+ }
+}

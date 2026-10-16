@@ -1,0 +1,247 @@
+{
+ "id": 93,
+ "slug": "xolotl",
+ "name": "Xolotl",
+ "title": "Emissary of Souls",
+ "summary": "Disruptor capable of many attacks and debuffs.",
+ "lore": "Dog-headed Xolotl, vicious twin of Quetzalcoatl, holds mastery over fire, disease, misfortune, and monsters. Believing that the wounds of the Shattering can be healed by a new sun—which requires a multitude of sacrifices—he travels the lands gathering monsters. He means to gain mastery over them all, scatter them across different Realms, and set them loose to claim the victims required.",
+ "rarity": "Epic",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Xolotl.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Xolotl_main.png",
+ "stats": {
+  "hp": 1470,
+  "atk": 53,
+  "def": 95,
+  "spd": 108,
+  "init": 90,
+  "acc": 10,
+  "res": 30,
+  "initial_divinity": 500,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Will also increase the Turn Meter of all allies by 5%.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also place a random Buff on this hero for 1 turn.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Empowered Talon Strike",
+   "description": "Attack 1 enemy 355%ATK. Increase this hero’s Divinity by 50 and place a random Buff on a random ally for 1 turn. Possible buffs are [SPD Up II], [ATK Up II], [FTH Up II] or [DEF Up II]. Will prioritise allies who trigger Path of the Psychopomp.",
+   "icon_url": "/godforge/abilities/xolotl/ICON_Xolotl_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "355%ATK",
+    "355%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also place a random Buff on this hero for 1 turn.",
+     "upgrade_description": "Also place a random Buff on this hero for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Twin’s Benediction",
+   "description": "Attack 1 enemy 505%ATK and Mirror 1 random Buff from the target. Also increase the duration of 1 random Buff on all allies.",
+   "icon_url": "/godforge/abilities/xolotl/ICON_Xolotl_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "505%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Path of the Psychopomp",
+   "description": "Has a 20% chance to join an ally in attacking. When joining an attack, will heal 10%HP all allies and increase their Divinity by 5%.",
+   "icon_url": "/godforge/abilities/xolotl/ICON_Xolotl_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Will also increase the Turn Meter of all allies by 5%.",
+     "upgrade_description": "Will also increase the Turn Meter of all allies by 5%."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Twin Convergence",
+   "description": "Attack 1 enemy 505%ATK and place [Sharpen II] on all allies for 2 turns. If Quetzalcoatl is an ally, they will join the attack.",
+   "icon_url": "/godforge/abilities/xolotl/ICON_Xolotl_Ultimate.webp",
+   "divinity_cost": 2150,
+   "damage_formula": [
+    "505%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sharpen II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Path of the Psychopomp",
+   "description": "Has a 20% chance to join an ally in attacking. When joining an attack, will heal 10%HP this hero and increase this hero Divinity by 5%.",
+   "icon_url": "/godforge/abilities/xolotl/ICON_Xolotl_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

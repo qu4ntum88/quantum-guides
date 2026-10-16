@@ -1,0 +1,265 @@
+{
+ "id": 29,
+ "slug": "persephone",
+ "name": "Persephone",
+ "title": "Queen of the Dead",
+ "summary": "Bind with Hades and bring decay to your enemies Speed and Divinity.",
+ "lore": "Queen of the dead and cause of the changing seasons, Persephone may be loyal to her husband Hades, below; her mother Demeter, above; or entirely to her own agenda. She watches Hades negotiate with Osiris’s Shadow Council without comment, and she receives Hel’s romantic overtures without explicitly encouraging or discouraging them. And never has she revealed her own motivations, wants, or plans.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Persephone.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Persephone_main.png",
+ "stats": {
+  "hp": 1185,
+  "atk": 75,
+  "def": 83,
+  "spd": 101,
+  "init": 98,
+  "acc": 35,
+  "res": 25,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Remove all Buffs instead.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also increase this hero’s Turn Meter by 5% when an enemy gains a Debuff. If Hades is an ally he receives the same amount of Turn Meter.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Temptation Binding",
+   "description": "Attack 1 enemy 335%ATK with a 75% chance to increase the duration of 1 random Debuff on the target by 1 turn.",
+   "icon_url": "/godforge/abilities/persephone/ICON_Persephone_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "335%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Growth Entangle",
+   "description": "Attack all enemies 275%ATK with a 75% chance to decrease each target’s Turn Meter by 10% Decrease the Turn Meter by a further 3% for each Debuff on the target.",
+   "icon_url": "/godforge/abilities/persephone/ICON_Persephone_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "275%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "40 ACC in Arena Battles",
+   "icon_url": "/godforge/abilities/persephone/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Realm Shift",
+   "description": "When an enemy gains a Debuff decrease their Divinity by 5%.",
+   "icon_url": "/godforge/abilities/persephone/ICON_Persephone_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also increase this hero’s Turn Meter by 5% when an enemy gains a Debuff. If Hades is an ally he receives the same amount of Turn Meter.",
+     "upgrade_description": "Also increase this hero’s Turn Meter by 5% when an enemy gains a Debuff. If Hades is an ally he receives the same amount of Turn Meter."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Abyssal Summons",
+   "description": "Attack 1 enemy 480%ATK with a 75% chance to remove 2 Buffs from the target then place Aetherburn IIfor 2 turns. If Hades is an ally also has a 75% chance to place [RES Down II] on the target for 2 Turns.",
+   "icon_url": "/godforge/abilities/persephone/ICON_Persephone_Ultimate.webp",
+   "divinity_cost": 2600,
+   "damage_formula": [
+    "480%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "RES Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Remove all Buffs instead.",
+     "upgrade_description": "Remove all Buffs instead."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Realm Shift",
+   "description": "When an enemy gains a Debuff decrease their Divinity by 2.5%.",
+   "icon_url": "/godforge/abilities/persephone/ICON_Persephone_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

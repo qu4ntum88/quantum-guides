@@ -1,0 +1,308 @@
+{
+ "id": 112,
+ "slug": "oni",
+ "name": "Oni",
+ "title": "Yokai Warrior",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "These monstrous entities, demonic and ogrish, are among Izumo’s most widespread terrors. Able to crush grown men to a pulp or swallow them in a few quick bites, oni are the stuff of nightmares and fairy tales—and, unfortunately, an ever-growing number of genuine accounts. With the gods distracted by larger affairs, the oni grow ever bolder and more dangerous.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Oni.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Oni_main.png",
+ "stats": {
+  "hp": 1545,
+  "atk": 72,
+  "def": 75,
+  "spd": 90,
+  "init": 83,
+  "acc": 15,
+  "res": 30,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also has a 50% chance to place [Despair] on the attacker for 1 turn.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Flesh Feast",
+   "description": "Attack 1 enemy 10%HP+130%ATK with a 50% chance to place [Drain I] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/oni/ICON_Oni_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Monstrous Pummel",
+   "description": "Attack 5%HP+55%ATK 4 random enemies. Each hit has a 50% chance to place [Hex I] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/oni/ICON_Oni_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Hex I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Mark of the Wicked",
+   "description": "Reflect 20% of damage inflicted on this hero to all enemies under Hex.",
+   "icon_url": "/godforge/abilities/oni/ICON_Oni_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Despair",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also has a 50% chance to place Despair on the attacker for 1 turn.",
+     "upgrade_description": "Also has a 50% chance to place [Despair] on the attacker for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Yokai's Hex",
+   "description": "Attack 1 enemy 15%HP+185%ATK. If the target is under Hex, has an 80% chance to spread Hex to all enemies.",
+   "icon_url": "/godforge/abilities/oni/ICON_Oni_Ultimate.webp",
+   "divinity_cost": 2375,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Mark of the Wicked",
+   "description": "Reflect 10% of damage inflicted on this hero to all enemies under Hex.",
+   "icon_url": "/godforge/abilities/oni/ICON_Oni_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

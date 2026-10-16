@@ -23,7 +23,7 @@ export async function GET() {
   const [guides, infographics] = await Promise.all([
     supabaseAdmin
       .from('guides')
-      .select('id, title, description, body, author, author_user_id, cover_image, pub_date, updated_at')
+      .select('id, title, game, description, body, author, author_user_id, cover_image, pub_date, updated_at')
       .eq('status', 'pending')
       .order('updated_at', { ascending: false }),
     supabaseAdmin

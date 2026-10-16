@@ -1,0 +1,314 @@
+{
+ "id": 41,
+ "slug": "minotaur",
+ "name": "Minotaur",
+ "title": "Labyrinth Beast",
+ "summary": "Gore, Stun and Rampage your way through Battle as you stop your foes escaping the Maze!",
+ "lore": "This brutal creature, half-bull and half-man, once stalked the corridors of a great labyrinth constructed at the behest of King Minos. Now set free in the chaos of the Shattering, it roams the Realm of Olympus at will, cunning enough to study its new environment in secrecy, bloodthirsty enough to kill whenever a sufficiently safe opportunity presents itself.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Minotaur.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Minotaur_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 78,
+  "def": 77,
+  "spd": 86,
+  "init": 82,
+  "acc": 15,
+  "res": 30,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Strong Hits increase the damage inflicted by 5% per stack of [Bleed] on the target.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Gore",
+   "description": "Attack 1 enemy 10%HP+125%ATK with a 50% chance to place 2 stacks of [Bleed] on the target. Strong Hits always place 3 stacks of [Bleed].",
+   "icon_url": "/godforge/abilities/minotaur/ICON_Minotaur_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+125%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Locked Horns",
+   "description": "Attack 5%HP+70%ATK 3 random enemies with a 30% chance to place [Stun] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/minotaur/ICON_Minotaur_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+70%ATK",
+    "5%HP+70%ATK",
+    "5%HP+70%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Red Haze",
+   "description": "Increase the chance to Strong Hit by 20% while at full Divinity.",
+   "icon_url": "/godforge/abilities/minotaur/ICON_Minotaur_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Strong Hits increase the damage inflicted by 5% per stack of Bleed on the target.",
+     "upgrade_description": "Strong Hits increase the damage inflicted by 5% per stack of [Bleed] on the target."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Mess with the Bull, Get the Horns",
+   "description": "Remove a random Disable from this hero and place [Stalwart] and [Retaliate] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/minotaur/ICON_Minotaur_Ultimate.webp",
+   "divinity_cost": 1575,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Stalwart",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Red Haze",
+   "description": "Increase the chance to Strong Hit by 10% while at full Divinity.",
+   "icon_url": "/godforge/abilities/minotaur/ICON_Minotaur_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

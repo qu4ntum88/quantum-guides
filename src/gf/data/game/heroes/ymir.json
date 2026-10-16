@@ -1,0 +1,335 @@
+{
+ "id": 35,
+ "slug": "ymir",
+ "name": "Ymir",
+ "title": "Worldbringer",
+ "summary": "Cast avalanches and bring down the mountain on your foes with Freeze and Speed Debuffs.",
+ "lore": "Ancestor of the jotnar, Ymir is a primal being who predates the gods and even the realm of Asgard. It is said the first gods crafted the world from Ymir’s flesh. He has largely slumbered since, and the Ymir encountered in Ryven represents only a sliver of this primordial power’s body and mind. His full awakening at the hands of the Primal Powers could end Asgard.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ymir.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ymir_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 85,
+  "def": 88,
+  "spd": 102,
+  "init": 102,
+  "acc": 45,
+  "res": 30,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "At max stacks, will place [Freeze] on each target for 1 turn which cannot be blocked or resisted.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also has a 50% chance to place [Freeze] if any Disable or Debuff",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each time this hero places [Freeze], reduce this hero's Divinity Cost by 10 (stacking up to 30 times) and increase the damage this hero inflicts on their next Ultimate Ability by 3%.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Chilling Breach",
+   "description": "Attack 1 enemy ,340%ATK+50%ACC with a 75% chance to place [DEF Down II] for 2 turns. If the target is under [Freeze], place [Barrier] on this hero equal to 5% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/ymir/ICON_Ymir_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "340%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Avalanche",
+   "description": "Attack all enemies 280%ATK+50%ACC. Reduce each target’s SPD by 10 (Stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/ymir/ICON_Ymir_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "280%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Freeze",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "At max stacks, will place Freeze on each target for 1 turn which cannot be blocked or resisted.",
+     "upgrade_description": "At max stacks, will place [Freeze] on each target for 1 turn which cannot be blocked or resisted."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "60 ACC in All Battles",
+   "icon_url": "/godforge/abilities/ymir/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Frozen Blood",
+   "description": "When this hero is attacked, has a 50% chance to placeFreeze on the enemy for 1 turn.",
+   "icon_url": "/godforge/abilities/ymir/ICON_Ymir_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Freeze",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Freeze",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also has a 50% chance to place Freeze if any Disable or Debuff",
+     "upgrade_description": "Also has a 50% chance to place [Freeze] if any Disable or Debuff"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Mountainfall",
+   "description": "Attack all enemies 155%ATK+50%ACC with an 80% chance to place [SPD Down II] on each target for 2 turns. Then attack all enemies 155%ATK+50%ACC with an 80% chance to place [Freeze] on enemies under [SPD Down II] for 1 turn.",
+   "icon_url": "/godforge/abilities/ymir/ICON_Ymir_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [
+    "155%ATK",
+    "155%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Freeze",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each time this hero places Freeze, reduce this hero's Divinity Cost by 10 (stacking up to 30 times) and increase the damage this hero inflicts on their next Ultimate Ability by 3%.",
+     "upgrade_description": "Each time this hero places [Freeze], reduce this hero's Divinity Cost by 10 (stacking up to 30 times) and increase the damage this hero inflicts on their next Ultimate Ability by 3%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Frozen Blood",
+   "description": "When this hero is attacked, has a 25% chance to place [Freeze] on the enemy for 1 turn.",
+   "icon_url": "/godforge/abilities/ymir/ICON_Ymir_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Freeze",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 25,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

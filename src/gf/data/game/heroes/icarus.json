@@ -1,0 +1,280 @@
+{
+ "id": 26,
+ "slug": "icarus",
+ "name": "Icarus",
+ "title": "Scorched Pride",
+ "summary": "Scorch the battlefield with flaming arrows and scale to new heights as you defeat foes.",
+ "lore": "Flying on wings invented by his father, Daedalus, young Icarus works as scout and archer for the Olympian forces. Thanks to Ryven’s magics, his wings are no longer susceptible to the sun’s heat, allowing him to soar. Yet ambition renders him susceptible to those who would play to his ego in the ongoing struggle of both politics and war.",
+ "rarity": "Rare",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Icarus.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Icarus_main.png",
+ "stats": {
+  "hp": 1110,
+  "atk": 89,
+  "def": 73,
+  "spd": 90,
+  "init": 86,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Activate Blaze without reducing its duration and increase the chance to activate to 85%.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Scorched Shot",
+   "description": "Attack 1 enemy 400%ATK. Place [Blaze II] on the target for 2 turns if that target is under [Blaze I].",
+   "icon_url": "/godforge/abilities/icarus/ICON_Icarus_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "400%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blaze II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Feathered Hubris",
+   "description": "Place [ACC Up I] on this hero for 2 turns, then attack all enemies 330%ATK with a 75% chance to place [Blaze I] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/icarus/ICON_Icarus_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "ACC Up I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blaze I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Wings of Wax",
+   "description": "Each time Blaze activates, increase this hero's Turn Meter by 5%. If this hero activates Blaze, increase the damage of this hero's next Core Ability by 5% (stacking up to 4 times). Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/icarus/ICON_Icarus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Skybound Barrage",
+   "description": "Attack a random enemy 175%ATK 4 times. Each hit has a 50% chance to activate Blaze on the target.",
+   "icon_url": "/godforge/abilities/icarus/ICON_Icarus_Ultimate.webp",
+   "divinity_cost": 3550,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK",
+    "175%ATK",
+    "175%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Activate Blaze without reducing its duration and increase the chance to activate to 85%.",
+     "upgrade_description": "Activate Blaze without reducing its duration and increase the chance to activate to 85%."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Wings of Wax",
+   "description": "Each time Blaze activates, increase this hero's Turn Meter by 2.5%. If this hero activates Blaze, increase the damage of this hero's next Core Ability by 2.5% (stacking up to 4 times). Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/icarus/ICON_Icarus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

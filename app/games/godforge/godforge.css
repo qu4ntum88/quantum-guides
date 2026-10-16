@@ -1,0 +1,101 @@
+/* ─── Godforge hero page ──────────────────────────────────────────────────────
+   Palette and display face come from src/qgg/worlds.css ([data-world='godforge']). */
+
+.gfh-hero {
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--w-accent);
+  background:
+    radial-gradient(ellipse at 18% 30%, color-mix(in srgb, var(--rarity) 18%, transparent), transparent 55%),
+    linear-gradient(180deg, #0f1a2e, var(--w-bg));
+}
+.gfh-hero::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 12px; opacity: 0.45;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12'%3E%3Cpath d='M0 11 H11 V1 H3 V8 H8 V4 H5.5 M12 11 H23 V1 H15 V8 H20 V4 H17.5' fill='none' stroke='%23d4af5a' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x;
+}
+.gfh-hero-inner { padding-top: 1.5rem; padding-bottom: 2.25rem; }
+.gfh-crumbs { font-size: 0.78rem; color: var(--w-muted); margin-bottom: 1.25rem; }
+.gfh-crumbs a { color: var(--w-muted); }
+.gfh-crumbs a:hover { color: var(--w-accent); }
+
+.gfh-top { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; }
+
+/* The portrait sits in a gilded frame like a votive panel. */
+.gfh-portrait {
+  position: relative; width: 11rem; aspect-ratio: 3 / 4; flex-shrink: 0; overflow: hidden;
+  border: 2px solid var(--rarity); border-radius: 3px;
+  background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--rarity) 45%, #101828), #0b111d 80%);
+  box-shadow: 0 0 0 1px #f3e3b0, 0 0 0 5px #0b111d, 0 0 0 6px rgba(212, 175, 90, 0.55), 0 14px 40px rgba(0, 0, 0, 0.55);
+}
+.gfh-portrait > img:first-child { width: 100%; height: 100%; object-fit: contain; object-position: bottom; display: block; }
+.gfh-corner { position: absolute; width: 1.7rem; height: 1.7rem; object-fit: contain; filter: drop-shadow(0 1px 3px #000); }
+.gfh-corner--tl { top: 0.25rem; left: 0.25rem; }
+.gfh-corner--tr { top: 0.25rem; right: 0.25rem; }
+.gfh-corner--bl { bottom: 0.25rem; left: 0.25rem; }
+.gfh-corner--br { bottom: 0.25rem; right: 0.25rem; }
+
+.gfh-info { flex: 1; min-width: 16rem; }
+.gfh-rarity {
+  font-family: 'Unbounded', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--rarity);
+}
+.gfh-info h1 {
+  font-family: var(--w-display); font-weight: 400; letter-spacing: 0.05em; color: #fff;
+  font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.05; margin: 0.2rem 0 0.3rem;
+}
+.gfh-title { font-family: var(--w-display); color: var(--w-accent); font-size: 1rem; letter-spacing: 0.08em; margin: 0 0 1.1rem; }
+.gfh-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.gfh-pill {
+  display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.8rem 0.3rem 0.4rem;
+  border: 1px solid rgba(212, 175, 90, 0.35); border-radius: 999px; background: rgba(255, 255, 255, 0.03);
+  color: #eee; font-size: 0.82rem; font-weight: 600; line-height: 1.2;
+}
+.gfh-pill img { width: 1.35rem; height: 1.35rem; object-fit: contain; }
+.gfh-pill small { display: block; color: var(--w-muted); font-size: 0.55rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.gfh-tier { display: inline-flex; align-items: center; gap: 0.7rem; margin-bottom: 1rem; color: var(--w-text); text-decoration: none; }
+.gfh-tier:hover strong { color: var(--w-accent); }
+.gfh-tier-badge {
+  width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; border-radius: 3px;
+  font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: 1.05rem; color: #fff;
+  border-top: 4px solid #d4af5a; border-bottom: 4px solid #d4af5a;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.gfh-tier strong { display: block; color: #fff; }
+.gfh-tier small { display: block; color: var(--w-muted); font-size: 0.74rem; }
+.gfh-summary { color: color-mix(in srgb, var(--w-text) 88%, transparent); font-size: 0.98rem; line-height: 1.7; margin: 0 0 0.6rem; max-width: 38rem; }
+.gfh-archetype { color: var(--w-muted); font-size: 0.78rem; font-style: italic; margin: 0; max-width: 38rem; }
+
+.gfh-leader {
+  width: 16rem; flex-shrink: 0; display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.9rem 1rem;
+  background: var(--w-panel); border: 1px solid rgba(212, 175, 90, 0.35); border-top: 2px solid var(--w-accent); border-radius: 3px;
+}
+.gfh-leader img { width: 2.6rem; height: 2.6rem; border-radius: 3px; object-fit: cover; }
+.gfh-leader-tag {
+  display: inline-block; margin-bottom: 0.3rem; font-family: 'Unbounded', sans-serif; font-size: 0.55rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--w-accent);
+}
+.gfh-leader p { margin: 0; color: #ddd; font-size: 0.85rem; line-height: 1.5; }
+
+.gfh-lore { color: color-mix(in srgb, var(--w-text) 85%, transparent); line-height: 1.85; font-style: italic; margin: 0; }
+.gfh-faq { border-bottom: 1px solid var(--w-line); padding: 0.6rem 0; }
+.gfh-faq summary { cursor: pointer; font-weight: 600; color: #ece6d8; }
+.gfh-faq p { margin: 0.5rem 0 0.2rem; color: color-mix(in srgb, var(--w-text) 85%, transparent); line-height: 1.7; font-size: 0.9rem; }
+.gfh-tight { grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr)); padding: 0; }
+
+@media (max-width: 640px) {
+  .gfh-portrait { width: 8.5rem; }
+  .gfh-leader { width: 100%; }
+}
+
+/* ─── Hub ─────────────────────────────────────────────────────────────────── */
+.gf-resources { display: grid; }
+.gf-resource { display: flex; align-items: center; gap: 1.25rem; padding: 0.8rem 0; border-bottom: 1px solid var(--w-line); }
+.gf-resource:last-child { border-bottom: 0; }
+.gf-resource .btn { flex: 0 0 11rem; text-align: center; font-size: 0.85rem; padding: 0.6rem 1rem; white-space: nowrap; }
+.gf-resource p { margin: 0; color: color-mix(in srgb, var(--w-text) 82%, transparent); line-height: 1.65; font-size: 0.92rem; }
+.gf-tight { grid-template-columns: repeat(auto-fill, minmax(5.2rem, 1fr)); padding: 0; }
+@media (max-width: 640px) {
+  .gf-resource { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+  .gf-resource .btn { flex-basis: auto; }
+}
+.main-content .w-card, .sidebar .w-card { margin-bottom: 0; }

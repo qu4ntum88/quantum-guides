@@ -1,0 +1,582 @@
+{
+ "slug": "gondo-the-watchman",
+ "kind": "Invoker",
+ "name": "Gondo The Watchman",
+ "faction": "Cambion",
+ "rarity": "Epic",
+ "class": "Tank",
+ "element": "Dark",
+ "soulSign": "Sign of Actia",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/gondo-the-watchman/portrait.webp",
+ "fullArt": "/invokers/units/invokers/gondo-the-watchman/full.webp",
+ "stats": {
+  "base": {
+   "Health": "897",
+   "Attack": "32",
+   "Defense": "79",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "90"
+  },
+  "max": {
+   "Health": "10,655",
+   "Attack": "352",
+   "Defense": "957",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gondo-the-watchman/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+96",
+    "titan": "+52"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 12% ATK + 12% DEF\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 18% ATK + 18% DEF\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 24% ATK + 24% DEF\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 30.5% ATK + 30.5% DEF\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 36% ATK + 36% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 12.7% ATK + 12.7% DEF\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 19.1% ATK + 19.1% DEF\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 25.4% ATK + 25.4% DEF\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 32.3% ATK + 32.3% DEF\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 38.2% ATK + 38.2% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 13.4% ATK + 13.4% DEF\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 20.2% ATK + 20.2% DEF\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 26.9% ATK + 26.9% DEF\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 34.2% ATK + 34.2% DEF\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 40.3% ATK + 40.3% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 14.6% ATK + 14.6% DEF\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 22% ATK + 22% DEF\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 29.3% ATK + 29.3% DEF\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 37.2% ATK + 37.2% DEF\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 43.9% ATK + 43.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 16.1% ATK + 16.1% DEF\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 24.1% ATK + 24.1% DEF\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 32.2% ATK + 32.2% DEF\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 40.9% ATK + 40.9% DEF\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 48.2% ATK + 48.2% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 17.3% ATK + 17.3% DEF\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 25.9% ATK + 25.9% DEF\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 34.6% ATK + 34.6% DEF\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 43.9% ATK + 43.9% DEF\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 51.8% ATK + 51.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 18.7% ATK + 18.7% DEF\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 28.1% ATK + 28.1% DEF\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 37.4% ATK + 37.4% DEF\n#4 Attacks 1 enemy, dealing 53 damage.\nDamage: 47.6% ATK + 47.6% DEF\n#5 Attacks 1 enemy, dealing 62 damage.\nDamage: 56.2% ATK + 56.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 19.9% ATK + 19.9% DEF\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 29.9% ATK + 29.9% DEF\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 39.8% ATK + 39.8% DEF\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 50.6% ATK + 50.6% DEF\n#5 Attacks 1 enemy, dealing 66 damage.\nDamage: 59.8% ATK + 59.8% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 21.4% ATK + 21.4% DEF\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 32% ATK + 32% DEF\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 42.7% ATK + 42.7% DEF\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 54.3% ATK + 54.3% DEF\n#5 Attacks 1 enemy, dealing 71 damage.\nDamage: 64.1% ATK + 64.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 22.6% ATK + 22.6% DEF\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 33.8% ATK + 33.8% DEF\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 45.1% ATK + 45.1% DEF\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 57.3% ATK + 57.3% DEF\n#5 Attacks 1 enemy, dealing 75 damage.\nDamage: 67.7% ATK + 67.7% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 24% ATK + 24% DEF\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 36% ATK + 36% DEF\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 48% ATK + 48% DEF\n#4 Attacks 1 enemy, dealing 68 damage.\nDamage: 61% ATK + 61% DEF\n#5 Attacks 1 enemy, dealing 80 damage.\nDamage: 72% ATK + 72% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Mallet Smasher",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gondo-the-watchman/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage. Extends the duration of 1 random buff on Gondo by 2s.\n#1 Damage: 72.5% ATK + 72.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 85 damage. Extends the duration of 1 random buff on Gondo by 2.1s.\n#1 Damage: 76.8% ATK + 76.8% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage. Extends the duration of 1 random buff on Gondo by 2.2s.\n#1 Damage: 81.2% ATK + 81.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage. Extends the duration of 1 random buff on Gondo by 2.3s.\n#1 Damage: 88.5% ATK + 88.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 108 damage. Extends the duration of 1 random buff on Gondo by 2.4s.\n#1 Damage: 97.2% ATK + 97.2% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 116 damage. Extends the duration of 1 random buff on Gondo by 2.5s.\n#1 Damage: 104.4% ATK + 104.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 126 damage. Extends the duration of 1 random buff on Gondo by 2.6s.\n#1 Damage: 113.1% ATK + 113.1% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage. Extends the duration of 1 random buff on Gondo by 2.7s.\n#1 Damage: 120.3% ATK + 120.3% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 143 damage. Extends the duration of 1 random buff on Gondo by 2.8s.\n#1 Damage: 129.1% ATK + 129.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage. Extends the duration of 1 random buff on Gondo by 2.9s.\n#1 Damage: 136.3% ATK + 136.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 161 damage. Extends the duration of 1 random buff on Gondo by 3s.\n#1 Damage: 145% ATK + 145% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Doom Oculus",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gondo-the-watchman/skills/2.webp",
+   "effects": [
+    {
+     "label": "Blind",
+     "group": "Debuffs",
+     "description": "The recipient has a percentage chance to miss their Combo Attacks, and not deal any damage. Combo Attacks that are missed do not generate any Mana for the attacker. Miss chance stacks along with any Miss chance from other sources, such as from skills."
+    },
+    {
+     "label": "Shock",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 125% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 84 damage. Casts a [Shock] debuff on the targets, lasting 2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [10% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 76% ATK + 76% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 89 damage. Casts a [Shock] debuff on the targets, lasting 2.4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [10% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 80.6% ATK + 80.6% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 94 damage. Casts a [Shock] debuff on the targets, lasting 2.4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [12% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 85.1% ATK + 85.1% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 103 damage. Casts a [Shock] debuff on the targets, lasting 2.8s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [12% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 92.7% ATK + 92.7% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 113 damage. Casts a [Shock] debuff on the targets, lasting 2.8s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [14% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 101.8% ATK + 101.8% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 121 damage. Casts a [Shock] debuff on the targets, lasting 3.2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [14% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 109.4% ATK + 109.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 132 damage. Casts a [Shock] debuff on the targets, lasting 3.2s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [14% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 118.6% ATK + 118.6% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 140 damage. Casts a [Shock] debuff on the targets, lasting 3.6s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [14% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 126.2% ATK + 126.2% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 150 damage. Casts a [Shock] debuff on the targets, lasting 3.6s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [18% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 135.3% ATK + 135.3% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 159 damage. Casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [18% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 142.9% ATK + 142.9% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 7m semicircle in front of Gondo, dealing 169 damage. Casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal. Then, casts a [18% Blind] debuff on the targets, lasting 14s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Shock, Blind\n#1 Damage: 152% ATK + 152% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Hold The Gates",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gondo-the-watchman/skills/3.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 167 damage. Casts a [90 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 10s.\n#1 Damage: 150% ATK + 150% DEF\n#2 Shield: 10% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 176 damage. Casts a [99 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 10s.\n#1 Damage: 159% ATK + 159% DEF\n#2 Shield: 11% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 186 damage. Casts a [99 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 10s.\n#1 Damage: 168% ATK + 168% DEF\n#2 Shield: 11% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 203 damage. Casts a [99 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 11s.\n#1 Damage: 183% ATK + 183% DEF\n#2 Shield: 11% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 223 damage. Casts a [99 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 11s.\n#1 Damage: 201% ATK + 201% DEF\n#2 Shield: 11% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 240 damage. Casts a [117 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 11s.\n#1 Damage: 216% ATK + 216% DEF\n#2 Shield: 13% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 260 damage. Casts a [117 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 11s.\n#1 Damage: 234% ATK + 234% DEF\n#2 Shield: 13% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 276 damage. Casts a [117 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 12s.\n#1 Damage: 249% ATK + 249% DEF\n#2 Shield: 13% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 296 damage. Casts a [117 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 12s.\n#1 Damage: 267% ATK + 267% DEF\n#2 Shield: 13% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 313 damage. Casts a [135 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 12s.\n#1 Damage: 282% ATK + 282% DEF\n#2 Shield: 15% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 333 damage. Casts a [135 HP Shield] buff on the 9 allies with the lowest current HP in a 15m radius, lasting 14s.\n#1 Damage: 300% ATK + 300% DEF\n#2 Shield: 15% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "Jaws of Hatred",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gondo-the-watchman/skills/4.webp",
+   "effects": [
+    {
+     "label": "Taunt",
+     "group": "Debuffs",
+     "description": "The recipient is forced to attack whoever cast the Taunt debuff on them.The recipient can move freely, but can only use their Combo Attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 139 damage. Launches the targets for 3s. Then, casts a [Taunt] debuff on the targets, lasting 3s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 125% ATK + 125% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 147 damage. Launches the targets for 3.5s. Then, casts a [Taunt] debuff on the targets, lasting 3s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 132.5% ATK + 132.5% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 155 damage. Launches the targets for 3.5s. Then, casts a [Taunt] debuff on the targets, lasting 3.5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 140% ATK + 140% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 169 damage. Launches the targets for 4s. Then, casts a [Taunt] debuff on the targets, lasting 3.5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 152.5% ATK + 152.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 186 damage. Launches the targets for 4s. Then, casts a [Taunt] debuff on the targets, lasting 4s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 167.5% ATK + 167.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 200 damage. Launches the targets for 4s. Then, casts a [Taunt] debuff on the targets, lasting 4.5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 180% ATK + 180% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 216 damage. Launches the targets for 4.5s. Then, casts a [Taunt] debuff on the targets, lasting 4.5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 195% ATK + 195% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 230 damage. Launches the targets for 4.5s. Then, casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 207.5% ATK + 207.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 247 damage. Launches the targets for 5s. Then, casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 222.5% ATK + 222.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 261 damage. Launches the targets for 5s. Then, casts a [Taunt] debuff on the targets, lasting 5.5s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 235% ATK + 235% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks the 9 enemies with the lowest current HP in a 8m radius around Gondo, dealing 278 damage. Launches the targets for 5s. Then, casts a [Taunt] debuff on the targets, lasting 6s, forcing them to continuously attack Gondo using only their Combo Attacks until the [Taunt] debuff expires.\nAccuracy required for: Launch, Taunt\n#1 Damage: 250% ATK + 250% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Paralysis",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Should you see Gondo staring down at you, you better have your funeral plans in order. He's the ever-watchful gatekeeper of Kyoze's Fell Barbican and holder of the Doom Oculus – a shield whose eye can stun the most fearsome Demon into submission. So far, not one soul has breached even the Fell Barbican's perimeter. Gondo intends to keep it that way.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "A",
+  "hyxxis": "S+",
+  "koltmos": "B",
+  "omnissi-astral": "A",
+  "omnissi-dark": "A",
+  "omnissi-earth": "E",
+  "omnissi-fire": "A",
+  "omnissi-light": "E",
+  "omnissi-water": "A",
+  "omnissi-wind": "A",
+  "pentiax": "A",
+  "sakiel": "A",
+  "sorgott": "A+",
+  "ulgorim": "A",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 52.7,
+  "lists": 16
+ }
+}

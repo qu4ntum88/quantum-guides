@@ -1,0 +1,298 @@
+{
+ "id": 68,
+ "slug": "luoshen",
+ "name": "Luoshen",
+ "title": "Spirit of the River",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A mortal woman who became goddess of the river in which she drowned, Luoshen’s position in the celestial bureaucracy has risen through the ages. Today, she is a figure of longing, representing unobtainable love, beauty striven for but never achieved. To the people of Tian, she represents hope for a better, more prosperous future—if they prove worthy in working toward it.",
+ "rarity": "Epic",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Luoshen.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Luoshen_main.png",
+ "stats": {
+  "hp": 1500,
+  "atk": 56,
+  "def": 95,
+  "spd": 106,
+  "init": 89,
+  "acc": 10,
+  "res": 35,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Vanish] on the ally with the lowest Turn Meter for 1 turn.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the Turn Meter of all allies instead.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Starry Breeze",
+   "description": "Attack 1 enemy 355%ATK and place [Vanish] on this hero for 1.",
+   "icon_url": "/godforge/abilities/luoshen/ICON_Luoshen_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "355%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vanish",
+     "target": "AllyWithLeastStatExceptSelf",
+     "target_label": "AllyWithLeastStatExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Vanish on the ally with the lowest Turn Meter for 1 turn.",
+     "upgrade_description": "Also place [Vanish] on the ally with the lowest Turn Meter for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Mystic Veil",
+   "description": "Place [SPD Up II] and [Stalwart] on all allies for 2 turns. If Hou Yi is an ally, increase the duration to 3 and these Buff cannot be removed.",
+   "icon_url": "/godforge/abilities/luoshen/ICON_Luoshen_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% SPD in Arena Battles",
+   "icon_url": "/godforge/abilities/luoshen/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "River Maiden",
+   "description": "At the end of this hero's turn, increase the the Turn Meter of the ally with the lowest Turn Meter by 10%.",
+   "icon_url": "/godforge/abilities/luoshen/ICON_Luoshen_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the Turn Meter of all allies instead.",
+     "upgrade_description": "Increase the Turn Meter of all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Luo River Tide",
+   "description": "Increase the duration of all Buff on all allies by 1 turn and decrease the duration of all Debuff on all allies by 1 turn.\n\nIncrease each ally's Turn Meter by 3% for each Buff and Debuff duration that is changed.",
+   "icon_url": "/godforge/abilities/luoshen/ICON_Luoshen_Ultimate.webp",
+   "divinity_cost": 4175,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "River Maiden",
+   "description": "At the end of this hero's turn, increase the the Turn Meter of the ally with the lowest Turn Meter by 5%.",
+   "icon_url": "/godforge/abilities/luoshen/ICON_Luoshen_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

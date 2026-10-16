@@ -1,0 +1,507 @@
+{
+ "slug": "litria",
+ "kind": "Titan",
+ "name": "Litria",
+ "faction": "Guardians",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/litria/portrait.webp",
+ "fullArt": "/invokers/units/titans/litria/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+430",
+   "Bonus ATK": "+65",
+   "Bonus DEF": "+37",
+   "Movement speed": "293"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,584",
+   "Bonus ATK": "+391",
+   "Bonus DEF": "+222",
+   "Movement speed": "293"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/litria/skills/0.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 86 damage.\nDamage: 132.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 45 damage per hit. Casts a [25% DEF Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 68.5% ATK\n#2 Damage: 68.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 91 damage.\nDamage: 140.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 47 damage per hit. Casts a [26% DEF Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 72.6% ATK\n#2 Damage: 72.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 96 damage.\nDamage: 148.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 50 damage per hit. Casts a [27% DEF Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 76.7% ATK\n#2 Damage: 76.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 105 damage.\nDamage: 161.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 54 damage per hit. Casts a [28% DEF Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 83.6% ATK\n#2 Damage: 83.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 115 damage.\nDamage: 177.6% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 60 damage per hit. Casts a [29% DEF Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 91.8% ATK\n#2 Damage: 91.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 124 damage.\nDamage: 190.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 64 damage per hit. Casts a [30% DEF Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 98.6% ATK\n#2 Damage: 98.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 134 damage.\nDamage: 206.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 69 damage per hit. Casts a [31% DEF Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 106.9% ATK\n#2 Damage: 106.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 143 damage.\nDamage: 219.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 74 damage per hit. Casts a [32% DEF Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 113.7% ATK\n#2 Damage: 113.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 153 damage.\nDamage: 235.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 79 damage per hit. Casts a [33% DEF Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 121.9% ATK\n#2 Damage: 121.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 162 damage.\nDamage: 249.1% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 84 damage per hit. Casts a [34% DEF Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 128.8% ATK\n#2 Damage: 128.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 172 damage.\nDamage: 265% ATK\n#2 Attacks 1 enemy from a distance of 2m, 2 times, dealing 89 damage per hit. Casts a [35% DEF Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: DEF Down\n#1 Damage: 137% ATK\n#2 Damage: 137% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Radiant Attraction",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/litria/skills/1.webp",
+   "effects": [
+    {
+     "label": "Chain",
+     "group": "Debuffs",
+     "description": "The recipient cannot move, but can still use Combo Attacks, Active and Ultimate Skills, and Invoke their Titan.The Chain debuff is removed if the recipient Invokes a Titan."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 88 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 3s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 93 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 3.2s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 98 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 3.4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 107 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 3.6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 118 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 3.8s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 126 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 137 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 4.2s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 146 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 4.4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 156 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 4.6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 165 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 4.8s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 11m semicircle in front of Litria, from a distance of 5m, dealing 176 damage. Pulls the targets to Litria. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Pull, Chain\n#1 Damage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Searing Expulsion",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/litria/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 91 damage. Casts a [1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 140% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 96 damage. Casts a [1.25% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 148.4% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 102 damage. Casts a [1.5% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 156.8% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 111 damage. Casts a [1.75% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.88% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 170.8% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 122 damage. Casts a [2% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 187.6% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 131 damage. Casts a [2% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 201.6% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 142 damage. Casts a [2.25% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 2.25% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 1.13% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 218.4% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 151 damage. Casts a [2.25% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 2.25% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 1.13% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 232.4% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 162 damage. Casts a [2.5% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 2.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 1.25% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 249.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 171 damage. Casts a [3% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 263.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 135°, 8m cone in front of Litria, from a distance of 2m, dealing 182 damage. Casts a [3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 280% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/litria/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 149 damage. Casts a [Stun] debuff on the targets, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 230% ATK\nINVOKATION END\nCasts a [86 HP Shield] buff on the Bound Invoker, lasting 10s.\n#1 Shield: 20% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 158 damage. Casts a [Stun] debuff on the targets, lasting 2.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 243.8% ATK\nINVOKATION END\nCasts a [86 HP Shield] buff on the Bound Invoker, lasting 11s.\n#1 Shield: 20% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 167 damage. Casts a [Stun] debuff on the targets, lasting 2.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 257.6% ATK\nINVOKATION END\nCasts a [95 HP Shield] buff on the Bound Invoker, lasting 11s.\n#1 Shield: 22% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 182 damage. Casts a [Stun] debuff on the targets, lasting 2.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 280.6% ATK\nINVOKATION END\nCasts a [103 HP Shield] buff on the Bound Invoker, lasting 11s.\n#1 Shield: 24% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 200 damage. Casts a [Stun] debuff on the targets, lasting 2.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 308.2% ATK\nINVOKATION END\nCasts a [103 HP Shield] buff on the Bound Invoker, lasting 12s.\n#1 Shield: 24% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 215 damage. Casts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 331.2% ATK\nINVOKATION END\nCasts a [112 HP Shield] buff on the Bound Invoker, lasting 12s.\n#1 Shield: 26% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 233 damage. Casts a [Stun] debuff on the targets, lasting 3.2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 358.8% ATK\nINVOKATION END\nCasts a [125 HP Shield] buff on the Bound Invoker, lasting 12s.\n#1 Shield: 29% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 248 damage. Casts a [Stun] debuff on the targets, lasting 3.4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 381.8% ATK\nINVOKATION END\nCasts a [125 HP Shield] buff on the Bound Invoker, lasting 13s.\n#1 Shield: 29% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 266 damage. Casts a [Stun] debuff on the targets, lasting 3.6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 409.4% ATK\nINVOKATION END\nCasts a [138 HP Shield] buff on the Bound Invoker, lasting 13s.\n#1 Shield: 32% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 281 damage. Casts a [Stun] debuff on the targets, lasting 3.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 432.4% ATK\nINVOKATION END\nCasts a [150 HP Shield] buff on the Bound Invoker, lasting 13s.\n#1 Shield: 35% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius, dealing 299 damage. Casts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 460% ATK\nINVOKATION END\nCasts a [172 HP Shield] buff on the Bound Invoker, lasting 15s.\n#1 Shield: 40% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/litria/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +15% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +16.5% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +18% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +21% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +24% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +27% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +30% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Litria is said to be formed of the memories of the Aspect of Light herself, Serenity. Invoked when Serenity needed aid the most, Litria has been by her side ever since - an eternal symbol of loyalty, hope, and righteous truth.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "C",
+  "omnissi-astral": "C",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "D",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "D",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "B",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 30.4,
+  "lists": 16
+ }
+}

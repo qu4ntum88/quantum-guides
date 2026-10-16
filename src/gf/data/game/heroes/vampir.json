@@ -1,0 +1,262 @@
+{
+ "id": 131,
+ "slug": "vampir",
+ "name": "Vampir",
+ "title": "Night’s Hunger",
+ "summary": "Drain the lifeforce of your enemies and corrupt their souls stealing their buffs.",
+ "lore": "Far and away the most infamous of Vyraj’s creatures, the vampir is a dreadful hunter of the night. Risen from the grave, they feast upon the blood of the living, using their supernatural abilities to hunt, to destroy, to dominate. The strongest of them, Dracula, controls a great many vampir, but many more serve other masters, gods, or their own agendas.",
+ "rarity": "Uncommon",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Vampir.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Vampir_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 62,
+  "def": 67,
+  "spd": 83,
+  "init": 76,
+  "acc": 5,
+  "res": 15,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.02,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Open Veins",
+   "description": "Attack 1 enemy 315%ATK and place [Drain I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/vampir/ICON_Vampir_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "315%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Nocturnal Lament",
+   "description": "Attack 1 enemy 10%HP+90%ATK 2 times. Each hit has a 30% chance to place [Despair] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/vampir/ICON_Vampir_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+90%ATK",
+    "10%HP+90%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Insatiable Thirst",
+   "description": "Attack 1 enemy 15%HP+160%ATK and place [Curse I] on the target for 1 turn. If the attack is Critical also steal 10% of the target's Divinity and Turn Meter.",
+   "icon_url": "/godforge/abilities/vampir/ICON_Vampir_Ultimate.webp",
+   "divinity_cost": 2650,
+   "damage_formula": [
+    "15%HP+160%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Curse I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

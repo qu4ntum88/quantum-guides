@@ -1,0 +1,516 @@
+{
+ "slug": "araknia",
+ "kind": "Titan",
+ "name": "Araknia",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/araknia/portrait.webp",
+ "fullArt": "/invokers/units/titans/araknia/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+630",
+   "Bonus ATK": "+90",
+   "Bonus DEF": "+57",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,786",
+   "Bonus ATK": "+541",
+   "Bonus DEF": "+343",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/araknia/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 126 damage.\nDamage: 140% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 131 damage. Reduces the cooldown of Active Skill 1 on Araknia by 0.75s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 1.5s instead.\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 134 damage.\nDamage: 148.4% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 138 damage. Reduces the cooldown of Active Skill 1 on Araknia by 0.9s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 1.5s instead.\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 141 damage.\nDamage: 156.8% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 146 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 1.5s instead.\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 154 damage.\nDamage: 170.8% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 159 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1.2s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 1.5s instead.\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 169 damage.\nDamage: 187.6% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 175 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1.2s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 2s instead.\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 181 damage.\nDamage: 201.6% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 188 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1.4s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 2s instead.\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 197 damage.\nDamage: 218.4% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 204 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1.6s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 2s instead.\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 209 damage.\nDamage: 232.4% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 217 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1.8s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 2s instead.\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 224 damage.\nDamage: 249.2% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 232 damage. Reduces the cooldown of Active Skill 1 on Araknia by 1.8s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 3s instead.\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 237 damage.\nDamage: 263.2% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 245 damage. Reduces the cooldown of Active Skill 1 on Araknia by 2s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 3s instead.\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 252 damage.\nDamage: 280% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 261 damage. Reduces the cooldown of Active Skill 1 on Araknia by 2s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 1 on Araknia by 4s instead.\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Threads of Fate",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/araknia/skills/1.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Hex",
+     "group": "Debuffs",
+     "description": "If killed while under this debuff, the recipient of the debuff cannot be Revived."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 261 damage. Casts a [Hex] debuff on the target, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [40% DEF Down] debuff on the target, lasting 12s. Then, casts a [15% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 15%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 277 damage. Casts a [Hex] debuff on the target, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [45% DEF Down] debuff on the target, lasting 12s. Then, casts a [15% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 15%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 292 damage. Casts a [Hex] debuff on the target, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [45% DEF Down] debuff on the target, lasting 12s. Then, casts a [17% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 17%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 318 damage. Casts a [Hex] debuff on the target, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [45% DEF Down] debuff on the target, lasting 14s. Then, casts a [17% Weaken] debuff on the target, lasting 14s, increasing all damage taken by 17%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 350 damage. Casts a [Hex] debuff on the target, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [50% DEF Down] debuff on the target, lasting 14s. Then, casts a [17% Weaken] debuff on the target, lasting 14s, increasing all damage taken by 17%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 376 damage. Casts a [Hex] debuff on the target, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [50% DEF Down] debuff on the target, lasting 14s. Then, casts a [19% Weaken] debuff on the target, lasting 14s, increasing all damage taken by 19%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 407 damage. Casts a [Hex] debuff on the target, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [50% DEF Down] debuff on the target, lasting 16s. Then, casts a [19% Weaken] debuff on the target, lasting 16s, increasing all damage taken by 19%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 433 damage. Casts a [Hex] debuff on the target, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [55% DEF Down] debuff on the target, lasting 16s. Then, casts a [19% Weaken] debuff on the target, lasting 16s, increasing all damage taken by 19%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 465 damage. Casts a [Hex] debuff on the target, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [55% DEF Down] debuff on the target, lasting 16s. Then, casts a [21% Weaken] debuff on the target, lasting 16s, increasing all damage taken by 21%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 491 damage. Casts a [Hex] debuff on the target, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [55% DEF Down] debuff on the target, lasting 18s. Then, casts a [21% Weaken] debuff on the target, lasting 18s, increasing all damage taken by 21%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 522 damage. Casts a [Hex] debuff on the target, lasting 18s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, casts a [60% DEF Down] debuff on the target, lasting 18s. Then, casts a [25% Weaken] debuff on the target, lasting 18s, increasing all damage taken by 25%.\nAccuracy required for: Hex, DEF Down, Weaken\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Eternity Web",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/araknia/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Chain",
+     "group": "Debuffs",
+     "description": "The recipient cannot move, but can still use Combo Attacks, Active and Ultimate Skills, and Invoke their Titan.The Chain debuff is removed if the recipient Invokes a Titan."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 122 damage. Casts a [Chain] debuff on the targets, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [35% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 136% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 130 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [35% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 144.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 137 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [40% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 152.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 149 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [40% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 165.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 164 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [40% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 182.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 176 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [45% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 195.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 191 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [45% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 212.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 203 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [45% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 225.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 218 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [50% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 242.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 230 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [50% ATK Down] debuff on the targets, lasting 18s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 255.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius, from a distance of 12m, dealing 245 damage. Casts a [Chain] debuff on the targets, lasting 8s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [50% ATK Down] debuff on the targets, lasting 18s.\nAccuracy required for: Chain, ATK Down\n#1 Damage: 272% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/araknia/skills/3.webp",
+   "effects": [
+    {
+     "label": "Disable",
+     "group": "Debuffs",
+     "description": "Prevents the recipient from using Active Skills."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 216 damage. Casts a [Disable] debuff on the targets, lasting 5s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 240% ATK\nINVOKATION END\nCasts a [15% Skill Recovery Up] buff on Araknia, lasting 12s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 229 damage. Casts a [Disable] debuff on the targets, lasting 5.5s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 254.4% ATK\nINVOKATION END\nCasts a [18% Skill Recovery Up] buff on Araknia, lasting 12s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 242 damage. Casts a [Disable] debuff on the targets, lasting 6s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 268.8% ATK\nINVOKATION END\nCasts a [18% Skill Recovery Up] buff on Araknia, lasting 13s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 264 damage. Casts a [Disable] debuff on the targets, lasting 6.5s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 292.8% ATK\nINVOKATION END\nCasts a [21% Skill Recovery Up] buff on Araknia, lasting 13s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 289 damage. Casts a [Disable] debuff on the targets, lasting 7s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 321.6% ATK\nINVOKATION END\nCasts a [21% Skill Recovery Up] buff on Araknia, lasting 14s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 311 damage. Casts a [Disable] debuff on the targets, lasting 7.5s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 345.6% ATK\nINVOKATION END\nCasts a [24% Skill Recovery Up] buff on Araknia, lasting 14s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 337 damage. Casts a [Disable] debuff on the targets, lasting 8s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 374.4% ATK\nINVOKATION END\nCasts a [24% Skill Recovery Up] buff on Araknia, lasting 16s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 359 damage. Casts a [Disable] debuff on the targets, lasting 9s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 398.4% ATK\nINVOKATION END\nCasts a [27% Skill Recovery Up] buff on Araknia, lasting 16s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 384 damage. Casts a [Disable] debuff on the targets, lasting 10s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 427.2% ATK\nINVOKATION END\nCasts a [27% Skill Recovery Up] buff on Araknia, lasting 18s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 406 damage. Casts a [Disable] debuff on the targets, lasting 11s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 451.2% ATK\nINVOKATION END\nCasts a [30% Skill Recovery Up] buff on Araknia, lasting 18s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 432 damage. Casts a [Disable] debuff on the targets, lasting 12s, blocking them from using their Active Skills.\nAccuracy required for: Disable\n#1 Damage: 480% ATK\nINVOKATION END\nCasts a [30% Skill Recovery Up] buff on Araknia, lasting 20s."
+    }
+   ]
+  },
+  {
+   "name": "ACC Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/araknia/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +70 Accuracy."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +77 Accuracy."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +84 Accuracy."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +98 Accuracy."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +112 Accuracy."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +126 Accuracy."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +140 Accuracy."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Hidden deep within the crypts of Sildrea's family is a shrine dedicated to Araknia, the Netherqueen. Formed centuries ago by some of the first Nocturna, many believe Araknia weaves the threads of fate, divining Amara's future in her glittering strands. She is said to have foretold that the New Blood would triumph in their revolution – though that's only half the story...",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S+",
+  "hyxxis": "S",
+  "koltmos": "S+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "S+",
+  "sakiel": "S",
+  "sorgott": "S",
+  "ulgorim": "S+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 92,
+  "lists": 16
+ }
+}

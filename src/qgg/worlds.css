@@ -1,0 +1,422 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Quantum worlds: one tier/grid system, three game materials.
+
+   Shared (the Quantum brand, identical in every game):
+     gold corner brackets on every board, the Q header strip, the tier colours
+     (src/qgg/tiers.ts) and Unbounded tier letters.
+   Per world (set on a wrapper with  .qw[data-world="…"]):
+     godforge     marble, bronze-gold, fluted-column tier plates, Greek-key frieze
+     invokers     arcane indigo, rune-teal, dragonfire, gem-cut tier plates
+     voidhunters  ash, forged iron, ember edge, grit
+   Display faces come from next/font in each game's layout as --w-display.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.qw {
+  --q-gold: #cca453;
+  --q-purple: #372061;
+  /* --font-world is set by next/font in the game's layout */
+  --w-display: var(--font-world, 'Unbounded'), Georgia, serif;
+  background: var(--w-bg);
+  color: var(--w-text);
+}
+
+.qw[data-world='godforge'] {
+  --w-bg: #0b111d;
+  --w-panel: #101828;
+  --w-panel-2: #152036;
+  --w-line: #26324b;
+  --w-text: #e7e2d6;
+  --w-muted: #97a0b4;
+  --w-accent: #d4af5a;
+  --w-accent-2: #ece6d8;
+  --w-accent-ink: #1a1408;
+  --w-glow: rgba(212, 175, 90, 0.32);
+}
+
+.qw[data-world='invokers'] {
+  --w-bg: #0c0918;
+  --w-panel: #130f24;
+  --w-panel-2: #1a1531;
+  --w-line: #2c2450;
+  --w-text: #e6e2f3;
+  --w-muted: #9b94b8;
+  --w-accent: #4ee5e0;
+  --w-accent-2: #f2a541;
+  --w-accent-ink: #061615;
+  --w-violet: #7b5cff;
+  --w-glow: rgba(78, 229, 224, 0.3);
+}
+
+.qw[data-world='voidhunters'] {
+  --w-bg: #0a0908;
+  --w-panel: #12100e;
+  --w-panel-2: #191613;
+  --w-line: #2c2722;
+  --w-text: #ddd5c6;
+  --w-muted: #8f877a;
+  --w-accent: #ff7a35;
+  --w-accent-2: #8a2416;
+  --w-accent-ink: #1a0a04;
+  --w-glow: rgba(255, 106, 43, 0.3);
+}
+
+/* Grit: a fixed noise layer over the whole Void Hunters section. */
+.qw[data-world='voidhunters'] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ─── Buttons in a world ──────────────────────────────────────────────────── */
+
+.qw .btn {
+  font-family: var(--w-display);
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.qw[data-world='godforge'] .btn {
+  background: linear-gradient(180deg, #e9d79f, #c19a45 55%, #9d7a2f);
+  color: var(--w-accent-ink);
+  border: 1px solid #f3e3b0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 2px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+.qw[data-world='godforge'] .btn:hover { background: linear-gradient(180deg, #f6e6b4, #d4af5a 55%, #ab8536); color: var(--w-accent-ink); box-shadow: 0 0 18px var(--w-glow); }
+
+.qw[data-world='invokers'] .btn {
+  background: linear-gradient(180deg, #1f3f52, #12283a);
+  color: #dffcfb;
+  border: 1px solid var(--w-accent);
+  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0 50%);
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.qw[data-world='invokers'] .btn:hover { background: linear-gradient(180deg, #2a6d78, #164a57); color: #fff; box-shadow: 0 0 20px var(--w-glow); }
+
+.qw[data-world='voidhunters'] .btn {
+  background: linear-gradient(180deg, #2b2621, #171411);
+  color: var(--w-text);
+  border: 1px solid #4a4038;
+  border-bottom: 2px solid var(--w-accent-2);
+}
+.qw[data-world='voidhunters'] .btn:hover { color: #fff; border-bottom-color: var(--w-accent); box-shadow: 0 6px 18px -6px var(--w-glow); background: linear-gradient(180deg, #332b24, #1a1612); }
+
+/* ─── World banner ────────────────────────────────────────────────────────── */
+
+.wh {
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--w-accent);
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+}
+.wh-backdrop { position: absolute; inset: 0; pointer-events: none; }
+.wh-art { position: absolute; color: var(--w-accent); }
+.wh-inner { position: relative; z-index: 2; padding-top: 2.25rem; padding-bottom: 2.25rem; }
+.wh-overline {
+  font-family: 'Unbounded', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--w-accent); margin: 0 0 0.7rem;
+}
+.wh-title {
+  font-family: var(--w-display); font-size: clamp(2rem, 5vw, 3.3rem); font-weight: 400; line-height: 1.05;
+  color: #fff; margin: 0 0 0.8rem; max-width: 46rem; letter-spacing: 0.01em;
+}
+.wh-sub { color: color-mix(in srgb, var(--w-text) 78%, transparent); max-width: 38rem; line-height: 1.7; margin: 0 0 0.6rem; font-size: 0.96rem; }
+.wh-note { color: var(--w-muted); font-size: 0.78rem; margin: 0 0 0.9rem; }
+.wh-rule { display: block; width: 4rem; height: 2px; background: linear-gradient(90deg, var(--q-gold), transparent); }
+.wh-figure {
+  position: absolute; right: 3%; bottom: 0; height: 115%; max-height: 26rem; object-fit: contain; z-index: 1;
+  mask-image: linear-gradient(to left, #000 55%, transparent), linear-gradient(to top, transparent, #000 25%);
+  mask-composite: intersect; opacity: 0.95; pointer-events: none;
+}
+
+.wh--godforge {
+  background:
+    radial-gradient(ellipse at 78% 35%, rgba(212, 175, 90, 0.16), transparent 60%),
+    linear-gradient(180deg, #0f1a2e 0%, #0b111d 100%);
+}
+.wh--godforge::after {
+  /* Greek-key frieze along the bottom edge */
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 12px; opacity: 0.5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12'%3E%3Cpath d='M0 11 H11 V1 H3 V8 H8 V4 H5.5 M12 11 H23 V1 H15 V8 H20 V4 H17.5' fill='none' stroke='%23d4af5a' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x;
+}
+.wh--godforge .wh-art--temple { right: 4%; top: 50%; width: min(46rem, 60%); transform: translateY(-50%); opacity: 0.2; }
+.wh--godforge .wh-title { letter-spacing: 0.04em; }
+
+.wh--invokers {
+  background:
+    radial-gradient(ellipse at 80% 40%, rgba(123, 92, 255, 0.22), transparent 55%),
+    radial-gradient(ellipse at 95% 90%, rgba(242, 165, 65, 0.12), transparent 50%),
+    linear-gradient(180deg, #140e2a 0%, #0c0918 100%);
+}
+.wh--invokers .wh-art--arcane {
+  right: 6%; top: 50%; width: 24rem; height: 24rem; margin-top: -12rem; opacity: 0.22;
+  animation: wh-turn 160s linear infinite;
+}
+.wh--invokers .wh-title { text-shadow: 0 0 28px rgba(78, 229, 224, 0.25); }
+
+.wh--voidhunters {
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(255, 90, 30, 0.22), transparent 55%),
+    linear-gradient(180deg, #120f0d 0%, #0a0908 100%);
+}
+.wh--voidhunters .wh-art--ridge { left: 0; right: 0; bottom: 0; width: 100%; height: 55%; opacity: 0.95; }
+.wh--voidhunters .wh-title { color: var(--w-text); text-shadow: 0 2px 0 #000, 0 0 22px rgba(255, 106, 43, 0.18); }
+.wh--voidhunters .wh-backdrop::before {
+  /* drifting ash */
+  content: ''; position: absolute; inset: 0; opacity: 0.35;
+  background-image:
+    radial-gradient(1px 1px at 12% 30%, #c9b9a3, transparent), radial-gradient(1px 1px at 38% 62%, #c9b9a3, transparent),
+    radial-gradient(1.5px 1.5px at 66% 22%, #ff9a5c, transparent), radial-gradient(1px 1px at 84% 48%, #c9b9a3, transparent),
+    radial-gradient(1px 1px at 52% 12%, #c9b9a3, transparent), radial-gradient(1.5px 1.5px at 22% 74%, #ff9a5c, transparent);
+}
+
+@keyframes wh-turn { to { transform: rotate(360deg); } }
+@media (max-width: 760px) {
+  .wh-figure { opacity: 0.28; right: -10%; }
+  .wh--godforge .wh-art--temple { width: 90%; right: -20%; opacity: 0.12; }
+}
+
+/* ─── Board frame (the Quantum lens) ──────────────────────────────────────── */
+
+.qtb { display: flex; flex-direction: column; gap: 0.85rem; }
+
+.qtb-frame {
+  position: relative;
+  background: var(--w-panel);
+  border: 1px solid var(--w-line);
+  border-radius: 6px;
+  padding: 0.9rem;
+}
+.q-corner { position: absolute; width: 22px; height: 22px; border: 0 solid var(--q-gold); pointer-events: none; z-index: 2; }
+.q-corner--tl { top: -1px; left: -1px; border-top-width: 2px; border-left-width: 2px; }
+.q-corner--tr { top: -1px; right: -1px; border-top-width: 2px; border-right-width: 2px; }
+.q-corner--bl { bottom: -1px; left: -1px; border-bottom-width: 2px; border-left-width: 2px; }
+.q-corner--br { bottom: -1px; right: -1px; border-bottom-width: 2px; border-right-width: 2px; }
+
+.qtb-head { display: flex; align-items: center; gap: 0.6rem; padding: 0.15rem 0.2rem 0.55rem; flex-wrap: wrap; }
+.qtb-head-q { width: 22px; height: 22px; object-fit: contain; }
+.qtb-head-title {
+  font-family: 'Unbounded', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--q-gold);
+}
+.qtb-head-note { margin-left: auto; font-size: 0.74rem; color: var(--w-muted); }
+.qtb-ornament { height: 12px; margin: 0 0 0.75rem; opacity: 0.55; }
+
+.qw[data-world='godforge'] .qtb-ornament {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12'%3E%3Cpath d='M0 11 H11 V1 H3 V8 H8 V4 H5.5 M12 11 H23 V1 H15 V8 H20 V4 H17.5' fill='none' stroke='%23d4af5a' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x;
+}
+.qw[data-world='invokers'] .qtb-ornament {
+  position: relative; overflow: hidden; height: 14px;
+  background: linear-gradient(90deg, transparent, var(--w-accent), transparent) center / 100% 1px no-repeat;
+}
+.qw[data-world='invokers'] .qtb-ornament::before {
+  content: 'ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ ᛇ ᛈ ᛉ ᛊ ᛏ ᛒ ᛖ ᛗ ᛚ ᛜ ᛞ ᛟ ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ';
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap;
+  font-size: 11px; letter-spacing: 0.9em; color: var(--w-accent); background: var(--w-panel); padding: 0 0.6rem;
+}
+.qw[data-world='voidhunters'] .qtb-ornament {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='12'%3E%3Cpath d='M0 7 L8 5 L13 9 L21 3 L27 7 L34 6 L40 10 L47 4 L53 7 L60 6' fill='none' stroke='%23ff7a35' stroke-width='1.2'/%3E%3C/svg%3E") repeat-x;
+}
+
+/* ─── Controls ────────────────────────────────────────────────────────────── */
+
+.qtb-lists { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+.qtb-lists-label {
+  font-family: 'Unbounded', sans-serif; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--w-muted); margin-right: 0.3rem;
+}
+.qtb-list {
+  padding: 0.3rem 0.7rem; border-radius: 999px; font-size: 0.76rem; text-decoration: none;
+  color: var(--w-muted); border: 1px solid var(--w-line); background: rgba(255, 255, 255, 0.02);
+}
+.qtb-list:hover { border-color: var(--w-accent); color: #fff; }
+.qtb-list.is-on { border-color: var(--w-accent); background: var(--w-accent); color: var(--w-accent-ink); font-weight: 700; }
+
+.qtb-controls { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+.qw input.qtb-search {
+  flex: 1 1 14rem; min-width: 0; height: 2.75rem; margin: 0; padding: 0 0.9rem; box-sizing: border-box;
+  border-radius: 0.6rem; border: 2px solid var(--w-line); background: rgba(0, 0, 0, 0.3); color: var(--w-text); font-size: 0.9rem;
+}
+.qw input.qtb-search:focus { outline: none; border-color: var(--w-accent); }
+.qtb-sort {
+  height: 2.75rem; padding: 0 0.75rem; border-radius: 0.6rem; border: 2px solid var(--w-line);
+  background: var(--w-panel); color: var(--w-text); font-size: 0.82rem;
+}
+.qw button.qtb-chip {
+  display: inline-flex; align-items: center; gap: 0.35rem; margin: 0;
+  padding: 0.35rem 0.7rem; border-radius: 999px; cursor: pointer; font-size: 0.78rem;
+  border: 1px solid var(--w-line); background: transparent; color: var(--w-text);
+}
+.qw button.qtb-chip img { width: 1.1rem; height: 1.1rem; object-fit: contain; }
+.qw button.qtb-chip:hover { border-color: var(--w-accent); color: #fff; background: transparent; }
+.qw button.qtb-chip.is-on { border-color: var(--w-accent); background: color-mix(in srgb, var(--w-accent) 20%, transparent); color: #fff; }
+.qtb-count { font-size: 0.75rem; color: var(--w-muted); }
+.qtb-empty { color: var(--w-muted); padding: 2rem 0; text-align: center; grid-column: 1 / -1; }
+.qw :focus-visible { outline: 2px solid var(--w-accent); outline-offset: 2px; }
+
+/* ─── Tier board ──────────────────────────────────────────────────────────── */
+
+.qtb-board { --cols: 4; border-radius: 4px; overflow: hidden; border: 1px solid var(--w-line); }
+.qtb-colhead, .qtb-row { display: grid; grid-template-columns: 5rem repeat(var(--cols), minmax(0, 1fr)); }
+.qtb-colhead { background: var(--w-panel-2); border-bottom: 1px solid var(--w-line); }
+.qtb-col {
+  display: flex; align-items: center; justify-content: center; gap: 0.45rem; padding: 0.6rem 0.4rem;
+  font-family: var(--w-display); font-size: 0.86rem; letter-spacing: 0.04em; color: var(--w-text);
+  border-left: 1px solid var(--w-line); text-align: center;
+}
+.qtb-col img, .qtb-cell-label img { width: 1.3rem; height: 1.3rem; object-fit: contain; }
+.qtb-row { border-bottom: 1px solid var(--w-line); background: color-mix(in srgb, var(--tier, #444) 4%, transparent); }
+.qtb-row:last-child { border-bottom: 0; }
+.qtb-plate { position: relative; display: flex; align-items: center; justify-content: center; min-height: 5.2rem; }
+.qtb-plate-letter {
+  position: relative; z-index: 1; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: 1.3rem; color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.qtb-plate--none .qtb-plate-letter { font-size: 0.6rem; font-weight: 700; text-align: center; padding: 0 0.3rem; text-shadow: none; color: var(--w-muted); }
+.qtb-cell {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(3.6rem, 1fr)); gap: 0.6rem 0.45rem; align-content: start;
+  padding: 0.65rem; border-left: 1px solid var(--w-line); min-height: 5.2rem;
+}
+.qtb-cell--wide { grid-column: 2 / -1; grid-template-columns: repeat(auto-fill, minmax(4.6rem, 1fr)); }
+.qtb-cell-label { display: none; }
+
+/* Plates, per world. The tier colour always carries; the material changes. */
+.qw[data-world='godforge'] .qtb-plate {
+  /* a fluted column in the tier's colour, with a gold capital and base */
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0 2px, rgba(0, 0, 0, 0.12) 2px 3px, transparent 3px 9px),
+    linear-gradient(90deg, color-mix(in srgb, var(--tier) 70%, #000), var(--tier) 45%, color-mix(in srgb, var(--tier) 75%, #000));
+  margin: 0 0.6rem;
+}
+.qw[data-world='godforge'] .qtb-plate::before,
+.qw[data-world='godforge'] .qtb-plate::after {
+  content: ''; position: absolute; left: -0.45rem; right: -0.45rem; height: 7px;
+  background: linear-gradient(180deg, #f3e3b0, #c19a45 60%, #8a6a28); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.qw[data-world='godforge'] .qtb-plate::before { top: 0; }
+.qw[data-world='godforge'] .qtb-plate::after { bottom: 0; }
+.qw[data-world='godforge'] .qtb-plate--none { background: #1c2436; }
+
+.qw[data-world='invokers'] .qtb-plate { padding: 0.5rem; }
+.qw[data-world='invokers'] .qtb-plate::before {
+  /* a cut gem */
+  content: ''; position: absolute; inset: 0.55rem 0.6rem;
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.45), transparent 38%),
+    linear-gradient(315deg, rgba(0, 0, 0, 0.45), transparent 45%),
+    var(--tier);
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--tier) 60%, transparent));
+}
+.qw[data-world='invokers'] .qtb-plate--none::before { background: #2a2348; filter: none; }
+
+.qw[data-world='voidhunters'] .qtb-plate {
+  /* forged iron with rivets, the tier glowing along its edge like a cooling blade */
+  background:
+    radial-gradient(circle at 8px 8px, #6b6157 1.6px, transparent 2.4px),
+    radial-gradient(circle at calc(100% - 8px) 8px, #6b6157 1.6px, transparent 2.4px),
+    radial-gradient(circle at 8px calc(100% - 8px), #6b6157 1.6px, transparent 2.4px),
+    radial-gradient(circle at calc(100% - 8px) calc(100% - 8px), #6b6157 1.6px, transparent 2.4px),
+    linear-gradient(180deg, #2b2622, #151210);
+  box-shadow: inset -3px 0 0 var(--tier), inset -10px 0 18px -8px var(--tier);
+}
+.qw[data-world='voidhunters'] .qtb-plate-letter { color: var(--tier); text-shadow: 0 0 12px color-mix(in srgb, var(--tier) 70%, transparent), 0 2px 0 #000; }
+.qw[data-world='voidhunters'] .qtb-plate--none { box-shadow: none; }
+
+@media (max-width: 767px) {
+  .qtb-colhead { display: none; }
+  .qtb-row { grid-template-columns: 1fr; }
+  .qtb-plate { min-height: 2.6rem; }
+  .qw[data-world='godforge'] .qtb-plate { margin: 0; }
+  .qw[data-world='godforge'] .qtb-plate::before, .qw[data-world='godforge'] .qtb-plate::after { left: 0; right: 0; height: 4px; }
+  .qw[data-world='invokers'] .qtb-plate::before { inset: 0.25rem 35%; }
+  .qtb-cell { border-left: 0; border-top: 1px solid var(--w-line); grid-template-columns: repeat(auto-fill, minmax(3.9rem, 1fr)); min-height: 0; }
+  .qtb-cell.is-empty { display: none; }
+  .qtb-cell--wide { grid-column: auto; }
+  .qtb-cell-label {
+    display: flex; align-items: center; gap: 0.35rem; grid-column: 1 / -1;
+    font-family: var(--w-display); font-size: 0.78rem; color: var(--w-muted);
+  }
+}
+
+.qtb-grid { display: grid; gap: 0.95rem 0.7rem; grid-template-columns: repeat(auto-fill, minmax(6.6rem, 1fr)); padding: 0.25rem; }
+
+/* ─── Tiles ───────────────────────────────────────────────────────────────── */
+
+.qt {
+  display: flex; flex-direction: column; align-items: center; gap: 0.35rem; min-width: 0;
+  text-decoration: none; color: var(--w-text); transition: opacity 0.15s, transform 0.15s;
+}
+.qt:hover { transform: translateY(-2px); color: #fff; }
+.qt.is-dim { opacity: 0.15; }
+.qt-frame {
+  position: relative; display: block; width: 100%; aspect-ratio: 1; overflow: hidden;
+  border: 2px solid var(--rarity);
+  background: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--rarity) 38%, #15171d), #0b0c10 78%);
+}
+.qt-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.qt-ico { position: absolute; top: 0.18rem; width: 26%; height: 26%; object-fit: contain; filter: drop-shadow(0 1px 2px #000); }
+.qt-ico--tl { left: 0.18rem; }
+.qt-ico--tr { right: 0.18rem; }
+.qt-tier {
+  position: absolute; bottom: 0.2rem; right: 0.2rem; min-width: 1.6rem; padding: 0.05rem 0.3rem; border-radius: 0.3rem;
+  font-family: 'Unbounded', sans-serif; font-size: 0.62rem; font-weight: 800; color: #fff; text-align: center;
+  text-shadow: 0 1px 2px #000; border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.qt-name {
+  font-size: 0.74rem; line-height: 1.2; text-align: center; width: 100%;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.qt--sm .qt-name { font-size: 0.66rem; }
+
+.qw[data-world='godforge'] .qt-frame {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(212, 175, 90, 0.5), 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.qw[data-world='godforge'] .qt:hover .qt-frame { box-shadow: 0 0 0 1px #f3e3b0, 0 0 16px var(--w-glow); }
+
+.qw[data-world='invokers'] .qt-frame {
+  border: 0; padding: 2px;
+  clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px);
+  background: linear-gradient(135deg, var(--rarity), #241d3f 45%, var(--rarity));
+}
+.qw[data-world='invokers'] .qt-img {
+  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+  background: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--rarity) 38%, #15122a), #0b0918 78%);
+}
+.qw[data-world='invokers'] .qt:hover .qt-frame { filter: drop-shadow(0 0 8px color-mix(in srgb, var(--rarity) 70%, transparent)); }
+
+.qw[data-world='voidhunters'] .qt-frame {
+  border: 2px solid #3d352d; border-bottom: 3px solid var(--rarity); border-radius: 2px;
+  background: radial-gradient(circle at 50% 25%, #2a241f, #0c0a09 75%);
+  box-shadow: inset 0 0 0 1px #000;
+}
+.qw[data-world='voidhunters'] .qt:hover .qt-frame { border-color: #5a4b3e; border-bottom-color: var(--w-accent); box-shadow: 0 8px 20px -8px var(--w-glow); }
+.qw[data-world='voidhunters'] .qt-img { filter: saturate(0.9) contrast(1.05); }
+
+/* ─── Cards and prose inside a world ──────────────────────────────────────── */
+
+.w-section { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+/* Tier boards get more room than prose so five class columns still fit 3–4 tiles a line. */
+.qw .container.w-wide { max-width: 1440px; }
+.w-card {
+  position: relative; background: var(--w-panel); border: 1px solid var(--w-line);
+  border-radius: 6px; padding: 1.25rem 1.35rem; margin-bottom: 1.25rem;
+}
+.w-card h2 { font-family: var(--w-display); font-weight: 400; font-size: 1.35rem; letter-spacing: 0.02em; color: #fff; margin: 0 0 0.6rem; }
+.w-card h3 { font-family: var(--w-display); font-weight: 400; color: #fff; }
+.w-muted { color: var(--w-muted); font-size: 0.88rem; margin: 0 0 0.9rem; }
+.w-prose p, .w-prose li { color: color-mix(in srgb, var(--w-text) 85%, transparent); line-height: 1.75; font-size: 0.93rem; }
+.w-prose h2 { font-family: var(--w-display); font-weight: 400; font-size: 1.3rem; color: #fff; margin: 1.6rem 0 0.6rem; }
+.w-prose a, .w-card p a { color: var(--w-accent); }
+.qw[data-world='godforge'] .w-card { border-top: 2px solid rgba(212, 175, 90, 0.45); }
+.qw[data-world='invokers'] .w-card { box-shadow: inset 0 1px 0 rgba(78, 229, 224, 0.12); }
+.qw[data-world='voidhunters'] .w-card { border-radius: 2px; border-color: #2f2924; box-shadow: inset 0 -2px 0 rgba(138, 36, 22, 0.35); }
+
+.w-footer { text-align: center; padding: 1.5rem 1rem; font-size: 0.75rem; color: var(--w-muted); border-top: 1px solid var(--w-line); margin-top: 2rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .wh--invokers .wh-art--arcane { animation: none; }
+  .qt, .qt:hover { transition: none; transform: none; }
+}

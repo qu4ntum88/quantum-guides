@@ -1,0 +1,284 @@
+{
+ "id": 206,
+ "slug": "ixchel",
+ "name": "Ixchel",
+ "title": "Rainbow Mistress",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A goddess of fertility and medicine, Ixchel is the patron of midwives and the protector of infants. Worshipers petition her not only for healthy pregnancy and delivery, but to guard against disease and enemies. Ixchel readily sheds blood in defense of the newborn, and the threats Ryven poses to Omeyocan’s people have practically transformed her into a full-fledged war goddess.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ixchel.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ixchel_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 44,
+  "def": 85,
+  "spd": 96,
+  "init": 88,
+  "acc": 5,
+  "res": 25,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each turn increases this hero’s healing by 3% (up to 10% times).",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Storm Strike",
+   "description": "Attack 1 enemy 165%ATK 2 times. Place [Mend] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/ixchel/ICON_Ixchel_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "165%ATK",
+    "165%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Mend",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Torrential Remedy",
+   "description": "Remove 1 random Debuff from all allies then place [Stalwart] on each ally for 1 turn.",
+   "icon_url": "/godforge/abilities/ixchel/ICON_Ixchel_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Sacrificial Rite",
+   "description": "At the start of this hero’s turn, sacrifice 10% of this hero’s current HP, then heal all allies for 20% of this hero’s missing HP",
+   "icon_url": "/godforge/abilities/ixchel/ICON_Ixchel_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each turn increases this hero’s healing by 3% (up to 10% times).",
+     "upgrade_description": "Each turn increases this hero’s healing by 3% (up to 10% times)."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Medicinal Moon",
+   "description": "Place [Mend] for 1 turn on all allies. If an ally is below 50% HP also increase their Turn Meter by 10% otherwise increase their Divinity by 10%.",
+   "icon_url": "/godforge/abilities/ixchel/ICON_Ixchel_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Sacrificial Rite",
+   "description": "At the start of this hero’s turn, sacrifice 10% of this hero’s current HP, then heal all allies for 10% of this hero’s missing HP",
+   "icon_url": "/godforge/abilities/ixchel/ICON_Ixchel_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

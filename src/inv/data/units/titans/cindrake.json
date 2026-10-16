@@ -1,0 +1,506 @@
+{
+ "slug": "cindrake",
+ "kind": "Titan",
+ "name": "Cindrake",
+ "faction": "Ironbands",
+ "rarity": "Mythical",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/cindrake/portrait.webp",
+ "fullArt": "/invokers/units/titans/cindrake/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+570",
+   "Bonus ATK": "+88",
+   "Bonus DEF": "+65",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,426",
+   "Bonus ATK": "+529",
+   "Bonus DEF": "+391",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cindrake/skills/0.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 119 damage.\nDamage: 135% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 128 damage. Casts a [40% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\nDamage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 126 damage.\nDamage: 143.1% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 135 damage. Casts a [45% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\nDamage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 133 damage.\nDamage: 151.2% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 143 damage. Casts a [50% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\nDamage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 145 damage.\nDamage: 164.7% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 156 damage. Casts a [50% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\nDamage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 159 damage.\nDamage: 180.9% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 171 damage. Casts a [55% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\nDamage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 171 damage.\nDamage: 194.4% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 184 damage. Casts a [60% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\nDamage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 185 damage.\nDamage: 210.6% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 199 damage. Casts a [60% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\nDamage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 197 damage.\nDamage: 224.1% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 212 damage. Casts a [65% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\nDamage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 211 damage.\nDamage: 240.3% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 227 damage. Casts a [70% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\nDamage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 223 damage.\nDamage: 253.8% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 240 damage. Casts a [70% ACC Down] debuff on the target, lasting 8s.\nAccuracy required for: ACC Down\nDamage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 238 damage.\nDamage: 270% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 255 damage. Casts a [80% ACC Down] debuff on the target, lasting 8s.\nAccuracy required for: ACC Down\nDamage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Searing Updraft",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cindrake/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 62 damage per hit, ignores 3% of the target's DEF per debuff. Extends the duration of up to 2 random debuffs on the target by 4s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 65 damage per hit, ignores 3.5% of the target's DEF per debuff. Extends the duration of up to 2 random debuffs on the target by 4s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 69 damage per hit, ignores 3.5% of the target's DEF per debuff. Extends the duration of up to 2 random debuffs on the target by 5s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 75 damage per hit, ignores 4% of the target's DEF per debuff. Extends the duration of up to 3 random debuffs on the target by 5s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 83 damage per hit, ignores 4% of the target's DEF per debuff. Extends the duration of up to 3 random debuffs on the target by 6s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 89 damage per hit, ignores 4.5% of the target's DEF per debuff. Extends the duration of up to 3 random debuffs on the target by 6s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 96 damage per hit, ignores 4.5% of the target's DEF per debuff. Extends the duration of up to 3 random debuffs on the target by 7s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 102 damage per hit, ignores 5% of the target's DEF per debuff. Extends the duration of up to 3 random debuffs on the target by 7s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 110 damage per hit, ignores 5.5% of the target's DEF per debuff. Extends the duration of up to 4 random debuffs on the target by 7s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 116 damage per hit, ignores 5.5% of the target's DEF per debuff. Extends the duration of up to 4 random debuffs on the target by 8s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 4 times, dealing 123 damage per hit, ignores 6% of the target's DEF per debuff. Extends the duration of up to 4 random debuffs on the target by 8s 4 times if the hit lands as a critical hit.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Tephra Hail",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/cindrake/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 3s, dealing 24 damage.\nAccuracy required for: Stun\n#1 Damage: 27.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 4s, dealing 26 damage.\nAccuracy required for: Stun\n#1 Damage: 29.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 4s, dealing 27 damage.\nAccuracy required for: Stun\n#1 Damage: 30.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 5s, dealing 30 damage.\nAccuracy required for: Stun\n#1 Damage: 33.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 5s, dealing 32 damage.\nAccuracy required for: Stun\n#1 Damage: 36.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 5s, dealing 35 damage.\nAccuracy required for: Stun\n#1 Damage: 39.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 6s, dealing 38 damage.\nAccuracy required for: Stun\n#1 Damage: 42.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 6s, dealing 40 damage.\nAccuracy required for: Stun\n#1 Damage: 45.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 6s, dealing 43 damage.\nAccuracy required for: Stun\n#1 Damage: 49% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 7s, dealing 45 damage.\nAccuracy required for: Stun\n#1 Damage: 51.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Casts a [Stun] debuff on the 10 enemies with the lowest current HP in a 20m radius, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Selects the 10 enemies with the lowest current HP up to 14m away. Attacks the enemy with the lowest current HP in a 4m radius around the target, from a distance of 12m, over 7s, dealing 48 damage.\nAccuracy required for: Stun\n#1 Damage: 55% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/cindrake/skills/3.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 216 damage. Casts a [20% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 20%. Then, casts a [25% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 245% ATK\nINVOKATION END\nCasts a [50% ATK Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 229 damage. Casts a [23% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 23%. Then, casts a [25% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 259.7% ATK\nINVOKATION END\nCasts a [55% ATK Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 241 damage. Casts a [23% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 23%. Then, casts a [30% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 274.4% ATK\nINVOKATION END\nCasts a [60% ATK Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 263 damage. Casts a [26% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 26%. Then, casts a [30% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 298.9% ATK\nINVOKATION END\nCasts a [65% ATK Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 289 damage. Casts a [26% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 26%. Then, casts a [35% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 328.3% ATK\nINVOKATION END\nCasts a [65% ATK Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 310 damage. Casts a [29% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 29%. Then, casts a [35% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 352.8% ATK\nINVOKATION END\nCasts a [70% ATK Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 336 damage. Casts a [29% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 29%. Then, casts a [40% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 382.2% ATK\nINVOKATION END\nCasts a [75% ATK Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 358 damage. Casts a [32% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 32%. Then, casts a [40% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 406.7% ATK\nINVOKATION END\nCasts a [80% ATK Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 384 damage. Casts a [32% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 32%. Then, casts a [45% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 436.1% ATK\nINVOKATION END\nCasts a [90% ATK Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 405 damage. Casts a [35% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 35%. Then, casts a [45% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 460.6% ATK\nINVOKATION END\nCasts a [100% ATK Up] buff on the Bound Invoker, lasting 18s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 431 damage. Casts a [40% Weaken] debuff on the targets, lasting 18s, increasing all damage taken by 40%. Then, casts a [50% DEF Down] debuff on the targets, lasting 18s.\nAccuracy required for: Weaken, DEF Down\n#1 Damage: 490% ATK\nINVOKATION END\nCasts a [100% ATK Up] buff on the Bound Invoker, lasting 20s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/cindrake/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +25% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +27.5% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +30% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +35% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +40% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +45% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +50% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Magmablood loremasters proclaim that Cindrake's first Invokation caused the volcanoes of the Thursian Mountains to erupt at once, blanketing Amara with ash. Other Ironbands dismiss this as Magmablood mythmaking, but Cindrake's face-melting power cannot be denied. Its flames were brought to terrifying effect during the war with the Saurin, melting many a vile machine into burning slag.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S+",
+  "hyxxis": "S+",
+  "koltmos": "S+",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S+",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "S+",
+  "ulgorim": "S+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 100,
+  "lists": 16
+ }
+}

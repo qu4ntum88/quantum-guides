@@ -1,0 +1,290 @@
+{
+ "id": 207,
+ "slug": "inari",
+ "name": "Inari",
+ "title": "Kitsune Trickster",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The fox spirit of Izumo has recently left her realm, where she was associated with rice, warriors, and blacksmiths, to observe the workings of Vyraj’s pantheon. Her intent was to determine if Vyraj were more likely an enemy or an ally, but instead she has engaged in a torrid love affair with the canine god Simargal.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Inari.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Inari_main.png",
+ "stats": {
+  "hp": 1425,
+  "atk": 52,
+  "def": 89,
+  "spd": 107,
+  "init": 95,
+  "acc": 10,
+  "res": 30,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place Block Debuff on each ally for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each hit will grant the same effect to Inari.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Nine Tailed Slash",
+   "description": "Attack all enemies 180%ATK and place [ATK Up II] on the ally with the highest ATK for 1 turn. Also has a 20% chance for this hero to gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/inari/ICON_Inari_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "180%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllyWithHighestStat",
+     "target_label": "AllyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Foxfire Blessing",
+   "description": "Place [SPD Up II] and [FTH Up II] on all allies for 2 turns.",
+   "icon_url": "/godforge/abilities/inari/ICON_Inari_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Block Debuff on each ally for 2 turns.",
+     "upgrade_description": "Also place Block Debuff on each ally for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "21% SPD in Dungeon Battles",
+   "icon_url": "/godforge/abilities/inari/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Kitsune’s Gift",
+   "description": "Each time this hero uses their Ultimate, 2 random allies will join this hero’s attack.",
+   "icon_url": "/godforge/abilities/inari/ICON_Inari_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Weaving Illusions",
+   "description": "Attack 70%ATK enemies 9 times at random. Each hit triggers one random effect:\nHeal the lowest HP ally for 3% of their MAX HP,\nIncrease the Divinity of the ally with the lowest Divinity by 3%,\nIncrease the Turn Meter of the ally with the lowest Turn Meter by 3%.",
+   "icon_url": "/godforge/abilities/inari/ICON_Inari_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "70%ATK",
+    "70%ATK",
+    "70%ATK",
+    "70%ATK",
+    "70%ATK",
+    "70%ATK",
+    "70%ATK",
+    "70%ATK",
+    "70%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each hit will grant the same effect to Inari.",
+     "upgrade_description": "Each hit will grant the same effect to Inari."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Kitsune’s Gift",
+   "description": "Each time this hero uses their Ultimate, 1 random ally will join this hero’s attack.",
+   "icon_url": "/godforge/abilities/inari/ICON_Inari_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,277 @@
+{
+ "id": 188,
+ "slug": "nefertiti",
+ "name": "Nefertiti",
+ "title": "Queen of Aten",
+ "summary": "Charms and burns enemies.",
+ "lore": "Queen Nefertiti and her husband, the pharaoh Akhenaten, turned their people away from Aaru’s gods and toward a deity called Aten—a policy that lasted only until Akhenaten died and Nefertiti fell through the Shattering’s cracks. In Ryven she stands as an enemy of Aaru’s pantheon, and though none have seen sign of Aten’s return, Nefertiti still draws power from something…",
+ "rarity": "Rare",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Nefertiti.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Nefertiti_main.png",
+ "stats": {
+  "hp": 1095,
+  "atk": 67,
+  "def": 73,
+  "spd": 97,
+  "init": 90,
+  "acc": 25,
+  "res": 15,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [SPD Down II] on the target instead.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Matron’s Smite",
+   "description": "Attack 1 enemy 345%ATK with a 75% chance to decrease the target’s Turn Meter by 5%. if the target is under SPD Down, decrease the target’s turn meter by 10% instead.",
+   "icon_url": "/godforge/abilities/nefertiti/ICON_Nefertiti_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Queen's Devotion",
+   "description": "Attack 1 enemy 495%ATK with a 75% chance to place [Charm] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/nefertiti/ICON_Nefertiti_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "495%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Charm",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Aten's Servant",
+   "description": "Increase the ACC of all allies by 20 for each hero matching this hero’s realm.",
+   "icon_url": "/godforge/abilities/nefertiti/ICON_Nefertiti_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Living Goddess",
+   "description": "Attack all enemies 285%ATK with a 50% chance to place [SPD Down I] on each target for 2 turns and decrease the Turn Meter of each target by 10%.",
+   "icon_url": "/godforge/abilities/nefertiti/ICON_Nefertiti_Ultimate.webp",
+   "divinity_cost": 2025,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place SPD Down II on the target instead.",
+     "upgrade_description": "Place [SPD Down II] on the target instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Aten's Servant",
+   "description": "Increase the ACC of this hero by 10 for each hero matching this hero’s realm.",
+   "icon_url": "/godforge/abilities/nefertiti/ICON_Nefertiti_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

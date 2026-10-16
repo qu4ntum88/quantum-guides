@@ -1,0 +1,555 @@
+{
+ "slug": "dimistia",
+ "kind": "Invoker",
+ "name": "Dimistia",
+ "faction": "Lightseekers",
+ "rarity": "Uncommon",
+ "class": "Ranged Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/dimistia/portrait.webp",
+ "fullArt": "/invokers/units/invokers/dimistia/full.webp",
+ "stats": {
+  "base": {
+   "Health": "367",
+   "Attack": "49",
+   "Defense": "40",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "91"
+  },
+  "max": {
+   "Health": "4,501",
+   "Attack": "689",
+   "Defense": "477",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "121"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/dimistia/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+105",
+    "titan": "+57"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 15% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 22.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 29.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 37% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 45% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 15.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 23.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 31.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 39.2% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 47.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 16.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 25.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 33% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 41.4% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 18.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 27.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 36% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 45.1% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 54.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 20.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 30.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 39.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 49.6% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 60.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 21.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 32.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 42.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 53.3% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 64.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 23.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 35.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 57.7% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 70.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 24.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 37.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 49% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 61.4% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 74.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 26.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 40% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 65.9% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 80.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 28.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 42.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 55.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 69.6% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 84.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 30% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 45% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 74% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 90% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Duskbolt",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/dimistia/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 63 damage.\n#1 Damage: 128% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 66 damage.\n#1 Damage: 135.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 70 damage.\n#1 Damage: 143.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage.\n#1 Damage: 156.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 84 damage.\n#1 Damage: 171.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 90 damage.\n#1 Damage: 184.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 98 damage.\n#1 Damage: 199.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 104 damage.\n#1 Damage: 212.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 112 damage.\n#1 Damage: 227.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 118 damage.\n#1 Damage: 240.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 125 damage.\n#1 Damage: 256% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Umbral Familiar",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/dimistia/skills/2.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 63 damage per hit. Casts a [5% RES Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 128% ATK\n#2 Damage: 128% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 66 damage per hit. Casts a [6% RES Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 135.7% ATK\n#2 Damage: 135.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 70 damage per hit. Casts a [7% RES Down] debuff on the target, lasting 4s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 143.4% ATK\n#2 Damage: 143.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 77 damage per hit. Casts a [7% RES Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 156.2% ATK\n#2 Damage: 156.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 84 damage per hit. Casts a [7% RES Down] debuff on the target, lasting 5s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 171.5% ATK\n#2 Damage: 171.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 90 damage per hit. Casts a [7% RES Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 184.3% ATK\n#2 Damage: 184.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 98 damage per hit. Casts a [7% RES Down] debuff on the target, lasting 6s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 199.7% ATK\n#2 Damage: 199.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 104 damage per hit. Casts a [8% RES Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 212.5% ATK\n#2 Damage: 212.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 112 damage per hit. Casts a [8% RES Down] debuff on the target, lasting 7s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 227.8% ATK\n#2 Damage: 227.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 118 damage per hit. Casts a [10% RES Down] debuff on the target, lasting 8s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 240.6% ATK\n#2 Damage: 240.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 125 damage per hit. Casts a [10% RES Down] debuff on the target, lasting 8s, on the second hit.\nAccuracy required for: RES Down\n#1 Damage: 256% ATK\n#2 Damage: 256% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Twilight Riot",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/dimistia/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+58",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 61 damage each hit. Damage increases by 10% against targets with HP above 80%.\n#1 Damage: 124.5% * ATK\n#2 Damage: 124.5% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 65 damage each hit. Damage increases by 10% against targets with HP above 78%.\n#1 Damage: 132% * ATK\n#2 Damage: 132% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 68 damage each hit. Damage increases by 10% against targets with HP above 78%.\n#1 Damage: 139.4% * ATK\n#2 Damage: 139.4% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 74 damage each hit. Damage increases by 11% against targets with HP above 78%.\n#1 Damage: 151.9% * ATK\n#2 Damage: 151.9% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 82 damage each hit. Damage increases by 11% against targets with HP above 78%.\n#1 Damage: 166.8% * ATK\n#2 Damage: 166.8% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 88 damage each hit. Damage increases by 12% against targets with HP above 75%.\n#1 Damage: 179.3% * ATK\n#2 Damage: 179.3% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 95 damage each hit. Damage increases by 12% against targets with HP above 75%.\n#1 Damage: 194.2% * ATK\n#2 Damage: 194.2% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 101 damage each hit. Damage increases by 13% against targets with HP above 70%.\n#1 Damage: 206.7% * ATK\n#2 Damage: 206.7% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 109 damage each hit. Damage increases by 13% against targets with HP above 65%.\n#1 Damage: 221.6% * ATK\n#2 Damage: 221.6% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 115 damage each hit. Damage increases by 15% against targets with HP above 65%.\n#1 Damage: 234.1% * ATK\n#2 Damage: 234.1% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 122 damage each hit. Damage increases by 15% against targets with HP above 65%.\n#1 Damage: 249% * ATK\n#2 Damage: 249% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shade Kin",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/dimistia/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 35 damage per hit. Each hit casts a [10% DEF Down] debuff on 1 enemy, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 72% ATK\n#2 Damage: 72% ATK\n#3 Damage: 72% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 37 damage per hit. Each hit casts a [11% DEF Down] debuff on 1 enemy, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 76.3% ATK\n#2 Damage: 76.3% ATK\n#3 Damage: 76.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 40 damage per hit. Each hit casts a [11% DEF Down] debuff on 1 enemy, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 80.6% ATK\n#2 Damage: 80.6% ATK\n#3 Damage: 80.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 43 damage per hit. Each hit casts a [11% DEF Down] debuff on 1 enemy, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 87.8% ATK\n#2 Damage: 87.8% ATK\n#3 Damage: 87.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 47 damage per hit. Each hit casts a [11% DEF Down] debuff on 1 enemy, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 96.5% ATK\n#2 Damage: 96.5% ATK\n#3 Damage: 96.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 51 damage per hit. Each hit casts a [12% DEF Down] debuff on 1 enemy, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 103.7% ATK\n#2 Damage: 103.7% ATK\n#3 Damage: 103.7% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 55 damage per hit. Each hit casts a [12% DEF Down] debuff on 1 enemy, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 112.3% ATK\n#2 Damage: 112.3% ATK\n#3 Damage: 112.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 59 damage per hit. Each hit casts a [12% DEF Down] debuff on 1 enemy, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 119.5% ATK\n#2 Damage: 119.5% ATK\n#3 Damage: 119.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 63 damage per hit. Each hit casts a [12% DEF Down] debuff on 1 enemy, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 128.2% ATK\n#2 Damage: 128.2% ATK\n#3 Damage: 128.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 66 damage per hit. Each hit casts a [12% DEF Down] debuff on 1 enemy, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 135.4% ATK\n#2 Damage: 135.4% ATK\n#3 Damage: 135.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 7 enemies in a 5x11m area in front of Dimistia, from a distance of 9m, 3 times, dealing 71 damage per hit. Each hit casts a [12% DEF Down] debuff on 1 enemy, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 144% ATK\n#2 Damage: 144% ATK\n#3 Damage: 144% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Dimistia’s parents trained her to track Demons as soon as she could walk. The day the Knights of Malice came to her home, she learned why. Young Dimistia hid as she was trained to, but when she returned, it was all gone... except a Demon trail. A trail she had been trained all her life to follow.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

@@ -14,12 +14,20 @@ import { btn, btnDanger, btnQuiet, gold, hint } from '@/src/dcdl/components/admi
  * before committing to fold live tiers back into them.
  */
 
-type EntityType = 'champion' | 'legacy'
+type EntityType = 'champion' | 'legacy' | 'gf_hero' | 'vh_hunter'
+
+const TYPES: { id: EntityType; label: string; title: string; unranked: string }[] = [
+  { id: 'champion', label: 'DCDL Champions', title: "Quantum's Champion Tier List", unranked: 'Unranked champions' },
+  { id: 'legacy', label: 'DCDL Legacy Pieces', title: "Quantum's Legacy Piece Tier List", unranked: 'Unranked legacy pieces' },
+  { id: 'gf_hero', label: 'Godforge Heroes', title: "Quantum's Godforge Tier List", unranked: 'Unranked heroes' },
+  { id: 'vh_hunter', label: 'Void Hunters', title: "Quantum's Void Hunters Tier List", unranked: 'Unranked hunters' },
+]
 type CatalogItem = EditorItem & { tier: string }
 
 export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string) => void }) {
   const [type, setType] = useState<EntityType>('champion')
   const [items, setItems] = useState<CatalogItem[]>([])
+  const [tiers, setTiers] = useState<readonly string[]>(TIERS)
   const [assign, setAssign] = useState<TierAssignment>({})
   const [saved, setSaved] = useState<TierAssignment>({})
   const [savedOrder, setSavedOrder] = useState<string[]>([])
@@ -32,9 +40,11 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
     let cancelled = false
     void (async () => {
       const res = await fetch(`/api/admin/tiers?type=${type}`)
-      const catalog: CatalogItem[] = res.ok ? await res.json() : []
+      const body: { items: CatalogItem[]; tiers: string[] } = res.ok ? await res.json() : { items: [], tiers: [...TIERS] }
+      const catalog = body.items
       if (cancelled) return
       setItems(catalog)
+      setTiers(body.tiers)
       const a = Object.fromEntries(catalog.map((c) => [c.id, c.tier ?? '']))
       setAssign(a)
       setSaved(a)
@@ -47,6 +57,7 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
   const orderChanged = items.length > 0 && items.map((i) => i.id).join('|') !== savedOrder.join('|')
   const dirty = orderChanged || items.some((i) => (assign[i.id] ?? '') !== (saved[i.id] ?? ''))
   const rankedCount = items.filter((i) => assign[i.id]).length
+  const meta = TYPES.find((t) => t.id === type)!
 
   async function save() {
     setSaving(true); setStatus('')
@@ -75,18 +86,18 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
   return (
     <div>
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
-        {(['champion', 'legacy'] as const).map((t) => (
+        {TYPES.map(({ id: t, label }) => (
           <button key={t} style={{ ...btnQuiet, borderColor: type === t ? gold : 'rgba(255,255,255,0.2)', color: type === t ? gold : '#ccc' }}
             onClick={() => { if (t !== type) { setLoading(true); setType(t) } }}>
-            {t === 'champion' ? 'Champions' : 'Legacy Pieces'}
+            {label}
           </button>
         ))}
       </div>
 
       <p style={{ ...hint, marginBottom: '1.25rem', lineHeight: 1.6 }}>
-        This is the official list at the top of the public tier list page. Saving here takes over from the JSON files —
-        run <code style={{ color: gold }}>node scripts/pull-tiers.mjs</code> before your next commit to fold these
-        rankings back into <code>heros.json</code> / <code>legacy.json</code>.
+        This is the official list on the public tier list page. Saving here takes over from the JSON files; the commit
+        hook (<code style={{ color: gold }}>scripts/pull-tiers.mjs</code>) folds these rankings back into the game&apos;s JSON.
+        Godforge heroes and Void Hunters hunters you haven&apos;t placed yet start at their rarity tier.
       </p>
 
       {loading ? <p style={{ color: '#888' }}>Loading…</p> : (
@@ -95,7 +106,8 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
           assign={assign}
           onChange={setAssign}
           onReorder={(next) => setItems(next as CatalogItem[])}
-          unrankedLabel={type === 'legacy' ? 'Unranked legacy pieces' : 'Unranked champions'}
+          unrankedLabel={meta.unranked}
+          tiers={tiers}
         />
       )}
 
@@ -108,11 +120,11 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
           {saving ? 'Saving…' : dirty ? 'Save Tier List' : 'Saved'}
         </button>
         <ExportTierListButton
-          title={`Quantum's ${type === 'legacy' ? 'Legacy Piece' : 'Champion'} Tier List`}
+          title={meta.title}
           // Previewing the board as it stands right now, saved or not.
           dateLine={`Updated ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-          tiers={TIERS}
-          fit={type === 'legacy' ? 'contain' : 'cover'}
+          tiers={tiers}
+          fit={type === 'legacy' || type === 'gf_hero' ? 'contain' : 'cover'}
           items={items.filter((i) => assign[i.id]).map((i) => ({ id: i.id, name: i.name, img: i.img, tier: assign[i.id] }))}
         />
         <button style={btnDanger} onClick={clearArrows}>Clear movement arrows</button>

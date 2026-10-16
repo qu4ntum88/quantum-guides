@@ -58,6 +58,13 @@ function gitDate(fileName) {
   }
 }
 
+// DCDL files are keyed by bare filename; other games' by `<game>/<file>`
+// (src/inv/data/roster.json → "inv/roster.json") so names can't collide.
+function stampKey(arg) {
+  const m = arg.replaceAll('\\', '/').match(/src\/(\w+)\/data\/(?:.*\/)?([^/]+\.json)$/)
+  return m && m[1] !== 'dcdl' ? `${m[1]}/${m[2]}` : path.basename(arg)
+}
+
 const args = process.argv.slice(2)
 const stamp = readStamp()
 let changed = false
@@ -80,7 +87,7 @@ if (args.includes('--seed')) {
 } else {
   const today = new Date().toISOString().slice(0, 10)
   for (const arg of args) {
-    const file = path.basename(arg)
+    const file = stampKey(arg)
     if (!file.endsWith('.json') || file === 'data-updated.json') continue
     if (stamp[file] === today) continue
     stamp[file] = today

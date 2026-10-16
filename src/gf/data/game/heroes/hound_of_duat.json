@@ -1,0 +1,272 @@
+{
+ "id": 109,
+ "slug": "hound_of_duat",
+ "name": "Hound Of Duat",
+ "title": "Harrier of Souls",
+ "summary": "Protect the guardians of the afterlife with powerful shields and protection buffs.",
+ "lore": "Creations of Anubis, the Hounds of Duat aid in corralling lost souls and punishing those who violate the sanctity of tombs and graves. The alterations in magic since the Shattering have, however, driven a small portion of them feral. No longer paying heed to their creator or their assigned duties, they hunt for the pleasure of the kill, spreading death and chaos.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hound of Duat.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Hound of Duat_main.png",
+ "stats": {
+  "hp": 1290,
+  "atk": 66,
+  "def": 92,
+  "spd": 99,
+  "init": 91,
+  "acc": 15,
+  "res": 65,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also, place [Phoenix] on this hero for 1 turn.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When an ally is defeated by an enemy, activate this ability and attack that enemy.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Pack Tactics",
+   "description": "Attack 1 enemy 95%DEF+85%ATK 2 times. Each hit has a 25% chance to steal 10% Divinity.\n\nIf Jackal or Anubis are allies, they each have a 50% chance to join the attack.",
+   "icon_url": "/godforge/abilities/hound_of_duat/ICON_Hounds_of_Duat_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "95%DEF+85%ATK",
+    "95%DEF+85%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Avert the Afterlife",
+   "description": "Attack 1 enemy 245%DEF+215%ATK and place [Shield] on all allies for 25% of the damage inflicted.\n\nIf Jackal or Anubis are allies, has a 25% chance to refresh the cooldown of this ability when either of them are attacked.",
+   "icon_url": "/godforge/abilities/hound_of_duat/ICON_Hounds_of_Duat_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "245%DEF+215%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When an ally is defeated by an enemy, activate this ability and attack that enemy.",
+     "upgrade_description": "When an ally is defeated by an enemy, activate this ability and attack that enemy."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Feeding Frenzy",
+   "description": "When attacking enemies, place [Barrier] on this hero for 10% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/hound_of_duat/ICON_Hounds_of_Duat_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Grave Guardian",
+   "description": "Place [Retaliate] on this hero for 1 turn and [Protect II] on all allies except this hero for 2 turns.\n\nIf Jackal or Anubis are allies, also place [Ward] on them for 1 turn.",
+   "icon_url": "/godforge/abilities/hound_of_duat/ICON_Hounds_of_Duat_Ultimate.webp",
+   "divinity_cost": 2375,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Phoenix",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Ward",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also, place Phoenix on this hero for 1 turn.",
+     "upgrade_description": "Also, place [Phoenix] on this hero for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Feeding Frenzy",
+   "description": "When attacking enemies, place [Barrier] on this hero for 5% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/hound_of_duat/ICON_Hounds_of_Duat_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

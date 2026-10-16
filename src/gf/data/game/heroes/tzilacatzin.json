@@ -1,0 +1,335 @@
+{
+ "id": 164,
+ "slug": "tzilacatzin",
+ "name": "Tzilacatzin",
+ "title": "Obsidian Claw",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "One of the most cunning of Omeyocan’s warriors, Tzilacatzin earned the reputation of utilizing deception, devious stratagems, and an array of deadly weapons to overwhelm his foes. An inspiration to his fellow jaguar and eagle warriors, this hero can rally his Realm’s troops nearly as effectively as the presence of the gods themselves.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tzilacatzin.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tzilacatzin_main.png",
+ "stats": {
+  "hp": 1140,
+  "atk": 65,
+  "def": 70,
+  "spd": 96,
+  "init": 93,
+  "acc": 25,
+  "res": 15,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the end of this hero’s turn, place [Vanish] on this hero for 1 turn if a Disable was placed on an enemy.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Stealth Ambush",
+   "description": "Attack 1 enemy 315%ATK, then place [Vanish] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/tzilacatzin/ICON_Tzilacatzin_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "315%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Macuahuitl Slash",
+   "description": "Attack 1 enemy 250%ATK 2 times. Each hit has a 50% chance to place [SPD Down I] on the target for 1 turn.\n\nIf this hero is under [Vanish] will place [SPD Down II] instead.",
+   "icon_url": "/godforge/abilities/tzilacatzin/ICON_Tzilacatzin_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "250%ATK",
+    "250%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "SPD Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30 ACC in Dungeon Battles",
+   "icon_url": "/godforge/abilities/tzilacatzin/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Otomi Fortitude",
+   "description": "If this hero is under [Vanish], attacks have a 50% chance to place a random Disable on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/tzilacatzin/ICON_Tzilacatzin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the end of this hero’s turn, place Vanish on this hero for 1 turn if a Disable was placed on an enemy.",
+     "upgrade_description": "At the end of this hero’s turn, place [Vanish] on this hero for 1 turn if a Disable was placed on an enemy."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Jaguar Wrath",
+   "description": "Attack all enemies 260%ATK with a 50% chance to place [FTH Down I] on each target for 2 turns.\n\nIf this hero is under [Vanish] will place [FTH Down II] instead.",
+   "icon_url": "/godforge/abilities/tzilacatzin/ICON_Tzilacatzin_Ultimate.webp",
+   "divinity_cost": 2150,
+   "damage_formula": [
+    "260%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Otomi Fortitude",
+   "description": "If this hero is under [Vanish], attacks have a 25% chance to place a random Disable on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/tzilacatzin/ICON_Tzilacatzin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "id": 90,
+ "slug": "shishi",
+ "name": "Shishi",
+ "title": "Jade Protector",
+ "summary": "Protect the kingdom from invaders as you charge into battle with your allies by your side.",
+ "lore": "The shishi are great lions, sculpted of stone or metal, and granted life to serve as guardians of temples, shrines, and other holy sites. They possess intelligence and will far greater than the beasts they were made to resemble. Shishi have spread since the Shattering, as some now consider all Tian holy—or at least, significant enough to defend against outsiders.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Shi Shi.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Shishi_main.png",
+ "stats": {
+  "hp": 1230,
+  "atk": 53,
+  "def": 85,
+  "spd": 97,
+  "init": 85,
+  "acc": 10,
+  "res": 45,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [Barrier] 50%DEF on this hero when an enemy places a Debuff on them.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Jade Protector",
+   "description": "Attack 1 enemy 165%DEF+135%ATK, then has a 50% chance to place [ATK Down I] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/shishi/ICON_Shishi_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "165%DEF+135%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Watchful Pride",
+   "description": "Attack 1 enemy 240%DEF+190%ATK, then place [Protect I] on all allies except this hero for 2 turns. Defender allies join the attack using the Basic Ability.",
+   "icon_url": "/godforge/abilities/shishi/ICON_Shishi_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "240%DEF+190%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Protect I",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "15% DEF in All Battles",
+   "icon_url": "/godforge/abilities/shishi/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Steadfast",
+   "description": "Heal 5%MAXHP an ally when an enemy places a Debuff on that ally. Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/shishi/ICON_Shishi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place Barrier 50%DEF on this hero when an enemy places a Debuff on them.",
+     "upgrade_description": "Place [Barrier] 50%DEF on this hero when an enemy places a Debuff on them."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Guardian's Roar",
+   "description": "Place [Shield] 150%DEF on all allies, then decrease this hero's Core Ability cooldown by 1 turn. Also has a 40% chance to place [Stun] on all enemies for 1 turn.",
+   "icon_url": "/godforge/abilities/shishi/ICON_Shishi_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Stun",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 40,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Steadfast",
+   "description": "Heal 5%MAXHP this hero when an enemy places a Debuff on this hero. Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/shishi/ICON_Shishi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

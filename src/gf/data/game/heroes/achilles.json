@@ -1,0 +1,284 @@
+{
+ "id": 16,
+ "slug": "achilles",
+ "name": "Achilles",
+ "title": "Myrmidon's Wrath",
+ "summary": "Single target melee warrior who empowers their damage through Bleeds",
+ "lore": "A great war leader of Olympus, Achilles burns with resentment and rage. The Shattering robbed him of his opportunity for vengeance against the Trojan Prince Hector, and the shift in magics weakened the mystical invulnerability he once enjoyed. Despite his newfound limitations, Achilles has grown more reckless in battle rather than more cautious, driven by seething emotions that make him deeply unpredictable.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Achilles.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Achilles_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 97,
+  "def": 79,
+  "spd": 97,
+  "init": 90,
+  "acc": 30,
+  "res": 20,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 9
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Retaliate] on this hero for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase ATK by 1% (stacking up to 50 times) for each stack of [Bleed] removed.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Adroit Maneuver",
+   "description": "Attack 1 enemy 430%ATK, then has a 50% chance to place 4 stacks of [Bleed] on the target.",
+   "icon_url": "/godforge/abilities/achilles/ICON_Achilles_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "430%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Rage of the Myrmidon",
+   "description": "Place [ATK Up II] and [Sharpen II] on this hero for 2 turns then gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/achilles/ICON_Achilles_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sharpen II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Retaliate on this hero for 2 turns.",
+     "upgrade_description": "Also place [Retaliate] on this hero for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% CRIT in Dungeon Battles",
+   "icon_url": "/godforge/abilities/achilles/ICON_Leader_CriticalRate.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Achaean Prowess",
+   "description": "Inflict 20% increased damage to enemies under [Bleed]. Also decrease incoming damage from enemies [Bleed] by 20%.",
+   "icon_url": "/godforge/abilities/achilles/ICON_Achilles_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Dance of Chiron",
+   "description": "Attack 1 enemy 240%ATK 3 times.\n\nBefore attacking, remove all stacks of [Bleed] on the target, then increase the damage inflicted by 10% for each stack of [Bleed] removed.",
+   "icon_url": "/godforge/abilities/achilles/ICON_Achilles_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "240%ATK",
+    "240%ATK",
+    "240%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase ATK by 1% (stacking up to 50 times) for each stack of Bleed removed.",
+     "upgrade_description": "Increase ATK by 1% (stacking up to 50 times) for each stack of [Bleed] removed."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Achaean Prowess",
+   "description": "Inflict 10% increased damage to enemies under [Bleed]. Also decrease incoming damage from enemies [Bleed] by 10%.",
+   "icon_url": "/godforge/abilities/achilles/ICON_Achilles_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

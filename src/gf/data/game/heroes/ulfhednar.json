@@ -1,0 +1,270 @@
+{
+ "id": 117,
+ "slug": "ulfhednar",
+ "name": "Ulfhednar",
+ "title": "Wolf Warrior",
+ "summary": "Escalate your attacks with Critical and Strong strikes as you destroy your foes HP and Defense",
+ "lore": "Feared even among berserkers, the ulfhednar—the wolf-skinned—are some of the world’s fiercest warriors. While myths of shapeshifting among them are exaggerations, some supernatural element really has seeped into the ulfhednar since the Shattering. They seem driven by a unified purpose beyond their battlefield objectives, as though they truly are a single pack led by some unseen and unknown leader.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ulfhednar.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ulfhednar_main.png",
+ "stats": {
+  "hp": 1200,
+  "atk": 92,
+  "def": 74,
+  "spd": 92,
+  "init": 87,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When this hero inflicts a Critical Hit, the next ability will always inflict a Crushing Hit.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Vicious Cleave",
+   "description": "Attack 1 enemy 385%ATK. Crushing and Critical Hits ignore 5% of the target's DEF. Also, gain a 20% additional chance to Critical Hit.",
+   "icon_url": "/godforge/abilities/ulfhednar/ICON_Ulfhednar_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "385%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Odin's Hunters",
+   "description": "Attack 1 enemy 215%ATK 3 times. Each hit ignores [Shield] and [Barrier]. Also gain a 20% additional chance to Critical Hit.\n\nGain an Extra Turn if the target is defeated.",
+   "icon_url": "/godforge/abilities/ulfhednar/ICON_Ulfhednar_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "215%ATK",
+    "215%ATK",
+    "215%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Warband",
+   "description": "Critical hits against the same enemy inflict 20% increased damage.",
+   "icon_url": "/godforge/abilities/ulfhednar/ICON_Ulfhednar_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When this hero inflicts a Critical Hit, the next ability will always inflict a Crushing Hit.",
+     "upgrade_description": "When this hero inflicts a Critical Hit, the next ability will always inflict a Crushing Hit."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Spirit of Fenrir",
+   "description": "Attack all enemies 2 times 175%ATK. Each hit has a 50% chance to place [DEF Down I] on each target for 2 turns. Also, gain a 20% additional chance to Critical Hit.",
+   "icon_url": "/godforge/abilities/ulfhednar/ICON_Ulfhednar_Ultimate.webp",
+   "divinity_cost": 3150,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Warband",
+   "description": "Critical hits against the same enemy inflict 10% increased damage.",
+   "icon_url": "/godforge/abilities/ulfhednar/ICON_Ulfhednar_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,549 @@
+{
+ "slug": "elinis",
+ "kind": "Invoker",
+ "name": "Elinis",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/elinis/portrait.webp",
+ "fullArt": "/invokers/units/invokers/elinis/full.webp",
+ "stats": {
+  "base": {
+   "Health": "594",
+   "Attack": "55",
+   "Defense": "45",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "113"
+  },
+  "max": {
+   "Health": "6,944",
+   "Attack": "733",
+   "Defense": "515",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "143"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/elinis/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22.5% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 57.5% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 19 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 60.9% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 20 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.2% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 64.4% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 22 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 70.2% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 23 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 30.1% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 77.1% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 26 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 82.8% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 28 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 35.1% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 89.7% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 30 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 37.3% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 95.4% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 32 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 102.3% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 34 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 108.1% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 36 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 45% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 115% ATK\n#5 Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the closest enemy, dealing 38 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Spark Slam",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elinis/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage.\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage.\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 96 damage.\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 113 damage.\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage.\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage.\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage.\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 147 damage.\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 157 damage.\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cannon Sling",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elinis/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 160 damage. Damage increases by 3% per debuff on the target, limited up to +30% damage.\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 169 damage. Damage increases by 3.2% per debuff on the target, limited up to +30% damage.\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 179 damage. Damage increases by 3.5% per debuff on the target, limited up to +30% damage.\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 195 damage. Damage increases by 4% per debuff on the target, limited up to +30% damage.\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 214 damage. Damage increases by 4% per debuff on the target, limited up to +30% damage.\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 230 damage. Damage increases by 4% per debuff on the target, limited up to +30% damage.\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 249 damage. Damage increases by 4.5% per debuff on the target, limited up to +30% damage.\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 265 damage. Damage increases by 4.5% per debuff on the target, limited up to +30% damage.\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 284 damage. Damage increases by 4.8% per debuff on the target, limited up to +30% damage.\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 300 damage. Damage increases by 4.8% per debuff on the target, limited up to +50% damage.\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 319 damage. Damage increases by 5% per debuff on the target, limited up to +50% damage.\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Pauldron Clap",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/elinis/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 80 damage. Launches the targets, knocking them 4m away, for 2s.\nAccuracy required for: Launch\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 85 damage. Launches the targets, knocking them 4m away, for 2.1s.\nAccuracy required for: Launch\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 89 damage. Launches the targets, knocking them 4m away, for 2.2s.\nAccuracy required for: Launch\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 97 damage. Launches the targets, knocking them 4m away, for 2.3s.\nAccuracy required for: Launch\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 107 damage. Launches the targets, knocking them 4m away, for 2.4s.\nAccuracy required for: Launch\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 115 damage. Launches the targets, knocking them 4m away, for 2.5s.\nAccuracy required for: Launch\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 124 damage. Launches the targets, knocking them 4m away, for 2.6s.\nAccuracy required for: Launch\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 132 damage. Launches the targets, knocking them 4m away, for 2.7s.\nAccuracy required for: Launch\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 142 damage. Launches the targets, knocking them 4m away, for 2.8s.\nAccuracy required for: Launch\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 150 damage. Launches the targets, knocking them 4m away, for 2.9s.\nAccuracy required for: Launch\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Elinis, dealing 160 damage. Launches the targets, knocking them 4m away, for 3s.\nAccuracy required for: Launch\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cut & Crater",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elinis/skills/4.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 55 damage per hit. Each hit casts a [1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 100% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 58 damage per hit. Each hit casts a [1.05% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.05% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 106% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 62 damage per hit. Each hit casts a [1.05% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.05% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 112% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 67 damage per hit. Each hit casts a [1.1% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 122% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Each hit casts a [1.1% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 134% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 79 damage per hit. Each hit casts a [1.2% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 144% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 86 damage per hit. Each hit casts a [1.2% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 156% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 91 damage per hit. Each hit casts a [1.3% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 166% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 98 damage per hit. Each hit casts a [1.3% Bleed] debuff on the target, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 178% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 103 damage per hit. Each hit casts a [1.4% Bleed] debuff on the target, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 188% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 110 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 200% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "They told her she would never fight – she was too small, too weak. Elinis defied them all. She trained herself, then showed them up on the battlefield. Legions of young Eldrin followed in her footsteps, using her techniques. When they began to out-fight the army itself, Elinis was finally knighted.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "C",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "C",
+  "omnissi-fire": "D",
+  "omnissi-light": "D",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "D",
+  "sorgott": "C",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 23.2,
+  "lists": 16
+ }
+}

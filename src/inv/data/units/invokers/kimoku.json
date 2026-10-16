@@ -1,0 +1,561 @@
+{
+ "slug": "kimoku",
+ "kind": "Invoker",
+ "name": "Kimoku",
+ "faction": "Cambion",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/kimoku/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kimoku/full.webp",
+ "stats": {
+  "base": {
+   "Health": "561",
+   "Attack": "56",
+   "Defense": "47",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "118"
+  },
+  "max": {
+   "Health": "6,559",
+   "Attack": "747",
+   "Defense": "540",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "148"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kimoku/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+73",
+    "titan": "+40"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23.5% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 47% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 58.5% ATK\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 72.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.9% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 38.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 49.8% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 62% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 76.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 26.3% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 52.6% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 65.5% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 81.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 28.7% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 57.3% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 71.4% ATK\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 88.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 31.5% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 63% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 78.4% ATK\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 97.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 33.8% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 51.8% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 67.7% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 84.2% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 104.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.2% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 73.3% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 91.3% ATK\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 113.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 59.8% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 97.1% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 120.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 41.8% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 64.1% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 83.7% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 104.1% ATK\n#5 Attacks 1 enemy, dealing 72 damage.\nDamage: 129.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 44.2% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 67.7% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 88.4% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 110% ATK\n#5 Attacks 1 enemy, dealing 76 damage.\nDamage: 136.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 72% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 94% ATK\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 117% ATK\n#5 Attacks 1 enemy, dealing 81 damage.\nDamage: 145% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Malakan's Arc",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kimoku/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 75 damage.\n#1 Damage: 134% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 142% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 150.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage.\n#1 Damage: 163.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage.\n#1 Damage: 179.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 108 damage.\n#1 Damage: 193% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage.\n#1 Damage: 209% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage.\n#1 Damage: 222.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage.\n#1 Damage: 238.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 141 damage.\n#1 Damage: 251.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage.\n#1 Damage: 268% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Malakan's Sever",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kimoku/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 153 damage. Casts a [Stun] debuff on the target, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 274% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Casts a [Stun] debuff on the target, lasting 3.1s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 290.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Casts a [Stun] debuff on the target, lasting 3.1s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 306.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 187 damage. Casts a [Stun] debuff on the target, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 334.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 206 damage. Casts a [Stun] debuff on the target, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 367.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 221 damage. Casts a [Stun] debuff on the target, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 394.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 239 damage. Casts a [Stun] debuff on the target, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 427.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 255 damage. Casts a [Stun] debuff on the target, lasting 3.7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 454.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 273 damage. Casts a [Stun] debuff on the target, lasting 3.7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 487.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 288 damage. Casts a [Stun] debuff on the target, lasting 3.7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 515.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 307 damage. Casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 548% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Malakan's Rebuke",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kimoku/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+53",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 79 damage. Casts a [40% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 141% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 84 damage. Casts a [43% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 149.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 88 damage. Casts a [46% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 157.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 96 damage. Casts a [46% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 172% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 106 damage. Casts a [50% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 188.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 114 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 8s.\nAccuracy required for: Move SPD Down\n#1 Damage: 203% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 123 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 220% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 131 damage. Casts a [55% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 234.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 141 damage. Casts a [60% Move SPD Down] debuff on the targets, lasting 9s.\nAccuracy required for: Move SPD Down\n#1 Damage: 251% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 148 damage. Casts a [60% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 265.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 6m semicircle in front of Kimoku, dealing 158 damage. Casts a [65% Move SPD Down] debuff on the targets, lasting 10s.\nAccuracy required for: Move SPD Down\n#1 Damage: 282% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Malakan's Return",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kimoku/skills/4.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 64 damage. Casts a [1% Bleed] debuff on the targets, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 115% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 68 damage. Casts a [1.1% Bleed] debuff on the targets, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 121.9% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 72 damage. Casts a [1.2% Bleed] debuff on the targets, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 128.8% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 79 damage. Casts a [1.2% Bleed] debuff on the targets, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 140.3% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 86 damage. Casts a [1.2% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 154.1% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 93 damage. Casts a [1.3% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 165.6% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 100 damage. Casts a [1.4% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 179.4% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 107 damage. Casts a [1.4% Bleed] debuff on the targets, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 190.9% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 115 damage. Casts a [1.4% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 204.7% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 121 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 9s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 216.2% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 4x12m area in front of Kimoku, from a distance of 12m, dealing 129 damage. Casts a [1.5% Bleed] debuff on the targets, lasting 10s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 230% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Kimoku was once the best thief in the Broken Reach – and, technically, she still is. She stole a Demon Lord’s prize weapon, only to discover that it held his soul. Now her every waking moment is spent evading his hunters… which would be easier if she didn’t keep stopping to mock them.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "D",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "A+",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 33.9,
+  "lists": 16
+ }
+}

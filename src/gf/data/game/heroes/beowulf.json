@@ -1,0 +1,255 @@
+{
+ "id": 81,
+ "slug": "beowulf",
+ "name": "Beowulf",
+ "title": "Beast-Slayer",
+ "summary": "Slaughter Brawlers and Bosses with devastating single target attacks.",
+ "lore": "A true legend even in his youth, the great warrior Beowulf was famed for slaying the monster Grendel, his even more fearsome mother, and—later, as king—a terrible dragon. In today’s Asgard, he finds his strength restored, yet he resents the need to continue fighting, as he had reconciled with his age and had been ready for his reward in Valhalla.",
+ "rarity": "Epic",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Beowulf.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Beowulf_main.png",
+ "stats": {
+  "hp": 1185,
+  "atk": 106,
+  "def": 88,
+  "spd": 97,
+  "init": 90,
+  "acc": 30,
+  "res": 25,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Guarantees the attack will Crushing Hit.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Crushing Hit deal an additional 1% Enemy MAX HP. If the target is a Brawler or Boss, this bonus is doubled.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Naegling's Wrath",
+   "description": "Attack all enemies 225%ATK, then has a 50% chance to place [DEF Down II] on each target for 2 turns. The [DEF Down II] cannot be resisted if the target is a Brawler or Boss.",
+   "icon_url": "/godforge/abilities/beowulf/ICON_Beowulf_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "225%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Grendel's Doom",
+   "description": "Attack 1 enemy 560%ATK. Decrease the target's ATK by 5% (stacking up to 3 times) if the target is a Brawler or Boss.",
+   "icon_url": "/godforge/abilities/beowulf/ICON_Beowulf_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "560%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Guarantees the attack will Crushing Hit.",
+     "upgrade_description": "Guarantees the attack will Crushing Hit."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Giant Slayer",
+   "description": "Inflict 20% increased damage to Brawlers and Bosses.",
+   "icon_url": "/godforge/abilities/beowulf/ICON_Beowulf_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Crushing Hit deal an additional 1% Enemy MAX HP. If the target is a Brawler or Boss, this bonus is doubled.",
+     "upgrade_description": "Crushing Hit deal an additional 1% Enemy MAX HP. If the target is a Brawler or Boss, this bonus is doubled."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Thane's Wrath",
+   "description": "Attack 1 enemy 560%ATK. Increase this hero's CDMG by 10% (stacking up to 3 times) if the target is a Brawler or Boss.",
+   "icon_url": "/godforge/abilities/beowulf/ICON_Beowulf_Ultimate.webp",
+   "divinity_cost": 1925,
+   "damage_formula": [
+    "560%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Giant Slayer",
+   "description": "Inflict 10% increased damage to Brawlers and Bosses.",
+   "icon_url": "/godforge/abilities/beowulf/ICON_Beowulf_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

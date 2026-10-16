@@ -1,0 +1,265 @@
+{
+ "id": 78,
+ "slug": "tengu",
+ "name": "Tengu",
+ "title": "Windcaller",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Supernatural beings of red visage and broad wings, tengu are generally troublesome, tormenting or attacking the commonfolk of Izumo with weapon and magic alike. They hold special enmity for priests and holy grounds. Yet some also act as defenders of select areas—usually woodlands—and this protection might extend to people dwelling within, if they prove sufficiently respectful and friendly toward the tengu.",
+ "rarity": "Rare",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tengu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tengu_main.png",
+ "stats": {
+  "hp": 1065,
+  "atk": 62,
+  "def": 77,
+  "spd": 93,
+  "init": 92,
+  "acc": 25,
+  "res": 15,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Mischievous Swing",
+   "description": "Attack 1 enemy 330%ATK with a 50% chance to steal 1 random Buff on the target. If the target is under [Sleep] or [Corrupt] has an additional 50% chance to steal a Buff.",
+   "icon_url": "/godforge/abilities/tengu/ICON_Tengu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Plunging Strike",
+   "description": "Attack all enemies 270%ATK with a 50% chance to place [Corrupt] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/tengu/ICON_Tengu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "270%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Updraft",
+   "description": "When this hero steals a Buff from an enemy under [Corrupt], decrease the Turn Meter of all enemies by 10% and increase the Turn Meter of this hero by 10%.",
+   "icon_url": "/godforge/abilities/tengu/ICON_Tengu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Winged Slumber",
+   "description": "Attack all enemies 270%ATK with a 60% chance to place [Sleep] on each target for 1 turn. If the target is under [Corrupt] place [Sleep] for 2 turns instead.",
+   "icon_url": "/godforge/abilities/tengu/ICON_Tengu_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [
+    "270%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sleep",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 60,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sleep",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 60,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Updraft",
+   "description": "When this hero steals a Buff from an enemy under [Corrupt], decrease the Turn Meter of all enemies by 5% and increase the Turn Meter of this hero by 10%.",
+   "icon_url": "/godforge/abilities/tengu/ICON_Tengu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

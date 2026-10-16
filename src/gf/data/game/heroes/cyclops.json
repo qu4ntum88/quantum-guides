@@ -1,0 +1,267 @@
+{
+ "id": 221,
+ "slug": "cyclops",
+ "name": "Cyclops",
+ "title": "One-Eyed Terror",
+ "summary": "Brawler that is resistant to critical hits.",
+ "lore": "One-eyed giants of Olympus, cyclopes appear in several different varieties. A few, possessed of surprising craft and skill, work to assist gods at the forge or other workshops. Other cyclopes, however, are vicious, savage hunters and marauders who leave ruined villages and half-eaten corpses in their wake. The latter are, unfortunately, far more common, especially since the Shattering.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Cyclops.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Cyclops_main.png",
+ "stats": {
+  "hp": 1485,
+  "atk": 74,
+  "def": 75,
+  "spd": 90,
+  "init": 80,
+  "acc": 15,
+  "res": 30,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Always place [RES Down I] on the target.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Titan Cleave",
+   "description": "Attack all enemies 5%HP+75%ATK and heal for 10% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/cyclops/ICON_Cyclops_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+75%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Titanic Stomp",
+   "description": "Attack all enemies 10%HP+105%ATK then decrease each target's ATK and DEF of each target by 3% (stacking up to 5 times).",
+   "icon_url": "/godforge/abilities/cyclops/ICON_Cyclops_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+105%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Feast of Strength",
+   "description": "Before attacking, this hero will increase their ATK by 5% of this hero's team combined ATK.",
+   "icon_url": "/godforge/abilities/cyclops/ICON_Cyclops_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Anvil of the Gods",
+   "description": "Attack 1 enemy 15%HP+185%ATK then steal 1 random Buff from the target and destroy 10% of the target's MAX HP.\n\nIf the target is under a Buff after attacking, also has an 80% chance to place [RES Down I] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/cyclops/ICON_Cyclops_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "RES Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "RES Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Always place RES Down I on the target.",
+     "upgrade_description": "Always place [RES Down I] on the target."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Feast of Strength",
+   "description": "Before attacking, this hero will increase their ATK by 2.5% of this hero's team combined ATK.",
+   "icon_url": "/godforge/abilities/cyclops/ICON_Cyclops_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

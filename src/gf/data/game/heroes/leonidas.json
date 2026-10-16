@@ -1,0 +1,286 @@
+{
+ "id": 13,
+ "slug": "leonidas",
+ "name": "Leonidas",
+ "title": "Shield of Olympus",
+ "summary": "Unstoppable melee bruiser capable of executing foes and gaining vigour as the battle ensues.",
+ "lore": "A fierce warrior and brilliant tactician, King Leonidas eagerly defends Olympus against its enemies, yet he finds himself dissatisfied. His legend in Ryven exaggerates his feats in the old world, and while he hungers for glory, he wishes fame that accurately reflects his accomplishments without stealing credit from others. He has begun violently challenging allies who spread inaccurate tales of his past.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Leonidas.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Leonidas_main.png",
+ "stats": {
+  "hp": 1365,
+  "atk": 63,
+  "def": 102,
+  "spd": 101,
+  "init": 87,
+  "acc": 15,
+  "res": 70,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Will also place [ATK Down II] for 2 turns.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Converts 15% of damage inflicted on an ally into [Barrier]",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Spear Thrust",
+   "description": "Attack 1 enemy 165%DEF+130%ATK with a 50% chance to place [DEF Down II] for 2 turns.\n\nIf Spartan is an ally, will heal this hero and Spartan by 30% of the damage dealt.",
+   "icon_url": "/godforge/abilities/leonidas/ICON_Leonidas_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "165%DEF+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Will also place ATK Down II for 2 turns.",
+     "upgrade_description": "Will also place [ATK Down II] for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "No Mercy",
+   "description": "Attack 1 enemy 130%DEF+105%ATK with a 50% chance to place [Stun] for 2 turns. The second hit will instantly defeat the target if their HP is below 10% HP.",
+   "icon_url": "/godforge/abilities/leonidas/ICON_Leonidas_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "130%DEF+105%ATK",
+    "130%DEF+105%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% HP in Dungeon Battles",
+   "icon_url": "/godforge/abilities/leonidas/ICON_Leader_Health.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Spartan Resolve",
+   "description": "Has a 50% chance to convert 100% of damage inflicted on this hero into [Barrier]. The [Barrier] cannot exceed more than 10% of this hero’s health.",
+   "icon_url": "/godforge/abilities/leonidas/ICON_Leonidas_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Converts 15% of damage inflicted on an ally into Barrier",
+     "upgrade_description": "Converts 15% of damage inflicted on an ally into [Barrier]"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Battle Fervour",
+   "description": "Place [Sharpen II] on this hero for 2 turns, then attack all enemies 135%DEF+110%ATK. If Leonidas has a [Barrier], will consume 100% of the barrier to deal additional damage equal to 20% of the [Barrier] amount.",
+   "icon_url": "/godforge/abilities/leonidas/ICON_Leonidas_Ultimate.webp",
+   "divinity_cost": 2475,
+   "damage_formula": [
+    "135%DEF+110%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sharpen II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Spartan Resolve",
+   "description": "Has a 50% chance to convert 50% of incoming damage from attacks into [Barrier]. The [Barrier] cannot exceed more than 10% of this hero’s health.",
+   "icon_url": "/godforge/abilities/leonidas/ICON_Leonidas_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

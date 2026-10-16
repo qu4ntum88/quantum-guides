@@ -1,0 +1,308 @@
+{
+ "id": 197,
+ "slug": "ma_chao",
+ "name": "Ma Chao",
+ "title": "Vengeful Cavalier",
+ "summary": "Sweep aside your foes as you carve your way to throne of Tian!",
+ "lore": "An ambitious warlord with excellent publicity, Ma Chao is either brutal villain or liberating hero depending on which tales one hears, and where in Tian one hears them. He has begun raising forces to conquer many of Tian’s domains for his own purposes, but his gilded reputation has inspired many to join his cause without realizing the danger he poses.",
+ "rarity": "Rare",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ma Chao.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_MaChao_main.png",
+ "stats": {
+  "hp": 1155,
+  "atk": 100,
+  "def": 79,
+  "spd": 87,
+  "init": 88,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 400,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy is defeated, increase the Divinity of all ally Slayers by 20%. Cannot occur more than once per turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Avenger’s Blade",
+   "description": "Attack 1 enemy 205%ATK 2 times. Each hit has a 40% chance to place [DEF Down I] for 2 turns. If the attack is a Strong hit, place [DEF Down II] instead.",
+   "icon_url": "/godforge/abilities/ma_chao/ICON_MaChao_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "205%ATK",
+    "205%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Cavalry General",
+   "description": "Place [Sharpen II] on this hero for 2 turns then attack all enemies 300%ATK. If the attack is a Strong hit, will inflict additional damage equal to 1% of the target’s MAX HP.",
+   "icon_url": "/godforge/abilities/ma_chao/ICON_MaChao_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "300%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Sharpen II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "15% CRIT in Campaign Battles",
+   "icon_url": "/godforge/abilities/ma_chao/ICON_Leader_CriticalRate.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Glorious Onslaught",
+   "description": "Increase this hero’s Strong Hit chance by 10%. Strong Hits inflicted by this hero deal 20% increased damage.",
+   "icon_url": "/godforge/abilities/ma_chao/ICON_MaChao_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Heat of Battle",
+   "description": "Attack 1 enemy 205%ATK 3 times. Each hit triggers a random effect:\nPlace [FTH Down I] on the target for 2 turns.\nPlace [ATK Up I] on this hero for 2 turns.\nIgnore 5% of the target’s DEF\n\nIf an attack is a Strong Hit, will place [FTH Down II] or [ATK Up II] or ignore 10% of the target’s DEF instead.",
+   "icon_url": "/godforge/abilities/ma_chao/ICON_MaChao_Ultimate.webp",
+   "divinity_cost": 1975,
+   "damage_formula": [
+    "205%ATK",
+    "205%ATK",
+    "205%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy is defeated, increase the Divinity of all ally Slayers by 20%. Cannot occur more than once per turn.",
+     "upgrade_description": "If an enemy is defeated, increase the Divinity of all ally Slayers by 20%. Cannot occur more than once per turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Glorious Onslaught",
+   "description": "Increase this hero’s Strong Hit chance by 10%. Strong Hits inflicted by this hero deal 10% increased damage.",
+   "icon_url": "/godforge/abilities/ma_chao/ICON_MaChao_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,296 @@
+{
+ "id": 62,
+ "slug": "volkodlak",
+ "name": "Volkodlak",
+ "title": "Shadow Shifter",
+ "summary": "Cast Despair and Inflict Savage Wounds on your Foes from the Shadows.",
+ "lore": "The werewolves of Vyraj, volkodlak are either sorcerers and witches who have adopted monstrous form, or the victims of curses cast by such occultists. The resulting half-lupine being is savage and bestial, but cunning and clever, able to scheme, to trap, and to lure. They possess supernatural abilities beyond the obvious ferocity and strength, making them highly dangerous and unpredictable",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Volkodlak.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Volkodlak_main.png",
+ "stats": {
+  "hp": 1185,
+  "atk": 65,
+  "def": 73,
+  "spd": 90,
+  "init": 94,
+  "acc": 20,
+  "res": 15,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also has a chance to place [Lock Ultimate].",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Shadow Pounce",
+   "description": "Attack 1 enemy 330%ATK and decrease the target’s Turn Meter by 10%. If the target is under [Despair] decrease the Turn Meter by 20% instead.",
+   "icon_url": "/godforge/abilities/volkodlak/ICON_Volkodlak_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Rabid Bite",
+   "description": "Attack 1 enemy 260%ATK 2 times. Each hit has a 20% chance to place [Lock Core] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/volkodlak/ICON_Volkodlak_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "260%ATK",
+    "260%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Lock Core",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 20,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Ultimate",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 20,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Core",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 20,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Ultimate",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 20,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also has a chance to place Lock Ultimate.",
+     "upgrade_description": "Also has a chance to place [Lock Ultimate]."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Mark of the Predator",
+   "description": "When a hero under a Disable receives Divinity or Turn Meter, this hero gains 50% of same amount.",
+   "icon_url": "/godforge/abilities/volkodlak/ICON_Volkodlak_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Primal Howl",
+   "description": "Attack all enemies 270%ATK with a 50% chance to place [Despair] on each target for 1 turn.",
+   "icon_url": "/godforge/abilities/volkodlak/ICON_Volkodlak_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "270%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Mark of the Predator",
+   "description": "When a hero under a Disable receives Divinity or Turn Meter, this hero gains 25% of same amount.",
+   "icon_url": "/godforge/abilities/volkodlak/ICON_Volkodlak_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,576 @@
+{
+ "slug": "nistoru-the-bloodbought",
+ "kind": "Invoker",
+ "name": "Nistoru the Bloodbought",
+ "faction": "Nocturna",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/nistoru-the-bloodbought/portrait.webp",
+ "fullArt": "/invokers/units/invokers/nistoru-the-bloodbought/full.webp",
+ "stats": {
+  "base": {
+   "Health": "713",
+   "Attack": "72",
+   "Defense": "57",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "94"
+  },
+  "max": {
+   "Health": "7,911",
+   "Attack": "930",
+   "Defense": "628",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "119"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/nistoru-the-bloodbought/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+87",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 36.5% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 49.5% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 61% ATK\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 75% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 38.7% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 64.7% ATK\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 79.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 40.9% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 55.4% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 68.3% ATK\n#5 Attacks 1 enemy, dealing 60 damage.\nDamage: 84% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 44.5% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 60.4% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 74.4% ATK\n#5 Attacks 1 enemy, dealing 66 damage.\nDamage: 91.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 48.9% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 81.7% ATK\n#5 Attacks 1 enemy, dealing 72 damage.\nDamage: 100.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 52.6% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 71.3% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 87.8% ATK\n#5 Attacks 1 enemy, dealing 78 damage.\nDamage: 108% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 56.9% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 95.2% ATK\n#5 Attacks 1 enemy, dealing 84 damage.\nDamage: 117% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 60.6% ATK\n#3 Attacks 1 enemy, dealing 59 damage.\nDamage: 82.2% ATK\n#4 Attacks 1 enemy, dealing 73 damage.\nDamage: 101.3% ATK\n#5 Attacks 1 enemy, dealing 90 damage.\nDamage: 124.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 65% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 88.1% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 108.6% ATK\n#5 Attacks 1 enemy, dealing 96 damage.\nDamage: 133.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 68.6% ATK\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 93.1% ATK\n#4 Attacks 1 enemy, dealing 83 damage.\nDamage: 114.7% ATK\n#5 Attacks 1 enemy, dealing 102 damage.\nDamage: 141% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 73% ATK\n#3 Attacks 1 enemy, dealing 71 damage.\nDamage: 99% ATK\n#4 Attacks 1 enemy, dealing 88 damage.\nDamage: 122% ATK\n#5 Attacks 1 enemy, dealing 108 damage.\nDamage: 150% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crimson Stinger",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/nistoru-the-bloodbought/skills/1.webp",
+   "effects": [
+    {
+     "label": "Move SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+23",
+    "titan": "+12"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 104 damage. Casts a [10% Move SPD Up] buff on Nistoru, lasting 4s.\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 111 damage. Casts a [11% Move SPD Up] buff on Nistoru, lasting 4s.\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage. Casts a [12% Move SPD Up] buff on Nistoru, lasting 4.5s.\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 127 damage. Casts a [13% Move SPD Up] buff on Nistoru, lasting 4.5s.\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage. Casts a [14% Move SPD Up] buff on Nistoru, lasting 4.5s.\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Casts a [15% Move SPD Up] buff on Nistoru, lasting 5s.\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Casts a [16% Move SPD Up] buff on Nistoru, lasting 5s.\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 173 damage. Casts a [17% Move SPD Up] buff on Nistoru, lasting 5s.\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 186 damage. Casts a [18% Move SPD Up] buff on Nistoru, lasting 5s.\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 196 damage. Casts a [19% Move SPD Up] buff on Nistoru, lasting 5s.\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 209 damage. Casts a [20% Move SPD Up] buff on Nistoru, lasting 6s.\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vermillion Arc",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/nistoru-the-bloodbought/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+23",
+    "titan": "+12"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Heals Nistoru, restoring (35% * Damage Dealt) HP.\n#1 Damage: 305% ATK\n#2 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 233 damage. Heals Nistoru, restoring (40% * Damage Dealt) HP.\n#1 Damage: 323.3% ATK\n#2 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 246 damage. Heals Nistoru, restoring (40% * Damage Dealt) HP.\n#1 Damage: 341.6% ATK\n#2 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 268 damage. Heals Nistoru, restoring (45% * Damage Dealt) HP.\n#1 Damage: 372.1% ATK\n#2 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 294 damage. Heals Nistoru, restoring (45% * Damage Dealt) HP.\n#1 Damage: 408.7% ATK\n#2 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 316 damage. Heals Nistoru, restoring (50% * Damage Dealt) HP.\n#1 Damage: 439.2% ATK\n#2 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 343 damage. Heals Nistoru, restoring (50% * Damage Dealt) HP.\n#1 Damage: 475.8% ATK\n#2 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 365 damage. Heals Nistoru, restoring (60% * Damage Dealt) HP.\n#1 Damage: 506.3% ATK\n#2 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 391 damage. Heals Nistoru, restoring (60% * Damage Dealt) HP.\n#1 Damage: 542.9% ATK\n#2 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 413 damage. Heals Nistoru, restoring (70% * Damage Dealt) HP.\n#1 Damage: 573.4% ATK\n#2 Heal: 70% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 439 damage. Heals Nistoru, restoring (70% * Damage Dealt) HP.\n#1 Damage: 610% ATK\n#2 Heal: 70% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Ravenous Edge",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/nistoru-the-bloodbought/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 108 damage. Casts a [Shield] buff on Nistoru, lasting 8s. The [Shield] is equal to (50% * Damage Dealt). Then, casts a [20% ATK Up] buff on Nistoru, lasting 10s.\n#1 Damage: 150% ATK\n#2 Shield: 50% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 114 damage. Casts a [Shield] buff on Nistoru, lasting 8s. The [Shield] is equal to (50% * Damage Dealt). Then, casts a [25% ATK Up] buff on Nistoru, lasting 10s.\n#1 Damage: 159% ATK\n#2 Shield: 50% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 121 damage. Casts a [Shield] buff on Nistoru, lasting 8s. The [Shield] is equal to (60% * Damage Dealt). Then, casts a [25% ATK Up] buff on Nistoru, lasting 10s.\n#1 Damage: 168% ATK\n#2 Shield: 60% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 132 damage. Casts a [Shield] buff on Nistoru, lasting 8s. The [Shield] is equal to (60% * Damage Dealt). Then, casts a [25% ATK Up] buff on Nistoru, lasting 12s.\n#1 Damage: 183% ATK\n#2 Shield: 60% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 145 damage. Casts a [Shield] buff on Nistoru, lasting 10s. The [Shield] is equal to (70% * Damage Dealt). Then, casts a [25% ATK Up] buff on Nistoru, lasting 12s.\n#1 Damage: 201% ATK\n#2 Shield: 70% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 156 damage. Casts a [Shield] buff on Nistoru, lasting 10s. The [Shield] is equal to (70% * Damage Dealt). Then, casts a [30% ATK Up] buff on Nistoru, lasting 12s.\n#1 Damage: 216% ATK\n#2 Shield: 70% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 168 damage. Casts a [Shield] buff on Nistoru, lasting 12s. The [Shield] is equal to (80% * Damage Dealt). Then, casts a [30% ATK Up] buff on Nistoru, lasting 12s.\n#1 Damage: 234% ATK\n#2 Shield: 80% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 179 damage. Casts a [Shield] buff on Nistoru, lasting 12s. The [Shield] is equal to (80% * Damage Dealt). Then, casts a [35% ATK Up] buff on Nistoru, lasting 12s.\n#1 Damage: 249% ATK\n#2 Shield: 80% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 192 damage. Casts a [Shield] buff on Nistoru, lasting 12s. The [Shield] is equal to (90% * Damage Dealt). Then, casts a [35% ATK Up] buff on Nistoru, lasting 12s.\n#1 Damage: 267% ATK\n#2 Shield: 90% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 203 damage. Casts a [Shield] buff on Nistoru, lasting 12s. The [Shield] is equal to (90% * Damage Dealt). Then, casts a [35% ATK Up] buff on Nistoru, lasting 14s.\n#1 Damage: 282% ATK\n#2 Shield: 90% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Charges through a 10x6m path towards 1 enemy, damaging each enemy hit, dealing 216 damage. Casts a [Shield] buff on Nistoru, lasting 14s. The [Shield] is equal to (100% * Damage Dealt). Then, casts a [40% ATK Up] buff on Nistoru, lasting 14s.\n#1 Damage: 300% ATK\n#2 Shield: 100% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Phantom Feast",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/nistoru-the-bloodbought/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 180 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 3s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 6s instead.\n#1 Damage: 250% ATK\n#2 Damage: 250% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 191 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 3.5s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 6.5s instead.\n#1 Damage: 265% ATK\n#2 Damage: 265% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 202 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 4s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 7s instead.\n#1 Damage: 280% ATK\n#2 Damage: 280% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 220 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 4.5s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 8s instead.\n#1 Damage: 305% ATK\n#2 Damage: 305% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 241 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 4.5s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 8s instead.\n#1 Damage: 335% ATK\n#2 Damage: 335% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 259 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 5s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 9s instead.\n#1 Damage: 360% ATK\n#2 Damage: 360% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 281 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 6s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 10s instead.\n#1 Damage: 390% ATK\n#2 Damage: 390% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 299 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 6s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 10s instead.\n#1 Damage: 415% ATK\n#2 Damage: 415% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 320 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 7s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 11s instead.\n#1 Damage: 445% ATK\n#2 Damage: 445% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 338 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 8s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 12s instead.\n#1 Damage: 470% ATK\n#2 Damage: 470% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 360 damage per hit. Reduces the cooldown of a random Active Skill on Nistoru by 8s. \nIf the hit lands as a critical hit Reduces the cooldown of a random Active Skill on Nistoru by 12s instead.\n#1 Damage: 500% ATK\n#2 Damage: 500% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Frost",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Nistoru cannot remember life before becoming Dusklit. In reality, he only comprehend his unstoppable hunger. His life is a blur – first feed on Bloodfruit, and then satiate his cursed armaments by whatever means necessary. In the brief moments of clarity between frenzies, he tries to ensures his next target is deserving of his wrath. But then, the blood urge takes over. The feast cannot end.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "A",
+  "omnissi-astral": "S",
+  "omnissi-dark": "A",
+  "omnissi-earth": "A",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "E",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "S",
+  "ulgorim": "A",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 71.4,
+  "lists": 16
+ }
+}

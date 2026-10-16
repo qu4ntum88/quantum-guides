@@ -1,0 +1,603 @@
+{
+ "slug": "admiral-gladstone",
+ "kind": "Invoker",
+ "name": "Admiral Gladstone",
+ "faction": "Freeborn",
+ "rarity": "Legendary",
+ "class": "Tank",
+ "element": "Earth",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/admiral-gladstone/portrait.webp",
+ "fullArt": "/invokers/units/invokers/admiral-gladstone/full.webp",
+ "stats": {
+  "base": {
+   "Health": "936",
+   "Attack": "70",
+   "Defense": "89",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "108"
+  },
+  "max": {
+   "Health": "10,109",
+   "Attack": "839",
+   "Defense": "937",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "108"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/admiral-gladstone/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+75",
+    "titan": "+41"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 10.5% ATK + 16% DEF\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 15% ATK + 23% DEF\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 21% ATK + 31.5% DEF\n#4 Attacks 1 enemy, dealing 53 damage.\nDamage: 25.5% ATK + 39% DEF\n#5 Attacks 1 enemy, dealing 64 damage. Extends the duration of 1 random debuff on the target by 1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 31% ATK + 47.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 11.1% ATK + 17% DEF\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 15.9% ATK + 24.4% DEF\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 22.3% ATK + 33.4% DEF\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 27% ATK + 41.3% DEF\n#5 Attacks 1 enemy, dealing 68 damage. Extends the duration of 1 random debuff on the target by 1.1s.\nAccuracy required for: Debuff Duration Extension\nDamage: 32.9% ATK + 50.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 11.8% ATK + 17.9% DEF\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 16.8% ATK + 25.8% DEF\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 23.5% ATK + 35.3% DEF\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 28.6% ATK + 43.7% DEF\n#5 Attacks 1 enemy, dealing 72 damage. Extends the duration of 1 random debuff on the target by 1.2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 34.7% ATK + 53.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 12.8% ATK + 19.5% DEF\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 18.3% ATK + 28.1% DEF\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 25.6% ATK + 38.4% DEF\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 31.1% ATK + 47.6% DEF\n#5 Attacks 1 enemy, dealing 78 damage. Extends the duration of 1 random debuff on the target by 1.3s.\nAccuracy required for: Debuff Duration Extension\nDamage: 37.8% ATK + 58% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 14.1% ATK + 21.4% DEF\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 20.1% ATK + 30.8% DEF\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 28.1% ATK + 42.2% DEF\n#4 Attacks 1 enemy, dealing 70 damage.\nDamage: 34.2% ATK + 52.3% DEF\n#5 Attacks 1 enemy, dealing 86 damage. Extends the duration of 1 random debuff on the target by 1.4s.\nAccuracy required for: Debuff Duration Extension\nDamage: 41.5% ATK + 63.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 15.1% ATK + 23% DEF\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 21.6% ATK + 33.1% DEF\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 30.2% ATK + 45.4% DEF\n#4 Attacks 1 enemy, dealing 76 damage.\nDamage: 36.7% ATK + 56.2% DEF\n#5 Attacks 1 enemy, dealing 92 damage. Extends the duration of 1 random debuff on the target by 1.5s.\nAccuracy required for: Debuff Duration Extension\nDamage: 44.6% ATK + 68.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 16.4% ATK + 25% DEF\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 23.4% ATK + 35.9% DEF\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 32.8% ATK + 49.1% DEF\n#4 Attacks 1 enemy, dealing 82 damage.\nDamage: 39.8% ATK + 60.8% DEF\n#5 Attacks 1 enemy, dealing 100 damage. Extends the duration of 1 random debuff on the target by 1.6s.\nAccuracy required for: Debuff Duration Extension\nDamage: 48.4% ATK + 74.1% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 17.4% ATK + 26.6% DEF\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 24.9% ATK + 38.2% DEF\n#3 Attacks 1 enemy, dealing 71 damage.\nDamage: 34.9% ATK + 52.3% DEF\n#4 Attacks 1 enemy, dealing 87 damage.\nDamage: 42.3% ATK + 64.7% DEF\n#5 Attacks 1 enemy, dealing 106 damage. Extends the duration of 1 random debuff on the target by 1.7s.\nAccuracy required for: Debuff Duration Extension\nDamage: 51.5% ATK + 78.8% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 18.7% ATK + 28.5% DEF\n#2 Attacks 1 enemy, dealing 55 damage.\nDamage: 26.7% ATK + 40.9% DEF\n#3 Attacks 1 enemy, dealing 76 damage.\nDamage: 37.4% ATK + 56.1% DEF\n#4 Attacks 1 enemy, dealing 94 damage.\nDamage: 45.4% ATK + 69.4% DEF\n#5 Attacks 1 enemy, dealing 114 damage. Extends the duration of 1 random debuff on the target by 1.8s.\nAccuracy required for: Debuff Duration Extension\nDamage: 55.2% ATK + 84.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 41 damage.\nDamage: 19.7% ATK + 30.1% DEF\n#2 Attacks 1 enemy, dealing 58 damage.\nDamage: 28.2% ATK + 43.2% DEF\n#3 Attacks 1 enemy, dealing 80 damage.\nDamage: 39.5% ATK + 59.2% DEF\n#4 Attacks 1 enemy, dealing 99 damage.\nDamage: 47.9% ATK + 73.3% DEF\n#5 Attacks 1 enemy, dealing 120 damage. Extends the duration of 1 random debuff on the target by 1.9s.\nAccuracy required for: Debuff Duration Extension\nDamage: 58.3% ATK + 89.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 21% ATK + 32% DEF\n#2 Attacks 1 enemy, dealing 62 damage.\nDamage: 30% ATK + 46% DEF\n#3 Attacks 1 enemy, dealing 85 damage.\nDamage: 42% ATK + 63% DEF\n#4 Attacks 1 enemy, dealing 105 damage.\nDamage: 51% ATK + 78% DEF\n#5 Attacks 1 enemy, dealing 128 damage. Extends the duration of up to 2 random debuffs on the target by 2s.\nAccuracy required for: Debuff Duration Extension\nDamage: 62% ATK + 95% DEF"
+    }
+   ]
+  },
+  {
+   "name": "The Admiral's Blade",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/admiral-gladstone/skills/1.webp",
+   "effects": [
+    {
+     "label": "DEF Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 64 damage per hit. Casts a [15% DEF Up] buff on Gladstone, lasting 4s, on the second hit.\n#1 Damage: 31% ATK + 47% DEF\n#2 Damage: 31% ATK + 47% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 67 damage per hit. Casts a [17% DEF Up] buff on Gladstone, lasting 4s, on the second hit.\n#1 Damage: 32.9% ATK + 49.8% DEF\n#2 Damage: 32.9% ATK + 49.8% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 71 damage per hit. Casts a [17% DEF Up] buff on Gladstone, lasting 4.5s, on the second hit.\n#1 Damage: 34.7% ATK + 52.6% DEF\n#2 Damage: 34.7% ATK + 52.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 78 damage per hit. Casts a [19% DEF Up] buff on Gladstone, lasting 4.5s, on the second hit.\n#1 Damage: 37.8% ATK + 57.3% DEF\n#2 Damage: 37.8% ATK + 57.3% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage per hit. Casts a [19% DEF Up] buff on Gladstone, lasting 5s, on the second hit.\n#1 Damage: 41.5% ATK + 63% DEF\n#2 Damage: 41.5% ATK + 63% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 91 damage per hit. Casts a [22% DEF Up] buff on Gladstone, lasting 5s, on the second hit.\n#1 Damage: 44.6% ATK + 67.7% DEF\n#2 Damage: 44.6% ATK + 67.7% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 99 damage per hit. Casts a [22% DEF Up] buff on Gladstone, lasting 5.5s, on the second hit.\n#1 Damage: 48.4% ATK + 73.3% DEF\n#2 Damage: 48.4% ATK + 73.3% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 105 damage per hit. Casts a [25% DEF Up] buff on Gladstone, lasting 5.5s, on the second hit.\n#1 Damage: 51.5% ATK + 78% DEF\n#2 Damage: 51.5% ATK + 78% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 113 damage per hit. Casts a [30% DEF Up] buff on Gladstone, lasting 5.5s, on the second hit.\n#1 Damage: 55.2% ATK + 83.7% DEF\n#2 Damage: 55.2% ATK + 83.7% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 119 damage per hit. Casts a [30% DEF Up] buff on Gladstone, lasting 6s, on the second hit.\n#1 Damage: 58.3% ATK + 88.4% DEF\n#2 Damage: 58.3% ATK + 88.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 127 damage per hit. Casts a [30% DEF Up] buff on Gladstone, lasting 6s, on the second hit.\n#1 Damage: 62% ATK + 94% DEF\n#2 Damage: 62% ATK + 94% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Howl of the Deep",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/admiral-gladstone/skills/2.webp",
+   "effects": [
+    {
+     "label": "Mindworm",
+     "group": "Debuffs",
+     "description": "Disables the recipient's Passive Skills and blocks them from activating."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 257 damage. Casts a [15% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 15%. Then, casts a [Mindworm] debuff on the target, lasting 7s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 125% ATK + 190% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 272 damage. Casts a [17% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 17%. Then, casts a [Mindworm] debuff on the target, lasting 7s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 132.5% ATK + 201.4% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 287 damage. Casts a [17% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 17%. Then, casts a [Mindworm] debuff on the target, lasting 8s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 140% ATK + 212.8% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 313 damage. Casts a [20% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 20%. Then, casts a [Mindworm] debuff on the target, lasting 8s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 152.5% ATK + 231.8% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 344 damage. Casts a [20% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 20%. Then, casts a [Mindworm] debuff on the target, lasting 8s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 167.5% ATK + 254.6% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 370 damage. Casts a [20% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 20%. Then, casts a [Mindworm] debuff on the target, lasting 9s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 180% ATK + 273.6% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 400 damage. Casts a [20% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 20%. Then, casts a [Mindworm] debuff on the target, lasting 9s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 195% ATK + 296.4% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 426 damage. Casts a [22% Weaken] debuff on the target, lasting 14s, increasing all damage taken by 22%. Then, casts a [Mindworm] debuff on the target, lasting 9s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 207.5% ATK + 315.4% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 457 damage. Casts a [22% Weaken] debuff on the target, lasting 14s, increasing all damage taken by 22%. Then, casts a [Mindworm] debuff on the target, lasting 11s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 222.5% ATK + 338.2% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 482 damage. Casts a [22% Weaken] debuff on the target, lasting 15s, increasing all damage taken by 22%. Then, casts a [Mindworm] debuff on the target, lasting 11s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 235% ATK + 357.2% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 513 damage. Casts a [25% Weaken] debuff on the target, lasting 15s, increasing all damage taken by 25%. Then, casts a [Mindworm] debuff on the target, lasting 11s, blocking their Passive Skills from activating.\nAccuracy required for: Weaken, Mindworm\n#1 Damage: 250% ATK + 380% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Hand of Greed",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/admiral-gladstone/skills/3.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    },
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 260 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 15s, decreasing the size of all heals received by 50%. Then, casts a [94 HP Shield] buff on Gladstone, lasting 10s.\nAccuracy required for: Heal Reduction\n#1 Damage: 130% ATK + 190% DEF\n#2 Shield: 10% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 276 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 15s, decreasing the size of all heals received by 60%. Then, casts a [94 HP Shield] buff on Gladstone, lasting 11s.\nAccuracy required for: Heal Reduction\n#1 Damage: 137.8% ATK + 201.4% DEF\n#2 Shield: 10% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 291 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 15s, decreasing the size of all heals received by 60%. Then, casts a [140 HP Shield] buff on Gladstone, lasting 11s.\nAccuracy required for: Heal Reduction\n#1 Damage: 145.6% ATK + 212.8% DEF\n#2 Shield: 15% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 317 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 60%. Then, casts a [140 HP Shield] buff on Gladstone, lasting 11s.\nAccuracy required for: Heal Reduction\n#1 Damage: 158.6% ATK + 231.8% DEF\n#2 Shield: 15% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 349 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 60%. Then, casts a [187 HP Shield] buff on Gladstone, lasting 11s.\nAccuracy required for: Heal Reduction\n#1 Damage: 174.2% ATK + 254.6% DEF\n#2 Shield: 20% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 375 damage. Casts a [75% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 75%. Then, casts a [187 HP Shield] buff on Gladstone, lasting 12s.\nAccuracy required for: Heal Reduction\n#1 Damage: 187.2% ATK + 273.6% DEF\n#2 Shield: 20% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 406 damage. Casts a [75% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 75%. Then, casts a [187 HP Shield] buff on Gladstone, lasting 12s.\nAccuracy required for: Heal Reduction\n#1 Damage: 202.8% ATK + 296.4% DEF\n#2 Shield: 20% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 432 damage. Casts a [100% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 100%. Then, casts a [234 HP Shield] buff on Gladstone, lasting 12s.\nAccuracy required for: Heal Reduction\n#1 Damage: 215.8% ATK + 315.4% DEF\n#2 Shield: 25% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 463 damage. Casts a [100% Heal Reduction] debuff on the target, lasting 16s, decreasing the size of all heals received by 100%. Then, casts a [234 HP Shield] buff on Gladstone, lasting 13s.\nAccuracy required for: Heal Reduction\n#1 Damage: 231.4% ATK + 338.2% DEF\n#2 Shield: 25% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 489 damage. Casts a [100% Heal Reduction] debuff on the target, lasting 19s, decreasing the size of all heals received by 100%. Then, casts a [234 HP Shield] buff on Gladstone, lasting 13s.\nAccuracy required for: Heal Reduction\n#1 Damage: 244.4% ATK + 357.2% DEF\n#2 Shield: 25% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 520 damage. Casts a [100% Heal Reduction] debuff on the target, lasting 19s, decreasing the size of all heals received by 100%. Then, casts a [234 HP Shield] buff on Gladstone, lasting 14s.\nAccuracy required for: Heal Reduction\n#1 Damage: 260% ATK + 380% DEF\n#2 Shield: 25% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "The Master's Command",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/admiral-gladstone/skills/4.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Rate stat by the indicated percentage."
+    },
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 53 damage per hit. Each hit casts a [25% Crit Rate Down] debuff on the targets, lasting 10s. Then, casts a [10% Combo SPD Down] debuff on the targets, lasting 10s. Then, casts a [35% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 25.5% ATK + 40% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 57 damage per hit. Each hit casts a [30% Crit Rate Down] debuff on the targets, lasting 10s. Then, casts a [10% Combo SPD Down] debuff on the targets, lasting 10s. Then, casts a [35% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 27% ATK + 42.4% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 60 damage per hit. Each hit casts a [30% Crit Rate Down] debuff on the targets, lasting 10s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 10s. Then, casts a [40% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 28.6% ATK + 44.8% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 65 damage per hit. Each hit casts a [30% Crit Rate Down] debuff on the targets, lasting 12s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 12s. Then, casts a [40% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 31.1% ATK + 48.8% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 72 damage per hit. Each hit casts a [37% Crit Rate Down] debuff on the targets, lasting 12s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 12s. Then, casts a [40% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 34.2% ATK + 53.6% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 77 damage per hit. Each hit casts a [37% Crit Rate Down] debuff on the targets, lasting 12s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 12s. Then, casts a [45% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 36.7% ATK + 57.6% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 83 damage per hit. Each hit casts a [37% Crit Rate Down] debuff on the targets, lasting 14s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 14s. Then, casts a [45% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 39.8% ATK + 62.4% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 89 damage per hit. Each hit casts a [37% Crit Rate Down] debuff on the targets, lasting 14s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 14s. Then, casts a [45% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 42.3% ATK + 66.4% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 95 damage per hit. Each hit casts a [45% Crit Rate Down] debuff on the targets, lasting 14s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 14s. Then, casts a [50% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 45.4% ATK + 71.2% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 100 damage per hit. Each hit casts a [45% Crit Rate Down] debuff on the targets, lasting 16s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 16s. Then, casts a [50% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 47.9% ATK + 75.2% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 10 enemies in a 10x2m area in front of Gladstone, from a distance of 5m, 5 times, dealing 107 damage per hit. Each hit casts a [45% Crit Rate Down] debuff on the targets, lasting 16s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 16s. Then, casts a [50% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Crit Rate Down, Combo SPD Down, DEF Down\n#1 Damage: 51% ATK + 80% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Admiral Gladstone sought the greatest power of the sea – the Blade of Aras – and he was willing to sacrifice a dozen ships and a thousand men to get it… but the Blade took his soul as well. Now, he leads only the dead, and every day seeks a way to claw back what he lost.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "A+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "A+",
+  "omnissi-light": "E",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "A+",
+  "sakiel": "E",
+  "sorgott": "A+",
+  "ulgorim": "E",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 54.5,
+  "lists": 16
+ }
+}

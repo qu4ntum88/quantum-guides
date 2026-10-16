@@ -1,3 +1,6 @@
+// Old Godforge hero-page ids (the ravenpyros API's numbers) → slugs; written by scripts/sync-godforge.mjs.
+const gfLegacyIds = require('./src/gf/data/legacy-ids.json')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // The champion and legacy databases ARE the tier lists (Tier List / Grid toggle), so
@@ -8,6 +11,16 @@ const nextConfig = {
       { source: '/games/dc-dark-legion', destination: '/games/dc-dark-legion/champion-tier-list', permanent: true },
       { source: '/games/dc-dark-legion/tier-list', destination: '/games/dc-dark-legion/champion-tier-list', permanent: true },
       { source: '/games/dc-dark-legion/legacy', destination: '/games/dc-dark-legion/legacy-tier-list', permanent: true },
+      { source: '/games/invokers', destination: '/games/invokers/guides', permanent: true },
+      // Godforge and Void Hunters databases merged into their tier lists (2026-10-16).
+      { source: '/games/godforge/heroes', destination: '/games/godforge/hero-tier-list', permanent: true },
+      { source: '/games/godforge/tier-list', destination: '/games/godforge/hero-tier-list', permanent: true },
+      { source: '/games/void-hunters', destination: '/games/void-hunters/hunter-tier-list', permanent: true },
+      ...Object.entries(gfLegacyIds).map(([id, slug]) => ({
+        source: `/games/godforge/heroes/${id}`,
+        destination: `/games/godforge/heroes/${slug}`,
+        permanent: true,
+      })),
     ]
   },
 

@@ -1,0 +1,570 @@
+{
+ "slug": "railbolt-sarienne",
+ "kind": "Invoker",
+ "name": "Railbolt Sarienne",
+ "faction": "Magi",
+ "rarity": "Epic",
+ "class": "Ranged Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Duthra",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/railbolt-sarienne/portrait.webp",
+ "fullArt": "/invokers/units/invokers/railbolt-sarienne/full.webp",
+ "stats": {
+  "base": {
+   "Health": "575",
+   "Attack": "86",
+   "Defense": "57",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "98"
+  },
+  "max": {
+   "Health": "6,380",
+   "Attack": "1,106",
+   "Defense": "628",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "123"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/railbolt-sarienne/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+134",
+    "titan": "+73"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 48.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 52 damage.\nDamage: 60% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 31 damage.\nDamage: 35.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 51.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 63.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 32 damage.\nDamage: 37.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 54.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 58 damage.\nDamage: 67.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 34 damage.\nDamage: 39.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 51 damage.\nDamage: 59.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 63 damage.\nDamage: 73.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 37 damage.\nDamage: 43.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 65% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 80.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 41 damage.\nDamage: 47.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 69.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 74 damage.\nDamage: 86.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 44 damage.\nDamage: 51.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 65 damage.\nDamage: 75.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 80 damage.\nDamage: 93.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 48 damage.\nDamage: 55.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 80.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 86 damage.\nDamage: 99.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 51 damage.\nDamage: 58.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 54 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 74 damage.\nDamage: 86.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 92 damage.\nDamage: 106.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 54 damage.\nDamage: 63.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 78 damage.\nDamage: 91.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 97 damage.\nDamage: 112.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 57 damage.\nDamage: 66.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 83 damage.\nDamage: 97% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 103 damage.\nDamage: 120% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 61 damage.\nDamage: 71% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Accelerator Round",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/railbolt-sarienne/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 127 damage. If the hit lands as a critical hit Sarienne gains 20 Ultimate Mana.\n#1 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 134 damage. If the hit lands as a critical hit Sarienne gains 22 Ultimate Mana.\n#1 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 142 damage. If the hit lands as a critical hit Sarienne gains 24 Ultimate Mana.\n#1 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 155 damage. If the hit lands as a critical hit Sarienne gains 26 Ultimate Mana.\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 170 damage. If the hit lands as a critical hit Sarienne gains 28 Ultimate Mana.\n#1 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 183 damage. If the hit lands as a critical hit Sarienne gains 30 Ultimate Mana.\n#1 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 198 damage. If the hit lands as a critical hit Sarienne gains 32 Ultimate Mana.\n#1 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 211 damage. If the hit lands as a critical hit Sarienne gains 34 Ultimate Mana.\n#1 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 226 damage. If the hit lands as a critical hit Sarienne gains 36 Ultimate Mana.\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 238 damage. If the hit lands as a critical hit Sarienne gains 38 Ultimate Mana.\n#1 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 254 damage. If the hit lands as a critical hit Sarienne gains 40 Ultimate Mana.\n#1 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Empyreal Calibration",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/railbolt-sarienne/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit DMG Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Damage stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% Crit Rate Up] buff on Sarienne, lasting 8s. Then, casts a [45% Crit DMG Up] buff on Sarienne, lasting 8s. \nAttacks 1 enemy from a distance of 9m, dealing 245 damage.\n#1 Damage: 285% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [12% Crit Rate Up] buff on Sarienne, lasting 8s. Then, casts a [45% Crit DMG Up] buff on Sarienne, lasting 8s. \nAttacks 1 enemy from a distance of 9m, dealing 260 damage.\n#1 Damage: 302.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% Crit Rate Up] buff on Sarienne, lasting 8s. Then, casts a [50% Crit DMG Up] buff on Sarienne, lasting 8s. \nAttacks 1 enemy from a distance of 9m, dealing 275 damage.\n#1 Damage: 319.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [14% Crit Rate Up] buff on Sarienne, lasting 8s. Then, casts a [50% Crit DMG Up] buff on Sarienne, lasting 8s. \nAttacks 1 enemy from a distance of 9m, dealing 299 damage.\n#1 Damage: 347.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [14% Crit Rate Up] buff on Sarienne, lasting 10s. Then, casts a [50% Crit DMG Up] buff on Sarienne, lasting 10s. \nAttacks 1 enemy from a distance of 9m, dealing 328 damage.\n#1 Damage: 381.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [16% Crit Rate Up] buff on Sarienne, lasting 10s. Then, casts a [50% Crit DMG Up] buff on Sarienne, lasting 10s. \nAttacks 1 enemy from a distance of 9m, dealing 353 damage.\n#1 Damage: 410.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [16% Crit Rate Up] buff on Sarienne, lasting 10s. Then, casts a [60% Crit DMG Up] buff on Sarienne, lasting 10s. \nAttacks 1 enemy from a distance of 9m, dealing 382 damage.\n#1 Damage: 444.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [18% Crit Rate Up] buff on Sarienne, lasting 10s. Then, casts a [60% Crit DMG Up] buff on Sarienne, lasting 10s. \nAttacks 1 enemy from a distance of 9m, dealing 407 damage.\n#1 Damage: 473.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts a [18% Crit Rate Up] buff on Sarienne, lasting 12s. Then, casts a [60% Crit DMG Up] buff on Sarienne, lasting 12s. \nAttacks 1 enemy from a distance of 9m, dealing 436 damage.\n#1 Damage: 507.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Casts a [20% Crit Rate Up] buff on Sarienne, lasting 12s. Then, casts a [60% Crit DMG Up] buff on Sarienne, lasting 12s. \nAttacks 1 enemy from a distance of 9m, dealing 461 damage.\n#1 Damage: 535.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Casts a [20% Crit Rate Up] buff on Sarienne, lasting 14s. Then, casts a [75% Crit DMG Up] buff on Sarienne, lasting 14s. \nAttacks 1 enemy from a distance of 9m, dealing 490 damage.\n#1 Damage: 570% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Eliminator Bolt",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/railbolt-sarienne/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 252 damage. \nSarienne gains 50 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 100 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 75 Ultimate Mana if this attack kills the target.\n#1 Damage: 292.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 267 damage. \nSarienne gains 55 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 110 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 80 Ultimate Mana if this attack kills the target.\n#1 Damage: 310% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 282 damage. \nSarienne gains 60 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 120 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 80 Ultimate Mana if this attack kills the target.\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 307 damage. \nSarienne gains 65 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 130 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 80 Ultimate Mana if this attack kills the target.\n#1 Damage: 356.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 337 damage. \nSarienne gains 70 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 140 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 90 Ultimate Mana if this attack kills the target.\n#1 Damage: 392% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 362 damage. \nSarienne gains 75 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 150 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 100 Ultimate Mana if this attack kills the target.\n#1 Damage: 421.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 392 damage. \nSarienne gains 80 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 160 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 100 Ultimate Mana if this attack kills the target.\n#1 Damage: 456.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 418 damage. \nSarienne gains 85 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 170 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 100 Ultimate Mana if this attack kills the target.\n#1 Damage: 485.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 448 damage. \nSarienne gains 90 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 180 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 110 Ultimate Mana if this attack kills the target.\n#1 Damage: 520.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 473 damage. \nSarienne gains 95 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 190 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 130 Ultimate Mana if this attack kills the target.\n#1 Damage: 549.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 503 damage. \nSarienne gains 100 Ultimate Mana. If the hit lands as a non-critical hit. \nSarienne gains 200 Ultimate Mana. If the hit lands as a critical hit. \nSarienne gains 150 Ultimate Mana if this attack kills the target.\n#1 Damage: 585% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Soulpunch Driver",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/railbolt-sarienne/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 430 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 100 Ultimate Mana.\n#1 Damage: 499.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 455 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 110 Ultimate Mana.\n#1 Damage: 529.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 481 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 120 Ultimate Mana.\n#1 Damage: 559.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 524 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 130 Ultimate Mana.\n#1 Damage: 609.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 576 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 140 Ultimate Mana.\n#1 Damage: 669.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 619 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 150 Ultimate Mana.\n#1 Damage: 719.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 670 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 160 Ultimate Mana.\n#1 Damage: 779.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 713 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 170 Ultimate Mana.\n#1 Damage: 829.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 765 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 180 Ultimate Mana.\n#1 Damage: 889.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 808 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 190 Ultimate Mana.\n#1 Damage: 939.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 859 damage. If this attack kills the target Reduces the cooldown of Active Skill 3 on Sarienne by 99s. \nIf this attack kills the target Sarienne gains 200 Ultimate Mana.\n#1 Damage: 999% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Sarienne has been a gunsmith since she was fifteen, making custom weapons for Freeborn pirates with whatever strange materials they could bring her. Becoming a Magi gave her the best material of all: magic. She put everything she had into her Empyreal Railbolt – and it was worth every drop of sweat.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "A",
+  "hyxxis": "B",
+  "koltmos": "E",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "A",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "C",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 39.3,
+  "lists": 16
+ }
+}

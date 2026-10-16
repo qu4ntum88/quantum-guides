@@ -1,0 +1,555 @@
+{
+ "slug": "spellknife-remile",
+ "kind": "Invoker",
+ "name": "Spellknife Remile",
+ "faction": "Magi",
+ "rarity": "Uncommon",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/spellknife-remile/portrait.webp",
+ "fullArt": "/invokers/units/invokers/spellknife-remile/full.webp",
+ "stats": {
+  "base": {
+   "Health": "451",
+   "Attack": "46",
+   "Defense": "35",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "117"
+  },
+  "max": {
+   "Health": "5,530",
+   "Attack": "645",
+   "Defense": "414",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "147"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/spellknife-remile/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+71",
+    "titan": "+39"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 21% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 32% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 41.5% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 51.5% ATK\n#5 Attacks 1 enemy, dealing 29 damage.\nDamage: 64% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 22.3% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 33.9% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 54.6% ATK\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 67.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 23.5% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 35.8% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 46.5% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 57.7% ATK\n#5 Attacks 1 enemy, dealing 33 damage.\nDamage: 71.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 25.6% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 39% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 50.6% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 62.8% ATK\n#5 Attacks 1 enemy, dealing 36 damage.\nDamage: 78.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 42.9% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 55.6% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 69% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 85.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 30.2% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 46.1% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 59.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 74.2% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 92.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 32.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 49.9% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 64.7% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 80.3% ATK\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 99.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 34.9% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 53.1% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 68.9% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 85.5% ATK\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 106.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 57% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 73.9% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 91.7% ATK\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 113.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 39.5% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 60.2% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 96.8% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 120.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 42% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 64% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 83% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 103% ATK\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 128% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Boot Blade",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/spellknife-remile/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 59 damage.\n#1 Damage: 128.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 63 damage.\n#1 Damage: 136.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 143.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 72 damage.\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 172.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 85 damage.\n#1 Damage: 185% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage.\n#1 Damage: 200.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage.\n#1 Damage: 213.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 228.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 111 damage.\n#1 Damage: 241.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 118 damage.\n#1 Damage: 257% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Knife Scatter",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/spellknife-remile/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 61 damage.\n#1 Damage: 133% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 65 damage.\n#1 Damage: 141% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 69 damage.\n#1 Damage: 149% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 75 damage.\n#1 Damage: 162.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 82 damage.\n#1 Damage: 178.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 88 damage.\n#1 Damage: 191.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 95 damage.\n#1 Damage: 207.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 102 damage.\n#1 Damage: 220.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 109 damage.\n#1 Damage: 236.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 115 damage.\n#1 Damage: 250% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 5m semicircle in front of Remile, dealing 122 damage.\n#1 Damage: 266% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Weakening Daggers",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/spellknife-remile/skills/3.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 62 damage per hit. Each hit casts a [10% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 135.5% ATK\n#2 Damage: 135.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 66 damage per hit. Each hit casts a [11% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 143.6% ATK\n#2 Damage: 143.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 70 damage per hit. Each hit casts a [12% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 151.8% ATK\n#2 Damage: 151.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 76 damage per hit. Each hit casts a [13% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 165.3% ATK\n#2 Damage: 165.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 84 damage per hit. Each hit casts a [15% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 181.6% ATK\n#2 Damage: 181.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 90 damage per hit. Each hit casts a [15% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 195.1% ATK\n#2 Damage: 195.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 97 damage per hit. Each hit casts a [15% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 211.4% ATK\n#2 Damage: 211.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 103 damage per hit. Each hit casts a [17% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 224.9% ATK\n#2 Damage: 224.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 111 damage per hit. Each hit casts a [17% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 241.2% ATK\n#2 Damage: 241.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 117 damage per hit. Each hit casts a [17% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 254.7% ATK\n#2 Damage: 254.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 125 damage per hit. Each hit casts a [20% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 271% ATK\n#2 Damage: 271% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Spellknife Twistcord",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/spellknife-remile/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 103 damage. Casts a [10% DEF Down] debuff on the targets, lasting 8s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 223.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 109 damage. Casts a [11% DEF Down] debuff on the targets, lasting 8s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 236.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 115 damage. Casts a [12% DEF Down] debuff on the targets, lasting 8s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 250.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 125 damage. Casts a [12% DEF Down] debuff on the targets, lasting 9s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 272.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 138 damage. Casts a [13% DEF Down] debuff on the targets, lasting 9s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 299.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 148 damage. Casts a [13% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 321.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 160 damage. Casts a [14% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 348.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 171 damage. Casts a [14% DEF Down] debuff on the targets, lasting 10s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 371% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 183 damage. Casts a [14% DEF Down] debuff on the targets, lasting 11s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 397.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 193 damage. Casts a [15% DEF Down] debuff on the targets, lasting 11s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 420.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Pulls the 3 furthest enemies in a 10m radius to Remile. \nAttacks the 7 enemies with the lowest current HP in a 7m radius around Remile, from a distance of 10m, dealing 206 damage. Casts a [15% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 447% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Growing up, Remile didn’t care much about his talent for magic – he grew up dealing with street gangs, and magic was less help than quick wits and fast feet. But it was the magic that saved him in the end: a Magi found him in trouble, and got him into the Academy. Now, it’s the gangs’ turn to run.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

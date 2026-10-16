@@ -1,0 +1,571 @@
+{
+ "slug": "stade-the-shining",
+ "kind": "Invoker",
+ "name": "Stade the Shining",
+ "faction": "Lightseekers",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/stade-the-shining/portrait.webp",
+ "fullArt": "/invokers/units/invokers/stade-the-shining/full.webp",
+ "stats": {
+  "base": {
+   "Health": "804",
+   "Attack": "92",
+   "Defense": "79",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "119"
+  },
+  "max": {
+   "Health": "8,616",
+   "Attack": "1,128",
+   "Defense": "829",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "149"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stade-the-shining/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25.5% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 38.5% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 50% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 63% ATK\n#5 Attacks 1 enemy, dealing 68 damage. Reduces the cooldown of Active Skill 1 on Stade by 0.5s.\nDamage: 74% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 27% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 40.8% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 53% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 66.8% ATK\n#5 Attacks 1 enemy, dealing 72 damage. Reduces the cooldown of Active Skill 1 on Stade by 0.6s.\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 28.6% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 43.1% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 56% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 70.6% ATK\n#5 Attacks 1 enemy, dealing 76 damage. Reduces the cooldown of Active Skill 1 on Stade by 0.7s.\nDamage: 82.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 31.1% ATK\n#2 Attacks 1 enemy, dealing 43 damage.\nDamage: 47% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 76.9% ATK\n#5 Attacks 1 enemy, dealing 83 damage. Reduces the cooldown of Active Skill 1 on Stade by 0.8s.\nDamage: 90.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 34.2% ATK\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 51.6% ATK\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 84.4% ATK\n#5 Attacks 1 enemy, dealing 91 damage. Reduces the cooldown of Active Skill 1 on Stade by 0.9s.\nDamage: 99.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy, dealing 66 damage.\nDamage: 72% ATK\n#4 Attacks 1 enemy, dealing 83 damage.\nDamage: 90.7% ATK\n#5 Attacks 1 enemy, dealing 98 damage. Reduces the cooldown of Active Skill 1 on Stade by 1s.\nDamage: 106.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 55 damage.\nDamage: 60.1% ATK\n#3 Attacks 1 enemy, dealing 72 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 90 damage.\nDamage: 98.3% ATK\n#5 Attacks 1 enemy, dealing 106 damage. Reduces the cooldown of Active Skill 1 on Stade by 1.1s.\nDamage: 115.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 39 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 59 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 76 damage.\nDamage: 83% ATK\n#4 Attacks 1 enemy, dealing 96 damage.\nDamage: 104.6% ATK\n#5 Attacks 1 enemy, dealing 113 damage. Reduces the cooldown of Active Skill 1 on Stade by 1.2s.\nDamage: 122.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 45.4% ATK\n#2 Attacks 1 enemy, dealing 63 damage.\nDamage: 68.5% ATK\n#3 Attacks 1 enemy, dealing 82 damage.\nDamage: 89% ATK\n#4 Attacks 1 enemy, dealing 103 damage.\nDamage: 112.1% ATK\n#5 Attacks 1 enemy, dealing 121 damage. Reduces the cooldown of Active Skill 1 on Stade by 1.3s.\nDamage: 131.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 44 damage.\nDamage: 47.9% ATK\n#2 Attacks 1 enemy, dealing 67 damage.\nDamage: 72.4% ATK\n#3 Attacks 1 enemy, dealing 86 damage.\nDamage: 94% ATK\n#4 Attacks 1 enemy, dealing 109 damage.\nDamage: 118.4% ATK\n#5 Attacks 1 enemy, dealing 128 damage. Reduces the cooldown of Active Skill 1 on Stade by 1.4s.\nDamage: 139.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 47 damage.\nDamage: 51% ATK\n#2 Attacks 1 enemy, dealing 71 damage.\nDamage: 77% ATK\n#3 Attacks 1 enemy, dealing 92 damage.\nDamage: 100% ATK\n#4 Attacks 1 enemy, dealing 116 damage.\nDamage: 126% ATK\n#5 Attacks 1 enemy, dealing 136 damage. Reduces the cooldown of Active Skill 1 on Stade by 1.5s.\nDamage: 148% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Courage Aura",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stade-the-shining/skills/1.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage. Casts a [25% ATK Up] buff on Stade, lasting 3s.\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 141 damage. Casts a [28% ATK Up] buff on Stade, lasting 3s.\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage. Casts a [28% ATK Up] buff on Stade, lasting 3.5s.\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Casts a [31% ATK Up] buff on Stade, lasting 3.5s.\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 179 damage. Casts a [31% ATK Up] buff on Stade, lasting 4s.\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 192 damage. Casts a [34% ATK Up] buff on Stade, lasting 4s.\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 208 damage. Casts a [34% ATK Up] buff on Stade, lasting 4.5s.\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 221 damage. Casts a [37% ATK Up] buff on Stade, lasting 4.5s.\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 237 damage. Casts a [37% ATK Up] buff on Stade, lasting 5s.\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. Casts a [40% ATK Up] buff on Stade, lasting 5s.\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 267 damage. Casts a [40% ATK Up] buff on Stade, lasting 6s.\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sanctified Ground",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/stade-the-shining/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 143 damage. Casts a [1% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 155% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 151 damage. Casts a [1.3% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 164.3% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 160 damage. Casts a [1.3% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 173.6% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 174 damage. Casts a [1.6% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 189.1% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 191 damage. Casts a [1.6% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 207.7% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 205 damage. Casts a [1.9% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.9% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.95% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 223.2% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 222 damage. Casts a [1.9% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.9% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.95% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 241.8% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 237 damage. Casts a [2.2% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2.2% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 1.1% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 257.3% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 254 damage. Casts a [2.2% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2.2% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1.1% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 275.9% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 268 damage. Casts a [2.5% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1.25% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 291.4% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Stade, dealing 285 damage. Casts a [2.5% Burn] debuff on the targets, lasting 12s. The [Burn] ticks every 2s, damaging targets by 2.5% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 1.25% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 310% ATK\n#2 Burn Damage Limit: 500% ATK per tick\n#3 Burn Target Allies Damage Limit: 500% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Sword of Glory",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stade-the-shining/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 290 damage, ignores 15% of the target's DEF. Ignores 20% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 315% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 307 damage, ignores 15% of the target's DEF. Ignores 23% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 333.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 325 damage, ignores 15% of the target's DEF. Ignores 23% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 352.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 354 damage, ignores 15% of the target's DEF. Ignores 26% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 384.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 388 damage, ignores 15% of the target's DEF. Ignores 26% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 422.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 417 damage, ignores 15% of the target's DEF. Ignores 29% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 453.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 452 damage, ignores 15% of the target's DEF. Ignores 29% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 491.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 481 damage, ignores 15% of the target's DEF. Ignores 32% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 522.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 516 damage, ignores 15% of the target's DEF. Ignores 32% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 560.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 545 damage, ignores 15% of the target's DEF. Ignores 35% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 592.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 580 damage, ignores 15% of the target's DEF. Ignores 35% of the target's DEF if the target has [Burn] debuffs.\n#1 Damage: 630% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Solar Trinity",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stade-the-shining/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 159 damage per hit. \nStade gains 100 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 5s on the second hit. \nIgnores 10% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 172.5% ATK\n#2 Damage: 172.5% ATK\n#3 Damage: 172.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 168 damage per hit. \nStade gains 120 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 5s on the second hit. \nIgnores 10% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 182.8% ATK\n#2 Damage: 182.8% ATK\n#3 Damage: 182.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 178 damage per hit. \nStade gains 120 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 5.5s on the second hit. \nIgnores 10% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 193.2% ATK\n#2 Damage: 193.2% ATK\n#3 Damage: 193.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 194 damage per hit. \nStade gains 120 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 5.5s on the second hit. \nIgnores 12% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 210.5% ATK\n#2 Damage: 210.5% ATK\n#3 Damage: 210.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 213 damage per hit. \nStade gains 140 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 5.5s on the second hit. \nIgnores 12% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 231.2% ATK\n#2 Damage: 231.2% ATK\n#3 Damage: 231.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 229 damage per hit. \nStade gains 140 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 6.5s on the second hit. \nIgnores 12% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 248.4% ATK\n#2 Damage: 248.4% ATK\n#3 Damage: 248.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 248 damage per hit. \nStade gains 140 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 6.5s on the second hit. \nIgnores 15% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 269.1% ATK\n#2 Damage: 269.1% ATK\n#3 Damage: 269.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 263 damage per hit. \nStade gains 170 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 6.5s on the second hit. \nIgnores 15% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 286.4% ATK\n#2 Damage: 286.4% ATK\n#3 Damage: 286.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 282 damage per hit. \nStade gains 170 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 8.5s on the second hit. \nIgnores 15% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 307% ATK\n#2 Damage: 307% ATK\n#3 Damage: 307% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 298 damage per hit. \nStade gains 170 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 8.5s on the second hit. \nIgnores 18% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 324.3% ATK\n#2 Damage: 324.3% ATK\n#3 Damage: 324.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 317 damage per hit. \nStade gains 200 Titan Mana after the first hit. \nReduces the cooldown of a random Active Skill on Stade by 10s on the second hit. \nIgnores 20% of the target's DEF on the third hit. \nThe Titan Mana Gain, Cooldown Decrease, and ignore DEF values are all doubled if the target has a [Burn] debuff.\n#1 Damage: 345% ATK\n#2 Damage: 345% ATK\n#3 Damage: 345% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Paralysis",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "The Imperial Legions' poster boy, you can't walk through the Celestial City without seeing Stade's perfect mug winking back at you. Ask kids born in the Eternal Empire what they want to be when they grow up, and they'll say they want to be just like Stade. Despite all this attention, Stade doesn't let it get to his head. All he wants to do is serve the Lightseekers. And he does so valiantly.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "S",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S",
+  "omnissi-earth": "E",
+  "omnissi-fire": "A+",
+  "omnissi-light": "E",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "A+",
+  "ulgorim": "S",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 62.5,
+  "lists": 16
+ }
+}

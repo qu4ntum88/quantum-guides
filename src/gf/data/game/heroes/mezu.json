@@ -1,0 +1,298 @@
+{
+ "id": 195,
+ "slug": "mezu",
+ "name": "Mezu",
+ "title": "Horse-Face",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Mezu and Gozu—or Horse-Face and Ox-Head—are guardians of Izumo’s underworld, Yomi. They once performed identical duties, working together, but the Shattering changed things. Leaving Gozu behind as guard, Mezu frequently travels out into Izumo to guide deceased souls to Yomi if they are lost—or, if they are trying to escape their fate, to subdue them and drag them back.",
+ "rarity": "Epic",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Mezu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Mezu_main.png",
+ "stats": {
+  "hp": 1635,
+  "atk": 78,
+  "def": 88,
+  "spd": 95,
+  "init": 86,
+  "acc": 20,
+  "res": 45,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "When an ally is attacked has a 20% chance to retaliate with this ability.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When an ally is defeated, activate this ultimate against the attacker. This hero’s Divinity will not be reset.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Punishing Lash",
+   "description": "Attack all enemies 5%HP+70%ATK with a 50% to place [Curse II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/mezu/ICON_Mezu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+70%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Curse II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "When an ally is attacked has a 20% chance to retaliate with this ability.",
+     "upgrade_description": "When an ally is attacked has a 20% chance to retaliate with this ability."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Strip Flesh",
+   "description": "Attack 1 enemy 5%HP+70%ATK 3 times. Before attacking, has a 50% chance to place [Drain II] on the target for 2 turns. If Gozu is an ally, he joins in the attack with his Core Ability.",
+   "icon_url": "/godforge/abilities/mezu/ICON_Mezu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+70%ATK",
+    "5%HP+70%ATK",
+    "5%HP+70%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Drain II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Gate Guardian",
+   "description": "When an enemy under Drain is defeated, increase the DEF of all allies by 8% (up to 3 times). The stat gains carry over waves.",
+   "icon_url": "/godforge/abilities/mezu/ICON_Mezu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Execute Sentencing",
+   "description": "Attack 5%HP+55%ATK 4 times at random. Each hit has an 80% chance to place [Taunt] on the target for 2 turns and decrease the target’s ATK by 3% (stacking up to 10 times). If Gozu is an ally, each hit also increases their ACC by 10 (stacking up to 10 times).",
+   "icon_url": "/godforge/abilities/mezu/ICON_Mezu_Ultimate.webp",
+   "divinity_cost": 3725,
+   "damage_formula": [
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK",
+    "5%HP+55%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When an ally is defeated, activate this ultimate against the attacker. This hero’s Divinity will not be reset.",
+     "upgrade_description": "When an ally is defeated, activate this ultimate against the attacker. This hero’s Divinity will not be reset."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Gate Guardian",
+   "description": "When an enemy under Drain is defeated, increase the DEF of this hero by 4% (up to 3 times). The stat gains carry over waves.",
+   "icon_url": "/godforge/abilities/mezu/ICON_Mezu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

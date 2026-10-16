@@ -1,0 +1,555 @@
+{
+ "slug": "little-grakka",
+ "kind": "Invoker",
+ "name": "Little Grakka",
+ "faction": "Ironbands",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/little-grakka/portrait.webp",
+ "fullArt": "/invokers/units/invokers/little-grakka/full.webp",
+ "stats": {
+  "base": {
+   "Health": "370",
+   "Attack": "36",
+   "Defense": "27",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "95"
+  },
+  "max": {
+   "Health": "4,795",
+   "Attack": "521",
+   "Defense": "341",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "95"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/little-grakka/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 30.5% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 41.5% ATK\n#4 Attacks 1 enemy, dealing 18 damage.\nDamage: 50% ATK\n#5 Attacks 1 enemy, dealing 22 damage.\nDamage: 62% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 21.2% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 32.3% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 53% ATK\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 65.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 22.4% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 34.2% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 46.5% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 56% ATK\n#5 Attacks 1 enemy, dealing 25 damage.\nDamage: 69.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 37.2% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 50.6% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 61% ATK\n#5 Attacks 1 enemy, dealing 27 damage.\nDamage: 75.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 40.9% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 55.6% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 67% ATK\n#5 Attacks 1 enemy, dealing 30 damage.\nDamage: 83.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 28.8% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 59.8% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 72% ATK\n#5 Attacks 1 enemy, dealing 32 damage.\nDamage: 89.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 31.2% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 47.6% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 64.7% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 78% ATK\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 96.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 33.2% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 50.6% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 68.9% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 83% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 102.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 35.6% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 54.3% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 73.9% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 89% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 110.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 37.6% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 94% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 116.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 61% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 83% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 100% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 124% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Smackka",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/little-grakka/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 44 damage.\n#1 Damage: 121% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 46 damage.\n#1 Damage: 128.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 135.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 53 damage.\n#1 Damage: 147.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 58 damage.\n#1 Damage: 162.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 63 damage.\n#1 Damage: 174.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 68 damage.\n#1 Damage: 188.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 72 damage.\n#1 Damage: 200.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 215.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 227.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage.\n#1 Damage: 242% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Whackka",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/little-grakka/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage. Heals Grakka, restoring (5% * Damage Dealt) HP.\n#1 Damage: 244.5% ATK\n#2 Heal: 5% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 93 damage. Heals Grakka, restoring (5% * Damage Dealt) HP.\n#1 Damage: 259.2% ATK\n#2 Heal: 5% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 99 damage. Heals Grakka, restoring (5% * Damage Dealt) HP.\n#1 Damage: 273.8% ATK\n#2 Heal: 5% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 107 damage. Heals Grakka, restoring (5% * Damage Dealt) HP.\n#1 Damage: 298.3% ATK\n#2 Heal: 5% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 118 damage. Heals Grakka, restoring (7% * Damage Dealt) HP.\n#1 Damage: 327.6% ATK\n#2 Heal: 7% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 127 damage. Heals Grakka, restoring (7% * Damage Dealt) HP.\n#1 Damage: 352.1% ATK\n#2 Heal: 7% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Heals Grakka, restoring (7% * Damage Dealt) HP.\n#1 Damage: 381.4% ATK\n#2 Heal: 7% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage. Heals Grakka, restoring (10% * Damage Dealt) HP.\n#1 Damage: 405.9% ATK\n#2 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 157 damage. Heals Grakka, restoring (10% * Damage Dealt) HP.\n#1 Damage: 435.2% ATK\n#2 Heal: 10% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 165 damage. Heals Grakka, restoring (15% * Damage Dealt) HP.\n#1 Damage: 459.7% ATK\n#2 Heal: 15% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 176 damage. Heals Grakka, restoring (15% * Damage Dealt) HP.\n#1 Damage: 489% ATK\n#2 Heal: 15% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Hackka",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/little-grakka/skills/3.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage. Casts a [10% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 10%.\nAccuracy required for: Heal Reduction\n#1 Damage: 250% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 95 damage. Casts a [10% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 10%.\nAccuracy required for: Heal Reduction\n#1 Damage: 265% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage. Casts a [15% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 15%.\nAccuracy required for: Heal Reduction\n#1 Damage: 280% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage. Casts a [15% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 15%.\nAccuracy required for: Heal Reduction\n#1 Damage: 305% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 335% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 6s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 360% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 7s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 390% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 7s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 415% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 160 damage. Casts a [20% Heal Reduction] debuff on the target, lasting 7s, decreasing the size of all heals received by 20%.\nAccuracy required for: Heal Reduction\n#1 Damage: 445% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 169 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 7s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 470% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 180 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 500% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Stackka",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/little-grakka/skills/4.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 77 damage per hit. Casts a [Stun] debuff on the target, lasting 2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 212.5% ATK\n#2 Damage: 212.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 81 damage per hit. Casts a [Stun] debuff on the target, lasting 2.2s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 225.2% ATK\n#2 Damage: 225.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 86 damage per hit. Casts a [Stun] debuff on the target, lasting 2.4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 238% ATK\n#2 Damage: 238% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 93 damage per hit. Casts a [Stun] debuff on the target, lasting 2.6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 259.2% ATK\n#2 Damage: 259.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 103 damage per hit. Casts a [Stun] debuff on the target, lasting 2.6s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 284.8% ATK\n#2 Damage: 284.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 110 damage per hit. Casts a [Stun] debuff on the target, lasting 2.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 306% ATK\n#2 Damage: 306% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 119 damage per hit. Casts a [Stun] debuff on the target, lasting 2.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 331.5% ATK\n#2 Damage: 331.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 127 damage per hit. Casts a [Stun] debuff on the target, lasting 2.8s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 352.8% ATK\n#2 Damage: 352.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 136 damage per hit. Casts a [Stun] debuff on the target, lasting 3.5s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 378.2% ATK\n#2 Damage: 378.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 144 damage per hit. Casts a [Stun] debuff on the target, lasting 4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 399.5% ATK\n#2 Damage: 399.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 153 damage per hit. Casts a [Stun] debuff on the target, lasting 4s, on the second hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 425% ATK\n#2 Damage: 425% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "When you’re half the size of your twin brother, people call you “Little” – and they don’t stop, even once you’ve grown to be twice his size. Not that Little Grakka minds. He’s made a career of messing with expectations – nobody expects the brute called “little” to be a master smuggler.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 1.8,
+  "lists": 16
+ }
+}

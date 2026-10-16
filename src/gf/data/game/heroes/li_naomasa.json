@@ -1,0 +1,279 @@
+{
+ "id": 198,
+ "slug": "li_naomasa",
+ "name": "Li Naomasa",
+ "title": "Red Devil Commander",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A brilliant military tactician who distinguished himself in crucial battles that elevated the Tokugawa Clan to power before the Shattering, Li Naomasa is now one of Izumo’s greatest generals. His skills are prized even by the gods themselves, who have tasked him with preparing the armies of Izumo to face the many looming threats presented by Ryven.",
+ "rarity": "Rare",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Li Naomasa.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_LiNaomasa_main.png",
+ "stats": {
+  "hp": 1140,
+  "atk": 97,
+  "def": 76,
+  "spd": 93,
+  "init": 90,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Steal Turn Meter instead.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Red Commander",
+   "description": "Attack 1 enemy 365%ATK with a 20% additional chance to Critical Hit then decrease the target’s Turn Meter by 10%. If the target is below 50% HP, decrease the target’s Turn Meter by 20% instead.",
+   "icon_url": "/godforge/abilities/li_naomasa/ICON_LiNaomasa_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "365%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Steal Turn Meter instead.",
+     "upgrade_description": "Steal Turn Meter instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "First Blood",
+   "description": "Attack all enemies 220%ATK with a 20% additional chance to Critical Hit. If there are more than 4 enemies alive, place an extra hit on all enemies.",
+   "icon_url": "/godforge/abilities/li_naomasa/ICON_LiNaomasa_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "220%ATK",
+    "220%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% ATK in Campaign Battles",
+   "icon_url": "/godforge/abilities/li_naomasa/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Crimson Berserker",
+   "description": "Increase the damage this hero inflicts by 5% for each living enemy.",
+   "icon_url": "/godforge/abilities/li_naomasa/ICON_LiNaomasa_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Bushido",
+   "description": "Attack 1 enemy 325%ATK then attack all enemies 325%ATK with a 20% additional chance to Critical Hit. If the initial target is defeated, the second hit will ignore 15% of the target’s DEF and place [Banish] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/li_naomasa/ICON_LiNaomasa_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [
+    "325%ATK",
+    "200%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "SelectedTarget",
+     "target_label": "SelectedTarget",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Banish",
+     "target": "SelectedTarget",
+     "target_label": "SelectedTarget",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Crimson Berserker",
+   "description": "Increase the damage this hero inflicts by 2.5% for each living enemy.",
+   "icon_url": "/godforge/abilities/li_naomasa/ICON_LiNaomasa_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

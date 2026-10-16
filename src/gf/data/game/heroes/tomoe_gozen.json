@@ -1,0 +1,270 @@
+{
+ "id": 165,
+ "slug": "tomoe_gozen",
+ "name": "Tomoe Gozen",
+ "title": "Warrior of Awazu",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A renowned archer and swordswoman even among her fellow samurai, Tomoe Gozen was fiercely dedicated to her liege, commanding some of his most elite forces. As the world Shattered not long after his death, Gozen found herself adrift. She travels Izumo, battling its enemies and studying the competing daimyo to determine which—if any—is worthy of her service.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/1217/6702/9603/TomoeGozen.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/1817/7277/3581/2026-03-05_23_05_28-Tomoe_Gozen_Abilities_Stats_and_Scaling___Godforge_Hero_Index.png",
+ "stats": {
+  "hp": 1545,
+  "atk": 78,
+  "def": 82,
+  "spd": 85,
+  "init": 80,
+  "acc": 15,
+  "res": 25,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Strong Hits against the same target increase the damage of this hero’s Ultimate Ability by 2% (stacking up to 15 times). Stacks reset when attacking a different target.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Unrelenting Aim",
+   "description": "Attack 1 enemy 10%HP+120%ATK with a 35% chance to inflict additional damage equal to 1% of the target’s MAX HP. If this attack is a Strong Hit, has a 40% chance to gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/tomoe_gozen/ICON_TomoeGozen_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+120%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Yabusame Barrage",
+   "description": "Place [Sharpen I] on this hero for 2 turns then attack 1 enemy 5%HP+65%ATK 3 times. Each hit has a 35% chance to reduce the target’s ATK by 2% (stacking up to 10 times). If a hit is a Strong Hit, destroy the target’s MAX HP equal to 30% of the damage inflicted (cannot destroy more than 50% of the target’s MAX HP).",
+   "icon_url": "/godforge/abilities/tomoe_gozen/ICON_TomoeGozen_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+65%ATK",
+    "5%HP+65%ATK",
+    "5%HP+65%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Sharpen I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% CDMG in Dungeon Battles",
+   "icon_url": "/godforge/abilities/tomoe_gozen/ICON_Leader_CriticalDamage.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Unyielding Onna-Musha",
+   "description": "Increase this hero’s CDMG% by 5% each time they attack the same target (stacking up to 6 times). Stacks reset when attacking a different target. At max stacks, increase the chance to Strong Hit by 10% and heal 5%MAXHP this hero when inflicting a Strong Hit.",
+   "icon_url": "/godforge/abilities/tomoe_gozen/ICON_TomoeGozen_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Strong Hits against the same target increase the damage of this hero’s Ultimate Ability by 2% (stacking up to 15 times). Stacks reset when attacking a different target.",
+     "upgrade_description": "Strong Hits against the same target increase the damage of this hero’s Ultimate Ability by 2% (stacking up to 15 times). Stacks reset when attacking a different target."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Last Arrow of Awazu",
+   "description": "Attack 1 enemy 15%HP+170%ATK. Before attacking remove 50% of the target’s [Shield]. If the target is not under a [Shield], increase this attack’s Strong Hit chance by 10%. If this attack is a Strong Hit, increase this hero’s Divinity by 20%.",
+   "icon_url": "/godforge/abilities/tomoe_gozen/ICON_TomoeGozen_Ultimate.webp",
+   "divinity_cost": 1700,
+   "damage_formula": [
+    "15%HP+170%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Unyielding Onna-Musha",
+   "description": "Increase this hero’s CDMG% by 5% each time they attack the same target (stacking up to 3 times). Stacks reset when attacking a different target. At max stacks, increase the chance to Strong Hit by 5% and heal 5%MAXHP this hero when inflicting a Strong Hit.",
+   "icon_url": "/godforge/abilities/tomoe_gozen/ICON_TomoeGozen_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

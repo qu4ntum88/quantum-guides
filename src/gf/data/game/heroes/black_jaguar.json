@@ -1,0 +1,243 @@
+{
+ "id": 217,
+ "slug": "black_jaguar",
+ "name": "Black Jaguar",
+ "title": "Jungle Prowler",
+ "summary": "Pounce on your Foes weakening their armor and inflicted deadly strike to enemies under Buffs.",
+ "lore": "The people of Omeyocan revere the jaguar, but the black jaguar holds special meaning. Representing inner strength and transformation, it is believed to possess a mystical power. Since the Shattering, the black jaguars have indeed taken on a strength beyond their more common kin. They seem, as well, to have developed purpose, as they stalk the enemies of the gods.",
+ "rarity": "Uncommon",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Black Jaguar.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_BlackJaguar_main.png",
+ "stats": {
+  "hp": 1095,
+  "atk": 77,
+  "def": 71,
+  "spd": 86,
+  "init": 85,
+  "acc": 5,
+  "res": 10,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Nimble Swipe",
+   "description": "Attack 1 enemy 210%ATK 2 times with a 20% chance to gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/black_jaguar/ICON_Blackjaguar_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "210%ATK",
+    "210%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Prowling Strike",
+   "description": "Attack 1 enemy 545%ATK with a 50% chance to place [DEF Down I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/black_jaguar/ICON_BlackJaguar_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "545%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Vicious Roar",
+   "description": "Place [Sharpen I] on this hero for 2 turns then attack 1 enemy 545%ATK. If the target has any Buff, inflict 25% increased damage.",
+   "icon_url": "/godforge/abilities/black_jaguar/ICON_Blackjaguar_Ultimate.webp",
+   "divinity_cost": 1800,
+   "damage_formula": [
+    "545%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Sharpen I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

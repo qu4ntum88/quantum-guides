@@ -1,0 +1,333 @@
+{
+ "id": 38,
+ "slug": "athena",
+ "name": "Athena",
+ "title": "Shield of Wisdom",
+ "summary": "Shield your allies from your foes whilst empowering your Aegis to inflict powerful attacks to your foes.",
+ "lore": "Goddess of wisdom and warfare, Athena finds Ryven to be far too unpredictable, far too steeped in havoc. While her loyalties to Olympus have not lessened, she is focused on allegiance with gods of Order from across the pantheons. She works with them to battle Chaos and impose structure on a world that lacks it—whether it wants that structure or not.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Athena.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Athena_main.png",
+ "stats": {
+  "hp": 1515,
+  "atk": 73,
+  "def": 111,
+  "spd": 105,
+  "init": 91,
+  "acc": 25,
+  "res": 75,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also place [Radiance II] on all allies for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Inflict an additional 10% MAX HP to enemies under [Petrify] which ignores 100% of the target's DEF but cannot be Critical.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Decrease the Divinity of all enemies by 5% instead. If the attacker is below 50% Divinity, increase the chance to place [Petrify] to 100%.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Spear of Justice",
+   "description": "Attack 1 enemy 175%DEF+130%ATK. Place [DEF Up II] on each ally for 1 turn.",
+   "icon_url": "/godforge/abilities/athena/ICON_Athena_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "175%DEF+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Sanctuary of Wisdom",
+   "description": "Place [Shield] 400%DEF on each ally, then decrease the incoming damage to each ally by 5% (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/athena/ICON_Athena_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also place Radiance II on all allies for 2 turns.",
+     "upgrade_description": "Also place [Radiance II] on all allies for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Medusa's Glare",
+   "description": "When an ally under [Shield] is attacked, decrease the attacker's Divinity by 5%. If the attacker's Divinity is below 50%, has a 50% chance to place [Petrify] on the attacker for 1 turn.",
+   "icon_url": "/godforge/abilities/athena/ICON_Athena_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Petrify",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Petrify",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Decrease the Divinity of all enemies by 5% instead. If the attacker is below 50% Divinity, increase the chance to place Petrify to 100%.",
+     "upgrade_description": "Decrease the Divinity of all enemies by 5% instead. If the attacker is below 50% Divinity, increase the chance to place [Petrify] to 100%."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Gorgon's Wrath",
+   "description": "Attack all enemies 140%DEF+110%ATK, then has an 80% chance to place [Petrify] on each target for 1 turn. The [Petrify] cannot be resisted or blocked if this hero is under [Shield].",
+   "icon_url": "/godforge/abilities/athena/ICON_Athena_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "140%DEF+110%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Petrify",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Petrify",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Inflict an additional 10% MAX HP to enemies under Petrify which ignores 100% of the target's DEF but cannot be Critical.",
+     "upgrade_description": "Inflict an additional 10% MAX HP to enemies under [Petrify] which ignores 100% of the target's DEF but cannot be Critical."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Medusa's Glare",
+   "description": "When this hero is attacked under [Shield], decrease the attacker's Divinity by 5%. If the attacker's Divinity is below 50%, has a 50% chance to place [Petrify] on the attacker for 1 turn.",
+   "icon_url": "/godforge/abilities/athena/ICON_Athena_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "220%DEF+120%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Petrify",
+     "target": "AttackerAsTarget",
+     "target_label": "AttackerAsTarget",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

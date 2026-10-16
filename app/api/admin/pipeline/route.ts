@@ -50,6 +50,11 @@ const JOBS: Record<string, JobDef> = {
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'invokers', 'update.mjs')],
     note: 'Every Invoker + Titan: kits at all levels, stats, tolerances, official tier ratings, art. ~6–8 min first run, faster after (pages/art cached).', report: 'invokers',
   },
+  'inv-site-sync': {
+    group: 'Invokers: Titan Legacy', label: 'Update the site from the export',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-invokers.mjs'), '--write'],
+    note: 'Rewrites src/inv/data (roster, unit pages, boss tier lists) and public/invokers art. Commit afterwards.',
+  },
   'gf-extract': {
     group: 'Godforge', label: 'Extract from game files + godforge.gg',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'godforge', 'update.mjs')],
@@ -59,6 +64,11 @@ const JOBS: Record<string, JobDef> = {
     group: 'Godforge', label: 'Extract data only (reuse art)',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'godforge', 'update.mjs'), '--skip-images'],
     note: 'Skips AssetStudio; still re-reads godforge.gg (cached pages are reused).', report: 'godforge',
+  },
+  'gf-site-sync': {
+    group: 'Godforge', label: 'Update the hero pages from the export',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-godforge.mjs'), '--write'],
+    note: 'Rewrites src/gf/data/game/heroes (kit, stats, ascension/awakening, summary, lore), legacy-ids.json and ability icons. Commit afterwards.',
   },
 }
 

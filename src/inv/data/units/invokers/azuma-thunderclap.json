@@ -1,0 +1,587 @@
+{
+ "slug": "azuma-thunderclap",
+ "kind": "Invoker",
+ "name": "Azuma Thunderclap",
+ "faction": "Cambion",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/azuma-thunderclap/portrait.webp",
+ "fullArt": "/invokers/units/invokers/azuma-thunderclap/full.webp",
+ "stats": {
+  "base": {
+   "Health": "888",
+   "Attack": "84",
+   "Defense": "79",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "117"
+  },
+  "max": {
+   "Health": "9,516",
+   "Attack": "1,026",
+   "Defense": "829",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "147"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/azuma-thunderclap/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 40.5% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 53% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 65.5% ATK\n#5 Attacks 1 enemy, dealing 66 damage. Azuma gains Ultimate Mana (4 per debuff on the target).\nDamage: 79% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 42.9% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 56.2% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 69.4% ATK\n#5 Attacks 1 enemy, dealing 70 damage. Azuma gains Ultimate Mana (4.5 per debuff on the target).\nDamage: 83.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 45.4% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 59.4% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 73.4% ATK\n#5 Attacks 1 enemy, dealing 74 damage. Azuma gains Ultimate Mana (4.5 per debuff on the target).\nDamage: 88.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 49.4% ATK\n#3 Attacks 1 enemy, dealing 54 damage.\nDamage: 64.7% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 79.9% ATK\n#5 Attacks 1 enemy, dealing 81 damage. Azuma gains Ultimate Mana (5 per debuff on the target).\nDamage: 96.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 54.3% ATK\n#3 Attacks 1 enemy, dealing 60 damage.\nDamage: 71% ATK\n#4 Attacks 1 enemy, dealing 74 damage.\nDamage: 87.8% ATK\n#5 Attacks 1 enemy, dealing 89 damage. Azuma gains Ultimate Mana (5 per debuff on the target).\nDamage: 105.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 58.3% ATK\n#3 Attacks 1 enemy, dealing 64 damage.\nDamage: 76.3% ATK\n#4 Attacks 1 enemy, dealing 79 damage.\nDamage: 94.3% ATK\n#5 Attacks 1 enemy, dealing 96 damage. Azuma gains Ultimate Mana (5.5 per debuff on the target).\nDamage: 113.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 33 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 63.2% ATK\n#3 Attacks 1 enemy, dealing 69 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 102.2% ATK\n#5 Attacks 1 enemy, dealing 104 damage. Azuma gains Ultimate Mana (5.5 per debuff on the target).\nDamage: 123.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 56 damage.\nDamage: 67.2% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy, dealing 91 damage.\nDamage: 108.7% ATK\n#5 Attacks 1 enemy, dealing 110 damage. Azuma gains Ultimate Mana (6 per debuff on the target).\nDamage: 131.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 61 damage.\nDamage: 72.1% ATK\n#3 Attacks 1 enemy, dealing 79 damage.\nDamage: 94.3% ATK\n#4 Attacks 1 enemy, dealing 98 damage.\nDamage: 116.6% ATK\n#5 Attacks 1 enemy, dealing 118 damage. Azuma gains Ultimate Mana (6 per debuff on the target).\nDamage: 140.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 39 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 64 damage.\nDamage: 76.1% ATK\n#3 Attacks 1 enemy, dealing 84 damage.\nDamage: 99.6% ATK\n#4 Attacks 1 enemy, dealing 103 damage.\nDamage: 123.1% ATK\n#5 Attacks 1 enemy, dealing 125 damage. Azuma gains Ultimate Mana (7 per debuff on the target).\nDamage: 148.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 68 damage.\nDamage: 81% ATK\n#3 Attacks 1 enemy, dealing 89 damage.\nDamage: 106% ATK\n#4 Attacks 1 enemy, dealing 110 damage.\nDamage: 131% ATK\n#5 Attacks 1 enemy, dealing 133 damage. Azuma gains Ultimate Mana (7 per debuff on the target).\nDamage: 158% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Bolt Hammer",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/azuma-thunderclap/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 128 damage. Launches the target for 2s.\nAccuracy required for: Launch\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 136 damage. Launches the target for 2s.\nAccuracy required for: Launch\n#1 Damage: 161.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 143 damage. Launches the target for 2.3s.\nAccuracy required for: Launch\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 156 damage. Launches the target for 2.3s.\nAccuracy required for: Launch\n#1 Damage: 186.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Launches the target for 2.6s.\nAccuracy required for: Launch\n#1 Damage: 204.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 184 damage. Launches the target for 2.6s.\nAccuracy required for: Launch\n#1 Damage: 219.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 200 damage. Launches the target for 2.9s.\nAccuracy required for: Launch\n#1 Damage: 237.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 213 damage. Launches the target for 2.9s.\nAccuracy required for: Launch\n#1 Damage: 253.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 228 damage. Launches the target for 3.2s.\nAccuracy required for: Launch\n#1 Damage: 271.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 241 damage. Launches the target for 3.2s.\nAccuracy required for: Launch\n#1 Damage: 286.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 256 damage. Launches the target for 3.5s.\nAccuracy required for: Launch\n#1 Damage: 305% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Storm Fang",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/azuma-thunderclap/skills/2.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 256 damage. Casts a [40% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 305% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 272 damage. Casts a [44% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 323.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 287 damage. Casts a [48% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 341.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 313 damage. Casts a [52% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 372.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 343 damage. Casts a [56% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 408.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 369 damage. Casts a [60% RES Down] debuff on the target, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 439.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 400 damage. Casts a [64% RES Down] debuff on the target, lasting 13s.\nAccuracy required for: RES Down\n#1 Damage: 475.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 425 damage. Casts a [68% RES Down] debuff on the target, lasting 13s.\nAccuracy required for: RES Down\n#1 Damage: 506.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 456 damage. Casts a [72% RES Down] debuff on the target, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 542.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 482 damage. Casts a [76% RES Down] debuff on the target, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 573.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 512 damage. Casts a [80% RES Down] debuff on the target, lasting 15s.\nAccuracy required for: RES Down\n#1 Damage: 610% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Peal of Thunder",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/azuma-thunderclap/skills/3.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+53",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 132 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 12s. Then, casts a [12% Weaken] debuff on the target, lasting 12s, on the second hit, increasing all damage taken by 12%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 157% ATK\n#2 Damage: 157% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 140 damage per hit. The first hit casts a [37% DEF Down] debuff on the target, lasting 12s. Then, casts a [12% Weaken] debuff on the target, lasting 12s, on the second hit, increasing all damage taken by 12%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 166.4% ATK\n#2 Damage: 166.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 148 damage per hit. The first hit casts a [37% DEF Down] debuff on the target, lasting 12s. Then, casts a [14% Weaken] debuff on the target, lasting 12s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 175.8% ATK\n#2 Damage: 175.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 161 damage per hit. The first hit casts a [39% DEF Down] debuff on the target, lasting 12s. Then, casts a [14% Weaken] debuff on the target, lasting 12s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 191.5% ATK\n#2 Damage: 191.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 177 damage per hit. The first hit casts a [39% DEF Down] debuff on the target, lasting 14s. Then, casts a [14% Weaken] debuff on the target, lasting 14s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 210.4% ATK\n#2 Damage: 210.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 190 damage per hit. The first hit casts a [41% DEF Down] debuff on the target, lasting 14s. Then, casts a [14% Weaken] debuff on the target, lasting 14s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 226.1% ATK\n#2 Damage: 226.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 206 damage per hit. The first hit casts a [41% DEF Down] debuff on the target, lasting 14s. Then, casts a [16% Weaken] debuff on the target, lasting 14s, on the second hit, increasing all damage taken by 16%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 244.9% ATK\n#2 Damage: 244.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 219 damage per hit. The first hit casts a [45% DEF Down] debuff on the target, lasting 14s. Then, casts a [16% Weaken] debuff on the target, lasting 14s, on the second hit, increasing all damage taken by 16%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 260.6% ATK\n#2 Damage: 260.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 235 damage per hit. The first hit casts a [45% DEF Down] debuff on the target, lasting 14s. Then, casts a [18% Weaken] debuff on the target, lasting 14s, on the second hit, increasing all damage taken by 18%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 279.5% ATK\n#2 Damage: 279.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 248 damage per hit. The first hit casts a [45% DEF Down] debuff on the target, lasting 17s. Then, casts a [18% Weaken] debuff on the target, lasting 17s, on the second hit, increasing all damage taken by 18%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 295.2% ATK\n#2 Damage: 295.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 264 damage per hit. The first hit casts a [45% DEF Down] debuff on the target, lasting 17s. Then, casts a [20% Weaken] debuff on the target, lasting 17s, on the second hit, increasing all damage taken by 20%.\nAccuracy required for: DEF Down, Weaken\n#1 Damage: 314% ATK\n#2 Damage: 314% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Tempest Dragon",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/azuma-thunderclap/skills/4.webp",
+   "effects": [
+    {
+     "label": "Hex",
+     "group": "Debuffs",
+     "description": "If killed while under this debuff, the recipient of the debuff cannot be Revived."
+    },
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 71 damage. Casts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 71 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 71 damage damage increases by 15% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 84.5% ATK\n#2 Damage: 84.5% ATK\n#3 Damage: 84.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 75 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 75 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 75 damage damage increases by 15% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 89.6% ATK\n#2 Damage: 89.6% ATK\n#3 Damage: 89.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 79 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 79 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 79 damage damage increases by 15% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 94.6% ATK\n#2 Damage: 94.6% ATK\n#3 Damage: 94.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 87 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 87 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 87 damage damage increases by 20% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 103.1% ATK\n#2 Damage: 103.1% ATK\n#3 Damage: 103.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 95 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 95 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 95 damage damage increases by 20% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 113.2% ATK\n#2 Damage: 113.2% ATK\n#3 Damage: 113.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 102 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 102 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 102 damage damage increases by 20% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 121.7% ATK\n#2 Damage: 121.7% ATK\n#3 Damage: 121.7% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 111 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 111 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 111 damage damage increases by 20% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 131.8% ATK\n#2 Damage: 131.8% ATK\n#3 Damage: 131.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 118 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 118 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 118 damage damage increases by 20% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 140.3% ATK\n#2 Damage: 140.3% ATK\n#3 Damage: 140.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 126 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 126 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 126 damage damage increases by 25% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 150.4% ATK\n#2 Damage: 150.4% ATK\n#3 Damage: 150.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 133 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 133 damage. Casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 133 damage damage increases by 25% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 158.9% ATK\n#2 Damage: 158.9% ATK\n#3 Damage: 158.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 142 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal the first hit per debuff on the target. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 142 damage. Casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival per debuff on the target on the second hit. \nAttacks the 10 enemies with the lowest current HP in a 7m radius around Azuma, dealing 142 damage damage increases by 30% per debuff on the target, limited up to +250% damage, on the third hit.\nAccuracy required for: Stun, Hex\n#1 Damage: 169% ATK\n#2 Damage: 169% ATK\n#3 Damage: 169% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "The heir apparent to a Cambion Dynasty and like a summer storm, Azuma defies control. One minute, he'll rage across the Broken Reach and the next, he'll be meditating atop a mountain. Azuma's father hopes the tempest inside him will one day calm. Until then, duck for cover when you hear the thunderclap...",
+ "ratings": {
+  "althar": "E",
+  "galvos": "A+",
+  "hyxxis": "A+",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "A+",
+  "sakiel": "S",
+  "sorgott": "S",
+  "ulgorim": "A+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 72.3,
+  "lists": 16
+ }
+}

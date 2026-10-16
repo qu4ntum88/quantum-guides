@@ -1,0 +1,501 @@
+{
+ "slug": "ferrogar",
+ "kind": "Titan",
+ "name": "Ferrogar",
+ "faction": "Stonehearts",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/ferrogar/portrait.webp",
+ "fullArt": "/invokers/units/titans/ferrogar/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's Crit Rate": "+5%",
+   "Bound Invoker's Crit DMG": "+10%",
+   "Bonus HP": "+420",
+   "Bonus ATK": "+61",
+   "Bonus DEF": "+42",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's Crit Rate": "+11%",
+   "Bound Invoker's Crit DMG": "+50%",
+   "Bonus HP": "+2,524",
+   "Bonus ATK": "+367",
+   "Bonus DEF": "+252",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/titans/ferrogar/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 82 damage.\nDamage: 135% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 43 damage. Shortens the duration of 1 random buff on the targets by 2s.\nAccuracy required for: Buff Duration Shortening\nDamage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 87 damage.\nDamage: 143.1% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 45 damage. Shortens the duration of 1 random buff on the targets by 2.1s.\nAccuracy required for: Buff Duration Shortening\nDamage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 92 damage.\nDamage: 151.2% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 48 damage. Shortens the duration of 1 random buff on the targets by 2.2s.\nAccuracy required for: Buff Duration Shortening\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 100 damage.\nDamage: 164.7% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 52 damage. Shortens the duration of 1 random buff on the targets by 2.3s.\nAccuracy required for: Buff Duration Shortening\nDamage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 110 damage.\nDamage: 180.9% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 57 damage. Shortens the duration of 1 random buff on the targets by 2.4s.\nAccuracy required for: Buff Duration Shortening\nDamage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 119 damage.\nDamage: 194.4% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 61 damage. Shortens the duration of 1 random buff on the targets by 2.5s.\nAccuracy required for: Buff Duration Shortening\nDamage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 128 damage.\nDamage: 210.6% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 67 damage. Shortens the duration of 1 random buff on the targets by 2.6s.\nAccuracy required for: Buff Duration Shortening\nDamage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 137 damage.\nDamage: 224.1% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 71 damage. Shortens the duration of 1 random buff on the targets by 2.7s.\nAccuracy required for: Buff Duration Shortening\nDamage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 147 damage.\nDamage: 240.3% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 76 damage. Shortens the duration of 1 random buff on the targets by 2.8s.\nAccuracy required for: Buff Duration Shortening\nDamage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 155 damage.\nDamage: 253.8% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 80 damage. Shortens the duration of 1 random buff on the targets by 2.9s.\nAccuracy required for: Buff Duration Shortening\nDamage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 165 damage.\nDamage: 270% ATK\n#2 Attacks the 8 enemies with the lowest current HP in a 6m radius around the closest enemy, dealing 85 damage. Shortens the duration of up to 2 random buffs on the targets by 3s.\nAccuracy required for: Buff Duration Shortening\nDamage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deep Iron Drill",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/ferrogar/skills/1.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 58 damage per hit. Each hit casts a [0.5% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 95% ATK\n#2 Bleed Damage Limit: 150% ATK per tick\n#3 Damage: 95% ATK\n#4 Bleed Damage Limit: 150% ATK per tick\n#5 Damage: 95% ATK\n#6 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 61 damage per hit. Each hit casts a [0.55% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.55% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 100.7% ATK\n#2 Bleed Damage Limit: 150% ATK per tick\n#3 Damage: 100.7% ATK\n#4 Bleed Damage Limit: 150% ATK per tick\n#5 Damage: 100.7% ATK\n#6 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 65 damage per hit. Each hit casts a [0.6% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 106.4% ATK\n#2 Bleed Damage Limit: 175% ATK per tick\n#3 Damage: 106.4% ATK\n#4 Bleed Damage Limit: 175% ATK per tick\n#5 Damage: 106.4% ATK\n#6 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 71 damage per hit. Each hit casts a [0.65% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.65% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 115.9% ATK\n#2 Bleed Damage Limit: 175% ATK per tick\n#3 Damage: 115.9% ATK\n#4 Bleed Damage Limit: 175% ATK per tick\n#5 Damage: 115.9% ATK\n#6 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 78 damage per hit. Each hit casts a [0.7% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.7% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 127.3% ATK\n#2 Bleed Damage Limit: 200% ATK per tick\n#3 Damage: 127.3% ATK\n#4 Bleed Damage Limit: 200% ATK per tick\n#5 Damage: 127.3% ATK\n#6 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 83 damage per hit. Each hit casts a [0.7% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.7% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 136.8% ATK\n#2 Bleed Damage Limit: 200% ATK per tick\n#3 Damage: 136.8% ATK\n#4 Bleed Damage Limit: 200% ATK per tick\n#5 Damage: 136.8% ATK\n#6 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 90 damage per hit. Each hit casts a [0.7% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.7% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 148.2% ATK\n#2 Bleed Damage Limit: 225% ATK per tick\n#3 Damage: 148.2% ATK\n#4 Bleed Damage Limit: 225% ATK per tick\n#5 Damage: 148.2% ATK\n#6 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 96 damage per hit. Each hit casts a [0.8% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 157.7% ATK\n#2 Bleed Damage Limit: 225% ATK per tick\n#3 Damage: 157.7% ATK\n#4 Bleed Damage Limit: 225% ATK per tick\n#5 Damage: 157.7% ATK\n#6 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 103 damage per hit. Each hit casts a [0.9% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 169.1% ATK\n#2 Bleed Damage Limit: 250% ATK per tick\n#3 Damage: 169.1% ATK\n#4 Bleed Damage Limit: 250% ATK per tick\n#5 Damage: 169.1% ATK\n#6 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 109 damage per hit. Each hit casts a [0.9% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 178.6% ATK\n#2 Bleed Damage Limit: 250% ATK per tick\n#3 Damage: 178.6% ATK\n#4 Bleed Damage Limit: 250% ATK per tick\n#5 Damage: 178.6% ATK\n#6 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 116 damage per hit. Each hit casts a [1% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 190% ATK\n#2 Bleed Damage Limit: 300% ATK per tick\n#3 Damage: 190% ATK\n#4 Bleed Damage Limit: 300% ATK per tick\n#5 Damage: 190% ATK\n#6 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Furnace Blaster",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/ferrogar/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 84 damage. Casts a [0.75% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.38% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 138.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 90 damage. Casts a [0.8% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.4% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 146.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 95 damage. Casts a [0.9% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.45% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 155.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 103 damage. Casts a [1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 169% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 113 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 185.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 122 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 199.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 132 damage. Casts a [1.2% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 216.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 140 damage. Casts a [1.3% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 229.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 150 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 246.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 159 damage. Casts a [1.5% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 260.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks the 8 enemies with the lowest current HP in a 10m semicircle in front of Ferrogar, from a distance of 2m, dealing 169 damage. Casts a [1.5% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick. Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick.\nAccuracy required for: Burn\n#1 Damage: 277% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/ferrogar/skills/3.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 146 damage. Casts a [25% RES Down] debuff on the targets, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 240% ATK\nINVOKATION END\nCasts a [25% ACC Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 155 damage. Casts a [30% RES Down] debuff on the targets, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 254.4% ATK\nINVOKATION END\nCasts a [30% ACC Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 164 damage. Casts a [30% RES Down] debuff on the targets, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 268.8% ATK\nINVOKATION END\nCasts a [30% ACC Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 179 damage. Casts a [35% RES Down] debuff on the targets, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 292.8% ATK\nINVOKATION END\nCasts a [35% ACC Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 196 damage. Casts a [40% RES Down] debuff on the targets, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 321.6% ATK\nINVOKATION END\nCasts a [40% ACC Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 211 damage. Casts a [40% RES Down] debuff on the targets, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 345.6% ATK\nINVOKATION END\nCasts a [40% ACC Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 228 damage. Casts a [45% RES Down] debuff on the targets, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 374.4% ATK\nINVOKATION END\nCasts a [45% ACC Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 243 damage. Casts a [50% RES Down] debuff on the targets, lasting 12s.\nAccuracy required for: RES Down\n#1 Damage: 398.4% ATK\nINVOKATION END\nCasts a [50% ACC Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 261 damage. Casts a [50% RES Down] debuff on the targets, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 427.2% ATK\nINVOKATION END\nCasts a [50% ACC Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 275 damage. Casts a [55% RES Down] debuff on the targets, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 451.2% ATK\nINVOKATION END\nCasts a [55% ACC Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 15m radius, dealing 293 damage. Casts a [60% RES Down] debuff on the targets, lasting 14s.\nAccuracy required for: RES Down\n#1 Damage: 480% ATK\nINVOKATION END\nCasts a [60% ACC Up] buff on the Bound Invoker, lasting 14s."
+    }
+   ]
+  },
+  {
+   "name": "ACC Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/ferrogar/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +74 Accuracy.\nOutside Dungeon mode: +42 Accuracy."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +81.4 Accuracy.\nOutside Dungeon mode: +46.2 Accuracy."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +88.8 Accuracy.\nOutside Dungeon mode: +50.4 Accuracy."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +103.6 Accuracy.\nOutside Dungeon mode: +58.8 Accuracy."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +118.4 Accuracy.\nOutside Dungeon mode: +67.2 Accuracy."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +133.2 Accuracy.\nOutside Dungeon mode: +75.6 Accuracy."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +148 Accuracy.\nOutside Dungeon mode: +84 Accuracy."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "The perfect marriage of Memorium and metal, Ferrogar is a marvel of Stoneheart engineering. Deepcast Dwarves argue that Ferrogar is theirs, due to its deep iron drill that can smash through any surface. The Goldcast says that its gold accents and glowing furnace make it their property. Ferrogar cares not for petty squabbles. It only has one directive – drill.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "C",
+  "omnissi-astral": "B",
+  "omnissi-dark": "A",
+  "omnissi-earth": "D",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "D",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 34.8,
+  "lists": 16
+ }
+}

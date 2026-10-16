@@ -1,0 +1,278 @@
+{
+ "id": 66,
+ "slug": "lubu",
+ "name": "Lu Bu",
+ "title": "Flying General",
+ "summary": "Raise Barriers and charge through enemies causing Despair and Havoc!",
+ "lore": "Lu Bu is a skilled warrior, but also a habitual traitor without loyalty. He considers the near paralysis of Tian’s bureaucracy a sign of weakness, and searches for someone to whom he can betray Tian’s gods in exchange for power and authority. He has recently approached Ninurta in Ekur—a visit that has allowed Lillith to ensnare Lu Bu in her schemes.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Lubu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Lubu_main.png",
+ "stats": {
+  "hp": 1185,
+  "atk": 58,
+  "def": 96,
+  "spd": 92,
+  "init": 88,
+  "acc": 10,
+  "res": 50,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Attacks increase this hero’s [Barrier] by 5% of the damage inflicted.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Martial Power",
+   "description": "Attack 1 enemy 150%DEF+120%ATK. Place [Barrier] 2%HP on this hero.",
+   "icon_url": "/godforge/abilities/lubu/ICON_Lubu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "150%DEF+120%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Battle Cry",
+   "description": "Attack 1 enemy 210%DEF+175%ATK. If this hero has [Barrier], has 50% chance to place [Despair] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/lubu/ICON_Lubu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "210%DEF+175%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Despair",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "18% HP in Campaign Battles",
+   "icon_url": "/godforge/abilities/lubu/ICON_Leader_Health.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Battle Hardened",
+   "description": "When this hero has [Barrier], inflict 20% increased damage and reduce the damage received by 20%.",
+   "icon_url": "/godforge/abilities/lubu/ICON_Lubu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Attacks increase this hero’s Barrier by 5% of the damage inflicted.",
+     "upgrade_description": "Attacks increase this hero’s [Barrier] by 5% of the damage inflicted."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Impenetrable Fury",
+   "description": "Attack all enemies 120%DEF+100%ATK with an 80% chance to place [Blunt I] for 2 turns. If the hero is under [Barrier] the attack is always Strong.",
+   "icon_url": "/godforge/abilities/lubu/ICON_Lubu_Ultimate.webp",
+   "divinity_cost": 3275,
+   "damage_formula": [
+    "120%DEF+100%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blunt I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Battle Hardened",
+   "description": "When this hero has [Barrier], inflict 10% increased damage and reduce the damage received by 10%.",
+   "icon_url": "/godforge/abilities/lubu/ICON_Lubu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

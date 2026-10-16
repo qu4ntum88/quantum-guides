@@ -1,0 +1,265 @@
+{
+ "id": 178,
+ "slug": "polyphemus",
+ "name": "Polyphemus",
+ "title": "Blinded Giant",
+ "summary": "Bring Despair to your foes and use brute strength to inflict damage especially to Disruptors.",
+ "lore": "A man-eating cyclops and son of the god Poseidon, Polyphemus seemed a mighty and unbeatable foe until he was tricked and blinded by Odysseus. Although made helpless at the time, Polyphemus has since adapted to his blindness and hunts Odysseus across Olympus, happily slaying whatever other heroes—or innocent travelers—cross his path in the interim.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Polyphemus.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Polyphemus_main.png",
+ "stats": {
+  "hp": 1695,
+  "atk": 89,
+  "def": 93,
+  "spd": 92,
+  "init": 85,
+  "acc": 25,
+  "res": 40,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also reduce the target’s Turn Meter by 5% when attacking enemies under Disable.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "After placing, [Despair] has a 75% chance to spread the [Despair] to 1 other enemy.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Titan Power",
+   "description": "Attack 1 enemy 10%HP+110%ATK with a 75% chance to place [Despair] for 1 turn.",
+   "icon_url": "/godforge/abilities/polyphemus/ICON_Polyphemus_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "After placing, Despair has a 75% chance to spread the Despair to 1 other enemy.",
+     "upgrade_description": "After placing, [Despair] has a 75% chance to spread the [Despair] to 1 other enemy."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Unstoppable Brute",
+   "description": "Remove any Debuff from this hero then attack all enemies 10%HP+90%ATK. If an enemy is under Disable, place [Barrier] 3%HP on this hero. Also, inflict 25% increased damage to Disruptors.",
+   "icon_url": "/godforge/abilities/polyphemus/ICON_Polyphemus_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+90%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Captured Victims",
+   "description": "When attacking enemies under Disable, destroy 5% of their MAX HP. Cannot destroy more than 60% of the target’s MAX HP.",
+   "icon_url": "/godforge/abilities/polyphemus/ICON_Polyphemus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also reduce the target’s Turn Meter by 5% when attacking enemies under Disable.",
+     "upgrade_description": "Also reduce the target’s Turn Meter by 5% when attacking enemies under Disable."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Wrathful Hurl",
+   "description": "Attack 1 enemy 15%HP+155%ATK with a 50% chance to place [SPD Down II] for 2 turns. If the target is a Disruptor, has an additional 25% chance to place [SPD Down II] and inflicts 25% increased damage.",
+   "icon_url": "/godforge/abilities/polyphemus/ICON_Polyphemus_Ultimate.webp",
+   "divinity_cost": 1925,
+   "damage_formula": [
+    "15%HP+155%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Captured Victims",
+   "description": "When attacking enemies under Disable, destroy 5% of their MAX HP. Cannot destroy more than 30% of the target’s MAX HP.",
+   "icon_url": "/godforge/abilities/polyphemus/ICON_Polyphemus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

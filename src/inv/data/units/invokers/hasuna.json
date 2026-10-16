@@ -1,0 +1,570 @@
+{
+ "slug": "hasuna",
+ "kind": "Invoker",
+ "name": "Hasuna",
+ "faction": "Cambion",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/hasuna/portrait.webp",
+ "fullArt": "/invokers/units/invokers/hasuna/full.webp",
+ "stats": {
+  "base": {
+   "Health": "690",
+   "Attack": "71",
+   "Defense": "61",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "107"
+  },
+  "max": {
+   "Health": "7,776",
+   "Attack": "897",
+   "Defense": "671",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "107"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/hasuna/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+106",
+    "titan": "+58"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 48% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 59.5% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 26 damage.\nDamage: 36.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 38.2% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 50.9% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 63.1% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 27 damage.\nDamage: 38.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 53.8% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 66.6% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 29 damage.\nDamage: 40.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 58.6% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 72.6% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 32 damage.\nDamage: 44.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 64.3% ATK\n#4 Attacks 1 enemy, dealing 57 damage.\nDamage: 79.7% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 35 damage.\nDamage: 48.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 51.8% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 69.1% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 85.7% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 37 damage.\nDamage: 52.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 56.2% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 74.9% ATK\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 92.8% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 40 damage.\nDamage: 56.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 59.8% ATK\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 79.7% ATK\n#4 Attacks 1 enemy, dealing 70 damage.\nDamage: 98.8% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 43 damage.\nDamage: 60.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 64.1% ATK\n#3 Attacks 1 enemy, dealing 61 damage.\nDamage: 85.4% ATK\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 105.9% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 46 damage.\nDamage: 65% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 67.7% ATK\n#3 Attacks 1 enemy, dealing 64 damage.\nDamage: 90.2% ATK\n#4 Attacks 1 enemy, dealing 79 damage.\nDamage: 111.9% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 49 damage.\nDamage: 68.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 72% ATK\n#3 Attacks 1 enemy, dealing 68 damage.\nDamage: 96% ATK\n#4 Attacks 1 enemy, dealing 84 damage.\nDamage: 119% ATK\n#5 Attacks 9 enemies in a 1.5m radius around Hasuna, dealing 52 damage.\nDamage: 73% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Pure Pleasure",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/hasuna/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage. Increases the cooldown of a random Active Skill on the target by 2s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 107 damage. Increases the cooldown of a random Active Skill on the target by 2.3s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 113 damage. Increases the cooldown of a random Active Skill on the target by 2.6s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Increases the cooldown of a random Active Skill on the target by 2.9s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 136 damage. Increases the cooldown of a random Active Skill on the target by 3.2s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage. Increases the cooldown of a random Active Skill on the target by 3.5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 158 damage. Increases the cooldown of a random Active Skill on the target by 3.8s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 168 damage. Increases the cooldown of a random Active Skill on the target by 4.1s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 180 damage. Increases the cooldown of a random Active Skill on the target by 4.4s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 190 damage. Increases the cooldown of a random Active Skill on the target by 4.7s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 202 damage. Increases the cooldown of a random Active Skill on the target by 5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Broken Inhibition",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/hasuna/skills/2.webp",
+   "effects": [
+    {
+     "label": "Chain",
+     "group": "Debuffs",
+     "description": "The recipient cannot move, but can still use Combo Attacks, Active and Ultimate Skills, and Invoke their Titan.The Chain debuff is removed if the recipient Invokes a Titan."
+    },
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+64",
+    "titan": "+35"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 105 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 105 damage. Casts a [Chain] debuff on the target, lasting 5s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [25% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 147.5% ATK\n#2 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 111 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 111 damage. Casts a [Chain] debuff on the target, lasting 5.5s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [25% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 156.3% ATK\n#2 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 117 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 117 damage. Casts a [Chain] debuff on the target, lasting 5.5s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [28% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 165.2% ATK\n#2 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 128 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 128 damage. Casts a [Chain] debuff on the target, lasting 5.5s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [31% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 180% ATK\n#2 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 140 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 140 damage. Casts a [Chain] debuff on the target, lasting 5.5s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [31% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 197.7% ATK\n#2 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 151 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 151 damage. Casts a [Chain] debuff on the target, lasting 6s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [34% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 212.4% ATK\n#2 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 163 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 163 damage. Casts a [Chain] debuff on the target, lasting 6s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [34% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 230.1% ATK\n#2 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 174 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 174 damage. Casts a [Chain] debuff on the target, lasting 7s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [37% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 244.9% ATK\n#2 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 186 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 186 damage. Casts a [Chain] debuff on the target, lasting 7s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [37% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 262.5% ATK\n#2 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 197 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 197 damage. Casts a [Chain] debuff on the target, lasting 8s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [40% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 277.3% ATK\n#2 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the furthest enemy from a distance of 10m, dealing 209 damage. The first hit pulls the target to Hasuna. Attacks the target, dealing 209 damage. Casts a [Chain] debuff on the target, lasting 8s, on the second hit. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan. Then, casts a [40% DEF Down] debuff on the target, lasting 14s.\nAccuracy required for: Pull, Chain, DEF Down\n#1 Damage: 295% ATK\n#2 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Essence Drinker",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/hasuna/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+53",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 206 damage. The target loses 50 Ultimate Mana. Then, Hasuna gains 50 Ultimate Mana if the target has 3 or more debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 218 damage. The target loses 55 Ultimate Mana. Then, Hasuna gains 55 Ultimate Mana if the target has 3 or more debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 231 damage. The target loses 55 Ultimate Mana. Then, Hasuna gains 55 Ultimate Mana if the target has 2 or more debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 251 damage. The target loses 60 Ultimate Mana. Then, Hasuna gains 60 Ultimate Mana if the target has 2 or more debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 276 damage. The target loses 60 Ultimate Mana. Then, Hasuna gains 60 Ultimate Mana if the target has 2 or more debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 296 damage. The target loses 70 Ultimate Mana. Then, Hasuna gains 70 Ultimate Mana if the target has 2 or more debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 321 damage. The target loses 70 Ultimate Mana. Then, Hasuna gains 70 Ultimate Mana if the target has debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 342 damage. The target loses 80 Ultimate Mana. Then, Hasuna gains 80 Ultimate Mana if the target has debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 367 damage. The target loses 90 Ultimate Mana. Then, Hasuna gains 90 Ultimate Mana if the target has debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 387 damage. The target loses 100 Ultimate Mana. Then, Hasuna gains 100 Ultimate Mana if the target has debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 412 damage. The target loses 100 Ultimate Mana. Then, Hasuna gains 100 Ultimate Mana if the target has debuffs.\nAccuracy required for: Mana Loss\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Premature Respite",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/hasuna/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 172 damage. Increases the cooldown of a random Active Skill on the targets by 5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 242.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 183 damage. Increases the cooldown of a random Active Skill on the targets by 7s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 257% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 193 damage. Increases the cooldown of a random Active Skill on the targets by 9s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 271.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 210 damage. Increases the cooldown of a random Active Skill on the targets by 11s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 295.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 231 damage. Increases the cooldown of a random Active Skill on the targets by 13s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 325% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 248 damage. Increases the cooldown of a random Active Skill on the targets by 15s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 349.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 269 damage. Increases the cooldown of a random Active Skill on the targets by 17s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 378.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 286 damage. Increases the cooldown of a random Active Skill on the targets by 19s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 402.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 306 damage. Increases the cooldown of a random Active Skill on the targets by 22s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 431.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 324 damage. Increases the cooldown of a random Active Skill on the targets by 25s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 455.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 9 enemies in a 8.5m radius around Hasuna, dealing 344 damage. Each hit Increases the cooldown of a random Active Skill on the targets by 25s, 2 times.\nAccuracy required for: Cooldown Increase\n#1 Damage: 485% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "A wanton hedonist and flagrant rule-breaker might seem an odd choice to be a guide for the most devout Lightseeker clerics, but Hasuna knows her patch of the Voidscar like no-one else. They're stuck with her. But, even as she delights in teasing them, she never stops fighting to protect them.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "B",
+  "omnissi-earth": "C",
+  "omnissi-fire": "A",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "A",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 41.1,
+  "lists": 16
+ }
+}

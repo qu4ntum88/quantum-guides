@@ -1,0 +1,303 @@
+{
+ "id": 148,
+ "slug": "hou_yi",
+ "name": "Hou Yi",
+ "title": "Sunbane Marksman",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A half-divine archer, Hou Yi is said to have shot the suns from the sky until only one remained. Whether that tale holds any truth, he has certainly slain countless monsters for the good of Tian. Alas, his many accolades also inflated his ego, making him arrogant, even despotic. The people adore him for his protection, yet fear his growing tyranny.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hou Yi.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_HouYi_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 61,
+  "def": 94,
+  "spd": 96,
+  "init": 90,
+  "acc": 15,
+  "res": 60,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "When Blaze inflicts damage to this hero, heal for 100% of the damage.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If Chang'e is an ally, place [Protect II] on all allies for 2 turns.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Sun and Moon",
+   "description": "Attack 1 enemy 160%DEF+145%ATK then place [Intercept] on the ally with the lowest HP for 1 turn. If Chang'e is an ally, she will join the attack.",
+   "icon_url": "/godforge/abilities/hou_yi/ICON_HouYi_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "160%DEF+145%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "AllyWithLeastStat",
+     "target_label": "AllyWithLeastStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Solar Protection",
+   "description": "Attack all enemies 130%DEF+120%ATK with a 40% chance to place [Taunt] for 1 turn. If Chang'e is an ally, place [Protect II] on her for 2 turns.",
+   "icon_url": "/godforge/abilities/hou_yi/ICON_HouYi_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "130%DEF+120%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 40,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If Chang'e is an ally, place Protect II on all allies for 2 turns.",
+     "upgrade_description": "If Chang'e is an ally, place [Protect II] on all allies for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "40 RES in Arena Battles",
+   "icon_url": "/godforge/abilities/hou_yi/ICON_Leader_Resistance.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Sun Ward",
+   "description": "When an ally receives Blaze, there is a 50% chance this hero receives it instead.",
+   "icon_url": "/godforge/abilities/hou_yi/ICON_HouYi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "When Blaze inflicts damage to this hero, heal for 100% of the damage.",
+     "upgrade_description": "When Blaze inflicts damage to this hero, heal for 100% of the damage."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Nine Suns Shall Fall",
+   "description": "Remove Blaze from all allies except this hero, then attack 1 enemy 225%DEF+210%ATK. Has a 75% chance to place [ATK Down II] on all enemies except the target for 2 turns. If there are no other enemies alive, place [Blunt II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/hou_yi/ICON_HouYi_Ultimate.webp",
+   "divinity_cost": 3725,
+   "damage_formula": [
+    "225%DEF+210%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemyExceptMainTarget",
+     "target_label": "AllEnemyExceptMainTarget",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Sun Ward",
+   "description": "When an ally receives Blaze, there is a 25% chance this hero receives it instead.",
+   "icon_url": "/godforge/abilities/hou_yi/ICON_HouYi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

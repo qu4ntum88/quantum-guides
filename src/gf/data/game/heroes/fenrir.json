@@ -1,0 +1,278 @@
+{
+ "id": 226,
+ "slug": "fenrir",
+ "name": "Fenrir",
+ "title": "Fen-Dweller",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The great Fenris Wolf was long imprisoned by Asgard’s gods, for he was prophesied to consume the sun and slay Odin come Ragnarok. Now the Shattering has broken his bonds, freeing him to hunt, but he has not grown to nearly the power that was foretold. Resentment and hatred drive his predations—but so, too, does the voice of Chaos itself.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Fenrir.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Fenrir_main.png",
+ "stats": {
+  "hp": 1425,
+  "atk": 117,
+  "def": 86,
+  "spd": 102,
+  "init": 98,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If the target is under 10 Stacks of [Bleed], each hit also increase this hero’s CDMG by 5% (stacking up to 10 times).",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Activate all stacks of [Bleed] on the target instead.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the damage of this hero’s Ultimate Ability by 5% (stacking up to 100%).",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Bloodlust",
+   "description": "Attack 1 enemy 2 times 240%ATK with a chance 80% to place 2 stacks of [Bleed]. Heal 2%HP this hero for each stack of [Bleed] on the target.\n\nIf the target is under 5 or more [Bleed] stacks, this attack cannot Weak Hit.",
+   "icon_url": "/godforge/abilities/fenrir/ICON_Fenrir_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "240%ATK",
+    "240%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 80,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If the target is under 10 Stacks of Bleed, each hit also increase this hero’s CDMG by 5% (stacking up to 10 times).",
+     "upgrade_description": "If the target is under 10 Stacks of [Bleed], each hit also increase this hero’s CDMG by 5% (stacking up to 10 times)."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Untamed Fury",
+   "description": "Attack 1 enemy 620%ATK with a 75% to activate 3 stacks of [Bleed] on the target.\n\nIf the target is under 10 Stacks of [Bleed], gain an Extra Turn.",
+   "icon_url": "/godforge/abilities/fenrir/ICON_Fenrir_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "620%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Activate all stacks of Bleed on the target instead.",
+     "upgrade_description": "Activate all stacks of [Bleed] on the target instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Scent of Blood",
+   "description": "If an enemy under [Bleed] attempts to decrease this hero's Turn Meter, its effectiveness is reduced by 100%",
+   "icon_url": "/godforge/abilities/fenrir/ICON_Fenrir_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Omen of Ragnarok",
+   "description": "Attack 1 enemy 345%ATK 2 times. Before attacking, place 3 stacks of [Bleed] on the target. Also place [Barrier] on this hero equal to 5% of the damage inflicted.\n\nIf the target is under 10 stacks of [Bleed], increase this hero’s Turn Meter by 20%.",
+   "icon_url": "/godforge/abilities/fenrir/ICON_Fenrir_Ultimate.webp",
+   "divinity_cost": 1700,
+   "damage_formula": [
+    "345%ATK",
+    "345%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the damage of this hero’s Ultimate Ability by 5% (stacking up to 100%).",
+     "upgrade_description": "Increase the damage of this hero’s Ultimate Ability by 5% (stacking up to 100%)."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Scent of Blood",
+   "description": "If an enemy under [Bleed] attempts to decrease this hero's Turn Meter, its effectiveness is reduced by 50%",
+   "icon_url": "/godforge/abilities/fenrir/ICON_Fenrir_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

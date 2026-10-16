@@ -1,0 +1,501 @@
+{
+ "slug": "keltaur",
+ "kind": "Titan",
+ "name": "Keltaur",
+ "faction": "Eldrin",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/keltaur/portrait.webp",
+ "fullArt": "/invokers/units/titans/keltaur/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+540",
+   "Bonus ATK": "+92",
+   "Bonus DEF": "+64",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,245",
+   "Bonus ATK": "+553",
+   "Bonus DEF": "+385",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/keltaur/skills/0.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 115 damage.\nDamage: 125% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 129 damage. Casts a [10% Combo SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Combo SPD Down\nDamage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 122 damage.\nDamage: 132.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 137 damage. Casts a [11% Combo SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Combo SPD Down\nDamage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 129 damage.\nDamage: 140% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 144 damage. Casts a [12% Combo SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Combo SPD Down\nDamage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 140 damage.\nDamage: 152.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 157 damage. Casts a [12% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 154 damage.\nDamage: 167.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 173 damage. Casts a [13% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 166 damage.\nDamage: 180% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 185 damage. Casts a [14% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 179 damage.\nDamage: 195% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 201 damage. Casts a [15% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 191 damage.\nDamage: 207.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 214 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 205 damage.\nDamage: 222.5% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 229 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 216 damage.\nDamage: 235% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 242 damage. Casts a [18% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 230 damage.\nDamage: 250% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 258 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Arboris Arrow",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/keltaur/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 246 damage. Increases the cooldown of all Active Skills on the target by 4s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 267.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 261 damage. Increases the cooldown of all Active Skills on the target by 4.5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 283.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 276 damage. Increases the cooldown of all Active Skills on the target by 5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 299.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 300 damage. Increases the cooldown of all Active Skills on the target by 5.5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 326.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 330 damage. Increases the cooldown of all Active Skills on the target by 6s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 358.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 354 damage. Increases the cooldown of all Active Skills on the target by 6s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 385.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 384 damage. Increases the cooldown of all Active Skills on the target by 7s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 417.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 409 damage. Increases the cooldown of all Active Skills on the target by 8s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 444% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 438 damage. Increases the cooldown of all Active Skills on the target by 9s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 476.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 463 damage. Increases the cooldown of all Active Skills on the target by 10s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 492 damage. Increases the cooldown of all Active Skills on the target by 10s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 535% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Silvan Volley",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/keltaur/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+65",
+    "titan": "+35"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 64 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 129 damage. Casts a [25% ATK Down] debuff on the targets, lasting 12s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 70% ATK\n#2 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 68 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 137 damage. Casts a [30% ATK Down] debuff on the targets, lasting 12s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 74.2% ATK\n#2 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 72 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 144 damage. Casts a [30% ATK Down] debuff on the targets, lasting 13s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 78.4% ATK\n#2 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 79 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 157 damage. Casts a [30% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 85.4% ATK\n#2 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 86 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 173 damage. Casts a [35% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 93.8% ATK\n#2 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 93 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 185 damage. Casts a [35% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 100.8% ATK\n#2 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 100 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 201 damage. Casts a [35% ATK Down] debuff on the targets, lasting 15s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 109.2% ATK\n#2 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 107 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 214 damage. Casts a [40% ATK Down] debuff on the targets, lasting 15s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 116.2% ATK\n#2 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 115 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 229 damage. Casts a [40% ATK Down] debuff on the targets, lasting 16s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 124.6% ATK\n#2 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 121 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 242 damage. Casts a [45% ATK Down] debuff on the targets, lasting 16s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 131.6% ATK\n#2 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 129 damage. Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 8m radius around the target, from a distance of 12m, dealing 258 damage. Casts a [50% ATK Down] debuff on the targets, lasting 18s, on the second hit.\nAccuracy required for: ATK Down\n#1 Damage: 140% ATK\n#2 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/keltaur/skills/3.webp",
+   "effects": [
+    {
+     "label": "Chain",
+     "group": "Debuffs",
+     "description": "The recipient cannot move, but can still use Combo Attacks, Active and Ultimate Skills, and Invoke their Titan.The Chain debuff is removed if the recipient Invokes a Titan."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 207 damage. Casts a [Chain] debuff on the targets, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 225% ATK\nINVOKATION END\nCasts a [40% Crit DMG Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 219 damage. Casts a [Chain] debuff on the targets, lasting 4.3s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 238.5% ATK\nINVOKATION END\nCasts a [45% Crit DMG Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 232 damage. Casts a [Chain] debuff on the targets, lasting 4.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 252% ATK\nINVOKATION END\nCasts a [50% Crit DMG Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 253 damage. Casts a [Chain] debuff on the targets, lasting 4.8s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 274.5% ATK\nINVOKATION END\nCasts a [50% Crit DMG Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 277 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 301.5% ATK\nINVOKATION END\nCasts a [50% Crit DMG Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 298 damage. Casts a [Chain] debuff on the targets, lasting 5.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 324% ATK\nINVOKATION END\nCasts a [60% Crit DMG Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 323 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 351% ATK\nINVOKATION END\nCasts a [60% Crit DMG Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 344 damage. Casts a [Chain] debuff on the targets, lasting 6.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 373.5% ATK\nINVOKATION END\nCasts a [60% Crit DMG Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 368 damage. Casts a [Chain] debuff on the targets, lasting 7s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 400.5% ATK\nINVOKATION END\nCasts a [70% Crit DMG Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 389 damage. Casts a [Chain] debuff on the targets, lasting 7.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 423% ATK\nINVOKATION END\nCasts a [70% Crit DMG Up] buff on the Bound Invoker, lasting 18s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 8 enemies with the lowest current HP in a 20m radius, dealing 414 damage. Casts a [Chain] debuff on the targets, lasting 8s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 450% ATK\nINVOKATION END\nCasts a [80% Crit DMG Up] buff on the Bound Invoker, lasting 18s."
+    }
+   ]
+  },
+  {
+   "name": "Combo SPD Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/keltaur/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +49 Combo Speed.\nOutside Dungeon mode: +28 Combo Speed."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +53.9 Combo Speed.\nOutside Dungeon mode: +30.8 Combo Speed."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +58.8 Combo Speed.\nOutside Dungeon mode: +33.6 Combo Speed."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +68.6 Combo Speed.\nOutside Dungeon mode: +39.2 Combo Speed."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +78.4 Combo Speed.\nOutside Dungeon mode: +44.8 Combo Speed."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +88.2 Combo Speed.\nOutside Dungeon mode: +50.4 Combo Speed."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +98 Combo Speed.\nOutside Dungeon mode: +56 Combo Speed."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "As part of a Wild King's coronation, they must prove they have the will to Invoke Keltaur – the first Titan born of these untamed Eldrin, and representative of their passionate spirit. A would-be Wild King must ford the Bright River, hunt a dire-bear, and trek to the heart of the Puregrove, all before nightfall. Only then, can they be truly considered a ruler worthy of Invoking Keltaur.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "A+",
+  "hyxxis": "S",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "S",
+  "sorgott": "S",
+  "ulgorim": "S",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 78.6,
+  "lists": 16
+ }
+}

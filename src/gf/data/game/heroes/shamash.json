@@ -1,0 +1,302 @@
+{
+ "id": 88,
+ "slug": "shamash",
+ "name": "Shamash",
+ "title": "Flames of Truth",
+ "summary": "Buffs the Divinity of allies and leads them in joint attacks.",
+ "lore": "God of Ekur’s sun, truth, and justice, Shamash is a stalwart fighter for his people, yet he is fiercely torn regarding the Realm’s current wars. He believes in his brethren’s cause, but he knows that many foreign gods are also righteous in their own way. Shamash also fights against Chaos, but often conflicts with Order’s other gods on matters of true justice.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Shamash.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Shamash_main.png",
+ "stats": {
+  "hp": 1530,
+  "atk": 56,
+  "def": 94,
+  "spd": 109,
+  "init": 95,
+  "acc": 15,
+  "res": 45,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "[Aetherburn II] cannot be resisted.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Will not reduce the duration of Aetherburn when activating from a Join Attack.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an ally is revived, set their Divinity to 100%.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Solar Disc",
+   "description": "Attack 1 enemy 345%ATK. The ally with the lowest Divinity joins the attack. Increase the Turn Meter of all allies by 10% if the target is under Aetherburn.",
+   "icon_url": "/godforge/abilities/shamash/ICON_Shamash_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Arbiter of Justice",
+   "description": "Attack 1 enemy 490%ATK. All allies join the attack. Has a 75% chance to place [Aetherburn II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/shamash/ICON_Shamash_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "490%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Aetherburn II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Aetherburn II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Aetherburn II cannot be resisted.",
+     "upgrade_description": "[Aetherburn II] cannot be resisted."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "21% FTH in All Battles",
+   "icon_url": "/godforge/abilities/shamash/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Solar Decree",
+   "description": "When an ally joins this hero's attack, activate Aetherburn on the target. Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/shamash/ICON_Shamash_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Will not reduce the duration of Aetherburn when activating from a Join Attack.",
+     "upgrade_description": "Will not reduce the duration of Aetherburn when activating from a Join Attack."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Light of the Heavens",
+   "description": "Revive a random ally with 30% HP and 30% Turn Meter, then place [Radiance II] and [ATK Up II] on each ally for 2 turns.\n\nAlso heal all allies for 15% of each ally's MAX HP, then convert 50% of each ally's Overheal into [Shield] on that ally.\n\nThe first time an ally is defeated in battle, gain full Divinity, then cast this ability.",
+   "icon_url": "/godforge/abilities/shamash/ICON_Shamash_Ultimate.webp",
+   "divinity_cost": 3800,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an ally is revived, set their Divinity to 100%.",
+     "upgrade_description": "If an ally is revived, set their Divinity to 100%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Solar Decree",
+   "description": "When this hero joins an attack, activate Aetherburn on the target. Can only occur once per turn.",
+   "icon_url": "/godforge/abilities/shamash/ICON_Shamash_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,543 @@
+{
+ "slug": "specseeker-vunden",
+ "kind": "Invoker",
+ "name": "Specseeker Vunden",
+ "faction": "Stonehearts",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/specseeker-vunden/portrait.webp",
+ "fullArt": "/invokers/units/invokers/specseeker-vunden/full.webp",
+ "stats": {
+  "base": {
+   "Health": "418",
+   "Attack": "69",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "97"
+  },
+  "max": {
+   "Health": "4,849",
+   "Attack": "930",
+   "Defense": "552",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "122"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/specseeker-vunden/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+134",
+    "titan": "+73"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 45.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 56.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 48.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 59.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 51% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 63.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 27 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 55.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 68.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 29 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 52 damage.\nDamage: 75.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 32 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 81.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 35 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 71% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 61 damage.\nDamage: 88.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 38 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 52 damage.\nDamage: 75.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 65 damage.\nDamage: 93.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 40 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 81% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 100.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 43 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 85.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 73 damage.\nDamage: 106.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 45 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 63 damage.\nDamage: 91% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 78 damage.\nDamage: 113% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 48 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Flare Knife",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/specseeker-vunden/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 95 damage.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 101 damage.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 106 damage.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 116 damage.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 127 damage.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 137 damage.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 148 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 157 damage.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 169 damage.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 178 damage.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 190 damage.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Punisher Slugs",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/specseeker-vunden/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+47",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 97 damage per hit. Damage increases by 20% if the target has debuffs.\n#1 Damage: 140% ATK\n#2 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 102 damage per hit. Damage increases by 25% if the target has debuffs.\n#1 Damage: 148.4% ATK\n#2 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 108 damage per hit. Damage increases by 25% if the target has debuffs.\n#1 Damage: 156.8% ATK\n#2 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 118 damage per hit. Damage increases by 30% if the target has debuffs.\n#1 Damage: 170.8% ATK\n#2 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 129 damage per hit. Damage increases by 30% if the target has debuffs.\n#1 Damage: 187.6% ATK\n#2 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 139 damage per hit. Damage increases by 35% if the target has debuffs.\n#1 Damage: 201.6% ATK\n#2 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 151 damage per hit. Damage increases by 35% if the target has debuffs.\n#1 Damage: 218.4% ATK\n#2 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 160 damage per hit. Damage increases by 40% if the target has debuffs.\n#1 Damage: 232.4% ATK\n#2 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 172 damage per hit. Damage increases by 40% if the target has debuffs.\n#1 Damage: 249.2% ATK\n#2 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 182 damage per hit. Damage increases by 50% if the target has debuffs.\n#1 Damage: 263.2% ATK\n#2 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 193 damage per hit. Damage increases by 50% if the target has debuffs.\n#1 Damage: 280% ATK\n#2 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Firecap Round",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/specseeker-vunden/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 198 damage. Extends the duration of 1 random buff on Vunden by 3s.\n#1 Damage: 287.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 210 damage. Extends the duration of 1 random buff on Vunden by 3.5s.\n#1 Damage: 304.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 222 damage. Extends the duration of 1 random buff on Vunden by 3.5s.\n#1 Damage: 322% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 242 damage. Extends the duration of 1 random buff on Vunden by 4s.\n#1 Damage: 350.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 266 damage. Extends the duration of 1 random buff on Vunden by 4s.\n#1 Damage: 385.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 286 damage. Extends the duration of 1 random buff on Vunden by 4.5s.\n#1 Damage: 414% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 309 damage. Extends the duration of 1 random buff on Vunden by 4.5s.\n#1 Damage: 448.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 329 damage. Extends the duration of 1 random buff on Vunden by 5s.\n#1 Damage: 477.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 353 damage. Extends the duration of 1 random buff on Vunden by 5s.\n#1 Damage: 511.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 373 damage. Extends the duration of 1 random buff on Vunden by 6s.\n#1 Damage: 540.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 397 damage. Extends the duration of up to 2 random buffs on Vunden by 6s.\n#1 Damage: 575% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Volcan Magazine",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/specseeker-vunden/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 331 damage. Reduces the cooldown of Active Skill 2 on Vunden by 4s if the hit lands as a critical hit.\n#1 Damage: 480% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 351 damage. Reduces the cooldown of Active Skill 2 on Vunden by 5s if the hit lands as a critical hit.\n#1 Damage: 508.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 371 damage. Reduces the cooldown of Active Skill 2 on Vunden by 6s if the hit lands as a critical hit.\n#1 Damage: 537.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 404 damage. Reduces the cooldown of Active Skill 2 on Vunden by 7s if the hit lands as a critical hit.\n#1 Damage: 585.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 444 damage. Reduces the cooldown of Active Skill 2 on Vunden by 7s if the hit lands as a critical hit.\n#1 Damage: 643.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 477 damage. Reduces the cooldown of Active Skill 2 on Vunden by 8s if the hit lands as a critical hit.\n#1 Damage: 691.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 517 damage. Reduces the cooldown of Active Skill 2 on Vunden by 9s if the hit lands as a critical hit.\n#1 Damage: 748.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 550 damage. Reduces the cooldown of Active Skill 2 on Vunden by 9s if the hit lands as a critical hit.\n#1 Damage: 796.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 590 damage. Reduces the cooldown of Active Skill 2 on Vunden by 10s if the hit lands as a critical hit.\n#1 Damage: 854.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 623 damage. Reduces the cooldown of Active Skill 2 on Vunden by 11s if the hit lands as a critical hit.\n#1 Damage: 902.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 662 damage. Reduces the cooldown of Active Skill 2 on Vunden by 11s if the hit lands as a critical hit.\n#1 Damage: 960% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Vunden is an oddball of a Dwarf – his kit is some of the best, but where he gets his molten rounds is anyone’s guess. Neither the Elder King nor the Deep Lords would normally tolerate a mercenary so well-equipped, but Vunden only hunts Darkborn… and ghosts. Especially ghosts. And he won’t say why.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "B",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "D",
+  "omnissi-wind": "C",
+  "pentiax": "D",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "D",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 29.5,
+  "lists": 16
+ }
+}

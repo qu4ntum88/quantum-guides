@@ -1,0 +1,321 @@
+{
+ "id": 36,
+ "slug": "heimdall",
+ "name": "Heimdall",
+ "title": "Bifrost Warden",
+ "summary": "Defend the bifrost against marauding invaders and protect the halls of asgard from harm!",
+ "lore": "The sentinel of Bifrost, Heimdall has long guarded Asgard against danger—yet now the entire world is a threat. He does not know how the Shattering could have happened without him spotting some warning, some trace. That lack of understanding, and what he views as a failure of his duties, spur him to new efforts that may exhaust even his divine endurance.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Heimdall.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Heimdall_main.png",
+ "stats": {
+  "hp": 1500,
+  "atk": 68,
+  "def": 100,
+  "spd": 105,
+  "init": 91,
+  "acc": 20,
+  "res": 85,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Heals this hero 5%MAXHP for each Debuff that is reflected.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also places [Ward] on this hero for 2 turns which cannot be removed.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the start of each wave, activate this ultimate before any turn is taken.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Bifrost Blade",
+   "description": "Attack 1 enemy 195%DEF+140%ATK, then decrease the duration of 1 random Buff on the target by 1 turn. Guarantee a Crushing Hit if this attack is a retaliate.",
+   "icon_url": "/godforge/abilities/heimdall/ICON_Heimdall_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "195%DEF+140%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Watchmaster",
+   "description": "Place [Retaliate] and [Intercept] on all allies for 2 turns, then attack all enemies 160%DEF+115%ATK.",
+   "icon_url": "/godforge/abilities/heimdall/ICON_Heimdall_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "160%DEF+115%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Retaliate",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Ward",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also places Ward on this hero for 2 turns which cannot be removed.",
+     "upgrade_description": "Also places [Ward] on this hero for 2 turns which cannot be removed."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Vanguard's Vigil",
+   "description": "When this hero receives any Debuff from an attack, reflect all the Debuff from the attack back to the enemy.",
+   "icon_url": "/godforge/abilities/heimdall/ICON_Heimdall_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 2,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Heals this hero 5%MAXHP for each Debuff that is reflected.",
+     "upgrade_description": "Heals this hero 5%MAXHP for each Debuff that is reflected."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Shield of Asgard",
+   "description": "Place [DEF Up II] on all allies for 2 turns, then place [Shield] 300%DEF on all allies. Also place [Protect II] on all allies except this hero for 2 turns. These Buffs cannot be removed when placed on heroes from Asgard.",
+   "icon_url": "/godforge/abilities/heimdall/ICON_Heimdall_Ultimate.webp",
+   "divinity_cost": 3275,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the start of each wave, activate this ultimate before any turn is taken.",
+     "upgrade_description": "At the start of each wave, activate this ultimate before any turn is taken."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Vanguard's Vigil",
+   "description": "When this hero receives any Debuff, reflect all the Debuff on this hero back to the enemy.",
+   "icon_url": "/godforge/abilities/heimdall/ICON_Heimdall_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 2,
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

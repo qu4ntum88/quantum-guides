@@ -1,0 +1,549 @@
+{
+ "slug": "liruna",
+ "kind": "Invoker",
+ "name": "Liruna",
+ "faction": "Nocturna",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/liruna/portrait.webp",
+ "fullArt": "/invokers/units/invokers/liruna/full.webp",
+ "stats": {
+  "base": {
+   "Health": "561",
+   "Attack": "59",
+   "Defense": "44",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "6,559",
+   "Attack": "792",
+   "Defense": "502",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "135"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/liruna/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 34% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 45% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 67.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 47.7% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 71.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 38.1% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 50.4% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 75.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 41.5% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 82.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 45.6% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 60.3% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 53 damage.\nDamage: 90.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 49% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 64.8% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 97.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 53% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 70.2% ATK\n#4 Attacks 1 enemy, dealing 53 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 62 damage.\nDamage: 105.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 56.4% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 74.7% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 66 damage.\nDamage: 112.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 60.5% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 80.1% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 71 damage.\nDamage: 120.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 84.6% ATK\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 75 damage.\nDamage: 126.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 68% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 90% ATK\n#4 Attacks 1 enemy, dealing 68 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 80 damage.\nDamage: 135% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Batting Practice",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/liruna/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 38 damage per hit.\n#1 Damage: 65% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 41 damage per hit.\n#1 Damage: 68.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 43 damage per hit.\n#1 Damage: 72.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 47 damage per hit.\n#1 Damage: 79.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 51 damage per hit.\n#1 Damage: 87.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 55 damage per hit.\n#1 Damage: 93.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 60 damage per hit.\n#1 Damage: 101.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 64 damage per hit.\n#1 Damage: 107.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 68 damage per hit.\n#1 Damage: 115.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 72 damage per hit.\n#1 Damage: 122.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 77 damage per hit.\n#1 Damage: 130% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Mound Pound",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/liruna/skills/2.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 74 damage. Casts a [1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 125% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage. Casts a [1.05% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.05% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 132.5% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage. Casts a [1.1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 140% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage. Casts a [1.1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 152.5% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 99 damage. Casts a [1.15% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 167.5% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 106 damage. Casts a [1.15% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 180% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 115 damage. Casts a [1.2% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 195% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage. Casts a [1.2% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 207.5% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 131 damage. Casts a [1.25% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 222.5% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage. Casts a [1.25% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 235% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 148 damage. Casts a [1.25% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 250% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Big Swing",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/liruna/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 80 damage. Launches the targets for 0.7s.\nAccuracy required for: Launch\n#1 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 84 damage. Launches the targets for 0.8s.\nAccuracy required for: Launch\n#1 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 89 damage. Launches the targets for 0.8s.\nAccuracy required for: Launch\n#1 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 97 damage. Launches the targets for 0.8s.\nAccuracy required for: Launch\n#1 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 107 damage. Launches the targets for 0.8s.\nAccuracy required for: Launch\n#1 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 115 damage. Launches the targets for 0.9s.\nAccuracy required for: Launch\n#1 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 124 damage. Launches the targets for 0.9s.\nAccuracy required for: Launch\n#1 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 132 damage. Launches the targets for 0.9s.\nAccuracy required for: Launch\n#1 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 142 damage. Launches the targets for 0.9s.\nAccuracy required for: Launch\n#1 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 150 damage. Launches the targets for 1s.\nAccuracy required for: Launch\n#1 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 5m semicircle in front of Liruna, dealing 159 damage. Launches the targets for 1s.\nAccuracy required for: Launch\n#1 Damage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Home Run",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/liruna/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 271 damage. Launches the target, knocking them 10m away, for 4.5s.\nAccuracy required for: Launch\n#1 Damage: 460% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 288 damage. Launches the target, knocking them 10m away, for 4.8s.\nAccuracy required for: Launch\n#1 Damage: 487.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 304 damage. Launches the target, knocking them 10m away, for 5s.\nAccuracy required for: Launch\n#1 Damage: 515.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 331 damage. Launches the target, knocking them 10m away, for 5.3s.\nAccuracy required for: Launch\n#1 Damage: 561.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 364 damage. Launches the target, knocking them 10m away, for 5.3s.\nAccuracy required for: Launch\n#1 Damage: 616.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 391 damage. Launches the target, knocking them 10m away, for 5.5s.\nAccuracy required for: Launch\n#1 Damage: 662.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 423 damage. Launches the target, knocking them 10m away, for 5.8s.\nAccuracy required for: Launch\n#1 Damage: 717.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 451 damage. Launches the target, knocking them 10m away, for 5.8s.\nAccuracy required for: Launch\n#1 Damage: 763.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 483 damage. Launches the target, knocking them 10m away, for 6s.\nAccuracy required for: Launch\n#1 Damage: 818.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 510 damage. Launches the target, knocking them 10m away, for 6.5s.\nAccuracy required for: Launch\n#1 Damage: 864.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 543 damage. Launches the target, knocking them 10m away, for 6.5s.\nAccuracy required for: Launch\n#1 Damage: 920% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Liruna was never exactly shy or quiet, but once she joined the Nocturna, she let go of her inhibitions completely. Freedom to embrace impulse, desire, and expression gripped her like a mania, and she is determined to live her new life to its fullest – or die trying.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "C",
+  "hyxxis": "D",
+  "koltmos": "C",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "C",
+  "omnissi-fire": "D",
+  "omnissi-light": "D",
+  "omnissi-water": "D",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "D",
+  "ulgorim": "D",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 21.4,
+  "lists": 16
+ }
+}

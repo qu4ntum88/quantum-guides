@@ -1,0 +1,297 @@
+{
+ "id": 173,
+ "slug": "shorn_one",
+ "name": "Shorn One",
+ "title": "Tlaloc's Oathsworn",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "In the most prestigious warrior society of Omeyocan, the Shorn Ones are battlefield terrors. Easily identified—bald but for a single braid and painted in blues and reds or yellows—they are merciless not only to the enemy but to any of their own who dare retreat. Facing Shorn Ones means death for one side or the other; they permit no other outcome.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Shorn One.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_ShornOne_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 55,
+  "def": 94,
+  "spd": 96,
+  "init": 84,
+  "acc": 10,
+  "res": 50,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When an ally under Protect cast by this hero is attacked, increase this hero's Turn Meter by 10%. Can only occur once per attack.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Tlaloc's Favor",
+   "description": "Attack 1 enemy 150%DEF+130%ATK, then place [Mend] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/shorn_one/ICON_ShornOne_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "150%DEF+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Loyal Sacrifice",
+   "description": "Place [Protect I] on all allies except this hero for 2 turns, then place [DEF Up I] on all allies for 2 turns.",
+   "icon_url": "/godforge/abilities/shorn_one/ICON_ShornOne_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Protect I",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When an ally under Protect cast by this hero is attacked, increase this hero's Turn Meter by 10%. Can only occur once per attack.",
+     "upgrade_description": "When an ally under Protect cast by this hero is attacked, increase this hero's Turn Meter by 10%. Can only occur once per attack."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30 RES in Dungeon Battles",
+   "icon_url": "/godforge/abilities/shorn_one/ICON_Leader_Resistance.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Unshakeable",
+   "description": "At the start of this hero's turn, remove all Disable on this hero. If a Disable is removed, increase the damage inflicted of this hero's next attack by 20%.",
+   "icon_url": "/godforge/abilities/shorn_one/ICON_ShornOne_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Never Surrender",
+   "description": "Attack all enemies 125%DEF+105%ATK, then has a 75% chance to place [ATK Down I] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/shorn_one/ICON_ShornOne_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [
+    "125%DEF+105%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Unshakeable",
+   "description": "At the start of this hero's turn, remove all Disable on this hero. If a Disable is removed, increase the damage inflicted of this hero's next attack by 10%.",
+   "icon_url": "/godforge/abilities/shorn_one/ICON_ShornOne_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

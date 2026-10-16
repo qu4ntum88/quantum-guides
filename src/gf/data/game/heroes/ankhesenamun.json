@@ -1,0 +1,286 @@
+{
+ "id": 44,
+ "slug": "ankhesenamun",
+ "name": "Ankhesenamun",
+ "title": "Sunrise Redeemer",
+ "summary": "Attempts to save allies from dying. Cleanses negative effects from the team.",
+ "lore": "A largely forgotten queen, Ankhesenamun is known for her marriage to multiple pharaohs—including Tutankhamen—but little else, as she was deliberately stricken from most of Aaru’s histories along with her third husband, Tutankhamen’s successor. She has now taken advantage of the cultural, mystical, and spiritual repercussions of that partial anonymity, studying magical secrets that would previously have been unavailable to her.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ankhesenamun.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ankhesenamun_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 47,
+  "def": 79,
+  "spd": 100,
+  "init": 88,
+  "acc": 5,
+  "res": 25,
+  "initial_divinity": 850,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also heal 15%HP all allies. If at least 1 Debuff was removed, increase the Heal by 25%.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Queen's Faith",
+   "description": "Attack 1 enemy 285%ATK and place [FTH Up I] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/ankhesenamun/ICON_Ankhesenamun_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Up I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Ankh Reversal",
+   "description": "Remove 1 random Debuff from all allies then place [Block Debuffs] on all allies for 1 turn.",
+   "icon_url": "/godforge/abilities/ankhesenamun/ICON_Ankhesenamun_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also heal 15%HP all allies. If at least 1 Debuff was removed, increase the Heal by 25%.",
+     "upgrade_description": "Also heal 15%HP all allies. If at least 1 Debuff was removed, increase the Heal by 25%."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Praise the Sun",
+   "description": "Place [Phoenix] on an ally for 1 turn when they fall below 50% HP.",
+   "icon_url": "/godforge/abilities/ankhesenamun/ICON_Ankhesenamun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [
+    {
+     "effect_name": "Phoenix",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Surviving Regent",
+   "description": "Place [Shield] 20%HP on all allies and increase the duration of 1 random buff on each ally by 1 turn.",
+   "icon_url": "/godforge/abilities/ankhesenamun/ICON_Ankhesenamun_Ultimate.webp",
+   "divinity_cost": 2475,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Praise the Sun",
+   "description": "Place [Phoenix] on this hero for 1 turn when they fall below 50% HP.",
+   "icon_url": "/godforge/abilities/ankhesenamun/ICON_Ankhesenamun_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 3,
+   "effects": [
+    {
+     "effect_name": "Phoenix",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

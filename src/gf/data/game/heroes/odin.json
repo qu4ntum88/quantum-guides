@@ -1,0 +1,335 @@
+{
+ "id": 17,
+ "slug": "odin",
+ "name": "Odin",
+ "title": "All-Father",
+ "summary": "Drain your foes of their Divinity and bring about Ragnarok with powerful Disables.",
+ "lore": "Odin, the All-Father, King of Asgard, is believed by many to be nearly all-powerful and all-knowing. Yet some strange preoccupation came over him in the years preceding the Shattering, a distance and distraction that have only grown in the time since. He often disappears, leaving governing to others, and none in his pantheon know where he goes, what he does, or why.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Odin.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Odin_main.png",
+ "stats": {
+  "hp": 1245,
+  "atk": 76,
+  "def": 84,
+  "spd": 106,
+  "init": 101,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Each hit also reduces the duration of all Buff on the target by 1 turn",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Applies at the start of this hero turn instead.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If this hero takes the first turn in a battle, activate their Ultimate Ability without consuming Divinity. Triggers once per battle.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Laying Claim",
+   "description": "Attack 1 enemy 370%ATK with an 80% chance to decrease the target’s Divinity by 10%. If the target is under [Charm] or [Confuse], steal 10% of the target’s Divinity instead.",
+   "icon_url": "/godforge/abilities/odin/ICON_Odin_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "370%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Hunting Party",
+   "description": "Attack all enemies 3 times 120%ATK. The first hit has a 75% chance to place [Confuse] on each target for 1 turn.\nThe second hit has a 75% chance to place [Lock Passive] on each target for 2 turns.\nThe third hit has a 75% chance to increase the rank of all Debuff on each target by 1.\n\nAdditionally, if Geri or Freki are on the team, increase their Turn Meter by 100%.",
+   "icon_url": "/godforge/abilities/odin/ICON_Odin_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "120%ATK",
+    "120%ATK",
+    "120%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Confuse",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Passive",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Each hit also reduces the duration of all Buff on the target by 1 turn",
+     "upgrade_description": "Each hit also reduces the duration of all Buff on the target by 1 turn"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "60 ACC in All Battles",
+   "icon_url": "/godforge/abilities/odin/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Eternal Trickster",
+   "description": "At the start of the wave, place [Charm] on the enemy with the highest ATK for 2 turns.",
+   "icon_url": "/godforge/abilities/odin/ICON_Odin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Charm",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Charm",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Applies at the start of this hero turn instead.",
+     "upgrade_description": "Applies at the start of this hero turn instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Ragnarok",
+   "description": "Attack all enemies 305%ATK and equalize the Divinity of each enemy to the enemy with the lowest Divinity. If there is only 1 enemy, decrease the target’s Divinity by 30% instead.\n\nIf the target’s Divinity is reduced below 50%, has an 80% chance to place [Confuse] on the target for 1 turn. If the target’s Divinity is above 50% has an 80% chance to place [FTH Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/odin/ICON_Odin_Ultimate.webp",
+   "divinity_cost": 4175,
+   "damage_formula": [
+    "305%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Confuse",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If this hero takes the first turn in a battle, activate their Ultimate Ability without consuming Divinity. Triggers once per battle.",
+     "upgrade_description": "If this hero takes the first turn in a battle, activate their Ultimate Ability without consuming Divinity. Triggers once per battle."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Eternal Trickster",
+   "description": "At the start of the wave, place [Charm] on the enemy with the highest ATK for 1 turn.",
+   "icon_url": "/godforge/abilities/odin/ICON_Odin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Charm",
+     "target": "EnemyWithHighestStat",
+     "target_label": "EnemyWithHighestStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

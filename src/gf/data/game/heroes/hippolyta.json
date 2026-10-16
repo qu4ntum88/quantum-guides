@@ -1,0 +1,285 @@
+{
+ "id": 14,
+ "slug": "hippolyta",
+ "name": "Hippolyta",
+ "title": "Amazonian Queen",
+ "summary": "Lead your allies to victory whilst defending them against incoming damage.",
+ "lore": "The Amazon queen remains faithful to Olympus as a Realm and a pantheon, but her more specific loyalties are being tested. She holds fierce resentment toward Hercules for his actions in the old world. That he has ascended to godhood is infuriating, and that Zeus supported him has caused Hippolyta to question her fealty to the king of the gods as well…",
+ "rarity": "Rare",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hippolyta.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Hippolyta_main.png",
+ "stats": {
+  "hp": 1125,
+  "atk": 57,
+  "def": 84,
+  "spd": 91,
+  "init": 85,
+  "acc": 10,
+  "res": 45,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [Ward] on all allies for 1 turn.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Stalwart Thrust",
+   "description": "Attack 1 enemy 140%DEF+145%ATK with a 50% chance to place [Taunt] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/hippolyta/ICON_Hippolyta_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "140%DEF+145%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Amazonian Tactics",
+   "description": "Place [Shield] 200%DEF on all allies.\n\nAlso, place [SPD Up I] on all allies from Olympus for 2 turns.",
+   "icon_url": "/godforge/abilities/hippolyta/ICON_Hippolyta_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Ward",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place Ward on all allies for 1 turn.",
+     "upgrade_description": "Place [Ward] on all allies for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "16% DEF in Arena Battles",
+   "icon_url": "/godforge/abilities/hippolyta/ICON_Leader_Defence.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Strength in Union",
+   "description": "Increases the DEF of all allies by 3% for each hero matching this hero’s realm.",
+   "icon_url": "/godforge/abilities/hippolyta/ICON_Hippolyta_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Tip of the Spear",
+   "description": "Attack 1 enemy 200%DEF+210%ATK with 1 Random ally joining the attack. Allies from Olympus always join the attack.\n\nAlso, heal all allies for 20% of their MAX HP.",
+   "icon_url": "/godforge/abilities/hippolyta/ICON_Hippolyta_Ultimate.webp",
+   "divinity_cost": 2475,
+   "damage_formula": [
+    "200%DEF+210%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Strength in Union",
+   "description": "Increases the DEF of all allies by 1.5% for each hero matching this hero’s realm.",
+   "icon_url": "/godforge/abilities/hippolyta/ICON_Hippolyta_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

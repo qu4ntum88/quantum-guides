@@ -1,0 +1,267 @@
+{
+ "id": 234,
+ "slug": "grendel",
+ "name": "Grendel",
+ "title": "Hrothgar's Terror",
+ "summary": "Devour the Halls of Asgard as you bring Despair and feast on defeated foes.",
+ "lore": "Monstrous Grendel terrorized Hrothgar’s hall, devouring countless people before Beowulf tore the arm from his body. Yet Grendel survived, for the world Shattered as he staggered, bleeding, the currents of aether preserving his life. Now equipped with a mystical prosthetic, he wreaks vengeance upon all humanity, slaying and consuming. Who provided his new arm, and why, only Grendel himself might say.",
+ "rarity": "Legendary",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Grendel.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Grendel_main.png",
+ "stats": {
+  "hp": 1830,
+  "atk": 95,
+  "def": 89,
+  "spd": 96,
+  "init": 91,
+  "acc": 30,
+  "res": 50,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also place [FTH Down II] on enemies under [Despair] for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increase Turn Meter and Divinity Increase Effects on this hero by 5%.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the threshold to 30% and guarantees a Strong Hit if this hero is below 50% HP.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Endless Rampage",
+   "description": "Attack 1 enemy 2 times 5%HP+70%ATK. If the target is defeated, this hero gains an Extra Turn.",
+   "icon_url": "/godforge/abilities/grendel/ICON_Grendel_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+70%ATK",
+    "5%HP+70%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Monstrous Breath",
+   "description": "Attack all enemies 10%HP+105%ATK with a 75% chance to place [Despair] for 1 turn.",
+   "icon_url": "/godforge/abilities/grendel/ICON_Grendel_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+105%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also place FTH Down II on enemies under Despair for 2 turns.",
+     "upgrade_description": "Also place [FTH Down II] on enemies under [Despair] for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Enraged Monster",
+   "description": "For every 10% HP this hero is missing, increase their SPD and FTH by 5%.",
+   "icon_url": "/godforge/abilities/grendel/ICON_Grendel_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increase Turn Meter and Divinity Increase Effects on this hero by 5%.",
+     "upgrade_description": "Also increase Turn Meter and Divinity Increase Effects on this hero by 5%."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Devourer of Heorot",
+   "description": "Attack all enemies 10%HP+105%ATK. After attacking, instantly defeat heroes below 20% Max HP. Does not work on Bosses. Increase this hero’s HP by 5% (up to 6 times) for each enemy defeated. Also increase HP when attacking a Boss.",
+   "icon_url": "/godforge/abilities/grendel/ICON_Grendel_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "10%HP+105%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the threshold to 30% and guarantees a Strong Hit if this hero is below 50% HP.",
+     "upgrade_description": "Increase the threshold to 30% and guarantees a Strong Hit if this hero is below 50% HP."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Enraged Monster",
+   "description": "For every 20% HP this hero is missing, increase their SPD and FTH by 5%.",
+   "icon_url": "/godforge/abilities/grendel/ICON_Grendel_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

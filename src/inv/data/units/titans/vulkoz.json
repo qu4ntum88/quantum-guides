@@ -1,0 +1,501 @@
+{
+ "slug": "vulkoz",
+ "kind": "Titan",
+ "name": "Vulkoz",
+ "faction": "Ironbands",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/vulkoz/portrait.webp",
+ "fullArt": "/invokers/units/titans/vulkoz/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+640",
+   "Bonus ATK": "+78",
+   "Bonus DEF": "+68",
+   "Movement speed": "64"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,846",
+   "Bonus ATK": "+469",
+   "Bonus DEF": "+409",
+   "Movement speed": "64"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/titans/vulkoz/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 105 damage.\nDamage: 135% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 57 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.5s if the hit lands as a critical hit.\nDamage: 72.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 112 damage.\nDamage: 143.1% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 60 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.55s if the hit lands as a critical hit.\nDamage: 76.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 118 damage.\nDamage: 151.2% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 63 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.6s if the hit lands as a critical hit.\nDamage: 81.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 128 damage.\nDamage: 164.7% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 69 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.65s if the hit lands as a critical hit.\nDamage: 88.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 141 damage.\nDamage: 180.9% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 76 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.7s if the hit lands as a critical hit.\nDamage: 97.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 152 damage.\nDamage: 194.4% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 81 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.75s if the hit lands as a critical hit.\nDamage: 104.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 164 damage.\nDamage: 210.6% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 88 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.8s if the hit lands as a critical hit.\nDamage: 113.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 175 damage.\nDamage: 224.1% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 94 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 0.9s if the hit lands as a critical hit.\nDamage: 120.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 187 damage.\nDamage: 240.3% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 101 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 1s if the hit lands as a critical hit.\nDamage: 129.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 198 damage.\nDamage: 253.8% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 106 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 1.1s if the hit lands as a critical hit.\nDamage: 136.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 211 damage.\nDamage: 270% ATK\n#2 Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 12m, dealing 113 damage. Reduces the cooldown of Active Skill 2 on Vulkoz by 1.25s if the hit lands as a critical hit.\nDamage: 145% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Melter Cannon",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/vulkoz/skills/1.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 215 damage. Casts a [15% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 15%.\nAccuracy required for: Weaken\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 227 damage. Casts a [17% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 17%.\nAccuracy required for: Weaken\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 240 damage. Casts a [19% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 19%.\nAccuracy required for: Weaken\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 262 damage. Casts a [19% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 19%.\nAccuracy required for: Weaken\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 287 damage. Casts a [21% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 21%.\nAccuracy required for: Weaken\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 309 damage. Casts a [21% Weaken] debuff on the target, lasting 11s, increasing all damage taken by 21%.\nAccuracy required for: Weaken\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 335 damage. Casts a [21% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 21%.\nAccuracy required for: Weaken\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 356 damage. Casts a [24% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 24%.\nAccuracy required for: Weaken\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 382 damage. Casts a [27% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 27%.\nAccuracy required for: Weaken\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 403 damage. Casts a [27% Weaken] debuff on the target, lasting 14s, increasing all damage taken by 27%.\nAccuracy required for: Weaken\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, dealing 429 damage. Casts a [30% Weaken] debuff on the target, lasting 16s, increasing all damage taken by 30%.\nAccuracy required for: Weaken\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Pyroclasm Barrage",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/vulkoz/skills/2.webp",
+   "effects": [
+    {
+     "label": "Jinx",
+     "group": "Debuffs",
+     "description": "Blocks Buffs from being applied to the recipient.Jinx Buffs will not block Control Buffs, and each Jinx buff will only negate a single Buff before expiring. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+54",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 72 damage per hit. The first hit removes 2 random buffs from the target. Then, extends the duration of up to 3 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 15s, on the third hit, blocking them from receiving 2 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 92.5% ATK\n#2 Damage: 92.5% ATK\n#3 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 76 damage per hit. The first hit removes 2 random buffs from the target. Then, extends the duration of up to 3 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 16s, on the third hit, blocking them from receiving 2 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 98% ATK\n#2 Damage: 98% ATK\n#3 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 81 damage per hit. The first hit removes 2 random buffs from the target. Then, extends the duration of up to 3 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 16s, on the third hit, blocking them from receiving 2 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 103.6% ATK\n#2 Damage: 103.6% ATK\n#3 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 88 damage per hit. The first hit removes 3 random buffs from the target. Then, extends the duration of up to 3 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 16s, on the third hit, blocking them from receiving 2 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 112.9% ATK\n#2 Damage: 112.9% ATK\n#3 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 97 damage per hit. The first hit removes 3 random buffs from the target. Then, extends the duration of up to 3 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 16s, on the third hit, blocking them from receiving 3 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 124% ATK\n#2 Damage: 124% ATK\n#3 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 104 damage per hit. The first hit removes 3 random buffs from the target. Then, extends the duration of up to 4 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 16s, on the third hit, blocking them from receiving 3 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 133.2% ATK\n#2 Damage: 133.2% ATK\n#3 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 113 damage per hit. The first hit removes 3 random buffs from the target. Then, extends the duration of up to 4 random debuffs on the target by 4s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 18s, on the third hit, blocking them from receiving 3 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 144.3% ATK\n#2 Damage: 144.3% ATK\n#3 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 120 damage per hit. The first hit removes 3 random buffs from the target. Then, extends the duration of up to 4 random debuffs on the target by 5s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 18s, on the third hit, blocking them from receiving 3 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 153.6% ATK\n#2 Damage: 153.6% ATK\n#3 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 128 damage per hit. The first hit removes 4 random buffs from the target. Then, extends the duration of up to 4 random debuffs on the target by 6s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 18s, on the third hit, blocking them from receiving 3 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 164.6% ATK\n#2 Damage: 164.6% ATK\n#3 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 136 damage per hit. The first hit removes 4 random buffs from the target. Then, extends the duration of up to 4 random debuffs on the target by 8s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 18s, on the third hit, blocking them from receiving 4 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 173.9% ATK\n#2 Damage: 173.9% ATK\n#3 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 12m, 3 times, dealing 144 damage per hit. The first hit removes 4 random buffs from the target. Then, extends the duration of up to 5 random debuffs on the target by 8s on the second hit. Then, casts a [Jinx] debuff on the target, lasting 21s, on the third hit, blocking them from receiving 4 buffs.\nAccuracy required for: Buff Removal, Debuff Duration Extension, Jinx\n#1 Damage: 185% ATK\n#2 Damage: 185% ATK\n#3 Damage: 185% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/vulkoz/skills/3.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 181 damage. Casts a [1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 3m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 232.5% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\nINVOKATION END\nCasts a [35% ATK Up] buff on the Bound Invoker, lasting 11s. Then, casts a [50% Crit DMG Up] buff on the bound Invoker, lasting 11s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 192 damage. Casts a [1.1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 3m radius by 0.55% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 246.4% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\nINVOKATION END\nCasts a [40% ATK Up] buff on the Bound Invoker, lasting 11s. Then, casts a [50% Crit DMG Up] buff on the bound Invoker, lasting 11s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 203 damage. Casts a [1.2% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 3m radius by 0.6% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 260.4% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 11s. Then, casts a [50% Crit DMG Up] buff on the bound Invoker, lasting 11s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 221 damage. Casts a [1.2% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 3m radius by 0.6% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 283.7% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 11s. Then, casts a [60% Crit DMG Up] buff on the bound Invoker, lasting 11s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 243 damage. Casts a [1.3% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 3m radius by 0.65% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 311.6% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 13s. Then, casts a [60% Crit DMG Up] buff on the bound Invoker, lasting 13s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 261 damage. Casts a [1.3% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 3m radius by 0.65% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 334.8% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\nINVOKATION END\nCasts a [50% ATK Up] buff on the Bound Invoker, lasting 13s. Then, casts a [60% Crit DMG Up] buff on the bound Invoker, lasting 13s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 283 damage. Casts a [1.4% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 3m radius by 0.7% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 362.7% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick\nINVOKATION END\nCasts a [50% ATK Up] buff on the Bound Invoker, lasting 13s. Then, casts a [70% Crit DMG Up] buff on the bound Invoker, lasting 13s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 301 damage. Casts a [1.6% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 3m radius by 0.8% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 386% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick\nINVOKATION END\nCasts a [50% ATK Up] buff on the Bound Invoker, lasting 15s. Then, casts a [70% Crit DMG Up] buff on the bound Invoker, lasting 15s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 323 damage. Casts a [1.8% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.8% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 3m radius by 0.9% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 413.9% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick\nINVOKATION END\nCasts a [55% ATK Up] buff on the Bound Invoker, lasting 15s. Then, casts a [70% Crit DMG Up] buff on the bound Invoker, lasting 15s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 341 damage. Casts a [1.8% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.8% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 3m radius by 0.9% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 437.1% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick\nINVOKATION END\nCasts a [55% ATK Up] buff on the Bound Invoker, lasting 15s. Then, casts a [80% Crit DMG Up] buff on the bound Invoker, lasting 15s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 363 damage. Casts a [2% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 3m radius by 1% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 465% ATK\n#2 Burn Damage Limit: 500% ATK per tick\n#3 Burn Target Allies Damage Limit: 500% ATK per tick\nINVOKATION END\nCasts a [55% ATK Up] buff on the Bound Invoker, lasting 17s. Then, casts a [80% Crit DMG Up] buff on the bound Invoker, lasting 17s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/vulkoz/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +28% Attack.\nOutside Dungeon mode: +16% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +30.8% Attack.\nOutside Dungeon mode: +17.6% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +33.6% Attack.\nOutside Dungeon mode: +19.2% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +39.2% Attack.\nOutside Dungeon mode: +22.4% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +44.8% Attack.\nOutside Dungeon mode: +25.6% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +50.4% Attack.\nOutside Dungeon mode: +28.8% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +56% Attack.\nOutside Dungeon mode: +32% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "In their war against the Saurin, the Orcs that became the Magmabloods relied on \"reclaimed\" Stelteka tech to win their guerilla campaign. Their trump card was Vulkoz – a Titan they summoned, wielding what can only be described as doomsday weapons. Magmabloods who have Invoked Vulkoz swear they have him under control.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "S+",
+  "hyxxis": "S+",
+  "koltmos": "S",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S+",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S",
+  "sakiel": "S+",
+  "sorgott": "S+",
+  "ulgorim": "S",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 95.5,
+  "lists": 16
+ }
+}

@@ -3,7 +3,7 @@
  *
  * Once you save the official tier list from the Creator Studio, Supabase's
  * `official_tiers` table becomes the source of truth for the public site and
- * `heros.json` / `legacy.json` become the fallback. Run this before committing
+ * `heros.json` / `legacy.json` (and the Godforge / Void Hunters rosters) become the fallback. Run this before committing
  * so the repo matches what the site is actually showing:
  *
  *   node scripts/pull-tiers.mjs
@@ -45,6 +45,9 @@ const supabase = createClient(url, serviceKey)
 const TARGETS = [
   { type: 'champion', file: 'src/dcdl/data/heros.json', label: 'champions' },
   { type: 'legacy', file: 'src/dcdl/data/legacy.json', label: 'legacy pieces' },
+  // Godforge / Void Hunters: Quantum's S…F lists (unsaved units fall back to their rarity seed).
+  { type: 'gf_hero', file: 'src/gf/data/heroes.json', label: 'Godforge heroes' },
+  { type: 'vh_hunter', file: 'src/vh/data/hunters.json', label: 'Void Hunters hunters' },
 ]
 
 for (const target of TARGETS) {

@@ -1,0 +1,571 @@
+{
+ "slug": "kingpin-tatsulow",
+ "kind": "Invoker",
+ "name": "Kingpin Tatsulow",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": "Tank",
+ "element": "Fire",
+ "soulSign": "Sign of Magnar",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/kingpin-tatsulow/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kingpin-tatsulow/full.webp",
+ "stats": {
+  "base": {
+   "Health": "1,116",
+   "Attack": "38",
+   "Defense": "102",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "18",
+   "Combo speed": "6",
+   "Skill speed": "0",
+   "Skill recovery": "0",
+   "Mana generation": "7",
+   "Instinct": "5",
+   "Run speed": "103"
+  },
+  "max": {
+   "Health": "12,704",
+   "Attack": "396",
+   "Defense": "1,195",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "90",
+   "Combo speed": "66",
+   "Skill speed": "0",
+   "Skill recovery": "0",
+   "Mana generation": "7",
+   "Instinct": "61",
+   "Run speed": "143"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kingpin-tatsulow/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+72",
+    "titan": "+39"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 25% DEF\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 37.5% DEF\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 51% DEF\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 64% DEF\n#5 Attacks 1 enemy, dealing 79 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 15 Ultimate Mana.\nDamage: 77.5% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 26.5% DEF\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 39.7% DEF\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 54.1% DEF\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 67.8% DEF\n#5 Attacks 1 enemy, dealing 84 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 16 Ultimate Mana.\nDamage: 82.1% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 28% DEF\n#2 Attacks 1 enemy, dealing 43 damage.\nDamage: 42% DEF\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 57.1% DEF\n#4 Attacks 1 enemy, dealing 73 damage.\nDamage: 71.7% DEF\n#5 Attacks 1 enemy, dealing 89 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 17 Ultimate Mana.\nDamage: 86.8% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 30.5% DEF\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 45.8% DEF\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 62.2% DEF\n#4 Attacks 1 enemy, dealing 80 damage.\nDamage: 78.1% DEF\n#5 Attacks 1 enemy, dealing 96 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 18 Ultimate Mana.\nDamage: 94.6% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 33.5% DEF\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 50.2% DEF\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 68.3% DEF\n#4 Attacks 1 enemy, dealing 87 damage.\nDamage: 85.8% DEF\n#5 Attacks 1 enemy, dealing 106 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 19 Ultimate Mana.\nDamage: 103.8% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 36% DEF\n#2 Attacks 1 enemy, dealing 55 damage.\nDamage: 54% DEF\n#3 Attacks 1 enemy, dealing 75 damage.\nDamage: 73.4% DEF\n#4 Attacks 1 enemy, dealing 94 damage.\nDamage: 92.2% DEF\n#5 Attacks 1 enemy, dealing 114 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 20 Ultimate Mana.\nDamage: 111.6% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 39% DEF\n#2 Attacks 1 enemy, dealing 60 damage.\nDamage: 58.5% DEF\n#3 Attacks 1 enemy, dealing 81 damage.\nDamage: 79.6% DEF\n#4 Attacks 1 enemy, dealing 102 damage.\nDamage: 99.8% DEF\n#5 Attacks 1 enemy, dealing 123 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 21 Ultimate Mana.\nDamage: 120.9% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 41.5% DEF\n#2 Attacks 1 enemy, dealing 63 damage.\nDamage: 62.2% DEF\n#3 Attacks 1 enemy, dealing 86 damage.\nDamage: 84.7% DEF\n#4 Attacks 1 enemy, dealing 108 damage.\nDamage: 106.2% DEF\n#5 Attacks 1 enemy, dealing 131 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 22 Ultimate Mana.\nDamage: 128.6% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 44.5% DEF\n#2 Attacks 1 enemy, dealing 68 damage.\nDamage: 66.8% DEF\n#3 Attacks 1 enemy, dealing 93 damage.\nDamage: 90.8% DEF\n#4 Attacks 1 enemy, dealing 116 damage.\nDamage: 113.9% DEF\n#5 Attacks 1 enemy, dealing 141 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 23 Ultimate Mana.\nDamage: 137.9% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 48 damage.\nDamage: 47% DEF\n#2 Attacks 1 enemy, dealing 72 damage.\nDamage: 70.5% DEF\n#3 Attacks 1 enemy, dealing 98 damage.\nDamage: 95.9% DEF\n#4 Attacks 1 enemy, dealing 123 damage.\nDamage: 120.3% DEF\n#5 Attacks 1 enemy, dealing 149 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 24 Ultimate Mana.\nDamage: 145.7% DEF\nDamage: if the hit lands as a critical hit"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 51 damage.\nDamage: 50% DEF\n#2 Attacks 1 enemy, dealing 77 damage.\nDamage: 75% DEF\n#3 Attacks 1 enemy, dealing 104 damage.\nDamage: 102% DEF\n#4 Attacks 1 enemy, dealing 131 damage.\nDamage: 128% DEF\n#5 Attacks 1 enemy, dealing 158 damage. Attacks the target, dealing (if the hit lands as a critical hit) damage Tatsulow gains 25 Ultimate Mana.\nDamage: 155% DEF\nDamage: if the hit lands as a critical hit"
+    }
+   ]
+  },
+  {
+   "name": "Pound Fools",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kingpin-tatsulow/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 158 damage. If the hit lands as a critical hit Tatsulow gains 20 Ultimate Mana. Damage increases by 10% per debuff on the target, limited up to +50% damage.\n#1 Damage: 155% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 168 damage. If the hit lands as a critical hit Tatsulow gains 20 Ultimate Mana. Damage increases by 12% per debuff on the target, limited up to +50% damage.\n#1 Damage: 164.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 177 damage. If the hit lands as a critical hit Tatsulow gains 25 Ultimate Mana. Damage increases by 12% per debuff on the target, limited up to +60% damage.\n#1 Damage: 173.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 193 damage. If the hit lands as a critical hit Tatsulow gains 25 Ultimate Mana. Damage increases by 14% per debuff on the target, limited up to +60% damage.\n#1 Damage: 189.1% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 212 damage. If the hit lands as a critical hit Tatsulow gains 25 Ultimate Mana. Damage increases by 14% per debuff on the target, limited up to +70% damage.\n#1 Damage: 207.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 228 damage. If the hit lands as a critical hit Tatsulow gains 30 Ultimate Mana. Damage increases by 16% per debuff on the target, limited up to +70% damage.\n#1 Damage: 223.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 247 damage. If the hit lands as a critical hit Tatsulow gains 30 Ultimate Mana. Damage increases by 16% per debuff on the target, limited up to +80% damage.\n#1 Damage: 241.8% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 262 damage. If the hit lands as a critical hit Tatsulow gains 30 Ultimate Mana. Damage increases by 18% per debuff on the target, limited up to +80% damage.\n#1 Damage: 257.3% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 281 damage. If the hit lands as a critical hit Tatsulow gains 35 Ultimate Mana. Damage increases by 18% per debuff on the target, limited up to +90% damage.\n#1 Damage: 275.9% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 297 damage. If the hit lands as a critical hit Tatsulow gains 35 Ultimate Mana. Damage increases by 20% per debuff on the target, limited up to +90% damage.\n#1 Damage: 291.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 316 damage. If the hit lands as a critical hit Tatsulow gains 40 Ultimate Mana. Damage increases by 20% per debuff on the target, limited up to +100% damage.\n#1 Damage: 310% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Draw Strength",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kingpin-tatsulow/skills/2.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": {
+    "ult": "+32",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 163 damage. Casts a [Shield] buff on Tatsulow, lasting 12s. The [Shield] is equal to (35% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.5s for each critical hit.\n#1 Damage: 160% DEF\n#2 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 173 damage. Casts a [Shield] buff on Tatsulow, lasting 12s. The [Shield] is equal to (35% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.6s for each critical hit.\n#1 Damage: 169.6% DEF\n#2 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 183 damage. Casts a [Shield] buff on Tatsulow, lasting 12s. The [Shield] is equal to (40% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.6s for each critical hit.\n#1 Damage: 179.2% DEF\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 199 damage. Casts a [Shield] buff on Tatsulow, lasting 13s. The [Shield] is equal to (40% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.7s for each critical hit.\n#1 Damage: 195.2% DEF\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 219 damage. Casts a [Shield] buff on Tatsulow, lasting 13s. The [Shield] is equal to (40% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.7s for each critical hit.\n#1 Damage: 214.4% DEF\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 235 damage. Casts a [Shield] buff on Tatsulow, lasting 13s. The [Shield] is equal to (40% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.8s for each critical hit.\n#1 Damage: 230.4% DEF\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 255 damage. Casts a [Shield] buff on Tatsulow, lasting 13s. The [Shield] is equal to (50% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.8s for each critical hit.\n#1 Damage: 249.6% DEF\n#2 Shield: 50% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 271 damage. Casts a [Shield] buff on Tatsulow, lasting 13s. The [Shield] is equal to (50% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.9s for each critical hit.\n#1 Damage: 265.6% DEF\n#2 Shield: 50% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 290 damage. Casts a [Shield] buff on Tatsulow, lasting 13s. The [Shield] is equal to (60% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 0.9s for each critical hit.\n#1 Damage: 284.8% DEF\n#2 Shield: 60% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 307 damage. Casts a [Shield] buff on Tatsulow, lasting 15s. The [Shield] is equal to (60% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 1s for each critical hit.\n#1 Damage: 300.8% DEF\n#2 Shield: 60% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 6x6m area in front of Tatsulow, dealing 326 damage. Casts a [Shield] buff on Tatsulow, lasting 15s. The [Shield] is equal to (70% * Damage Dealt). Then, reduces the cooldown of a random Active Skill on Tatsulow by 1s for each critical hit.\n#1 Damage: 320% DEF\n#2 Shield: 70% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Reverb Crater",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kingpin-tatsulow/skills/3.webp",
+   "effects": [
+    {
+     "label": "Deflection",
+     "group": "Buffs",
+     "description": "Redirects a percentage of all incoming damage from the recipient of the buff to the caster of the buff. The recipient takes the remainder of the damage as normal."
+    }
+   ],
+   "manaGen": {
+    "ult": "+101",
+    "titan": "+55"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 115 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 77 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1s for each critical hit. \nCasts a [15% Deflection] buff on 10 allies in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 15% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 112.5% DEF\n#2 Damage: 112.5% DEF\n#3 Damage: 75% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 122 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 81 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.2s for each critical hit. \nCasts a [15% Deflection] buff on 10 allies in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 15% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 119.2% DEF\n#2 Damage: 119.2% DEF\n#3 Damage: 79.5% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 129 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 86 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.2s for each critical hit. \nCasts a [20% Deflection] buff on 10 allies in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 126% DEF\n#2 Damage: 126% DEF\n#3 Damage: 84% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 140 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 93 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.4s for each critical hit. \nCasts a [20% Deflection] buff on 10 allies in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 137.2% DEF\n#2 Damage: 137.2% DEF\n#3 Damage: 91.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 154 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 103 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.4s for each critical hit. \nCasts a [20% Deflection] buff on 10 allies in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 150.8% DEF\n#2 Damage: 150.8% DEF\n#3 Damage: 100.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 165 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 110 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.6s for each critical hit. \nCasts a [20% Deflection] buff on 10 allies in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 20% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 162% DEF\n#2 Damage: 162% DEF\n#3 Damage: 108% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 179 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 119 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.6s for each critical hit. \nCasts a [25% Deflection] buff on 10 allies in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 175.5% DEF\n#2 Damage: 175.5% DEF\n#3 Damage: 117% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 190 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 127 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.8s for each critical hit. \nCasts a [25% Deflection] buff on 10 allies in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 186.8% DEF\n#2 Damage: 186.8% DEF\n#3 Damage: 124.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 204 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 136 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 1.8s for each critical hit. \nCasts a [25% Deflection] buff on 10 allies in a 15m radius, lasting 16s. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 200.2% DEF\n#2 Damage: 200.2% DEF\n#3 Damage: 133.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 216 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 144 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 2s for each critical hit. \nCasts a [25% Deflection] buff on 10 allies in a 15m radius, lasting 16s. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 211.5% DEF\n#2 Damage: 211.5% DEF\n#3 Damage: 141% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 230 damage per hit. Attacks 10 enemies in a 7m radius around Tatsulow, dealing 153 damage. If the third hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Tatsulow by 2s for each critical hit. \nCasts a [30% Deflection] buff on 10 allies in a 15m radius, lasting 16s. Targets under [Deflection] buffs will redirect 30% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 225% DEF\n#2 Damage: 225% DEF\n#3 Damage: 150% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Collect Dues",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kingpin-tatsulow/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 281 damage per hit. Tatsulow gains 100 Titan Mana on each hit. \nTatsulow gains 200 Titan Mana on critical hits instead.\n#1 Damage: 275% DEF\n#2 Damage: 275% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 297 damage per hit. Tatsulow gains 110 Titan Mana on each hit. \nTatsulow gains 220 Titan Mana on critical hits instead.\n#1 Damage: 291.5% DEF\n#2 Damage: 291.5% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 314 damage per hit. Tatsulow gains 120 Titan Mana on each hit. \nTatsulow gains 240 Titan Mana on critical hits instead.\n#1 Damage: 308% DEF\n#2 Damage: 308% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 342 damage per hit. Tatsulow gains 130 Titan Mana on each hit. \nTatsulow gains 260 Titan Mana on critical hits instead.\n#1 Damage: 335.5% DEF\n#2 Damage: 335.5% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 376 damage per hit. Tatsulow gains 140 Titan Mana on each hit. \nTatsulow gains 280 Titan Mana on critical hits instead.\n#1 Damage: 368.5% DEF\n#2 Damage: 368.5% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 404 damage per hit. Tatsulow gains 150 Titan Mana on each hit. \nTatsulow gains 300 Titan Mana on critical hits instead.\n#1 Damage: 396% DEF\n#2 Damage: 396% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 438 damage per hit. Tatsulow gains 160 Titan Mana on each hit. \nTatsulow gains 320 Titan Mana on critical hits instead.\n#1 Damage: 429% DEF\n#2 Damage: 429% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 466 damage per hit. Tatsulow gains 170 Titan Mana on each hit. \nTatsulow gains 340 Titan Mana on critical hits instead.\n#1 Damage: 456.5% DEF\n#2 Damage: 456.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 499 damage per hit. Tatsulow gains 180 Titan Mana on each hit. \nTatsulow gains 360 Titan Mana on critical hits instead.\n#1 Damage: 489.5% DEF\n#2 Damage: 489.5% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 527 damage per hit. Tatsulow gains 190 Titan Mana on each hit. \nTatsulow gains 380 Titan Mana on critical hits instead.\n#1 Damage: 517% DEF\n#2 Damage: 517% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 561 damage per hit. Tatsulow gains 200 Titan Mana on each hit. \nTatsulow gains 400 Titan Mana on critical hits instead.\n#1 Damage: 550% DEF\n#2 Damage: 550% DEF"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Before his exile, Tatsulow controlled a vast mafia in the Evernight Basin, and he could threaten even the Old Blood Barons. Revolution cost him much – his wealth, his contacts, his businesses… but his strength is no less than it ever was. Anyone trying to settle a score had better bring an army.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "A+",
+  "hyxxis": "S+",
+  "koltmos": "A+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "S",
+  "omnissi-light": "E",
+  "omnissi-water": "A+",
+  "omnissi-wind": "S",
+  "pentiax": "A+",
+  "sakiel": "E",
+  "sorgott": "A+",
+  "ulgorim": "A+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 58.9,
+  "lists": 16
+ }
+}

@@ -1,0 +1,281 @@
+{
+ "id": 77,
+ "slug": "tianlong",
+ "name": "Tianlong",
+ "title": "Heavenly Dragon",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "For ages, the Heavenly Dragon guarded the dwellings of the gods, and people believed spotting it in the night sky meant good fortune. Since the merging of divine and mortal realms, Tianlong’s charge now includes guarding Tian as a whole. The dragon’s strength is stretched thin, potentially leaving the gods’ homes vulnerable to dangers they previously were not.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Tianlong.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Tianlong_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 65,
+  "def": 109,
+  "spd": 102,
+  "init": 98,
+  "acc": 20,
+  "res": 85,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Also resets the cooldown of this hero’s Core Ability.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "When an ally [Intercept] expires, place [Intercept] on them for 1 turn.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Dragon's Edict",
+   "description": "Attack 1 enemy 175%DEF+150%ATK with a 75% chance to place [ATK Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/tianlong/ICON_Tianlong_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "175%DEF+150%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Aerial Aegis",
+   "description": "Place [Immortal] on this hero for 2 turns then, and place [Intercept] on all allies except this hero for 2 turns. If an ally already has [Intercept], increase the duration by 1 turn instead.",
+   "icon_url": "/godforge/abilities/tianlong/ICON_Tianlong_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "When an ally Intercept expires, place Intercept on them for 1 turn.",
+     "upgrade_description": "When an ally [Intercept] expires, place [Intercept] on them for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "60 RES in All Battles",
+   "icon_url": "/godforge/abilities/tianlong/ICON_Leader_Resistance.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Skybound Ward",
+   "description": "When damaged by [Intercept], heal 100%DEF the attacked ally and place [Barrier] 50%DEF on this hero.",
+   "icon_url": "/godforge/abilities/tianlong/ICON_Tianlong_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Mandate of Heaven",
+   "description": "Remove all Debuffs from all allies, and attack all enemies 245%DEF+215%ATK. Also increase the DEF of all allies by 10% (stacking up to 3 times), and increase the duration of [Intercept] on all allies by 1 turn.",
+   "icon_url": "/godforge/abilities/tianlong/ICON_Tianlong_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "245%DEF+215%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Also resets the cooldown of this hero’s Core Ability.",
+     "upgrade_description": "Also resets the cooldown of this hero’s Core Ability."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Skybound Ward",
+   "description": "When damaged by [Intercept], heal 50%DEF the attacked ally and place [Barrier] 50%DEF on this hero.",
+   "icon_url": "/godforge/abilities/tianlong/ICON_Tianlong_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

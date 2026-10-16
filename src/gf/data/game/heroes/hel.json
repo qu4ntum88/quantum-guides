@@ -1,0 +1,306 @@
+{
+ "id": 50,
+ "slug": "hel",
+ "name": "Hel",
+ "title": "Queen of Helheim",
+ "summary": "Summon the dead to fight for you as your foes fall in battle and empower your attacks.",
+ "lore": "The Lady of Graves rules over the dead of Asgard who perish of illness and old age. Hers is a joyless domain, but then, she is often a cold and pitiless goddess. But in Ryven, as she negotiates with the mysterious \"Shadow Council\" formed by Osiris, the lonely Hel finds herself falling in love with a most unlikely figure…",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Hel.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Hel_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 115,
+  "def": 94,
+  "spd": 97,
+  "init": 96,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Enemies under [Shade], inflict 50% more damage when joining with Hel's Basic Attack.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If any enemy is defeated, this hero gain's an Extra Turn.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each [Shade] that joins the attack will inflict an additional 10% of the target's MAX HP.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Grim Reception",
+   "description": "Attack 1 enemy 420%ATK. If the target is under Hex, inflict an additional 5% of the target's MAX HP.",
+   "icon_url": "/godforge/abilities/hel/ICON_Hel_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "420%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each Shade that joins the attack will inflict an additional 10% of the target's MAX HP.",
+     "upgrade_description": "Each [Shade] that joins the attack will inflict an additional 10% of the target's MAX HP."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Roots of Yggdrasil",
+   "description": "Attack all enemies 345%ATK, then has an 80% chance to place [DEF Down II] and [Hex II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/hel/ICON_Hel_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "35% ATK in Arena Battles",
+   "icon_url": "/godforge/abilities/hel/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Helheim's Hold",
+   "description": "When this hero defeats an enemy, increase this hero's Divinity by 100%.",
+   "icon_url": "/godforge/abilities/hel/ICON_Hel_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 2,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If any enemy is defeated, this hero gain's an Extra Turn.",
+     "upgrade_description": "If any enemy is defeated, this hero gain's an Extra Turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "The Dead that are Due",
+   "description": "Attack all enemies 345%ATK. Revive all dead enemies, then place [Shade] on each revived enemy. The [Shade] cannot be resisted or blocked. Does not work on Bosses or Minions.\n\nIf target is a Boss or Minion, place [Corrupt] on the target for 2 turns instead.",
+   "icon_url": "/godforge/abilities/hel/ICON_Hel_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Shade",
+     "target": "AllEnemyDead",
+     "target_label": "AllEnemyDead",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Corrupt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Enemies under Shade, inflict 50% more damage when joining with Hel's Basic Attack.",
+     "upgrade_description": "Enemies under [Shade], inflict 50% more damage when joining with Hel's Basic Attack."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Helheim's Hold",
+   "description": "When this hero defeats an enemy, increase this hero's Divinity by 50%.",
+   "icon_url": "/godforge/abilities/hel/ICON_Hel_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 2,
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

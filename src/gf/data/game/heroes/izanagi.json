@@ -1,0 +1,282 @@
+{
+ "id": 51,
+ "slug": "izanagi",
+ "name": "Izanagi",
+ "title": "Great Father",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "After his failure at retrieving Izanami from the underworld, and his accidental creation of new gods, Izanagi largely left Izumo behind. He has returned from his hermitage, however, taking the Shattering as a personal affront. His efforts on Izumo’s behalf sometimes put him at odds with the rest of the pantheon, as he makes little effort to coordinate with them.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Izanagi.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Izanagi_main.png",
+ "stats": {
+  "hp": 1470,
+  "atk": 57,
+  "def": 103,
+  "spd": 113,
+  "init": 93,
+  "acc": 15,
+  "res": 40,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Each time an enemy gains a Buff, increase the Turn Meter of this hero by 10%. This can trigger up to 1 time per enemy turn.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Increase the Turn Meter of all allies by 5%.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "After using Ultimate Ability, this hero empowers the next ally Ultimate Ability and will restore 30% of their Divinity after use.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Celestial Slash",
+   "description": "Attack 1 enemy 340%ATK+50%FTH. Increase the Divinity of all allies by 5%. If Izanami is an ally, she will join the attack.",
+   "icon_url": "/godforge/abilities/izanagi/ICON_Izanagi_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "340%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Increase the Turn Meter of all allies by 5%.",
+     "upgrade_description": "Increase the Turn Meter of all allies by 5%."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Blessed Infusion",
+   "description": "Place [FTH Up II] on all allies for 2 turns. Reduce the Divinity Cost of all allies by 5% (Up to 3 times).",
+   "icon_url": "/godforge/abilities/izanagi/ICON_Izanagi_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "FTH Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "25% FTH in Dungeon Battles",
+   "icon_url": "/godforge/abilities/izanagi/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Breath of Life",
+   "description": "For every 5 Buff placed on the enemy team, activate this hero’s Basic Ability against the enemy with the highest Turn Meter.",
+   "icon_url": "/godforge/abilities/izanagi/ICON_Izanagi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Each time an enemy gains a Buff, increase the Turn Meter of this hero by 10%. This can trigger up to 1 time per enemy turn.",
+     "upgrade_description": "Each time an enemy gains a Buff, increase the Turn Meter of this hero by 10%. This can trigger up to 1 time per enemy turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Purification",
+   "description": "Place [ATK Up II] on all allies for 2 turns then increase the Divinity of all allies by 20%. Also increases the damage of each ally’s next Ultimate Ability by 30%.\n\nIf Izanami is an ally and has been defeated, revive her with 50% HP and 100% Turn Meter.",
+   "icon_url": "/godforge/abilities/izanagi/ICON_Izanagi_Ultimate.webp",
+   "divinity_cost": 4400,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "After using Ultimate Ability, this hero empowers the next ally Ultimate Ability and will restore 30% of their Divinity after use.",
+     "upgrade_description": "After using Ultimate Ability, this hero empowers the next ally Ultimate Ability and will restore 30% of their Divinity after use."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Breath of Life",
+   "description": "For every 5 Buff placed on the enemy team, activate this hero’s Basic Ability against the enemy with the highest Turn Meter.",
+   "icon_url": "/godforge/abilities/izanagi/ICON_Izanagi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

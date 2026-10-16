@@ -1,0 +1,549 @@
+{
+ "slug": "bowrai",
+ "kind": "Invoker",
+ "name": "Bowrai",
+ "faction": "Cambion",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/bowrai/portrait.webp",
+ "fullArt": "/invokers/units/invokers/bowrai/full.webp",
+ "stats": {
+  "base": {
+   "Health": "340",
+   "Attack": "32",
+   "Defense": "34",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "96"
+  },
+  "max": {
+   "Health": "4,372",
+   "Attack": "469",
+   "Defense": "427",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "126"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/bowrai/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+109",
+    "titan": "+59"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 21.5% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 30% ATK\n#3 Attacks 1 enemy, dealing 12 damage.\nDamage: 38% ATK\n#4 Attacks 1 enemy, dealing 15 damage.\nDamage: 47.5% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 11 damage.\nDamage: 33% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 22.8% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 31.8% ATK\n#3 Attacks 1 enemy, dealing 13 damage.\nDamage: 40.3% ATK\n#4 Attacks 1 enemy, dealing 16 damage.\nDamage: 50.3% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 11 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 24.1% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 33.6% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 42.6% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 53.2% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 12 damage.\nDamage: 37% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 26.2% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 36.6% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 46.4% ATK\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 58% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 13 damage.\nDamage: 40.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 28.8% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 40.2% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 50.9% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 63.7% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 14 damage.\nDamage: 44.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 31% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 43.2% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 54.7% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 68.4% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 15 damage.\nDamage: 47.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 46.8% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 59.3% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 74.1% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 16 damage.\nDamage: 51.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 35.7% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 49.8% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 63.1% ATK\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 78.8% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 18 damage.\nDamage: 54.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 38.3% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 53.4% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 67.6% ATK\n#4 Attacks 1 enemy, dealing 27 damage.\nDamage: 84.5% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 19 damage.\nDamage: 58.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 40.4% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 56.4% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 71.4% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 89.3% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 20 damage.\nDamage: 62% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 43% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 60% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 76% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 95% ATK\n#5 Attacks 1 enemy in a 2m radius around Bowrai, dealing 21 damage.\nDamage: 66% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shock Hide",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/bowrai/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+83",
+    "titan": "+45"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 19 damage per hit.\n#1 Damage: 60.5% ATK\n#2 Damage: 60.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 21 damage per hit.\n#1 Damage: 64.1% ATK\n#2 Damage: 64.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 22 damage per hit.\n#1 Damage: 67.8% ATK\n#2 Damage: 67.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 24 damage per hit.\n#1 Damage: 73.8% ATK\n#2 Damage: 73.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 26 damage per hit.\n#1 Damage: 81.1% ATK\n#2 Damage: 81.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 28 damage per hit.\n#1 Damage: 87.1% ATK\n#2 Damage: 87.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 30 damage per hit.\n#1 Damage: 94.4% ATK\n#2 Damage: 94.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 32 damage per hit.\n#1 Damage: 100.4% ATK\n#2 Damage: 100.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 34 damage per hit.\n#1 Damage: 107.7% ATK\n#2 Damage: 107.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 36 damage per hit.\n#1 Damage: 113.7% ATK\n#2 Damage: 113.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 39 damage per hit.\n#1 Damage: 121% ATK\n#2 Damage: 121% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Mana Draw",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/bowrai/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage. Bowrai gains 30 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 244.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage. Bowrai gains 30 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 259.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage. Bowrai gains 30 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 273.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 95 damage. Bowrai gains 33 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 298.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage. Bowrai gains 33 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 113 damage. Bowrai gains 36 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 352.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage. Bowrai gains 36 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 381.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage. Bowrai gains 40 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 405.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage. Bowrai gains 40 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 435.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 147 damage. Bowrai gains 45 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 459.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 156 damage. Bowrai gains 50 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 489% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Skyward Scour",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/bowrai/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+70",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 41 damage per hit. Launches the target for 1s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 127.5% ATK\n#2 Damage: 127.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 43 damage per hit. Launches the target for 1.1s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 135.1% ATK\n#2 Damage: 135.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 46 damage per hit. Launches the target for 1.1s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 142.8% ATK\n#2 Damage: 142.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 50 damage per hit. Launches the target for 1.2s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 155.6% ATK\n#2 Damage: 155.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 55 damage per hit. Launches the target for 1.2s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 170.9% ATK\n#2 Damage: 170.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 59 damage per hit. Launches the target for 1.3s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 183.6% ATK\n#2 Damage: 183.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 64 damage per hit. Launches the target for 1.3s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 198.9% ATK\n#2 Damage: 198.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 68 damage per hit. Launches the target for 1.4s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 211.6% ATK\n#2 Damage: 211.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 73 damage per hit. Launches the target for 1.4s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 226.9% ATK\n#2 Damage: 226.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 77 damage per hit. Launches the target for 1.5s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 239.7% ATK\n#2 Damage: 239.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 82 damage per hit. Launches the target for 1.5s on the second hit.\nAccuracy required for: Launch\n#1 Damage: 255% ATK\n#2 Damage: 255% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Call the Storm",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/bowrai/skills/4.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 68 damage. Casts a [5% Weaken] debuff on the targets, lasting 6s, increasing all damage taken by 5%.\nAccuracy required for: Weaken\n#1 Damage: 212.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 72 damage. Casts a [5% Weaken] debuff on the targets, lasting 6s, increasing all damage taken by 5%.\nAccuracy required for: Weaken\n#1 Damage: 225.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 76 damage. Casts a [5% Weaken] debuff on the targets, lasting 7s, increasing all damage taken by 5%.\nAccuracy required for: Weaken\n#1 Damage: 238% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 83 damage. Casts a [6% Weaken] debuff on the targets, lasting 7s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 259.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 91 damage. Casts a [6% Weaken] debuff on the targets, lasting 7s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 284.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 98 damage. Casts a [6% Weaken] debuff on the targets, lasting 8s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 306% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 106 damage. Casts a [7% Weaken] debuff on the targets, lasting 8s, increasing all damage taken by 7%.\nAccuracy required for: Weaken\n#1 Damage: 331.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 113 damage. Casts a [7% Weaken] debuff on the targets, lasting 8s, increasing all damage taken by 7%.\nAccuracy required for: Weaken\n#1 Damage: 352.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 121 damage. Casts a [7% Weaken] debuff on the targets, lasting 9s, increasing all damage taken by 7%.\nAccuracy required for: Weaken\n#1 Damage: 378.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 128 damage. Casts a [9% Weaken] debuff on the targets, lasting 9s, increasing all damage taken by 9%.\nAccuracy required for: Weaken\n#1 Damage: 399.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 7 enemies in a 5m radius around Bowrai, from a distance of 2m, dealing 136 damage. Casts a [9% Weaken] debuff on the targets, lasting 9s, increasing all damage taken by 9%.\nAccuracy required for: Weaken\n#1 Damage: 425% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Bowrai has the strangest ranch in the world – an island covered in a herd of immortal monsters caged by the lightning that flows through his blood. Awesome, sure, but not compared to the greatest tournaments in the world going down an island away. He wants in there, and he’s done waiting.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

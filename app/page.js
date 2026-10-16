@@ -6,18 +6,50 @@ import JsonLd from './components/JsonLd'
 export const metadata = pageMeta({
   title: 'Quantum Game Guides: DC: Dark Legion Tier Lists & Guides',
   description:
-    'DC: Dark Legion champion and legacy tier lists, best teams, Combat Cycle boss guides, a Battle for Gotham planner and written guides, plus Void Hunters guides.',
+    'DC: Dark Legion champion and legacy tier lists, best teams, Combat Cycle boss guides and a Battle for Gotham planner, plus Godforge, Invokers: Titan Legacy and Void Hunters tier lists and hero databases.',
   path: '/',
 })
 
-// Direct links from the homepage to the pages people search for most.
-const POPULAR = [
+// Direct links from the homepage to the pages people search for most, per game.
+const POPULAR_DCDL = [
   { label: 'Champion Tier List', href: '/games/dc-dark-legion/champion-tier-list' },
   { label: 'Legacy Tier List', href: '/games/dc-dark-legion/legacy-tier-list' },
   { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
   { label: 'Combat Cycle Bosses', href: '/games/dc-dark-legion/combat-cycle' },
   { label: 'Gotham Planner', href: '/games/dc-dark-legion/ship-combat-guides' },
   { label: 'Guides', href: '/games/dc-dark-legion/guides' },
+]
+
+const POPULAR = [
+  { section: 'dcdl', game: 'DC: Dark Legion', links: POPULAR_DCDL },
+  {
+    section: 'invokers',
+    game: 'Invokers: Titan Legacy',
+    links: [
+      { label: 'Invoker Tier List', href: '/games/invokers/invoker-tier-list' },
+      { label: 'Titan Tier List', href: '/games/invokers/titan-tier-list' },
+      { label: 'Status Effects', href: '/games/invokers/status-effects' },
+      { label: 'Hub', href: '/games/invokers/guides' },
+    ],
+  },
+  {
+    section: 'voidHunters',
+    game: 'Void Hunters',
+    links: [
+      { label: 'Hunter Tier List', href: '/games/void-hunters/hunter-tier-list' },
+      { label: 'Status Effects', href: '/games/void-hunters/status-effects' },
+      { label: 'Hub', href: '/games/void-hunters/guides' },
+    ],
+  },
+  {
+    section: 'godforge',
+    game: 'Godforge',
+    links: [
+      { label: 'Hero Tier List', href: '/games/godforge/hero-tier-list' },
+      { label: 'Dungeons', href: '/games/godforge/dungeons' },
+      { label: 'Hub', href: '/games/godforge' },
+    ],
+  },
 ]
 
 export default function Home() {
@@ -39,6 +71,15 @@ export default function Home() {
       description: 'Hero collector RPG built around strategic team composition — gods, myths, and legends across deep progression systems.',
       accent: '#a855f7',
       image: '/images/games/godforgemain.png'
+    },
+    {
+      id: 'invokers',
+      section: 'invokers',
+      name: 'Invokers: Titan Legacy',
+      href: '/games/invokers/guides',
+      description: 'Action RPG of Invokers and the Titans bound to them — tier lists for every boss, plus every Invoker and Titan kit at every level.',
+      accent: '#4ee5e0',
+      image: '/images/games/invokersmain.webp'
     },
     {
       id: 'void-hunters',
@@ -103,16 +144,16 @@ export default function Home() {
               </a>
             ))}
           </div>
-          {PUBLIC_SECTIONS.dcdl && (
-            <nav className="lp-popular" aria-label="Popular DC: Dark Legion pages">
-              <span className="lp-section-text">Popular for DC: Dark Legion</span>
+          {POPULAR.filter((g) => PUBLIC_SECTIONS[g.section]).map((g) => (
+            <nav key={g.section} className="lp-popular" aria-label={`Popular ${g.game} pages`}>
+              <span className="lp-section-text">Popular for {g.game}</span>
               <div className="lp-popular-links">
-                {POPULAR.map((p) => (
+                {g.links.map((p) => (
                   <a key={p.href} href={p.href} className="lp-popular-link">{p.label}</a>
                 ))}
               </div>
             </nav>
-          )}
+          ))}
         </div>
       </section>
 

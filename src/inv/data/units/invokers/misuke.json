@@ -1,0 +1,549 @@
+{
+ "slug": "misuke",
+ "kind": "Invoker",
+ "name": "Misuke",
+ "faction": "Cambion",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/misuke/portrait.webp",
+ "fullArt": "/invokers/units/invokers/misuke/full.webp",
+ "stats": {
+  "base": {
+   "Health": "528",
+   "Attack": "59",
+   "Defense": "47",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "91"
+  },
+  "max": {
+   "Health": "6,173",
+   "Attack": "792",
+   "Defense": "540",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "121"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/misuke/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+73",
+    "titan": "+40"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 34% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 46.5% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 68.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 72.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 38.1% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 52.1% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 76.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 41.5% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 56.7% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 83.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 45.6% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 62.3% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 91.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 49% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 98.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 53% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 72.5% ATK\n#4 Attacks 1 enemy, dealing 53 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 106.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 56.4% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 113.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 60.5% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 82.8% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 72 damage.\nDamage: 121.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 87.4% ATK\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 76 damage.\nDamage: 128.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 68% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 93% ATK\n#4 Attacks 1 enemy, dealing 68 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 81 damage.\nDamage: 137% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sai Split",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/misuke/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 95 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 113 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 130 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 147 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 156 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cutting Crest",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/misuke/skills/2.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 164 damage. Casts a [35% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 35%.\nAccuracy required for: Heal Reduction\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 174 damage. Casts a [38% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 38%.\nAccuracy required for: Heal Reduction\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 200 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 219 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 236 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 255 damage. Casts a [45% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 45%.\nAccuracy required for: Heal Reduction\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 272 damage. Casts a [45% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 45%.\nAccuracy required for: Heal Reduction\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 291 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 11s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 308 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 327 damage. Casts a [55% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 55%.\nAccuracy required for: Heal Reduction\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Pounding Surf",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/misuke/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+54",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 84 damage per hit. This hit has +4% extra Crit Rate per buff. This hit has +4% extra Crit DMG per buff.\n#1 Damage: 142% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 89 damage per hit. This hit has +4.5% extra Crit Rate per buff. This hit has +4% extra Crit DMG per buff.\n#1 Damage: 150.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 94 damage per hit. This hit has +4.5% extra Crit Rate per buff. This hit has +4% extra Crit DMG per buff.\n#1 Damage: 159% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 102 damage per hit. This hit has +4.5% extra Crit Rate per buff. This hit has +4.5% extra Crit DMG per buff.\n#1 Damage: 173.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 112 damage per hit. This hit has +4.5% extra Crit Rate per buff. This hit has +4.5% extra Crit DMG per buff.\n#1 Damage: 190.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 121 damage per hit. This hit has +5% extra Crit Rate per buff. This hit has +4.5% extra Crit DMG per buff.\n#1 Damage: 204.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 131 damage per hit. This hit has +5% extra Crit Rate per buff. This hit has +5% extra Crit DMG per buff.\n#1 Damage: 221.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 139 damage per hit. This hit has +5% extra Crit Rate per buff. This hit has +5% extra Crit DMG per buff.\n#1 Damage: 235.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 149 damage per hit. This hit has +6% extra Crit Rate per buff. This hit has +5% extra Crit DMG per buff.\n#1 Damage: 252.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 158 damage per hit. This hit has +6% extra Crit Rate per buff. This hit has +6% extra Crit DMG per buff.\n#1 Damage: 267% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 168 damage per hit. This hit has +6% extra Crit Rate per buff. This hit has +6% extra Crit DMG per buff.\n#1 Damage: 284% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wave Breaker",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/misuke/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 137 damage. Reduces the cooldown of a random Active Skill on Misuke by 5s.\n#1 Damage: 233% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 146 damage. Reduces the cooldown of a random Active Skill on Misuke by 5.4s.\n#1 Damage: 247% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 154 damage. Reduces the cooldown of a random Active Skill on Misuke by 5.6s.\n#1 Damage: 261% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 168 damage. Reduces the cooldown of a random Active Skill on Misuke by 5.8s.\n#1 Damage: 284.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 184 damage. Reduces the cooldown of a random Active Skill on Misuke by 5.8s.\n#1 Damage: 312.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 198 damage. Reduces the cooldown of a random Active Skill on Misuke by 6s.\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 214 damage. Reduces the cooldown of a random Active Skill on Misuke by 6s.\n#1 Damage: 363.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 228 damage. Reduces the cooldown of a random Active Skill on Misuke by 6.2s.\n#1 Damage: 386.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 245 damage. Reduces the cooldown of a random Active Skill on Misuke by 6.5s.\n#1 Damage: 414.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 258 damage. Reduces the cooldown of a random Active Skill on Misuke by 7s.\n#1 Damage: 438% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 5m semicircle in front of Misuke, dealing 275 damage. Reduces the cooldown of a random Active Skill on Misuke by 7s.\n#1 Damage: 466% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Misuke was a martial arts prodigy, and he knew it. He might have become a true master, but his teacher was killed by a rival, and Misuke could not bear the insult. He abandoned his training to hunt down the killers… if only he knew which rival did the killing.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "D",
+  "hyxxis": "C",
+  "koltmos": "C",
+  "omnissi-astral": "D",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "C",
+  "omnissi-wind": "D",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "D",
+  "ulgorim": "B",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 25.9,
+  "lists": 16
+ }
+}

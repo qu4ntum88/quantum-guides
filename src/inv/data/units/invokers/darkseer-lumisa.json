@@ -1,0 +1,549 @@
+{
+ "slug": "darkseer-lumisa",
+ "kind": "Invoker",
+ "name": "Darkseer Lumisa",
+ "faction": "Lightseekers",
+ "rarity": "Rare",
+ "class": "Support",
+ "element": "Dark",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/darkseer-lumisa/portrait.webp",
+ "fullArt": "/invokers/units/invokers/darkseer-lumisa/full.webp",
+ "stats": {
+  "base": {
+   "Health": "528",
+   "Attack": "47",
+   "Defense": "59",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "6,629",
+   "Attack": "585",
+   "Defense": "684",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "131"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/darkseer-lumisa/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 18% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 22.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 6 damage.\nDamage: 13.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 19.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 23.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 7 damage.\nDamage: 14.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 14.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 20.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 25.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 7 damage.\nDamage: 15.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 11% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 15.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 22% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 27.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 16.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 12.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 17.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 24.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 30.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 9 damage.\nDamage: 18.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 18.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 25.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 32.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 9 damage.\nDamage: 19.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 14% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 20.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 35.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 10 damage.\nDamage: 21.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 14.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 21.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 29.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 37.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 22.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 16% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 23.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 32% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 40% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 24% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 24.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 33.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 42.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 25.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 18% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 26% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 36% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 45% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 27% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vision of Chains",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/darkseer-lumisa/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 46 damage.\n#1 Damage: 97.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 49 damage.\n#1 Damage: 103.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 51 damage.\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 56 damage.\n#1 Damage: 119% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 61 damage.\n#1 Damage: 130.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 66 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 71 damage.\n#1 Damage: 152.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 76 damage.\n#1 Damage: 161.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 82 damage.\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 86 damage.\n#1 Damage: 183.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 92 damage.\n#1 Damage: 195% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vision of Weakness",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/darkseer-lumisa/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+78",
+    "titan": "+43"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 47 damage. Extends the duration of 1 random debuff on the target by 2s. Then, extends the duration of 1 random [Bleed] debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 99% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 49 damage. Extends the duration of 1 random debuff on the target by 2s. Then, extends the duration of 1 random [Bleed] debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 104.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 52 damage. Extends the duration of 1 random debuff on the target by 2.5s. Then, extends the duration of 1 random [Bleed] debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 110.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 57 damage. Extends the duration of 1 random debuff on the target by 2.5s. Then, extends the duration of 1 random [Bleed] debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 120.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 62 damage. Extends the duration of 1 random debuff on the target by 2.75s. Then, extends the duration of 1 random [Bleed] debuff on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 132.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 67 damage. Extends the duration of 1 random debuff on the target by 2.75s. Then, extends the duration of up to 2 [Bleed] debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 142.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 73 damage. Extends the duration of 1 random debuff on the target by 2.75s. Then, extends the duration of up to 2 [Bleed] debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 154.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage. Extends the duration of 1 random debuff on the target by 2.75s. Then, extends the duration of up to 2 [Bleed] debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 164.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 83 damage. Extends the duration of 1 random debuff on the target by 3.5s. Then, extends the duration of up to 2 [Bleed] debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 176.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 87 damage. Extends the duration of up to 2 random debuffs on the target by 3.5s. Then, extends the duration of up to 2 [Bleed] debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 186.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 93 damage. Extends the duration of up to 2 random debuffs on the target by 4s. Then, extends the duration of up to 2 [Bleed] debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 198% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vision of Vitality",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/darkseer-lumisa/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+46",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP in a 15m radius, restoring 94 HP.\n#1 Heal: 200% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP in a 15m radius, restoring 106 HP.\n#1 Heal: 225% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP in a 15m radius, restoring 106 HP.\n#1 Heal: 225% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP in a 15m radius, restoring 106 HP.\n#1 Heal: 225% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP in a 15m radius, restoring 118 HP.\n#1 Heal: 250% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Heals the 2 allies with the lowest current HP in a 15m radius, restoring 118 HP.\n#1 Heal: 250% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Heals the 2 allies with the lowest current HP in a 15m radius, restoring 129 HP.\n#1 Heal: 275% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Heals the 2 allies with the lowest current HP in a 15m radius, restoring 141 HP.\n#1 Heal: 300% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Heals the 2 allies with the lowest current HP in a 15m radius, restoring 141 HP.\n#1 Heal: 300% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Heals the 2 allies with the lowest current HP in a 15m radius, restoring 165 HP.\n#1 Heal: 350% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Heals the 2 allies with the lowest current HP in a 15m radius, restoring 188 HP.\n#1 Heal: 400% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Vision of Rebirth",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/darkseer-lumisa/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Casts a [25% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 10s. Revives the 1 dead allies with 15% HP."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Casts a [25% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 11s. Revives the 1 dead allies with 15% HP."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Casts a [25% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 11s. Revives the 1 dead allies with 17% HP."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Casts a [28% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 11s. Revives the 1 dead allies with 17% HP."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Casts a [31% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 11s. Revives the 1 dead allies with 17% HP."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Casts a [31% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 13s. Revives the 1 dead allies with 19% HP."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Casts a [34% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 13s. Revives the 1 dead allies with 19% HP."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Casts a [34% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 13s. Revives the 1 dead allies with 19% HP."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Casts a [34% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 15s. Revives the 1 dead allies with 22% HP."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Casts a [40% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 15s. Revives the 1 dead allies with 22% HP."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Casts a [40% ATK Up] buff on 10 allies in a 8m radius around Lumisa, lasting 15s. Revives the 1 dead allies with 25% HP."
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Blind Lumisa is a Voidgazer, bearer of a power passed down for generations. But she is alone: her people are hunted by light and darkness both, and if she cannot uncover the source of her magic, she may be the last of her kind.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "S",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "S",
+  "omnissi-dark": "B",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "S",
+  "sakiel": "S",
+  "sorgott": "B",
+  "ulgorim": "S",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 73.2,
+  "lists": 16
+ }
+}

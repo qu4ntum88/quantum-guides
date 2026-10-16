@@ -9,6 +9,7 @@ export default function robots(): MetadataRoute.Robots {
   const disallow = ['/api/', '/admin/', '/members']
   if (!PUBLIC_SECTIONS.godforge) disallow.push('/games/godforge')
   if (!PUBLIC_SECTIONS.voidHunters) disallow.push('/games/void-hunters')
+  if (!PUBLIC_SECTIONS.invokers) disallow.push('/games/invokers')
 
   return {
     rules: {

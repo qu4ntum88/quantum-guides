@@ -11,6 +11,8 @@ export type GfHeroStats = {
   acc: number
   res: number
   initial_divinity: number
+  crate?: number
+  cdmg?: number
 }
 
 export type GfHeroEffect = {

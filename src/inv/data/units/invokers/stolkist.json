@@ -1,0 +1,549 @@
+{
+ "slug": "stolkist",
+ "kind": "Invoker",
+ "name": "Stolkist",
+ "faction": "Stonehearts",
+ "rarity": "Uncommon",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/stolkist/portrait.webp",
+ "fullArt": "/invokers/units/invokers/stolkist/full.webp",
+ "stats": {
+  "base": {
+   "Health": "420",
+   "Attack": "46",
+   "Defense": "38",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "93"
+  },
+  "max": {
+   "Health": "5,144",
+   "Attack": "645",
+   "Defense": "453",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "123"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stolkist/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 21% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 32.5% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 42.5% ATK\n#4 Attacks 1 enemy, dealing 25 damage.\nDamage: 53.5% ATK\n#5 Attacks 1 enemy, dealing 30 damage.\nDamage: 65% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 22.3% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 34.4% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 45% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 56.7% ATK\n#5 Attacks 1 enemy, dealing 32 damage.\nDamage: 68.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 23.5% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 36.4% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 47.6% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 59.9% ATK\n#5 Attacks 1 enemy, dealing 33 damage.\nDamage: 72.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 25.6% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 39.6% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 51.9% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 65.3% ATK\n#5 Attacks 1 enemy, dealing 36 damage.\nDamage: 79.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 43.5% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 57% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 71.7% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 87.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 30.2% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 46.8% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 61.2% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 77% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 93.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 32.8% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 50.7% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 83.5% ATK\n#5 Attacks 1 enemy, dealing 47 damage.\nDamage: 101.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 34.9% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 53.9% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 70.6% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 88.8% ATK\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 107.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 57.8% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 75.7% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 95.2% ATK\n#5 Attacks 1 enemy, dealing 53 damage.\nDamage: 115.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 39.5% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 61.1% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 79.9% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 100.6% ATK\n#5 Attacks 1 enemy, dealing 56 damage.\nDamage: 122.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 42% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 65% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 85% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 107% ATK\n#5 Attacks 1 enemy, dealing 60 damage.\nDamage: 130% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Darkened Crash",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stolkist/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 59 damage.\n#1 Damage: 127.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 62 damage.\n#1 Damage: 135.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 142.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 72 damage.\n#1 Damage: 155.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 170.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 183.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 91 damage.\n#1 Damage: 198.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 97 damage.\n#1 Damage: 211.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 104 damage.\n#1 Damage: 226.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage.\n#1 Damage: 239.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage.\n#1 Damage: 255% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Inflict Impurity",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stolkist/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 122 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 265% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 129 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 280.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 296.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 323.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 355.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 176 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 381.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 190 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 413.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 202 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 439.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 217 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 471.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 229 damage. Transfers a random debuff to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 498.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 244 damage. Transfers 2 random debuffs to the target.\nAccuracy required for: Debuff Transfer\n#1 Damage: 530% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Drain Darkness",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stolkist/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 63 damage per hit. Heals Stolkist, restoring (20% * Damage Dealt) HP. Damage increases by 10% if the target has debuffs.\n#1 Damage: 137.5% ATK\n#2 Damage: 137.5% ATK\n#3 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 67 damage per hit. Heals Stolkist, restoring (25% * Damage Dealt) HP. Damage increases by 10% if the target has debuffs.\n#1 Damage: 145.7% ATK\n#2 Damage: 145.7% ATK\n#3 Heal: 25% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 71 damage per hit. Heals Stolkist, restoring (25% * Damage Dealt) HP. Damage increases by 15% if the target has debuffs.\n#1 Damage: 154% ATK\n#2 Damage: 154% ATK\n#3 Heal: 25% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 77 damage per hit. Heals Stolkist, restoring (25% * Damage Dealt) HP. Damage increases by 20% if the target has debuffs.\n#1 Damage: 167.8% ATK\n#2 Damage: 167.8% ATK\n#3 Heal: 25% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage per hit. Heals Stolkist, restoring (25% * Damage Dealt) HP. Damage increases by 20% if the target has debuffs.\n#1 Damage: 184.2% ATK\n#2 Damage: 184.2% ATK\n#3 Heal: 25% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 91 damage per hit. Heals Stolkist, restoring (30% * Damage Dealt) HP. Damage increases by 20% if the target has debuffs.\n#1 Damage: 198% ATK\n#2 Damage: 198% ATK\n#3 Heal: 30% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 99 damage per hit. Heals Stolkist, restoring (30% * Damage Dealt) HP. Damage increases by 25% if the target has debuffs.\n#1 Damage: 214.5% ATK\n#2 Damage: 214.5% ATK\n#3 Heal: 30% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 105 damage per hit. Heals Stolkist, restoring (30% * Damage Dealt) HP. Damage increases by 30% if the target has debuffs.\n#1 Damage: 228.2% ATK\n#2 Damage: 228.2% ATK\n#3 Heal: 30% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 113 damage per hit. Heals Stolkist, restoring (30% * Damage Dealt) HP. Damage increases by 30% if the target has debuffs.\n#1 Damage: 244.8% ATK\n#2 Damage: 244.8% ATK\n#3 Heal: 30% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 119 damage per hit. Heals Stolkist, restoring (35% * Damage Dealt) HP. Damage increases by 30% if the target has debuffs.\n#1 Damage: 258.5% ATK\n#2 Damage: 258.5% ATK\n#3 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 127 damage per hit. Heals Stolkist, restoring (35% * Damage Dealt) HP. Damage increases by 35% if the target has debuffs.\n#1 Damage: 275% ATK\n#2 Damage: 275% ATK\n#3 Heal: 35% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Sundering Crystals",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/stolkist/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 192 damage. Casts a [15% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 417.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 204 damage. Casts a [16% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 442.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 215 damage. Casts a [17% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\n#1 Damage: 467.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 234 damage. Casts a [17% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 509.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 257 damage. Casts a [17% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 559.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 277 damage. Casts a [18% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 601.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 300 damage. Casts a [19% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 651.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 319 damage. Casts a [19% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 693% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 342 damage. Casts a [20% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 743.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 361 damage. Casts a [22% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 784.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 384 damage. Casts a [22% DEF Down] debuff on the target, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 835% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Stolkist carries a curse, but he wields it as a blessing: darkness flows through his veins as much as blood does. Only steadfast dedication keeps the corruption at bay, and so long as he remains in control, he can wield powers that few Stoneheart share. If only his fellow Dwarves would trust him.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

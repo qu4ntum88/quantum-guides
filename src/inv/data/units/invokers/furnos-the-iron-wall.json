@@ -1,0 +1,592 @@
+{
+ "slug": "furnos-the-iron-wall",
+ "kind": "Invoker",
+ "name": "Furnos the Iron Wall",
+ "faction": "Ironbands",
+ "rarity": "Legendary",
+ "class": "Tank",
+ "element": "Fire",
+ "soulSign": "Sign of Actia",
+ "gender": "Male",
+ "role": "Tank",
+ "portrait": "/invokers/units/invokers/furnos-the-iron-wall/portrait.webp",
+ "fullArt": "/invokers/units/invokers/furnos-the-iron-wall/full.webp",
+ "stats": {
+  "base": {
+   "Health": "1,128",
+   "Attack": "40",
+   "Defense": "100",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "16",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "102"
+  },
+  "max": {
+   "Health": "12,840",
+   "Attack": "414",
+   "Defense": "1,150",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "92",
+   "Resistance": "76",
+   "Combo speed": "0",
+   "Skill speed": "4",
+   "Skill recovery": "0",
+   "Mana generation": "45",
+   "Instinct": "54",
+   "Run speed": "142"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/furnos-the-iron-wall/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+96",
+    "titan": "+52"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 10% ATK + 15.5% DEF\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 15.5% ATK + 22.5% DEF\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 20.5% ATK + 31% DEF\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 26% ATK + 39% DEF\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 31% ATK + 47% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 10.6% ATK + 16.4% DEF\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 16.4% ATK + 23.8% DEF\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 21.7% ATK + 32.9% DEF\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 27.6% ATK + 41.3% DEF\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 32.9% ATK + 49.8% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 11.2% ATK + 17.4% DEF\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 17.4% ATK + 25.2% DEF\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 23% ATK + 34.7% DEF\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 29.1% ATK + 43.7% DEF\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 34.7% ATK + 52.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 12.2% ATK + 18.9% DEF\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 18.9% ATK + 27.5% DEF\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 25% ATK + 37.8% DEF\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 31.7% ATK + 47.6% DEF\n#5 Attacks 1 enemy, dealing 72 damage.\nDamage: 37.8% ATK + 57.3% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 13.4% ATK + 20.8% DEF\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 20.8% ATK + 30.1% DEF\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 27.5% ATK + 41.5% DEF\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 34.8% ATK + 52.3% DEF\n#5 Attacks 1 enemy, dealing 80 damage.\nDamage: 41.5% ATK + 63% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 14.4% ATK + 22.3% DEF\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 22.3% ATK + 32.4% DEF\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 29.5% ATK + 44.6% DEF\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 37.4% ATK + 56.2% DEF\n#5 Attacks 1 enemy, dealing 86 damage.\nDamage: 44.6% ATK + 67.7% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 15.6% ATK + 24.2% DEF\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 24.2% ATK + 35.1% DEF\n#3 Attacks 1 enemy, dealing 61 damage.\nDamage: 32% ATK + 48.4% DEF\n#4 Attacks 1 enemy, dealing 77 damage.\nDamage: 40.6% ATK + 60.8% DEF\n#5 Attacks 1 enemy, dealing 93 damage.\nDamage: 48.4% ATK + 73.3% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 16.6% ATK + 25.7% DEF\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 25.7% ATK + 37.3% DEF\n#3 Attacks 1 enemy, dealing 65 damage.\nDamage: 34% ATK + 51.5% DEF\n#4 Attacks 1 enemy, dealing 82 damage.\nDamage: 43.2% ATK + 64.7% DEF\n#5 Attacks 1 enemy, dealing 99 damage.\nDamage: 51.5% ATK + 78% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 17.8% ATK + 27.6% DEF\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 27.6% ATK + 40% DEF\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 36.5% ATK + 55.2% DEF\n#4 Attacks 1 enemy, dealing 88 damage.\nDamage: 46.3% ATK + 69.4% DEF\n#5 Attacks 1 enemy, dealing 106 damage.\nDamage: 55.2% ATK + 83.7% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 18.8% ATK + 29.1% DEF\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 29.1% ATK + 42.3% DEF\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 38.5% ATK + 58.3% DEF\n#4 Attacks 1 enemy, dealing 93 damage.\nDamage: 48.9% ATK + 73.3% DEF\n#5 Attacks 1 enemy, dealing 112 damage.\nDamage: 58.3% ATK + 88.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 39 damage.\nDamage: 20% ATK + 31% DEF\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 31% ATK + 45% DEF\n#3 Attacks 1 enemy, dealing 78 damage.\nDamage: 41% ATK + 62% DEF\n#4 Attacks 1 enemy, dealing 99 damage.\nDamage: 52% ATK + 78% DEF\n#5 Attacks 1 enemy, dealing 119 damage.\nDamage: 62% ATK + 94% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Blazing Will",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/furnos-the-iron-wall/skills/1.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+69",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 59 damage per hit. Casts a [10% Weaken] debuff on the target, lasting 3s, on the second hit, increasing all damage taken by 10%.\nAccuracy required for: Weaken\n#1 Damage: 31% ATK + 46.5% DEF\n#2 Damage: 31% ATK + 46.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 62 damage per hit. Casts a [11% Weaken] debuff on the target, lasting 3s, on the second hit, increasing all damage taken by 11%.\nAccuracy required for: Weaken\n#1 Damage: 32.9% ATK + 49.3% DEF\n#2 Damage: 32.9% ATK + 49.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 66 damage per hit. Casts a [11% Weaken] debuff on the target, lasting 3s, on the second hit, increasing all damage taken by 11%.\nAccuracy required for: Weaken\n#1 Damage: 34.7% ATK + 52.1% DEF\n#2 Damage: 34.7% ATK + 52.1% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 72 damage per hit. Casts a [11% Weaken] debuff on the target, lasting 3.5s, on the second hit, increasing all damage taken by 11%.\nAccuracy required for: Weaken\n#1 Damage: 37.8% ATK + 56.7% DEF\n#2 Damage: 37.8% ATK + 56.7% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 79 damage per hit. Casts a [12% Weaken] debuff on the target, lasting 3.5s, on the second hit, increasing all damage taken by 12%.\nAccuracy required for: Weaken\n#1 Damage: 41.5% ATK + 62.3% DEF\n#2 Damage: 41.5% ATK + 62.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage per hit. Casts a [13% Weaken] debuff on the target, lasting 3.5s, on the second hit, increasing all damage taken by 13%.\nAccuracy required for: Weaken\n#1 Damage: 44.6% ATK + 67% DEF\n#2 Damage: 44.6% ATK + 67% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 92 damage per hit. Casts a [13% Weaken] debuff on the target, lasting 4s, on the second hit, increasing all damage taken by 13%.\nAccuracy required for: Weaken\n#1 Damage: 48.4% ATK + 72.5% DEF\n#2 Damage: 48.4% ATK + 72.5% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 98 damage per hit. Casts a [14% Weaken] debuff on the target, lasting 4s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: Weaken\n#1 Damage: 51.5% ATK + 77.2% DEF\n#2 Damage: 51.5% ATK + 77.2% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 105 damage per hit. Casts a [14% Weaken] debuff on the target, lasting 4.5s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: Weaken\n#1 Damage: 55.2% ATK + 82.8% DEF\n#2 Damage: 55.2% ATK + 82.8% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 111 damage per hit. Casts a [14% Weaken] debuff on the target, lasting 5s, on the second hit, increasing all damage taken by 14%.\nAccuracy required for: Weaken\n#1 Damage: 58.3% ATK + 87.4% DEF\n#2 Damage: 58.3% ATK + 87.4% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 118 damage per hit. Casts a [15% Weaken] debuff on the target, lasting 5s, on the second hit, increasing all damage taken by 15%.\nAccuracy required for: Weaken\n#1 Damage: 62% ATK + 93% DEF\n#2 Damage: 62% ATK + 93% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Smoldering Rage",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/furnos-the-iron-wall/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit DMG Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Damage stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Rate stat by the indicated percentage."
+    },
+    {
+     "label": "Move SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 10s. Then, casts a [20% Crit Rate Up] buff on the targets, lasting 10s. Then, casts a [40% Crit DMG Up] buff on the targets, lasting 10s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 10s. Then, casts a [23% Crit Rate Up] buff on the targets, lasting 10s. Then, casts a [40% Crit DMG Up] buff on the targets, lasting 10s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 11s. Then, casts a [23% Crit Rate Up] buff on the targets, lasting 11s. Then, casts a [40% Crit DMG Up] buff on the targets, lasting 11s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 11s. Then, casts a [23% Crit Rate Up] buff on the targets, lasting 11s. Then, casts a [42% Crit DMG Up] buff on the targets, lasting 11s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 11s. Then, casts a [23% Crit Rate Up] buff on the targets, lasting 11s. Then, casts a [46% Crit DMG Up] buff on the targets, lasting 11s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 11s. Then, casts a [26% Crit Rate Up] buff on the targets, lasting 11s. Then, casts a [46% Crit DMG Up] buff on the targets, lasting 11s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 11s. Then, casts a [26% Crit Rate Up] buff on the targets, lasting 11s. Then, casts a [46% Crit DMG Up] buff on the targets, lasting 11s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 12s. Then, casts a [26% Crit Rate Up] buff on the targets, lasting 12s. Then, casts a [46% Crit DMG Up] buff on the targets, lasting 12s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 12s. Then, casts a [26% Crit Rate Up] buff on the targets, lasting 12s. Then, casts a [50% Crit DMG Up] buff on the targets, lasting 12s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 12s. Then, casts a [30% Crit Rate Up] buff on the targets, lasting 12s. Then, casts a [50% Crit DMG Up] buff on the targets, lasting 12s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [35% Move SPD Up] buff on 10 allies in a 13.5m radius around Furnos, lasting 13s. Then, casts a [30% Crit Rate Up] buff on the targets, lasting 13s. Then, casts a [50% Crit DMG Up] buff on the targets, lasting 13s."
+    }
+   ]
+  },
+  {
+   "name": "Burning Hate",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/furnos-the-iron-wall/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Taunt",
+     "group": "Debuffs",
+     "description": "The recipient is forced to attack whoever cast the Taunt debuff on them.The recipient can move freely, but can only use their Combo Attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 123 damage. Casts a [Taunt] debuff on the targets, lasting 4s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [35% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 62.5% ATK + 97.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 130 damage. Casts a [Taunt] debuff on the targets, lasting 4.5s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [40% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 66.2% ATK + 103.3% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 137 damage. Casts a [Taunt] debuff on the targets, lasting 4.5s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [40% ATK Down] debuff on the targets, lasting 10s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 70% ATK + 109.2% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 149 damage. Casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [40% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 76.2% ATK + 119% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 164 damage. Casts a [Taunt] debuff on the targets, lasting 5s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [45% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 83.8% ATK + 130.7% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 176 damage. Casts a [Taunt] debuff on the targets, lasting 5.5s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [45% ATK Down] debuff on the targets, lasting 11s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 90% ATK + 140.4% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 191 damage. Casts a [Taunt] debuff on the targets, lasting 5.5s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [45% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 97.5% ATK + 152.1% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 203 damage. Casts a [Taunt] debuff on the targets, lasting 6s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [45% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 103.8% ATK + 161.9% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 218 damage. Casts a [Taunt] debuff on the targets, lasting 6s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [50% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 111.2% ATK + 173.6% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 230 damage. Casts a [Taunt] debuff on the targets, lasting 7s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [50% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 117.5% ATK + 183.3% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 7.5m radius around Furnos, dealing 245 damage. Casts a [Taunt] debuff on the targets, lasting 7s, forcing them to continuously attack Furnos using only their Combo Attacks until the [Taunt] debuff expires. Then, casts a [50% ATK Down] debuff on the targets, lasting 15s.\nAccuracy required for: Taunt, ATK Down\n#1 Damage: 125% ATK + 195% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Dragon Breath",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/furnos-the-iron-wall/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 26 damage per hit. Heals Furnos 8 times, restoring (40% * Damage Dealt) HP per heal.\n#1 Damage: 13% ATK + 20.5% DEF\n#2 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 27 damage per hit. Heals Furnos 8 times, restoring (43% * Damage Dealt) HP per heal.\n#1 Damage: 13.8% ATK + 21.7% DEF\n#2 Heal: 43% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 29 damage per hit. Heals Furnos 8 times, restoring (46% * Damage Dealt) HP per heal.\n#1 Damage: 14.6% ATK + 23% DEF\n#2 Heal: 46% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 31 damage per hit. Heals Furnos 8 times, restoring (49% * Damage Dealt) HP per heal.\n#1 Damage: 15.9% ATK + 25% DEF\n#2 Heal: 49% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 34 damage per hit. Heals Furnos 8 times, restoring (52% * Damage Dealt) HP per heal.\n#1 Damage: 17.4% ATK + 27.5% DEF\n#2 Heal: 52% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 37 damage per hit. Heals Furnos 8 times, restoring (55% * Damage Dealt) HP per heal.\n#1 Damage: 18.7% ATK + 29.5% DEF\n#2 Heal: 55% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 40 damage per hit. Heals Furnos 8 times, restoring (58% * Damage Dealt) HP per heal.\n#1 Damage: 20.3% ATK + 32% DEF\n#2 Heal: 58% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 43 damage per hit. Heals Furnos 8 times, restoring (61% * Damage Dealt) HP per heal.\n#1 Damage: 21.6% ATK + 34% DEF\n#2 Heal: 61% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 46 damage per hit. Heals Furnos 8 times, restoring (64% * Damage Dealt) HP per heal.\n#1 Damage: 23.1% ATK + 36.5% DEF\n#2 Heal: 64% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 48 damage per hit. Heals Furnos 8 times, restoring (67% * Damage Dealt) HP per heal.\n#1 Damage: 24.4% ATK + 38.5% DEF\n#2 Heal: 67% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 10 enemies in a 140°, 5m cone in front of Furnos, 8 times over 1s, dealing 51 damage per hit. Heals Furnos 8 times, restoring (70% * Damage Dealt) HP per heal.\n#1 Damage: 26% ATK + 41% DEF\n#2 Heal: 70% * Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Frost",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Furnos carries the Iron Wall, an ancient shield known to drive mad any who touched it. Furnos had accepted the same fate, ready to die if he could save his people. Instead, he became one of the most powerful Magmabloods of his generation.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "S",
+  "hyxxis": "E",
+  "koltmos": "A+",
+  "omnissi-astral": "E",
+  "omnissi-dark": "S",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "S",
+  "sakiel": "S",
+  "sorgott": "A+",
+  "ulgorim": "S",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 56.3,
+  "lists": 16
+ }
+}

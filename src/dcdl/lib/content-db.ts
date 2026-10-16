@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import { DEFAULT_GUIDE_GAME, toGuideGame, type GuideGame } from '@/src/lib/guide-games'
 
 /**
  * Server-side content read layer for guides, patch notes / game info, and
@@ -35,6 +36,7 @@ async function fetchTable<T>(table: string, order = 'sort.asc', filter = ''): Pr
 
 export type GuideMeta = {
   id: string
+  game: GuideGame
   title: string
   description: string
   author: string | null
@@ -76,6 +78,7 @@ export type Infographic = {
 // Row shapes as returned by Supabase (snake_case columns).
 type GuideRow = {
   id: string
+  game?: string | null
   title: string
   description: string | null
   body: string | null
@@ -114,6 +117,7 @@ function normDate(v: unknown): string | null {
 
 const rowToGuideFull = (r: GuideRow): GuideFull => ({
   id: r.id,
+  game: toGuideGame(r.game),
   title: r.title,
   description: r.description ?? '',
   author: r.author ?? null,
@@ -143,6 +147,7 @@ function readGuideFiles(): GuideFull[] {
     const { data, content } = matter(raw)
     return {
       id: filename.replace(/\.(mdx|md)$/, ''),
+      game: DEFAULT_GUIDE_GAME, // the pre-CMS guide files are all DCDL
       title: data.title ? String(data.title) : filename,
       description: data.description ? String(data.description) : '',
       author: data.author ? String(data.author) : null,
@@ -199,22 +204,25 @@ function sortGuides<T extends { pubDate: string | null }>(guides: T[]): T[] {
 
 // ── Public API ───────────────────────────────────────────────────────────────
 
-export async function getGuidesFull(): Promise<GuideFull[]> {
+/** Published guides for one game's section (default DCDL); `'all'` for every game (the sitemap). */
+export async function getGuidesFull(game: GuideGame | 'all' = DEFAULT_GUIDE_GAME): Promise<GuideFull[]> {
   // Only approved rows are public. RLS already hides pending editor
   // submissions from the anon key; the explicit filter makes that intent
   // visible at the call site rather than depending on policy alone.
+  // The file fallback is decided on the whole table, not per game, so an empty
+  // Invokers section stays empty instead of falling back to the DCDL files.
   const rows = await fetchTable<GuideRow>('guides', 'pub_date.desc', '&status=eq.approved')
   const guides = rows && rows.length > 0 ? rows.map(rowToGuideFull) : readGuideFiles()
-  return sortGuides(guides)
+  return sortGuides(game === 'all' ? guides : guides.filter((g) => g.game === game))
 }
 
-export async function getGuidesList(): Promise<GuideMeta[]> {
-  const guides = await getGuidesFull()
+export async function getGuidesList(game: GuideGame | 'all' = DEFAULT_GUIDE_GAME): Promise<GuideMeta[]> {
+  const guides = await getGuidesFull(game)
   return guides.map(({ body: _body, eventType: _e, eventDates: _d, recommendedFor: _r, keyRewards: _k, ...meta }) => meta)
 }
 
-export async function getGuide(id: string): Promise<GuideFull | null> {
-  const guides = await getGuidesFull()
+export async function getGuide(id: string, game: GuideGame = DEFAULT_GUIDE_GAME): Promise<GuideFull | null> {
+  const guides = await getGuidesFull(game)
   return guides.find((g) => g.id === id) ?? null
 }
 

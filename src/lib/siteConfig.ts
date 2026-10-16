@@ -10,8 +10,9 @@
 // keep editing Godforge / Void Hunters offline while they're hidden.
 export const PUBLIC_SECTIONS = {
   dcdl: true,
-  godforge: false,
+  godforge: true,
   voidHunters: true,
+  invokers: true,
 } as const
 
 export type GameSection = keyof typeof PUBLIC_SECTIONS

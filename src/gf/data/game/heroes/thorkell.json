@@ -1,0 +1,324 @@
+{
+ "id": 168,
+ "slug": "thorkell",
+ "name": "Thorkell",
+ "title": "Jomsviking Commander",
+ "summary": "Towering Brawler that deals increased damage while injured.",
+ "lore": "A ferocious war-leader, Thorkell the Tall engaged in multiple battles on multiple sides. He was a raider, mercenary, and conqueror, feared by many, trusted by few. While he currently defends Asgard and conducts raids on its rivals, other Asgardians watch for the day Thorkell turns on them, whether because someone makes him a better offer or due to his own ambitions.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Thorkell.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Thorkell_main.png",
+ "stats": {
+  "hp": 1170,
+  "atk": 104,
+  "def": 82,
+  "spd": 92,
+  "init": 91,
+  "acc": 30,
+  "res": 20,
+  "initial_divinity": 850,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.07,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Converts 10% of overhealing into [Barrier].",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At 20 Stacks: Also attacks inflict additional damage 200%ATK to all enemies under [Bleed] which cannot critical hit.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Double Swing",
+   "description": "Attack 1 enemy 220%ATK 2 times. Each hit has a 50% to place 1 stack of [Bleed] on the target.",
+   "icon_url": "/godforge/abilities/thorkell/ICON_Thorkell_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "220%ATK",
+    "220%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Mighty Cleave",
+   "description": "Place [Sharpen II] on this hero for 2 turns, then attack all enemies 330%ATK with an 80% chance to place 2 stacks of [Bleed] on each target.",
+   "icon_url": "/godforge/abilities/thorkell/ICON_Thorkell_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Sharpen II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "25% CDMG in Arena Battles",
+   "icon_url": "/godforge/abilities/thorkell/ICON_Leader_CriticalDamage.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Bloodlust",
+   "description": "This hero gains effects depending on the stacks of [Bleed] on the enemy team:\nAt 5 Stacks: +20% Increased Damage\nAt 10 Stacks: Steals +10% Turn Meter when attacking\nAt 20 Stacks: -30% Damage received",
+   "icon_url": "/godforge/abilities/thorkell/ICON_Thorkell_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At 20 Stacks: Also attacks inflict additional damage 200%ATK to all enemies under Bleed which cannot critical hit.",
+     "upgrade_description": "At 20 Stacks: Also attacks inflict additional damage 200%ATK to all enemies under [Bleed] which cannot critical hit."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Whirlwind Fury",
+   "description": "Attack all enemies 130%ATK 3 times. Each hit has an 80% chance to place 1 stack of [Bleed] on each target. If the target has more than 5 stacks of [Bleed] also heal this hero for 20% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/thorkell/ICON_Thorkell_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [
+    "130%ATK",
+    "130%ATK",
+    "130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Bleed",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Converts 10% of overhealing into Barrier.",
+     "upgrade_description": "Converts 10% of overhealing into [Barrier]."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Bloodlust",
+   "description": "This hero gains effects depending on the stacks of [Bleed] on the enemy team:\nAt 5 Stacks: +10% Increased Damage\nAt 10 Stacks: Steals +5% Turn Meter when attacking\nAt 20 Stacks: -15% Damage received",
+   "icon_url": "/godforge/abilities/thorkell/ICON_Thorkell_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

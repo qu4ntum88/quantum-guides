@@ -1,0 +1,275 @@
+{
+ "id": 132,
+ "slug": "xtabay",
+ "name": "Xtabay",
+ "title": "Hungry Beauty",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "A demon in the form of the beautiful mortal woman she once was, Xtabay represents the evil of those who maintain a veneer of virtue to mask a cruel heart. She lurks in woodlands, enticing passersby to lie with her before murdering them. Since the Shattering, she has expanded her hunt beyond Omeyocan, for Ryven is rich with potential victims.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ixtabay.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Xtabay_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 77,
+  "def": 81,
+  "spd": 98,
+  "init": 99,
+  "acc": 35,
+  "res": 20,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If an enemy’s Turn Meter falls below 50%, place [Despair] on the target for 1 turn.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also, remove the heroes [Shield] and [Barrier] then steal 1 random Buff.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Snake Bite",
+   "description": "Attack 1 enemy 360%ATK with a 50% chance to place [Charm] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/xtabay/ICON_Xtabay_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "360%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Charm",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Cursed Paradise",
+   "description": "Attack all enemies 295%ATK with an 80% chance to place a [Hex II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/xtabay/ICON_Xtabay_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "295%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Hex II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Deathly Allure",
+   "description": "When attacking an enemy under [Charm], increase the duration of 1 random Debuff on the target by 1 turn.",
+   "icon_url": "/godforge/abilities/xtabay/ICON_Xtabay_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also, remove the heroes Shield and Barrier then steal 1 random Buff.",
+     "upgrade_description": "Also, remove the heroes [Shield] and [Barrier] then steal 1 random Buff."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Entwined Fates",
+   "description": "Attack all enemies 295%ATK with an 80% chance to reduce each target’s Turn Meter by 20% and place [SPD Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/xtabay/ICON_Xtabay_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "295%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If an enemy’s Turn Meter falls below 50%, place Despair on the target for 1 turn.",
+     "upgrade_description": "If an enemy’s Turn Meter falls below 50%, place [Despair] on the target for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Deathly Allure",
+   "description": "When attacking an enemy under [Charm], has a 50% chance to increase the duration of 1 random Debuff on the target by 1 turn.",
+   "icon_url": "/godforge/abilities/xtabay/ICON_Xtabay_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

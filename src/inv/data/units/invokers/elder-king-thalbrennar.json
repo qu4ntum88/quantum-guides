@@ -1,0 +1,565 @@
+{
+ "slug": "elder-king-thalbrennar",
+ "kind": "Invoker",
+ "name": "Elder King Thalbrennar",
+ "faction": "Stonehearts",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/elder-king-thalbrennar/portrait.webp",
+ "fullArt": "/invokers/units/invokers/elder-king-thalbrennar/full.webp",
+ "stats": {
+  "base": {
+   "Health": "936",
+   "Attack": "90",
+   "Defense": "68",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "103"
+  },
+  "max": {
+   "Health": "9,953",
+   "Attack": "1,106",
+   "Defense": "716",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "128"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elder-king-thalbrennar/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+61"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 38.5% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 65% ATK\n#5 Attacks 1 enemy, dealing 70 damage. Thalbrennar gains 15 Titan Mana.\nDamage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 40.8% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 55.6% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 68.9% ATK\n#5 Attacks 1 enemy, dealing 74 damage. Thalbrennar gains 16 Titan Mana.\nDamage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 43.1% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 58.8% ATK\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 72.8% ATK\n#5 Attacks 1 enemy, dealing 78 damage. Thalbrennar gains 17 Titan Mana.\nDamage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 47% ATK\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 64% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 79.3% ATK\n#5 Attacks 1 enemy, dealing 85 damage. Thalbrennar gains 18 Titan Mana.\nDamage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 51.6% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 70.3% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 87.1% ATK\n#5 Attacks 1 enemy, dealing 93 damage. Thalbrennar gains 19 Titan Mana.\nDamage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy, dealing 68 damage.\nDamage: 75.6% ATK\n#4 Attacks 1 enemy, dealing 84 damage.\nDamage: 93.6% ATK\n#5 Attacks 1 enemy, dealing 100 damage. Thalbrennar gains 20 Titan Mana.\nDamage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 60.1% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 91 damage.\nDamage: 101.4% ATK\n#5 Attacks 1 enemy, dealing 109 damage. Thalbrennar gains 21 Titan Mana.\nDamage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 58 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 78 damage.\nDamage: 87.1% ATK\n#4 Attacks 1 enemy, dealing 97 damage.\nDamage: 107.9% ATK\n#5 Attacks 1 enemy, dealing 116 damage. Thalbrennar gains 22 Titan Mana.\nDamage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 62 damage.\nDamage: 68.5% ATK\n#3 Attacks 1 enemy, dealing 84 damage.\nDamage: 93.4% ATK\n#4 Attacks 1 enemy, dealing 104 damage.\nDamage: 115.7% ATK\n#5 Attacks 1 enemy, dealing 124 damage. Thalbrennar gains 23 Titan Mana.\nDamage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 65 damage.\nDamage: 72.4% ATK\n#3 Attacks 1 enemy, dealing 89 damage.\nDamage: 98.7% ATK\n#4 Attacks 1 enemy, dealing 110 damage.\nDamage: 122.2% ATK\n#5 Attacks 1 enemy, dealing 131 damage. Thalbrennar gains 24 Titan Mana.\nDamage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 69 damage.\nDamage: 77% ATK\n#3 Attacks 1 enemy, dealing 94 damage.\nDamage: 105% ATK\n#4 Attacks 1 enemy, dealing 117 damage.\nDamage: 130% ATK\n#5 Attacks 1 enemy, dealing 139 damage. Thalbrennar gains 25 Titan Mana.\nDamage: 155% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Royal Mandate",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elder-king-thalbrennar/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+21",
+    "titan": "+12"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 142 damage. Thalbrennar gains 25 Ultimate Mana. \nThalbrennar gains 25 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 157.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Thalbrennar gains 27 Ultimate Mana. \nThalbrennar gains 27 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 166.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Thalbrennar gains 29 Ultimate Mana. \nThalbrennar gains 29 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 176.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 173 damage. Thalbrennar gains 31 Ultimate Mana. \nThalbrennar gains 31 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 192.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 190 damage. Thalbrennar gains 33 Ultimate Mana. \nThalbrennar gains 33 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 211.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 204 damage. Thalbrennar gains 35 Ultimate Mana. \nThalbrennar gains 35 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 226.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 221 damage. Thalbrennar gains 37 Ultimate Mana. \nThalbrennar gains 37 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 245.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 235 damage. Thalbrennar gains 39 Ultimate Mana. \nThalbrennar gains 39 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 261.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 252 damage. Thalbrennar gains 42 Ultimate Mana. \nThalbrennar gains 42 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 280.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 266 damage. Thalbrennar gains 46 Ultimate Mana. \nThalbrennar gains 46 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 296.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 284 damage. Thalbrennar gains 50 Ultimate Mana. \nThalbrennar gains 50 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 315% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crush Dissent",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elder-king-thalbrennar/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit Rate Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+21",
+    "titan": "+12"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 288 damage. Casts a [20% Crit Rate Up] buff on Thalbrennar, lasting 10s.\n#1 Damage: 320% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 305 damage. Casts a [25% Crit Rate Up] buff on Thalbrennar, lasting 10s.\n#1 Damage: 339.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 323 damage. Casts a [25% Crit Rate Up] buff on Thalbrennar, lasting 11s.\n#1 Damage: 358.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 351 damage. Casts a [30% Crit Rate Up] buff on Thalbrennar, lasting 11s.\n#1 Damage: 390.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 386 damage. Casts a [30% Crit Rate Up] buff on Thalbrennar, lasting 12s.\n#1 Damage: 428.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 415 damage. Casts a [35% Crit Rate Up] buff on Thalbrennar, lasting 12s.\n#1 Damage: 460.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 449 damage. Casts a [35% Crit Rate Up] buff on Thalbrennar, lasting 13s.\n#1 Damage: 499.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 478 damage. Casts a [40% Crit Rate Up] buff on Thalbrennar, lasting 13s.\n#1 Damage: 531.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 513 damage. Casts a [40% Crit Rate Up] buff on Thalbrennar, lasting 15s.\n#1 Damage: 569.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 541 damage. Casts a [45% Crit Rate Up] buff on Thalbrennar, lasting 15s.\n#1 Damage: 601.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 576 damage. Casts a [50% Crit Rate Up] buff on Thalbrennar, lasting 15s.\n#1 Damage: 640% ATK"
+    }
+   ]
+  },
+  {
+   "name": "From On High",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elder-king-thalbrennar/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 145 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 4s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 5s as well.\n#1 Damage: 161% ATK\n#2 Damage: 161% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 154 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 4.5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 5s as well.\n#1 Damage: 170.7% ATK\n#2 Damage: 170.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 162 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 4.5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 5.5s as well.\n#1 Damage: 180.3% ATK\n#2 Damage: 180.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 177 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 5.5s as well.\n#1 Damage: 196.4% ATK\n#2 Damage: 196.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 194 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 6s as well.\n#1 Damage: 215.7% ATK\n#2 Damage: 215.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 209 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 5.5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 6s as well.\n#1 Damage: 231.8% ATK\n#2 Damage: 231.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 226 damage per hit. Extends the duration of up to 2 random buffs on Thalbrennar by 5.5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 7s as well.\n#1 Damage: 251.2% ATK\n#2 Damage: 251.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 241 damage per hit. Extends the duration of up to 3 random buffs on Thalbrennar by 5.5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 7s as well.\n#1 Damage: 267.3% ATK\n#2 Damage: 267.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 258 damage per hit. Extends the duration of up to 3 random buffs on Thalbrennar by 5.5s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 8s as well.\n#1 Damage: 286.6% ATK\n#2 Damage: 286.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 272 damage per hit. Extends the duration of up to 3 random buffs on Thalbrennar by 6s. \nIf the hit lands as a critical hit Extends the duration of 1 random buff on Thalbrennar by 8s as well.\n#1 Damage: 302.7% ATK\n#2 Damage: 302.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 290 damage per hit. Extends the duration of up to 3 random buffs on Thalbrennar by 6s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Thalbrennar by 8s as well.\n#1 Damage: 322% ATK\n#2 Damage: 322% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Lineage of Kings",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/elder-king-thalbrennar/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 162 damage per hit. Damage increases by 35% if the target has no buffs. \nThe first hit Thalbrennar gains 75 Titan Mana.\n#1 Damage: 180% ATK\n#2 Damage: 180% ATK\n#3 Damage: 180% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 172 damage per hit. Damage increases by 35% if the target has no buffs. \nThe first hit Thalbrennar gains 90 Titan Mana.\n#1 Damage: 190.8% ATK\n#2 Damage: 190.8% ATK\n#3 Damage: 190.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 181 damage per hit. Damage increases by 40% if the target has no buffs. \nThe first hit Thalbrennar gains 90 Titan Mana.\n#1 Damage: 201.6% ATK\n#2 Damage: 201.6% ATK\n#3 Damage: 201.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 198 damage per hit. Damage increases by 40% if the target has no buffs. \nThe first hit Thalbrennar gains 120 Titan Mana.\n#1 Damage: 219.6% ATK\n#2 Damage: 219.6% ATK\n#3 Damage: 219.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 217 damage per hit. Damage increases by 45% if the target has no buffs. \nThe first hit Thalbrennar gains 120 Titan Mana.\n#1 Damage: 241.2% ATK\n#2 Damage: 241.2% ATK\n#3 Damage: 241.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 233 damage per hit. Damage increases by 45% if the target has no buffs. \nThe first hit Thalbrennar gains 140 Titan Mana.\n#1 Damage: 259.2% ATK\n#2 Damage: 259.2% ATK\n#3 Damage: 259.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 253 damage per hit. Damage increases by 50% if the target has no buffs. \nThe first hit Thalbrennar gains 140 Titan Mana.\n#1 Damage: 280.8% ATK\n#2 Damage: 280.8% ATK\n#3 Damage: 280.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 269 damage per hit. Damage increases by 50% if the target has no buffs. \nThe first hit Thalbrennar gains 160 Titan Mana.\n#1 Damage: 298.8% ATK\n#2 Damage: 298.8% ATK\n#3 Damage: 298.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 288 damage per hit. Damage increases by 60% if the target has no buffs. \nThe first hit Thalbrennar gains 160 Titan Mana.\n#1 Damage: 320.4% ATK\n#2 Damage: 320.4% ATK\n#3 Damage: 320.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 305 damage per hit. Damage increases by 60% if the target has no buffs. \nThe first hit Thalbrennar gains 180 Titan Mana.\n#1 Damage: 338.4% ATK\n#2 Damage: 338.4% ATK\n#3 Damage: 338.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 324 damage per hit. Damage increases by 70% if the target has no buffs. \nThe first hit Thalbrennar gains 200 Titan Mana.\n#1 Damage: 360% ATK\n#2 Damage: 360% ATK\n#3 Damage: 360% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "From his face plastered on the shields of his Highguard to the giant golden throne he insists he rules from, Thalbrennar is not what you'd call a modest ruler. Despite an attitude that some would describe as egotistical, he is beloved by the people of Stoneloom. His larger than life persona, and strength to match, make a welcome change from the sterile rulers of old.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "S",
+  "omnissi-light": "A+",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "S",
+  "sorgott": "S",
+  "ulgorim": "S",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 64.3,
+  "lists": 16
+ }
+}

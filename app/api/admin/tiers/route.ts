@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole } from '@/src/lib/roles-server'
-import { getCatalog, TIERS, type EntityType } from '@/src/dcdl/lib/tier-db'
+import { getCatalog, TIERS, type OfficialType } from '@/src/dcdl/lib/tier-db'
+import { QUANTUM_TIERS } from '@/src/qgg/tiers'
+import { getGfTieredRoster } from '@/src/gf/lib/heroes'
+import { getVhTieredRoster } from '@/src/vh/lib/hunters'
 
 /**
  * The official (Quantum's) tier list, editable from the live site.
@@ -10,24 +13,47 @@ import { getCatalog, TIERS, type EntityType } from '@/src/dcdl/lib/tier-db'
  * prefer over heros.json / legacy.json once it has rows. Tier movement arrows
  * work the same way as the local panel: when an item moves between two real
  * tiers, its old tier is recorded as `previous_tier`.
+ *
+ * Also serves Godforge heroes (`gf_hero`) and Void Hunters hunters (`vh_hunter`), which use
+ * Quantum's S…F tiers instead of DC: Dark Legion's S+…D.
  */
 
 async function guard() {
   return (await requireRole('admin')) ? null : NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 }
 
-function parseType(v: string | null): EntityType {
-  return v === 'legacy' ? 'legacy' : 'champion'
+const TYPES: OfficialType[] = ['champion', 'legacy', 'gf_hero', 'vh_hunter']
+
+function parseType(v: string | null): OfficialType {
+  return TYPES.includes(v as OfficialType) ? (v as OfficialType) : 'champion'
 }
 
-const VALID_TIERS = new Set<string>(TIERS)
+const tiersFor = (type: OfficialType): readonly string[] => (type === 'gf_hero' || type === 'vh_hunter' ? QUANTUM_TIERS : TIERS)
 
-// GET ?type=champion|legacy — the catalog with current tiers, for the editor.
+/** Every rankable item with its current tier, in rank order. */
+async function catalogFor(type: OfficialType): Promise<{ id: string; name: string; img: string | null; group: string; tier: string }[]> {
+  if (type === 'gf_hero') {
+    return (await getGfTieredRoster()).map((h) => ({ id: h.id, name: h.name, img: h.portrait || h.fullArt, group: h.archetype ?? '', tier: h.tier ?? '' }))
+  }
+  if (type === 'vh_hunter') {
+    return (await getVhTieredRoster()).map((h) => ({ id: h.id, name: h.name, img: h.portrait, group: h.class?.[0] ?? '', tier: h.tier ?? '' }))
+  }
+  return getCatalog(type)
+}
+
+// The table's entity_type CHECK only allows champion/legacy until it is widened (docs/CREATOR-PROGRAM.md).
+function saveError(message: string) {
+  return /entity_type_check/.test(message)
+    ? 'Saving this game needs a one-time database update first: widen official_tiers.entity_type (see docs/CREATOR-PROGRAM.md).'
+    : message
+}
+
+// GET ?type=champion|legacy|gf_hero|vh_hunter — the catalog with current tiers, for the editor.
 export async function GET(req: NextRequest) {
   const denied = await guard()
   if (denied) return denied
   const type = parseType(req.nextUrl.searchParams.get('type'))
-  return NextResponse.json(await getCatalog(type))
+  return NextResponse.json({ items: await catalogFor(type), tiers: tiersFor(type) })
 }
 
 // PATCH — save the whole assignment for one entity type.
@@ -44,7 +70,8 @@ export async function PATCH(req: NextRequest) {
 
   // Current effective tiers — Supabase rows if they exist, otherwise the JSON —
   // so the first on-site save still produces correct movement arrows.
-  const current = new Map((await getCatalog(type)).map((c) => [c.id, c.tier ?? '']))
+  const current = new Map((await catalogFor(type)).map((c) => [c.id, c.tier ?? '']))
+  const VALID_TIERS = new Set<string>(tiersFor(type))
   const { data: existingRows } = await supabaseAdmin
     .from('official_tiers')
     .select('entity_id, previous_tier')
@@ -74,7 +101,7 @@ export async function PATCH(req: NextRequest) {
   const { error } = await supabaseAdmin
     .from('official_tiers')
     .upsert(rows, { onConflict: 'entity_type,entity_id' })
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  if (error) return NextResponse.json({ error: saveError(error.message) }, { status: 500 })
 
   return NextResponse.json({ success: true, saved: rows.length })
 }

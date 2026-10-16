@@ -1,0 +1,555 @@
+{
+ "slug": "red-mellia",
+ "kind": "Invoker",
+ "name": "Red Mellia",
+ "faction": "Freeborn",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/red-mellia/portrait.webp",
+ "fullArt": "/invokers/units/invokers/red-mellia/full.webp",
+ "stats": {
+  "base": {
+   "Health": "330",
+   "Attack": "34",
+   "Defense": "33",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "111"
+  },
+  "max": {
+   "Health": "4,244",
+   "Attack": "499",
+   "Defense": "414",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "141"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/red-mellia/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+77",
+    "titan": "+42"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 18% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 29% ATK\n#3 Attacks 1 enemy, dealing 13 damage.\nDamage: 37.5% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 58% ATK\n#5 Attacks 1 enemy, dealing 21 damage.\nDamage: 62.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 19.1% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 30.7% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 39.7% ATK\n#4 Attacks 1 enemy, dealing 21 damage.\nDamage: 61.5% ATK\n#5 Attacks 1 enemy, dealing 23 damage.\nDamage: 66.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 20.2% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 32.5% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 42% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 65% ATK\n#5 Attacks 1 enemy, dealing 24 damage.\nDamage: 70% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 35.4% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 45.8% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 70.8% ATK\n#5 Attacks 1 enemy, dealing 26 damage.\nDamage: 76.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 24.1% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 38.9% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 50.2% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 77.7% ATK\n#5 Attacks 1 enemy, dealing 28 damage.\nDamage: 83.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 25.9% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 41.8% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 54% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 83.5% ATK\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 90% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 45.2% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 58.5% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 90.5% ATK\n#5 Attacks 1 enemy, dealing 33 damage.\nDamage: 97.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 29.9% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 48.1% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 62.2% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 96.3% ATK\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 103.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 32% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 51.6% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 66.8% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 103.2% ATK\n#5 Attacks 1 enemy, dealing 38 damage.\nDamage: 111.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 33.8% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 54.5% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 70.5% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 109% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 117.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 58% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 75% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 116% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 125% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Saber Slash",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/red-mellia/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 40 damage.\n#1 Damage: 117% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 42 damage.\n#1 Damage: 124% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 45 damage.\n#1 Damage: 131% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 142.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 53 damage.\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 57 damage.\n#1 Damage: 168.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 62 damage.\n#1 Damage: 182.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 194.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 71 damage.\n#1 Damage: 208.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 75 damage.\n#1 Damage: 220% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage.\n#1 Damage: 234% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Gut Lunge",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/red-mellia/skills/2.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 34 damage. Casts a [0.5% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 100% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 36 damage. Casts a [0.6% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.6% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 106% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 38 damage. Casts a [0.6% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 112% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 41 damage. Casts a [0.7% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.7% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 122% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 46 damage. Casts a [0.8% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 134% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage. Casts a [0.8% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 144% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 53 damage. Casts a [0.9% Bleed] debuff on the target, lasting 2s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 156% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 56 damage. Casts a [0.9% Bleed] debuff on the target, lasting 3s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 166% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 61 damage. Casts a [0.9% Bleed] debuff on the target, lasting 3s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 178% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 64 damage. Casts a [1% Bleed] debuff on the target, lasting 3s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 188% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 68 damage. Casts a [1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 200% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Flourish",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/red-mellia/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 42 damage per hit. Extends the duration of 1 random debuff on the target by 1s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 123% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 44 damage per hit. Extends the duration of 1 random debuff on the target by 1.1s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 130.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 47 damage per hit. Extends the duration of 1 random debuff on the target by 1.2s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 137.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 51 damage per hit. Extends the duration of 1 random debuff on the target by 1.3s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 150.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 56 damage per hit. Extends the duration of 1 random debuff on the target by 1.4s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 164.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 60 damage per hit. Extends the duration of 1 random debuff on the target by 1.5s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 177.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 65 damage per hit. Extends the duration of 1 random debuff on the target by 1.6s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 191.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 69 damage per hit. Extends the duration of 1 random debuff on the target by 1.7s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 204.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Extends the duration of 1 random debuff on the target by 1.8s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 218.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 79 damage per hit. Extends the duration of 1 random debuff on the target by 1.9s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 231.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 84 damage per hit. Extends the duration of up to 2 random debuffs on the target by 2s 2 times.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 246% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Flashbang",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/red-mellia/skills/4.webp",
+   "effects": [
+    {
+     "label": "Blind",
+     "group": "Debuffs",
+     "description": "The recipient has a percentage chance to miss their Combo Attacks, and not deal any damage. Combo Attacks that are missed do not generate any Mana for the attacker. Miss chance stacks along with any Miss chance from other sources, such as from skills."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 139 damage. Casts a [3% Blind] debuff on the target, lasting 4s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 407.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 147 damage. Casts a [3% Blind] debuff on the target, lasting 4.3s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 431.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 155 damage. Casts a [3% Blind] debuff on the target, lasting 4.5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 456.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 169 damage. Casts a [4% Blind] debuff on the target, lasting 4.5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 497.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 186 damage. Casts a [4% Blind] debuff on the target, lasting 4.5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 546% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 200 damage. Casts a [4% Blind] debuff on the target, lasting 5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 586.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 216 damage. Casts a [4% Blind] debuff on the target, lasting 5.5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 635.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 230 damage. Casts a [4% Blind] debuff on the target, lasting 5.5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 676.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 247 damage. Casts a [5% Blind] debuff on the target, lasting 5.5s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 725.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 260 damage. Casts a [5% Blind] debuff on the target, lasting 6s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 766.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy from a distance of 4m, dealing 277 damage. Casts a [6% Blind] debuff on the target, lasting 6s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 815% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Red Mellia is a name few have heard of, but her deeds are quite famous. How? Simple: Mellia had the misfortune of growing up with Zalasi and Leander, and those knuckleheads end up getting credit for everything she does.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

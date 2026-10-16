@@ -1,0 +1,283 @@
+{
+ "id": 218,
+ "slug": "bran",
+ "name": "Bran",
+ "title": "The Blessed",
+ "summary": "Sacrifice your health for the survival of your Allies providing Shields and Restoring their Life.",
+ "lore": "A giant of immense physical might and necromantic magics, Bran the Blessed fought multiple wars waged over the hurt feelings of others. Now he is hesitant to act on the urgings of anyone else, relying solely on his own judgment. While this prevents unnecessary bloodshed, it also makes him slow to rise in Avalon’s defense, leaving his neighbors’ lands vulnerable to attack.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Bran.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Bran_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 58,
+  "def": 95,
+  "spd": 98,
+  "init": 87,
+  "acc": 15,
+  "res": 65,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Phoenix] on any ally below 20% HP for 1 turn.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Heals this hero for 100% of the damage transferred from allies.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Regal Bulwark",
+   "description": "Attack 1 enemy 170%DEF+160%ATK then place [DEF Up II] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/bran/ICON_Bran_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "170%DEF+160%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Guardian Giant",
+   "description": "Attack 1 enemy 240%DEF+225%ATK. Place [Protect II] on all allies except this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/bran/ICON_Bran_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "240%DEF+225%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Phoenix",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Phoenix on any ally below 20% HP for 1 turn.",
+     "upgrade_description": "Place [Phoenix] on any ally below 20% HP for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% DEF in Dungeon Battles",
+   "icon_url": "/godforge/abilities/bran/ICON_Leader_Defence.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Noble Martyr",
+   "description": "Transfers 20% of the damage inflicted to allies to this hero.",
+   "icon_url": "/godforge/abilities/bran/ICON_Bran_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Heals this hero for 100% of the damage transferred from allies.",
+     "upgrade_description": "Heals this hero for 100% of the damage transferred from allies."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Mystical Cauldron",
+   "description": "Place Shield200%DEF on all allies above 50% HP and heal 100%DEF all allies below 50% HP then revive 1 dead ally with 40% HP and Turn Meter. Also place [Intercept] on any ally below 20% HP for 1 turn.",
+   "icon_url": "/godforge/abilities/bran/ICON_Bran_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Noble Martyr",
+   "description": "Transfers 10% of the damage inflicted to allies to this hero.",
+   "icon_url": "/godforge/abilities/bran/ICON_Bran_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

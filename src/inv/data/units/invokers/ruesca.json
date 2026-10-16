@@ -1,0 +1,549 @@
+{
+ "slug": "ruesca",
+ "kind": "Invoker",
+ "name": "Ruesca",
+ "faction": "Nocturna",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/ruesca/portrait.webp",
+ "fullArt": "/invokers/units/invokers/ruesca/full.webp",
+ "stats": {
+  "base": {
+   "Health": "320",
+   "Attack": "38",
+   "Defense": "30",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "108"
+  },
+  "max": {
+   "Health": "4,147",
+   "Attack": "549",
+   "Defense": "380",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "108"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ruesca/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+106",
+    "titan": "+58"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 21% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 32% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 39% ATK\n#4 Attacks 1 enemy, dealing 20 damage.\nDamage: 51.5% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 12 damage.\nDamage: 31% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 22.3% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 33.9% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 41.3% ATK\n#4 Attacks 1 enemy, dealing 21 damage.\nDamage: 54.6% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 12 damage.\nDamage: 32.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 23.5% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 35.8% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 43.7% ATK\n#4 Attacks 1 enemy, dealing 22 damage.\nDamage: 57.7% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 13 damage.\nDamage: 34.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 25.6% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 39% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 47.6% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 62.8% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 14 damage.\nDamage: 37.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 42.9% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 52.3% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 69% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 16 damage.\nDamage: 41.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 30.2% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 46.1% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 56.2% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 74.2% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 17 damage.\nDamage: 44.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 32.8% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 49.9% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 60.8% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 80.3% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 18 damage.\nDamage: 48.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 34.9% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 53.1% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 64.7% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 85.5% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 20 damage.\nDamage: 51.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 57% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 69.4% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 91.7% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 21 damage.\nDamage: 55.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 39.5% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 60.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 73.3% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 96.8% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 22 damage.\nDamage: 58.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 42% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 64% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 103% ATK\n#5 Attacks 8 enemies in a 2m radius around Ruesca, dealing 24 damage.\nDamage: 62% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Tracker's Vigor",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ruesca/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 46 damage.\n#1 Damage: 122% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 129.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 52 damage.\n#1 Damage: 136.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 57 damage.\n#1 Damage: 148.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 62 damage.\n#1 Damage: 163.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 67 damage.\n#1 Damage: 175.7% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 72 damage.\n#1 Damage: 190.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 202.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 83 damage.\n#1 Damage: 217.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage.\n#1 Damage: 229.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 93 damage.\n#1 Damage: 244% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Seeker's Spear",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ruesca/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 52 damage. Damage increases by 5% against targets with HP above 80%.\n#1 Damage: 137.5% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 55 damage. Damage increases by 6% against targets with HP above 80%.\n#1 Damage: 145.7% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 59 damage. Damage increases by 6% against targets with HP above 75%.\n#1 Damage: 154% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 64 damage. Damage increases by 6% against targets with HP above 75%.\n#1 Damage: 167.8% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage. Damage increases by 6% against targets with HP above 70%.\n#1 Damage: 184.2% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 75 damage. Damage increases by 7% against targets with HP above 70%.\n#1 Damage: 198% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage. Damage increases by 7% against targets with HP above 65%.\n#1 Damage: 214.5% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 87 damage. Damage increases by 8% against targets with HP above 65%.\n#1 Damage: 228.2% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 93 damage. Damage increases by 8% against targets with HP above 65%.\n#1 Damage: 244.8% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 98 damage. Damage increases by 8% against targets with HP above 60%.\n#1 Damage: 258.5% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 105 damage. Damage increases by 10% against targets with HP above 60%.\n#1 Damage: 275% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Predator's Pounce",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/ruesca/skills/3.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+46",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 46 damage. Casts a [5% RES Down] debuff on the targets, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 121% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 49 damage. Casts a [6% RES Down] debuff on the targets, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 128.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 51 damage. Casts a [6% RES Down] debuff on the targets, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 135.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 56 damage. Casts a [6% RES Down] debuff on the targets, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 147.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 62 damage. Casts a [7% RES Down] debuff on the targets, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 162.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 66 damage. Casts a [7% RES Down] debuff on the targets, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 174.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 72 damage. Casts a [8% RES Down] debuff on the targets, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 188.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 76 damage. Casts a [8% RES Down] debuff on the targets, lasting 9s.\nAccuracy required for: RES Down\n#1 Damage: 200.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 82 damage. Casts a [10% RES Down] debuff on the targets, lasting 9s.\nAccuracy required for: RES Down\n#1 Damage: 215.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 86 damage. Casts a [10% RES Down] debuff on the targets, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 227.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Charges the furthest enemy in a 8m radius. \nAttacks 7 enemies in a 6m semicircle in front of Ruesca, from a distance of 8m, dealing 92 damage. Casts a [12% RES Down] debuff on the targets, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 242% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hunter's Flash",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ruesca/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 51 damage per hit. Ruesca gains 9 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 135% ATK\n#2 Damage: 135% ATK\n#3 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 54 damage per hit. Ruesca gains 10 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 143.1% ATK\n#2 Damage: 143.1% ATK\n#3 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 57 damage per hit. Ruesca gains 11 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 151.2% ATK\n#2 Damage: 151.2% ATK\n#3 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 63 damage per hit. Ruesca gains 12 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 164.7% ATK\n#2 Damage: 164.7% ATK\n#3 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 69 damage per hit. Ruesca gains 12 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 180.9% ATK\n#2 Damage: 180.9% ATK\n#3 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 74 damage per hit. Ruesca gains 13 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 194.4% ATK\n#2 Damage: 194.4% ATK\n#3 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 80 damage per hit. Ruesca gains 14 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 210.6% ATK\n#2 Damage: 210.6% ATK\n#3 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 85 damage per hit. Ruesca gains 14 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 224.1% ATK\n#2 Damage: 224.1% ATK\n#3 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 91 damage per hit. Ruesca gains 15 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 240.3% ATK\n#2 Damage: 240.3% ATK\n#3 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 96 damage per hit. Ruesca gains 16 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 253.8% ATK\n#2 Damage: 253.8% ATK\n#3 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 103 damage per hit. Ruesca gains 18 Titan Mana on each hit if the hit lands as a critical hit.\n#1 Damage: 270% ATK\n#2 Damage: 270% ATK\n#3 Damage: 270% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Ruesca is good at two things: finding monsters, and killing monsters. She travels all across the Evernight Basin, forever on the hunt for abominations – both people and animal – and no matter how many questions she has to ask or how far in the woods she has to search, she always gets her prey.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

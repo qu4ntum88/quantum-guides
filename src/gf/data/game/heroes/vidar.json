@@ -1,0 +1,249 @@
+{
+ "id": 121,
+ "slug": "vidar",
+ "name": "Vidar",
+ "title": "Silent Avenger",
+ "summary": "Grows stronger as allies are defeated and avenges them all.",
+ "lore": "Prophesied to avenge the death of his father, Odin, and to stand as one of Ragnarok’s few survivors, Vidar is a brooding, silent warrior. He often accompanies other gods into battle as preparation for his grim destiny. Now that the Shattering has thrown this future into question, however, Vidar works to punish all who harm Asgard—especially the gods of Aaru who invaded his Realm.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Vidar.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Vidar_main.png",
+ "stats": {
+  "hp": 1620,
+  "atk": 71,
+  "def": 81,
+  "spd": 86,
+  "init": 80,
+  "acc": 15,
+  "res": 25,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If there are no living allies, attack all enemies instead.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Into the Maw",
+   "description": "Attack 1 enemy 10%HP+115%ATK and heal for 10% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/vidar/ICON_Vidar_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+115%ATK",
+    "5%HP+65%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If there are no living allies, attack all enemies instead.",
+     "upgrade_description": "If there are no living allies, attack all enemies instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Mightiest Shoe",
+   "description": "Attack 1 enemy 15%HP+185%ATK. Increase this hero’s ATK by 5% (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/vidar/ICON_Vidar_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Vow of Silence",
+   "description": "Increase this hero’s Max HP by 10% each time an ally dies (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/vidar/ICON_Vidar_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Victory from Defeat",
+   "description": "Attack 1 enemy 15%HP+185%ATK. If there are no living allies, increase the damage inflicted by 50%.",
+   "icon_url": "/godforge/abilities/vidar/ICON_Vidar_Ultimate.webp",
+   "divinity_cost": 2600,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Vow of Silence",
+   "description": "Increase this hero’s Max HP by 5% each time an ally dies (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/vidar/ICON_Vidar_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

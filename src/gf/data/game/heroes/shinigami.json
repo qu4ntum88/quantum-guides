@@ -1,0 +1,306 @@
+{
+ "id": 89,
+ "slug": "shinigami",
+ "name": "Shinigami",
+ "title": "Shadow Reaper",
+ "summary": "Bring your foes to the afterlife as you Curse and Drain their lifeforce.",
+ "lore": "Terrifying kami of Izumo, the shinigami are considered spirits by some, gods by others. As literal manifestations of the death urge, shinigami call mortals to the underworld of Yomi. Some are content merely guiding those who seek death—whether self-inflicted or in the pursuit of some cause—but others possess the living and influence their victims to take their own lives.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Shinigami.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Shinigami_main.png",
+ "stats": {
+  "hp": 1500,
+  "atk": 72,
+  "def": 79,
+  "spd": 86,
+  "init": 83,
+  "acc": 15,
+  "res": 25,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also has a 50% chance to place [Hex I] on each target for 2 turns.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Mortal Reminder",
+   "description": "Attack 1 enemy 5%HP+65%ATK 2 times. Each hit has a 40% chance to destroy MAX HP by 20% of the damage inflicted.\n\nCannot destroy more than 50% of the target’s MAX HP.",
+   "icon_url": "/godforge/abilities/shinigami/ICON_Shinigami_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+65%ATK",
+    "5%HP+65%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Soul Cleave",
+   "description": "Attack all enemies 5%HP+50%ATK 2 times. Each hit has a 50% chance to place [DEF Down I] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/shinigami/ICON_Shinigami_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "5%HP+50%ATK",
+    "5%HP+50%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also has a 50% chance to place Hex I on each target for 2 turns.",
+     "upgrade_description": "Also has a 50% chance to place [Hex I] on each target for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Afterlife Calls",
+   "description": "Instantly defeat an enemy if they have less than 10% HP after attacking them.",
+   "icon_url": "/godforge/abilities/shinigami/ICON_Shinigami_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Custodial Reaper",
+   "description": "Attack 1 enemy 15%HP+165%ATK with a 75% chance to place [Curse I] and [Drain I] on the target for 2 turns.\n\nIncreases the damage inflicted by 3% for each Debuff on the target.",
+   "icon_url": "/godforge/abilities/shinigami/ICON_Shinigami_Ultimate.webp",
+   "divinity_cost": 1575,
+   "damage_formula": [
+    "15%HP+165%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Curse I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Drain I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Afterlife Calls",
+   "description": "Instantly defeat an enemy if they have less than 5% HP after attacking them.",
+   "icon_url": "/godforge/abilities/shinigami/ICON_Shinigami_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

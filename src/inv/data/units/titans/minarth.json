@@ -1,0 +1,507 @@
+{
+ "slug": "minarth",
+ "kind": "Titan",
+ "name": "Minarth",
+ "faction": "Stonehearts",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/minarth/portrait.webp",
+ "fullArt": "/invokers/units/titans/minarth/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+600",
+   "Bonus ATK": "+84",
+   "Bonus DEF": "+66",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,606",
+   "Bonus ATK": "+505",
+   "Bonus DEF": "+397",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/minarth/skills/0.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 111 damage.\nDamage: 132.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 116 damage. Casts a [10% Combo SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Combo SPD Down\nDamage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 118 damage.\nDamage: 140.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 122 damage. Casts a [11% Combo SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Combo SPD Down\nDamage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 125 damage.\nDamage: 148.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 129 damage. Casts a [12% Combo SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Combo SPD Down\nDamage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 136 damage.\nDamage: 161.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 141 damage. Casts a [12% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 149 damage.\nDamage: 177.6% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 155 damage. Casts a [13% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 160 damage.\nDamage: 190.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 166 damage. Casts a [14% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 174 damage.\nDamage: 206.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 180 damage. Casts a [15% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 185 damage.\nDamage: 219.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 192 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Combo SPD Down\nDamage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 198 damage.\nDamage: 235.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 206 damage. Casts a [16% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 209 damage.\nDamage: 249.1% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 217 damage. Casts a [18% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 223 damage.\nDamage: 265% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 231 damage. Casts a [20% Combo SPD Down] debuff on the target, lasting 6s.\nAccuracy required for: Combo SPD Down\nDamage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Lightning Quake",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/minarth/skills/1.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+27",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 118 damage. Casts a [25% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 125 damage. Casts a [30% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 132 damage. Casts a [30% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 143 damage. Casts a [30% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 158 damage. Casts a [35% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 169 damage. Casts a [35% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 183 damage. Casts a [35% DEF Down] debuff on the targets, lasting 15s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 195 damage. Casts a [40% DEF Down] debuff on the targets, lasting 15s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 209 damage. Casts a [40% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 221 damage. Casts a [45% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 15m radius to Minarth. Attacks the targets in a 10m radius around Minarth, from a distance of 2m, dealing 235 damage. Casts a [50% DEF Down] debuff on the targets, lasting 18s.\nAccuracy required for: Pull, DEF Down\n#1 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Annihilator Wing",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/minarth/skills/2.webp",
+   "effects": [
+    {
+     "label": "Shock",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 125% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 120 damage. Casts a [Shock] debuff on the targets, lasting 3s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 127 damage. Casts a [Shock] debuff on the targets, lasting 3.3s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 134 damage. Casts a [Shock] debuff on the targets, lasting 3.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 146 damage. Casts a [Shock] debuff on the targets, lasting 3.8s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 160 damage. Casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 172 damage. Casts a [Shock] debuff on the targets, lasting 4s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 187 damage. Casts a [Shock] debuff on the targets, lasting 4.3s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 199 damage. Casts a [Shock] debuff on the targets, lasting 4.5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 213 damage. Casts a [Shock] debuff on the targets, lasting 4.8s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 225 damage. Casts a [Shock] debuff on the targets, lasting 5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 7m radius around the target, from a distance of 4m, dealing 239 damage. Casts a [Shock] debuff on the targets, lasting 5s. Shocked targets cannot move or use Skills, and take increased damage from attacks (125%), but their Skill Cooldowns will behave as normal.\nAccuracy required for: Shock\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/minarth/skills/3.webp",
+   "effects": [
+    {
+     "label": "Blind",
+     "group": "Debuffs",
+     "description": "The recipient has a percentage chance to miss their Combo Attacks, and not deal any damage. Combo Attacks that are missed do not generate any Mana for the attacker. Miss chance stacks along with any Miss chance from other sources, such as from skills."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 202 damage. Casts a [15% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 240% ATK\nINVOKATION END\nCasts a [40% Crit DMG Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 214 damage. Casts a [17% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 254.4% ATK\nINVOKATION END\nCasts a [45% Crit DMG Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 226 damage. Casts a [19% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 268.8% ATK\nINVOKATION END\nCasts a [50% Crit DMG Up] buff on the Bound Invoker, lasting 10s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 246 damage. Casts a [19% Blind] debuff on the targets, lasting 13s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 292.8% ATK\nINVOKATION END\nCasts a [50% Crit DMG Up] buff on the Bound Invoker, lasting 11s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 270 damage. Casts a [21% Blind] debuff on the targets, lasting 13s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 321.6% ATK\nINVOKATION END\nCasts a [50% Crit DMG Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 290 damage. Casts a [23% Blind] debuff on the targets, lasting 13s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 345.6% ATK\nINVOKATION END\nCasts a [60% Crit DMG Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 314 damage. Casts a [23% Blind] debuff on the targets, lasting 14s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 374.4% ATK\nINVOKATION END\nCasts a [60% Crit DMG Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 335 damage. Casts a [25% Blind] debuff on the targets, lasting 14s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 398.4% ATK\nINVOKATION END\nCasts a [60% Crit DMG Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 359 damage. Casts a [25% Blind] debuff on the targets, lasting 15s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 427.2% ATK\nINVOKATION END\nCasts a [70% Crit DMG Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 379 damage. Casts a [30% Blind] debuff on the targets, lasting 15s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 451.2% ATK\nINVOKATION END\nCasts a [70% Crit DMG Up] buff on the Bound Invoker, lasting 18s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 403 damage. Casts a [30% Blind] debuff on the targets, lasting 17s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\n#1 Damage: 480% ATK\nINVOKATION END\nCasts a [80% Crit DMG Up] buff on the Bound Invoker, lasting 18s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/minarth/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +28% Attack.\nOutside Dungeon mode: +16% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +30.8% Attack.\nOutside Dungeon mode: +17.6% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +33.6% Attack.\nOutside Dungeon mode: +19.2% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +39.2% Attack.\nOutside Dungeon mode: +22.4% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +44.8% Attack.\nOutside Dungeon mode: +25.6% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +50.4% Attack.\nOutside Dungeon mode: +28.8% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +56% Attack.\nOutside Dungeon mode: +32% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "While the Deepcast Dwarves keep their most important secrets physically locked up in their Memorium Gem vaults, the Goldcast's finest marvels are for the Elder King's eyes only. Minarth is one such creation – a Titan of such raw power, it can crack Stoneloom's glass peak in two with a swing of its hammer. It's only to be Invoked when Stoneloom is in mortal peril, as its last line of defense.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S",
+  "hyxxis": "S",
+  "koltmos": "S",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S+",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "S",
+  "sakiel": "S+",
+  "sorgott": "S",
+  "ulgorim": "S",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 89.3,
+  "lists": 16
+ }
+}

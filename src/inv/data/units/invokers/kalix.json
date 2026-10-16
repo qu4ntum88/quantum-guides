@@ -1,0 +1,555 @@
+{
+ "slug": "kalix",
+ "kind": "Invoker",
+ "name": "Kalix",
+ "faction": "Lightseekers",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/kalix/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kalix/full.webp",
+ "stats": {
+  "base": {
+   "Health": "605",
+   "Attack": "48",
+   "Defense": "51",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "100"
+  },
+  "max": {
+   "Health": "7,073",
+   "Attack": "645",
+   "Defense": "578",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kalix/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+101",
+    "titan": "+55"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 37.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 49.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 62% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage.\nDamage: 37.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 39.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 52.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 65.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage.\nDamage: 39.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 42% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 55.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 69.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 42% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 45.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 60.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 75.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage.\nDamage: 45.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 50.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 83.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage.\nDamage: 50.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 54% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 71.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 89.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage.\nDamage: 54% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 58.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 96.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 28 damage.\nDamage: 58.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 62.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 82.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 102.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 30 damage.\nDamage: 62.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 66.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 88.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 110.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 32 damage.\nDamage: 66.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 70.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 93.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 116.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 34 damage.\nDamage: 70.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 75% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 99% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 124% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 36 damage.\nDamage: 75% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Twin Virtue",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kalix/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 31 damage per hit.\n#1 Damage: 65% ATK\n#2 Damage: 65% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 33 damage per hit.\n#1 Damage: 68.9% ATK\n#2 Damage: 68.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 35 damage per hit.\n#1 Damage: 72.8% ATK\n#2 Damage: 72.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 38 damage per hit.\n#1 Damage: 79.3% ATK\n#2 Damage: 79.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 42 damage per hit.\n#1 Damage: 87.1% ATK\n#2 Damage: 87.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 45 damage per hit.\n#1 Damage: 93.6% ATK\n#2 Damage: 93.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 49 damage per hit.\n#1 Damage: 101.4% ATK\n#2 Damage: 101.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 52 damage per hit.\n#1 Damage: 107.9% ATK\n#2 Damage: 107.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 56 damage per hit.\n#1 Damage: 115.7% ATK\n#2 Damage: 115.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 59 damage per hit.\n#1 Damage: 122.2% ATK\n#2 Damage: 122.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 62 damage per hit.\n#1 Damage: 130% ATK\n#2 Damage: 130% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Might of Constraint",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kalix/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 133 damage. Casts a [20% ATK Down] debuff on the target, lasting 6s.\nAccuracy required for: ATK Down\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 141 damage. Casts a [21% ATK Down] debuff on the target, lasting 6s.\nAccuracy required for: ATK Down\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 149 damage. Casts a [22% ATK Down] debuff on the target, lasting 6s.\nAccuracy required for: ATK Down\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 163 damage. Casts a [23% ATK Down] debuff on the target, lasting 7s.\nAccuracy required for: ATK Down\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 178 damage. Casts a [23% ATK Down] debuff on the target, lasting 7s.\nAccuracy required for: ATK Down\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 192 damage. Casts a [24% ATK Down] debuff on the target, lasting 7s.\nAccuracy required for: ATK Down\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 208 damage. Casts a [25% ATK Down] debuff on the target, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 221 damage. Casts a [26% ATK Down] debuff on the target, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 237 damage. Casts a [26% ATK Down] debuff on the target, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 250 damage. Casts a [27% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 266 damage. Casts a [30% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Breath of the Drake",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kalix/skills/3.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 26 damage per hit. Each hit casts a [1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 55% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick\n#4 Damage: 55% ATK\n#5 Burn Damage Limit: 150% ATK per tick\n#6 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 28 damage per hit. Each hit casts a [1.05% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.05% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.53% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 58.3% ATK\n#2 Burn Damage Limit: 150% ATK per tick\n#3 Burn Target Allies Damage Limit: 150% ATK per tick\n#4 Damage: 58.3% ATK\n#5 Burn Damage Limit: 150% ATK per tick\n#6 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 30 damage per hit. Each hit casts a [1.1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 61.6% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick\n#4 Damage: 61.6% ATK\n#5 Burn Damage Limit: 175% ATK per tick\n#6 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 32 damage per hit. Each hit casts a [1.1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 67.1% ATK\n#2 Burn Damage Limit: 175% ATK per tick\n#3 Burn Target Allies Damage Limit: 175% ATK per tick\n#4 Damage: 67.1% ATK\n#5 Burn Damage Limit: 175% ATK per tick\n#6 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 35 damage per hit. Each hit casts a [1.15% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.58% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 73.7% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Damage: 73.7% ATK\n#5 Burn Damage Limit: 200% ATK per tick\n#6 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 38 damage per hit. Each hit casts a [1.15% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.58% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 79.2% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Damage: 79.2% ATK\n#5 Burn Damage Limit: 200% ATK per tick\n#6 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 41 damage per hit. Each hit casts a [1.15% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.58% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 85.8% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick\n#4 Damage: 85.8% ATK\n#5 Burn Damage Limit: 225% ATK per tick\n#6 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 44 damage per hit. Each hit casts a [1.15% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.58% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 91.3% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick\n#4 Damage: 91.3% ATK\n#5 Burn Damage Limit: 225% ATK per tick\n#6 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 47 damage per hit. Each hit casts a [1.15% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.15% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.58% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 97.9% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Damage: 97.9% ATK\n#5 Burn Damage Limit: 250% ATK per tick\n#6 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 50 damage per hit. Each hit casts a [1.25% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 103.4% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Damage: 103.4% ATK\n#5 Burn Damage Limit: 250% ATK per tick\n#6 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, 2 times, dealing 53 damage per hit. Each hit casts a [1.25% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 110% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\n#4 Damage: 110% ATK\n#5 Burn Damage Limit: 300% ATK per tick\n#6 Burn Target Allies Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Duality of Light",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kalix/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 112 damage. Instantly ticks 1 [Burn] debuff on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 232.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 118 damage. Instantly ticks 1 [Burn] debuff on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 246.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 125 damage. Instantly ticks 1 [Burn] debuff on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 260.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 136 damage. Instantly ticks 1 [Burn] debuff on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 283.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 150 damage. Instantly ticks 1 [Burn] debuff on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 311.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 161 damage. Instantly ticks 2 [Burn] debuffs on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 334.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 174 damage. Instantly ticks 2 [Burn] debuffs on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 362.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 185 damage. Instantly ticks 2 [Burn] debuffs on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 386% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 199 damage. Instantly ticks 2 [Burn] debuffs on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 413.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 210 damage. Instantly ticks 2 [Burn] debuffs on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 437.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 223 damage. Instantly ticks 3 [Burn] debuffs on the targets.\nAccuracy required for: Debuff Instant Tick\n#1 Damage: 465% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Kalix was a rising star in the Lightseeker Sacriat. Her ambition was fierce, but she set it aside when she found Titans being bound to a staff by forbidden magic. She destroyed the cult, but too late – the magic was sealed. Now she is the only one who can wield the staff, and redeem the souls within.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "A+",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "A",
+  "sakiel": "B",
+  "sorgott": "C",
+  "ulgorim": "A",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 45.5,
+  "lists": 16
+ }
+}

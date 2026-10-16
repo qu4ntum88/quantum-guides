@@ -1,0 +1,260 @@
+{
+ "id": 167,
+ "slug": "thracian_lion",
+ "name": "Thracian Lion",
+ "title": "Hellenic Beast",
+ "summary": "Protect your pride and Taunt enemies to attack you as thrash through enemies.",
+ "lore": "A fearsome predator stalking the wilds of Olympus, the mighty Thracian lion is a symbol of kingly and divine power. Possessing fur the color of burnished gold, the lion uses both stealth and the element of surprise to hunt, springing upon its prey with a heart-stopping roar. It is said that kings capture and train these beasts to stand guard over palaces and tombs.",
+ "rarity": "Uncommon",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Thracian Lion.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_ThracianLion_main.png",
+ "stats": {
+  "hp": 1050,
+  "atk": 52,
+  "def": 83,
+  "spd": 92,
+  "init": 83,
+  "acc": 5,
+  "res": 30,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.01,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Steel Claws",
+   "description": "Attack 1 enemy 75%DEF+80%ATK 2 times with a 30% chance to place [ATK Down I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/thracian_lion/ICON_ThracianLion_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "75%DEF+80%ATK",
+    "75%DEF+80%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 30,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Impenetrable Hide",
+   "description": "Attack 1 enemy 200%DEF+205%ATK then place [Ward] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/thracian_lion/ICON_ThracianLion_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "200%DEF+205%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Ward",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Ultimate",
+   "name": "Territorial Roar",
+   "description": "Heal 20%HP this hero, then has a 50% chance to place [Taunt] on 2 random enemies for 1 turn.",
+   "icon_url": "/godforge/abilities/thracian_lion/ICON_ThracianLion_Ultimate.webp",
+   "divinity_cost": 1700,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "RandomEnemyAlive",
+     "target_label": "RandomEnemyAlive",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "RandomEnemyAlive",
+     "target_label": "RandomEnemyAlive",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

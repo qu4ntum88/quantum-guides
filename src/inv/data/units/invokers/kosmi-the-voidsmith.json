@@ -1,0 +1,571 @@
+{
+ "slug": "kosmi-the-voidsmith",
+ "kind": "Invoker",
+ "name": "Kosmi the Voidsmith",
+ "faction": "Stonehearts",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/kosmi-the-voidsmith/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kosmi-the-voidsmith/full.webp",
+ "stats": {
+  "base": {
+   "Health": "888",
+   "Attack": "92",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "118"
+  },
+  "max": {
+   "Health": "9,516",
+   "Attack": "1,128",
+   "Defense": "741",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "148"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kosmi-the-voidsmith/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25.5% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 40% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 65% ATK\n#5 Attacks 1 enemy, dealing 71 damage. Extends the duration of up to 2 random buffs on Kosmi by 1s.\nDamage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 27% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 42.4% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 54.6% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 68.9% ATK\n#5 Attacks 1 enemy, dealing 76 damage. Extends the duration of up to 2 random buffs on Kosmi by 1.1s.\nDamage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 28.6% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 44.8% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 57.7% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 72.8% ATK\n#5 Attacks 1 enemy, dealing 80 damage. Extends the duration of up to 2 random buffs on Kosmi by 1.2s.\nDamage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 31.1% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 48.8% ATK\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 62.8% ATK\n#4 Attacks 1 enemy, dealing 73 damage.\nDamage: 79.3% ATK\n#5 Attacks 1 enemy, dealing 87 damage. Extends the duration of up to 2 random buffs on Kosmi by 1.4s.\nDamage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 34.2% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 53.6% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 69% ATK\n#4 Attacks 1 enemy, dealing 80 damage.\nDamage: 87.1% ATK\n#5 Attacks 1 enemy, dealing 96 damage. Extends the duration of up to 2 random buffs on Kosmi by 1.6s.\nDamage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 57.6% ATK\n#3 Attacks 1 enemy, dealing 68 damage.\nDamage: 74.2% ATK\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 93.6% ATK\n#5 Attacks 1 enemy, dealing 103 damage. Extends the duration of up to 2 random buffs on Kosmi by 1.8s.\nDamage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 62.4% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 80.3% ATK\n#4 Attacks 1 enemy, dealing 93 damage.\nDamage: 101.4% ATK\n#5 Attacks 1 enemy, dealing 111 damage. Extends the duration of up to 2 random buffs on Kosmi by 2s.\nDamage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 39 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 61 damage.\nDamage: 66.4% ATK\n#3 Attacks 1 enemy, dealing 79 damage.\nDamage: 85.5% ATK\n#4 Attacks 1 enemy, dealing 99 damage.\nDamage: 107.9% ATK\n#5 Attacks 1 enemy, dealing 118 damage. Extends the duration of up to 2 random buffs on Kosmi by 2.2s.\nDamage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 45.4% ATK\n#2 Attacks 1 enemy, dealing 66 damage.\nDamage: 71.2% ATK\n#3 Attacks 1 enemy, dealing 84 damage.\nDamage: 91.7% ATK\n#4 Attacks 1 enemy, dealing 106 damage.\nDamage: 115.7% ATK\n#5 Attacks 1 enemy, dealing 127 damage. Extends the duration of up to 2 random buffs on Kosmi by 2.4s.\nDamage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 44 damage.\nDamage: 47.9% ATK\n#2 Attacks 1 enemy, dealing 69 damage.\nDamage: 75.2% ATK\n#3 Attacks 1 enemy, dealing 89 damage.\nDamage: 96.8% ATK\n#4 Attacks 1 enemy, dealing 112 damage.\nDamage: 122.2% ATK\n#5 Attacks 1 enemy, dealing 134 damage. Extends the duration of up to 2 random buffs on Kosmi by 2.6s.\nDamage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 47 damage.\nDamage: 51% ATK\n#2 Attacks 1 enemy, dealing 74 damage.\nDamage: 80% ATK\n#3 Attacks 1 enemy, dealing 95 damage.\nDamage: 103% ATK\n#4 Attacks 1 enemy, dealing 120 damage.\nDamage: 130% ATK\n#5 Attacks 1 enemy, dealing 143 damage. Extends the duration of up to 3 random buffs on Kosmi by 2.6s.\nDamage: 155% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Causality Blow",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kosmi-the-voidsmith/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 138 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 2s. \nReduces the cooldown of Active Skill 3 on Kosmi by 2s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 2s if the target has no buffs instead.\n#1 Damage: 150% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 2.2s. \nReduces the cooldown of Active Skill 3 on Kosmi by 2.2s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 2.2s if the target has no buffs instead.\n#1 Damage: 159% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 155 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 2.4s. \nReduces the cooldown of Active Skill 3 on Kosmi by 2.4s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 2.4s if the target has no buffs instead.\n#1 Damage: 168% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 168 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 2.6s. \nReduces the cooldown of Active Skill 3 on Kosmi by 2.6s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 2.6s if the target has no buffs instead.\n#1 Damage: 183% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 185 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 2.8s. \nReduces the cooldown of Active Skill 3 on Kosmi by 2.8s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 2.8s if the target has no buffs instead.\n#1 Damage: 201% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 199 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 3s. \nReduces the cooldown of Active Skill 3 on Kosmi by 3s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 3s if the target has no buffs instead.\n#1 Damage: 216% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 215 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 3.2s. \nReduces the cooldown of Active Skill 3 on Kosmi by 3.2s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 3.2s if the target has no buffs instead.\n#1 Damage: 234% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 229 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 3.4s. \nReduces the cooldown of Active Skill 3 on Kosmi by 3.4s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 3.4s if the target has no buffs instead.\n#1 Damage: 249% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 246 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 3.6s. \nReduces the cooldown of Active Skill 3 on Kosmi by 3.6s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 3.6s if the target has no buffs instead.\n#1 Damage: 267% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 259 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 3.8s. \nReduces the cooldown of Active Skill 3 on Kosmi by 3.8s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 3.8s if the target has no buffs instead.\n#1 Damage: 282% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 276 damage. Reduces the cooldown of Active Skill 3 on Kosmi by 4s. \nReduces the cooldown of Active Skill 3 on Kosmi by 4s. Then, reduces the cooldown of Active Skill 2 on Kosmi by 4s if the target has no buffs instead.\n#1 Damage: 300% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Destructor Shard",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kosmi-the-voidsmith/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 147 damage. Casts a [25% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 160% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 156 damage. Casts a [30% DEF Down] debuff on the targets, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 169.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 165 damage. Casts a [30% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 179.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 180 damage. Casts a [35% DEF Down] debuff on the targets, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 195.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 197 damage. Casts a [35% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 214.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 212 damage. Casts a [40% DEF Down] debuff on the targets, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 230.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 230 damage. Casts a [40% DEF Down] debuff on the targets, lasting 15s.\nAccuracy required for: DEF Down\n#1 Damage: 249.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 244 damage. Casts a [45% DEF Down] debuff on the targets, lasting 15s.\nAccuracy required for: DEF Down\n#1 Damage: 265.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 262 damage. Casts a [45% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 284.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 277 damage. Casts a [50% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 300.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m radius around Kosmi, dealing 294 damage. Casts a [55% DEF Down] debuff on the targets, lasting 16s.\nAccuracy required for: DEF Down\n#1 Damage: 320% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Void Striker",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kosmi-the-voidsmith/skills/3.webp",
+   "effects": [
+    {
+     "label": "Jinx",
+     "group": "Debuffs",
+     "description": "Blocks Buffs from being applied to the recipient.Jinx Buffs will not block Control Buffs, and each Jinx buff will only negate a single Buff before expiring. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 150 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 5% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 12s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 162.5% ATK\n#2 Damage: 162.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 158 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 5% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 13s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 172.2% ATK\n#2 Damage: 172.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 167 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 7% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 13s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 182% ATK\n#2 Damage: 182% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 182 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 7% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 14s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 198.2% ATK\n#2 Damage: 198.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 200 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 9% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 14s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 217.8% ATK\n#2 Damage: 217.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 215 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 9% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 15s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 234% ATK\n#2 Damage: 234% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 233 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 11% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 15s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 253.5% ATK\n#2 Damage: 253.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 248 damage per hit. Steals 2 random buffs from the target. \nKosmi gains 11% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 16s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 269.8% ATK\n#2 Damage: 269.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 266 damage per hit. Steals 3 random buffs from the target. \nKosmi gains 11% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 16s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 289.2% ATK\n#2 Damage: 289.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 281 damage per hit. Steals 3 random buffs from the target. \nKosmi gains 13% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 17s, blocking them from receiving 3 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 305.5% ATK\n#2 Damage: 305.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 299 damage per hit. Steals 3 random buffs from the target. \nKosmi gains 13% Ultimate Mana if the target has no buffs. \nCasts a [Jinx] debuff on 1 enemy, lasting 17s, blocking them from receiving 4 buffs after the second hit.\nAccuracy required for: Buff Steal, Jinx\n#1 Damage: 325% ATK\n#2 Damage: 325% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Reality Ripple",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kosmi-the-voidsmith/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 124 damage per hit, ignores 3% of the target's DEF per buff, up to 20%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 124 damage, ignores 3% of the target's DEF per buff.\n#1 Damage: 135% ATK\n#2 Damage: 135% ATK\n#3 Damage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 132 damage per hit, ignores 3.5% of the target's DEF per buff, up to 20%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 132 damage, ignores 3.5% of the target's DEF per buff.\n#1 Damage: 143.1% ATK\n#2 Damage: 143.1% ATK\n#3 Damage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 139 damage per hit, ignores 4% of the target's DEF per buff, up to 20%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 139 damage, ignores 4% of the target's DEF per buff.\n#1 Damage: 151.2% ATK\n#2 Damage: 151.2% ATK\n#3 Damage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 152 damage per hit, ignores 4.5% of the target's DEF per buff, up to 20%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 152 damage, ignores 4.5% of the target's DEF per buff.\n#1 Damage: 164.7% ATK\n#2 Damage: 164.7% ATK\n#3 Damage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 166 damage per hit, ignores 4.5% of the target's DEF per buff, up to 25%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 166 damage, ignores 4.5% of the target's DEF per buff.\n#1 Damage: 180.9% ATK\n#2 Damage: 180.9% ATK\n#3 Damage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 179 damage per hit, ignores 5% of the target's DEF per buff, up to 25%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 179 damage, ignores 5% of the target's DEF per buff.\n#1 Damage: 194.4% ATK\n#2 Damage: 194.4% ATK\n#3 Damage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 194 damage per hit, ignores 5% of the target's DEF per buff, up to 30%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 194 damage, ignores 5% of the target's DEF per buff.\n#1 Damage: 210.6% ATK\n#2 Damage: 210.6% ATK\n#3 Damage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 206 damage per hit, ignores 5% of the target's DEF per buff, up to 30%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 206 damage, ignores 5% of the target's DEF per buff.\n#1 Damage: 224.1% ATK\n#2 Damage: 224.1% ATK\n#3 Damage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 221 damage per hit, ignores 5.5% of the target's DEF per buff, up to 40%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 221 damage, ignores 5.5% of the target's DEF per buff.\n#1 Damage: 240.3% ATK\n#2 Damage: 240.3% ATK\n#3 Damage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 233 damage per hit, ignores 6% of the target's DEF per buff, up to 40%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 233 damage, ignores 6% of the target's DEF per buff.\n#1 Damage: 253.8% ATK\n#2 Damage: 253.8% ATK\n#3 Damage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 248 damage per hit, ignores 7% of the target's DEF per buff, up to 50%. Attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 248 damage, ignores 7% of the target's DEF per buff.\n#1 Damage: 270% ATK\n#2 Damage: 270% ATK\n#3 Damage: 270% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Kosmi's cornered the market on voidsmithing, a very experimental smithing style that only uses gems found in the reality-bending Voidscar. Getting such gems requires her venturing into this mad realm, fighting off humongous Demons and crossing Shreds where the skies rain molten metal. She's even come to the aid of Durlag and his Voidstormers on her travels – so much so she's an honorary member.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "A+",
+  "hyxxis": "E",
+  "koltmos": "A+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "S",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "S",
+  "sakiel": "S",
+  "sorgott": "E",
+  "ulgorim": "A+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 62.5,
+  "lists": 16
+ }
+}

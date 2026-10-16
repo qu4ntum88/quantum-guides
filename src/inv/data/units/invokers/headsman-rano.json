@@ -1,0 +1,549 @@
+{
+ "slug": "headsman-rano",
+ "kind": "Invoker",
+ "name": "Headsman Rano",
+ "faction": "Lightseekers",
+ "rarity": "Uncommon",
+ "class": "Melee Attacker",
+ "element": "Water",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/headsman-rano/portrait.webp",
+ "fullArt": "/invokers/units/invokers/headsman-rano/full.webp",
+ "stats": {
+  "base": {
+   "Health": "420",
+   "Attack": "43",
+   "Defense": "41",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "104"
+  },
+  "max": {
+   "Health": "5,144",
+   "Attack": "601",
+   "Defense": "490",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "134"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/headsman-rano/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 20.5% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 32% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 42.5% ATK\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 53% ATK\n#5 Attacks 1 enemy, dealing 27 damage.\nDamage: 63.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 21.7% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 33.9% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 45% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 56.2% ATK\n#5 Attacks 1 enemy, dealing 29 damage.\nDamage: 67.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 35.8% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 47.6% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 59.4% ATK\n#5 Attacks 1 enemy, dealing 31 damage.\nDamage: 71.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 39% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 51.9% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 64.7% ATK\n#5 Attacks 1 enemy, dealing 33 damage.\nDamage: 77.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 42.9% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 57% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 71% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 85.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 46.1% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 61.2% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 76.3% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 91.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 32% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 49.9% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 66.3% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 82.7% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 99.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 34% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 53.1% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 70.6% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 88% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 105.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 57% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 75.7% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 94.3% ATK\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 113% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 38.5% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 60.2% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 79.9% ATK\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 99.6% ATK\n#5 Attacks 1 enemy, dealing 51 damage.\nDamage: 119.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 41% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 64% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 85% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 106% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 127% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Empire's Judgment",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/headsman-rano/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 49 damage.\n#1 Damage: 115% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 52 damage.\n#1 Damage: 121.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 55 damage.\n#1 Damage: 128.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 60 damage.\n#1 Damage: 140.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 154.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 71 damage.\n#1 Damage: 165.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 179.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 88 damage.\n#1 Damage: 204.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 93 damage.\n#1 Damage: 216.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 99 damage.\n#1 Damage: 230% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Headsman's Way",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/headsman-rano/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 56 damage per hit, each hit damage increases by 10% against targets with current HP lower than Rano's current HP.\n#1 Damage: 129.5% ATK\n#2 Damage: 129.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 59 damage per hit, each hit damage increases by 12% against targets with current HP lower than Rano's current HP.\n#1 Damage: 137.3% ATK\n#2 Damage: 137.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 62 damage per hit, each hit damage increases by 12% against targets with current HP lower than Rano's current HP.\n#1 Damage: 145% ATK\n#2 Damage: 145% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 68 damage per hit, each hit damage increases by 12% against targets with current HP lower than Rano's current HP.\n#1 Damage: 158% ATK\n#2 Damage: 158% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 75 damage per hit, each hit damage increases by 14% against targets with current HP lower than Rano's current HP.\n#1 Damage: 173.5% ATK\n#2 Damage: 173.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 80 damage per hit, each hit damage increases by 14% against targets with current HP lower than Rano's current HP.\n#1 Damage: 186.5% ATK\n#2 Damage: 186.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 87 damage per hit, each hit damage increases by 16% against targets with current HP lower than Rano's current HP.\n#1 Damage: 202% ATK\n#2 Damage: 202% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 92 damage per hit, each hit damage increases by 16% against targets with current HP lower than Rano's current HP.\n#1 Damage: 215% ATK\n#2 Damage: 215% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 99 damage per hit, each hit damage increases by 18% against targets with current HP lower than Rano's current HP.\n#1 Damage: 230.5% ATK\n#2 Damage: 230.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 105 damage per hit, each hit damage increases by 18% against targets with current HP lower than Rano's current HP.\n#1 Damage: 243.5% ATK\n#2 Damage: 243.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 111 damage per hit, each hit damage increases by 20% against targets with current HP lower than Rano's current HP.\n#1 Damage: 259% ATK\n#2 Damage: 259% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Emperor's Hand",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/headsman-rano/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 56 damage. Launches the targets, knocking them 3m away, for 1s.\nAccuracy required for: Launch\n#1 Damage: 129.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 59 damage. Launches the targets, knocking them 3m away, for 1.1s.\nAccuracy required for: Launch\n#1 Damage: 137.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 62 damage. Launches the targets, knocking them 3m away, for 1.1s.\nAccuracy required for: Launch\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 68 damage. Launches the targets, knocking them 3m away, for 1.1s.\nAccuracy required for: Launch\n#1 Damage: 158% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 75 damage. Launches the targets, knocking them 3m away, for 1.1s.\nAccuracy required for: Launch\n#1 Damage: 173.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 80 damage. Launches the targets, knocking them 3m away, for 1.1s.\nAccuracy required for: Launch\n#1 Damage: 186.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 87 damage. Launches the targets, knocking them 3m away, for 1.2s.\nAccuracy required for: Launch\n#1 Damage: 202% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 92 damage. Launches the targets, knocking them 3m away, for 1.2s.\nAccuracy required for: Launch\n#1 Damage: 215% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 99 damage. Launches the targets, knocking them 3m away, for 1.3s.\nAccuracy required for: Launch\n#1 Damage: 230.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 105 damage. Launches the targets, knocking them 3m away, for 1.3s.\nAccuracy required for: Launch\n#1 Damage: 243.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 6m semicircle in front of Rano, dealing 111 damage. Launches the targets, knocking them 3m away, for 1.3s.\nAccuracy required for: Launch\n#1 Damage: 259% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Imperial Sentence",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/headsman-rano/skills/4.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 108 damage. Casts a [1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 250% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 114 damage. Casts a [1.1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 265% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 120 damage. Casts a [1.2% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 280% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 131 damage. Casts a [1.3% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 305% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 144 damage. Casts a [1.4% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 335% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 155 damage. Casts a [1.5% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 360% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 168 damage. Casts a [1.6% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 390% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 178 damage. Casts a [1.7% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.7% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 415% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 191 damage. Casts a [1.8% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.8% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 445% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 202 damage. Casts a [1.9% Bleed] debuff on the target, lasting 5s. The [Bleed] ticks every 2s, damaging targets by 1.9% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 470% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 215 damage. Casts a [2% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 500% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Rano’s story, and his old identity, are mysteries. All that is known is that he turned against the Emperor and was offered a choice: the executioner’s block, or the executioner’s armor. He chose the armor, and gave up everything else. Only the hand of the Emperor remains.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

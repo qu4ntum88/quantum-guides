@@ -1,0 +1,549 @@
+{
+ "slug": "sitri",
+ "kind": "Invoker",
+ "name": "Sitri",
+ "faction": "Beastbloods",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Duthra",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/sitri/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sitri/full.webp",
+ "stats": {
+  "base": {
+   "Health": "506",
+   "Attack": "61",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "5,870",
+   "Attack": "811",
+   "Defense": "552",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sitri/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+87",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 23.5% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 46.5% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 59% ATK\n#5 Attacks 1 enemy, dealing 44 damage.\nDamage: 71.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 24.9% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 62.5% ATK\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 75.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 26.3% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 52.1% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 66.1% ATK\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 80.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 28.7% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 56.7% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 72% ATK\n#5 Attacks 1 enemy, dealing 53 damage.\nDamage: 87.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 31.5% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 62.3% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 79.1% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 95.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 33.8% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 85% ATK\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 103% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 72.5% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 92% ATK\n#5 Attacks 1 enemy, dealing 68 damage.\nDamage: 111.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 97.9% ATK\n#5 Attacks 1 enemy, dealing 72 damage.\nDamage: 118.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 41.8% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 82.8% ATK\n#4 Attacks 1 enemy, dealing 64 damage.\nDamage: 105% ATK\n#5 Attacks 1 enemy, dealing 78 damage.\nDamage: 127.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 44.2% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 87.4% ATK\n#4 Attacks 1 enemy, dealing 68 damage.\nDamage: 110.9% ATK\n#5 Attacks 1 enemy, dealing 82 damage.\nDamage: 134.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 43 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 93% ATK\n#4 Attacks 1 enemy, dealing 72 damage.\nDamage: 118% ATK\n#5 Attacks 1 enemy, dealing 87 damage.\nDamage: 143% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Economy of Force",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sitri/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 94 damage.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 102 damage.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 112 damage.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 121 damage.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 131 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 158 damage.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 168 damage.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Center of Gravity",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sitri/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage each hit. Damage increases by 5% per buff on Sitri, limited up to +50% damage.\n#1 Damage: 140% * ATK\n#2 Damage: 140% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 91 damage each hit. Damage increases by 5.3% per buff on Sitri, limited up to +50% damage.\n#1 Damage: 148.4% * ATK\n#2 Damage: 148.4% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 96 damage each hit. Damage increases by 5.3% per buff on Sitri, limited up to +55% damage.\n#1 Damage: 156.8% * ATK\n#2 Damage: 156.8% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 104 damage each hit. Damage increases by 5.5% per buff on Sitri, limited up to +55% damage.\n#1 Damage: 170.8% * ATK\n#2 Damage: 170.8% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 114 damage each hit. Damage increases by 6% per buff on Sitri, limited up to +60% damage.\n#1 Damage: 187.6% * ATK\n#2 Damage: 187.6% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 123 damage each hit. Damage increases by 6% per buff on Sitri, limited up to +65% damage.\n#1 Damage: 201.6% * ATK\n#2 Damage: 201.6% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 133 damage each hit. Damage increases by 6.5% per buff on Sitri, limited up to +65% damage.\n#1 Damage: 218.4% * ATK\n#2 Damage: 218.4% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 142 damage each hit. Damage increases by 6.5% per buff on Sitri, limited up to +70% damage.\n#1 Damage: 232.4% * ATK\n#2 Damage: 232.4% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 152 damage each hit. Damage increases by 7% per buff on Sitri, limited up to +70% damage.\n#1 Damage: 249.2% * ATK\n#2 Damage: 249.2% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 161 damage each hit. Damage increases by 7.5% per buff on Sitri, limited up to +70% damage.\n#1 Damage: 263.2% * ATK\n#2 Damage: 263.2% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 171 damage each hit. Damage increases by 7.5% per buff on Sitri, limited up to +75% damage.\n#1 Damage: 280% * ATK\n#2 Damage: 280% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Rapid Dominance",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sitri/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 175 damage. Damage increases by 25% against targets with HP above 80%.\n#1 Damage: 287.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 186 damage. Damage increases by 28% against targets with HP above 80%.\n#1 Damage: 304.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 196 damage. Damage increases by 30% against targets with HP above 80%.\n#1 Damage: 322% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 214 damage. Damage increases by 33% against targets with HP above 80%.\n#1 Damage: 350.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 235 damage. Damage increases by 36% against targets with HP above 80%.\n#1 Damage: 385.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 253 damage. Damage increases by 39% against targets with HP above 80%.\n#1 Damage: 414% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 274 damage. Damage increases by 41% against targets with HP above 75%.\n#1 Damage: 448.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 291 damage. Damage increases by 43% against targets with HP above 75%.\n#1 Damage: 477.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 312 damage. Damage increases by 45% against targets with HP above 70%.\n#1 Damage: 511.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 330 damage. Damage increases by 47% against targets with HP above 70%.\n#1 Damage: 540.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 351 damage. Damage increases by 50% against targets with HP above 65%.\n#1 Damage: 575% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Stroke of Grace",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sitri/skills/4.webp",
+   "effects": [
+    {
+     "label": "Block Revive",
+     "group": "Debuffs",
+     "description": "Recipients of this debuff cannot be Revived. This debuff is cast on enemies at the time of death."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 284 damage. Damage increases by 10% for each 15% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 465% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 301 damage. Damage increases by 10% for each 14% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 492.9% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 318 damage. Damage increases by 11% for each 14% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 520.8% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 346 damage. Damage increases by 11% for each 13% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 567.3% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 380 damage. Damage increases by 12% for each 13% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 623.1% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 408 damage. Damage increases by 12% for each 12% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 669.6% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 442 damage. Damage increases by 13% for each 12% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 725.4% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 471 damage. Damage increases by 13% for each 11% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 771.9% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 505 damage. Damage increases by 14% for each 11% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 827.7% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 533 damage. Damage increases by 14% for each 10% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 874.2% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 567 damage. Damage increases by 15% for each 10% of Sitri's lost HP. \nIf this attack kills the target, casts a [Block Revive] debuff on the target. Enemies killed under a [Block Revive] debuff cannot be revived.\nAccuracy required for: Block Revive\n#1 Damage: 930% * ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Sitri’s mercenary company is one of the most ruthless and capable in all of Amara, and they take after Sitri herself. Running such a professional outfit demands poise, power, and panache – and Sitri has plenty. Nothing shakes her, neither in the boardroom or on the battlefield.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 37.5,
+  "lists": 16
+ }
+}

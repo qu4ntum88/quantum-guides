@@ -1,0 +1,281 @@
+{
+ "id": 107,
+ "slug": "percival",
+ "name": "Percival",
+ "title": "Faithful Knight",
+ "summary": "Resilient brawler that excels in resisting enemy debuffs and taunt heroes aligned with Chaos.",
+ "lore": "Known as one of Arthur’s most skilled and virtuous knights, Percival has shifted his methods since the Shattering. He rides Avalon and its surroundings as a knight errant and rogue agent, fighting and questing for the good of his king and Destiny by whatever means he sees fit—without waiting for the approval, or even knowledge, of either.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Percival.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Percival_main.png",
+ "stats": {
+  "hp": 1740,
+  "atk": 80,
+  "def": 87,
+  "spd": 96,
+  "init": 87,
+  "acc": 20,
+  "res": 40,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Increases the damage inflicted by 25% if the target HP is below 50%.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place the [Retaliate] and [Ward] buffs even if no Debuffs were removed.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Inquisitive Smite",
+   "description": "Attack 1 enemy 15%HP+145%ATK with a 25% chance to remove a random buff.  Will ignore 20% of the target’s defence when attacking Chaos enemies.",
+   "icon_url": "/godforge/abilities/percival/ICON_Percival_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+145%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Increases the damage inflicted by 25% if the target HP is below 50%.",
+     "upgrade_description": "Increases the damage inflicted by 25% if the target HP is below 50%."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Vow of Rectification",
+   "description": "Place [RES Up II] and [Radiance II] on this hero for 2 turns then has a 50% chance to place [Stun] on all enemies for 1 turn.",
+   "icon_url": "/godforge/abilities/percival/ICON_Percival_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "RES Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Radiance II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Resist Temptation",
+   "description": "Increase this hero’s Resistance by 10% for each buff they are under.",
+   "icon_url": "/godforge/abilities/percival/ICON_Percival_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Righteous Retribution",
+   "description": "Remove all Debuffs and Disables from this hero, then attack 1 enemy 20%HP+205%ATK.\n\nIf no debuffs are removed, place [Retaliate] and [Ward] on this hero for 2 turns before attacking.",
+   "icon_url": "/godforge/abilities/percival/ICON_Percival_Ultimate.webp",
+   "divinity_cost": 2250,
+   "damage_formula": [
+    "20%HP+205%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place the Retaliate and Ward buffs even if no Debuffs were removed.",
+     "upgrade_description": "Place the [Retaliate] and [Ward] buffs even if no Debuffs were removed."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Resist Temptation",
+   "description": "Increase this hero’s Resistance by 5% for each buff they are under.",
+   "icon_url": "/godforge/abilities/percival/ICON_Percival_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

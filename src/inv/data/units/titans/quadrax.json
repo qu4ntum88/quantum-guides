@@ -1,0 +1,511 @@
+{
+ "slug": "quadrax",
+ "kind": "Titan",
+ "name": "Quadrax",
+ "faction": "Magi",
+ "rarity": "Epic",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/quadrax/portrait.webp",
+ "fullArt": "/invokers/units/titans/quadrax/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+40%",
+   "Bound Invoker's Crit Rate": "+10%",
+   "Bound Invoker's Crit DMG": "+20%",
+   "Bonus HP": "+530",
+   "Bonus ATK": "+77",
+   "Bonus DEF": "+45",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+360%",
+   "Bound Invoker's Crit Rate": "+16%",
+   "Bound Invoker's Crit DMG": "+60%",
+   "Bonus HP": "+3,185",
+   "Bonus ATK": "+463",
+   "Bonus DEF": "+270",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/quadrax/skills/0.webp",
+   "effects": [
+    {
+     "label": "Crit Rate Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 106 damage.\nDamage: 137.5% ATK\n#2 Attacks 1 enemy, dealing 108 damage. Casts a [15% Crit Rate Down] debuff on the target, lasting 4s.\nAccuracy required for: Crit Rate Down\nDamage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 112 damage.\nDamage: 145.7% ATK\n#2 Attacks 1 enemy, dealing 114 damage. Casts a [16% Crit Rate Down] debuff on the target, lasting 4s.\nAccuracy required for: Crit Rate Down\nDamage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 119 damage.\nDamage: 154% ATK\n#2 Attacks 1 enemy, dealing 121 damage. Casts a [17% Crit Rate Down] debuff on the target, lasting 4s.\nAccuracy required for: Crit Rate Down\nDamage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 129 damage.\nDamage: 167.8% ATK\n#2 Attacks 1 enemy, dealing 132 damage. Casts a [17% Crit Rate Down] debuff on the target, lasting 4.5s.\nAccuracy required for: Crit Rate Down\nDamage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 142 damage.\nDamage: 184.2% ATK\n#2 Attacks 1 enemy, dealing 144 damage. Casts a [18% Crit Rate Down] debuff on the target, lasting 4.5s.\nAccuracy required for: Crit Rate Down\nDamage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 152 damage.\nDamage: 198% ATK\n#2 Attacks 1 enemy, dealing 155 damage. Casts a [19% Crit Rate Down] debuff on the target, lasting 4.5s.\nAccuracy required for: Crit Rate Down\nDamage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 165 damage.\nDamage: 214.5% ATK\n#2 Attacks 1 enemy, dealing 168 damage. Casts a [19% Crit Rate Down] debuff on the target, lasting 5s.\nAccuracy required for: Crit Rate Down\nDamage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 176 damage.\nDamage: 228.2% ATK\n#2 Attacks 1 enemy, dealing 179 damage. Casts a [20% Crit Rate Down] debuff on the target, lasting 5s.\nAccuracy required for: Crit Rate Down\nDamage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 188 damage.\nDamage: 244.8% ATK\n#2 Attacks 1 enemy, dealing 192 damage. Casts a [22% Crit Rate Down] debuff on the target, lasting 5s.\nAccuracy required for: Crit Rate Down\nDamage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 199 damage.\nDamage: 258.5% ATK\n#2 Attacks 1 enemy, dealing 203 damage. Casts a [22% Crit Rate Down] debuff on the target, lasting 6s.\nAccuracy required for: Crit Rate Down\nDamage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 212 damage.\nDamage: 275% ATK\n#2 Attacks 1 enemy, dealing 216 damage. Casts a [25% Crit Rate Down] debuff on the target, lasting 6s.\nAccuracy required for: Crit Rate Down\nDamage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Galactic Slam",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/quadrax/skills/1.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    },
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Skill Recovery Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Skill Recovery stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 71 damage per hit. The first hit casts a [25% DEF Down] debuff on the target, lasting 12s. Then, casts a [40% ACC Down] debuff on the target, lasting 12s, on the second hit. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 12s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 92.5% ATK\n#2 Damage: 92.5% ATK\n#3 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 75 damage per hit. The first hit casts a [30% DEF Down] debuff on the target, lasting 12s. Then, casts a [40% ACC Down] debuff on the target, lasting 12s, on the second hit. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 12s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 98% ATK\n#2 Damage: 98% ATK\n#3 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 80 damage per hit. The first hit casts a [30% DEF Down] debuff on the target, lasting 13s. Then, casts a [45% ACC Down] debuff on the target, lasting 13s, on the second hit. Then, casts a [15% Skill Recovery Down] debuff on the target, lasting 13s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 103.6% ATK\n#2 Damage: 103.6% ATK\n#3 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 87 damage per hit. The first hit casts a [30% DEF Down] debuff on the target, lasting 13s. Then, casts a [45% ACC Down] debuff on the target, lasting 13s, on the second hit. Then, casts a [20% Skill Recovery Down] debuff on the target, lasting 13s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 112.9% ATK\n#2 Damage: 112.9% ATK\n#3 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 95 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 13s. Then, casts a [45% ACC Down] debuff on the target, lasting 13s, on the second hit. Then, casts a [20% Skill Recovery Down] debuff on the target, lasting 13s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 124% ATK\n#2 Damage: 124% ATK\n#3 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 103 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 13s. Then, casts a [50% ACC Down] debuff on the target, lasting 13s, on the second hit. Then, casts a [20% Skill Recovery Down] debuff on the target, lasting 13s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 133.2% ATK\n#2 Damage: 133.2% ATK\n#3 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 111 damage per hit. The first hit casts a [35% DEF Down] debuff on the target, lasting 14s. Then, casts a [50% ACC Down] debuff on the target, lasting 14s, on the second hit. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 14s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 144.3% ATK\n#2 Damage: 144.3% ATK\n#3 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 118 damage per hit. The first hit casts a [40% DEF Down] debuff on the target, lasting 14s. Then, casts a [50% ACC Down] debuff on the target, lasting 14s, on the second hit. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 14s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 153.6% ATK\n#2 Damage: 153.6% ATK\n#3 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 127 damage per hit. The first hit casts a [40% DEF Down] debuff on the target, lasting 14s. Then, casts a [60% ACC Down] debuff on the target, lasting 14s, on the second hit. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 14s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 164.6% ATK\n#2 Damage: 164.6% ATK\n#3 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 134 damage per hit. The first hit casts a [50% DEF Down] debuff on the target, lasting 14s. Then, casts a [60% ACC Down] debuff on the target, lasting 14s, on the second hit. Then, casts a [25% Skill Recovery Down] debuff on the target, lasting 14s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 173.9% ATK\n#2 Damage: 173.9% ATK\n#3 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 3 times, dealing 142 damage per hit. The first hit casts a [50% DEF Down] debuff on the target, lasting 15s. Then, casts a [60% ACC Down] debuff on the target, lasting 15s, on the second hit. Then, casts a [30% Skill Recovery Down] debuff on the target, lasting 15s, on the third hit.\nAccuracy required for: DEF Down, ACC Down, Skill Recovery Down\n#1 Damage: 185% ATK\n#2 Damage: 185% ATK\n#3 Damage: 185% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Supernova Smash",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/quadrax/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 107 damage per hit. Damage increases by 15% per debuff on the target, limited up to +300% damage.\n#1 Damage: 139% ATK\n#2 Damage: 139% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 113 damage per hit. Damage increases by 17% per debuff on the target, limited up to +300% damage.\n#1 Damage: 147.3% ATK\n#2 Damage: 147.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 120 damage per hit. Damage increases by 17% per debuff on the target, limited up to +325% damage.\n#1 Damage: 155.7% ATK\n#2 Damage: 155.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 131 damage per hit. Damage increases by 19% per debuff on the target, limited up to +325% damage.\n#1 Damage: 169.6% ATK\n#2 Damage: 169.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 143 damage per hit. Damage increases by 19% per debuff on the target, limited up to +350% damage.\n#1 Damage: 186.3% ATK\n#2 Damage: 186.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 154 damage per hit. Damage increases by 19% per debuff on the target, limited up to +350% damage.\n#1 Damage: 200.2% ATK\n#2 Damage: 200.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 167 damage per hit. Damage increases by 21% per debuff on the target, limited up to +350% damage.\n#1 Damage: 216.8% ATK\n#2 Damage: 216.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 178 damage per hit. Damage increases by 21% per debuff on the target, limited up to +375% damage.\n#1 Damage: 230.7% ATK\n#2 Damage: 230.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 191 damage per hit. Damage increases by 23% per debuff on the target, limited up to +375% damage.\n#1 Damage: 247.4% ATK\n#2 Damage: 247.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 201 damage per hit. Damage increases by 23% per debuff on the target, limited up to +400% damage.\n#1 Damage: 261.3% ATK\n#2 Damage: 261.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 214 damage per hit. Damage increases by 25% per debuff on the target, limited up to +400% damage.\n#1 Damage: 278% ATK\n#2 Damage: 278% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/quadrax/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 181 damage. Casts a [30% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 235% ATK\nINVOKATION END\nCasts a [30% ATK Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 192 damage. Casts a [32% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 249.1% ATK\nINVOKATION END\nCasts a [35% ATK Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 203 damage. Casts a [34% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 263.2% ATK\nINVOKATION END\nCasts a [35% ATK Up] buff on the Bound Invoker, lasting 13s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 221 damage. Casts a [36% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 286.7% ATK\nINVOKATION END\nCasts a [40% ATK Up] buff on the Bound Invoker, lasting 13s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 242 damage. Casts a [38% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 314.9% ATK\nINVOKATION END\nCasts a [40% ATK Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 261 damage. Casts a [40% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 338.4% ATK\nINVOKATION END\nCasts a [40% ATK Up] buff on the Bound Invoker, lasting 15s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 282 damage. Casts a [42% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 366.6% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 15s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 300 damage. Casts a [44% ATK Down] debuff on the targets, lasting 16s.\nAccuracy required for: ATK Down\n#1 Damage: 390.1% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 16s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 322 damage. Casts a [46% ATK Down] debuff on the targets, lasting 18s.\nAccuracy required for: ATK Down\n#1 Damage: 418.3% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 17s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 340 damage. Casts a [48% ATK Down] debuff on the targets, lasting 18s.\nAccuracy required for: ATK Down\n#1 Damage: 441.8% ATK\nINVOKATION END\nCasts a [45% ATK Up] buff on the Bound Invoker, lasting 18s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 9 enemies with the lowest current HP in a 15m radius around Quadrax, dealing 362 damage. Casts a [50% ATK Down] debuff on the targets, lasting 18s.\nAccuracy required for: ATK Down\n#1 Damage: 470% ATK\nINVOKATION END\nCasts a [50% ATK Up] buff on the Bound Invoker, lasting 18s."
+    }
+   ]
+  },
+  {
+   "name": "ACC Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/quadrax/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +86 Accuracy.\nOutside Dungeon mode: +48 Accuracy."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +94.6 Accuracy.\nOutside Dungeon mode: +52.8 Accuracy."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +103.2 Accuracy.\nOutside Dungeon mode: +57.6 Accuracy."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +120.4 Accuracy.\nOutside Dungeon mode: +67.2 Accuracy."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +137.6 Accuracy.\nOutside Dungeon mode: +76.8 Accuracy."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +154.8 Accuracy.\nOutside Dungeon mode: +86.4 Accuracy."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +172 Accuracy.\nOutside Dungeon mode: +96 Accuracy."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "When the Academy's astromancers birthed Quadrax, they didn't expect a Titan formed from intense study of the cosmos to be so... buff. Usually exercise-adverse Magi who have Invoked Quadrax are astonished by the Titan's power – they feel like they can punch through galaxies and bench-press stars. Some have been so inspired by Quadrax, they've even started hitting the gym.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "A",
+  "hyxxis": "A",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "A",
+  "omnissi-light": "A+",
+  "omnissi-water": "A",
+  "omnissi-wind": "A",
+  "pentiax": "A+",
+  "sakiel": "S+",
+  "sorgott": "A+",
+  "ulgorim": "A+",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 66.1,
+  "lists": 16
+ }
+}

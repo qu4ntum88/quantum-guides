@@ -1,0 +1,543 @@
+{
+ "slug": "garnatt",
+ "kind": "Invoker",
+ "name": "Garnatt",
+ "faction": "Stonehearts",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/garnatt/portrait.webp",
+ "fullArt": "/invokers/units/invokers/garnatt/full.webp",
+ "stats": {
+  "base": {
+   "Health": "594",
+   "Attack": "51",
+   "Defense": "50",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "96"
+  },
+  "max": {
+   "Health": "6,890",
+   "Attack": "679",
+   "Defense": "565",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "121"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/garnatt/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+72",
+    "titan": "+39"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 32.5% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 35 damage.\nDamage: 69.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 34.4% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 38 damage.\nDamage: 73.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 36.4% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 40 damage.\nDamage: 77.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 39.6% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 36 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 84.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 43.5% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 39 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 47 damage.\nDamage: 93.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 46.8% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 51 damage.\nDamage: 100.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 50.7% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 108.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 53.9% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 49 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 59 damage.\nDamage: 115.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 57.8% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 123.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 61.1% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 130.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 65% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 71 damage.\nDamage: 139% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ceiling Smasher",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/garnatt/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+26",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 74 damage.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 86 damage.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 94 damage.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 116 damage.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 132 damage.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Bedrock Bash",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/garnatt/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+29",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage. Damage increases by 15% if the target has debuffs.\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 142 damage. Damage increases by 17% if the target has debuffs.\n#1 Damage: 278.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Damage increases by 17% if the target has debuffs.\n#1 Damage: 294% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Damage increases by 19% if the target has debuffs.\n#1 Damage: 320.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 179 damage. Damage increases by 19% if the target has debuffs.\n#1 Damage: 351.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 193 damage. Damage increases by 21% if the target has debuffs.\n#1 Damage: 378% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 209 damage. Damage increases by 21% if the target has debuffs.\n#1 Damage: 409.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 222 damage. Damage increases by 23% if the target has debuffs.\n#1 Damage: 435.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 238 damage. Damage increases by 23% if the target has debuffs.\n#1 Damage: 467.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 252 damage. Damage increases by 25% if the target has debuffs.\n#1 Damage: 493.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 268 damage. Damage increases by 30% if the target has debuffs.\n#1 Damage: 525% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Stalagmite Crush",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/garnatt/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 71 damage per hit. Garnatt gains 20 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 30 Ultimate Mana instead.\n#1 Damage: 140% ATK\n#2 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 76 damage per hit. Garnatt gains 22 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 32 Ultimate Mana instead.\n#1 Damage: 148.4% ATK\n#2 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 80 damage per hit. Garnatt gains 22 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 32 Ultimate Mana instead.\n#1 Damage: 156.8% ATK\n#2 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 87 damage per hit. Garnatt gains 24 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 34 Ultimate Mana instead.\n#1 Damage: 170.8% ATK\n#2 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 96 damage per hit. Garnatt gains 24 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 34 Ultimate Mana instead.\n#1 Damage: 187.6% ATK\n#2 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 103 damage per hit. Garnatt gains 26 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 36 Ultimate Mana instead.\n#1 Damage: 201.6% ATK\n#2 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 111 damage per hit. Garnatt gains 26 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 36 Ultimate Mana instead.\n#1 Damage: 218.4% ATK\n#2 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 119 damage per hit. Garnatt gains 28 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 38 Ultimate Mana instead.\n#1 Damage: 232.4% ATK\n#2 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 127 damage per hit. Garnatt gains 28 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 38 Ultimate Mana instead.\n#1 Damage: 249.2% ATK\n#2 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 134 damage per hit. Garnatt gains 30 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 40 Ultimate Mana instead.\n#1 Damage: 263.2% ATK\n#2 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 143 damage per hit. Garnatt gains 30 Ultimate Mana. \nIf the hit lands as a critical hit Garnatt gains 40 Ultimate Mana instead.\n#1 Damage: 280% ATK\n#2 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Geode Buster",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/garnatt/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 251 damage. Garnatt gains 100 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 492.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 266 damage. Garnatt gains 110 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 522% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 281 damage. Garnatt gains 120 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 551.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 306 damage. Garnatt gains 130 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 600.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 337 damage. Garnatt gains 130 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 660% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 362 damage. Garnatt gains 140 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 709.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 392 damage. Garnatt gains 150 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 768.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 417 damage. Garnatt gains 160 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 817.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 447 damage. Garnatt gains 170 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 876.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 472 damage. Garnatt gains 180 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 925.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 502 damage. Garnatt gains 200 Titan Mana if the hit lands as a critical hit.\n#1 Damage: 985% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Every mining crew has someone like Garnatt. A Dwarf so rock solid, they pulverize stone with their bare hands. Garnatt's career nearly ended when he punched a parasitic gem that started to eat his whole body. He immediately ordered his fellow miners to carve the rock into a set of gauntlets. He now punches harder than ever. Funny how life works out.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "C",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 38.4,
+  "lists": 16
+ }
+}

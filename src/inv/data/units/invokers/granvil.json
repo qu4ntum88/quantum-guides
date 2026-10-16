@@ -1,0 +1,565 @@
+{
+ "slug": "granvil",
+ "kind": "Invoker",
+ "name": "Granvil",
+ "faction": "Stonehearts",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/granvil/portrait.webp",
+ "fullArt": "/invokers/units/invokers/granvil/full.webp",
+ "stats": {
+  "base": {
+   "Health": "667",
+   "Attack": "76",
+   "Defense": "59",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "108"
+  },
+  "max": {
+   "Health": "7,459",
+   "Attack": "967",
+   "Defense": "640",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "138"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/granvil/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 35.5% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 49% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 59.5% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 72% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 37.6% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 51.9% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 63.1% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 76.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 39.8% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 66.6% ATK\n#5 Attacks 1 enemy, dealing 61 damage.\nDamage: 80.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 43.3% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 59.8% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 72.6% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 87.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 47.6% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 65.7% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 79.7% ATK\n#5 Attacks 1 enemy, dealing 73 damage.\nDamage: 96.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 51.1% ATK\n#3 Attacks 1 enemy, dealing 54 damage.\nDamage: 70.6% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 85.7% ATK\n#5 Attacks 1 enemy, dealing 79 damage.\nDamage: 103.7% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 92.8% ATK\n#5 Attacks 1 enemy, dealing 85 damage.\nDamage: 112.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 58.9% ATK\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 81.3% ATK\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 98.8% ATK\n#5 Attacks 1 enemy, dealing 91 damage.\nDamage: 119.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 48 damage.\nDamage: 63.2% ATK\n#3 Attacks 1 enemy, dealing 66 damage.\nDamage: 87.2% ATK\n#4 Attacks 1 enemy, dealing 80 damage.\nDamage: 105.9% ATK\n#5 Attacks 1 enemy, dealing 97 damage.\nDamage: 128.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 51 damage.\nDamage: 66.7% ATK\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 92.1% ATK\n#4 Attacks 1 enemy, dealing 85 damage.\nDamage: 111.9% ATK\n#5 Attacks 1 enemy, dealing 103 damage.\nDamage: 135.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 71% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 98% ATK\n#4 Attacks 1 enemy, dealing 90 damage.\nDamage: 119% ATK\n#5 Attacks 1 enemy, dealing 109 damage.\nDamage: 144% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Magma Hammer",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/granvil/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage. Granvil gains 20 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage. Granvil gains 22 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 123 damage. Granvil gains 24 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 134 damage. Granvil gains 26 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 148 damage. Granvil gains 28 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Granvil gains 30 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Granvil gains 32 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Granvil gains 34 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 196 damage. Granvil gains 36 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 207 damage. Granvil gains 38 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Granvil gains 40 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Molten Crucible",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/granvil/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Steals 2 random buffs from the target, increasing their duration by 3s.\nAccuracy required for: Buff Steal\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 234 damage. Steals 2 random buffs from the target, increasing their duration by 3.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 247 damage. Steals 2 random buffs from the target, increasing their duration by 3.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 269 damage. Steals 2 random buffs from the target, increasing their duration by 4s.\nAccuracy required for: Buff Steal\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 295 damage. Steals 2 random buffs from the target, increasing their duration by 4s.\nAccuracy required for: Buff Steal\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 317 damage. Steals 2 random buffs from the target, increasing their duration by 4.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 344 damage. Steals 3 random buffs from the target, increasing their duration by 4.5s.\nAccuracy required for: Buff Steal\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 366 damage. Steals 3 random buffs from the target, increasing their duration by 5s.\nAccuracy required for: Buff Steal\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 392 damage. Steals 3 random buffs from the target, increasing their duration by 5s.\nAccuracy required for: Buff Steal\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 414 damage. Steals 3 random buffs from the target, increasing their duration by 6s.\nAccuracy required for: Buff Steal\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 441 damage. Steals 4 random buffs from the target, increasing their duration by 7s.\nAccuracy required for: Buff Steal\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Helter Smelter",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/granvil/skills/3.webp",
+   "effects": [
+    {
+     "label": "Mindworm",
+     "group": "Debuffs",
+     "description": "Disables the recipient's Passive Skills and blocks them from activating."
+    }
+   ],
+   "manaGen": {
+    "ult": "+46",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 228 damage. Casts a [Mindworm] debuff on the target, lasting 8s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 300% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 242 damage. Casts a [Mindworm] debuff on the target, lasting 8s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 318% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 255 damage. Casts a [Mindworm] debuff on the target, lasting 8s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 336% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 278 damage. Casts a [Mindworm] debuff on the target, lasting 9s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 366% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 306 damage. Casts a [Mindworm] debuff on the target, lasting 9s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 402% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 328 damage. Casts a [Mindworm] debuff on the target, lasting 10s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 432% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 356 damage. Casts a [Mindworm] debuff on the target, lasting 10s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 468% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 378 damage. Casts a [Mindworm] debuff on the target, lasting 11s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 498% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 406 damage. Casts a [Mindworm] debuff on the target, lasting 11s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 534% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 429 damage. Casts a [Mindworm] debuff on the target, lasting 13s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 564% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 456 damage. Casts a [Mindworm] debuff on the target, lasting 13s, blocking their Passive Skills from activating.\nAccuracy required for: Mindworm\n#1 Damage: 600% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Forge Destiny",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/granvil/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 186 damage per hit. Granvil gains 100 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 245% ATK\n#2 Damage: 245% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 197 damage per hit. Granvil gains 105 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 259.7% ATK\n#2 Damage: 259.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 209 damage per hit. Granvil gains 110 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 274.4% ATK\n#2 Damage: 274.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 227 damage per hit. Granvil gains 115 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 298.9% ATK\n#2 Damage: 298.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 250 damage per hit. Granvil gains 115 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 328.3% ATK\n#2 Damage: 328.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 268 damage per hit. Granvil gains 120 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 352.8% ATK\n#2 Damage: 352.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 290 damage per hit. Granvil gains 125 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 382.2% ATK\n#2 Damage: 382.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 309 damage per hit. Granvil gains 130 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 406.7% ATK\n#2 Damage: 406.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 331 damage per hit. Granvil gains 140 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 436.1% ATK\n#2 Damage: 436.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 350 damage per hit. Granvil gains 150 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 460.6% ATK\n#2 Damage: 460.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 372 damage per hit. Granvil gains 150 Titan Mana on each hit if the target has no buffs.\n#1 Damage: 490% ATK\n#2 Damage: 490% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Ever the industrious sort, Granvil broke away from traditional Undercity craftsmanship, training with the Magmabloods to learn their metallurgic secrets. On his return home, Granvil's new-found command of molten metal made him Stoneloom's hottest commodity. After multiple attractive offers, Granvil eventually took up the role as the new Royal Smith. His former colleagues are fuming.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "E",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "C",
+  "sakiel": "E",
+  "sorgott": "A",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 33.9,
+  "lists": 16
+ }
+}

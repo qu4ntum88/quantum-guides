@@ -1,0 +1,549 @@
+{
+ "slug": "willbreaker-vixara",
+ "kind": "Invoker",
+ "name": "Willbreaker Vixara",
+ "faction": "Ironbands",
+ "rarity": "Common",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/willbreaker-vixara/portrait.webp",
+ "fullArt": "/invokers/units/invokers/willbreaker-vixara/full.webp",
+ "stats": {
+  "base": {
+   "Health": "360",
+   "Attack": "33",
+   "Defense": "31",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "101"
+  },
+  "max": {
+   "Health": "4,972",
+   "Attack": "449",
+   "Defense": "392",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "126"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/willbreaker-vixara/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+123",
+    "titan": "+67"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 30.5% ATK\n#3 Attacks 1 enemy, dealing 13 damage.\nDamage: 39.5% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 51% ATK\n#5 Attacks 1 enemy, dealing 10 damage.\nDamage: 30% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 21.2% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 32.3% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 41.9% ATK\n#4 Attacks 1 enemy, dealing 18 damage.\nDamage: 54.1% ATK\n#5 Attacks 1 enemy, dealing 10 damage.\nDamage: 31.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 22.4% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 34.2% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 44.2% ATK\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 57.1% ATK\n#5 Attacks 1 enemy, dealing 11 damage.\nDamage: 33.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 37.2% ATK\n#3 Attacks 1 enemy, dealing 16 damage.\nDamage: 48.2% ATK\n#4 Attacks 1 enemy, dealing 21 damage.\nDamage: 62.2% ATK\n#5 Attacks 1 enemy, dealing 12 damage.\nDamage: 36.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 40.9% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 52.9% ATK\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 68.3% ATK\n#5 Attacks 1 enemy, dealing 13 damage.\nDamage: 40.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 28.8% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 43.9% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 56.9% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 73.4% ATK\n#5 Attacks 1 enemy, dealing 14 damage.\nDamage: 43.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 31.2% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 47.6% ATK\n#3 Attacks 1 enemy, dealing 20 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 79.6% ATK\n#5 Attacks 1 enemy, dealing 15 damage.\nDamage: 46.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 33.2% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 50.6% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 65.6% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 84.7% ATK\n#5 Attacks 1 enemy, dealing 16 damage.\nDamage: 49.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 35.6% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 54.3% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 70.3% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 90.8% ATK\n#5 Attacks 1 enemy, dealing 18 damage.\nDamage: 53.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 37.6% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 74.3% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 95.9% ATK\n#5 Attacks 1 enemy, dealing 19 damage.\nDamage: 56.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 61% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 79% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 102% ATK\n#5 Attacks 1 enemy, dealing 20 damage.\nDamage: 60% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Suffer Pain",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/willbreaker-vixara/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 39 damage.\n#1 Damage: 118% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 41 damage.\n#1 Damage: 125.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 44 damage.\n#1 Damage: 132.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 48 damage.\n#1 Damage: 144% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 52 damage.\n#1 Damage: 158.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 56 damage.\n#1 Damage: 169.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 61 damage.\n#1 Damage: 184.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 65 damage.\n#1 Damage: 195.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 69 damage.\n#1 Damage: 210% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 73 damage.\n#1 Damage: 221.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 78 damage.\n#1 Damage: 236% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Burn Fear",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/willbreaker-vixara/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+54",
+    "titan": "+29"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 20 damage per hit. Casts a [1% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 60% ATK\n#2 Damage: 60% ATK\n#3 Burn Damage Limit: 150% ATK per tick\n#4 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 21 damage per hit. Casts a [1% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 150% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Burn\n#1 Damage: 63.6% ATK\n#2 Damage: 63.6% ATK\n#3 Burn Damage Limit: 150% ATK per tick\n#4 Burn Target Allies Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 22 damage per hit. Casts a [1.2% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 67.2% ATK\n#2 Damage: 67.2% ATK\n#3 Burn Damage Limit: 175% ATK per tick\n#4 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 24 damage per hit. Casts a [1.2% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 175% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Burn\n#1 Damage: 73.2% ATK\n#2 Damage: 73.2% ATK\n#3 Burn Damage Limit: 175% ATK per tick\n#4 Burn Target Allies Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 27 damage per hit. Casts a [1.2% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.6% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 80.4% ATK\n#2 Damage: 80.4% ATK\n#3 Burn Damage Limit: 200% ATK per tick\n#4 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 29 damage per hit. Casts a [1.5% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 86.4% ATK\n#2 Damage: 86.4% ATK\n#3 Burn Damage Limit: 200% ATK per tick\n#4 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 31 damage per hit. Casts a [1.5% Burn] debuff on the target, lasting 2s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 93.6% ATK\n#2 Damage: 93.6% ATK\n#3 Burn Damage Limit: 225% ATK per tick\n#4 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 33 damage per hit. Casts a [1.5% Burn] debuff on the target, lasting 3s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 99.6% ATK\n#2 Damage: 99.6% ATK\n#3 Burn Damage Limit: 225% ATK per tick\n#4 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 35 damage per hit. Casts a [1.5% Burn] debuff on the target, lasting 3s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 106.8% ATK\n#2 Damage: 106.8% ATK\n#3 Burn Damage Limit: 250% ATK per tick\n#4 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 37 damage per hit. Casts a [1.5% Burn] debuff on the target, lasting 4s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 112.8% ATK\n#2 Damage: 112.8% ATK\n#3 Burn Damage Limit: 250% ATK per tick\n#4 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 40 damage per hit. Casts a [1.5% Burn] debuff on the target, lasting 4s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 120% ATK\n#2 Damage: 120% ATK\n#3 Burn Damage Limit: 300% ATK per tick\n#4 Burn Target Allies Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Lament Weakness",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/willbreaker-vixara/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+61",
+    "titan": "+33"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 41 damage. Damage increases by 5% if the target has debuffs.\n#1 Damage: 125.5% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 44 damage. Damage increases by 6% if the target has debuffs.\n#1 Damage: 133% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 46 damage. Damage increases by 7% if the target has debuffs.\n#1 Damage: 140.6% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 51 damage. Damage increases by 9% if the target has debuffs.\n#1 Damage: 153.1% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 55 damage. Damage increases by 9% if the target has debuffs.\n#1 Damage: 168.2% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 60 damage. Damage increases by 11% if the target has debuffs.\n#1 Damage: 180.7% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 65 damage. Damage increases by 11% if the target has debuffs.\n#1 Damage: 195.8% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 69 damage. Damage increases by 12% if the target has debuffs.\n#1 Damage: 208.3% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 74 damage. Damage increases by 12% if the target has debuffs.\n#1 Damage: 223.4% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 78 damage. Damage increases by 15% if the target has debuffs.\n#1 Damage: 235.9% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 7 enemies with the lowest current HP in a 90°, 8m cone in front of Vixara, dealing 83 damage. Damage increases by 15% if the target has debuffs.\n#1 Damage: 251% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Quell Cowardice",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/willbreaker-vixara/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 22 damage per hit. Launches the targets for 1.5s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 67.5% ATK\n#2 Damage: 67.5% ATK\n#3 Damage: 67.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 24 damage per hit. Launches the targets for 1.6s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 71.5% ATK\n#2 Damage: 71.5% ATK\n#3 Damage: 71.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 25 damage per hit. Launches the targets for 1.6s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 75.6% ATK\n#2 Damage: 75.6% ATK\n#3 Damage: 75.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 27 damage per hit. Launches the targets for 1.7s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 82.4% ATK\n#2 Damage: 82.4% ATK\n#3 Damage: 82.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 30 damage per hit. Launches the targets for 1.7s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 90.5% ATK\n#2 Damage: 90.5% ATK\n#3 Damage: 90.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 32 damage per hit. Launches the targets for 1.8s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 97.2% ATK\n#2 Damage: 97.2% ATK\n#3 Damage: 97.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 35 damage per hit. Launches the targets for 1.9s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 105.3% ATK\n#2 Damage: 105.3% ATK\n#3 Damage: 105.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 37 damage per hit. Launches the targets for 1.9s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 112.1% ATK\n#2 Damage: 112.1% ATK\n#3 Damage: 112.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 40 damage per hit. Launches the targets for 2s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 120.2% ATK\n#2 Damage: 120.2% ATK\n#3 Damage: 120.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 42 damage per hit. Launches the targets for 2.3s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 126.9% ATK\n#2 Damage: 126.9% ATK\n#3 Damage: 126.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 7 enemies in a 6m radius around Vixara 3 times, dealing 45 damage per hit. Launches the targets for 2.3s on the third hit.\nAccuracy required for: Launch\n#1 Damage: 135% ATK\n#2 Damage: 135% ATK\n#3 Damage: 135% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "The volcanos of the Southern Thursians burn with a deadly heat, but for some Orcs that fire is a crucible. Vixara thrives in the flames, and where she flourished, others will do the same. She brings the fires with her in her iron lash, and any who cross her path will be reborn – or perish.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0,
+  "lists": 16
+ }
+}

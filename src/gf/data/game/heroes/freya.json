@@ -1,0 +1,312 @@
+{
+ "id": 39,
+ "slug": "freya",
+ "name": "Freya",
+ "title": "Mistress of Fólkvangr",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Goddess of love, fertility, and war, Freya often rides with the Valkyrie and stands among Asgard’s most revered deities. She is also among their busiest, as her duties and obligations have vastly expanded since the Shattering—especially as she, along with the goddess Frigg, struggle to govern the realm in the face of Odin’s growing preoccupation and ever-increasing absences.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Freya.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Freya_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 61,
+  "def": 101,
+  "spd": 110,
+  "init": 94,
+  "acc": 15,
+  "res": 50,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If the ally is below 50% HP, place an additional [Mend] for 2 turns.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Phoenix] on all allies below 50% HP for 2 turns.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If the ally is at full Health, Inflict the heal as Damage to the enemy. This cannot inflict a Critical Hit or Crushing Hit and will ignore 50% of the target's DEF.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Love and War",
+   "description": "Attack 1 enemy 315%ATK+50%FTH. Place [Mend] on the ally with the lowest HP for 2 turns.",
+   "icon_url": "/godforge/abilities/freya/ICON_Freya_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "315%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Mend",
+     "target": "AllyWithLeastStat",
+     "target_label": "AllyWithLeastStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Mend",
+     "target": "AllyWithLeastStat",
+     "target_label": "AllyWithLeastStat",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If the ally is below 50% HP, place an additional Mend for 2 turns.",
+     "upgrade_description": "If the ally is below 50% HP, place an additional [Mend] for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Edict of the Vanir",
+   "description": "Equalise 1 ally's Turn Meter equal to the enemy with the highest Turn Meter, then increase the Turn Meter of all allies by 20%. Also increase this hero's Healing Potency by 5% (stacking up to 4 times).",
+   "icon_url": "/godforge/abilities/freya/ICON_Freya_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "21% FTH in All Battles",
+   "icon_url": "/godforge/abilities/freya/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Vanir's Grace",
+   "description": "When an ally inflicts a Critical Hit, heal 2000%FTH that ally.",
+   "icon_url": "/godforge/abilities/freya/ICON_Freya_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If the ally is at full Health, Inflict the heal as Damage to the enemy. This cannot inflict a Critical Hit or Crushing Hit and will ignore 50% of the target's DEF.",
+     "upgrade_description": "If the ally is at full Health, Inflict the heal as Damage to the enemy. This cannot inflict a Critical Hit or Crushing Hit and will ignore 50% of the target's DEF."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Valkyrie of Fólkvangr",
+   "description": "Place [ATK Up II] and [Sharpen II] on all allies for 2 turns, then attack 1 enemy 250%ATK+50%FTH. Also attack all enemies 120%ATK+0.5%ATK per FTH.\n\nIncrease the ATK and CDMG of each ally by 10% (stacking up to 5 times).",
+   "icon_url": "/godforge/abilities/freya/ICON_Freya_Ultimate.webp",
+   "divinity_cost": 3600,
+   "damage_formula": [
+    "250%ATK",
+    "120%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Sharpen II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Phoenix",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Phoenix on all allies below 50% HP for 2 turns.",
+     "upgrade_description": "Also place [Phoenix] on all allies below 50% HP for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Vanir's Grace",
+   "description": "When this hero inflicts a Critical Hit, heal 2000%FTH this hero.",
+   "icon_url": "/godforge/abilities/freya/ICON_Freya_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

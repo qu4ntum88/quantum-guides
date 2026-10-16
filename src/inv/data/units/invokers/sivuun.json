@@ -1,0 +1,555 @@
+{
+ "slug": "sivuun",
+ "kind": "Invoker",
+ "name": "Sivuun",
+ "faction": "Nocturna",
+ "rarity": "Rare",
+ "class": "Support",
+ "element": "Wind",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/sivuun/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sivuun/full.webp",
+ "stats": {
+  "base": {
+   "Health": "605",
+   "Attack": "54",
+   "Defense": "45",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "96"
+  },
+  "max": {
+   "Health": "7,595",
+   "Attack": "667",
+   "Defense": "519",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "121"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sivuun/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+99",
+    "titan": "+54"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 13.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 17.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 24.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 14% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 14.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 18.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 26% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 14.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 15.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 19.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 27.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 15.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 11% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 16.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 21.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 29.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 9 damage.\nDamage: 17.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 12.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 18.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 23.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 32.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 10 damage.\nDamage: 18.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 13% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 19.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 25.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 35.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 20.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 14% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 21.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 27.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 38.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 21.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 14.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 22.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 29% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 40.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 23.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 16% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 24% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 31.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 43.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 24.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 25.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 32.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 46.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage.\nDamage: 26.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 18% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 27% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 35% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 49% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage.\nDamage: 28% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Lunar Ray",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sivuun/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 50 damage.\n#1 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 53 damage.\n#1 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 56 damage.\n#1 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 61 damage.\n#1 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 67 damage.\n#1 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 72 damage.\n#1 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 78 damage.\n#1 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 83 damage.\n#1 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 89 damage.\n#1 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 94 damage.\n#1 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 100 damage.\n#1 Damage: 185% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Skyblind Burst",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sivuun/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit Rate Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 96 damage. Casts a [10% Crit Rate Down] debuff on the target, lasting 8s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 177% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 101 damage. Casts a [12% Crit Rate Down] debuff on the target, lasting 8s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 107 damage. Casts a [12% Crit Rate Down] debuff on the target, lasting 8s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 198.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 117 damage. Casts a [12% Crit Rate Down] debuff on the target, lasting 9s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 215.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 128 damage. Casts a [12% Crit Rate Down] debuff on the target, lasting 9s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 237.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 138 damage. Casts a [14% Crit Rate Down] debuff on the target, lasting 9s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 254.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 149 damage. Casts a [14% Crit Rate Down] debuff on the target, lasting 9s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 276.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 159 damage. Casts a [14% Crit Rate Down] debuff on the target, lasting 10s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 293.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 170 damage. Casts a [14% Crit Rate Down] debuff on the target, lasting 11s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 315.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 180 damage. Casts a [17% Crit Rate Down] debuff on the target, lasting 11s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 332.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 191 damage. Casts a [17% Crit Rate Down] debuff on the target, lasting 13s.\nAccuracy required for: Crit Rate Down\n#1 Damage: 354% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Eclipse Channel",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sivuun/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 104 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (20% * Damage Dealt) HP.\n#1 Damage: 193% ATK\n#2 Heal: 20% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 110 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (23% * Damage Dealt) HP.\n#1 Damage: 204.6% ATK\n#2 Heal: 23% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 117 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (23% * Damage Dealt) HP.\n#1 Damage: 216.2% ATK\n#2 Heal: 23% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 127 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (26% * Damage Dealt) HP.\n#1 Damage: 235.5% ATK\n#2 Heal: 26% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 140 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (26% * Damage Dealt) HP.\n#1 Damage: 258.6% ATK\n#2 Heal: 26% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 150 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (29% * Damage Dealt) HP.\n#1 Damage: 277.9% ATK\n#2 Heal: 29% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 163 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (29% * Damage Dealt) HP.\n#1 Damage: 301.1% ATK\n#2 Heal: 29% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 173 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (32% * Damage Dealt) HP.\n#1 Damage: 320.4% ATK\n#2 Heal: 32% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 186 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (32% * Damage Dealt) HP.\n#1 Damage: 343.5% ATK\n#2 Heal: 32% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 196 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (35% * Damage Dealt) HP.\n#1 Damage: 362.8% ATK\n#2 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 208 damage. Heals the ally with the lowest current HP in a 15m radius, restoring (35% * Damage Dealt) HP.\n#1 Damage: 386% ATK\n#2 Heal: 35% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Shadelight Debility",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sivuun/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 156 damage. Casts a [18% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 289.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 166 damage. Casts a [19% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 306.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 175 damage. Casts a [20% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 324.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 191 damage. Casts a [21% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 353.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 209 damage. Casts a [22% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 387.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 225 damage. Casts a [23% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 416.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 244 damage. Casts a [24% ATK Down] debuff on the target, lasting 11s.\nAccuracy required for: ATK Down\n#1 Damage: 451.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 260 damage. Casts a [25% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 480.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 278 damage. Casts a [26% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 515.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 294 damage. Casts a [27% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 544.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 313 damage. Casts a [28% ATK Down] debuff on the target, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 579% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Sivuun harnesses the Shadewall, able to wield its moonlight even in the brilliance of day. Her magic can preserve the Dusklit under the glaring sun… and can also call the moon’s wrath down on her enemies no matter where they hide. She heals with one hand, and destroys with the other.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "A",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "B",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "C",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "D",
+  "ulgorim": "B",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 39.3,
+  "lists": 16
+ }
+}

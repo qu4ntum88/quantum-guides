@@ -1,0 +1,278 @@
+{
+ "id": 193,
+ "slug": "morgan_le_fay",
+ "name": "Morgan Le Fay",
+ "title": "Fae Sorceress",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Ambitious half-sister of Arthur, rival of Merlin, Morgan le Fay stands among Avalon’s most potent sorcerers. Between her magics and her many plots, she has nearly overthrown Camelot countless times, and even the Shattering has not blunted her efforts. Her most intricate plan has her cooperating with Koshchei the Deathless across realms, but even this represents but one of many ongoing schemes.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Morgan Le Fay.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_MorganLeFay_main.png",
+ "stats": {
+  "hp": 1350,
+  "atk": 112,
+  "def": 86,
+  "spd": 100,
+  "init": 100,
+  "acc": 40,
+  "res": 25,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 18
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Chance to place at random [Aetherburn II], [Blaze II], or [Acid] on the target for 3 turns, or 2 stacks of [Bleed] instead.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If an enemy has all 4 Debuffs removed, place [Banish] on them for 2 turns.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Each time an enemy Debuff activates, increase this hero’s ACC by 10 (up to 20 times).",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Dark Magicks",
+   "description": "Attack all enemies 230%ATK+50%ACC with a 35% chance to place [Vulnerable II] on each target for 2 turns. Then activate a random Debuff on each target.",
+   "icon_url": "/godforge/abilities/morgan_le_fay/ICON_MorganLeFay_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "230%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vulnerable II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 35,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Spellbook of Corruption",
+   "description": "Attack all enemies 130%ATK+50%ACC 3 times. Each hit has a 50% chance to place at random, [Aetherburn II], [Blaze II] or [Acid] on the target for 2 turns, or 2 stacks of [Bleed].",
+   "icon_url": "/godforge/abilities/morgan_le_fay/ICON_MorganLeFay_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "130%ATK",
+    "130%ATK",
+    "130%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Chance to place at random Aetherburn II, Blaze II, or Acid on the target for 3 turns, or 2 stacks of Bleed instead.",
+     "upgrade_description": "Chance to place at random [Aetherburn II], [Blaze II], or [Acid] on the target for 3 turns, or 2 stacks of [Bleed] instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Sorceress Edict",
+   "description": "This hero gains bonus effects when a Debuff activates:\nAetherburn Increase this hero’s Divinity by 50\nBlaze Increase this hero’s next Core Ability damage by 5%\n[Acid] Increase this hero’s Turn Meter by 10%\n[Bleed] Heal this hero 1000%ACC.",
+   "icon_url": "/godforge/abilities/morgan_le_fay/ICON_MorganLeFay_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Each time an enemy Debuff activates, increase this hero’s ACC by 10 (up to 20 times).",
+     "upgrade_description": "Each time an enemy Debuff activates, increase this hero’s ACC by 10 (up to 20 times)."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Ruin of Avalon",
+   "description": "Before attacking remove all Aetherburn and [Bleed] stacks, [Acid] and Blaze from all enemies, then attack all enemies 330%ATK+50%ACC.\n\nFor every 5 Debuffs removed, increase the damage dealt by 25%. If 20 or more Debuffs were removed, increase this hero’s Turn Meter by 100%.",
+   "icon_url": "/godforge/abilities/morgan_le_fay/ICON_MorganLeFay_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If an enemy has all 4 Debuffs removed, place Banish on them for 2 turns.",
+     "upgrade_description": "If an enemy has all 4 Debuffs removed, place [Banish] on them for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Sorceress Edict",
+   "description": "This hero gains bonus effects when a Debuff activates:\nAetherburn Increase this hero’s Divinity by 25\nBlaze Increase this hero’s next Core Ability damage by 2.5%\n[Acid] Increase this hero’s Turn Meter by 5%\n[Bleed] Heal this hero 500%ACC.",
+   "icon_url": "/godforge/abilities/morgan_le_fay/ICON_MorganLeFay_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

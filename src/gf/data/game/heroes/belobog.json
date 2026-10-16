@@ -1,0 +1,293 @@
+{
+ "id": 216,
+ "slug": "belobog",
+ "name": "Belobog",
+ "title": "Bright Fortune",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Manifestation of good fortune, Belobog holds even less interest in the affairs of other gods than most of Vyraj’s pantheon. He focuses on mortals, and if possible he would grant his gifts to all. Alas, he lacked the power to bless most of them even before the Shattering. He responds to what prayers he can, and struggles toward a happier world.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Belobog.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Belobog_main.png",
+ "stats": {
+  "hp": 1455,
+  "atk": 56,
+  "def": 98,
+  "spd": 107,
+  "init": 100,
+  "acc": 15,
+  "res": 45,
+  "initial_divinity": 625,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "When an ally receives a Buff, increase its duration by 1 turn.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_divinity_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "incoming_turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Refresh the cooldown of all ally Core Abilities instead.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "After equalizing Turn Meter, gains an Extra Turn. If Chernobog is an ally, he also gains an Extra Turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Prosperous Light",
+   "description": "Attack 1 enemy 355%ATK and place [ATK Up II] on all allies for 1 turn.",
+   "icon_url": "/godforge/abilities/belobog/ICON_Belobog_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "355%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Light's Protection",
+   "description": "Place Block Debuff and [Stalwart] on all allies for 2 turns and attack all enemies 290%ATK. Also decrease the Cooldown of all ally Core Abilities by 1 turn. If Chernobog is an ally, he joins the attack using his Core Ability.",
+   "icon_url": "/godforge/abilities/belobog/ICON_Belobog_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "290%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Stalwart",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Refresh the cooldown of all ally Core Abilities instead.",
+     "upgrade_description": "Refresh the cooldown of all ally Core Abilities instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "24% SPD in All Battles",
+   "icon_url": "/godforge/abilities/belobog/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Law of Time",
+   "description": "When an ally receives a Debuff, decrease its duration by 1 turn.",
+   "icon_url": "/godforge/abilities/belobog/ICON_Belobog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "When an ally receives a Buff, increase its duration by 1 turn.",
+     "upgrade_description": "When an ally receives a Buff, increase its duration by 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Equilibrium of Power",
+   "description": "Increase the rank of all Buff on all allies by 1 and decrease the rank of all Debuff on all allies by 1. Also equalize the Turn Meter of all allies to the enemy with the highest Turn Meter.",
+   "icon_url": "/godforge/abilities/belobog/ICON_Belobog_Ultimate.webp",
+   "divinity_cost": 4175,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "After equalizing Turn Meter, gains an Extra Turn. If Chernobog is an ally, he also gains an Extra Turn.",
+     "upgrade_description": "After equalizing Turn Meter, gains an Extra Turn. If Chernobog is an ally, he also gains an Extra Turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Law of Time",
+   "description": "When an ally receives a Debuff, decrease its duration by 1 turn.",
+   "icon_url": "/godforge/abilities/belobog/ICON_Belobog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

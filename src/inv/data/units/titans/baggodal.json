@@ -1,0 +1,500 @@
+{
+ "slug": "baggodal",
+ "kind": "Titan",
+ "name": "Baggodal",
+ "faction": "Beastbloods",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/baggodal/portrait.webp",
+ "fullArt": "/invokers/units/titans/baggodal/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+620",
+   "Bonus ATK": "+90",
+   "Bonus DEF": "+58",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,726",
+   "Bonus ATK": "+541",
+   "Bonus DEF": "+349",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/baggodal/skills/0.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 61 damage per hit.\nDamage: 67.5% ATK\nDamage: 67.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 126 damage. Casts a [35% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 64 damage per hit.\nDamage: 71.5% ATK\nDamage: 71.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 134 damage. Casts a [36% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 68 damage per hit.\nDamage: 75.6% ATK\nDamage: 75.6% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 141 damage. Casts a [37% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 74 damage per hit.\nDamage: 82.4% ATK\nDamage: 82.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 154 damage. Casts a [38% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 81 damage per hit.\nDamage: 90.5% ATK\nDamage: 90.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 169 damage. Casts a [39% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 87 damage per hit.\nDamage: 97.2% ATK\nDamage: 97.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 181 damage. Casts a [40% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 95 damage per hit.\nDamage: 105.3% ATK\nDamage: 105.3% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 197 damage. Casts a [41% DEF Down] debuff on the target, lasting 8s.\nAccuracy required for: DEF Down\nDamage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 101 damage per hit.\nDamage: 112.1% ATK\nDamage: 112.1% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 209 damage. Casts a [42% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\nDamage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 108 damage per hit.\nDamage: 120.2% ATK\nDamage: 120.2% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 224 damage. Casts a [43% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\nDamage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 114 damage per hit.\nDamage: 126.9% ATK\nDamage: 126.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 237 damage. Casts a [44% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\nDamage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 122 damage per hit.\nDamage: 135% ATK\nDamage: 135% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 252 damage. Casts a [45% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\nDamage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Unforgotten Fury",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/baggodal/skills/1.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 124 damage. Casts a [35% RES Down] debuff on the targets, lasting 10s. Then, casts a [15% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 15%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 131 damage. Casts a [36% RES Down] debuff on the targets, lasting 10s. Then, casts a [15% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 15%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 139 damage. Casts a [37% RES Down] debuff on the targets, lasting 10s. Then, casts a [16% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 16%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 151 damage. Casts a [38% RES Down] debuff on the targets, lasting 10s. Then, casts a [16% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 16%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 166 damage. Casts a [39% RES Down] debuff on the targets, lasting 11s. Then, casts a [16% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 16%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 178 damage. Casts a [40% RES Down] debuff on the targets, lasting 11s. Then, casts a [16% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 16%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 193 damage. Casts a [41% RES Down] debuff on the targets, lasting 11s. Then, casts a [18% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 18%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 205 damage. Casts a [42% RES Down] debuff on the targets, lasting 11s. Then, casts a [18% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 18%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 220 damage. Casts a [43% RES Down] debuff on the targets, lasting 12s. Then, casts a [18% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 18%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 233 damage. Casts a [44% RES Down] debuff on the targets, lasting 12s. Then, casts a [20% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 20%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Charges 10m towards the furthest enemy in a 10m radius. \nAttacks the 10 enemies with the lowest current HP in a 10m radius around Baggodal, from a distance of 10m, dealing 248 damage. Casts a [45% RES Down] debuff on the targets, lasting 15s. Then, casts a [20% Weaken] debuff on the targets, lasting 15s, increasing all damage taken by 20%.\nAccuracy required for: RES Down, Weaken\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Unforgotten Wrath",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/baggodal/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+73",
+    "titan": "+40"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 85 damage per hit, damage increases by 15% per debuff on the target.\n#1 Damage: 95% ATK\n#2 Damage: 95% ATK\n#3 Damage: 95% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 91 damage per hit, damage increases by 16% per debuff on the target.\n#1 Damage: 100.7% ATK\n#2 Damage: 100.7% ATK\n#3 Damage: 100.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 96 damage per hit, damage increases by 17% per debuff on the target.\n#1 Damage: 106.4% ATK\n#2 Damage: 106.4% ATK\n#3 Damage: 106.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 104 damage per hit, damage increases by 18% per debuff on the target.\n#1 Damage: 115.9% ATK\n#2 Damage: 115.9% ATK\n#3 Damage: 115.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 115 damage per hit, damage increases by 19% per debuff on the target.\n#1 Damage: 127.3% ATK\n#2 Damage: 127.3% ATK\n#3 Damage: 127.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 123 damage per hit, damage increases by 20% per debuff on the target.\n#1 Damage: 136.8% ATK\n#2 Damage: 136.8% ATK\n#3 Damage: 136.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 133 damage per hit, damage increases by 21% per debuff on the target.\n#1 Damage: 148.2% ATK\n#2 Damage: 148.2% ATK\n#3 Damage: 148.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 142 damage per hit, damage increases by 22% per debuff on the target.\n#1 Damage: 157.7% ATK\n#2 Damage: 157.7% ATK\n#3 Damage: 157.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 152 damage per hit, damage increases by 23% per debuff on the target.\n#1 Damage: 169.1% ATK\n#2 Damage: 169.1% ATK\n#3 Damage: 169.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 161 damage per hit, damage increases by 24% per debuff on the target.\n#1 Damage: 178.6% ATK\n#2 Damage: 178.6% ATK\n#3 Damage: 178.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 171 damage per hit, damage increases by 25% per debuff on the target.\n#1 Damage: 190% ATK\n#2 Damage: 190% ATK\n#3 Damage: 190% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/baggodal/skills/3.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 209 damage. Launches the targets for 3s.\nAccuracy required for: Launch\n#1 Damage: 232.5% ATK\nINVOKATION END\nThe Bound Invoker gains 100 Ultimate Mana."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 222 damage. Launches the targets for 3.3s.\nAccuracy required for: Launch\n#1 Damage: 246.4% ATK\nINVOKATION END\nThe Bound Invoker gains 105 Ultimate Mana."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 234 damage. Launches the targets for 3.6s.\nAccuracy required for: Launch\n#1 Damage: 260.4% ATK\nINVOKATION END\nThe Bound Invoker gains 110 Ultimate Mana."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 255 damage. Launches the targets for 3.9s.\nAccuracy required for: Launch\n#1 Damage: 283.7% ATK\nINVOKATION END\nThe Bound Invoker gains 115 Ultimate Mana."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 280 damage. Launches the targets for 4.2s.\nAccuracy required for: Launch\n#1 Damage: 311.6% ATK\nINVOKATION END\nThe Bound Invoker gains 120 Ultimate Mana."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 301 damage. Launches the targets for 4.5s.\nAccuracy required for: Launch\n#1 Damage: 334.8% ATK\nINVOKATION END\nThe Bound Invoker gains 125 Ultimate Mana."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 326 damage. Launches the targets for 4.8s.\nAccuracy required for: Launch\n#1 Damage: 362.7% ATK\nINVOKATION END\nThe Bound Invoker gains 130 Ultimate Mana."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 347 damage. Launches the targets for 5.1s.\nAccuracy required for: Launch\n#1 Damage: 386% ATK\nINVOKATION END\nThe Bound Invoker gains 135 Ultimate Mana."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 372 damage. Launches the targets for 5.4s.\nAccuracy required for: Launch\n#1 Damage: 413.9% ATK\nINVOKATION END\nThe Bound Invoker gains 140 Ultimate Mana."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 393 damage. Launches the targets for 5.7s.\nAccuracy required for: Launch\n#1 Damage: 437.1% ATK\nINVOKATION END\nThe Bound Invoker gains 145 Ultimate Mana."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius around Baggodal, from a distance of 10m, dealing 419 damage. Launches the targets for 6s.\nAccuracy required for: Launch\n#1 Damage: 465% ATK\nINVOKATION END\nThe Bound Invoker gains 150 Ultimate Mana."
+    }
+   ]
+  },
+  {
+   "name": "Combo SPD Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/baggodal/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +49 Combo Speed.\nOutside Dungeon mode: +28 Combo Speed."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +53.9 Combo Speed.\nOutside Dungeon mode: +30.8 Combo Speed."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +58.8 Combo Speed.\nOutside Dungeon mode: +33.6 Combo Speed."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +68.6 Combo Speed.\nOutside Dungeon mode: +39.2 Combo Speed."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +78.4 Combo Speed.\nOutside Dungeon mode: +44.8 Combo Speed."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +88.2 Combo Speed.\nOutside Dungeon mode: +50.4 Combo Speed."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +98 Combo Speed.\nOutside Dungeon mode: +56 Combo Speed."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Baggodal has been a Titan for all of recorded history, his origins lost to time. Some say he is the first of the ancient priest-kings to sacrifice his own body to the wilds and create Beastbloods… assuming such kings truly existed at all. Titans are all that remain.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "S",
+  "hyxxis": "S+",
+  "koltmos": "S",
+  "omnissi-astral": "S",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "S",
+  "omnissi-fire": "S",
+  "omnissi-light": "S",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "S",
+  "sakiel": "A+",
+  "sorgott": "S",
+  "ulgorim": "S",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 84.8,
+  "lists": 16
+ }
+}

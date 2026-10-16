@@ -1,0 +1,489 @@
+{
+ "slug": "aratax",
+ "kind": "Titan",
+ "name": "Aratax",
+ "faction": "Ironbands",
+ "rarity": "Epic",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/aratax/portrait.webp",
+ "fullArt": "/invokers/units/titans/aratax/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+40%",
+   "Bound Invoker's Crit Rate": "+10%",
+   "Bound Invoker's Crit DMG": "+20%",
+   "Bonus HP": "+480",
+   "Bonus ATK": "+77",
+   "Bonus DEF": "+50",
+   "Movement speed": "180"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+360%",
+   "Bound Invoker's Crit Rate": "+16%",
+   "Bound Invoker's Crit DMG": "+60%",
+   "Bonus HP": "+2,885",
+   "Bonus ATK": "+463",
+   "Bonus DEF": "+300",
+   "Movement speed": "180"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/aratax/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 102 damage, damage increases by 3% per debuff on the target.\n#1 Damage: 132.5% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 104 damage.\nDamage: 135% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 108 damage, damage increases by 3.3% per debuff on the target.\n#1 Damage: 140.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 110 damage.\nDamage: 143.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 114 damage, damage increases by 3.5% per debuff on the target.\n#1 Damage: 148.4% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 116 damage.\nDamage: 151.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 124 damage, damage increases by 3.8% per debuff on the target.\n#1 Damage: 161.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 127 damage.\nDamage: 164.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 137 damage, damage increases by 4% per debuff on the target.\n#1 Damage: 177.6% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 139 damage.\nDamage: 180.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 147 damage, damage increases by 4.3% per debuff on the target.\n#1 Damage: 190.8% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 150 damage.\nDamage: 194.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 159 damage, damage increases by 4.5% per debuff on the target.\n#1 Damage: 206.7% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 162 damage.\nDamage: 210.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 169 damage, damage increases by 4.8% per debuff on the target.\n#1 Damage: 219.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 173 damage.\nDamage: 224.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 182 damage, damage increases by 5% per debuff on the target.\n#1 Damage: 235.9% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 185 damage.\nDamage: 240.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 192 damage, damage increases by 5.5% per debuff on the target.\n#1 Damage: 249.1% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 195 damage.\nDamage: 253.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 204 damage, damage increases by 6% per debuff on the target.\n#1 Damage: 265% ATK\n#2 Attacks 1 enemy from a distance of 2m, dealing 208 damage.\nDamage: 270% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Horror Within",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/titans/aratax/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 206 damage. Extends the duration of up to 2 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 267.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 218 damage. Extends the duration of up to 3 random debuffs on the target by 5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 283.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 231 damage. Extends the duration of up to 3 random debuffs on the target by 5.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 299.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 251 damage. Extends the duration of up to 3 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 326.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 276 damage. Extends the duration of up to 4 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 358.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 297 damage. Extends the duration of up to 4 random debuffs on the target by 6s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 385.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 321 damage. Extends the duration of up to 4 random debuffs on the target by 6.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 417.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 342 damage. Extends the duration of up to 5 random debuffs on the target by 6.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 444% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 367 damage. Extends the duration of up to 5 random debuffs on the target by 7s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 476.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 387 damage. Extends the duration of up to 5 random debuffs on the target by 8s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 412 damage. Extends the duration of up to 6 random debuffs on the target by 8s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 535% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Nightmare Torment",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/titans/aratax/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 71 damage per hit. Casts a [Stun] debuff on the target, lasting 6s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 92% ATK\n#2 Damage: 92% ATK\n#3 Damage: 92% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 75 damage per hit. Casts a [Stun] debuff on the target, lasting 6.3s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 97.5% ATK\n#2 Damage: 97.5% ATK\n#3 Damage: 97.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 79 damage per hit. Casts a [Stun] debuff on the target, lasting 6.5s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 103% ATK\n#2 Damage: 103% ATK\n#3 Damage: 103% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 86 damage per hit. Casts a [Stun] debuff on the target, lasting 6.8s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 112.2% ATK\n#2 Damage: 112.2% ATK\n#3 Damage: 112.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 95 damage per hit. Casts a [Stun] debuff on the target, lasting 7s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 123.3% ATK\n#2 Damage: 123.3% ATK\n#3 Damage: 123.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 102 damage per hit. Casts a [Stun] debuff on the target, lasting 7s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 132.5% ATK\n#2 Damage: 132.5% ATK\n#3 Damage: 132.5% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 111 damage per hit. Casts a [Stun] debuff on the target, lasting 7.5s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 143.5% ATK\n#2 Damage: 143.5% ATK\n#3 Damage: 143.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 118 damage per hit. Casts a [Stun] debuff on the target, lasting 8s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 152.7% ATK\n#2 Damage: 152.7% ATK\n#3 Damage: 152.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 126 damage per hit. Casts a [Stun] debuff on the target, lasting 9s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 163.8% ATK\n#2 Damage: 163.8% ATK\n#3 Damage: 163.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 133 damage per hit. Casts a [Stun] debuff on the target, lasting 10s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 173% ATK\n#2 Damage: 173% ATK\n#3 Damage: 173% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 3 times, dealing 142 damage per hit. Casts a [Stun] debuff on the target, lasting 10s, on the third hit. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 184% ATK\n#2 Damage: 184% ATK\n#3 Damage: 184% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/aratax/skills/3.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 61 damage per hit.\n#1 Damage: 79.5% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 5s, making them impossible to kill."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 65 damage per hit.\n#1 Damage: 84.3% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 5.3s, making them impossible to kill."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 69 damage per hit.\n#1 Damage: 89% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 5.5s, making them impossible to kill."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 75 damage per hit.\n#1 Damage: 97% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 5.8s, making them impossible to kill."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 82 damage per hit.\n#1 Damage: 106.5% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 6s, making them impossible to kill."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 88 damage per hit.\n#1 Damage: 114.5% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 6.3s, making them impossible to kill."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 95 damage per hit.\n#1 Damage: 124% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 6.5s, making them impossible to kill."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 102 damage per hit.\n#1 Damage: 132% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 6.8s, making them impossible to kill."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 109 damage per hit.\n#1 Damage: 141.5% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 7s, making them impossible to kill."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 115 damage per hit.\n#1 Damage: 149.5% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 7.5s, making them impossible to kill."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 9 enemies in a 15m radius, from a distance of 5m, 3 times, dealing 122 damage per hit.\n#1 Damage: 159% ATK\nINVOKATION END\nCasts an [Unkillable] buff on the Bound Invoker, lasting 8s, making them impossible to kill."
+    }
+   ]
+  },
+  {
+   "name": "Combo SPD Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/aratax/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +43 Combo Speed.\nOutside Dungeon mode: +24 Combo Speed."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +47.3 Combo Speed.\nOutside Dungeon mode: +26.4 Combo Speed."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +51.6 Combo Speed.\nOutside Dungeon mode: +28.8 Combo Speed."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +60.2 Combo Speed.\nOutside Dungeon mode: +33.6 Combo Speed."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +68.8 Combo Speed.\nOutside Dungeon mode: +38.4 Combo Speed."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +77.4 Combo Speed.\nOutside Dungeon mode: +43.2 Combo Speed."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +86 Combo Speed.\nOutside Dungeon mode: +48 Combo Speed."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Aratax is a predator – a nightmare stalker. The Voidstormers once found themselves hunted in their dreams, and as Aratax grew closer every night, the leaders performed a Titan Rite to forge something to defeat this horror. Instead, they invoked the horror itself – and now it is theirs to harness.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "B",
+  "hyxxis": "A",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "A",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "A",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 47.3,
+  "lists": 16
+ }
+}

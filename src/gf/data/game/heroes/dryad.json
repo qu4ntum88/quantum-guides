@@ -1,0 +1,135 @@
+{
+ "id": 139,
+ "slug": "dryad",
+ "name": "Dryad",
+ "title": "Evergreen Enchanter",
+ "summary": "Call the power of the forest to restore your teams power.",
+ "lore": "Spirits of the trees, dryads dwell in the deep woods of Avalon. Some dryads occasionally take a fancy to passing mortals, seeking to charm them into dalliance, but most prefer solitude, eschewing the company of humans and other fae alike. Dryads have no interest in the ongoing struggles between Realms, but are quick to defend themselves and their forests against hostile intruders.",
+ "rarity": "Common",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Dryad.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Dryad_main.png",
+ "stats": {
+  "hp": 1035,
+  "atk": 36,
+  "def": 72,
+  "spd": 91,
+  "init": 76,
+  "acc": 0,
+  "res": 5,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Falling Leaf",
+   "description": "Attack 1 enemy 260%ATK. Place [Shield] 75%ATK on the ally with the lowest HP.",
+   "icon_url": "/godforge/abilities/dryad/ICON_Dryad_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "260%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Bountiful Growth",
+   "description": "Attack 1 enemy 200%ATK then heal 150%ATK all allies.",
+   "icon_url": "/godforge/abilities/dryad/ICON_Dryad_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [
+    "370%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

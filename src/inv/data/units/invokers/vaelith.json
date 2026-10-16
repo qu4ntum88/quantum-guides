@@ -1,0 +1,549 @@
+{
+ "slug": "vaelith",
+ "kind": "Invoker",
+ "name": "Vaelith",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Duthra",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/vaelith/portrait.webp",
+ "fullArt": "/invokers/units/invokers/vaelith/full.webp",
+ "stats": {
+  "base": {
+   "Health": "462",
+   "Attack": "65",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "95"
+  },
+  "max": {
+   "Health": "5,359",
+   "Attack": "871",
+   "Defense": "552",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "120"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vaelith/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+134",
+    "titan": "+73"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 23.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 45.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 57% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 68% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 24.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 48.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 60.4% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 72.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 26.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 51% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 63.8% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 76.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 55.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 69.5% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 54 damage.\nDamage: 83% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 31.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 76.4% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 91.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 33.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 82.1% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 64 damage.\nDamage: 97.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 71% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 58 damage.\nDamage: 88.9% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 106.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 75.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 62 damage.\nDamage: 94.6% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 73 damage.\nDamage: 112.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 41.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 81% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 66 damage.\nDamage: 101.5% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 79 damage.\nDamage: 121% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 44.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 56 damage.\nDamage: 85.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 70 damage.\nDamage: 107.2% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 83 damage.\nDamage: 127.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 91% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 74 damage.\nDamage: 114% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 88 damage.\nDamage: 136% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Piercing Grace",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vaelith/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 81 damage.\n#1 Damage: 125% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 86 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 91 damage.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 99 damage.\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 109 damage.\n#1 Damage: 167.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 117 damage.\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 127 damage.\n#1 Damage: 195% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 135 damage.\n#1 Damage: 207.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 145 damage.\n#1 Damage: 222.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 153 damage.\n#1 Damage: 235% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 163 damage.\n#1 Damage: 250% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Center Mark",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vaelith/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit DMG Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Damage stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 176 damage. Casts a [15% Crit DMG Up] buff on Vaelith, lasting 6s if the hit lands as a critical hit.\n#1 Damage: 270% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 186 damage. Casts a [17% Crit DMG Up] buff on Vaelith, lasting 6s if the hit lands as a critical hit.\n#1 Damage: 286.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 197 damage. Casts a [17% Crit DMG Up] buff on Vaelith, lasting 7s if the hit lands as a critical hit.\n#1 Damage: 302.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 214 damage. Casts a [19% Crit DMG Up] buff on Vaelith, lasting 7s if the hit lands as a critical hit.\n#1 Damage: 329.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 235 damage. Casts a [19% Crit DMG Up] buff on Vaelith, lasting 7s if the hit lands as a critical hit.\n#1 Damage: 361.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 253 damage. Casts a [21% Crit DMG Up] buff on Vaelith, lasting 7s if the hit lands as a critical hit.\n#1 Damage: 388.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 274 damage. Casts a [21% Crit DMG Up] buff on Vaelith, lasting 8s if the hit lands as a critical hit.\n#1 Damage: 421.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 291 damage. Casts a [23% Crit DMG Up] buff on Vaelith, lasting 8s if the hit lands as a critical hit.\n#1 Damage: 448.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 312 damage. Casts a [23% Crit DMG Up] buff on Vaelith, lasting 8s if the hit lands as a critical hit.\n#1 Damage: 480.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 330 damage. Casts a [25% Crit DMG Up] buff on Vaelith, lasting 8s if the hit lands as a critical hit.\n#1 Damage: 507.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 351 damage. Casts a [25% Crit DMG Up] buff on Vaelith, lasting 9s if the hit lands as a critical hit.\n#1 Damage: 540% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sky Call",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vaelith/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 60 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1s.\n#1 Damage: 92.5% ATK\n#2 Damage: 92.5% ATK\n#3 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 64 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.1s.\n#1 Damage: 98% ATK\n#2 Damage: 98% ATK\n#3 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 67 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.2s.\n#1 Damage: 103.6% ATK\n#2 Damage: 103.6% ATK\n#3 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 73 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.3s.\n#1 Damage: 112.9% ATK\n#2 Damage: 112.9% ATK\n#3 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 81 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.4s.\n#1 Damage: 124% ATK\n#2 Damage: 124% ATK\n#3 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 87 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.5s.\n#1 Damage: 133.2% ATK\n#2 Damage: 133.2% ATK\n#3 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 94 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.6s.\n#1 Damage: 144.3% ATK\n#2 Damage: 144.3% ATK\n#3 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 100 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.7s.\n#1 Damage: 153.6% ATK\n#2 Damage: 153.6% ATK\n#3 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 107 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.8s.\n#1 Damage: 164.6% ATK\n#2 Damage: 164.6% ATK\n#3 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 113 damage per hit. Each hit Extends the duration of 1 random buff on Vaelith by 1.9s.\n#1 Damage: 173.9% ATK\n#2 Damage: 173.9% ATK\n#3 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 120 damage per hit. Each hit Extends the duration of up to 2 random buffs on Vaelith by 2s.\n#1 Damage: 185% ATK\n#2 Damage: 185% ATK\n#3 Damage: 185% ATK"
+    }
+   ]
+  },
+  {
+   "name": "One Bolt Salute",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/vaelith/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 151 damage per hit. Damage increases by 5% per buff on Vaelith, limited up to +30% damage.\n#1 Damage: 232.5% ATK\n#2 Damage: 232.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 160 damage per hit. Damage increases by 6% per buff on Vaelith, limited up to +30% damage.\n#1 Damage: 246.4% ATK\n#2 Damage: 246.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 169 damage per hit. Damage increases by 6% per buff on Vaelith, limited up to +40% damage.\n#1 Damage: 260.4% ATK\n#2 Damage: 260.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 184 damage per hit. Damage increases by 7% per buff on Vaelith, limited up to +40% damage.\n#1 Damage: 283.7% ATK\n#2 Damage: 283.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 203 damage per hit. Damage increases by 7% per buff on Vaelith, limited up to +40% damage.\n#1 Damage: 311.6% ATK\n#2 Damage: 311.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 218 damage per hit. Damage increases by 8% per buff on Vaelith, limited up to +40% damage.\n#1 Damage: 334.8% ATK\n#2 Damage: 334.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 236 damage per hit. Damage increases by 8% per buff on Vaelith, limited up to +50% damage.\n#1 Damage: 362.7% ATK\n#2 Damage: 362.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 251 damage per hit. Damage increases by 9% per buff on Vaelith, limited up to +50% damage.\n#1 Damage: 386% ATK\n#2 Damage: 386% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 269 damage per hit. Damage increases by 9% per buff on Vaelith, limited up to +50% damage.\n#1 Damage: 413.9% ATK\n#2 Damage: 413.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 284 damage per hit. Damage increases by 9% per buff on Vaelith, limited up to +60% damage.\n#1 Damage: 437.1% ATK\n#2 Damage: 437.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 302 damage per hit. Damage increases by 10% per buff on Vaelith, limited up to +60% damage.\n#1 Damage: 465% ATK\n#2 Damage: 465% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Vaelith trained her whole life for the Green Laurel Tournament – the world’s premier archery competition. When she won the highest honors, she thought her journey was done… until Malkanis conscripted her. No matter. Her drive to exceed has not diminished, even on the battlefield.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "D",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "C",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 30.4,
+  "lists": 16
+ }
+}

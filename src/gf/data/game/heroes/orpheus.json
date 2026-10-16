@@ -1,0 +1,284 @@
+{
+ "id": 181,
+ "slug": "orpheus",
+ "name": "Orpheus",
+ "title": "Master of Melody",
+ "summary": "Invoker that places many buffs while reviving and increasing divinity.",
+ "lore": "A brilliant poet and musician capable of charming most creatures, Orpheus is most famous for his quest to rescue his wife Eurydice from the underworld—a quest he failed. Since the Shattering, his grief has soured his love for song and frivolity. Now he uses his music to draw souls away from the underworld in an effort to be avenged upon Hades for his failure to retrieve his beloved.",
+ "rarity": "Rare",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Orpheus.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Orpheus_main.png",
+ "stats": {
+  "hp": 1200,
+  "atk": 49,
+  "def": 82,
+  "spd": 95,
+  "init": 90,
+  "acc": 5,
+  "res": 20,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also increase Divinity of all allies by 40. If Eurydice is in the team, increase the Divinity by 70.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Invigorating Chrord",
+   "description": "Attack 1 enemy 290%ATK, then increase the Turn Meter of all allies by 3%. If Eurydice is an ally, increase Turn Meter of all allies by 6% instead.",
+   "icon_url": "/godforge/abilities/orpheus/ICON_Orpheus_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "290%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also increase Divinity of all allies by 40. If Eurydice is in the team, increase the Divinity by 70.",
+     "upgrade_description": "Also increase Divinity of all allies by 40. If Eurydice is in the team, increase the Divinity by 70."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Melodic Mastery",
+   "description": "Attack 1 enemy 415%ATK, then place [ATK Up I] and [ACC Up I] for 1 turn on all allies.",
+   "icon_url": "/godforge/abilities/orpheus/ICON_Orpheus_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "415%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "ATK Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ACC Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Serenade",
+   "description": "Has a 20% chance to increase the Divinity of all allies by 50 when this hero places a buff on any ally.",
+   "icon_url": "/godforge/abilities/orpheus/ICON_Orpheus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Harmony of Eurydice",
+   "description": "Place [SPD Up I] and [FTH Up I] for 1 turn on all allies. If Eurydice is an ally and is defeated, revive her with 50% HP and 50% Turn Meter.",
+   "icon_url": "/godforge/abilities/orpheus/ICON_Orpheus_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "SPD Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Up I",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Serenade",
+   "description": "Has a 20% chance to increase the Divinity of all allies by 25 when this hero places a buff on any ally.",
+   "icon_url": "/godforge/abilities/orpheus/ICON_Orpheus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,549 @@
+{
+ "slug": "lothac",
+ "kind": "Invoker",
+ "name": "Lothac",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/lothac/portrait.webp",
+ "fullArt": "/invokers/units/invokers/lothac/full.webp",
+ "stats": {
+  "base": {
+   "Health": "572",
+   "Attack": "56",
+   "Defense": "46",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "97"
+  },
+  "max": {
+   "Health": "6,739",
+   "Attack": "737",
+   "Defense": "531",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "97"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lothac/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+70",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 44.5% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 55% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 69% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 47.2% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 58.3% ATK\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 73.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 49.8% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 61.6% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 77.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 54.3% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 67.1% ATK\n#5 Attacks 1 enemy, dealing 47 damage.\nDamage: 84.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 59.6% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 73.7% ATK\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 92.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 64.1% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 79.2% ATK\n#5 Attacks 1 enemy, dealing 56 damage.\nDamage: 99.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 39 damage.\nDamage: 69.4% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 85.8% ATK\n#5 Attacks 1 enemy, dealing 60 damage.\nDamage: 107.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 73.9% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 91.3% ATK\n#5 Attacks 1 enemy, dealing 64 damage.\nDamage: 114.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 79.2% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 97.9% ATK\n#5 Attacks 1 enemy, dealing 69 damage.\nDamage: 122.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 83.7% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 103.4% ATK\n#5 Attacks 1 enemy, dealing 73 damage.\nDamage: 129.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 89% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 110% ATK\n#5 Attacks 1 enemy, dealing 77 damage.\nDamage: 138% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Mana Ram",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lothac/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 86 damage.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 94 damage.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 111 damage.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 120 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 128 damage.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 145 damage.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 154 damage.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Disorienting Dust",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lothac/skills/2.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 155 damage. Casts a [5% Weaken] debuff on the target, lasting 6s, increasing all damage taken by 5%.\nAccuracy required for: Weaken\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 165 damage. Casts a [6% Weaken] debuff on the target, lasting 6s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 174 damage. Casts a [6% Weaken] debuff on the target, lasting 6s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 190 damage. Casts a [6% Weaken] debuff on the target, lasting 7s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 208 damage. Casts a [6% Weaken] debuff on the target, lasting 7s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 224 damage. Casts a [6% Weaken] debuff on the target, lasting 7s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 242 damage. Casts a [6% Weaken] debuff on the target, lasting 8s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 258 damage. Casts a [6% Weaken] debuff on the target, lasting 9s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 277 damage. Casts a [6% Weaken] debuff on the target, lasting 9s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 292 damage. Casts a [7% Weaken] debuff on the target, lasting 9s, increasing all damage taken by 7%.\nAccuracy required for: Weaken\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 311 damage. Casts a [7% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 7%.\nAccuracy required for: Weaken\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Stubborn Force",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/lothac/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 80 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 85 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.1s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 89 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.2s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 97 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.3s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 107 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.4s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 115 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.5s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 124 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.6s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 132 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.7s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 142 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.8s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 150 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 3.9s.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 5x3m area in front of Lothac, dealing 160 damage. Pushes the targets 4m away. Then, increases the cooldown of a random Active Skill on the targets by 4s 2 times.\nAccuracy required for: Push, Cooldown Increase\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Rage Ritual",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lothac/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 87 damage per hit. Lothac gains 40 Titan Mana on critical hits.\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK\n#3 Damage: 155% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 92 damage per hit. Lothac gains 42 Titan Mana on critical hits.\n#1 Damage: 164.3% ATK\n#2 Damage: 164.3% ATK\n#3 Damage: 164.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 97 damage per hit. Lothac gains 45 Titan Mana on critical hits.\n#1 Damage: 173.6% ATK\n#2 Damage: 173.6% ATK\n#3 Damage: 173.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 106 damage per hit. Lothac gains 48 Titan Mana on critical hits.\n#1 Damage: 189.1% ATK\n#2 Damage: 189.1% ATK\n#3 Damage: 189.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 116 damage per hit. Lothac gains 48 Titan Mana on critical hits.\n#1 Damage: 207.7% ATK\n#2 Damage: 207.7% ATK\n#3 Damage: 207.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 125 damage per hit. Lothac gains 51 Titan Mana on critical hits.\n#1 Damage: 223.2% ATK\n#2 Damage: 223.2% ATK\n#3 Damage: 223.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 135 damage per hit. Lothac gains 54 Titan Mana on critical hits.\n#1 Damage: 241.8% ATK\n#2 Damage: 241.8% ATK\n#3 Damage: 241.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 144 damage per hit. Lothac gains 54 Titan Mana on critical hits.\n#1 Damage: 257.3% ATK\n#2 Damage: 257.3% ATK\n#3 Damage: 257.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 155 damage per hit. Lothac gains 57 Titan Mana on critical hits.\n#1 Damage: 275.9% ATK\n#2 Damage: 275.9% ATK\n#3 Damage: 275.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 163 damage per hit. Lothac gains 60 Titan Mana on critical hits.\n#1 Damage: 291.4% ATK\n#2 Damage: 291.4% ATK\n#3 Damage: 291.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 174 damage per hit. Lothac gains 60 Titan Mana on critical hits.\n#1 Damage: 310% ATK\n#2 Damage: 310% ATK\n#3 Damage: 310% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Lothac is one of very few to undertake the Trial of the Ram, an old and painful Eldrin ritual. The magic made him as stubborn as the Trial’s namesake, but it was conviction he needed – he feared the temptations of evil more than anything else. Well, he fears them no longer. He destroys them instead.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "C",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "D",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "D",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "D",
+  "ulgorim": "C",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 23.2,
+  "lists": 16
+ }
+}

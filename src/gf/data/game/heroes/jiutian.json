@@ -1,0 +1,267 @@
+{
+ "id": 205,
+ "slug": "jiutian",
+ "name": "Jiutian",
+ "title": "Lady of the Nine Heavens",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Jiutian represents victory and conquest—in war, but also in health and sexuality. She achieves her aims more through magic, cleverness, and skill than strength. Yet Jiutian occasionally hinders her own side, as her need for victory can blind her to other considerations, or to strategies that call for a loss now in order to attain a more significant win later.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "https://www.ravenpyros.com/application/files/2117/6702/9872/Jiutian.webp",
+ "image_url": "https://www.ravenpyros.com/application/files/6117/7894/4527/2026-05-16_10_14_33-Jiutian___Hero_Index___Godforge.png",
+ "stats": {
+  "hp": 1215,
+  "atk": 77,
+  "def": 77,
+  "spd": 101,
+  "init": 95,
+  "acc": 30,
+  "res": 25,
+  "initial_divinity": 900,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Vanish] on the ally with the highest ATK for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also place [Lock Core] on the target for 2 turns.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Misdirection",
+   "description": "Attack 1 enemy 345%ATK+50%SPD and transfer 5% of the target’s Turn Meter with the ally with the highest Turn Meter. If this hero is under [Vanish], transfer 10% Turn Meter instead.",
+   "icon_url": "/godforge/abilities/jiutian/ICON_Jiutian_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Nine Heavens Stratagem",
+   "description": "Place [Vanish] on this hero for 2 turns then attack all enemies 285%ATK+50%SPD with an 80% chance to place [SPD Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/jiutian/ICON_Jiutian_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vanish",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 0,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Vanish on the ally with the highest ATK for 2 turns.",
+     "upgrade_description": "Also place [Vanish] on the ally with the highest ATK for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "20% SPD in Arena Battles",
+   "icon_url": "/godforge/abilities/jiutian/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Veiled Sabotage",
+   "description": "When this hero gains [Vanish], increase the Turn Meter of all allies by 10% and decrease the Turn Meter of all enemies by 10%.",
+   "icon_url": "/godforge/abilities/jiutian/ICON_Jiutian_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Halt the Advance",
+   "description": "Attack 1 enemy 195%ATK+50%SPD 3 times. Each hit will decrease the target’s Turn Meter by 5%. If the target is under SPD Down, decrease by 10% instead. If this hero is under [Vanish] will ignore 20% of the target’s RES.",
+   "icon_url": "/godforge/abilities/jiutian/ICON_Jiutian_Ultimate.webp",
+   "divinity_cost": 2475,
+   "damage_formula": [
+    "195%ATK",
+    "195%ATK",
+    "195%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also place Lock Core on the target for 2 turns.",
+     "upgrade_description": "Also place [Lock Core] on the target for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Veiled Sabotage",
+   "description": "When this hero gains [Vanish], increase the Turn Meter of all allies by 5% and decrease the Turn Meter of all enemies by 5%.",
+   "icon_url": "/godforge/abilities/jiutian/ICON_Jiutian_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

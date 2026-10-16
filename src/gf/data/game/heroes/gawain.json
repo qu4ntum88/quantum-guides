@@ -1,0 +1,257 @@
+{
+ "id": 231,
+ "slug": "gawain",
+ "name": "Gawain",
+ "title": "The Stalwart",
+ "summary": "Protect the knights of Avalon whilst passing the Green Knights Trials.",
+ "lore": "One of the most loyal Knights of the Round Table in the old world, Gawain’s fealty has reached the heights of zealotry in the new. His devotion to Arthur is a religious fervor, and though it is not his first choice, he will take all manner of dishonorable and vicious actions in its defense, even at the cost of his own reputation.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Gawain.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Gawain_main.png",
+ "stats": {
+  "hp": 1365,
+  "atk": 66,
+  "def": 103,
+  "spd": 95,
+  "init": 88,
+  "acc": 15,
+  "res": 70,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Shield] on all allies instead.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "At the start of this hero's turn, remove all Disable from this hero.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Knight's Oath",
+   "description": "Attack 1 enemy 90%DEF+70%ATK 2 times, then increase this hero's DEF by 5% (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/gawain/ICON_Gawain_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "90%DEF+70%ATK",
+    "90%DEF+70%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Honor and Chivalry",
+   "description": "Place [Shield] 200%DEF on this hero, then place [Protect II] on all allies except this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/gawain/ICON_Gawain_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Shield on all allies instead.",
+     "upgrade_description": "Place [Shield] on all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Courageous Devotion",
+   "description": "When an ally receives a Disable, this hero receives the Disable instead.",
+   "icon_url": "/godforge/abilities/gawain/ICON_Gawain_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 1,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "At the start of this hero's turn, remove all Disable from this hero.",
+     "upgrade_description": "At the start of this hero's turn, remove all Disable from this hero."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Noon's Might",
+   "description": "Attack all enemies 130%DEF+105%ATK, then has a 75% chance to place [ATK Down II] on each target for 2 turns. Also transfer 1 Debuff from each ally to this hero.",
+   "icon_url": "/godforge/abilities/gawain/ICON_Gawain_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "130%DEF+105%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Courageous Devotion",
+   "description": "When an ally receives a Disable, this hero receives the Disable instead.",
+   "icon_url": "/godforge/abilities/gawain/ICON_Gawain_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 1,
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

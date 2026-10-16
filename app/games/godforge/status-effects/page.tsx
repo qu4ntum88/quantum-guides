@@ -1,10 +1,16 @@
-import type { Metadata } from 'next'
 import fs from 'fs'
 import path from 'path'
 import GfStatusEffectGrid from '@/src/gf/components/GfStatusEffectGrid'
 import type { GfStatusEffect } from '@/src/gf/components/GfStatusEffectBox'
 
-export const metadata: Metadata = { robots: 'noindex, nofollow' }
+import { pageMeta } from '@/src/lib/seo'
+import WorldHero from '@/src/qgg/components/WorldHero'
+
+export const metadata = pageMeta({
+  title: 'Godforge Status Effects: Every Buff, Debuff & Disable',
+  description: 'Every Godforge status effect in one searchable grid: all buffs, debuffs and disables with what each one does.',
+  path: '/games/godforge/status-effects',
+})
 
 function getStatusEffects(): GfStatusEffect[] {
   try {
@@ -17,24 +23,12 @@ export default function GodforgeStatusEffectsPage() {
 
   return (
     <main>
-      <section
-        style={{
-          backgroundImage: "url('/images/site/Quantum Purple Background.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          padding: '3rem 0',
-        }}
-      >
-        <div className="container">
-          <h1 style={{ color: '#fff', marginBottom: '0.5rem' }}>Godforge — Status Effects</h1>
-          <p style={{ color: '#cccccc' }}>Browse all status effects. Hover an icon for its description.</p>
-          <div style={{ marginTop: '1rem' }}>
-            <a href="/games/godforge" className="btn" style={{ fontSize: '0.85rem', padding: '0.5rem 1.25rem' }}>
-              ← Back to Godforge
-            </a>
-          </div>
-        </div>
-      </section>
+      <WorldHero
+        world="godforge"
+        overline="Godforge"
+        title="Godforge Status Effects"
+        sub="Every buff, debuff and disable in the game. Hover an icon for its description."
+      />
 
       <section style={{ padding: '2rem 0' }}>
         <div className="container">

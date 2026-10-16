@@ -1,0 +1,555 @@
+{
+ "slug": "thiselle-the-highseer",
+ "kind": "Invoker",
+ "name": "Thiselle the Highseer",
+ "faction": "Lightseekers",
+ "rarity": "Uncommon",
+ "class": "Support",
+ "element": "Wind",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/thiselle-the-highseer/portrait.webp",
+ "fullArt": "/invokers/units/invokers/thiselle-the-highseer/full.webp",
+ "stats": {
+  "base": {
+   "Health": "483",
+   "Attack": "42",
+   "Defense": "36",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "98"
+  },
+  "max": {
+   "Health": "6,353",
+   "Attack": "544",
+   "Defense": "431",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "123"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/thiselle-the-highseer/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+99",
+    "titan": "+54"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 3 damage.\nDamage: 8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 12% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 16.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 22% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 5 damage.\nDamage: 12.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 8.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 12.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 17.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 23.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 6 damage.\nDamage: 13.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 18.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 24.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 6 damage.\nDamage: 14% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 9.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 14.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 20.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 26.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 6 damage.\nDamage: 15.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 10.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 16.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 22.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 29.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 7 damage.\nDamage: 16.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 11.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 17.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 23.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 31.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 18% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 12.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 18.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 25.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 34.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 8 damage.\nDamage: 19.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 19.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 27.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 36.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 9 damage.\nDamage: 20.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 14.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 21.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 29.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 39.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 9 damage.\nDamage: 22.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 15% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 22.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 31% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 41.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 10 damage.\nDamage: 23.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 16% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 24% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 33% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 44% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 25% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wingbeat",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/thiselle-the-highseer/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 37 damage.\n#1 Damage: 87.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 39 damage.\n#1 Damage: 92.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 41 damage.\n#1 Damage: 98% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 45 damage.\n#1 Damage: 106.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 49 damage.\n#1 Damage: 117.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 53 damage.\n#1 Damage: 126% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 57 damage.\n#1 Damage: 136.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 61 damage.\n#1 Damage: 145.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 65 damage.\n#1 Damage: 155.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 69 damage.\n#1 Damage: 164.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 74 damage.\n#1 Damage: 175% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Rending Wind",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/thiselle-the-highseer/skills/2.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 75 damage. Casts a [5% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 178% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 79 damage. Casts a [5% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 188.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 84 damage. Casts a [6% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 199.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 91 damage. Casts a [6% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 217.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 100 damage. Casts a [6% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 238.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 108 damage. Casts a [6% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 256.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 117 damage. Casts a [7% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 277.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 124 damage. Casts a [7% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 295.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 133 damage. Casts a [8% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 316.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 141 damage. Casts a [9% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 334.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 150 damage. Casts a [9% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 356% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Fresh Air",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/thiselle-the-highseer/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "31s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 63 HP.\n#1 Heal: 150% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "31s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 74 HP.\n#1 Heal: 175% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 74 HP.\n#1 Heal: 175% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 84 HP.\n#1 Heal: 200% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 84 HP.\n#1 Heal: 200% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 105 HP.\n#1 Heal: 250% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 105 HP.\n#1 Heal: 250% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 126 HP.\n#1 Heal: 300% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 126 HP.\n#1 Heal: 300% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 153 HP.\n#1 Heal: 365% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Heals the ally with the lowest current HP, restoring 153 HP.\n#1 Heal: 365% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Raptor Torrent",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/thiselle-the-highseer/skills/4.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 51 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 8s. The [Shield] is equal to (30% * Damage Dealt).\n#1 Damage: 122.5% ATK\n#2 Shield: 30% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 55 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 8s. The [Shield] is equal to (35% * Damage Dealt).\n#1 Damage: 129.8% ATK\n#2 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 58 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 9s. The [Shield] is equal to (35% * Damage Dealt).\n#1 Damage: 137.2% ATK\n#2 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 63 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 9s. The [Shield] is equal to (40% * Damage Dealt).\n#1 Damage: 149.5% ATK\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 69 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 9s. The [Shield] is equal to (40% * Damage Dealt).\n#1 Damage: 164.2% ATK\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 74 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 10s. The [Shield] is equal to (40% * Damage Dealt).\n#1 Damage: 176.4% ATK\n#2 Shield: 40% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 80 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 10s. The [Shield] is equal to (45% * Damage Dealt).\n#1 Damage: 191.1% ATK\n#2 Shield: 45% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 85 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 10s. The [Shield] is equal to (45% * Damage Dealt).\n#1 Damage: 203.4% ATK\n#2 Shield: 45% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 92 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 11s. The [Shield] is equal to (45% * Damage Dealt).\n#1 Damage: 218.1% ATK\n#2 Shield: 45% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 97 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 12s. The [Shield] is equal to (45% * Damage Dealt).\n#1 Damage: 230.3% ATK\n#2 Shield: 45% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 8 enemies in a 6m radius around the target, from a distance of 9m, dealing 103 damage. Casts a [Shield] buff on the 7 allies with the lowest current HP in a 14m radius around the target, lasting 13s. The [Shield] is equal to (50% * Damage Dealt).\n#1 Damage: 245% ATK\n#2 Shield: 50% * Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Thiselle was not raised a warrior. Her noble family were blessed with the power to speak with animals, and cared for the forests and creatures on their lands; Thiselle only became an Invoker when poachers attacked. Her time tending the land is over – her time fighting to defend it has only just begun.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "E",
+  "hyxxis": "D",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "E",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "E",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 0.9,
+  "lists": 16
+ }
+}

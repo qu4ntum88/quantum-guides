@@ -1,0 +1,549 @@
+{
+ "slug": "akara-the-cleaver",
+ "kind": "Invoker",
+ "name": "Akara the Cleaver",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/akara-the-cleaver/portrait.webp",
+ "fullArt": "/invokers/units/invokers/akara-the-cleaver/full.webp",
+ "stats": {
+  "base": {
+   "Health": "605",
+   "Attack": "51",
+   "Defense": "48",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "111"
+  },
+  "max": {
+   "Health": "7,128",
+   "Attack": "665",
+   "Defense": "557",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "111"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/akara-the-cleaver/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+106",
+    "titan": "+58"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 34.5% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 45% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 55% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 18 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 36.6% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 47.7% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 58.3% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 19 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 38.6% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 50.4% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 61.6% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 20 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 42.1% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 67.1% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 22 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 46.2% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 60.3% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 73.7% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 24 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 49.7% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 64.8% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 79.2% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 26 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 53.8% ATK\n#3 Attacks 1 enemy, dealing 36 damage.\nDamage: 70.2% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 85.8% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 28 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 74.7% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 91.3% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 30 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 61.4% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 80.1% ATK\n#4 Attacks 1 enemy, dealing 50 damage.\nDamage: 97.9% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 32 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 64.9% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 84.6% ATK\n#4 Attacks 1 enemy, dealing 53 damage.\nDamage: 103.4% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 34 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 69% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 90% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 110% ATK\n#5 Attacks 8 enemies in a 2m radius around Akara, dealing 36 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Scorched Earth",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/akara-the-cleaver/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+73",
+    "titan": "+40"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 34 damage.\n#1 Damage: 67.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 36 damage.\n#1 Damage: 71.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 39 damage.\n#1 Damage: 75.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 42 damage.\n#1 Damage: 82.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 46 damage.\n#1 Damage: 90.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 50 damage.\n#1 Damage: 97.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 54 damage.\n#1 Damage: 105.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 57 damage.\n#1 Damage: 112.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 61 damage.\n#1 Damage: 120.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 65 damage.\n#1 Damage: 126.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m radius around Akara, dealing 69 damage.\n#1 Damage: 135% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Burning Skewer",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/akara-the-cleaver/skills/2.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 8s. Attacks the target, dealing 135 damage. \nAkara gains 25 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 265% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 8s. Attacks the target, dealing 143 damage. \nAkara gains 27 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 280.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 9s. Attacks the target, dealing 151 damage. \nAkara gains 27 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 296.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 9s. Attacks the target, dealing 165 damage. \nAkara gains 29 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 323.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 10s. Attacks the target, dealing 181 damage. \nAkara gains 31 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 355.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 10s. Attacks the target, dealing 195 damage. \nAkara gains 31 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 381.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 10s. Attacks the target, dealing 211 damage. \nAkara gains 33 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 413.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 10s. Attacks the target, dealing 224 damage. \nAkara gains 33 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 439.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 11s. Attacks the target, dealing 241 damage. \nAkara gains 35 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 471.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 11s. Attacks the target, dealing 254 damage. \nAkara gains 40 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 498.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 12s. Attacks the target, dealing 270 damage. \nAkara gains 40 Ultimate Mana if the hit lands as a critical hit.\nAccuracy required for: Combo SPD Down\n#1 Damage: 530% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Blazing Lift",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/akara-the-cleaver/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+78",
+    "titan": "+43"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage. Launches the target for 1.5s.\nAccuracy required for: Launch\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage. Launches the target for 1.5s.\nAccuracy required for: Launch\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 157 damage. Launches the target for 1.5s.\nAccuracy required for: Launch\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 171 damage. Launches the target for 1.8s.\nAccuracy required for: Launch\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 188 damage. Launches the target for 1.8s.\nAccuracy required for: Launch\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 202 damage. Launches the target for 2s.\nAccuracy required for: Launch\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 219 damage. Launches the target for 2s.\nAccuracy required for: Launch\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 233 damage. Launches the target for 2.3s.\nAccuracy required for: Launch\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 250 damage. Launches the target for 2.3s.\nAccuracy required for: Launch\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 264 damage. Launches the target for 2.5s.\nAccuracy required for: Launch\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 281 damage. Launches the target for 2.5s.\nAccuracy required for: Launch\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ember Strike",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/akara-the-cleaver/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 281 damage. Akara gains 25% Ultimate Mana if this attack kills the target.\n#1 Damage: 550% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 297 damage. Akara gains 26% Ultimate Mana if this attack kills the target.\n#1 Damage: 583% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 314 damage. Akara gains 27% Ultimate Mana if this attack kills the target.\n#1 Damage: 616% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 342 damage. Akara gains 28% Ultimate Mana if this attack kills the target.\n#1 Damage: 671% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 376 damage. Akara gains 28% Ultimate Mana if this attack kills the target.\n#1 Damage: 737% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 404 damage. Akara gains 29% Ultimate Mana if this attack kills the target.\n#1 Damage: 792% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 438 damage. Akara gains 30% Ultimate Mana if this attack kills the target.\n#1 Damage: 858% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 466 damage. Akara gains 30% Ultimate Mana if this attack kills the target.\n#1 Damage: 913% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 499 damage. Akara gains 32% Ultimate Mana if this attack kills the target.\n#1 Damage: 979% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 527 damage. Akara gains 35% Ultimate Mana if this attack kills the target.\n#1 Damage: 1,034% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 561 damage. Akara gains 35% Ultimate Mana if this attack kills the target.\n#1 Damage: 1,100% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Manaburn",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Once a hothead known more for bar fights and late nights, nobody would have predicted what Akara would become when she joined the Magmabloods: disciplined, restrained, and one of the deadliest Invokers in the Ironband.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "D",
+  "hyxxis": "C",
+  "koltmos": "D",
+  "omnissi-astral": "D",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "C",
+  "omnissi-fire": "B",
+  "omnissi-light": "D",
+  "omnissi-water": "D",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "C",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 24.1,
+  "lists": 16
+ }
+}

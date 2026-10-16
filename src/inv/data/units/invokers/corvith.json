@@ -1,0 +1,560 @@
+{
+ "slug": "corvith",
+ "kind": "Invoker",
+ "name": "Corvith",
+ "faction": "Eldrin",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/corvith/portrait.webp",
+ "fullArt": "/invokers/units/invokers/corvith/full.webp",
+ "stats": {
+  "base": {
+   "Health": "462",
+   "Attack": "69",
+   "Defense": "44",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "93"
+  },
+  "max": {
+   "Health": "5,800",
+   "Attack": "857",
+   "Defense": "506",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "118"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/corvith/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 55% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 23 damage.\nDamage: 34% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 58.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 25 damage.\nDamage: 36% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 61.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage.\nDamage: 38.1% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 53.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 67.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 29 damage.\nDamage: 41.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 51 damage.\nDamage: 73.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 31 damage.\nDamage: 45.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 63.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 79.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 34 damage.\nDamage: 49% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 68.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 85.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 37 damage.\nDamage: 53% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 73% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 63 damage.\nDamage: 91.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 39 damage.\nDamage: 56.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 54 damage.\nDamage: 78.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 68 damage.\nDamage: 97.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 42 damage.\nDamage: 60.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 71 damage.\nDamage: 103.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 44 damage.\nDamage: 63.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 61 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 76 damage.\nDamage: 110% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 47 damage.\nDamage: 68% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Twisting Ravens",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/corvith/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+32",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 91 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 97 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 102 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 112 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 123 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 132 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 143 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 152 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 163 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 172 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 183 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Corvan Eye",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/corvith/skills/2.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+33",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 7s. Then, casts a [10% Crit Rate Down] debuff on the target, lasting 7s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 98 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 142.5% ATK\n#2 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 7s. Then, casts a [12% Crit Rate Down] debuff on the target, lasting 7s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 104 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 151% ATK\n#2 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [8% Combo SPD Down] debuff on 1 enemy, lasting 8s. Then, casts a [12% Crit Rate Down] debuff on the target, lasting 8s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 110 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 159.6% ATK\n#2 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 8s. Then, casts a [12% Crit Rate Down] debuff on the target, lasting 8s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 120 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 173.8% ATK\n#2 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 8s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 8s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 132 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 190.9% ATK\n#2 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 9s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 9s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 142 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 205.2% ATK\n#2 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [10% Combo SPD Down] debuff on 1 enemy, lasting 9s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 9s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 153 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 222.3% ATK\n#2 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 10s. Then, casts a [15% Crit Rate Down] debuff on the target, lasting 10s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 163 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 236.5% ATK\n#2 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 10s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 10s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 175 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 253.6% ATK\n#2 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [12% Combo SPD Down] debuff on 1 enemy, lasting 12s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 12s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 185 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 267.9% ATK\n#2 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [15% Combo SPD Down] debuff on 1 enemy, lasting 12s. Then, casts a [20% Crit Rate Down] debuff on the target, lasting 12s, on the second hit. Attacks the target from a distance of 9m, 2 times, dealing 197 damage per hit.\nAccuracy required for: Combo SPD Down, Crit Rate Down\n#1 Damage: 285% ATK\n#2 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Whispers of Weakness",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/corvith/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 188 damage. Casts a [25% ATK Down] debuff on the target, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 272.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 199 damage. Casts a [25% ATK Down] debuff on the target, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 288.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 211 damage. Casts a [27% ATK Down] debuff on the target, lasting 8s.\nAccuracy required for: ATK Down\n#1 Damage: 305.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 229 damage. Casts a [27% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 332.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 252 damage. Casts a [29% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 365.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 271 damage. Casts a [31% ATK Down] debuff on the target, lasting 9s.\nAccuracy required for: ATK Down\n#1 Damage: 392.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 293 damage. Casts a [31% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 425.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 312 damage. Casts a [33% ATK Down] debuff on the target, lasting 10s.\nAccuracy required for: ATK Down\n#1 Damage: 452.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 335 damage. Casts a [33% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 485% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 353 damage. Casts a [35% ATK Down] debuff on the target, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 512.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 376 damage. Casts a [35% ATK Down] debuff on the target, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 545% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shred the Cursed",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/corvith/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 321 damage. Damage increases by 5% per debuff on the target, limited up to +150% damage.\n#1 Damage: 465% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 340 damage. Damage increases by 6% per debuff on the target, limited up to +150% damage.\n#1 Damage: 492.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 359 damage. Damage increases by 6% per debuff on the target, limited up to +155% damage.\n#1 Damage: 520.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 391 damage. Damage increases by 8% per debuff on the target, limited up to +155% damage.\n#1 Damage: 567.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 430 damage. Damage increases by 8% per debuff on the target, limited up to +155% damage.\n#1 Damage: 623.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 462 damage. Damage increases by 10% per debuff on the target, limited up to +155% damage.\n#1 Damage: 669.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 501 damage. Damage increases by 10% per debuff on the target, limited up to +165% damage.\n#1 Damage: 725.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 533 damage. Damage increases by 10% per debuff on the target, limited up to +165% damage.\n#1 Damage: 771.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 571 damage. Damage increases by 12% per debuff on the target, limited up to +165% damage.\n#1 Damage: 827.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 603 damage. Damage increases by 12% per debuff on the target, limited up to +175% damage.\n#1 Damage: 874.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 642 damage. Damage increases by 15% per debuff on the target, limited up to +175% damage.\n#1 Damage: 930% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Atrophy",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Corvith commands the Cohort of the Midnight Crest, a legion of raven fae. With this host of eyes and ears – and blades, and spells, and burning claws, should the need arise – she has become one of the greatest spies in all of Amara, reporting directly to Wild King Caladras as his Eye of the Forest.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "A+",
+  "hyxxis": "B",
+  "koltmos": "A",
+  "omnissi-astral": "A",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "B",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "C",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 45.5,
+  "lists": 16
+ }
+}

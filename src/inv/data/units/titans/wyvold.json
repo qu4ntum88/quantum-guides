@@ -1,0 +1,517 @@
+{
+ "slug": "wyvold",
+ "kind": "Titan",
+ "name": "Wyvold",
+ "faction": "Eldrin",
+ "rarity": "Mythical",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Damage",
+ "portrait": "/invokers/units/titans/wyvold/portrait.webp",
+ "fullArt": "/invokers/units/titans/wyvold/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's Crit Rate": "+15%",
+   "Bound Invoker's Crit DMG": "+30%",
+   "Bonus HP": "+630",
+   "Bonus ATK": "+81",
+   "Bonus DEF": "+66",
+   "Movement speed": "293"
+  },
+  "max": {
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's Crit Rate": "+21%",
+   "Bound Invoker's Crit DMG": "+70%",
+   "Bonus HP": "+3,786",
+   "Bonus ATK": "+487",
+   "Bonus DEF": "+397",
+   "Movement speed": "293"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/wyvold/skills/0.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 109 damage.\nDamage: 135% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 113 damage. Casts a [40% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\nDamage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 116 damage.\nDamage: 143.1% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 120 damage. Casts a [45% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\nDamage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 122 damage.\nDamage: 151.2% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 127 damage. Casts a [50% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\nDamage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 133 damage.\nDamage: 164.7% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 138 damage. Casts a [50% RES Down] debuff on the target, lasting 6.5s.\nAccuracy required for: RES Down\nDamage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 147 damage.\nDamage: 180.9% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 152 damage. Casts a [55% RES Down] debuff on the target, lasting 6.5s.\nAccuracy required for: RES Down\nDamage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 157 damage.\nDamage: 194.4% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 163 damage. Casts a [60% RES Down] debuff on the target, lasting 6.5s.\nAccuracy required for: RES Down\nDamage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 171 damage.\nDamage: 210.6% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 177 damage. Casts a [60% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\nDamage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 182 damage.\nDamage: 224.1% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 188 damage. Casts a [65% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\nDamage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 195 damage.\nDamage: 240.3% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 202 damage. Casts a [70% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\nDamage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 206 damage.\nDamage: 253.8% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 213 damage. Casts a [70% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\nDamage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 12m, dealing 219 damage.\nDamage: 270% ATK\n#2 Attacks 1 enemy from a distance of 12m, dealing 227 damage. Casts a [80% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\nDamage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Putrid Orb",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/wyvold/skills/1.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    },
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+43",
+    "titan": "+23"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 115 damage. Casts a [10% Combo SPD Down] debuff on the targets, lasting 12s. Then, casts a [45% ACC Down] debuff on the targets, lasting 12s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 122 damage. Casts a [15% Combo SPD Down] debuff on the targets, lasting 12s. Then, casts a [45% ACC Down] debuff on the targets, lasting 12s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 129 damage. Casts a [15% Combo SPD Down] debuff on the targets, lasting 12s. Then, casts a [60% ACC Down] debuff on the targets, lasting 12s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 141 damage. Casts a [15% Combo SPD Down] debuff on the targets, lasting 14s. Then, casts a [60% ACC Down] debuff on the targets, lasting 14s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 155 damage. Casts a [20% Combo SPD Down] debuff on the targets, lasting 14s. Then, casts a [60% ACC Down] debuff on the targets, lasting 14s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 166 damage. Casts a [20% Combo SPD Down] debuff on the targets, lasting 16s. Then, casts a [60% ACC Down] debuff on the targets, lasting 16s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 180 damage. Casts a [25% Combo SPD Down] debuff on the targets, lasting 16s. Then, casts a [60% ACC Down] debuff on the targets, lasting 16s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 192 damage. Casts a [25% Combo SPD Down] debuff on the targets, lasting 16s. Then, casts a [75% ACC Down] debuff on the targets, lasting 16s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 205 damage. Casts a [25% Combo SPD Down] debuff on the targets, lasting 18s. Then, casts a [75% ACC Down] debuff on the targets, lasting 18s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 217 damage. Casts a [30% Combo SPD Down] debuff on the targets, lasting 18s. Then, casts a [75% ACC Down] debuff on the targets, lasting 18s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 9m radius around the target, from a distance of 12m, dealing 231 damage. Casts a [30% Combo SPD Down] debuff on the targets, lasting 18s. Then, casts a [90% ACC Down] debuff on the targets, lasting 18s.\nAccuracy required for: Combo SPD Down, ACC Down\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Chaos Quagmire",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/wyvold/skills/2.webp",
+   "effects": [
+    {
+     "label": "Mindworm",
+     "group": "Debuffs",
+     "description": "Disables the recipient's Passive Skills and blocks them from activating."
+    },
+    {
+     "label": "Skill SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Skill Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 115 damage. Casts a [20% Skill SPD Down] debuff on the targets, lasting 12s. Then, casts a [Mindworm] debuff on the targets, lasting 12s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 122 damage. Casts a [25% Skill SPD Down] debuff on the targets, lasting 12s. Then, casts a [Mindworm] debuff on the targets, lasting 12s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 129 damage. Casts a [25% Skill SPD Down] debuff on the targets, lasting 14s. Then, casts a [Mindworm] debuff on the targets, lasting 14s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 141 damage. Casts a [30% Skill SPD Down] debuff on the targets, lasting 14s. Then, casts a [Mindworm] debuff on the targets, lasting 14s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 155 damage. Casts a [30% Skill SPD Down] debuff on the targets, lasting 16s. Then, casts a [Mindworm] debuff on the targets, lasting 16s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 166 damage. Casts a [30% Skill SPD Down] debuff on the targets, lasting 16s. Then, casts a [Mindworm] debuff on the targets, lasting 16s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 180 damage. Casts a [35% Skill SPD Down] debuff on the targets, lasting 16s. Then, casts a [Mindworm] debuff on the targets, lasting 16s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 192 damage. Casts a [35% Skill SPD Down] debuff on the targets, lasting 18s. Then, casts a [Mindworm] debuff on the targets, lasting 18s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 205 damage. Casts a [40% Skill SPD Down] debuff on the targets, lasting 18s. Then, casts a [Mindworm] debuff on the targets, lasting 18s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 217 damage. Casts a [40% Skill SPD Down] debuff on the targets, lasting 20s. Then, casts a [Mindworm] debuff on the targets, lasting 20s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 20m radius around Wyvold, from a distance of 12m, dealing 231 damage. Casts a [40% Skill SPD Down] debuff on the targets, lasting 20s. Then, casts a [Mindworm] debuff on the targets, lasting 20s, blocking their Passive Skills from activating.\nAccuracy required for: Skill SPD Down, Mindworm\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/wyvold/skills/3.webp",
+   "effects": [
+    {
+     "label": "Jinx",
+     "group": "Debuffs",
+     "description": "Blocks Buffs from being applied to the recipient.Jinx Buffs will not block Control Buffs, and each Jinx buff will only negate a single Buff before expiring. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 190 damage. Casts a [Jinx] debuff on the targets, lasting 12s, blocking them from receiving 3 buffs.\nAccuracy required for: Jinx\n#1 Damage: 235% ATK\nINVOKATION END\nCasts a [20% Combo SPD Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 202 damage. Casts a [Jinx] debuff on the targets, lasting 13s, blocking them from receiving 3 buffs.\nAccuracy required for: Jinx\n#1 Damage: 249.1% ATK\nINVOKATION END\nCasts a [22% Combo SPD Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 213 damage. Casts a [Jinx] debuff on the targets, lasting 14s, blocking them from receiving 3 buffs.\nAccuracy required for: Jinx\n#1 Damage: 263.2% ATK\nINVOKATION END\nCasts a [24% Combo SPD Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 232 damage. Casts a [Jinx] debuff on the targets, lasting 15s, blocking them from receiving 3 buffs.\nAccuracy required for: Jinx\n#1 Damage: 286.7% ATK\nINVOKATION END\nCasts a [26% Combo SPD Up] buff on the Bound Invoker, lasting 12s."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 255 damage. Casts a [Jinx] debuff on the targets, lasting 15s, blocking them from receiving 4 buffs.\nAccuracy required for: Jinx\n#1 Damage: 314.9% ATK\nINVOKATION END\nCasts a [28% Combo SPD Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 274 damage. Casts a [Jinx] debuff on the targets, lasting 16s, blocking them from receiving 4 buffs.\nAccuracy required for: Jinx\n#1 Damage: 338.4% ATK\nINVOKATION END\nCasts a [30% Combo SPD Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 297 damage. Casts a [Jinx] debuff on the targets, lasting 17s, blocking them from receiving 4 buffs.\nAccuracy required for: Jinx\n#1 Damage: 366.6% ATK\nINVOKATION END\nCasts a [32% Combo SPD Up] buff on the Bound Invoker, lasting 14s."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 316 damage. Casts a [Jinx] debuff on the targets, lasting 17s, blocking them from receiving 5 buffs.\nAccuracy required for: Jinx\n#1 Damage: 390.1% ATK\nINVOKATION END\nCasts a [34% Combo SPD Up] buff on the Bound Invoker, lasting 17s."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 339 damage. Casts a [Jinx] debuff on the targets, lasting 18s, blocking them from receiving 5 buffs.\nAccuracy required for: Jinx\n#1 Damage: 418.3% ATK\nINVOKATION END\nCasts a [36% Combo SPD Up] buff on the Bound Invoker, lasting 17s."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 358 damage. Casts a [Jinx] debuff on the targets, lasting 20s, blocking them from receiving 5 buffs.\nAccuracy required for: Jinx\n#1 Damage: 441.8% ATK\nINVOKATION END\nCasts a [38% Combo SPD Up] buff on the Bound Invoker, lasting 17s."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 20m radius, dealing 381 damage. Casts a [Jinx] debuff on the targets, lasting 20s, blocking them from receiving 6 buffs.\nAccuracy required for: Jinx\n#1 Damage: 470% ATK\nINVOKATION END\nCasts a [40% Combo SPD Up] buff on the Bound Invoker, lasting 20s."
+    }
+   ]
+  },
+  {
+   "name": "ATK Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/wyvold/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +25% Attack."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +27.5% Attack."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +30% Attack."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +35% Attack."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +40% Attack."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +45% Attack."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +50% Attack."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "While the natural world may be serene and lifegiving, it's also violent, venomous, and disgusting. Wyvold is the embodiment of that rabid wildness, brought forth by the ancient Eldrin to vanquish anyone who would try to besmirch the Emerald Kingdom. The modern-day Eldrin are hesitant to call on Wyvold's power, for if not controlled, its fetid jaws could putrefy the entire kingdom.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S+",
+  "hyxxis": "S+",
+  "koltmos": "S+",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S+",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "S+",
+  "ulgorim": "S+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 100,
+  "lists": 16
+ }
+}

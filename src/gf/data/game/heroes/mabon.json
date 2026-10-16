@@ -1,0 +1,269 @@
+{
+ "id": 196,
+ "slug": "mabon",
+ "name": "Mabon",
+ "title": "Rescued Huntmaster",
+ "summary": "Veil and Resist the elements as you Hunt your Foes in the Wilds of Avalon.",
+ "lore": "Son of a goddess, Mabon ap Modron is not merely a knight of King Arthur’s Round Table but the greatest tracker in their ranks. Few creatures exist, mundane or supernatural, that he cannot hunt down. Mabon recently departed Camelot on a hunt he considers vital, yet he has told none what he seeks—or what dire consequence he fears should he fail.",
+ "rarity": "Rare",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Mabon.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Mabon_main.png",
+ "stats": {
+  "hp": 1065,
+  "atk": 88,
+  "def": 81,
+  "spd": 93,
+  "init": 92,
+  "acc": 15,
+  "res": 15,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increase the Turn Meter of all allies. Allies from Avalon receive 10% instead.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Tracker's Strike",
+   "description": "Attack 1 enemy 400%ATK, then has a 20% chance to inflict 1 extra hit if the target is under DEF Down.",
+   "icon_url": "/godforge/abilities/mabon/ICON_Mabon_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "400%ATK",
+    "400%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Hunter's Accuracy",
+   "description": "Attack 1 enemy 575%ATK, then has an 80% chance to place [DEF Down I] on each enemy for 2 turns.",
+   "icon_url": "/godforge/abilities/mabon/ICON_Mabon_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "575%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "DEF Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Knight of the Hunt",
+   "description": "When inflicting damage against enemies under DEF Down, increase this hero's Turn Meter by 5%.",
+   "icon_url": "/godforge/abilities/mabon/ICON_Mabon_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increase the Turn Meter of all allies. Allies from Avalon receive 10% instead.",
+     "upgrade_description": "Increase the Turn Meter of all allies. Allies from Avalon receive 10% instead."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Rescue From Despair",
+   "description": "Attack 1 enemy 575%ATK. Before attacking, remove all Disable from this hero, then place [ATK Up I] on this hero for 3 turns.",
+   "icon_url": "/godforge/abilities/mabon/ICON_Mabon_Ultimate.webp",
+   "divinity_cost": 2550,
+   "damage_formula": [
+    "575%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Up I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Knight of the Hunt",
+   "description": "When inflicting damage against enemies under DEF Down, increase this hero's Turn Meter by 2.5%.",
+   "icon_url": "/godforge/abilities/mabon/ICON_Mabon_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

@@ -1,0 +1,284 @@
+{
+ "id": 2,
+ "slug": "osirus",
+ "name": "Osiris",
+ "title": "Lord of Silence",
+ "summary": "Balance the scales in the battle with powerful attacks and health scaling.",
+ "lore": "Once a deity of agriculture, it was his murder at the hands of Set that transformed Osiris into King of Duat, god of Aaru’s dead. In the aftermath of the Shattering, Osiris reaches out to other pantheons’ underworld gods, hoping to form a network to share information and work together to repair Ryven, using the souls of the deceased as unseen messengers.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Osirus_portrait.png",
+ "image_url": "/godforge/gf_heroes/full_art/Osirus_full.png",
+ "stats": {
+  "hp": 1590,
+  "atk": 89,
+  "def": 92,
+  "spd": 91,
+  "init": 85,
+  "acc": 20,
+  "res": 40,
+  "initial_divinity": 575,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Phoenix] on this hero for 2 turns.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Heal this hero to full HP if this ability defeats the target.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Pharaoh's Grasp",
+   "description": "Attack 1 enemy 10%HP+130%ATK with a 50% chance to place [Drain II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/osirus/ICON_Osiris_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Cycle of Life",
+   "description": "Attack 1 enemy 15%HP+185%ATK with a 50% chance to place [Curse II] on the target for 2 turns. Then heal this hero for 20% of the damage inflicted.",
+   "icon_url": "/godforge/abilities/osirus/ICON_Osiris_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Curse II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Curse II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Immortal",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Phoenix on this hero for 2 turns.",
+     "upgrade_description": "Also place [Phoenix] on this hero for 2 turns."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "24% HP in Arena Battles",
+   "icon_url": "/godforge/abilities/osirus/ICON_Leader_Health.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Balance of Ma'at",
+   "description": "When above 50% HP, increase damage this hero inflicts by 20%. Otherwise decrease damage inflicted on this hero by 20%.",
+   "icon_url": "/godforge/abilities/osirus/ICON_Osiris_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Underworld Judgement",
+   "description": "Attack 1 enemy 15%HP+185%ATK. If the target is aligned with Order place [Barrier] on this hero equal to 50% of damage dealt, otherwise destroy their max HP equal to 10% of damage dealt.",
+   "icon_url": "/godforge/abilities/osirus/ICON_Osiris_Ultimate.webp",
+   "divinity_cost": 1700,
+   "damage_formula": [
+    "15%HP+185%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Heal this hero to full HP if this ability defeats the target.",
+     "upgrade_description": "Heal this hero to full HP if this ability defeats the target."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Balance of Ma'at",
+   "description": "When above 50% HP, increase damage this hero inflicts by 10%. Otherwise decrease damage inflicted on this hero by 10%.",
+   "icon_url": "/godforge/abilities/osirus/ICON_Osiris_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

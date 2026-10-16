@@ -1,0 +1,549 @@
+{
+ "slug": "rilven",
+ "kind": "Invoker",
+ "name": "Rilven",
+ "faction": "Stonehearts",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/rilven/portrait.webp",
+ "fullArt": "/invokers/units/invokers/rilven/full.webp",
+ "stats": {
+  "base": {
+   "Health": "429",
+   "Attack": "69",
+   "Defense": "47",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "94"
+  },
+  "max": {
+   "Health": "5,054",
+   "Attack": "911",
+   "Defense": "545",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "94"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rilven/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+130",
+    "titan": "+71"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 22.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 34.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 59.5% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 69.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 36.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 63.1% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 51 damage.\nDamage: 73.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 25.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 38.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 52.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 66.6% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 54 damage.\nDamage: 77.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 27.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 42.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 56.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 72.6% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 84.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 62.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 79.7% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 64 damage.\nDamage: 93.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 32.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 49.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 85.7% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 69 damage.\nDamage: 100.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 35.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 53.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 50 damage.\nDamage: 72.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 64 damage.\nDamage: 92.8% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 75 damage.\nDamage: 108.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 37.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 77.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 68 damage.\nDamage: 98.8% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 80 damage.\nDamage: 115.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 40% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 61.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 82.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 73 damage.\nDamage: 105.9% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 85 damage.\nDamage: 123.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 64.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 87.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 77 damage.\nDamage: 111.9% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 90 damage.\nDamage: 130.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 45% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 69% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 64 damage.\nDamage: 93% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 82 damage.\nDamage: 119% ATK\n#5 Attacks 1 enemy from a distance of 9m, dealing 96 damage.\nDamage: 139% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deep Star",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rilven/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 97 damage.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 102 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 108 damage.\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 118 damage.\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 129 damage.\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 139 damage.\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 151 damage.\n#1 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 160 damage.\n#1 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 172 damage.\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 182 damage.\n#1 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 193 damage.\n#1 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Open The Way",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rilven/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 191 damage. Rilven gains 50 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 277.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 203 damage. Rilven gains 55 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 294.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 214 damage. Rilven gains 60 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 310.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 234 damage. Rilven gains 65 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 338.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 257 damage. Rilven gains 70 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 371.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 276 damage. Rilven gains 75 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 399.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 299 damage. Rilven gains 80 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 432.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 318 damage. Rilven gains 85 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 460.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 341 damage. Rilven gains 90 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 494% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 360 damage. Rilven gains 95 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 521.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 383 damage. Rilven gains 100 Ultimate Mana if the hit lands as a critical hit.\n#1 Damage: 555% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Shaft of Light",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/rilven/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 98 damage. Casts a [Stun] debuff on the targets, lasting 1s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 141.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 103 damage. Casts a [Stun] debuff on the targets, lasting 1.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 150% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 109 damage. Casts a [Stun] debuff on the targets, lasting 1.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 158.5% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 119 damage. Casts a [Stun] debuff on the targets, lasting 1.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 172.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 131 damage. Casts a [Stun] debuff on the targets, lasting 1.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 189.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 141 damage. Casts a [Stun] debuff on the targets, lasting 1.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 203.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 152 damage. Casts a [Stun] debuff on the targets, lasting 1.8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 220.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 162 damage. Casts a [Stun] debuff on the targets, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 234.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 174 damage. Casts a [Stun] debuff on the targets, lasting 2s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 251.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 184 damage. Casts a [Stun] debuff on the targets, lasting 2.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 266% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 5m radius around the target, from a distance of 9m, dealing 195 damage. Casts a [Stun] debuff on the targets, lasting 2.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 283% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crack the Sky",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rilven/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 109 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 3s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 3s as well.\n#1 Damage: 157.5% ATK\n#2 Damage: 157.5% ATK\n#3 Damage: 157.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 115 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 3.25s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 3.25s as well.\n#1 Damage: 166.9% ATK\n#2 Damage: 166.9% ATK\n#3 Damage: 166.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 122 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 3.5s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 3.5s as well.\n#1 Damage: 176.4% ATK\n#2 Damage: 176.4% ATK\n#3 Damage: 176.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 133 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 3.75s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 3.75s as well.\n#1 Damage: 192.2% ATK\n#2 Damage: 192.2% ATK\n#3 Damage: 192.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 146 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 3.75s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 3.75s as well.\n#1 Damage: 211.1% ATK\n#2 Damage: 211.1% ATK\n#3 Damage: 211.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 156 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 4s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 4s as well.\n#1 Damage: 226.8% ATK\n#2 Damage: 226.8% ATK\n#3 Damage: 226.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 170 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 4.25s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 4.25s as well.\n#1 Damage: 245.7% ATK\n#2 Damage: 245.7% ATK\n#3 Damage: 245.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 180 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 4.5s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 4.5s as well.\n#1 Damage: 261.5% ATK\n#2 Damage: 261.5% ATK\n#3 Damage: 261.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 193 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 5s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 5s as well.\n#1 Damage: 280.4% ATK\n#2 Damage: 280.4% ATK\n#3 Damage: 280.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 204 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 6s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 6s as well.\n#1 Damage: 296.1% ATK\n#2 Damage: 296.1% ATK\n#3 Damage: 296.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 217 damage per hit. Reduces the cooldown of a random Active Skill on Rilven by 6s if the hit lands as a critical hit. \nIf this attack kills the target Reduces the cooldown of a random Active Skill on Rilven by 6s as well.\n#1 Damage: 315% ATK\n#2 Damage: 315% ATK\n#3 Damage: 315% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Rilven's tracking skills are in high demand among Deepcast miners. Having spent most of her childhood scrabbling through dark tunnels, she's got an eye for finding passages that'll lead to a pay-day. With her luxgem arrows to light the way, your expedition's in safe hands with Rilven.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "D",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 23.2,
+  "lists": 16
+ }
+}

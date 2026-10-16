@@ -1,0 +1,571 @@
+{
+ "slug": "madalea",
+ "kind": "Invoker",
+ "name": "Madalea",
+ "faction": "Nocturna",
+ "rarity": "Epic",
+ "class": "Ranged Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/madalea/portrait.webp",
+ "fullArt": "/invokers/units/invokers/madalea/full.webp",
+ "stats": {
+  "base": {
+   "Health": "540",
+   "Attack": "84",
+   "Defense": "63",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "93"
+  },
+  "max": {
+   "Health": "6,044",
+   "Attack": "1,071",
+   "Defense": "690",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "123"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/madalea/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+135",
+    "titan": "+74"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 45.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 57.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 29 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 41 damage.\nDamage: 48.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 51 damage.\nDamage: 60.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 31 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 51% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 54 damage.\nDamage: 64.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 33 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 47 damage.\nDamage: 55.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 70.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 36 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 51 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 65 damage.\nDamage: 77.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 39 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 65.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 70 damage.\nDamage: 82.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 42 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 46 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 60 damage.\nDamage: 71% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 75 damage.\nDamage: 89.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 46 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 49 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 63 damage.\nDamage: 75.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 80 damage.\nDamage: 95.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 49 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 52 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 68 damage.\nDamage: 81% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 86 damage.\nDamage: 102.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 52 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 72 damage.\nDamage: 85.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 91 damage.\nDamage: 108.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 55 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 37 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 59 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 76 damage.\nDamage: 91% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 97 damage.\nDamage: 115% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 59 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Break the Haunter",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/madalea/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 111 damage. Damage increases by 10% if the target has debuffs.\n#1 Damage: 132.5% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 118 damage. Damage increases by 11% if the target has debuffs.\n#1 Damage: 140.4% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 125 damage. Damage increases by 12% if the target has debuffs.\n#1 Damage: 148.4% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 136 damage. Damage increases by 13% if the target has debuffs.\n#1 Damage: 161.7% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 149 damage. Damage increases by 15% if the target has debuffs.\n#1 Damage: 177.6% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 160 damage. Damage increases by 17% if the target has debuffs.\n#1 Damage: 190.8% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 174 damage. Damage increases by 19% if the target has debuffs.\n#1 Damage: 206.7% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 185 damage. Damage increases by 21% if the target has debuffs.\n#1 Damage: 219.9% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 198 damage. Damage increases by 23% if the target has debuffs.\n#1 Damage: 235.9% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 209 damage. Damage increases by 25% if the target has debuffs.\n#1 Damage: 249.1% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 223 damage. Damage increases by 30% if the target has debuffs.\n#1 Damage: 265% * ATK"
+    }
+   ]
+  },
+  {
+   "name": "Scour the Manipulator",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/madalea/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+35",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 122 damage. Casts a [1% Burn] debuff on the target, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 145% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 129 damage. Casts a [1.1% Burn] debuff on the target, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 153.7% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 136 damage. Casts a [1.1% Burn] debuff on the target, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 162.4% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 149 damage. Casts a [1.1% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 176.9% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 163 damage. Casts a [1.3% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 194.3% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 175 damage. Casts a [1.3% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 208.8% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 190 damage. Casts a [1.3% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 226.2% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 202 damage. Casts a [1.5% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 240.7% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 217 damage. Casts a [1.5% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 258.1% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 229 damage. Casts a [1.5% Burn] debuff on the target, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 272.6% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 244 damage. Casts a [1.75% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.88% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 290% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Expose the Deceiver",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/madalea/skills/3.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+30",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 252 damage. Casts a [23% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 300% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 267 damage. Casts a [24% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 318% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 282 damage. Casts a [24% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 336% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 307 damage. Casts a [24% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 366% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 338 damage. Casts a [25% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 402% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 363 damage. Casts a [26% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 432% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 393 damage. Casts a [26% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 468% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 418 damage. Casts a [27% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 498% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 449 damage. Casts a [27% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 534% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 474 damage. Casts a [28% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 564% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 504 damage. Casts a [30% DEF Down] debuff on the target, lasting 14s.\nAccuracy required for: DEF Down\n#1 Damage: 600% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Condemn the Damned",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/madalea/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 128 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 152.5% ATK\n#2 Damage: 152.5% ATK\n#3 Damage: 152.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 136 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2.2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 161.6% ATK\n#2 Damage: 161.6% ATK\n#3 Damage: 161.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 143 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 170.8% ATK\n#2 Damage: 170.8% ATK\n#3 Damage: 170.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 156 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2.7s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 186.1% ATK\n#2 Damage: 186.1% ATK\n#3 Damage: 186.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 172 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 3.1s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 204.4% ATK\n#2 Damage: 204.4% ATK\n#3 Damage: 204.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 184 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 3.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 219.6% ATK\n#2 Damage: 219.6% ATK\n#3 Damage: 219.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 200 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 3.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 237.9% ATK\n#2 Damage: 237.9% ATK\n#3 Damage: 237.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 213 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 3.5s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 253.1% ATK\n#2 Damage: 253.1% ATK\n#3 Damage: 253.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 228 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 271.4% ATK\n#2 Damage: 271.4% ATK\n#3 Damage: 271.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 241 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 286.7% ATK\n#2 Damage: 286.7% ATK\n#3 Damage: 286.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 3 times, dealing 256 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 305% ATK\n#2 Damage: 305% ATK\n#3 Damage: 305% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Madalea is the greatest exorcist in Amara – she may even be a little too great. She had to become Dusklit in order to master her powers, an act strictly forbidden by the Lightseeker Sacriat. Madalea didn’t care. She is the enemy of all Demons, and she will fight them, permission or no.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "A",
+  "hyxxis": "C",
+  "koltmos": "E",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "B",
+  "omnissi-fire": "C",
+  "omnissi-light": "A",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 40.2,
+  "lists": 16
+ }
+}

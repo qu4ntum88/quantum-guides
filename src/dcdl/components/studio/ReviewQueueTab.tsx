@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { btn, btnDanger, btnQuiet, gold, hint } from '@/src/dcdl/components/admin/editor-ui'
 import { blocksToHtml, parseGuideBody } from '@/src/dcdl/lib/guide-blocks'
+import { GUIDE_GAMES, guidePath, toGuideGame } from '@/src/lib/guide-games'
 
 /**
  * Admin review queue for editor submissions — guides and infographics saved by
@@ -13,6 +14,7 @@ import { blocksToHtml, parseGuideBody } from '@/src/dcdl/lib/guide-blocks'
 type PendingGuide = {
   id: string; title: string; description: string | null; body: string | null
   author: string | null; cover_image: string | null; updated_at: string | null
+  game?: string | null
 }
 type PendingInfographic = {
   id: string; title: string; description: string | null
@@ -110,7 +112,9 @@ export default function ReviewQueueTab({ setStatus }: { setStatus: (s: string) =
               <div key={g.id} style={box}>
                 <div style={{ fontWeight: 700, fontSize: '0.95rem' }}>{g.title}</div>
                 <div style={hint}>
-                  by {g.author ?? 'unknown'}{g.updated_at && ` · ${new Date(g.updated_at).toLocaleDateString()}`}
+                  {GUIDE_GAMES.find((x) => x.id === toGuideGame(g.game))!.label} · by {g.author ?? 'unknown'}
+                  {g.updated_at && ` · ${new Date(g.updated_at).toLocaleDateString()}`}
+                  {' · publishes to '}{guidePath(toGuideGame(g.game), g.id)}
                 </div>
                 {g.description && (
                   <p style={{ color: '#bbb', fontSize: '0.84rem', margin: '0.5rem 0 0', lineHeight: 1.6 }}>{g.description}</p>

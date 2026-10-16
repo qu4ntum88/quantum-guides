@@ -1,0 +1,582 @@
+{
+ "slug": "netherweb-sildrea",
+ "kind": "Invoker",
+ "name": "Netherweb Sildrea",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Wind",
+ "soulSign": "Sign of Temero",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/netherweb-sildrea/portrait.webp",
+ "fullArt": "/invokers/units/invokers/netherweb-sildrea/full.webp",
+ "stats": {
+  "base": {
+   "Health": "900",
+   "Attack": "90",
+   "Defense": "72",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "109"
+  },
+  "max": {
+   "Health": "9,645",
+   "Attack": "1,099",
+   "Defense": "754",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "139"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/netherweb-sildrea/skills/0.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+71",
+    "titan": "+39"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25.5% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 38.5% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 50% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 64% ATK\n#5 Attacks 1 enemy, dealing 71 damage. Casts a [10% Move SPD Down] debuff on the target, lasting 3s.\nAccuracy required for: Move SPD Down\nDamage: 78.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 27% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 40.8% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 53% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 67.8% ATK\n#5 Attacks 1 enemy, dealing 75 damage. Casts a [10% Move SPD Down] debuff on the target, lasting 3.3s.\nAccuracy required for: Move SPD Down\nDamage: 83.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 28.6% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 43.1% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 56% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 71.7% ATK\n#5 Attacks 1 enemy, dealing 79 damage. Casts a [11% Move SPD Down] debuff on the target, lasting 3.3s.\nAccuracy required for: Move SPD Down\nDamage: 87.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 31.1% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 47% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 61% ATK\n#4 Attacks 1 enemy, dealing 70 damage.\nDamage: 78.1% ATK\n#5 Attacks 1 enemy, dealing 86 damage. Casts a [11% Move SPD Down] debuff on the target, lasting 3.5s.\nAccuracy required for: Move SPD Down\nDamage: 95.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 34.2% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 51.6% ATK\n#3 Attacks 1 enemy, dealing 60 damage.\nDamage: 67% ATK\n#4 Attacks 1 enemy, dealing 77 damage.\nDamage: 85.8% ATK\n#5 Attacks 1 enemy, dealing 95 damage. Casts a [11% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Move SPD Down\nDamage: 105.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 33 damage.\nDamage: 36.7% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 55.4% ATK\n#3 Attacks 1 enemy, dealing 65 damage.\nDamage: 72% ATK\n#4 Attacks 1 enemy, dealing 83 damage.\nDamage: 92.2% ATK\n#5 Attacks 1 enemy, dealing 102 damage. Casts a [12% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Move SPD Down\nDamage: 113% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 60.1% ATK\n#3 Attacks 1 enemy, dealing 70 damage.\nDamage: 78% ATK\n#4 Attacks 1 enemy, dealing 90 damage.\nDamage: 99.8% ATK\n#5 Attacks 1 enemy, dealing 110 damage. Casts a [13% Move SPD Down] debuff on the target, lasting 4s.\nAccuracy required for: Move SPD Down\nDamage: 122.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 42.3% ATK\n#2 Attacks 1 enemy, dealing 58 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 75 damage.\nDamage: 83% ATK\n#4 Attacks 1 enemy, dealing 96 damage.\nDamage: 106.2% ATK\n#5 Attacks 1 enemy, dealing 117 damage. Casts a [13% Move SPD Down] debuff on the target, lasting 4.5s.\nAccuracy required for: Move SPD Down\nDamage: 130.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 41 damage.\nDamage: 45.4% ATK\n#2 Attacks 1 enemy, dealing 62 damage.\nDamage: 68.5% ATK\n#3 Attacks 1 enemy, dealing 80 damage.\nDamage: 89% ATK\n#4 Attacks 1 enemy, dealing 103 damage.\nDamage: 113.9% ATK\n#5 Attacks 1 enemy, dealing 126 damage. Casts a [14% Move SPD Down] debuff on the target, lasting 4.5s.\nAccuracy required for: Move SPD Down\nDamage: 139.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 47.9% ATK\n#2 Attacks 1 enemy, dealing 65 damage.\nDamage: 72.4% ATK\n#3 Attacks 1 enemy, dealing 85 damage.\nDamage: 94% ATK\n#4 Attacks 1 enemy, dealing 108 damage.\nDamage: 120.3% ATK\n#5 Attacks 1 enemy, dealing 133 damage. Casts a [15% Move SPD Down] debuff on the target, lasting 4.5s.\nAccuracy required for: Move SPD Down\nDamage: 147.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 46 damage.\nDamage: 51% ATK\n#2 Attacks 1 enemy, dealing 69 damage.\nDamage: 77% ATK\n#3 Attacks 1 enemy, dealing 90 damage.\nDamage: 100% ATK\n#4 Attacks 1 enemy, dealing 115 damage.\nDamage: 128% ATK\n#5 Attacks 1 enemy, dealing 141 damage. Casts a [15% Move SPD Down] debuff on the target, lasting 5s.\nAccuracy required for: Move SPD Down\nDamage: 157% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Spider Singe",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/netherweb-sildrea/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+63",
+    "titan": "+34"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 124 damage. Increases the cooldown of a random Active Skill on the target by 2s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 131 damage. Increases the cooldown of a random Active Skill on the target by 2.1s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 139 damage. Increases the cooldown of a random Active Skill on the target by 2.2s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage. Increases the cooldown of a random Active Skill on the target by 2.3s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 166 damage. Increases the cooldown of a random Active Skill on the target by 2.4s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 178 damage. Increases the cooldown of a random Active Skill on the target by 2.5s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 193 damage. Increases the cooldown of a random Active Skill on the target by 2.6s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 205 damage. Increases the cooldown of a random Active Skill on the target by 2.7s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Increases the cooldown of a random Active Skill on the target by 2.8s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 233 damage. Increases the cooldown of a random Active Skill on the target by 2.9s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 248 damage. Increases the cooldown of a random Active Skill on the target by 3s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Webspin Vortex",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/netherweb-sildrea/skills/2.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+36",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 135 damage. \nCasts a [Stun] debuff on the targets, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (20% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [15% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 15%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 150% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 143 damage. \nCasts a [Stun] debuff on the targets, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (20% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [17% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 17%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 159% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 151 damage. \nCasts a [Stun] debuff on the targets, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (25% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [17% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 17%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 168% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 165 damage. \nCasts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (25% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [19% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 19%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 183% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 181 damage. \nCasts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (25% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [19% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 19%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 201% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 194 damage. \nCasts a [Stun] debuff on the targets, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (30% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [21% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 21%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 216% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 211 damage. \nCasts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (30% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [21% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 21%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 234% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 224 damage. \nCasts a [Stun] debuff on the targets, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (30% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [25% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 25%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 249% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 240 damage. \nCasts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (30% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [25% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 25%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 267% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 254 damage. \nCasts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (40% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [25% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 25%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 282% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Charges through a 15x6m path towards the furthest enemy, damaging each enemy hit, dealing 270 damage. \nCasts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, destroys the targets' MAX HP by (40% * Damage Dealt) of the damage dealt. Will not destroy the target’s HP below 1% of their initial MAX HP. Then, casts a [30% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 30%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 300% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Silken Embrace",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/netherweb-sildrea/skills/3.webp",
+   "effects": [
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+75",
+    "titan": "+41"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 139 damage. Casts a [50% Move SPD Down] debuff on all enemies, lasting 10s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 155% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 148 damage. Casts a [55% Move SPD Down] debuff on all enemies, lasting 10s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 164.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 156 damage. Casts a [55% Move SPD Down] debuff on all enemies, lasting 10s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 170 damage. Casts a [55% Move SPD Down] debuff on all enemies, lasting 12s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 189.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 187 damage. Casts a [60% Move SPD Down] debuff on all enemies, lasting 12s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 207.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 201 damage. Casts a [60% Move SPD Down] debuff on all enemies, lasting 12s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 223.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 218 damage. Casts a [65% Move SPD Down] debuff on all enemies, lasting 12s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 241.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 232 damage. Casts a [65% Move SPD Down] debuff on all enemies, lasting 14s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 257.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 248 damage. Casts a [65% Move SPD Down] debuff on all enemies, lasting 14s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 275.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 262 damage. Casts a [75% Move SPD Down] debuff on all enemies, lasting 14s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 291.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls 10 enemies in a 10m radius around Sildrea to Sildrea. Attacks the targets, dealing 279 damage. Casts a [75% Move SPD Down] debuff on all enemies, lasting 14s.\nAccuracy required for: Pull, Move SPD Down\n#1 Damage: 310% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deathweave",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/netherweb-sildrea/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 35 damage. Launches the target for 5s. \nAttacks the target 12 times, dealing 83 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 39% ATK\n#2 Damage: 92.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 37 damage. Launches the target for 6s. \nAttacks the target 12 times, dealing 88 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 41.3% ATK\n#2 Damage: 98% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 39 damage. Launches the target for 6s. \nAttacks the target 12 times, dealing 93 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.25s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 43.7% ATK\n#2 Damage: 103.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 43 damage. Launches the target for 7s. \nAttacks the target 12 times, dealing 102 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.25s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 47.6% ATK\n#2 Damage: 112.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 47 damage. Launches the target for 7s. \nAttacks the target 12 times, dealing 112 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.5s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 52.3% ATK\n#2 Damage: 124% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 51 damage. Launches the target for 8s. \nAttacks the target 12 times, dealing 120 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.5s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 56.2% ATK\n#2 Damage: 133.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 55 damage. Launches the target for 8s. \nAttacks the target 12 times, dealing 130 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.75s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 60.8% ATK\n#2 Damage: 144.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 58 damage. Launches the target for 8s. \nAttacks the target 12 times, dealing 138 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.75s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 64.7% ATK\n#2 Damage: 153.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 62 damage. Launches the target for 9s. \nAttacks the target 12 times, dealing 148 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 1.75s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 69.4% ATK\n#2 Damage: 164.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 66 damage. Launches the target for 9s. \nAttacks the target 12 times, dealing 157 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 2s on critical hits.\nAccuracy required for: Launch\n#1 Damage: 73.3% ATK\n#2 Damage: 173.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 70 damage. Launches the target for 9s. \nAttacks the target 12 times, dealing 167 damage per hit. \nReduces the cooldown of a random Active Skill on Sildrea by 2s on critical hits. \nSildrea gains 0.3% Ultimate Mana if this attack kills the target.\nAccuracy required for: Launch\n#1 Damage: 78% ATK\n#2 Damage: 185% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Sildrea’s aristocratic family feared the house crypts. Sildrea did not, and delved deep among the spiders to find the truth. She emerged with clarity: a dream for a better future for the Nocturna… and the power to weave it into a reality.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "A+",
+  "hyxxis": "S",
+  "koltmos": "A+",
+  "omnissi-astral": "S",
+  "omnissi-dark": "S",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "S",
+  "omnissi-wind": "E",
+  "pentiax": "S",
+  "sakiel": "A+",
+  "sorgott": "A+",
+  "ulgorim": "A+",
+  "yskara": "S"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 73.2,
+  "lists": 16
+ }
+}

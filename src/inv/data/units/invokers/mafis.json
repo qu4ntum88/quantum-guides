@@ -1,0 +1,555 @@
+{
+ "slug": "mafis",
+ "kind": "Invoker",
+ "name": "Mafis",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/mafis/portrait.webp",
+ "fullArt": "/invokers/units/invokers/mafis/full.webp",
+ "stats": {
+  "base": {
+   "Health": "605",
+   "Attack": "53",
+   "Defense": "46",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "95"
+  },
+  "max": {
+   "Health": "7,073",
+   "Attack": "704",
+   "Defense": "527",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "125"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/mafis/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 32.5% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 45% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 52.5% ATK\n#5 Attacks 1 enemy, dealing 34 damage.\nDamage: 65% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 34.4% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 47.7% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 55.6% ATK\n#5 Attacks 1 enemy, dealing 37 damage.\nDamage: 68.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 36.4% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 50.4% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 58.8% ATK\n#5 Attacks 1 enemy, dealing 39 damage.\nDamage: 72.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 39.6% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 64% ATK\n#5 Attacks 1 enemy, dealing 42 damage.\nDamage: 79.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 43.5% ATK\n#3 Attacks 1 enemy, dealing 32 damage.\nDamage: 60.3% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 70.3% ATK\n#5 Attacks 1 enemy, dealing 46 damage.\nDamage: 87.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 46.8% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 64.8% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 75.6% ATK\n#5 Attacks 1 enemy, dealing 50 damage.\nDamage: 93.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 50.7% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 70.2% ATK\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 81.9% ATK\n#5 Attacks 1 enemy, dealing 54 damage.\nDamage: 101.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 53.9% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 74.7% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 87.1% ATK\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 107.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 57.8% ATK\n#3 Attacks 1 enemy, dealing 42 damage.\nDamage: 80.1% ATK\n#4 Attacks 1 enemy, dealing 50 damage.\nDamage: 93.4% ATK\n#5 Attacks 1 enemy, dealing 61 damage.\nDamage: 115.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 61.1% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 84.6% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 98.7% ATK\n#5 Attacks 1 enemy, dealing 65 damage.\nDamage: 122.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 65% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 90% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 105% ATK\n#5 Attacks 1 enemy, dealing 69 damage.\nDamage: 130% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Tenderize",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/mafis/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 74 damage.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 86 damage.\n#1 Damage: 161.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 94 damage.\n#1 Damage: 177.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage.\n#1 Damage: 206.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage.\n#1 Damage: 219.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage.\n#1 Damage: 235.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 132 damage.\n#1 Damage: 249.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 140 damage.\n#1 Damage: 265% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Maim",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/mafis/skills/2.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+36",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 144 damage. Casts a [6% Weaken] debuff on the target, lasting 8s, increasing all damage taken by 6%.\nAccuracy required for: Weaken\n#1 Damage: 272.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 153 damage. Casts a [7% Weaken] debuff on the target, lasting 8s, increasing all damage taken by 7%.\nAccuracy required for: Weaken\n#1 Damage: 288.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 162 damage. Casts a [8% Weaken] debuff on the target, lasting 8s, increasing all damage taken by 8%.\nAccuracy required for: Weaken\n#1 Damage: 305.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 176 damage. Casts a [8% Weaken] debuff on the target, lasting 9s, increasing all damage taken by 8%.\nAccuracy required for: Weaken\n#1 Damage: 332.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 194 damage. Casts a [8% Weaken] debuff on the target, lasting 9s, increasing all damage taken by 8%.\nAccuracy required for: Weaken\n#1 Damage: 365.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 208 damage. Casts a [10% Weaken] debuff on the target, lasting 9s, increasing all damage taken by 10%.\nAccuracy required for: Weaken\n#1 Damage: 392.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 225 damage. Casts a [10% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 10%.\nAccuracy required for: Weaken\n#1 Damage: 425.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 240 damage. Casts a [12% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 12%.\nAccuracy required for: Weaken\n#1 Damage: 452.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 257 damage. Casts a [12% Weaken] debuff on the target, lasting 10s, increasing all damage taken by 12%.\nAccuracy required for: Weaken\n#1 Damage: 485% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 272 damage. Casts a [12% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 12%.\nAccuracy required for: Weaken\n#1 Damage: 512.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 289 damage. Casts a [12% Weaken] debuff on the target, lasting 12s, increasing all damage taken by 12%.\nAccuracy required for: Weaken\n#1 Damage: 545% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Raze",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/mafis/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 74 damage. Damage increases by 15% if the target has debuffs.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 79 damage. Damage increases by 15% if the target has debuffs.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 83 damage. Damage increases by 20% if the target has debuffs.\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 91 damage. Damage increases by 25% if the target has debuffs.\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 99 damage. Damage increases by 25% if the target has debuffs.\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 107 damage. Damage increases by 30% if the target has debuffs.\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 116 damage. Damage increases by 35% if the target has debuffs.\n#1 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 123 damage. Damage increases by 35% if the target has debuffs.\n#1 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 132 damage. Damage increases by 40% if the target has debuffs.\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 139 damage. Damage increases by 50% if the target has debuffs.\n#1 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 3m semicircle in front of Mafis, dealing 148 damage. Damage increases by 50% if the target has debuffs.\n#1 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Sunder",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/mafis/skills/4.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 122 damage. Casts a [60% Heal Reduction] debuff on the targets, lasting 13s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 230% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 129 damage. Casts a [65% Heal Reduction] debuff on the targets, lasting 13s, decreasing the size of all heals received by 65%.\nAccuracy required for: Heal Reduction\n#1 Damage: 243.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 137 damage. Casts a [65% Heal Reduction] debuff on the targets, lasting 14s, decreasing the size of all heals received by 65%.\nAccuracy required for: Heal Reduction\n#1 Damage: 257.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 149 damage. Casts a [75% Heal Reduction] debuff on the targets, lasting 14s, decreasing the size of all heals received by 75%.\nAccuracy required for: Heal Reduction\n#1 Damage: 280.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 163 damage. Casts a [75% Heal Reduction] debuff on the targets, lasting 14s, decreasing the size of all heals received by 75%.\nAccuracy required for: Heal Reduction\n#1 Damage: 308.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 176 damage. Casts a [75% Heal Reduction] debuff on the targets, lasting 15s, decreasing the size of all heals received by 75%.\nAccuracy required for: Heal Reduction\n#1 Damage: 331.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 190 damage. Casts a [85% Heal Reduction] debuff on the targets, lasting 15s, decreasing the size of all heals received by 85%.\nAccuracy required for: Heal Reduction\n#1 Damage: 358.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 202 damage. Casts a [85% Heal Reduction] debuff on the targets, lasting 15s, decreasing the size of all heals received by 85%.\nAccuracy required for: Heal Reduction\n#1 Damage: 381.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 217 damage. Casts a [85% Heal Reduction] debuff on the targets, lasting 16s, decreasing the size of all heals received by 85%.\nAccuracy required for: Heal Reduction\n#1 Damage: 409.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 229 damage. Casts a [100% Heal Reduction] debuff on the targets, lasting 16s, decreasing the size of all heals received by 100%.\nAccuracy required for: Heal Reduction\n#1 Damage: 432.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 244 damage. Casts a [100% Heal Reduction] debuff on the targets, lasting 16s, decreasing the size of all heals received by 100%.\nAccuracy required for: Heal Reduction\n#1 Damage: 460% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Mafis rejected the Ironbands, but loved his volcanic homeland. He trained alone, beneath the calderas, where the ash and magma of the deeper crusts tempered his skin and stoked his soul. There, he forged his own destiny.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "C",
+  "omnissi-dark": "D",
+  "omnissi-earth": "C",
+  "omnissi-fire": "B",
+  "omnissi-light": "A",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 36.6,
+  "lists": 16
+ }
+}

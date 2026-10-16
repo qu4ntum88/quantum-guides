@@ -1,0 +1,156 @@
+{
+ "id": 102,
+ "slug": "jackal",
+ "name": "Jackal",
+ "title": "Sand Scavenger",
+ "summary": "Slash and Gnaw at enemies stealing their speed and pace.",
+ "lore": "Mistrusted throughout Aaru, the jackal has long been viewed as a creature of deceitfulness and ill fortune, subject of countless tales and myths. Since the Shattering, that reputation has drawn closer to reality. While most jackals remain the mundane animals they have always been, a substantial portion are now something… other, larger and markedly more hostile.",
+ "rarity": "Common",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Jackal.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Jackal_main.png",
+ "stats": {
+  "hp": 885,
+  "atk": 52,
+  "def": 59,
+  "spd": 83,
+  "init": 80,
+  "acc": 0,
+  "res": 0,
+  "initial_divinity": 350,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.03,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 2
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 100
+  }
+ ],
+ "awakening_bonuses": [],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Scratch",
+   "description": "Attack 1 enemy 120%ATK 3 times. If the target is under SPD Down, decrease their Turn Meter by 5%.",
+   "icon_url": "/godforge/abilities/jackal/ICON_Jackal_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "120%ATK",
+    "120%ATK",
+    "120%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Ultimate",
+   "name": "Desert Fury",
+   "description": "Place ACC Up l on this hero for 1 turn then attack 1 enemy 440%ATK with a 50% chance to place [SPD Down I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/jackal/ICON_Jackal_Ultimate.webp",
+   "divinity_cost": 2025,
+   "damage_formula": [
+    "440%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ACC Up I",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down I",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

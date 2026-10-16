@@ -1,0 +1,296 @@
+{
+ "id": 57,
+ "slug": "lagertha",
+ "name": "Lagertha",
+ "title": "Warrior Queen",
+ "summary": "Taunt your foes whilst protecting your allies from incoming damage.",
+ "lore": "A fierce warrior, Lagertha fought alongside Ragnar Lothbrok when his forces attacked the king who had conquered her homeland. She and Ragnar were married for a time, but after he divorced her for another, Lagertha returned home and eventually rose to become queen. In Ryven Asgard, she defends the borders of her lands, but shows little interest in larger conflicts, having tired of battle.",
+ "rarity": "Rare",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Lagertha.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Lagertha_main.png",
+ "stats": {
+  "hp": 1125,
+  "atk": 52,
+  "def": 90,
+  "spd": 92,
+  "init": 84,
+  "acc": 10,
+  "res": 40,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When this hero [Intercept]'s an attack, counterattacks the enemy.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Victory Assured",
+   "description": "Attack 1 enemy 150%DEF+135%ATK with a 20% chance to place [Stun] for 1 turn.",
+   "icon_url": "/godforge/abilities/lagertha/ICON_Lagertha_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "150%DEF+135%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Stun",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 20,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Battle Maiden",
+   "description": "Place [Shield] 150%DEF on all allies. If Ragnar Lothbrok is an ally, place [Intercept] on him for 1 turn.",
+   "icon_url": "/godforge/abilities/lagertha/ICON_Lagertha_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 6,
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Maiden of Midgard",
+   "description": "When an ally’s [Shield] is removed or depleted, has a 50% chance to place [Intercept] on them for 1 turn.",
+   "icon_url": "/godforge/abilities/lagertha/ICON_Lagertha_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When this hero Intercept's an attack, counterattacks the enemy.",
+     "upgrade_description": "When this hero [Intercept]'s an attack, counterattacks the enemy."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Scorned Retribution",
+   "description": "Attack 1 enemy 215%DEF+195%ATK with a 75% chance to place [Taunt] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/lagertha/ICON_Lagertha_Ultimate.webp",
+   "divinity_cost": 2925,
+   "damage_formula": [
+    "215%DEF+195%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Maiden of Midgard",
+   "description": "When an ally’s [Shield] is removed or depleted, has a 25% chance to place [Intercept] on them for 1 turn",
+   "icon_url": "/godforge/abilities/lagertha/ICON_Lagertha_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

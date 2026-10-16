@@ -1,0 +1,256 @@
+{
+ "id": 105,
+ "slug": "mordred",
+ "name": "Mordred",
+ "title": "Vengeful Heir",
+ "summary": "Bring doom upon Avalon by casting Confusion, Corruptions and devastating damage",
+ "lore": "The bastard son of King Arthur fought to overthrow his father, and fell at the battle of Camlann. Yet he was taken and restored by Morgan le Fey—said by some to be his mother. Today, driven by his own ambition, by Morgan, and by Chaos itself, he strives to kill Arthur again and to rule over all of Avalon.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Mordred.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Mordred_main.png",
+ "stats": {
+  "hp": 1245,
+  "atk": 77,
+  "def": 85,
+  "spd": 95,
+  "init": 96,
+  "acc": 35,
+  "res": 25,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "divinity_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If a target is under [Confuse] and [Corrupt], remove their [Shield] or [Barrier] before attacking.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also increase this hero’s Divinity 5% when an enemy is attacked by their ally.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Usurper",
+   "description": "Attack 1 enemy 365%ATK with a 75% chance to place [Corrupt] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/mordred/ICON_Mordred_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "365%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Corrupt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Spiteful Coup",
+   "description": "Attack all enemies 300%ATK with a 50% chance to place [Confuse] on each target for 1 turn.",
+   "icon_url": "/godforge/abilities/mordred/ICON_Mordred_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "300%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Confuse",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Ruin of Camelot",
+   "description": "Enemies have a 30% chance to reflect 100% damage when attacked by an ally.",
+   "icon_url": "/godforge/abilities/mordred/ICON_Mordred_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also increase this hero’s Divinity 5% when an enemy is attacked by their ally.",
+     "upgrade_description": "Also increase this hero’s Divinity 5% when an enemy is attacked by their ally."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Bane of Avalon",
+   "description": "Attack all enemies 300%ATK. If a target is under [Confuse], inflict 30% increased damage. If a target is under [Corrupt], decrease their Turn Meter by 15%.",
+   "icon_url": "/godforge/abilities/mordred/ICON_Mordred_Ultimate.webp",
+   "divinity_cost": 2700,
+   "damage_formula": [
+    "300%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If a target is under Confuse and Corrupt, remove their Shield or Barrier before attacking.",
+     "upgrade_description": "If a target is under [Confuse] and [Corrupt], remove their [Shield] or [Barrier] before attacking."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Ruin of Camelot",
+   "description": "Enemies have a 30% chance to reflect 50% damage when attacked by an ally.",
+   "icon_url": "/godforge/abilities/mordred/ICON_Mordred_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

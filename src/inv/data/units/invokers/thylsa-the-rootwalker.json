@@ -1,0 +1,577 @@
+{
+ "slug": "thylsa-the-rootwalker",
+ "kind": "Invoker",
+ "name": "Thylsa the Rootwalker",
+ "faction": "Eldrin",
+ "rarity": "Epic",
+ "class": "Support",
+ "element": "Fire",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/thylsa-the-rootwalker/portrait.webp",
+ "fullArt": "/invokers/units/invokers/thylsa-the-rootwalker/full.webp",
+ "stats": {
+  "base": {
+   "Health": "782",
+   "Attack": "68",
+   "Defense": "55",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "105"
+  },
+  "max": {
+   "Health": "9,391",
+   "Attack": "803",
+   "Defense": "608",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "130"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/thylsa-the-rootwalker/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 10% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 14.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 19.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 25% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 10 damage.\nDamage: 15% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 15.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 20.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 26.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 15.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 11.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 16.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 21.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 16.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 12.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 17.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 18.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 13.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 19.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 26.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 33.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage.\nDamage: 20.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 14.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 20.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 36% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage.\nDamage: 21.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 15.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 22.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 16 damage.\nDamage: 23.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 16.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 24.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 32.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 41.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage.\nDamage: 24.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 17.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 25.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 34.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 44.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage.\nDamage: 26.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 18.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 27.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 36.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 47% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage.\nDamage: 28.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 29% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 34 damage.\nDamage: 50% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 30% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Thornbarb",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/thylsa-the-rootwalker/skills/1.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 66 damage. Casts a [20% ACC Down] debuff on the target, lasting 3s.\nAccuracy required for: ACC Down\n#1 Damage: 97.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 70 damage. Casts a [23% ACC Down] debuff on the target, lasting 3s.\nAccuracy required for: ACC Down\n#1 Damage: 103.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 74 damage. Casts a [26% ACC Down] debuff on the target, lasting 3s.\nAccuracy required for: ACC Down\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 81 damage. Casts a [26% ACC Down] debuff on the target, lasting 3.5s.\nAccuracy required for: ACC Down\n#1 Damage: 119% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 89 damage. Casts a [29% ACC Down] debuff on the target, lasting 3.5s.\nAccuracy required for: ACC Down\n#1 Damage: 130.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 95 damage. Casts a [29% ACC Down] debuff on the target, lasting 4s.\nAccuracy required for: ACC Down\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 103 damage. Casts a [32% ACC Down] debuff on the target, lasting 4s.\nAccuracy required for: ACC Down\n#1 Damage: 152.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 110 damage. Casts a [32% ACC Down] debuff on the target, lasting 4.5s.\nAccuracy required for: ACC Down\n#1 Damage: 161.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 118 damage. Casts a [32% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 125 damage. Casts a [35% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\n#1 Damage: 183.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 133 damage. Casts a [35% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\n#1 Damage: 195% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Creeper Vine",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/thylsa-the-rootwalker/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+44",
+    "titan": "+24"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 68 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (30% * Damage Dealt) HP per heal.\n#1 Damage: 100% ATK\n#2 Heal: 30% * Damage Dealt\n#3 Damage: 100% ATK\n#4 Heal: 30% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 72 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (35% * Damage Dealt) HP per heal.\n#1 Damage: 106% ATK\n#2 Heal: 35% * Damage Dealt\n#3 Damage: 106% ATK\n#4 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 76 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (35% * Damage Dealt) HP per heal.\n#1 Damage: 112% ATK\n#2 Heal: 35% * Damage Dealt\n#3 Damage: 112% ATK\n#4 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 83 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (40% * Damage Dealt) HP per heal.\n#1 Damage: 122% ATK\n#2 Heal: 40% * Damage Dealt\n#3 Damage: 122% ATK\n#4 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 91 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (40% * Damage Dealt) HP per heal.\n#1 Damage: 134% ATK\n#2 Heal: 40% * Damage Dealt\n#3 Damage: 134% ATK\n#4 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 98 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (45% * Damage Dealt) HP per heal.\n#1 Damage: 144% ATK\n#2 Heal: 45% * Damage Dealt\n#3 Damage: 144% ATK\n#4 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 106 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (45% * Damage Dealt) HP per heal.\n#1 Damage: 156% ATK\n#2 Heal: 45% * Damage Dealt\n#3 Damage: 156% ATK\n#4 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 113 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (50% * Damage Dealt) HP per heal.\n#1 Damage: 166% ATK\n#2 Heal: 50% * Damage Dealt\n#3 Damage: 166% ATK\n#4 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 121 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (50% * Damage Dealt) HP per heal.\n#1 Damage: 178% ATK\n#2 Heal: 50% * Damage Dealt\n#3 Damage: 178% ATK\n#4 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 128 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (60% * Damage Dealt) HP per heal.\n#1 Damage: 188% ATK\n#2 Heal: 60% * Damage Dealt\n#3 Damage: 188% ATK\n#4 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 136 damage per hit. Heals the ally with the lowest current HP in a 15m radius 2 times, restoring (60% * Damage Dealt) HP per heal.\n#1 Damage: 200% ATK\n#2 Heal: 60% * Damage Dealt\n#3 Damage: 200% ATK\n#4 Heal: 60% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Tangleroot",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/thylsa-the-rootwalker/skills/3.webp",
+   "effects": [
+    {
+     "label": "Chain",
+     "group": "Debuffs",
+     "description": "The recipient cannot move, but can still use Combo Attacks, Active and Ultimate Skills, and Invoke their Titan.The Chain debuff is removed if the recipient Invokes a Titan."
+    }
+   ],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 70 damage. Casts a [Chain] debuff on the targets, lasting 3s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 102.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 74 damage. Casts a [Chain] debuff on the targets, lasting 3.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 108.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 78 damage. Casts a [Chain] debuff on the targets, lasting 3.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 114.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 85 damage. Casts a [Chain] debuff on the targets, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 125.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 93 damage. Casts a [Chain] debuff on the targets, lasting 4s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 137.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 100 damage. Casts a [Chain] debuff on the targets, lasting 4.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 147.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 109 damage. Casts a [Chain] debuff on the targets, lasting 4.5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 159.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 116 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 170.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 124 damage. Casts a [Chain] debuff on the targets, lasting 5s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 182.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 131 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 192.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 7m radius around the target, from a distance of 9m, dealing 139 damage. Casts a [Chain] debuff on the targets, lasting 6s. Chained targets cannot move, but can use Skills and Invoke Titans. [Chain] debuffs will be removed instantly if the target Invokes a Titan.\nAccuracy required for: Chain\n#1 Damage: 205% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Heady Aroma",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/thylsa-the-rootwalker/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 282 HP. Casts a [25% ATK Up] buff on the targets, lasting 10s.\n#1 Heal: 10% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 298 HP. Casts a [25% ATK Up] buff on the targets, lasting 10s.\n#1 Heal: 12% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 313 HP. Casts a [25% ATK Up] buff on the targets, lasting 10s.\n#1 Heal: 14% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 313 HP. Casts a [30% ATK Up] buff on the targets, lasting 10s.\n#1 Heal: 14% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 313 HP. Casts a [30% ATK Up] buff on the targets, lasting 12s.\n#1 Heal: 14% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 329 HP. Casts a [30% ATK Up] buff on the targets, lasting 12s.\n#1 Heal: 16% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 329 HP. Casts a [35% ATK Up] buff on the targets, lasting 12s.\n#1 Heal: 16% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 329 HP. Casts a [35% ATK Up] buff on the targets, lasting 14s.\n#1 Heal: 16% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 345 HP. Casts a [35% ATK Up] buff on the targets, lasting 14s.\n#1 Heal: 18% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 345 HP. Casts a [45% ATK Up] buff on the targets, lasting 14s.\n#1 Heal: 18% * MAX HP + 300% * ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Heals the 9 allies with the lowest current HP in a 15m radius, restoring 360 HP. Casts a [45% ATK Up] buff on the targets, lasting 17s.\n#1 Heal: 20% * MAX HP + 300% * ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "While her Dryad sisters sat back and watched their gardens grow, Thylsa couldn't stand idle. The Horde had invaded the Emerald Kingdom, it was no time to be picking flowers. Now, Thylsa grows on the frontline – luring Darkborn with intoxicating blooms, then ensnaring them in thickets of deadly briar. They make for wonderful compost.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "A",
+  "hyxxis": "A",
+  "koltmos": "A",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "A",
+  "omnissi-light": "A",
+  "omnissi-water": "A",
+  "omnissi-wind": "A",
+  "pentiax": "A",
+  "sakiel": "A",
+  "sorgott": "A",
+  "ulgorim": "A",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 60.7,
+  "lists": 16
+ }
+}

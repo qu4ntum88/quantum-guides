@@ -68,6 +68,8 @@ export type Crumb = [name: string, path: string]
 
 export const DCDL_CRUMB: Crumb = ['DC: Dark Legion', '/games/dc-dark-legion/guides']
 export const VH_CRUMB: Crumb = ['Void Hunters', '/games/void-hunters/guides']
+export const GF_CRUMB: Crumb = ['Godforge', '/games/godforge']
+export const INV_CRUMB: Crumb = ['Invokers: Titan Legacy', '/games/invokers/guides']
 
 export function breadcrumbLd(crumbs: Crumb[]) {
   return {
@@ -129,6 +131,19 @@ export function articleLd({
     publisher: { '@id': `${SITE_URL}/#organization` },
     ...(published ? { datePublished: published } : {}),
     ...(modified || published ? { dateModified: modified || published } : {}),
+  }
+}
+
+/** Question/answer pairs shown on the page, as FAQPage structured data. */
+export function faqLd(items: { q: string; a: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
   }
 }
 

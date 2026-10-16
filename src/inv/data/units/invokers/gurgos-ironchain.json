@@ -1,0 +1,576 @@
+{
+ "slug": "gurgos-ironchain",
+ "kind": "Invoker",
+ "name": "Gurgos Ironchain",
+ "faction": "Ironbands",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/gurgos-ironchain/portrait.webp",
+ "fullArt": "/invokers/units/invokers/gurgos-ironchain/full.webp",
+ "stats": {
+  "base": {
+   "Health": "792",
+   "Attack": "91",
+   "Defense": "82",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "103"
+  },
+  "max": {
+   "Health": "8,488",
+   "Attack": "1,114",
+   "Defense": "854",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "133"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gurgos-ironchain/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+126",
+    "titan": "+69"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 38% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 51% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 65% ATK\n#5 Attacks 1 enemy, dealing 71 damage. Extends the duration of 1 random buff on Gurgos by 2s.\nDamage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 54.1% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 68.9% ATK\n#5 Attacks 1 enemy, dealing 75 damage. Extends the duration of 1 random buff on Gurgos by 2.1s.\nDamage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 42.6% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 57.1% ATK\n#4 Attacks 1 enemy, dealing 66 damage.\nDamage: 72.8% ATK\n#5 Attacks 1 enemy, dealing 79 damage. Extends the duration of 1 random buff on Gurgos by 2.2s.\nDamage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 28 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 46.4% ATK\n#3 Attacks 1 enemy, dealing 57 damage.\nDamage: 62.2% ATK\n#4 Attacks 1 enemy, dealing 72 damage.\nDamage: 79.3% ATK\n#5 Attacks 1 enemy, dealing 86 damage. Extends the duration of 1 random buff on Gurgos by 2.3s.\nDamage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 50.9% ATK\n#3 Attacks 1 enemy, dealing 62 damage.\nDamage: 68.3% ATK\n#4 Attacks 1 enemy, dealing 79 damage.\nDamage: 87.1% ATK\n#5 Attacks 1 enemy, dealing 95 damage. Extends the duration of 1 random buff on Gurgos by 2.4s.\nDamage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 33 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 54.7% ATK\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 73.4% ATK\n#4 Attacks 1 enemy, dealing 85 damage.\nDamage: 93.6% ATK\n#5 Attacks 1 enemy, dealing 102 damage. Extends the duration of 1 random buff on Gurgos by 2.5s.\nDamage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 54 damage.\nDamage: 59.3% ATK\n#3 Attacks 1 enemy, dealing 72 damage.\nDamage: 79.6% ATK\n#4 Attacks 1 enemy, dealing 92 damage.\nDamage: 101.4% ATK\n#5 Attacks 1 enemy, dealing 110 damage. Extends the duration of 1 random buff on Gurgos by 2.6s.\nDamage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 63.1% ATK\n#3 Attacks 1 enemy, dealing 77 damage.\nDamage: 84.7% ATK\n#4 Attacks 1 enemy, dealing 98 damage.\nDamage: 107.9% ATK\n#5 Attacks 1 enemy, dealing 117 damage. Extends the duration of 1 random buff on Gurgos by 2.7s.\nDamage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 62 damage.\nDamage: 67.6% ATK\n#3 Attacks 1 enemy, dealing 83 damage.\nDamage: 90.8% ATK\n#4 Attacks 1 enemy, dealing 105 damage.\nDamage: 115.7% ATK\n#5 Attacks 1 enemy, dealing 126 damage. Extends the duration of 1 random buff on Gurgos by 2.8s.\nDamage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 65 damage.\nDamage: 71.4% ATK\n#3 Attacks 1 enemy, dealing 87 damage.\nDamage: 95.9% ATK\n#4 Attacks 1 enemy, dealing 111 damage.\nDamage: 122.2% ATK\n#5 Attacks 1 enemy, dealing 133 damage. Extends the duration of 1 random buff on Gurgos by 2.9s.\nDamage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 46 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 69 damage.\nDamage: 76% ATK\n#3 Attacks 1 enemy, dealing 93 damage.\nDamage: 102% ATK\n#4 Attacks 1 enemy, dealing 118 damage.\nDamage: 130% ATK\n#5 Attacks 1 enemy, dealing 141 damage. Extends the duration of up to 2 random buffs on Gurgos by 3s.\nDamage: 155% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Megaton Fist",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/gurgos-ironchain/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+29",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Transfers a random debuff to the target, increasing its duration by 3s. \nGurgos gains 15 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 150% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 145 damage. Transfers a random debuff to the target, increasing its duration by 4s. \nGurgos gains 15 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 159% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 153 damage. Transfers a random debuff to the target, increasing its duration by 4s. \nGurgos gains 17 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 168% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 167 damage. Transfers a random debuff to the target, increasing its duration by 4s. \nGurgos gains 19 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 183% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 183 damage. Transfers a random debuff to the target, increasing its duration by 5s. \nGurgos gains 19 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 201% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 197 damage. Transfers a random debuff to the target, increasing its duration by 5s. \nGurgos gains 21 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 216% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 213 damage. Transfers a random debuff to the target, increasing its duration by 5s. \nGurgos gains 23 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 234% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 227 damage. Transfers a random debuff to the target, increasing its duration by 6s. \nGurgos gains 23 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 249% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 243 damage. Transfers a random debuff to the target, increasing its duration by 6s. \nGurgos gains 25 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 267% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 257 damage. Transfers a random debuff to the target, increasing its duration by 6s. \nGurgos gains 30 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 282% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 273 damage. Transfers a random debuff to the target, increasing its duration by 7s. \nGurgos gains 30 Ultimate Mana if Gurgos has no debuffs.\nAccuracy required for: Debuff Transfer\n#1 Damage: 300% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crusher Rake",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gurgos-ironchain/skills/2.webp",
+   "effects": [
+    {
+     "label": "Hex",
+     "group": "Debuffs",
+     "description": "If killed while under this debuff, the recipient of the debuff cannot be Revived."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 143 damage. Casts a [Hex] debuff on the targets, lasting 12s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 157.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 152 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 166.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 161 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 176.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 175 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 192.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 192 damage. Casts a [Hex] debuff on the targets, lasting 14s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 211.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 206 damage. Casts a [Hex] debuff on the targets, lasting 15s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 226.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 224 damage. Casts a [Hex] debuff on the targets, lasting 15s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 245.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 238 damage. Casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 261.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 255 damage. Casts a [Hex] debuff on the targets, lasting 16s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 280.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 269 damage. Casts a [Hex] debuff on the targets, lasting 17s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 296.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Pulls the 10 enemies with the lowest current HP in a 8x12m area in front of Gurgos to Gurgos. Attacks the targets, dealing 287 damage. Casts a [Hex] debuff on the targets, lasting 17s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival.\nAccuracy required for: Pull, Hex\n#1 Damage: 315% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Giganto Swing",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gurgos-ironchain/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+123",
+    "titan": "+67"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 28 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 25 Ultimate Mana. Heals Gurgos 5 times, restoring 8 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 31% ATK\n#2 Heal: 1% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 30 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 25 Ultimate Mana. Heals Gurgos 5 times, restoring 12 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 32.9% ATK\n#2 Heal: 1.5% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 32 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 25 Ultimate Mana. Heals Gurgos 5 times, restoring 12 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 34.7% ATK\n#2 Heal: 1.5% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 34 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 30 Ultimate Mana. Heals Gurgos 5 times, restoring 12 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 37.8% ATK\n#2 Heal: 1.5% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 38 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 30 Ultimate Mana. Heals Gurgos 5 times, restoring 12 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 41.5% ATK\n#2 Heal: 1.5% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 41 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 35 Ultimate Mana. Heals Gurgos 5 times, restoring 12 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 44.6% ATK\n#2 Heal: 1.5% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 44 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 35 Ultimate Mana. Heals Gurgos 5 times, restoring 12 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 48.4% ATK\n#2 Heal: 1.5% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 47 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 35 Ultimate Mana. Heals Gurgos 5 times, restoring 16 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 51.5% ATK\n#2 Heal: 2% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 50 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 35 Ultimate Mana. Heals Gurgos 5 times, restoring 16 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 55.2% ATK\n#2 Heal: 2% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 53 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 40 Ultimate Mana. Heals Gurgos 5 times, restoring 16 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 58.3% ATK\n#2 Heal: 2% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 7m radius around Gurgos, 5 times over 3s, dealing 56 damage per hit. Each hit steals a random buff from the targets. Then, Gurgos gains 40 Ultimate Mana. Heals Gurgos 5 times, restoring 16 HP per heal.\nAccuracy required for: Buff Steal\n#1 Damage: 62% ATK\n#2 Heal: 2% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "Ol' Thumpy",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/gurgos-ironchain/skills/4.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 364 damage. Damage increases by 8% per buff on Gurgos, limited up to +80% damage. Casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 182 damage. Casts a [50% DEF Down] debuff on the targets, lasting 5s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 182 damage. Casts a [50% DEF Down] debuff on the targets, lasting 2s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 400% * ATK\n#2 Damage: 200% ATK\n#3 Damage: 200% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 386 damage. Damage increases by 9% per buff on Gurgos, limited up to +90% damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 193 damage. Casts a [50% DEF Down] debuff on the targets, lasting 5s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 193 damage. Casts a [50% DEF Down] debuff on the targets, lasting 2s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 424% * ATK\n#2 Damage: 212% ATK\n#3 Damage: 212% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 408 damage. Damage increases by 9% per buff on Gurgos, limited up to +90% damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 204 damage. Casts a [55% DEF Down] debuff on the targets, lasting 5s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 204 damage. Casts a [60% DEF Down] debuff on the targets, lasting 2s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 448% * ATK\n#2 Damage: 224% ATK\n#3 Damage: 224% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 444 damage. Damage increases by 10% per buff on Gurgos, limited up to +100% damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 222 damage. Casts a [55% DEF Down] debuff on the targets, lasting 6s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 222 damage. Casts a [60% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 488% * ATK\n#2 Damage: 244% ATK\n#3 Damage: 244% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 488 damage. Damage increases by 10% per buff on Gurgos, limited up to +100% damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 244 damage. Casts a [60% DEF Down] debuff on the targets, lasting 6s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 244 damage. Casts a [70% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 536% * ATK\n#2 Damage: 268% ATK\n#3 Damage: 268% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 524 damage. Damage increases by 11% per buff on Gurgos, limited up to +110% damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 262 damage. Casts a [60% DEF Down] debuff on the targets, lasting 7s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 262 damage. Casts a [70% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 576% * ATK\n#2 Damage: 288% ATK\n#3 Damage: 288% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 568 damage. Damage increases by 11% per buff on Gurgos, limited up to +110% damage. Casts a [Stun] debuff on the target, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 284 damage. Casts a [70% DEF Down] debuff on the targets, lasting 7s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 284 damage. Casts a [80% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 624% * ATK\n#2 Damage: 312% ATK\n#3 Damage: 312% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 604 damage. Damage increases by 11% per buff on Gurgos, limited up to +110% damage. Casts a [Stun] debuff on the target, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 302 damage. Casts a [70% DEF Down] debuff on the targets, lasting 7s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 302 damage. Casts a [80% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 664% * ATK\n#2 Damage: 332% ATK\n#3 Damage: 332% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 648 damage. Damage increases by 12% per buff on Gurgos, limited up to +120% damage. Casts a [Stun] debuff on the target, lasting 7s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 324 damage. Casts a [70% DEF Down] debuff on the targets, lasting 8s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 324 damage. Casts a [80% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 712% * ATK\n#2 Damage: 356% ATK\n#3 Damage: 356% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 684 damage. Damage increases by 12% per buff on Gurgos, limited up to +120% damage. Casts a [Stun] debuff on the target, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 342 damage. Casts a [75% DEF Down] debuff on the targets, lasting 8s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 342 damage. Casts a [90% DEF Down] debuff on the targets, lasting 3s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 752% * ATK\n#2 Damage: 376% ATK\n#3 Damage: 376% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 728 damage. Damage increases by 15% per buff on Gurgos, limited up to +150% damage. Casts a [Stun] debuff on the target, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. \nIf this attack kills the target, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 364 damage. Casts a [75% DEF Down] debuff on the targets, lasting 10s. \nIf the target is a Boss or if the target is a Miniboss, attacks the 10 enemies with the lowest current HP in a 8m radius around the closest enemy, dealing 364 damage. Casts a [100% DEF Down] debuff on the targets, lasting 4s.\nAccuracy required for: Stun, DEF Down\n#1 Damage: 800% * ATK\n#2 Damage: 400% ATK\n#3 Damage: 400% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "If Furnos is the Magmabloods' immovable object, Gurgos is its unstoppable force. He's never seen with his prized weapon, Ol' Thumpy – a giant metal ballast torn from the black iron drawbridge of Felheim, the home base of the Magmabloods. Do not touch Ol' Thumpy without Gurgos' permission. He's very precious about it.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "A+",
+  "hyxxis": "A+",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "E",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "S",
+  "pentiax": "A+",
+  "sakiel": "S",
+  "sorgott": "S",
+  "ulgorim": "A+",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "S",
+  "score": 60.7,
+  "lists": 16
+ }
+}

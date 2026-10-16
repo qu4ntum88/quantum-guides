@@ -1,0 +1,512 @@
+{
+ "slug": "terravun",
+ "kind": "Titan",
+ "name": "Terravun",
+ "faction": "Stonehearts",
+ "rarity": "Mythical",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Tank",
+ "portrait": "/invokers/units/titans/terravun/portrait.webp",
+ "fullArt": "/invokers/units/titans/terravun/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's HP": "+50%",
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's DEF": "+50%",
+   "Bonus HP": "+690",
+   "Bonus ATK": "+58",
+   "Bonus DEF": "+83",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's HP": "+450%",
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's DEF": "+450%",
+   "Bonus HP": "+4,147",
+   "Bonus ATK": "+349",
+   "Bonus DEF": "+499",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/terravun/skills/0.webp",
+   "effects": [
+    {
+     "label": "Blind",
+     "group": "Debuffs",
+     "description": "The recipient has a percentage chance to miss their Combo Attacks, and not deal any damage. Combo Attacks that are missed do not generate any Mana for the attacker. Miss chance stacks along with any Miss chance from other sources, such as from skills."
+    }
+   ],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 112 damage.\nDamage: 135% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 120 damage. Casts a [20% Blind] debuff on the target, lasting 6s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 145% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 119 damage.\nDamage: 143.1% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 128 damage. Casts a [23% Blind] debuff on the target, lasting 6s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 153.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 125 damage.\nDamage: 151.2% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 135 damage. Casts a [26% Blind] debuff on the target, lasting 6s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 162.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 137 damage.\nDamage: 164.7% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 147 damage. Casts a [26% Blind] debuff on the target, lasting 7s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 176.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 150 damage.\nDamage: 180.9% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 161 damage. Casts a [29% Blind] debuff on the target, lasting 7s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 194.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 161 damage.\nDamage: 194.4% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 173 damage. Casts a [32% Blind] debuff on the target, lasting 7s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 208.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 175 damage.\nDamage: 210.6% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 188 damage. Casts a [32% Blind] debuff on the target, lasting 8s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 226.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 186 damage.\nDamage: 224.1% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 200 damage. Casts a [35% Blind] debuff on the target, lasting 8s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 240.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 199 damage.\nDamage: 240.3% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 214 damage. Casts a [35% Blind] debuff on the target, lasting 9s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 258.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 211 damage.\nDamage: 253.8% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 226 damage. Casts a [40% Blind] debuff on the target, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 272.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 224 damage.\nDamage: 270% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 241 damage. Casts a [40% Blind] debuff on the target, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage.\nAccuracy required for: Blind\nDamage: 290% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Diamond Tail",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/terravun/skills/1.webp",
+   "effects": [
+    {
+     "label": "Deflection",
+     "group": "Buffs",
+     "description": "Redirects a percentage of all incoming damage from the recipient of the buff to the caster of the buff. The recipient takes the remainder of the damage as normal."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 245 damage. Casts a [25% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s. Targets under [Deflection] buffs will redirect 25% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 295% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 260 damage. Casts a [30% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s. Targets under [Deflection] buffs will redirect 30% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 312.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 274 damage. Casts a [35% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 10s. Targets under [Deflection] buffs will redirect 35% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 330.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 299 damage. Casts a [35% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 35% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 359.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 328 damage. Casts a [40% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 40% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 395.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 353 damage. Casts a [40% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s. Targets under [Deflection] buffs will redirect 40% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 424.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 382 damage. Casts a [40% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 40% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 460.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 406 damage. Casts a [45% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 45% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 489.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 436 damage. Casts a [50% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s. Targets under [Deflection] buffs will redirect 50% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 525.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 460 damage. Casts a [50% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 16s. Targets under [Deflection] buffs will redirect 50% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 554.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, dealing 490 damage. Casts a [55% Deflection] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 16s. Targets under [Deflection] buffs will redirect 55% of all incoming damage onto the caster of the buff, while the target takes the remaining damage.\n#1 Damage: 590% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Meteor Drop",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/terravun/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+55",
+    "titan": "+30"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 125 damage per hit. The first hit pulls the targets to Terravun. Casts a [35% ATK Down] debuff on the targets, lasting 12s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 150% DEF\n#2 Damage: 150% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 132 damage per hit. The first hit pulls the targets to Terravun. Casts a [40% ATK Down] debuff on the targets, lasting 12s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 159% DEF\n#2 Damage: 159% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 139 damage per hit. The first hit pulls the targets to Terravun. Casts a [40% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 168% DEF\n#2 Damage: 168% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 152 damage per hit. The first hit pulls the targets to Terravun. Casts a [45% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 183% DEF\n#2 Damage: 183% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 167 damage per hit. The first hit pulls the targets to Terravun. Casts a [50% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 201% DEF\n#2 Damage: 201% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 179 damage per hit. The first hit pulls the targets to Terravun. Casts a [50% ATK Down] debuff on the targets, lasting 14s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 216% DEF\n#2 Damage: 216% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 194 damage per hit. The first hit pulls the targets to Terravun. Casts a [50% ATK Down] debuff on the targets, lasting 16s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 234% DEF\n#2 Damage: 234% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 207 damage per hit. The first hit pulls the targets to Terravun. Casts a [55% ATK Down] debuff on the targets, lasting 16s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 249% DEF\n#2 Damage: 249% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 222 damage per hit. The first hit pulls the targets to Terravun. Casts a [60% ATK Down] debuff on the targets, lasting 16s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 267% DEF\n#2 Damage: 267% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 234 damage per hit. The first hit pulls the targets to Terravun. Casts a [65% ATK Down] debuff on the targets, lasting 18s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 282% DEF\n#2 Damage: 282% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 furthest enemies in a 15m radius around Terravun, from a distance of 8m, 2 times, dealing 249 damage per hit. The first hit pulls the targets to Terravun. Casts a [70% ATK Down] debuff on the targets, lasting 18s, on the second hit.\nAccuracy required for: Pull, ATK Down\n#1 Damage: 300% DEF\n#2 Damage: 300% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/terravun/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    },
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 205 damage. Casts a [Stun] debuff on the targets, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [20% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 20%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 247.5% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 5s, blocking all incoming damage."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 218 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [20% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 20%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 262.3% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 6s, blocking all incoming damage."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 230 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [23% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 23%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 277.2% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 7s, blocking all incoming damage."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 251 damage. Casts a [Stun] debuff on the targets, lasting 6s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [26% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 26%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 301.9% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 8s, blocking all incoming damage."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 275 damage. Casts a [Stun] debuff on the targets, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [26% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 26%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 331.6% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 9s, blocking all incoming damage."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 296 damage. Casts a [Stun] debuff on the targets, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [26% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 26%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 356.4% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 10s, blocking all incoming damage."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 320 damage. Casts a [Stun] debuff on the targets, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [29% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 29%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 386.1% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 11s, blocking all incoming damage."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 341 damage. Casts a [Stun] debuff on the targets, lasting 8s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [32% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 32%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 410.8% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 12s, blocking all incoming damage."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 366 damage. Casts a [Stun] debuff on the targets, lasting 10s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [35% Weaken] debuff on the targets, lasting 16s, increasing all damage taken by 35%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 440.5% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 13s, blocking all incoming damage."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 386 damage. Casts a [Stun] debuff on the targets, lasting 10s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [35% Weaken] debuff on the targets, lasting 18s, increasing all damage taken by 35%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 465.3% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 14s, blocking all incoming damage."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 10 enemies in a 15m radius, dealing 411 damage. Casts a [Stun] debuff on the targets, lasting 10s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal. Then, casts a [40% Weaken] debuff on the targets, lasting 18s, increasing all damage taken by 40%.\nAccuracy required for: Stun, Weaken\n#1 Damage: 495% DEF\nINVOKATION END\nCasts an [Invincibility] buff on the Bound Invoker, lasting 15s, blocking all incoming damage."
+    }
+   ]
+  },
+  {
+   "name": "DEF Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/terravun/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +25% Defense."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +27.5% Defense."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +30% Defense."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +35% Defense."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +40% Defense."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +45% Defense."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +50% Defense."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "Terravun can move literal mountains. He is the very Titan that helped quarry out Stoneloom, using his awesome might to carve the labyrinthine tunnels that the Stonehearts call home. Since then, many Stonehearts have tried to Invoke Terravun; each time, the dragon has refused to reappear. But whenever Stoneloom truly needs him, Terravun will spring to its aid again.",
+ "ratings": {
+  "althar": "S+",
+  "galvos": "S+",
+  "hyxxis": "S+",
+  "koltmos": "S+",
+  "omnissi-astral": "S+",
+  "omnissi-dark": "S+",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S+",
+  "omnissi-light": "S+",
+  "omnissi-water": "S+",
+  "omnissi-wind": "S+",
+  "pentiax": "S+",
+  "sakiel": "S+",
+  "sorgott": "S+",
+  "ulgorim": "S+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 100,
+  "lists": 16
+ }
+}

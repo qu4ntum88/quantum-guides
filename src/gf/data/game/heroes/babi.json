@@ -1,0 +1,306 @@
+{
+ "id": 79,
+ "slug": "babi",
+ "name": "Babi",
+ "title": "Shadow of Duat",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "The baboon god represents the most violent, rapacious, and lustful aspects of that beast. Once he dwelt in Duat, consuming those souls who were deemed unworthy of the afterlife. The Shattering unleashed him upon the rest of Aaru, however. Now he devours anyone he considers sinful—and his definition of “sinful” varies based on how angry or hungry he might be.",
+ "rarity": "Rare",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/babi_portrait.png",
+ "image_url": "/godforge/gf_heroes/full_art/babi_full.png",
+ "stats": {
+  "hp": 1170,
+  "atk": 65,
+  "def": 74,
+  "spd": 94,
+  "init": 94,
+  "acc": 20,
+  "res": 15,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 6
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 4
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 200
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Increases the duration of [Banish] by 1 turn and cannot be removed.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Primal Surge",
+   "description": "Attack 1 enemy 2 times 190%ATK. Each hit has a 15% chance to place [Despair] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/babi/ICON_Babi_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "190%ATK",
+    "190%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Despair",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 15,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Despair",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 15,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Baboon’s Call",
+   "description": "Attack all enemies 285%ATK with a 50% chance to place [RES Down I] and [Hex I] for 2 turns.",
+   "icon_url": "/godforge/abilities/babi/ICON_Babi_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "RES Down I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Territorial Wrath",
+   "description": "Enemies under [Banish] receive 20% increased attack damage.",
+   "icon_url": "/godforge/abilities/babi/ICON_Babi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Feral Dominion",
+   "description": "Attack all enemies 285%ATK with a 35% chance to place [Banish] on each target for 1 turn.",
+   "icon_url": "/godforge/abilities/babi/ICON_Babi_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "285%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 35,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Banish",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 35,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Increases the duration of Banish by 1 turn and cannot be removed.",
+     "upgrade_description": "Increases the duration of [Banish] by 1 turn and cannot be removed."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Territorial Wrath",
+   "description": "Enemies under [Banish] receive 10% increased attack damage.",
+   "icon_url": "/godforge/abilities/babi/ICON_Babi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

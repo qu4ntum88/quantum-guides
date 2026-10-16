@@ -1,0 +1,593 @@
+{
+ "slug": "kravul-the-iron-shaman",
+ "kind": "Invoker",
+ "name": "Kravul the Iron Shaman",
+ "faction": "Ironbands",
+ "rarity": "Epic",
+ "class": "Support",
+ "element": "Wind",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Male",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/kravul-the-iron-shaman/portrait.webp",
+ "fullArt": "/invokers/units/invokers/kravul-the-iron-shaman/full.webp",
+ "stats": {
+  "base": {
+   "Health": "782",
+   "Attack": "62",
+   "Defense": "61",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "98"
+  },
+  "max": {
+   "Health": "9,391",
+   "Attack": "735",
+   "Defense": "671",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "123"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kravul-the-iron-shaman/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 10.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 15.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 20.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 26.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 10 damage.\nDamage: 16% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 11.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 16.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 21.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 28.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 17% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 11.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 17.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 23% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 29.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 17.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 12.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 18.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 25% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 32.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 19.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 14.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 20.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 27.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 35.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 21.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 15.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 22.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 29.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 38.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage.\nDamage: 23% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 16.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 24.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 32% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 41.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage.\nDamage: 25% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 17.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 25.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 34% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 44% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 16 damage.\nDamage: 26.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 18.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 27.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 36.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 47.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage.\nDamage: 28.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 19.7% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 29.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 38.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 49.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage.\nDamage: 30.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 21% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 31% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 41% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 53% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 9 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 32% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Brittling Tooth",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/kravul-the-iron-shaman/skills/1.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+32",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 64 damage. Casts a [20% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 102.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 67 damage. Casts a [23% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 108.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 71 damage. Casts a [26% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 114.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 78 damage. Casts a [26% RES Down] debuff on the target, lasting 4.5s.\nAccuracy required for: RES Down\n#1 Damage: 125.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 85 damage. Casts a [29% RES Down] debuff on the target, lasting 4.5s.\nAccuracy required for: RES Down\n#1 Damage: 137.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 92 damage. Casts a [32% RES Down] debuff on the target, lasting 4.5s.\nAccuracy required for: RES Down\n#1 Damage: 147.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 99 damage. Casts a [32% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 159.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 105 damage. Casts a [35% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 170.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 113 damage. Casts a [35% RES Down] debuff on the target, lasting 5.5s.\nAccuracy required for: RES Down\n#1 Damage: 182.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 119 damage. Casts a [40% RES Down] debuff on the target, lasting 5.5s.\nAccuracy required for: RES Down\n#1 Damage: 192.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 127 damage. Casts a [40% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 205% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Beastly Steel",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kravul-the-iron-shaman/skills/2.webp",
+   "effects": [
+    {
+     "label": "Regeneration",
+     "group": "Buffs",
+     "description": "Heals the recipient by a percentage of their MAX HP, once per tick, for the duration of the buff. The number of ticks per second increases with Skill Speed. This buff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+70",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 65 damage. Launches the target for 2s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (2.5% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 105% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 69 damage. Launches the target for 2s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 111.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 73 damage. Launches the target for 2s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 117.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 79 damage. Launches the target for 2.5s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 128.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 87 damage. Launches the target for 2.5s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 140.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 94 damage. Launches the target for 2.5s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 151.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 102 damage. Launches the target for 2.5s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 163.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 108 damage. Launches the target for 3s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 174.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 116 damage. Launches the target for 3s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 186.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 122 damage. Launches the target for 3s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 197.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 130 damage. Launches the target for 3s. Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 10s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP.\nAccuracy required for: Launch\n#1 Damage: 210% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Ironhorn Ward",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kravul-the-iron-shaman/skills/3.webp",
+   "effects": [
+    {
+     "label": "Harden",
+     "group": "Buffs",
+     "description": "Decreases the damage the recipient takes from all attacks by the indicated percentage."
+    },
+    {
+     "label": "Willpower",
+     "group": "Buffs",
+     "description": "Blocks Control Debuffs from being applied to the recipient.Each Willpower buff will only negate a single Debuff before expiring. This buff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Casts a [10% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 10s, decreasing all damage taken by 10%. Then, casts a [Willpower] buff on the targets, lasting 10s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Casts a [11% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 10s, decreasing all damage taken by 11%. Then, casts a [Willpower] buff on the targets, lasting 10s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [11% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 10s, decreasing all damage taken by 11%. Then, casts a [Willpower] buff on the targets, lasting 10s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [11% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 11s, decreasing all damage taken by 11%. Then, casts a [Willpower] buff on the targets, lasting 11s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [11% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 11s, decreasing all damage taken by 11%. Then, casts a [Willpower] buff on the targets, lasting 11s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [13% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 11s, decreasing all damage taken by 13%. Then, casts a [Willpower] buff on the targets, lasting 11s, protecting the target against 1 Control debuff."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [13% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 11s, decreasing all damage taken by 13%. Then, casts a [Willpower] buff on the targets, lasting 11s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [13% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 13s, decreasing all damage taken by 13%. Then, casts a [Willpower] buff on the targets, lasting 13s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [15% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 13s, decreasing all damage taken by 15%. Then, casts a [Willpower] buff on the targets, lasting 13s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [15% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 16s, decreasing all damage taken by 15%. Then, casts a [Willpower] buff on the targets, lasting 16s, protecting the target against 2 Control debuffs."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Casts a [15% Harden] buff on the 2 allies with the lowest current HP in a 15m radius, lasting 16s, decreasing all damage taken by 15%. Then, casts a [Willpower] buff on the targets, lasting 16s, protecting the target against 3 Control debuffs."
+    }
+   ]
+  },
+  {
+   "name": "Jaws of Iron",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/kravul-the-iron-shaman/skills/4.webp",
+   "effects": [
+    {
+     "label": "Evasion",
+     "group": "Buffs",
+     "description": "The recipient has a percentage chance to evade Combo Attacks, and avoid taking damage. Combo Attacks that are evaded do not generate any Mana for the attacker. Evasion chance stacks along with Evasion from other sources, such as from skills."
+    },
+    {
+     "label": "Blind",
+     "group": "Debuffs",
+     "description": "The recipient has a percentage chance to miss their Combo Attacks, and not deal any damage. Combo Attacks that are missed do not generate any Mana for the attacker. Miss chance stacks along with any Miss chance from other sources, such as from skills."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 48 damage per hit. The first hit casts a [10% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [10% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 77.5% ATK\n#2 Damage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 51 damage per hit. The first hit casts a [12% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [10% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 82.1% ATK\n#2 Damage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 54 damage per hit. The first hit casts a [12% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [12% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 86.8% ATK\n#2 Damage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 59 damage per hit. The first hit casts a [14% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [12% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 94.6% ATK\n#2 Damage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 64 damage per hit. The first hit casts a [14% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [14% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 103.8% ATK\n#2 Damage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 69 damage per hit. The first hit casts a [16% Blind] debuff on the targets, lasting 10s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [14% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 111.6% ATK\n#2 Damage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 75 damage per hit. The first hit casts a [16% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [16% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 10s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 120.9% ATK\n#2 Damage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 80 damage per hit. The first hit casts a [16% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [16% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 12s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 128.6% ATK\n#2 Damage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 86 damage per hit. The first hit casts a [18% Blind] debuff on the targets, lasting 12s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [18% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 12s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 137.9% ATK\n#2 Damage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 90 damage per hit. The first hit casts a [18% Blind] debuff on the targets, lasting 14s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [18% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 14s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 145.7% ATK\n#2 Damage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 9 enemies with the lowest current HP in a 8m radius around the target, from a distance of 9m, 2 times, dealing 96 damage per hit. The first hit casts a [20% Blind] debuff on the targets, lasting 14s, increasing the recipient's chance to miss their Combo Attacks, and not deal any damage. Casts a [20% Evasion] buff on the 9 allies with the lowest current HP in a 15m radius around the target, lasting 14s, on the second hit, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\nAccuracy required for: Blind\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Frost",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Kravul commands the magic and beasts of the Thursians with as much authority as he commands the Winterguard Ironband – which is to say, with a fair bit more authority than he commands his daughter, Klare, who is as willful and wild as any animal. He wouldn’t want it any other way.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "A",
+  "hyxxis": "A",
+  "koltmos": "B",
+  "omnissi-astral": "A",
+  "omnissi-dark": "A",
+  "omnissi-earth": "A",
+  "omnissi-fire": "A",
+  "omnissi-light": "B",
+  "omnissi-water": "E",
+  "omnissi-wind": "A",
+  "pentiax": "E",
+  "sakiel": "A",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "A",
+  "score": 46.4,
+  "lists": 16
+ }
+}

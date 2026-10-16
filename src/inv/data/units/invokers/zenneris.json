@@ -1,0 +1,571 @@
+{
+ "slug": "zenneris",
+ "kind": "Invoker",
+ "name": "Zenneris",
+ "faction": "Ironbands",
+ "rarity": "Epic",
+ "class": "Support",
+ "element": "Water",
+ "soulSign": "Sign of Corran",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/zenneris/portrait.webp",
+ "fullArt": "/invokers/units/invokers/zenneris/full.webp",
+ "stats": {
+  "base": {
+   "Health": "759",
+   "Attack": "64",
+   "Defense": "61",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "4",
+   "Skill speed": "0",
+   "Skill recovery": "8",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "113"
+  },
+  "max": {
+   "Health": "8,950",
+   "Attack": "748",
+   "Defense": "697",
+   "Critical rate": "5%",
+   "Critical damage": "66%",
+   "Accuracy": "0",
+   "Resistance": "30",
+   "Combo speed": "4",
+   "Skill speed": "0",
+   "Skill recovery": "40",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "163"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/zenneris/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy, dealing 9 damage.\nDamage: 14% ATK\n#3 Attacks 1 enemy, dealing 12 damage.\nDamage: 19.5% ATK\n#4 Attacks 1 enemy, dealing 16 damage.\nDamage: 24.5% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 10 damage.\nDamage: 15% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 6 damage.\nDamage: 10.1% ATK\n#2 Attacks 1 enemy, dealing 9 damage.\nDamage: 14.8% ATK\n#3 Attacks 1 enemy, dealing 13 damage.\nDamage: 20.7% ATK\n#4 Attacks 1 enemy, dealing 17 damage.\nDamage: 26% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 10 damage.\nDamage: 15.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy, dealing 10 damage.\nDamage: 15.7% ATK\n#3 Attacks 1 enemy, dealing 14 damage.\nDamage: 21.8% ATK\n#4 Attacks 1 enemy, dealing 18 damage.\nDamage: 27.4% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 11 damage.\nDamage: 16.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 7 damage.\nDamage: 11.6% ATK\n#2 Attacks 1 enemy, dealing 11 damage.\nDamage: 17.1% ATK\n#3 Attacks 1 enemy, dealing 15 damage.\nDamage: 23.8% ATK\n#4 Attacks 1 enemy, dealing 19 damage.\nDamage: 29.9% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 12 damage.\nDamage: 18.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 8 damage.\nDamage: 12.7% ATK\n#2 Attacks 1 enemy, dealing 12 damage.\nDamage: 18.8% ATK\n#3 Attacks 1 enemy, dealing 17 damage.\nDamage: 26.1% ATK\n#4 Attacks 1 enemy, dealing 21 damage.\nDamage: 32.8% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 13 damage.\nDamage: 20.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 13.7% ATK\n#2 Attacks 1 enemy, dealing 13 damage.\nDamage: 20.2% ATK\n#3 Attacks 1 enemy, dealing 18 damage.\nDamage: 28.1% ATK\n#4 Attacks 1 enemy, dealing 23 damage.\nDamage: 35.3% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 14 damage.\nDamage: 21.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 9 damage.\nDamage: 14.8% ATK\n#2 Attacks 1 enemy, dealing 14 damage.\nDamage: 21.8% ATK\n#3 Attacks 1 enemy, dealing 19 damage.\nDamage: 30.4% ATK\n#4 Attacks 1 enemy, dealing 24 damage.\nDamage: 38.2% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 15 damage.\nDamage: 23.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 10 damage.\nDamage: 15.8% ATK\n#2 Attacks 1 enemy, dealing 15 damage.\nDamage: 23.2% ATK\n#3 Attacks 1 enemy, dealing 21 damage.\nDamage: 32.4% ATK\n#4 Attacks 1 enemy, dealing 26 damage.\nDamage: 40.7% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 16 damage.\nDamage: 24.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 16.9% ATK\n#2 Attacks 1 enemy, dealing 16 damage.\nDamage: 24.9% ATK\n#3 Attacks 1 enemy, dealing 22 damage.\nDamage: 34.7% ATK\n#4 Attacks 1 enemy, dealing 28 damage.\nDamage: 43.6% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 17 damage.\nDamage: 26.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 17.9% ATK\n#2 Attacks 1 enemy, dealing 17 damage.\nDamage: 26.3% ATK\n#3 Attacks 1 enemy, dealing 23 damage.\nDamage: 36.7% ATK\n#4 Attacks 1 enemy, dealing 29 damage.\nDamage: 46.1% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 18 damage.\nDamage: 28.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 19% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 28% ATK\n#3 Attacks 1 enemy, dealing 25 damage.\nDamage: 39% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 49% ATK\n#5 Attacks 9 enemies in a 3.5m radius around the closest enemy, dealing 19 damage.\nDamage: 30% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Harsh Respite",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/zenneris/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+59",
+    "titan": "+32"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 62 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 38 HP.\n#1 Damage: 97.5% ATK\n#2 Heal: 5% * MAX HP"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 38 HP.\n#1 Damage: 103.3% ATK\n#2 Heal: 5% * MAX HP"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 46 HP.\n#1 Damage: 109.2% ATK\n#2 Heal: 6% * MAX HP"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 76 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 46 HP.\n#1 Damage: 119% ATK\n#2 Heal: 6% * MAX HP"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 53 HP.\n#1 Damage: 130.7% ATK\n#2 Heal: 7% * MAX HP"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 90 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 53 HP.\n#1 Damage: 140.4% ATK\n#2 Heal: 7% * MAX HP"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 97 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 61 HP.\n#1 Damage: 152.1% ATK\n#2 Heal: 8% * MAX HP"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 104 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 61 HP.\n#1 Damage: 161.9% ATK\n#2 Heal: 8% * MAX HP"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 111 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 68 HP.\n#1 Damage: 173.6% ATK\n#2 Heal: 9% * MAX HP"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 117 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 68 HP.\n#1 Damage: 183.3% ATK\n#2 Heal: 9% * MAX HP"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage. Heals the ally with the lowest current HP in a 15m radius, restoring 76 HP.\n#1 Damage: 195% ATK\n#2 Heal: 10% * MAX HP"
+    }
+   ]
+  },
+  {
+   "name": "Ice Vice",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/zenneris/skills/2.webp",
+   "effects": [
+    {
+     "label": "Move SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+61",
+    "titan": "+33"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 118 damage. Casts a [25% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 10s.\n#1 Damage: 185% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 126 damage. Casts a [25% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 11s.\n#1 Damage: 196.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage. Casts a [28% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 11s.\n#1 Damage: 207.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 144 damage. Casts a [28% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 12s.\n#1 Damage: 225.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage. Casts a [28% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 12s.\n#1 Damage: 247.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 170 damage. Casts a [32% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 12s.\n#1 Damage: 266.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 185 damage. Casts a [32% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 12s.\n#1 Damage: 288.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 197 damage. Casts a [32% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 13s.\n#1 Damage: 307.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 211 damage. Casts a [36% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 13s.\n#1 Damage: 329.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 223 damage. Casts a [36% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 15s.\n#1 Damage: 347.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 237 damage. Casts a [40% Move SPD Up] buff on 9 allies in a 15m radius around Zenneris, lasting 15s.\n#1 Damage: 370% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Frostwind",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/zenneris/skills/3.webp",
+   "effects": [
+    {
+     "label": "Evasion",
+     "group": "Buffs",
+     "description": "The recipient has a percentage chance to evade Combo Attacks, and avoid taking damage. Combo Attacks that are evaded do not generate any Mana for the attacker. Evasion chance stacks along with Evasion from other sources, such as from skills."
+    }
+   ],
+   "manaGen": {
+    "ult": "+61",
+    "titan": "+33"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 61 damage per hit. Zenneris gains 35 Ultimate Mana. Casts a [15% Evasion] buff on 9 allies in a 15m radius, lasting 10s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 95% ATK\n#2 Damage: 95% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 64 damage per hit. Zenneris gains 35 Ultimate Mana. Casts a [16% Evasion] buff on 9 allies in a 15m radius, lasting 10s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 100.7% ATK\n#2 Damage: 100.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 68 damage per hit. Zenneris gains 45 Ultimate Mana. Casts a [16% Evasion] buff on 9 allies in a 15m radius, lasting 10s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 106.4% ATK\n#2 Damage: 106.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Zenneris gains 45 Ultimate Mana. Casts a [16% Evasion] buff on 9 allies in a 15m radius, lasting 11s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 115.9% ATK\n#2 Damage: 115.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 81 damage per hit. Zenneris gains 55 Ultimate Mana. Casts a [16% Evasion] buff on 9 allies in a 15m radius, lasting 11s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 127.3% ATK\n#2 Damage: 127.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 88 damage per hit. Zenneris gains 55 Ultimate Mana. Casts a [17% Evasion] buff on 9 allies in a 15m radius, lasting 11s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 136.8% ATK\n#2 Damage: 136.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 95 damage per hit. Zenneris gains 55 Ultimate Mana. Casts a [17% Evasion] buff on 9 allies in a 15m radius, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 148.2% ATK\n#2 Damage: 148.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 101 damage per hit. Zenneris gains 55 Ultimate Mana. Casts a [18% Evasion] buff on 9 allies in a 15m radius, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 157.7% ATK\n#2 Damage: 157.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 108 damage per hit. Zenneris gains 55 Ultimate Mana. Casts a [18% Evasion] buff on 9 allies in a 15m radius, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 169.1% ATK\n#2 Damage: 169.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 114 damage per hit. Zenneris gains 70 Ultimate Mana. Casts a [20% Evasion] buff on 9 allies in a 15m radius, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 178.6% ATK\n#2 Damage: 178.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 122 damage per hit. Zenneris gains 70 Ultimate Mana. Casts a [20% Evasion] buff on 9 allies in a 15m radius, lasting 15s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 190% ATK\n#2 Damage: 190% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Winterfall",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/zenneris/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 186 damage. Zenneris gains 140 Titan Mana.\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 197 damage. Zenneris gains 150 Titan Mana.\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 208 damage. Zenneris gains 160 Titan Mana.\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy, dealing 226 damage. Zenneris gains 170 Titan Mana.\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 249 damage. Zenneris gains 170 Titan Mana.\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 267 damage. Zenneris gains 180 Titan Mana.\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy, dealing 290 damage. Zenneris gains 190 Titan Mana.\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 308 damage. Zenneris gains 190 Titan Mana.\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 330 damage. Zenneris gains 200 Titan Mana.\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy, dealing 349 damage. Zenneris gains 220 Titan Mana.\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy, dealing 371 damage. Zenneris gains 240 Titan Mana.\n#1 Damage: 580% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Nightmare",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "All Orcs and Ironbands defend their homes against the Corrupted, but few beyond Zenneris care for her homeland’s animals, too. Poachers and necromancers hunt all sorts of magical creatures – and Zenneris hunts the hunters.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "A",
+  "hyxxis": "A",
+  "koltmos": "B",
+  "omnissi-astral": "A",
+  "omnissi-dark": "A",
+  "omnissi-earth": "B",
+  "omnissi-fire": "A",
+  "omnissi-light": "A",
+  "omnissi-water": "A",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "A",
+  "sorgott": "B",
+  "ulgorim": "A",
+  "yskara": "A"
+ },
+ "overall": {
+  "tier": "A",
+  "score": 46.4,
+  "lists": 16
+ }
+}

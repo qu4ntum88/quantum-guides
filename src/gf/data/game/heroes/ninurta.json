@@ -1,0 +1,325 @@
+{
+ "id": 185,
+ "slug": "ninurta",
+ "name": "Ninurta",
+ "title": "Keeper of Sharur",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Ninurta, son of Enlil, is a god of both war and agriculture, violence and healing. Beloved by the people of Ekur, he behaves more as hero than as god, slaying demons and protecting his worshipers from threats both monstrous and mundane. In a pantheon devoted largely to the cycles of nature, he cares more for his people than for cosmic balance.",
+ "rarity": "Epic",
+ "affinity": "Strength",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Strength.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Ekur",
+ "faction_icon": "/godforge/gf_heroes/factions/EKUR.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ninhurta.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ninurta_main.png",
+ "stats": {
+  "hp": 1290,
+  "atk": 60,
+  "def": 101,
+  "spd": 96,
+  "init": 88,
+  "acc": 15,
+  "res": 65,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "barrier_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.07,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Barrier] on all allies instead.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "After redirecting an attack, retaliate against the enemy using this hero’s Basic Ability.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Restoring Order",
+   "description": "Attack 1 enemy 170%DEF+145%ATK and place [Barrier] on this hero equal to 10% of the damage inflicted. When retaliating, attack all enemies 170%DEF+145%ATK instead.",
+   "icon_url": "/godforge/abilities/ninurta/ICON_Ninurta_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "170%DEF+145%ATK",
+    "95%DEF+85%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Barrier on all allies instead.",
+     "upgrade_description": "Place [Barrier] on all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Thunderous Echo",
+   "description": "Attack 95%DEF+80%ATK 3 random enemies. Each hit has a 40% chance to place [Taunt] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/ninurta/ICON_Ninurta_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "95%DEF+80%ATK",
+    "95%DEF+80%ATK",
+    "95%DEF+80%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "40 RES in Arena Battles",
+   "icon_url": "/godforge/abilities/ninurta/ICON_Leader_Resistance.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Sharur's Foresight",
+   "description": "Has a 20% chance to redirect an enemy’s attack from an ally to this hero and increase this hero’s Turn Meter by 20%. The chance increases by 10% against enemies under Aetherburn.",
+   "icon_url": "/godforge/abilities/ninurta/ICON_Ninurta_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Intercept",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "After redirecting an attack, retaliate against the enemy using this hero’s Basic Ability.",
+     "upgrade_description": "After redirecting an attack, retaliate against the enemy using this hero’s Basic Ability."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Sharur’s Judgement",
+   "description": "Attack all enemies 140%DEF+120%ATK and place [Aetherburn II] on each target for 2 turns. If the target is a Boss, place [ATK Down II] instead.",
+   "icon_url": "/godforge/abilities/ninurta/ICON_Ninurta_Ultimate.webp",
+   "divinity_cost": 2150,
+   "damage_formula": [
+    "140%DEF+120%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Sharur's Foresight",
+   "description": "Has a 20% chance to redirect an enemy’s attack from an ally to this hero and increase this hero’s Turn Meter by 10%.",
+   "icon_url": "/godforge/abilities/ninurta/ICON_Ninurta_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Intercept",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 0,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

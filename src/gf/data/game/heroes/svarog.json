@@ -1,0 +1,312 @@
+{
+ "id": 73,
+ "slug": "svarog",
+ "name": "Svarog",
+ "title": "Father of Fire",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Blacksmith of the gods, Svarog forged much of Vyraj itself. That creation is imperfect has always eaten at him, and the Shattering has only salted that wound. Furious at Chaos and Destiny both, he is among the most vocal champions of Order, and seeks nothing less than the opportunity to recreate the world in its most perfect potential form.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Svarog.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Svarog_main.png",
+ "stats": {
+  "hp": 1455,
+  "atk": 72,
+  "def": 101,
+  "spd": 104,
+  "init": 91,
+  "acc": 20,
+  "res": 75,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "res",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Each Ultimate also increases the strength of [Shield]'s placed by this hero by 3% (up to 10 times)",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Each time an ally is attacked under [Protect II] increases the damage of this hero’s next ability by 3%. Resets on next ability.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "When an ally [Shield] is removed or depleted, place [Ward] on them for 1 turn.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Seared Strike",
+   "description": "Attack 1 enemy 160%DEF+155%ATK with a 75% chance to place [Blunt II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/svarog/ICON_Svarog_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "160%DEF+155%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Blunt II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Celestial Hammer",
+   "description": "Attack all enemies 135%DEF+130%ATK with a 75% chance to place [ATK Down II] on each target for 2 turns. Also place [Protect II] on all allies for 2 turns.",
+   "icon_url": "/godforge/abilities/svarog/ICON_Svarog_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "135%DEF+130%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Protect II",
+     "target": "AllAlliesExceptSelf",
+     "target_label": "AllAlliesExceptSelf",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Each time an ally is attacked under Protect II increases the damage of this hero’s next ability by 3%. Resets on next ability.",
+     "upgrade_description": "Each time an ally is attacked under [Protect II] increases the damage of this hero’s next ability by 3%. Resets on next ability."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% DEF in Dungeon Battles",
+   "icon_url": "/godforge/abilities/svarog/ICON_Leader_Defence.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Forgefire Protection",
+   "description": "Each time an ally uses an Ultimate, decrease the damage received by all allies by 3% (up to 10 times).",
+   "icon_url": "/godforge/abilities/svarog/ICON_Svarog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Each Ultimate also increases the strength of Shield's placed by this hero by 3% (up to 10 times)",
+     "upgrade_description": "Each Ultimate also increases the strength of [Shield]'s placed by this hero by 3% (up to 10 times)"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Anvil Sparks",
+   "description": "Place [RES Up II] and [DEF Up II] on all allies for 3 turns. Then place [Shield] 250% DEF on all allies.",
+   "icon_url": "/godforge/abilities/svarog/ICON_Svarog_Ultimate.webp",
+   "divinity_cost": 3050,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "RES Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 3,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "When an ally Shield is removed or depleted, place Ward on them for 1 turn.",
+     "upgrade_description": "When an ally [Shield] is removed or depleted, place [Ward] on them for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Forgefire Protection",
+   "description": "Each time an ally uses an Ultimate, decrease the damage received by this hero by 3% (up to 5 times).",
+   "icon_url": "/godforge/abilities/svarog/ICON_Svarog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

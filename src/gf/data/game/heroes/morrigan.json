@@ -1,0 +1,353 @@
+{
+ "id": 192,
+ "slug": "morrigan",
+ "name": "Morrigan",
+ "title": "Emissary of Destiny",
+ "summary": "Bring Dark Tidings to the battle, casting Despair and Debuffs on your foes.",
+ "lore": "Goddess of war and fate, the Morrigan is a source of both fear and courage throughout Avalon. It was to her that Destiny turned upon restitching the world, and the Morrigan now acts primarily as an agent and emissary for that mysterious power. She guides and oversees the Scions—though she still does, on occasion, pursue objectives of her own.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Avalon",
+ "faction_icon": "/godforge/gf_heroes/factions/AVALON.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Morrigan.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Morrigan_main.png",
+ "stats": {
+  "hp": 1395,
+  "atk": 82,
+  "def": 87,
+  "spd": 102,
+  "init": 108,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If all 3 Debuffs are placed on the target, also decrease the target’s Turn Meter by 30%.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.15,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Decrease the target’s RES and ACC by 5 (up to 100) each time they receive a stack of [Dark Tidings].",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Place [Dark Tidings] 5 stacks instead.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Fate Foretold",
+   "description": "Attack 1 enemy 330%ATK+50%FTH with a 75% chance to place [FTH Down II] on the target for 1 turn. Then place [Dark Tidings] on the target.",
+   "icon_url": "/godforge/abilities/morrigan/ICON_Morrigan_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "FTH Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Dark Tidings",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Dark Tidings",
+   "description": "Place 2 stacks of [Dark Tidings] on all enemies, then attack all enemies 270%ATK+50%FTH with a 75% chance to place [Despair] on each target for 1 turn. If the target is a Boss, place [SPD Down II] on the target for 2 turns instead.",
+   "icon_url": "/godforge/abilities/morrigan/ICON_Morrigan_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "270%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Dark Tidings",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Dark Tidings",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 5,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Despair",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Place Dark Tidings 5 stacks instead.",
+     "upgrade_description": "Place [Dark Tidings] 5 stacks instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% FTH in Arena Battles",
+   "icon_url": "/godforge/abilities/morrigan/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Futuresight",
+   "description": "When an enemy receives a Buff, reduce its duration by 1 turn. When an enemy receives a Debuff, increase its duration by 1 turn.",
+   "icon_url": "/godforge/abilities/morrigan/ICON_Morrigan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Decrease the target’s RES and ACC by 5 (up to 100) each time they receive a stack of Dark Tidings.",
+     "upgrade_description": "Decrease the target’s RES and ACC by 5 (up to 100) each time they receive a stack of [Dark Tidings]."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Omen of the Raven",
+   "description": "Remove all Buffs from all enemies, then attack all enemies 105%ATK+50%FTH 3 times. The first hit has an 80% chance to place [Drain II] on each target for 2 turns. The second hit has an 80% chance to place [DEF Down II] on each target for 2 turns. The third hit has an 80% chance to place [ATK Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/morrigan/ICON_Morrigan_Ultimate.webp",
+   "divinity_cost": 3150,
+   "damage_formula": [
+    "105%ATK",
+    "105%ATK",
+    "105%ATK",
+    "100%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If all 3 Debuffs are placed on the target, also decrease the target’s Turn Meter by 30%.",
+     "upgrade_description": "If all 3 Debuffs are placed on the target, also decrease the target’s Turn Meter by 30%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Futuresight",
+   "description": "When an enemy receives a Buff, has a 50% chance to reduce its duration by 1 turn. When an enemy receives a Debuff, has a 50% chance to increase its duration by 1 turn.",
+   "icon_url": "/godforge/abilities/morrigan/ICON_Morrigan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

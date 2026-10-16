@@ -1,0 +1,577 @@
+{
+ "slug": "tamana",
+ "kind": "Invoker",
+ "name": "Tamana",
+ "faction": "Lightseekers",
+ "rarity": "Epic",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/tamana/portrait.webp",
+ "fullArt": "/invokers/units/invokers/tamana/full.webp",
+ "stats": {
+  "base": {
+   "Health": "678",
+   "Attack": "76",
+   "Defense": "57",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "111"
+  },
+  "max": {
+   "Health": "7,646",
+   "Attack": "954",
+   "Defense": "633",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "111"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tamana/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 17 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 44% ATK\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 56.5% ATK\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 68% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 46.6% ATK\n#4 Attacks 1 enemy, dealing 46 damage.\nDamage: 59.9% ATK\n#5 Attacks 1 enemy, dealing 55 damage.\nDamage: 72.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 49.3% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 63.3% ATK\n#5 Attacks 1 enemy, dealing 58 damage.\nDamage: 76.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 41 damage.\nDamage: 53.7% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 68.9% ATK\n#5 Attacks 1 enemy, dealing 63 damage.\nDamage: 83% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 45 damage.\nDamage: 59% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 75.7% ATK\n#5 Attacks 1 enemy, dealing 69 damage.\nDamage: 91.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 63.4% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 81.4% ATK\n#5 Attacks 1 enemy, dealing 74 damage.\nDamage: 97.9% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 68.6% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 88.1% ATK\n#5 Attacks 1 enemy, dealing 81 damage.\nDamage: 106.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 73% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 93.8% ATK\n#5 Attacks 1 enemy, dealing 86 damage.\nDamage: 112.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy, dealing 47 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 60 damage.\nDamage: 78.3% ATK\n#4 Attacks 1 enemy, dealing 76 damage.\nDamage: 100.6% ATK\n#5 Attacks 1 enemy, dealing 92 damage.\nDamage: 121% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 33 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy, dealing 50 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 63 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy, dealing 81 damage.\nDamage: 106.2% ATK\n#5 Attacks 1 enemy, dealing 97 damage.\nDamage: 127.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 67 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy, dealing 86 damage.\nDamage: 113% ATK\n#5 Attacks 1 enemy, dealing 103 damage.\nDamage: 136% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Drakebrand",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tamana/skills/1.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+28",
+    "titan": "+15"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 112 damage. Casts a [15% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 147.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 119 damage. Casts a [15% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 156.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 126 damage. Casts a [16% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 165.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Casts a [17% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 150 damage. Casts a [18% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 197.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 161 damage. Casts a [19% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 212.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 175 damage. Casts a [20% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 230.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 186 damage. Casts a [20% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 244.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 200 damage. Casts a [21% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 262.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 211 damage. Casts a [23% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 277.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 224 damage. Casts a [25% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 295% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Crushwing",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tamana/skills/2.webp",
+   "effects": [
+    {
+     "label": "DEF Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Defense stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+19"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 222 damage. Casts a [20% DEF Down] debuff on the target, lasting 9s.\nAccuracy required for: DEF Down\n#1 Damage: 292.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 236 damage. Casts a [20% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 310% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 249 damage. Casts a [20% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 271 damage. Casts a [22% DEF Down] debuff on the target, lasting 10s.\nAccuracy required for: DEF Down\n#1 Damage: 356.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 298 damage. Casts a [22% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 392% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 320 damage. Casts a [24% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 421.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 347 damage. Casts a [24% DEF Down] debuff on the target, lasting 11s.\nAccuracy required for: DEF Down\n#1 Damage: 456.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 369 damage. Casts a [24% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 485.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 396 damage. Casts a [26% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 520.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 418 damage. Casts a [28% DEF Down] debuff on the target, lasting 12s.\nAccuracy required for: DEF Down\n#1 Damage: 549.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 445 damage. Casts a [30% DEF Down] debuff on the target, lasting 13s.\nAccuracy required for: DEF Down\n#1 Damage: 585% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cauterize",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/tamana/skills/3.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 55 damage. Casts a [1% Burn] debuff on the targets, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 72.5% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 58 damage. Casts a [1% Burn] debuff on the targets, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 76.8% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 62 damage. Casts a [1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 81.2% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 67 damage. Casts a [1.1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 225% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Burn\n#1 Damage: 88.5% ATK\n#2 Burn Damage Limit: 225% ATK per tick\n#3 Burn Target Allies Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 74 damage. Casts a [1.1% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 97.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 79 damage. Casts a [1.3% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 104.4% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 86 damage. Casts a [1.3% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 113.1% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 91 damage. Casts a [1.3% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 120.3% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 98 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 129.1% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 104 damage. Casts a [1.5% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 136.3% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 9 enemies in a 7m radius around the closest enemy, dealing 110 damage. Casts a [1.75% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.88% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 145% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Dragon Will",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/tamana/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 125 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 164% ATK\n#2 Damage: 164% ATK\n#3 Damage: 164% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 132 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 173.8% ATK\n#2 Damage: 173.8% ATK\n#3 Damage: 173.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 140 damage per hit. Each hit Extends the duration of 1 random debuff on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 183.7% ATK\n#2 Damage: 183.7% ATK\n#3 Damage: 183.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 152 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 200.1% ATK\n#2 Damage: 200.1% ATK\n#3 Damage: 200.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 167 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 219.8% ATK\n#2 Damage: 219.8% ATK\n#3 Damage: 219.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 179 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 2s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 236.2% ATK\n#2 Damage: 236.2% ATK\n#3 Damage: 236.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 194 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 255.8% ATK\n#2 Damage: 255.8% ATK\n#3 Damage: 255.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 207 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 272.2% ATK\n#2 Damage: 272.2% ATK\n#3 Damage: 272.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 222 damage per hit. Each hit Extends the duration of up to 2 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 291.9% ATK\n#2 Damage: 291.9% ATK\n#3 Damage: 291.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 234 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 3s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 308.3% ATK\n#2 Damage: 308.3% ATK\n#3 Damage: 308.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 249 damage per hit. Each hit Extends the duration of up to 3 random debuffs on the target by 4s.\nAccuracy required for: Debuff Duration Extension\n#1 Damage: 328% ATK\n#2 Damage: 328% ATK\n#3 Damage: 328% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  },
+  {
+   "label": "Paralysis",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Tamana was ordered by her Legion commanders to abandon barbarians in a losing fight. She refused – her unit of volunteers fought to save the souls of fallen Varkis, even at the cost of a Lightseeker artifact. She was stripped of rank, but not of pride, and now seeks to recover what she lost.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "B",
+  "hyxxis": "C",
+  "koltmos": "B",
+  "omnissi-astral": "B",
+  "omnissi-dark": "C",
+  "omnissi-earth": "E",
+  "omnissi-fire": "B",
+  "omnissi-light": "B",
+  "omnissi-water": "C",
+  "omnissi-wind": "B",
+  "pentiax": "B",
+  "sakiel": "B",
+  "sorgott": "B",
+  "ulgorim": "B",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "C",
+  "score": 38.4,
+  "lists": 16
+ }
+}

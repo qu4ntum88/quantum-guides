@@ -1,0 +1,597 @@
+{
+ "slug": "charvaine-the-hypnomancer",
+ "kind": "Invoker",
+ "name": "Charvaine the Hypnomancer",
+ "faction": "Magi",
+ "rarity": "Legendary",
+ "class": "Support",
+ "element": "Water",
+ "soulSign": "Sign of Corran",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/charvaine-the-hypnomancer/portrait.webp",
+ "fullArt": "/invokers/units/invokers/charvaine-the-hypnomancer/full.webp",
+ "stats": {
+  "base": {
+   "Health": "1,020",
+   "Attack": "79",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "4",
+   "Skill speed": "0",
+   "Skill recovery": "8",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "103"
+  },
+  "max": {
+   "Health": "11,526",
+   "Attack": "881",
+   "Defense": "776",
+   "Critical rate": "5%",
+   "Critical damage": "66%",
+   "Accuracy": "0",
+   "Resistance": "30",
+   "Combo speed": "4",
+   "Skill speed": "0",
+   "Skill recovery": "40",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "153"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/charvaine-the-hypnomancer/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 10% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 14.5% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 20% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 25.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Charvaine gains Ultimate Mana (10 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 10 Ultimate Mana.\n#1 Damage: 16% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 10.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 15.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 21.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 27% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage. Charvaine gains Ultimate Mana (11 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 11 Ultimate Mana.\n#1 Damage: 17% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 11.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 16.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 22.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 28.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage. Charvaine gains Ultimate Mana (12 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 12 Ultimate Mana.\n#1 Damage: 17.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 12.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 17.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 24.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 31.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage. Charvaine gains Ultimate Mana (13 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 13 Ultimate Mana.\n#1 Damage: 19.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 13.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 19.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 26.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 34.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage. Charvaine gains Ultimate Mana (14 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 14 Ultimate Mana.\n#1 Damage: 21.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 14.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 20.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 28.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 36.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage. Charvaine gains Ultimate Mana (15 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 15 Ultimate Mana.\n#1 Damage: 23% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 15.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 22.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 31.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 39.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage. Charvaine gains Ultimate Mana (16 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 16 Ultimate Mana.\n#1 Damage: 25% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 16.6% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 24.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 33.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 42.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 21 damage. Charvaine gains Ultimate Mana (17 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 17 Ultimate Mana.\n#1 Damage: 26.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 17.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 20 damage.\nDamage: 25.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 35.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 36 damage.\nDamage: 45.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage. Charvaine gains Ultimate Mana (18 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 18 Ultimate Mana.\n#1 Damage: 28.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 18.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 22 damage.\nDamage: 27.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 37.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 47.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage. Charvaine gains Ultimate Mana (19 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 19 Ultimate Mana.\n#1 Damage: 30.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 20% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 29% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 40% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 51% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 25 damage. Charvaine gains Ultimate Mana (20 per buff on Charvaine). \nIf Charvaine has no buffs, Charvaine gains 20 Ultimate Mana.\n#1 Damage: 32% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hypnoray",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/charvaine-the-hypnomancer/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage. Charvaine gains 30 Titan Mana.\n#1 Damage: 97.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 82 damage. Charvaine gains 33 Titan Mana.\n#1 Damage: 103.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 86 damage. Charvaine gains 36 Titan Mana.\n#1 Damage: 109.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 94 damage. Charvaine gains 39 Titan Mana.\n#1 Damage: 119% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 103 damage. Charvaine gains 42 Titan Mana.\n#1 Damage: 130.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 111 damage. Charvaine gains 45 Titan Mana.\n#1 Damage: 140.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 120 damage. Charvaine gains 48 Titan Mana.\n#1 Damage: 152.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 128 damage. Charvaine gains 51 Titan Mana.\n#1 Damage: 161.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 137 damage. Charvaine gains 54 Titan Mana.\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 145 damage. Charvaine gains 57 Titan Mana.\n#1 Damage: 183.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 154 damage. Charvaine gains 60 Titan Mana.\n#1 Damage: 195% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Phantasm Lash",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/charvaine-the-hypnomancer/skills/2.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Combo Speed stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 83 damage per hit. Casts a [10% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s.\n#1 Damage: 105% ATK\n#2 Damage: 105% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 88 damage per hit. Casts a [12% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s.\n#1 Damage: 111.3% ATK\n#2 Damage: 111.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 93 damage per hit. Casts a [12% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 117.6% ATK\n#2 Damage: 117.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 101 damage per hit. Casts a [14% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 128.1% ATK\n#2 Damage: 128.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 111 damage per hit. Casts a [14% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 140.7% ATK\n#2 Damage: 140.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 119 damage per hit. Casts a [16% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 151.2% ATK\n#2 Damage: 151.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 129 damage per hit. Casts a [16% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s.\n#1 Damage: 163.8% ATK\n#2 Damage: 163.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 138 damage per hit. Casts a [18% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s.\n#1 Damage: 174.3% ATK\n#2 Damage: 174.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 148 damage per hit. Casts a [18% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s.\n#1 Damage: 186.9% ATK\n#2 Damage: 186.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 156 damage per hit. Casts a [20% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s.\n#1 Damage: 197.4% ATK\n#2 Damage: 197.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 166 damage per hit. Casts a [20% Combo SPD Up] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 16s.\n#1 Damage: 210% ATK\n#2 Damage: 210% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Hat of Visions",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/charvaine-the-hypnomancer/skills/3.webp",
+   "effects": [
+    {
+     "label": "Evasion",
+     "group": "Buffs",
+     "description": "The recipient has a percentage chance to evade Combo Attacks, and avoid taking damage. Combo Attacks that are evaded do not generate any Mana for the attacker. Evasion chance stacks along with Evasion from other sources, such as from skills."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 85 damage. Casts a [20% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 107.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 90 damage. Casts a [22% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 113.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 95 damage. Casts a [22% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 120.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 104 damage. Casts a [24% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 131.2% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 114 damage. Casts a [24% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 144.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 122 damage. Casts a [26% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 154.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 132 damage. Casts a [26% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 167.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 141 damage. Casts a [28% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 14s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 178.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 151 damage. Casts a [28% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 191.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 160 damage. Casts a [30% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 202.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Selects 1 enemy up to 14m away. Attacks the 10 enemies with the lowest current HP in a 6m radius around the target, from a distance of 9m, dealing 170 damage. Casts a [30% Evasion] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 16s, increasing the recipient's chance to evade Combo Attacks and avoid taking damage.\n#1 Damage: 215% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Conjure Dreams",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/charvaine-the-hypnomancer/skills/4.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    },
+    {
+     "label": "Crit Rate Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Rate stat by the indicated percentage."
+    },
+    {
+     "label": "DEF Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Defense stat by the indicated percentage."
+    },
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    },
+    {
+     "label": "Skill Recovery Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Skill Recovery stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 124 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [40% DEF Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [153 HP Shield] buff on the targets, lasting 12s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [40% ATK Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [30% Crit Rate Up] buff on the targets, lasting 12s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [20% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, the targets gain 75 Ultimate Mana.\n#1 Damage: 157.5% ATK\n#2 Shield: MAX HP * 15%"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 132 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [45% DEF Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [153 HP Shield] buff on the targets, lasting 12s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [45% ATK Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [30% Crit Rate Up] buff on the targets, lasting 12s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [22% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, the targets gain 75 Ultimate Mana.\n#1 Damage: 166.9% ATK\n#2 Shield: MAX HP * 15%"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 139 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [45% DEF Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [173 HP Shield] buff on the targets, lasting 12s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [45% ATK Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [32% Crit Rate Up] buff on the targets, lasting 12s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [22% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, the targets gain 90 Ultimate Mana.\n#1 Damage: 176.4% ATK\n#2 Shield: MAX HP * 17%"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 152 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [50% DEF Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [173 HP Shield] buff on the targets, lasting 12s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [50% ATK Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [32% Crit Rate Up] buff on the targets, lasting 12s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [25% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, the targets gain 90 Ultimate Mana.\n#1 Damage: 192.2% ATK\n#2 Shield: MAX HP * 17%"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 167 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [50% DEF Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [194 HP Shield] buff on the targets, lasting 12s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [50% ATK Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, casts a [34% Crit Rate Up] buff on the targets, lasting 12s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [25% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 12s. Then, the targets gain 110 Ultimate Mana.\n#1 Damage: 211.1% ATK\n#2 Shield: MAX HP * 19%"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 179 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [50% DEF Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, casts a [194 HP Shield] buff on the targets, lasting 14s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [50% ATK Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, casts a [34% Crit Rate Up] buff on the targets, lasting 14s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [25% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, the targets gain 110 Ultimate Mana.\n#1 Damage: 226.8% ATK\n#2 Shield: MAX HP * 19%"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 194 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [55% DEF Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, casts a [194 HP Shield] buff on the targets, lasting 14s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [55% ATK Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, casts a [34% Crit Rate Up] buff on the targets, lasting 14s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [30% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, the targets gain 110 Ultimate Mana.\n#1 Damage: 245.7% ATK\n#2 Shield: MAX HP * 19%"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 207 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [55% DEF Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, casts a [224 HP Shield] buff on the targets, lasting 14s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [55% ATK Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, casts a [36% Crit Rate Up] buff on the targets, lasting 14s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [30% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 14s. Then, the targets gain 130 Ultimate Mana.\n#1 Damage: 261.5% ATK\n#2 Shield: MAX HP * 22%"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 221 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [55% DEF Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [224 HP Shield] buff on the targets, lasting 16s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [55% ATK Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [36% Crit Rate Up] buff on the targets, lasting 16s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [30% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, the targets gain 130 Ultimate Mana.\n#1 Damage: 280.4% ATK\n#2 Shield: MAX HP * 22%"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 234 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [55% DEF Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [255 HP Shield] buff on the targets, lasting 16s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [55% ATK Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, casts a [40% Crit Rate Up] buff on the targets, lasting 16s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [30% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 16s. Then, the targets gain 150 Ultimate Mana.\n#1 Damage: 296.1% ATK\n#2 Shield: MAX HP * 25%"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 10 random enemies in a 15m radius, from a distance of 9m, dealing 249 damage. \nThen, casts one of the following buff pairs:\n- Pair A: If Charvaine's DEF is higher than her ATK. \nCasts a [60% DEF Up] buff on 10 random allies in a 15m radius, lasting 18s. Then, casts a [255 HP Shield] buff on the targets, lasting 18s. \n- Pair B: If Charvaine's ATK is higher than her DEF. \nCasts a [60% ATK Up] buff on 10 random allies in a 15m radius, lasting 18s. Then, casts a [40% Crit Rate Up] buff on the targets, lasting 18s. \nAlso casts the following buff pair if Charvaine has 75% MAX HP or higher:\n- Pair C: Casts a [35% Skill Recovery Up] buff on 10 random allies in a 15m radius, lasting 18s. Then, the targets gain 150 Ultimate Mana.\n#1 Damage: 315% ATK\n#2 Shield: MAX HP * 25%"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Mana Shock",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "When people speak of the grandest Magi in history, Charvaine's name is never far from the conversation. With her dazzling hat Arcana focusing her thoughts, she unlocked the secrets of hypnomancy - a bizarre form of magic that taps into Amara's collective unconscious. A dream for her. A nightmare for others.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "E",
+  "hyxxis": "A+",
+  "koltmos": "E",
+  "omnissi-astral": "S",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S+",
+  "omnissi-fire": "S",
+  "omnissi-light": "E",
+  "omnissi-water": "S",
+  "omnissi-wind": "S",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "S",
+  "ulgorim": "E",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "A",
+  "score": 46.4,
+  "lists": 16
+ }
+}

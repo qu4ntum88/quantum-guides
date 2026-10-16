@@ -1,0 +1,506 @@
+{
+ "slug": "gargoth",
+ "kind": "Titan",
+ "name": "Gargoth",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Tank",
+ "portrait": "/invokers/units/titans/gargoth/portrait.webp",
+ "fullArt": "/invokers/units/titans/gargoth/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's HP": "+50%",
+   "Bound Invoker's ATK": "+50%",
+   "Bound Invoker's DEF": "+50%",
+   "Bonus HP": "+770",
+   "Bonus ATK": "+61",
+   "Bonus DEF": "+72",
+   "Movement speed": "175"
+  },
+  "max": {
+   "Bound Invoker's HP": "+450%",
+   "Bound Invoker's ATK": "+450%",
+   "Bound Invoker's DEF": "+450%",
+   "Bonus HP": "+4,628",
+   "Bonus ATK": "+367",
+   "Bonus DEF": "+433",
+   "Movement speed": "175"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/titans/gargoth/skills/0.webp",
+   "effects": [
+    {
+     "label": "ACC Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Accuracy stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+48",
+    "titan": "+26"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 99 damage.\nDamage: 137.5% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 103 damage. Casts a [30% ACC Down] debuff on the target, lasting 5s.\nAccuracy required for: ACC Down\nDamage: 142.5% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 105 damage.\nDamage: 145.7% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 109 damage. Casts a [30% ACC Down] debuff on the target, lasting 5.5s.\nAccuracy required for: ACC Down\nDamage: 151% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 111 damage.\nDamage: 154% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 115 damage. Casts a [35% ACC Down] debuff on the target, lasting 5.5s.\nAccuracy required for: ACC Down\nDamage: 159.6% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 121 damage.\nDamage: 167.8% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 125 damage. Casts a [40% ACC Down] debuff on the target, lasting 5.5s.\nAccuracy required for: ACC Down\nDamage: 173.8% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 133 damage.\nDamage: 184.2% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 137 damage. Casts a [45% ACC Down] debuff on the target, lasting 5.5s.\nAccuracy required for: ACC Down\nDamage: 190.9% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 143 damage.\nDamage: 198% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 148 damage. Casts a [45% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\nDamage: 205.2% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 154 damage.\nDamage: 214.5% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 160 damage. Casts a [50% ACC Down] debuff on the target, lasting 6s.\nAccuracy required for: ACC Down\nDamage: 222.3% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 164 damage.\nDamage: 228.2% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 170 damage. Casts a [50% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\nDamage: 236.5% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 176 damage.\nDamage: 244.8% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 183 damage. Casts a [55% ACC Down] debuff on the target, lasting 6.5s.\nAccuracy required for: ACC Down\nDamage: 253.6% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 186 damage.\nDamage: 258.5% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 193 damage. Casts a [55% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\nDamage: 267.9% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, dealing 198 damage.\nDamage: 275% DEF\n#2 Attacks 1 enemy from a distance of 2m, dealing 205 damage. Casts a [60% ACC Down] debuff on the target, lasting 7s.\nAccuracy required for: ACC Down\nDamage: 285% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Defend the Dusk",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/gargoth/skills/1.webp",
+   "effects": [
+    {
+     "label": "Harden",
+     "group": "Buffs",
+     "description": "Decreases the damage the recipient takes from all attacks by the indicated percentage."
+    },
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": {
+    "ult": "+62",
+    "titan": "+34"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 101 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, on the second hit. The [Shield] is equal to (20% * Damage Dealt). Then, casts a [10% Harden] buff on the targets, lasting 12s, decreasing all damage taken by 10%.\n#1 Damage: 140% DEF\n#2 Damage: 140% DEF\n#3 Shield: 20% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 107 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, on the second hit. The [Shield] is equal to (25% * Damage Dealt). Then, casts a [10% Harden] buff on the targets, lasting 12s, decreasing all damage taken by 10%.\n#1 Damage: 148.4% DEF\n#2 Damage: 148.4% DEF\n#3 Shield: 25% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 113 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 12s, on the second hit. The [Shield] is equal to (25% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 12s, decreasing all damage taken by 12%.\n#1 Damage: 156.8% DEF\n#2 Damage: 156.8% DEF\n#3 Shield: 25% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 123 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, on the second hit. The [Shield] is equal to (25% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 13s, decreasing all damage taken by 12%.\n#1 Damage: 170.8% DEF\n#2 Damage: 170.8% DEF\n#3 Shield: 25% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 135 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, on the second hit. The [Shield] is equal to (30% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 13s, decreasing all damage taken by 12%.\n#1 Damage: 187.6% DEF\n#2 Damage: 187.6% DEF\n#3 Shield: 30% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 145 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 13s, on the second hit. The [Shield] is equal to (30% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 13s, decreasing all damage taken by 12%.\n#1 Damage: 201.6% DEF\n#2 Damage: 201.6% DEF\n#3 Shield: 30% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 157 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s, on the second hit. The [Shield] is equal to (30% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 15s, decreasing all damage taken by 12%.\n#1 Damage: 218.4% DEF\n#2 Damage: 218.4% DEF\n#3 Shield: 30% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 167 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 15s, on the second hit. The [Shield] is equal to (35% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 15s, decreasing all damage taken by 12%.\n#1 Damage: 232.4% DEF\n#2 Damage: 232.4% DEF\n#3 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 179 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 17s, on the second hit. The [Shield] is equal to (35% * Damage Dealt). Then, casts a [12% Harden] buff on the targets, lasting 17s, decreasing all damage taken by 12%.\n#1 Damage: 249.2% DEF\n#2 Damage: 249.2% DEF\n#3 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 190 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 17s, on the second hit. The [Shield] is equal to (35% * Damage Dealt). Then, casts a [15% Harden] buff on the targets, lasting 17s, decreasing all damage taken by 15%.\n#1 Damage: 263.2% DEF\n#2 Damage: 263.2% DEF\n#3 Shield: 35% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 2m, 2 times, dealing 202 damage per hit. Casts a [Shield] buff on the 10 allies with the lowest current HP in a 15m radius, lasting 17s, on the second hit. The [Shield] is equal to (40% * Damage Dealt). Then, casts a [15% Harden] buff on the targets, lasting 17s, decreasing all damage taken by 15%.\n#1 Damage: 280% DEF\n#2 Damage: 280% DEF\n#3 Shield: 40% * Damage Dealt"
+    }
+   ]
+  },
+  {
+   "name": "Conquer the Night",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/gargoth/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+79",
+    "titan": "+43"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 104 damage. Increases the cooldown of all Active Skills on the targets by 8s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 145% DEF"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 111 damage. Increases the cooldown of all Active Skills on the targets by 9s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 153.7% DEF"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 117 damage. Increases the cooldown of all Active Skills on the targets by 10s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 162.4% DEF"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 127 damage. Increases the cooldown of all Active Skills on the targets by 11s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 176.9% DEF"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 140 damage. Increases the cooldown of all Active Skills on the targets by 12s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 194.3% DEF"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 150 damage. Increases the cooldown of all Active Skills on the targets by 12s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 208.8% DEF"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 163 damage. Increases the cooldown of all Active Skills on the targets by 13s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 226.2% DEF"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 173 damage. Increases the cooldown of all Active Skills on the targets by 14s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 240.7% DEF"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 186 damage. Increases the cooldown of all Active Skills on the targets by 15s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 258.1% DEF"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 196 damage. Increases the cooldown of all Active Skills on the targets by 16s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 272.6% DEF"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 8m semicircle in front of Gargoth, from a distance of 2m, dealing 209 damage. Increases the cooldown of all Active Skills on the targets by 16s.\nAccuracy required for: Cooldown Increase\n#1 Damage: 290% DEF"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/gargoth/skills/3.webp",
+   "effects": [
+    {
+     "label": "ATK Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 173 damage. Casts a [45% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 240% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP. Then, casts a [25% Reflect Damage] buff on the bound Invoker, lasting 12s. The [Reflect Damage] buff will return 25% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 183 damage. Casts a [47% ATK Down] debuff on the targets, lasting 12s.\nAccuracy required for: ATK Down\n#1 Damage: 254.4% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP. Then, casts a [25% Reflect Damage] buff on the bound Invoker, lasting 12s. The [Reflect Damage] buff will return 25% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 194 damage. Casts a [49% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 268.8% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP. Then, casts a [30% Reflect Damage] buff on the bound Invoker, lasting 12s. The [Reflect Damage] buff will return 30% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 211 damage. Casts a [51% ATK Down] debuff on the targets, lasting 13s.\nAccuracy required for: ATK Down\n#1 Damage: 292.8% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP. Then, casts a [30% Reflect Damage] buff on the bound Invoker, lasting 13s. The [Reflect Damage] buff will return 30% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 232 damage. Casts a [53% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 321.6% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP. Then, casts a [30% Reflect Damage] buff on the bound Invoker, lasting 13s. The [Reflect Damage] buff will return 30% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 249 damage. Casts a [55% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 345.6% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP. Then, casts a [35% Reflect Damage] buff on the bound Invoker, lasting 13s. The [Reflect Damage] buff will return 35% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 270 damage. Casts a [57% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 374.4% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP. Then, casts a [35% Reflect Damage] buff on the bound Invoker, lasting 15s. The [Reflect Damage] buff will return 35% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 287 damage. Casts a [59% ATK Down] debuff on the targets, lasting 14s.\nAccuracy required for: ATK Down\n#1 Damage: 398.4% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [35% Reflect Damage] buff on the bound Invoker, lasting 15s. The [Reflect Damage] buff will return 35% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 308 damage. Casts a [61% ATK Down] debuff on the targets, lasting 15s.\nAccuracy required for: ATK Down\n#1 Damage: 427.2% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [40% Reflect Damage] buff on the bound Invoker, lasting 15s. The [Reflect Damage] buff will return 40% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 325 damage. Casts a [63% ATK Down] debuff on the targets, lasting 15s.\nAccuracy required for: ATK Down\n#1 Damage: 451.2% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (5% * Target's MAX HP) HP. Then, casts a [40% Reflect Damage] buff on the bound Invoker, lasting 17s. The [Reflect Damage] buff will return 40% of all incoming damage back to the attacker when attacked."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks the 10 enemies with the lowest current HP in a 15m radius, dealing 346 damage. Casts a [65% ATK Down] debuff on the targets, lasting 17s.\nAccuracy required for: ATK Down\n#1 Damage: 480% DEF\nINVOKATION END\nCasts a [Regeneration] on the Bound Invoker, lasting 8s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (6% * Target's MAX HP) HP. Then, casts a [50% Reflect Damage] buff on the bound Invoker, lasting 17s. The [Reflect Damage] buff will return 50% of all incoming damage back to the attacker when attacked."
+    }
+   ]
+  },
+  {
+   "name": "DEF Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/gargoth/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +28% Defense.\nOutside Dungeon mode: +16% Defense."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +30.8% Defense.\nOutside Dungeon mode: +17.6% Defense."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +33.6% Defense.\nOutside Dungeon mode: +19.2% Defense."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +39.2% Defense.\nOutside Dungeon mode: +22.4% Defense."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +44.8% Defense.\nOutside Dungeon mode: +25.6% Defense."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +50.4% Defense.\nOutside Dungeon mode: +28.8% Defense."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, in Dungeon mode: +56% Defense.\nOutside Dungeon mode: +32% Defense."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "In the early days of the Dusklit, they were hunted ruthlessly by Night Lords, vampires set on avenging the Dusklit’s betrayal of Malice. To protect their people, the Nocturna Invokers created an unstoppable beast of bloodless stone. Gargoth was the last thing each of the Night Lords ever saw.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "A+",
+  "hyxxis": "A+",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "A+",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "A+",
+  "ulgorim": "A+",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 71.4,
+  "lists": 16
+ }
+}

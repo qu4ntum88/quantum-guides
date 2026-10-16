@@ -33,13 +33,32 @@ const ALL_NAV_ITEMS = [
     href: '/games/godforge',
     children: [
       { label: 'Home', href: '/games/godforge' },
-      { label: 'Heroes', href: '/games/godforge/heroes' },
-      { label: 'Tier List', href: '/games/godforge/tier-list' },
+      { label: 'Hero Tier List', href: '/games/godforge/hero-tier-list' },
       { label: 'Status Effects', href: '/games/godforge/status-effects' },
       { label: 'Dungeons', href: '/games/godforge/dungeons' },
     ],
   },
-  { section: 'voidHunters', label: 'Void Hunters', href: '/games/void-hunters/guides' },
+  {
+    section: 'invokers',
+    label: 'Invokers',
+    href: '/games/invokers/guides',
+    children: [
+      { label: 'Home', href: '/games/invokers/guides' },
+      { label: 'Invoker Tier List', href: '/games/invokers/invoker-tier-list' },
+      { label: 'Titan Tier List', href: '/games/invokers/titan-tier-list' },
+      { label: 'Status Effects', href: '/games/invokers/status-effects' },
+    ],
+  },
+  {
+    section: 'voidHunters',
+    label: 'Void Hunters',
+    href: '/games/void-hunters/guides',
+    children: [
+      { label: 'Home', href: '/games/void-hunters/guides' },
+      { label: 'Hunter Tier List', href: '/games/void-hunters/hunter-tier-list' },
+      { label: 'Status Effects', href: '/games/void-hunters/status-effects' },
+    ],
+  },
 ]
 
 const NAV_ITEMS = ALL_NAV_ITEMS.filter((item) => !item.section || PUBLIC_SECTIONS[item.section])

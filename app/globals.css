@@ -387,16 +387,28 @@ h3 {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* Four game sections in the navbar: tighten item padding on mid-size screens,
+   then switch to the hamburger menu before the row can overflow. */
+@media (max-width: 1360px) {
+  .desktop-nav { margin-left: 0.25rem; }
+  .desktop-nav > li > a { padding: 0.5rem 0.6rem; }
+  .nav-dropdown-label { padding-left: 0.6rem; }
+  .nav-dropdown-chevron { padding-right: 0.6rem; }
+}
+
+@media (max-width: 1240px) {
   .desktop-nav { display: none; }
   .nav-hamburger { display: flex; }
+}
+
+@media (max-width: 768px) {
 
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
   .container { padding: 1rem; }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1241px) {
   .mobile-menu { display: none; }
   .nav-hamburger { display: none; }
 }

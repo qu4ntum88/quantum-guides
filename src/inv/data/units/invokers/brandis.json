@@ -1,0 +1,589 @@
+{
+ "slug": "brandis",
+ "kind": "Invoker",
+ "name": "Brandis",
+ "faction": "Lightseekers",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/brandis/portrait.webp",
+ "fullArt": "/invokers/units/invokers/brandis/full.webp",
+ "stats": {
+  "base": {
+   "Health": "912",
+   "Attack": "90",
+   "Defense": "71",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "106"
+  },
+  "max": {
+   "Health": "10,496",
+   "Attack": "1,020",
+   "Defense": "747",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "131"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/brandis/skills/0.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+93",
+    "titan": "+51"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 55% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 64.5% ATK\n#5 Attacks 1 enemy, dealing 72 damage. Has a 20% chance to casts a [2% Burn] debuff on the target, lasting 4s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\nDamage: 80% ATK\nBurn Damage Limit: 200% ATK per tick\nBurn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 58.3% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 68.4% ATK\n#5 Attacks 1 enemy, dealing 76 damage. Has a 20% chance to casts a [2% Burn] debuff on the target, lasting 4s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\nDamage: 84.8% ATK\nBurn Damage Limit: 200% ATK per tick\nBurn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy, dealing 55 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 72.2% ATK\n#5 Attacks 1 enemy, dealing 81 damage. Has a 20% chance to casts a [2.5% Burn] debuff on the target, lasting 4.5s. The [Burn] ticks every 2s, damaging targets by 2.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 1.25% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\nDamage: 89.6% ATK\nBurn Damage Limit: 250% ATK per tick\nBurn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy, dealing 60 damage.\nDamage: 67.1% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 78.7% ATK\n#5 Attacks 1 enemy, dealing 88 damage. Has a 20% chance to casts a [2.5% Burn] debuff on the target, lasting 4.5s. The [Burn] ticks every 2s, damaging targets by 2.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 1.25% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\nDamage: 97.6% ATK\nBurn Damage Limit: 250% ATK per tick\nBurn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy, dealing 66 damage.\nDamage: 73.7% ATK\n#4 Attacks 1 enemy, dealing 78 damage.\nDamage: 86.4% ATK\n#5 Attacks 1 enemy, dealing 96 damage. Has a 20% chance to casts a [2.75% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 2.75% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 1.38% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\nDamage: 107.2% ATK\nBurn Damage Limit: 300% ATK per tick\nBurn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 45 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy, dealing 71 damage.\nDamage: 79.2% ATK\n#4 Attacks 1 enemy, dealing 84 damage.\nDamage: 92.9% ATK\n#5 Attacks 1 enemy, dealing 104 damage. Has a 20% chance to casts a [3% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 3% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\nDamage: 115.2% ATK\nBurn Damage Limit: 300% ATK per tick\nBurn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy, dealing 77 damage.\nDamage: 85.8% ATK\n#4 Attacks 1 enemy, dealing 91 damage.\nDamage: 100.6% ATK\n#5 Attacks 1 enemy, dealing 112 damage. Has a 20% chance to casts a [3% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 3% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 1.5% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\nDamage: 124.8% ATK\nBurn Damage Limit: 350% ATK per tick\nBurn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 37 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 52 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy, dealing 82 damage.\nDamage: 91.3% ATK\n#4 Attacks 1 enemy, dealing 96 damage.\nDamage: 107.1% ATK\n#5 Attacks 1 enemy, dealing 120 damage. Has a 20% chance to casts a [3.25% Burn] debuff on the target, lasting 5.5s. The [Burn] ticks every 2s, damaging targets by 3.25% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 1.63% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\nDamage: 132.8% ATK\nBurn Damage Limit: 350% ATK per tick\nBurn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 56 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy, dealing 88 damage.\nDamage: 97.9% ATK\n#4 Attacks 1 enemy, dealing 103 damage.\nDamage: 114.8% ATK\n#5 Attacks 1 enemy, dealing 128 damage. Has a 20% chance to casts a [3.5% Burn] debuff on the target, lasting 5.5s. The [Burn] ticks every 2s, damaging targets by 3.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1.75% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\nDamage: 142.4% ATK\nBurn Damage Limit: 400% ATK per tick\nBurn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 42 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 59 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy, dealing 93 damage.\nDamage: 103.4% ATK\n#4 Attacks 1 enemy, dealing 109 damage.\nDamage: 121.3% ATK\n#5 Attacks 1 enemy, dealing 135 damage. Has a 20% chance to casts a [4% Burn] debuff on the target, lasting 5.5s. The [Burn] ticks every 2s, damaging targets by 4% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 2% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\nDamage: 150.4% ATK\nBurn Damage Limit: 400% ATK per tick\nBurn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 45 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 63 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy, dealing 99 damage.\nDamage: 110% ATK\n#4 Attacks 1 enemy, dealing 116 damage.\nDamage: 129% ATK\n#5 Attacks 1 enemy, dealing 144 damage. Has a 20% chance to casts a [4% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 4% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 2% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\nDamage: 160% ATK\nBurn Damage Limit: 500% ATK per tick\nBurn Target Allies Damage Limit: 500% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Brand Heresy",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/brandis/skills/1.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+49",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 70 damage per hit. Casts a [1% Burn] debuff on Brandis, lasting 4s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 77.5% ATK\n#2 Damage: 77.5% ATK\n#3 Burn Damage Limit: 500% ATK per tick\n#4 Burn Target Allies Damage Limit: 500% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 74 damage per hit. Casts a [1.1% Burn] debuff on Brandis, lasting 4s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 82.1% ATK\n#2 Damage: 82.1% ATK\n#3 Burn Damage Limit: 500% ATK per tick\n#4 Burn Target Allies Damage Limit: 500% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 78 damage per hit. Casts a [1.1% Burn] debuff on Brandis, lasting 5s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 600% ATK).\nAccuracy required for: Burn\n#1 Damage: 86.8% ATK\n#2 Damage: 86.8% ATK\n#3 Burn Damage Limit: 600% ATK per tick\n#4 Burn Target Allies Damage Limit: 600% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 85 damage per hit. Casts a [1.2% Burn] debuff on Brandis, lasting 5s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 600% ATK).\nAccuracy required for: Burn\n#1 Damage: 94.6% ATK\n#2 Damage: 94.6% ATK\n#3 Burn Damage Limit: 600% ATK per tick\n#4 Burn Target Allies Damage Limit: 600% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 93 damage per hit. Casts a [1.2% Burn] debuff on Brandis, lasting 5s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 700% ATK).\nAccuracy required for: Burn\n#1 Damage: 103.8% ATK\n#2 Damage: 103.8% ATK\n#3 Burn Damage Limit: 700% ATK per tick\n#4 Burn Target Allies Damage Limit: 700% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 100 damage per hit. Casts a [1.2% Burn] debuff on Brandis, lasting 5s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 700% ATK).\nAccuracy required for: Burn\n#1 Damage: 111.6% ATK\n#2 Damage: 111.6% ATK\n#3 Burn Damage Limit: 700% ATK per tick\n#4 Burn Target Allies Damage Limit: 700% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 109 damage per hit. Casts a [1.2% Burn] debuff on Brandis, lasting 6s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.2% of their MAX HP per tick (up to 800% ATK).\nAccuracy required for: Burn\n#1 Damage: 120.9% ATK\n#2 Damage: 120.9% ATK\n#3 Burn Damage Limit: 800% ATK per tick\n#4 Burn Target Allies Damage Limit: 800% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 116 damage per hit. Casts a [1.3% Burn] debuff on Brandis, lasting 6s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 800% ATK).\nAccuracy required for: Burn\n#1 Damage: 128.6% ATK\n#2 Damage: 128.6% ATK\n#3 Burn Damage Limit: 800% ATK per tick\n#4 Burn Target Allies Damage Limit: 800% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 124 damage per hit. Casts a [1.4% Burn] debuff on Brandis, lasting 6s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 900% ATK).\nAccuracy required for: Burn\n#1 Damage: 137.9% ATK\n#2 Damage: 137.9% ATK\n#3 Burn Damage Limit: 900% ATK per tick\n#4 Burn Target Allies Damage Limit: 900% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 131 damage per hit. Casts a [1.5% Burn] debuff on Brandis, lasting 6s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 900% ATK).\nAccuracy required for: Burn\n#1 Damage: 145.7% ATK\n#2 Damage: 145.7% ATK\n#3 Burn Damage Limit: 900% ATK per tick\n#4 Burn Target Allies Damage Limit: 900% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 139 damage per hit. Casts a [1.5% Burn] debuff on Brandis, lasting 8s, on the second hit. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 1,000% ATK).\nAccuracy required for: Burn\n#1 Damage: 155% ATK\n#2 Damage: 155% ATK\n#3 Burn Damage Limit: 1,000% ATK per tick\n#4 Burn Target Allies Damage Limit: 1,000% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Fiery Prayer",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/brandis/skills/2.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+51",
+    "titan": "+28"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 77 damage. \nCasts a [1% Burn] debuff on the target, lasting 4s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.25% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 85% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Burn Damage Limit: 200% ATK per tick\n#5 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 81 damage. \nCasts a [1% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 200% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.25% Burn] debuff on the target, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 90.1% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Burn Damage Limit: 200% ATK per tick\n#5 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 86 damage. \nCasts a [1.1% Burn] debuff on the target, lasting 5s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 250% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.3% Burn] debuff on the target, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 95.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Burn Damage Limit: 250% ATK per tick\n#5 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 93 damage. \nCasts a [1.1% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.55% of their MAX HP per tick (up to 250% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.3% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 103.7% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Burn Damage Limit: 250% ATK per tick\n#5 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 103 damage. \nCasts a [1.25% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 300% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.4% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.7% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 113.9% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\n#4 Burn Damage Limit: 300% ATK per tick\n#5 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 110 damage. \nCasts a [1.35% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.35% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.68% of their MAX HP per tick (up to 300% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.6% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 122.4% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\n#4 Burn Damage Limit: 300% ATK per tick\n#5 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 119 damage. \nCasts a [1.35% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.35% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.68% of their MAX HP per tick (up to 350% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.6% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 132.6% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick\n#4 Burn Damage Limit: 350% ATK per tick\n#5 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 127 damage. \nCasts a [1.45% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.45% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.73% of their MAX HP per tick (up to 350% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [1.8% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.8% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.9% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 141.1% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick\n#4 Burn Damage Limit: 350% ATK per tick\n#5 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 136 damage. \nCasts a [1.6% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 400% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [2% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 151.3% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick\n#4 Burn Damage Limit: 400% ATK per tick\n#5 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 144 damage. \nCasts a [1.75% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.88% of their MAX HP per tick (up to 400% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [2% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 159.8% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick\n#4 Burn Damage Limit: 400% ATK per tick\n#5 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 10 enemies in a 60°, 6m cone in front of Brandis, dealing 153 damage. \nCasts a [1.75% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.75% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 0.88% of their MAX HP per tick (up to 500% ATK). \nInstead, if Brandis has [Burn] debuffs, casts a [2% Burn] debuff on the target, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 170% ATK\n#2 Burn Damage Limit: 500% ATK per tick\n#3 Burn Target Allies Damage Limit: 500% ATK per tick\n#4 Burn Damage Limit: 500% ATK per tick\n#5 Burn Target Allies Damage Limit: 500% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Litany of Flames",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/brandis/skills/3.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+40",
+    "titan": "+22"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 153 damage. Casts a [1.25% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 170% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 162 damage. Casts a [1.3% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.65% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 180.2% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 171 damage. Casts a [1.4% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.4% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.7% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 190.4% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 187 damage. Casts a [1.5% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 207.4% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 205 damage. Casts a [1.6% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 227.8% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 220 damage. Casts a [1.7% Burn] debuff on the target, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.7% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.85% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 244.8% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 239 damage. Casts a [1.7% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.7% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.85% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 265.2% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 254 damage. Casts a [1.8% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.8% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.9% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 282.2% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 272 damage. Casts a [1.9% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.9% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.95% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 302.6% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 288 damage. Casts a [1.9% Burn] debuff on the target, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.9% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.95% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 319.6% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 306 damage. Casts a [2% Burn] debuff on the target, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 340% ATK\n#2 Burn Damage Limit: 500% ATK per tick\n#3 Burn Target Allies Damage Limit: 500% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Conflagration",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/brandis/skills/4.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 45 damage. Casts a [1.5% Burn] debuff on the targets, lasting 6s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 200% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 50% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 48 damage. Casts a [1.5% Burn] debuff on the targets, lasting 7s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 200% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 53% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 50 damage. Casts a [1.6% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.6% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.8% of their MAX HP per tick (up to 250% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 56% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 55 damage. Casts a [1.7% Burn] debuff on the targets, lasting 8s. The [Burn] ticks every 2s, damaging targets by 1.7% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.85% of their MAX HP per tick (up to 250% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 61% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 60 damage. Casts a [1.7% Burn] debuff on the targets, lasting 9s. The [Burn] ticks every 2s, damaging targets by 1.7% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.85% of their MAX HP per tick (up to 300% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 67% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 65 damage. Casts a [1.8% Burn] debuff on the targets, lasting 9s. The [Burn] ticks every 2s, damaging targets by 1.8% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.9% of their MAX HP per tick (up to 300% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 72% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 70 damage. Casts a [1.9% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1.9% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.95% of their MAX HP per tick (up to 350% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 78% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 75 damage. Casts a [2% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 1% of their MAX HP per tick (up to 350% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 83% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 80 damage. Casts a [2.1% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2.1% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1.05% of their MAX HP per tick (up to 400% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 89% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 85 damage. Casts a [2.3% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2.3% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 1.15% of their MAX HP per tick (up to 400% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 94% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Selects 1 enemy up to 14m away. Attacks 10 enemies in a 4m radius around the target, from a distance of 10m, dealing 90 damage. Casts a [2.5% Burn] debuff on the targets, lasting 10s. The [Burn] ticks every 2s, damaging targets by 2.5% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 1.25% of their MAX HP per tick (up to 500% ATK). \nRepeats 3 times instead, if Brandis has [Burn] debuffs. Can target the same enemy multiple times.\nAccuracy required for: Burn\n#1 Damage: 100% ATK\n#2 Burn Damage Limit: 500% ATK per tick\n#3 Burn Target Allies Damage Limit: 500% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Bloodrot",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Paralysis",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Brandis is the daughter of the Eternal Angel Emperor, blessed as a child to bear Serenity’s Fire. Wounds – even death – have no lasting grip, and she knows no fear… except for one: what her father might have done to buy her blessing.",
+ "ratings": {
+  "althar": "A+",
+  "galvos": "A+",
+  "hyxxis": "A+",
+  "koltmos": "S",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "S",
+  "omnissi-earth": "E",
+  "omnissi-fire": "A+",
+  "omnissi-light": "E",
+  "omnissi-water": "A+",
+  "omnissi-wind": "A+",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "A+",
+  "ulgorim": "A+",
+  "yskara": "A+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 64.3,
+  "lists": 16
+ }
+}

@@ -1,0 +1,334 @@
+{
+ "id": 191,
+ "slug": "mulan",
+ "name": "Mulan",
+ "title": "Honourbound",
+ "summary": "Strike with Precision and Honour your Family Name whilst also staying Concealed with Vanish.",
+ "lore": "A beloved folk hero of Tian, Mulan’s reappearance after the Shattering was cause for celebration. She fights still, defending not the realm as a whole, but individual communities that might otherwise be lost in the greater struggle. The support of her people seems to empower her, granting her skill and might in excess of even her greatest legends.",
+ "rarity": "Legendary",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Tian",
+ "faction_icon": "/godforge/gf_heroes/factions/TIAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Mulan.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Mulan_main.png",
+ "stats": {
+  "hp": 1410,
+  "atk": 115,
+  "def": 89,
+  "spd": 99,
+  "init": 99,
+  "acc": 40,
+  "res": 30,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "If this hero is under [Vanish], ignore 30% of the target's RES.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increase this Hero’s CDMG by 3% (stacking up to 10 times)",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If this Hero is under [Vanish] and would be defeated, prevents this hero’s death and gain an Extra Turn.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Swift River",
+   "description": "Attack 1 enemy 2 times 240%ATK. Critical attacks ignore 20% of the target's DEF.",
+   "icon_url": "/godforge/abilities/mulan/ICON_Mulan_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "240%ATK",
+    "240%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increase this Hero’s CDMG by 3% (stacking up to 10 times)",
+     "upgrade_description": "Also increase this Hero’s CDMG by 3% (stacking up to 10 times)"
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Typhoon Force",
+   "description": "Attack 1 enemy 620%ATK. Increases the damage inflicted by 10% for each living enemy. Place [Vanish] on this hero for 2 turns.",
+   "icon_url": "/godforge/abilities/mulan/ICON_Mulan_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "620%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "28% CDMG% in Dungeon Battles",
+   "icon_url": "/godforge/abilities/mulan/ICON_Leader_CriticalDamage.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Raging Fire Within",
+   "description": "Increases the chance to Strong Hit by 20% when inflicting damage under [Vanish].",
+   "icon_url": "/godforge/abilities/mulan/ICON_Mulan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If this Hero is under Vanish and would be defeated, prevents this hero’s death and gain an Extra Turn.",
+     "upgrade_description": "If this Hero is under [Vanish] and would be defeated, prevents this hero’s death and gain an Extra Turn."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Dark Moon",
+   "description": "Attack 1 enemy 3 times 245%ATK. Each hit has a 40% chance to place [Drain II] and [Hex II] on the target for 2 turns.\n\nIf the target is defeated, decrease this hero’s Divinity cost by 10% (stacking up to 3 times).",
+   "icon_url": "/godforge/abilities/mulan/ICON_Mulan_Ultimate.webp",
+   "divinity_cost": 2700,
+   "damage_formula": [
+    "245%ATK",
+    "245%ATK",
+    "245%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Drain II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Drain II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Drain II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Hex II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 40,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "If this hero is under Vanish, ignore 30% of the target's RES.",
+     "upgrade_description": "If this hero is under [Vanish], ignore 30% of the target's RES."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Raging Fire Within",
+   "description": "Increases the chance to Strong Hit by 10% when inflicting damage under [Vanish].",
+   "icon_url": "/godforge/abilities/mulan/ICON_Mulan_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

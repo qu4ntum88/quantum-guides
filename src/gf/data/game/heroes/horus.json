@@ -1,0 +1,313 @@
+{
+ "id": 3,
+ "slug": "horus",
+ "name": "Horus",
+ "title": "Eye of Aaru",
+ "summary": "Taunt your foes whilst mitigating critical damage alongside <style=\"Reference\">Isis</style>.",
+ "lore": "The Avenger, son of Ra and Isis, has become Aaru’s war leader since the Shattering. He leads his people and fellow gods against Omeyocan’s armies in the War of Pyramids, while still standing firm against Apophis and other forces of Chaos. These multi-front conflicts take their toll, and Horus worries that one might attain victory while he deals with the other.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Aaru",
+ "faction_icon": "/godforge/gf_heroes/factions/AARU.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Horus.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Horus_main.png",
+ "stats": {
+  "hp": 1380,
+  "atk": 64,
+  "def": 112,
+  "spd": 102,
+  "init": 98,
+  "acc": 20,
+  "res": 75,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 15
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 20
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "At the start of the wave, Place [Taunt] on all enemies for 1 turn.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "shield_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also increases the damage of this hero's next Core Ability by 3%.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Retaliates with the Basic Ability when an enemy attacks this hero.",
+   "skill_type": "Basic"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Havoc Force",
+   "description": "Attack 1 enemy 170%DEF+150%ATK with a 50% chance to place [Taunt] on the target for 1 turn. Also heal (70%DEF) this hero. If Isis is an ally, Isis is healed by the same amount.",
+   "icon_url": "/godforge/abilities/horus/ICON_Horus_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "170%DEF+150%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Retaliates with the Basic Ability when an enemy attacks this hero.",
+     "upgrade_description": "Retaliates with the Basic Ability when an enemy attacks this hero."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Falcon Strike",
+   "description": "Attack 1 enemy 245%DEF+215%ATK with a 75% chance to place [SPD Down II] and [Blunt II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/horus/ICON_Horus_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "245%DEF+215%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "70 ACC Arena Battles",
+   "icon_url": "/godforge/abilities/horus/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Falcon Surge",
+   "description": "When this hero is attacked by enemies under [Taunt], increase the Turn Meter of all allies by 10%.",
+   "icon_url": "/godforge/abilities/horus/ICON_Horus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also increases the damage of this hero's next Core Ability by 3%.",
+     "upgrade_description": "Also increases the damage of this hero's next Core Ability by 3%."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Omniscient Eye",
+   "description": "Place [Shield] (300%DEF) on all allies. If Isis is an ally, this shield cannot be removed and is 30% stronger. Then has an 80% chance to place [Taunt] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/horus/ICON_Horus_Ultimate.webp",
+   "divinity_cost": 3050,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "At the start of the wave, Place Taunt on all enemies for 1 turn.",
+     "upgrade_description": "At the start of the wave, Place [Taunt] on all enemies for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Falcon Surge",
+   "description": "When this hero is attacked by enemies under [Taunt], increase the Turn Meter of all allies by 5%.",
+   "icon_url": "/godforge/abilities/horus/ICON_Horus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Taunt",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  }
+ ]
+}

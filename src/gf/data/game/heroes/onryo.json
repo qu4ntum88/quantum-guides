@@ -1,0 +1,278 @@
+{
+ "id": 182,
+ "slug": "onryo",
+ "name": "Onryo",
+ "title": "Vengeful Spirit",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Those who were badly wronged sometimes remain too restless for the afterlife, lingering in Izumo as dreadful ghosts. Their need for vengeance burns away who they once were, and often drives an onryo to harm the innocent, or even spawn disasters, in pursuit of its goals. The flow of aether throughout Ryven has made onryo far more common than they once were.",
+ "rarity": "Rare",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Onryo.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Onryo_main.png",
+ "stats": {
+  "hp": 1080,
+  "atk": 68,
+  "def": 74,
+  "spd": 93,
+  "init": 92,
+  "acc": 20,
+  "res": 15,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.04,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 3
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 250
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.025,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.075,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Enemies under Curse receive 25% reduced Turn Meter and Divinity from allies.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Torrent of Calamity",
+   "description": "Attack 1 enemy 175%ATK 2 times. Each hit has a 50% chance to place [Vulnerable II] on the target for 2 turns. If the target is under Curse, each hit also has a 35% chance to spread 1 random Debuff to all enemies.",
+   "icon_url": "/godforge/abilities/onryo/ICON_Onryo_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "175%ATK",
+    "175%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Vulnerable II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vulnerable II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Cursed Presence",
+   "description": "Attack all enemies 455%ATK with a 75% chance to place [Curse I] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/onryo/ICON_Onryo_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "455%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "Curse I",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Haunting Terror",
+   "description": "When attacking an enemy under Curse, trigger 1 random effect on the target:\nPlace [Despair], [Sleep], [Confuse], [Terrify], [Corrupt], or [Hex I]  on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/onryo/ICON_Onryo_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Enemies under Curse receive 25% reduced Turn Meter and Divinity from allies.",
+     "upgrade_description": "Enemies under Curse receive 25% reduced Turn Meter and Divinity from allies."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Wrath of the Dead",
+   "description": "Attack all enemies 260%ATK then decrease each target’s Divinity by 5%. Will decrease by a further 5% for each Debuff or Disable on the target. If a target is under Curse, then increase the duration of Curse by 1 turn.",
+   "icon_url": "/godforge/abilities/onryo/ICON_Onryo_Ultimate.webp",
+   "divinity_cost": 3325,
+   "damage_formula": [
+    "260%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Haunting Terror",
+   "description": "When attacking an enemy under Curse, has a 50% chance to trigger 1 random effect on the target:\nPlace [Despair], [Sleep], [Confuse], [Terrify], [Corrupt], or [Hex I] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/onryo/ICON_Onryo_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

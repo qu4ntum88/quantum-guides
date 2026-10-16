@@ -1,0 +1,310 @@
+{
+ "id": 37,
+ "slug": "quetzalcoatl",
+ "name": "Quetzalcoatl",
+ "title": "Star of Dawn",
+ "summary": "Bring your allies back from the brink of death and boost their Turn Meters",
+ "lore": "God of light, life, and wisdom, Quetzalcoatl—the Feathered Serpent—stands preeminent in Omeyocan. He understands the War of Pyramids is a waste of effort and lives, but until he figures out how to convince Aaru’s pantheon to adopt the ways of Omeyocan, he believes neither the cosmos nor his brethren would permit him to stop it.",
+ "rarity": "Legendary",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Quetzalcoatl.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Quetzalcoatl_main.png",
+ "stats": {
+  "hp": 1500,
+  "atk": 58,
+  "def": 100,
+  "spd": 110,
+  "init": 100,
+  "acc": 15,
+  "res": 40,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 400
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Increase SPD of each target by 10 (stacking up to 3 times).",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Will place [Petrify] on any attack which cannot be resisted.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Revives all allies instead.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Serpent Fangs",
+   "description": "Attack 1 enemy 345%ATK+50%RES and heal 10%MAX HP all allies. If the attack is a Strong Hit, place [Petrify] on the target for 1 turn.",
+   "icon_url": "/godforge/abilities/quetzalcoatl/ICON_Quetzalcoatl_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "345%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Petrify",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Petrify",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Will place Petrify on any attack which cannot be resisted.",
+     "upgrade_description": "Will place [Petrify] on any attack which cannot be resisted."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Soaring Currents",
+   "description": "Increase the Turn Meter of all allies by 20% and then place [SPD Up II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/quetzalcoatl/ICON_Quetzalcoatl_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "SPD Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Increase SPD of each target by 10 (stacking up to 3 times).",
+     "upgrade_description": "Increase SPD of each target by 10 (stacking up to 3 times)."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "21% SPD in All Battles",
+   "icon_url": "/godforge/abilities/quetzalcoatl/ICON_Leader_Speed.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Age of Rebirth",
+   "description": "When this hero is defeated, revive 2 allies with 50% HP and increase their FTH by 5% (stacking up to 3 times). Occurs once per wave.",
+   "icon_url": "/godforge/abilities/quetzalcoatl/ICON_Quetzalcoatl_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Revives all allies instead.",
+     "upgrade_description": "Revives all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Light of Knowledge",
+   "description": "Place [FTH Up II], and [ACC Up II] on all allies for 2 turns.\n\nAlso, increase the Turn Meter of the ally with the highest Turn Meter by 50% when this hero’s Divinity reaches 100%.",
+   "icon_url": "/godforge/abilities/quetzalcoatl/ICON_Quetzalcoatl_Ultimate.webp",
+   "divinity_cost": 2250,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "FTH Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "ACC Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Age of Rebirth",
+   "description": "When this hero is defeated, revive 1 ally with 50% HP and increase their FTH by 5% (stacking up to 3 times). Occurs once per wave.",
+   "icon_url": "/godforge/abilities/quetzalcoatl/ICON_Quetzalcoatl_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

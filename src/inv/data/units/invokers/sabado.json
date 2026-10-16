@@ -1,0 +1,549 @@
+{
+ "slug": "sabado",
+ "kind": "Invoker",
+ "name": "Sabado",
+ "faction": "Freeborn",
+ "rarity": "Rare",
+ "class": "Ranged Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Duthra",
+ "gender": "Male",
+ "role": "Ranged Attacker",
+ "portrait": "/invokers/units/invokers/sabado/portrait.webp",
+ "fullArt": "/invokers/units/invokers/sabado/full.webp",
+ "stats": {
+  "base": {
+   "Health": "440",
+   "Attack": "69",
+   "Defense": "46",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "95"
+  },
+  "max": {
+   "Health": "5,104",
+   "Attack": "930",
+   "Defense": "527",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "120"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/sabado/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+134",
+    "titan": "+73"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 23% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 24 damage.\nDamage: 35% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 31 damage.\nDamage: 45% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 39 damage.\nDamage: 57% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 24 damage.\nDamage: 35.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 24.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 37.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 33 damage.\nDamage: 47.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 60.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 26 damage.\nDamage: 37.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 25.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 27 damage.\nDamage: 39.2% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 50.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 44 damage.\nDamage: 63.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 27 damage.\nDamage: 39.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 28.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 29 damage.\nDamage: 42.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 69.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 30 damage.\nDamage: 43.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 21 damage.\nDamage: 30.8% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 42 damage.\nDamage: 60.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 53 damage.\nDamage: 76.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 33 damage.\nDamage: 47.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 23 damage.\nDamage: 33.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 35 damage.\nDamage: 50.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 64.8% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 57 damage.\nDamage: 82.1% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 35 damage.\nDamage: 51.1% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 25 damage.\nDamage: 35.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 38 damage.\nDamage: 54.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 70.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 61 damage.\nDamage: 88.9% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 38 damage.\nDamage: 55.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 26 damage.\nDamage: 38.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 40 damage.\nDamage: 58.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 52 damage.\nDamage: 74.7% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 65 damage.\nDamage: 94.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 41 damage.\nDamage: 58.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 28 damage.\nDamage: 40.9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 43 damage.\nDamage: 62.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 55 damage.\nDamage: 80.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 70 damage.\nDamage: 101.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 44 damage.\nDamage: 63.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 30 damage.\nDamage: 43.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 45 damage.\nDamage: 65.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 58 damage.\nDamage: 84.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 74 damage.\nDamage: 107.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 46 damage.\nDamage: 66.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 32 damage.\nDamage: 46% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 48 damage.\nDamage: 70% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 62 damage.\nDamage: 90% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 79 damage.\nDamage: 114% ATK\n#5 Selects 1 enemy up to 14m away. Attacks the 8 enemies with the lowest current HP in a 3.5m radius around the target, from a distance of 9m, dealing 49 damage.\nDamage: 71% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Throwing Knife",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sabado/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 97 damage.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 102 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 108 damage.\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 118 damage.\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 129 damage.\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 139 damage.\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 151 damage.\n#1 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 160 damage.\n#1 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 172 damage.\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 182 damage.\n#1 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 193 damage.\n#1 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Bullseye!",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sabado/skills/2.webp",
+   "effects": [
+    {
+     "label": "Crit Rate Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Crit Rate stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 195 damage. Casts a [15% Crit Rate Up] buff on Sabado, lasting 10s if the target has no buffs.\n#1 Damage: 282.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 207 damage. Casts a [20% Crit Rate Up] buff on Sabado, lasting 10s if the target has no buffs.\n#1 Damage: 299.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 218 damage. Casts a [20% Crit Rate Up] buff on Sabado, lasting 10s if the target has no buffs.\n#1 Damage: 316.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 238 damage. Casts a [20% Crit Rate Up] buff on Sabado, lasting 11s if the target has no buffs.\n#1 Damage: 344.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 261 damage. Casts a [20% Crit Rate Up] buff on Sabado, lasting 11s if the target has no buffs.\n#1 Damage: 378.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 281 damage. Casts a [25% Crit Rate Up] buff on Sabado, lasting 11s if the target has no buffs.\n#1 Damage: 406.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 304 damage. Casts a [25% Crit Rate Up] buff on Sabado, lasting 11s if the target has no buffs.\n#1 Damage: 440.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 324 damage. Casts a [25% Crit Rate Up] buff on Sabado, lasting 13s if the target has no buffs.\n#1 Damage: 469% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 347 damage. Casts a [25% Crit Rate Up] buff on Sabado, lasting 13s if the target has no buffs.\n#1 Damage: 502.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 366 damage. Casts a [30% Crit Rate Up] buff on Sabado, lasting 13s if the target has no buffs.\n#1 Damage: 531.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 390 damage. Casts a [30% Crit Rate Up] buff on Sabado, lasting 15s if the target has no buffs.\n#1 Damage: 565% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Booster Shell",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sabado/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+50",
+    "titan": "+27"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 202 damage. Extends the duration of 1 random buff on Sabado by 4s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 4s instead.\n#1 Damage: 292.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 214 damage. Extends the duration of 1 random buff on Sabado by 4.5s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 4.5s instead.\n#1 Damage: 310% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 226 damage. Extends the duration of 1 random buff on Sabado by 4.5s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 4.5s instead.\n#1 Damage: 327.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 246 damage. Extends the duration of 1 random buff on Sabado by 5s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 5s instead.\n#1 Damage: 356.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 270 damage. Extends the duration of 1 random buff on Sabado by 5s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 5s instead.\n#1 Damage: 392% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 291 damage. Extends the duration of 1 random buff on Sabado by 6s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 6s instead.\n#1 Damage: 421.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 315 damage. Extends the duration of 1 random buff on Sabado by 6s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 6s instead.\n#1 Damage: 456.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 335 damage. Extends the duration of 1 random buff on Sabado by 7s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 7s instead.\n#1 Damage: 485.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 359 damage. Extends the duration of 1 random buff on Sabado by 7s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 7s instead.\n#1 Damage: 520.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 379 damage. Extends the duration of 1 random buff on Sabado by 8s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 8s instead.\n#1 Damage: 549.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 404 damage. Extends the duration of 1 random buff on Sabado by 8s. \nIf the hit lands as a critical hit Extends the duration of up to 2 random buffs on Sabado by 8s instead.\n#1 Damage: 585% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Double Tap",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/sabado/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 169 damage per hit. Sabado gains Titan Mana (8 per debuff on the target + 80) on each hit.\n#1 Damage: 245% ATK\n#2 Damage: 245% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 179 damage per hit. Sabado gains Titan Mana (8 per debuff on the target + 90) on each hit.\n#1 Damage: 259.7% ATK\n#2 Damage: 259.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 189 damage per hit. Sabado gains Titan Mana (8 per debuff on the target + 100) on each hit.\n#1 Damage: 274.4% ATK\n#2 Damage: 274.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 206 damage per hit. Sabado gains Titan Mana (10 per debuff on the target + 100) on each hit.\n#1 Damage: 298.9% ATK\n#2 Damage: 298.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 227 damage per hit. Sabado gains Titan Mana (12 per debuff on the target + 100) on each hit.\n#1 Damage: 328.3% ATK\n#2 Damage: 328.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 243 damage per hit. Sabado gains Titan Mana (12 per debuff on the target + 110) on each hit.\n#1 Damage: 352.8% ATK\n#2 Damage: 352.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,075 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 264 damage per hit. Sabado gains Titan Mana (12 per debuff on the target + 120) on each hit.\n#1 Damage: 382.2% ATK\n#2 Damage: 382.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 281 damage per hit. Sabado gains Titan Mana (14 per debuff on the target + 120) on each hit.\n#1 Damage: 406.7% ATK\n#2 Damage: 406.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 301 damage per hit. Sabado gains Titan Mana (16 per debuff on the target + 140) on each hit.\n#1 Damage: 436.1% ATK\n#2 Damage: 436.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,050 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 318 damage per hit. Sabado gains Titan Mana (16 per debuff on the target + 160) on each hit.\n#1 Damage: 460.6% ATK\n#2 Damage: 460.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,000 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 338 damage per hit. Sabado gains Titan Mana (20 per debuff on the target + 160) on each hit.\n#1 Damage: 490% ATK\n#2 Damage: 490% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Blight",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Wanted on every continent, with an unpaid tab in every bar and a lover in every port, Sabado is the example if you looked up \"Freeborn\" in an Amaran dictionary. He's a capo in Vakia's mafia, known for providing \"protection\" for non-Freeborn ships in Freeport's main harbor. If you haven't paid your dues, expect an unmistakable set of burning bullet holes in the side of your ship.",
+ "ratings": {
+  "althar": "A",
+  "galvos": "B",
+  "hyxxis": "B",
+  "koltmos": "S",
+  "omnissi-astral": "B",
+  "omnissi-dark": "D",
+  "omnissi-earth": "B",
+  "omnissi-fire": "B",
+  "omnissi-light": "A+",
+  "omnissi-water": "C",
+  "omnissi-wind": "C",
+  "pentiax": "C",
+  "sakiel": "B",
+  "sorgott": "A+",
+  "ulgorim": "B",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "B",
+  "score": 44.6,
+  "lists": 16
+ }
+}

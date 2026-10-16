@@ -1,0 +1,288 @@
+{
+ "id": 18,
+ "slug": "musashi",
+ "name": "Musashi",
+ "title": "Victorious Duelist",
+ "summary": "Dual-wielding samurai who specializes in getting enemies to lower their guard in duels.",
+ "lore": "An impossibly skilled and eager swordsman in his youth, Musashi eventually found his taste for violence fading. He retreated to the practice of art, and to penning tomes of technique and philosophy. Now that he finds himself in a world of chaos and conflict, he wanders Izumo, taking in its beauty and hoping to put off his return to violence.",
+ "rarity": "Epic",
+ "affinity": "Cunning",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Cunning.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Musashi.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Musashi_main.png",
+ "stats": {
+  "hp": 1305,
+  "atk": 110,
+  "def": 80,
+  "spd": 95,
+  "init": 94,
+  "acc": 25,
+  "res": 25,
+  "initial_divinity": 450,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.07,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If the attack is not a Strong Hit, place [Vanish] on this hero for 1 turn.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "The third hit will also ignore [Shield], [Barrier], [Ward], and [Immortal].",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Sword Saint",
+   "description": "Attack 1 enemy 435%ATK. If the attack is a Strong Hit, place [Retaliate] on this hero for 1 turn.",
+   "icon_url": "/godforge/abilities/musashi/ICON_Musashi_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "435%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Vanish",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If the attack is not a Strong Hit, place Vanish on this hero for 1 turn.",
+     "upgrade_description": "If the attack is not a Strong Hit, place [Vanish] on this hero for 1 turn."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Agitating Blow",
+   "description": "Attack 1 enemy 440%ATK with a 50% chance to place [DEF Down II] on the target for 2 turns.\n\nIf the target’s ATK is lower than this hero’s ATK, repeat the attack against a random enemy.",
+   "icon_url": "/godforge/abilities/musashi/ICON_Musashi_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "440%ATK",
+    "440%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Earnest Heart, Straight Way",
+   "description": "Inflict 50% increased damage to enemies whose ATK is lower than this hero’s ATK.\n\nThis hero receives 20% reduced damage from enemies whose ATK is lower than this hero's ATK.",
+   "icon_url": "/godforge/abilities/musashi/ICON_Musashi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Two Heavens as One",
+   "description": "Place [Precision] on this hero for 1 turn, then attack 1 enemy 245%ATK 3 times. Each hit will ignore 20% of the target's DEF.",
+   "icon_url": "/godforge/abilities/musashi/ICON_Musashi_Ultimate.webp",
+   "divinity_cost": 2700,
+   "damage_formula": [
+    "245%ATK",
+    "245%ATK",
+    "245%ATK",
+    "245%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Precision",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "The third hit will also ignore Shield, Barrier, Ward, and Immortal.",
+     "upgrade_description": "The third hit will also ignore [Shield], [Barrier], [Ward], and [Immortal]."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Earnest Heart, Straight Way",
+   "description": "Inflict 25% increased damage to enemies whose ATK is lower than this hero’s ATK.\n\nThis hero receives 10% reduced damage from enemies whose ATK is lower than this hero's ATK.",
+   "icon_url": "/godforge/abilities/musashi/ICON_Musashi_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

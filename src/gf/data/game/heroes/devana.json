@@ -1,0 +1,287 @@
+{
+ "id": 222,
+ "slug": "devana",
+ "name": "Devana",
+ "title": "Woodland Huntress",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Goddess of the wilds, the hunt, and the moon, Devana is a figure of both veneration and fear, protection and terror. Her skills would prove a powerful advantage for Vyraj’s pantheon, but she has ignored Perun’s efforts at unification, focused instead on proving her superiority over other realms’ hunter deities—especially Artemis, whom Devana despises as a pretender to her own renown.",
+ "rarity": "Epic",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Devana.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Devana_main.png",
+ "stats": {
+  "hp": 1215,
+  "atk": 73,
+  "def": 78,
+  "spd": 96,
+  "init": 102,
+  "acc": 35,
+  "res": 20,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 7
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 350
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "strong_hit_chance_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also Retaliates when an enemy decreases this hero's Turn Meter.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Will attack all enemies instead.",
+   "skill_type": "Ultimate"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Huntress Omen",
+   "description": "Attack all enemies 195%ATK, then has a 35% chance to decrease the Turn Meter of each target by 20%.",
+   "icon_url": "/godforge/abilities/devana/ICON_Devana_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "195%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Storm of Arrows",
+   "description": "Attack all enemies 155%ATK 2 times, then has an 80% chance to place [ATK Down II] and [SPD Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/devana/ICON_Devana_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "155%ATK",
+    "155%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 80,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "40 ACC in All Battles",
+   "icon_url": "/godforge/abilities/devana/ICON_Leader_Accuracy.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Lingering Omen",
+   "description": "When an enemy increases the Turn Meter of an ally, retaliate against that enemy using the Basic Ability.",
+   "icon_url": "/godforge/abilities/devana/ICON_Devana_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 1,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also Retaliates when an enemy decreases this hero's Turn Meter.",
+     "upgrade_description": "Also Retaliates when an enemy decreases this hero's Turn Meter."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Verdant Silence",
+   "description": "Attack 1 enemy 490%ATK, then has an 80% chance to place [Lock Core] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/devana/ICON_Devana_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "490%ATK",
+    "350%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Lock Core",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Lock Core",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Will attack all enemies instead.",
+     "upgrade_description": "Will attack all enemies instead."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Lingering Omen",
+   "description": "When an enemy increases the Turn Meter of an ally, retaliate against that enemy using the Basic Ability.",
+   "icon_url": "/godforge/abilities/devana/ICON_Devana_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

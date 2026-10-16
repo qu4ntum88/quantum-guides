@@ -1,0 +1,495 @@
+{
+ "slug": "quelron",
+ "kind": "Titan",
+ "name": "Quelron",
+ "faction": "Freeborn",
+ "rarity": "Rare",
+ "class": null,
+ "element": null,
+ "soulSign": null,
+ "gender": null,
+ "role": "Tank",
+ "portrait": "/invokers/units/titans/quelron/portrait.webp",
+ "fullArt": "/invokers/units/titans/quelron/full.webp",
+ "stats": {
+  "base": {
+   "Bound Invoker's HP": "+30%",
+   "Bound Invoker's ATK": "+30%",
+   "Bound Invoker's DEF": "+30%",
+   "Bonus HP": "+510",
+   "Bonus ATK": "+39",
+   "Bonus DEF": "+55",
+   "Movement speed": "190"
+  },
+  "max": {
+   "Bound Invoker's HP": "+275%",
+   "Bound Invoker's ATK": "+275%",
+   "Bound Invoker's DEF": "+275%",
+   "Bonus HP": "+3,065",
+   "Bonus ATK": "+234",
+   "Bonus DEF": "+331",
+   "Movement speed": "190"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/titans/quelron/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+70",
+    "titan": "+38"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 26 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1s in a 10m radius.\nDamage: 67.5% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 28 damage. Increases the cooldown of a random Active Skill on the targets by 2s.\nAccuracy required for: Cooldown Increase\nDamage: 72.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 28 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.25s in a 10m radius.\nDamage: 71.5% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 30 damage. Increases the cooldown of a random Active Skill on the targets by 2s.\nAccuracy required for: Cooldown Increase\nDamage: 76.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 29 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.25s in a 10m radius.\nDamage: 75.6% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 32 damage. Increases the cooldown of a random Active Skill on the targets by 2.25s.\nAccuracy required for: Cooldown Increase\nDamage: 81.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 32 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.25s in a 10m radius.\nDamage: 82.4% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 34 damage. Increases the cooldown of a random Active Skill on the targets by 2.5s.\nAccuracy required for: Cooldown Increase\nDamage: 88.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 35 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.5s in a 10m radius.\nDamage: 90.5% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 38 damage. Increases the cooldown of a random Active Skill on the targets by 2.5s.\nAccuracy required for: Cooldown Increase\nDamage: 97.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 38 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.5s in a 10m radius.\nDamage: 97.2% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 41 damage. Increases the cooldown of a random Active Skill on the targets by 2.75s.\nAccuracy required for: Cooldown Increase\nDamage: 104.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 41 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.5s in a 10m radius.\nDamage: 105.3% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 44 damage. Increases the cooldown of a random Active Skill on the targets by 3s.\nAccuracy required for: Cooldown Increase\nDamage: 113.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 44 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.75s in a 10m radius.\nDamage: 112.1% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 47 damage. Increases the cooldown of a random Active Skill on the targets by 3s.\nAccuracy required for: Cooldown Increase\nDamage: 120.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 47 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 1.75s in a 10m radius.\nDamage: 120.2% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 50 damage. Increases the cooldown of a random Active Skill on the targets by 3.5s.\nAccuracy required for: Cooldown Increase\nDamage: 129.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 49 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 2s in a 10m radius.\nDamage: 126.9% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 53 damage. Increases the cooldown of a random Active Skill on the targets by 3.5s.\nAccuracy required for: Cooldown Increase\nDamage: 136.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 2m, 2 times, dealing 53 damage per hit. Each hit reduces the cooldown of a random Active Skill on 1 random ally by 2.5s in a 10m radius.\nDamage: 135% ATK\n#2 Selects 1 enemy up to 14m away. Attacks 8 enemies in a 5m radius around the target, from a distance of 2m, dealing 57 damage. Increases the cooldown of a random Active Skill on the targets by 4s.\nAccuracy required for: Cooldown Increase\nDamage: 145% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Deep Might",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/titans/quelron/skills/1.webp",
+   "effects": [
+    {
+     "label": "Weaken",
+     "group": "Debuffs",
+     "description": "Increase the damage the recipient takes from all attacks by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+29",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [15% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 15%. Attacks the targets from a distance of 2m, dealing 57 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 145% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [17% Weaken] debuff on the targets, lasting 10s, increasing all damage taken by 17%. Attacks the targets from a distance of 2m, dealing 60 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 153.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [17% Weaken] debuff on the targets, lasting 11s, increasing all damage taken by 17%. Attacks the targets from a distance of 2m, dealing 63 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 162.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [17% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 17%. Attacks the targets from a distance of 2m, dealing 69 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 176.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [19% Weaken] debuff on the targets, lasting 12s, increasing all damage taken by 19%. Attacks the targets from a distance of 2m, dealing 76 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 194.3% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [19% Weaken] debuff on the targets, lasting 13s, increasing all damage taken by 19%. Attacks the targets from a distance of 2m, dealing 81 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 208.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [19% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 19%. Attacks the targets from a distance of 2m, dealing 88 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 226.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [21% Weaken] debuff on the targets, lasting 14s, increasing all damage taken by 21%. Attacks the targets from a distance of 2m, dealing 94 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 240.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [21% Weaken] debuff on the targets, lasting 15s, increasing all damage taken by 21%. Attacks the targets from a distance of 2m, dealing 101 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 258.1% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [23% Weaken] debuff on the targets, lasting 15s, increasing all damage taken by 23%. Attacks the targets from a distance of 2m, dealing 106 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 272.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Pushes 8 enemies in a 7m semicircle in front of Quelron 10m away. Then, casts a [25% Weaken] debuff on the targets, lasting 18s, increasing all damage taken by 25%. Attacks the targets from a distance of 2m, dealing 113 damage.\nAccuracy required for: Push, Weaken\n#1 Damage: 290% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Eldritch Heresy",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/titans/quelron/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 29 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 29 damage. Removes a random buff from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 75% ATK\n#2 Damage: 75% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 31 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 31 damage. Removes a random buff from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 79.5% ATK\n#2 Damage: 79.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 33 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 33 damage. Removes a random buff from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 84% ATK\n#2 Damage: 84% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 36 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 36 damage. Removes 2 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 91.5% ATK\n#2 Damage: 91.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 39 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 39 damage. Removes 2 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 100.5% ATK\n#2 Damage: 100.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 42 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 42 damage. Removes 2 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 108% ATK\n#2 Damage: 108% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 46 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 46 damage. Removes 3 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 117% ATK\n#2 Damage: 117% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 49 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 49 damage. Removes 3 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 124.5% ATK\n#2 Damage: 124.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 52 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 52 damage. Removes 4 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 133.5% ATK\n#2 Damage: 133.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "14s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 55 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 55 damage. Removes 4 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 141% ATK\n#2 Damage: 141% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "12s",
+     "cost": "0",
+     "text": "Charges through a 12x6m path towards the furthest enemy, damaging each enemy hit, dealing 59 damage. \nAttacks 8 enemies in a 10m radius around Quelron, from a distance of 12m, dealing 59 damage. Removes 5 random buffs from the targets.\nAccuracy required for: Buff Removal\n#1 Damage: 150% ATK\n#2 Damage: 150% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Invokation Effect",
+   "type": "Anima In",
+   "label": "Invokation",
+   "aoe": true,
+   "icon": "/invokers/units/titans/quelron/skills/3.webp",
+   "effects": [
+    {
+     "label": "Shield",
+     "group": "Buffs",
+     "description": "Gives the recipient a HP Shield. All damage the recipient takes will be subtracted from the Shield first, before their HP.Each Skill can only cast one Shield at a time on each recipient."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 91 damage. Heals 8 allies in a 20m radius around Quelron, restoring (20% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 10s. The [Shield] is equal to (20% * Target's MAX HP).\n#1 Damage: 232.5% ATK\n#2 Heal: 20% * Target's MAX HP\n#3 Shield: 20% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 8s, protecting the target against 1 debuff."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 96 damage. Heals 8 allies in a 20m radius around Quelron, restoring (20% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 10s. The [Shield] is equal to (22% * Target's MAX HP).\n#1 Damage: 246.4% ATK\n#2 Heal: 20% * Target's MAX HP\n#3 Shield: 22% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 9s, protecting the target against 1 debuff."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 102 damage. Heals 8 allies in a 20m radius around Quelron, restoring (20% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 11s. The [Shield] is equal to (22% * Target's MAX HP).\n#1 Damage: 260.4% ATK\n#2 Heal: 20% * Target's MAX HP\n#3 Shield: 22% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 10s, protecting the target against 1 debuff."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 111 damage. Heals 8 allies in a 20m radius around Quelron, restoring (25% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 11s. The [Shield] is equal to (24% * Target's MAX HP).\n#1 Damage: 283.7% ATK\n#2 Heal: 25% * Target's MAX HP\n#3 Shield: 24% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 10s, protecting the target against 1 debuff."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 122 damage. Heals 8 allies in a 20m radius around Quelron, restoring (25% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 12s. The [Shield] is equal to (24% * Target's MAX HP).\n#1 Damage: 311.6% ATK\n#2 Heal: 25% * Target's MAX HP\n#3 Shield: 24% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 11s, protecting the target against 1 debuff."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 131 damage. Heals 8 allies in a 20m radius around Quelron, restoring (25% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 12s. The [Shield] is equal to (26% * Target's MAX HP).\n#1 Damage: 334.8% ATK\n#2 Heal: 25% * Target's MAX HP\n#3 Shield: 26% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 11s, protecting the target against 1 debuff."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 141 damage. Heals 8 allies in a 20m radius around Quelron, restoring (30% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 14s. The [Shield] is equal to (26% * Target's MAX HP).\n#1 Damage: 362.7% ATK\n#2 Heal: 30% * Target's MAX HP\n#3 Shield: 26% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 11s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 151 damage. Heals 8 allies in a 20m radius around Quelron, restoring (30% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 14s. The [Shield] is equal to (28% * Target's MAX HP).\n#1 Damage: 386% ATK\n#2 Heal: 30% * Target's MAX HP\n#3 Shield: 28% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 12s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 161 damage. Heals 8 allies in a 20m radius around Quelron, restoring (30% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 16s. The [Shield] is equal to (28% * Target's MAX HP).\n#1 Damage: 413.9% ATK\n#2 Heal: 30% * Target's MAX HP\n#3 Shield: 28% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 13s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 170 damage. Heals 8 allies in a 20m radius around Quelron, restoring (30% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 16s. The [Shield] is equal to (30% * Target's MAX HP).\n#1 Damage: 437.1% ATK\n#2 Heal: 30% * Target's MAX HP\n#3 Shield: 30% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 14s, protecting the target against 2 debuffs."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "0s",
+     "cost": "3,000 titan mana",
+     "text": "INVOKATION\nAttacks 8 enemies in a 15m radius around Quelron, dealing 181 damage. Heals 8 allies in a 20m radius around Quelron, restoring (35% * Target's MAX HP) HP. Casts a [Shield] buff on the targets, lasting 18s. The [Shield] is equal to (35% * Target's MAX HP).\n#1 Damage: 465% ATK\n#2 Heal: 35% * Target's MAX HP\n#3 Shield: 35% * Target's MAX HP\nINVOKATION END\nRemoves all debuffs from the Bound Invoker. Then, casts an [Immunity] buff on the bound Invoker, lasting 14s, protecting the target against 3 debuffs."
+    }
+   ]
+  },
+  {
+   "name": "RES Bonus",
+   "type": "Bound Effect",
+   "label": "Bound Effect",
+   "aoe": false,
+   "icon": "/invokers/units/titans/quelron/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +52 Resistance."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +57.2 Resistance."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +62.4 Resistance."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +72.8 Resistance."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +83.2 Resistance."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +93.6 Resistance."
+    },
+    {
+     "level": 7,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "While this Titan is bound, always active: +104 Resistance."
+    }
+   ]
+  }
+ ],
+ "tolerances": [],
+ "corruptions": [],
+ "bio": "The Freeborn fear nothing save for the sea they claim to protect – or, rather, what lies beneath it. The beasts in the depths strike fear into even the hardiest pirates, so the Freeborn sought an answer: Quelron, a monster that can face the dark ocean, and can triumph.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "D",
+  "omnissi-dark": "D",
+  "omnissi-earth": "D",
+  "omnissi-fire": "D",
+  "omnissi-light": "D",
+  "omnissi-water": "D",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "D",
+  "ulgorim": "D",
+  "yskara": "D"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 14.3,
+  "lists": 16
+ }
+}

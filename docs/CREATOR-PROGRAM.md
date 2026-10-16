@@ -104,6 +104,19 @@ Already done — the migration `creator_program_roles_and_tier_lists` created
 and added `status` / `author_user_id` columns to `guides` and `infographics`
 (every existing row was set to `approved`, so nothing already published changed).
 
+**Godforge / Void Hunters official tiers (applied 2026-10-16, migration
+`official_tiers_godforge_void_hunters`):** `official_tiers.entity_type` accepts `gf_hero` and
+`vh_hunter` as well as `champion` / `legacy`:
+
+```sql
+alter table public.official_tiers drop constraint official_tiers_entity_type_check;
+alter table public.official_tiers add constraint official_tiers_entity_type_check
+  check (entity_type in ('champion', 'legacy', 'gf_hero', 'vh_hunter'));
+```
+
+Units not saved yet show their rarity seed (or the `tier` field in the JSON). A new game's
+list needs its type added to this constraint the same way.
+
 Public-read RLS is on for tier lists and official tiers. `role_applications` has
 **no** read policy at all — it holds applicant emails and is only ever read
 through the admin-gated API using the service-role key.

@@ -1,0 +1,326 @@
+{
+ "id": 67,
+ "slug": "chernobog",
+ "name": "Chernobog",
+ "title": "Bleak Anathema",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Chernobog is the avatar of disaster and ill fortune. Harm follows in his wake, and he delights in the suffering he brings. Fighting for Vyraj in his own way, Chernobog extends his hand into other Realms. Bad luck surges beneath his gaze, and he has raised monsters and spirits to sally forth in his name, carrying his powers of mischance with them.",
+ "rarity": "Legendary",
+ "affinity": "Wrath",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wrath.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Vyraj",
+ "faction_icon": "/godforge/gf_heroes/factions/VYRAJ.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Chernobog.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Chernobog_main.png",
+ "stats": {
+  "hp": 1275,
+  "atk": 116,
+  "def": 94,
+  "spd": 102,
+  "init": 95,
+  "acc": 45,
+  "res": 25,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 20
+  },
+  {
+   "rank": 5,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 16
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Place [Banish] on enemies defeated by this ability for 2.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Phoenix] on this hero for 1 turn which does not reduce on turn.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "After 5 enemy turns, if this hero is defeated, revive this hero with 100% HP and Turn Meter. If Belobog is an ally, remove [Banish] and [Block Revive] before reviving.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Law of Misfortune",
+   "description": "Attack 1 420%ATK enemy with a 50% chance to place [Terrify] on the target for 2 turns. If this hero joins an attack or [Retaliate]'s, attack all enemies 420%ATK instead. Attacks ignore [Intercept] and [Charm].",
+   "icon_url": "/godforge/abilities/chernobog/ICON_Chernobog_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "420%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Terrify",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Dark Assault",
+   "description": "Attack 1 enemy 235%ATK 3 times. Place [Retaliate] on this hero for 2 turns. If Belobog is an ally, Buff cannot be removed or reduced. Also, if the enemy is defeated, increase this hero's Divinity by 100%.",
+   "icon_url": "/godforge/abilities/chernobog/ICON_Chernobog_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "235%ATK",
+    "235%ATK",
+    "235%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Retaliate",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Phoenix",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Phoenix on this hero for 1 turn which does not reduce on turn.",
+     "upgrade_description": "Place [Phoenix] on this hero for 1 turn which does not reduce on turn."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Imposing Presence",
+   "description": "After this hero joins an attack, gains an Extra Turn or Retaliates, this hero's next ability will ignore 15% of the target's DEF and ignore [Shield], [Barrier], [Immortal], [Ward] and DEF Up.",
+   "icon_url": "/godforge/abilities/chernobog/ICON_Chernobog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "After 5 enemy turns, if this hero is defeated, revive this hero with 100% HP and Turn Meter. If Belobog is an ally, remove Banish and Block Revive before reviving.",
+     "upgrade_description": "After 5 enemy turns, if this hero is defeated, revive this hero with 100% HP and Turn Meter. If Belobog is an ally, remove [Banish] and [Block Revive] before reviving."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Extinguish Light",
+   "description": "Attack 1 enemy 235%ATK 3 times. If the target's MAX HP is greater than this hero, each hit will inflict an additional 5% of the target's MAX HP. If the target's MAX HP is lower than this hero, each hit will always Strong Hit.",
+   "icon_url": "/godforge/abilities/chernobog/ICON_Chernobog_Ultimate.webp",
+   "divinity_cost": 2825,
+   "damage_formula": [
+    "235%ATK",
+    "235%ATK",
+    "235%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Banish",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Banish",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Banish",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Place Banish on enemies defeated by this ability for 2.",
+     "upgrade_description": "Place [Banish] on enemies defeated by this ability for 2."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Imposing Presence",
+   "description": "After this hero joins an attack, gains an Extra Turn or Retaliates, this hero's next ability will ignore 15% of the target's DEF and ignore [Shield], [Barrier], [Immortal], [Ward] and DEF Up.",
+   "icon_url": "/godforge/abilities/chernobog/ICON_Chernobog_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

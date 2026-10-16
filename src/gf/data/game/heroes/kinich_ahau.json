@@ -1,0 +1,311 @@
+{
+ "id": 203,
+ "slug": "kinich_ahau",
+ "name": "Kinich Ahau",
+ "title": "Lord of Judgement",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Kinich Ahau is the sun god of Omeyocan, though he is neither the first sun nor the last. His gaze conveys the right of rulership, including its knowledges, its responsibilities, and—especially now—its judgment. Some believe he assimilates kings after their deaths. Other tales claim his wrath will one day devour the world, a fear that has grown since the Shattering.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Defender",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Defender.png",
+ "archetype_description": "Reduce incoming damage by 1% for each piece of plate armor attuned",
+ "faction": "Omeyocan",
+ "faction_icon": "/godforge/gf_heroes/factions/OMEYOCAN.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Kinich Ahau.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Kinich Ahau_main.png",
+ "stats": {
+  "hp": 1500,
+  "atk": 72,
+  "def": 112,
+  "spd": 106,
+  "init": 97,
+  "acc": 25,
+  "res": 70,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 14
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 20
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "[Aetherburn II] cannot be removed.",
+   "skill_type": "Basic"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Increase the DEF of each ally when transferring a Debuff instead.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Sacred Brand",
+   "description": "Attack all enemies 90%DEF+90%ATK with a 50% chance to place [Aetherburn II] for 2 turns.",
+   "icon_url": "/godforge/abilities/kinich_ahau/ICON_KinichAhau_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "90%DEF+90%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Aetherburn II cannot be removed.",
+     "upgrade_description": "[Aetherburn II] cannot be removed."
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Unrelenting Authority",
+   "description": "Attack all enemies 125%DEF+130%ATK with a 75% chance to place [ATK Down II] and [Blunt II] for 2 turns.",
+   "icon_url": "/godforge/abilities/kinich_ahau/ICON_KinichAhau_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "125%DEF+130%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "ATK Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Blunt II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "35% DEF in Arena Battles",
+   "icon_url": "/godforge/abilities/kinich_ahau/ICON_Leader_Defence.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Solar Barrier",
+   "description": "When an ally is damaged by an enemy, transfer 50% of the damage to this hero and increase the damage of the ally’s next ability by 10%.",
+   "icon_url": "/godforge/abilities/kinich_ahau/ICON_KinichAhau_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Scorching Guardian",
+   "description": "Attack all enemies 125%DEF+130%ATK. Before attacking, place [Radiance II] and [RES Up II] on all allies for 2 turns and transfer Blaze and Aetherburn from all allies to this hero. If a Debuff is transferred, increase this hero’s DEF by 5% (stacking up to 6 times)",
+   "icon_url": "/godforge/abilities/kinich_ahau/ICON_KinichAhau_Ultimate.webp",
+   "divinity_cost": 3725,
+   "damage_formula": [
+    "125%DEF+130%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "RES Up II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Increase the DEF of each ally when transferring a Debuff instead.",
+     "upgrade_description": "Increase the DEF of each ally when transferring a Debuff instead."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Solar Barrier",
+   "description": "When an ally is damaged by Blaze or Aetherburn, reduce the effectiveness by 25% and increase the damage of the next hero’s ability by 5%.",
+   "icon_url": "/godforge/abilities/kinich_ahau/ICON_KinichAhau_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

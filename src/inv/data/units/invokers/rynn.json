@@ -1,0 +1,543 @@
+{
+ "slug": "rynn",
+ "kind": "Invoker",
+ "name": "Rynn",
+ "faction": "Lightseekers",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Light",
+ "soulSign": "Sign of Duthra",
+ "gender": "Female",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/rynn/portrait.webp",
+ "fullArt": "/invokers/units/invokers/rynn/full.webp",
+ "stats": {
+  "base": {
+   "Health": "550",
+   "Attack": "61",
+   "Defense": "44",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "6",
+   "Instinct": "5",
+   "Run speed": "94"
+  },
+  "max": {
+   "Health": "6,380",
+   "Attack": "811",
+   "Defense": "502",
+   "Critical rate": "5%",
+   "Critical damage": "70%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "7",
+   "Skill recovery": "0",
+   "Mana generation": "38",
+   "Instinct": "47",
+   "Run speed": "119"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rynn/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+61"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 22% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 34.5% ATK\n#3 Attacks 1 enemy, dealing 28 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 58% ATK\n#5 Attacks 1 enemy, dealing 43 damage.\nDamage: 70% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 23.3% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 36.6% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 61.5% ATK\n#5 Attacks 1 enemy, dealing 45 damage.\nDamage: 74.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 24.6% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 38.6% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 40 damage.\nDamage: 65% ATK\n#5 Attacks 1 enemy, dealing 48 damage.\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 26.8% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 42.1% ATK\n#3 Attacks 1 enemy, dealing 34 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 43 damage.\nDamage: 70.8% ATK\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 85.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 29.5% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 46.2% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 47 damage.\nDamage: 77.7% ATK\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 93.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 31.7% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 49.7% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 83.5% ATK\n#5 Attacks 1 enemy, dealing 61 damage.\nDamage: 100.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 34.3% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 53.8% ATK\n#3 Attacks 1 enemy, dealing 44 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 90.5% ATK\n#5 Attacks 1 enemy, dealing 67 damage.\nDamage: 109.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 36.5% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 57.3% ATK\n#3 Attacks 1 enemy, dealing 47 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 59 damage.\nDamage: 96.3% ATK\n#5 Attacks 1 enemy, dealing 71 damage.\nDamage: 116.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 39.2% ATK\n#2 Attacks 1 enemy, dealing 37 damage.\nDamage: 61.4% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 103.2% ATK\n#5 Attacks 1 enemy, dealing 76 damage.\nDamage: 124.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 41.4% ATK\n#2 Attacks 1 enemy, dealing 40 damage.\nDamage: 64.9% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 67 damage.\nDamage: 109% ATK\n#5 Attacks 1 enemy, dealing 80 damage.\nDamage: 131.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 44% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 69% ATK\n#3 Attacks 1 enemy, dealing 56 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 71 damage.\nDamage: 116% ATK\n#5 Attacks 1 enemy, dealing 85 damage.\nDamage: 140% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Show of Discipline",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rynn/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+45",
+    "titan": "+25"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 79 damage.\n#1 Damage: 130% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 84 damage.\n#1 Damage: 137.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 145.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 97 damage.\n#1 Damage: 158.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 106 damage.\n#1 Damage: 174.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 114 damage.\n#1 Damage: 187.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 124 damage.\n#1 Damage: 202.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 132 damage.\n#1 Damage: 215.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 141 damage.\n#1 Damage: 231.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 149 damage.\n#1 Damage: 244.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 159 damage.\n#1 Damage: 260% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Show of Might",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/rynn/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+57",
+    "titan": "+31"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 166 damage. Damage increases by 5% per buff on Rynn, limited up to +50% damage.\n#1 Damage: 272.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 176 damage. Damage increases by 5.5% per buff on Rynn, limited up to +50% damage.\n#1 Damage: 288.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 186 damage. Damage increases by 5.5% per buff on Rynn, limited up to +60% damage.\n#1 Damage: 305.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 203 damage. Damage increases by 6% per buff on Rynn, limited up to +60% damage.\n#1 Damage: 332.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 223 damage. Damage increases by 6.5% per buff on Rynn, limited up to +60% damage.\n#1 Damage: 365.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 239 damage. Damage increases by 6.5% per buff on Rynn, limited up to +70% damage.\n#1 Damage: 392.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 259 damage. Damage increases by 7% per buff on Rynn, limited up to +70% damage.\n#1 Damage: 425.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 276 damage. Damage increases by 7.5% per buff on Rynn, limited up to +80% damage.\n#1 Damage: 452.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 296 damage. Damage increases by 8% per buff on Rynn, limited up to +80% damage.\n#1 Damage: 485% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 313 damage. Damage increases by 9% per buff on Rynn, limited up to +80% damage.\n#1 Damage: 512.3% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 332 damage. Damage increases by 10% per buff on Rynn, limited up to +100% damage.\n#1 Damage: 545% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Show of Truth",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/rynn/skills/3.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+82",
+    "titan": "+45"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 85 damage.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 91 damage.\n#1 Damage: 148.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 96 damage.\n#1 Damage: 156.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 104 damage.\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 114 damage.\n#1 Damage: 187.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 123 damage.\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 133 damage.\n#1 Damage: 218.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 142 damage.\n#1 Damage: 232.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 152 damage.\n#1 Damage: 249.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 161 damage.\n#1 Damage: 263.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "18s",
+     "cost": "0",
+     "text": "Attacks 8 enemies in a 4m semicircle in front of Rynn, dealing 171 damage.\n#1 Damage: 280% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Show of Glory",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/rynn/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 142 damage. Rynn gains 7 Ultimate Mana.\n#1 Damage: 232.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 150 damage. Rynn gains 7 Ultimate Mana.\n#1 Damage: 246.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 159 damage. Rynn gains 8 Ultimate Mana.\n#1 Damage: 260.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 173 damage. Rynn gains 8 Ultimate Mana.\n#1 Damage: 283.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 190 damage. Rynn gains 9 Ultimate Mana.\n#1 Damage: 311.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 204 damage. Rynn gains 9 Ultimate Mana.\n#1 Damage: 334.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 221 damage. Rynn gains 11 Ultimate Mana.\n#1 Damage: 362.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 235 damage. Rynn gains 13 Ultimate Mana.\n#1 Damage: 386% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 252 damage. Rynn gains 13 Ultimate Mana.\n#1 Damage: 413.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 267 damage. Rynn gains 15 Ultimate Mana.\n#1 Damage: 437.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 8 enemies in a 7m radius around the closest enemy, dealing 284 damage. Rynn gains 15 Ultimate Mana.\n#1 Damage: 465% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Mindfog",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "The Imperial Legions win their wars, no matter the cost. Rynn disagrees: to her, no warrior can ever sacrifice their honor, not even for victory. She disagreed so strongly, in fact, that her entire Legion changed its mind before she did.",
+ "ratings": {
+  "althar": "B",
+  "galvos": "C",
+  "hyxxis": "D",
+  "koltmos": "C",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "D",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "B",
+  "omnissi-wind": "C",
+  "pentiax": "E",
+  "sakiel": "C",
+  "sorgott": "C",
+  "ulgorim": "C",
+  "yskara": "B"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 27.7,
+  "lists": 16
+ }
+}

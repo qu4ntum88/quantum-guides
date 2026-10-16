@@ -261,7 +261,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
           <a href={`/games/void-hunters/hunters/${prev.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
             ← {prev.name}
           </a>
-          <a href="/games/void-hunters" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Hunter List</a>
+          <a href="/games/void-hunters/hunter-tier-list" style={{ color: 'var(--gold)', fontSize: '0.85rem' }}>Back to Hunter Tier List</a>
           <a href={`/games/void-hunters/hunters/${next.id}`} className="btn" style={{ padding: '0.5rem 1.25rem', background: 'var(--purple)', borderColor: 'var(--purple)', fontFamily: 'Unbounded, sans-serif', textTransform: 'uppercase', fontSize: '0.72rem' }}>
             {next.name} →
           </a>

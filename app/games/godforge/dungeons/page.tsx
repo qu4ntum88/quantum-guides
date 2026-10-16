@@ -1,6 +1,14 @@
 import fs from 'fs'
 import path from 'path'
+import { pageMeta } from '@/src/lib/seo'
+import WorldHero from '@/src/qgg/components/WorldHero'
 import '../game.css'
+
+export const metadata = pageMeta({
+  title: 'Godforge Dungeons: Every Dungeon & Boss Guide',
+  description: 'Every Godforge ascension and equipment dungeon: the boss, stage count, rewards and recommended heroes for each.',
+  path: '/games/godforge/dungeons',
+})
 
 type Dungeon = {
   id: number
@@ -39,20 +47,13 @@ export default function GodorgeDungeonsPage() {
   const equipment = dungeons.filter(d => d.type === 'equipment_dungeon')
 
   return (
-    <main style={{ '--game-accent': '#a855f7' } as React.CSSProperties}>
-      <section className="gh-hero">
-        <div className="container">
-          <p className="gh-overline">Dungeon Guides</p>
-          <h1 className="gh-hero-title">Godforge Dungeons</h1>
-          <p className="gh-hero-sub">
-            Boss guides, stage breakdowns, wave compositions, and reward information for all Ascension and Equipment dungeons.
-          </p>
-          <div className="gh-hero-divider" />
-          <div className="gh-hero-back">
-            <a href="/games/godforge" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← Back to Hub</a>
-          </div>
-        </div>
-      </section>
+    <main>
+      <WorldHero
+        world="godforge"
+        overline="Dungeon Guides"
+        title="Godforge Dungeons"
+        sub="Boss guides, stage breakdowns, wave compositions and reward information for every Ascension and Equipment dungeon."
+      />
 
       <section style={{ padding: '2.5rem 0 3rem' }}>
         <div className="container">

@@ -1,0 +1,555 @@
+{
+ "slug": "ortak-stormhammer",
+ "kind": "Invoker",
+ "name": "Ortak Stormhammer",
+ "faction": "Ironbands",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Dark",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/ortak-stormhammer/portrait.webp",
+ "fullArt": "/invokers/units/invokers/ortak-stormhammer/full.webp",
+ "stats": {
+  "base": {
+   "Health": "594",
+   "Attack": "53",
+   "Defense": "47",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "116"
+  },
+  "max": {
+   "Health": "6,998",
+   "Attack": "694",
+   "Defense": "545",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "116"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ortak-stormhammer/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+108",
+    "titan": "+59"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 11 damage.\nDamage: 21.5% ATK\n#2 Attacks 1 enemy, dealing 18 damage.\nDamage: 34% ATK\n#3 Attacks 1 enemy, dealing 24 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 30 damage.\nDamage: 57.5% ATK\n#5 Attacks 1 enemy, dealing 36 damage.\nDamage: 68.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 12 damage.\nDamage: 22.8% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 36% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 32 damage.\nDamage: 60.9% ATK\n#5 Attacks 1 enemy, dealing 38 damage.\nDamage: 72.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 24.1% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 38.1% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 34 damage.\nDamage: 64.4% ATK\n#5 Attacks 1 enemy, dealing 41 damage.\nDamage: 76.7% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 26.2% ATK\n#2 Attacks 1 enemy, dealing 22 damage.\nDamage: 41.5% ATK\n#3 Attacks 1 enemy, dealing 30 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 37 damage.\nDamage: 70.2% ATK\n#5 Attacks 1 enemy, dealing 44 damage.\nDamage: 83.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 28.8% ATK\n#2 Attacks 1 enemy, dealing 24 damage.\nDamage: 45.6% ATK\n#3 Attacks 1 enemy, dealing 33 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 41 damage.\nDamage: 77.1% ATK\n#5 Attacks 1 enemy, dealing 49 damage.\nDamage: 91.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 31% ATK\n#2 Attacks 1 enemy, dealing 26 damage.\nDamage: 49% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 44 damage.\nDamage: 82.8% ATK\n#5 Attacks 1 enemy, dealing 52 damage.\nDamage: 98.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 28 damage.\nDamage: 53% ATK\n#3 Attacks 1 enemy, dealing 38 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 89.7% ATK\n#5 Attacks 1 enemy, dealing 57 damage.\nDamage: 106.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 35.7% ATK\n#2 Attacks 1 enemy, dealing 30 damage.\nDamage: 56.4% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 51 damage.\nDamage: 95.4% ATK\n#5 Attacks 1 enemy, dealing 60 damage.\nDamage: 113.7% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 20 damage.\nDamage: 38.3% ATK\n#2 Attacks 1 enemy, dealing 32 damage.\nDamage: 60.5% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 54 damage.\nDamage: 102.3% ATK\n#5 Attacks 1 enemy, dealing 65 damage.\nDamage: 121.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 40.4% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 63.9% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 57 damage.\nDamage: 108.1% ATK\n#5 Attacks 1 enemy, dealing 68 damage.\nDamage: 128.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 43% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 68% ATK\n#3 Attacks 1 enemy, dealing 49 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 115% ATK\n#5 Attacks 1 enemy, dealing 73 damage.\nDamage: 137% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dark Rage",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ortak-stormhammer/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 66 damage.\n#1 Damage: 125% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 70 damage.\n#1 Damage: 132.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 74 damage.\n#1 Damage: 140% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 81 damage.\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 89 damage.\n#1 Damage: 167.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 95 damage.\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage.\n#1 Damage: 195% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 110 damage.\n#1 Damage: 207.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 118 damage.\n#1 Damage: 222.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage.\n#1 Damage: 235% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 133 damage.\n#1 Damage: 250% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dark Impact",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ortak-stormhammer/skills/2.webp",
+   "effects": [
+    {
+     "label": "Heal Reduction",
+     "group": "Debuffs",
+     "description": "Decreases the value of all heals cast on the recipient by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 146 damage. Casts a [30% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 30%.\nAccuracy required for: Heal Reduction\n#1 Damage: 275% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 154 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 291.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 9s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 308% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 178 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 335.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 195 damage. Casts a [40% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 40%.\nAccuracy required for: Heal Reduction\n#1 Damage: 368.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 210 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 396% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 227 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 10s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 429% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 242 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 456.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 259 damage. Casts a [50% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 50%.\nAccuracy required for: Heal Reduction\n#1 Damage: 489.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 274 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 12s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 517% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 292 damage. Casts a [60% Heal Reduction] debuff on the target, lasting 14s, decreasing the size of all heals received by 60%.\nAccuracy required for: Heal Reduction\n#1 Damage: 550% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dark Might",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ortak-stormhammer/skills/3.webp",
+   "effects": [
+    {
+     "label": "Stun",
+     "group": "Debuffs",
+     "description": "The recipient cannot move or attack, and Passive Skills are disabled.Active Skill cooldowns continue to count down as normal.The recipient will continue to take 100% damage from incoming attacks."
+    }
+   ],
+   "manaGen": {
+    "ult": "+39",
+    "titan": "+21"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 154 damage. Casts a [Stun] debuff on the target, lasting 3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 290% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 163 damage. Casts a [Stun] debuff on the target, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 307.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 172 damage. Casts a [Stun] debuff on the target, lasting 3.3s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 324.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 188 damage. Casts a [Stun] debuff on the target, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 353.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 206 damage. Casts a [Stun] debuff on the target, lasting 3.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 388.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 221 damage. Casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 417.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 240 damage. Casts a [Stun] debuff on the target, lasting 4s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 452.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 255 damage. Casts a [Stun] debuff on the target, lasting 4.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 481.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 274 damage. Casts a [Stun] debuff on the target, lasting 4.5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 516.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 289 damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 545.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 307 damage. Casts a [Stun] debuff on the target, lasting 5s. Stunned targets cannot move or use Skills, take 100% damage as normal, and their Skill Cooldowns will behave as normal.\nAccuracy required for: Stun\n#1 Damage: 580% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Dark Storm",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/ortak-stormhammer/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 123 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 15% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 232.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 131 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 20% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 246.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 138 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 25% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 260.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 150 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 30% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 283.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 165 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 30% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 311.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 177 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 35% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 334.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 192 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 40% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 362.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 205 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 40% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 386% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 219 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 45% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 413.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 232 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 50% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 437.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 random enemy in a 10m radius, from a distance of 10m, dealing 246 damage. Repeats the attack 1 time. Can target the same enemy multiple times. Damage increases by 50% against targets with MAX HP higher than Ortak's MAX HP.\n#1 Damage: 465% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Daze",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Ortak Stormhammer is practically a model Voidstormer – capable, confident, brash, and carrying a massive Demonic killing-stick. But his fancy hammer had a hidden price attached, and someday he’ll have hell to pay for it.",
+ "ratings": {
+  "althar": "C",
+  "galvos": "C",
+  "hyxxis": "D",
+  "koltmos": "C",
+  "omnissi-astral": "C",
+  "omnissi-dark": "C",
+  "omnissi-earth": "C",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "C",
+  "omnissi-wind": "D",
+  "pentiax": "C",
+  "sakiel": "C",
+  "sorgott": "D",
+  "ulgorim": "B",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "D",
+  "score": 26.8,
+  "lists": 16
+ }
+}

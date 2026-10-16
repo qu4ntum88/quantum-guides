@@ -1,0 +1,577 @@
+{
+ "slug": "lithat",
+ "kind": "Invoker",
+ "name": "Lithat",
+ "faction": "Lightseekers",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Vess",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/lithat/portrait.webp",
+ "fullArt": "/invokers/units/invokers/lithat/full.webp",
+ "stats": {
+  "base": {
+   "Health": "816",
+   "Attack": "90",
+   "Defense": "80",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "0",
+   "Resistance": "10",
+   "Combo speed": "8",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "112"
+  },
+  "max": {
+   "Health": "8,813",
+   "Attack": "1,084",
+   "Defense": "848",
+   "Critical rate": "15%",
+   "Critical damage": "50%",
+   "Accuracy": "60",
+   "Resistance": "10",
+   "Combo speed": "60",
+   "Skill speed": "0",
+   "Skill recovery": "7",
+   "Mana generation": "0",
+   "Instinct": "41",
+   "Run speed": "112"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lithat/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+84",
+    "titan": "+46"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy, dealing 34 damage.\nDamage: 38% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 53% ATK\n#4 Attacks 1 enemy, dealing 56 damage.\nDamage: 62.5% ATK\n#5 Attacks 1 enemy, dealing 67 damage. Shortens the duration of 1 random buff on the target by 1s.\nAccuracy required for: Buff Duration Shortening\nDamage: 74% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 23 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 40.3% ATK\n#3 Attacks 1 enemy, dealing 51 damage.\nDamage: 56.2% ATK\n#4 Attacks 1 enemy, dealing 60 damage.\nDamage: 66.2% ATK\n#5 Attacks 1 enemy, dealing 71 damage. Shortens the duration of 1 random buff on the target by 1.2s.\nAccuracy required for: Buff Duration Shortening\nDamage: 78.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 42.6% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 59.4% ATK\n#4 Attacks 1 enemy, dealing 63 damage.\nDamage: 70% ATK\n#5 Attacks 1 enemy, dealing 75 damage. Shortens the duration of 1 random buff on the target by 1.4s.\nAccuracy required for: Buff Duration Shortening\nDamage: 82.9% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy, dealing 42 damage.\nDamage: 46.4% ATK\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 64.7% ATK\n#4 Attacks 1 enemy, dealing 69 damage.\nDamage: 76.2% ATK\n#5 Attacks 1 enemy, dealing 81 damage. Shortens the duration of 1 random buff on the target by 1.6s.\nAccuracy required for: Buff Duration Shortening\nDamage: 90.3% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 29 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy, dealing 46 damage.\nDamage: 50.9% ATK\n#3 Attacks 1 enemy, dealing 64 damage.\nDamage: 71% ATK\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 83.8% ATK\n#5 Attacks 1 enemy, dealing 89 damage. Shortens the duration of 1 random buff on the target by 1.8s.\nAccuracy required for: Buff Duration Shortening\nDamage: 99.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 31 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 54.7% ATK\n#3 Attacks 1 enemy, dealing 69 damage.\nDamage: 76.3% ATK\n#4 Attacks 1 enemy, dealing 81 damage.\nDamage: 90% ATK\n#5 Attacks 1 enemy, dealing 96 damage. Shortens the duration of 1 random buff on the target by 2s.\nAccuracy required for: Buff Duration Shortening\nDamage: 106.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 34 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 53 damage.\nDamage: 59.3% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 82.7% ATK\n#4 Attacks 1 enemy, dealing 88 damage.\nDamage: 97.5% ATK\n#5 Attacks 1 enemy, dealing 104 damage. Shortens the duration of 1 random buff on the target by 2.2s.\nAccuracy required for: Buff Duration Shortening\nDamage: 115.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 36 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 63.1% ATK\n#3 Attacks 1 enemy, dealing 79 damage.\nDamage: 88% ATK\n#4 Attacks 1 enemy, dealing 93 damage.\nDamage: 103.8% ATK\n#5 Attacks 1 enemy, dealing 111 damage. Shortens the duration of 1 random buff on the target by 2.4s.\nAccuracy required for: Buff Duration Shortening\nDamage: 122.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy, dealing 61 damage.\nDamage: 67.6% ATK\n#3 Attacks 1 enemy, dealing 85 damage.\nDamage: 94.3% ATK\n#4 Attacks 1 enemy, dealing 100 damage.\nDamage: 111.2% ATK\n#5 Attacks 1 enemy, dealing 119 damage. Shortens the duration of 1 random buff on the target by 2.6s.\nAccuracy required for: Buff Duration Shortening\nDamage: 131.7% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 41 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy, dealing 64 damage.\nDamage: 71.4% ATK\n#3 Attacks 1 enemy, dealing 90 damage.\nDamage: 99.6% ATK\n#4 Attacks 1 enemy, dealing 106 damage.\nDamage: 117.5% ATK\n#5 Attacks 1 enemy, dealing 125 damage. Shortens the duration of 1 random buff on the target by 2.8s.\nAccuracy required for: Buff Duration Shortening\nDamage: 139.1% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy, dealing 68 damage.\nDamage: 76% ATK\n#3 Attacks 1 enemy, dealing 95 damage.\nDamage: 106% ATK\n#4 Attacks 1 enemy, dealing 113 damage.\nDamage: 125% ATK\n#5 Attacks 1 enemy, dealing 133 damage. Shortens the duration of up to 2 random buffs on the target by 3s.\nAccuracy required for: Buff Duration Shortening\nDamage: 148% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Incandescent Fury",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lithat/skills/1.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage. Casts a [35% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 152.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 145 damage. Casts a [40% RES Down] debuff on the target, lasting 4s.\nAccuracy required for: RES Down\n#1 Damage: 161.6% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 154 damage. Casts a [40% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 170.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 167 damage. Casts a [45% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 186.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 184 damage. Casts a [50% RES Down] debuff on the target, lasting 5s.\nAccuracy required for: RES Down\n#1 Damage: 204.4% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 198 damage. Casts a [50% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 219.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 214 damage. Casts a [55% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 237.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 228 damage. Casts a [60% RES Down] debuff on the target, lasting 6s.\nAccuracy required for: RES Down\n#1 Damage: 253.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 244 damage. Casts a [60% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 271.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 258 damage. Casts a [65% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 286.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 274 damage. Casts a [70% RES Down] debuff on the target, lasting 7s.\nAccuracy required for: RES Down\n#1 Damage: 305% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Alabaster Pyre",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/lithat/skills/2.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+77",
+    "titan": "+42"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 141 damage per hit. The first hit transfers a random debuff to the target. Then, steals a random buff from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 156.5% ATK\n#2 Damage: 156.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 149 damage per hit. The first hit transfers a random debuff to the target. Then, steals a random buff from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 165.9% ATK\n#2 Damage: 165.9% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 158 damage per hit. The first hit transfers a random debuff to the target. Then, steals 2 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 175.3% ATK\n#2 Damage: 175.3% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 172 damage per hit. The first hit transfers a random debuff to the target. Then, steals 2 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 190.9% ATK\n#2 Damage: 190.9% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 189 damage per hit. The first hit transfers a random debuff to the target. Then, steals 2 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 209.7% ATK\n#2 Damage: 209.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 203 damage per hit. The first hit transfers 2 random debuffs to the target. Then, steals 2 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 225.4% ATK\n#2 Damage: 225.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 220 damage per hit. The first hit transfers 2 random debuffs to the target. Then, steals 2 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 244.1% ATK\n#2 Damage: 244.1% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 234 damage per hit. The first hit transfers 2 random debuffs to the target. Then, steals 3 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 259.8% ATK\n#2 Damage: 259.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "20s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 251 damage per hit. The first hit transfers 2 random debuffs to the target. Then, steals 3 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 278.6% ATK\n#2 Damage: 278.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "19s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 265 damage per hit. The first hit transfers 2 random debuffs to the target. Then, steals 3 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 294.2% ATK\n#2 Damage: 294.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "18s",
+     "cost": "0",
+     "text": "Attacks 1 enemy 2 times, dealing 282 damage per hit. The first hit transfers 3 random debuffs to the target. Then, steals 3 random buffs from the target on the second hit.\nAccuracy required for: Debuff Transfer, Buff Steal\n#1 Damage: 313% ATK\n#2 Damage: 313% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Lucent Apex",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/lithat/skills/3.webp",
+   "effects": [
+    {
+     "label": "Hex",
+     "group": "Debuffs",
+     "description": "If killed while under this debuff, the recipient of the debuff cannot be Revived."
+    }
+   ],
+   "manaGen": {
+    "ult": "+122",
+    "titan": "+67"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 146 damage. Casts a [Hex] debuff on the targets, lasting 10s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 10 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 162% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "30s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 155 damage. Casts a [Hex] debuff on the targets, lasting 10s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 11 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 171.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 163 damage. Casts a [Hex] debuff on the targets, lasting 10s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 12 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 181.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "29s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 178 damage. Casts a [Hex] debuff on the targets, lasting 11s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 13 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 197.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 195 damage. Casts a [Hex] debuff on the targets, lasting 11s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 14 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 217.1% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 210 damage. Casts a [Hex] debuff on the targets, lasting 11s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 15 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 233.3% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 227 damage. Casts a [Hex] debuff on the targets, lasting 11s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 16 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 252.7% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 242 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 17 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 268.9% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 260 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 18 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 288.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 274 damage. Casts a [Hex] debuff on the targets, lasting 13s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 19 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 304.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Pulls 10 random enemies in a 10m radius to Lithat. Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, from a distance of 5m, dealing 292 damage. Casts a [Hex] debuff on the targets, lasting 15s. If a target dies while under a [Hex] debuff, it gains [Block Revive], preventing revival. Then, Lithat gains 20 Ultimate Mana if this attack kills the target.\nAccuracy required for: Pull, Hex\n#1 Damage: 324% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Serenity's Castigation",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/lithat/skills/4.webp",
+   "effects": [
+    {
+     "label": "Burn",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. Creates a Damage Zone around the recipient, damaging any of their allies in the indicated radius by a percentage of their MAX HP every tick.The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 31 damage per hit. \nThe first hit casts a [0.5% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 0.5% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.25% of their MAX HP per tick (up to 200% ATK). \nOn the fifth hit casts a [0.5% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 0.5% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.25% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 35% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Burn Damage Limit: 200% ATK per tick\n#5 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 33 damage per hit. \nThe first hit casts a [0.7% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 0.7% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.35% of their MAX HP per tick (up to 200% ATK). \nOn the fifth hit casts a [0.7% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 0.7% of their MAX HP per tick (up to 200% ATK). Also damages all of the target's allies in a 6m radius by 0.35% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Burn\n#1 Damage: 37.1% ATK\n#2 Burn Damage Limit: 200% ATK per tick\n#3 Burn Target Allies Damage Limit: 200% ATK per tick\n#4 Burn Damage Limit: 200% ATK per tick\n#5 Burn Target Allies Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 35 damage per hit. \nThe first hit casts a [0.9% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.45% of their MAX HP per tick (up to 250% ATK). \nOn the fifth hit casts a [0.9% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.45% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 39.2% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Burn Damage Limit: 250% ATK per tick\n#5 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 38 damage per hit. \nThe first hit casts a [1% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 250% ATK). \nOn the fifth hit casts a [1% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 250% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Burn\n#1 Damage: 42.7% ATK\n#2 Burn Damage Limit: 250% ATK per tick\n#3 Burn Target Allies Damage Limit: 250% ATK per tick\n#4 Burn Damage Limit: 250% ATK per tick\n#5 Burn Target Allies Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 42 damage per hit. \nThe first hit casts a [1% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 300% ATK). \nOn the fifth hit casts a [1% Burn] debuff on 1 enemy, lasting 10s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 46.9% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\n#4 Burn Damage Limit: 300% ATK per tick\n#5 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 45 damage per hit. \nThe first hit casts a [1% Burn] debuff on 1 enemy, lasting 11s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 300% ATK). \nOn the fifth hit casts a [1% Burn] debuff on 1 enemy, lasting 11s. The [Burn] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 300% ATK). Also damages all of the target's allies in a 6m radius by 0.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Burn\n#1 Damage: 50.4% ATK\n#2 Burn Damage Limit: 300% ATK per tick\n#3 Burn Target Allies Damage Limit: 300% ATK per tick\n#4 Burn Damage Limit: 300% ATK per tick\n#5 Burn Target Allies Damage Limit: 300% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 49 damage per hit. \nThe first hit casts a [1.25% Burn] debuff on 1 enemy, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 350% ATK). \nOn the fifth hit casts a [1.25% Burn] debuff on 1 enemy, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 54.6% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick\n#4 Burn Damage Limit: 350% ATK per tick\n#5 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 52 damage per hit. \nThe first hit casts a [1.25% Burn] debuff on 1 enemy, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 350% ATK). \nOn the fifth hit casts a [1.25% Burn] debuff on 1 enemy, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.25% of their MAX HP per tick (up to 350% ATK). Also damages all of the target's allies in a 6m radius by 0.63% of their MAX HP per tick (up to 350% ATK).\nAccuracy required for: Burn\n#1 Damage: 58.1% ATK\n#2 Burn Damage Limit: 350% ATK per tick\n#3 Burn Target Allies Damage Limit: 350% ATK per tick\n#4 Burn Damage Limit: 350% ATK per tick\n#5 Burn Target Allies Damage Limit: 350% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 56 damage per hit. \nThe first hit casts a [1.5% Burn] debuff on 1 enemy, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 400% ATK). \nOn the fifth hit casts a [1.5% Burn] debuff on 1 enemy, lasting 12s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 62.3% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick\n#4 Burn Damage Limit: 400% ATK per tick\n#5 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 59 damage per hit. \nThe first hit casts a [1.5% Burn] debuff on 1 enemy, lasting 13s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 400% ATK). \nOn the fifth hit casts a [1.5% Burn] debuff on 1 enemy, lasting 13s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 400% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 400% ATK).\nAccuracy required for: Burn\n#1 Damage: 65.8% ATK\n#2 Burn Damage Limit: 400% ATK per tick\n#3 Burn Target Allies Damage Limit: 400% ATK per tick\n#4 Burn Damage Limit: 400% ATK per tick\n#5 Burn Target Allies Damage Limit: 400% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks the 10 enemies with the lowest current HP in a 6m radius around Lithat, 5 times over 3.75s, dealing 63 damage per hit. \nThe first hit casts a [1.5% Burn] debuff on 1 enemy, lasting 14s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 500% ATK). \nOn the fifth hit casts a [1.5% Burn] debuff on 1 enemy, lasting 14s. The [Burn] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 500% ATK). Also damages all of the target's allies in a 6m radius by 0.75% of their MAX HP per tick (up to 500% ATK).\nAccuracy required for: Burn\n#1 Damage: 70% ATK\n#2 Burn Damage Limit: 500% ATK per tick\n#3 Burn Target Allies Damage Limit: 500% ATK per tick\n#4 Burn Damage Limit: 500% ATK per tick\n#5 Burn Target Allies Damage Limit: 500% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Crush",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Lithat is an Archangel, one of the thirteen warriors chosen to guard Santu, Serenity's hidden fortress. A duty that has not ended, yet... he awoke in Amara, not Santu. He knows not how or why, but calls it fortunate – for the Darkborn are here, now, and the fight has already begun.",
+ "ratings": {
+  "althar": "E",
+  "galvos": "A+",
+  "hyxxis": "A+",
+  "koltmos": "A+",
+  "omnissi-astral": "A+",
+  "omnissi-dark": "A+",
+  "omnissi-earth": "E",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "A+",
+  "omnissi-wind": "S",
+  "pentiax": "A+",
+  "sakiel": "A+",
+  "sorgott": "S",
+  "ulgorim": "A+",
+  "yskara": "S+"
+ },
+ "overall": {
+  "tier": "S+",
+  "score": 66.1,
+  "lists": 16
+ }
+}

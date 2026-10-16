@@ -1,0 +1,309 @@
+{
+ "id": 127,
+ "slug": "amaterasu",
+ "name": "Amaterasu",
+ "title": "Shining Sky",
+ "summary": "Revives allies and herself. Requires a full team wipe to kill.",
+ "lore": "Beloved sun goddess of Izumo, Amaterasu helps guide her pantheon—yet her benevolence and wisdom sometimes falter beneath an occasionally childish temperament. Already preoccupied with family drama, she has become further distracted by the voice of Destiny. Amaterasu sees sense in Destiny’s cause, but their disagreements as to what the future should look like have so far prevented a formal alliance.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Invoker",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Invoker.png",
+ "archetype_description": "Increase outgoing healing and turn meter boosts by 1% for each piece of cloth armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Amaterasu.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Amaterasu_main.png",
+ "stats": {
+  "hp": 1455,
+  "atk": 59,
+  "def": 94,
+  "spd": 109,
+  "init": 99,
+  "acc": 15,
+  "res": 40,
+  "initial_divinity": 675,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "spd",
+   "multiplier": 0,
+   "flat_bonus": 8
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "The [Aetherburn II] cannot be resisted.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "heal_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "damage_reduction_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Also place [Phoenix] on each revived ally for 2 turns which cannot be removed.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Damage reduction applies to all allies instead.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Eternal Flame",
+   "description": "Attack 1 enemy 330%ATK and heal 10%HP all allies. If the target is under Aetherburn, increase the Heal by 100%.",
+   "icon_url": "/godforge/abilities/amaterasu/ICON_Amaterasu_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "330%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Light of Heavens",
+   "description": "Place Block Debuff and [Radiance II] on all allies for 2 turns, then has a 75% chance to place [Aetherburn II] on all enemies for 2 turns.",
+   "icon_url": "/godforge/abilities/amaterasu/ICON_Amaterasu_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Block Debuff",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Radiance II",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Aetherburn II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "The Aetherburn II cannot be resisted.",
+     "upgrade_description": "The [Aetherburn II] cannot be resisted."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "30% FTH in Arena Battles",
+   "icon_url": "/godforge/abilities/amaterasu/ICON_Leader_Faith.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "New Dawn",
+   "description": "At the start of an enemy turn, decrease the damage this hero receives by 10% (stacking up to 10 times). Stacks reset at the start of this hero’s turn.",
+   "icon_url": "/godforge/abilities/amaterasu/ICON_Amaterasu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Damage reduction applies to all allies instead.",
+     "upgrade_description": "Damage reduction applies to all allies instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Rising Sun",
+   "description": "Revive all defeated allies with 50% Turn Meter and 50% Divinity, then reset all Ability Cooldowns on all allies. Also Equalize the HP of all allies to the ally or enemy with the highest current HP.",
+   "icon_url": "/godforge/abilities/amaterasu/ICON_Amaterasu_Ultimate.webp",
+   "divinity_cost": 4175,
+   "damage_formula": [],
+   "effects": [
+    {
+     "effect_name": "Phoenix",
+     "target": "AllAlly",
+     "target_label": "All Allies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Also place Phoenix on each revived ally for 2 turns which cannot be removed.",
+     "upgrade_description": "Also place [Phoenix] on each revived ally for 2 turns which cannot be removed."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "New Dawn",
+   "description": "At the start of an enemy turn, decrease the damage this hero receives by 10% (stacking up to 5 times). Stacks reset at the start of this hero’s turn.",
+   "icon_url": "/godforge/abilities/amaterasu/ICON_Amaterasu_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

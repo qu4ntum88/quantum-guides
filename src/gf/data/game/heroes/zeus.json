@@ -1,0 +1,290 @@
+{
+ "id": 8,
+ "slug": "zeus",
+ "name": "Zeus",
+ "title": "King of Olympus",
+ "summary": "Vaporize enemies with powerful single target attacks joining with fellow Olympians with his divine powers.",
+ "lore": "The king of Olympus initially kept his focus at home after the Shattering, several romantic “attachments” beyond his borders notwithstanding. Once he engaged with the rest of Ryven, he discovered other pantheons with a stricter hierarchical nature. He has begun reshaping Olympus to match, as he believes such a change, and devotion to Order, is better for the Realm—and for him.",
+ "rarity": "Legendary",
+ "affinity": "Valor",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Valor.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Slayer",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Slayer.png",
+ "archetype_description": "Increase on hit damage by 1% for each piece of leather armor attuned",
+ "faction": "Olympus",
+ "faction_icon": "/godforge/gf_heroes/factions/OLYMPUS.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Zeus.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Zeus_main.png",
+ "stats": {
+  "hp": 1395,
+  "atk": 118,
+  "def": 95,
+  "spd": 104,
+  "init": 99,
+  "acc": 45,
+  "res": 25,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 60
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.06,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 20
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 450
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Ability",
+   "description": "Place [Sharpen II] on this hero for 2 turns before attacking.",
+   "skill_type": "Core"
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "dmg_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "If the initial target was defeated, also increase the Divinity of all allies by 20%.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.4,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.25,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Also inflict excess damage to all enemies which cannot be critical.",
+   "skill_type": "Passive"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Thunderstrike",
+   "description": "Attack 1 enemy 225%ATK 2 times. Each hit will [Ricochet] to a random enemy inflicting damage 225%ATK and apply [DEF Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/zeus/ICON_Zeus_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "225%ATK",
+    "225%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Strike from the Heavens",
+   "description": "Attack 1 enemy 580%ATK. Then, attacks all other enemies 580%ATK.",
+   "icon_url": "/godforge/abilities/zeus/ICON_Zeus_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "580%ATK",
+    "335%ATK"
+   ],
+   "cooldown": 4,
+   "effects": [
+    {
+     "effect_name": "Sharpen II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 1,
+     "description": "Place Sharpen II on this hero for 2 turns before attacking.",
+     "upgrade_description": "Place [Sharpen II] on this hero for 2 turns before attacking."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "33% CDMG% in All Battles",
+   "icon_url": "/godforge/abilities/zeus/ICON_Leader_CriticalDamage.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "King of the Gods",
+   "description": "When this hero defeats an enemy, the next attack of each ally will inflict +30% increased damage.",
+   "icon_url": "/godforge/abilities/zeus/ICON_Zeus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Also inflict excess damage to all enemies which cannot be critical.",
+     "upgrade_description": "Also inflict excess damage to all enemies which cannot be critical."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Assemble the Council",
+   "description": "Place [ATK Up II] on this hero for 2 turns, then attack 1 enemy 580%ATK. All allies will team up and join the attack.\n\nIf the target enemy is defeated, increase this hero’s ATK and CDMG by 10% (stacking up to 5 times). The stat gains carry over waves.",
+   "icon_url": "/godforge/abilities/zeus/ICON_Zeus_Ultimate.webp",
+   "divinity_cost": 3500,
+   "damage_formula": [
+    "580%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "ATK Up II",
+     "target": "Self",
+     "target_label": "Self",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "If the initial target was defeated, also increase the Divinity of all allies by 20%.",
+     "upgrade_description": "If the initial target was defeated, also increase the Divinity of all allies by 20%."
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "King of the Gods",
+   "description": "When this hero defeats an enemy, this hero's next attack will inflict +15% increased damage.",
+   "icon_url": "/godforge/abilities/zeus/ICON_Zeus_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "200%ATK+350%DEF"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

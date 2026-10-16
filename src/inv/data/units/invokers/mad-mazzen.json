@@ -1,0 +1,561 @@
+{
+ "slug": "mad-mazzen",
+ "kind": "Invoker",
+ "name": "Mad Mazzen",
+ "faction": "Freeborn",
+ "rarity": "Uncommon",
+ "class": "Support",
+ "element": "Dark",
+ "soulSign": "Sign of Kalibar",
+ "gender": "Female",
+ "role": "Support",
+ "portrait": "/invokers/units/invokers/mad-mazzen/portrait.webp",
+ "fullArt": "/invokers/units/invokers/mad-mazzen/full.webp",
+ "stats": {
+  "base": {
+   "Health": "430",
+   "Attack": "43",
+   "Defense": "40",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "4",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "3",
+   "Mana generation": "0",
+   "Instinct": "5",
+   "Run speed": "91"
+  },
+  "max": {
+   "Health": "5,662",
+   "Attack": "558",
+   "Defense": "481",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "58",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "46",
+   "Skill recovery": "33",
+   "Mana generation": "0",
+   "Instinct": "47",
+   "Run speed": "116"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/mad-mazzen/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+132",
+    "titan": "+72"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 8.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 17.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 22% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 25% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 9% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13.8% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 18.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 23.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 11 damage.\nDamage: 26.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 9.5% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 14.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 19.6% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 24.6% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 12 damage.\nDamage: 28% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 4 damage.\nDamage: 10.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 15.9% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 21.4% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 26.8% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 13 damage.\nDamage: 30.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 11.4% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 17.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 23.5% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 29.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 14 damage.\nDamage: 33.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 5 damage.\nDamage: 12.2% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 8 damage.\nDamage: 18.7% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 25.2% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 31.7% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 15 damage.\nDamage: 36% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 13.3% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 20.3% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 27.3% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 34.3% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 17 damage.\nDamage: 39% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 6 damage.\nDamage: 14.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 9 damage.\nDamage: 21.6% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 12 damage.\nDamage: 29% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 16 damage.\nDamage: 36.5% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 18 damage.\nDamage: 41.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 15.1% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 10 damage.\nDamage: 23.1% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 13 damage.\nDamage: 31.1% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 17 damage.\nDamage: 39.2% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 19 damage.\nDamage: 44.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 16% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 24.4% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 14 damage.\nDamage: 32.9% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 18 damage.\nDamage: 41.4% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 20 damage.\nDamage: 47% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy from a distance of 9m, dealing 7 damage.\nDamage: 17% ATK\n#2 Attacks 1 enemy from a distance of 9m, dealing 11 damage.\nDamage: 26% ATK\n#3 Attacks 1 enemy from a distance of 9m, dealing 15 damage.\nDamage: 35% ATK\n#4 Attacks 1 enemy from a distance of 9m, dealing 19 damage.\nDamage: 44% ATK\n#5 Selects 1 enemy up to 14m away. Attacks 10 enemies in a 3.5m radius around the target, from a distance of 9m, dealing 22 damage.\nDamage: 50% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Pay Attention!",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/mad-mazzen/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+29",
+    "titan": "+16"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 38 damage.\n#1 Damage: 87.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 40 damage.\n#1 Damage: 92.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 42 damage.\n#1 Damage: 98% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 46 damage.\n#1 Damage: 106.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 50 damage.\n#1 Damage: 117.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 54 damage.\n#1 Damage: 126% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 59 damage.\n#1 Damage: 136.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 62 damage.\n#1 Damage: 145.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 67 damage.\n#1 Damage: 155.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 71 damage.\n#1 Damage: 164.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 75 damage.\n#1 Damage: 175% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Wake Up!",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/mad-mazzen/skills/2.webp",
+   "effects": [
+    {
+     "label": "ATK Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Attack stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+24",
+    "titan": "+13"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 77 damage. Casts a [15% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 8s.\n#1 Damage: 180% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 82 damage. Casts a [17% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 8s.\n#1 Damage: 190.8% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 87 damage. Casts a [17% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 9s.\n#1 Damage: 201.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 94 damage. Casts a [19% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 9s.\n#1 Damage: 219.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 104 damage. Casts a [19% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 10s.\n#1 Damage: 241.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 111 damage. Casts a [21% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 10s.\n#1 Damage: 259.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 121 damage. Casts a [21% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 11s.\n#1 Damage: 280.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 128 damage. Casts a [23% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 11s.\n#1 Damage: 298.8% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 138 damage. Casts a [23% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 320.4% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 146 damage. Casts a [25% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 338.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks 1 enemy from a distance of 9m, dealing 155 damage. Casts a [30% ATK Up] buff on the 8 allies with the lowest current HP in a 15m radius, lasting 13s.\n#1 Damage: 360% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Tough It Out!",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/mad-mazzen/skills/3.webp",
+   "effects": [
+    {
+     "label": "Regeneration",
+     "group": "Buffs",
+     "description": "Heals the recipient by a percentage of their MAX HP, once per tick, for the duration of the buff. The number of ticks per second increases with Skill Speed. This buff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+37",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the ally with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (2.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the ally with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP."
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the ally with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3% * Target's MAX HP) HP."
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the ally with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the ally with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 4s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (3.5% * Target's MAX HP) HP."
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Casts a [Regeneration] on the 2 allies with the lowest current HP in a 15m radius, lasting 6s. The [Regeneration] buff ticks 1 time every 2s. Each tick heals the target by (4% * Target's MAX HP) HP."
+    }
+   ]
+  },
+  {
+   "name": "Donate Blood!",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/mad-mazzen/skills/4.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 59 damage per hit. Each hit casts a [0.75% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 137.5% ATK\n#2 Bleed Damage Limit: 150% ATK per tick\n#3 Damage: 137.5% ATK\n#4 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 63 damage per hit. Each hit casts a [0.8% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.8% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 145.7% ATK\n#2 Bleed Damage Limit: 150% ATK per tick\n#3 Damage: 145.7% ATK\n#4 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 66 damage per hit. Each hit casts a [0.9% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 154% ATK\n#2 Bleed Damage Limit: 175% ATK per tick\n#3 Damage: 154% ATK\n#4 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 72 damage per hit. Each hit casts a [1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 167.8% ATK\n#2 Bleed Damage Limit: 175% ATK per tick\n#3 Damage: 167.8% ATK\n#4 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 79 damage per hit. Each hit casts a [1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 184.2% ATK\n#2 Bleed Damage Limit: 200% ATK per tick\n#3 Damage: 184.2% ATK\n#4 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 85 damage per hit. Each hit casts a [1.1% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 198% ATK\n#2 Bleed Damage Limit: 200% ATK per tick\n#3 Damage: 198% ATK\n#4 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 92 damage per hit. Each hit casts a [1.3% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 214.5% ATK\n#2 Bleed Damage Limit: 225% ATK per tick\n#3 Damage: 214.5% ATK\n#4 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 98 damage per hit. Each hit casts a [1.3% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 228.2% ATK\n#2 Bleed Damage Limit: 225% ATK per tick\n#3 Damage: 228.2% ATK\n#4 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 105 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 244.8% ATK\n#2 Bleed Damage Limit: 250% ATK per tick\n#3 Damage: 244.8% ATK\n#4 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 111 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 7s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 258.5% ATK\n#2 Bleed Damage Limit: 250% ATK per tick\n#3 Damage: 258.5% ATK\n#4 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "1,100 ult mana",
+     "text": "Attacks 1 enemy from a distance of 9m, 2 times, dealing 118 damage per hit. Each hit casts a [1.5% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 275% ATK\n#2 Bleed Damage Limit: 300% ATK per tick\n#3 Damage: 275% ATK\n#4 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "You'd think pirates would be more grateful for their medical care, but Mazzen finds few of her patients thank her for her doctoring. It could be due to all her magic rats, but more likely it's because she keeps experimenting on anyone trapped in her care. Still, is a little gratitude too much to ask?",
+ "ratings": {
+  "althar": "E",
+  "galvos": "D",
+  "hyxxis": "E",
+  "koltmos": "E",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "E",
+  "omnissi-fire": "D",
+  "omnissi-light": "E",
+  "omnissi-water": "E",
+  "omnissi-wind": "D",
+  "pentiax": "E",
+  "sakiel": "E",
+  "sorgott": "E",
+  "ulgorim": "D",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 3.6,
+  "lists": 16
+ }
+}

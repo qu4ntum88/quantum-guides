@@ -1,0 +1,302 @@
+{
+ "id": 55,
+ "slug": "ran",
+ "name": "Ran",
+ "title": "The Sea's Net",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Violent and rapacious, Ran is the sea that takes. She is mother of its grasping waves, ruler of the depths where the bones of drowned sailors come to rest. Since the Shattering she has worked to expand the boundaries of her aquatic dominion, flooding coastlines, dragging ships below, and otherwise taking the worshipers of other Asgardian gods of both the living and the dead.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Chaos",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Chaos.png",
+ "archetype": "Disruptor",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Disruptor.png",
+ "archetype_description": "Ignore 1% of enemy resistance for each piece of nightweave armor attuned",
+ "faction": "Asgard",
+ "faction_icon": "/godforge/gf_heroes/factions/ASGARD.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Ran.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Ran_main.png",
+ "stats": {
+  "hp": 1170,
+  "atk": 71,
+  "def": 85,
+  "spd": 100,
+  "init": 101,
+  "acc": 30,
+  "res": 25,
+  "initial_divinity": 725,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "acc",
+   "multiplier": 0,
+   "flat_bonus": 10
+  },
+  {
+   "rank": 5,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "turnmeter_mult",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Place [Freeze] for 2 turns instead.",
+   "skill_type": "Ultimate"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "If an enemy is under SPD Down after attacking, will activate the Cold Depths on the target.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Drowned Vigour",
+   "description": "Attack 1 enemy 370%ATK with a 35% chance to place [Lock Ultimate] for 2 turns.",
+   "icon_url": "/godforge/abilities/ran/ICON_Ran_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "370%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Lock Ultimate",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 35,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Whirling Riptide",
+   "description": "Attack all enemies 305%ATK with a 75% chance to place [SPD Down II] on each target for 2 turns.",
+   "icon_url": "/godforge/abilities/ran/ICON_Ran_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "305%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [
+    {
+     "effect_name": "SPD Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 75,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "If an enemy is under SPD Down after attacking, will activate the Cold Depths on the target.",
+     "upgrade_description": "If an enemy is under SPD Down after attacking, will activate the Cold Depths on the target."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Passive",
+   "name": "Cold Depths",
+   "description": "Attacks decrease 10% of the target’s Turn Meter. If the target is below 50% HP, steal 10% Turn Meter instead and increase the Turn Meter of all allies by the same amount. Allies can only gain Turn Meter once per attack.",
+   "icon_url": "/godforge/abilities/ran/ICON_Ran_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Ultimate",
+   "name": "Frozen Waves",
+   "description": "Attack all enemies 305%ATK with a 50% chance to place [Freeze] on each target for 1 turn. If an enemy is below 50% HP, [Freeze] cannot be resisted. If [Freeze] is not placed, place [FTH Down II] on the target for 2 turns instead.",
+   "icon_url": "/godforge/abilities/ran/ICON_Ran_Ultimate.webp",
+   "divinity_cost": 3375,
+   "damage_formula": [
+    "305%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "Freeze",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Freeze",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Freeze",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 1,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "Freeze",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "FTH Down II",
+     "target": "AllEnemy",
+     "target_label": "All Enemies",
+     "chance": 100,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Place Freeze for 2 turns instead.",
+     "upgrade_description": "Place [Freeze] for 2 turns instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Imprint",
+   "name": "Cold Depths",
+   "description": "Attack decreases 5% of the target’s Turn Meter. If the target is below 50% HP, steal 5% Turn Meter instead.",
+   "icon_url": "/godforge/abilities/ran/ICON_Ran_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}

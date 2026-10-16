@@ -1,0 +1,555 @@
+{
+ "slug": "don-hammon",
+ "kind": "Invoker",
+ "name": "Don Hammon",
+ "faction": "Beastbloods",
+ "rarity": "Rare",
+ "class": "Melee Attacker",
+ "element": "Fire",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/don-hammon/portrait.webp",
+ "fullArt": "/invokers/units/invokers/don-hammon/full.webp",
+ "stats": {
+  "base": {
+   "Health": "594",
+   "Attack": "56",
+   "Defense": "44",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "107"
+  },
+  "max": {
+   "Health": "6,944",
+   "Attack": "747",
+   "Defense": "502",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "137"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/don-hammon/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+86",
+    "titan": "+47"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 13 damage.\nDamage: 24% ATK\n#2 Attacks 1 enemy, dealing 19 damage.\nDamage: 33.5% ATK\n#3 Attacks 1 enemy, dealing 26 damage.\nDamage: 46% ATK\n#4 Attacks 1 enemy, dealing 31 damage.\nDamage: 55.5% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 20 damage.\nDamage: 35% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 14 damage.\nDamage: 25.4% ATK\n#2 Attacks 1 enemy, dealing 20 damage.\nDamage: 35.5% ATK\n#3 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.8% ATK\n#4 Attacks 1 enemy, dealing 33 damage.\nDamage: 58.8% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 21 damage.\nDamage: 37.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 15 damage.\nDamage: 26.9% ATK\n#2 Attacks 1 enemy, dealing 21 damage.\nDamage: 37.5% ATK\n#3 Attacks 1 enemy, dealing 29 damage.\nDamage: 51.5% ATK\n#4 Attacks 1 enemy, dealing 35 damage.\nDamage: 62.2% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 22 damage.\nDamage: 39.2% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 16 damage.\nDamage: 29.3% ATK\n#2 Attacks 1 enemy, dealing 23 damage.\nDamage: 40.9% ATK\n#3 Attacks 1 enemy, dealing 31 damage.\nDamage: 56.1% ATK\n#4 Attacks 1 enemy, dealing 38 damage.\nDamage: 67.7% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 24 damage.\nDamage: 42.7% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 18 damage.\nDamage: 32.2% ATK\n#2 Attacks 1 enemy, dealing 25 damage.\nDamage: 44.9% ATK\n#3 Attacks 1 enemy, dealing 35 damage.\nDamage: 61.6% ATK\n#4 Attacks 1 enemy, dealing 42 damage.\nDamage: 74.4% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 26 damage.\nDamage: 46.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 19 damage.\nDamage: 34.6% ATK\n#2 Attacks 1 enemy, dealing 27 damage.\nDamage: 48.2% ATK\n#3 Attacks 1 enemy, dealing 37 damage.\nDamage: 66.2% ATK\n#4 Attacks 1 enemy, dealing 45 damage.\nDamage: 79.9% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 28 damage.\nDamage: 50.4% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 21 damage.\nDamage: 37.4% ATK\n#2 Attacks 1 enemy, dealing 29 damage.\nDamage: 52.3% ATK\n#3 Attacks 1 enemy, dealing 40 damage.\nDamage: 71.8% ATK\n#4 Attacks 1 enemy, dealing 48 damage.\nDamage: 86.6% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 31 damage.\nDamage: 54.6% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 22 damage.\nDamage: 39.8% ATK\n#2 Attacks 1 enemy, dealing 31 damage.\nDamage: 55.6% ATK\n#3 Attacks 1 enemy, dealing 43 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 52 damage.\nDamage: 92.1% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 33 damage.\nDamage: 58.1% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 42.7% ATK\n#2 Attacks 1 enemy, dealing 33 damage.\nDamage: 59.6% ATK\n#3 Attacks 1 enemy, dealing 46 damage.\nDamage: 81.9% ATK\n#4 Attacks 1 enemy, dealing 55 damage.\nDamage: 98.8% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 35 damage.\nDamage: 62.3% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 25 damage.\nDamage: 45.1% ATK\n#2 Attacks 1 enemy, dealing 35 damage.\nDamage: 63% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 86.5% ATK\n#4 Attacks 1 enemy, dealing 58 damage.\nDamage: 104.3% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 37 damage.\nDamage: 65.8% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 48% ATK\n#2 Attacks 1 enemy, dealing 38 damage.\nDamage: 67% ATK\n#3 Attacks 1 enemy, dealing 52 damage.\nDamage: 92% ATK\n#4 Attacks 1 enemy, dealing 62 damage.\nDamage: 111% ATK\n#5 Attacks 8 enemies in a 3.5m radius around the closest enemy, dealing 39 damage.\nDamage: 70% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Meaty Haunch",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/don-hammon/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 77 damage.\n#1 Damage: 137.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 82 damage.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 86 damage.\n#1 Damage: 154% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 94 damage.\n#1 Damage: 167.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 103 damage.\n#1 Damage: 184.2% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 111 damage.\n#1 Damage: 198% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 120 damage.\n#1 Damage: 214.5% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 128 damage.\n#1 Damage: 228.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 137 damage.\n#1 Damage: 244.8% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 145 damage.\n#1 Damage: 258.5% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 154 damage.\n#1 Damage: 275% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Prime Cut",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/don-hammon/skills/2.webp",
+   "effects": [
+    {
+     "label": "RES Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Resistance stat by the indicated percentage."
+    }
+   ],
+   "manaGen": {
+    "ult": "+34",
+    "titan": "+18"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 80 damage. Casts a [25% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 142.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 85 damage. Casts a [30% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 151% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 89 damage. Casts a [30% RES Down] debuff on the target, lasting 8s.\nAccuracy required for: RES Down\n#1 Damage: 159.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 97 damage. Casts a [30% RES Down] debuff on the target, lasting 9s.\nAccuracy required for: RES Down\n#1 Damage: 173.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 107 damage. Casts a [30% RES Down] debuff on the target, lasting 9s.\nAccuracy required for: RES Down\n#1 Damage: 190.9% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 115 damage. Casts a [35% RES Down] debuff on the target, lasting 9s.\nAccuracy required for: RES Down\n#1 Damage: 205.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 124 damage. Casts a [35% RES Down] debuff on the target, lasting 10s.\nAccuracy required for: RES Down\n#1 Damage: 222.3% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 132 damage. Casts a [35% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 236.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 142 damage. Casts a [35% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 253.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 150 damage. Casts a [40% RES Down] debuff on the target, lasting 11s.\nAccuracy required for: RES Down\n#1 Damage: 267.9% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "21s",
+     "cost": "0",
+     "text": "Attacks the enemy with the lowest current HP in a 6m semicircle in front of Hammon, dealing 160 damage. Casts a [40% RES Down] debuff on the target, lasting 13s.\nAccuracy required for: RES Down\n#1 Damage: 285% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Butcher's Hook",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/don-hammon/skills/3.webp",
+   "effects": [
+    {
+     "label": "Bleed",
+     "group": "Debuffs",
+     "description": "Damages the recipient by a percentage of their MAX HP, once per tick, for the duration of the debuff. The number of ticks per second increases with Skill Speed. This debuff can be stacked."
+    }
+   ],
+   "manaGen": {
+    "ult": "+38",
+    "titan": "+20"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 76 damage. Casts a [0.75% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.75% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 135% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "28s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 80 damage. Casts a [0.9% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 150% ATK).\nAccuracy required for: Bleed\n#1 Damage: 143.1% ATK\n#2 Bleed Damage Limit: 150% ATK per tick"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 85 damage. Casts a [0.9% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 0.9% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 151.2% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 92 damage. Casts a [1.1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 175% ATK).\nAccuracy required for: Bleed\n#1 Damage: 164.7% ATK\n#2 Bleed Damage Limit: 175% ATK per tick"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 101 damage. Casts a [1.1% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.1% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 180.9% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 109 damage. Casts a [1.3% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 200% ATK).\nAccuracy required for: Bleed\n#1 Damage: 194.4% ATK\n#2 Bleed Damage Limit: 200% ATK per tick"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 118 damage. Casts a [1.3% Bleed] debuff on the target, lasting 4s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 210.6% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 125 damage. Casts a [1.3% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 225% ATK).\nAccuracy required for: Bleed\n#1 Damage: 224.1% ATK\n#2 Bleed Damage Limit: 225% ATK per tick"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 135 damage. Casts a [1.3% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.3% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 240.3% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 142 damage. Casts a [1.5% Bleed] debuff on the target, lasting 6s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 250% ATK).\nAccuracy required for: Bleed\n#1 Damage: 253.8% ATK\n#2 Bleed Damage Limit: 250% ATK per tick"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 151 damage. Casts a [1.5% Bleed] debuff on the target, lasting 8s. The [Bleed] ticks every 2s, damaging targets by 1.5% of their MAX HP per tick (up to 300% ATK).\nAccuracy required for: Bleed\n#1 Damage: 270% ATK\n#2 Bleed Damage Limit: 300% ATK per tick"
+    }
+   ]
+  },
+  {
+   "name": "Chop Shop",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/don-hammon/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 134 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 4s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 8s instead.\n#1 Damage: 240% ATK\n#2 Damage: 240% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 142 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 4.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 9s instead.\n#1 Damage: 254.4% ATK\n#2 Damage: 254.4% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 151 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 9s instead.\n#1 Damage: 268.8% ATK\n#2 Damage: 268.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 164 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 5.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 10s instead.\n#1 Damage: 292.8% ATK\n#2 Damage: 292.8% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 180 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 5.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 10s instead.\n#1 Damage: 321.6% ATK\n#2 Damage: 321.6% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 194 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 6s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 10s instead.\n#1 Damage: 345.6% ATK\n#2 Damage: 345.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 210 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 6.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 11s instead.\n#1 Damage: 374.4% ATK\n#2 Damage: 374.4% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 223 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 6.5s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 11s instead.\n#1 Damage: 398.4% ATK\n#2 Damage: 398.4% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 239 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 7s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 11s instead.\n#1 Damage: 427.2% ATK\n#2 Damage: 427.2% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 253 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 8s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 12s instead.\n#1 Damage: 451.2% ATK\n#2 Damage: 451.2% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 2 times, dealing 269 damage per hit. Each hit Reduces the cooldown of Active Skill 3 on Hammon by 8s. \nIf the hit lands as a critical hit Reduces the cooldown of Active Skill 3 on Hammon by 12s instead.\n#1 Damage: 480% ATK\n#2 Damage: 480% ATK"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Paralysis",
+   "byLevel": [
+    "50%",
+    "60%",
+    "70%",
+    "80%",
+    "90%",
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Need lamb shanks from the Thursian Mountains? The finest grade Cambion beef? Medallions stolen from the Free Armada? You can get all this and more from Don Hammon, the greatest butcher (and fence) on Remnant! There are queues around Temple Market to sample his wares and offload stolen goods. Just don't ask who his meat supplier is. It's a trade secret.",
+ "ratings": {
+  "althar": "D",
+  "galvos": "D",
+  "hyxxis": "D",
+  "koltmos": "D",
+  "omnissi-astral": "D",
+  "omnissi-dark": "C",
+  "omnissi-earth": "B",
+  "omnissi-fire": "C",
+  "omnissi-light": "C",
+  "omnissi-water": "D",
+  "omnissi-wind": "D",
+  "pentiax": "D",
+  "sakiel": "D",
+  "sorgott": "D",
+  "ulgorim": "D",
+  "yskara": "C"
+ },
+ "overall": {
+  "tier": "E",
+  "score": 19.6,
+  "lists": 16
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "id": 150,
+ "slug": "kenshin",
+ "name": "Kenshin",
+ "title": "Dragon of Echigo",
+ "summary": "This hero story is yet to be revealed.",
+ "lore": "Uesugi Kenshin stands among the ranks of great samurai and military leaders along with Oda Nobunaga and Takeda Shingen, and is a highly respected administrator as well. Kenshin would prefer to govern his own province in peace, but feels compelled to thwart the ambitions of both those men, even if that means reluctantly ruling the non-divine regions of Izumo himself.",
+ "rarity": "Epic",
+ "affinity": "Wisdom",
+ "affinity_icon": "/godforge/gf_heroes/affinity/Wisdom.png",
+ "allegiance": "Order",
+ "allegiance_icon": "/godforge/gf_heroes/allegiances/Allegiance_Order.png",
+ "archetype": "Brawler",
+ "archetype_icon": "/godforge/gf_heroes/archetypes/Archetype_Brawler.png",
+ "archetype_description": "Increase all stats by 0.5% for each piece of chain armor attuned",
+ "faction": "Izumo",
+ "faction_icon": "/godforge/gf_heroes/factions/IZUMO.png",
+ "portrait_url": "/godforge/gf_heroes/portrait/Kenshin.png",
+ "image_url": "/godforge/gf_heroes/full_art/CO_Character_Kenshin_main.png",
+ "stats": {
+  "hp": 1710,
+  "atk": 83,
+  "def": 91,
+  "spd": 94,
+  "init": 86,
+  "acc": 25,
+  "res": 35,
+  "initial_divinity": 800,
+  "crate": 10,
+  "cdmg": 50
+ },
+ "ascension_bonuses": [
+  {
+   "rank": 1,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 1,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 2,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "def",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "atk",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 3,
+   "stat": "hp",
+   "multiplier": 0.05,
+   "flat_bonus": 0
+  },
+  {
+   "rank": 4,
+   "stat": "init",
+   "multiplier": 0,
+   "flat_bonus": 5
+  },
+  {
+   "rank": 5,
+   "stat": "cdmg",
+   "multiplier": 0,
+   "flat_bonus": 12
+  },
+  {
+   "rank": 6,
+   "stat": "divinity",
+   "multiplier": 0,
+   "flat_bonus": 300
+  }
+ ],
+ "awakening_bonuses": [
+  {
+   "level": 1,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_def",
+   "multiplier": 0.07,
+   "flat_bonus": 0
+  },
+  {
+   "level": 2,
+   "type": "Stat",
+   "description": null,
+   "stat": "ignore_res",
+   "multiplier": 0.1,
+   "flat_bonus": 0
+  },
+  {
+   "level": 3,
+   "type": "Ability",
+   "description": "Has a 20% chance to join an attack using the Basic Ability. If the ally is from Izumo, will use the Core Abilty instead.",
+   "skill_type": "Passive"
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "attunement_mult",
+   "multiplier": 0.3,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "armor_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 4,
+   "type": "Stat",
+   "description": null,
+   "stat": "weapon_mult",
+   "multiplier": 0.2,
+   "flat_bonus": 0
+  },
+  {
+   "level": 5,
+   "type": "Ability",
+   "description": "Will now Steal the Divinity instead.",
+   "skill_type": "Core"
+  }
+ ],
+ "skills": [
+  {
+   "id": 0,
+   "type": "Basic",
+   "name": "Iaijutsu",
+   "description": "Attack 1 enemy 15%HP+135%ATK with 50% chance to place [DEF Down II] on the target for 2 turns.",
+   "icon_url": "/godforge/abilities/kenshin/ICON_Kenshin_Basic.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "15%HP+135%ATK"
+   ],
+   "effects": [
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    },
+    {
+     "effect_name": "DEF Down II",
+     "target": "Single",
+     "target_label": "Target",
+     "chance": 50,
+     "hits": 1,
+     "duration": 2,
+     "visibility": "Displayed"
+    }
+   ],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 1,
+   "type": "Core",
+   "name": "Fight with the Sword",
+   "description": "Attack all enemies 10%HP+110%ATK then decrease each target’s Turn Meter by 10%. If a target is under DEF Down, will also decrease their Divinity by 10%.",
+   "icon_url": "/godforge/abilities/kenshin/ICON_Kenshin_Core.webp",
+   "divinity_cost": null,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "cooldown": 5,
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 5,
+     "description": "Will now Steal the Divinity instead.",
+     "upgrade_description": "Will now Steal the Divinity instead."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "Leader Bonus",
+   "description": "25% ATK in Arena Battles",
+   "icon_url": "/godforge/abilities/kenshin/ICON_Leader_Attack.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 3,
+   "type": "Passive",
+   "name": "Quick Draw",
+   "description": "Increase this hero’s Turn Meter by 10% when joining an attack or retaliating.",
+   "icon_url": "/godforge/abilities/kenshin/ICON_Kenshin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": [
+    {
+     "level": 3,
+     "description": "Has a 20% chance to join an attack using the Basic Ability. If the ally is from Izumo, will use the Core Abilty instead.",
+     "upgrade_description": "Has a 20% chance to join an attack using the Basic Ability. If the ally is from Izumo, will use the Core Abilty instead."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "Ultimate",
+   "name": "Honour Bound",
+   "description": "Attack all enemies 10%HP+110%ATK which ignores [Intercept] and Protect. If the target is under a [Shield] will remove the 50% of the [Shield] before attacking. If the target is under [Barrier], will steal 25% before attacking.",
+   "icon_url": "/godforge/abilities/kenshin/ICON_Kenshin_Ultimate.webp",
+   "divinity_cost": 2875,
+   "damage_formula": [
+    "10%HP+110%ATK"
+   ],
+   "effects": [],
+   "awakening_bonuses": []
+  },
+  {
+   "id": 5,
+   "type": "Imprint",
+   "name": "Quick Draw",
+   "description": "Increase this hero’s Turn Meter by 5% when joining an attack or retaliating.",
+   "icon_url": "/godforge/abilities/kenshin/ICON_Kenshin_Passive.webp",
+   "divinity_cost": null,
+   "damage_formula": [],
+   "effects": [],
+   "awakening_bonuses": []
+  }
+ ]
+}
