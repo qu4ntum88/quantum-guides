@@ -35,6 +35,16 @@ const JOBS: Record<string, JobDef> = {
     cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-kits.mjs'), '--write'],
     note: 'Writes heros.json, legacy.json, combat-cycle.json (descriptions only). Commit afterwards.',
   },
+  'dcdl-sc-preview': {
+    group: 'DC: Dark Legion', label: 'Check Supreme Commander — preview',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-supreme-commander.mjs')],
+    note: 'Dry run: compares point values, reward tracks and Maneuvers rewards with the game files; lists what would change.',
+  },
+  'dcdl-sc-apply': {
+    group: 'DC: Dark Legion', label: 'Check Supreme Commander — apply',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-supreme-commander.mjs'), '--write'],
+    note: 'Writes the numbers in supreme-commander.json (tips, titles and icons are never touched). Commit afterwards.',
+  },
   'vh-extract': {
     group: 'Void Hunters', label: 'Extract from game files',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'update.mjs')],

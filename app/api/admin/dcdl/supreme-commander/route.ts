@@ -33,6 +33,9 @@ type SupremeCommander = {
   pointTables: Record<string, PointTable>
   rewardTracks: Record<string, RewardTrack>
   metropolis?: Metropolis
+  // Written only by scripts/sync-dcdl-supreme-commander.mjs (full reward tracks, rankings,
+  // Tournament, game icons). A save keeps the copy on disk, never the client's.
+  game?: unknown
 }
 
 function readData(): SupremeCommander | null {
@@ -157,6 +160,9 @@ export async function POST(req: NextRequest) {
   if (!body || typeof body !== 'object' || !Array.isArray(body.days)) {
     return NextResponse.json({ error: 'Invalid payload' }, { status: 400 })
   }
-  fs.writeFileSync(DATA_FILE, JSON.stringify(validate(body), null, 2), 'utf8')
+  const saved = validate(body)
+  const onDisk = readData()
+  if (onDisk?.game) saved.game = onDisk.game
+  fs.writeFileSync(DATA_FILE, JSON.stringify(saved, null, 2), 'utf8')
   return NextResponse.json({ success: true })
 }
