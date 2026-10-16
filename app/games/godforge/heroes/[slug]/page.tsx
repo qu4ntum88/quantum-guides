@@ -4,6 +4,7 @@ import type { GfHeroSkill } from '@/src/gf/components/GfHeroBox'
 import { GfHeroInteractive } from '@/src/gf/components/GfHeroInteractive'
 import JsonLd from '@/app/components/JsonLd'
 import QTile from '@/src/qgg/components/QTile'
+import QuantumTake from '@/src/qgg/components/QuantumTake'
 import { breadcrumbLd, faqLd, GF_CRUMB, pageMeta } from '@/src/lib/seo'
 import { RARITY_COLORS, TIER_COLORS } from '@/src/qgg/tiers'
 import { gfEntities, getGfHero, getGfHeroSlugs, getGfTieredRoster, titleCase } from '@/src/gf/lib/heroes'
@@ -128,6 +129,8 @@ export default async function GfHeroPage({ params }: { params: Promise<{ slug: s
       <GfHeroInteractive hero={hero} rarityColor={rarityColor} />
 
       <div className="container w-section">
+        <QuantumTake game="godforge" id={slug} />
+
         {hero.lore && (
           <section className="w-card">
             <h2>{hero.name} lore</h2>

@@ -5,6 +5,8 @@ import { getCatalog, TIERS, type OfficialType } from '@/src/dcdl/lib/tier-db'
 import { QUANTUM_TIERS } from '@/src/qgg/tiers'
 import { getGfTieredRoster } from '@/src/gf/lib/heroes'
 import { getVhTieredRoster } from '@/src/vh/lib/hunters'
+import { invTierCatalog } from '@/src/inv/lib/quantum-tiers'
+import { TIERS as INV_TIERS } from '@/src/inv/lib/constants'
 
 /**
  * The official (Quantum's) tier list, editable from the live site.
@@ -15,26 +17,30 @@ import { getVhTieredRoster } from '@/src/vh/lib/hunters'
  * tiers, its old tier is recorded as `previous_tier`.
  *
  * Also serves Godforge heroes (`gf_hero`) and Void Hunters hunters (`vh_hunter`), which use
- * Quantum's S…F tiers instead of DC: Dark Legion's S+…D.
+ * Quantum's S…F tiers instead of DC: Dark Legion's S+…D, and Invokers / Titans
+ * (`inv_invoker` / `inv_titan`) on the game's own S+…E scale, seeded from the
+ * boss-list average until first saved.
  */
 
 async function guard() {
   return (await requireRole('admin')) ? null : NextResponse.json({ error: 'Forbidden' }, { status: 403 })
 }
 
-const TYPES: OfficialType[] = ['champion', 'legacy', 'gf_hero', 'vh_hunter']
+const TYPES: OfficialType[] = ['champion', 'legacy', 'gf_hero', 'vh_hunter', 'inv_invoker', 'inv_titan']
 
 function parseType(v: string | null): OfficialType {
   return TYPES.includes(v as OfficialType) ? (v as OfficialType) : 'champion'
 }
 
-const tiersFor = (type: OfficialType): readonly string[] => (type === 'gf_hero' || type === 'vh_hunter' ? QUANTUM_TIERS : TIERS)
+const tiersFor = (type: OfficialType): readonly string[] =>
+  type === 'gf_hero' || type === 'vh_hunter' ? QUANTUM_TIERS : type === 'inv_invoker' || type === 'inv_titan' ? INV_TIERS : TIERS
 
 /** Every rankable item with its current tier, in rank order. */
 async function catalogFor(type: OfficialType): Promise<{ id: string; name: string; img: string | null; group: string; tier: string }[]> {
   if (type === 'gf_hero') {
     return (await getGfTieredRoster()).map((h) => ({ id: h.id, name: h.name, img: h.portrait || h.fullArt, group: h.archetype ?? '', tier: h.tier ?? '' }))
   }
+  if (type === 'inv_invoker' || type === 'inv_titan') return invTierCatalog(type === 'inv_titan' ? 'Titan' : 'Invoker')
   if (type === 'vh_hunter') {
     return (await getVhTieredRoster()).map((h) => ({ id: h.id, name: h.name, img: h.portrait, group: h.class?.[0] ?? '', tier: h.tier ?? '' }))
   }
@@ -48,7 +54,7 @@ function saveError(message: string) {
     : message
 }
 
-// GET ?type=champion|legacy|gf_hero|vh_hunter — the catalog with current tiers, for the editor.
+// GET ?type=champion|legacy|gf_hero|vh_hunter|inv_invoker|inv_titan — the catalog with current tiers, for the editor.
 export async function GET(req: NextRequest) {
   const denied = await guard()
   if (denied) return denied

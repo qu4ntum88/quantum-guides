@@ -3,6 +3,8 @@ import JsonLd from '@/app/components/JsonLd'
 import { breadcrumbLd, faqLd, INV_CRUMB } from '@/src/lib/seo'
 import SkillKit from './SkillKit'
 import QTile from '@/src/qgg/components/QTile'
+import QuantumTake from '@/src/qgg/components/QuantumTake'
+import { getUnitNote } from '@/src/qgg/notes'
 import { getIcons, toTile } from '../lib/board'
 import { getRoster, getTierLists, type Unit } from '../lib/data'
 import { RARITY_COLORS, TIER_COLORS, tierIndex, tierListPath, unitPath } from '../lib/constants'
@@ -115,6 +117,9 @@ export default function UnitPage({ unit: u }: { unit: Unit }) {
         { label: `All ${u.soulSign} Invokers`, q: `sign=${encodeURIComponent(u.soulSign ?? '')}` },
       ]
 
+  const note = getUnitNote('invokers', u.slug)
+  const hasTake = !!(note.take || note.p2w || note.isNew)
+
   return (
     <main className="inv-root">
       <JsonLd
@@ -156,6 +161,7 @@ export default function UnitPage({ unit: u }: { unit: Unit }) {
 
       <div className="container inv-unit-body">
         <nav className="inv-toc" aria-label="On this page">
+          {hasTake && <a href="#take">Quantum&apos;s Take</a>}
           {place.length > 0 && <a href="#where">Where to use</a>}
           <a href="#skills">Skills</a>
           <a href="#stats">Stats</a>
@@ -163,6 +169,8 @@ export default function UnitPage({ unit: u }: { unit: Unit }) {
           {u.bio && <a href="#lore">Lore</a>}
           <a href="#faq">FAQ</a>
         </nav>
+
+        {hasTake && <div id="take"><QuantumTake game="invokers" id={u.slug} /></div>}
 
         {place.length > 0 && (
           <section id="where" className="inv-card">

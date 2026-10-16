@@ -7,6 +7,7 @@ import WorldHero from '@/src/qgg/components/WorldHero'
 import { boardColumns, boardFor, browserEntities, browserFilters, getIcons, listLinks } from '../lib/board'
 import { getInvUpdatedISO, getRoster, getTierLists, type Kind } from '../lib/data'
 import { TIERS, tierListPath, unitPath } from '../lib/constants'
+import { getQuantumOverall } from '../lib/quantum-tiers'
 
 // Banner art: a released Titan for each board.
 const BANNER: Record<Kind, string> = {
@@ -39,8 +40,10 @@ export function tierListDescription(kind: Kind, listId: string) {
   return `The best ${plural(kind)} for ${boss} in Invokers: Titan Legacy, ranked S+ to ${kind === 'Titan' ? 'D' : 'E'} by role, with every ${kind === 'Titan' ? 'Titan' : 'Invoker'}'s skills and stats one click away.`
 }
 
-export default function TierListPage({ kind, listId }: { kind: Kind; listId: string }) {
-  const rows = boardFor(kind, listId)
+export default async function TierListPage({ kind, listId }: { kind: Kind; listId: string }) {
+  // Quantum's own overall ranking (Site Admin → Invokers → Tier Lists) replaces the boss-list average once saved.
+  const quantum = listId === 'overall' ? await getQuantumOverall(kind) : null
+  const rows = boardFor(kind, listId, quantum)
   if (!rows) notFound()
   const lists = listLinks(kind)
   const units = browserEntities(kind)
@@ -81,9 +84,11 @@ export default function TierListPage({ kind, listId }: { kind: Kind; listId: str
         sub={
           boss
               ? `Who to bring against ${boss}: every ${kind === 'Titan' ? 'Titan' : 'Invoker'} ranked for this boss, grouped by role.`
-              : kind === 'Titan'
-                ? `All ${units.length} Titans ranked. The overall tier combines each Titan's placements on all ${lists.length} boss tier lists; pick a boss to see its own list.`
-                : `All ${units.length} Invokers ranked by role. The overall tier combines each Invoker's placements on all ${lists.length} boss tier lists; pick a boss to see its own list, or switch to Grid to browse the whole database.`
+              : quantum
+                ? `Quantum's overall ranking of all ${units.length} ${plural(kind)}${kind === 'Titan' ? '' : ' by role'}. Pick a boss to see the game's own list for that fight${kind === 'Titan' ? '' : ', or switch to Grid to browse the whole database'}.`
+                : kind === 'Titan'
+                  ? `All ${units.length} Titans ranked. The overall tier combines each Titan's placements on all ${lists.length} boss tier lists; pick a boss to see its own list.`
+                  : `All ${units.length} Invokers ranked by role. The overall tier combines each Invoker's placements on all ${lists.length} boss tier lists; pick a boss to see its own list, or switch to Grid to browse the whole database.`
         }
       />
 
@@ -130,7 +135,9 @@ export default function TierListPage({ kind, listId }: { kind: Kind; listId: str
           weight against another.{' '}
           {boss
             ? `This page is the ${boss} list. Use the boss links above the board to compare it with the others, or the Overall list for a general ranking.`
-            : `The Overall list scores each placement (S+ = 7 down to E = 0) and averages it across every boss list the ${kind === 'Titan' ? 'Titan' : 'Invoker'} appears on. Averaging pulls everyone toward the middle, so the overall tiers are then handed out in the same proportions the boss lists use: the top scorers get S+, and so on down.`}{' '}
+            : quantum
+              ? `The Overall list is Quantum's own ranking from playing the game, on the same S+ to E scale. The boss lists are the game's official ones, shown as published.`
+              : `The Overall list scores each placement (S+ = 7 down to E = 0) and averages it across every boss list the ${kind === 'Titan' ? 'Titan' : 'Invoker'} appears on. Averaging pulls everyone toward the middle, so the overall tiers are then handed out in the same proportions the boss lists use: the top scorers get S+, and so on down.`}{' '}
           Filters dim anything that doesn&apos;t match on the board, and remove it in the Grid view.
         </p>
         <p>

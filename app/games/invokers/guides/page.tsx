@@ -6,8 +6,7 @@ import WorldHero from '@/src/qgg/components/WorldHero'
 import { getIcons, toTile } from '@/src/inv/lib/board'
 import { getEffects, getInvokers, getTierLists, getTitans } from '@/src/inv/lib/data'
 import { tierListPath } from '@/src/inv/lib/constants'
-import { getGuidesList } from '@/src/dcdl/lib/content-db'
-import { guidePath } from '@/src/lib/guide-games'
+import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuidePage'
 
 const PATH = '/games/invokers/guides'
 
@@ -22,7 +21,6 @@ export const metadata = pageMeta({
 })
 
 export default async function InvokersHubPage() {
-  const guides = await getGuidesList('invokers').catch(() => [])
   const invokers = getInvokers()
   const titans = getTitans()
   const icons = getIcons()
@@ -66,22 +64,8 @@ export default async function InvokersHubPage() {
           </div>
         </section>
 
-        {guides.length > 0 && (
-          <section className="w-card">
-            <h2>Guides</h2>
-            <div className="inv-guides">
-              {guides.map((g) => (
-                <Link key={g.id} href={guidePath(g.game, g.id)} className="inv-guide">
-                  <strong>{g.title}</strong>
-                  {g.description && <p>{g.description}</p>}
-                  {(g.pubDate || g.author) && (
-                    <small>{[g.pubDate, g.author && `by ${g.author}`].filter(Boolean).join(' · ')}</small>
-                  )}
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
+        <WorldGameNews game="invokers" />
+        <WorldGuideCards game="invokers" />
 
         <section className="w-card">
           <h2>Tier lists by boss</h2>

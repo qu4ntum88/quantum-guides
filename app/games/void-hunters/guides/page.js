@@ -6,8 +6,10 @@ import WorldHero from '@/src/qgg/components/WorldHero'
 import QTile from '@/src/qgg/components/QTile'
 import { breadcrumbLd, pageMeta, VH_CRUMB } from '@/src/lib/seo'
 import { getVhTieredRoster, vhEntities } from '@/src/vh/lib/hunters'
+import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuidePage'
 
-export const revalidate = 3600
+// Guides, codes and patch notes come from the CMS; refresh like the guide pages.
+export const revalidate = 60
 
 export const metadata = pageMeta({
   title: 'Void Hunters Guides: Tier List, Hunters & Status Effects',
@@ -49,6 +51,9 @@ export default async function VoidHuntersGuidesPage() {
                 ))}
               </div>
             </section>
+
+            <WorldGameNews game="voidhunters" />
+            <WorldGuideCards game="voidhunters" />
 
             {top.length > 0 && (
               <section className="w-card">

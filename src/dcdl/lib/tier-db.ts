@@ -23,7 +23,7 @@ const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 export type EntityType = 'champion' | 'legacy'
 /** Official (Quantum) lists in `official_tiers`: DCDL's two plus the other games' (src/qgg/game-tiers.ts). */
-export type OfficialType = EntityType | 'gf_hero' | 'vh_hunter'
+export type OfficialType = EntityType | 'gf_hero' | 'vh_hunter' | 'inv_invoker' | 'inv_titan'
 
 export const TIERS = ['S+', 'S', 'A+', 'A', 'B', 'C', 'D'] as const
 

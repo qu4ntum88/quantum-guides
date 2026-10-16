@@ -4,6 +4,7 @@ import path from 'path'
 import { notProd } from '@/src/lib/adminGuard'
 
 const DATA_FILE = path.join(process.cwd(), 'src/dcdl/data/combat-cycle.json')
+const HEROS_FILE = path.join(process.cwd(), 'src/dcdl/data/heros.json')
 const ICON_DIR = path.join(process.cwd(), 'public/dcdl/resource_icons')
 
 type CCStatusEffect = { name: string; effect: string }
@@ -18,8 +19,10 @@ type CCBoss = {
   currencies: CCCurrency[]
   image: string
   portrait: string
-  mechanics: string
+  mechanics: string // Quantum's Take
   skills: CCSkill[]
+  videoUrl?: string
+  bestChampions?: string[] // ordered champion ids
 }
 
 function readBosses(): CCBoss[] {
@@ -43,7 +46,9 @@ export async function GET() {
 }
 
 // Saves ONE boss back into the array, matched by id. Editing a single boss at a
-// time means a save can never clobber the other six.
+// time means a save can never clobber the other six. Name and skills are the
+// game's (scripts/sync-dcdl-kits.mjs refreshes them) and are kept as they are;
+// what changes here is Quantum's take, video, best champions, days and rewards.
 export async function POST(req: NextRequest) {
   const guard = notProd()
   if (guard) return guard
@@ -56,44 +61,30 @@ export async function POST(req: NextRequest) {
   const idx = bosses.findIndex((b) => b.id === id)
   if (idx === -1) return NextResponse.json({ error: `No boss with id "${id}"` }, { status: 404 })
 
-  if (!str(body.name)) return NextResponse.json({ error: 'Boss name is required' }, { status: 400 })
-
-  const skills: CCSkill[] = (Array.isArray(body.skills) ? body.skills : [])
-    .map((s) => {
-      const effects = (Array.isArray(s?.status_effects) ? s.status_effects : [])
-        .map((e) => ({ name: str(e?.name), effect: str(e?.effect) }))
-        .filter((e) => e.name || e.effect)
-      const type = str(s?.type)
-      return {
-        name: str(s?.name),
-        description: str(s?.description),
-        ...(type ? { type } : {}),
-        ...(effects.length > 0 ? { status_effects: effects } : {}),
-      }
-    })
-    .filter((s) => s.name || s.description)
-
-  if (skills.length > 20) {
-    return NextResponse.json({ error: 'A boss can have at most 20 skills' }, { status: 400 })
-  }
-
   const currencies: CCCurrency[] = (Array.isArray(body.currencies) ? body.currencies : [])
     .map((c) => ({ name: str(c?.name), image: path.basename(str(c?.image)) }))
     .filter((c) => c.name && c.image)
 
-  // id, image and portrait keep their existing values — those point at files on
-  // disk and aren't editable from the panel.
+  const videoUrl = str(body.videoUrl)
+  if (videoUrl && !/^https:\/\/(www\.|m\.)?(youtube\.com|youtu\.be)\//.test(videoUrl)) {
+    return NextResponse.json({ error: 'The guide video must be a YouTube link' }, { status: 400 })
+  }
+
+  const heroIds = new Set((JSON.parse(fs.readFileSync(HEROS_FILE, 'utf8')) as { id: string }[]).map((h) => h.id))
+  const picks = (Array.isArray(body.bestChampions) ? body.bestChampions : []).map(str)
+  const unknown = picks.filter((id) => !heroIds.has(id))
+  if (unknown.length) return NextResponse.json({ error: `Unknown champion id: ${unknown.join(', ')}` }, { status: 400 })
+
   const existing = bosses[idx]
   bosses[idx] = {
     ...existing,
-    name: str(body.name),
-    ccTag: str(body.ccTag) || existing.ccTag,
     day: str(body.day),
     mechanics: str(body.mechanics),
     currencies,
-    skills,
+    videoUrl,
+    bestChampions: [...new Set(picks)],
   }
 
-  fs.writeFileSync(DATA_FILE, JSON.stringify(bosses, null, 2), 'utf8')
+  fs.writeFileSync(DATA_FILE, `${JSON.stringify(bosses, null, 2)}\n`, 'utf8')
   return NextResponse.json({ success: true, boss: bosses[idx] })
 }

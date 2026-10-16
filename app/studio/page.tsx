@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 }
 
 // Gating happens client-side in <StudioClient> (via useUser) and server-side in
-// every API route behind it. This mirrors /admin/content, which avoids the
+// every API route behind it. This mirrors /admin, which avoids the
 // server auth() path that was 404ing on the current Clerk instance.
 export default function StudioPage() {
   return (

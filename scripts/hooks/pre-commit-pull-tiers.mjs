@@ -32,7 +32,7 @@ import { fileURLToPath } from 'node:url'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..')
 const DATA_DIR = 'src/dcdl/data'
-const TIER_FILES = [`${DATA_DIR}/heros.json`, `${DATA_DIR}/legacy.json`, 'src/gf/data/heroes.json', 'src/vh/data/hunters.json']
+const TIER_FILES = [`${DATA_DIR}/heros.json`, `${DATA_DIR}/legacy.json`, 'src/gf/data/heroes.json', 'src/vh/data/hunters.json', 'src/inv/data/quantum-tiers.json']
 const STAMP_FILE = `${DATA_DIR}/data-updated.json`
 // Other games' data files with a public "Updated" date (stamped as `<game>/<file>`).
 const OTHER_STAMPED = ['src/inv/data/roster.json', 'src/inv/data/tier-lists.json']

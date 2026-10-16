@@ -15,6 +15,8 @@ export interface TileEntity {
   caption?: string
   /** 'contain' for transparent cut-out portraits, so heads aren't cropped. */
   fit?: 'cover' | 'contain'
+  /** Quantum's Pay-to-Win / New markers (src/qgg/notes.ts). */
+  flags?: { p2w: boolean; isNew: boolean }
 }
 
 /** Portrait tile shared by every game: rarity frame, two corner icons, optional tier tag, name. */
@@ -48,6 +50,12 @@ export default function QTile({
         />
         {e.cornerTL && <img className="qt-ico qt-ico--tl" src={e.cornerTL.icon} alt={e.cornerTL.label} />}
         {e.cornerTR && <img className="qt-ico qt-ico--tr" src={e.cornerTR.icon} alt={e.cornerTR.label} />}
+        {e.flags && (
+          <span className="qt-flags">
+            {e.flags.isNew && <span className="qt-flag qt-flag--new">NEW</span>}
+            {e.flags.p2w && <span className="qt-flag qt-flag--p2w" title="Pay to win">$</span>}
+          </span>
+        )}
         {tier && (
           <span className="qt-tier" style={{ background: TIER_COLORS[tier] ?? '#666' }}>
             {tier}

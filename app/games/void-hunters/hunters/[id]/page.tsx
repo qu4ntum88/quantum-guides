@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Hunter, SkillEntry, BonusBreakdown } from '@/src/vh/components/HunterBox'
 import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
 import RichText from '@/src/vh/components/RichText'
+import QuantumTake from '@/src/qgg/components/QuantumTake'
 
 function readHunters(): Hunter[] {
   return require('@/src/vh/data/hunters.json') as Hunter[]
@@ -331,6 +332,8 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
             )}
           </div>
         </div>
+
+        <QuantumTake game="voidhunters" id={hunter.id} />
 
         {/* Bio */}
         {hunter.bio && hunter.bio.length > 0 && (

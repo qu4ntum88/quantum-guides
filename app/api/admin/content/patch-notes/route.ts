@@ -1,21 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getIsAdmin } from '@/src/lib/adminAuth'
 import { supabaseAdmin } from '@/src/lib/supabase'
+import { toGuideGame } from '@/src/lib/guide-games'
 
 // Admin-only CRUD for patch-note entries. Each publish is a new dated row;
 // older rows stay as the archive. The newest is the "current" one on the site.
+// Every row belongs to one game (`game`, the GUIDE_GAMES ids); ?game= filters.
 
 async function guard() {
   if (!(await getIsAdmin())) return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
   return null
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   const denied = await guard()
   if (denied) return denied
   const { data, error } = await supabaseAdmin
     .from('patch_notes')
     .select('*')
+    .eq('game', toGuideGame(req.nextUrl.searchParams.get('game')))
     .order('published_at', { ascending: false, nullsFirst: false })
     .order('created_at', { ascending: false })
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
@@ -30,6 +33,7 @@ export async function POST(req: NextRequest) {
   if (!body) return NextResponse.json({ error: 'Patch notes body is required' }, { status: 400 })
 
   const row: Record<string, unknown> = {
+    game: toGuideGame(b.game),
     title: String(b.title ?? '').trim() || 'Patch Notes',
     body,
     published_at: b.publishedAt ? String(b.publishedAt).slice(0, 10) : null,

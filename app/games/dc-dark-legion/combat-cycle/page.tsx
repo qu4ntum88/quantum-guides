@@ -19,6 +19,8 @@ type CCBoss = {
   portrait: string
   mechanics: string
   skills: CCSkill[]
+  videoUrl?: string
+  bestChampions?: string[]
 }
 
 function readBosses(): CCBoss[] {
@@ -49,12 +51,15 @@ export default function CombatCyclePage() {
     return DAY_ORDER.indexOf(firstDay(a.day)) - DAY_ORDER.indexOf(firstDay(b.day))
   })
 
-  // Counters are matched here, on the server, so the client component only
-  // receives the champion fields it actually renders.
+  // Counters are resolved here, on the server, so the client component only
+  // receives the champion fields it actually renders. `bestChampions` is
+  // Quantum's ordered pick list (Site Admin → DC: Dark Legion → Combat Cycle).
+  const byId = new Map(heroes.map((h) => [h.id, h]))
   const bossesWithCounters = bosses.map((boss) => ({
     ...boss,
-    counters: heroes
-      .filter((h) => h.gameModes?.includes(boss.ccTag))
+    counters: (boss.bestChampions ?? [])
+      .map((id) => byId.get(id))
+      .filter((h) => h != null)
       .map((h) => ({
         id: h.id,
         name: h.name,

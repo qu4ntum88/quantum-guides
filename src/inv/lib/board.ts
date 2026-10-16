@@ -3,6 +3,8 @@ import { CLASSES, TITAN_ROLES, TIERS, unitPath } from './constants'
 import { RARITY_COLORS, RARITY_ORDER, type BoardRow } from '@/src/qgg/tiers'
 import type { BrowserEntity, BrowserFilter } from '@/src/qgg/components/TierBrowser'
 import type { TileEntity } from '@/src/qgg/components/QTile'
+import type { QuantumTier } from './quantum-tiers'
+import { noteFlags } from '@/src/qgg/notes'
 
 /** label → icon for every element, class, role, faction and soul sign. */
 export function getIcons(): Record<string, string> {
@@ -32,6 +34,7 @@ export function toTile(u: TileSource, icons: Record<string, string>): TileEntity
     cornerTL: u.element && icons[u.element] ? { icon: icons[u.element], label: u.element } : null,
     cornerTR: col && icons[col] ? { icon: icons[col], label: col } : null,
     caption: `${u.name} · ${[u.rarity, u.element, col].filter(Boolean).join(' · ')}`,
+    flags: noteFlags('invokers', u.slug),
   }
 }
 
@@ -73,13 +76,27 @@ export function boardColumns(kind: Kind) {
 }
 
 /**
- * Board rows for one tier list. "overall" ranks every unit by its average across the
- * boss lists (see `assignOverallTiers` in scripts/sync-invokers.mjs); a boss id uses
- * that list as published.
+ * Board rows for one tier list. "overall" is Quantum's own ranking when he has saved
+ * one (`quantum`, rank order), otherwise every unit by its average across the boss
+ * lists (see `assignOverallTiers` in scripts/sync-invokers.mjs); a boss id uses that
+ * list as published.
  */
-export function boardFor(kind: Kind, listId: string): BoardRow[] | null {
+export function boardFor(kind: Kind, listId: string, quantum?: QuantumTier[] | null): BoardRow[] | null {
   const units = getRoster().filter((u) => u.kind === kind)
   const columns: string[] = [...(kind === 'Titan' ? TITAN_ROLES : CLASSES)]
+
+  if (listId === 'overall' && quantum) {
+    const byId = new Map(units.map((u) => [u.slug, u]))
+    return TIERS.map((tier) => ({
+      tier,
+      groups: columns.map((role) => ({
+        role,
+        members: quantum
+          .filter((q) => q.tier === tier && byId.has(q.id) && columnOf(byId.get(q.id)!) === role)
+          .map((q) => q.id),
+      })),
+    })).filter((r) => r.groups.some((g) => g.members.length))
+  }
 
   if (listId === 'overall') {
     return TIERS.map((tier) => ({

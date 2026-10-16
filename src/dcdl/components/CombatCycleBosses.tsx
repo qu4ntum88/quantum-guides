@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import TakeBody from './TakeBody'
 
 export type CCStatusEffect = { name: string; effect: string }
 export type CCSkill = { name: string; description: string; type?: string; status_effects?: CCStatusEffect[] }
@@ -18,6 +19,15 @@ export type CCBoss = {
   mechanics: string
   skills: CCSkill[]
   counters: CCCounter[]
+  /** Quantum's latest guide video for this boss (any YouTube URL form). */
+  videoUrl?: string
+}
+
+/** The video id from a youtube.com/watch, youtu.be, /shorts/, /live/ or /embed/ link. */
+function youtubeId(url?: string): string | null {
+  if (!url) return null
+  const m = url.match(/(?:youtu\.be\/|[?&]v=|\/(?:embed|shorts|live)\/)([\w-]{11})/)
+  return m ? m[1] : null
 }
 
 const RARITY_BG: Record<string, string> = {
@@ -190,13 +200,30 @@ export default function CombatCycleBosses({ bosses }: { bosses: CCBoss[] }) {
                 {/* Body */}
                 <div style={{ padding: '1.5rem 1.75rem', display: 'flex', flexDirection: 'column', gap: '1.75rem' }}>
 
-                  {/* Mechanics */}
+                  {/* Quantum's Take (stored as `mechanics`) */}
                   {boss.mechanics && (
                     <div>
-                      <div style={sectionLabel}>Boss Mechanics</div>
-                      <p style={{ margin: 0, color: '#c0c0c0', lineHeight: 1.75, fontSize: '0.9rem' }}>
-                        {boss.mechanics}
-                      </p>
+                      <div style={sectionLabel}>Quantum&apos;s Take</div>
+                      <div style={{ color: '#c0c0c0', fontSize: '0.9rem' }}>
+                        <TakeBody text={boss.mechanics} />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Guide video */}
+                  {youtubeId(boss.videoUrl) && (
+                    <div>
+                      <div style={sectionLabel}>Video Guide</div>
+                      <div style={{ position: 'relative', aspectRatio: '16 / 9', borderRadius: '0.6rem', overflow: 'hidden', background: '#000' }}>
+                        <iframe
+                          src={`https://www.youtube-nocookie.com/embed/${youtubeId(boss.videoUrl)}`}
+                          title={`${boss.name} Combat Cycle guide`}
+                          loading="lazy"
+                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+                        />
+                      </div>
                     </div>
                   )}
 
@@ -300,7 +327,7 @@ export default function CombatCycleBosses({ bosses }: { bosses: CCBoss[] }) {
                   {/* Top Counters */}
                   {boss.counters.length > 0 && (
                     <div>
-                      <div style={sectionLabel}>Top Counters</div>
+                      <div style={sectionLabel}>Best Champions</div>
                       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                         {boss.counters.map((hero) => (
                           <a

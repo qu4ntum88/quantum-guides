@@ -15,6 +15,11 @@ const nextConfig = {
       // Godforge and Void Hunters databases merged into their tier lists (2026-10-16).
       { source: '/games/godforge/heroes', destination: '/games/godforge/hero-tier-list', permanent: true },
       { source: '/games/godforge/tier-list', destination: '/games/godforge/hero-tier-list', permanent: true },
+      // Godforge guides live at /games/godforge/guides/<id>; their list is on the hub.
+      { source: '/games/godforge/guides', destination: '/games/godforge', permanent: true },
+      // The local admin panel became the site-wide one.
+      { source: '/admin/dcdl', destination: '/admin', permanent: false },
+      { source: '/admin/content', destination: '/admin', permanent: false },
       { source: '/games/void-hunters', destination: '/games/void-hunters/hunter-tier-list', permanent: true },
       ...Object.entries(gfLegacyIds).map(([id, slug]) => ({
         source: `/games/godforge/heroes/${id}`,
@@ -34,6 +39,10 @@ const nextConfig = {
     '/games/dc-dark-legion/heros/**': ['public/**/*'],
     '/games/dc-dark-legion/legacy/**': ['public/**/*'],
     '/og-default.png': ['public/**/*'],
+    // The file-writing admin routes save images under public/ with computed paths, so the
+    // tracer packs all of it (1.5 GB). They are notProd()-blocked on Vercel anyway, and no
+    // live admin route (tiers, content, whoami) reads public/ at runtime.
+    '/api/admin/**': ['public/**/*'],
   },
 }
 

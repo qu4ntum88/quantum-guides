@@ -1,6 +1,7 @@
 import type { Hunter } from '../components/HunterBox'
 import { resolveGameTiers } from '@/src/qgg/game-tiers'
 import { RARITY_COLORS, RARITY_ORDER } from '@/src/qgg/tiers'
+import { noteFlags } from '@/src/qgg/notes'
 import type { BrowserEntity, BrowserFilter } from '@/src/qgg/components/TierBrowser'
 
 // Void Hunters read layer for the tier list. hunters.json is the roster; Quantum's tier
@@ -31,6 +32,7 @@ export function vhEntities(hunters: VhHunter[]): BrowserEntity[] {
       rarity: h.rarity,
       rarityColor: RARITY_COLORS[h.rarity] ?? '#666',
       caption: `${h.name}${h.title ? `, ${h.title}` : ''} · ${[h.rarity, cls, first(h.species), first(h.homeland)].filter(Boolean).join(' · ')}`,
+      flags: noteFlags('voidhunters', h.id),
       group: cls,
       facets: { rarity: h.rarity, class: cls, homeland: first(h.homeland), species: first(h.species) },
       search: [h.title, ...(h.other ?? [])].filter(Boolean).join(' '),

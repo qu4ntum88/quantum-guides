@@ -14,18 +14,23 @@ import { btn, btnDanger, btnQuiet, gold, hint } from '@/src/dcdl/components/admi
  * before committing to fold live tiers back into them.
  */
 
-type EntityType = 'champion' | 'legacy' | 'gf_hero' | 'vh_hunter'
+export type OfficialEntityType = 'champion' | 'legacy' | 'gf_hero' | 'vh_hunter' | 'inv_invoker' | 'inv_titan'
+type EntityType = OfficialEntityType
 
 const TYPES: { id: EntityType; label: string; title: string; unranked: string }[] = [
   { id: 'champion', label: 'DCDL Champions', title: "Quantum's Champion Tier List", unranked: 'Unranked champions' },
   { id: 'legacy', label: 'DCDL Legacy Pieces', title: "Quantum's Legacy Piece Tier List", unranked: 'Unranked legacy pieces' },
   { id: 'gf_hero', label: 'Godforge Heroes', title: "Quantum's Godforge Tier List", unranked: 'Unranked heroes' },
   { id: 'vh_hunter', label: 'Void Hunters', title: "Quantum's Void Hunters Tier List", unranked: 'Unranked hunters' },
+  { id: 'inv_invoker', label: 'Invokers', title: "Quantum's Invoker Tier List", unranked: 'Unranked Invokers' },
+  { id: 'inv_titan', label: 'Titans', title: "Quantum's Titan Tier List", unranked: 'Unranked Titans' },
 ]
 type CatalogItem = EditorItem & { tier: string }
 
-export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string) => void }) {
-  const [type, setType] = useState<EntityType>('champion')
+/** `types` limits the board to one game's lists (the Site Admin's per-game tab); the Studio shows them all. */
+export default function OfficialTiersTab({ setStatus, types }: { setStatus: (s: string) => void; types?: EntityType[] }) {
+  const shown = types ? TYPES.filter((t) => types.includes(t.id)) : TYPES
+  const [type, setType] = useState<EntityType>(shown[0].id)
   const [items, setItems] = useState<CatalogItem[]>([])
   const [tiers, setTiers] = useState<readonly string[]>(TIERS)
   const [assign, setAssign] = useState<TierAssignment>({})
@@ -85,8 +90,8 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
 
   return (
     <div>
-      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
-        {TYPES.map(({ id: t, label }) => (
+      <div style={{ display: shown.length > 1 ? 'flex' : 'none', gap: '0.5rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
+        {shown.map(({ id: t, label }) => (
           <button key={t} style={{ ...btnQuiet, borderColor: type === t ? gold : 'rgba(255,255,255,0.2)', color: type === t ? gold : '#ccc' }}
             onClick={() => { if (t !== type) { setLoading(true); setType(t) } }}>
             {label}
@@ -97,7 +102,8 @@ export default function OfficialTiersTab({ setStatus }: { setStatus: (s: string)
       <p style={{ ...hint, marginBottom: '1.25rem', lineHeight: 1.6 }}>
         This is the official list on the public tier list page. Saving here takes over from the JSON files; the commit
         hook (<code style={{ color: gold }}>scripts/pull-tiers.mjs</code>) folds these rankings back into the game&apos;s JSON.
-        Godforge heroes and Void Hunters hunters you haven&apos;t placed yet start at their rarity tier.
+        Godforge heroes and Void Hunters hunters you haven&apos;t placed yet start at their rarity tier; Invokers and
+        Titans start at their boss-list average, and the public overall list switches to yours on the first save.
       </p>
 
       {loading ? <p style={{ color: '#888' }}>Loading…</p> : (

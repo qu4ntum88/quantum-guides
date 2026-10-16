@@ -28,6 +28,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ])
   const guides = allGuides.filter((g) => g.game === 'dcdl')
   const invGuides = allGuides.filter((g) => g.game === 'invokers')
+  const gfGuides = allGuides.filter((g) => g.game === 'godforge')
+  const vhGuides = allGuides.filter((g) => g.game === 'voidhunters')
   const tiers = tiersSavedAt?.slice(0, 10) ?? null
   const latest = (...dates: (string | null | undefined)[]) =>
     dates.filter((d): d is string => !!d).sort().pop() ?? null
@@ -57,7 +59,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Void Hunters: hub, hunter database, status effects, and every hunter page.
   if (PUBLIC_SECTIONS.voidHunters) {
-    entries.push(['/games/void-hunters/guides'], ['/games/void-hunters/hunter-tier-list'], ['/games/void-hunters/status-effects'])
+    entries.push(['/games/void-hunters/guides', vhGuides[0]?.pubDate], ['/games/void-hunters/hunter-tier-list'], ['/games/void-hunters/status-effects'])
+    entries.push(...vhGuides.map((g): Entry => [guidePath(g.game, g.id), g.pubDate]))
     try {
       const hunters = JSON.parse(
         fs.readFileSync(path.join(process.cwd(), 'src/vh/data/hunters.json'), 'utf8')
@@ -69,7 +72,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Godforge: hub, database, tier list, status effects, dungeons, and every hero/dungeon page.
   if (PUBLIC_SECTIONS.godforge) {
     const G = '/games/godforge'
-    entries.push([G], [`${G}/hero-tier-list`], [`${G}/status-effects`], [`${G}/dungeons`])
+    entries.push([G, gfGuides[0]?.pubDate], [`${G}/hero-tier-list`], [`${G}/status-effects`], [`${G}/dungeons`])
+    entries.push(...gfGuides.map((g): Entry => [guidePath(g.game, g.id), g.pubDate]))
     entries.push(...getGfHeroSlugs().map((s): Entry => [`${G}/heroes/${s}`]))
     try {
       const dungeons = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/gf/data/dungeons.json'), 'utf8')) as { slug: string }[]

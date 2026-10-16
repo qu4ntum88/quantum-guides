@@ -1,6 +1,7 @@
 import herosRaw from "../data/heros.json"
 import legacyRaw from "../data/legacy.json"
 import synergiesRaw from "../data/synergies.json"
+import combatCycleRaw from "../data/combat-cycle.json"
 import dataUpdated from "../data/data-updated.json"
 
 /**
@@ -127,9 +128,17 @@ export type Synergy = {
   infographic?: string
 }
 
+// Combat Cycle picks live on each boss (combat-cycle.json `bestChampions`, edited in the
+// Site Admin's Combat Cycle tab); fold them back in as the champion's "<Boss> CC" game modes.
+const ccModesByHero = new Map<string, string[]>()
+for (const boss of combatCycleRaw as { ccTag: string; bestChampions?: string[] }[]) {
+  for (const id of boss.bestChampions ?? []) ccModesByHero.set(id, [...(ccModesByHero.get(id) ?? []), boss.ccTag])
+}
+
 // Raw data with fixed image paths
 const herosData: Hero[] = (herosRaw as Hero[]).map((h) => ({
   ...h,
+  gameModes: [...(h.gameModes ?? []), ...(ccModesByHero.get(h.id) ?? [])],
   imageHeadshot: fixHeroImagePath(h.imageHeadshot),
   imageFull: fixHeroImagePath(h.imageFull),
   ultimate: h.ultimate ? { ...h.ultimate, image: fixHeroImagePath(h.ultimate.image) } : undefined,

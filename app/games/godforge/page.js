@@ -6,6 +6,7 @@ import QTile from '@/src/qgg/components/QTile'
 import WorldHero from '@/src/qgg/components/WorldHero'
 import { breadcrumbLd, GF_CRUMB, pageMeta } from '@/src/lib/seo'
 import { gfEntities, getGfTieredRoster } from '@/src/gf/lib/heroes'
+import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuidePage'
 
 export const metadata = pageMeta({
   title: 'Godforge Guides: Tier List, Heroes & Dungeons',
@@ -14,7 +15,8 @@ export const metadata = pageMeta({
   path: '/games/godforge',
 })
 
-export const revalidate = 3600
+// Guides, codes and patch notes come from the CMS; refresh like the guide pages.
+export const revalidate = 60
 
 async function getLatestFatelessVideo() {
   try {
@@ -72,6 +74,9 @@ export default async function GodforgePage() {
                 ))}
               </div>
             </section>
+
+            <WorldGameNews game="godforge" />
+            <WorldGuideCards game="godforge" />
 
             {topS.length > 0 && (
               <section className="w-card">

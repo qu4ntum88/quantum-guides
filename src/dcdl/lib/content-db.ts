@@ -226,8 +226,9 @@ export async function getGuide(id: string, game: GuideGame = DEFAULT_GUIDE_GAME)
   return guides.find((g) => g.id === id) ?? null
 }
 
-export async function getGameInfo(): Promise<GameInfo> {
-  const rows = await fetchTable<GameInfoRow>('game_info', 'id.asc')
+/** One game's server number, codes and (legacy) patch notes. Only DCDL falls back to the old file. */
+export async function getGameInfo(game: GuideGame = DEFAULT_GUIDE_GAME): Promise<GameInfo> {
+  const rows = await fetchTable<GameInfoRow>('game_info', 'id.asc', `&game=eq.${game}`)
   if (rows && rows.length > 0) {
     const r = rows[0]
     return {
@@ -236,7 +237,7 @@ export async function getGameInfo(): Promise<GameInfo> {
       gameCodes: r.game_codes ?? [],
     }
   }
-  return readGameInfoFile()
+  return game === DEFAULT_GUIDE_GAME ? readGameInfoFile() : { latestServer: '', patchNotes: '', gameCodes: [] }
 }
 
 type PatchNoteRow = {
@@ -251,8 +252,8 @@ type PatchNoteRow = {
 // "current" one shown on the guides hub; the rest are the archive. Falls back to
 // a single synthesized entry from game_info/file patch notes before the
 // patch_notes table exists or is seeded.
-export async function getPatchNotes(): Promise<PatchNote[]> {
-  const rows = await fetchTable<PatchNoteRow>('patch_notes', 'published_at.desc.nullslast,created_at.desc')
+export async function getPatchNotes(game: GuideGame = DEFAULT_GUIDE_GAME): Promise<PatchNote[]> {
+  const rows = await fetchTable<PatchNoteRow>('patch_notes', 'published_at.desc.nullslast,created_at.desc', `&game=eq.${game}`)
   if (rows && rows.length > 0) {
     return rows.map((r) => ({
       id: r.id,
@@ -261,7 +262,7 @@ export async function getPatchNotes(): Promise<PatchNote[]> {
       publishedAt: normDate(r.published_at),
     }))
   }
-  const gi = await getGameInfo()
+  const gi = await getGameInfo(game)
   return gi.patchNotes ? [{ id: 'current', title: 'Patch Notes', body: gi.patchNotes, publishedAt: null }] : []
 }
 

@@ -1,8 +1,9 @@
 # On-site content editor — setup
 
 This turns guides, patch notes, and infographics into database-backed content
-you can edit from **any device** at `https://www.quantumgameguides.com/admin/content`
-(and locally at `http://localhost:3000/admin/content`). Until you complete the
+you can edit from **any device** in the Site Admin at `https://www.quantumgameguides.com/admin`
+(each game's Guides / Game Info tabs, and DC: Dark Legion → Infographics; the old
+`/admin/content` URL redirects there). Until you complete the
 steps below, the site keeps showing the existing file-based content unchanged —
 the code falls back to the on-disk files whenever the tables are missing or empty.
 
@@ -131,8 +132,8 @@ a "Not authorized" notice; signed-out visitors are redirected to sign in.
   no redeploy.
 - If a table is empty or the database is unreachable, pages fall back to the
   on-disk files, so the site can never go blank because of a database hiccup.
-- The old local-only admin panel (`/admin/dcdl`) is untouched; it still manages
-  champions, legacy pieces, best teams, etc. from the local dev server.
+- The same Site Admin, run locally (`localhost:3000/admin`), also has the LOCAL tabs that
+  edit the repo's files (champions, legacy pieces, best teams, takes, …).
 
 ---
 

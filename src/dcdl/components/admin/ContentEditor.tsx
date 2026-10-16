@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import BlockEditor from './BlockEditor'
 import { btn, btnDanger, btnQuiet, gold, hint, ImageField, input, label } from './editor-ui'
-import { DEFAULT_GUIDE_GAME, GUIDE_GAMES, guidePath, toGuideGame } from '@/src/lib/guide-games'
+import { DEFAULT_GUIDE_GAME, GUIDE_GAMES, guideGame, guidePath, toGuideGame, type GuideGame } from '@/src/lib/guide-games'
 import {
   type Block,
   blocksToMarkdown,
@@ -13,49 +13,14 @@ import {
 } from '@/src/dcdl/lib/guide-blocks'
 
 /**
- * On-site content editor for DC: Dark Legion guides, patch notes / game info,
- * and infographics. Talks to the Clerk-gated /api/admin/content/* routes, which
- * re-verify admin server-side before writing to Supabase. Edits publish to the
+ * On-site content editors for guides, patch notes / game info and
+ * infographics, used as tabs by the Site Admin (/admin) and the Creator Studio.
+ * Talks to the Clerk-gated /api/admin/content/* routes, which re-verify the
+ * role server-side before writing to Supabase. Edits publish to the
  * live site within ~1 minute (pages revalidate every 60s).
  *
  * Shared styles, the image-upload hook, and <ImageField> live in ./editor-ui.
  */
-
-type Tab = 'guides' | 'patch' | 'infographics'
-
-export default function ContentEditor() {
-  const [tab, setTab] = useState<Tab>('guides')
-  const [status, setStatus] = useState('')
-
-  const tabBtn = (t: Tab, txt: string) => (
-    <button
-      onClick={() => { setTab(t); setStatus('') }}
-      style={{
-        ...btnQuiet,
-        borderColor: tab === t ? gold : 'rgba(255,255,255,0.2)',
-        color: tab === t ? gold : '#ccc',
-      }}
-    >
-      {txt}
-    </button>
-  )
-
-  return (
-    <div>
-      <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-        {tabBtn('guides', 'Guides')}
-        {tabBtn('patch', 'Patch Notes')}
-        {tabBtn('infographics', 'Infographics')}
-      </div>
-      {status && (
-        <p style={{ fontSize: '0.85rem', color: gold, marginBottom: '1rem' }}>{status}</p>
-      )}
-      {tab === 'guides' && <GuidesTab setStatus={setStatus} />}
-      {tab === 'patch' && <PatchTab setStatus={setStatus} />}
-      {tab === 'infographics' && <InfographicsTab setStatus={setStatus} />}
-    </div>
-  )
-}
 
 // ── Guides ───────────────────────────────────────────────────────────────────
 type GuideRow = {
@@ -135,15 +100,21 @@ function GuideBodyEditor({
   )
 }
 
-export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
+/**
+ * Guide list + editor. With `game` (the Site Admin's per-game Guides tab) it
+ * lists only that game's guides and new guides start in it; without it (the
+ * Studio) it lists every game's.
+ */
+export function GuidesTab({ setStatus, game }: { setStatus: (s: string) => void; game?: GuideGame }) {
   const [rows, setRows] = useState<GuideRow[]>([])
   const [editing, setEditing] = useState<GuideRow | null>(null)
 
   const load = useCallback(async () => {
     const res = await fetch('/api/admin/content/guides')
     if (!res.ok) { setStatus(`Load failed: ${res.status}`); return }
-    setRows(await res.json())
-  }, [setStatus])
+    const all: GuideRow[] = await res.json()
+    setRows(game ? all.filter((r) => toGuideGame(r.game) === game) : all)
+  }, [setStatus, game])
   useEffect(() => { void (async () => { await load() })() }, [load])
 
   const save = async () => {
@@ -255,7 +226,9 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
 
   return (
     <div>
-      <button style={btn} onClick={() => setEditing({ ...blankGuide })}>+ New guide</button>
+      <button style={btn} onClick={() => setEditing({ ...blankGuide, game: game ?? DEFAULT_GUIDE_GAME })}>
+        + New {game ? guideGame(game).label : ''} guide
+      </button>
       <ul style={{ listStyle: 'none', padding: 0, marginTop: '1.25rem' }}>
         {rows.map((r) => (
           <li key={r.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', padding: '0.75rem 0', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
@@ -276,36 +249,38 @@ export function GuidesTab({ setStatus }: { setStatus: (s: string) => void }) {
 }
 
 // ── Patch notes / game info ──────────────────────────────────────────────────
-function PatchTab({ setStatus }: { setStatus: (s: string) => void }) {
+/** One game's codes (+ DCDL's latest server) and its dated patch notes. Remount with `key={game}` when switching. */
+export function PatchTab({ setStatus, game = DEFAULT_GUIDE_GAME }: { setStatus: (s: string) => void; game?: GuideGame }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', maxWidth: '760px' }}>
-      <GameInfoForm setStatus={setStatus} />
+      <GameInfoForm setStatus={setStatus} game={game} />
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }} />
-      <PatchNotesManager setStatus={setStatus} />
+      <PatchNotesManager setStatus={setStatus} game={game} />
     </div>
   )
 }
 
 // Latest server + active game codes (patch notes live in their own table now).
-function GameInfoForm({ setStatus }: { setStatus: (s: string) => void }) {
+function GameInfoForm({ setStatus, game }: { setStatus: (s: string) => void; game: GuideGame }) {
   const [latestServer, setLatestServer] = useState('')
   const [gameCodes, setGameCodes] = useState('')
 
   useEffect(() => {
     void (async () => {
-      const res = await fetch('/api/admin/content/game-info')
+      const res = await fetch(`/api/admin/content/game-info?game=${game}`)
       if (!res.ok) { setStatus(`Load failed: ${res.status}`); return }
       const j = await res.json()
       setLatestServer(j.latest_server ?? '')
       setGameCodes((j.game_codes ?? []).join(', '))
     })()
-  }, [setStatus])
+  }, [setStatus, game])
 
   const save = async () => {
     setStatus('Saving…')
     const res = await fetch('/api/admin/content/game-info', {
       method: 'PUT', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        game,
         latestServer,
         gameCodes: gameCodes.split(',').map((s) => s.trim()).filter(Boolean),
       }),
@@ -317,13 +292,18 @@ function GameInfoForm({ setStatus }: { setStatus: (s: string) => void }) {
 
   return (
     <form onSubmit={(e) => { e.preventDefault(); save() }}>
-      <h3 style={{ marginTop: 0 }}>Server &amp; codes</h3>
-      <label style={label}>Latest server</label>
-      <input style={{ ...input, maxWidth: '160px' }} value={latestServer} onChange={(e) => setLatestServer(e.target.value)} />
+      <h3 style={{ marginTop: 0 }}>{game === 'dcdl' ? <>Server &amp; codes</> : 'Game codes'}</h3>
+      {game === 'dcdl' && (
+        <>
+          <label style={label}>Latest server</label>
+          <input style={{ ...input, maxWidth: '160px' }} value={latestServer} onChange={(e) => setLatestServer(e.target.value)} />
+        </>
+      )}
       <label style={label}>Active game codes (comma-separated)</label>
       <input style={input} value={gameCodes} onChange={(e) => setGameCodes(e.target.value)} />
+      {game !== 'dcdl' && <p style={hint}>Shown on the game&apos;s hub page while any are listed.</p>}
       <div style={{ marginTop: '1rem' }}>
-        <button type="submit" style={btn}>Save server &amp; codes</button>
+        <button type="submit" style={btn}>{game === 'dcdl' ? <>Save server &amp; codes</> : 'Save codes'}</button>
       </div>
     </form>
   )
@@ -334,15 +314,15 @@ const blankPatch = (): PatchRow => ({ id: '', title: 'Patch Notes', body: '', pu
 
 // Dated patch-note entries: publishing a new one archives the previous (the
 // newest-dated entry is the one shown on the guides hub).
-function PatchNotesManager({ setStatus }: { setStatus: (s: string) => void }) {
+function PatchNotesManager({ setStatus, game }: { setStatus: (s: string) => void; game: GuideGame }) {
   const [rows, setRows] = useState<PatchRow[]>([])
   const [editing, setEditing] = useState<PatchRow | null>(null)
 
   const load = useCallback(async () => {
-    const res = await fetch('/api/admin/content/patch-notes')
+    const res = await fetch(`/api/admin/content/patch-notes?game=${game}`)
     if (!res.ok) { setStatus(`Load failed: ${res.status}`); return }
     setRows(await res.json())
-  }, [setStatus])
+  }, [setStatus, game])
   useEffect(() => { void (async () => { await load() })() }, [load])
 
   const set = (patch: Partial<PatchRow>) => setEditing((e) => (e ? { ...e, ...patch } : e))
@@ -353,7 +333,7 @@ function PatchNotesManager({ setStatus }: { setStatus: (s: string) => void }) {
     setStatus('Saving…')
     const res = await fetch('/api/admin/content/patch-notes', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: editing.id || undefined, title: editing.title, body: editing.body, publishedAt: editing.published_at }),
+      body: JSON.stringify({ id: editing.id || undefined, game, title: editing.title, body: editing.body, publishedAt: editing.published_at }),
     })
     const json = await res.json()
     if (!res.ok) { setStatus(`Save failed: ${json.error ?? res.status}`); return }
@@ -379,10 +359,10 @@ function PatchNotesManager({ setStatus }: { setStatus: (s: string) => void }) {
         <input style={input} value={editing.title} onChange={(e) => set({ title: e.target.value })} />
         <label style={label}>Publish date</label>
         <input style={{ ...input, maxWidth: '180px' }} type="date" value={editing.published_at ?? ''} onChange={(e) => set({ published_at: e.target.value })} />
-        <p style={hint}>The newest-dated entry shows on the guides hub; older entries move to the archive automatically.</p>
+        <p style={hint}>The newest-dated entry shows on {guideGame(game).label}&apos;s hub page; older entries move to the archive automatically.</p>
         <label style={label}>Patch notes</label>
         <textarea style={{ ...input, minHeight: '18rem', lineHeight: 1.55 }} value={editing.body} onChange={(e) => set({ body: e.target.value })} />
-        <p style={hint}>Line breaks and commas split sections, matching the patch-notes card rendering.</p>
+        <p style={hint}>Paste the notes as-is; line breaks are kept exactly as typed.</p>
         <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
           <button type="submit" style={btn}>{editing.id ? 'Save' : 'Publish'}</button>
           <button type="button" style={btnQuiet} onClick={() => setEditing(null)}>Cancel</button>

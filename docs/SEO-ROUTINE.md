@@ -28,7 +28,7 @@ A repeatable checklist for keeping the site climbing in Google. Most of it lives
 2. **Tier list updates.** If you changed the champion or legacy tiers this week, request indexing for:
    - https://www.quantumgameguides.com/games/dc-dark-legion/champion-tier-list
    - https://www.quantumgameguides.com/games/dc-dark-legion/legacy-tier-list
-3. **New guide published?** Request indexing for its URL, which is shown in `/admin/content`. Give it a real one-to-two sentence **description**, because that is what Google shows under the link.
+3. **New guide published?** Request indexing for its URL, which is shown in the Site Admin (`/admin`). Give it a real one-to-two sentence **description**, because that is what Google shows under the link.
 4. **Share links to specific pages, not just the homepage**, in Discord, Reddit and your YouTube descriptions/pinned comments. For example, link the champion page in a video about that champion. Links from other sites are still one of Google's strongest ranking signals.
 
 ## Every game patch / new champion
@@ -40,7 +40,7 @@ A repeatable checklist for keeping the site climbing in Google. Most of it lives
 3. Request indexing for the tier list pages (above) and, if they changed:
    - https://www.quantumgameguides.com/games/dc-dark-legion/best-teams
    - https://www.quantumgameguides.com/games/dc-dark-legion/combat-cycle
-4. Publish patch notes in `/admin/content`. A fresh, dated page helps the guides hub look current.
+4. Publish patch notes in the Site Admin (`/admin`). A fresh, dated page helps the guides hub look current.
 
 ## Monthly (about 30 minutes)
 

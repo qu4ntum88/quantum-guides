@@ -48,6 +48,10 @@ const TARGETS = [
   // Godforge / Void Hunters: Quantum's S…F lists (unsaved units fall back to their rarity seed).
   { type: 'gf_hero', file: 'src/gf/data/heroes.json', label: 'Godforge heroes' },
   { type: 'vh_hunter', file: 'src/vh/data/hunters.json', label: 'Void Hunters hunters' },
+  // Invokers: the roster is rewritten by every sync, so Quantum's lists get their own file,
+  // keyed by type, in rank order (src/inv/lib/quantum-tiers.ts reads it).
+  { type: 'inv_invoker', file: 'src/inv/data/quantum-tiers.json', label: 'Invokers', standalone: true },
+  { type: 'inv_titan', file: 'src/inv/data/quantum-tiers.json', label: 'Titans', standalone: true },
 ]
 
 for (const target of TARGETS) {
@@ -67,6 +71,18 @@ for (const target of TARGETS) {
   }
 
   const filePath = path.join(root, target.file)
+
+  if (target.standalone) {
+    const doc = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : {}
+    const next = data.map((r) => ({ id: r.entity_id, tier: r.tier || '', ...(r.previous_tier ? { previousTier: r.previous_tier } : {}) }))
+    const changed = JSON.stringify(doc[target.type] ?? []) !== JSON.stringify(next)
+    doc[target.type] = next
+    fs.writeFileSync(filePath, `${JSON.stringify(doc, null, 2)}
+`)
+    console.log(`${target.label}: pulled ${data.length} rankings${changed ? '' : ' (unchanged)'} → ${target.file}`)
+    continue
+  }
+
   const items = JSON.parse(fs.readFileSync(filePath, 'utf8'))
   const saved = new Map(data.map((r) => [r.entity_id, r]))
 

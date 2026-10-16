@@ -3,6 +3,7 @@ import path from 'path'
 import type { GfHero } from '../components/GfHeroBox'
 import { resolveGameTiers } from '@/src/qgg/game-tiers'
 import { RARITY_COLORS, RARITY_ORDER } from '@/src/qgg/tiers'
+import { noteFlags } from '@/src/qgg/notes'
 import type { BrowserEntity, BrowserFilter } from '@/src/qgg/components/TierBrowser'
 
 // Godforge read layer. heroes.json is the roster (slug ids, local art, rarity, realm, Quantum's
@@ -78,6 +79,7 @@ export function gfEntities(heroes: GfRosterHero[]): BrowserEntity[] {
       cornerTL: h.faction ? { icon: gfIcon.faction(h.faction)!, label: realm ?? h.faction } : null,
       cornerTR: h.affinity ? { icon: gfIcon.affinity(h.affinity)!, label: h.affinity } : null,
       caption: `${h.name} · ${[h.rarity, h.affinity, h.archetype, realm].filter(Boolean).join(' · ')}`,
+      flags: noteFlags('godforge', h.id),
       group: h.archetype,
       facets: { rarity: h.rarity, affinity: h.affinity, allegiance: h.allegiance, realm, archetype: h.archetype },
     }

@@ -1,15 +1,20 @@
 /**
- * Games that have a CMS guide section. A guide's `game` column (Supabase
- * `guides.game`, check-constrained to these ids) decides which section lists
- * it and the URL it lives at. Isomorphic: used by the editor, the save route
+ * The site's games, as the CMS knows them. A guide's `game` column (Supabase
+ * `guides.game`) decides which section lists it and the URL it lives at; the
+ * same ids key `patch_notes.game` and `game_info.game`, so every game gets its
+ * own patch notes and codes. Isomorphic: used by the editors, the save routes
  * and the public pages.
  *
- * Adding a game here also needs: the id in the `guides_game_check` constraint,
- * a `<base>/[id]` guide page, and the game's guides in the sitemap.
+ * Adding a game here also needs: the id in the `guides_game_check`,
+ * `patch_notes_game_check` and `game_info_game_check` constraints, a
+ * `<base>/[id]` guide page (see `src/qgg/components/WorldGuidePage.tsx`), and
+ * the game's guides in the sitemap.
  */
 export const GUIDE_GAMES = [
-  { id: 'dcdl', label: 'DC: Dark Legion', base: '/games/dc-dark-legion/guides' },
-  { id: 'invokers', label: 'Invokers: Titan Legacy', base: '/games/invokers/guides' },
+  { id: 'dcdl', label: 'DC: Dark Legion', base: '/games/dc-dark-legion/guides', hub: '/games/dc-dark-legion/guides' },
+  { id: 'godforge', label: 'Godforge', base: '/games/godforge/guides', hub: '/games/godforge' },
+  { id: 'invokers', label: 'Invokers: Titan Legacy', base: '/games/invokers/guides', hub: '/games/invokers/guides' },
+  { id: 'voidhunters', label: 'Void Hunters', base: '/games/void-hunters/guides', hub: '/games/void-hunters/guides' },
 ] as const
 
 export type GuideGame = (typeof GUIDE_GAMES)[number]['id']
@@ -20,5 +25,6 @@ export function toGuideGame(v: unknown): GuideGame {
   return GUIDE_GAMES.some((g) => g.id === v) ? (v as GuideGame) : DEFAULT_GUIDE_GAME
 }
 
-export const guidePath = (game: GuideGame, id: string) =>
-  `${GUIDE_GAMES.find((g) => g.id === game)!.base}/${id}`
+export const guideGame = (game: GuideGame) => GUIDE_GAMES.find((g) => g.id === game)!
+
+export const guidePath = (game: GuideGame, id: string) => `${guideGame(game).base}/${id}`

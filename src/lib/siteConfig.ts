@@ -5,7 +5,7 @@
 // the pages return 404, the nav/homepage entries disappear, and it drops out of
 // the sitemap / gets disallowed in robots.txt.
 //
-// NOTE: this only affects the PUBLIC site. The admin panel at /admin/dcdl reads
+// NOTE: this only affects the PUBLIC site. The Site Admin at /admin reads
 // and writes the underlying JSON data files directly and is unaffected — you can
 // keep editing Godforge / Void Hunters offline while they're hidden.
 export const PUBLIC_SECTIONS = {
