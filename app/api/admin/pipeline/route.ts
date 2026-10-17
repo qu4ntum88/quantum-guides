@@ -25,6 +25,11 @@ const JOBS: Record<string, JobDef> = {
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'dcdl', 'update.mjs'), '--skip-images'],
     note: 'Skips AssetStudio. ~1–2 min.', report: 'dcdl',
   },
+  'dcdl-nda-scan': {
+    group: 'DC: Dark Legion', label: 'Scan unreleased content [NDA]',
+    cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'dcdl', 'scan-nda.mjs'), '--print'],
+    note: 'NDA, private: finds champions, legacy, base skins and events in the game files that are not live yet, checks them against the patch notes, and shows the change report below. Results stay in <exports>\\dcdl\\_nda, never in the site. Runs on its own after every extract too.',
+  },
   'dcdl-kits-preview': {
     group: 'DC: Dark Legion', label: 'Refresh site kits — preview',
     cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-kits.mjs')],
@@ -74,6 +79,16 @@ const JOBS: Record<string, JobDef> = {
     group: 'Godforge', label: 'Extract data only (reuse art)',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'godforge', 'update.mjs'), '--skip-images'],
     note: 'Skips AssetStudio; still re-reads godforge.gg (cached pages are reused).', report: 'godforge',
+  },
+  'patch-notes-preview': {
+    group: 'Patch notes (Discord)', label: 'Sync patch notes — preview',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-discord-patch-notes.mjs')],
+    note: 'Reads new posts from the followed announcement channels in Discord, plus older posts pasted into <exports>\\<game>\\_manual\\patch-notes; writes nothing. Shows counts per game, date range and sample titles.',
+  },
+  'patch-notes-apply': {
+    group: 'Patch notes (Discord)', label: 'Sync patch notes — apply',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-discord-patch-notes.mjs'), '--write'],
+    note: 'Saves new official posts to the game_posts archive and new patch notes to patch_notes (live on the site within ~1 min). No commit needed.',
   },
   'gf-site-sync': {
     group: 'Godforge', label: 'Update the hero pages from the export',

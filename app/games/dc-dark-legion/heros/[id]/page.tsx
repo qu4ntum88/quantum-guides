@@ -13,6 +13,8 @@ import TakeBody from '@/src/dcdl/components/TakeBody'
 import ExpandableTake from '@/src/dcdl/components/ExpandableTake'
 import ChampionGameData, { type ChampionGameDataProps } from '@/src/dcdl/components/champion/ChampionGameData'
 import StrategyGuide, { type InGameGuide } from '@/src/dcdl/components/champion/StrategyGuide'
+import EntityHistory from '@/src/dcdl/components/history/EntityHistory'
+import { getEntityHistory } from '@/src/dcdl/lib/history-db'
 import JsonLd from '@/app/components/JsonLd'
 import { breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import fs from 'fs'
@@ -87,6 +89,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
 
   // Absent for a champion the export couldn't match; those sections then don't render.
   const gameData = readGameData(hero.id)
+  const history = await getEntityHistory('dcdl', 'champion', hero.id)
 
   const linkedAscended = hero.ascendsTo ? (allHeros.find((h) => h.id === hero.ascendsTo) ?? null) : null
   const linkedBase = hero.ascendedFrom ? (allHeros.find((h) => h.id === hero.ascendedFrom) ?? null) : null
@@ -281,6 +284,8 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         {gameData && (
           <ChampionGameData curves={gameData.curves} firstLevel={gameData.firstLevel} maxLevel={gameData.maxLevel} talents={gameData.talents} lore={gameData.lore} />
         )}
+
+        <EntityHistory name={firstName} entries={history} />
 
         <VotingWidget entityType="champion" entityId={id} />
 

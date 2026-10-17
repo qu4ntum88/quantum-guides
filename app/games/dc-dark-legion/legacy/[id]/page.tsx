@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getResolvedHeros, getResolvedLegacy, type HeroResolved, type LegacyResolved } from '@/src/dcdl/lib/data'
 import { LegacyDetailView, LEGACY_QUALITY, type LegacyDetails } from '@/src/dcdl/components/legacy/LegacyDetail'
+import EntityHistory from '@/src/dcdl/components/history/EntityHistory'
+import { getEntityHistory } from '@/src/dcdl/lib/history-db'
 import JsonLd from '@/app/components/JsonLd'
 import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../../godforge/game.css'
@@ -88,6 +90,7 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
   const rank = rankOf(piece, d)
   const stats = maxStats(d)
   const path_ = `${BASE}/${piece.id}`
+  const history = await getEntityHistory('dcdl', 'legacy', piece.id)
 
   // Champions to link: the site's own recommendations first, then any the game's
   // guide names that resolve to exactly one site champion.
@@ -138,6 +141,8 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
         </div>
 
         <p className="lgp-summary">{summary}</p>
+
+        <EntityHistory name={piece.name} entries={history} />
 
         {champions.length > 0 && (
           <section className="lgp-block">

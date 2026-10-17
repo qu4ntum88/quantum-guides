@@ -10,6 +10,7 @@ import OfficialTiersTab from '@/src/dcdl/components/studio/OfficialTiersTab'
 import ReviewQueueTab from '@/src/dcdl/components/studio/ReviewQueueTab'
 import ApplicationsTab from '@/src/dcdl/components/studio/ApplicationsTab'
 import UnitNotesPanel from './UnitNotesPanel'
+import HistoryTab from './HistoryTab'
 import {
   BestTeamsForm,
   ChampionForm,
@@ -57,6 +58,7 @@ const SECTIONS: Section[] = [
       { id: 'tiers', label: 'Tier Lists', kind: 'live', render: (s) => <OfficialTiersTab setStatus={s} types={['champion', 'legacy']} /> },
       { id: 'info', label: 'Game Info', kind: 'live', render: (s) => <PatchTab setStatus={s} game="dcdl" /> },
       { id: 'guides', label: 'Guides', kind: 'live', render: (s) => <GuidesTab setStatus={s} game="dcdl" /> },
+      { id: 'history', label: 'History', kind: 'live', render: (s) => <HistoryTab setStatus={s} game="dcdl" /> },
       { id: 'best-teams', label: 'Best Teams', kind: 'local', render: () => <BestTeamsForm /> },
       { id: 'supreme-commander', label: 'Supreme Commander', kind: 'local', render: () => <SupremeCommanderForm /> },
       { id: 'infographics', label: 'Infographics', kind: 'live', render: (s) => <InfographicsTab setStatus={s} /> },
