@@ -281,7 +281,7 @@ async function selectAll(table, columns, filter) {
   return { data: rows }
 }
 
-const { data: existingPosts, error: postsErr } = await selectAll('game_posts', 'id, game, channel_id, message_ids, posted_at, title, body, kind, source, edited_at, images')
+const { data: existingPosts, error: postsErr } = await selectAll('game_posts', 'id, game, channel_id, message_ids, posted_at, title, body, kind, source, attachments, edited_at, images')
 const archiveReady = !postsErr
 if (postsErr && WRITE) {
   console.error(`The game_posts table is missing (${postsErr.message}). Apply the migration first (see the script header).`)
@@ -397,9 +397,10 @@ for (const [game, dir] of Object.entries(MANUAL_DIRS)) {
   const folder = path.join(EXPORTS, dir, '_manual', 'images')
   if (!fs.existsSync(folder)) continue
   // This run's posts first, then stored posts it didn't rebuild (a new-posts-only run skips old ones).
-  const fresh = built.filter((x) => x.game === game).flatMap((x) => x.posts).concat(fillPosts.filter((p) => p.game === game))
+  // Fill-in rows are excluded: an image belongs to the real post of that date.
+  const fresh = built.filter((x) => x.game === game).flatMap((x) => x.posts)
   const freshIds = new Set(fresh.map((p) => p.id))
-  const candidates = fresh.concat((existingPosts ?? []).filter((p) => p.game === game && !freshIds.has(p.id)).map((p) => ({ ...p, stored: true })))
+  const candidates = fresh.concat((existingPosts ?? []).filter((p) => p.game === game && p.source !== 'fill-in' && !freshIds.has(p.id)).map((p) => ({ ...p, stored: true })))
   for (const file of fs.readdirSync(folder)) {
     const ext = file.split('.').pop().toLowerCase()
     if (!IMAGE_TYPES[ext]) continue
@@ -414,7 +415,7 @@ for (const [game, dir] of Object.entries(MANUAL_DIRS)) {
     const key = `game-posts/${game}/${file.replace(/[^A-Za-z0-9._-]+/g, '-')}`
     const url = `${SB_URL}/storage/v1/object/public/content-images/${key}`
     target.images = [...new Set([...(target.images ?? []), url])].sort()
-    if (target.stored) storedImageUpdates.push(target)
+    if (target.stored && !storedImageUpdates.includes(target)) storedImageUpdates.push(target)
     imageUploads.push({ file: path.join(folder, file), key, type: IMAGE_TYPES[ext] })
   }
 }
