@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidatePath } from 'next/cache'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole } from '@/src/lib/roles-server'
 import heros from '@/src/dcdl/data/heros.json'
@@ -14,6 +15,18 @@ import legacy from '@/src/dcdl/data/legacy.json'
 
 const KINDS = ['release', 'rework', 'buff', 'nerf', 'rerun', 'change']
 const TYPES = ['champion', 'legacy']
+
+// The champion / legacy pages are prerendered and only refresh on a visit after their 60s
+// window, and that visit still gets the old copy. Rebuild the affected pages right away instead,
+// so an approval shows the next time Tyler loads the page.
+async function refreshPages(ids: string[]) {
+  if (!ids.length) return
+  const { data } = await supabaseAdmin.from('entity_history').select('entity_type, entity_id').in('id', ids)
+  for (const r of data ?? []) refreshPage(r.entity_type, r.entity_id)
+}
+function refreshPage(entityType: string, entityId: string) {
+  revalidatePath(entityType === 'legacy' ? `/games/dc-dark-legion/legacy/${entityId}` : `/games/dc-dark-legion/heros/${entityId}`)
+}
 
 async function guard() {
   return (await requireRole('admin')) ? null : NextResponse.json({ error: 'Forbidden' }, { status: 403 })
@@ -76,6 +89,7 @@ export async function POST(req: NextRequest) {
   }
   const { data, error } = await supabaseAdmin.from('entity_history').insert(row).select('id').single()
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  refreshPage(row.entity_type, row.entity_id) // a new entry is a draft, but keep the page in step anyway
   return NextResponse.json({ success: true, id: data.id })
 }
 
@@ -91,6 +105,7 @@ export async function PATCH(req: NextRequest) {
     if (!ids.length) return NextResponse.json({ error: 'No entries given' }, { status: 400 })
     const { error } = await supabaseAdmin.from('entity_history').update({ status, updated_at: new Date().toISOString() }).in('id', ids)
     if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+    await refreshPages(ids)
     return NextResponse.json({ success: true })
   }
 
@@ -99,6 +114,7 @@ export async function PATCH(req: NextRequest) {
   if (!id || !Object.keys(fields).length) return NextResponse.json({ error: 'Nothing to save' }, { status: 400 })
   const { error } = await supabaseAdmin.from('entity_history').update({ ...fields, updated_at: new Date().toISOString() }).eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  await refreshPages([id]) // editing an approved entry changes the live page
   return NextResponse.json({ success: true })
 }
 
@@ -108,7 +124,9 @@ export async function DELETE(req: NextRequest) {
   if (denied) return denied
   const id = req.nextUrl.searchParams.get('id')
   if (!id) return NextResponse.json({ error: 'Missing id' }, { status: 400 })
+  const { data: row } = await supabaseAdmin.from('entity_history').select('entity_type, entity_id').eq('id', id).maybeSingle()
   const { error } = await supabaseAdmin.from('entity_history').delete().eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  if (row) refreshPage(row.entity_type, row.entity_id)
   return NextResponse.json({ success: true })
 }
