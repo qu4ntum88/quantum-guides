@@ -63,6 +63,8 @@ const CHANNELS = [
   { game: 'voidhunters', id: '1541120593498349638' },
 ]
 const GAME_LABEL = { dcdl: 'DC: Dark Legion', godforge: 'Godforge', invokers: 'Invokers', voidhunters: 'Void Hunters' }
+// Each game's folder under <exports> (drop folders: <folder>\_manual\patch-notes\, see below).
+const MANUAL_DIRS = { dcdl: 'dcdl', godforge: 'godforge', invokers: 'invokers', voidhunters: 'void-hunters' }
 
 // ── Discord REST ─────────────────────────────────────────────────────────────
 const API = 'https://discord.com/api/v10'
@@ -232,8 +234,17 @@ function titleFor(game, kind, body, postedAt) {
   return t || (kind === 'patch_notes' ? 'Patch Notes' : `${GAME_LABEL[game]} post`)
 }
 
+// Following only forwards messages the devs publish. When they publish a section header but not the
+// message(s) under it, it arrives as a lone heading (Feb 11 2026). Flag those so the missing text can
+// be pasted into the game's fill-in folder.
+const gapWarnings = []
+const isBareHeading = (m) => /^\s*#{1,3}\s/.test(m.content ?? '') && clean(m.content).split('\n').filter((l) => l.trim()).length === 1
+
 function buildPost(game, channelId, group) {
   const { feed, messages } = group
+  for (const m of messages) {
+    if (isBareHeading(m)) gapWarnings.push(`${GAME_LABEL[game]} ${utcDate(m.timestamp)}: "${clean(m.content)}" arrived with nothing under it. Paste the missing text into ${MANUAL_DIRS[game]}\\_manual\\patch-notes\\fill-in\\${utcDate(m.timestamp)}.txt`)
+  }
   const text = messages.map(messageText).filter(Boolean).join('\n\n')
   const body = clean(text)
   const ids = messages.map((m) => m.id)
@@ -270,7 +281,7 @@ async function selectAll(table, columns, filter) {
   return { data: rows }
 }
 
-const { data: existingPosts, error: postsErr } = await selectAll('game_posts', 'id, channel_id, message_ids, posted_at, title, body, kind, source, edited_at')
+const { data: existingPosts, error: postsErr } = await selectAll('game_posts', 'id, game, channel_id, message_ids, posted_at, title, body, kind, source, edited_at, images')
 const archiveReady = !postsErr
 if (postsErr && WRITE) {
   console.error(`The game_posts table is missing (${postsErr.message}). Apply the migration first (see the script header).`)
@@ -316,11 +327,12 @@ for (const ch of CHANNELS) {
 // folder, and its id is "manual:<game>:<file name>", so re-runs update in place. Deleting or
 // renaming a file removes its old row.
 const EXPORTS = process.env.GAME_EXPORTS_DIR || 'E:\\GameAssets\\Exports'
-const MANUAL_DIRS = { dcdl: 'dcdl', godforge: 'godforge', invokers: 'invokers', voidhunters: 'void-hunters' }
 const MANUAL_NAME = /^(\d{4}-\d{2}-\d{2})\s+(.+)\.(md|txt)$/i
 const manualWarnings = []
 const manualSeen = new Set()
 const manualGames = new Set() // games whose folder exists (only those get stale manual rows removed)
+const fills = new Map() // "game YYYY-MM-DD" → hand-pasted text to add to that date's synced patch notes
+const fillPosts = [] // the same text, archived in game_posts
 for (const [game, dir] of Object.entries(MANUAL_DIRS)) {
   const folder = path.join(EXPORTS, dir, '_manual', 'patch-notes')
   if (!fs.existsSync(folder)) continue
@@ -343,12 +355,70 @@ for (const [game, dir] of Object.entries(MANUAL_DIRS)) {
       ? 'patch_notes' : classify(game, 'manual', { content: raw, embeds: [] }, body)
     posts.push({
       id, message_ids: [], game, channel_id: 'manual', source: 'manual', kind, title, body,
-      attachments: 0, posted_at: `${m[1]}T12:00:00.000Z`, edited_at: null,
+      attachments: 0, posted_at: `${m[1]}T12:00:00.000Z`, edited_at: null, images: [],
     })
   }
   posts.sort((a, b) => a.posted_at.localeCompare(b.posted_at))
   built.push({ game, id: 'manual', manual: true, folder, fetched: files.length, posts })
+
+  // fill-in\YYYY-MM-DD*.txt: sections the devs posted in the official channel but never published,
+  // so following never forwarded them (Feb 11 2026: the Teen Titans and Bat Family kit changes came
+  // through as bare headers). The text is added to the end of that date's synced patch notes and
+  // archived as its own row; it never becomes a separate patch note.
+  const fillDir = path.join(folder, 'fill-in')
+  if (fs.existsSync(fillDir)) {
+    for (const file of fs.readdirSync(fillDir).filter((f) => /\.(md|txt)$/i.test(f) && f.toLowerCase() !== 'readme.txt')) {
+      const date = file.match(/^(\d{4}-\d{2}-\d{2})/)?.[1]
+      if (!date) { manualWarnings.push(`${dir}\\fill-in: "${file}" — name must start with the patch date, e.g. 2026-02-11.txt`); continue }
+      const raw = fs.readFileSync(path.join(fillDir, file), 'utf8')
+        .replace(/:neonsparkles?:/gi, '✨').replace(/(^|[\s(]):[A-Za-z][A-Za-z0-9_~]{1,31}:(?=[\s).,!?]|$)/gm, '$1')
+      const body = clean(raw)
+      if (!body) { manualWarnings.push(`${dir}\\fill-in: "${file}" is empty`); continue }
+      const id = `manual:${game}:fill-in/${file}`
+      manualSeen.add(id)
+      const key = `${game} ${date}`
+      fills.set(key, [fills.get(key), body].filter(Boolean).join('\n\n'))
+      fillPosts.push({
+        id, message_ids: [], game, channel_id: 'manual', source: 'fill-in', kind: 'patch_notes',
+        title: `${monthDay(`${date}T12:00:00Z`)} Patch Notes (sections filled in by hand)`, body,
+        attachments: 0, posted_at: `${date}T12:00:00.000Z`, edited_at: null, images: [],
+      })
+    }
+  }
 }
+// _manual\images\: images that went with a post (Discord's attachment links expire, so Tyler
+// saves the ones worth keeping). The date in the file name ("roadmap 2026-06-12.png") ties it to
+// the post from that date; it is uploaded to the content-images bucket on --write and listed on
+// the post's `images`. A date with several posts needs the post's title in the name too.
+const IMAGE_TYPES = { png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', webp: 'image/webp', gif: 'image/gif' }
+const imageUploads = []
+const storedImageUpdates = [] // stored posts this run didn't rebuild, that gain an image
+for (const [game, dir] of Object.entries(MANUAL_DIRS)) {
+  const folder = path.join(EXPORTS, dir, '_manual', 'images')
+  if (!fs.existsSync(folder)) continue
+  // This run's posts first, then stored posts it didn't rebuild (a new-posts-only run skips old ones).
+  const fresh = built.filter((x) => x.game === game).flatMap((x) => x.posts).concat(fillPosts.filter((p) => p.game === game))
+  const freshIds = new Set(fresh.map((p) => p.id))
+  const candidates = fresh.concat((existingPosts ?? []).filter((p) => p.game === game && !freshIds.has(p.id)).map((p) => ({ ...p, stored: true })))
+  for (const file of fs.readdirSync(folder)) {
+    const ext = file.split('.').pop().toLowerCase()
+    if (!IMAGE_TYPES[ext]) continue
+    const date = file.match(/(\d{4}-\d{2}-\d{2})/)?.[1]
+    const sameDay = date ? candidates.filter((p) => utcDate(new Date(p.posted_at).toISOString()) === date) : []
+    const named = sameDay.filter((p) => file.toLowerCase().includes(p.title.toLowerCase().slice(0, 20)))
+    const target = sameDay.length === 1 ? sameDay[0] : named.length === 1 ? named[0] : null
+    if (!target) {
+      manualWarnings.push(`${dir}\\_manual\\images: "${file}" — ${!date ? 'no date in the name' : sameDay.length ? `${sameDay.length} posts that day; add part of the post's title to the name` : 'no post on that date'}`)
+      continue
+    }
+    const key = `game-posts/${game}/${file.replace(/[^A-Za-z0-9._-]+/g, '-')}`
+    const url = `${SB_URL}/storage/v1/object/public/content-images/${key}`
+    target.images = [...new Set([...(target.images ?? []), url])].sort()
+    if (target.stored) storedImageUpdates.push(target)
+    imageUploads.push({ file: path.join(folder, file), key, type: IMAGE_TYPES[ext] })
+  }
+}
+
 // Rows from files that were deleted or renamed since the last run.
 const manualRemoved = (existingPosts ?? []).filter((p) => p.channel_id === 'manual' && manualGames.has(p.game) && !manualSeen.has(p.id)).map((p) => p.id)
 
@@ -358,6 +428,12 @@ if (OUT) fs.writeFileSync(OUT, JSON.stringify(built.flatMap((c) => c.posts), nul
 const ms = (t) => (t ? new Date(t).getTime() : null)
 const same = (a, b) => a.title === b.title && a.body === b.body && a.kind === b.kind && a.source === b.source
   && ms(a.edited_at) === ms(b.edited_at) && JSON.stringify(a.message_ids) === JSON.stringify(b.message_ids)
+  && (a.images === undefined || JSON.stringify(a.images) === JSON.stringify(b.images ?? []))
+// Bot-synced patch notes get that date's fill-in text added at the end (never pasted posts).
+const withFill = (game, date, body, source) => {
+  const fill = source === 'manual' ? null : fills.get(`${game} ${date}`)
+  return fill ? `${body}\n\n${fill}` : body
+}
 const postWrites = []
 const noteInserts = []
 const noteUpdates = []
@@ -372,13 +448,13 @@ for (const c of built) {
     if (!old) postWrites.push({ p, op: 'new' })
     else if (!same(p, old)) postWrites.push({ p, op: 'changed' })
 
-    if (p.kind !== 'patch_notes') continue
+    if (p.kind !== 'patch_notes' || p.source === 'fill-in') continue
     // A pasted copy of a post the bot already has: keep it in the archive, but don't list it twice on the site.
     if (p.source === 'manual' && !notesByDiscord.has(p.id) && botNoteDates.has(`${p.game} ${utcDate(p.posted_at)}`)) {
       manualWarnings.push(`${p.game}: "${p.title}" (${utcDate(p.posted_at)}) — the bot already has patch notes for that date, so it stays archive-only`)
       continue
     }
-    const row ={ game: p.game, title: p.title, body: p.body, published_at: utcDate(p.posted_at), discord_message_id: p.id }
+    const row = { game: p.game, title: p.title, body: withFill(p.game, utcDate(p.posted_at), p.body, p.source), published_at: utcDate(p.posted_at), discord_message_id: p.id }
     const linked = notesByDiscord.get(p.id)
     if (linked) {
       if (linked.body !== row.body || linked.title !== row.title || linked.published_at !== row.published_at) noteUpdates.push({ id: linked.id, row })
@@ -390,6 +466,36 @@ for (const c of built) {
       adopted.push({ hand, row })
       noteUpdates.push({ id: hand.id, row })
     } else noteInserts.push(row)
+  }
+}
+
+// Fill-in files: archive them, and bring already-stored bot patch notes in line (a run that only
+// reads new posts never rebuilds the old note a file belongs to; deleting a file takes its text out).
+for (const p of fillPosts) {
+  const old = postsById.get(p.id)
+  if (!old) postWrites.push({ p, op: 'new' })
+  else if (!same(p, old)) postWrites.push({ p, op: 'changed' })
+}
+for (const t of storedImageUpdates) {
+  const { stored, ...p } = t
+  if (JSON.stringify(postsById.get(p.id)?.images ?? []) !== JSON.stringify(p.images)) postWrites.push({ p, op: 'changed' })
+}
+const touched = new Set(noteUpdates.map((u) => u.id))
+for (const n of notes) {
+  if (!n.discord_message_id || n.discord_message_id.startsWith('manual:') || touched.has(n.id)) continue
+  const post = postsById.get(n.discord_message_id)
+  if (!post || post.kind !== 'patch_notes') continue
+  const body = withFill(n.game, n.published_at, post.body, post.source)
+  if (body !== n.body) {
+    noteUpdates.push({ id: n.id, row: { game: n.game, title: n.title, body, published_at: n.published_at, discord_message_id: n.discord_message_id } })
+    if (fills.has(`${n.game} ${n.published_at}`)) manualWarnings.push(`${n.game} ${n.published_at}: fill-in text added to "${n.title}"`)
+  }
+}
+for (const key of fills.keys()) {
+  const [game, date] = key.split(' ')
+  if (!notes.some((n) => n.game === game && n.published_at === date && n.discord_message_id && !n.discord_message_id.startsWith('manual:'))
+    && !noteInserts.some((r) => r.game === game && r.published_at === date)) {
+    manualWarnings.push(`${game} ${date}: fill-in file has no synced patch notes on that date to add to (archived only)`)
   }
 }
 
@@ -416,11 +522,13 @@ for (const c of built) {
   for (const p of other) console.log(`    ${utcDate(p.posted_at)}  [${p.kind}] ${p.title}`)
   console.log('')
 }
+if (imageUploads.length) console.log(`images: ${imageUploads.length} attached (${imageUploads.map((u) => u.key.split('/').pop()).join(', ')})`)
 console.log(`game_posts archive: ${postWrites.filter((w) => w.op === 'new').length} new, ${postWrites.filter((w) => w.op === 'changed').length} changed`)
 console.log(`patch_notes: ${noteInserts.length} new, ${noteUpdates.length - adopted.length} changed, ${adopted.length} hand-pasted rows adopted`)
 if (absorbed.length) console.log(`merged into a bigger post since the last run (removed): ${absorbed.join(', ')}`)
 if (manualRemoved.length) console.log(`drop-folder files deleted or renamed (their rows are removed): ${manualRemoved.map((id) => id.split(':').slice(2).join(':')).join(', ')}`)
 for (const w of manualWarnings) console.log(`  ! ${w}`)
+for (const w of gapWarnings) console.log(`  ! POSSIBLY MISSING TEXT: ${w}`)
 for (const a of adopted) console.log(`  adopt ${a.hand.game} ${a.hand.published_at} "${a.hand.title}" → "${a.row.title}" (body ${a.hand.body.length} → ${a.row.body.length} chars)`)
 if (handNotes.length) console.log(`  hand-pasted rows with no Discord match (left as they are): ${handNotes.map((n) => `${n.game} ${n.published_at}`).join(', ')}`)
 
@@ -430,6 +538,10 @@ if (!WRITE) {
 }
 
 // ── Apply ────────────────────────────────────────────────────────────────────
+for (const u of imageUploads) {
+  const { error } = await supabase.storage.from('content-images').upload(u.key, fs.readFileSync(u.file), { contentType: u.type, upsert: true, cacheControl: '86400' })
+  if (error) { console.error(`image upload failed (${u.key}): ${error.message}`); process.exit(1) }
+}
 const chunk = (arr, n) => Array.from({ length: Math.ceil(arr.length / n) }, (_, i) => arr.slice(i * n, i * n + n))
 for (const part of chunk(postWrites.map((w) => w.p), 200)) {
   const { error } = await supabase.from('game_posts').upsert(part, { onConflict: 'id' })
