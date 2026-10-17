@@ -81,6 +81,12 @@ export default function StudioClient() {
           color: '#0a0a14', background: gold, padding: '0.22rem 0.55rem', borderRadius: '999px',
         }}>{ROLE_LABEL[role]}</span>
         {creatorName && <span style={{ color: '#aaa', fontSize: '0.85rem' }}>publishing as <strong style={{ color: '#fff' }}>{creatorName}</strong></span>}
+        {/* Admins also manage every game from the Site Admin (history drafts, game info, tier lists per game). */}
+        {CAN.moderate(role) && (
+          <Link href="/admin" style={{ ...btnQuiet, marginLeft: 'auto', textDecoration: 'none', color: gold, borderColor: gold }}>
+            Site Admin (all games) →
+          </Link>
+        )}
       </div>
 
       <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
