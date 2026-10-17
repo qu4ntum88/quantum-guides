@@ -33,6 +33,10 @@ type GameData = {
     pointsRequired: number
     groups: { id: string; name: string; icon: string | null; leagueRanks: { rank: string; memberRanks: RankRewards[] }[] }[]
   }
+  leagueDuel?: {
+    daily: ItemReward[]
+    groups: { id: string; victory: ItemReward[]; defeat: ItemReward[] }[]
+  }
   icons: Record<string, string>
 }
 export type SupremeCommanderData = {
@@ -237,6 +241,43 @@ function VictoryPoints({ days, active }: { days: GameData['days']; active?: numb
         </li>
       ))}
     </ol>
+  )
+}
+
+// Weekly League Duel result by Tournament group (badges shared with the Tournament tabs).
+function DuelResults({ duel, groups, icons }: { duel: NonNullable<GameData['leagueDuel']>; groups: GameData['tournament']['groups']; icons?: Record<string, string> }) {
+  return (
+    <>
+      {duel.daily.length > 0 && (
+        <div className="sc-duel-daily">
+          <span className="sc-metro-reward-label">Per-day reward</span>
+          <RewardPills rewards={duel.daily} icons={icons} />
+        </div>
+      )}
+      <div className="sc-duel">
+        {duel.groups.map((d) => {
+          const g = groups.find((x) => x.id === d.id)
+          return (
+            <div key={d.id} className="sc-metro-card sc-duel-card">
+              <h3 className="sc-duel-group">
+                {g?.icon && <img src={encodeIcon(g.icon)} alt="" />}
+                <span>{g?.name ?? d.id}</span>
+              </h3>
+              <div className="sc-metro-outcomes">
+                <div className="sc-outcome sc-outcome--victory">
+                  <span className="sc-outcome-name">Victory</span>
+                  <RewardPills rewards={d.victory} icons={icons} />
+                </div>
+                <div className="sc-outcome sc-outcome--defeat">
+                  <span className="sc-outcome-name">Defeat</span>
+                  <RewardPills rewards={d.defeat} icons={icons} />
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </>
   )
 }
 
@@ -446,6 +487,15 @@ export default function SupremeCommanderView({ data }: { data: SupremeCommanderD
                 Your league is matched against another league for the week. The league that wins each day earns that day&apos;s victory points; the later days are worth more.
               </p>
               <VictoryPoints days={game.days} active={day?.day} />
+              {game.leagueDuel && game.leagueDuel.groups.length > 0 && (
+                <>
+                  <h3 className="sc-ref-sub">Weekly result rewards</h3>
+                  <p className="sc-ref-note">
+                    Paid when the week&apos;s League Duel ends, depending on whether your league won and on its Tournament group. The per-day reward is separate.
+                  </p>
+                  <DuelResults duel={game.leagueDuel} groups={game.tournament.groups} icons={icons} />
+                </>
+              )}
             </>
           )}
 

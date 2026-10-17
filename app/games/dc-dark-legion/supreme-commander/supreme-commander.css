@@ -354,14 +354,14 @@
   letter-spacing: 0;
   white-space: nowrap;
   z-index: 20;
-  opacity: 0;
+  /* display:none (not opacity 0) so hidden tips near the right edge don't widen the page */
+  display: none;
   pointer-events: none;
-  transition: opacity 0.12s;
 }
 
 .sc-item-icon:hover .sc-item-tip,
 .sc-item-icon:focus .sc-item-tip {
-  opacity: 1;
+  display: block;
 }
 
 .sc-ptable-rows li.is-usable .sc-item-icon img {
@@ -887,6 +887,50 @@
   line-height: 1.3;
 }
 
+/* ── League Duel results ── */
+.sc-ref-sub {
+  margin: 1.75rem 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sc-duel-daily {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.sc-duel-daily .sc-metro-reward-label {
+  margin-bottom: 0;
+}
+
+.sc-duel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.sc-duel-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.9rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #e9d5ff;
+}
+
+.sc-duel-group img {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 /* ── Monthly Tournament ── */
 .sc-tour-facts {
   display: grid;
@@ -1007,6 +1051,7 @@
 @media (max-width: 900px) {
   .sc-metro,
   .sc-tour-ranks,
+  .sc-duel,
   .sc-day-extras {
     grid-template-columns: 1fr;
   }

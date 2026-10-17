@@ -134,6 +134,7 @@ const SCALE = Number(Object.entries(ratios).sort((a, b) => b[1] - a[1])[0]?.[0])
 if (!SCALE) throw new Error('Could not work out the point scale from the Point table')
 
 const unknownPoints = []
+const conflicts = [] // things the site's shape can't express (reported, never written)
 const game = { days: [], maneuvers: null, weekly: null }
 for (const s of dayStages) {
   const day = { day: s.StageIndex, name: en[s.StageName] || s.StageName, victoryPoints: s.WinPoint, points: [], nodes: [], dailyRanking: [] }
@@ -215,6 +216,21 @@ if (manDay) {
     // "{0}/{1} points are required to be eligible for tournament rewards" (internal unit).
     pointsRequired: cfg.LeagueNeedRewardNeedScore / SCALE,
   }
+  // League Duel results. ConfrontationWeekSettleWin/LoseReward are indexed by the group enum
+  // (0 = no group yet, then Silver/Gold/Diamond = Gladiator/Elite/Master); checked against
+  // Tyler's in-game numbers for all three groups on 2026-10-17.
+  const win = cfg.ConfrontationWeekSettleWinReward, lose = cfg.ConfrontationWeekSettleLoseReward
+  if (win.length !== enumOrder.length + 1 || lose.length !== win.length) {
+    conflicts.push(`League Duel results: expected ${enumOrder.length + 1} win/lose rewards (no group + ${enumOrder.length} groups), the game has ${win.length}/${lose.length}.`)
+  }
+  game.leagueDuel = {
+    daily: rewardItems(cfg.ConfrontationDailyReward),
+    ungrouped: win[0] && lose[0] ? { victory: rewardItems(win[0]), defeat: rewardItems(lose[0]) } : null,
+    groups: groups.map((g) => {
+      const i = enumOrder.indexOf(`AllianceConfrontationRank${g.id[0].toUpperCase()}${g.id.slice(1)}`) + 1
+      return { id: g.id, victory: win[i] ? rewardItems(win[i]) : [], defeat: lose[i] ? rewardItems(lose[i]) : [] }
+    }),
+  }
 }
 
 // ---------- compare with the site ----------
@@ -222,7 +238,6 @@ const site = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'))
 const next = structuredClone(site)
 const ok = []
 const diffs = []
-const conflicts = []
 const note = (good, label, from, to) => {
   if (good) ok.push(label)
   else diffs.push(`${label}: site ${fmt(from)} → game ${fmt(to)}`)
@@ -347,6 +362,13 @@ next.game = {
       leagueRanks: g.leagueRanks.map((lr) => ({ rank: lr.rank, memberRanks: rankRows(lr.memberRanks) })),
     })),
   },
+  // Weekly League Duel result per Tournament group (ids match tournament.groups) + the per-day
+  // reward. `ungrouped` = a league not yet placed in a group; kept in the data, not on the page.
+  leagueDuel: {
+    daily: siteRewards(game.leagueDuel.daily),
+    ungrouped: game.leagueDuel.ungrouped && { victory: siteRewards(game.leagueDuel.ungrouped.victory), defeat: siteRewards(game.leagueDuel.ungrouped.defeat) },
+    groups: game.leagueDuel.groups.map((g) => ({ id: g.id, victory: siteRewards(g.victory), defeat: siteRewards(g.defeat) })),
+  },
   icons: {},
 }
 
@@ -382,6 +404,8 @@ const allRewards = [
   ...next.game.days.flatMap((d) => [...d.track.flatMap((t) => t.rewards), ...d.dailyRanking.flatMap((r) => r.rewards)]),
   ...next.game.eventRanking.flatMap((r) => r.rewards),
   ...next.game.tournament.groups.flatMap((g) => g.leagueRanks.flatMap((lr) => lr.memberRanks.flatMap((r) => r.rewards))),
+  ...next.game.leagueDuel.daily,
+  ...next.game.leagueDuel.groups.flatMap((g) => [...g.victory, ...g.defeat]),
   ...(next.metropolis ? [...next.metropolis.milestones.reward, ...next.metropolis.leagueOutcomes.outcomes.flatMap((o) => o.rewards), ...next.metropolis.ranking.tiers.flatMap((t) => t.rewards)] : []),
 ]
 for (const name of new Set(allRewards.map((r) => r.item))) {
@@ -430,6 +454,12 @@ line(`  - Day names: ${gb.days.map((d) => `${d.day} "${d.name}"`).join(', ')}`)
 line(`  - League Duel victory points: ${gb.days.map((d) => `day ${d.day} = ${d.victoryPoints}`).join(', ')}`)
 if (gb.maneuvers) line(`  - Maneuvers map: ${gb.maneuvers.maps.join(' or ')} (random)`)
 line(`  - Tournament: ${gb.tournament.groups.map((x) => x.name).join(' / ')}; ${gb.tournament.minMembers}+ members; ${gb.tournament.pointsRequired.toLocaleString('en-US')} points to qualify for rewards`)
+line(`  - League Duel per-day reward: ${fmtRewards(gb.leagueDuel.daily)}`)
+for (const g of gb.leagueDuel.groups) {
+  const name = gb.tournament.groups.find((x) => x.id === g.id)?.name || g.id
+  line(`  - League Duel ${name}: Victory ${fmtRewards(g.victory)} | Defeat ${fmtRewards(g.defeat)}`)
+}
+if (gb.leagueDuel.ungrouped) line(`  - League Duel, no group yet (not shown on the page): Victory ${fmtRewards(gb.leagueDuel.ungrouped.victory)} | Defeat ${fmtRewards(gb.leagueDuel.ungrouped.defeat)}`)
 line(`  - Icons: ${Object.keys(gb.icons).length} items + ${gb.tournament.groups.filter((x) => x.icon).length} group badges (${staleIcons.length} file${staleIcons.length === 1 ? '' : 's'} to copy)`)
 line()
 
