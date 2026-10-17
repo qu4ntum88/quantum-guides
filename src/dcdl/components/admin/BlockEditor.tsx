@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import {
   type Align, type Block, ALIGNMENTS, sanitizeInline,
   TEXT_COLORS, TEXT_FONTS, TEXT_SIZES,
@@ -333,6 +333,56 @@ function newBlock(type: Block['type']): Block {
   }
 }
 
+// Stable React keys per block. Paragraphs are uncontrolled (their DOM is loaded
+// once on mount), so keying by array index made a moved or inserted paragraph
+// keep showing its neighbour's text. Ids follow the block object, and `update`
+// hands the id on to the patched copy.
+const blockIds = new WeakMap<Block, string>()
+let nextBlockId = 0
+function idOf(b: Block): string {
+  let id = blockIds.get(b)
+  if (!id) { id = `b${++nextBlockId}`; blockIds.set(b, id) }
+  return id
+}
+
+// What a replaced placeholder asked for, shown on the new image block as a
+// reminder until it's filled. Editor-only, never saved.
+const imageRequests = new Map<string, string>()
+
+/** Plain text of a "[SCREENSHOT] …" placeholder paragraph, else null. */
+function screenshotRequest(b: Block): string | null {
+  if (b.type !== 'paragraph') return null
+  const text = b.text.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim()
+  const m = text.match(/^\[(?:SCREENSHOT|IMAGE)\]\s*([\s\S]*)$/i)
+  return m ? m[1] : null
+}
+
+/** "+" strip between blocks that opens a row of block types to insert there. */
+function InsertHere({ open, onToggle, onPick }: {
+  open: boolean
+  onToggle: () => void
+  onPick: (type: Block['type']) => void
+}) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', flexWrap: 'wrap', margin: '-0.4rem 0 0.35rem' }}>
+      <button
+        type="button"
+        title={open ? 'Cancel' : 'Insert a block here'}
+        aria-label={open ? 'Cancel insert' : 'Insert a block here'}
+        onClick={onToggle}
+        style={{ ...iconBtn, padding: '0.05rem 0.45rem', fontSize: '0.75rem', color: gold, borderColor: 'rgba(212,175,55,0.35)', opacity: open ? 1 : 0.6 }}
+      >
+        {open ? '×' : '+'}
+      </button>
+      {open && (Object.keys(BLOCK_NAMES) as Block['type'][]).map((t) => (
+        <button key={t} type="button" style={{ ...btn, background: 'transparent', color: gold, fontSize: '0.68rem', padding: '0.25rem 0.65rem' }} onClick={() => onPick(t)}>
+          + {BLOCK_NAMES[t]}
+        </button>
+      ))}
+    </div>
+  )
+}
+
 export default function BlockEditor({
   blocks, onChange, setStatus,
 }: {
@@ -340,8 +390,16 @@ export default function BlockEditor({
   onChange: (blocks: Block[]) => void
   setStatus: (s: string) => void
 }) {
+  // Index the insert menu is open at (block goes BEFORE this index), or null.
+  const [insertAt, setInsertAt] = useState<number | null>(null)
+
   const update = (i: number, patch: Partial<Block>) =>
-    onChange(blocks.map((b, j) => (j === i ? ({ ...b, ...patch } as Block) : b)))
+    onChange(blocks.map((b, j) => {
+      if (j !== i) return b
+      const nb = { ...b, ...patch } as Block
+      blockIds.set(nb, idOf(b))
+      return nb
+    }))
   const remove = (i: number) => onChange(blocks.filter((_, j) => j !== i))
   const move = (i: number, dir: -1 | 1) => {
     const j = i + dir
@@ -351,6 +409,16 @@ export default function BlockEditor({
     onChange(next)
   }
   const add = (type: Block['type']) => onChange([...blocks, newBlock(type)])
+  const insert = (at: number, type: Block['type']) => {
+    onChange([...blocks.slice(0, at), newBlock(type), ...blocks.slice(at)])
+    setInsertAt(null)
+  }
+  /** Swap a placeholder paragraph for an empty image block in the same spot. */
+  const replaceWithImage = (i: number, request: string) => {
+    const img = newBlock('image')
+    if (request) imageRequests.set(idOf(img), request)
+    onChange(blocks.map((b, j) => (j === i ? img : b)))
+  }
 
   return (
     <div>
@@ -360,11 +428,31 @@ export default function BlockEditor({
         </p>
       )}
 
-      {blocks.map((b, i) => (
-        <div key={i} style={cardStyle}>
+      {blocks.map((b, i) => {
+        const id = idOf(b)
+        const request = screenshotRequest(b)
+        const reminder = b.type === 'image' && !b.url ? imageRequests.get(id) : undefined
+        return (
+        <Fragment key={id}>
+        <InsertHere
+          open={insertAt === i}
+          onToggle={() => setInsertAt(insertAt === i ? null : i)}
+          onPick={(t) => insert(i, t)}
+        />
+        <div style={cardStyle}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', marginBottom: '0.55rem' }}>
             <span style={blockLabel}>{BLOCK_NAMES[b.type]}</span>
             <div style={{ display: 'flex', gap: '0.3rem' }}>
+              {request !== null && (
+                <button
+                  type="button"
+                  style={{ ...iconBtn, fontSize: '0.72rem', color: '#111', background: gold, borderColor: gold, fontWeight: 700 }}
+                  title="Turn this placeholder into an image block, right here"
+                  onClick={() => replaceWithImage(i, request)}
+                >
+                  🖼 Replace with image
+                </button>
+              )}
               <button type="button" style={iconBtn} title="Move up" disabled={i === 0} onClick={() => move(i, -1)}>↑</button>
               <button type="button" style={iconBtn} title="Move down" disabled={i === blocks.length - 1} onClick={() => move(i, 1)}>↓</button>
               <button type="button" style={{ ...iconBtn, color: '#ef4444', borderColor: 'rgba(239,68,68,0.35)' }} title="Delete block" onClick={() => remove(i)}>✕</button>
@@ -417,6 +505,11 @@ export default function BlockEditor({
 
           {b.type === 'image' && (
             <>
+              {reminder && (
+                <p style={{ ...hint, marginTop: 0, marginBottom: '0.5rem', color: gold }}>
+                  <strong>Screenshot wanted:</strong> {reminder}
+                </p>
+              )}
               <ImageField value={b.url} onChange={(url) => update(i, { url })} setStatus={setStatus} />
               <label style={{ ...label, marginTop: '0.7rem' }}>Caption / credit (italic, shown below the image)</label>
               <input
@@ -428,7 +521,9 @@ export default function BlockEditor({
             </>
           )}
         </div>
-      ))}
+        </Fragment>
+        )
+      })}
 
       <div style={{ display: 'flex', gap: '0.45rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
         {(Object.keys(BLOCK_NAMES) as Block['type'][]).map((t) => (
