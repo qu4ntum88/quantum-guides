@@ -23,6 +23,7 @@ const ALL_NAV_ITEMS = [
       { label: 'Best Teams', href: '/games/dc-dark-legion/best-teams' },
       { label: 'Supreme Commander', href: '/games/dc-dark-legion/supreme-commander' },
       { label: 'Combat Cycle Guide', href: '/games/dc-dark-legion/combat-cycle' },
+      { label: 'Event and Bleed History', href: '/games/dc-dark-legion/event-history' },
       { label: 'Ship Combat Guides', href: '/games/dc-dark-legion/ship-combat-guides' },
       { label: 'Infographics', href: '/games/dc-dark-legion/infographics' },
     ],

@@ -1,0 +1,2046 @@
+{
+  "_about": "DC: Dark Legion event + Bleed timeline, curated by hand from the official Discord archive (Supabase game_posts, game=dcdl). Every fact cites the post(s) it comes from with a short verbatim quote; scripts/check-dcdl-event-history.mjs verifies them (--write stamps each source with its postedAt). Shown at /games/dc-dark-legion/event-history and on champion pages. Fields named note are internal and never rendered; quantumsTake is Tyler's text only.",
+  "caveats": [
+    "Since early 2025 the official patch notes only say the Hypertime Tracker changed \"on some servers\", so per-server banner and rerun dates are not listed here.",
+    "A champion's date is the official reveal post or the event they debuted in, which matches their first appearance on the oldest servers.",
+    "Server groups: the soft-launch Earths 200-205 (open before the March 14, 2025 global launch, since merged into Earth 200) and the global-launch Earths 206 and up. Their Bleed orders split after Nightwing in mid-2025.",
+    "Posts from June to November 2024 belong to the earlier version of the game, and progress from it did not carry over, so this history starts with the current version.",
+    "Soft-launch patch notes from mid-December 2024 to February 2025 are missing from the official Discord archive, so that stretch is thin."
+  ],
+  "quantumsTake": "",
+  "observations": [
+    {
+      "text": "Both Septembers so far had a Bat-Family themed event: Echoes of the Batcave in 2025, and the same event again in 2026.",
+      "events": [
+        "echoes-of-the-batcave-2025",
+        "echoes-of-the-batcave-2026"
+      ]
+    },
+    {
+      "text": "The biggest occasions (Halloween 2025, the first anniversary in March 2026, the Supergirl movie in June 2026) each introduced an event-only champion.",
+      "events": [
+        "dark-requiem-2025",
+        "dark-reprise-2026",
+        "supergirl-woman-of-tomorrow-2026"
+      ]
+    },
+    {
+      "text": "Two themed events have come back so far, each about a year after the first run. The 2026 runs added a base skin to the rewards.",
+      "events": [
+        "treasures-of-the-ocean-2026",
+        "echoes-of-the-batcave-2026"
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2024-11-26",
+      "what": "Developers announce the game is 'upgrading to an all-new version'; progress from the 2024 version does not carry over (Vanguard frame for old players).",
+      "sources": [
+        {
+          "post": "1310802528224542724",
+          "quote": "DC: Dark Legion is upgrading to an all-new version",
+          "postedAt": "2024-11-26"
+        }
+      ]
+    },
+    {
+      "date": "2024-12-27",
+      "what": "Soft launch on Android in select regions; Earth 204 opens.",
+      "sources": [
+        {
+          "post": "1322021524751913106",
+          "quote": "officially entering soft launch on Android in select regions",
+          "postedAt": "2024-12-27"
+        }
+      ]
+    },
+    {
+      "date": "2025-03-14",
+      "what": "Global launch (iOS, Android, PC); Earths 206+ open.",
+      "sources": [
+        {
+          "post": "1342405580282789930",
+          "quote": "GLOBAL LAUNCH is March 14 UTC",
+          "postedAt": "2025-02-21"
+        },
+        {
+          "post": "1349927299344240657",
+          "quote": "SERVERS ARE OPEN!",
+          "postedAt": "2025-03-14"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "what": "Six months since global launch.",
+      "sources": [
+        {
+          "post": "1414499149809975389",
+          "quote": "officially launched for 6 months already",
+          "postedAt": "2025-09-08"
+        }
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "what": "First server merge: Earths 200 and 201.",
+      "sources": [
+        {
+          "post": "1426488257859944468",
+          "quote": "Our first ever server merge is planned for Earths 200 and 201 on October 13",
+          "postedAt": "2025-10-11"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "what": "First anniversary event (Dark Reprise).",
+      "sources": [
+        {
+          "post": "1481124961488867460",
+          "quote": "As the first anniversary of the battle against the Dark Legion approaches",
+          "postedAt": "2026-03-11"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "what": "Maintenance notices now list 'Earth 200 (previously 200-205)': the soft-launch Earths have been merged into one.",
+      "sources": [
+        {
+          "post": "1531864708263579790",
+          "quote": "For Earth 200 (previously 200–205)",
+          "postedAt": "2026-07-29"
+        }
+      ]
+    }
+  ],
+  "bleedRules": [
+    {
+      "date": "2025-02-13",
+      "what": "Earth 205 opens with an experimental single 4-champion tracker (Superman, Joker, Sinestro, Zatanna) for its first 3 weeks; all servers get a one-time choice of those 4 after 500 pulls.",
+      "sources": [
+        {
+          "post": "1339494560509726802",
+          "quote": "205 will have a single 4-Champion tracker consisting of Superman, Joker, Sinestro, and Zatanna",
+          "postedAt": "2025-02-13"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-02",
+      "what": "Banner length goes from 3 to 4 weeks, with a 2-week overlap between banners (per the community manager, ahead of the global-launch servers).",
+      "sources": [
+        {
+          "post": "1356950450968072287",
+          "quote": "the length of each banner has increased from 3 to 4, and the banner overlap period is now 2 weeks",
+          "postedAt": "2025-04-02"
+        }
+      ]
+    },
+    {
+      "date": "2025-06-19",
+      "what": "Bonus shards: the first 6 non-limited Mythic Champions or Legacy Pieces from each tracker give 2, 3 or 5 shards of the limited champion; later ones have a small chance. Applies from each server's next new tracker (Supergirl's banner on 200-205 waited until June 20).",
+      "sources": [
+        {
+          "post": "1385141134065537054",
+          "quote": "For the first 6 non-limited Mythic Champions or Legacy Pieces obtained from each Hypertime Tracker",
+          "postedAt": "2025-06-19"
+        },
+        {
+          "post": "1384354532158472328",
+          "quote": "Supergirl's banner on 200-205 will not begin until June 20",
+          "postedAt": "2025-06-17"
+        }
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "what": "The three boosted Legendary champions on each tracker are replaced by three non-limited Mythics, which make up 50% of the Mythic odds.",
+      "sources": [
+        {
+          "post": "1387322432112824393",
+          "quote": "The three Legendary Champions with boosted odds in Hypertime Trackers will be replaced by three non-limited Mythic Champions",
+          "postedAt": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-02",
+      "what": "Odds explained: Mythic 3% base (3.84% with guarantees), guaranteed within 50 draws; limited champion 5% base (26.9% combined) of Mythic results, guaranteed after 3 misses.",
+      "sources": [
+        {
+          "post": "1412276742776815636",
+          "quote": "The base chance of obtaining a Mythic Champion or Legacy Piece is 3% (3.84% combined with guarantees)",
+          "postedAt": "2025-09-02"
+        }
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "what": "50-draw option added to the Bleed.",
+      "sources": [
+        {
+          "post": "1455765959653720257",
+          "quote": "Added an option to draw 50 times at once in The Bleed",
+          "postedAt": "2025-12-31"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "what": "Champion Preview tab added to Dark Legion Direct, showing upcoming Bleed information in game.",
+      "sources": [
+        {
+          "post": "1526779601765011556",
+          "quote": "Added a Champion Preview tab to Dark Legion Direct, where you can view upcoming information about The Bleed",
+          "postedAt": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "what": "Permanent custom tracker: pick Superman, The Joker, Ra's al Ghul or Talia al Ghul as the rate-up champion; draws with World Anvil Dust or Fragments; shared guarantee progress. Older servers first; newer servers later.",
+      "sources": [
+        {
+          "post": "1549616157508763782",
+          "quote": "Select Superman, The Joker, Ra's al Ghul, or Talia al Ghul as your rate-up Champion",
+          "postedAt": "2026-09-16"
+        },
+        {
+          "post": "1542800333254688839",
+          "quote": "Newer servers won't receive this pool at the same time",
+          "postedAt": "2026-08-28"
+        }
+      ]
+    }
+  ],
+  "champions": [
+    {
+      "id": "the_joker",
+      "name": "The Joker",
+      "facts": [
+        {
+          "type": "tracker",
+          "date": "2024-12-13",
+          "what": "Hypertime Tracker 'Funny Business' (soft launch); legacy Fool's Scepter in the House of Secrets.",
+          "sources": [
+            {
+              "post": "1317010084420648985",
+              "quote": "New Tracker: Funny Business available",
+              "postedAt": "2024-12-13"
+            },
+            {
+              "post": "1317010084420648985",
+              "quote": "The Joker's Legacy Piece: Fool's Scepter is now available in the House of Secrets",
+              "postedAt": "2024-12-13"
+            }
+          ]
+        },
+        {
+          "type": "permanent-pool",
+          "date": "2026-09-16",
+          "what": "In the permanent custom tracker (older servers).",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Select Superman, The Joker, Ra's al Ghul, or Talia al Ghul",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scarecrow",
+      "name": "Scarecrow",
+      "facts": [
+        {
+          "type": "tracker",
+          "date": "2024-12-30",
+          "servers": "200-205",
+          "what": "First time in the Bleed, after the Joker tracker; boosted Red Hood, Black Adam, Green Arrow.",
+          "sources": [
+            {
+              "post": "1321774097163620434",
+              "quote": "coming to the Bleed for the first time on December 30",
+              "postedAt": "2024-12-26"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "superman",
+      "name": "Superman",
+      "facts": [
+        {
+          "type": "rerun",
+          "date": "2025-02-06",
+          "servers": "200, 201",
+          "what": "Earths 200 and 201 got an early repeat of Superman's tracker while the next champion was delayed.",
+          "sources": [
+            {
+              "post": "1336985889292812300",
+              "quote": "200 & 201 will get an early repeat feature of Superman",
+              "postedAt": "2025-02-06"
+            }
+          ],
+          "note": "His original banner date is not in the archive."
+        },
+        {
+          "type": "tracker",
+          "date": "2025-07-08",
+          "what": "'Hypertime Tracker: Superman' (boosted Flash, Cyborg, Shazam) runs alongside the Superman Family events. The June 2025 newsletter had promised the first cross-server rerun banner for July.",
+          "sources": [
+            {
+              "post": "1392031687717687327",
+              "quote": "Superman takes the spotlight in this Hypertime Tracker",
+              "postedAt": "2025-07-08"
+            },
+            {
+              "post": "1386967779957276763",
+              "quote": "First cross-server rerun banner is coming next month!",
+              "postedAt": "2025-06-24"
+            }
+          ],
+          "note": "The patch note itself does not call it a rerun."
+        },
+        {
+          "type": "legacy",
+          "date": "2026-04-09",
+          "what": "Second legacy piece, Solar Recovery Suit, purchasable once Superman's Cape reaches 5 Purple.",
+          "legacyId": "solar_recovery_suit",
+          "sources": [
+            {
+              "post": "1491649500278947850",
+              "quote": "Superman's Legacy Piece, Solar Recovery Suit, is now available",
+              "postedAt": "2026-04-09"
+            }
+          ]
+        },
+        {
+          "type": "permanent-pool",
+          "date": "2026-09-16",
+          "what": "In the permanent custom tracker (older servers).",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Select Superman, The Joker, Ra's al Ghul, or Talia al Ghul",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zatanna",
+      "name": "Zatanna",
+      "facts": [
+        {
+          "type": "tracker",
+          "date": "2025-02-21",
+          "servers": "some soft-launch Earths",
+          "what": "Zatanna tracker on some servers, with a story added to her Champion's Journey trial (Earths 200/201 got her after the Superman repeat).",
+          "sources": [
+            {
+              "post": "1342397936814002207",
+              "quote": "If your new Tracker is Zatanna",
+              "postedAt": "2025-02-21"
+            },
+            {
+              "post": "1336985889292812300",
+              "quote": "with our magical guest to follow",
+              "postedAt": "2025-02-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hawkgirl",
+      "name": "Hawkgirl",
+      "facts": [
+        {
+          "type": "tracker",
+          "date": "2025-04-09",
+          "servers": "200-205",
+          "what": "First time in the Bleed on Earths 200-205; legacy Thanagarian Mace in the House of Secrets. Global servers did not get her before Nightwing.",
+          "legacyId": "thanagarian_mace",
+          "sources": [
+            {
+              "post": "1359413507686273096",
+              "quote": "Hawkgirl is coming to the Bleed for the first time in Earths 200-205",
+              "postedAt": "2025-04-09"
+            },
+            {
+              "post": "1385434050046722098",
+              "quote": "overlooked that Hawkgirl would be omitted before him",
+              "postedAt": "2025-06-20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "facts": [
+        {
+          "type": "standard",
+          "date": "2025-05-21",
+          "servers": "all",
+          "what": "New non-limited Mythic in the Bleed and Mother Boxes on all servers.",
+          "sources": [
+            {
+              "post": "1374634546850431037",
+              "quote": "A new Mythic Champion, Arsenal, can be drawn in The Bleed or obtained by decoding Mother Boxes",
+              "postedAt": "2025-05-21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "martian_manhunter",
+      "name": "Martian Manhunter",
+      "facts": [
+        {
+          "type": "tracker",
+          "date": "2025-05-21",
+          "what": "Outsiders faction launches; Martian Manhunter arrives 'depending on your Hypertime Tracker phase'.",
+          "sources": [
+            {
+              "post": "1374634546850431037",
+              "quote": "Martian Manhunter (depending on your Hypertime Tracker phase)",
+              "postedAt": "2025-05-21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nightwing",
+      "name": "Nightwing",
+      "facts": [
+        {
+          "type": "divergence",
+          "date": "2025-06-05",
+          "what": "From Nightwing onward, global servers (206+) follow a different tracker schedule from Earths 200-205.",
+          "sources": [
+            {
+              "post": "1380133183508582440",
+              "quote": "will follow a slightly different Hypertime Tracker schedule than Soft Launch servers (Earths 200-205) after Nightwing",
+              "postedAt": "2025-06-05"
+            }
+          ],
+          "note": "His own first banner date is not in the archive."
+        }
+      ]
+    },
+    {
+      "id": "starfire",
+      "name": "Starfire",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-06-02",
+          "what": "Revealed as 'coming soon'. No banner date given.",
+          "sources": [
+            {
+              "post": "1379075220392116315",
+              "quote": "Starfire is coming soon",
+              "postedAt": "2025-06-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wonder_woman_mythic",
+      "name": "Wonder Woman (Mythic)",
+      "facts": [
+        {
+          "type": "ascension",
+          "date": "2025-06-12",
+          "what": "Legendary Wonder Woman can ascend to Mythic through the Trial of Olympus story map.",
+          "sources": [
+            {
+              "post": "1382566379793940541",
+              "quote": "Ascend Wonder Woman to Mythic",
+              "postedAt": "2025-06-12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supergirl",
+      "name": "Supergirl",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-06-16",
+          "what": "Revealed: 'descends into the Bleed soon'.",
+          "sources": [
+            {
+              "post": "1384149151348166727",
+              "quote": "Supergirl descends into the Bleed soon",
+              "postedAt": "2025-06-16"
+            }
+          ]
+        },
+        {
+          "type": "tracker",
+          "date": "2025-06-20",
+          "servers": "200-205",
+          "what": "Banner on Earths 200-205 starts June 20 (first tracker under the bonus-shard rules); legacy Power of Rao in the House of Secrets from June 19.",
+          "sources": [
+            {
+              "post": "1384354532158472328",
+              "quote": "Supergirl's banner on 200-205 will not begin until June 20",
+              "postedAt": "2025-06-17"
+            },
+            {
+              "post": "1385141134065537054",
+              "quote": "Supergirl's Legacy Piece: Power of Rao now available in the House of Secrets",
+              "postedAt": "2025-06-19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "krypto",
+      "name": "Krypto",
+      "facts": [
+        {
+          "type": "event-debut",
+          "date": "2025-07-09",
+          "what": "Obtainable free through the Vestiges of Krypton event (Super Fetch Time gives Mythic Krypto shards).",
+          "sources": [
+            {
+              "post": "1390626741952974888",
+              "quote": "Krypto will finally become obtainable totally free through a special event",
+              "postedAt": "2025-07-04"
+            },
+            {
+              "post": "1392031687717687327",
+              "quote": "Receive Mythic Krypto Shards to power up Krypto faster",
+              "postedAt": "2025-07-08"
+            }
+          ]
+        },
+        {
+          "type": "standard",
+          "date": "2025-07-18",
+          "what": "Added to the Bleed, Mother Boxes, Daily Deals and Mythic shard choices (9 days after his event debut).",
+          "sources": [
+            {
+              "post": "1395606548075647037",
+              "quote": "Krypto can now be unlocked through more methods, including The Bleed, Mother Boxes, Daily Deals",
+              "postedAt": "2025-07-18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "superboy",
+      "name": "Superboy (Conner Kent)",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-06-30",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1389229935037644861",
+              "quote": "Superboy Conner Kent is ready to rock in DC: Dark Legion",
+              "postedAt": "2025-06-30"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2025-07-02",
+          "what": "Legacy Super Six-String in the House of Secrets (with Green Lantern's Power Battery).",
+          "legacyId": "super_six_string",
+          "sources": [
+            {
+              "post": "1389822564511252612",
+              "quote": "Superboy – Conner Kent's Super Six-String",
+              "postedAt": "2025-07-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rasalghul",
+      "name": "Ra's al Ghul",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-07-15",
+          "what": "Revealed: 'enters the Bleed'.",
+          "sources": [
+            {
+              "post": "1394703880092258478",
+              "quote": "Ra’s al Ghul enters the Bleed with ruthless precision",
+              "postedAt": "2025-07-15"
+            }
+          ]
+        },
+        {
+          "type": "permanent-pool",
+          "date": "2026-09-16",
+          "what": "In the permanent custom tracker (older servers).",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Ra's al Ghul, or Talia al Ghul",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taliaalghul",
+      "name": "Talia al Ghul",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-07-28",
+          "what": "Revealed: 'carves her mark in the Bleed'.",
+          "sources": [
+            {
+              "post": "1399362788631122063",
+              "quote": "she carves her mark in the Bleed",
+              "postedAt": "2025-07-28"
+            }
+          ]
+        },
+        {
+          "type": "permanent-pool",
+          "date": "2026-09-16",
+          "what": "In the permanent custom tracker (older servers).",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Ra's al Ghul, or Talia al Ghul",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hippolyta",
+      "name": "Queen Hippolyta",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-08-22",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1408433926841831595",
+              "quote": "The Queen of the Amazons has arrived in DC: Dark Legion",
+              "postedAt": "2025-08-22"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2025-08-27",
+          "what": "Legacy Themysciran Royal Sceptre in the House of Secrets.",
+          "legacyId": "themysciran_sceptre",
+          "sources": [
+            {
+              "post": "1410096153483018305",
+              "quote": "Queen Hippolyta's Legacy Piece, Themysciran Royal Sceptre, now available in the House of Secrets",
+              "postedAt": "2025-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swamp_thing",
+      "name": "Swamp Thing",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-09-22",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1419668090798473391",
+              "quote": "SWAMP THING storms into DC: Dark Legion",
+              "postedAt": "2025-09-22"
+            }
+          ],
+          "note": "His legacy piece is not named in the patch notes."
+        }
+      ]
+    },
+    {
+      "id": "donna_troy",
+      "name": "Wonder Girl (Donna Troy)",
+      "facts": [
+        {
+          "type": "event-debut",
+          "date": "2025-10-24",
+          "what": "Debuts in Halloween's Dark Requiem (Donna Troy shards as event milestone rewards).",
+          "sources": [
+            {
+              "post": "1425745232745730059",
+              "quote": "Experience the Amazon warrior’s might in the upcoming event",
+              "postedAt": "2025-10-09"
+            },
+            {
+              "post": "1430390709722284063",
+              "quote": "Unlock milestone rewards, including Donna Troy - Shards",
+              "postedAt": "2025-10-22"
+            }
+          ]
+        },
+        {
+          "type": "standard",
+          "date": "2025-11-19",
+          "what": "Added to the Bleed, Mother Boxes, Daily Bundles and Mythic shard choices (26 days after her event debut).",
+          "sources": [
+            {
+              "post": "1440603982719488021",
+              "quote": "New Ways to Unlock Donna Troy: The Bleed, Mother Boxes, Daily Bundles",
+              "postedAt": "2025-11-19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DMWW",
+      "name": "Wonder Woman Death Metal",
+      "rarity": "Iconic",
+      "facts": [
+        {
+          "type": "event-debut",
+          "date": "2025-10-24",
+          "what": "Debuts in Halloween's Dark Requiem: event vouchers become Fragments of Truth, exchanged for her shards in the Halls of the Underworld from the October 30 update. Legacy Hell's Distortion in the House of Secrets October 30.",
+          "legacyId": "hells_distortion",
+          "sources": [
+            {
+              "post": "1430390709722284063",
+              "quote": "Fragments of Truth, which can be exchanged for Wonder Woman Death Metal - Shards",
+              "postedAt": "2025-10-22"
+            },
+            {
+              "post": "1433354987022581851",
+              "quote": "Wonder Woman Death Metal's Legacy Piece is now available in the House of Secrets",
+              "postedAt": "2025-10-30"
+            }
+          ]
+        },
+        {
+          "type": "policy",
+          "date": "2025-11-07",
+          "what": "Developers create the Iconic rarity for event-exclusive champions like her: a couple per year, occasional reruns, her return most likely after the next new Iconic.",
+          "sources": [
+            {
+              "post": "1436312930424590346",
+              "quote": "Wonder Woman Death Metal will come back in another event eventually",
+              "postedAt": "2025-11-07"
+            }
+          ]
+        },
+        {
+          "type": "rerun",
+          "date": "2026-07-24",
+          "servers": "200-453",
+          "what": "Her shards return in the Treasures of the Ocean rerun's Treasure Store (Earths 200-453 only), 273 days after her debut.",
+          "sources": [
+            {
+              "post": "1526779601765011556",
+              "quote": "Wonder Woman Death Metal - Shards (WWDM Shards available to server 200-453 only)",
+              "postedAt": "2026-07-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nurse_harley",
+      "name": "Nurse Harley",
+      "facts": [
+        {
+          "type": "vip",
+          "date": "2025-10-30",
+          "what": "Shards and legacy piece added to the new VIP level rewards.",
+          "sources": [
+            {
+              "post": "1433354987022581851",
+              "quote": "now including Nurse Harley - Shards, Nurse Harley's Legacy Piece",
+              "postedAt": "2025-10-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_riddler",
+      "name": "The Riddler",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-11-03",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1434881244000424017",
+              "quote": "The Riddler brings his devious games to DC: Dark Legion",
+              "postedAt": "2025-11-03"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2025-11-06",
+          "what": "Legacy Conundrum Cane in the House of Secrets.",
+          "legacyId": "conundrum_cane",
+          "sources": [
+            {
+              "post": "1435872819786551337",
+              "quote": "The Riddler's Legacy Piece, Conundrum Cane, is now available in the House of Secrets",
+              "postedAt": "2025-11-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red_hood_mythic",
+      "name": "Red Hood (Mythic)",
+      "facts": [
+        {
+          "type": "ascension",
+          "date": "2025-11-19",
+          "what": "Legendary Red Hood can ascend to Mythic through What Remains of Jason Todd.",
+          "sources": [
+            {
+              "post": "1440603982719488021",
+              "quote": "Red Hood Ascension to Mythic Available",
+              "postedAt": "2025-11-19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2025-11-25",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1442866778458947645",
+              "quote": "Artemis charges into DC: Dark Legion",
+              "postedAt": "2025-11-25"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2025-12-17",
+          "what": "Legacy Mistress in the House of Secrets (22 days after the reveal).",
+          "legacyId": "mistress",
+          "sources": [
+            {
+              "post": "1450755769615257681",
+              "quote": "Artemis's Legacy Piece, Mistress, is now available in the House of Secrets",
+              "postedAt": "2025-12-17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lobo",
+      "name": "Lobo",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-01-12",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1460242395470762150",
+              "quote": "Lobo Rides into DC: Dark Legion",
+              "postedAt": "2026-01-12"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2026-01-14",
+          "what": "Legacy Spacehog in the House of Secrets.",
+          "legacyId": "spacehog",
+          "sources": [
+            {
+              "post": "1460840994928070679",
+              "quote": "Lobo's Legacy Piece, Spacehog, is now available in the House of Secrets",
+              "postedAt": "2026-01-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the_flash_wally_west",
+      "name": "The Flash (Wally West)",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-02-04",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1468564382437998738",
+              "quote": "Wally West Blazes into DC: Dark Legion",
+              "postedAt": "2026-02-04"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2026-02-11",
+          "what": "Legacy Speed Metal Suit in the House of Secrets.",
+          "legacyId": "speed_metal_suit",
+          "sources": [
+            {
+              "post": "1470994068036386849",
+              "quote": "The Flash - Wally West's Legacy Piece is now available in the House of Secrets",
+              "postedAt": "2026-02-11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "death_metal_batman",
+      "name": "Batman Death Metal",
+      "facts": [
+        {
+          "type": "event-debut",
+          "date": "2026-03-12",
+          "what": "Debuts in the first-anniversary event Dark Reprise (shards from the Gotham Store); legacy Hell's Requiem in the House of Secrets.",
+          "sources": [
+            {
+              "post": "1481124961488867460",
+              "quote": "Batman Death Metal is here! Join the Dark Reprise event to unlock him",
+              "postedAt": "2026-03-11"
+            },
+            {
+              "post": "1481124961488867460",
+              "quote": "Batman Death Metal's Legacy Piece is now available in the House of Secrets",
+              "postedAt": "2026-03-11"
+            }
+          ],
+          "note": "The posts do not call him Iconic; the site lists him as Iconic."
+        }
+      ]
+    },
+    {
+      "id": "orphan_cassandra_cain",
+      "name": "Cassandra Cain",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-04-01",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1488858805625290804",
+              "quote": "Cassandra Cain Enters DC: Dark Legion",
+              "postedAt": "2026-04-01"
+            }
+          ],
+          "note": "Her legacy piece is not named in the patch notes."
+        }
+      ]
+    },
+    {
+      "id": "mr_freeze",
+      "name": "Mr. Freeze",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-04-29",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1499000586253635657",
+              "quote": "Mr. Freeze Enters DC: Dark Legion",
+              "postedAt": "2026-04-29"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2026-05-08",
+          "what": "Legacy Nora's Embrace now available.",
+          "legacyId": "noras_embrace",
+          "sources": [
+            {
+              "post": "1502138497140658317",
+              "quote": "Mr. Freeze's Legacy Piece, Nora's Embrace, is now available",
+              "postedAt": "2026-05-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red_hood_knightfight_jason_todd",
+      "name": "Red Hood Knightfight",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-05-27",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1509166658621804626",
+              "quote": "Red Hood Knightfight Enters DC: Dark Legion",
+              "postedAt": "2026-05-27"
+            }
+          ]
+        },
+        {
+          "type": "legacy",
+          "date": "2026-06-03",
+          "what": "Legacy Knightbow now available.",
+          "legacyId": "knightbow",
+          "sources": [
+            {
+              "post": "1511567690387427370",
+              "quote": "Red Hood Knightfight's Legacy Piece: Knightbow, is now available",
+              "postedAt": "2026-06-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supergirl_woman_of_tomorrow_kara_zor_el",
+      "name": "Supergirl Woman of Tomorrow",
+      "facts": [
+        {
+          "type": "event-debut",
+          "date": "2026-06-25",
+          "what": "Debuts in the Supergirl: Woman of Tomorrow movie event (shards from the Galactic Store); legacy Absorption Collar in the House of Secrets.",
+          "legacyId": "absorption_collar",
+          "sources": [
+            {
+              "post": "1519171858996527187",
+              "quote": "Join the Supergirl: Woman of Tomorrow event to unlock her",
+              "postedAt": "2026-06-24"
+            },
+            {
+              "post": "1519171858996527187",
+              "quote": "Supergirl Woman of Tomorrow's Legacy Piece: Absorption Collar",
+              "postedAt": "2026-06-24"
+            }
+          ]
+        },
+        {
+          "type": "policy",
+          "date": "2026-07-27",
+          "what": "Developers: she is a limited Mythic event champion, not Iconic, and 'will return in a future event'.",
+          "sources": [
+            {
+              "post": "1531235897994117291",
+              "quote": "For SWoT, she will return in a future event",
+              "postedAt": "2026-07-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batman_knightfight",
+      "name": "Batman Knightfight",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-07-22",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1529439684298801223",
+              "quote": "Batman Knightfight Enters DC: Dark Legion",
+              "postedAt": "2026-07-22"
+            }
+          ],
+          "note": "His legacy (Knight Moonblade on the site) is not named in a patch note."
+        }
+      ]
+    },
+    {
+      "id": "beast_boy",
+      "name": "Beast Boy",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-08-20",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1539944685718605945",
+              "quote": "Beast Boy Enters DC: Dark Legion",
+              "postedAt": "2026-08-20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robin_dick_grayson",
+      "name": "Robin (Dick Grayson)",
+      "facts": [
+        {
+          "type": "revealed",
+          "date": "2026-09-17",
+          "what": "Revealed.",
+          "sources": [
+            {
+              "post": "1550090061922570261",
+              "quote": "Dick Grayson, the first Robin and Gotham’s Boy Wonder",
+              "postedAt": "2026-09-17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batman_mythic_plus",
+      "name": "Batman (limited Mythic)",
+      "facts": [
+        {
+          "type": "upgrade",
+          "date": "2026-09-16",
+          "servers": "older servers",
+          "what": "Mythic Batman can be ascended into a limited Mythic; his limited legacy piece is in the House of Secrets.",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Currently Available: Batman, Green Lantern, and Aquaman",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green_lantern_mythic_plus",
+      "name": "Green Lantern (limited Mythic)",
+      "facts": [
+        {
+          "type": "upgrade",
+          "date": "2026-09-16",
+          "servers": "older servers",
+          "what": "Mythic Green Lantern can be ascended into a limited Mythic; his existing legacy converts.",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Currently Available: Batman, Green Lantern, and Aquaman",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aquaman_mythic_plus",
+      "name": "Aquaman (limited Mythic)",
+      "facts": [
+        {
+          "type": "upgrade",
+          "date": "2026-09-16",
+          "servers": "older servers",
+          "what": "Mythic Aquaman can be ascended into a limited Mythic; his limited legacy piece is in the House of Secrets.",
+          "sources": [
+            {
+              "post": "1549616157508763782",
+              "quote": "Currently Available: Batman, Green Lantern, and Aquaman",
+              "postedAt": "2026-09-16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "valentines-2025",
+      "name": "Valentine's Day event",
+      "kind": "themed",
+      "start": "2025-02-14",
+      "servers": "soft launch",
+      "sources": [
+        {
+          "post": "1339204991172349962",
+          "quote": "pre-load the resources for Valentine's Day",
+          "postedAt": "2025-02-12"
+        }
+      ]
+    },
+    {
+      "id": "titans-egg-hunt-2025",
+      "name": "Titan's Egg Hunt",
+      "kind": "themed",
+      "start": "2025-04-20",
+      "servers": "servers 14+ days old",
+      "notes": "Easter event; younger servers were promised a similar event at Mother's Day.",
+      "sources": [
+        {
+          "post": "1362631716975546469",
+          "quote": "Titan's Egg Hunt, for servers 14+ days old",
+          "postedAt": "2025-04-18"
+        }
+      ]
+    },
+    {
+      "id": "mothers-day-2025",
+      "name": "Mother's Day event",
+      "kind": "themed",
+      "start": "2025-05",
+      "notes": "Mentioned in the May 2025 newsletter as a dice-board event; the exact name and date were not announced on Discord.",
+      "sources": [
+        {
+          "post": "1372545500145778781",
+          "quote": "Mother's Day was rebalanced over Easter & Valentine's Day",
+          "postedAt": "2025-05-15"
+        }
+      ]
+    },
+    {
+      "id": "wheel-of-fate-2025-06",
+      "name": "Wheel of Fate",
+      "kind": "minor",
+      "start": "2025-06-05",
+      "sources": [
+        {
+          "post": "1380072962119434281",
+          "quote": "New Event: Wheel of Fate (Available on June 5)",
+          "postedAt": "2025-06-05"
+        }
+      ]
+    },
+    {
+      "id": "treasures-of-the-ocean-2025",
+      "name": "Treasures of the Ocean",
+      "kind": "themed",
+      "mechanic": "shell-dig",
+      "start": "2025-06-15",
+      "servers": "200-360 (361 later)",
+      "rewards": {
+        "frame": "Atlantean Honor Frame",
+        "room": "new themed room style",
+        "magicEyes": true
+      },
+      "sources": [
+        {
+          "post": "1382566379793940541",
+          "quote": "Available starting June 15 for Earths 200–360",
+          "postedAt": "2025-06-12"
+        },
+        {
+          "post": "1382566379793940541",
+          "quote": "Atlantean Honor Frame",
+          "postedAt": "2025-06-12"
+        }
+      ]
+    },
+    {
+      "id": "vestiges-of-krypton-2025",
+      "name": "Vestiges of Krypton",
+      "kind": "themed",
+      "mechanic": "shell-dig",
+      "start": "2025-07-09",
+      "featured": [
+        "superman",
+        "supergirl",
+        "superboy",
+        "krypto"
+      ],
+      "newChampions": [
+        "krypto"
+      ],
+      "notes": "Superman Family week: Colossus boss replaces the Coordinated Assault target; Hypertime Tracker: Superman at the same time.",
+      "rewards": {
+        "frame": "Vestige Explorer Frame",
+        "room": "Fortress of Solitude-themed Living Quarter style",
+        "magicEyes": true,
+        "other": [
+          "Mythic Krypto shards"
+        ]
+      },
+      "sources": [
+        {
+          "post": "1392031687717687327",
+          "quote": "New Theme Event: Vestiges of Krypton] (Available on July 9",
+          "postedAt": "2025-07-08"
+        },
+        {
+          "post": "1392031687717687327",
+          "quote": "Vestige Explorer Frame, Fortress of Solitude-themed Living Quarter style, and Magic Eyes",
+          "postedAt": "2025-07-08"
+        }
+      ]
+    },
+    {
+      "id": "wheel-of-fate-2025-07",
+      "name": "Wheel of Fate",
+      "kind": "minor",
+      "start": "2025-07-21",
+      "rerunOf": "wheel-of-fate-2025-06",
+      "sources": [
+        {
+          "post": "1395606548075647037",
+          "quote": "Limited-Time Event: Wheel of Fate] (Available on July 21)",
+          "postedAt": "2025-07-18"
+        }
+      ]
+    },
+    {
+      "id": "back-to-school-bash-2025",
+      "name": "Back to School Bash!",
+      "kind": "themed",
+      "mechanic": "dice board",
+      "start": "2025-08-15",
+      "featured": [
+        "the_flash_wally_west",
+        "raven"
+      ],
+      "notes": "Teen Titans theme (Wally adventure map, Raven's Echo Shards).",
+      "rewards": {
+        "frame": "Titan Legacy Frame",
+        "room": "Welcome Back to School-themed Living Quarter room style",
+        "magicEyes": true
+      },
+      "sources": [
+        {
+          "post": "1405476541215015002",
+          "quote": "New Themed Event: Back to School Bash!",
+          "postedAt": "2025-08-14"
+        },
+        {
+          "post": "1405476541215015002",
+          "quote": "Titan Legacy Frame, Welcome Back to School-themed Living Quarter room style, Magic Eyes",
+          "postedAt": "2025-08-14"
+        }
+      ]
+    },
+    {
+      "id": "wheel-of-fate-2025-08",
+      "name": "Wheel of Fate",
+      "kind": "minor",
+      "start": "2025-08-29",
+      "servers": "up to 389",
+      "rerunOf": "wheel-of-fate-2025-06",
+      "sources": [
+        {
+          "post": "1410096153483018305",
+          "quote": "Available on August 29 for servers up to 389",
+          "postedAt": "2025-08-27"
+        }
+      ]
+    },
+    {
+      "id": "echoes-of-the-batcave-2025",
+      "name": "Echoes of the Batcave",
+      "kind": "themed",
+      "mechanic": "pinball",
+      "start": "2025-09-19",
+      "featured": [
+        "batgirl"
+      ],
+      "notes": "Bat-Family theme around Batman Day. The limited Mystery Collection Batcave Confidential Files ran until November 30, 2025.",
+      "rewards": {
+        "frame": "Echoes of the Bat Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1418161424189882409",
+          "quote": "New Themed Event: Echoes of the Batcave",
+          "postedAt": "2025-09-18"
+        },
+        {
+          "post": "1418161424189882409",
+          "quote": "Echoes of the Bat Frame, Magic Eyes, World Anvil Fragments",
+          "postedAt": "2025-09-18"
+        }
+      ]
+    },
+    {
+      "id": "dark-requiem-2025",
+      "name": "Halloween's Dark Requiem",
+      "kind": "themed",
+      "mechanic": "stone-breaking",
+      "start": "2025-10-24",
+      "featured": [
+        "DMWW",
+        "donna_troy"
+      ],
+      "newChampions": [
+        "DMWW",
+        "donna_troy"
+      ],
+      "notes": "Moved from Oct 23 to Oct 24 by a one-day update delay. Finale Nightfall Siege (async league PvE) moved from Oct 30 to Nov 2.",
+      "rewards": {
+        "frame": "Soul's Lament Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true,
+        "other": [
+          "Wonder Woman Death Metal shards",
+          "Donna Troy shards",
+          "Claws of Laughter Frame (Nightfall Siege)"
+        ]
+      },
+      "sources": [
+        {
+          "post": "1430535827317854364",
+          "quote": "will need to launch on October 24 at 0:00 UTC",
+          "postedAt": "2025-10-22"
+        },
+        {
+          "post": "1430390709722284063",
+          "quote": "Soul's Lament Frame, Magic Eyes, World Anvil Fragments",
+          "postedAt": "2025-10-22"
+        },
+        {
+          "post": "1432694333794160763",
+          "quote": "has been rescheduled to November 2",
+          "postedAt": "2025-10-28"
+        },
+        {
+          "post": "1433354987022581851",
+          "quote": "The Claws of Laughter Frame",
+          "postedAt": "2025-10-30"
+        }
+      ]
+    },
+    {
+      "id": "jokers-jumble-2025",
+      "name": "The Joker's Jumble",
+      "kind": "minor",
+      "start": "2025-11-12",
+      "sources": [
+        {
+          "post": "1437745461573455915",
+          "quote": "New Event: The Joker's Jumble (Available on November 12",
+          "postedAt": "2025-11-11"
+        }
+      ]
+    },
+    {
+      "id": "season-of-harvest-2025",
+      "name": "Season of Harvest",
+      "kind": "themed",
+      "mechanic": "dice board",
+      "start": "2025-11-26",
+      "featured": [
+        "swamp_thing",
+        "poison_ivy"
+      ],
+      "rewards": {
+        "frame": "Bountiful Harvest Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1442820594092736594",
+          "quote": "New Themed Event: Season of Harvest",
+          "postedAt": "2025-11-25"
+        },
+        {
+          "post": "1442820594092736594",
+          "quote": "Bountiful Harvest Frame, Magic Eyes, World Anvil Fragments",
+          "postedAt": "2025-11-25"
+        }
+      ]
+    },
+    {
+      "id": "task-force-x-2025",
+      "name": "Task Force X",
+      "kind": "minor",
+      "start": "2025-12-10",
+      "sources": [
+        {
+          "post": "1447911215962652746",
+          "quote": "New Event: Task Force X (Available on December 10",
+          "postedAt": "2025-12-09"
+        }
+      ]
+    },
+    {
+      "id": "infinite-holidays-2025",
+      "name": "Infinite Holidays",
+      "kind": "themed",
+      "mechanic": "ornament draw",
+      "start": "2025-12-24",
+      "rewards": {
+        "frame": "Infinite Holidays Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1452912652383682663",
+          "quote": "New Themed Event: Infinite Holidays",
+          "postedAt": "2025-12-23"
+        },
+        {
+          "post": "1452912652383682663",
+          "quote": "Infinite Holidays Frame, Magic Eyes, World Anvil Fragments",
+          "postedAt": "2025-12-23"
+        }
+      ]
+    },
+    {
+      "id": "feline-fugitive-2026-01",
+      "name": "Feline Fugitive",
+      "kind": "minor",
+      "start": "2026-01-10",
+      "featured": [
+        "catwoman",
+        "batman"
+      ],
+      "sources": [
+        {
+          "post": "1459096102535168103",
+          "quote": "New Event: Feline Fugitive",
+          "postedAt": "2026-01-09"
+        }
+      ]
+    },
+    {
+      "id": "iceberg-inventory-2026",
+      "name": "Iceberg Inventory",
+      "kind": "themed",
+      "mechanic": "merge",
+      "start": "2026-01-23",
+      "featured": [
+        "the_penguin"
+      ],
+      "rewards": {
+        "frame": "Iceberg Lounge Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1463798664601276438",
+          "quote": "New Themed Event: Iceberg Inventory (Available on January 23",
+          "postedAt": "2026-01-22"
+        },
+        {
+          "post": "1463798664601276438",
+          "quote": "Iceberg Lounge Frame, Magic Eyes, World Anvil Fragments",
+          "postedAt": "2026-01-22"
+        }
+      ]
+    },
+    {
+      "id": "heart-of-a-hero-2026",
+      "name": "Heart of A Hero",
+      "kind": "themed",
+      "mechanic": "dice board",
+      "start": "2026-02-12",
+      "featured": [
+        "donna_troy"
+      ],
+      "notes": "Valentine's theme.",
+      "rewards": {
+        "frame": "Aphrodite's Blessing Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1470994068036386849",
+          "quote": "New Event: Heart of A Hero (Available on February 12",
+          "postedAt": "2026-02-11"
+        },
+        {
+          "post": "1470994068036386849",
+          "quote": "Aphrodite's Blessing Frame, Magic Eyes, World Anvil Fragments",
+          "postedAt": "2026-02-11"
+        }
+      ]
+    },
+    {
+      "id": "dark-reprise-2026",
+      "name": "Dark Reprise (1st anniversary)",
+      "kind": "themed",
+      "mechanic": "multi-part",
+      "start": "2026-03-12",
+      "end": "2026-03-30",
+      "featured": [
+        "death_metal_batman"
+      ],
+      "newChampions": [
+        "death_metal_batman"
+      ],
+      "notes": "Phases: 7-Day Sign-In (Mar 12-20, Mar 21-30), Planning Committee (Mar 12-27), Battlefront Gotham (Mar 14-23), Carnival of Heroes (Mar 21-27); Gotham Store open to Mar 30.",
+      "rewards": {
+        "frame": "Dark Reprise Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true,
+        "other": [
+          "Batman Death Metal shards",
+          "Custom Mythic Bat Family Champion Shards"
+        ]
+      },
+      "sources": [
+        {
+          "post": "1481124961488867460",
+          "quote": "New Themed Event: Dark Reprise (Available on March 12",
+          "postedAt": "2026-03-11"
+        },
+        {
+          "post": "1481124961488867460",
+          "quote": "Batman Death Metal - Shards, Dark Reprise Frame, Custom Mythic Bat Family Champion Shards",
+          "postedAt": "2026-03-11"
+        },
+        {
+          "post": "1483734371893772409",
+          "quote": "Schedule: March 21, 00:00 - March 30, 23:59 (UTC)",
+          "postedAt": "2026-03-18"
+        }
+      ]
+    },
+    {
+      "id": "lost-treasures-of-krypton-2026",
+      "name": "Lost Treasures of Krypton",
+      "kind": "themed",
+      "mechanic": "merge",
+      "start": "2026-04-13",
+      "featured": [
+        "superman",
+        "supergirl",
+        "superboy",
+        "krypto"
+      ],
+      "rewards": {
+        "baseSkin": "Fortress of Solitude",
+        "frame": "Super Adventure Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "notes": "First event with a base skin (the Base Skins feature was added the same update).",
+      "sources": [
+        {
+          "post": "1491649500278947850",
+          "quote": "New Themed Event: Lost Treasures of Krypton (Available on April 13",
+          "postedAt": "2026-04-09"
+        },
+        {
+          "post": "1491649500278947850",
+          "quote": "Fortress of Solitude Base skin, Super Adventure Frame, Magic Eyes",
+          "postedAt": "2026-04-09"
+        }
+      ]
+    },
+    {
+      "id": "feline-fugitive-2026-04",
+      "name": "Feline Fugitive",
+      "kind": "minor",
+      "start": "2026-04-24",
+      "rerunOf": "feline-fugitive-2026-01",
+      "sources": [
+        {
+          "post": "1496356610770075768",
+          "quote": "New Event: Feline Fugitive (Available on April 24",
+          "postedAt": "2026-04-22"
+        }
+      ]
+    },
+    {
+      "id": "task-force-x-2026",
+      "name": "Task Force X",
+      "kind": "minor",
+      "start": "2026-05-10",
+      "rerunOf": "task-force-x-2025",
+      "sources": [
+        {
+          "post": "1502138497140658317",
+          "quote": "New Event: Task Force X (Available on May 10",
+          "postedAt": "2026-05-08"
+        }
+      ]
+    },
+    {
+      "id": "summer-smash-2026",
+      "name": "Teen Titan's Summer Smash",
+      "kind": "themed",
+      "mechanic": "pinball",
+      "start": "2026-05-24",
+      "featured": [
+        "cyborg"
+      ],
+      "rewards": {
+        "baseSkin": "Titans Tower",
+        "frame": "Summer Smash Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1507210371201761282",
+          "quote": "New Themed Event: Teen Titan's Summer Smash (Available on May 24",
+          "postedAt": "2026-05-22"
+        },
+        {
+          "post": "1507210371201761282",
+          "quote": "Titans Tower Base skin, Summer Smash Frame, Magic Eyes",
+          "postedAt": "2026-05-22"
+        }
+      ]
+    },
+    {
+      "id": "wheel-of-fate-2026-06",
+      "name": "Wheel of Fate",
+      "kind": "minor",
+      "start": "2026-06-08",
+      "rerunOf": "wheel-of-fate-2025-06",
+      "sources": [
+        {
+          "post": "1511567690387427370",
+          "quote": "Limited-Time Event: Wheel of Fate (Available on June 8)",
+          "postedAt": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "id": "supergirl-woman-of-tomorrow-2026",
+      "name": "Supergirl: Woman of Tomorrow",
+      "kind": "themed",
+      "mechanic": "slot battle",
+      "start": "2026-06-25",
+      "end": "2026-07-05",
+      "featured": [
+        "supergirl_woman_of_tomorrow_kara_zor_el",
+        "krypto",
+        "lobo"
+      ],
+      "newChampions": [
+        "supergirl_woman_of_tomorrow_kara_zor_el"
+      ],
+      "notes": "Movie tie-in. Extended by 4 days to July 5.",
+      "rewards": {
+        "baseSkin": "Kara's Ship",
+        "frame": "Woman of Tomorrow Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true,
+        "other": [
+          "Supergirl Woman of Tomorrow shards"
+        ]
+      },
+      "sources": [
+        {
+          "post": "1519171858996527187",
+          "quote": "New Themed Event: Supergirl: Woman of Tomorrow (Available on June 25",
+          "postedAt": "2026-06-24"
+        },
+        {
+          "post": "1519171858996527187",
+          "quote": "Kara's Ship Base skin, Woman of Tomorrow Frame, Magic Eyes",
+          "postedAt": "2026-06-24"
+        },
+        {
+          "post": "1519652950388113428",
+          "quote": "The event is expected to be extended by 4 days, until July 5",
+          "postedAt": "2026-06-25"
+        }
+      ]
+    },
+    {
+      "id": "feline-fugitive-2026-07",
+      "name": "Feline Fugitive",
+      "kind": "minor",
+      "start": "2026-07-10",
+      "rerunOf": "feline-fugitive-2026-01",
+      "sources": [
+        {
+          "post": "1524259373411471452",
+          "quote": "New Event: Feline Fugitive (Available on July 10",
+          "postedAt": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "id": "treasures-of-the-ocean-2026",
+      "name": "Treasures of the Ocean",
+      "kind": "themed",
+      "mechanic": "shell-dig",
+      "start": "2026-07-24",
+      "rerunOf": "treasures-of-the-ocean-2025",
+      "featured": [
+        "DMWW"
+      ],
+      "notes": "Wonder Woman Death Metal shards in the Treasure Store, Earths 200-453 only.",
+      "rewards": {
+        "baseSkin": "Atlantis",
+        "frame": "Atlantis Radiance Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true,
+        "other": [
+          "Wonder Woman Death Metal shards (200-453)"
+        ]
+      },
+      "sources": [
+        {
+          "post": "1526779601765011556",
+          "quote": "New Themed Event: Treasures of the Ocean (Available on July 24",
+          "postedAt": "2026-07-15"
+        },
+        {
+          "post": "1526779601765011556",
+          "quote": "Atlantis Base skin, Atlantis Radiance Frame, Magic Eyes",
+          "postedAt": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "id": "feline-fugitive-2026-08",
+      "name": "Feline Fugitive",
+      "kind": "minor",
+      "start": "2026-08-13",
+      "rerunOf": "feline-fugitive-2026-01",
+      "sources": [
+        {
+          "post": "1536932736714022994",
+          "quote": "New Event: Feline Fugitive (Available on August 13",
+          "postedAt": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "id": "coast-city-reconstruction-2026",
+      "name": "Coast City Reconstruction",
+      "kind": "themed",
+      "mechanic": "merge",
+      "start": "2026-08-25",
+      "featured": [
+        "green_lantern"
+      ],
+      "notes": "Hal Jordan trains John Stewart.",
+      "rewards": {
+        "baseSkin": "Central Power Battery of Oa",
+        "frame": "Will Training Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "sources": [
+        {
+          "post": "1541279749270282270",
+          "quote": "New Themed Event: Coast City Reconstruction (Available on August 25",
+          "postedAt": "2026-08-24"
+        },
+        {
+          "post": "1541279749270282270",
+          "quote": "Central Power Battery of Oa Base skin, Will Training Frame, Magic Eyes",
+          "postedAt": "2026-08-24"
+        }
+      ],
+      "note": "The posts do not name John Stewart as a playable champion."
+    },
+    {
+      "id": "echoes-of-the-batcave-2026",
+      "name": "Echoes of the Batcave",
+      "kind": "themed",
+      "mechanic": "pinball",
+      "start": "2026-09-18",
+      "rerunOf": "echoes-of-the-batcave-2025",
+      "featured": [
+        "batgirl"
+      ],
+      "rewards": {
+        "baseSkin": "Wayne Tower",
+        "frame": "Echoes of the Bat Frame",
+        "magicEyes": true,
+        "worldAnvilFragments": true
+      },
+      "notes": "Same frame name as the 2025 run, plus a base skin.",
+      "sources": [
+        {
+          "post": "1549616157508763782",
+          "quote": "New Themed Event: Echoes of the Batcave (Available on September 18",
+          "postedAt": "2026-09-16"
+        },
+        {
+          "post": "1549616157508763782",
+          "quote": "Wayne Tower Base skin, Echoes of the Bat Frame, Magic Eyes",
+          "postedAt": "2026-09-16"
+        }
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "name": "Batcave Confidential Files",
+      "start": "2025-09-18",
+      "end": "2025-11-30",
+      "sources": [
+        {
+          "post": "1418161424189882409",
+          "quote": "will be available until 23:59:59 (UTC) on November 30, 2025",
+          "postedAt": "2025-09-18"
+        }
+      ]
+    },
+    {
+      "name": "Welcome to the League!",
+      "start": "2025-12-01",
+      "end": "2026-03-31",
+      "sources": [
+        {
+          "post": "1442820594092736594",
+          "quote": "A new limited Mystery Collection, [Welcome to the League!], will be available starting December 1",
+          "postedAt": "2025-11-25"
+        },
+        {
+          "post": "1476841993945616385",
+          "quote": "has been extended until March 31, 2026",
+          "postedAt": "2026-02-27"
+        }
+      ]
+    },
+    {
+      "name": "Waller's Deadly Weapons",
+      "start": "2026-04-01",
+      "sources": [
+        {
+          "post": "1488066600618823860",
+          "quote": "Waller's Deadly Weapons, will be available starting April 1",
+          "postedAt": "2026-03-30"
+        }
+      ]
+    },
+    {
+      "name": "Waller's Deadly Weapons (return)",
+      "start": "2026-09-09",
+      "rerunOf": "Waller's Deadly Weapons",
+      "sources": [
+        {
+          "post": "1547076163170598954",
+          "quote": "is back, giving you another chance to complete the collection",
+          "postedAt": "2026-09-09"
+        }
+      ]
+    }
+  ],
+  "devStatements": [
+    {
+      "date": "2025-06-24",
+      "what": "First cross-server rerun banner coming in July 2025, with events to earn champion shards and a special boss.",
+      "sources": [
+        {
+          "post": "1386967779957276763",
+          "quote": "First cross-server rerun banner is coming next month!",
+          "postedAt": "2025-06-24"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-07",
+      "what": "Iconic champions: a couple per year, always with a new regular Mythic, event-limited with occasional reruns.",
+      "sources": [
+        {
+          "post": "1436312930424590346",
+          "quote": "Iconic Champions will remain event-limited, but there will be occasional reruns",
+          "postedAt": "2025-11-07"
+        }
+      ]
+    },
+    {
+      "date": "2025-11-07",
+      "what": "Big events only for special occasions; most months look like the Teen Titans or Bat-Family events.",
+      "sources": [
+        {
+          "post": "1436312930424590346",
+          "quote": "expect the next few months' events to be more along the lines of the Teen Titans or Bat-Family themed events",
+          "postedAt": "2025-11-07"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "what": "Bleed calendars differ between servers; developers are adjusting pacing to bring them closer.",
+      "sources": [
+        {
+          "post": "1507299201438978138",
+          "quote": "help keep bleed calendars more aligned",
+          "postedAt": "2026-05-22"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "what": "No more than two Iconic champions per year; no other special event champions expected in 2026.",
+      "sources": [
+        {
+          "post": "1531235897994117291",
+          "quote": "We still plan to release no more than two Iconic Champions per year",
+          "postedAt": "2026-07-27"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "what": "Permanent pool answers 'the long wait for certain Champions to return through the current bleed pool'; newer servers have a fast Bleed pace already.",
+      "sources": [
+        {
+          "post": "1542800333254688839",
+          "quote": "the long wait for certain Champions to return through the current bleed pool",
+          "postedAt": "2026-08-28"
+        },
+        {
+          "post": "1542800333254688839",
+          "quote": "their bleed release pace is already fast",
+          "postedAt": "2026-08-28"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "what": "Next batch for the permanent banner expected later in 2026; roster not final.",
+      "sources": [
+        {
+          "post": "1560474649123622974",
+          "quote": "we expect the next batch to arrive sometime later this year",
+          "postedAt": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "The July/August 2025 newsletter's highlights say 'Long-term Bleed rerun plans revealed!', but that section is not in the archived text (post 1408293943086546974). Can Tyler paste it from Discord?",
+    "Is the July 2025 'Hypertime Tracker: Superman' the 'first cross-server rerun banner' the June newsletter promised? Likely, but no post says so.",
+    "Batman Death Metal: is he Iconic? The site lists him as Iconic; the official posts never use the word for him.",
+    "Batgirl, Red Robin, Doctor Fate, Harley Quinn and The Flash are on the site as Mythic+ versions. The archive only covers Batman/Flash/Aquaman/Harley as planned limited Mythics for new servers (2026-05-14) and the Batman/Green Lantern/Aquaman upgrade (2026-09-16). When did the others go limited, and on which servers?",
+    "First banner dates for the soft-launch roster (Superman, Sinestro, Constantine, Nightwing and others) and the June 2025 champions (Starfire, Martian Manhunter on global servers) are not in the archive.",
+    "Superman Death Metal was announced on 2026-10-12 for the upcoming Halloween event; it is not released yet, so it is left out until the patch ships."
+  ]
+}

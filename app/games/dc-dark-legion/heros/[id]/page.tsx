@@ -14,6 +14,7 @@ import ExpandableTake from '@/src/dcdl/components/ExpandableTake'
 import ChampionGameData, { type ChampionGameDataProps } from '@/src/dcdl/components/champion/ChampionGameData'
 import StrategyGuide, { type InGameGuide } from '@/src/dcdl/components/champion/StrategyGuide'
 import EntityHistory from '@/src/dcdl/components/history/EntityHistory'
+import ChampionEventStrip from '@/src/dcdl/components/history/ChampionEventStrip'
 import { getEntityHistory } from '@/src/dcdl/lib/history-db'
 import JsonLd from '@/app/components/JsonLd'
 import { breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
@@ -286,6 +287,8 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         )}
 
         <EntityHistory name={firstName} entries={history} />
+
+        <ChampionEventStrip id={hero.id} name={firstName} />
 
         <VotingWidget entityType="champion" entityId={id} />
 
