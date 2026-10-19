@@ -157,39 +157,12 @@
     ]
   },
   {
-    "id": "hells_distortion",
-    "name": "Hells Distortion",
-    "image": "./legacy_images/Icon_sw_51_hells_distortion.png",
+    "name": "Demon's Sword",
+    "id": "demons_sword",
+    "image": "./legacy_images/DemonsSword.png",
     "rank": "Mythic +",
     "unique": true,
-    "tier": "A+",
-    "role": "Guardian | Warrior",
-    "isP2W": true,
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit Rate"
-    ],
-    "legacySkills": [
-      {
-        "name": "Amp it Up",
-        "description": "Increases the wearer's Physical Defense by [40/60/100%]. After casting their Ultimate, the wearer gains a shield equal to [600/1000/1500%] of their Physical Defense for 10s.",
-        "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_main_exclusive.png"
-      },
-      {
-        "name": "Encore",
-        "description": "At the start of battle, Wonder Woman Death Metal's Spiritual Resistance increases by [20/30/40/50%]. After Wonder Woman Death Metal casts her Ultimate, she doesn't consume Energy for 5s. Her basic attacks deal additional physical damage equal to [2/4/6/8%] of the target's Max HP (capped at [80/160/270/350%] of Wonder Woman Death Metal's Attack).",
-        "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "charged_escrima_sticks",
-    "name": "Charged Escrima Sticks",
-    "image": "./legacy_images/Icon_sw_33.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A+",
+    "tier": "C",
     "role": "Magical | Assassin | Firepower",
     "gearEffects": [
       "ATK",
@@ -198,16 +171,17 @@
     ],
     "legacySkills": [
       {
-        "name": "Showstopper",
-        "description": "Increases Nightwing's ATK by [20/35/55/80%]. He gains [10/15/20/25%] Physical PEN when dealing DMG with his Ultimate or the follow-up strike. If his Crit Rate is above 100%, every additional 1% grants 1% more Physical PEN, stacking up to [30/45/60/75%].",
-        "image": "./legacy_images_skills/icon_hero_skill_Nightwing_general.png"
+        "name": "No Quarter",
+        "description": "Increases ATK by [12/20/30/40%]. For every 5% of Ra's al Ghul's Max HP lost, single-target DMG is increased by [1.5/3/4.5/6%].",
+        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_main_exclusive.png"
       },
       {
-        "name": "Recharge",
-        "description": "Increases the wearer's Crit DMG AMP by [20/45/70%]. Upon defeating an enemy, the wearer restores [10/20/40] Energy.",
-        "image": "./legacy_images_skills/icon_hero_skill_Nightwing_main_exclusive.png"
+        "name": "Deadlier Cornered",
+        "description": "Increases Physical DMG by [10/20/30%]. Before the wearer casts their Ultimate, if HP is below 50%, the wearer gains an additional [15/30/50%] Physical DMG bonus for 8s.",
+        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_general_skills.png"
       }
-    ]
+    ],
+    "previousTier": "B"
   },
   {
     "id": "dual_katanas",
@@ -260,20 +234,6 @@
         "description": "At the start of battle, increases the wearer's Physical and Spiritual DEF by [1%/2%/4%] per second, stacking up to [30%/60%/120%].",
         "image": "./legacy_images_skills/icon_hero_skill_Superman_main_general.png"
       }
-    ]
-  },
-  {
-    "id": "batman_s_tactical_suit",
-    "name": "Batman's Tactical Suit",
-    "image": "./legacy_images/Batmans_Tactical_Suit.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "C",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "HP%"
     ]
   },
   {
@@ -434,12 +394,107 @@
     ]
   },
   {
+    "id": "oracle_drone",
+    "name": "Oracle Drone",
+    "image": "./legacy_images/Oracle_Drone.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A+",
+    "role": "Supporter | Intimidator",
+    "gearEffects": [
+      "HP",
+      "ATK%",
+      "HP%"
+    ]
+  },
+  {
+    "id": "solar_recovery_suit",
+    "name": "Solar Recovery Suit",
+    "image": "./legacy_images/SolarRecoverySuit.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Guardian | Warrior",
+    "isP2W": true,
+    "gearEffects": [
+      "ATK",
+      "ATK %",
+      "Crit Rate"
+    ],
+    "legacySkills": [
+      {
+        "name": "Kryptonian Shockwave",
+        "description": "When Superman takes lethal damage for the first time, if at least one ally is still present, he survives with 1 HP instead and immediately consumes all Energy to cast his Ultimate. After Superman casts his Ultimate, he calls down a meteor, dealing physical damage equal to [400/700/1100/1600%] of his Attack to enemies in a circular area and stunning them for 1s. [Stunned]: Incapacitates the target.",
+        "image": "./legacy_images_skills/icon_hero_skill_Superman_main_exclusive_02.png"
+      },
+      {
+        "name": "Kryptonian Solar Recharge",
+        "description": "After casting the Ultimate, the wearer restores HP equal to [120/270/500%] of their Attack.",
+        "image": "./legacy_images_skills/icon_hero_skill_Superman_general_02.png"
+      }
+    ]
+  },
+  {
+    "id": "fear_reaper",
+    "name": "Fear Reaper",
+    "image": "./legacy_images/Icon_sw_Fear_Reaper.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "HP",
+      "HP%",
+      "Crit DMG RES"
+    ],
+    "legacySkills": [
+      {
+        "name": "Harvest of Terror",
+        "description": "Scarecrow's Physical Resistance increases by [15/30/45/65%]. His Ultimate has a fixed [40/60/75/100%] chance to inflict [Mental Breakdown], incapacitating the target for 2s.",
+        "image": "./legacy_images_skills/icon_hero_skill_Scarecrow_main_exclusive.png"
+      },
+      {
+        "name": "Fear Field",
+        "description": "After casting a skill or the Ultimate, the wearer gains a permanent [4/8/15%] Attack Up and [4/8/15%] Physical Defense Up, stacking up to 5 time(s).",
+        "image": "./legacy_images_skills/icon_hero_skill_Scarecrow_general.png"
+      }
+    ]
+  },
+  {
+    "id": "psycho_syringe",
+    "name": "Psycho Syringe",
+    "image": "./legacy_images/Icon_sw_55_psycho_syringe.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Magical | Assassin | Firepower",
+    "isP2W": true,
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Vital Pierce",
+        "description": "Increases Nurse Harley's Attack by [15/30/45/60%]. During her Ultimate, each attack deals additional physical damage equal to [3/5/8/12%] of the target's Max HP (capped at [100/200/350/500%] of Nurse Harley's Attack; not affected by [Madness Actualization]).",
+        "image": "./legacy_images_skills/icon_hero_skill_NurseHarley_main_exclusive.png"
+      },
+      {
+        "name": "Delirium Strike",
+        "description": "Increases the wearer's Crit Rate by [10/20/30%]. Upon casting the Ultimate, Crit Damage is increased by [5/10/15%] for 35s, stacking up to 4 time(s).",
+        "image": "./legacy_images_skills/icon_hero_skill_NurseHarley_general_skills.png"
+      }
+    ],
+    "previousTier": "A"
+  },
+  {
     "id": "mistress",
     "name": "Mistress",
     "image": "./legacy_images/Icon_sw_57_Mistress.png",
     "rank": "Mythic +",
     "unique": true,
-    "tier": "A",
+    "tier": "B",
     "role": "Guardian | Warrior",
     "gearEffects": [
       "ATK",
@@ -457,73 +512,8 @@
         "description": "Increases the wearer's Physical Defense by [30/60/100%]. Upon casting a skill or the Ultimate, the wearer's Crit Rate is increased by [5/10/15%], stacking up to 3 time(s).",
         "image": "./legacy_images_skills/icon_hero_skill_artemis_general_skills.png"
       }
-    ]
-  },
-  {
-    "id": "orpha_blades",
-    "name": "Orphan Blades",
-    "image": "./legacy_images/OrphanBlades.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "ATK",
-      "ATK %",
-      "HP %"
     ],
-    "legacySkills": [
-      {
-        "name": "Hardened Resolve",
-        "description": "Increases Cassandra Cain's Attack by [25/45/70/100%]. Upon landing a critical hit, Cassandra Cain immediately restores HP equal to [35/60/90/120%] of her Attack. Can trigger once every 2s. Upon a successful dodge, Cassandra Cain immediately restores HP equal to [35/60/90/120%] of her Attack. Can trigger once every 2s.",
-        "image": "./legacy_images_skills/icon_hero_skill_cassandracain_main_exclusive.png"
-      },
-      {
-        "name": "No Quarter",
-        "description": "Increases the wearer's Crit Damage by [15/30/50%]. Upon landing a critical hit, Crit Damage is increased by an additional [15/30/50%] for 5s.",
-        "image": "./legacy_images_skills/icon_hero_skill_cassandracain_general_skills.png"
-      }
-    ]
-  },
-  {
-    "name": "Sigil Magic",
-    "id": "sigil_magic",
-    "image": "./legacy_images/Icon_sw_41.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A+",
-    "role": "Magical | Assassin | Firepower",
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Spiritual AMP"
-    ],
-    "legacySkills": [
-      {
-        "name": "Synchronicity",
-        "description": "Casting [Summoned Flame] or [Exorcism Blast] triggers a fiery shockwave in the magic circle, dealing Spiritual DMG equal to [60/110/165/240%] of Constantine's ATK to enemies within a circular area.",
-        "image": "./legacy_images_skills/icon_hero_skill_Constantine_main_exclusive.png"
-      },
-      {
-        "name": "Mystic Strike",
-        "description": "Increases the wearer's Spiritual PEN by [10/20/30%]. After casting the Ultimate, the wearer's ATK is permanently increased by [5/10/15%], stacking up to [15/30/45%].",
-        "image": "./legacy_images_skills/icon_hero_skill_Constantine_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "oracle_drone",
-    "name": "Oracle Drone",
-    "image": "./legacy_images/Oracle_Drone.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A+",
-    "role": "Supporter | Intimidator",
-    "gearEffects": [
-      "HP",
-      "ATK%",
-      "HP%"
-    ]
+    "previousTier": "A"
   },
   {
     "id": "neptune_s_blessing",
@@ -562,33 +552,6 @@
         "name": "Punk Rock",
         "description": "Increases Energy Restoration Speed by [10/15/20%]. After the wearer casts their Ultimate, increases all allies' ATK by [10/20/35%]. This effect has a 8s cooldown and can stack up to 5 time(s).",
         "image": "./legacy_images_skills/icon_hero_skill_connerkent_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "psycho_syringe",
-    "name": "Psycho Syringe",
-    "image": "./legacy_images/Icon_sw_55_psycho_syringe.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Magical | Assassin | Firepower",
-    "isP2W": true,
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit DMG"
-    ],
-    "legacySkills": [
-      {
-        "name": "Vital Pierce",
-        "description": "Increases Nurse Harley's Attack by [15/30/45/60%]. During her Ultimate, each attack deals additional physical damage equal to [3/5/8/12%] of the target's Max HP (capped at [100/200/350/500%] of Nurse Harley's Attack; not affected by [Madness Actualization]).",
-        "image": "./legacy_images_skills/icon_hero_skill_NurseHarley_main_exclusive.png"
-      },
-      {
-        "name": "Delirium Strike",
-        "description": "Increases the wearer's Crit Rate by [10/20/30%]. Upon casting the Ultimate, Crit Damage is increased by [5/10/15%] for 35s, stacking up to 4 time(s).",
-        "image": "./legacy_images_skills/icon_hero_skill_NurseHarley_general_skills.png"
       }
     ]
   },
@@ -802,148 +765,6 @@
     ]
   },
   {
-    "id": "rocket_wings",
-    "name": "Rocket Wings",
-    "image": "./legacy_images/Icon_sw_69.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A+",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "HP, ATK%, HP%"
-    ]
-  },
-  {
-    "id": "house_of_el_symbol",
-    "name": "House of El Symbol",
-    "image": "./legacy_images/House_of_El.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A+",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "HP%"
-    ],
-    "legacySkills": [
-      {
-        "name": "Rao's Ascension",
-        "description": "Increases ATK by [15/25/40/60%]. Upon casting the Ultimate, AoE DMG dealt is increased by [8/15/20/30%], stacking up to 10 time(s).",
-        "image": "./legacy_images_skills/icon_hero_skill_supergirl_main_exclusive.png"
-      },
-      {
-        "name": "Protection of El",
-        "description": "Increases ATK by [10/20/30%]. After casting the Ultimate, gains a shield equal to [10/20/35%] of Max HP for 10s.",
-        "image": "./legacy_images_skills/icon_hero_skill_supergirl_general_skills.png"
-      }
-    ]
-  },
-  {
-    "name": "Fangs of the Demon",
-    "id": "fangs_of_the_demon",
-    "image": "./legacy_images/FangsoftheDemon.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Magical | Assassin | Firepower",
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit DMG"
-    ],
-    "legacySkills": [
-      {
-        "name": "Relentless Assault",
-        "description": "Talia al Ghul gains [Super Armor] while casting her Ultimate. The first time she casts her Ultimate in each battle, its DMG is increased by [25/45/70/100%]. [Super Armor]: Prevents actions or skills from being interrupted by enemy attacks.",
-        "image": "./legacy_images_skills/icon_hero_skill_TaliaalGhul_main_exclusive.png"
-      },
-      {
-        "name": "Sharp Wind",
-        "description": "Increases the wearer's ATK by [10/20/30%] and Physical PEN by [5/15/25%].",
-        "image": "./legacy_images_skills/icon_hero_skill_TaliaalGhul_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "spacehog",
-    "name": "Spacehog",
-    "image": "./legacy_images/Icon_sw_58_Spacehog.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Magical | Assassin | Firepower",
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit DMG"
-    ],
-    "legacySkills": [
-      {
-        "name": "Too Mean to Die",
-        "description": "Increases Lobo's basic attack damage by [15/30/50/70%]. When he takes lethal damage for the first time (while at least one ally is alive), his HP is set to 1 and he immediately restores [10/20/35/50%] of his max HP. Can be triggered once per battle.",
-        "image": "./legacy_images_skills/icon_hero_skill_lobo_main_exclusive.png"
-      },
-      {
-        "name": "Full Throttle Kill Instinct",
-        "description": "Increases the wearer's Crit Rate by [5/10/15%]. After casting the Ultimate, increases the wearer's Physical Penetration by [10/20/35%] for 10s.",
-        "image": "./legacy_images_skills/icon_hero_skill_lobo_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "speed_metal_suit",
-    "name": "Speed Metal Suit",
-    "image": "./legacy_images/Icon_sw_59.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Magical | Assassin | Firepower",
-    "gearEffects": [
-      "ATK",
-      "ATK %",
-      "Crit DMG"
-    ],
-    "legacySkills": [
-      {
-        "name": "Thrash Metal",
-        "description": "Increases Wally's Ultimate damage against shielded enemies by [15%/30%/45%/60%]. Each stack of Speed Force gained additionally increases his Physical Penetration by [0.3%/0.5%/0.7%/1%], stacking up to [30%/50%/70%/100%].",
-        "image": "./legacy_images_skills/icon_hero_skill_wally_main_exclusive.png"
-      },
-      {
-        "name": "Momentum",
-        "description": "At the start of battle, the wearer gains [4%/8%/15%] Attack and [8%/16%/30%] Spiritual Defense, stacking every 10s up to 4 time(s).",
-        "image": "./legacy_images_skills/icon_hero_skill_wally_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "kuru_pendant",
-    "name": "Kuru Pendant",
-    "image": "./legacy_images/Icon_sw_45.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "A",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "HP",
-      "HP%",
-      "Spiritual AMP"
-    ],
-    "legacySkills": [
-      {
-        "name": "H'ronmeer's Vengeance",
-        "description": "After Martian Manhunter casts a skill, he immediately restores [8/12/16/20%] of his Max HP. Can trigger once every 5s. While Martian Manhunter has [Mind Ward], if he's hit by an enemy basic attack, the cooldown of his skills is reduced by 2s. Can trigger once every 1s.",
-        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_main_exclusive.png"
-      },
-      {
-        "name": "Piercing Gaze",
-        "description": "After an ally casts a skill or their Ultimate, the wearer's Attack and Spiritual Defense are permanently increased by [10/25/45%], stacking up to 4 time(s).",
-        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_general.png"
-      }
-    ]
-  },
-  {
     "id": "knight_moonblade",
     "name": "Knight Moonblade",
     "image": "./legacy_images/Icon_sw_70.png",
@@ -953,85 +774,6 @@
     "role": "Guardian | Warrior",
     "gearEffects": [
       "ATK, ATK%, Crit Rate"
-    ]
-  },
-  {
-    "id": "fear_reaper",
-    "name": "Fear Reaper",
-    "image": "./legacy_images/Icon_sw_Fear_Reaper.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "B",
-    "role": "Guardian | Warrior",
-    "gearEffects": [
-      "HP",
-      "HP%",
-      "Crit DMG RES"
-    ],
-    "legacySkills": [
-      {
-        "name": "Harvest of Terror",
-        "description": "Scarecrow's Physical Resistance increases by [15/30/45/65%]. His Ultimate has a fixed [40/60/75/100%] chance to inflict [Mental Breakdown], incapacitating the target for 2s.",
-        "image": "./legacy_images_skills/icon_hero_skill_Scarecrow_main_exclusive.png"
-      },
-      {
-        "name": "Fear Field",
-        "description": "After casting a skill or the Ultimate, the wearer gains a permanent [4/8/15%] Attack Up and [4/8/15%] Physical Defense Up, stacking up to 5 time(s).",
-        "image": "./legacy_images_skills/icon_hero_skill_Scarecrow_general.png"
-      }
-    ]
-  },
-  {
-    "name": "Demon's Sword",
-    "id": "demons_sword",
-    "image": "./legacy_images/DemonsSword.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "B",
-    "role": "Magical | Assassin | Firepower",
-    "gearEffects": [
-      "ATK",
-      "ATK%",
-      "Crit DMG"
-    ],
-    "legacySkills": [
-      {
-        "name": "No Quarter",
-        "description": "Increases ATK by [12/20/30/40%]. For every 5% of Ra's al Ghul's Max HP lost, single-target DMG is increased by [1.5/3/4.5/6%].",
-        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_main_exclusive.png"
-      },
-      {
-        "name": "Deadlier Cornered",
-        "description": "Increases Physical DMG by [10/20/30%]. Before the wearer casts their Ultimate, if HP is below 50%, the wearer gains an additional [15/30/50%] Physical DMG bonus for 8s.",
-        "image": "./legacy_images_skills/icon_hero_skill_RasalGhul_general_skills.png"
-      }
-    ]
-  },
-  {
-    "id": "solar_recovery_suit",
-    "name": "Solar Recovery Suit",
-    "image": "./legacy_images/SolarRecoverySuit.png",
-    "rank": "Mythic +",
-    "unique": true,
-    "tier": "B",
-    "role": "Guardian | Warrior",
-    "isP2W": true,
-    "gearEffects": [
-      "ATK",
-      "ATK %",
-      "Crit Rate"
-    ],
-    "legacySkills": [
-      {
-        "name": "Kryptonian Shockwave",
-        "description": "When Superman takes lethal damage for the first time, if at least one ally is still present, he survives with 1 HP instead and immediately consumes all Energy to cast his Ultimate. After Superman casts his Ultimate, he calls down a meteor, dealing physical damage equal to [400/700/1100/1600%] of his Attack to enemies in a circular area and stunning them for 1s. [Stunned]: Incapacitates the target.",
-        "image": "./legacy_images_skills/icon_hero_skill_Superman_main_exclusive_02.png"
-      },
-      {
-        "name": "Kryptonian Solar Recharge",
-        "description": "After casting the Ultimate, the wearer restores HP equal to [120/270/500%] of their Attack.",
-        "image": "./legacy_images_skills/icon_hero_skill_Superman_general_02.png"
-      }
     ]
   },
   {
@@ -1384,6 +1126,245 @@
     ]
   },
   {
+    "id": "rocket_wings",
+    "name": "Rocket Wings",
+    "image": "./legacy_images/Icon_sw_69.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A+",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "HP, ATK%, HP%"
+    ]
+  },
+  {
+    "id": "spacehog",
+    "name": "Spacehog",
+    "image": "./legacy_images/Icon_sw_58_Spacehog.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A+",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Too Mean to Die",
+        "description": "Increases Lobo's basic attack damage by [15/30/50/70%]. When he takes lethal damage for the first time (while at least one ally is alive), his HP is set to 1 and he immediately restores [10/20/35/50%] of his max HP. Can be triggered once per battle.",
+        "image": "./legacy_images_skills/icon_hero_skill_lobo_main_exclusive.png"
+      },
+      {
+        "name": "Full Throttle Kill Instinct",
+        "description": "Increases the wearer's Crit Rate by [5/10/15%]. After casting the Ultimate, increases the wearer's Physical Penetration by [10/20/35%] for 10s.",
+        "image": "./legacy_images_skills/icon_hero_skill_lobo_general_skills.png"
+      }
+    ],
+    "previousTier": "A"
+  },
+  {
+    "id": "batman_s_tactical_suit",
+    "name": "Batman's Tactical Suit",
+    "image": "./legacy_images/Batmans_Tactical_Suit.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "B",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "HP%"
+    ],
+    "previousTier": "C"
+  },
+  {
+    "name": "Fangs of the Demon",
+    "id": "fangs_of_the_demon",
+    "image": "./legacy_images/FangsoftheDemon.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Relentless Assault",
+        "description": "Talia al Ghul gains [Super Armor] while casting her Ultimate. The first time she casts her Ultimate in each battle, its DMG is increased by [25/45/70/100%]. [Super Armor]: Prevents actions or skills from being interrupted by enemy attacks.",
+        "image": "./legacy_images_skills/icon_hero_skill_TaliaalGhul_main_exclusive.png"
+      },
+      {
+        "name": "Sharp Wind",
+        "description": "Increases the wearer's ATK by [10/20/30%] and Physical PEN by [5/15/25%].",
+        "image": "./legacy_images_skills/icon_hero_skill_TaliaalGhul_general_skills.png"
+      }
+    ]
+  },
+  {
+    "id": "house_of_el_symbol",
+    "name": "House of El Symbol",
+    "image": "./legacy_images/House_of_El.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "HP%"
+    ],
+    "legacySkills": [
+      {
+        "name": "Rao's Ascension",
+        "description": "Increases ATK by [15/25/40/60%]. Upon casting the Ultimate, AoE DMG dealt is increased by [8/15/20/30%], stacking up to 10 time(s).",
+        "image": "./legacy_images_skills/icon_hero_skill_supergirl_main_exclusive.png"
+      },
+      {
+        "name": "Protection of El",
+        "description": "Increases ATK by [10/20/30%]. After casting the Ultimate, gains a shield equal to [10/20/35%] of Max HP for 10s.",
+        "image": "./legacy_images_skills/icon_hero_skill_supergirl_general_skills.png"
+      }
+    ],
+    "previousTier": "A+"
+  },
+  {
+    "id": "kuru_pendant",
+    "name": "Kuru Pendant",
+    "image": "./legacy_images/Icon_sw_45.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "HP",
+      "HP%",
+      "Spiritual AMP"
+    ],
+    "legacySkills": [
+      {
+        "name": "H'ronmeer's Vengeance",
+        "description": "After Martian Manhunter casts a skill, he immediately restores [8/12/16/20%] of his Max HP. Can trigger once every 5s. While Martian Manhunter has [Mind Ward], if he's hit by an enemy basic attack, the cooldown of his skills is reduced by 2s. Can trigger once every 1s.",
+        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_main_exclusive.png"
+      },
+      {
+        "name": "Piercing Gaze",
+        "description": "After an ally casts a skill or their Ultimate, the wearer's Attack and Spiritual Defense are permanently increased by [10/25/45%], stacking up to 4 time(s).",
+        "image": "./legacy_images_skills/icon_hero_skill_MartianManhunter_general.png"
+      }
+    ]
+  },
+  {
+    "id": "orpha_blades",
+    "name": "Orphan Blades",
+    "image": "./legacy_images/OrphanBlades.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A",
+    "role": "Guardian | Warrior",
+    "gearEffects": [
+      "ATK",
+      "ATK %",
+      "HP %"
+    ],
+    "legacySkills": [
+      {
+        "name": "Hardened Resolve",
+        "description": "Increases Cassandra Cain's Attack by [25/45/70/100%]. Upon landing a critical hit, Cassandra Cain immediately restores HP equal to [35/60/90/120%] of her Attack. Can trigger once every 2s. Upon a successful dodge, Cassandra Cain immediately restores HP equal to [35/60/90/120%] of her Attack. Can trigger once every 2s.",
+        "image": "./legacy_images_skills/icon_hero_skill_cassandracain_main_exclusive.png"
+      },
+      {
+        "name": "No Quarter",
+        "description": "Increases the wearer's Crit Damage by [15/30/50%]. Upon landing a critical hit, Crit Damage is increased by an additional [15/30/50%] for 5s.",
+        "image": "./legacy_images_skills/icon_hero_skill_cassandracain_general_skills.png"
+      }
+    ]
+  },
+  {
+    "id": "charged_escrima_sticks",
+    "name": "Charged Escrima Sticks",
+    "image": "./legacy_images/Icon_sw_33.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "S",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Showstopper",
+        "description": "Increases Nightwing's ATK by [20/35/55/80%]. He gains [10/15/20/25%] Physical PEN when dealing DMG with his Ultimate or the follow-up strike. If his Crit Rate is above 100%, every additional 1% grants 1% more Physical PEN, stacking up to [30/45/60/75%].",
+        "image": "./legacy_images_skills/icon_hero_skill_Nightwing_general.png"
+      },
+      {
+        "name": "Recharge",
+        "description": "Increases the wearer's Crit DMG AMP by [20/45/70%]. Upon defeating an enemy, the wearer restores [10/20/40] Energy.",
+        "image": "./legacy_images_skills/icon_hero_skill_Nightwing_main_exclusive.png"
+      }
+    ],
+    "previousTier": "A+"
+  },
+  {
+    "name": "Sigil Magic",
+    "id": "sigil_magic",
+    "image": "./legacy_images/Icon_sw_41.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A+",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Spiritual AMP"
+    ],
+    "legacySkills": [
+      {
+        "name": "Synchronicity",
+        "description": "Casting [Summoned Flame] or [Exorcism Blast] triggers a fiery shockwave in the magic circle, dealing Spiritual DMG equal to [60/110/165/240%] of Constantine's ATK to enemies within a circular area.",
+        "image": "./legacy_images_skills/icon_hero_skill_Constantine_main_exclusive.png"
+      },
+      {
+        "name": "Mystic Strike",
+        "description": "Increases the wearer's Spiritual PEN by [10/20/30%]. After casting the Ultimate, the wearer's ATK is permanently increased by [5/10/15%], stacking up to [15/30/45%].",
+        "image": "./legacy_images_skills/icon_hero_skill_Constantine_general_skills.png"
+      }
+    ]
+  },
+  {
+    "id": "speed_metal_suit",
+    "name": "Speed Metal Suit",
+    "image": "./legacy_images/Icon_sw_59.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A+",
+    "role": "Magical | Assassin | Firepower",
+    "gearEffects": [
+      "ATK",
+      "ATK %",
+      "Crit DMG"
+    ],
+    "legacySkills": [
+      {
+        "name": "Thrash Metal",
+        "description": "Increases Wally's Ultimate damage against shielded enemies by [15%/30%/45%/60%]. Each stack of Speed Force gained additionally increases his Physical Penetration by [0.3%/0.5%/0.7%/1%], stacking up to [30%/50%/70%/100%].",
+        "image": "./legacy_images_skills/icon_hero_skill_wally_main_exclusive.png"
+      },
+      {
+        "name": "Momentum",
+        "description": "At the start of battle, the wearer gains [4%/8%/15%] Attack and [8%/16%/30%] Spiritual Defense, stacking every 10s up to 4 time(s).",
+        "image": "./legacy_images_skills/icon_hero_skill_wally_general_skills.png"
+      }
+    ],
+    "previousTier": "A"
+  },
+  {
     "id": "robin_s_utility_belt",
     "name": "Robin's Utility Belt",
     "image": "./legacy_images/Icon_sw_73.png",
@@ -1407,6 +1388,33 @@
         "name": "Tactical Arsenal",
         "description": "After the wearer casts their Ultimate, their Physical Penetration is increased by [20/40/70%] for 12s.",
         "image": "./legacy_images_skills/icon_hero_skill_robing1_general_skills.png"
+      }
+    ]
+  },
+  {
+    "id": "hells_distortion",
+    "name": "Hells Distortion",
+    "image": "./legacy_images/Icon_sw_51_hells_distortion.png",
+    "rank": "Mythic +",
+    "unique": true,
+    "tier": "A+",
+    "role": "Guardian | Warrior",
+    "isP2W": true,
+    "gearEffects": [
+      "ATK",
+      "ATK%",
+      "Crit Rate"
+    ],
+    "legacySkills": [
+      {
+        "name": "Amp it Up",
+        "description": "Increases the wearer's Physical Defense by [40/60/100%]. After casting their Ultimate, the wearer gains a shield equal to [600/1000/1500%] of their Physical Defense for 10s.",
+        "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_main_exclusive.png"
+      },
+      {
+        "name": "Encore",
+        "description": "At the start of battle, Wonder Woman Death Metal's Spiritual Resistance increases by [20/30/40/50%]. After Wonder Woman Death Metal casts her Ultimate, she doesn't consume Energy for 5s. Her basic attacks deal additional physical damage equal to [2/4/6/8%] of the target's Max HP (capped at [80/160/270/350%] of Wonder Woman Death Metal's Attack).",
+        "image": "./legacy_images_skills/icon_hero_skill_spwonderwoman_general_skills.png"
       }
     ]
   }

@@ -12,9 +12,11 @@ import '../../../godforge/game.css'
 import './legacy-page.css'
 
 // One page per legacy piece, built from the game-data export
-// (public/dcdl/legacy/details/<id>.json, written by scripts/sync-dcdl-kits.mjs) at
+// (src/dcdl/data/game/legacy/<id>.json, written by scripts/sync-dcdl-kits.mjs) at
 // build time. The tier comes from legacy.json, which the commit hook keeps in step
-// with the official tiers, so these pages are fully static.
+// with the official tiers. The details must stay outside public/: next.config.js strips
+// public/ from this route's function, so a runtime re-render (revalidate, History edits)
+// could not read them and every page fell back to "no data" (fixed 2026-10-19).
 export const dynamicParams = false
 
 const BASE = '/games/dc-dark-legion/legacy'
@@ -27,7 +29,7 @@ export function generateStaticParams() {
 
 function readDetails(id: string): LegacyDetails | null {
   try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public/dcdl/legacy/details', `${id}.json`), 'utf8'))
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/game/legacy', `${id}.json`), 'utf8'))
   } catch {
     return null
   }

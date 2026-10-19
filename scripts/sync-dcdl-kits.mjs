@@ -274,11 +274,9 @@ if (WRITE) {
   // with full stat curves is several MB).
   for (const [cid, d] of Object.entries(championData)) writeIfChanged(path.join(GAME_DIR, 'champions', `${cid}.json`), d)
   if (fs.existsSync(path.join(GAME_DIR, 'champions.json'))) fs.rmSync(path.join(GAME_DIR, 'champions.json'))
-  // Legacy details are fetched by the legacy pop-up one piece at a time, so they live in
-  // public/ as one small file per piece instead of being inlined into every page.
-  const DETAILS = path.join(ROOT, 'public/dcdl/legacy/details')
-  for (const [lid, d] of Object.entries(legacyData)) writeIfChanged(path.join(DETAILS, `${lid}.json`), d)
-  if (fs.existsSync(path.join(GAME_DIR, 'legacy.json'))) fs.rmSync(path.join(GAME_DIR, 'legacy.json'))
+  // One file per legacy piece, read by its page with fs. Never in public/: that folder is
+  // stripped from the page's function (next.config.js), so runtime re-renders lost the data.
+  for (const [lid, d] of Object.entries(legacyData)) writeIfChanged(path.join(GAME_DIR, 'legacy', `${lid}.json`), d)
   // Legacy art: convert the game's PNGs to WebP once (skip ones already converted).
   const { default: sharp } = await import('sharp')
   fs.mkdirSync(ART_DIR, { recursive: true })

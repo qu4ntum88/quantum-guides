@@ -23,7 +23,7 @@ export default async function Image({ params }: { params: Promise<{ id: string }
   if (!piece) return renderLogoCard('DC: Dark Legion')
   let d: Details | null = null
   try {
-    d = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'public/dcdl/legacy/details', `${id}.json`), 'utf8'))
+    d = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/game/legacy', `${id}.json`), 'utf8'))
   } catch {}
   const rank = piece.rank || (d ? QUALITY[d.quality] : undefined)
   const top = d?.gearEffects?.rows[d.gearEffects.rows.length - 1]

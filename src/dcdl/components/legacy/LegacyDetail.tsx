@@ -2,7 +2,7 @@
 
 // The body of a legacy piece's page (/games/dc-dark-legion/legacy/<id>): Gear Effects per
 // star, skill upgrade paths, classes, art and the in-game guidance, all from
-// public/dcdl/legacy/details/<id>.json (written by scripts/sync-dcdl-kits.mjs). The page
+// src/dcdl/data/game/legacy/<id>.json (written by scripts/sync-dcdl-kits.mjs). The page
 // reads that file at build time and passes it in, so everything is in the HTML; this is a
 // client component only for the star scrubber.
 
