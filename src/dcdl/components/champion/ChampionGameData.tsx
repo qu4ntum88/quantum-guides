@@ -1,15 +1,20 @@
 'use client'
 
-// Champion page sections built from the game-data export (src/dcdl/data/game/champions.json,
-// written by scripts/sync-dcdl-kits.mjs): base stats at any level, Force talents with their
-// per-level effects and costs, and lore chapters with the star each one unlocks at.
+// Champion page sections built from the game-data export (src/dcdl/data/game/champions/<id>.json,
+// written by scripts/sync-dcdl-kits.mjs): a stat calculator (level 1–700, stars 0–25 and every
+// Force talent 0–5, combined the way the game does), Force talent costs, and lore chapters with
+// the star each one unlocks at.
 
 import { useMemo, useState } from 'react'
 import { STAR_TIERS, UNLOCK_COLOR } from '../../lib/star-tiers'
 import './champion-data.css'
 
-type TalentUpgrade = { level: number; championLevel: number; acdc: number; dollars: number; effect: string }
+/** kind: flat = added after every multiplier, pct = the (1 + talent% + gear%) bucket,
+ *  base = added to the level stat before stars. Stats other than the main four are listed only. */
+type Stat = { stat: string; value: number; kind: 'flat' | 'pct' | 'base' }
+type TalentUpgrade = { level: number; championLevel: number; acdc: number; dollars: number; effect: string; stats?: Stat[] }
 export type ChampionTalent = { name: string; enhanced: boolean; text: string | null; upgrades: TalentUpgrade[] }
+export type ChampionStars = { mythicPlus: boolean; steps: { star: number; stats: { stat: string; value: number }[] }[] }
 
 export type ChampionGameDataProps = {
   curves: Record<string, number[]> | null
@@ -17,18 +22,26 @@ export type ChampionGameDataProps = {
   maxLevel: number | null
   talents: ChampionTalent[]
   lore: { unlockStar: number; text: string }[]
+  stars?: ChampionStars | null
+  /** Slot ("Ultimate", "Skill 1", …) → the star each skill level unlocks at (index 0 = Lv 1). */
+  skillUnlocks?: Record<string, number[]>
+  /** Slot → skill name, for the "reaching this star" notes. */
+  skillNames?: Record<string, string>
 }
 
 const STAT_ORDER = ['HP', 'ATK', 'P. DEF', 'S. DEF']
 const JUMPS = [1, 100, 200, 300, 400, 500, 600, 700]
 const ACDC_ICON = '/dcdl/resource_icons/AC DC Shards.png'
 const DOLLAR_ICON = '/dcdl/resource_icons/Dollars.png'
-const fmt = (n: number) => n.toLocaleString()
+const fmt = (n: number) => Math.round(n).toLocaleString()
+const fmtPct = (n: number) => `${Number(n.toFixed(2))}%`
+const statClass = (k: string) => `cgd-stat--${k.replace(/[^a-z]/gi, '').toLowerCase()}`
 
 function starLabel(star: number) {
-  if (!star) return { text: 'Unlocked', color: UNLOCK_COLOR }
+  if (!star) return { text: 'Unlocked', short: '0★', color: UNLOCK_COLOR }
   const tier = STAR_TIERS[Math.floor((star - 1) / 5)]
-  return { text: `${((star - 1) % 5) + 1}★ ${tier?.name ?? ''}`, color: tier?.color ?? UNLOCK_COLOR }
+  const n = ((star - 1) % 5) + 1
+  return { text: `${n}★ ${tier?.name ?? ''}`, short: `${n}★ ${tier?.name ?? ''}`, color: tier?.color ?? UNLOCK_COLOR }
 }
 
 function Cost({ acdc, dollars }: { acdc: number; dollars: number }) {
@@ -40,107 +53,347 @@ function Cost({ acdc, dollars }: { acdc: number; dollars: number }) {
   )
 }
 
-export default function ChampionGameData({ curves, firstLevel, maxLevel, talents, lore }: ChampionGameDataProps) {
+function OffWarning({ count, need, level, onFix }: { count: number; need: number; level: number; onFix: () => void }) {
+  return (
+    <div className="cgd-off" role="alert">
+      <span>
+        <strong>{count === 1 ? '1 Force talent is' : `${count} Force talents are`} switched off.</strong>{' '}
+        Champion level {level} is below what {count === 1 ? 'it needs' : 'they need'}; move back up to level {need} to get the full Force bonus.
+      </span>
+      <button type="button" onClick={onFix}>Go to Lv {need}</button>
+    </div>
+  )
+}
+
+type Sums = { pct: Record<string, number>; flat: Record<string, number>; base: Record<string, number>; other: Map<string, { value: number; pct: boolean }> }
+
+/** Adds up the stats of every talent at its chosen level (an upgrade's stats are that level's totals). */
+function sumTalents(talents: ChampionTalent[], levels: number[]): Sums {
+  const s: Sums = { pct: {}, flat: {}, base: {}, other: new Map() }
+  talents.forEach((t, i) => {
+    const u = levels[i] ? t.upgrades[levels[i] - 1] : null
+    for (const st of u?.stats ?? []) {
+      if (STAT_ORDER.includes(st.stat)) s[st.kind][st.stat] = (s[st.kind][st.stat] ?? 0) + st.value
+      else {
+        const key = `${st.stat}|${st.kind}`
+        s.other.set(key, { value: (s.other.get(key)?.value ?? 0) + st.value, pct: st.kind === 'pct' })
+      }
+    }
+  })
+  return s
+}
+
+/** Cumulative star bonus (in percent) per stat at star `star`. */
+function starTotals(stars: ChampionStars | null | undefined, star: number) {
+  const out: Record<string, number> = {}
+  for (const step of stars?.steps ?? []) if (step.star <= star) for (const s of step.stats) out[s.stat] = (out[s.stat] ?? 0) + s.value
+  return out
+}
+
+/** The game's formula (BUPropertyCalculator): (base + base talents) × (1 + star%) × (1 + talent%) + flat talents. */
+function combine(base: number, star: number, sums: Sums, k: string) {
+  const starred = (base + (sums.base[k] ?? 0)) * (1 + star / 100)
+  const total = starred * (1 + (sums.pct[k] ?? 0) / 100) + (sums.flat[k] ?? 0)
+  return { base, starGain: base * (star / 100), forceGain: total - base * (1 + star / 100), total }
+}
+
+export default function ChampionGameData({ curves, firstLevel, maxLevel, talents, lore, stars, skillUnlocks = {}, skillNames = {} }: ChampionGameDataProps) {
   const top = maxLevel ?? 700
+  const maxStar = stars?.steps.length ? stars.steps[stars.steps.length - 1].star : 0
   const [level, setLevel] = useState(top)
+  const [star, setStar] = useState(0)
+  const [tLevels, setTLevels] = useState<number[]>(() => talents.map(() => 0))
   const [openTalent, setOpenTalent] = useState<number | null>(null)
   const [openLore, setOpenLore] = useState(0)
 
-  const totals = useMemo(() => talents.reduce((s, t) => {
+  const maxCost = useMemo(() => talents.reduce((s, t) => {
     for (const u of t.upgrades) { s.acdc += u.acdc; s.dollars += u.dollars }
     return s
   }, { acdc: 0, dollars: 0 }), [talents])
+  const chosenCost = useMemo(() => talents.reduce((s, t, i) => {
+    for (const u of t.upgrades.slice(0, tLevels[i])) { s.acdc += u.acdc; s.dollars += u.dollars }
+    return s
+  }, { acdc: 0, dollars: 0 }), [talents, tLevels])
+  // A talent whose chosen level needs a higher champion level stays chosen but adds nothing
+  // until the level slider is back up to that requirement.
+  const needOf = (t: ChampionTalent, lv: number) => (lv ? t.upgrades[lv - 1]?.championLevel ?? 0 : 0)
+  const activeLevels = useMemo(() => talents.map((t, i) => (needOf(t, tLevels[i]) <= level ? tLevels[i] : 0)), [talents, tLevels, level])
+  const sums = useMemo(() => sumTalents(talents, activeLevels), [talents, activeLevels])
+  const maxSums = useMemo(() => sumTalents(talents, talents.map((t) => t.upgrades.length)), [talents])
+  const starPct = useMemo(() => starTotals(stars, star), [stars, star])
+  const maxStarPct = useMemo(() => starTotals(stars, maxStar), [stars, maxStar])
 
   if (!curves && !talents.length && !lore.length) return null
-  const at = (k: string, lv: number) => curves?.[k]?.[lv - firstLevel]
+  const at = (k: string, lv: number) => curves?.[k]?.[lv - firstLevel] ?? 0
   const stats = curves ? STAT_ORDER.filter((k) => curves[k]?.length) : []
+  const hasStars = !!stars?.steps.length
+  const talentMax = talents.reduce((n, t) => n + t.upgrades.length, 0)
+  const talentNow = tLevels.reduce((n, l) => n + l, 0)
+  // Raising talents pulls the level slider up to what they need (never down).
+  const applyTalents = (next: number[]) => {
+    const need = Math.max(0, ...talents.map((t, i) => (next[i] > tLevels[i] ? needOf(t, next[i]) : 0)))
+    if (need > level) setLevel(Math.min(need, top))
+    setTLevels(next)
+  }
+  const setTalent = (i: number, v: number) => applyTalents(tLevels.map((l, j) => (j === i ? v : l)))
+  const offTalents = talents.map((t, i) => ({ t, need: needOf(t, tLevels[i]) })).filter((x) => x.need > level)
+  const offNeed = Math.max(0, ...offTalents.map((x) => x.need))
+  const forceChips = [
+    ...STAT_ORDER.flatMap((k) => [
+      sums.flat[k] ? { label: `${k} +${fmt(sums.flat[k])}`, main: true } : null,
+      sums.base[k] ? { label: `Base ${k} +${fmt(sums.base[k])}`, main: true } : null,
+      sums.pct[k] ? { label: `${k} +${fmtPct(sums.pct[k])}`, main: true } : null,
+    ]),
+    ...[...sums.other].map(([key, o]) => ({ label: `${key.split('|')[0]} +${o.pct ? fmtPct(o.value) : fmt(o.value)}`, main: false })),
+  ].filter((c): c is { label: string; main: boolean } => !!c)
+
+  // What reaching the selected star adds: its stat step, skill levels and lore chapters.
+  const step = stars?.steps.find((s) => s.star === star)
+  const skillUps = Object.entries(skillUnlocks).flatMap(([slot, list]) => {
+    const i = list.indexOf(star)
+    return i > 0 ? [`${skillNames[slot] || slot} → Lv ${i + 1}`] : []
+  })
+  const loreUps = lore.flatMap((ch, i) => (star > 0 && ch.unlockStar === star ? [`Lore chapter ${i + 1}`] : []))
+  const tierOf = starLabel(star)
 
   return (
     <>
-      {stats.length > 0 && (
-        <section className="card cgd" aria-labelledby="cgd-stats">
+      {(stats.length > 0 || talents.length > 0) && (
+        <section className="card cgd cgd-calc" aria-labelledby="cgd-stats">
           <div className="cgd-head">
-            <h2 id="cgd-stats">Base Stats</h2>
-            <span className="cgd-level">Level <strong>{level}</strong><span className="cgd-level__max"> / {top}</span></span>
+            <h2 id="cgd-stats">{stats.length ? 'Stat Calculator' : 'Force Talents'}</h2>
+            {stats.length > 0 && (
+              <span className="cgd-actions">
+                <button type="button" onClick={() => { setLevel(top); setStar(maxStar); setTLevels(talents.map((t) => t.upgrades.length)) }}>Max all</button>
+                <button type="button" onClick={() => { setLevel(top); setStar(0); setTLevels(talents.map(() => 0)) }}>Reset</button>
+              </span>
+            )}
           </div>
-          <div className="cgd-slider">
-            <input
-              type="range" min={firstLevel} max={top} value={level}
-              onChange={(e) => setLevel(Number(e.target.value))}
-              aria-label="Champion level" style={{ '--pct': `${((level - firstLevel) / Math.max(1, top - firstLevel)) * 100}%` } as React.CSSProperties}
-            />
-            <div className="cgd-jumps">
-              {JUMPS.filter((j) => j >= firstLevel && j <= top).map((j) => (
-                <button key={j} type="button" className={j === level ? 'is-active' : ''} onClick={() => setLevel(j)}>{j}</button>
-              ))}
-            </div>
-          </div>
-          <div className="cgd-stats">
-            {stats.map((k) => {
-              const v = at(k, level) ?? 0
-              const max = at(k, top) || v || 1
-              return (
-                <div key={k} className={`cgd-stat cgd-stat--${k.replace(/[^a-z]/gi, '').toLowerCase()}`}>
-                  <span className="cgd-stat__name">{k}</span>
-                  <span className="cgd-stat__value">{fmt(v)}</span>
-                  <span className="cgd-stat__bar"><span style={{ width: `${Math.max(3, Math.round((v / max) * 100))}%` }} /></span>
-                </div>
-              )
-            })}
-          </div>
-          <p className="cgd-note">Base stats before gear, legacy pieces, talents, and team bonuses.</p>
-        </section>
-      )}
 
-      {talents.length > 0 && (
-        <section className="card cgd" aria-labelledby="cgd-talents">
-          <div className="cgd-head">
-            <h2 id="cgd-talents">Force Talents</h2>
-            <span className="cgd-total">Max every talent: <Cost {...totals} /></span>
-          </div>
-          <p className="cgd-note cgd-note--top">Each talent has five upgrades. Tap one to see what every level gives, the champion level it needs, and what it costs.</p>
-          <div className="cgd-talents">
-            {talents.map((t, i) => {
-              const open = openTalent === i
-              const last = t.upgrades[t.upgrades.length - 1]
-              const sum = t.upgrades.reduce((s, u) => ({ acdc: s.acdc + u.acdc, dollars: s.dollars + u.dollars }), { acdc: 0, dollars: 0 })
-              return (
-                <article key={t.name + i} className={'cgd-talent' + (t.enhanced ? ' is-enhanced' : '') + (open ? ' is-open' : '')}>
-                  <button type="button" className="cgd-talent__head" aria-expanded={open} onClick={() => setOpenTalent(open ? null : i)}>
-                    <span className="cgd-talent__n">{i + 1}</span>
-                    <span className="cgd-talent__main">
-                      <span className="cgd-talent__name">{t.name}</span>
-                      <span className="cgd-talent__sub">
-                        {t.enhanced ? 'Multiversal Force Enhancement' : last ? `Max: ${last.effect}` : ''}
-                      </span>
+          {stats.length > 0 && (
+            <>
+              <p className="cgd-note cgd-note--top">
+                Set the level, stars and Force talents on their own; the totals combine all three the way the game does:
+                stars multiply the level stat, then Force % bonuses multiply that, then flat Force bonuses are added.
+              </p>
+              <div className="cgd-summary">
+                <span>Level <strong>{level}</strong></span>
+                {hasStars && <span style={{ '--tier': tierOf.color } as React.CSSProperties}>Stars <strong className="cgd-summary__star">{tierOf.short}</strong></span>}
+                {talents.length > 0 && <span>Force <strong>{talentNow}</strong> / {talentMax}</span>}
+              </div>
+              {offTalents.length > 0 && <OffWarning count={offTalents.length} need={offNeed} level={level} onFix={() => setLevel(offNeed)} />}
+              <div className="cgd-stats">
+                {stats.map((k) => {
+                  const r = combine(at(k, level), starPct[k] ?? 0, sums, k)
+                  const max = combine(at(k, top), maxStarPct[k] ?? 0, maxSums, k).total || r.total || 1
+                  return (
+                    <div key={k} className={`cgd-stat ${statClass(k)}`}>
+                      <span className="cgd-stat__name">{k}</span>
+                      <span className="cgd-stat__value">{fmt(r.total)}</span>
+                      <span className="cgd-stat__bar"><span style={{ width: `${Math.max(3, Math.round((r.total / max) * 100))}%` }} /></span>
+                      <dl className="cgd-stat__parts">
+                        <div><dt>Level {level}</dt><dd>{fmt(r.base)}</dd></div>
+                        {hasStars && <div className={r.starGain ? '' : 'is-zero'}><dt>Stars +{fmtPct(starPct[k] ?? 0)}</dt><dd>+{fmt(r.starGain)}</dd></div>}
+                        {talents.length > 0 && <div className={Math.round(r.forceGain) ? '' : 'is-zero'}><dt>Force</dt><dd>+{fmt(r.forceGain)}</dd></div>}
+                      </dl>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div className="cgd-block">
+                <div className="cgd-block__head">
+                  <h3>Level</h3>
+                  <span className="cgd-level">Level <strong>{level}</strong><span className="cgd-level__max"> / {top}</span></span>
+                </div>
+                <div className="cgd-slider">
+                  <input
+                    type="range" min={firstLevel} max={top} value={level}
+                    onChange={(e) => setLevel(Number(e.target.value))}
+                    aria-label="Champion level" style={{ '--pct': `${((level - firstLevel) / Math.max(1, top - firstLevel)) * 100}%` } as React.CSSProperties}
+                  />
+                  <div className="cgd-jumps">
+                    {JUMPS.filter((j) => j >= firstLevel && j <= top).map((j) => (
+                      <button key={j} type="button" className={j === level ? 'is-active' : ''} onClick={() => setLevel(j)}>{j}</button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {hasStars && (
+                <div className="cgd-block">
+                  <div className="cgd-block__head">
+                    <h3>Stars</h3>
+                    <span className="cgd-level" style={{ '--tier': tierOf.color } as React.CSSProperties}>
+                      <strong className="cgd-starname">{tierOf.text}</strong>
                     </span>
-                    <span className="cgd-talent__cost"><Cost {...sum} /></span>
-                    <span className="cgd-talent__chev" aria-hidden="true">{open ? '−' : '+'}</span>
-                  </button>
-                  {open && (
-                    <div className="cgd-talent__body">
-                      {t.text && <p className="cgd-talent__text">{t.text}</p>}
-                      <div className="cgd-table-wrap">
-                        <table className="cgd-table">
-                          <thead><tr><th>Lv</th><th>Champion Lv</th><th>Cost</th><th>Effect</th></tr></thead>
-                          <tbody>
-                            {t.upgrades.map((u) => (
-                              <tr key={u.level}>
-                                <td><span className="cgd-pip">{u.level}</span></td>
-                                <td>{u.championLevel}</td>
-                                <td><Cost acdc={u.acdc} dollars={u.dollars} /></td>
-                                <td>{u.effect}</td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                  </div>
+                  <div className="cgd-slider cgd-slider--star" style={{ '--tier': tierOf.color } as React.CSSProperties}>
+                    <input
+                      type="range" min={0} max={maxStar} value={star}
+                      onChange={(e) => setStar(Number(e.target.value))}
+                      aria-label="Champion stars" aria-valuetext={tierOf.text}
+                      style={{ '--pct': `${(star / Math.max(1, maxStar)) * 100}%` } as React.CSSProperties}
+                    />
+                    <div className="cgd-startrack" aria-hidden="true">
+                      <button type="button" tabIndex={-1} className={'cgd-startrack__zero' + (star === 0 ? ' is-on' : '')} onClick={() => setStar(0)}>0</button>
+                      {STAR_TIERS.map((t, ti) => (
+                        <span key={t.name} className="cgd-startrack__tier" style={{ '--c': t.color } as React.CSSProperties}>
+                          {[1, 2, 3, 4, 5].map((n) => {
+                            const s = ti * 5 + n
+                            if (s > maxStar) return null
+                            return <button key={s} type="button" tabIndex={-1} title={`${n}★ ${t.name}`} className={s <= star ? 'is-on' : ''} onClick={() => setStar(s)}>★</button>
+                          })}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="cgd-starinfo">
+                    <div>
+                      <span className="sg-label">Reaching {tierOf.text}</span>
+                      {star === 0 ? (
+                        <p className="cgd-starinfo__none">No star bonus yet. Each star from here adds to HP, ATK and both DEFs.</p>
+                      ) : (
+                        <div className="cgd-chips">
+                          {step?.stats.map((s) => <span key={s.stat} className={`cgd-chip ${statClass(s.stat)}`}>{s.stat} +{fmtPct(s.value)}</span>)}
+                          {skillUps.map((x) => <span key={x} className="cgd-chip cgd-chip--skill">{x}</span>)}
+                          {loreUps.map((x) => <span key={x} className="cgd-chip cgd-chip--lore">{x}</span>)}
+                        </div>
+                      )}
+                    </div>
+                    <div>
+                      <span className="sg-label">Total from stars</span>
+                      <div className="cgd-chips">
+                        {STAT_ORDER.map((k) => <span key={k} className={`cgd-chip ${statClass(k)}`}>{k} +{fmtPct(starPct[k] ?? 0)}</span>)}
                       </div>
                     </div>
+                  </div>
+                  {stars?.mythicPlus && (
+                    <p className="cgd-note">Mythic+ champions use the game&apos;s stronger star table: HP and ATK rise faster from Purple on.</p>
                   )}
-                </article>
-              )
-            })}
-          </div>
+                  <details className="cgd-everystar">
+                    <summary>What every star adds</summary>
+                    <div className="cgd-table-wrap">
+                      <table className="cgd-table">
+                        <thead><tr><th>Star</th>{STAT_ORDER.map((k) => <th key={k}>{k}</th>)}<th>Also unlocks</th></tr></thead>
+                        <tbody>
+                          {stars!.steps.map((s) => {
+                            const lbl = starLabel(s.star)
+                            const cum = starTotals(stars, s.star)
+                            const ups = [
+                              ...Object.entries(skillUnlocks).flatMap(([slot, list]) => { const i = list.indexOf(s.star); return i > 0 ? [`${skillNames[slot] || slot} Lv ${i + 1}`] : [] }),
+                              ...lore.flatMap((ch, i) => (ch.unlockStar === s.star ? [`Lore ${i + 1}`] : [])),
+                            ]
+                            return (
+                              <tr key={s.star} className={s.star === star ? 'is-current' : ''} onClick={() => setStar(s.star)}>
+                                <td><span className="cgd-starcell" style={{ '--tier': lbl.color } as React.CSSProperties}>{lbl.text}</span></td>
+                                {STAT_ORDER.map((k) => {
+                                  const v = s.stats.find((x) => x.stat === k)?.value ?? 0
+                                  return <td key={k}>+{fmtPct(v)} <span className="cgd-cum">({fmtPct(cum[k] ?? 0)})</span></td>
+                                })}
+                                <td>{ups.join(', ') || '—'}</td>
+                              </tr>
+                            )
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="cgd-note">Each row is what that star adds; the total so far is in brackets. Tap a row to set the slider.</p>
+                  </details>
+                </div>
+              )}
+            </>
+          )}
+
+          {talents.length > 0 && (
+            <div className={stats.length ? 'cgd-block' : ''}>
+              <div className="cgd-block__head">
+                {stats.length > 0 && <h3>Force Talents</h3>}
+                <span className="cgd-total">Max every talent: <Cost {...maxCost} /></span>
+              </div>
+              <div className="cgd-force">
+                <div className="cgd-force__row">
+                  <span className="sg-label">From Force at these levels</span>
+                  <span className="cgd-force__btns">
+                    <button type="button" onClick={() => applyTalents(talents.map((t) => t.upgrades.length))}>Max all</button>                    <button type="button" onClick={() => setTLevels(talents.map(() => 0))}>Reset</button>
+                  </span>
+                </div>
+                <div className="cgd-chips">
+                  {forceChips.length
+                    ? forceChips.map((c) => <span key={c.label} className={'cgd-chip' + (c.main ? ' cgd-chip--main' : '')}>{c.label}</span>)
+                    : <span className="cgd-starinfo__none">Every talent is at 0. Slide one up to see what it adds.</span>}
+                </div>
+                <div className="cgd-force__cost">Cost of these levels: <Cost {...chosenCost} /></div>
+                {offTalents.length > 0 && <OffWarning count={offTalents.length} need={offNeed} level={level} onFix={() => setLevel(offNeed)} />}
+              </div>
+              <div className="cgd-talents">
+                {talents.map((t, i) => {
+                  const open = openTalent === i
+                  const lv = tLevels[i]
+                  const cur = lv ? t.upgrades[lv - 1] : null
+                  const max = t.upgrades.length
+                  const counted = t.upgrades.some((u) => u.stats?.length)
+                  const needs = cur && cur.championLevel > level ? cur.championLevel : null // talent switched off
+                  const sum = t.upgrades.reduce((s, u) => ({ acdc: s.acdc + u.acdc, dollars: s.dollars + u.dollars }), { acdc: 0, dollars: 0 })
+                  return (
+                    <article key={t.name + i} className={'cgd-talent' + (t.enhanced ? ' is-enhanced' : '') + (open ? ' is-open' : '') + (lv ? ' is-set' : '') + (needs ? ' is-off' : '')}>
+                      <div className="cgd-talent__head">
+                        <span className="cgd-talent__n">{i + 1}</span>
+                        <span className="cgd-talent__main">
+                          <span className="cgd-talent__name">{t.name}</span>
+                          <span className="cgd-talent__sub">
+                            {cur ? cur.effect : t.enhanced ? 'Multiversal Force Enhancement' : `Max: ${t.upgrades[max - 1]?.effect ?? ''}`}
+                            {t.enhanced && !counted && <em className="cgd-talent__flag"> · skill effect, not in the stat totals</em>}
+                          </span>
+                        </span>
+                        <span className="cgd-talent__level">
+                          <input
+                            type="range" min={0} max={max} value={lv}
+                            onChange={(e) => setTalent(i, Number(e.target.value))}
+                            aria-label={`${t.name} level`} aria-valuetext={`Level ${lv} of ${max}`}
+                            style={{ '--pct': `${(lv / Math.max(1, max)) * 100}%` } as React.CSSProperties}
+                          />
+                          <span className="cgd-talent__lv">{lv}<span>/{max}</span></span>
+                        </span>
+                        <button type="button" className="cgd-talent__chev" aria-expanded={open} aria-label={`${open ? 'Hide' : 'Show'} ${t.name} levels and costs`} onClick={() => setOpenTalent(open ? null : i)}><span className="cgd-plus" aria-hidden="true" /></button>
+                      </div>
+                      {needs && (
+                        <div className="cgd-talent__off" role="alert">
+                          <strong>Bonus switched off.</strong> Level {lv} of this talent needs champion level {needs} (you&apos;re at {level}).
+                          <button type="button" onClick={() => setLevel(needs)}>Go to Lv {needs}</button>
+                        </div>
+                      )}
+                      {open && (
+                        <div className="cgd-talent__body">
+                          {t.text && <p className="cgd-talent__text">{t.text}</p>}
+                          <div className="cgd-talent__total">All five levels: <Cost {...sum} /></div>
+                          <div className="cgd-table-wrap">
+                            <table className="cgd-table">
+                              <thead><tr><th>Lv</th><th>Champion Lv</th><th>Cost</th><th>Effect</th></tr></thead>
+                              <tbody>
+                                {t.upgrades.map((u) => (
+                                  <tr key={u.level} className={u.level === lv ? 'is-current' : ''} onClick={() => setTalent(i, u.level)}>
+                                    <td><span className="cgd-pip">{u.level}</span></td>
+                                    <td>{u.championLevel}</td>
+                                    <td><Cost acdc={u.acdc} dollars={u.dollars} /></td>
+                                    <td>{u.effect}</td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      )}
+                    </article>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
+          {stats.length > 0 && (
+            <p className="cgd-note">Before gear, legacy pieces, Global Skills, team bonuses and in-battle buffs. Enhanced talents count only when they are a plain stat boost.</p>
+          )}
         </section>
       )}
 

@@ -176,6 +176,41 @@ for (const b of cc) {
 // stats (already capped at the live max level by the export), talents, lore, skill-level
 // unlock stars; legacy Gear Effects per star, skill upgrade paths, classes, art.
 const STAT_LABEL = { HpHero: 'HP', AtkHero: 'ATK', DefHero: 'P. DEF', FortHero: 'S. DEF' }
+// Talent/star stats for the champion-page stat calculator, as { stat, value, kind }. The game
+// adds them up as (base + "base") x (1 + star%) x (1 + "pct") + "flat" for the four main stats
+// (BUPropertyCalculator.lua); any other stat (Crit Rate, PEN, ...) is just listed.
+const MAIN_STAT = {
+  HpGeneral: ['HP', 'flat'], HpBattleRatio: ['HP', 'pct'],
+  AtkGeneral: ['ATK', 'flat'], AtkBattleRatio: ['ATK', 'pct'],
+  DefGeneral: ['P. DEF', 'flat'], DefBattleRatio: ['P. DEF', 'pct'],
+  FortGeneral: ['S. DEF', 'flat'], FortBattleRatio: ['S. DEF', 'pct'],
+  HpHero: ['HP', 'base'], AtkHero: ['ATK', 'base'], DefHero: ['P. DEF', 'base'], FortHero: ['S. DEF', 'base'],
+}
+const siteStats = (stats) => (stats || []).map((s) => {
+  const [stat, kind] = MAIN_STAT[s.key] || [s.label, s.percent ? 'pct' : 'flat']
+  return { stat, value: s.value, kind }
+})
+// Enhanced talents carry no attributes; the plain self-buffs among them ("Increases Batman's Max
+// HP by 12.5%.", "Deathstroke's ATK increases by 10%.") read off the effect text. Anything
+// conditional or timed doesn't match and stays out of the totals.
+// Text name -> the label normal talents use for the same stat.
+const TEXT_STAT = {
+  'max hp': 'HP', hp: 'HP', attack: 'ATK', atk: 'ATK', 'physical defense': 'P. DEF', 'physical def': 'P. DEF', 'spiritual defense': 'S. DEF', 'spiritual def': 'S. DEF',
+  'crit rate': 'Crit Rate', 'crit damage': 'Crit DMG', 'crit dmg': 'Crit DMG', 'physical penetration': 'Physical PEN', 'physical pen': 'Physical PEN',
+  'spiritual penetration': 'Spiritual PEN', 'spiritual pen': 'Spiritual PEN', 'spiritual amplification': 'Spiritual AMP', 'spiritual amp': 'Spiritual AMP',
+  'spiritual resistance': 'Spiritual RES', 'physical resistance': 'Physical RES', 'crit res': 'Crit RES', acc: 'ACC', 'effect acc': 'Effect ACC', 'effect accuracy': 'Effect ACC', 'effect res': 'Effect RES',
+}
+function enhancedStats(effect, names) {
+  const e = oneLine(effect)
+  const m = e.match(/^Increases ([^,]+?)'s ([A-Za-z. ]+?) by ([\d.]+)%\.?$/) || e.match(/^([^,]+?)'s ([A-Za-z. ]+?) increases by ([\d.]+)%\.?$/)
+  if (!m || !TEXT_STAT[m[2].toLowerCase()]) return []
+  // Only the champion's own stats (a name check keeps out "all enemies' ..." and the like).
+  // Names: the site's, the game's, and the character's (Green Lantern's text says "Hal Jordan").
+  const subject = norm(m[1])
+  const self = names.filter(Boolean).map((n) => n.replace(/\s*\([^)]*\)\s*/g, ' ').trim())
+  if (!self.some((n) => norm(n).includes(subject) || subject.includes(norm(n.split(' ')[0])))) return []
+  return [{ stat: TEXT_STAT[m[2].toLowerCase()], value: Number(m[3]), kind: 'pct' }]
+}
 const championData = {}
 for (const [id, g] of championMatches) {
   championData[id] = {
@@ -185,12 +220,20 @@ for (const [id, g] of championMatches) {
     // Full stat curve, level firstLevel..maxLevel, one array per stat (drives the 1–700 slider).
     curves: g.stats?.curves ? Object.fromEntries(Object.entries(g.stats.curves).map(([k, v]) => [STAT_LABEL[k] || k, v])) : null,
     firstLevel: g.stats?.firstLevel ?? 1,
-    // Force talents with per-level effects and costs (AC/DC Shards + Dollars).
+    // What each star adds (reaching star s grants step s); Mythic+ use the game's stronger table.
+    stars: g.starBonus ? {
+      mythicPlus: g.starBonus.table === 'LimitRedAttr',
+      steps: g.starBonus.perStar.map((p) => ({ star: p.star, stats: siteStats(p.stats).map(({ stat, value }) => ({ stat, value })) })),
+    } : null,
+    // Force talents with per-level effects, costs (AC/DC Shards + Dollars) and stats.
     talents: (g.talents || []).filter((t) => t.name && !/_/.test(t.name)).map((t) => ({
       name: t.name,
       enhanced: t.enhanced,
       text: t.text ? oneLine(t.text) : null,
-      upgrades: t.upgrades.map((u) => ({ level: u.level, championLevel: u.requiresChampionLevel, acdc: u.cost?.acdc ?? 0, dollars: u.cost?.dollars ?? 0, effect: oneLine(u.effect) })),
+      upgrades: t.upgrades.map((u) => {
+        const stats = u.stats?.length ? siteStats(u.stats) : t.enhanced ? enhancedStats(u.effect, [heros.find((h) => h.id === id)?.name, g.name, g.character]) : []
+        return { level: u.level, championLevel: u.requiresChampionLevel, acdc: u.cost?.acdc ?? 0, dollars: u.cost?.dollars ?? 0, effect: oneLine(u.effect), stats }
+      }),
     })),
     lore: g.lore.map((p) => ({ unlockStar: p.unlockStar, text: oneLine(p.text) })),
   }

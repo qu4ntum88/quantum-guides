@@ -283,7 +283,15 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
         />
 
         {gameData && (
-          <ChampionGameData curves={gameData.curves} firstLevel={gameData.firstLevel} maxLevel={gameData.maxLevel} talents={gameData.talents} lore={gameData.lore} />
+          <ChampionGameData
+            curves={gameData.curves} firstLevel={gameData.firstLevel} maxLevel={gameData.maxLevel}
+            talents={gameData.talents} lore={gameData.lore} stars={gameData.stars ?? null}
+            skillUnlocks={gameData.skillUnlocks ?? {}}
+            skillNames={{
+              Ultimate: hero.ultimate?.name ?? '',
+              ...Object.fromEntries((hero.skills ?? []).map((s, i) => [`Skill ${i + 1}`, s.name])),
+            }}
+          />
         )}
 
         <EntityHistory name={firstName} entries={history} />

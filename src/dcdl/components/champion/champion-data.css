@@ -94,10 +94,122 @@
 .cgd-table td { padding: 0.4rem 0.5rem; border-top: 1px solid rgba(255, 255, 255, 0.05); color: #ddd8ea; vertical-align: top; }
 .cgd-pip { display: inline-grid; place-items: center; width: 1.35rem; height: 1.35rem; border-radius: 50%; background: rgba(245, 197, 24, 0.15); color: var(--gold); font-weight: 700; font-size: 0.72rem; }
 
+/* Stat calculator: totals on top, then Level / Stars / Force Talents blocks */
+.cgd h3 { font-size: 1.05rem; margin: 0; color: #fff; }
+.cgd-actions, .cgd-force__btns { display: inline-flex; gap: 0.4rem; flex-wrap: wrap; }
+.cgd-actions button, .cgd-force__btns button {
+  background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.14); color: #ddd8ea;
+  font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.7rem; border-radius: 0.35rem; cursor: pointer;
+}
+.cgd-actions button:hover, .cgd-force__btns button:hover { border-color: var(--gold); color: #fff; }
+.cgd-actions button:focus-visible, .cgd-force__btns button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.cgd-summary { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin: 0 0 0.75rem; font-size: 0.8rem; color: #a99fc0; }
+.cgd-summary strong { color: var(--gold); font-family: 'Unbounded', sans-serif; font-size: 0.9rem; }
+.cgd-summary .cgd-summary__star, .cgd-starname { color: var(--tier); }
+.cgd-stat__parts { margin: 0.25rem 0 0; display: flex; flex-direction: column; gap: 0.12rem; font-size: 0.74rem; }
+.cgd-stat__parts div { display: flex; justify-content: space-between; gap: 0.5rem; }
+.cgd-stat__parts dt { color: #8b80a3; }
+.cgd-stat__parts dd { margin: 0; color: #ddd8ea; font-variant-numeric: tabular-nums; }
+.cgd-stat__parts .is-zero dd, .cgd-stat__parts .is-zero dt { color: #5d5470; }
+
+.cgd-block { margin-top: 1.4rem; padding-top: 1.1rem; border-top: 1px solid rgba(255, 255, 255, 0.07); }
+.cgd-block__head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+
+/* Star slider: thumb and fill take the current tier's colour */
+.cgd-slider--star input[type='range'] { background: linear-gradient(90deg, var(--tier) 0%, var(--tier) var(--pct), rgba(255, 255, 255, 0.1) var(--pct)); }
+.cgd-slider--star input[type='range']::-webkit-slider-thumb { border-color: var(--tier); box-shadow: 0 0 10px color-mix(in srgb, var(--tier) 60%, transparent); }
+.cgd-slider--star input[type='range']::-moz-range-thumb { border-color: var(--tier); }
+.cgd-startrack { display: flex; align-items: center; justify-content: space-between; gap: 0.3rem; margin-top: 0.55rem; }
+.cgd-startrack button { background: none; border: none; padding: 0; cursor: pointer; line-height: 1; }
+.cgd-startrack__zero { font-size: 0.68rem; font-weight: 700; color: #6f6684; width: 1.1rem; }
+.cgd-startrack__zero.is-on { color: #fff; }
+.cgd-startrack__tier { display: flex; flex: 1; justify-content: space-around; }
+.cgd-startrack__tier button { font-size: 0.95rem; color: color-mix(in srgb, var(--c) 22%, #2a2238); }
+.cgd-startrack__tier button.is-on { color: var(--c); text-shadow: 0 0 6px color-mix(in srgb, var(--c) 55%, transparent); }
+.cgd-starinfo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 0.9rem 1.5rem; margin-top: 0.4rem; }
+.cgd-starinfo__none { margin: 0; font-size: 0.8rem; color: #8b80a3; }
+.cgd-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.cgd-chip {
+  --bar: #a855f7;
+  font-size: 0.76rem; padding: 0.2rem 0.55rem; border-radius: 999px; color: #f1edf8; font-variant-numeric: tabular-nums;
+  background: color-mix(in srgb, var(--bar) 14%, transparent); border: 1px solid color-mix(in srgb, var(--bar) 40%, transparent);
+}
+.cgd-chip--main { --bar: var(--gold); }
+.cgd-chip--skill { --bar: #2fe4ff; }
+.cgd-chip--lore { --bar: #94a3b8; }
+.cgd-everystar { margin-top: 0.9rem; }
+.cgd-everystar summary { cursor: pointer; font-size: 0.82rem; font-weight: 700; color: var(--gold); }
+.cgd-everystar[open] summary { margin-bottom: 0.5rem; }
+.cgd-everystar tbody tr, .cgd-talent__body tbody tr { cursor: pointer; }
+.cgd-table tr.is-current td { background: rgba(245, 197, 24, 0.08); }
+.cgd-starcell { color: var(--tier); font-weight: 700; white-space: nowrap; }
+.cgd-cum { color: #6f6684; font-size: 0.72rem; }
+
+/* Force: running counter + per-talent 0–5 sliders */
+.cgd-force { padding: 0.75rem 0.85rem; border-radius: 0.45rem; background: rgba(245, 197, 24, 0.05); border: 1px solid rgba(245, 197, 24, 0.22); margin-bottom: 0.7rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.cgd-force__row { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.cgd-force__row .sg-label { margin: 0; }
+.cgd-force__cost { font-size: 0.78rem; color: #b8b0cc; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.cgd-talent__head { cursor: default; }
+.cgd-talent.is-set { border-color: rgba(245, 197, 24, 0.35); }
+.cgd-talent__level { display: inline-flex; align-items: center; gap: 0.5rem; }
+.cgd-talent__level input[type='range'] {
+  -webkit-appearance: none; appearance: none; width: 7.5rem; height: 0.4rem; border-radius: 999px; cursor: pointer;
+  background: linear-gradient(90deg, var(--gold) 0%, var(--gold) var(--pct), rgba(255, 255, 255, 0.1) var(--pct));
+}
+.cgd-talent__level input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; width: 1.05rem; height: 1.05rem; border-radius: 50%; background: #fff; border: 3px solid var(--gold); }
+.cgd-talent__level input[type='range']::-moz-range-thumb { width: 0.9rem; height: 0.9rem; border-radius: 50%; background: #fff; border: 3px solid var(--gold); }
+.cgd-talent__level input[type='range']:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.cgd-talent__lv { font-family: 'Unbounded', sans-serif; font-size: 0.9rem; color: var(--gold); min-width: 2.2rem; font-variant-numeric: tabular-nums; }
+.cgd-talent__lv span { color: #6f6684; font-size: 0.7rem; }
+button.cgd-talent__chev {
+  display: grid; place-items: center; padding: 0; background: none; border: none; cursor: pointer;
+  width: 1.75rem; height: 1.75rem; border-radius: 0.3rem; color: #8b80a3;
+}
+button.cgd-talent__chev:hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
+button.cgd-talent__chev:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+/* Plus / minus drawn from two bars so it sits dead centre (text glyphs don't) */
+.cgd-plus { position: relative; width: 0.75rem; height: 0.75rem; }
+.cgd-plus::before, .cgd-plus::after {
+  content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 2px; margin-top: -1px;
+  background: currentColor; border-radius: 1px; transition: transform 0.15s ease;
+}
+.cgd-plus::after { transform: rotate(90deg); }
+.cgd-talent.is-open .cgd-plus::after { transform: rotate(0deg); }
+@media (prefers-reduced-motion: reduce) { .cgd-plus::before, .cgd-plus::after { transition: none; } }
+.cgd-talent__flag { color: #8b80a3; font-style: normal; }
+/* Talent chosen above what the champion level allows: kept, but its bonus is off */
+.cgd-off, .cgd-talent__off {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.6rem 1rem; flex-wrap: wrap;
+  color: #fecaca; background: rgba(239, 68, 68, 0.14); border: 1px solid rgba(239, 68, 68, 0.6); border-left-width: 4px;
+  border-radius: 0.4rem; font-size: 0.86rem; line-height: 1.45;
+}
+.cgd-off { padding: 0.7rem 0.9rem; margin: 0 0 0.8rem; }
+.cgd-force .cgd-off { margin: 0.2rem 0 0; }
+.cgd-off strong, .cgd-talent__off strong { color: #fff; }
+.cgd-talent__off { margin: 0 0.8rem 0.7rem; padding: 0.5rem 0.75rem; font-size: 0.8rem; }
+.cgd-off button, .cgd-talent__off button {
+  background: #ef4444; color: #fff; border: none; border-radius: 0.3rem; font-weight: 700; font-size: 0.75rem;
+  padding: 0.35rem 0.75rem; cursor: pointer; white-space: nowrap;
+}
+.cgd-off button:hover, .cgd-talent__off button:hover { background: #dc2626; }
+.cgd-off button:focus-visible, .cgd-talent__off button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.cgd-talent.is-off { border-color: rgba(239, 68, 68, 0.55); }
+.cgd-talent.is-off .cgd-talent__lv { color: #f87171; }
+.cgd-talent__total { font-size: 0.78rem; color: #b8b0cc; display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.4rem; }
+
 @media (max-width: 640px) {
   .cgd-talent__head { grid-template-columns: auto 1fr auto; }
-  .cgd-talent__cost { grid-column: 2 / 3; }
+  .cgd-talent__level { grid-column: 2 / 3; grid-row: 2; }
+  .cgd-talent__level input[type='range'] { width: 100%; flex: 1; }
+  .cgd-talent__chev { grid-column: 3; grid-row: 1; }
   .cgd-jumps button:nth-child(even) { display: none; }
+  .cgd-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cgd-stat { padding: 0.7rem 0.75rem; }
+  .cgd-stat__value { font-size: 1.2rem; }
+  .cgd-startrack { gap: 0.1rem; }
+  .cgd-startrack__tier { min-width: 0; }
+  .cgd-startrack__tier button { font-size: 0.72rem; }
 }
 
 /* Strategy Guide (StrategyGuide.tsx): the in-game A.C.C. guide + Quantum's notes */
