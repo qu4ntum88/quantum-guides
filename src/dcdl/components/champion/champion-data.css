@@ -284,3 +284,34 @@ a.sg-champ:hover { color: #fff; }
   flex: 1 1 16rem; max-width: 100%; min-width: 0; background: #17121f; color: #f1edf8;
   border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 0.4rem; padding: 0.4rem 0.55rem; font: inherit; font-size: 0.82rem;
 }
+
+/* Your Account block (account bonuses from the Account Profile) */
+.cgd-actions button.is-active { border-color: var(--gold); color: #111; background: var(--gold); }
+.cgd-otherstats { margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.cgd-acct__ctl { display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem; margin-bottom: 0.8rem; }
+.cgd-acct__ctl label { display: flex; flex-direction: column; gap: 0.25rem; flex: 1 1 13rem; min-width: 0; }
+.cgd-acct__ctl select {
+  max-width: 100%; min-width: 0; background: #17121f; color: #f1edf8;
+  border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 0.4rem; padding: 0.4rem 0.55rem; font: inherit; font-size: 0.82rem;
+}
+.cgd-acct__gear { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.9rem; }
+.cgd-acct__slots { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; }
+.cgd-acct__slot { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; color: #ddd8ea; cursor: pointer; }
+.cgd-acct__slot em { font-style: normal; color: #8b80a3; font-size: 0.72rem; }
+.cgd-acct__slot.is-off { opacity: 0.45; cursor: default; }
+.cgd-acct__slot input { accent-color: var(--gold); }
+.cgd-acct__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+.cgd-acct__list li { display: grid; grid-template-columns: minmax(8rem, 11rem) 1fr; gap: 0.25rem 0.9rem; align-items: start; }
+.cgd-acct__src { font-size: 0.8rem; font-weight: 700; color: #f1edf8; }
+.cgd-acct__src em { font-style: normal; font-weight: 400; color: #8b80a3; }
+.cgd-acct__note { grid-column: 2; font-size: 0.74rem; color: #8b80a3; }
+.cgd-acct .cgd-note a { color: var(--gold); }
+@media (max-width: 560px) {
+  .cgd-acct__list li { grid-template-columns: 1fr; }
+  .cgd-acct__note { grid-column: 1; }
+}
+.cgd-signin { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; padding: 0.8rem 1rem; margin-bottom: 0.9rem; border-radius: 0.5rem; border: 1px solid rgba(245, 197, 24, 0.35); background: rgba(245, 197, 24, 0.07); }
+.cgd-signin p { margin: 0; flex: 1 1 18rem; font-size: 0.82rem; color: #ddd8ea; }
+.cgd-signin strong { color: #fff; }
+.cgd-signin .cgd-note { flex-basis: 100%; }
+.cgd-signin__btn { padding: 0.4rem 1rem; border-radius: 999px; background: var(--gold); color: #111; font-weight: 700; font-size: 0.8rem; text-decoration: none; }

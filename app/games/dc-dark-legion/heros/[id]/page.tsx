@@ -303,6 +303,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             talents={gameData.talents} lore={gameData.lore} stars={gameData.stars ?? null}
             skillUnlocks={gameData.skillUnlocks ?? {}}
             baseSkins={CALC_SKINS}
+            championId={hero.id}
             skillNames={{
               Ultimate: hero.ultimate?.name ?? '',
               ...Object.fromEntries((hero.skills ?? []).map((s, i) => [`Skill ${i + 1}`, s.name])),

@@ -5,9 +5,17 @@
 // Force talent 0–5 and the base skins the visitor owns, combined the way the game does), Force
 // talent costs, and lore chapters with the star each one unlocks at.
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { STAR_TIERS, UNLOCK_COLOR } from '../../lib/star-tiers'
 import { useOwnedSkins } from '../../lib/owned-skins'
+import Link from 'next/link'
+import { useUser } from '@clerk/nextjs'
+import {
+  accountContributions, addToBuckets, emptyBuckets, emptyGear, gearContribution, loadAccountData, maxedProfile, statChips,
+  type AccountData, type Buckets, type GearPiece, type Mode,
+} from '../../lib/account-bonuses'
+import { useAccountProfile, useAccountSync } from '../../lib/account-profile'
+import GearLoadout from '../account/GearLoadout'
 import './champion-data.css'
 
 /** kind: flat = added after every multiplier, pct = the (1 + talent% + gear%) bucket,
@@ -30,6 +38,8 @@ export type ChampionGameDataProps = {
   skillNames?: Record<string, string>
   /** Base skins with their owned and equipped bonuses; which are owned / equipped is the visitor's pick (owned-skins.ts). */
   baseSkins?: CalcSkin[]
+  /** Site champion id: turns on the account bonuses (the visitor's Account Profile, account-profile.ts). */
+  championId?: string
 }
 type SkinStat = { stat: string; value: number }
 /** bonuses / equipped: % per calculator stat. equippedOther: labels of equipped bonuses that aren't base stats. */
@@ -104,16 +114,28 @@ function skinTotals(owned: CalcSkin[], equipped: CalcSkin | null) {
 }
 const skinLabel = (list: SkinStat[]) => list.map((b) => `${b.stat} +${fmtPct(b.value)}`).join(', ')
 
-/** The game's formula (BUPropertyCalculator): (base + base talents) × (1 + star%) × (1 + talent% + tech%) + flat talents.
- *  Base skin owned bonuses are tech % stats, so they share the talent % bucket. */
-function combine(base: number, star: number, sums: Sums, k: string, skin = 0) {
-  const starred = (base + (sums.base[k] ?? 0)) * (1 + star / 100)
-  const total = starred * (1 + ((sums.pct[k] ?? 0) + skin) / 100) + (sums.flat[k] ?? 0)
-  const skinGain = starred * (skin / 100)
-  return { base, starGain: base * (star / 100), forceGain: total - base * (1 + star / 100) - skinGain, skinGain, total }
+/** The game's formula (BUPropertyCalculator): (base + base bonuses) × (1 + star%) × (1 + every %) + flat bonuses.
+ *  Base skin owned bonuses and most account bonuses are tech / battle / gear % stats, all in the same % bucket. */
+function combine(base: number, star: number, sums: Sums, k: string, skin = 0, acct: Buckets | null = null, gear: Buckets | null = null) {
+  const part = (b: Buckets | null) => ({ base: b?.base[k] ?? 0, pct: b?.pct[k] ?? 0, flat: b?.flat[k] ?? 0 })
+  const a = part(acct), g = part(gear)
+  const fBase = sums.base[k] ?? 0, fPct = sums.pct[k] ?? 0, fFlat = sums.flat[k] ?? 0
+  const s = 1 + star / 100
+  const B = base + fBase + a.base + g.base, P = fPct + skin + a.pct + g.pct, F = fFlat + a.flat + g.flat
+  const total = B * s * (1 + P / 100) + F
+  // Each part's share: what the total loses without it (the % bucket is shared, so this is the fair split).
+  const without = (x: { base: number; pct: number; flat: number }) => (B - x.base) * s * (1 + (P - x.pct) / 100) + F - x.flat
+  const skinGain = total - without({ base: 0, pct: skin, flat: 0 })
+  const acctGain = total - without(a)
+  const gearGain = total - without(g)
+  const starGain = base * (star / 100)
+  return { base, starGain, forceGain: total - base - starGain - skinGain - acctGain - gearGain, skinGain, acctGain, gearGain, total }
 }
 
-export default function ChampionGameData({ curves, firstLevel, maxLevel, talents, lore, stars, skillUnlocks = {}, skillNames = {}, baseSkins = [] }: ChampionGameDataProps) {
+type AcctSource = 'mine' | 'max' | 'off'
+const MODE_LABEL: Record<Mode, string> = { normal: 'Any mode', Gve: 'Defeat the Dark Legion', Gvg: 'Guardian Challenge', AllianceBoss: 'Umbral Rift' }
+
+export default function ChampionGameData({ curves, firstLevel, maxLevel, talents, lore, stars, skillUnlocks = {}, skillNames = {}, baseSkins = [], championId }: ChampionGameDataProps) {
   const top = maxLevel ?? 700
   const maxStar = stars?.steps.length ? stars.steps[stars.steps.length - 1].star : 0
   const [level, setLevel] = useState(firstLevel)
@@ -148,6 +170,53 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
     for (const s of baseSkins) for (const b of s.equipped) out[b.stat] = Math.max(out[b.stat] ?? 0, skinTotals(baseSkins, s)[b.stat])
     return out
   }, [baseSkins])
+
+  // Account bonuses: the visitor's profile (or a maxed one), loaded as its own chunk.
+  const [acctData, setAcctData] = useState<AccountData | null>(null)
+  useEffect(() => {
+    if (!championId) return
+    let live = true
+    loadAccountData().then((d) => { if (live) setAcctData(d) }).catch(() => {})
+    return () => { live = false }
+  }, [championId])
+  const { profile, update: updateProfile, empty: profileEmpty, hydrated } = useAccountProfile()
+  useAccountSync()
+  // Your own account is for signed-in members (set up in the Members area); anyone can use Maxed.
+  const { isSignedIn } = useUser()
+  const [acctPick, setAcctPick] = useState<AcctSource | null>(null)
+  const pick = acctPick === 'mine' && !isSignedIn ? null : acctPick
+  const acctSource: AcctSource = pick ?? (hydrated && isSignedIn && !profileEmpty ? 'mine' : 'off')
+  const [mode, setMode] = useState<Mode>('normal')
+  const [shipPick, setShipPick] = useState<number | null | undefined>(undefined)
+  // Gear belongs to this champion: saved with the profile (this browser, and the member's account).
+  const gearPieces = useMemo(() => (championId && profile.champGear[championId]) || emptyGear(), [profile, championId])
+  const setGear = (next: GearPiece[]) => { if (championId) updateProfile((p) => ({ ...p, champGear: { ...p.champGear, [championId]: next } })) }
+  const gearC = useMemo(() => (acctData && championId ? gearContribution(acctData, championId, gearPieces) : null), [acctData, championId, gearPieces])
+  const gearB = useMemo(() => (acctData && gearC ? addToBuckets(acctData, emptyBuckets(), gearC.stats) : null), [acctData, gearC])
+  const usedProfile = useMemo(() => (acctData && acctSource === 'max' ? maxedProfile(acctData) : profile), [acctData, acctSource, profile])
+  const ownedShips = acctData?.ships.filter((s) => usedProfile.ships[s.id] != null) ?? []
+  const ship = shipPick !== undefined ? shipPick : usedProfile.mainShip != null && usedProfile.ships[usedProfile.mainShip] != null ? usedProfile.mainShip : null
+  const acctList = useMemo(() => {
+    if (!acctData || !championId || acctSource === 'off' || !acctData.champions[championId]) return []
+    return accountContributions(acctData, usedProfile, { championId, mode, ship })
+  }, [acctData, championId, acctSource, usedProfile, mode, ship])
+  const acct = useMemo(() => {
+    if (!acctData || !acctList.length) return null
+    const b = emptyBuckets()
+    for (const c of acctList) addToBuckets(acctData, b, c.stats)
+    return b
+  }, [acctData, acctList])
+  const acctChamp = acctData && championId ? acctData.champions[championId] : null
+  // Stats beyond the main four (Crit Rate, Effect RES, PEN…) from gear and the account together.
+  const otherStats = useMemo(() => {
+    const m = new Map<string, { value: number; pct: boolean }>()
+    for (const b of [gearB, acct]) for (const [label, o] of Object.entries(b?.other ?? {})) {
+      const t = m.get(label) ?? { value: 0, pct: o.pct }
+      t.value += o.value
+      m.set(label, t)
+    }
+    return [...m]
+  }, [gearB, acct])
 
   if (!curves && !talents.length && !lore.length) return null
   const at = (k: string, lv: number) => curves?.[k]?.[lv - firstLevel] ?? 0
@@ -207,12 +276,13 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
                 {hasStars && <span style={{ '--tier': tierOf.color } as React.CSSProperties}>Stars <strong className="cgd-summary__star">{tierOf.short}</strong></span>}
                 {talents.length > 0 && <span>Force <strong>{talentNow}</strong> / {talentMax}</span>}
                 {baseSkins.length > 0 && <span>Base skins <strong>{mySkins.length}</strong> / {baseSkins.length}{worn && <> · {worn.name} equipped</>}</span>}
+                {acctChamp && <span>Account <strong>{acctSource === 'mine' ? 'Yours' : acctSource === 'max' ? 'Maxed' : 'Off'}</strong>{acct && mode !== 'normal' && <> · {MODE_LABEL[mode]}</>}</span>}
               </div>
               {offTalents.length > 0 && <OffWarning count={offTalents.length} need={offNeed} level={level} onFix={() => setLevel(offNeed)} />}
               <div className="cgd-stats">
                 {stats.map((k) => {
-                  const r = combine(at(k, level), starPct[k] ?? 0, sums, k, skinPct[k] ?? 0)
-                  const max = combine(at(k, top), maxStarPct[k] ?? 0, maxSums, k, maxSkinPct[k] ?? 0).total || r.total || 1
+                  const r = combine(at(k, level), starPct[k] ?? 0, sums, k, skinPct[k] ?? 0, acct, gearB)
+                  const max = Math.max(combine(at(k, top), maxStarPct[k] ?? 0, maxSums, k, maxSkinPct[k] ?? 0, acct, gearB).total, r.total) || 1
                   return (
                     <div key={k} className={`cgd-stat ${statClass(k)}`}>
                       <span className="cgd-stat__name">{k}</span>
@@ -223,11 +293,21 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
                         {hasStars && <div className={r.starGain ? '' : 'is-zero'}><dt>Stars +{fmtPct(starPct[k] ?? 0)}</dt><dd>+{fmt(r.starGain)}</dd></div>}
                         {talents.length > 0 && <div className={Math.round(r.forceGain) ? '' : 'is-zero'}><dt>Force</dt><dd>+{fmt(r.forceGain)}</dd></div>}
                         {(maxSkinPct[k] ?? 0) > 0 && <div className={Math.round(r.skinGain) ? '' : 'is-zero'}><dt>Base skins +{fmtPct(skinPct[k] ?? 0)}</dt><dd>+{fmt(r.skinGain)}</dd></div>}
+                        {acctChamp?.armor && <div className={Math.round(r.gearGain) ? '' : 'is-zero'}><dt>Gear</dt><dd>+{fmt(r.gearGain)}</dd></div>}
+                        {acctChamp && <div className={Math.round(r.acctGain) ? '' : 'is-zero'}><dt>Account</dt><dd>+{fmt(r.acctGain)}</dd></div>}
                       </dl>
                     </div>
                   )
                 })}
               </div>
+              {otherStats.length > 0 && (
+                <div className="cgd-otherstats">
+                  <span className="sg-label">Other stats from gear and your account</span>
+                  <div className="cgd-chips">
+                    {otherStats.map(([label, o]) => <span key={label} className="cgd-chip">{label} +{o.pct ? fmtPct(o.value) : fmt(o.value)}</span>)}
+                  </div>
+                </div>
+              )}
 
               <div className="cgd-block">
                 <div className="cgd-block__head">
@@ -380,6 +460,81 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
                   </div>
                 </div>
               )}
+              {acctChamp?.armor && acctData && championId && (
+                <div className="cgd-block">
+                  <div className="cgd-block__head">
+                    <h3>Gear</h3>
+                    {gearC && <span className="cgd-chips">{statChips(acctData, gearC.stats).filter((x) => /^(HP|ATK|P\. DEF|S\. DEF) \+/.test(x)).map((x) => <span key={x} className="cgd-chip cgd-chip--main">{x}</span>)}</span>}
+                  </div>
+                  <p className="cgd-note cgd-note--top">
+                    This champion&apos;s five pieces. Tap a slot to set its quality, level and faction tag. Stats depend on the armor weight, slot and level only;
+                    a faction tag matching this champion adds 20% to that piece from Orange up. Transmutes aren&apos;t included.
+                    {!isSignedIn && ' Saved in this browser.'}
+                  </p>
+                  <GearLoadout data={acctData} championId={championId} pieces={gearPieces} onChange={setGear} />
+                </div>
+              )}
+              {acctChamp && acctData && (
+                <div className="cgd-block cgd-acct">
+                  <div className="cgd-block__head">
+                    <h3>Your Account</h3>
+                    <span className="cgd-actions" role="group" aria-label="Account bonuses">
+                      {(isSignedIn ? (['mine', 'max', 'off'] as const) : (['max', 'off'] as const)).map((s) => (
+                        <button key={s} type="button" className={acctSource === s ? 'is-active' : ''} aria-pressed={acctSource === s} onClick={() => setAcctPick(s)}>
+                          {s === 'mine' ? 'My account' : s === 'max' ? 'Maxed' : 'Off'}
+                        </button>
+                      ))}
+                    </span>
+                  </div>
+                  {!isSignedIn ? (
+                    <div className="cgd-signin">
+                      <p><strong>Sign in to add your own game account information.</strong> Members enter their roster, research, hangar, VIP and skins once, and every champion&apos;s Stat Calculator adds those bonuses.</p>
+                      <Link className="cgd-signin__btn" href="/sign-in">Sign in</Link>
+                      {acctSource === 'max' && <p className="cgd-note">Showing a theoretical maxed account meanwhile: every champion at 5★ Red, all research, a maxed hangar and VIP.</p>}
+                    </div>
+                  ) : (
+                    <p className="cgd-note cgd-note--top">
+                      {acctSource === 'off'
+                        ? <>Account bonuses are off. </>
+                        : acctSource === 'max'
+                          ? <>Showing a theoretical maxed account: every champion at 5★ Red, all research, a maxed hangar and VIP. </>
+                          : profileEmpty
+                            ? <>Your account is empty, so this adds nothing yet. </>
+                            : <>Global Skills, research, Apokolips, VIP and room skins from your account. </>}
+                      <a href="/members#account">{profileEmpty ? 'Set up your account in the Members area' : 'Edit your account'} →</a>
+                    </p>
+                  )}
+                  {acctSource !== 'off' && (
+                    <>
+                      <div className="cgd-acct__ctl">
+                        <label>
+                          <span className="sg-label">Mode</span>
+                          <select value={mode} onChange={(e) => setMode(e.target.value as Mode)}>
+                            {(Object.keys(MODE_LABEL) as Mode[]).map((m) => <option key={m} value={m}>{MODE_LABEL[m]}</option>)}
+                          </select>
+                        </label>
+                        <label>
+                          <span className="sg-label">Squad&apos;s vehicle</span>
+                          <select value={ship ?? ''} onChange={(e) => setShipPick(e.target.value ? Number(e.target.value) : null)}>
+                            <option value="">None</option>
+                            {(ownedShips.length ? ownedShips : acctData.ships).map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
+                          </select>
+                        </label>
+                      </div>
+                      <ul className="cgd-acct__list">
+                        {acctList.map((c) => (
+                          <li key={c.key}>
+                            <span className="cgd-acct__src">{c.source}{c.detail && <em> · {c.detail}</em>}</span>
+                            <span className="cgd-chips">{statChips(acctData, c.stats).map((x) => <span key={x} className="cgd-chip">{x}</span>)}</span>
+                            {c.note && <span className="cgd-acct__note">In battle, not in the totals: {c.note}</span>}
+                          </li>
+                        ))}
+                        {!acctList.length && <li className="cgd-starinfo__none">Nothing from the account applies here yet.</li>}
+                      </ul>
+                    </>
+                  )}
+                </div>
+              )}
             </>
           )}
 
@@ -470,7 +625,10 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
           )}
 
           {stats.length > 0 && (
-            <p className="cgd-note">Before gear, legacy pieces, Global Skills, team bonuses and in-battle buffs. Enhanced talents count only when they are a plain stat boost.</p>
+            <p className="cgd-note">
+              {acct || gearB ? 'Before legacy pieces, gear transmutations, Kord chips, team bonuses and in-battle buffs.' : 'Before gear, legacy pieces, Global Skills, team bonuses and in-battle buffs.'}{' '}
+              Enhanced talents count only when they are a plain stat boost.
+            </p>
           )}
         </section>
       )}

@@ -1,0 +1,9924 @@
+{
+ "modes": {
+  "Gve": "Defeat the Dark Legion",
+  "Gvg": "Guardian Challenge",
+  "AllianceBoss": "Umbral Rift"
+ },
+ "stats": {
+  "AtkBattle": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "flat",
+   "pct": false
+  },
+  "AtkBattleRatio": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "pct",
+   "pct": true
+  },
+  "AtkEquip": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "flat",
+   "pct": false
+  },
+  "AtkEquipRatio": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "pct",
+   "pct": true
+  },
+  "AtkGeneral": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "flat",
+   "pct": false
+  },
+  "AtkHero": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "base",
+   "pct": false
+  },
+  "AtkTechRatio": {
+   "label": "ATK",
+   "calc": "ATK",
+   "bucket": "pct",
+   "pct": true
+  },
+  "CritEquip": {
+   "label": "Crit Rate",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "CritHero": {
+   "label": "Crit Rate",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "CritPowerEquip": {
+   "label": "Crit DMG",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "CritPowerResEquip": {
+   "label": "Crit DMG RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "CritPowerResHero": {
+   "label": "Crit DMG RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "CritResEquip": {
+   "label": "Crit RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "CritResHero": {
+   "label": "Crit RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "DefBattle": {
+   "label": "P. DEF",
+   "calc": "P. DEF",
+   "bucket": "flat",
+   "pct": false
+  },
+  "DefEquip": {
+   "label": "P. DEF",
+   "calc": "P. DEF",
+   "bucket": "flat",
+   "pct": false
+  },
+  "DefEquipRatio": {
+   "label": "P. DEF",
+   "calc": "P. DEF",
+   "bucket": "pct",
+   "pct": true
+  },
+  "DefGeneral": {
+   "label": "P. DEF",
+   "calc": "P. DEF",
+   "bucket": "flat",
+   "pct": false
+  },
+  "DefTechRatio": {
+   "label": "P. DEF",
+   "calc": "P. DEF",
+   "bucket": "pct",
+   "pct": true
+  },
+  "DodgeHero": {
+   "label": "Dodge",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "EffectHitEquipRatio": {
+   "label": "Effect ACC",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "EffectHitHeroRatio": {
+   "label": "Effect ACC",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "EffectResEquipRatio": {
+   "label": "Effect RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "EffectResHeroRatio": {
+   "label": "Effect RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "EnergySpeedEquipRatio": {
+   "label": "Energy Gain",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "EnergySpeedHeroRatio": {
+   "label": "Energy Gain",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "FortBattle": {
+   "label": "S. DEF",
+   "calc": "S. DEF",
+   "bucket": "flat",
+   "pct": false
+  },
+  "FortEquip": {
+   "label": "S. DEF",
+   "calc": "S. DEF",
+   "bucket": "flat",
+   "pct": false
+  },
+  "FortEquipRatio": {
+   "label": "S. DEF",
+   "calc": "S. DEF",
+   "bucket": "pct",
+   "pct": true
+  },
+  "FortGeneral": {
+   "label": "S. DEF",
+   "calc": "S. DEF",
+   "bucket": "flat",
+   "pct": false
+  },
+  "FortTechRatio": {
+   "label": "S. DEF",
+   "calc": "S. DEF",
+   "bucket": "pct",
+   "pct": true
+  },
+  "HealAddEquipRatio": {
+   "label": "Healing Bonus",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "HealAddHeroRatio": {
+   "label": "Healing Bonus",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "HpBattle": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "flat",
+   "pct": false
+  },
+  "HpBattleRatio": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "pct",
+   "pct": true
+  },
+  "HpEquip": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "flat",
+   "pct": false
+  },
+  "HpEquipRatio": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "pct",
+   "pct": true
+  },
+  "HpGeneral": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "flat",
+   "pct": false
+  },
+  "HpHero": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "base",
+   "pct": false
+  },
+  "HpTechRatio": {
+   "label": "HP",
+   "calc": "HP",
+   "bucket": "pct",
+   "pct": true
+  },
+  "PhyAdd": {
+   "label": "Physical PEN",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "PhyDes": {
+   "label": "Physical RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "SprAdd": {
+   "label": "Spiritual PEN",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "SprDes": {
+   "label": "Spiritual RES",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "SprWaveEquip": {
+   "label": "Spiritual AMP",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  },
+  "SprWaveHero": {
+   "label": "Spiritual AMP",
+   "calc": null,
+   "bucket": "other",
+   "pct": true
+  }
+ },
+ "factions": {
+  "metahuman": {
+   "name": "Metahuman",
+   "game": 1001
+  },
+  "amazons": {
+   "name": "Amazons",
+   "game": 1024
+  },
+  "deathmetal": {
+   "name": "Death Metal",
+   "game": 1026
+  },
+  "justice_league": {
+   "name": "Justice League",
+   "game": 1011
+  },
+  "atlanteans": {
+   "name": "Atlanteans",
+   "game": 1023
+  },
+  "outsiders": {
+   "name": "Outsiders",
+   "game": 1025
+  },
+  "weapon_master": {
+   "name": "Weapon Master",
+   "game": 1002
+  },
+  "teen_titans": {
+   "name": "Teen Titans",
+   "game": 1016
+  },
+  "arkhams_most_wanted": {
+   "name": "Arkham's Most Wanted",
+   "game": 1013
+  },
+  "league_of_assassins": {
+   "name": "League of Assassins",
+   "game": 1018
+  },
+  "bat_family": {
+   "name": "Bat Family",
+   "game": 1012
+  },
+  "birds_of_prey": {
+   "name": "Birds of Prey",
+   "game": 1017
+  },
+  "legion_of_doom": {
+   "name": "Legion of Doom",
+   "game": 1015
+  },
+  "suicide_squad": {
+   "name": "Suicide Squad",
+   "game": 1019
+  },
+  "energy_wielder": {
+   "name": "Energy Wielder",
+   "game": 1003
+  },
+  "justice_league_dark": {
+   "name": "Justice League Dark",
+   "game": 1014
+  },
+  "green_lantern_corps": {
+   "name": "Green Lantern Corps",
+   "game": 1022
+  },
+  "superman_family": {
+   "name": "Superman Family",
+   "game": 1020
+  },
+  "the_flash_family": {
+   "name": "The Flash Family",
+   "game": 1021
+  }
+ },
+ "champions": {
+  "DMWW": {
+   "gameId": 61,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "amazons",
+    "deathmetal"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "aquaman": {
+   "gameId": 11,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "metahuman",
+    "justice_league",
+    "atlanteans"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "justice_league",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        150
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        300
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        450
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        750
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "aquaman_mythic_plus": {
+   "gameId": 311,
+   "mythicPlus": true,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "metahuman",
+    "justice_league",
+    "atlanteans"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "justice_league",
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        150
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        300
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        450
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "CritHero",
+        750
+       ]
+      ]
+     }
+    ]
+   },
+   "upgradeOf": "aquaman"
+  },
+  "arsenal": {
+   "gameId": 40,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "outsiders",
+    "weapon_master",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "outsiders",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "artemis": {
+   "gameId": 77,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "amazons"
+   ],
+   "globalSkill": {
+    "careerClass": "Guardian",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "atom": {
+   "gameId": 58,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "teen_titans",
+    "justice_league",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "bane": {
+   "gameId": 12,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "arkhams_most_wanted",
+    "league_of_assassins"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "batgirl": {
+   "gameId": 30,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "bat_family",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "batgirl_mythic_plus": {
+   "gameId": 330,
+   "mythicPlus": true,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "bat_family",
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   },
+   "upgradeOf": "batgirl"
+  },
+  "batman": {
+   "gameId": 3,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "justice_league",
+    "bat_family"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [
+       [
+        "DodgeHero",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [
+       [
+        "DodgeHero",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [
+       [
+        "DodgeHero",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [
+       [
+        "DodgeHero",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [
+       [
+        "DodgeHero",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "batman_knightfight": {
+   "gameId": 86,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "bat_family",
+    "weapon_master"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "batman_mythic_plus": {
+   "gameId": 303,
+   "mythicPlus": true,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "justice_league",
+    "bat_family"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   },
+   "upgradeOf": "batman"
+  },
+  "beast_boy": {
+   "gameId": 23,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "teen_titans",
+    "outsiders",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": "Guardian",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "black_adam": {
+   "gameId": 4,
+   "mythicPlus": false,
+   "class": "Magical",
+   "armor": "MediumArmor",
+   "factions": [
+    "metahuman",
+    "legion_of_doom"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "black_canary": {
+   "gameId": 28,
+   "mythicPlus": false,
+   "class": "Intimidator",
+   "armor": "LightArmor",
+   "factions": [
+    "metahuman",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "birds_of_prey",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritResHero",
+        150
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritResHero",
+        300
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritResHero",
+        450
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritResHero",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "CritResHero",
+        750
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "captain_cold": {
+   "gameId": 33,
+   "mythicPlus": false,
+   "class": "Intimidator",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "legion_of_doom",
+    "suicide_squad"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "catwoman": {
+   "gameId": 9,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "constantine": {
+   "gameId": 55,
+   "mythicPlus": false,
+   "class": "Magical",
+   "armor": "MediumArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league_dark"
+   ],
+   "globalSkill": {
+    "careerClass": "Magical",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "cyborg": {
+   "gameId": 10,
+   "mythicPlus": false,
+   "class": "Intimidator",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "justice_league",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": "Intimidator",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [
+       [
+        "EffectHitHeroRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [
+       [
+        "EffectHitHeroRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [
+       [
+        "EffectHitHeroRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [
+       [
+        "EffectHitHeroRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [
+       [
+        "EffectHitHeroRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "deadshot": {
+   "gameId": 29,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "suicide_squad"
+   ],
+   "globalSkill": {
+    "careerClass": "Firepower",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "death_metal_batman": {
+   "gameId": 80,
+   "mythicPlus": false,
+   "class": "Magical",
+   "armor": "MediumArmor",
+   "factions": [
+    "deathmetal",
+    "bat_family",
+    "energy_wielder"
+   ],
+   "globalSkill": {
+    "careerClass": "Magical",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "deathstroke": {
+   "gameId": 20,
+   "mythicPlus": false,
+   "class": "Assassin",
+   "armor": "MediumArmor",
+   "factions": [
+    "legion_of_doom",
+    "league_of_assassins",
+    "weapon_master"
+   ],
+   "globalSkill": {
+    "careerClass": "Assassin",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "DodgeHero",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "doctor_fate": {
+   "gameId": 54,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league_dark"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "justice_league_dark",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "doctor_fate_mythic": {
+   "gameId": 354,
+   "mythicPlus": true,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league_dark"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "justice_league_dark",
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   },
+   "upgradeOf": "doctor_fate"
+  },
+  "donna_troy": {
+   "gameId": 62,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "amazons",
+    "teen_titans",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "amazons",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        1200
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        1600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        2000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "green_arrow": {
+   "gameId": 1,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "green_lantern": {
+   "gameId": 8,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league",
+    "green_lantern_corps"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "CritPowerResHero",
+        150
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "CritPowerResHero",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "CritPowerResHero",
+        450
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "CritPowerResHero",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "CritPowerResHero",
+        750
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "green_lantern_mythic_plus": {
+   "gameId": 308,
+   "mythicPlus": true,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league",
+    "green_lantern_corps"
+   ],
+   "globalSkill": {
+    "careerClass": "Supporter",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "CritPowerResHero",
+        150
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "CritPowerResHero",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "CritPowerResHero",
+        450
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "CritPowerResHero",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "CritPowerResHero",
+        750
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   },
+   "upgradeOf": "green_lantern"
+  },
+  "harley_quinn": {
+   "gameId": 6,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "birds_of_prey",
+    "suicide_squad"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "suicide_squad",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "harley_quinn_mythic_plus": {
+   "gameId": 306,
+   "mythicPlus": true,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "birds_of_prey",
+    "suicide_squad"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "suicide_squad",
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   },
+   "upgradeOf": "harley_quinn"
+  },
+  "hawkgirl": {
+   "gameId": 42,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "justice_league",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "hippolyta": {
+   "gameId": 64,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "amazons"
+   ],
+   "globalSkill": {
+    "careerClass": "Guardian",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "killer_croc": {
+   "gameId": 36,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "legion_of_doom",
+    "suicide_squad"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpGeneral",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpGeneral",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpGeneral",
+        900
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpGeneral",
+        1200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpGeneral",
+        1500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "krypto": {
+   "gameId": 67,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "superman_family",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "superman_family",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        150
+       ],
+       [
+        "DefTechRatio",
+        150
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        300
+       ],
+       [
+        "DefTechRatio",
+        300
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        450
+       ],
+       [
+        "DefTechRatio",
+        450
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ],
+       [
+        "DefTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        750
+       ],
+       [
+        "DefTechRatio",
+        750
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "lex_luthor": {
+   "gameId": 16,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "legion_of_doom"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "legion_of_doom",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "HpTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "lobo": {
+   "gameId": 78,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "suicide_squad"
+   ],
+   "globalSkill": {
+    "careerClass": "Firepower",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "martian_manhunter": {
+   "gameId": 22,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "outsiders",
+    "justice_league",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "mera": {
+   "gameId": 25,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "atlanteans",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpGeneral",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpGeneral",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpGeneral",
+        900
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpGeneral",
+        1200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpGeneral",
+        1500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "mr_freeze": {
+   "gameId": 82,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "arkhams_most_wanted",
+    "weapon_master"
+   ],
+   "globalSkill": {
+    "careerClass": "Guardian",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "nightwing": {
+   "gameId": 32,
+   "mythicPlus": false,
+   "class": "Assassin",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": "Assassin",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "CritHero",
+        75
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "CritHero",
+        150
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "CritHero",
+        225
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "CritHero",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "CritHero",
+        375
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "nurse_harley": {
+   "gameId": 75,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": "Firepower",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "orphan_cassandra_cain": {
+   "gameId": 81,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "bat_family",
+    "birds_of_prey",
+    "weapon_master"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "poison_ivy": {
+   "gameId": 19,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "arkhams_most_wanted",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": "Supporter",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [
+       [
+        "HealAddHeroRatio",
+        150
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [
+       [
+        "HealAddHeroRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [
+       [
+        "HealAddHeroRatio",
+        450
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [
+       [
+        "HealAddHeroRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [
+       [
+        "HealAddHeroRatio",
+        750
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "rasalghul": {
+   "gameId": 27,
+   "mythicPlus": false,
+   "class": "Assassin",
+   "armor": "MediumArmor",
+   "factions": [
+    "metahuman",
+    "league_of_assassins"
+   ],
+   "globalSkill": {
+    "careerClass": "Assassin",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "raven": {
+   "gameId": 56,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league_dark",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "red_hood": {
+   "gameId": 39,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "league_of_assassins"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "red_hood_knightfight_jason_todd": {
+   "gameId": 83,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "bat_family",
+    "league_of_assassins",
+    "weapon_master"
+   ],
+   "globalSkill": {
+    "careerClass": "Firepower",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "red_hood_mythic": {
+   "gameId": 76,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "league_of_assassins"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "red_robin": {
+   "gameId": 43,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "teen_titans",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        1200
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        1600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        2000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "red_robin_mythic": {
+   "gameId": 343,
+   "mythicPlus": true,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "teen_titans",
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        1200
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        1600
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [],
+      "faction": [
+       [
+        "DefTechRatio",
+        2000
+       ]
+      ]
+     }
+    ]
+   },
+   "upgradeOf": "red_robin"
+  },
+  "robin": {
+   "gameId": 31,
+   "mythicPlus": false,
+   "class": "Assassin",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": "Assassin",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "robin_dick_grayson": {
+   "gameId": 87,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "bat_family",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "scarecrow": {
+   "gameId": 53,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted",
+    "legion_of_doom"
+   ],
+   "globalSkill": {
+    "careerClass": "Guardian",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "shazam": {
+   "gameId": 21,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": "Guardian",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [
+       [
+        "CritResHero",
+        150
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [
+       [
+        "CritResHero",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [
+       [
+        "CritResHero",
+        450
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [
+       [
+        "CritResHero",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [
+       [
+        "CritResHero",
+        750
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "sinestro": {
+   "gameId": 41,
+   "mythicPlus": false,
+   "class": "Magical",
+   "armor": "MediumArmor",
+   "factions": [
+    "energy_wielder",
+    "legion_of_doom"
+   ],
+   "globalSkill": {
+    "careerClass": "Magical",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "SprWaveHero",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "SprWaveHero",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "SprWaveHero",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "SprWaveHero",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "SprWaveHero",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "starfire": {
+   "gameId": 44,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "outsiders",
+    "teen_titans",
+    "energy_wielder"
+   ],
+   "globalSkill": {
+    "careerClass": "Supporter",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "stargirl": {
+   "gameId": 59,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "EffectResHeroRatio",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "EffectResHeroRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "EffectResHeroRatio",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "EffectResHeroRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "EffectResHeroRatio",
+        500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "superboy": {
+   "gameId": 68,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "superman_family",
+    "teen_titans",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": "Supporter",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "supergirl": {
+   "gameId": 65,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "superman_family",
+    "metahuman"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "supergirl_woman_of_tomorrow_kara_zor_el": {
+   "gameId": 85,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "superman_family",
+    "metahuman",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "superman": {
+   "gameId": 5,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "justice_league",
+    "superman_family"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "superman_death_metal": {
+   "gameId": 88,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "superman_family",
+    "deathmetal"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "swamp_thing": {
+   "gameId": 69,
+   "mythicPlus": false,
+   "class": "Warrior",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "justice_league_dark"
+   ],
+   "globalSkill": {
+    "careerClass": "Warrior",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "taliaalghul": {
+   "gameId": 63,
+   "mythicPlus": false,
+   "class": "Assassin",
+   "armor": "MediumArmor",
+   "factions": [
+    "metahuman",
+    "league_of_assassins"
+   ],
+   "globalSkill": {
+    "careerClass": "Assassin",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "the_flash": {
+   "gameId": 37,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "metahuman",
+    "justice_league",
+    "the_flash_family"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "the_flash_mythic_plus": {
+   "gameId": 337,
+   "mythicPlus": true,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "metahuman",
+    "justice_league",
+    "the_flash_family"
+   ],
+   "globalSkill": {
+    "careerClass": "Supporter",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   },
+   "upgradeOf": "the_flash"
+  },
+  "the_flash_wally_west": {
+   "gameId": 79,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "metahuman",
+    "the_flash_family",
+    "teen_titans"
+   ],
+   "globalSkill": {
+    "careerClass": "Firepower",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "the_joker": {
+   "gameId": 7,
+   "mythicPlus": false,
+   "class": "Intimidator",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted"
+   ],
+   "globalSkill": {
+    "careerClass": "Intimidator",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        100
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "career": [
+       [
+        "AtkTechRatio",
+        500
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "the_penguin": {
+   "gameId": 17,
+   "mythicPlus": false,
+   "class": "Intimidator",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "FortTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "FortTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "FortTechRatio",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "FortTechRatio",
+        800
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "FortTechRatio",
+        1000
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "the_riddler": {
+   "gameId": 26,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted"
+   ],
+   "globalSkill": null
+  },
+  "two_face": {
+   "gameId": 38,
+   "mythicPlus": false,
+   "class": "Firepower",
+   "armor": "MediumArmor",
+   "factions": [
+    "weapon_master",
+    "arkhams_most_wanted"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": "arkhams_most_wanted",
+    "levels": [
+     {
+      "star": 3,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        200
+       ]
+      ]
+     },
+     {
+      "star": 8,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        400
+       ]
+      ]
+     },
+     {
+      "star": 13,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        600
+       ]
+      ]
+     },
+     {
+      "star": 18,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        800
+       ]
+      ]
+     },
+     {
+      "star": 23,
+      "all": [],
+      "career": [],
+      "faction": [
+       [
+        "AtkTechRatio",
+        1000
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  "vixen": {
+   "gameId": 60,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "metahuman",
+    "birds_of_prey"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "HpGeneral",
+        300
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "HpGeneral",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "HpGeneral",
+        900
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "HpGeneral",
+        1200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "HpGeneral",
+        1500
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "wonder_woman": {
+   "gameId": 2,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "justice_league_dark",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefGeneral",
+        20
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefGeneral",
+        40
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefGeneral",
+        60
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefGeneral",
+        80
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefGeneral",
+        100
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "wonder_woman_mythic": {
+   "gameId": 66,
+   "mythicPlus": false,
+   "class": "Guardian",
+   "armor": "HeavyArmor",
+   "factions": [
+    "metahuman",
+    "amazons",
+    "justice_league_dark",
+    "justice_league"
+   ],
+   "globalSkill": {
+    "careerClass": null,
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [],
+      "faction": []
+     }
+    ]
+   }
+  },
+  "zatanna": {
+   "gameId": 57,
+   "mythicPlus": false,
+   "class": "Supporter",
+   "armor": "LightArmor",
+   "factions": [
+    "energy_wielder",
+    "justice_league_dark"
+   ],
+   "globalSkill": {
+    "careerClass": "Supporter",
+    "faction": null,
+    "levels": [
+     {
+      "star": 3,
+      "all": [
+       [
+        "DefTechRatio",
+        200
+       ]
+      ],
+      "career": [
+       [
+        "EnergySpeedHeroRatio",
+        75
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 8,
+      "all": [
+       [
+        "DefTechRatio",
+        400
+       ]
+      ],
+      "career": [
+       [
+        "EnergySpeedHeroRatio",
+        150
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 13,
+      "all": [
+       [
+        "DefTechRatio",
+        600
+       ]
+      ],
+      "career": [
+       [
+        "EnergySpeedHeroRatio",
+        225
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 18,
+      "all": [
+       [
+        "DefTechRatio",
+        800
+       ]
+      ],
+      "career": [
+       [
+        "EnergySpeedHeroRatio",
+        300
+       ]
+      ],
+      "faction": []
+     },
+     {
+      "star": 23,
+      "all": [
+       [
+        "DefTechRatio",
+        1000
+       ]
+      ],
+      "career": [
+       [
+        "EnergySpeedHeroRatio",
+        375
+       ]
+      ],
+      "faction": []
+     }
+    ]
+   }
+  }
+ },
+ "research": [
+  {
+   "id": 2001,
+   "name": "Physical Penetration",
+   "tier": 1,
+   "x": 1,
+   "y": 2,
+   "pre": [],
+   "class": "All",
+   "stat": "PhyAdd",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_06.png"
+  },
+  {
+   "id": 2002,
+   "name": "Pressure Point Attack Methods",
+   "tier": 1,
+   "x": 2,
+   "y": 1,
+   "pre": [2001],
+   "class": "Warrior",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_02_atk.png"
+  },
+  {
+   "id": 2003,
+   "name": "Vulnerability Protection",
+   "tier": 1,
+   "x": 2,
+   "y": 3,
+   "pre": [2001],
+   "class": "Warrior",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_02_hp.png"
+  },
+  {
+   "id": 2004,
+   "name": "Judo Instruction",
+   "tier": 1,
+   "x": 3,
+   "y": 1,
+   "pre": [2002,2003],
+   "class": "Guardian",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_03_atk.png"
+  },
+  {
+   "id": 2005,
+   "name": "Artful Dodging",
+   "tier": 1,
+   "x": 3,
+   "y": 3,
+   "pre": [2002,2003],
+   "class": "Guardian",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_03_hp.png"
+  },
+  {
+   "id": 2006,
+   "name": "Spiritual Penetration",
+   "tier": 1,
+   "x": 4,
+   "y": 2,
+   "pre": [2004,2005],
+   "class": "All",
+   "stat": "SprAdd",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_05.png"
+  },
+  {
+   "id": 2007,
+   "name": "Target Practice",
+   "tier": 1,
+   "x": 5,
+   "y": 1,
+   "pre": [2006],
+   "class": "Firepower",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_07_atk.png"
+  },
+  {
+   "id": 2008,
+   "name": "Camouflage Techniques",
+   "tier": 1,
+   "x": 5,
+   "y": 3,
+   "pre": [2006],
+   "class": "Firepower",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_07_hp.png"
+  },
+  {
+   "id": 2009,
+   "name": "Counter-Strikes",
+   "tier": 1,
+   "x": 6,
+   "y": 1,
+   "pre": [2007,2008],
+   "class": "Supporter",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_04_atk.png"
+  },
+  {
+   "id": 2010,
+   "name": "Field Medicine",
+   "tier": 1,
+   "x": 6,
+   "y": 3,
+   "pre": [2007,2008],
+   "class": "Supporter",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_04_hp.png"
+  },
+  {
+   "id": 2011,
+   "name": "Physical Resistance",
+   "tier": 1,
+   "x": 7,
+   "y": 2,
+   "pre": [2009,2010],
+   "class": "All",
+   "stat": "PhyDes",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_03.png"
+  },
+  {
+   "id": 2012,
+   "name": "Intense Focus",
+   "tier": 1,
+   "x": 8,
+   "y": 1,
+   "pre": [2011],
+   "class": "Assassin",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_01_atk.png"
+  },
+  {
+   "id": 2013,
+   "name": "Concealment",
+   "tier": 1,
+   "x": 8,
+   "y": 3,
+   "pre": [2011],
+   "class": "Assassin",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_01_hp.png"
+  },
+  {
+   "id": 2014,
+   "name": "Battlefield Maneuvers",
+   "tier": 1,
+   "x": 9,
+   "y": 1,
+   "pre": [2012,2013],
+   "class": "Intimidator",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_06_atk.png"
+  },
+  {
+   "id": 2015,
+   "name": "First Aid",
+   "tier": 1,
+   "x": 9,
+   "y": 3,
+   "pre": [2012,2013],
+   "class": "Intimidator",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_06_hp.png"
+  },
+  {
+   "id": 2016,
+   "name": "Battlefield Magic",
+   "tier": 1,
+   "x": 10,
+   "y": 1,
+   "pre": [2014,2015],
+   "class": "Magical",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_05_atk.png"
+  },
+  {
+   "id": 2017,
+   "name": "Mystic Healing",
+   "tier": 1,
+   "x": 10,
+   "y": 3,
+   "pre": [2014,2015],
+   "class": "Magical",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_05_hp.png"
+  },
+  {
+   "id": 2018,
+   "name": "Spiritual Resistance",
+   "tier": 1,
+   "x": 11,
+   "y": 2,
+   "pre": [2016,2017],
+   "class": "All",
+   "stat": "SprDes",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_04.png"
+  },
+  {
+   "id": 2019,
+   "name": "Pressure Point Attack Methods",
+   "tier": 2,
+   "x": 12,
+   "y": 1,
+   "pre": [2018],
+   "class": "Warrior",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_02_atk.png"
+  },
+  {
+   "id": 2020,
+   "name": "Vulnerability Protection",
+   "tier": 2,
+   "x": 12,
+   "y": 3,
+   "pre": [2018],
+   "class": "Warrior",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_02_hp.png"
+  },
+  {
+   "id": 2021,
+   "name": "Judo Instruction",
+   "tier": 2,
+   "x": 13,
+   "y": 1,
+   "pre": [2019,2020],
+   "class": "Guardian",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_03_atk.png"
+  },
+  {
+   "id": 2022,
+   "name": "Artful Dodging",
+   "tier": 2,
+   "x": 13,
+   "y": 3,
+   "pre": [2019,2020],
+   "class": "Guardian",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_03_hp.png"
+  },
+  {
+   "id": 2023,
+   "name": "HP (%) Boost",
+   "tier": 1,
+   "x": 14,
+   "y": 2,
+   "pre": [2021,2022],
+   "class": "All",
+   "stat": "HpTechRatio",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_02.png"
+  },
+  {
+   "id": 2024,
+   "name": "Target Practice",
+   "tier": 2,
+   "x": 15,
+   "y": 1,
+   "pre": [2023],
+   "class": "Firepower",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_07_atk.png"
+  },
+  {
+   "id": 2025,
+   "name": "Camouflage Techniques",
+   "tier": 2,
+   "x": 15,
+   "y": 3,
+   "pre": [2023],
+   "class": "Firepower",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_07_hp.png"
+  },
+  {
+   "id": 2026,
+   "name": "Counter-Strikes",
+   "tier": 2,
+   "x": 16,
+   "y": 1,
+   "pre": [2024,2025],
+   "class": "Supporter",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_04_atk.png"
+  },
+  {
+   "id": 2027,
+   "name": "Field Medicine",
+   "tier": 2,
+   "x": 16,
+   "y": 3,
+   "pre": [2024,2025],
+   "class": "Supporter",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_04_hp.png"
+  },
+  {
+   "id": 2028,
+   "name": "ATK (%) Boost",
+   "tier": 1,
+   "x": 17,
+   "y": 2,
+   "pre": [2026,2027],
+   "class": "All",
+   "stat": "AtkTechRatio",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_01.png"
+  },
+  {
+   "id": 2029,
+   "name": "Intense Focus",
+   "tier": 2,
+   "x": 18,
+   "y": 1,
+   "pre": [2028],
+   "class": "Assassin",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_01_atk.png"
+  },
+  {
+   "id": 2030,
+   "name": "Concealment",
+   "tier": 2,
+   "x": 18,
+   "y": 3,
+   "pre": [2028],
+   "class": "Assassin",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_01_hp.png"
+  },
+  {
+   "id": 2031,
+   "name": "Battlefield Maneuvers",
+   "tier": 2,
+   "x": 19,
+   "y": 1,
+   "pre": [2029,2030],
+   "class": "Intimidator",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_06_atk.png"
+  },
+  {
+   "id": 2032,
+   "name": "First Aid",
+   "tier": 2,
+   "x": 19,
+   "y": 3,
+   "pre": [2029,2030],
+   "class": "Intimidator",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_06_hp.png"
+  },
+  {
+   "id": 2033,
+   "name": "Battlefield Magic",
+   "tier": 2,
+   "x": 20,
+   "y": 1,
+   "pre": [2031,2032],
+   "class": "Magical",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_05_atk.png"
+  },
+  {
+   "id": 2034,
+   "name": "Mystic Healing",
+   "tier": 2,
+   "x": 20,
+   "y": 3,
+   "pre": [2031,2032],
+   "class": "Magical",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_05_hp.png"
+  },
+  {
+   "id": 2035,
+   "name": "Physical Penetration",
+   "tier": 2,
+   "x": 21,
+   "y": 2,
+   "pre": [2033,2034],
+   "class": "All",
+   "stat": "PhyAdd",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_06.png"
+  },
+  {
+   "id": 2036,
+   "name": "Pressure Point Attack Methods",
+   "tier": 3,
+   "x": 22,
+   "y": 1,
+   "pre": [2035],
+   "class": "Warrior",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_02_atk.png"
+  },
+  {
+   "id": 2037,
+   "name": "Vulnerability Protection",
+   "tier": 3,
+   "x": 22,
+   "y": 3,
+   "pre": [2035],
+   "class": "Warrior",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_02_hp.png"
+  },
+  {
+   "id": 2038,
+   "name": "Judo Instruction",
+   "tier": 3,
+   "x": 23,
+   "y": 1,
+   "pre": [2036,2037],
+   "class": "Guardian",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_03_atk.png"
+  },
+  {
+   "id": 2039,
+   "name": "Artful Dodging",
+   "tier": 3,
+   "x": 23,
+   "y": 3,
+   "pre": [2036,2037],
+   "class": "Guardian",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_03_hp.png"
+  },
+  {
+   "id": 2040,
+   "name": "Spiritual Penetration",
+   "tier": 2,
+   "x": 24,
+   "y": 2,
+   "pre": [2038,2039],
+   "class": "All",
+   "stat": "SprAdd",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_05.png"
+  },
+  {
+   "id": 2041,
+   "name": "Target Practice",
+   "tier": 3,
+   "x": 25,
+   "y": 1,
+   "pre": [2040],
+   "class": "Firepower",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_07_atk.png"
+  },
+  {
+   "id": 2042,
+   "name": "Camouflage Techniques",
+   "tier": 3,
+   "x": 25,
+   "y": 3,
+   "pre": [2040],
+   "class": "Firepower",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_07_hp.png"
+  },
+  {
+   "id": 2043,
+   "name": "Counter-Strikes",
+   "tier": 3,
+   "x": 26,
+   "y": 1,
+   "pre": [2041,2042],
+   "class": "Supporter",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_04_atk.png"
+  },
+  {
+   "id": 2044,
+   "name": "Field Medicine",
+   "tier": 3,
+   "x": 26,
+   "y": 3,
+   "pre": [2041,2042],
+   "class": "Supporter",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_04_hp.png"
+  },
+  {
+   "id": 2045,
+   "name": "Physical Resistance",
+   "tier": 2,
+   "x": 27,
+   "y": 2,
+   "pre": [2043,2044],
+   "class": "All",
+   "stat": "PhyDes",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_03.png"
+  },
+  {
+   "id": 2046,
+   "name": "Intense Focus",
+   "tier": 3,
+   "x": 28,
+   "y": 1,
+   "pre": [2045],
+   "class": "Assassin",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_01_atk.png"
+  },
+  {
+   "id": 2047,
+   "name": "Concealment",
+   "tier": 3,
+   "x": 28,
+   "y": 3,
+   "pre": [2045],
+   "class": "Assassin",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_01_hp.png"
+  },
+  {
+   "id": 2048,
+   "name": "Battlefield Maneuvers",
+   "tier": 3,
+   "x": 29,
+   "y": 1,
+   "pre": [2046,2047],
+   "class": "Intimidator",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_06_atk.png"
+  },
+  {
+   "id": 2049,
+   "name": "First Aid",
+   "tier": 3,
+   "x": 29,
+   "y": 3,
+   "pre": [2046,2047],
+   "class": "Intimidator",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_06_hp.png"
+  },
+  {
+   "id": 2050,
+   "name": "Battlefield Magic",
+   "tier": 3,
+   "x": 30,
+   "y": 1,
+   "pre": [2048,2049],
+   "class": "Magical",
+   "stat": "AtkTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_05_atk.png"
+  },
+  {
+   "id": 2051,
+   "name": "Mystic Healing",
+   "tier": 3,
+   "x": 30,
+   "y": 3,
+   "pre": [2048,2049],
+   "class": "Magical",
+   "stat": "HpTechRatio",
+   "levels": [100,200,300,400,500],
+   "icon": "/dcdl/account/research-tech_hero_type_05_hp.png"
+  },
+  {
+   "id": 2052,
+   "name": "Spiritual Resistance",
+   "tier": 2,
+   "x": 31,
+   "y": 2,
+   "pre": [2050,2051],
+   "class": "All",
+   "stat": "SprDes",
+   "levels": [1000],
+   "icon": "/dcdl/account/research-tech_hero_gold_04.png"
+  }
+ ],
+ "league": [
+  {
+   "id": 3001,
+   "name": "Power Strike",
+   "tier": 1,
+   "x": 1,
+   "y": 2,
+   "pre": [],
+   "class": "All",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_gold_40.png"
+  },
+  {
+   "id": 3002,
+   "name": "Firepower Strength Resonance",
+   "tier": 1,
+   "x": 2,
+   "y": 1,
+   "pre": [3001],
+   "class": "Firepower",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_34.png"
+  },
+  {
+   "id": 3003,
+   "name": "Warrior Strength Resonance",
+   "tier": 1,
+   "x": 2,
+   "y": 3,
+   "pre": [3001],
+   "class": "Warrior",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_36.png"
+  },
+  {
+   "id": 3004,
+   "name": "Assassin Strength Resonance",
+   "tier": 1,
+   "x": 3,
+   "y": 2,
+   "pre": [3002,3003],
+   "class": "Assassin",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_31.png"
+  },
+  {
+   "id": 3005,
+   "name": "Supporter Strength Resonance",
+   "tier": 1,
+   "x": 4,
+   "y": 1,
+   "pre": [3004],
+   "class": "Supporter",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_32.png"
+  },
+  {
+   "id": 3006,
+   "name": "Guardian Strength Resonance",
+   "tier": 1,
+   "x": 4,
+   "y": 3,
+   "pre": [3004],
+   "class": "Guardian",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_35.png"
+  },
+  {
+   "id": 3007,
+   "name": "Intimidator Strength Resonance",
+   "tier": 1,
+   "x": 5,
+   "y": 1,
+   "pre": [3005,3006],
+   "class": "Intimidator",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_33.png"
+  },
+  {
+   "id": 3008,
+   "name": "Magical Strength Resonance",
+   "tier": 1,
+   "x": 5,
+   "y": 3,
+   "pre": [3005,3006],
+   "class": "Magical",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_37.png"
+  },
+  {
+   "id": 3009,
+   "name": "Armor Enhancement",
+   "tier": 1,
+   "x": 6,
+   "y": 2,
+   "pre": [3007,3008],
+   "class": "All",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_gold_41.png"
+  },
+  {
+   "id": 3010,
+   "name": "Firepower Health Resonance",
+   "tier": 1,
+   "x": 7,
+   "y": 1,
+   "pre": [3009],
+   "class": "Firepower",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_34.png"
+  },
+  {
+   "id": 3011,
+   "name": "Warrior Health Resonance",
+   "tier": 1,
+   "x": 7,
+   "y": 3,
+   "pre": [3009],
+   "class": "Warrior",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_36.png"
+  },
+  {
+   "id": 3012,
+   "name": "Assassin Health Resonance",
+   "tier": 1,
+   "x": 8,
+   "y": 2,
+   "pre": [3010,3011],
+   "class": "Assassin",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_31.png"
+  },
+  {
+   "id": 3013,
+   "name": "Supporter Health Resonance",
+   "tier": 1,
+   "x": 9,
+   "y": 1,
+   "pre": [3012],
+   "class": "Supporter",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_32.png"
+  },
+  {
+   "id": 3014,
+   "name": "Guardian Health Resonance",
+   "tier": 1,
+   "x": 9,
+   "y": 3,
+   "pre": [3012],
+   "class": "Guardian",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_35.png"
+  },
+  {
+   "id": 3015,
+   "name": "Intimidator Health Resonance",
+   "tier": 1,
+   "x": 10,
+   "y": 1,
+   "pre": [3013,3014],
+   "class": "Intimidator",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_33.png"
+  },
+  {
+   "id": 3016,
+   "name": "Magical Health Resonance",
+   "tier": 1,
+   "x": 10,
+   "y": 3,
+   "pre": [3013,3014],
+   "class": "Magical",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_37.png"
+  },
+  {
+   "id": 3017,
+   "name": "Power Strike",
+   "tier": 2,
+   "x": 11,
+   "y": 2,
+   "pre": [3015,3016],
+   "class": "All",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_gold_40.png"
+  },
+  {
+   "id": 3018,
+   "name": "Firepower Strength Resonance",
+   "tier": 2,
+   "x": 12,
+   "y": 1,
+   "pre": [3017],
+   "class": "Firepower",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_34.png"
+  },
+  {
+   "id": 3019,
+   "name": "Warrior Strength Resonance",
+   "tier": 2,
+   "x": 12,
+   "y": 3,
+   "pre": [3017],
+   "class": "Warrior",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_36.png"
+  },
+  {
+   "id": 3020,
+   "name": "Assassin Strength Resonance",
+   "tier": 2,
+   "x": 13,
+   "y": 2,
+   "pre": [3018,3019],
+   "class": "Assassin",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_31.png"
+  },
+  {
+   "id": 3021,
+   "name": "Supporter Strength Resonance",
+   "tier": 2,
+   "x": 14,
+   "y": 1,
+   "pre": [3020],
+   "class": "Supporter",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_32.png"
+  },
+  {
+   "id": 3022,
+   "name": "Guardian Strength Resonance",
+   "tier": 2,
+   "x": 14,
+   "y": 3,
+   "pre": [3020],
+   "class": "Guardian",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_35.png"
+  },
+  {
+   "id": 3023,
+   "name": "Intimidator Strength Resonance",
+   "tier": 2,
+   "x": 15,
+   "y": 1,
+   "pre": [3021,3022],
+   "class": "Intimidator",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_33.png"
+  },
+  {
+   "id": 3024,
+   "name": "Magical Strength Resonance",
+   "tier": 2,
+   "x": 15,
+   "y": 3,
+   "pre": [3021,3022],
+   "class": "Magical",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_37.png"
+  },
+  {
+   "id": 3025,
+   "name": "Armor Enhancement",
+   "tier": 2,
+   "x": 16,
+   "y": 2,
+   "pre": [3023,3024],
+   "class": "All",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_gold_41.png"
+  },
+  {
+   "id": 3026,
+   "name": "Firepower Health Resonance",
+   "tier": 2,
+   "x": 17,
+   "y": 1,
+   "pre": [3025],
+   "class": "Firepower",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_34.png"
+  },
+  {
+   "id": 3027,
+   "name": "Warrior Health Resonance",
+   "tier": 2,
+   "x": 17,
+   "y": 3,
+   "pre": [3025],
+   "class": "Warrior",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_36.png"
+  },
+  {
+   "id": 3028,
+   "name": "Assassin Health Resonance",
+   "tier": 2,
+   "x": 18,
+   "y": 2,
+   "pre": [3026,3027],
+   "class": "Assassin",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_31.png"
+  },
+  {
+   "id": 3029,
+   "name": "Supporter Health Resonance",
+   "tier": 2,
+   "x": 19,
+   "y": 1,
+   "pre": [3028],
+   "class": "Supporter",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_32.png"
+  },
+  {
+   "id": 3030,
+   "name": "Guardian Health Resonance",
+   "tier": 2,
+   "x": 19,
+   "y": 3,
+   "pre": [3028],
+   "class": "Guardian",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_35.png"
+  },
+  {
+   "id": 3031,
+   "name": "Intimidator Health Resonance",
+   "tier": 2,
+   "x": 20,
+   "y": 1,
+   "pre": [3029,3030],
+   "class": "Intimidator",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_33.png"
+  },
+  {
+   "id": 3032,
+   "name": "Magical Health Resonance",
+   "tier": 2,
+   "x": 20,
+   "y": 3,
+   "pre": [3029,3030],
+   "class": "Magical",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_37.png"
+  },
+  {
+   "id": 3033,
+   "name": "Power Strike",
+   "tier": 3,
+   "x": 21,
+   "y": 2,
+   "pre": [3031,3032],
+   "class": "All",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_gold_40.png"
+  },
+  {
+   "id": 3034,
+   "name": "Firepower Strength Resonance",
+   "tier": 3,
+   "x": 22,
+   "y": 1,
+   "pre": [3033],
+   "class": "Firepower",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_34.png"
+  },
+  {
+   "id": 3035,
+   "name": "Warrior Strength Resonance",
+   "tier": 3,
+   "x": 22,
+   "y": 3,
+   "pre": [3033],
+   "class": "Warrior",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_36.png"
+  },
+  {
+   "id": 3036,
+   "name": "Assassin Strength Resonance",
+   "tier": 3,
+   "x": 23,
+   "y": 2,
+   "pre": [3034,3035],
+   "class": "Assassin",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_31.png"
+  },
+  {
+   "id": 3037,
+   "name": "Supporter Strength Resonance",
+   "tier": 3,
+   "x": 24,
+   "y": 1,
+   "pre": [3036],
+   "class": "Supporter",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_32.png"
+  },
+  {
+   "id": 3038,
+   "name": "Guardian Strength Resonance",
+   "tier": 3,
+   "x": 24,
+   "y": 3,
+   "pre": [3036],
+   "class": "Guardian",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_35.png"
+  },
+  {
+   "id": 3039,
+   "name": "Intimidator Strength Resonance",
+   "tier": 3,
+   "x": 25,
+   "y": 1,
+   "pre": [3037,3038],
+   "class": "Intimidator",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_33.png"
+  },
+  {
+   "id": 3040,
+   "name": "Magical Strength Resonance",
+   "tier": 3,
+   "x": 25,
+   "y": 3,
+   "pre": [3037,3038],
+   "class": "Magical",
+   "modes": [
+    "Gve",
+    "Gvg",
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_37.png"
+  },
+  {
+   "id": 3041,
+   "name": "Focused Penetration",
+   "tier": 1,
+   "x": 26,
+   "y": 2,
+   "pre": [3039,3040],
+   "class": "All",
+   "modes": [
+    "Gve"
+   ],
+   "stats": [
+    {
+     "stat": "PhyAdd",
+     "levels": [100,200,300,400,500]
+    },
+    {
+     "stat": "SprAdd",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_46.png"
+  },
+  {
+   "id": 3042,
+   "name": "Pulse of Vitality",
+   "tier": 1,
+   "x": 27,
+   "y": 1,
+   "pre": [3041],
+   "class": "All",
+   "modes": [
+    "Gve"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_44.png"
+  },
+  {
+   "id": 3043,
+   "name": "Power Resonance",
+   "tier": 1,
+   "x": 27,
+   "y": 3,
+   "pre": [3041],
+   "class": "All",
+   "modes": [
+    "Gve"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_41.png"
+  },
+  {
+   "id": 3044,
+   "name": "Armor Shred",
+   "tier": 1,
+   "x": 28,
+   "y": 2,
+   "pre": [3042,3043],
+   "class": "All",
+   "modes": [
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "PhyAdd",
+     "levels": [100,200,300,400,500]
+    },
+    {
+     "stat": "SprAdd",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_47.png"
+  },
+  {
+   "id": 3045,
+   "name": "Rift Warden",
+   "tier": 1,
+   "x": 29,
+   "y": 1,
+   "pre": [3044],
+   "class": "All",
+   "modes": [
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_45.png"
+  },
+  {
+   "id": 3046,
+   "name": "Umbral Blessing",
+   "tier": 1,
+   "x": 29,
+   "y": 3,
+   "pre": [3044],
+   "class": "All",
+   "modes": [
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_42.png"
+  },
+  {
+   "id": 3047,
+   "name": "Focused Penetration",
+   "tier": 2,
+   "x": 30,
+   "y": 2,
+   "pre": [3045,3046],
+   "class": "All",
+   "modes": [
+    "Gve"
+   ],
+   "stats": [
+    {
+     "stat": "PhyAdd",
+     "levels": [100,200,300,400,500]
+    },
+    {
+     "stat": "SprAdd",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_46.png"
+  },
+  {
+   "id": 3048,
+   "name": "Pulse of Vitality",
+   "tier": 2,
+   "x": 31,
+   "y": 1,
+   "pre": [3047],
+   "class": "All",
+   "modes": [
+    "Gve"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_44.png"
+  },
+  {
+   "id": 3049,
+   "name": "Power Resonance",
+   "tier": 2,
+   "x": 31,
+   "y": 3,
+   "pre": [3047],
+   "class": "All",
+   "modes": [
+    "Gve"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_41.png"
+  },
+  {
+   "id": 3050,
+   "name": "Armor Shred",
+   "tier": 2,
+   "x": 32,
+   "y": 2,
+   "pre": [3048,3049],
+   "class": "All",
+   "modes": [
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "PhyAdd",
+     "levels": [100,200,300,400,500]
+    },
+    {
+     "stat": "SprAdd",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_47.png"
+  },
+  {
+   "id": 3051,
+   "name": "Rift Warden",
+   "tier": 2,
+   "x": 33,
+   "y": 1,
+   "pre": [3050],
+   "class": "All",
+   "modes": [
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "HpBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_45.png"
+  },
+  {
+   "id": 3052,
+   "name": "Umbral Blessing",
+   "tier": 2,
+   "x": 33,
+   "y": 3,
+   "pre": [3050],
+   "class": "All",
+   "modes": [
+    "AllianceBoss"
+   ],
+   "stats": [
+    {
+     "stat": "AtkBattleRatio",
+     "levels": [100,200,300,400,500]
+    }
+   ],
+   "icon": "/dcdl/account/league-tech_normal_42.png"
+  }
+ ],
+ "gear": {
+  "qualities": [
+   {
+    "key": "Green",
+    "name": "Green",
+    "min": 1,
+    "max": 20,
+    "factionBonus": 0
+   },
+   {
+    "key": "GreenPlus",
+    "name": "Green+",
+    "min": 21,
+    "max": 40,
+    "factionBonus": 0
+   },
+   {
+    "key": "Blue",
+    "name": "Blue",
+    "min": 41,
+    "max": 70,
+    "factionBonus": 0
+   },
+   {
+    "key": "BluePlus",
+    "name": "Blue+",
+    "min": 71,
+    "max": 100,
+    "factionBonus": 0
+   },
+   {
+    "key": "Purple",
+    "name": "Purple",
+    "min": 101,
+    "max": 140,
+    "factionBonus": 0
+   },
+   {
+    "key": "PurplePlus",
+    "name": "Purple+",
+    "min": 141,
+    "max": 180,
+    "factionBonus": 0
+   },
+   {
+    "key": "Orange",
+    "name": "Orange",
+    "min": 181,
+    "max": 230,
+    "factionBonus": 20
+   },
+   {
+    "key": "OrangePlus",
+    "name": "Orange+",
+    "min": 231,
+    "max": 280,
+    "factionBonus": 20
+   },
+   {
+    "key": "Red",
+    "name": "Red",
+    "min": 281,
+    "max": 400,
+    "factionBonus": 20
+   },
+   {
+    "key": "RedPlus",
+    "name": "Mythic+",
+    "min": 500,
+    "max": 500,
+    "factionBonus": 20
+   }
+  ],
+  "types": {
+   "HeavyArmor": {
+    "name": "Heavy",
+    "classes": [
+     "Warrior",
+     "Guardian"
+    ],
+    "sets": [
+     {
+      "name": "Mr. Freeze Cryo-Suit",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_huamn_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_huamn_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_huamn_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_huamn_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_huamn_boot.png"
+      }
+     },
+     {
+      "name": "Superheavy Batsuit",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_intimidator_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_intimidator_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_intimidator_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_intimidator_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_intimidator_boot.png"
+      }
+     },
+     {
+      "name": "Rocket Red",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_rocket_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_rocket_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_rocket_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_rocket_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_rocket_boot.png"
+      }
+     },
+     {
+      "name": "Kryptonian",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_kryptonian-_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_kryptonian_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_kryptonian_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_kryptonian_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_kryptonian_boot.png"
+      }
+     },
+     {
+      "name": "S.T.A.R. Labs Hamilton Armor",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_star_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_star_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_star_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_star_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_star_boot.png"
+      }
+     },
+     {
+      "name": "Java Cyberwear Armor",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_cyberwear_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_cyberwear_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_cyberwear_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_cyberwear_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_cyberwear_boot.png"
+      }
+     }
+    ],
+    "slots": {
+     "Helmet": {
+      "name": "Helmet",
+      "stats": {
+       "FortEquip": [40,2,19,12,1,2,19,12,1,2,29,12,1,2,29,14,1,2,39,16,1,2,39,20,1,2,49,20,1,2,49,30,1,2,119],
+       "HpEquip": [0,0,39,1260,1,18,29,108,1,18,29,126,1,18,39,144,1,18,39,180,1,18,49,180,1,18,49,270,1,18,119],
+       "EffectResEquipRatio": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "FortEquip": 1216,
+       "HpEquip": 10944,
+       "EffectResEquipRatio": 2000
+      }
+     },
+     "BodySuit": {
+      "name": "Body Armor",
+      "stats": {
+       "DefEquip": [40,2,19,12,1,2,19,12,1,2,29,12,1,2,29,14,1,2,39,16,1,2,39,20,1,2,49,20,1,2,49,30,1,2,119],
+       "HpEquipRatio": [0,0,39,220,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4],
+       "DefEquipRatio": [0,0,99,920,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4]
+      },
+      "top": {
+       "DefEquip": 1216,
+       "HpEquipRatio": 2000,
+       "DefEquipRatio": 4000
+      }
+     },
+     "Greaves": {
+      "name": "Gloves",
+      "stats": {
+       "AtkEquip": [16,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1,5,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1,5,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1,5,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1,6,1,1,1,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,2,6,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,8,1,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,3,8,1,1,1,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,2,12,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1],
+       "CritResEquip": [0,0,39,165,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4],
+       "CritPowerResEquip": [0,0,99,690,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4]
+      },
+      "top": {
+       "AtkEquip": 486,
+       "CritResEquip": 1500,
+       "CritPowerResEquip": 3000
+      }
+     },
+     "Belt": {
+      "name": "Belt",
+      "stats": {
+       "HpEquip": [360,18,19,108,1,18,19,108,1,18,29,108,1,18,29,126,1,18,39,144,1,18,39,180,1,18,49,180,1,18,49,270,1,18,119],
+       "EffectResEquipRatio": [0,0,39,220,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4],
+       "FortEquipRatio": [0,0,99,920,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4,40,1,0,4]
+      },
+      "top": {
+       "HpEquip": 10944,
+       "EffectResEquipRatio": 2000,
+       "FortEquipRatio": 4000
+      }
+     },
+     "Boots": {
+      "name": "Boots",
+      "stats": {
+       "HpEquipRatio": {
+        "start": 20,
+        "length": 400,
+        "cycle": [0,0,0,0,20]
+       },
+       "AtkEquip": [0,0,39,56,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1,5,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1,6,1,1,1,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,2,6,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,8,1,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,3,8,1,1,1,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,2,12,1,1,2,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,4,0,1,1,1],
+       "CritResEquip": [0,0,99,345,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4]
+      },
+      "top": {
+       "HpEquipRatio": 2000,
+       "AtkEquip": 486,
+       "CritResEquip": 1500
+      }
+     }
+    }
+   },
+   "MediumArmor": {
+    "name": "Medium",
+    "classes": [
+     "Firepower",
+     "Magical",
+     "Assassin"
+    ],
+    "sets": [
+     {
+      "name": "LexCorp",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_lexcorp_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_lexcorp_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_lexcorp_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_lexcorp_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_lexcorp_boot.png"
+      }
+     },
+     {
+      "name": "Blackhawk Stealth Armor",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_raptor_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_raptor_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_raptor_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_raptor_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_raptor_boot.png"
+      }
+     },
+     {
+      "name": "Holt Cyberwear",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_cyber_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_cyber_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_cyber_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_cyber_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_cyber_boot.png"
+      }
+     },
+     {
+      "name": "Darkstar Exo-Mantle",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_darkstar-_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_darkstar_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_darkstar_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_darkstar_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_darkstar_boot.png"
+      }
+     },
+     {
+      "name": "Sapphire Mecha-Armor",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_sapphire_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_sapphire_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_sapphire_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_sapphire_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_sapphire_boot.png"
+      }
+     },
+     {
+      "name": "Clown Armor",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_clown_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_clown_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_clown_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_clown_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_clown_boot.png"
+      }
+     }
+    ],
+    "slots": {
+     "Helmet": {
+      "name": "Helmet",
+      "stats": {
+       "FortEquip": [32,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,10,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,10,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,10,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,12,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,13,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,16,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,16,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,24,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1],
+       "HpEquip": [0,0,39,945,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,81,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,95,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,108,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,135,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,135,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,202,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1],
+       "SprWaveEquip": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "FortEquip": 973,
+       "HpEquip": 8208,
+       "SprWaveEquip": 2000
+      }
+     },
+     "BodySuit": {
+      "name": "Body Armor",
+      "stats": {
+       "DefEquip": [32,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,10,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,10,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,10,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,12,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,13,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,16,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,16,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,1,24,1,2,1,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1,2,2,1,1,2,1,1,1],
+       "HpEquipRatio": [0,0,39,220,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4],
+       "AtkEquipRatio": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "DefEquip": 973,
+       "HpEquipRatio": 2000,
+       "AtkEquipRatio": 2000
+      }
+     },
+     "Greaves": {
+      "name": "Gloves",
+      "stats": {
+       "AtkEquip": [26,1,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,8,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,8,1,1,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,8,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,9,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,1,10,1,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,2,13,1,1,1,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,1,13,1,1,2,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,19,1,1,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1],
+       "CritEquip": [0,0,39,165,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4],
+       "CritPowerEquip": [0,0,99,690,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4]
+      },
+      "top": {
+       "AtkEquip": 790,
+       "CritEquip": 1500,
+       "CritPowerEquip": 3000
+      }
+     },
+     "Belt": {
+      "name": "Belt",
+      "stats": {
+       "HpEquip": [270,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,81,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,81,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,81,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,95,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,108,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,135,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,135,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,202,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1,13,1,14,1],
+       "SprWaveEquip": [0,0,39,220,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4],
+       "AtkEquipRatio": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "HpEquip": 8208,
+       "SprWaveEquip": 2000,
+       "AtkEquipRatio": 2000
+      }
+     },
+     "Boots": {
+      "name": "Boots",
+      "stats": {
+       "AtkEquipRatio": {
+        "start": 20,
+        "length": 400,
+        "cycle": [0,0,0,0,20]
+       },
+       "AtkEquip": [0,0,39,91,1,1,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,8,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,9,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,1,10,1,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,2,13,1,1,1,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,1,13,1,1,2,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,19,1,1,1,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1,1,2,2,1,1,2,2,1,1,3,2,1],
+       "CritPowerEquip": [0,0,99,690,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4,30,1,0,4]
+      },
+      "top": {
+       "AtkEquipRatio": 2000,
+       "AtkEquip": 790,
+       "CritPowerEquip": 3000
+      }
+     }
+    }
+   },
+   "LightArmor": {
+    "name": "Light",
+    "classes": [
+     "Supporter",
+     "Intimidator"
+    ],
+    "sets": [
+     {
+      "name": "Metropolis SCU Leviathan",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_scu_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_scu_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_scu_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_scu_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_scu_boot.png"
+      }
+     },
+     {
+      "name": "Themysciran Battle",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_themysiran_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_themysiran_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_themysiran_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_themysiran_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_themysiran_boot.png"
+      }
+     },
+     {
+      "name": "Starrware",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_starrware_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_starrware_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_starrware_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_starrware_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_starrware_boot.png"
+      }
+     },
+     {
+      "name": "Rannian Mecha-Armor",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_rannian_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_rannian_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_rannian_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_rannian_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_rannian_boot.png"
+      }
+     },
+     {
+      "name": "Nerve Agent Bio-Suit",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_bio_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_bio_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_bio_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_bio_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_bio_boot.png"
+      }
+     },
+     {
+      "name": "Bedlam Exo-Mantle",
+      "icons": {
+       "Helmet": "/dcdl/account/gear/icon_equip_bedlam_helmet.png",
+       "BodySuit": "/dcdl/account/gear/icon_equip_bedlam_armor.png",
+       "Greaves": "/dcdl/account/gear/icon_equip_bedlam_bracer.png",
+       "Belt": "/dcdl/account/gear/icon_equip_bedlam_belt.png",
+       "Boots": "/dcdl/account/gear/icon_equip_bedlam_boot.png"
+      }
+     }
+    ],
+    "slots": {
+     "Helmet": {
+      "name": "Helmet",
+      "stats": {
+       "FortEquip": [36,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,11,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,11,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,11,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,13,1,2,1,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,2,14,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,18,1,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,3,18,1,2,1,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,2,27,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1],
+       "HpEquip": [0,0,39,1155,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,99,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,116,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,132,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,165,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,165,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,247,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1],
+       "HealAddEquipRatio": [0,0,99,345,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4]
+      },
+      "top": {
+       "FortEquip": 1094,
+       "HpEquip": 10032,
+       "HealAddEquipRatio": 1500
+      }
+     },
+     "BodySuit": {
+      "name": "Body Armor",
+      "stats": {
+       "DefEquip": [36,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,11,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,11,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,11,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1,13,1,2,1,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,2,14,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,18,1,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,3,18,1,2,1,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,2,27,1,2,2,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,4,1,1,2,1],
+       "HpEquipRatio": [0,0,39,220,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4],
+       "AtkEquipRatio": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "DefEquip": 1094,
+       "HpEquipRatio": 2000,
+       "AtkEquipRatio": 2000
+      }
+     },
+     "Greaves": {
+      "name": "Gloves",
+      "stats": {
+       "AtkEquip": [20,1,19,6,1,1,19,6,1,1,29,6,1,1,29,7,1,1,39,8,1,1,39,10,1,1,49,10,1,1,49,15,1,1,119],
+       "EffectHitEquipRatio": [0,0,39,220,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4],
+       "EnergySpeedEquipRatio": [0,0,99,345,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4]
+      },
+      "top": {
+       "AtkEquip": 608,
+       "EffectHitEquipRatio": 2000,
+       "EnergySpeedEquipRatio": 1500
+      }
+     },
+     "Belt": {
+      "name": "Belt",
+      "stats": {
+       "HpEquip": [330,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,99,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,99,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,99,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,116,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,132,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,165,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,165,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,247,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1,16,1,17,1],
+       "HealAddEquipRatio": [0,0,39,165,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4,15,1,0,4],
+       "AtkEquipRatio": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "HpEquip": 10032,
+       "HealAddEquipRatio": 1500,
+       "AtkEquipRatio": 2000
+      }
+     },
+     "Boots": {
+      "name": "Boots",
+      "stats": {
+       "AtkEquipRatio": {
+        "start": 20,
+        "length": 400,
+        "cycle": [0,0,0,0,20]
+       },
+       "AtkEquip": [0,0,39,70,1,1,29,6,1,1,29,7,1,1,39,8,1,1,39,10,1,1,49,10,1,1,49,15,1,1,119],
+       "EffectHitEquipRatio": [0,0,99,460,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4,20,1,0,4]
+      },
+      "top": {
+       "AtkEquipRatio": 2000,
+       "AtkEquip": 608,
+       "EffectHitEquipRatio": 2000
+      }
+     }
+    }
+   }
+  }
+ },
+ "apokolips": {
+  "max": 9500,
+  "flat": {
+   "HpGeneral": {
+    "start": 0,
+    "length": 9501,
+    "cycle": [5,5,0,5,5,0,5,5,0,30]
+   },
+   "AtkGeneral": {
+    "start": 0,
+    "length": 9501,
+    "cycle": [0,0,1,0,0,0,0,0,0,3]
+   },
+   "DefGeneral": {
+    "start": 0,
+    "length": 9501,
+    "cycle": [0,0,0,0,0,1,0,0,0,3]
+   },
+   "FortGeneral": {
+    "start": 0,
+    "length": 9501,
+    "cycle": [0,0,0,0,0,0,0,0,1,3]
+   }
+  },
+  "milestones": [
+   {
+    "level": 700,
+    "stats": [
+     [
+      "HpTechRatio",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 1100,
+    "stats": [
+     [
+      "HpTechRatio",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 1300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 1700,
+    "stats": [
+     [
+      "HpTechRatio",
+      800
+     ]
+    ]
+   },
+   {
+    "level": 1900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      800
+     ]
+    ]
+   },
+   {
+    "level": 2100,
+    "stats": [
+     [
+      "HpTechRatio",
+      800
+     ]
+    ]
+   },
+   {
+    "level": 2300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      800
+     ]
+    ]
+   },
+   {
+    "level": 2500,
+    "stats": [
+     [
+      "PhyAdd",
+      500
+     ],
+     [
+      "SprAdd",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 2700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1000
+     ]
+    ]
+   },
+   {
+    "level": 2900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1000
+     ]
+    ]
+   },
+   {
+    "level": 3100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1000
+     ]
+    ]
+   },
+   {
+    "level": 3300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1000
+     ]
+    ]
+   },
+   {
+    "level": 3500,
+    "stats": [
+     [
+      "PhyDes",
+      500
+     ],
+     [
+      "SprDes",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 3700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 3900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 4100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 4300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 4500,
+    "stats": [
+     [
+      "PhyAdd",
+      500
+     ],
+     [
+      "SprAdd",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 4700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 4900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 5100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 5300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 5500,
+    "stats": [
+     [
+      "PhyDes",
+      500
+     ],
+     [
+      "SprDes",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 5700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 5900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 6100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 6300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 6500,
+    "stats": [
+     [
+      "PhyAdd",
+      500
+     ],
+     [
+      "SprAdd",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 6700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 6900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 7100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 7300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 7500,
+    "stats": [
+     [
+      "PhyDes",
+      500
+     ],
+     [
+      "SprDes",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 7700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 7900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 8100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 8300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 8500,
+    "stats": [
+     [
+      "PhyAdd",
+      500
+     ],
+     [
+      "SprAdd",
+      500
+     ]
+    ]
+   },
+   {
+    "level": 8700,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 8900,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 9100,
+    "stats": [
+     [
+      "HpTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 9300,
+    "stats": [
+     [
+      "AtkTechRatio",
+      1200
+     ]
+    ]
+   },
+   {
+    "level": 9500,
+    "stats": [
+     [
+      "PhyDes",
+      500
+     ],
+     [
+      "SprDes",
+      500
+     ]
+    ]
+   }
+  ]
+ },
+ "afterburners": {
+  "maxPartLevel": 120,
+  "partQuality": [
+   [
+    0,
+    "purple"
+   ],
+   [
+    30,
+    "yellow"
+   ],
+   [
+    61,
+    "red"
+   ]
+  ],
+  "parts": [
+   {
+    "name": "Wings",
+    "stat": "CritHero",
+    "levels": {
+     "start": 0,
+     "length": 121,
+     "cycle": [15,15]
+    },
+    "icon": "/dcdl/account/part-wing.png"
+   },
+   {
+    "name": "Weapon",
+    "stat": "DefTechRatio",
+    "levels": {
+     "start": 0,
+     "length": 121,
+     "cycle": [40,40]
+    },
+    "icon": "/dcdl/account/part-weapon.png"
+   },
+   {
+    "name": "Cockpit",
+    "stat": "SprWaveHero",
+    "levels": {
+     "start": 0,
+     "length": 121,
+     "cycle": [20,20]
+    },
+    "icon": "/dcdl/account/part-cockpit.png"
+   },
+   {
+    "name": "Thruster",
+    "stat": "AtkTechRatio",
+    "levels": {
+     "start": 0,
+     "length": 121,
+     "cycle": [20,20]
+    },
+    "icon": "/dcdl/account/part-booster.png"
+   },
+   {
+    "name": "Engine",
+    "stat": "HpTechRatio",
+    "levels": {
+     "start": 0,
+     "length": 121,
+     "cycle": [20,20]
+    },
+    "icon": "/dcdl/account/part-engine.png"
+   },
+   {
+    "name": "Fuel System",
+    "stat": "FortTechRatio",
+    "levels": {
+     "start": 0,
+     "length": 121,
+     "cycle": [40,40]
+    },
+    "icon": "/dcdl/account/part-fuelsystem.png"
+   }
+  ],
+  "maxCount": 10000,
+  "milestones": {
+   "HpHero": {
+    "start": 0,
+    "length": 10001,
+    "cycle": [0,0,0,0,90,0,0,0,0,0,0,0,0,0,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,0,0,0,0,0,0,0,0,0,90,0,0,0,0,0]
+   },
+   "AtkHero": {
+    "start": 0,
+    "length": 10001,
+    "cycle": [0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0]
+   },
+   "HpTechRatio": {
+    "start": 0,
+    "length": 10001,
+    "cycle": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+   },
+   "AtkTechRatio": {
+    "start": 0,
+    "length": 10001,
+    "cycle": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10]
+   }
+  }
+ },
+ "ships": [
+  {
+   "id": 1,
+   "name": "Aircraft",
+   "quality": "Rare",
+   "icon": "/dcdl/account/ship-1.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "HpTechRatio",
+       100
+      ]
+     ],
+     "skill": {
+      "name": "Shield Barrier",
+      "text": "Once all squads in the vehicle enter battle, increases Physical DEF by 4%."
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Abin Sur's Starship",
+   "quality": "Epic",
+   "icon": "/dcdl/account/ship-7.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "AtkTechRatio",
+       300
+      ]
+     ],
+     "skill": {
+      "name": "Willpower",
+      "text": "Once all squads in the vehicle enter battle, increases ATK by 6% for 15s."
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "T-JET",
+   "quality": "Legendary",
+   "icon": "/dcdl/account/ship-2.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "HpTechRatio",
+       500
+      ]
+     ],
+     "skill": {
+      "name": "Titan Assembly",
+      "text": "Once all squads in the vehicle enter battle, increases ATK by 10% and Physical DEF by 10% for 15s."
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Steel Eagle",
+   "quality": "Legendary",
+   "icon": "/dcdl/account/ship-9.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "AtkTechRatio",
+       500
+      ]
+     ],
+     "skill": {
+      "name": "Talon Strike",
+      "text": "Once all squads in the vehicle enter battle, increases ATK by 4% every 5s, stacking up to 5 time(s)."
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "Pequod",
+   "quality": "Legendary",
+   "icon": "/dcdl/account/ship-8.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "HpTechRatio",
+       500
+      ]
+     ],
+     "skill": {
+      "name": "Shadow Barrier",
+      "text": "15s after all squads in the vehicle enter battle, all Champions gain a shield equal to 12% of their Max HP for 10s."
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Blue Beetle's Bug",
+   "quality": "Mythic",
+   "icon": "/dcdl/account/ship-6.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "HpTechRatio",
+       1000
+      ]
+     ],
+     "skill": {
+      "name": "Kord's Legacy",
+      "text": "All Champions gain a shield equal to 15% of their Max HP at the start of battle. Each Ultimate cast grants another shield equal to 15% of Max HP. Shield strength refreshes with each trigger."
+     }
+    },
+    {
+     "stats": [
+      [
+       "HpTechRatio",
+       1000
+      ]
+     ],
+     "skill": {
+      "name": "Kord's Legacy",
+      "text": "All Champions gain a shield equal to 22.5% of their Max HP at the start of battle. Each Ultimate cast grants another shield equal to 22.5% of Max HP. Shield strength refreshes with each trigger."
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Batwing",
+   "quality": "Mythic",
+   "icon": "/dcdl/account/ship-5.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "AtkTechRatio",
+       1000
+      ]
+     ],
+     "skill": {
+      "name": "Nightveil",
+      "text": "All Champions gain 15% Crit Rate at the start of battle. Each enemy defeated grants an additional 5%, stacking up to 3 time(s)."
+     }
+    },
+    {
+     "stats": [
+      [
+       "AtkTechRatio",
+       1000
+      ]
+     ],
+     "skill": {
+      "name": "Nightveil",
+      "text": "All Champions gain 22.5% Crit Rate at the start of battle. Each enemy defeated grants an additional 7.5%, stacking up to 3 time(s)."
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Superman's Kryptonian Rocket",
+   "quality": "Mythic",
+   "icon": "/dcdl/account/ship-4.png",
+   "stars": [
+    {
+     "stats": [
+      [
+       "AtkTechRatio",
+       1000
+      ]
+     ],
+     "skill": {
+      "name": "Light of Krypton",
+      "text": "Once all squads in the vehicle enter battle, casting the Ultimate increases ATK by 12% and Physical DEF by 12%, stacking up to 3 time(s)."
+     }
+    },
+    {
+     "stats": [
+      [
+       "AtkTechRatio",
+       1000
+      ]
+     ],
+     "skill": {
+      "name": "Light of Krypton",
+      "text": "Once all squads in the vehicle enter battle, casting the Ultimate increases ATK by 18% and Physical DEF by 18%, stacking up to 3 time(s)."
+     }
+    }
+   ]
+  }
+ ],
+ "vip": [
+  {
+   "level": 1,
+   "points": 600,
+   "stats": []
+  },
+  {
+   "level": 2,
+   "points": 1600,
+   "stats": []
+  },
+  {
+   "level": 3,
+   "points": 3600,
+   "stats": []
+  },
+  {
+   "level": 4,
+   "points": 7600,
+   "stats": []
+  },
+  {
+   "level": 5,
+   "points": 13600,
+   "stats": []
+  },
+  {
+   "level": 6,
+   "points": 23600,
+   "stats": []
+  },
+  {
+   "level": 7,
+   "points": 37600,
+   "stats": []
+  },
+  {
+   "level": 8,
+   "points": 57600,
+   "stats": []
+  },
+  {
+   "level": 9,
+   "points": 87600,
+   "stats": []
+  },
+  {
+   "level": 10,
+   "points": 127600,
+   "stats": []
+  },
+  {
+   "level": 11,
+   "points": 177600,
+   "stats": []
+  },
+  {
+   "level": 12,
+   "points": 237600,
+   "stats": []
+  },
+  {
+   "level": 13,
+   "points": 307600,
+   "stats": []
+  },
+  {
+   "level": 14,
+   "points": 387600,
+   "stats": []
+  },
+  {
+   "level": 15,
+   "points": 477600,
+   "stats": []
+  },
+  {
+   "level": 16,
+   "points": 577600,
+   "stats": []
+  },
+  {
+   "level": 17,
+   "points": 687600,
+   "stats": []
+  },
+  {
+   "level": 18,
+   "points": 807600,
+   "stats": []
+  },
+  {
+   "level": 19,
+   "points": 947600,
+   "stats": []
+  },
+  {
+   "level": 20,
+   "points": 1147600,
+   "stats": []
+  },
+  {
+   "level": 21,
+   "points": 1497600,
+   "stats": [
+    [
+     "DefTechRatio",
+     500
+    ],
+    [
+     "FortTechRatio",
+     500
+    ]
+   ]
+  },
+  {
+   "level": 22,
+   "points": 2097600,
+   "stats": [
+    [
+     "AtkTechRatio",
+     500
+    ],
+    [
+     "HpTechRatio",
+     500
+    ],
+    [
+     "DefTechRatio",
+     500
+    ],
+    [
+     "FortTechRatio",
+     500
+    ]
+   ]
+  },
+  {
+   "level": 23,
+   "points": 3297600,
+   "stats": [
+    [
+     "DefTechRatio",
+     1000
+    ],
+    [
+     "FortTechRatio",
+     1000
+    ],
+    [
+     "AtkTechRatio",
+     500
+    ],
+    [
+     "HpTechRatio",
+     500
+    ]
+   ]
+  },
+  {
+   "level": 24,
+   "points": 5797600,
+   "stats": [
+    [
+     "AtkTechRatio",
+     1000
+    ],
+    [
+     "HpTechRatio",
+     1000
+    ],
+    [
+     "DefTechRatio",
+     1000
+    ],
+    [
+     "FortTechRatio",
+     1000
+    ]
+   ]
+  },
+  {
+   "level": 25,
+   "points": 10797600,
+   "stats": [
+    [
+     "DefTechRatio",
+     1500
+    ],
+    [
+     "FortTechRatio",
+     1500
+    ],
+    [
+     "AtkTechRatio",
+     1000
+    ],
+    [
+     "HpTechRatio",
+     1000
+    ]
+   ]
+  },
+  {
+   "level": 26,
+   "points": 10797600,
+   "stats": [
+    [
+     "AtkTechRatio",
+     1500
+    ],
+    [
+     "HpTechRatio",
+     1500
+    ],
+    [
+     "DefTechRatio",
+     1500
+    ],
+    [
+     "FortTechRatio",
+     1500
+    ]
+   ]
+  }
+ ],
+ "rooms": [
+  {
+   "id": "room-18",
+   "name": "Fortress of Solitude Decor",
+   "room": "Living Quarter",
+   "owned": true,
+   "icon": "/dcdl/account/room-18.png",
+   "stats": [
+    [
+     "HpBattle",
+     150
+    ],
+    [
+     "AtkBattle",
+     10
+    ],
+    [
+     "DefBattle",
+     10
+    ],
+    [
+     "FortBattle",
+     10
+    ]
+   ]
+  },
+  {
+   "id": "room-24",
+   "name": "Welcome Back to School!",
+   "room": "Library",
+   "owned": true,
+   "icon": "/dcdl/account/room-24.png",
+   "stats": [
+    [
+     "HpBattle",
+     150
+    ],
+    [
+     "AtkBattle",
+     10
+    ],
+    [
+     "DefBattle",
+     10
+    ],
+    [
+     "FortBattle",
+     10
+    ]
+   ]
+  }
+ ]
+}

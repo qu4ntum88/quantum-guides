@@ -60,6 +60,16 @@ const JOBS: Record<string, JobDef> = {
     cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-base-skins.mjs'), '--write'],
     note: 'Writes base-skins.json and the skin art in public/dcdl/base-skins (your takes in base-skins-notes.json are never touched). Commit afterwards.',
   },
+  'dcdl-account-preview': {
+    group: 'DC: Dark Legion', label: 'Update Account Profile data — preview',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-account-bonuses.mjs')],
+    note: 'Dry run: Global Skills, research, league research, gear, Apokolips, Firepit Afterburners, ships, VIP and room skins from the game files, with counts and any warnings.',
+  },
+  'dcdl-account-apply': {
+    group: 'DC: Dark Legion', label: 'Update Account Profile data — apply',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-account-bonuses.mjs'), '--write'],
+    note: 'Writes src/dcdl/data/game/account-bonuses.json and the art in public/dcdl/account (the Members-area account editor and the champion Stat Calculators read it). Run after each game update. Commit afterwards.',
+  },
   'vh-extract': {
     group: 'Void Hunters', label: 'Extract from game files',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'update.mjs')],

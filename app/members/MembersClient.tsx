@@ -1,9 +1,11 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useSyncExternalStore } from 'react'
 import Link from 'next/link'
 import { useUser } from '@clerk/nextjs'
 import ApplyPanel from './ApplyPanel'
+import AccountBuilder, { type RosterChampion, type BuilderSkin } from '@/src/dcdl/components/account/AccountBuilder'
+import type { AccountData } from '@/src/dcdl/lib/account-bonuses'
 
 type VotableItem = { id: string; name: string; image?: string }
 
@@ -23,6 +25,13 @@ const ratingDesc: Record<string, string> = {
 
 type VoteMap = Record<string, string>
 
+// Members sections: #account… opens the DC: Dark Legion account editor, anything else the voting.
+function subscribeHash(cb: () => void) {
+  window.addEventListener('hashchange', cb)
+  return () => window.removeEventListener('hashchange', cb)
+}
+const readSection = () => (window.location.hash.startsWith('#account') ? 'account' : 'voting')
+
 function RatingPicker({ value, onChange }: { value: string; onChange: (r: string) => void }) {
   return (
     <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap' }}>
@@ -39,8 +48,17 @@ function RatingPicker({ value, onChange }: { value: string; onChange: (r: string
   )
 }
 
-export default function MembersClient({ heroes, legacyPieces }: { heroes: VotableItem[]; legacyPieces: VotableItem[] }) {
+export default function MembersClient({ heroes, legacyPieces, account }: {
+  heroes: VotableItem[]
+  legacyPieces: VotableItem[]
+  account: { data: AccountData; champions: RosterChampion[]; skins: BuilderSkin[] }
+}) {
   const { isSignedIn, isLoaded, user } = useUser()
+  const section = useSyncExternalStore(subscribeHash, readSection, () => 'voting')
+  const goSection = (s: 'account' | 'voting') => {
+    try { history.replaceState(null, '', s === 'account' ? '#account' : '#voting') } catch {}
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+  }
   const [tab, setTab] = useState<'champions' | 'legacy'>('champions')
   const [votes, setVotes] = useState<VoteMap>({})
   const [saving, setSaving] = useState<string | null>(null)
@@ -80,7 +98,7 @@ export default function MembersClient({ heroes, legacyPieces }: { heroes: Votabl
       <main>
         <div className="container" style={{ textAlign: 'center', paddingTop: '4rem' }}>
           <h1>Members Area</h1>
-          <p style={{ color: '#aaa', marginBottom: '2rem' }}>Sign in to vote on champion and legacy piece tiers.</p>
+          <p style={{ color: '#aaa', marginBottom: '2rem' }}>Sign in to vote on champion and legacy piece tiers, and to add your own DC: Dark Legion account to every champion&apos;s Stat Calculator.</p>
           <Link href="/sign-in" className="btn">Sign In</Link>
         </div>
       </main>
@@ -92,15 +110,25 @@ export default function MembersClient({ heroes, legacyPieces }: { heroes: Votabl
 
   return (
     <main>
-      <div className="container" style={{ maxWidth: '900px', paddingTop: '2rem', paddingBottom: '4rem' }}>
+      <div className="container" style={{ maxWidth: section === 'account' ? '1200px' : '900px', paddingTop: '2rem', paddingBottom: '4rem' }}>
         <h1 style={{ marginBottom: '0.25rem' }}>Members Area</h1>
         <p style={{ color: '#888', marginBottom: '2rem', fontSize: '0.9rem' }}>
-          Welcome, {user?.firstName ?? user?.username ?? 'member'}! Vote on the tier ranking for each champion and legacy piece.
-          Your vote can be changed at any time.
+          Welcome, {user?.firstName ?? user?.username ?? 'member'}! Set up your DC: Dark Legion account so every champion&apos;s Stat Calculator
+          adds your bonuses, and vote on the tier ranking for each champion and legacy piece.
         </p>
 
         <ApplyPanel />
 
+        <div className="mem-sections" role="tablist" aria-label="Members sections">
+          {([['account', 'DC: Dark Legion Account'], ['voting', 'Tier Voting']] as const).map(([id, label]) => (
+            <button key={id} type="button" role="tab" aria-selected={section === id} className={section === id ? 'is-active' : ''} onClick={() => goSection(id)}>{label}</button>
+          ))}
+        </div>
+
+        {section === 'account' ? (
+          <AccountBuilder data={account.data} champions={account.champions} skins={account.skins} />
+        ) : (
+        <>
         {/* Tab toggle */}
         <div style={{ display: 'flex', gap: '0.25rem', marginBottom: '2rem', borderBottom: '2px solid #333' }}>
           {(['champions', 'legacy'] as const).map((t) => (
@@ -165,6 +193,8 @@ export default function MembersClient({ heroes, legacyPieces }: { heroes: Votabl
             )
           })}
         </div>
+        </>
+        )}
       </div>
     </main>
   )
