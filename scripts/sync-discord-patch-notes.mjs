@@ -214,6 +214,9 @@ function classify(game, feed, first, text) {
     if (feed === 'update-notes') return /^\W*heads up/i.test(head) ? 'announcement' : 'patch_notes'
     // Before the #update-notes feed was followed (2025-02-14) the full notes came through #game-news.
     if (feed === 'game-news' && /^\W*(DC: Dark Legion has updated|.{0,30}update preview)/i.test(clean(first.content))) return 'patch_notes'
+  } else if (game === 'voidhunters' && feed === 'dev-updates') {
+    // Same rule as the drop folder, where every "Dev Update" file became a patch note.
+    return 'patch_notes'
   } else if (/\b(hotfix|patch notes|update news)\b/i.test(head) && !/^\W*(server )?maintenance/i.test(head)) return 'patch_notes'
   if (/gift-codes/.test(feed) || /\b(gift )?code:/i.test(head)) return 'codes'
   if (/maintenance/i.test(head)) return 'maintenance'

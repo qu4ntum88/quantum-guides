@@ -21,7 +21,7 @@ The working files for a run go in the scratchpad: `pending.json` (new posts) and
    ```
    If it reports new or changed posts, apply it (not in a dry run): `node scripts/sync-discord-patch-notes.mjs --write`.
    - Copy every `! POSSIBLY MISSING TEXT:` line into the report verbatim. Following a channel only forwards what the devs *publish*; a bare heading means the text under it is missing. Tyler pastes it into `E:\GameAssets\Exports\<game>\_manual\patch-notes\fill-in\YYYY-MM-DD.txt` and re-runs the sync. Don't draft from a post with a gap until it's filled; skip it this run (don't `mark` it) so it comes back.
-   - **Void Hunters comes only from the drop folder** (`E:\GameAssets\Exports\void-hunters\_manual\patch-notes\`, one `YYYY-MM-DD <title>.txt` per post). If the newest VH post is more than a week old, remind Tyler to paste the latest Hunt Report / Dev Update there.
+   - All four games come in through the bot. Void Hunters' #dev-updates and #announcements were followed on 2026-10-17, so posts from before then are in the drop folder (`E:\GameAssets\Exports\void-hunters\_manual\patch-notes\`) and newer ones come from Discord. A Dev Update from #dev-updates counts as a patch note, the same way the dropped files did.
 2. List what hasn't been handled:
    ```bash
    node scripts/patch-day.mjs --json <scratchpad>/pending.json
@@ -106,7 +106,7 @@ Keep it short:
 
 - **Drafted**: each guide (title, game) and the History entries (count, which champions/pieces). Review links: `/admin#<game>/guides` (dcdl, godforge, invokers, voidhunters), `/admin#dcdl/history`, or Studio → Review Queue.
 - **Needs your take**: each take slot's prompt question.
-- **Needs you**: Game Data buttons to run, missing text to paste (fill-in path), Void Hunters posts to drop in, codes for Game Info, anything flagged as unconfirmed (e.g. a champion on the site roster whose release post isn't in the archive).
+- **Needs you**: Game Data buttons to run, missing text to paste (fill-in path), codes for Game Info, anything flagged as unconfirmed (e.g. a champion on the site roster whose release post isn't in the archive).
 - **Skipped**: one line with counts by reason.
 
 Don't commit. The drafts live in Supabase; the repo is untouched by a normal run.
