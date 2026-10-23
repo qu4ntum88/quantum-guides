@@ -256,3 +256,31 @@ a.sg-champ:hover { color: #fff; }
 @media (max-width: 640px) {
   .sg-piece { grid-template-columns: 5rem 1fr; }
 }
+
+/* Base skins: owned-skin picker (shared with the Base Skins page via owned-skins.ts) */
+.cgd-skins { display: grid; grid-template-columns: repeat(auto-fill, minmax(6.2rem, 1fr)); gap: 0.5rem; margin-bottom: 0.7rem; }
+.cgd-skin {
+  display: flex; flex-direction: column; align-items: center; gap: 0.25rem; padding: 0.45rem 0.35rem 0.4rem;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 0.45rem;
+  color: #8b80a3; cursor: pointer; font: inherit;
+}
+.cgd-skin img { width: 3.4rem; height: 3.4rem; object-fit: contain; filter: grayscale(0.85) brightness(0.6); transition: filter 0.15s; }
+.cgd-skin__name { font-size: 0.72rem; font-weight: 700; color: #ddd8ea; text-align: center; }
+.cgd-skin__bonus { font-size: 0.66rem; line-height: 1.25; text-align: center; font-variant-numeric: tabular-nums; }
+.cgd-skin:hover { border-color: rgba(245, 197, 24, 0.5); }
+.cgd-skin:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.cgd-skin[aria-pressed='true'] { background: rgba(245, 197, 24, 0.08); border-color: var(--gold); color: #f1edf8; }
+.cgd-skin[aria-pressed='true'] img { filter: none; }
+.cgd-skin { position: relative; }
+.cgd-skin.is-equipped { box-shadow: 0 0 0 1px var(--gold), 0 0 12px rgba(245, 197, 24, 0.35); }
+.cgd-skin__eq {
+  position: absolute; top: -0.5rem; left: 50%; transform: translateX(-50%); white-space: nowrap;
+  font-size: 0.58rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+  color: #111; background: var(--gold); border-radius: 999px; padding: 0.08rem 0.45rem;
+}
+.cgd-equip { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.8rem; margin-bottom: 0.7rem; }
+.cgd-equip .sg-label { margin: 0; }
+.cgd-equip select {
+  flex: 1 1 16rem; max-width: 100%; min-width: 0; background: #17121f; color: #f1edf8;
+  border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 0.4rem; padding: 0.4rem 0.55rem; font: inherit; font-size: 0.82rem;
+}

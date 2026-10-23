@@ -11,6 +11,7 @@ import ReviewQueueTab from '@/src/dcdl/components/studio/ReviewQueueTab'
 import ApplicationsTab from '@/src/dcdl/components/studio/ApplicationsTab'
 import UnitNotesPanel from './UnitNotesPanel'
 import HistoryTab from './HistoryTab'
+import BaseSkinsPanel from './BaseSkinsPanel'
 import {
   BestTeamsForm,
   ChampionForm,
@@ -63,6 +64,7 @@ const SECTIONS: Section[] = [
       { id: 'supreme-commander', label: 'Supreme Commander', kind: 'local', render: () => <SupremeCommanderForm /> },
       { id: 'infographics', label: 'Infographics', kind: 'live', render: (s) => <InfographicsTab setStatus={s} /> },
       { id: 'combat-cycle', label: 'Combat Cycle', kind: 'local', render: () => <CombatCycleForm /> },
+      { id: 'base-skins', label: 'Base Skins', kind: 'local', render: () => <BaseSkinsPanel /> },
     ],
   },
   {

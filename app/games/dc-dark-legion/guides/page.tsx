@@ -1,6 +1,7 @@
 import '../../godforge/game.css'
 import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
 import { getGuidesList, getGameInfo, getInfographics, getPatchNotes } from '@/src/dcdl/lib/content-db'
+import { getBaseSkins } from '@/src/dcdl/lib/base-skins'
 import JsonLd from '@/app/components/JsonLd'
 import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 
@@ -41,6 +42,8 @@ export default async function GuidesPage() {
   const patchEntries = await getPatchNotes()
   const latestPatch = patchEntries[0] ?? null
   const infographicsCount = (await getInfographics()).length
+  const baseSkins = getBaseSkins()
+  const newestSkin = baseSkins[0] ?? null
 
   const featured = guides[0] ?? null
   const remaining = guides.slice(1)
@@ -277,6 +280,26 @@ export default async function GuidesPage() {
                     </p>
                     <span style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.6rem', fontWeight: 700, color: '#4f8ef7', letterSpacing: '0.04em' }}>
                       Browse All →
+                    </span>
+                  </div>
+                </a>
+
+                {/* Base Skins sidebar link */}
+                <a href="/games/dc-dark-legion/base-skins" style={{ display: 'block', textDecoration: 'none' }}>
+                  <div className="card" style={{ borderTop: '2px solid rgba(204,164,83,0.45)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem' }}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      {newestSkin?.icon && <img src={newestSkin.icon} alt="" style={{ width: 32, height: 32, objectFit: 'contain' }} />}
+                      <span style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)' }}>
+                        Base Skins
+                      </span>
+                    </div>
+                    <p style={{ margin: '0 0 0.6rem', fontSize: '0.75rem', color: '#666', lineHeight: 1.5 }}>
+                      Owned and equipped bonuses for all {baseSkins.length} base skins
+                      {newestSkin && `, including ${newestSkin.name}`}.
+                    </p>
+                    <span style={{ fontFamily: 'Unbounded, sans-serif', fontSize: '0.6rem', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.04em' }}>
+                      Compare All →
                     </span>
                   </div>
                 </a>

@@ -11,7 +11,8 @@ import SynergyTooltip from '@/src/dcdl/components/SynergyTooltip'
 import AbilityKit from '@/src/dcdl/components/AbilityKit'
 import TakeBody from '@/src/dcdl/components/TakeBody'
 import ExpandableTake from '@/src/dcdl/components/ExpandableTake'
-import ChampionGameData, { type ChampionGameDataProps } from '@/src/dcdl/components/champion/ChampionGameData'
+import ChampionGameData, { type ChampionGameDataProps, type CalcSkin } from '@/src/dcdl/components/champion/ChampionGameData'
+import { getBaseSkins, CALC_STAT, formatBonus } from '@/src/dcdl/lib/base-skins'
 import StrategyGuide, { type InGameGuide } from '@/src/dcdl/components/champion/StrategyGuide'
 import EntityHistory from '@/src/dcdl/components/history/EntityHistory'
 import ChampionEventStrip from '@/src/dcdl/components/history/ChampionEventStrip'
@@ -20,6 +21,20 @@ import JsonLd from '@/app/components/JsonLd'
 import { breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import fs from 'fs'
 import path from 'path'
+
+// Base skins' owned and equipped bonuses for the Stat Calculator, oldest first (the order
+// players unlock them). Equipped bonuses that aren't one of the four base stats (Physical DMG,
+// Crit Rate, …) are passed as labels only.
+const isCalc = (b: { key: string; pct: boolean }) => b.pct && !!CALC_STAT[b.key]
+const CALC_SKINS: CalcSkin[] = getBaseSkins()
+  .sort((a, b) => a.order - b.order)
+  .map((s) => ({
+    id: s.id, name: s.name, icon: s.icon,
+    bonuses: s.owned.filter(isCalc).map((b) => ({ stat: CALC_STAT[b.key], value: b.value })),
+    equipped: s.equipped.filter(isCalc).map((b) => ({ stat: CALC_STAT[b.key], value: b.value })),
+    equippedOther: s.equipped.filter((b) => !isCalc(b)).map((b) => `${formatBonus(b)} ${b.stat}`),
+  }))
+  .filter((s) => s.bonuses.length || s.equipped.length || s.equippedOther.length)
 
 // Game-data extras (stats, Force talents, lore) live one file per champion, written by
 // scripts/sync-dcdl-kits.mjs; read only this champion's file at build time.
@@ -287,6 +302,7 @@ export default async function HeroPage({ params }: { params: Promise<{ id: strin
             curves={gameData.curves} firstLevel={gameData.firstLevel} maxLevel={gameData.maxLevel}
             talents={gameData.talents} lore={gameData.lore} stars={gameData.stars ?? null}
             skillUnlocks={gameData.skillUnlocks ?? {}}
+            baseSkins={CALC_SKINS}
             skillNames={{
               Ultimate: hero.ultimate?.name ?? '',
               ...Object.fromEntries((hero.skills ?? []).map((s, i) => [`Skill ${i + 1}`, s.name])),

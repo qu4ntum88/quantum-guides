@@ -50,6 +50,16 @@ const JOBS: Record<string, JobDef> = {
     cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-supreme-commander.mjs'), '--write'],
     note: 'Writes the numbers in supreme-commander.json (tips, titles and icons are never touched). Commit afterwards.',
   },
+  'dcdl-skins-preview': {
+    group: 'DC: Dark Legion', label: 'Update Base Skins — preview',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-base-skins.mjs')],
+    note: 'Dry run: lists every released base skin with its bonuses and the official post it shipped in. Skins no post confirms yet are only counted, never named.',
+  },
+  'dcdl-skins-apply': {
+    group: 'DC: Dark Legion', label: 'Update Base Skins — apply',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-dcdl-base-skins.mjs'), '--write'],
+    note: 'Writes base-skins.json and the skin art in public/dcdl/base-skins (your takes in base-skins-notes.json are never touched). Commit afterwards.',
+  },
   'vh-extract': {
     group: 'Void Hunters', label: 'Extract from game files',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'update.mjs')],

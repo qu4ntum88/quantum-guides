@@ -1,12 +1,13 @@
 'use client'
 
 // Champion page sections built from the game-data export (src/dcdl/data/game/champions/<id>.json,
-// written by scripts/sync-dcdl-kits.mjs): a stat calculator (level 1–700, stars 0–25 and every
-// Force talent 0–5, combined the way the game does), Force talent costs, and lore chapters with
-// the star each one unlocks at.
+// written by scripts/sync-dcdl-kits.mjs): a stat calculator (level 1–700, stars 0–25, every
+// Force talent 0–5 and the base skins the visitor owns, combined the way the game does), Force
+// talent costs, and lore chapters with the star each one unlocks at.
 
 import { useMemo, useState } from 'react'
 import { STAR_TIERS, UNLOCK_COLOR } from '../../lib/star-tiers'
+import { useOwnedSkins } from '../../lib/owned-skins'
 import './champion-data.css'
 
 /** kind: flat = added after every multiplier, pct = the (1 + talent% + gear%) bucket,
@@ -27,7 +28,12 @@ export type ChampionGameDataProps = {
   skillUnlocks?: Record<string, number[]>
   /** Slot → skill name, for the "reaching this star" notes. */
   skillNames?: Record<string, string>
+  /** Base skins with their owned and equipped bonuses; which are owned / equipped is the visitor's pick (owned-skins.ts). */
+  baseSkins?: CalcSkin[]
 }
+type SkinStat = { stat: string; value: number }
+/** bonuses / equipped: % per calculator stat. equippedOther: labels of equipped bonuses that aren't base stats. */
+export type CalcSkin = { id: string; name: string; icon: string | null; bonuses: SkinStat[]; equipped: SkinStat[]; equippedOther: string[] }
 
 const STAT_ORDER = ['HP', 'ATK', 'P. DEF', 'S. DEF']
 const JUMPS = [1, 100, 200, 300, 400, 500, 600, 700]
@@ -90,17 +96,27 @@ function starTotals(stars: ChampionStars | null | undefined, star: number) {
   return out
 }
 
-/** The game's formula (BUPropertyCalculator): (base + base talents) × (1 + star%) × (1 + talent%) + flat talents. */
-function combine(base: number, star: number, sums: Sums, k: string) {
+/** Percent per stat from the owned bonuses of `owned` plus the equipped bonus of `equipped`. */
+function skinTotals(owned: CalcSkin[], equipped: CalcSkin | null) {
+  const out: Record<string, number> = {}
+  for (const b of [...owned.flatMap((s) => s.bonuses), ...(equipped?.equipped ?? [])]) out[b.stat] = (out[b.stat] ?? 0) + b.value
+  return out
+}
+const skinLabel = (list: SkinStat[]) => list.map((b) => `${b.stat} +${fmtPct(b.value)}`).join(', ')
+
+/** The game's formula (BUPropertyCalculator): (base + base talents) × (1 + star%) × (1 + talent% + tech%) + flat talents.
+ *  Base skin owned bonuses are tech % stats, so they share the talent % bucket. */
+function combine(base: number, star: number, sums: Sums, k: string, skin = 0) {
   const starred = (base + (sums.base[k] ?? 0)) * (1 + star / 100)
-  const total = starred * (1 + (sums.pct[k] ?? 0) / 100) + (sums.flat[k] ?? 0)
-  return { base, starGain: base * (star / 100), forceGain: total - base * (1 + star / 100), total }
+  const total = starred * (1 + ((sums.pct[k] ?? 0) + skin) / 100) + (sums.flat[k] ?? 0)
+  const skinGain = starred * (skin / 100)
+  return { base, starGain: base * (star / 100), forceGain: total - base * (1 + star / 100) - skinGain, skinGain, total }
 }
 
-export default function ChampionGameData({ curves, firstLevel, maxLevel, talents, lore, stars, skillUnlocks = {}, skillNames = {} }: ChampionGameDataProps) {
+export default function ChampionGameData({ curves, firstLevel, maxLevel, talents, lore, stars, skillUnlocks = {}, skillNames = {}, baseSkins = [] }: ChampionGameDataProps) {
   const top = maxLevel ?? 700
   const maxStar = stars?.steps.length ? stars.steps[stars.steps.length - 1].star : 0
-  const [level, setLevel] = useState(top)
+  const [level, setLevel] = useState(firstLevel)
   const [star, setStar] = useState(0)
   const [tLevels, setTLevels] = useState<number[]>(() => talents.map(() => 0))
   const [openTalent, setOpenTalent] = useState<number | null>(null)
@@ -122,6 +138,16 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
   const maxSums = useMemo(() => sumTalents(talents, talents.map((t) => t.upgrades.length)), [talents])
   const starPct = useMemo(() => starTotals(stars, star), [stars, star])
   const maxStarPct = useMemo(() => starTotals(stars, maxStar), [stars, maxStar])
+  const { owned, equipped, toggle: toggleSkin, setAll: setOwnedSkins, equip } = useOwnedSkins()
+  const mySkins = useMemo(() => baseSkins.filter((s) => owned.has(s.id)), [baseSkins, owned])
+  const worn = useMemo(() => baseSkins.find((s) => s.id === equipped) ?? null, [baseSkins, equipped])
+  const skinPct = useMemo(() => skinTotals(mySkins, worn), [mySkins, worn])
+  // Bar scale: every skin owned plus the biggest equipped bonus per stat.
+  const maxSkinPct = useMemo(() => {
+    const out = skinTotals(baseSkins, null)
+    for (const s of baseSkins) for (const b of s.equipped) out[b.stat] = Math.max(out[b.stat] ?? 0, skinTotals(baseSkins, s)[b.stat])
+    return out
+  }, [baseSkins])
 
   if (!curves && !talents.length && !lore.length) return null
   const at = (k: string, lv: number) => curves?.[k]?.[lv - firstLevel] ?? 0
@@ -165,7 +191,7 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
             {stats.length > 0 && (
               <span className="cgd-actions">
                 <button type="button" onClick={() => { setLevel(top); setStar(maxStar); setTLevels(talents.map((t) => t.upgrades.length)) }}>Max all</button>
-                <button type="button" onClick={() => { setLevel(top); setStar(0); setTLevels(talents.map(() => 0)) }}>Reset</button>
+                <button type="button" onClick={() => { setLevel(firstLevel); setStar(0); setTLevels(talents.map(() => 0)) }}>Reset</button>
               </span>
             )}
           </div>
@@ -174,18 +200,19 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
             <>
               <p className="cgd-note cgd-note--top">
                 Set the level, stars and Force talents on their own; the totals combine all three the way the game does:
-                stars multiply the level stat, then Force % bonuses multiply that, then flat Force bonuses are added.
+                stars multiply the level stat, then Force % bonuses{baseSkins.length > 0 && ' and base skin bonuses'} multiply that, then flat Force bonuses are added.
               </p>
               <div className="cgd-summary">
                 <span>Level <strong>{level}</strong></span>
                 {hasStars && <span style={{ '--tier': tierOf.color } as React.CSSProperties}>Stars <strong className="cgd-summary__star">{tierOf.short}</strong></span>}
                 {talents.length > 0 && <span>Force <strong>{talentNow}</strong> / {talentMax}</span>}
+                {baseSkins.length > 0 && <span>Base skins <strong>{mySkins.length}</strong> / {baseSkins.length}{worn && <> · {worn.name} equipped</>}</span>}
               </div>
               {offTalents.length > 0 && <OffWarning count={offTalents.length} need={offNeed} level={level} onFix={() => setLevel(offNeed)} />}
               <div className="cgd-stats">
                 {stats.map((k) => {
-                  const r = combine(at(k, level), starPct[k] ?? 0, sums, k)
-                  const max = combine(at(k, top), maxStarPct[k] ?? 0, maxSums, k).total || r.total || 1
+                  const r = combine(at(k, level), starPct[k] ?? 0, sums, k, skinPct[k] ?? 0)
+                  const max = combine(at(k, top), maxStarPct[k] ?? 0, maxSums, k, maxSkinPct[k] ?? 0).total || r.total || 1
                   return (
                     <div key={k} className={`cgd-stat ${statClass(k)}`}>
                       <span className="cgd-stat__name">{k}</span>
@@ -195,6 +222,7 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
                         <div><dt>Level {level}</dt><dd>{fmt(r.base)}</dd></div>
                         {hasStars && <div className={r.starGain ? '' : 'is-zero'}><dt>Stars +{fmtPct(starPct[k] ?? 0)}</dt><dd>+{fmt(r.starGain)}</dd></div>}
                         {talents.length > 0 && <div className={Math.round(r.forceGain) ? '' : 'is-zero'}><dt>Force</dt><dd>+{fmt(r.forceGain)}</dd></div>}
+                        {(maxSkinPct[k] ?? 0) > 0 && <div className={Math.round(r.skinGain) ? '' : 'is-zero'}><dt>Base skins +{fmtPct(skinPct[k] ?? 0)}</dt><dd>+{fmt(r.skinGain)}</dd></div>}
                       </dl>
                     </div>
                   )
@@ -300,6 +328,56 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
                     </div>
                     <p className="cgd-note">Each row is what that star adds; the total so far is in brackets. Tap a row to set the slider.</p>
                   </details>
+                </div>
+              )}
+              {baseSkins.length > 0 && (
+                <div className="cgd-block">
+                  <div className="cgd-block__head">
+                    <h3>Base Skins</h3>
+                    <span className="cgd-actions">
+                      <button type="button" onClick={() => setOwnedSkins(baseSkins.map((s) => s.id))}>I own them all</button>
+                      <button type="button" onClick={() => setOwnedSkins([])}>None</button>
+                    </span>
+                  </div>
+                  <p className="cgd-note cgd-note--top">Tap each base skin you own: its owned bonus applies to every champion. Then pick the one your base has equipped to add its equipped bonus. Your picks are saved in this browser and shared with the <a href="/games/dc-dark-legion/base-skins">Base Skins</a> page.</p>
+                  <div className="cgd-skins">
+                    {baseSkins.map((s) => {
+                      const on = owned.has(s.id)
+                      const what = skinLabel(s.bonuses)
+                      return (
+                        <button
+                          key={s.id} type="button" className={'cgd-skin' + (s.id === equipped ? ' is-equipped' : '')} aria-pressed={on}
+                          title={`${s.name}: ${what}`} aria-label={`${s.name} (${what})`}
+                          onClick={() => toggleSkin(s.id)}
+                        >
+                          {s.id === equipped && <span className="cgd-skin__eq">Equipped</span>}
+                          {s.icon ? <img src={s.icon} alt="" /> : <span className="cgd-skin__name">{s.name}</span>}
+                          <span className="cgd-skin__bonus">{what}</span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                  <label className="cgd-equip">
+                    <span className="sg-label">Equipped skin</span>
+                    <select value={equipped ?? ''} onChange={(e) => equip(e.target.value || null)}>
+                      <option value="">None</option>
+                      {baseSkins.map((s) => (
+                        <option key={s.id} value={s.id}>
+                          {s.name}: {[...s.equipped.map((b) => `+${fmtPct(b.value)} ${b.stat}`), ...s.equippedOther].join(', ')}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  {worn && worn.equippedOther.length > 0 && (
+                    <p className="cgd-note cgd-note--top">
+                      While equipped, {worn.name} also gives {worn.equippedOther.join(' and ')}. That isn&apos;t one of the four stats above, so it isn&apos;t in the totals.
+                    </p>
+                  )}
+                  <div className="cgd-chips cgd-skins__total">
+                    {STAT_ORDER.some((k) => skinPct[k])
+                      ? STAT_ORDER.filter((k) => skinPct[k]).map((k) => <span key={k} className={`cgd-chip ${statClass(k)}`}>{k} +{fmtPct(skinPct[k])}</span>)
+                      : <span className="cgd-starinfo__none">No base skins picked. Tap the ones you own.</span>}
+                  </div>
                 </div>
               )}
             </>

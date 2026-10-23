@@ -50,6 +50,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     [`${D}/combat-cycle`, getDataUpdatedISO('combat-cycle.json', 'heros.json')],
     [`${D}/supreme-commander`, getDataUpdatedISO('supreme-commander.json')],
     [`${D}/event-history`, getDataUpdatedISO('event-history.json')],
+    [`${D}/base-skins`, getDataUpdatedISO('base-skins.json', 'base-skins-notes.json')],
     [`${D}/ship-combat-guides`],
     [`${D}/infographics`, getDataUpdatedISO('infographics.json', 'shards-per-star.json')],
     [`${D}/patch-notes`, patchNotes[0]?.publishedAt],
