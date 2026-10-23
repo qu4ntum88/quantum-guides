@@ -32,6 +32,7 @@ The working files for a run go in the scratchpad: `pending.json` (new posts) and
 ## 2. DCDL extras
 
 - If the list says the DCDL client was patched after the last extraction, or a new DCDL patch note is in the list, remind Tyler to run Site Admin → Site → Game Data (`/admin#site/game-data`, `next dev` only): **Extract from game files**, **Scan unreleased content [NDA]**, **Refresh site kits — preview** then **apply**, **Check Supreme Commander — preview**. Kit numbers in drafts should come from the refreshed data.
+- **Update folder summary.** After the extract, open the newest folder in `E:\GameAssets\Exports\dcdl\patches\` and read its `REPORT.md` (plus `data-changes\` where a row needs context). Replace the `_Run patch day with Claude…_` placeholder under `## Summary` with a short plain-English summary for Tyler: what's new; every kit and balance change in words (who, which skill, what the old → new values mean in play, e.g. "Lantern Shield cooldown 10s → 8s"), flagging the ones marked **not in official posts** as possible silent changes; anything notable in new art, text or scripts. Read the game's Chinese internal notes yourself; when the `≈` hint was missing or wrong, add the terms to `E:\GameAssets\Exports\_pipeline\dcdl\glossary.mjs`. A "Not traced to a champion" row: trace it by hand (skill ids are `<hero skill id>×100 + level`; auras are `KheroHaloLogicalSe`, summons `SeSubObject`) and say who it belongs to. Silent kit changes can become History entries (`kind: change`), but only once an official post or Tyler confirms them: the client data alone is not a source for a published entry.
 - Read the newest NDA change report (`E:\GameAssets\Exports\dcdl\_nda\_changes [NDA]\`) **for context only**: it tells you what not to write about. Never quote it, name what's in it, copy from it, or mention it in a draft or in a chat answer meant for the public. `draft` blocks drafts that name a held item.
 - New gift codes (`codes` rows): tell Tyler the code and its expiry so he can update Site Admin → <game> → Game Info (`/admin#dcdl/info`). There is no codes page; don't draft one.
 
@@ -78,7 +79,7 @@ Each guide in `drafts.json`:
 ```
 
 - Blocks, voice, images and the `[QUANTUM'S TAKE]` slot: follow `docs/EDITORIAL.md` §4–6. Every post needs at least one take slot with a specific prompt question.
-- Images: `game_posts.images` URLs first; then site art; DCDL event art from `E:\GameAssets\Exports\dcdl\events\art\` only once the event is confirmed live. Upload anything that isn't already a content-images URL or a small site asset (not in a dry run):
+- Images: `game_posts.images` URLs first; then site art; DCDL event art from `E:\GameAssets\Exports\dcdl\library\Events\` (or the update folder's `new-art\`) only once the event is confirmed live. Upload anything that isn't already a content-images URL or a small site asset (not in a dry run):
   ```bash
   node scripts/patch-day.mjs upload <file> guides/<game>/<guide-id>/<name>.webp
   ```

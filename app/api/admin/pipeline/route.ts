@@ -18,12 +18,12 @@ const JOBS: Record<string, JobDef> = {
   'dcdl-extract': {
     group: 'DC: Dark Legion', label: 'Extract from game files',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'dcdl', 'update.mjs')],
-    note: 'Art export + champions, legacy, game modes, events, change report. ~3–5 min.', report: 'dcdl',
+    note: 'Art export + champions, legacy, game modes, events, the asset library (dcdl\\library) and an update folder (dcdl\\patches\\<date>: report, new art, changed values). ~4–6 min.', report: 'dcdl',
   },
   'dcdl-extract-data': {
     group: 'DC: Dark Legion', label: 'Extract data only (reuse art)',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'dcdl', 'update.mjs'), '--skip-images'],
-    note: 'Skips AssetStudio. ~1–2 min.', report: 'dcdl',
+    note: 'Skips AssetStudio (no new-art check). ~1–2 min.', report: 'dcdl',
   },
   'dcdl-nda-scan': {
     group: 'DC: Dark Legion', label: 'Scan unreleased content [NDA]',
@@ -113,6 +113,12 @@ const g = globalThis as unknown as { __pipelineRuns?: Map<string, Run> }
 const runs = (g.__pipelineRuns ??= new Map())
 
 function latestReport(game: string) {
+  // DCDL: the newest update folder's REPORT.md (patches\<game date> <label>\).
+  const patches = path.join(EXPORTS, game, 'patches')
+  if (fs.existsSync(patches)) {
+    const latest = fs.readdirSync(patches).filter((d) => fs.existsSync(path.join(patches, d, 'REPORT.md'))).sort().pop()
+    if (latest) return { file: `patches\\${latest}\\REPORT.md`, text: fs.readFileSync(path.join(patches, latest, 'REPORT.md'), 'utf8') }
+  }
   const dir = path.join(EXPORTS, game, '_review')
   if (!fs.existsSync(dir)) return null
   const files = fs.readdirSync(dir).filter((f) => f.endsWith('.md')).sort()
