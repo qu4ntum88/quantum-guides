@@ -5718,5 +5718,73 @@
       "S. DEF"
     ],
     "whaleOrSkipValue": "Situational / Roster Dependent"
+  },
+  {
+    "id": "superman_death_metal",
+    "name": "Superman Death Metal (Clark Kent)",
+    "class": "Warrior",
+    "rarity": "Iconic",
+    "tier": "S+",
+    "isNew": true,
+    "damageType": "Physical",
+    "tagSynergies": [
+      "justice_league",
+      "superman_family",
+      "deathmetal"
+    ],
+    "gameModes": [],
+    "sourcesWhereAvailable": [
+      "Special Event"
+    ],
+    "recommendedLegacyPieces": [
+      "arm_of_apokolips"
+    ],
+    "imageHeadshot": "./headshot_images/icon_fight_hero_head_DM_Superman.png",
+    "imageFull": "./full_images/img_hero_pic_dm_superman.png",
+    "ultimate": {
+      "name": "Solar Punch",
+      "description": "Superman Death Metal channels solar energy into his right arm, dealing physical damage equal to [1400/1800/2200/2600/3000%] of his Attack to an enemy. If his Ultimate or a follow-up it triggers defeats an enemy, he immediately attacks all enemies, dealing physical damage equal to [700/900/1100/1300/1500%] of his Attack. This follow-up counts as Ultimate damage.",
+      "image": "./skill_images/icon_hero_skill_DM_Superman_main.png"
+    },
+    "globalSkill": {
+      "name": "Global Skill",
+      "description": "Increases all Champions' ATK by [1/2/3/4/5%], and Warrior Champions' P. DEF by [2/4/6/8/10%].",
+      "image": "./globalskill_images/icon_hero_skill_DM_Superman_global.png"
+    },
+    "skills": [
+      {
+        "name": "Cold Breath",
+        "description": "Superman Death Metal blasts an enemy with freezing breath, dealing physical damage equal to [400/550/700/850/1000%] of his Attack and inflicting [Freeze] for [1/1.5/2/2.5/3]s and [Vulnerability] for 8s.\n\n[Freeze]: Cannot act.\n[Vulnerability]: Takes [20/25/30/35/40%] more physical damage.",
+        "image": "./skill_images/icon_hero_skill_DM_Superman_sub01.png"
+      },
+      {
+        "name": "Inspiration",
+        "description": "Increases Superman Death Metal's Max HP by [30/50/70/85/100%].\nAt the start of battle, he grants all allies [Steadfast] for 20s. Every other [Superman Family] ally also gains [15/25/35/42/50%] Max HP.\n\n[Steadfast]: Immune to forced movement.",
+        "image": "./skill_images/icon_hero_skill_DM_Superman_sub02.png"
+      },
+      {
+        "name": "Second Wind",
+        "description": "The first time Superman Death Metal would take lethal damage, he enters [Hibernation] for 5s.\n\n[Hibernation]: Cannot act, but is immune to debuffs and converts [60/70/80/90/100%] of incoming damage into healing. When the effect expires or his HP reaches 100%, he awakens, dealing physical damage equal to [200/350/500/650/800%] of his Attack to all enemies and gaining [20/30/40/50/60] Energy. This attack counts as Ultimate damage.",
+        "image": "./skill_images/icon_hero_skill_DM_Superman_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Cold Breath - Enhanced",
+        "description": "Reduces cooldown of [Cold Breath] by [0.4/0.8/1.2/1.6/2]s.",
+        "image": "./upgrade_images/DMSuperman_sub01_enhanced.webp"
+      },
+      {
+        "name": "Inspiration - Enhanced",
+        "description": "Increases Superman Death Metal's Max HP by [2.5/5/7.5/10/12.5%].",
+        "image": "./upgrade_images/DMSuperman_sub02_enhanced.webp"
+      },
+      {
+        "name": "Second Wind - Enhanced",
+        "description": "Increases Superman Death Metal's physical damage dealt by [2/4/6/8/10%].",
+        "image": "./upgrade_images/DMSuperman_sub03_enhanced.webp"
+      }
+    ],
+    "uniqueLegacyRequired": true
   }
 ]
