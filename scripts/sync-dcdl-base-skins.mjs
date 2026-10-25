@@ -13,13 +13,13 @@
 // NDA gate: a skin is written only when it is released, i.e.
 //   - an official post (Supabase game_posts or patch_notes, game = dcdl) says it can be won /
 //     earned / obtained ("Join the event and win the X Base skin"), or
-//   - its name is in `confirmedInGame` in base-skins-notes.json (Tyler saw it in game).
+//   - its name is in `confirmedInGame` in base-skins-notes.json (Quantum saw it in game).
 // Anything else is left out entirely and only counted in the log ("held, not published"),
 // never named. The run aborts (writes nothing) when Supabase can't be reached, so a network
 // hiccup can't drop a skin from the page.
 //
 // What the sync owns: src/dcdl/data/base-skins.json and the art in public/dcdl/base-skins/.
-// base-skins-notes.json is Tyler's (takes, extra "how to get" text, confirmedInGame) and is
+// base-skins-notes.json is Quantum's (takes, extra "how to get" text, confirmedInGame) and is
 // never written here. The page joins the two by skin id.
 //
 //   node scripts/sync-dcdl-base-skins.mjs          # dry run: report what would change
@@ -155,7 +155,7 @@ function releasePost(name) {
   return null
 }
 
-// ---------- notes (Tyler's, read only) ----------
+// ---------- notes (Quantum's, read only) ----------
 const notes = fs.existsSync(NOTES_FILE) ? JSON.parse(fs.readFileSync(NOTES_FILE, 'utf8')) : {}
 const confirmed = new Set((notes.confirmedInGame || []).map((n) => n.toLowerCase()))
 

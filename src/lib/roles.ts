@@ -2,7 +2,7 @@
  * Site role ladder — isomorphic. Safe to import from client components.
  * The server-only resolution (Clerk lookup, gates) lives in ./roles-server.
  *
- *   admin   — Tyler. Everything, including approving applications and editing
+ *   admin   — Quantum. Everything, including approving applications and editing
  *             the official tier lists.
  *   editor  — trusted content creators. Guides + infographics (submitted for
  *             review) and their own tier lists.

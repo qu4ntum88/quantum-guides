@@ -1,7 +1,7 @@
 /**
  * Discord → Supabase sync for official game announcements and patch notes.
  *
- * Tyler's Discord server follows each game's official announcement channels;
+ * Quantum's Discord server follows each game's official announcement channels;
  * the read-only QuantumPatch bot reads those channels over Discord's REST API
  * (no gateway, nothing is ever posted). Every official post lands in the
  * `game_posts` archive (what Claude fact-checks release status against), and
@@ -13,7 +13,7 @@
  *   node scripts/sync-discord-patch-notes.mjs --full     # re-read every channel's whole history (default: only new posts)
  *   node scripts/sync-discord-patch-notes.mjs --out f.json  # also dump the built posts to a file for review
  *
- * Older posts the bot can't reach (Tyler's server followed some channels late) go in
+ * Older posts the bot can't reach (Quantum's server followed some channels late) go in
  * <exports>\<game>\_manual\patch-notes\ as "YYYY-MM-DD <title>.md|.txt", one post per file;
  * every run imports them the same way (see "Manual drop folders" below and the README.txt there).
  *
@@ -55,7 +55,7 @@ if (!TOKEN) { console.error('Missing DISCORD_BOT_TOKEN (checked env + .env.local
 if (!SB_URL || !SB_KEY) { console.error('Missing NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY.'); process.exit(1) }
 const supabase = createClient(SB_URL, SB_KEY)
 
-// Channels in Tyler's server → site game ids (src/lib/guide-games.ts).
+// Channels in Quantum's server → site game ids (src/lib/guide-games.ts).
 const CHANNELS = [
   { game: 'dcdl', id: '1247981244097237062' },
   { game: 'godforge', id: '1506120508159168583' },
@@ -324,7 +324,7 @@ for (const ch of CHANNELS) {
 }
 
 // ── Manual drop folders: older posts the bot can't reach ─────────────────────
-// Tyler's server only started following some channels recently, so he pastes older official
+// Quantum's server only started following some channels recently, so he pastes older official
 // posts into <exports>\<game>\_manual\patch-notes\ as "YYYY-MM-DD <title>.md|.txt" (see the
 // README.txt there). Each file is one post: the date comes from the name, the game from the
 // folder, and its id is "manual:<game>:<file name>", so re-runs update in place. Deleting or
@@ -389,7 +389,7 @@ for (const [game, dir] of Object.entries(MANUAL_DIRS)) {
     }
   }
 }
-// _manual\images\: images that went with a post (Discord's attachment links expire, so Tyler
+// _manual\images\: images that went with a post (Discord's attachment links expire, so Quantum
 // saves the ones worth keeping). The date in the file name ("roadmap 2026-06-12.png") ties it to
 // the post from that date; it is uploaded to the content-images bucket on --write and listed on
 // the post's `images`. A date with several posts needs the post's title in the name too.

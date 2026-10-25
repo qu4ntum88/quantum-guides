@@ -1,13 +1,13 @@
 # Editorial playbook
 
-How Claude drafts content for Quantum Game Guides. Claude is the junior editor: it drafts, Tyler (Quantum) edits, approves and decides when each piece goes out. The patch-day skill (`.claude/skills/patch-day/SKILL.md`) runs on these rules, and so should any other drafting session.
+How Claude drafts content for Quantum Game Guides. Claude is the junior editor: it drafts, Quantum edits, approves and decides when each piece goes out. The patch-day skill (`.claude/skills/patch-day/SKILL.md`) runs on these rules, and so should any other drafting session.
 
 ## 1. Drafts only
 
-- Every guide is saved as a `guides` row with `status = 'pending'`, `author = 'Quantum'`. Every History entry is an `entity_history` row with `status = 'pending'`. Nothing Claude writes is public until Tyler approves it.
+- Every guide is saved as a `guides` row with `status = 'pending'`, `author = 'Quantum'`. Every History entry is an `entity_history` row with `status = 'pending'`. Nothing Claude writes is public until Quantum approves it.
 - Never set `status = 'approved'`, never edit an approved row, never overwrite an existing id. `node scripts/patch-day.mjs draft <file>` enforces all of this, so use it instead of hand-written SQL inserts.
-- Never commit or push without Tyler saying so. `git add` is its own tool call (see the commit hook in CLAUDE.md).
-- Tyler trickles drafts out a few at a time. Don't pad a run with filler to look productive. One sharp post beats three thin ones.
+- Never commit or push without Quantum saying so. `git add` is its own tool call (see the commit hook in CLAUDE.md).
+- Quantum trickles drafts out a few at a time. Don't pad a run with filler to look productive. One sharp post beats three thin ones.
 
 ## 2. The NDA gate (creator program)
 
@@ -29,14 +29,14 @@ Rules that come up every time:
 
 - **A teaser is not a release.** "Coming next week", "get ready", "he's still out there", a roadmap or a feedback-report plan are announcements. Write them as "planned" or "announced", with the date of the post, and never as "out".
 - Dev plans are always "subject to change": say so when a draft leans on them.
-- **Facts only from the posts.** If a post doesn't name it (e.g. which legacy piece came with an ascension), don't guess; leave it out and flag it for Tyler.
+- **Facts only from the posts.** If a post doesn't name it (e.g. which legacy piece came with an ascension), don't guess; leave it out and flag it for Quantum.
 - Direction matters: "slightly adjusted Green Arrow's base Attack" is a `change`, not a buff or nerf, because the post doesn't say which way.
 - Some DCDL content rolls out per server ("Hypertime Tracker updates on some servers"). Use the History `servers` note, never claim a global date.
 - Void Hunters is pre-launch: everything is a test, a plan or a dev update. Godforge is in beta tests (Duels minigame, Beta 2). Say so.
 
 ## 4. Voice
 
-Write the way Tyler writes. The style references are the 2026-10-17 DCDL drafts (`top-5-*`, `base-skins-ranked`, `teen-titans-best-faction`, `shields-riddler-meta-brawl`) and the approved Invokers guide `grimnall-best-epic-partners`. Read one before drafting.
+Write the way Quantum writes. The style references are the 2026-10-17 DCDL drafts (`top-5-*`, `base-skins-ranked`, `teen-titans-best-faction`, `shields-riddler-meta-brawl`) and the approved Invokers guide `grimnall-best-epic-partners`. Read one before drafting.
 
 - First person, plain and direct. Open with the point: what changed and who should care.
 - Short paragraphs. Concrete numbers ("up to 1,600% of his ATK", "15% Crit Rate per ally"), bolded when they are the headline.
@@ -44,18 +44,18 @@ Write the way Tyler writes. The style references are the 2026-10-17 DCDL drafts 
 - Name things exactly as the game does, in the game's capitalisation.
 - Link to the site's own pages: champion pages (`/games/dc-dark-legion/heros/<id>`), tier lists, Best Teams, Invokers unit pages (`/games/invokers/heroes/<slug>`), and so on.
 - End with a short **Final Thoughts** section that points readers to the relevant tier list or page.
-- Opinions are Tyler's. Claude never invents a take, a ranking or a "this is the best" call. It lays out the facts and leaves a take slot.
+- Opinions are Quantum's. Claude never invents a take, a ranking or a "this is the best" call. It lays out the facts and leaves a take slot.
 
 ## 5. Take slots
 
-Every reaction post has at least one placeholder paragraph for Tyler's opinion, in exactly this form so the `draft` validator and Tyler can find it:
+Every reaction post has at least one placeholder paragraph for Quantum's opinion, in exactly this form so the `draft` validator and Quantum can find it:
 
 ```json
 { "type": "paragraph", "rich": true,
   "text": "<strong>[QUANTUM'S TAKE]</strong> Replace this paragraph. Prompt: is Ascension worth the investment for Batman, or should players wait for Harley Quinn and The Flash?" }
 ```
 
-Put it under a `My Take` heading after the facts, with a specific prompt question. History entries leave `take` empty unless Tyler's own existing text says it (e.g. his champion `quantumsTake`); then set `take_source` to where it came from.
+Put it under a `My Take` heading after the facts, with a specific prompt question. History entries leave `take` empty unless Quantum's own existing text says it (e.g. his champion `quantumsTake`); then set `take_source` to where it came from.
 
 ## 6. Guide format
 
@@ -66,7 +66,7 @@ Put it under a `My Take` heading after the facts, with a specific prompt questio
 - `id` is a lowercase-hyphen slug that reads like the title. `description` is one sentence for the card and the meta description. `tags` are lowercase.
 - `guides.game` picks the section: `dcdl`, `godforge`, `invokers`, `voidhunters`.
 
-## 7. Where Tyler reviews
+## 7. Where Quantum reviews
 
 - Guides: Site Admin `/admin` → <game> → Guides (drafts are marked "DRAFT · not public"), or Studio → Review Queue → "Read draft".
 - History: Site Admin → DC: Dark Legion → History.

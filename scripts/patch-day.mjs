@@ -204,7 +204,7 @@ if (fs.existsSync(DCDL_LANG) && fs.existsSync(DCDL_STATE)) {
   const extracted = fs.statSync(DCDL_STATE).mtime
   const d = (t) => t.toISOString().slice(0, 10)
   console.log(patched > extracted
-    ? `\n! DCDL client patched ${d(patched)}, after the last extraction (${d(extracted)}). Ask Tyler to run Site Admin → Site → Game Data: Extract from game files, Scan unreleased content [NDA], Refresh site kits (preview, then apply), Check Supreme Commander.`
+    ? `\n! DCDL client patched ${d(patched)}, after the last extraction (${d(extracted)}). Ask Quantum to run Site Admin → Site → Game Data: Extract from game files, Scan unreleased content [NDA], Refresh site kits (preview, then apply), Check Supreme Commander.`
     : `\nDCDL client last patched ${d(patched)}; extraction is newer (${d(extracted)}).`)
 }
 
@@ -293,7 +293,7 @@ async function draft(file, write) {
       if (b.type === 'image' && !/^(https:\/\/wfiuwxuogkwirkpgfnlj\.supabase\.co\/|\/)/.test(b.url ?? '')) errors.push(`${at}: image url must be a site path or a content-images URL`)
       for (const t of texts) {
         ndaHit(at, t)
-        if (t.includes('\u2014')) warn.push(`${at}: has an em dash; Tyler's style uses colons, commas or full stops`)
+        if (t.includes('\u2014')) warn.push(`${at}: has an em dash; Quantum's style uses colons, commas or full stops`)
         if (b.type === 'paragraph' && b.rich) {
           for (const m of t.matchAll(/<\/?([a-z0-9]+)([^>]*)>/gi)) {
             if (!ALLOWED_TAGS.has(m[1].toLowerCase())) errors.push(`${at}: <${m[1]}> is not allowed (strong/em/u/span/a/br only)`)
@@ -304,7 +304,7 @@ async function draft(file, write) {
       }
     })
     ndaHit(`${L} title/description`, `${g.title} ${g.description} ${(g.tags ?? []).join(' ')}`)
-    if (!blocks.some((b) => (b.text ?? '').includes("[QUANTUM'S TAKE]"))) errors.push(`${L}: needs a "[QUANTUM'S TAKE]" placeholder paragraph for Tyler`)
+    if (!blocks.some((b) => (b.text ?? '').includes("[QUANTUM'S TAKE]"))) errors.push(`${L}: needs a "[QUANTUM'S TAKE]" placeholder paragraph for Quantum`)
     return {
       id: g.id, game: g.game, title: g.title, description: g.description, tags: g.tags ?? [], cover_image: g.cover_image ?? null,
       body: JSON.stringify({ format: 'qgg-blocks', version: 1, blocks }),
@@ -324,7 +324,7 @@ async function draft(file, write) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(h.event_date ?? '')) errors.push(`${L}: event_date must be YYYY-MM-DD (the in-game date, not today)`)
     if (!(h.source_post_ids ?? []).length) errors.push(`${L}: needs source_post_ids (facts only from game_posts)`)
     for (const p of h.source_post_ids ?? []) if (!byId.has(p)) errors.push(`${L}: source post ${p} is not in game_posts`)
-    if (h.take && !h.take_source) errors.push(`${L}: a take may only be prefilled from Tyler's own text; say where it came from in take_source, or leave it empty`)
+    if (h.take && !h.take_source) errors.push(`${L}: a take may only be prefilled from Quantum's own text; say where it came from in take_source, or leave it empty`)
     ndaHit(L, `${h.title} ${h.body} ${h.take ?? ''}`)
     if ((existingHist ?? []).some((e) => e.entity_type === h.entity_type && e.entity_id === h.entity_id && e.event_date === h.event_date && e.kind === h.kind)) {
       warn.push(`${L}: an entry with this date and kind already exists, skipped`)

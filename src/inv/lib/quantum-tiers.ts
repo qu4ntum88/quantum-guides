@@ -10,7 +10,7 @@ import { TIERS } from './constants'
  * Saved from the Site Admin's Tier Lists tab into `official_tiers`
  * (entity types `inv_invoker` / `inv_titan`), which wins; the commit hook
  * (pull-tiers.mjs) folds it back into `src/inv/data/quantum-tiers.json` as the
- * fallback. Until Tyler saves one, there is none and the overall board shows
+ * fallback. Until Quantum saves one, there is none and the overall board shows
  * the boss-list average from the export instead. The per-boss lists are always
  * the game's own.
  */

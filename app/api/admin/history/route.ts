@@ -9,7 +9,7 @@ import legacy from '@/src/dcdl/data/legacy.json'
  * History entries for champion and legacy pages (`entity_history`).
  *
  * Entries are drafted as `pending` (by Claude, from the game_posts archive) and
- * Tyler approves them here. Approved rows are public through RLS and show on the
+ * Quantum approves them here. Approved rows are public through RLS and show on the
  * page within 60s. Admin only: this is editorial content published under his name.
  */
 
@@ -18,7 +18,7 @@ const TYPES = ['champion', 'legacy']
 
 // The champion / legacy pages are prerendered and only refresh on a visit after their 60s
 // window, and that visit still gets the old copy. Rebuild the affected pages right away instead,
-// so an approval shows the next time Tyler loads the page.
+// so an approval shows the next time Quantum loads the page.
 async function refreshPages(ids: string[]) {
   if (!ids.length) return
   const { data } = await supabaseAdmin.from('entity_history').select('entity_type, entity_id').in('id', ids)

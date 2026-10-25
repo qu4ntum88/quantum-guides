@@ -330,7 +330,7 @@ export default function SupremeCommanderView({ data }: { data: SupremeCommanderD
   const day = data.days.find((d) => d.day === activeDay) ?? data.days[0]
   const game = data.game
   const gameDay = game?.days.find((d) => d.day === day?.day)
-  // Tyler's icons win; the game's fill the rest.
+  // Quantum's icons win; the game's fill the rest.
   const icons = { ...game?.icons, ...data.itemIcons }
   const maps = game?.maneuvers?.maps ?? []
 

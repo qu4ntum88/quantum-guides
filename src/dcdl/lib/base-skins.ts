@@ -5,7 +5,7 @@ import notesRaw from '../data/base-skins-notes.json'
  * Read layer for the DC: Dark Legion Base Skins page (/games/dc-dark-legion/base-skins).
  *
  * base-skins.json is written by scripts/sync-dcdl-base-skins.mjs (stats, art, and the official
- * post each skin was released in; released skins only). base-skins-notes.json is Tyler's:
+ * post each skin was released in; released skins only). base-skins-notes.json is Quantum's:
  * his take and any extra "how to get" text per skin id, edited in Site Admin → DC: Dark
  * Legion → Base Skins. The sync never touches the notes file.
  */

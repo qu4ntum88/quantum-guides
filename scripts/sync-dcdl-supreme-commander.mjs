@@ -13,13 +13,13 @@
 //                           the monthly Tournament: groups, entry rules, end-of-season rewards
 //
 // What the sync owns (safe to re-run every patch):
-//   - numbers inside Tyler's sections: point values, which items count on each day, reward-round
+//   - numbers inside Quantum's sections: point values, which items count on each day, reward-round
 //     thresholds + Magic Eyes, Maneuvers milestones, league outcomes (it adds a missing outcome,
 //     e.g. "Win by Default") and Battle Honor ranking rewards;
 //   - the whole top-level `game` block (full 20-step tracks, daily + event rankings, League Duel
-//     victory points, Maneuvers maps, the Tournament, and game icons for items Tyler hasn't given
+//     victory points, Maneuvers maps, the Tournament, and game icons for items Quantum hasn't given
 //     one), plus the icon files it copies to public/dcdl/resource_icons/game/.
-// The intro, day titles, tips, labels, descriptions, item names and itemIcons are Tyler's and
+// The intro, day titles, tips, labels, descriptions, item names and itemIcons are Quantum's and
 // never touched. The admin save keeps `game` from disk, so editing the guide can't clobber it.
 //
 //   node scripts/sync-dcdl-supreme-commander.mjs          # dry run: report matches + differences
@@ -33,7 +33,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const GAME = process.env.DCDL_GAME_DIR || 'E:\\FunPlus\\DC Dark Legion\\game'
 const PIPELINE = process.env.DCDL_PIPELINE_DIR || 'E:\\GameAssets\\Exports\\_pipeline\\dcdl'
 const EXPORT = process.env.DCDL_EXPORT || 'E:\\GameAssets\\Exports\\dcdl'
-// Game icons for reward items with no icon of Tyler's, copied from the export's game-ui art.
+// Game icons for reward items with no icon of Quantum's, copied from the export's game-ui art.
 const ICON_DIR = 'public/dcdl/resource_icons/game'
 const WRITE = process.argv.includes('--write')
 const DATA_FILE = path.join(ROOT, 'src/dcdl/data/supreme-commander.json')
@@ -84,7 +84,7 @@ const ITEM_NAME = {
 const MAGIC_EYE = 92
 // "1,1" -> "1", "4,10" -> "4–10" (the site's rank labels)
 const rankLabel = (lo, hi) => (lo === hi ? `${lo}` : `${lo}–${hi}`)
-// Reward items Tyler already has an icon for under another name.
+// Reward items Quantum already has an icon for under another name.
 const ICON_ALIAS = { Chip: 'Chip (x1,000)', 'Random Mythic Champion Shard': 'Mythic Champion Shard' }
 // The reward track is shown in rounds of 5 steps (20 steps = 4 rounds); the site lists each
 // round's last threshold and the Magic Eyes inside it.
@@ -218,7 +218,7 @@ if (manDay) {
   }
   // League Duel results. ConfrontationWeekSettleWin/LoseReward are indexed by the group enum
   // (0 = no group yet, then Silver/Gold/Diamond = Gladiator/Elite/Master); checked against
-  // Tyler's in-game numbers for all three groups on 2026-10-17.
+  // Quantum's in-game numbers for all three groups on 2026-10-17.
   const win = cfg.ConfrontationWeekSettleWinReward, lose = cfg.ConfrontationWeekSettleLoseReward
   if (win.length !== enumOrder.length + 1 || lose.length !== win.length) {
     conflicts.push(`League Duel results: expected ${enumOrder.length + 1} win/lose rewards (no group + ${enumOrder.length} groups), the game has ${win.length}/${lose.length}.`)
@@ -372,7 +372,7 @@ next.game = {
   icons: {},
 }
 
-// Icons: Tyler's itemIcons win; an alias reuses one of his for the same item under another name;
+// Icons: Quantum's itemIcons win; an alias reuses one of his for the same item under another name;
 // otherwise the game's own icon is copied from the export's game-ui art.
 const uiRoot = (() => {
   const raw = path.join(EXPORT, '_raw')

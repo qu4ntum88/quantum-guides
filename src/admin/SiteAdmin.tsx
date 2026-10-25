@@ -26,7 +26,7 @@ import {
  *
  * Two kinds of tab, and the badge on each says which:
  *   - LOCAL tabs edit the repo's files (game data, takes, best teams, …). They only
- *     work under `next dev` on Tyler's PC; changes publish when committed and pushed.
+ *     work under `next dev` on Quantum's PC; changes publish when committed and pushed.
  *   - LIVE tabs write to Supabase (tier lists, guides, patch notes, infographics,
  *     review). They work here and on the live site at /admin, need an admin sign-in,
  *     and show on the site within about a minute.

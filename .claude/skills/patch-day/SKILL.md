@@ -1,11 +1,11 @@
 ---
 name: patch-day
-description: Turn a game update into draft content for Tyler to review, across DC: Dark Legion, Godforge, Invokers and Void Hunters. Finds official posts not yet handled, drafts DCDL History entries and short reaction guides as pending rows, and reports what needs his take. Use after Tyler presses the update buttons, or when he says "patch day", "new update is out", "draft the update posts" or similar. Pass "dry run" to preview without writing anything.
+description: Turn a game update into draft content for Quantum to review, across DC: Dark Legion, Godforge, Invokers and Void Hunters. Finds official posts not yet handled, drafts DCDL History entries and short reaction guides as pending rows, and reports what needs his take. Use after Quantum presses the update buttons, or when he says "patch day", "new update is out", "draft the update posts" or similar. Pass "dry run" to preview without writing anything.
 ---
 
 # Patch day
 
-Claude is the junior editor here: it drafts, Tyler approves. Everything this skill writes is a **pending draft**. It never publishes, commits or pushes.
+Claude is the junior editor here: it drafts, Quantum approves. Everything this skill writes is a **pending draft**. It never publishes, commits or pushes.
 
 **Before anything else, read `CLAUDE.md` and `docs/EDITORIAL.md`.** The playbook has the voice, the fact-check order, the NDA gate and the take-slot format this skill relies on. Read one style reference too (`select body from guides where id = 'grimnall-best-epic-partners'`, or one of the `top-5-*` drafts).
 
@@ -20,7 +20,7 @@ The working files for a run go in the scratchpad: `pending.json` (new posts) and
    node scripts/sync-discord-patch-notes.mjs
    ```
    If it reports new or changed posts, apply it (not in a dry run): `node scripts/sync-discord-patch-notes.mjs --write`.
-   - Copy every `! POSSIBLY MISSING TEXT:` line into the report verbatim. Following a channel only forwards what the devs *publish*; a bare heading means the text under it is missing. Tyler pastes it into `E:\GameAssets\Exports\<game>\_manual\patch-notes\fill-in\YYYY-MM-DD.txt` and re-runs the sync. Don't draft from a post with a gap until it's filled; skip it this run (don't `mark` it) so it comes back.
+   - Copy every `! POSSIBLY MISSING TEXT:` line into the report verbatim. Following a channel only forwards what the devs *publish*; a bare heading means the text under it is missing. Quantum pastes it into `E:\GameAssets\Exports\<game>\_manual\patch-notes\fill-in\YYYY-MM-DD.txt` and re-runs the sync. Don't draft from a post with a gap until it's filled; skip it this run (don't `mark` it) so it comes back.
    - All four games come in through the bot. Void Hunters' #dev-updates and #announcements were followed on 2026-10-17, so posts from before then are in the drop folder (`E:\GameAssets\Exports\void-hunters\_manual\patch-notes\`) and newer ones come from Discord. A Dev Update from #dev-updates counts as a patch note, the same way the dropped files did.
 2. List what hasn't been handled:
    ```bash
@@ -31,10 +31,10 @@ The working files for a run go in the scratchpad: `pending.json` (new posts) and
 
 ## 2. DCDL extras
 
-- If the list says the DCDL client was patched after the last extraction, or a new DCDL patch note is in the list, remind Tyler to run Site Admin → Site → Game Data (`/admin#site/game-data`, `next dev` only): **Extract from game files**, **Scan unreleased content [NDA]**, **Refresh site kits — preview** then **apply**, **Check Supreme Commander — preview**. Kit numbers in drafts should come from the refreshed data.
-- **Update folder summary.** After the extract, open the newest folder in `E:\GameAssets\Exports\dcdl\patches\` and read its `REPORT.md` (plus `data-changes\` where a row needs context). Replace the `_Run patch day with Claude…_` placeholder under `## Summary` with a short plain-English summary for Tyler: what's new; every kit and balance change in words (who, which skill, what the old → new values mean in play, e.g. "Lantern Shield cooldown 10s → 8s"), flagging the ones marked **not in official posts** as possible silent changes; anything notable in new art, text or scripts. Read the game's Chinese internal notes yourself; when the `≈` hint was missing or wrong, add the terms to `E:\GameAssets\Exports\_pipeline\dcdl\glossary.mjs`. A "Not traced to a champion" row: trace it by hand (skill ids are `<hero skill id>×100 + level`; auras are `KheroHaloLogicalSe`, summons `SeSubObject`) and say who it belongs to. Silent kit changes can become History entries (`kind: change`), but only once an official post or Tyler confirms them: the client data alone is not a source for a published entry.
+- If the list says the DCDL client was patched after the last extraction, or a new DCDL patch note is in the list, remind Quantum to run Site Admin → Site → Game Data (`/admin#site/game-data`, `next dev` only): **Extract from game files**, **Scan unreleased content [NDA]**, **Refresh site kits — preview** then **apply**, **Check Supreme Commander — preview**. Kit numbers in drafts should come from the refreshed data.
+- **Update folder summary.** After the extract, open the newest folder in `E:\GameAssets\Exports\dcdl\patches\` and read its `REPORT.md` (plus `data-changes\` where a row needs context). Replace the `_Run patch day with Claude…_` placeholder under `## Summary` with a short plain-English summary for Quantum: what's new; every kit and balance change in words (who, which skill, what the old → new values mean in play, e.g. "Lantern Shield cooldown 10s → 8s"), flagging the ones marked **not in official posts** as possible silent changes; anything notable in new art, text or scripts. Read the game's Chinese internal notes yourself; when the `≈` hint was missing or wrong, add the terms to `E:\GameAssets\Exports\_pipeline\dcdl\glossary.mjs`. A "Not traced to a champion" row: trace it by hand (skill ids are `<hero skill id>×100 + level`; auras are `KheroHaloLogicalSe`, summons `SeSubObject`) and say who it belongs to. Silent kit changes can become History entries (`kind: change`), but only once an official post or Quantum confirms them: the client data alone is not a source for a published entry.
 - Read the newest NDA change report (`E:\GameAssets\Exports\dcdl\_nda\_changes [NDA]\`) **for context only**: it tells you what not to write about. Never quote it, name what's in it, copy from it, or mention it in a draft or in a chat answer meant for the public. `draft` blocks drafts that name a held item.
-- New gift codes (`codes` rows): tell Tyler the code and its expiry so he can update Site Admin → <game> → Game Info (`/admin#dcdl/info`). There is no codes page; don't draft one.
+- New gift codes (`codes` rows): tell Quantum the code and its expiry so he can update Site Admin → <game> → Game Info (`/admin#dcdl/info`). There is no codes page; don't draft one.
 
 ## 3. History entries (DCDL)
 
@@ -51,7 +51,7 @@ For every new DCDL patch note (and release posts like "X Enters DC: Dark Legion"
 - `kind`: `release` / `rework` / `buff` / `nerf` / `rerun` / `change`. Use `change` when the post doesn't say which way ("slightly adjusted").
 - Facts only from `game_posts` / `patch_notes`. If the post doesn't name it (which legacy piece, exact numbers), leave it out and flag it.
 - `servers` for staggered rollouts ("Hypertime Tracker on some servers").
-- `take` stays empty, unless it's Tyler's own existing text (e.g. his `quantumsTake` on the champion); then add `"take_source": "heros.json quantumsTake"`.
+- `take` stays empty, unless it's Quantum's own existing text (e.g. his `quantumsTake` on the champion); then add `"take_source": "heros.json quantumsTake"`.
 - Match the tone of the existing entries: `select entity_id, kind, title, body from entity_history order by event_date desc limit 5`.
 - Cosmetic-only changes (skill visuals) and bug fixes don't get entries.
 
@@ -97,10 +97,10 @@ Each guide in `drafts.json`:
    ```bash
    node scripts/patch-day.mjs mark <id> <id> … --outcome skipped --note "teaser / maintenance / video"
    ```
-   Leave posts unlogged only when they're blocked (missing text, waiting on Tyler).
+   Leave posts unlogged only when they're blocked (missing text, waiting on Quantum).
 4. Check: `node scripts/patch-day.mjs` should now say "Nothing new since the last patch-day run" (or list only the blocked posts).
 
-## 6. Report to Tyler
+## 6. Report to Quantum
 
 Keep it short:
 

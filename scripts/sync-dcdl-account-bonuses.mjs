@@ -199,7 +199,7 @@ for (const f of fs.readdirSync(CHAMP_DIR).filter((x) => x.endsWith('.json')).sor
           let star = starOf(r.Condition)
           if (star == null) warnings.push(`${siteId}: Global Skill level ${r.Level} has no star condition`)
           // The task says star 0 for level 1, but in game level 1 switches on at 3★ White, the
-          // same "third star of the tier" as levels 2–5 (Tyler checked, 2026-10-23).
+          // same "third star of the tier" as levels 2–5 (Quantum checked, 2026-10-23).
           if (r.Level === 1 && star === 0) star = 3
           return {
             star,
