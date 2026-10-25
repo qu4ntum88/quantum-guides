@@ -41,7 +41,32 @@ export async function publicImage(src: string | null | undefined, max = 700): Pr
   }
 }
 
-const LOGO = () => publicImage('/images/site/Q GOLD FULL ICON.png', 300)
+// Kept in src/assets (not public/) so cards rendered at request time, like guides published
+// after a deploy, can read it: public/ is stripped from these routes' functions.
+let logoCache: string | null = null
+const LOGO = async () => {
+  if (logoCache) return logoCache
+  try {
+    logoCache = `data:image/png;base64,${fs.readFileSync(path.join(process.cwd(), 'src/assets/og/q-gold-icon.png')).toString('base64')}`
+  } catch {}
+  return logoCache
+}
+
+/** A remote image (e.g. a guide cover in Supabase Storage), shrunk to fit `max` px, as a PNG data URI; null on failure. */
+export async function remoteImage(url: string | null | undefined, max = 1200): Promise<string | null> {
+  if (!url || !/^https:\/\//.test(url)) return null
+  try {
+    const res = await fetch(url)
+    if (!res.ok) return null
+    const png = await sharp(Buffer.from(await res.arrayBuffer()))
+      .resize({ width: max, height: max, fit: 'inside', withoutEnlargement: true })
+      .png()
+      .toBuffer()
+    return `data:image/png;base64,${png.toString('base64')}`
+  } catch {
+    return null
+  }
+}
 
 function Brand({ logo }: { logo: string | null }) {
   return (
@@ -127,6 +152,33 @@ export async function renderCard({
             <Tier tier={tier} />
             <Brand logo={logo} />
           </div>
+        </div>
+      </div>
+    ),
+    { ...OG_SIZE, fonts: fonts() },
+  )
+}
+
+/**
+ * A guide's share card. Guide covers are wide, text-free hero art made to sit under the page's
+ * own title, so the card supplies the title and branding and shows the cover's right-hand side.
+ */
+export async function renderGuideCard({ overline, title, author, art }: { overline: string; title: string; author?: string | null; art?: string | null }) {
+  const logo = await LOGO()
+  const titleSize = title.length > 70 ? 40 : title.length > 48 ? 46 : title.length > 28 ? 54 : 64
+  return new ImageResponse(
+    (
+      <div style={{ display: 'flex', width: '100%', height: '100%', background: BG, position: 'relative', overflow: 'hidden' }}>
+        {art && <img src={art} style={{ position: 'absolute', right: 0, top: 0, width: 700, height: 630, objectFit: 'cover', objectPosition: 'right center' }} />}
+        {art && <div style={{ position: 'absolute', left: 0, top: 0, width: 820, height: 630, display: 'flex', background: 'linear-gradient(90deg, #120c1f 62%, rgba(18,12,31,0) 100%)' }} />}
+        <div style={{ position: 'absolute', left: 0, top: 0, width: 10, height: 630, background: GOLD, display: 'flex' }} />
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '56px 64px', width: 760, height: '100%' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+            <div style={{ display: 'flex', fontFamily: 'Unbounded', fontSize: 22, letterSpacing: 4, color: GOLD }}>{overline.toUpperCase()}</div>
+            <div style={{ display: 'flex', fontFamily: 'Unbounded', fontSize: titleSize, lineHeight: 1.12, color: '#fff' }}>{title}</div>
+            {author && <div style={{ display: 'flex', fontFamily: 'Inter', fontSize: 26, color: 'rgba(255,255,255,0.75)' }}>by {author}</div>}
+          </div>
+          <Brand logo={logo} />
         </div>
       </div>
     ),

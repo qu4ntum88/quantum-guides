@@ -27,7 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     title: /dark legion/i.test(guide.title) ? guide.title : `${guide.title}: DC: Dark Legion Guide`,
     description: guide.description || `${guide.title}, a DC: Dark Legion guide by ${guide.author || 'Quantum'}.`,
     path: `/games/dc-dark-legion/guides/${guide.id}`,
-    image: guide.coverImage,
+    // opengraph-image.tsx builds the share card; the cover is hero art for under the title.
+    image: false,
     type: 'article',
   })
 }

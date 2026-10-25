@@ -29,6 +29,12 @@ const nextConfig = {
     ]
   },
 
+  // Guide share cards render on request (guides can be published after a deploy), so their
+  // fonts and logo must ship with the function. Everything else og.tsx reads is build-time only.
+  outputFileTracingIncludes: {
+    '/games/dc-dark-legion/guides/**': ['src/assets/fonts/**/*', 'src/assets/og/**/*'],
+  },
+
   // Share images (opengraph-image.tsx, /og-default.png) are rendered at build time from
   // files in public/. Because they read public/ with a computed path, the bundler packs
   // the WHOLE folder (~1.3 GB, mostly Godforge art) into each of those functions, and
@@ -39,6 +45,7 @@ const nextConfig = {
     '/games/dc-dark-legion/heros/**': ['public/**/*'],
     '/games/dc-dark-legion/legacy/**': ['public/**/*'],
     '/og-default.png': ['public/**/*'],
+    '/games/dc-dark-legion/guides/**': ['public/**/*'],
     // The file-writing admin routes save images under public/ with computed paths, so the
     // tracer packs all of it (1.5 GB). They are notProd()-blocked on Vercel anyway, and no
     // live admin route (tiers, content, whoami) reads public/ at runtime.
