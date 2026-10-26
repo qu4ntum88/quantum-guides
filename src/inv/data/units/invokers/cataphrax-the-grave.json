@@ -1,0 +1,582 @@
+{
+ "slug": "cataphrax-the-grave",
+ "kind": "Invoker",
+ "name": "Cataphrax the Grave",
+ "faction": "Nocturna",
+ "rarity": "Legendary",
+ "class": "Melee Attacker",
+ "element": "Earth",
+ "soulSign": "Sign of Temero",
+ "gender": "Male",
+ "role": "Melee Attacker",
+ "portrait": "/invokers/units/invokers/cataphrax-the-grave/portrait.webp",
+ "fullArt": "/invokers/units/invokers/cataphrax-the-grave/full.webp",
+ "stats": {
+  "base": {
+   "Health": "852",
+   "Attack": "97",
+   "Defense": "70",
+   "Critical rate": "5%",
+   "Critical damage": "50%",
+   "Accuracy": "3",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "5",
+   "Instinct": "5",
+   "Run speed": "120"
+  },
+  "max": {
+   "Health": "9,131",
+   "Attack": "1,187",
+   "Defense": "729",
+   "Critical rate": "10%",
+   "Critical damage": "60%",
+   "Accuracy": "23",
+   "Resistance": "10",
+   "Combo speed": "0",
+   "Skill speed": "6",
+   "Skill recovery": "0",
+   "Mana generation": "37",
+   "Instinct": "41",
+   "Run speed": "150"
+  }
+ },
+ "skills": [
+  {
+   "name": "Combo Attack",
+   "type": "Combo",
+   "label": "Combo Attack",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/cataphrax-the-grave/skills/0.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+111",
+    "titan": "+60"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 24 damage.\nDamage: 25% ATK\n#2 Attacks 1 enemy, dealing 36 damage.\nDamage: 37.5% ATK\n#3 Attacks 1 enemy, dealing 48 damage.\nDamage: 49% ATK\n#4 Attacks 1 enemy, dealing 61 damage.\nDamage: 63% ATK\n#5 Attacks 1 enemy, dealing 73 damage. Cataphrax gains 10 Ultimate Mana.\nDamage: 75% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 26 damage.\nDamage: 26.5% ATK\n#2 Attacks 1 enemy, dealing 39 damage.\nDamage: 39.7% ATK\n#3 Attacks 1 enemy, dealing 50 damage.\nDamage: 51.9% ATK\n#4 Attacks 1 enemy, dealing 65 damage.\nDamage: 66.8% ATK\n#5 Attacks 1 enemy, dealing 77 damage. Cataphrax gains 11 Ultimate Mana.\nDamage: 79.5% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 27 damage.\nDamage: 28% ATK\n#2 Attacks 1 enemy, dealing 41 damage.\nDamage: 42% ATK\n#3 Attacks 1 enemy, dealing 53 damage.\nDamage: 54.9% ATK\n#4 Attacks 1 enemy, dealing 68 damage.\nDamage: 70.6% ATK\n#5 Attacks 1 enemy, dealing 81 damage. Cataphrax gains 12 Ultimate Mana.\nDamage: 84% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 30 damage.\nDamage: 30.5% ATK\n#2 Attacks 1 enemy, dealing 44 damage.\nDamage: 45.8% ATK\n#3 Attacks 1 enemy, dealing 58 damage.\nDamage: 59.8% ATK\n#4 Attacks 1 enemy, dealing 75 damage.\nDamage: 76.9% ATK\n#5 Attacks 1 enemy, dealing 89 damage. Cataphrax gains 13 Ultimate Mana.\nDamage: 91.5% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 32 damage.\nDamage: 33.5% ATK\n#2 Attacks 1 enemy, dealing 49 damage.\nDamage: 50.2% ATK\n#3 Attacks 1 enemy, dealing 64 damage.\nDamage: 65.7% ATK\n#4 Attacks 1 enemy, dealing 82 damage.\nDamage: 84.4% ATK\n#5 Attacks 1 enemy, dealing 97 damage. Cataphrax gains 14 Ultimate Mana.\nDamage: 100.5% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 35 damage.\nDamage: 36% ATK\n#2 Attacks 1 enemy, dealing 52 damage.\nDamage: 54% ATK\n#3 Attacks 1 enemy, dealing 68 damage.\nDamage: 70.6% ATK\n#4 Attacks 1 enemy, dealing 88 damage.\nDamage: 90.7% ATK\n#5 Attacks 1 enemy, dealing 105 damage. Cataphrax gains 15 Ultimate Mana.\nDamage: 108% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 38 damage.\nDamage: 39% ATK\n#2 Attacks 1 enemy, dealing 57 damage.\nDamage: 58.5% ATK\n#3 Attacks 1 enemy, dealing 74 damage.\nDamage: 76.4% ATK\n#4 Attacks 1 enemy, dealing 95 damage.\nDamage: 98.3% ATK\n#5 Attacks 1 enemy, dealing 113 damage. Cataphrax gains 16 Ultimate Mana.\nDamage: 117% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 40 damage.\nDamage: 41.5% ATK\n#2 Attacks 1 enemy, dealing 60 damage.\nDamage: 62.2% ATK\n#3 Attacks 1 enemy, dealing 79 damage.\nDamage: 81.3% ATK\n#4 Attacks 1 enemy, dealing 101 damage.\nDamage: 104.6% ATK\n#5 Attacks 1 enemy, dealing 121 damage. Cataphrax gains 17 Ultimate Mana.\nDamage: 124.5% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 43 damage.\nDamage: 44.5% ATK\n#2 Attacks 1 enemy, dealing 65 damage.\nDamage: 66.8% ATK\n#3 Attacks 1 enemy, dealing 85 damage.\nDamage: 87.2% ATK\n#4 Attacks 1 enemy, dealing 109 damage.\nDamage: 112.1% ATK\n#5 Attacks 1 enemy, dealing 129 damage. Cataphrax gains 18 Ultimate Mana.\nDamage: 133.5% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 46 damage.\nDamage: 47% ATK\n#2 Attacks 1 enemy, dealing 68 damage.\nDamage: 70.5% ATK\n#3 Attacks 1 enemy, dealing 89 damage.\nDamage: 92.1% ATK\n#4 Attacks 1 enemy, dealing 115 damage.\nDamage: 118.4% ATK\n#5 Attacks 1 enemy, dealing 137 damage. Cataphrax gains 19 Ultimate Mana.\nDamage: 141% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "-",
+     "cost": "-",
+     "text": "#1 Attacks 1 enemy, dealing 49 damage.\nDamage: 50% ATK\n#2 Attacks 1 enemy, dealing 73 damage.\nDamage: 75% ATK\n#3 Attacks 1 enemy, dealing 95 damage.\nDamage: 98% ATK\n#4 Attacks 1 enemy, dealing 122 damage.\nDamage: 126% ATK\n#5 Attacks 1 enemy, dealing 146 damage. Cataphrax gains 20 Ultimate Mana.\nDamage: 150% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Accursed Earth",
+   "type": "Active Skill1",
+   "label": "Skill 1",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/cataphrax-the-grave/skills/1.webp",
+   "effects": [],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 75 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.25s for each critical hit.\n#1 Damage: 77.5% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 80 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.3s for each critical hit.\n#1 Damage: 82.1% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 84 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.35s for each critical hit.\n#1 Damage: 86.8% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 92 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.4s for each critical hit.\n#1 Damage: 94.6% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 101 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.45s for each critical hit.\n#1 Damage: 103.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 108 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.5s for each critical hit.\n#1 Damage: 111.6% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 117 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.55s for each critical hit.\n#1 Damage: 120.9% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 125 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.6s for each critical hit.\n#1 Damage: 128.6% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 134 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.65s for each critical hit.\n#1 Damage: 137.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 141 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.7s for each critical hit.\n#1 Damage: 145.7% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "10s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 6m radius around Cataphrax, dealing 150 damage. Reduces the cooldown of Active Skill 3 on Cataphrax by 0.75s for each critical hit.\n#1 Damage: 155% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Howling Swing",
+   "type": "Active Skill2",
+   "label": "Skill 2",
+   "aoe": true,
+   "icon": "/invokers/units/invokers/cataphrax-the-grave/skills/2.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Combo Speed stat by the indicated percentage."
+    },
+    {
+     "label": "Move SPD Down",
+     "group": "Debuffs",
+     "description": "Decreases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+25",
+    "titan": "+14"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 150 damage. Casts a [15% Move SPD Down] debuff on the targets, lasting 12s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 155% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 159 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 12s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 164.3% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 168 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 12s. Then, casts a [15% Combo SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 173.6% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 183 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 12s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 12s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 189.1% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 201 damage. Casts a [20% Move SPD Down] debuff on the targets, lasting 14s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 14s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 207.7% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 217 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 14s. Then, casts a [20% Combo SPD Down] debuff on the targets, lasting 14s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 223.2% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 235 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 14s. Then, casts a [25% Combo SPD Down] debuff on the targets, lasting 14s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 241.8% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 250 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 16s. Then, casts a [25% Combo SPD Down] debuff on the targets, lasting 16s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 257.3% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 268 damage. Casts a [25% Move SPD Down] debuff on the targets, lasting 16s. Then, casts a [25% Combo SPD Down] debuff on the targets, lasting 16s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 275.9% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 283 damage. Casts a [30% Move SPD Down] debuff on the targets, lasting 16s. Then, casts a [25% Combo SPD Down] debuff on the targets, lasting 16s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 291.4% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks the 10 enemies with the lowest HP% in a 7m semicircle in front of Cataphrax, dealing 301 damage. Casts a [30% Move SPD Down] debuff on the targets, lasting 16s. Then, casts a [30% Combo SPD Down] debuff on the targets, lasting 16s.\nAccuracy required for: Move SPD Down, Combo SPD Down\n#1 Damage: 310% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Soul Ravager",
+   "type": "Active Skill3",
+   "label": "Skill 3",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/cataphrax-the-grave/skills/3.webp",
+   "effects": [
+    {
+     "label": "Combo SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Combo Speed stat by the indicated percentage."
+    },
+    {
+     "label": "Move SPD Up",
+     "group": "Buffs",
+     "description": "Increases the recipient's Movement Speed by the indicated amount."
+    }
+   ],
+   "manaGen": {
+    "ult": "+31",
+    "titan": "+17"
+   },
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 310 damage. Casts a [15% Move SPD Up] buff on Cataphrax, lasting 10s. Then, casts a [15% Combo SPD Up] buff on Cataphrax, lasting 10s.\n#1 Damage: 320% ATK"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "27s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 329 damage. Casts a [20% Move SPD Up] buff on Cataphrax, lasting 10s. Then, casts a [15% Combo SPD Up] buff on Cataphrax, lasting 10s.\n#1 Damage: 339.2% ATK"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 348 damage. Casts a [20% Move SPD Up] buff on Cataphrax, lasting 10s. Then, casts a [15% Combo SPD Up] buff on Cataphrax, lasting 10s.\n#1 Damage: 358.4% ATK"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "26s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 379 damage. Casts a [20% Move SPD Up] buff on Cataphrax, lasting 10s. Then, casts a [20% Combo SPD Up] buff on Cataphrax, lasting 10s.\n#1 Damage: 390.4% ATK"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 416 damage. Casts a [20% Move SPD Up] buff on Cataphrax, lasting 12s. Then, casts a [20% Combo SPD Up] buff on Cataphrax, lasting 12s.\n#1 Damage: 428.8% ATK"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "25s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 447 damage. Casts a [25% Move SPD Up] buff on Cataphrax, lasting 12s. Then, casts a [20% Combo SPD Up] buff on Cataphrax, lasting 12s.\n#1 Damage: 460.8% ATK"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 484 damage. Casts a [25% Move SPD Up] buff on Cataphrax, lasting 12s. Then, casts a [25% Combo SPD Up] buff on Cataphrax, lasting 12s.\n#1 Damage: 499.2% ATK"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "24s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 515 damage. Casts a [25% Move SPD Up] buff on Cataphrax, lasting 14s. Then, casts a [25% Combo SPD Up] buff on Cataphrax, lasting 14s.\n#1 Damage: 531.2% ATK"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 553 damage. Casts a [25% Move SPD Up] buff on Cataphrax, lasting 14s. Then, casts a [25% Combo SPD Up] buff on Cataphrax, lasting 14s.\n#1 Damage: 569.6% ATK"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "23s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 584 damage. Casts a [30% Move SPD Up] buff on Cataphrax, lasting 14s. Then, casts a [25% Combo SPD Up] buff on Cataphrax, lasting 14s.\n#1 Damage: 601.6% ATK"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "22s",
+     "cost": "0",
+     "text": "Attacks 1 enemy, dealing 621 damage. Casts a [30% Move SPD Up] buff on Cataphrax, lasting 14s. Then, casts a [30% Combo SPD Up] buff on Cataphrax, lasting 14s.\n#1 Damage: 640% ATK"
+    }
+   ]
+  },
+  {
+   "name": "Cruel Whirligig",
+   "type": "Ultimate",
+   "label": "Ultimate",
+   "aoe": false,
+   "icon": "/invokers/units/invokers/cataphrax-the-grave/skills/4.webp",
+   "effects": [],
+   "manaGen": null,
+   "levels": [
+    {
+     "level": 1,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 167 damage per hit. Heals Cataphrax 3 times, restoring (35% * Damage Dealt) HP per heal. Cataphrax gains 100 Titan Mana on the third hit.\n#1 Damage: 172.5% ATK\n#2 Heal: 35% * Damage Dealt\n#3 Damage: 172.5% ATK\n#4 Heal: 35% * Damage Dealt\n#5 Damage: 172.5% ATK\n#6 Heal: 35% * Damage Dealt"
+    },
+    {
+     "level": 2,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 177 damage per hit. Heals Cataphrax 3 times, restoring (40% * Damage Dealt) HP per heal. Cataphrax gains 100 Titan Mana on the third hit.\n#1 Damage: 182.8% ATK\n#2 Heal: 40% * Damage Dealt\n#3 Damage: 182.8% ATK\n#4 Heal: 40% * Damage Dealt\n#5 Damage: 182.8% ATK\n#6 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 3,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 187 damage per hit. Heals Cataphrax 3 times, restoring (40% * Damage Dealt) HP per heal. Cataphrax gains 125 Titan Mana on the third hit.\n#1 Damage: 193.2% ATK\n#2 Heal: 40% * Damage Dealt\n#3 Damage: 193.2% ATK\n#4 Heal: 40% * Damage Dealt\n#5 Damage: 193.2% ATK\n#6 Heal: 40% * Damage Dealt"
+    },
+    {
+     "level": 4,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "900 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 204 damage per hit. Heals Cataphrax 3 times, restoring (45% * Damage Dealt) HP per heal. Cataphrax gains 125 Titan Mana on the third hit.\n#1 Damage: 210.5% ATK\n#2 Heal: 45% * Damage Dealt\n#3 Damage: 210.5% ATK\n#4 Heal: 45% * Damage Dealt\n#5 Damage: 210.5% ATK\n#6 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 5,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 224 damage per hit. Heals Cataphrax 3 times, restoring (45% * Damage Dealt) HP per heal. Cataphrax gains 125 Titan Mana on the third hit.\n#1 Damage: 231.2% ATK\n#2 Heal: 45% * Damage Dealt\n#3 Damage: 231.2% ATK\n#4 Heal: 45% * Damage Dealt\n#5 Damage: 231.2% ATK\n#6 Heal: 45% * Damage Dealt"
+    },
+    {
+     "level": 6,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 241 damage per hit. Heals Cataphrax 3 times, restoring (50% * Damage Dealt) HP per heal. Cataphrax gains 125 Titan Mana on the third hit.\n#1 Damage: 248.4% ATK\n#2 Heal: 50% * Damage Dealt\n#3 Damage: 248.4% ATK\n#4 Heal: 50% * Damage Dealt\n#5 Damage: 248.4% ATK\n#6 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 7,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "875 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 261 damage per hit. Heals Cataphrax 3 times, restoring (50% * Damage Dealt) HP per heal. Cataphrax gains 150 Titan Mana on the third hit.\n#1 Damage: 269.1% ATK\n#2 Heal: 50% * Damage Dealt\n#3 Damage: 269.1% ATK\n#4 Heal: 50% * Damage Dealt\n#5 Damage: 269.1% ATK\n#6 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 8,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 278 damage per hit. Heals Cataphrax 3 times, restoring (50% * Damage Dealt) HP per heal. Cataphrax gains 150 Titan Mana on the third hit.\n#1 Damage: 286.4% ATK\n#2 Heal: 50% * Damage Dealt\n#3 Damage: 286.4% ATK\n#4 Heal: 50% * Damage Dealt\n#5 Damage: 286.4% ATK\n#6 Heal: 50% * Damage Dealt"
+    },
+    {
+     "level": 9,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 298 damage per hit. Heals Cataphrax 3 times, restoring (60% * Damage Dealt) HP per heal. Cataphrax gains 150 Titan Mana on the third hit.\n#1 Damage: 307% ATK\n#2 Heal: 60% * Damage Dealt\n#3 Damage: 307% ATK\n#4 Heal: 60% * Damage Dealt\n#5 Damage: 307% ATK\n#6 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 10,
+     "crown": false,
+     "cooldown": "15s",
+     "cost": "850 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 315 damage per hit. Heals Cataphrax 3 times, restoring (60% * Damage Dealt) HP per heal. Cataphrax gains 175 Titan Mana on the third hit.\n#1 Damage: 324.3% ATK\n#2 Heal: 60% * Damage Dealt\n#3 Damage: 324.3% ATK\n#4 Heal: 60% * Damage Dealt\n#5 Damage: 324.3% ATK\n#6 Heal: 60% * Damage Dealt"
+    },
+    {
+     "level": 11,
+     "crown": true,
+     "cooldown": "15s",
+     "cost": "800 ult mana",
+     "text": "Attacks 1 enemy 3 times, dealing 335 damage per hit. Heals Cataphrax 3 times, restoring (70% * Damage Dealt) HP per heal. Cataphrax gains 200 Titan Mana on the third hit.\n#1 Damage: 345% ATK\n#2 Heal: 70% * Damage Dealt\n#3 Damage: 345% ATK\n#4 Heal: 70% * Damage Dealt\n#5 Damage: 345% ATK\n#6 Heal: 70% * Damage Dealt"
+    }
+   ]
+  }
+ ],
+ "tolerances": [
+  {
+   "label": "Fatigue",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  },
+  {
+   "label": "Frost",
+   "byLevel": [
+    "100%",
+    "110%",
+    "120%",
+    "130%",
+    "140%",
+    "150%",
+    "160%",
+    "170%",
+    "180%",
+    "190%",
+    "200%"
+   ]
+  }
+ ],
+ "corruptions": [],
+ "bio": "Cataphrax is powered by ghosts. Literally. He must batter phantoms into submission with his giant funereal club to stay alive. Without a steady stream of ghosts, Cataphrax's body will turn to dust, his own spirit being trapped by the club he holds dear. In another life, Cataphrax and fellow ghost smasher Battarok are best friends.",
+ "ratings": {
+  "althar": "S",
+  "galvos": "S",
+  "hyxxis": "A+",
+  "koltmos": "S",
+  "omnissi-astral": "E",
+  "omnissi-dark": "E",
+  "omnissi-earth": "S",
+  "omnissi-fire": "A+",
+  "omnissi-light": "A+",
+  "omnissi-water": "E",
+  "omnissi-wind": "E",
+  "pentiax": "E",
+  "sakiel": "S",
+  "sedula": "S",
+  "sorgott": "A+",
+  "ulgorim": "S",
+  "yskara": "E"
+ },
+ "overall": {
+  "tier": "A+",
+  "score": 52.1,
+  "lists": 17
+ }
+}
