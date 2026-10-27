@@ -7,6 +7,7 @@ import WorldHero from '@/src/qgg/components/WorldHero'
 import { breadcrumbLd, GF_CRUMB, pageMeta } from '@/src/lib/seo'
 import { gfEntities, getGfTieredRoster } from '@/src/gf/lib/heroes'
 import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuidePage'
+import HubLogos from '@/src/qgg/components/HubLogos'
 
 export const metadata = pageMeta({
   title: 'Godforge Guides: Tier List, Heroes & Dungeons',
@@ -52,11 +53,7 @@ export default async function GodforgePage() {
       <WorldHero
         world="godforge"
         overline="Game Hub"
-        title={
-          <>
-            <img src="/images/site/Godforge_LogoPNG.png" alt="Godforge" className="game-title-logo" /> Guides
-          </>
-        }
+        title="Godforge Guides"
         sub="Hero collector RPG of gods, myths and legends. Tier lists, every hero's kit and lore, and a guide to each dungeon."
       />
 
@@ -150,6 +147,7 @@ export default async function GodforgePage() {
           </aside>
         </div>
       </div>
+      <HubLogos game="godforge" />
     </main>
   )
 }

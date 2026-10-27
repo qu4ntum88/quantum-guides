@@ -7,6 +7,7 @@ import QTile from '@/src/qgg/components/QTile'
 import { breadcrumbLd, pageMeta, VH_CRUMB } from '@/src/lib/seo'
 import { getVhTieredRoster, vhEntities } from '@/src/vh/lib/hunters'
 import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuidePage'
+import HubLogos from '@/src/qgg/components/HubLogos'
 
 // Guides, codes and patch notes come from the CMS; refresh like the guide pages.
 export const revalidate = 60
@@ -90,6 +91,7 @@ export default async function VoidHuntersGuidesPage() {
           </aside>
         </div>
       </div>
+      <HubLogos game="voidhunters" />
     </main>
   )
 }

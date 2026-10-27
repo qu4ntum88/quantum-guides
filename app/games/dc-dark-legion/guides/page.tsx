@@ -4,6 +4,7 @@ import { getGuidesList, getGameInfo, getInfographics, getPatchNotes } from '@/sr
 import { getBaseSkins } from '@/src/dcdl/lib/base-skins'
 import JsonLd from '@/app/components/JsonLd'
 import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
+import HubLogos from '@/src/qgg/components/HubLogos'
 
 // Read published content from Supabase (with a file fallback); refresh at most
 // once a minute so editor changes appear without a redeploy.
@@ -309,6 +310,7 @@ export default async function GuidesPage() {
           </div>
         </div>
       </section>
+      <HubLogos game="dcdl" />
     </main>
   )
 }

@@ -195,8 +195,8 @@ export default function TierBrowser({
             </div>
             {orderedRows.map((r) => (
               <div key={r.tier} className="qtb-row" style={{ '--tier': TIER_COLORS[r.tier] ?? '#666' } as React.CSSProperties}>
-                <span className="qtb-plate">
-                  <span className="qtb-plate-letter">{r.tier}</span>
+                <span className="q-tierlabel" style={{ '--tier-color': TIER_COLORS[r.tier] ?? '#666' } as React.CSSProperties}>
+                  <span className={`q-tierlabel-letter${r.tier.length > 2 ? ' is-long' : ''}`}>{r.tier}</span>
                 </span>
                 {columns.map((c) => {
                   const members = r.groups.find((g) => g.role === c.key)?.members ?? []
@@ -219,8 +219,8 @@ export default function TierBrowser({
             ))}
             {unranked.length > 0 && (
               <div className="qtb-row qtb-row--unranked">
-                <span className="qtb-plate qtb-plate--none">
-                  <span className="qtb-plate-letter">{unrankedLabel}</span>
+                <span className="q-tierlabel q-tierlabel--none">
+                  <span className="q-tierlabel-letter is-word">{unrankedLabel}</span>
                 </span>
                 <div className="qtb-cell qtb-cell--wide">
                   {unranked.map((e) => (

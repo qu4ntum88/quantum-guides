@@ -7,6 +7,7 @@ import { getIcons, toTile } from '@/src/inv/lib/board'
 import { getEffects, getInvokers, getTierLists, getTitans } from '@/src/inv/lib/data'
 import { tierListPath } from '@/src/inv/lib/constants'
 import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuidePage'
+import HubLogos from '@/src/qgg/components/HubLogos'
 
 const PATH = '/games/invokers/guides'
 
@@ -111,6 +112,7 @@ export default async function InvokersHubPage() {
           </div>
         </section>
       </div>
+      <HubLogos game="invokers" />
     </main>
   )
 }

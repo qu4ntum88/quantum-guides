@@ -822,7 +822,7 @@ function GameMap({
           return (
             <g key={`pz${i}`}>
               <circle cx={pos.x} cy={pos.y} r="2.7" fill="rgba(6,6,12,0.82)" stroke="#7c3aed" strokeWidth="0.5" />
-              <text x={pos.x} y={pos.y} fill="#fff" fontSize="3.4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="central">{plazaNumber(i)}</text>
+              <text x={pos.x} y={pos.y} fill="#fff" fontSize="3.4" fontFamily="Montserrat, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="central">{plazaNumber(i)}</text>
             </g>
           )
         })}
@@ -832,7 +832,7 @@ function GameMap({
           return (
             <g key={`am${i}`}>
               <circle cx={pos.x} cy={pos.y} r="2.7" fill="rgba(6,6,12,0.82)" stroke="#f59e0b" strokeWidth="0.5" />
-              <text x={pos.x} y={pos.y} fill="#fff" fontSize="3.4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="central">{armoryNumber(i)}</text>
+              <text x={pos.x} y={pos.y} fill="#fff" fontSize="3.4" fontFamily="Montserrat, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="central">{armoryNumber(i)}</text>
             </g>
           )
         })}
@@ -864,7 +864,7 @@ function GameMap({
                   <rect x={c.x - (b.name.length * 1.35 + 2)} y={c.y - BASE_SIZE / 2 - 9}
                     width={b.name.length * 2.7 + 4} height="6" rx="1.5"
                     fill="rgba(6,6,12,0.85)" stroke={g.color} strokeOpacity="0.75" strokeWidth="0.25" />
-                  <text x={c.x} y={c.y - BASE_SIZE / 2 - 4.7} fill="#fff" fontSize="3.6" fontFamily="Inter, sans-serif" fontWeight="600" textAnchor="middle">
+                  <text x={c.x} y={c.y - BASE_SIZE / 2 - 4.7} fill="#fff" fontSize="3.6" fontFamily="Montserrat, sans-serif" fontWeight="600" textAnchor="middle">
                     {b.name}
                   </text>
                 </>
@@ -880,7 +880,7 @@ function GameMap({
             <circle cx={co.bx} cy={co.by} r="0.7" fill={co.color} />
             <rect x={co.px} y={co.py - 3} width={co.w} height="6" rx="1.5"
               fill="rgba(6,6,12,0.9)" stroke={co.color} strokeOpacity="0.8" strokeWidth="0.3" />
-            <text x={co.px + 2} y={co.py + 0.4} fill="#fff" fontSize="3.6" fontFamily="Inter, sans-serif" fontWeight="600" dominantBaseline="middle">
+            <text x={co.px + 2} y={co.py + 0.4} fill="#fff" fontSize="3.6" fontFamily="Montserrat, sans-serif" fontWeight="600" dominantBaseline="middle">
               {co.name}
             </text>
           </g>
@@ -892,7 +892,7 @@ function GameMap({
             <rect x={groupLabel.x - (groupLabel.name.length * 1.5 + 3)} y={groupLabel.y - 4}
               width={groupLabel.name.length * 3 + 6} height="7" rx="2"
               fill="rgba(6,6,12,0.9)" stroke={groupLabel.color} strokeWidth="0.4" />
-            <text x={groupLabel.x} y={groupLabel.y - 0.3} fill="#fff" fontSize="4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
+            <text x={groupLabel.x} y={groupLabel.y - 0.3} fill="#fff" fontSize="4" fontFamily="Montserrat, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
               {groupLabel.name}
             </text>
           </g>
@@ -905,7 +905,7 @@ function GameMap({
             <circle cx={s.cx} cy={s.cy} r="0.7" fill={s.color} />
             <rect x={s.px} y={s.py} width={s.w} height="7" rx="2"
               fill="rgba(6,6,12,0.9)" stroke={s.color} strokeWidth="0.4" />
-            <text x={s.px + s.w / 2} y={s.py + 3.7} fill="#fff" fontSize="4" fontFamily="Inter, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
+            <text x={s.px + s.w / 2} y={s.py + 3.7} fill="#fff" fontSize="4" fontFamily="Montserrat, sans-serif" fontWeight="700" textAnchor="middle" dominantBaseline="middle">
               {s.name}
             </text>
           </g>
@@ -1422,18 +1422,18 @@ function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, stri
   // Plaza + armory number badges (upright)
   const plazaBadges = PLAZA.map((p, i) => {
     const pos = toSvg(p.x, p.y)
-    return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#7c3aed" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${plazaNumber(i)}</text>`
+    return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#7c3aed" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Montserrat, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${plazaNumber(i)}</text>`
   }).join('')
   const armoryBadges = ARMORIES.map((a, i) => {
     if (!ultimate && a.ultimateOnly) return ''
     const pos = toSvg(a.x, a.y)
-    return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#f59e0b" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${armoryNumber(i)}</text>`
+    return `<circle cx="${pos.x}" cy="${pos.y}" r="2.7" fill="rgba(6,6,12,0.82)" stroke="#f59e0b" stroke-width="0.5"/><text x="${pos.x}" y="${pos.y}" fill="#fff" font-size="3.4" font-family="Montserrat, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="central">${armoryNumber(i)}</text>`
   }).join('')
 
   // Solo-group name labels (ultimate + toggle) — same side-stacked layout as on screen
   const soloSvg = (ultimate && soloLabels)
     ? layoutSoloLabels(bases, groupNames).map(s =>
-        `<line x1="${s.cx}" y1="${s.cy}" x2="${s.lx}" y2="${s.py + 3.5}" stroke="${s.color}" stroke-opacity="0.8" stroke-width="0.3"/><circle cx="${s.cx}" cy="${s.cy}" r="0.7" fill="${s.color}"/><rect x="${s.px}" y="${s.py}" width="${s.w}" height="7" rx="2" fill="rgba(6,6,12,0.9)" stroke="${s.color}" stroke-width="0.4"/><text x="${s.px + s.w / 2}" y="${s.py + 3.7}" fill="#fff" font-size="4" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">${esc(s.name)}</text>`
+        `<line x1="${s.cx}" y1="${s.cy}" x2="${s.lx}" y2="${s.py + 3.5}" stroke="${s.color}" stroke-opacity="0.8" stroke-width="0.3"/><circle cx="${s.cx}" cy="${s.cy}" r="0.7" fill="${s.color}"/><rect x="${s.px}" y="${s.py}" width="${s.w}" height="7" rx="2" fill="rgba(6,6,12,0.9)" stroke="${s.color}" stroke-width="0.4"/><text x="${s.px + s.w / 2}" y="${s.py + 3.7}" fill="#fff" font-size="4" font-family="Montserrat, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">${esc(s.name)}</text>`
       ).join('')
     : ''
 
@@ -1467,7 +1467,7 @@ function buildMapSvg(ultimate: boolean, bases: Base[], imgs: Record<string, stri
       <circle cx="${c.x}" cy="${c.y}" r="7" fill="none" stroke="${g.color}" stroke-opacity="0.6" stroke-width="0.5" stroke-dasharray="1.5,1.5"/>
       ${img}
       <rect x="${c.x - w / 2}" y="${c.y - BASE_SIZE / 2 - 9}" width="${w}" height="6" rx="1.5" fill="rgba(6,6,12,0.85)" stroke="${g.color}" stroke-opacity="0.7" stroke-width="0.25"/>
-      <text x="${c.x}" y="${c.y - BASE_SIZE / 2 - 4.7}" fill="#fff" font-size="3.6" font-family="Inter, sans-serif" font-weight="600" text-anchor="middle">${esc(b.name)}</text>`
+      <text x="${c.x}" y="${c.y - BASE_SIZE / 2 - 4.7}" fill="#fff" font-size="3.6" font-family="Montserrat, sans-serif" font-weight="600" text-anchor="middle">${esc(b.name)}</text>`
   }).join('')
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ISO_ORIGIN} ${ISO_ORIGIN} ${ISO_SIZE} ${ISO_SIZE}" width="1000" height="1000">
@@ -1607,7 +1607,7 @@ async function exportConfig(ultimate: boolean, bases: Base[], league: string, gr
     ctx.font = '800 28px Unbounded, sans-serif'
     ctx.fillText(modeName, 34, 62)
     ctx.fillStyle = 'rgba(79,142,247,0.9)'
-    ctx.font = '600 12px Inter, sans-serif'
+    ctx.font = '600 12px Montserrat, sans-serif'
     ctx.fillText('QUANTUM GAME GUIDES', 34, 88)
   } else {
     ctx.fillStyle = '#CCA453'
@@ -1638,7 +1638,7 @@ async function exportConfig(ultimate: boolean, bases: Base[], league: string, gr
       const y = lTop + 32 + row * 28
       drawLegendSwatch(ctx, type, x, y)
       ctx.fillStyle = 'rgba(255,255,255,0.82)'
-      ctx.font = '400 14px Inter, sans-serif'
+      ctx.font = '400 14px Montserrat, sans-serif'
       ctx.fillText(label, x + 24, y)
     })
   }
@@ -1662,7 +1662,7 @@ async function exportConfig(ultimate: boolean, bases: Base[], league: string, gr
       ctx.fillStyle = '#ffffff'
       ctx.fillText((groupNames[g.id] || g.name).toUpperCase(), x + 18, y)
       y += 26
-      ctx.font = '400 14px Inter, sans-serif'
+      ctx.font = '400 14px Montserrat, sans-serif'
       bases.filter(b => b.group === g.id).forEach(b => {
         ctx.fillStyle = g.color
         ctx.beginPath(); ctx.arc(x + 4, y, 3, 0, Math.PI * 2); ctx.fill()

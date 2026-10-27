@@ -76,9 +76,9 @@ export default function TierView({
             className={`tv-row${allDim ? ' is-dim' : ''}`}
             style={{ '--tv-color': row.color } as React.CSSProperties}
           >
-            <div className="tv-badgecell">
-              <span className={`tv-badge${row.badge.length > 2 ? ' is-long' : ''}`}>{row.badge}</span>
-              <span className="tv-caption">{row.label}</span>
+            <div className="tv-badgecell q-tierlabel" style={{ '--tier-color': row.color } as React.CSSProperties}>
+              <span className={`q-tierlabel-letter${row.badge.length > 2 ? ' is-long' : ''}`}>{row.badge}</span>
+              {row.label && row.label !== row.badge && <span className="q-tierlabel-caption">{row.label}</span>}
             </div>
             {columns.map((col) => {
               const cell = inRow.filter((e) => inColumn(col, e.group))

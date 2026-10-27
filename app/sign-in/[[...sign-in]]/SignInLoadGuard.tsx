@@ -26,13 +26,13 @@ export default function SignInLoadGuard({ children }: { children: React.ReactNod
   }, [loaded])
 
   if (loaded) return <>{children}</>
-  if (!timedOut) return <p style={{ color: 'var(--gold)', fontFamily: 'Inter, sans-serif' }}>Loading sign-in…</p>
+  if (!timedOut) return <p style={{ color: 'var(--gold)', fontFamily: 'Montserrat, sans-serif' }}>Loading sign-in…</p>
 
   return (
     <div
       style={{
         maxWidth: '34rem',
-        fontFamily: 'Inter, sans-serif',
+        fontFamily: 'Montserrat, sans-serif',
         color: '#e8e8f0',
         background: 'rgba(20,10,40,0.65)',
         border: '1px solid var(--gold)',

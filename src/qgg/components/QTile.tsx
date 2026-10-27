@@ -15,6 +15,8 @@ export interface TileEntity {
   caption?: string
   /** 'contain' for transparent cut-out portraits, so heads aren't cropped. */
   fit?: 'cover' | 'contain'
+  /** 'card': a tall torn-edge card (Void Hunters) instead of the square frame; the rarity shows as a glow. */
+  shape?: 'square' | 'card'
   /** Quantum's Pay-to-Win / New markers (src/qgg/notes.ts). */
   flags?: { p2w: boolean; isNew: boolean }
 }
@@ -34,7 +36,7 @@ export default function QTile({
   return (
     <Link
       href={e.href}
-      className={`qt qt--${size}${dimmed ? ' is-dim' : ''}`}
+      className={`qt qt--${size}${e.shape === 'card' ? ' qt--card' : ''}${dimmed ? ' is-dim' : ''}`}
       style={{ '--rarity': e.rarityColor } as React.CSSProperties}
       title={e.caption ?? e.name}
     >
@@ -45,7 +47,7 @@ export default function QTile({
           alt={e.name}
           loading="lazy"
           width={128}
-          height={128}
+          height={e.shape === 'card' ? 168 : 128}
           style={e.fit === 'contain' ? { objectFit: 'contain', objectPosition: 'bottom' } : undefined}
         />
         {e.cornerTL && <img className="qt-ico qt-ico--tl" src={e.cornerTL.icon} alt={e.cornerTL.label} />}

@@ -28,7 +28,9 @@ export function vhEntities(hunters: VhHunter[]): BrowserEntity[] {
       id: h.id,
       name: h.name,
       href: vhHunterPath(h.id),
-      img: h.portrait,
+      // The game's tall portrait on a torn card (public/vh/cards, cut from the AvatarTallBig art).
+      img: `/vh/cards/${h.id}.webp`,
+      shape: 'card',
       rarity: h.rarity,
       rarityColor: RARITY_COLORS[h.rarity] ?? '#666',
       caption: `${h.name}${h.title ? `, ${h.title}` : ''} · ${[h.rarity, cls, first(h.species), first(h.homeland)].filter(Boolean).join(' · ')}`,
