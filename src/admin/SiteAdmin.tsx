@@ -11,6 +11,7 @@ import ReviewQueueTab from '@/src/dcdl/components/studio/ReviewQueueTab'
 import ApplicationsTab from '@/src/dcdl/components/studio/ApplicationsTab'
 import UnitNotesPanel from './UnitNotesPanel'
 import HistoryTab from './HistoryTab'
+import VhStatusEffectsTab from './VhStatusEffectsTab'
 import BaseSkinsPanel from './BaseSkinsPanel'
 import {
   BestTeamsForm,
@@ -94,6 +95,7 @@ const SECTIONS: Section[] = [
     tabs: [
       { id: 'hunters', label: 'Hunters', kind: 'local', render: () => <UnitNotesPanel game="voidhunters" noun="Hunters" /> },
       { id: 'tiers', label: 'Tier Lists', kind: 'live', render: (s) => <OfficialTiersTab setStatus={s} types={['vh_hunter']} /> },
+      { id: 'status-effects', label: 'Status Effects', kind: 'live', render: (s) => <VhStatusEffectsTab setStatus={s} /> },
       { id: 'info', label: 'Game Info', kind: 'live', render: (s) => <PatchTab setStatus={s} game="voidhunters" /> },
       { id: 'guides', label: 'Guides', kind: 'live', render: (s) => <GuidesTab setStatus={s} game="voidhunters" /> },
     ],
