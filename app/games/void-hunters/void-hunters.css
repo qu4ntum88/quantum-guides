@@ -7,6 +7,32 @@
 .vh-resource p { margin: 0; color: color-mix(in srgb, var(--w-text) 82%, transparent); line-height: 1.65; font-size: 0.92rem; }
 .vh-tight { grid-template-columns: repeat(auto-fill, minmax(5.2rem, 1fr)); padding: 0; }
 .main-content .w-card, .sidebar .w-card { margin-bottom: 0; }
+
+/* ─── Status effects ─────────────────────────────────────────────────────────── */
+.vh-effects-wrap { width: 100%; max-width: 72rem; margin: 0 auto; }
+.vh-effects { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: 0.6rem; margin-top: 1rem; }
+.vh-effect { --vh-unique: #e0b64c; display: flex; flex-direction: column; gap: 0.6rem; padding: 0.75rem 0.85rem; border: 1px solid var(--w-line); border-radius: 0.6rem; background: rgba(0, 0, 0, 0.28); }
+.vh-effect--unique { border-color: color-mix(in srgb, var(--vh-unique) 55%, var(--w-line)); box-shadow: inset 3px 0 0 var(--vh-unique); }
+.vh-effect-main { display: flex; gap: 0.8rem; align-items: flex-start; }
+.vh-effect-tag { display: inline-block; margin-left: 0.45rem; padding: 0.05rem 0.4rem; border-radius: 0.25rem; vertical-align: 0.1em; font-family: Unbounded, sans-serif; font-size: 0.56rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1a1205; background: var(--vh-unique); }
+.vh-effect-users { border-top: 1px solid var(--w-line); padding-top: 0.5rem; }
+.vh-effect-users small { display: block; font-size: 0.68rem; color: var(--w-muted); margin-bottom: 0.35rem; }
+.vh-effect-users ul { display: flex; flex-wrap: wrap; gap: 0.3rem; list-style: none; margin: 0; padding: 0; }
+.vh-effect-users a { display: block; }
+.vh-effect-users img, .vh-effect-users a > span { display: block; width: 2.75rem; height: 2.75rem; border-radius: 50%; object-fit: cover; background: #111; border: 1px solid var(--w-line); }
+.vh-effect-users a:hover img { border-color: var(--w-accent); }
+.vh-effect-icon { flex: 0 0 2.75rem; height: 2.75rem; border-radius: 0.4rem; overflow: hidden; background: #111; display: flex; align-items: center; justify-content: center; color: #444; }
+.vh-effect-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vh-effect-body { min-width: 0; flex: 1; }
+.vh-effect-owner { flex: 0 0 4.75rem; display: flex; flex-direction: column; align-items: center; gap: 0.25rem; text-decoration: none; text-align: center; }
+.vh-effect-owner img, .vh-effect-owner > span { width: 3.75rem; height: 3.75rem; border-radius: 50%; object-fit: cover; background: #111; border: 2px solid var(--vh-unique); }
+.vh-effect-owner small { font-size: 0.66rem; line-height: 1.25; color: var(--w-muted); }
+.vh-effect-owner:hover small { color: var(--vh-unique); }
+.vh-effect h3 { margin: 0 0 0.25rem; font-family: var(--w-display); font-size: 0.95rem; font-weight: 600; color: #fff; }
+.vh-effect p { margin: 0; font-size: 0.84rem; line-height: 1.55; color: color-mix(in srgb, var(--w-text) 82%, transparent); white-space: pre-line; }
+.vh-effect p.vh-effect-none { color: var(--w-muted); font-style: italic; }
+.vh-effects-note { margin-top: 1.25rem; font-size: 0.8rem; }
+
 @media (max-width: 640px) {
   .vh-resource { flex-direction: column; align-items: stretch; gap: 0.5rem; }
   .vh-resource .btn { flex-basis: auto; }

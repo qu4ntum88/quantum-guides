@@ -80,6 +80,16 @@ const JOBS: Record<string, JobDef> = {
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'update.mjs'), '--skip-images'],
     note: 'Skips the art export. ~1 min.', report: 'void-hunters',
   },
+  'vh-status-effects-preview': {
+    group: 'Void Hunters', label: 'Update status effects — preview',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-vh-status-effects.mjs')],
+    note: 'Compares src/vh/data/status-effects.json with the export: renames to the in-game names and the game\'s description text. Writes nothing.',
+  },
+  'vh-status-effects-apply': {
+    group: 'Void Hunters', label: 'Update status effects — apply',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-vh-status-effects.mjs'), '--write'],
+    note: 'Writes the names + descriptions into src/vh/data/status-effects.json (ids and icons untouched, nothing added). Commit afterwards.',
+  },
   'inv-extract': {
     group: 'Invokers: Titan Legacy', label: 'Pull from invokers.com',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'invokers', 'update.mjs')],

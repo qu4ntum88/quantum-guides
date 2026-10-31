@@ -10,7 +10,8 @@ export default function RichText({ text, effects }: { text: string; effects: Sta
 
   const sorted = [...effects].sort((a, b) => b.name.length - a.name.length)
   const pattern = sorted.map((e) => escapeRegex(e.name)).join('|')
-  const regex = new RegExp(`(${pattern})`, 'g')
+  // Whole words only, so "Will" doesn't light up inside "Willpower" or "Weak" inside "Weakness".
+  const regex = new RegExp(`(?<![A-Za-z])(${pattern})(?![A-Za-z])`, 'g')
   const effectMap = new Map(effects.map((e) => [e.name, e]))
 
   const parts = text.split(regex)

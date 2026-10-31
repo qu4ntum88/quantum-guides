@@ -3,49 +3,87 @@
     "id": "ally_protection",
     "name": "Ally Protection",
     "image": "/vh/status-effects/SE_AllyProtection-Icon.png",
-    "description": ""
+    "description": "X damage dealt to this character is transferred to buff caster.",
+    "hunters": [
+      "owyn",
+      "rosie",
+      "ygravain"
+    ]
   },
   {
     "id": "ally_shield",
     "name": "Ally Shield",
     "image": "/vh/status-effects/SE_AllyShield-Icon.png",
-    "description": ""
+    "description": "X damage dealt to this character is transferred to ally with highest Max Health."
   },
   {
     "id": "ancient_shelter",
-    "name": "Ancient Shelter",
+    "name": "Invulnerability",
     "image": "/vh/status-effects/SE_AncientShelter-Icon.png",
-    "description": ""
+    "description": "When about to take damage, lose X stack instead.",
+    "hunters": [
+      "cassandra",
+      "johannes",
+      "lamassu",
+      "owyn",
+      "vilk",
+      "ygravain"
+    ]
   },
   {
     "id": "arbias_vow",
-    "name": "Arbias Vow",
+    "name": "Arbias' Vow",
     "image": "/vh/status-effects/SE_ArbiasVow-Icon.png",
-    "description": ""
+    "description": "+X damage vs. [tag] and [tag] enemies (or +Y if they are [tag]).",
+    "hunters": [
+      "arbias"
+    ],
+    "unique": true
   },
   {
     "id": "aristochilles_vow",
-    "name": "Aristochilles Vow",
+    "name": "Aristochilles' Vow",
     "image": "/vh/status-effects/SE_AristochillesVow-Icon.png",
-    "description": ""
+    "description": "+X Attack and Crit Dmg for each other [tag] ally."
   },
   {
     "id": "armor_shred",
     "name": "Armor Shred",
     "image": "/vh/status-effects/SE_ArmorShred-Icon.png",
-    "description": ""
+    "description": "-X Armor per stack (min. Y).",
+    "hunters": [
+      "jagya",
+      "tiche",
+      "ygravain"
+    ]
   },
   {
     "id": "attack_down",
     "name": "Attack Down",
     "image": "/vh/status-effects/SE_AttackDown-Icon.png",
-    "description": ""
+    "description": "-X Attack",
+    "hunters": [
+      "goran",
+      "rosie",
+      "sir_bernard",
+      "tiche",
+      "vukaru"
+    ]
   },
   {
     "id": "attack_up",
     "name": "Attack Up",
     "image": "/vh/status-effects/SE_AttackUp-Icon.png",
-    "description": ""
+    "description": "+X Attack",
+    "hunters": [
+      "aedwulf",
+      "bomor",
+      "jagya",
+      "johannes",
+      "kurgan",
+      "ruck",
+      "vukaru"
+    ]
   },
   {
     "id": "binding_wires",
@@ -57,157 +95,242 @@
     "id": "bleed",
     "name": "Bleed",
     "image": "/vh/status-effects/SE_Bleed-Icon.png",
-    "description": ""
+    "description": "[On Turn Start] receive damage equal to X ATK of caster of this debuff for each stack of [effect].\n\n-Y Health Recovery per stack.",
+    "hunters": [
+      "angelo",
+      "eleazar",
+      "jagya",
+      "lamassu",
+      "renna",
+      "tiche",
+      "vukaru"
+    ]
   },
   {
     "id": "bless",
     "name": "Bless",
     "image": "/vh/status-effects/SE_Bless-Icon.png",
-    "description": ""
+    "description": "+X Attack, Defense, Health and Speed.",
+    "hunters": [
+      "lanthe",
+      "lysadorea",
+      "nathaniel",
+      "tombs"
+    ]
   },
   {
     "id": "blind",
     "name": "Blind",
     "image": "/vh/status-effects/SE_Blind-Icon.png",
-    "description": ""
+    "description": "-X Hit Rate.",
+    "hunters": [
+      "arbias",
+      "ashei",
+      "besemin",
+      "lamassu",
+      "tiche",
+      "vilk"
+    ]
   },
   {
     "id": "buff_immunity",
     "name": "Buff Immunity",
     "image": "/vh/status-effects/SE_BuffImmunity-Icon.png",
-    "description": ""
+    "description": "Prevents all buffs if able.",
+    "hunters": [
+      "raven"
+    ]
   },
   {
     "id": "buried",
     "name": "Buried",
     "image": "/vh/status-effects/SE_Buried-Icon.png",
-    "description": ""
+    "description": "Skills may have additional effects based on the number of stacks.",
+    "hunters": [
+      "tombs"
+    ],
+    "unique": true
   },
   {
     "id": "burning",
     "name": "Burning",
     "image": "/vh/status-effects/SE_Burning-Icon.png",
-    "description": ""
+    "description": "[On Turn Start] all allies with [effect] receive damage equal to X of their Max Health.",
+    "hunters": [
+      "bohdan",
+      "robin"
+    ]
   },
   {
     "id": "charged",
-    "name": "Charged",
+    "name": "Will Supreme",
     "image": "/vh/status-effects/SE_Charged-Icon.png",
-    "description": ""
+    "description": "Skills have additional effects.",
+    "hunters": [
+      "faustus",
+      "galen"
+    ]
   },
   {
     "id": "charm",
     "name": "Charm",
     "image": "/vh/status-effects/SE_Charm-Icon.png",
-    "description": ""
+    "description": "Possible bonus effects depending on circumstances and number of stacks.",
+    "hunters": [
+      "cassandra"
+    ],
+    "unique": true
   },
   {
     "id": "cleansing_touch",
     "name": "Cleansing Touch",
     "image": "/vh/status-effects/SE_CleansingTouch-Icon.png",
-    "description": ""
+    "description": "[On Turn Start] Gain X Void Touch Cleanse per stack"
   },
   {
     "id": "composed",
     "name": "Composed",
     "image": "/vh/status-effects/SE_Composed-Icon.png",
-    "description": ""
+    "description": "Immune to [effect]. Can ignore [effect type] effects."
   },
   {
     "id": "control",
     "name": "Control",
     "image": "/vh/status-effects/SE_Control-Icon.png",
-    "description": ""
+    "description": "A level to which this character controls his temper.",
+    "hunters": [
+      "aedwulf"
+    ],
+    "unique": true
   },
   {
     "id": "cornered_beast",
     "name": "Cornered Beast",
     "image": "/vh/status-effects/SE_CorneredBeast-Icon.png",
-    "description": ""
+    "description": "+X Counter Rate, +Y Speed and +Z Life Drain per stack (max. W)",
+    "hunters": [
+      "vilk"
+    ],
+    "unique": true
   },
   {
     "id": "creeds_prize",
-    "name": "Creeds Prize",
+    "name": "Creed's Prize",
     "image": "/vh/status-effects/SE_CreedsPrize-Icon.png",
-    "description": ""
+    "description": "+X Speed, +Y Crit Dmg against [tag] enemies.\n\nEnemies defeated by this character cannot gain Revive.",
+    "hunters": [
+      "reed"
+    ],
+    "unique": true
   },
   {
     "id": "crit_damage_down",
     "name": "Crit Damage Down",
     "image": "/vh/status-effects/SE_CritDamageDown-Icon.png",
-    "description": ""
+    "description": "-X Crit Dmg"
   },
   {
     "id": "crit_damage_up",
     "name": "Crit Damage Up",
     "image": "/vh/status-effects/SE_CritDamageUp-Icon.png",
-    "description": ""
+    "description": "+X Crit Dmg",
+    "hunters": [
+      "angelo"
+    ]
   },
   {
     "id": "crit_defense_down",
     "name": "Crit Defense Down",
     "image": "/vh/status-effects/SE_CritDefenseDown-Icon.png",
-    "description": ""
+    "description": "-X Crit Defense"
   },
   {
     "id": "crit_defense_up",
     "name": "Crit Defense Up",
     "image": "/vh/status-effects/SE_CritDefenseUp-Icon.png",
-    "description": ""
+    "description": "+X Crit Defense",
+    "hunters": [
+      "natalie"
+    ]
   },
   {
     "id": "crit_immunity",
     "name": "Crit Immunity",
     "image": "/vh/status-effects/SE_CritImmunity-Icon.png",
-    "description": ""
+    "description": "Cannot be critically hit.",
+    "hunters": [
+      "lamassu"
+    ]
   },
   {
     "id": "crit_rate_down",
     "name": "Crit Rate Down",
     "image": "/vh/status-effects/SE_CritRateDown-Icon.png",
-    "description": ""
+    "description": "-X Crit Rate"
   },
   {
     "id": "crit_rate_up",
     "name": "Crit Rate Up",
     "image": "/vh/status-effects/SE_CritRateUp-Icon.png",
-    "description": ""
+    "description": "+X Crit Rate",
+    "hunters": [
+      "leo"
+    ]
   },
   {
     "id": "crit_resistance_down",
     "name": "Crit Resistance Down",
     "image": "/vh/status-effects/SE_CritResistanceDown-Icon.png",
-    "description": ""
+    "description": "-X Crit Resistance",
+    "hunters": [
+      "jagya",
+      "severin"
+    ]
   },
   {
     "id": "crit_resistance_up",
     "name": "Crit Resistance Up",
     "image": "/vh/status-effects/SE_CritResistanceUp-Icon.png",
-    "description": ""
+    "description": "+X Crit Resistance",
+    "hunters": [
+      "sir_bernard"
+    ]
   },
   {
     "id": "curse",
     "name": "Curse",
     "image": "/vh/status-effects/SE_Curse-Icon.png",
-    "description": ""
+    "description": "-X Attack, Defense, Health and Speed.",
+    "hunters": [
+      "cassandra",
+      "goran",
+      "ygravain"
+    ]
   },
   {
     "id": "damage_immunity",
     "name": "Damage Immunity",
     "image": "/vh/status-effects/SE_DamageImmunity-Icon.png",
-    "description": ""
+    "description": "Will not take damage from attacks.",
+    "hunters": [
+      "ygravain"
+    ]
   },
   {
     "id": "damage_reflect_up",
     "name": "Damage Reflect Up",
     "image": "/vh/status-effects/SE_DamageReflectUp-Icon.png",
-    "description": ""
+    "description": "+X Dmg Reflect"
   },
   {
     "id": "dark_fire",
     "name": "Dark Fire",
     "image": "/vh/status-effects/SE_DarkFire-Icon.png",
-    "description": ""
+    "description": "[On Turn Start] X chance (stacking) to suffer Y Void Touch.\n\nSkills have additional effects depending on stacks of [effect].",
+    "hunters": [
+      "ruck"
+    ],
+    "unique": true
   },
   {
     "id": "dark_power",
@@ -225,703 +348,1158 @@
     "id": "dark_vial",
     "name": "Dark Vial",
     "image": "/vh/status-effects/SE_DarkVial-Icon.png",
-    "description": ""
+    "description": "Skills have additional effects based on the number of stacks.",
+    "hunters": [
+      "lilith"
+    ],
+    "unique": true
   },
   {
     "id": "daze",
     "name": "Daze",
     "image": "/vh/status-effects/SE_Daze-Icon.png",
-    "description": ""
+    "description": "Cannot Assist, Counter or gain Turn Meter Up.",
+    "hunters": [
+      "bomor",
+      "kurgan",
+      "voltz"
+    ]
   },
   {
     "id": "deadly",
     "name": "Deadly",
     "image": "/vh/status-effects/SE_Deadly-Icon.png",
-    "description": ""
+    "description": "Attacks will critically hit if able.",
+    "hunters": [
+      "angelo",
+      "vilk"
+    ]
   },
   {
     "id": "deathmark",
     "name": "Deathmark",
     "image": "/vh/status-effects/SE_Deathmark-Icon.png",
-    "description": ""
+    "description": "Can be targeted to bypass taunters and Revive will be blocked if killed while under [effect].\n\n[On Suffer Damage] If damaged directly by enemy attack, receive additional damage equal to X of Max Health.",
+    "hunters": [
+      "cassandra",
+      "tombs"
+    ]
   },
   {
     "id": "deathproof",
     "name": "Deathproof",
     "image": "/vh/status-effects/SE_Deathproof-Icon.png",
-    "description": ""
+    "description": "Lethal damage will not kill leaving with X Health instead.",
+    "hunters": [
+      "lamassu",
+      "sir_bernard",
+      "ygravain"
+    ]
   },
   {
     "id": "debuff_immunity",
-    "name": "Debuff immunity",
+    "name": "Debuff Immunity",
     "image": "/vh/status-effects/SE_DebuffImmunity-Icon.png",
-    "description": ""
+    "description": "Prevents all debuffs if able.",
+    "hunters": [
+      "lilith",
+      "nathaniel",
+      "tiche"
+    ]
   },
   {
     "id": "defense_down",
     "name": "Defense Down",
     "image": "/vh/status-effects/SE_DefenseDown-Icon.png",
-    "description": ""
+    "description": "-X Defense",
+    "hunters": [
+      "johannes",
+      "kurgan",
+      "tombs"
+    ]
   },
   {
     "id": "defense_up",
     "name": "Defense Up",
     "image": "/vh/status-effects/SE_DefenseUp-Icon.png",
-    "description": ""
+    "description": "+X Defense",
+    "hunters": [
+      "lamassu",
+      "natalie",
+      "sir_bernard"
+    ]
   },
   {
     "id": "divine_protection",
     "name": "Divine Protection",
     "image": "/vh/status-effects/SE_DivineProtection-Icon.png",
-    "description": ""
+    "description": "+X Defense, +Y Crit Defense.\n\nAll Void Touch this character receives is halved.",
+    "hunters": [
+      "natalie"
+    ],
+    "unique": true
   },
   {
     "id": "dodge_down",
     "name": "Dodge Down",
     "image": "/vh/status-effects/SE_DodgeDown-Icon.png",
-    "description": ""
+    "description": "-X Dodge"
   },
   {
     "id": "dodge_up",
     "name": "Dodge Up",
     "image": "/vh/status-effects/SE_DodgeUp-Icon.png",
-    "description": ""
+    "description": "+X Dodge"
   },
   {
     "id": "dual_wielding",
     "name": "Dual Wielding",
     "image": "/vh/status-effects/SE_DualWielding-Icon.png",
-    "description": ""
+    "description": "This character has stance-specific skills and effects.",
+    "hunters": [
+      "tiche"
+    ],
+    "unique": true
   },
   {
     "id": "duel",
     "name": "Duel",
     "image": "/vh/status-effects/SE_Duel-Icon.png",
-    "description": ""
+    "description": "This character is marked as the target for [skill]."
   },
   {
     "id": "edge_of_darkness",
-    "name": "Edge Of Darkness",
+    "name": "Edge of Darkness",
     "image": "/vh/status-effects/SE_EdgeOfDarkness-Icon.png",
-    "description": ""
+    "description": "Void Touch cannot be removed.\nRemove [effect] and instantly Succumb To The Void when inflicted with Void Touch."
   },
   {
     "id": "enraged",
     "name": "Enraged",
     "image": "/vh/status-effects/SE_Enraged-Icon.png",
-    "description": ""
+    "description": "+X Attack and +Y Speed per stack.\n\nAttack bonus is doubled if this character is [tag]."
   },
   {
     "id": "expose",
     "name": "Expose",
     "image": "/vh/status-effects/SE_Expose-Icon.png",
-    "description": ""
+    "description": "[On Suffer Damage] Receive additional damage equal to X of Max Health.",
+    "hunters": [
+      "kurgan"
+    ]
   },
   {
     "id": "fatal_wound",
     "name": "Fatal Wound",
     "image": "/vh/status-effects/SE_FatalWound-Icon.png",
-    "description": ""
+    "description": "-X Health Recovery.\nThis character will suffer Instant Defeat after their next turn and cannot be revived.\n\nWhen this character recovers Y Health, this debuff is removed.",
+    "hunters": [
+      "aedwulf",
+      "owyn"
+    ]
   },
   {
     "id": "faustus_vow",
-    "name": "Faustus Vow",
+    "name": "Faustus' Vow",
     "image": "/vh/status-effects/SE_FaustusVow-Icon.png",
-    "description": ""
+    "description": "Immune to Buff Dispel and Turn Meter Down effects.",
+    "hunters": [
+      "faustus"
+    ],
+    "unique": true
   },
   {
     "id": "fear",
     "name": "Fear",
     "image": "/vh/status-effects/SE_Fear-Icon.png",
-    "description": ""
+    "description": "Cannot dodge, Counter, Assist or use skills and turn will be skipped.\n\nWhen attacked, receive +X damage, but this debuff expires.",
+    "hunters": [
+      "aedwulf",
+      "bomor",
+      "faustus",
+      "johannes",
+      "kurgan",
+      "lamassu",
+      "owyn",
+      "severin",
+      "st_hermeida",
+      "tiche",
+      "vukaru"
+    ]
   },
   {
     "id": "flaming_armor",
     "name": "Flaming Armor",
     "image": "/vh/status-effects/SE_FlamingArmor-Icon.png",
-    "description": ""
+    "description": "Suffer X less damage from [skill type] skills.\n\n[On Suffer Damage] Inflict [effect] for Y turns on the attacker (if possible)."
   },
   {
     "id": "flaming_weapon",
     "name": "Flaming Weapon",
     "image": "/vh/status-effects/SE_FlamingWeapon-Icon.png",
-    "description": ""
+    "description": "Skills are considered [skill type].\n\n[On Deal Damage] Inflict [effect] for X turn(s)."
   },
   {
     "id": "focus_down",
     "name": "Focus Down",
     "image": "/vh/status-effects/SE_FocusDown-Icon.png",
-    "description": ""
+    "description": "-X Focus"
   },
   {
     "id": "focus_up",
     "name": "Focus Up",
     "image": "/vh/status-effects/SE_FocusUp-Icon.png",
-    "description": ""
+    "description": "+X Focus",
+    "hunters": [
+      "aedwulf",
+      "bomor",
+      "bruno",
+      "faustus",
+      "renna"
+    ]
   },
   {
     "id": "foresight",
     "name": "Foresight",
     "image": "/vh/status-effects/SE_Foresight-Icon.png",
-    "description": ""
+    "description": "Will dodge next attack if possible. Expires on succesful dodge.",
+    "hunters": [
+      "angelo",
+      "cassandra",
+      "galen",
+      "lanthe",
+      "vilk"
+    ]
   },
   {
     "id": "fortune",
     "name": "Fortune",
     "image": "/vh/status-effects/SE_Fortune-Icon.png",
-    "description": ""
+    "description": "+X Crit Rate, Crit Defense, Dodge and Hit Rate.",
+    "hunters": [
+      "cassandra"
+    ]
   },
   {
     "id": "freeze",
     "name": "Freeze",
     "image": "/vh/status-effects/SE_Freeze-Icon.png",
-    "description": ""
+    "description": "Cannot dodge, Counter, Assist, use skills, immune to all Turn Meter manipulation and Bonus Turn.\n\nNext turn will be skipped and cooldowns will not decrease, but all received damage is decreased by X."
   },
   {
     "id": "frenzy",
     "name": "Frenzy",
     "image": "/vh/status-effects/SE_Frenzy-Icon.png",
-    "description": ""
+    "description": "Gain X Turn Meter Up when another ally uses a special skill.",
+    "hunters": [
+      "kurgan",
+      "nathaniel"
+    ]
   },
   {
     "id": "greasy_fluids",
     "name": "Greasy Fluids",
     "image": "/vh/status-effects/SE_GreasyFluids-Icon.png",
-    "description": ""
+    "description": "Resource used to upgrade gear in battle.",
+    "hunters": [
+      "voltz"
+    ],
+    "unique": true
   },
   {
     "id": "grenade",
     "name": "Grenade",
     "image": "/vh/status-effects/SE_Grenade-Icon.png",
-    "description": ""
+    "description": "Receive +X Max Health damage when this debuff expires."
   },
   {
     "id": "growing_void",
     "name": "Growing Void",
     "image": "/vh/status-effects/SE_GrowingVoid-Icon.png",
-    "description": ""
+    "description": "Whenever this character suffers damage, they also suffer X Void Touch."
   },
   {
     "id": "guard",
     "name": "Guard",
     "image": "/vh/status-effects/SE_Guard-Icon.png",
-    "description": ""
+    "description": "\"[On Suffer Damage] Lose X stack; damage received reduced by Y.\"",
+    "hunters": [
+      "jagya",
+      "nadia",
+      "natalie",
+      "owyn",
+      "raven",
+      "severin",
+      "ygravain"
+    ]
   },
   {
     "id": "healing_immunity",
     "name": "Healing Immunity",
     "image": "/vh/status-effects/SE_HealingImmunity-Icon.png",
-    "description": ""
+    "description": "Cannot receive Healing.",
+    "hunters": [
+      "aedwulf",
+      "raven"
+    ]
   },
   {
     "id": "health_down",
     "name": "Health Down",
     "image": "/vh/status-effects/SE_HealthDown-Icon.png",
-    "description": ""
+    "description": "-X Max Health"
   },
   {
     "id": "health_recovery_down",
     "name": "Health Recovery Down",
     "image": "/vh/status-effects/SE_HealthRecoveryDown-Icon.png",
-    "description": ""
+    "description": "-X Health Recovery",
+    "hunters": [
+      "aedwulf"
+    ]
   },
   {
     "id": "health_recovery_up",
     "name": "Health Recovery Up",
     "image": "/vh/status-effects/SE_HealthRecoveryUp-Icon.png",
-    "description": ""
+    "description": "+X Health Recovery",
+    "hunters": [
+      "vilk"
+    ]
   },
   {
     "id": "health_up",
     "name": "Health Up",
     "image": "/vh/status-effects/SE_HealthUp-Icon.png",
-    "description": ""
+    "description": "+X Max Health",
+    "hunters": [
+      "ygravain"
+    ]
   },
   {
     "id": "heavy_sword",
     "name": "Heavy Sword",
     "image": "/vh/status-effects/SE_HeavySword-Icon.png",
-    "description": ""
+    "description": "This character has stance-specific skills and effects.",
+    "hunters": [
+      "tiche"
+    ],
+    "unique": true
   },
   {
     "id": "hemorrhage",
     "name": "Hemorrhage",
     "image": "/vh/status-effects/SE_Hemorrhage-Icon.png",
-    "description": ""
+    "description": "Health Recovery is halved.\n[On Suffer Damage] suffer [effect] for X turn(s) based on this effect's caster ATK.",
+    "hunters": [
+      "eleazar"
+    ],
+    "unique": true
   },
   {
     "id": "hermeidas_vow",
-    "name": "Hermeidas Vow",
+    "name": "Hermeida's Vow",
     "image": "/vh/status-effects/SE_HermeidasVow-Icon.png",
-    "description": ""
+    "description": "All debuffs this character inflicts are [Irresistible].",
+    "hunters": [
+      "st_hermeida"
+    ],
+    "unique": true
   },
   {
     "id": "hex",
     "name": "Hex",
     "image": "/vh/status-effects/SE_Hex-Icon.png",
-    "description": ""
+    "description": "Possible negative effects depending on circumstances and number of stacks.",
+    "hunters": [
+      "cassandra"
+    ],
+    "unique": true
   },
   {
     "id": "high_commander",
     "name": "High Commander",
     "image": "/vh/status-effects/SE_HighCommander-Icon.png",
-    "description": ""
+    "description": "This character has stance-specific skills and effects."
   },
   {
     "id": "high_morale",
     "name": "High Morale",
     "image": "/vh/status-effects/SE_HighMorale-Icon.png",
-    "description": ""
+    "description": "X chance to get a Bonus Turn.",
+    "hunters": [
+      "lamassu",
+      "nathaniel",
+      "severin",
+      "voltz"
+    ]
   },
   {
     "id": "hit_rate_down",
     "name": "Hit Rate Down",
     "image": "/vh/status-effects/SE_HitRateDown-Icon.png",
-    "description": ""
+    "description": "-X Hit Rate"
   },
   {
     "id": "hit_rate_up",
     "name": "Hit Rate Up",
     "image": "/vh/status-effects/SE_HitRateUp-Icon.png",
-    "description": ""
+    "description": "+X Hit Rate"
   },
   {
     "id": "holy_vow",
-    "name": "Holy Vow",
+    "name": "Vowkeeper",
     "image": "/vh/status-effects/SE_HolyVow-Icon.png",
-    "description": ""
+    "description": "This character fights to fulfill their Vow.",
+    "hunters": [
+      "arbias",
+      "besemin",
+      "faustus",
+      "lysadorea",
+      "nadia",
+      "natalie",
+      "nathaniel",
+      "owyn",
+      "severin",
+      "st_hermeida",
+      "ygravain"
+    ]
   },
   {
     "id": "hunters_prey",
-    "name": "Hunters Prey",
+    "name": "Hunted",
     "image": "/vh/status-effects/SE_HuntersPrey-Icon.png",
-    "description": ""
+    "description": "Can be targeted to bypass taunters.",
+    "hunters": [
+      "leo"
+    ]
   },
   {
     "id": "last_stand",
     "name": "Last Stand",
     "image": "/vh/status-effects/SE_LastStand-Icon.png",
-    "description": ""
+    "description": "+X Attack for each Y Health below Z threshold.",
+    "hunters": [
+      "owyn"
+    ],
+    "unique": true
   },
   {
     "id": "leech",
     "name": "Leech",
     "image": "/vh/status-effects/SE_Leech-Icon.png",
-    "description": ""
+    "description": "Attacks against this character will have +X Life Drain."
   },
   {
     "id": "life_drain_down",
     "name": "Life Drain Down",
     "image": "/vh/status-effects/SE_LifeDrainDown-Icon.png",
-    "description": ""
+    "description": "-X Life Drain"
   },
   {
     "id": "life_drain_up",
     "name": "Life Drain Up",
     "image": "/vh/status-effects/SE_LifeDrainUp-Icon.png",
-    "description": ""
+    "description": "+X Life Drain"
   },
   {
     "id": "lightborne",
     "name": "Lightborne",
     "image": "/vh/status-effects/SE_Lightborne-Icon.png",
-    "description": ""
+    "description": "This character skills are considered [skill type].",
+    "hunters": [
+      "besemin"
+    ],
+    "unique": true
   },
   {
     "id": "low_morale",
     "name": "Low Morale",
     "image": "/vh/status-effects/SE_LowMorale-Icon.png",
-    "description": ""
+    "description": "X chance to skip turn.",
+    "hunters": [
+      "lamassu",
+      "lysadorea",
+      "nathaniel"
+    ]
   },
   {
     "id": "lysadoreas_vow",
-    "name": "Lysadoreas Vow",
+    "name": "Lysadorea's Vow",
     "image": "/vh/status-effects/SE_LysadoreasVow-Icon.png",
-    "description": ""
+    "description": "Healing Effect is doubled, unless healing [tag] allies. When a healed non-[tag] ally reaches X Health, they gain Y [effect] for Z turn(s).",
+    "hunters": [
+      "lysadorea"
+    ],
+    "unique": true
   },
   {
     "id": "mana",
-    "name": "Mana",
+    "name": "Will",
     "image": "/vh/status-effects/SE_Mana-Icon.png",
-    "description": ""
+    "description": "This character is focusing will to gather power.",
+    "hunters": [
+      "faustus",
+      "galen",
+      "lamassu",
+      "lilith",
+      "ygravain"
+    ]
   },
   {
     "id": "mark_of_burden",
     "name": "Mark of Burden",
     "image": "/vh/status-effects/SE_MarkofBurden-Icon.png",
-    "description": ""
+    "description": "This character skills may have some effects inactive.",
+    "hunters": [
+      "raven"
+    ],
+    "unique": true
   },
   {
     "id": "marked",
     "name": "Marked",
     "image": "/vh/status-effects/SE_Marked-Icon.png",
-    "description": ""
+    "description": "Receives X more damage from [tag] enemies.",
+    "hunters": [
+      "reed"
+    ]
   },
   {
     "id": "matters_into_own_hands",
-    "name": "Matters Into Own Hands",
+    "name": "Matters into Own Hands",
     "image": "/vh/status-effects/SE_MattersIntoOwnHands-Icon.png",
-    "description": ""
+    "description": "This character has stance-specific skills and effects."
   },
   {
     "id": "misfortune",
     "name": "Misfortune",
     "image": "/vh/status-effects/SE_Misfortune-Icon.png",
-    "description": ""
+    "description": "-X Crit Rate, Crit Defense, Dodge and Hit Rate.",
+    "hunters": [
+      "cassandra",
+      "st_hermeida"
+    ]
   },
   {
     "id": "momentum",
     "name": "Momentum",
     "image": "/vh/status-effects/SE_Momentum-Icon.png",
-    "description": ""
+    "description": "+X Speed, +Y Attack per stack (max. Z)"
   },
   {
     "id": "moonveil",
     "name": "Moonveil",
     "image": "/vh/status-effects/SE_Moonveil-Icon.png",
-    "description": ""
+    "description": "+X Defense, +Y Crit Defense per stack.",
+    "hunters": [
+      "lanthe"
+    ],
+    "unique": true
   },
   {
     "id": "nadias_vow",
-    "name": "Nadias Vow",
+    "name": "Nadia's Vow",
     "image": "/vh/status-effects/SE_NadiasVow-Icon.png",
-    "description": ""
+    "description": "This character has +X Attack for each living [tag] enemy.",
+    "hunters": [
+      "nadia"
+    ],
+    "unique": true
   },
   {
     "id": "natalies_vow",
-    "name": "Natalies Vow",
+    "name": "Natalie's Vow",
     "image": "/vh/status-effects/SE_NataliesVow-Icon.png",
-    "description": ""
+    "description": "+X Defense, +Y Crit Resistance.\n[On Suffer Crit. Damage] gain Z [effect] for W turns.",
+    "hunters": [
+      "natalie"
+    ],
+    "unique": true
   },
   {
     "id": "nathaniels_vow",
-    "name": "Nathaniels Vow",
+    "name": "Nathaniel's Vow",
     "image": "/vh/status-effects/SE_NathanielsVow-Icon.png",
-    "description": ""
+    "description": "+X Attack.\nThis character is called to Assist with -Y Assist Dmg each time [hunter] uses a skill during his turn.",
+    "hunters": [
+      "nathaniel"
+    ],
+    "unique": true
   },
   {
     "id": "overconfidence",
     "name": "Overconfidence",
     "image": "/vh/status-effects/SE_Overconfidence-Icon.png",
-    "description": ""
+    "description": "+X Attack, -Y Defense and Resistance",
+    "hunters": [
+      "bohdan"
+    ],
+    "unique": true
   },
   {
     "id": "owyns_vow",
-    "name": "Owyns Vow",
+    "name": "Owyn's Vow",
     "image": "/vh/status-effects/SE_OwynsVow-Icon.png",
-    "description": ""
+    "description": "This character gains attribute bonuses equal to X of [hunter]'s Defense, Max Health and Y Attack and Speed.",
+    "hunters": [
+      "owyn"
+    ],
+    "unique": true
   },
   {
     "id": "persistance",
-    "name": "Persistance",
+    "name": "Persistence",
     "image": "/vh/status-effects/SE_Persistance-Icon.png",
-    "description": ""
+    "description": "+X Defense per stack for each [tag] ally alive,\n[On Turn Start] Gain Y Healing per stack for each [tag] ally alive.\n\nWhen about to die, if this character has Z or more [effect], they lose all [effect], are left with W Health, then dispel all their debuffs and gain V Healing for each [effect] lost.\n\nThis buff does not expire and can be stacked up to U times.",
+    "hunters": [
+      "ashei",
+      "vukaru"
+    ]
   },
   {
     "id": "piercing_down",
     "name": "Piercing Down",
     "image": "/vh/status-effects/SE_PiercingDown-Icon.png",
-    "description": ""
+    "description": "-X Piercing"
   },
   {
     "id": "piercing_up",
     "name": "Piercing Up",
     "image": "/vh/status-effects/SE_PiercingUp-Icon.png",
-    "description": ""
+    "description": "+X Piercing",
+    "hunters": [
+      "angelo",
+      "ruck"
+    ]
   },
   {
     "id": "poison",
     "name": "Poison",
     "image": "/vh/status-effects/SE_Poison-Icon.png",
-    "description": ""
+    "description": "[On Turn Start] receive damage equal to X of Max Health",
+    "hunters": [
+      "ashei",
+      "eleazar",
+      "lamassu"
+    ]
   },
   {
     "id": "poisoned_armor",
     "name": "Poisoned Armor",
     "image": "/vh/status-effects/SE_PoisonedArmor-Icon.png",
-    "description": ""
+    "description": "[On Suffer Damage] Lose X [effect] receiving Y less damage and inflicting Z [effect] for W turn(s) on the attacker (if possible)."
   },
   {
     "id": "poisoned_weapon",
     "name": "Poisoned Weapon",
     "image": "/vh/status-effects/SE_PoisonedWeapon-Icon.png",
-    "description": ""
+    "description": "[On Deal Damage] Lose X [effect] dealing Y more damage and inflicting Z [effect] for W turn(s) on target."
   },
   {
     "id": "power_source",
     "name": "Power Source",
     "image": "/vh/status-effects/SE_PowerSource-Icon.png",
-    "description": ""
+    "description": "Resource used to upgrade gear in battle.",
+    "hunters": [
+      "voltz"
+    ],
+    "unique": true
   },
   {
     "id": "provoke",
     "name": "Provoke",
     "image": "/vh/status-effects/SE_Provoke-Icon.png",
-    "description": ""
+    "description": "Will automatically use basic skill on the caster of this debuff during this character's turn.",
+    "hunters": [
+      "bohdan",
+      "johannes",
+      "natalie",
+      "rosie",
+      "vukaru"
+    ]
   },
   {
     "id": "regeneration",
     "name": "Regeneration",
     "image": "/vh/status-effects/SE_Regeneration-Icon.png",
-    "description": ""
+    "description": "Heal X Max Health at the beginning of this character's turn.",
+    "hunters": [
+      "lanthe",
+      "lysadorea",
+      "rosie"
+    ]
   },
   {
     "id": "reincarnation",
     "name": "Reincarnation",
     "image": "/vh/status-effects/SE_Reincarnation-Icon.png",
-    "description": ""
+    "description": "If killed, will Revive with X Health if able."
   },
   {
     "id": "resilient",
-    "name": "Resilient",
+    "name": "Resilience",
     "image": "/vh/status-effects/SE_Resilient-Icon.png",
-    "description": ""
+    "description": "All suffered Void Touch is halved.",
+    "hunters": [
+      "lanthe",
+      "nadia",
+      "owyn",
+      "raven",
+      "vukaru"
+    ]
   },
   {
     "id": "resist_all",
     "name": "Resist All",
     "image": "/vh/status-effects/SE_ResistAll-Icon.png",
-    "description": ""
+    "description": "Will always resist Detrimental Effect(s) if able.\n\n[effect type]: Cannot resist Buff Dispel, will be dispelled before any other Buff(s)."
   },
   {
     "id": "resist_none",
     "name": "Resist None",
     "image": "/vh/status-effects/SE_ResistNone-Icon.png",
-    "description": ""
+    "description": "Cannot resist Detrimental Effect(s).\n\nThis debuff is [Irresistible]."
   },
   {
     "id": "resistance_down",
     "name": "Resistance Down",
     "image": "/vh/status-effects/SE_ResistanceDown-Icon.png",
-    "description": ""
+    "description": "-X Resistance\n\nThis debuff is [Irresistible].",
+    "hunters": [
+      "faustus",
+      "jagya",
+      "renna",
+      "severin",
+      "st_hermeida"
+    ]
   },
   {
     "id": "resistance_up",
     "name": "Resistance Up",
     "image": "/vh/status-effects/SE_ResistanceUp-Icon.png",
-    "description": ""
+    "description": "+X Resistance\n\n[effect type]: Cannot resist Buff Dispel, will be dispelled before any other Buff(s).",
+    "hunters": [
+      "raven",
+      "renna",
+      "sir_bernard"
+    ]
   },
   {
     "id": "retribution",
     "name": "Retribution",
     "image": "/vh/status-effects/SE_Retribution-Icon.png",
-    "description": ""
+    "description": "+X Counter Rate",
+    "hunters": [
+      "arbias",
+      "kurgan",
+      "nathaniel"
+    ]
   },
   {
     "id": "rhymes_of_valor",
     "name": "Rhymes of Valor",
     "image": "/vh/status-effects/SE_RhymesofValor-Icon.png",
-    "description": ""
+    "description": "Playing Rhymes of Valor",
+    "hunters": [
+      "bruno"
+    ],
+    "unique": true
   },
   {
     "id": "severins_vow",
-    "name": "Severins Vow",
+    "name": "Severin's Vow",
     "image": "/vh/status-effects/SE_SeverinsVow-Icon.png",
-    "description": ""
+    "description": "When this character triggers Embrace The Void, they gain bonus X [effect].",
+    "hunters": [
+      "severin"
+    ],
+    "unique": true
   },
   {
     "id": "shackled",
     "name": "Shackled",
     "image": "/vh/status-effects/SE_Shackled-Icon.png",
-    "description": ""
+    "description": "Skills may have additional effects based on the number of stacks."
   },
   {
     "id": "shield",
     "name": "Shield",
     "image": "/vh/status-effects/SE_Shield-Icon.png",
-    "description": ""
+    "description": "Additional survivability on top of Max Health.\n\nNote: actual [effect] amount is calculated based on caster's Max Health - or target's Max Health for situations with no caster - unless said explicitly otherwise.",
+    "hunters": [
+      "goran",
+      "nadia",
+      "natalie",
+      "ruck",
+      "sir_bernard",
+      "tiche",
+      "ygravain"
+    ]
   },
   {
     "id": "skill_block",
     "name": "Skill Block",
     "image": "/vh/status-effects/SE_SkillBlock-Icon.png",
-    "description": ""
+    "description": "Cannot use special skills.",
+    "hunters": [
+      "bohdan",
+      "rosie"
+    ]
   },
   {
     "id": "snares",
     "name": "Snares",
     "image": "/vh/status-effects/SE_Snares-Icon.png",
-    "description": ""
+    "description": "When about to get damage from a [skill type] attack, deal X Max Health damage to the attacker and apply a random [Irresistible] Buff Dispel on them, then lose Y [effect].",
+    "hunters": [
+      "jagya"
+    ],
+    "unique": true
   },
   {
     "id": "soothing_chords",
     "name": "Soothing Chords",
     "image": "/vh/status-effects/SE_SoothingChords-Icon.png",
-    "description": ""
+    "description": "Playing Soothing Chords",
+    "hunters": [
+      "bruno"
+    ],
+    "unique": true
   },
   {
     "id": "spare_parts",
     "name": "Spare Parts",
     "image": "/vh/status-effects/SE_SpareParts-Icon.png",
-    "description": ""
+    "description": "Resource used to upgrade gear in battle."
   },
   {
     "id": "speed_down",
     "name": "Speed Down",
     "image": "/vh/status-effects/SE_SpeedDown-Icon.png",
-    "description": ""
+    "description": "-X Speed",
+    "hunters": [
+      "galen",
+      "rosie",
+      "st_hermeida"
+    ]
   },
   {
     "id": "speed_up",
     "name": "Speed Up",
     "image": "/vh/status-effects/SE_SpeedUp-Icon.png",
-    "description": ""
+    "description": "+X Speed",
+    "hunters": [
+      "lanthe",
+      "lilith",
+      "lysadorea",
+      "nadia",
+      "voltz"
+    ]
   },
   {
     "id": "spotlight",
     "name": "Spotlight",
     "image": "/vh/status-effects/SE_Spotlight-Icon.png",
-    "description": ""
+    "description": "Can always be targeted and cannot gain [effect].\nSkills may have additional effects.",
+    "hunters": [
+      "angelo",
+      "bruno",
+      "cassandra",
+      "rosie"
+    ]
   },
   {
     "id": "stagger",
     "name": "Stagger",
     "image": "/vh/status-effects/SE_Stagger-Icon.png",
-    "description": ""
+    "description": "[On Suffer Damage] If any Health was lost, suffer X Turn Meter Down and this debuff expires.",
+    "hunters": [
+      "bomor",
+      "natalie",
+      "reed",
+      "sir_bernard"
+    ]
   },
   {
     "id": "stealth",
     "name": "Stealth",
     "image": "/vh/status-effects/SE_Stealth-Icon.png",
-    "description": ""
+    "description": "Cannot be targetted and countered.",
+    "hunters": [
+      "jagya",
+      "lanthe",
+      "reed"
+    ]
   },
   {
     "id": "stronger",
-    "name": "Stronger",
+    "name": "Strong",
     "image": "/vh/status-effects/SE_Stronger-Icon.png",
-    "description": ""
+    "description": "+X Attack, Defense, Crit Rate and Crit Resistance",
+    "hunters": [
+      "bruno",
+      "johannes",
+      "raven"
+    ]
   },
   {
     "id": "stun",
     "name": "Stun",
     "image": "/vh/status-effects/SE_Stun-Icon.png",
-    "description": ""
+    "description": "Cannot dodge, Counter, Assist or use skills and turn will be skipped.",
+    "hunters": [
+      "angelo",
+      "faustus",
+      "galen",
+      "goran",
+      "voltz"
+    ]
   },
   {
     "id": "succumbed",
     "name": "Succumbed",
     "image": "/vh/status-effects/SE_Succumbed-Icon.png",
-    "description": ""
+    "description": "-X Attack, Defense, Speed, Focus, Resistance and Healing Effect (stacking).\n\nCannot gain Revive.\n\nAdditional cumulative effects based on number of stacks:\n2: Cannot resist Detrimental Effect(s).\n3: Cannot gain Positive Effect(s).\n4: [Unpreventable] Instant Defeat.",
+    "hunters": [
+      "aedwulf",
+      "raven",
+      "severin"
+    ]
   },
   {
     "id": "tainted_armor",
     "name": "Tainted Armor",
     "image": "/vh/status-effects/SE_TaintedArmor-Icon.png",
-    "description": ""
+    "description": "[On Suffer Damage] Lose X [effect] receiving Y less damage and inflicting Z Void Touch on attacker.\n\n[On Turn Start] W chance (stacking) to suffer V Void Touch.",
+    "hunters": [
+      "goran",
+      "ruck"
+    ]
   },
   {
     "id": "tainted_weapon",
     "name": "Tainted Weapon",
     "image": "/vh/status-effects/SE_TaintedWeapon-Icon.png",
-    "description": ""
+    "description": "[On Deal Damage] Lose X [effect] dealing Y more damage and inflicting Z Void Touch on target.\n\n[On Turn Start] W chance (stacking) to suffer V Void Touch.",
+    "hunters": [
+      "kurgan",
+      "ruck"
+    ]
   },
   {
     "id": "taunt",
     "name": "Taunt",
     "image": "/vh/status-effects/SE_Taunt-Icon.png",
-    "description": ""
+    "description": "Enemies must target this character.\n\nCannot gain [effect].",
+    "hunters": [
+      "bohdan",
+      "goran",
+      "johannes",
+      "lamassu",
+      "leo",
+      "nadia",
+      "natalie",
+      "owyn",
+      "sir_bernard",
+      "vilk"
+    ]
   },
   {
     "id": "tech_mk_i",
     "name": "Tech Mk I",
     "image": "/vh/status-effects/SE_TechMkI-Icon.png",
-    "description": ""
+    "description": "Boosts gear until the [End of Battle].\nSkills may have additional effects.",
+    "hunters": [
+      "voltz"
+    ],
+    "unique": true
   },
   {
     "id": "tech_mk_ii",
     "name": "Tech Mk II",
     "image": "/vh/status-effects/SE_TechMkII-Icon.png",
-    "description": ""
+    "description": "Boosts gear until the [End of Battle].\nSkills may have additional effects.",
+    "hunters": [
+      "voltz"
+    ],
+    "unique": true
   },
   {
     "id": "tech_mk_iii",
     "name": "Tech Mk III",
     "image": "/vh/status-effects/SE_TechMkIII-Icon.png",
-    "description": ""
+    "description": "Boosts gear until the [End of Battle].\nSkills may have additional effects.",
+    "hunters": [
+      "voltz"
+    ],
+    "unique": true
   },
   {
     "id": "tomas_vow",
-    "name": "Tomas Vow",
+    "name": "Tomas' Vow",
     "image": "/vh/status-effects/SE_TomasVow-Icon.png",
-    "description": ""
+    "description": "+X Assist Dmg if target enemy is under [effect].\nWhen this character inflicts [effect], it is [Irresistible] and [Undispellable]."
   },
   {
     "id": "true_to_vows",
     "name": "True to Vows",
     "image": "/vh/status-effects/SE_TruetoVows-Icon.png",
-    "description": ""
+    "description": "Collect stacks of [effect] to fullfill this character's Vow.",
+    "hunters": [
+      "arbias",
+      "besemin",
+      "faustus",
+      "lysadorea",
+      "nadia",
+      "natalie",
+      "nathaniel",
+      "owyn",
+      "severin",
+      "st_hermeida",
+      "ygravain"
+    ]
   },
   {
     "id": "untargettable",
     "name": "Untargettable",
     "image": "/vh/status-effects/SE_Untargettable-Icon.png",
-    "description": ""
+    "description": "Cannot be targetted as long as there are any other live allies without this effect. Immune to [effect type] effects.",
+    "hunters": [
+      "lanthe"
+    ]
   },
   {
     "id": "untouchable",
     "name": "Untouchable",
     "image": "/vh/status-effects/SE_Untouchable-Icon.png",
-    "description": ""
+    "description": "When about to suffer Void Touch, lose X [effect] instead.",
+    "hunters": [
+      "besemin",
+      "bohdan",
+      "lysadorea",
+      "sir_bernard",
+      "voltz",
+      "vukaru",
+      "ygravain"
+    ]
   },
   {
     "id": "void_flask",
     "name": "Void Flask",
     "image": "/vh/status-effects/SE_VoidFlask-Icon.png",
-    "description": ""
+    "description": "Skills may have additional effects. (Max. X stacks)",
+    "hunters": [
+      "severin"
+    ],
+    "unique": true
   },
   {
     "id": "void_power",
     "name": "Void Power",
     "image": "/vh/status-effects/SE_VoidPower-Icon.png",
-    "description": ""
+    "description": "This character gains bonuses based on their [effect].\nVoid Touch has no effect on this character attributes.\n\n[On Turn Start] Suffer X Void Touch for each [effect] on any ally.\n\nLose all [effect] if this character Succumb To The Void.",
+    "hunters": [
+      "aedwulf",
+      "angelo",
+      "arbias",
+      "ashei",
+      "bohdan",
+      "bomor",
+      "bruno",
+      "cassandra",
+      "eleazar",
+      "faustus",
+      "galen",
+      "goran",
+      "jagya",
+      "johannes",
+      "kurgan",
+      "lamassu",
+      "lanthe",
+      "leo",
+      "lilith",
+      "nadia",
+      "natalie",
+      "nathaniel",
+      "owyn",
+      "raven",
+      "reed",
+      "renna",
+      "robin",
+      "rosie",
+      "ruck",
+      "sir_bernard",
+      "st_hermeida",
+      "tiche",
+      "tombs",
+      "vilk",
+      "voltz",
+      "vukaru",
+      "ygravain"
+    ]
   },
   {
     "id": "void_trace",
     "name": "Void Trace",
     "image": "/vh/status-effects/SE_VoidTrace-Icon.png",
-    "description": ""
+    "description": "[On Turn Start] Suffer X Void Touch per stack.",
+    "hunters": [
+      "aedwulf",
+      "renna",
+      "st_hermeida"
+    ]
   },
   {
     "id": "voidbound",
-    "name": "Voidbound",
+    "name": "Void Minion",
     "image": "/vh/status-effects/SE_Voidbound-Icon.png",
-    "description": ""
-  },
-  {
-    "id": "vowkeeper",
-    "name": "Vowkeeper",
-    "image": "/vh/status-effects/SE_Vowkeeper-Icon.png",
-    "description": ""
+    "description": "All Void Touch this character inflicts is increased by X.\n\n[On Turn Start] This character converts some of its Void Touch to Healing.\n\n[When on Hunting Grounds]\nPer each Void Menace level:\n+Y Attack, Defense, Max Health and +Z Speed.",
+    "hunters": [
+      "ygravain"
+    ]
   },
   {
     "id": "vulnerable",
     "name": "Vulnerable",
     "image": "/vh/status-effects/SE_Vulnerable-Icon.png",
-    "description": ""
+    "description": "Will be critically hit if able.",
+    "hunters": [
+      "natalie",
+      "reed"
+    ]
   },
   {
     "id": "warlock",
     "name": "Warlock",
     "image": "/vh/status-effects/SE_Warlock-Icon.png",
-    "description": ""
+    "description": "This character is using Warlock-based variants of their skills."
   },
   {
     "id": "warrior",
     "name": "Warrior",
     "image": "/vh/status-effects/SE_Warrior-Icon.png",
-    "description": ""
+    "description": "This character is using Warrior-based variants of their skills."
   },
   {
     "id": "weaken",
-    "name": "Weaken",
+    "name": "Weak",
     "image": "/vh/status-effects/SE_Weaken-Icon.png",
-    "description": ""
+    "description": "-X Attack, Defense, Crit Rate and Crit Resistance",
+    "hunters": [
+      "st_hermeida",
+      "ygravain"
+    ]
   },
   {
     "id": "will_nexus",
     "name": "Will Nexus",
     "image": "/vh/status-effects/SE_WillNexus-Icon.png",
-    "description": ""
+    "description": "Each time other ally is about to gain [effect], this character gains X [effect] instead.",
+    "hunters": [
+      "faustus",
+      "galen"
+    ]
   },
   {
     "id": "wraith",
@@ -933,18 +1511,33 @@
     "id": "wrath",
     "name": "Wrath",
     "image": "/vh/status-effects/SE_Wrath-Icon.png",
-    "description": ""
+    "description": "+X damage per stack. Lose all stacks after the attack.",
+    "hunters": [
+      "bohdan",
+      "faustus",
+      "jagya",
+      "kurgan",
+      "ygravain"
+    ]
   },
   {
     "id": "ygravains_vow",
-    "name": "Ygravains Vow",
+    "name": "Ygravain's Vow",
     "image": "/vh/status-effects/SE_YgravainsVow-Icon.png",
-    "description": ""
+    "description": "Each time this character is about to gain [effect], they gain [effect] instead.",
+    "hunters": [
+      "ygravain"
+    ],
+    "unique": true
   },
   {
     "id": "zeal",
     "name": "Zeal",
     "image": "/vh/status-effects/SE_Zeal-Icon.png",
-    "description": ""
+    "description": "+X ATK and +Y Crit Dmg. (Max. Z stacks)",
+    "hunters": [
+      "arbias"
+    ],
+    "unique": true
   }
 ]

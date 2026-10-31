@@ -1,43 +1,40 @@
 'use client'
 
 import { useState } from 'react'
-import StatusEffectBox, { type StatusEffect } from './StatusEffectBox'
+import StatusEffectBox, { type EffectOwner, type StatusEffect } from './StatusEffectBox'
 
-export default function StatusEffectGrid({ effects }: { effects: StatusEffect[] }) {
+export default function StatusEffectGrid({ effects, owners = {} }: { effects: StatusEffect[]; owners?: Record<string, EffectOwner> }) {
   const [query, setQuery] = useState('')
+  const q = query.trim().toLowerCase()
+  const ownersOf = (e: StatusEffect) => (e.hunters ?? []).map((id) => owners[id]).filter((o): o is EffectOwner => !!o)
 
   const filtered = effects.filter((e) =>
-    !query || e.name.toLowerCase().includes(query.toLowerCase())
+    !q || e.name.toLowerCase().includes(q) || e.description.toLowerCase().includes(q)
+      || ownersOf(e).some((o) => o.name.toLowerCase().includes(q))
   )
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', width: '100%', maxWidth: '64rem' }}>
-      <input
-        type="search"
-        placeholder="Search status effects..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        style={{
-          background: '#1a1a1a', border: '1px solid #444', borderRadius: '0.5rem',
-          color: '#fff', padding: '0.6rem 1rem', fontSize: '0.95rem', width: '100%',
-        }}
-      />
+    <div className="vh-effects-wrap">
+      <div className="qtb-controls">
+        <input
+          type="search"
+          className="qtb-search"
+          placeholder="Search effects, what they do or a hunter…"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          aria-label="Search status effects"
+        />
+      </div>
 
       {filtered.length === 0
-        ? <p style={{ color: '#666', fontSize: '0.9rem', marginTop: '1rem' }}>No status effects found.</p>
-        : (
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(7rem, 1fr))',
-            gap: '0.6rem',
-            marginTop: '0.5rem',
-          }}>
-            {filtered.map((e) => <StatusEffectBox key={e.id} effect={e} />)}
-          </div>
-        )
-      }
-      <p style={{ fontSize: '0.75rem', color: '#555', marginTop: '0.25rem' }}>
-        Hover over an effect to see its description.
+        ? <p className="w-muted" style={{ marginTop: '1rem' }}>No status effects found.</p>
+        : <div className="vh-effects">{filtered.map((e) => <StatusEffectBox key={e.id} effect={e} owners={ownersOf(e)} />)}</div>}
+
+      <p className="w-muted vh-effects-note">
+        X, Y and so on stand for numbers set by the skill that applies the effect, so
+        they change from hunter to hunter and with skill level; [effect], [tag], [hunter] and similar stand for
+        whatever effect, tag or hunter that skill names. Portraits show the hunters whose skills include the effect;
+        a gold Unique tag marks an effect that belongs to one hunter. Tap a portrait to see how it works in their skills.
       </p>
     </div>
   )

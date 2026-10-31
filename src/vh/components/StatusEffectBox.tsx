@@ -1,38 +1,58 @@
-'use client'
-
 export type StatusEffect = {
   id: string
   name: string
   image: string
   description: string
+  /** hunters.json ids of every hunter whose kit names the effect. */
+  hunters?: string[]
+  /** The effect belongs to one hunter (their vow, resource, stance…). */
+  unique?: boolean
 }
 
-export default function StatusEffectBox({ effect }: { effect: StatusEffect }) {
+export type EffectOwner = { name: string; portrait: string | null; href: string }
+
+function Portrait({ owner }: { owner: EffectOwner }) {
+  return owner.portrait ? <img src={owner.portrait} alt="" loading="lazy" /> : <span aria-hidden="true">?</span>
+}
+
+/** One status effect: icon, name and the game's description (line breaks kept), then who uses it:
+ *  a large portrait for an effect unique to one hunter, a row of small ones for a shared effect. */
+export default function StatusEffectBox({ effect, owners }: { effect: StatusEffect; owners: EffectOwner[] }) {
+  const unique = effect.unique && owners.length > 0
   return (
-    <div
-      title={effect.description || undefined}
-      style={{
-        background: 'var(--light-bg)',
-        borderRadius: '0.5rem',
-        overflow: 'hidden',
-        border: '1px solid #2a2a2a',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: '0.5rem',
-        gap: '0.35rem',
-        cursor: effect.description ? 'help' : 'default',
-      }}
-    >
-      <div style={{ width: '100%', aspectRatio: '1 / 1', background: '#111', borderRadius: '0.375rem', overflow: 'hidden' }}>
-        {effect.image
-          ? <img src={effect.image} alt={effect.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-          : <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#333', fontSize: '1.5rem' }}>?</div>
-        }
+    <article className={`vh-effect${unique ? ' vh-effect--unique' : ''}`}>
+      <div className="vh-effect-main">
+        <div className="vh-effect-icon">
+          {effect.image ? <img src={effect.image} alt="" loading="lazy" /> : <span aria-hidden="true">?</span>}
+        </div>
+        <div className="vh-effect-body">
+          <h3>
+            {effect.name}
+            {unique && <span className="vh-effect-tag">Unique</span>}
+          </h3>
+          {effect.description
+            ? <p>{effect.description}</p>
+            : <p className="vh-effect-none">Unknown. To be updated.</p>}
+        </div>
+        {unique && (
+          <a className="vh-effect-owner" href={owners[0].href} title={`Unique to ${owners[0].name}`}>
+            <Portrait owner={owners[0]} />
+            <small>Unique to<br />{owners[0].name}</small>
+          </a>
+        )}
       </div>
-      <div style={{ fontWeight: 600, fontSize: '0.7rem', color: '#e8e8e8', textAlign: 'center', lineHeight: 1.25 }}>
-        {effect.name}
-      </div>
-    </div>
+      {!unique && owners.length > 0 && (
+        <div className="vh-effect-users">
+          <small>In {owners.length} hunter{owners.length === 1 ? "'s" : "s'"} kit{owners.length === 1 ? '' : 's'}</small>
+          <ul>
+            {owners.map((o) => (
+              <li key={o.href}>
+                <a href={o.href} title={o.name} aria-label={o.name}><Portrait owner={o} /></a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </article>
   )
 }

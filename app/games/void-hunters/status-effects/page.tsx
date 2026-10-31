@@ -2,8 +2,9 @@ import { pageMeta } from '@/src/lib/seo'
 import fs from 'fs'
 import path from 'path'
 import StatusEffectGrid from '@/src/vh/components/StatusEffectGrid'
-import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
+import type { EffectOwner, StatusEffect } from '@/src/vh/components/StatusEffectBox'
 import WorldHero from '@/src/qgg/components/WorldHero'
+import '../void-hunters.css'
 
 export const metadata = pageMeta({
   title: 'Void Hunters Status Effects: Every Buff & Debuff',
@@ -18,8 +19,21 @@ function getStatusEffects(): StatusEffect[] {
   } catch { return [] }
 }
 
+/** Name, portrait and page of every hunter shown on an effect card. */
+function getOwners(effects: StatusEffect[]): Record<string, EffectOwner> {
+  const wanted = new Set(effects.flatMap((e) => e.hunters ?? []))
+  try {
+    const hunters: { id: string; name: string; portrait: string | null }[] =
+      JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/vh/data/hunters.json'), 'utf8'))
+    return Object.fromEntries(hunters.filter((h) => wanted.has(h.id)).map((h) => [
+      h.id, { name: h.name, portrait: h.portrait, href: `/games/void-hunters/hunters/${h.id}` },
+    ]))
+  } catch { return {} }
+}
+
 export default function StatusEffectsPage() {
   const effects = getStatusEffects()
+  const owners = getOwners(effects)
 
   return (
     <main>
@@ -36,9 +50,7 @@ export default function StatusEffectsPage() {
 
       <section style={{ padding: '2rem 0' }}>
         <div className="container">
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <StatusEffectGrid effects={effects} />
-          </div>
+          <StatusEffectGrid effects={effects} owners={owners} />
         </div>
       </section>
     </main>
