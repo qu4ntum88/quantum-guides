@@ -4,6 +4,7 @@ import path from 'path'
 import StatusEffectGrid from '@/src/vh/components/StatusEffectGrid'
 import type { EffectOwner, StatusEffect } from '@/src/vh/components/StatusEffectBox'
 import WorldHero from '@/src/qgg/components/WorldHero'
+import { getStatusEffects } from '@/src/vh/lib/status-effects'
 import '../void-hunters.css'
 
 export const metadata = pageMeta({
@@ -12,12 +13,6 @@ export const metadata = pageMeta({
     'Full reference for every Void Hunters status effect: buffs, debuffs and disables with what each one does and how it stacks.',
   path: '/games/void-hunters/status-effects',
 })
-
-function getStatusEffects(): StatusEffect[] {
-  try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/vh/data/status-effects.json'), 'utf8'))
-  } catch { return [] }
-}
 
 /** Name, portrait and page of every hunter shown on an effect card. */
 function getOwners(effects: StatusEffect[]): Record<string, EffectOwner> {
@@ -31,8 +26,12 @@ function getOwners(effects: StatusEffect[]): Record<string, EffectOwner> {
   } catch { return {} }
 }
 
-export default function StatusEffectsPage() {
-  const effects = getStatusEffects()
+// Effects Quantum takes offline in Site Admin drop out within a minute (the admin route also
+// refreshes this page right away).
+export const revalidate = 60
+
+export default async function StatusEffectsPage() {
+  const effects = await getStatusEffects()
   const owners = getOwners(effects)
 
   return (

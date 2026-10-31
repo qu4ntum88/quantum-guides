@@ -3,15 +3,15 @@ import { notFound } from 'next/navigation'
 import type { Hunter, SkillEntry, BonusBreakdown } from '@/src/vh/components/HunterBox'
 import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
 import RichText from '@/src/vh/components/RichText'
+import { getStatusEffects } from '@/src/vh/lib/status-effects'
 import QuantumTake from '@/src/qgg/components/QuantumTake'
 
 function readHunters(): Hunter[] {
   return require('@/src/vh/data/hunters.json') as Hunter[]
 }
 
-function readStatusEffects(): StatusEffect[] {
-  return require('@/src/vh/data/status-effects.json') as StatusEffect[]
-}
+
+export const revalidate = 60
 
 export function generateStaticParams() {
   return readHunters().map((h) => ({ id: h.id }))
@@ -225,7 +225,7 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
   const { id } = await params
   const allHunters = readHunters().slice().sort((a, b) => a.name.localeCompare(b.name))
   const hunter = allHunters.find((h) => h.id === id)
-  const effects = readStatusEffects()
+  const effects = await getStatusEffects()
   if (!hunter) return notFound()
 
   const idx = allHunters.indexOf(hunter)
