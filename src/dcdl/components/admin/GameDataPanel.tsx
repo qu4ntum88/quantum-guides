@@ -5,6 +5,7 @@
 // Talks to /api/admin/pipeline, which only runs a fixed list of jobs and is local-only.
 
 import { useCallback, useEffect, useRef, useState } from 'react'
+import FightRecorderCard from '@/src/admin/FightRecorderCard'
 
 type Job = { id: string; group: string; label: string; note?: string; report?: string }
 type Run = { id: string; job: string; startedAt: number; endedAt?: number; code?: number | null; log?: string; logTail?: string; elapsed?: number }
@@ -60,6 +61,8 @@ export default function GameDataPanel() {
         Pulls data straight from the game installs on this PC into <code>{exportsDir || 'E:\\GameAssets\\Exports'}</code>, then syncs
         selected parts into the site. Nothing here publishes anything: review the changes, then commit.
       </p>
+
+      <FightRecorderCard />
 
       {groups.map((group) => (
         <section key={group} style={card}>

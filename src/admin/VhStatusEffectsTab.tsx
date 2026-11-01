@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { btn, btnDanger, btnQuiet, gold, hint, input, label } from '@/src/dcdl/components/admin/editor-ui'
+import FightRecorderCard from './FightRecorderCard'
 
 /**
  * Void Hunters status effects, live: take any effect offline in one click (it drops off the
@@ -97,6 +98,7 @@ export default function VhStatusEffectsTab({ setStatus }: { setStatus: (s: strin
 
   return (
     <div>
+      <div style={{ marginBottom: '1rem' }}><FightRecorderCard /></div>
       <p style={{ ...hint, fontSize: '0.8rem', marginTop: 0 }}>
         {effects.length} effects · {effects.length - offline} live · {offline} offline. Taking one offline removes it from
         the status effects page and hunter-page tooltips immediately; nothing is deleted, and Publish brings it back.

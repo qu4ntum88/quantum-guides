@@ -90,6 +90,16 @@ const JOBS: Record<string, JobDef> = {
     cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-vh-status-effects.mjs'), '--write'],
     note: 'Writes the names + descriptions into src/vh/data/status-effects.json (ids and icons untouched, nothing added). Commit afterwards.',
   },
+  'vh-fights-save': {
+    group: 'Void Hunters', label: 'Save the last fight',
+    cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'record-fights.mjs'), '--once'],
+    note: 'Copies the game\'s log of your most recent battle into _combat\\fights (the game overwrites it each battle). To catch every fight, use Start recording at the top of this tab before playing.',
+  },
+  'vh-fights-read': {
+    group: 'Void Hunters', label: 'Read saved fights',
+    cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'read-fights.mjs')],
+    note: 'Rewrites _combat\\REPORT.md: every status effect with its real numbers, who applied it, and each fighter\'s skills with values. Writes nothing to the site.',
+  },
   'inv-extract': {
     group: 'Invokers: Titan Legacy', label: 'Pull from invokers.com',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'invokers', 'update.mjs')],
