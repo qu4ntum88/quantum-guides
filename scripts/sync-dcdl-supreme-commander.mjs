@@ -56,6 +56,7 @@ const en = JSON.parse(zlib.gunzipSync(fs.readFileSync(src('lang/key_en.bin'))).t
 const POINT_ITEM = {
   'AddItem:11': 'Mother Box', // "Earn 1 Mother Box Point" (item 11 = Chest Points)
   'DelItem:0|51': 'World Anvil Fragment',
+  'DelItem:0|2126': 'World Anvil Dust',
   'DelItem:0|9': 'Drone',
   'DelItem:0|49': 'Worldline Particle',
   'DelItem:0|92': 'Magic Eye',
@@ -86,6 +87,8 @@ const MAGIC_EYE = 92
 const rankLabel = (lo, hi) => (lo === hi ? `${lo}` : `${lo}–${hi}`)
 // Reward items Quantum already has an icon for under another name.
 const ICON_ALIAS = { Chip: 'Chip (x1,000)', 'Random Mythic Champion Shard': 'Mythic Champion Shard' }
+// Scoring items that never appear as a reward, so nothing else finds their game icon: name -> item id.
+const SCORING_ITEM_IDS = { 'World Anvil Dust': 2126 }
 // The reward track is shown in rounds of 5 steps (20 steps = 4 rounds); the site lists each
 // round's last threshold and the Magic Eyes inside it.
 const ROUND_SIZE = 5
@@ -408,7 +411,8 @@ const allRewards = [
   ...next.game.leagueDuel.groups.flatMap((g) => [...g.victory, ...g.defeat]),
   ...(next.metropolis ? [...next.metropolis.milestones.reward, ...next.metropolis.leagueOutcomes.outcomes.flatMap((o) => o.rewards), ...next.metropolis.ranking.tiers.flatMap((t) => t.rewards)] : []),
 ]
-for (const name of new Set(allRewards.map((r) => r.item))) {
+for (const [name, id] of Object.entries(SCORING_ITEM_IDS)) itemIds.set(name, id)
+for (const name of new Set([...allRewards.map((r) => r.item), ...Object.keys(SCORING_ITEM_IDS)])) {
   if (next.itemIcons?.[name]) continue
   if (next.itemIcons?.[ICON_ALIAS[name]]) { next.game.icons[name] = next.itemIcons[ICON_ALIAS[name]]; continue }
   const id = itemIds.get(name)
