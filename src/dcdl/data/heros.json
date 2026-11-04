@@ -1489,84 +1489,6 @@
     ]
   },
   {
-    "id": "the_flash",
-    "name": "The Flash (Mythic)",
-    "class": "Supporter",
-    "rarity": "Mythic",
-    "tier": "A+",
-    "damageType": "Physical",
-    "tagSynergies": [
-      "justice_league",
-      "the_flash_family",
-      "metahuman"
-    ],
-    "sourcesWhereAvailable": [
-      "The Bleed",
-      "Motherboxes (Purple +)",
-      "Random Mythic Shards",
-      "Custom Mythic Shards",
-      "Daily Deals"
-    ],
-    "transmutePriorities": [
-      "Energy Gain Bonus",
-      "HP",
-      "P DEF"
-    ],
-    "recommendedLegacyPieces": [
-      "super_six_string",
-      "starheart_staff",
-      "flash_bulb_kite"
-    ],
-    "quantumsTake": "The Flash is one of the most important supports in the game for anyone looking to maximize their damage in Combat Cycle. He doesn't need to be on a specific team to provide a massive advantage, because his kit is meant to cycle your other squad members' ultimates. In early tier lists I did not value him highly and I regret it. I see him staying relevant for a long time, and cannot wait to see the rest of the Flash Family.",
-    "imageHeadshot": "./headshot_images/flash.png",
-    "imageFull": "./full_images/TheFlash_full.png",
-    "ultimate": {
-      "name": "Speed Force Sharing",
-      "description": "The Flash channels his Energy to an ally until they are fully charged or his Energy is depleted, and increases the target's ATK by [10%/15%/20%/25%/30%] for 15s. Casting the Ultimate costs the Flash at least [50/50/40/40/30] Energy. In auto mode, the skill targets the ally with the highest ATK.",
-      "image": "./skill_images/icon_hero_skill_Flash_main.png"
-    },
-    "globalSkill": {
-      "name": "Speed Healing",
-      "description": "Increases all Champions' HP by [1/2/3/4/5%].",
-      "image": "./globalskill_images/TheFlash_global.png"
-    },
-    "skills": [
-      {
-        "name": "What a Rush",
-        "description": "The Flash zips to the side of an ally to assist, increasing the target's ATK by [15%/30%/45%/60%/75%] for 10s. In auto mode, the skill targets the ally with the highest ATK.",
-        "image": "./skill_images/icon_hero_skill_Flash_sub01.png"
-      },
-      {
-        "name": "Speed Strike",
-        "description": "The Flash attacks enemies while running in circles, dealing Physical DMG equal to [200%/300%/400%/500%/600%] of his ATK to enemies within a circular area.",
-        "image": "./skill_images/icon_hero_skill_Flash_sub02.png"
-      },
-      {
-        "name": "Fast Friends",
-        "description": "The Flash runs to an ally's back and grants them [Speed Force Resonance] for 15s. In auto mode, the skill targets the ally with the lowest HP percentage. [Speed Force Resonance]: Increases Dodge by [5%/10%/15%/20%/25%].",
-        "image": "./skill_images/icon_hero_skill_Flash_sub03.png"
-      }
-    ],
-    "upgrades": [
-      {
-        "name": "What a Rush - Enhanced",
-        "description": "Reduces cooldown of [What a Rush] by [0.4/0.8/1.2/1.6/2]s.",
-        "image": "./upgrade_images/TheFlash_sub01_enhanced.png"
-      },
-      {
-        "name": "Speed Strike - Enhanced",
-        "description": "Reduces cooldown of [Speed Strike] by [0.4/0.8/1.2/1.6/2]s.",
-        "image": "./upgrade_images/TheFlash_sub02_enhanced.png"
-      },
-      {
-        "name": "Fast Friends - Enhanced",
-        "description": "Upon casting [Fast Friends], The Flash gains [Speed Force Resonance] for [1/2/3/4/5]s.",
-        "image": "./upgrade_images/TheFlash_sub03_enhanced.png"
-      }
-    ],
-    "ascendsTo": "the_flash_mythic_plus"
-  },
-  {
     "id": "harley_quinn_mythic_plus",
     "name": "Harley Quinn (Mythic +)",
     "class": "Warrior",
@@ -3358,8 +3280,36 @@
       "cloak_of_destiny"
     ],
     "imageHeadshot": "./headshot_images/Doctor_Fate.png",
+    "imageFull": "./full_images/DoctorFate_full.png",
     "ascendedFrom": "doctor_fate",
     "whaleOrSkipValue": "Top Tier",
+    "ultimate": {
+      "name": "Protection Charm",
+      "description": "Doctor Fate casts a protection spell, granting all friendly Champions a [Shield] equal to [20/26/32/38/45%] of his Max HP. [Shield]: Absorbs incoming damage.",
+      "image": "./skill_images/icon_hero_skill_DoctorFate_main.png"
+    },
+    "globalSkill": {
+      "name": "Fate Smiles",
+      "description": "Increases all Champions' P. DEF by [2/4/6/8/10%], and [Justice League Dark] Champions' HP by [2/4/6/8/10%].",
+      "image": "./globalskill_images/DoctorFate_global.png"
+    },
+    "skills": [
+      {
+        "name": "Mystic Shield",
+        "description": "Doctor Fate grants the friendly Champion with the lowest HP percentage a [Shield] equal to [16/22/28/34/40%] of Doctor Fate's Max HP.",
+        "image": "./skill_images/icon_hero_skill_DoctorFate_sub01.png"
+      },
+      {
+        "name": "Ancient Strike",
+        "description": "Increases Doctor Fate's Crit Damage Resistance by [20/30/40/50/60%]. At the start of battle, all other friendly [Justice League Dark] Champions' Crit Damage Resistance is increased by [12/18/25/32/40%].",
+        "image": "./skill_images/icon_hero_skill_DoctorFate_sub02.png"
+      },
+      {
+        "name": "Dark Magic",
+        "description": "At the start of battle, [Shields] granted by Doctor Fate become [12/18/25/32/40%] stronger.",
+        "image": "./skill_images/icon_hero_skill_DoctorFate_sub03.png"
+      }
+    ],
     "upgrades": [
       {
         "name": "Mystic Shield - Enhanced",
@@ -3461,85 +3411,6 @@
     ],
     "whaleOrSkipValue": "High Value",
     "uniqueLegacyRequired": true
-  },
-  {
-    "id": "harley_quinn",
-    "name": "Harley Quinn (Mythic)",
-    "class": "Warrior",
-    "rarity": "Mythic",
-    "tier": "C",
-    "damageType": "Physical",
-    "tagSynergies": [
-      "suicide_squad",
-      "birds_of_prey",
-      "weapon_master"
-    ],
-    "sourcesWhereAvailable": [
-      "The Bleed",
-      "Motherboxes (Purple +)",
-      "Random Mythic Shards",
-      "Custom Mythic Shards",
-      "Daily Deals",
-      "7-Day Login"
-    ],
-    "transmutePriorities": [
-      "ATK",
-      "HP",
-      "Energy Gain Bonus"
-    ],
-    "recommendedLegacyPieces": [
-      "honkin_huge_hammer",
-      "not_so_huge_hammer",
-      "promethium_claws"
-    ],
-    "quantumsTake": "Harley Quinn is one of the most important early champions for non-spenders and lite spenders. Since you get a copy of her through the 7-day login reward, it means that any additional shards allow you to build her abilities. She does decent AoE damage, especially with her legacy weapon, which is given to you early on in your playthrough. She does taper off as you get access to limite mythics, but I think she will see a resurgence as soon as there's a renewed focus on Suicide Squad champions.",
-    "imageHeadshot": "./headshot_images/harley_quinn.png",
-    "imageFull": "./full_images/HarleyQuinn_full.png",
-    "ultimate": {
-      "name": "Self-Actualization:Relase Self",
-      "description": "Harley Quinn unleashes her full potential and enters a [Self-Actualization] state for 10s, dealing Physical DMG equal to [350%/480%/650%/780%/950%] of her ATK to the target and all nearby enemies. [Self-Actualization]: Increases ATK by [12%/18%/24%/30%/36%] and enhances attacks to deal AoE damage in a small area.",
-      "image": "./skill_images/icon_hero_skill_HarleyQuinn_main.png"
-    },
-    "globalSkill": {
-      "name": "Reckless Abandon",
-      "description": "Increases [Suicide Squad] Champions' ATK by [2/4/6/8/10%].",
-      "image": "./globalskill_images/HarleyQuinn_global.png"
-    },
-    "skills": [
-      {
-        "name": "Manic Episode",
-        "description": "Harley Quinn ferociously attacks with a hammer, dealing Physical DMG equal to [445%/600%/760%/920%/1080%] of her ATK to an enemy.",
-        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub01.png"
-      },
-      {
-        "name": "Escalation",
-        "description": "Harley Quinn gains HP equal to [4%/8%/12%/16%/20%] of DMG she deals. At the start of battle, all [Suicide Squad] allies gain HP equal to [4%/8%/12%/16%/20%] of the DMG they deal.",
-        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub02.png"
-      },
-      {
-        "name": "Special Physiology",
-        "description": "Harley Quinn gains [10/20/30/40/50] Energy for each enemy she defeats.",
-        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub03.png"
-      }
-    ],
-    "upgrades": [
-      {
-        "name": "Manic Episode - Enhanced",
-        "description": "[Manic Episode] additionally reduces the target's Physical DEF by [3%/6%/9%/12%/15%] for 5s.",
-        "image": "./upgrade_images/HarleyQuinn_sub01_enhanced.png"
-      },
-      {
-        "name": "Escalation - Enhanced",
-        "description": "Harley Quinn's ATK increases by [2/4/6/8/10%].",
-        "image": "./upgrade_images/HarleyQuinn_sub02_enhanced.png"
-      },
-      {
-        "name": "Special Physiology - Enhanced",
-        "description": "Harley Quinn's Max HP increases by [2/4/6/8/10%].",
-        "image": "./upgrade_images/HarleyQuinn_sub03_enhanced.png"
-      }
-    ],
-    "ascendsTo": "harley_quinn_mythic_plus"
   },
   {
     "id": "donna_troy",
@@ -4737,6 +4608,33 @@
     "imageFull": "./full_images/img_hero_pic_RedRobin.png",
     "ascendedFrom": "red_robin",
     "whaleOrSkipValue": "Situational / Roster Dependent",
+    "ultimate": {
+      "name": "Bat-Tech Decoy",
+      "description": "Red Robin slams his staff into the ground, dealing physical damage equal to [500/625/750/875/1000%] of his Attack to enemies within range and creating a disruptor decoy for 10s. Disruptor decoy: Inherits [20/25/30/35/40%] of Red Robin's Max HP. While active, it reduces the Attack of enemies within range by [20/25/30/35/40%].",
+      "image": "./skill_images/icon_hero_skill_RedRobin_main.png"
+    },
+    "globalSkill": {
+      "name": "Seeing Red",
+      "description": "Increases all Champions' P. DEF by [2/4/6/8/10%], and [Teen Titans] Champions' P. DEF by [4/8/12/16/20%].",
+      "image": "./globalskill_images/RedRobin_global.png"
+    },
+    "skills": [
+      {
+        "name": "Spin Cycle",
+        "description": "Red Robin rapidly spins his staff for 5s, dealing physical damage equal to [200/300/400/500/600%] of his Attack to enemies ahead. For the duration, he gains Super Armor and [40/50/60/70/80%] Dodge Up.",
+        "image": "./skill_images/icon_hero_skill_RedRobin_sub01.png"
+      },
+      {
+        "name": "Precision Bat",
+        "description": "At the start of battle, Red Robin creates a defensive decoy that inherits [40/60/80/100/120%] of his Max HP and redirects 50% of the damage taken by friendly Champions to itself. The decoy lasts up to 15s",
+        "image": "./skill_images/icon_hero_skill_RedRobin_sub02.png"
+      },
+      {
+        "name": "Robin's Egg",
+        "description": "Increases Red Robin's Max HP by [20/30/45/60/75%]. At the start of battle, each [Bat Family] ally present increases Red Robin's Dodge by [2/4/6/8/10%].",
+        "image": "./skill_images/icon_hero_skill_RedRobin_sub03.png"
+      }
+    ],
     "upgrades": [
       {
         "name": "Spin Cycle - Enhanced",
@@ -5779,5 +5677,160 @@
     ],
     "ascendedFrom": "green_lantern",
     "previousTier": "S"
+  },
+  {
+    "id": "harley_quinn",
+    "name": "Harley Quinn (Mythic)",
+    "class": "Warrior",
+    "rarity": "Mythic",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "suicide_squad",
+      "birds_of_prey",
+      "weapon_master"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals",
+      "7-Day Login"
+    ],
+    "transmutePriorities": [
+      "ATK",
+      "HP",
+      "Energy Gain Bonus"
+    ],
+    "recommendedLegacyPieces": [
+      "honkin_huge_hammer",
+      "not_so_huge_hammer",
+      "promethium_claws"
+    ],
+    "quantumsTake": "Harley Quinn is one of the most important early champions for non-spenders and lite spenders. Since you get a copy of her through the 7-day login reward, it means that any additional shards allow you to build her abilities. She does decent AoE damage, especially with her legacy weapon, which is given to you early on in your playthrough. She does taper off as you get access to limite mythics, but I think she will see a resurgence as soon as there's a renewed focus on Suicide Squad champions.",
+    "imageHeadshot": "./headshot_images/harley_quinn.png",
+    "imageFull": "./full_images/HarleyQuinn_full.png",
+    "ultimate": {
+      "name": "Self-Actualization:Relase Self",
+      "description": "Harley Quinn unleashes her full potential and enters a [Self-Actualization] state for 10s, dealing Physical DMG equal to [350%/480%/650%/780%/950%] of her ATK to the target and all nearby enemies. [Self-Actualization]: Increases ATK by [12%/18%/24%/30%/36%] and enhances attacks to deal AoE damage in a small area.",
+      "image": "./skill_images/icon_hero_skill_HarleyQuinn_main.png"
+    },
+    "globalSkill": {
+      "name": "Reckless Abandon",
+      "description": "Increases [Suicide Squad] Champions' ATK by [2/4/6/8/10%].",
+      "image": "./globalskill_images/HarleyQuinn_global.png"
+    },
+    "skills": [
+      {
+        "name": "Manic Episode",
+        "description": "Harley Quinn ferociously attacks with a hammer, dealing Physical DMG equal to [445%/600%/760%/920%/1080%] of her ATK to an enemy.",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub01.png"
+      },
+      {
+        "name": "Escalation",
+        "description": "Harley Quinn gains HP equal to [4%/8%/12%/16%/20%] of DMG she deals. At the start of battle, all [Suicide Squad] allies gain HP equal to [4%/8%/12%/16%/20%] of the DMG they deal.",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub02.png"
+      },
+      {
+        "name": "Special Physiology",
+        "description": "Harley Quinn gains [10/20/30/40/50] Energy for each enemy she defeats.",
+        "image": "./skill_images/icon_hero_skill_HarleyQuinn_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Manic Episode - Enhanced",
+        "description": "[Manic Episode] additionally reduces the target's Physical DEF by [3%/6%/9%/12%/15%] for 5s.",
+        "image": "./upgrade_images/HarleyQuinn_sub01_enhanced.png"
+      },
+      {
+        "name": "Escalation - Enhanced",
+        "description": "Harley Quinn's ATK increases by [2/4/6/8/10%].",
+        "image": "./upgrade_images/HarleyQuinn_sub02_enhanced.png"
+      },
+      {
+        "name": "Special Physiology - Enhanced",
+        "description": "Harley Quinn's Max HP increases by [2/4/6/8/10%].",
+        "image": "./upgrade_images/HarleyQuinn_sub03_enhanced.png"
+      }
+    ],
+    "ascendsTo": "harley_quinn_mythic_plus"
+  },
+  {
+    "id": "the_flash",
+    "name": "The Flash (Mythic)",
+    "class": "Supporter",
+    "rarity": "Mythic",
+    "damageType": "Physical",
+    "tagSynergies": [
+      "justice_league",
+      "the_flash_family",
+      "metahuman"
+    ],
+    "sourcesWhereAvailable": [
+      "The Bleed",
+      "Motherboxes (Purple +)",
+      "Random Mythic Shards",
+      "Custom Mythic Shards",
+      "Daily Deals"
+    ],
+    "transmutePriorities": [
+      "Energy Gain Bonus",
+      "HP",
+      "P DEF"
+    ],
+    "recommendedLegacyPieces": [
+      "super_six_string",
+      "starheart_staff",
+      "flash_bulb_kite"
+    ],
+    "quantumsTake": "The Flash is one of the most important supports in the game for anyone looking to maximize their damage in Combat Cycle. He doesn't need to be on a specific team to provide a massive advantage, because his kit is meant to cycle your other squad members' ultimates. In early tier lists I did not value him highly and I regret it. I see him staying relevant for a long time, and cannot wait to see the rest of the Flash Family.",
+    "imageHeadshot": "./headshot_images/flash.png",
+    "imageFull": "./full_images/TheFlash_full.png",
+    "ultimate": {
+      "name": "Speed Force Sharing",
+      "description": "The Flash channels his Energy to an ally until they are fully charged or his Energy is depleted, and increases the target's ATK by [10%/15%/20%/25%/30%] for 15s. Casting the Ultimate costs the Flash at least [50/50/40/40/30] Energy. In auto mode, the skill targets the ally with the highest ATK.",
+      "image": "./skill_images/icon_hero_skill_Flash_main.png"
+    },
+    "globalSkill": {
+      "name": "Speed Healing",
+      "description": "Increases all Champions' HP by [1/2/3/4/5%].",
+      "image": "./globalskill_images/TheFlash_global.png"
+    },
+    "skills": [
+      {
+        "name": "What a Rush",
+        "description": "The Flash zips to the side of an ally to assist, increasing the target's ATK by [15%/30%/45%/60%/75%] for 10s. In auto mode, the skill targets the ally with the highest ATK.",
+        "image": "./skill_images/icon_hero_skill_Flash_sub01.png"
+      },
+      {
+        "name": "Speed Strike",
+        "description": "The Flash attacks enemies while running in circles, dealing Physical DMG equal to [200%/300%/400%/500%/600%] of his ATK to enemies within a circular area.",
+        "image": "./skill_images/icon_hero_skill_Flash_sub02.png"
+      },
+      {
+        "name": "Fast Friends",
+        "description": "The Flash runs to an ally's back and grants them [Speed Force Resonance] for 15s. In auto mode, the skill targets the ally with the lowest HP percentage. [Speed Force Resonance]: Increases Dodge by [5%/10%/15%/20%/25%].",
+        "image": "./skill_images/icon_hero_skill_Flash_sub03.png"
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "What a Rush - Enhanced",
+        "description": "Reduces cooldown of [What a Rush] by [0.4/0.8/1.2/1.6/2]s.",
+        "image": "./upgrade_images/TheFlash_sub01_enhanced.png"
+      },
+      {
+        "name": "Speed Strike - Enhanced",
+        "description": "Reduces cooldown of [Speed Strike] by [0.4/0.8/1.2/1.6/2]s.",
+        "image": "./upgrade_images/TheFlash_sub02_enhanced.png"
+      },
+      {
+        "name": "Fast Friends - Enhanced",
+        "description": "Upon casting [Fast Friends], The Flash gains [Speed Force Resonance] for [1/2/3/4/5]s.",
+        "image": "./upgrade_images/TheFlash_sub03_enhanced.png"
+      }
+    ],
+    "ascendsTo": "the_flash_mythic_plus"
   }
 ]

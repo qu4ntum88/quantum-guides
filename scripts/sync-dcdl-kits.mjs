@@ -63,6 +63,15 @@ function findChampion(site) {
   return c.sort((a, b) => score(b) - score(a))[0]
 }
 
+// Recommendations for champions Quantum is holding back from the site. The game names the
+// ascended and regular versions the same, so these match on the text. Clear an entry when he adds the champion.
+const HELD_GUIDE_TEXT = new Set([
+  // Ascended Black Canary (#328)
+  'Boosts Attack and Effect Accuracy.',
+  'Boosts Attack and Energy gain.',
+  "Boosts the whole squad's offense and defense when casting the Ultimate.",
+])
+
 let kitChanges = 0
 const unmatched = []
 const log = []
@@ -284,7 +293,7 @@ for (const [id, p] of legacyMatches) {
       kind: s.kind.startsWith('Exclusive') ? 'exclusive' : 'general',
       steps: s.textByUpgrade.map((u) => ({ label: u.label, text: oneLine(u.text) })),
     })),
-    guide: p.guide,
+    guide: (p.guide || []).filter((g) => !HELD_GUIDE_TEXT.has(g.text)),
   }
 }
 function readAllPaths(dir, file) {
