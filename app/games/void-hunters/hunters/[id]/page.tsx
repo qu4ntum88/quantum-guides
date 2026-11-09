@@ -11,7 +11,7 @@ function readHunters(): Hunter[] {
 }
 
 
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export function generateStaticParams() {
   return readHunters().map((h) => ({ id: h.id }))

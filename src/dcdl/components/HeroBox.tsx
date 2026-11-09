@@ -6,7 +6,7 @@ import RarityBadge, { RARITY_STYLE } from "./RarityBadge"
 import { EntryBadgeGroup } from "./EntryBadges"
 import type { HeroResolved } from "../lib/data"
 
-const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
+const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.webp"
 
 // `compact` is the downsized tile used inside the Tier List view's cells.
 export default function HeroBox({ hero, communityTier, compact = false }: { hero: HeroResolved; communityTier?: string; compact?: boolean }) {

@@ -489,7 +489,7 @@ export default function ChampionGameData({ curves, firstLevel, maxLevel, talents
                   {!isSignedIn ? (
                     <div className="cgd-signin">
                       <p><strong>Sign in to add your own game account information.</strong> Members enter their roster, research, hangar, VIP and skins once, and every champion&apos;s Stat Calculator adds those bonuses.</p>
-                      <Link className="cgd-signin__btn" href="/sign-in">Sign in</Link>
+                      <Link prefetch={false} className="cgd-signin__btn" href="/sign-in">Sign in</Link>
                       {acctSource === 'max' && <p className="cgd-note">Showing a theoretical maxed account meanwhile: every champion at 5★ Red, all research, a maxed hangar and VIP.</p>}
                     </div>
                   ) : (

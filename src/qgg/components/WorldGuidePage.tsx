@@ -76,7 +76,7 @@ export async function WorldGuideArticle({ game, id }: { game: WorldGame; id: str
         note={byline || undefined}
         art={guide.coverImage}
       >
-        <Link href={guideGame(game).hub} className="btn">← {short} Guides</Link>
+        <Link prefetch={false} href={guideGame(game).hub} className="btn">← {short} Guides</Link>
       </WorldHero>
 
       <GuideBody guide={guide} html={html} headings={headings} />
@@ -93,7 +93,7 @@ export async function WorldGuideCards({ game, title = 'Guides' }: { game: GuideG
       <h2>{title}</h2>
       <div className="w-guides">
         {guides.map((g) => (
-          <Link key={g.id} href={guidePath(g.game, g.id)} className="w-guide">
+          <Link prefetch={false} key={g.id} href={guidePath(g.game, g.id)} className="w-guide">
             <strong>{g.title}</strong>
             {g.description && <p>{g.description}</p>}
             {(g.pubDate || g.author) && (

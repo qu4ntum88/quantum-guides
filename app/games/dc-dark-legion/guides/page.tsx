@@ -8,7 +8,7 @@ import HubLogos from '@/src/qgg/components/HubLogos'
 
 // Read published content from Supabase (with a file fallback); refresh at most
 // once a minute so editor changes appear without a redeploy.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 const GUIDE_GRADIENTS = [
   'linear-gradient(135deg, #0a1628 0%, #1a0a2e 100%)',

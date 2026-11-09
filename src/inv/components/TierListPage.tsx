@@ -123,7 +123,7 @@ export default async function TierListPage({ kind, listId }: { kind: Kind; listI
               {top.map((x, i) => (
                 <span key={x.s}>
                   {i > 0 && ', '}
-                  <Link href={unitPath(kind, x.s)}>{name.get(x.s)}</Link> ({x.tier})
+                  <Link prefetch={false} href={unitPath(kind, x.s)}>{name.get(x.s)}</Link> ({x.tier})
                 </span>
               ))}
             </li>
@@ -142,9 +142,9 @@ export default async function TierListPage({ kind, listId }: { kind: Kind; listI
         </p>
         <p>
           {kind === 'Titan' ? (
-            <>Looking for Invokers instead? See the <Link href={tierListPath('Invoker', listId)}>{boss ? `${boss} Invoker tier list` : 'Invoker tier list'}</Link>.</>
+            <>Looking for Invokers instead? See the <Link prefetch={false} href={tierListPath('Invoker', listId)}>{boss ? `${boss} Invoker tier list` : 'Invoker tier list'}</Link>.</>
           ) : (
-            <>Pair them with the right Titan: see the <Link href={tierListPath('Titan', listId)}>{boss ? `${boss} Titan tier list` : 'Titan tier list'}</Link>.</>
+            <>Pair them with the right Titan: see the <Link prefetch={false} href={tierListPath('Titan', listId)}>{boss ? `${boss} Titan tier list` : 'Titan tier list'}</Link>.</>
           )}
         </p>
       </section>

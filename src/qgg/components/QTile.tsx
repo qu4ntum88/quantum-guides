@@ -34,7 +34,7 @@ export default function QTile({
   size?: 'sm' | 'md'
 }) {
   return (
-    <Link
+    <Link prefetch={false}
       href={e.href}
       className={`qt qt--${size}${e.shape === 'card' ? ' qt--card' : ''}${dimmed ? ' is-dim' : ''}`}
       style={{ '--rarity': e.rarityColor } as React.CSSProperties}

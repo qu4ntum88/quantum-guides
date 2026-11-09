@@ -46,7 +46,7 @@ const RARITY_COLOR: Record<string, string> = {
 
 export default function HunterBox({ hunter }: { hunter: Hunter }) {
   return (
-    <Link
+    <Link prefetch={false}
       href={`/games/void-hunters/hunters/${hunter.id}`}
       style={{ textDecoration: 'none', display: 'block' }}
     >

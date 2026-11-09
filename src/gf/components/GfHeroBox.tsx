@@ -113,7 +113,7 @@ export default function GfHeroBox({ hero }: { hero: GfHero }) {
     : { border: '1px solid #2a2a2a' }
 
   return (
-    <Link
+    <Link prefetch={false}
       href={`/games/godforge/heroes/${hero.id}`}
       style={{ textDecoration: 'none', display: 'block' }}
     >

@@ -7,7 +7,7 @@ import { renderGuideCard, renderLogoCard, remoteImage, OG_SIZE, OG_CONTENT_TYPE 
 export const size = OG_SIZE
 export const contentType = OG_CONTENT_TYPE
 export const alt = 'DC: Dark Legion guide on Quantum Game Guides'
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export default async function Image({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params

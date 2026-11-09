@@ -132,7 +132,7 @@ export default function UnitPage({ unit: u }: { unit: Unit }) {
         <div className="container inv-unit-hero-inner">
           <div className="inv-unit-hero-text">
             <nav className="inv-crumbs" aria-label="Breadcrumb">
-              <Link href="/games/invokers/guides">Invokers</Link> › <Link href={tierListPath(u.kind)}>{u.kind === 'Titan' ? 'Titans' : 'Invokers'}</Link> › <span>{u.name}</span>
+              <Link prefetch={false} href="/games/invokers/guides">Invokers</Link> › <Link prefetch={false} href={tierListPath(u.kind)}>{u.kind === 'Titan' ? 'Titans' : 'Invokers'}</Link> › <span>{u.name}</span>
             </nav>
             <h1>{u.name}</h1>
             <div className="inv-pills">
@@ -178,7 +178,7 @@ export default function UnitPage({ unit: u }: { unit: Unit }) {
             <p className="inv-muted">{u.name}&apos;s tier on each boss list, best first. Each one opens that boss&apos;s full tier list.</p>
             <div className="inv-where">
               {place.map((x) => (
-                <Link key={x.id} href={tierListPath(u.kind, x.id)} className="inv-where-item">
+                <Link prefetch={false} key={x.id} href={tierListPath(u.kind, x.id)} className="inv-where-item">
                   <span className="inv-where-tier" style={{ background: TIER_COLORS[x.tier] ?? '#555' }}>{x.tier}</span>
                   {x.boss}
                 </Link>
@@ -245,7 +245,7 @@ export default function UnitPage({ unit: u }: { unit: Unit }) {
           <h2>More {u.kind === 'Titan' ? 'Titans' : 'Invokers'}</h2>
           <div className="inv-browse">
             {browse.map((b) => (
-              <Link key={b.label} href={`${tierListPath(u.kind)}?view=grid&${b.q}`}>{b.label}</Link>
+              <Link prefetch={false} key={b.label} href={`${tierListPath(u.kind)}?view=grid&${b.q}`}>{b.label}</Link>
             ))}
           </div>
           {similar.length > 0 && (

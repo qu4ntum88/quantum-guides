@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidateSite } from '@/src/lib/revalidate-site'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole, type Viewer } from '@/src/lib/roles-server'
 import { hasRole } from '@/src/lib/roles'
@@ -85,6 +86,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await supabaseAdmin.from('guides').upsert(row, { onConflict: 'id' })
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true, id, status: row.status })
 }
 
@@ -105,5 +107,6 @@ export async function DELETE(req: NextRequest) {
 
   const { error } = await supabaseAdmin.from('guides').delete().eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true })
 }

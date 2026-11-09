@@ -49,9 +49,16 @@ export default async function proxy(req: NextRequest, evt: NextFetchEvent) {
   }
 }
 
+// Run Clerk ONLY where the server needs to know who is asking: the API routes
+// (every write re-checks the role there) and the signed-in pages. Public pages
+// handle sign-in in the browser (ClerkProvider + useUser), so running Clerk on them
+// did nothing but burn CPU: on 2026-11-07 the site was paused on Vercel Hobby with
+// this middleware as 55% of all Active CPU, running on every page view and prefetch.
+// /studio calls auth() server-side; /members and /admin are listed so their pages
+// and Clerk's sign-in pages keep the session handshake.
 export const config = {
   matcher: [
-    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
     '/(api|trpc)(.*)',
+    '/(studio|members|admin|sign-in|sign-up)(.*)',
   ],
 }

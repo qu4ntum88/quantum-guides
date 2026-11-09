@@ -11,7 +11,7 @@ import { gfEntities, getGfHero, getGfHeroSlugs, getGfTieredRoster, titleCase } f
 import '../../godforge.css'
 
 // The hero's tier can be saved from the Studio editor (Supabase).
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 export const dynamicParams = false
 
 export function generateStaticParams() {
@@ -83,7 +83,7 @@ export default async function GfHeroPage({ params }: { params: Promise<{ slug: s
       <section className="gfh-hero" style={{ '--rarity': rarityColor } as React.CSSProperties}>
         <div className="container gfh-hero-inner">
           <nav className="gfh-crumbs" aria-label="Breadcrumb">
-            <Link href="/games/godforge">Godforge</Link> › <Link href="/games/godforge/hero-tier-list">Heroes</Link> › <span>{hero.name}</span>
+            <Link prefetch={false} href="/games/godforge">Godforge</Link> › <Link prefetch={false} href="/games/godforge/hero-tier-list">Heroes</Link> › <span>{hero.name}</span>
           </nav>
           <div className="gfh-top">
             <div className="gfh-portrait">
@@ -112,7 +112,7 @@ export default async function GfHeroPage({ params }: { params: Promise<{ slug: s
                 ))}
               </div>
               {tier && (
-                <Link href="/games/godforge/hero-tier-list" className="gfh-tier">
+                <Link prefetch={false} href="/games/godforge/hero-tier-list" className="gfh-tier">
                   <span className="gfh-tier-badge" style={{ background: TIER_COLORS[tier] }}>{tier}</span>
                   <span><strong>{tier} tier</strong> among {hero.archetype}s<small>Quantum&apos;s Godforge tier list</small></span>
                 </Link>

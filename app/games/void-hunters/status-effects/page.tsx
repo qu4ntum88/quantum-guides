@@ -28,7 +28,7 @@ function getOwners(effects: StatusEffect[]): Record<string, EffectOwner> {
 
 // Effects Quantum takes offline in Site Admin drop out within a minute (the admin route also
 // refreshes this page right away).
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export default async function StatusEffectsPage() {
   const effects = await getStatusEffects()

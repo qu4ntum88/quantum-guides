@@ -7,7 +7,7 @@ import { pageMeta, monthYear, breadcrumbLd, itemListLd, DCDL_CRUMB } from '@/src
 import '../../godforge/game.css'
 
 // Official tiers are read from Supabase, so pick up Studio edits within a minute.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 const PATH = '/games/dc-dark-legion/legacy-tier-list'
 
@@ -52,7 +52,7 @@ export default async function LegacyPage() {
             {lastUpdated && (
               <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.38)', fontFamily: 'monospace' }}>Updated: {lastUpdated}</span>
             )}
-            <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--gold)', fontSize: '0.82rem', textDecoration: 'none', opacity: 0.9 }}>
+            <Link prefetch={false} href="/games/dc-dark-legion/legacy/community-tier" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--gold)', fontSize: '0.82rem', textDecoration: 'none', opacity: 0.9 }}>
               <img src="/images/site/JLD.png" alt="" style={{ height: '1.5rem', objectFit: 'contain' }} />
               Community Voted Tier Rankings →
             </Link>
@@ -64,7 +64,7 @@ export default async function LegacyPage() {
           <p style={{ fontSize: '0.78rem', color: '#888', marginBottom: '0.5rem' }}>
             Click a legacy piece for its Gear Effects at every star, both skills and how they upgrade, and who can equip it.
             Community votes live on the{' '}
-            <Link href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
+            <Link prefetch={false} href="/games/dc-dark-legion/legacy/community-tier" style={{ color: 'var(--gold)' }}>
               Justice League of Discord community voted tier ranking page
             </Link>.
           </p>

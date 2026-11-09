@@ -99,7 +99,7 @@ export default function MembersClient({ heroes, legacyPieces, account }: {
         <div className="container" style={{ textAlign: 'center', paddingTop: '4rem' }}>
           <h1>Members Area</h1>
           <p style={{ color: '#aaa', marginBottom: '2rem' }}>Sign in to vote on champion and legacy piece tiers, and to add your own DC: Dark Legion account to every champion&apos;s Stat Calculator.</p>
-          <Link href="/sign-in" className="btn">Sign In</Link>
+          <Link prefetch={false} href="/sign-in" className="btn">Sign In</Link>
         </div>
       </main>
     )

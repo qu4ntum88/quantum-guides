@@ -8,7 +8,7 @@ import { DEFAULT_GUIDE_GAME, toGuideGame, type GuideGame } from '@/src/lib/guide
  * infographics.
  *
  * Reads published content from Supabase (so edits in the on-site editor go live
- * without a redeploy — pages revalidate every 60s) and FALLS BACK to the
+ * without a redeploy — saves revalidate the site on demand) and FALLS BACK to the
  * existing on-disk files (MDX guides, game-info.json, infographics.json) when
  * the database is unreachable, unconfigured, or a table is still empty (i.e.
  * before the one-time migration has run). That fallback is what keeps the site
@@ -23,7 +23,7 @@ async function fetchTable<T>(table: string, order = 'sort.asc', filter = ''): Pr
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}?select=*&order=${order}${filter}`, {
       headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
-      next: { revalidate: 60 },
+      next: { revalidate: 86400 },
     })
     if (!res.ok) return null
     return (await res.json()) as T[]

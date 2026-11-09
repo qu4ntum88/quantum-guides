@@ -39,7 +39,7 @@ export async function getStatusEffectOverrides(): Promise<StatusEffectOverride[]
   try {
     const res = await fetch(`${url}/rest/v1/vh_status_effect_overrides?select=effect_id,hidden,name,description,updated_at`, {
       headers: { apikey: key, Authorization: `Bearer ${key}` },
-      next: { revalidate: 60, tags: [VH_EFFECTS_TAG] },
+      next: { revalidate: 86400, tags: [VH_EFFECTS_TAG] },
     })
     if (!res.ok) return []
     return (await res.json()) as StatusEffectOverride[]

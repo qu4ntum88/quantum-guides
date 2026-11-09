@@ -122,7 +122,7 @@ export default function Navbar() {
       <div className="nav-container">
         {/* Logo */}
         <div className="logo">
-          <Link href="/">
+          <Link prefetch={false} href="/">
             <img src="/images/site/Q GOLD LOGOTYPE.png" alt="Quantum Game Guides" className="brand-logotype" />
           </Link>
         </div>
@@ -145,7 +145,7 @@ export default function Navbar() {
                 <UserButton afterSignOutUrl="/" />
               </>
             ) : (
-              <Link href="/sign-in" className="btn" style={{ padding: '0.4rem 1rem', fontSize: '0.78rem', textDecoration: 'none' }}>Sign In</Link>
+              <Link prefetch={false} href="/sign-in" className="btn" style={{ padding: '0.4rem 1rem', fontSize: '0.78rem', textDecoration: 'none' }}>Sign In</Link>
             )}
             <a href="/about">About</a>
           </li>
@@ -211,7 +211,7 @@ export default function Navbar() {
           {isSignedIn ? (
             <a href="/members" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Members</a>
           ) : (
-            <Link href="/sign-in" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Sign In</Link>
+            <Link prefetch={false} href="/sign-in" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Sign In</Link>
           )}
           <a href="/about" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>About</a>
         </div>

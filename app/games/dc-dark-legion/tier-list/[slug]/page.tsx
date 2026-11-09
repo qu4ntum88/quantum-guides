@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 
 // Lists change whenever their creator saves, so re-check on the same 60s cadence
 // the rest of the CMS-backed content uses.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 export const dynamicParams = true
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
@@ -75,7 +75,7 @@ export default async function CommunityTierListPage({ params }: Params) {
                 Updated: {updated}
               </span>
             )}
-            <Link href="/games/dc-dark-legion/infographics" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
+            <Link prefetch={false} href="/games/dc-dark-legion/infographics" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
               ← Community tier lists
             </Link>
           </div>
@@ -96,7 +96,7 @@ export default async function CommunityTierListPage({ params }: Params) {
           <p style={{ marginTop: '1rem', fontSize: '0.75rem', color: '#888', fontStyle: 'italic', lineHeight: 1.6 }}>
             This ranking is the opinion of {list.creatorName}, a Quantum Game Guides{' '}
             {isLegacy ? 'contributor' : 'contributor'} — not the site&rsquo;s official list. See{' '}
-            <Link href={isLegacy ? '/games/dc-dark-legion/legacy-tier-list?view=tier' : '/games/dc-dark-legion/champion-tier-list?view=tier'} style={{ color: 'var(--gold)', fontStyle: 'normal' }}>
+            <Link prefetch={false} href={isLegacy ? '/games/dc-dark-legion/legacy-tier-list?view=tier' : '/games/dc-dark-legion/champion-tier-list?view=tier'} style={{ color: 'var(--gold)', fontStyle: 'normal' }}>
               Quantum&rsquo;s tier list
             </Link>{' '}for that.
           </p>

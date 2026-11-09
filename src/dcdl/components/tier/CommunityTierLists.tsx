@@ -32,7 +32,7 @@ export default function CommunityTierLists({ lists }: { lists: TierListMeta[] })
           gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 17rem), 1fr))',
         }}>
           {lists.map((l) => (
-            <Link
+            <Link prefetch={false}
               key={l.id}
               href={`/games/dc-dark-legion/tier-list/${l.id}`}
               style={{

@@ -5,7 +5,7 @@ import PatchNotesCard from '@/src/dcdl/components/PatchNotesCard'
 import { getPatchNotes } from '@/src/dcdl/lib/content-db'
 import '../../godforge/game.css'
 
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 const PATH = '/games/dc-dark-legion/patch-notes'
 
@@ -38,7 +38,7 @@ export default async function PatchNotesArchivePage() {
           </p>
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem' }}>
-            <Link href="/games/dc-dark-legion/guides" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
+            <Link prefetch={false} href="/games/dc-dark-legion/guides" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
               ← Hub
             </Link>
           </div>

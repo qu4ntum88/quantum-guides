@@ -172,7 +172,7 @@ export default function DungeonDetail({
           </p>
           <div className="gh-hero-divider" />
           <div className="gh-hero-back">
-            <Link href="/games/godforge/dungeons" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← All Dungeons</Link>
+            <Link prefetch={false} href="/games/godforge/dungeons" className="btn" style={{ fontSize: '0.78rem', padding: '0.45rem 1rem' }}>← All Dungeons</Link>
           </div>
         </div>
       </section>

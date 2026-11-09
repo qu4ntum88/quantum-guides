@@ -2,7 +2,7 @@ import { WorldGuideArticle, worldGuideMetadata, worldGuideParams } from '@/src/q
 
 // CMS guides with game = 'invokers' (written in the Site Admin or the Studio).
 // Guides published after the deploy render on demand.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export const generateStaticParams = () => worldGuideParams('invokers')
 

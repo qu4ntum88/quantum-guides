@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidateSite } from '@/src/lib/revalidate-site'
 import { getIsAdmin } from '@/src/lib/adminAuth'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { toGuideGame } from '@/src/lib/guide-games'
@@ -43,6 +44,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await supabaseAdmin.from('patch_notes').upsert(row, { onConflict: 'id' })
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true })
 }
 
@@ -53,5 +55,6 @@ export async function DELETE(req: NextRequest) {
   if (!id) return NextResponse.json({ error: 'Missing id' }, { status: 400 })
   const { error } = await supabaseAdmin.from('patch_notes').delete().eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true })
 }

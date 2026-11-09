@@ -12,7 +12,7 @@ import '../../../godforge/game.css'
 // after build time render on-demand (dynamicParams defaults to true).
 // Only DCDL guides live here: getGuide() defaults to game 'dcdl', so another
 // game's guide id 404s at this URL.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export async function generateStaticParams() {
   const guides = await getGuidesFull()
@@ -95,7 +95,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ id
           )}
           <div className="gh-hero-divider" />
           <div className="gh-hero-back">
-            <Link href="/games/dc-dark-legion/guides" className="btn">← Back to Guides</Link>
+            <Link prefetch={false} href="/games/dc-dark-legion/guides" className="btn">← Back to Guides</Link>
           </div>
         </div>
       </section>

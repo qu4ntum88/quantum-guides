@@ -92,7 +92,7 @@ export default function TierListsTab({ setStatus }: { setStatus: (s: string) => 
       {lists.length === 0 && (
         <p style={{ color: '#888', fontSize: '0.88rem', lineHeight: 1.6 }}>
           You haven&rsquo;t published a tier list yet. Create one and it appears on the{' '}
-          <Link href="/games/dc-dark-legion/infographics" style={{ color: gold }}>DC: Dark Legion infographics page</Link> under
+          <Link prefetch={false} href="/games/dc-dark-legion/infographics" style={{ color: gold }}>DC: Dark Legion infographics page</Link> under
           Community Tier Lists, credited to you.
         </p>
       )}
@@ -116,7 +116,7 @@ export default function TierListsTab({ setStatus }: { setStatus: (s: string) => 
             </div>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
               {l.published && (
-                <Link href={`/games/dc-dark-legion/tier-list/${l.id}`} target="_blank" rel="noreferrer"
+                <Link prefetch={false} href={`/games/dc-dark-legion/tier-list/${l.id}`} target="_blank" rel="noreferrer"
                   style={{ ...btnQuiet, textDecoration: 'none' }}>View</Link>
               )}
               <button style={btnQuiet} onClick={() => setEditing(l)}>Edit</button>

@@ -114,7 +114,7 @@ export default function ApplyPanel() {
             Build tier lists{role !== 'creator' ? ', write guides, and upload infographics' : ''} from any device.
           </p>
         </div>
-        <Link href="/studio" style={{ ...btn, textDecoration: 'none' }}>Open Studio</Link>
+        <Link prefetch={false} href="/studio" style={{ ...btn, textDecoration: 'none' }}>Open Studio</Link>
       </div>
     )
   }

@@ -32,7 +32,7 @@ async function rest<T>(pathAndQuery: string): Promise<T[] | null> {
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/${pathAndQuery}`, {
       headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
-      next: { revalidate: 60 },
+      next: { revalidate: 86400 },
     })
     if (!res.ok) return null
     return (await res.json()) as T[]

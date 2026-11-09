@@ -21,7 +21,7 @@ export const dynamicParams = false
 
 const BASE = '/games/dc-dark-legion/legacy'
 const LIST = '/games/dc-dark-legion/legacy-tier-list'
-const PLACEHOLDER = '/dcdl/heros/headshot_images/_placeholder.png'
+const PLACEHOLDER = '/dcdl/heros/headshot_images/_placeholder.webp'
 
 export function generateStaticParams() {
   return getResolvedLegacy().map((l) => ({ id: l.id }))
@@ -122,9 +122,9 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
       <JsonLd data={breadcrumbLd([DCDL_CRUMB, ['Legacy Tier List', LIST], [piece.name, path_]])} />
       <div className="container lgp-wrap">
         <nav className="lgp-crumbs" aria-label="Breadcrumb">
-          <Link href="/games/dc-dark-legion/guides">DC: Dark Legion</Link>
+          <Link prefetch={false} href="/games/dc-dark-legion/guides">DC: Dark Legion</Link>
           <span aria-hidden="true">›</span>
-          <Link href={LIST}>Legacy Tier List</Link>
+          <Link prefetch={false} href={LIST}>Legacy Tier List</Link>
           <span aria-hidden="true">›</span>
           <span aria-current="page">{piece.name}</span>
         </nav>
@@ -135,8 +135,8 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
             data={d}
             footer={
               <footer className="ld-foot">
-                <Link href={`${BASE}/community-tier#${piece.id}`}>Community tier votes →</Link>
-                <Link href={LIST}>Full legacy tier list →</Link>
+                <Link prefetch={false} href={`${BASE}/community-tier#${piece.id}`}>Community tier votes →</Link>
+                <Link prefetch={false} href={LIST}>Full legacy tier list →</Link>
               </footer>
             }
           />
@@ -151,7 +151,7 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
             <h2>Champions who use {piece.name}</h2>
             <div className="lgp-champs">
               {champions.map((h) => (
-                <Link key={h.id} href={`/games/dc-dark-legion/heros/${h.id}`} className="lgp-champ">
+                <Link prefetch={false} key={h.id} href={`/games/dc-dark-legion/heros/${h.id}`} className="lgp-champ">
                   <img src={h.imageHeadshot ?? PLACEHOLDER} alt="" loading="lazy" />
                   <span>{h.name}</span>
                 </Link>
@@ -165,7 +165,7 @@ export default async function LegacyPiecePage({ params }: { params: Promise<{ id
             <h2>{piece.tier ? `Other ${piece.tier} tier legacy pieces` : `Other ${piece.rank ?? ''} legacy pieces`}</h2>
             <div className="lgp-related">
               {related.map((l) => (
-                <Link key={l.id} href={`${BASE}/${l.id}`} className="lgp-rel">
+                <Link prefetch={false} key={l.id} href={`${BASE}/${l.id}`} className="lgp-rel">
                   {l.image && <img src={l.image} alt="" loading="lazy" />}
                   <span>{l.name}</span>
                 </Link>

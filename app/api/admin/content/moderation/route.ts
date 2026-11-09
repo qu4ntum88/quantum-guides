@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidateSite } from '@/src/lib/revalidate-site'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole } from '@/src/lib/roles-server'
 
@@ -60,5 +61,6 @@ export async function PATCH(req: NextRequest) {
     .eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
 
+  revalidateSite()
   return NextResponse.json({ success: true })
 }

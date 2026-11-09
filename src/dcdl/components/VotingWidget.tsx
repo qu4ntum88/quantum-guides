@@ -153,7 +153,7 @@ export default function VotingWidget({ entityType, entityId }: { entityType: 'ch
         </div>
       ) : (
         <p style={{ fontSize: '0.85rem', color: '#888' }}>
-          <Link href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</Link> to cast your vote.
+          <Link prefetch={false} href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</Link> to cast your vote.
         </p>
       )}
     </div>

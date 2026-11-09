@@ -17,7 +17,7 @@ import {
  * infographics, used as tabs by the Site Admin (/admin) and the Creator Studio.
  * Talks to the Clerk-gated /api/admin/content/* routes, which re-verify the
  * role server-side before writing to Supabase. Edits publish to the
- * live site within ~1 minute (pages revalidate every 60s).
+ * live site straight away (saves call revalidateSite()).
  *
  * Shared styles, the image-upload hook, and <ImageField> live in ./editor-ui.
  */

@@ -7,7 +7,7 @@ import { QUANTUM_TIERS, rowsFromTiers } from '@/src/qgg/tiers'
 import { ARCHETYPES, gfEntities, gfFilters, gfHeroPath, gfIcon, gfIcons, getGfTieredRoster } from '@/src/gf/lib/heroes'
 
 // Tiers can be saved from the Studio editor (Supabase), so re-read them every minute.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 const PATH = '/games/godforge/hero-tier-list'
 
@@ -65,8 +65,8 @@ export default async function GodforgeHeroTierListPage() {
           on the board, and remove them in the Grid view.
         </p>
         <p>
-          Looking for a specific fight? See the <Link href="/games/godforge/dungeons">dungeon guides</Link>, or the{' '}
-          <Link href="/games/godforge/status-effects">status effect reference</Link>.
+          Looking for a specific fight? See the <Link prefetch={false} href="/games/godforge/dungeons">dungeon guides</Link>, or the{' '}
+          <Link prefetch={false} href="/games/godforge/status-effects">status effect reference</Link>.
         </p>
       </section>
     </main>

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidateSite } from '@/src/lib/revalidate-site'
 import { getIsAdmin } from '@/src/lib/adminAuth'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { GUIDE_GAMES, toGuideGame } from '@/src/lib/guide-games'
@@ -41,5 +42,6 @@ export async function PUT(req: NextRequest) {
   }
   const { error } = await supabaseAdmin.from('game_info').upsert(row, { onConflict: 'game' })
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true })
 }

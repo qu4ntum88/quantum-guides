@@ -122,7 +122,7 @@ function ConsentBanner({
           we&rsquo;ll also enable <strong style={{ color: '#fff' }}>analytics</strong>,{' '}
           <strong style={{ color: '#fff' }}>advertising</strong>, and{' '}
           <strong style={{ color: '#fff' }}>error-tracking</strong> cookies. Nothing optional loads until you accept.{' '}
-          <Link href="/cookies" style={{ color: gold, textDecoration: 'underline' }}>Cookie Policy</Link>
+          <Link prefetch={false} href="/cookies" style={{ color: gold, textDecoration: 'underline' }}>Cookie Policy</Link>
         </p>
         <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
           <button type="button" onClick={onManage} style={barBtn}>Manage</button>

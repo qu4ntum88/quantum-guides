@@ -195,7 +195,7 @@ export default function LegacyCommunityTierClient({ pieces }: { pieces: LegacyRe
                   </div>
                 ) : (
                   <p style={{ fontSize: '0.82rem', color: '#888', margin: 0 }}>
-                    <Link href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</Link> to cast your vote.
+                    <Link prefetch={false} href="/sign-in" style={{ color: 'var(--gold)' }}>Sign in</Link> to cast your vote.
                   </p>
                 )}
               </div>

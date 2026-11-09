@@ -10,7 +10,7 @@ import { WorldGameNews, WorldGuideCards } from '@/src/qgg/components/WorldGuideP
 import HubLogos from '@/src/qgg/components/HubLogos'
 
 // Guides, codes and patch notes come from the CMS; refresh like the guide pages.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export const metadata = pageMeta({
   title: 'Void Hunters Guides: Tier List, Hunters & Status Effects',
@@ -46,7 +46,7 @@ export default async function VoidHuntersGuidesPage() {
               <div className="vh-resources">
                 {RESOURCES.map((r) => (
                   <div key={r.href} className="vh-resource">
-                    <Link href={r.href} className="btn">{r.label}</Link>
+                    <Link prefetch={false} href={r.href} className="btn">{r.label}</Link>
                     <p>{r.text}</p>
                   </div>
                 ))}

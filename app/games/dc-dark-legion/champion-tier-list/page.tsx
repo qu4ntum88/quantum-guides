@@ -6,7 +6,7 @@ import { pageMeta, monthYear, breadcrumbLd, itemListLd, DCDL_CRUMB } from '@/src
 import '../../godforge/game.css'
 
 // Official tiers are read from Supabase, so pick up Studio edits within a minute.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 const PATH = '/games/dc-dark-legion/champion-tier-list'
 

@@ -12,7 +12,7 @@ import HubLogos from '@/src/qgg/components/HubLogos'
 const PATH = '/games/invokers/guides'
 
 // Written guides come from the CMS (game = 'invokers'); refresh like the guide pages.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 export const metadata = pageMeta({
   title: 'Invokers: Titan Legacy Guides & Tools',
@@ -58,7 +58,7 @@ export default async function InvokersHubPage() {
           <div className="inv-resources">
             {resources.map((r) => (
               <div key={r.href} className="inv-resource">
-                <Link href={r.href} className="btn">{r.label} →</Link>
+                <Link prefetch={false} href={r.href} className="btn">{r.label} →</Link>
                 <p>{r.text}</p>
               </div>
             ))}
@@ -76,9 +76,9 @@ export default async function InvokersHubPage() {
               <div key={b.id} className="inv-boss">
                 <strong>{b.boss}</strong>
                 <span>
-                  <Link href={tierListPath('Invoker', b.id)}>Invokers</Link>
+                  <Link prefetch={false} href={tierListPath('Invoker', b.id)}>Invokers</Link>
                   {' · '}
-                  <Link href={tierListPath('Titan', b.id)}>Titans</Link>
+                  <Link prefetch={false} href={tierListPath('Titan', b.id)}>Titans</Link>
                 </span>
               </div>
             ))}
@@ -101,7 +101,7 @@ export default async function InvokersHubPage() {
           <h2>Factions</h2>
           <div className="inv-factions">
             {factions.map((f) => (
-              <Link key={f.name} href={`${tierListPath('Invoker')}?view=grid&faction=${encodeURIComponent(f.name)}`} className="inv-faction">
+              <Link prefetch={false} key={f.name} href={`${tierListPath('Invoker')}?view=grid&faction=${encodeURIComponent(f.name)}`} className="inv-faction">
                 {icons[f.name] && <img src={icons[f.name]!} alt="" />}
                 <span>
                   <strong>{f.name}</strong>

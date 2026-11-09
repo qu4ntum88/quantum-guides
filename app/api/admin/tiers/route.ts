@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidateSite } from '@/src/lib/revalidate-site'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole } from '@/src/lib/roles-server'
 import { getCatalog, TIERS, type OfficialType } from '@/src/dcdl/lib/tier-db'
@@ -109,6 +110,7 @@ export async function PATCH(req: NextRequest) {
     .upsert(rows, { onConflict: 'entity_type,entity_id' })
   if (error) return NextResponse.json({ error: saveError(error.message) }, { status: 500 })
 
+  revalidateSite()
   return NextResponse.json({ success: true, saved: rows.length })
 }
 
@@ -122,5 +124,6 @@ export async function DELETE(req: NextRequest) {
     .update({ previous_tier: null })
     .eq('entity_type', type)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true })
 }

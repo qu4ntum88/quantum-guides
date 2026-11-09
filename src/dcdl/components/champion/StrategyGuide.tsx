@@ -20,7 +20,7 @@ export type InGameGuide = {
   lineups: { name: string; tags: string[] }[]
 }
 
-const PLACEHOLDER = '/dcdl/heros/headshot_images/_placeholder.png'
+const PLACEHOLDER = '/dcdl/heros/headshot_images/_placeholder.webp'
 
 function Chips({ label, items, tone }: { label: string; items: string[]; tone?: 'gold' }) {
   if (!items.length) return null

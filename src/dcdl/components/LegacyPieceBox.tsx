@@ -5,7 +5,7 @@ import TierBadge from "./TierBadge"
 import { EntryBadgeGroup } from "./EntryBadges"
 import type { LegacyResolved } from "../lib/data"
 
-const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.png"
+const PLACEHOLDER = "/dcdl/heros/headshot_images/_placeholder.webp"
 
 // `compact` is the downsized tile used inside the Tier List view's cells.
 export default function LegacyPieceBox({ piece, communityTier, compact = false }: { piece: LegacyResolved; communityTier?: string; compact?: boolean }) {

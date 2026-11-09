@@ -11,7 +11,7 @@ import { pageMeta, breadcrumbLd, DCDL_CRUMB } from '@/src/lib/seo'
 import '../../godforge/game.css'
 
 // Refresh at most once a minute so editor changes appear without a redeploy.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 function getShardsData(): ShardsData {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src/dcdl/data/shards-per-star.json'), 'utf8'))
@@ -46,7 +46,7 @@ export default async function InfographicsPage() {
           </p>
           <div className="gh-hero-divider" />
           <div style={{ marginTop: '1rem' }}>
-            <Link href="/games/dc-dark-legion/guides" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
+            <Link prefetch={false} href="/games/dc-dark-legion/guides" style={{ fontSize: '0.78rem', color: 'var(--gold)', opacity: 0.85, textDecoration: 'none' }}>
               ← Hub
             </Link>
           </div>

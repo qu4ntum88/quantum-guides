@@ -17,7 +17,7 @@ export const metadata = pageMeta({
 })
 
 // Guides, codes and patch notes come from the CMS; refresh like the guide pages.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 async function getLatestFatelessVideo() {
   try {
@@ -65,7 +65,7 @@ export default async function GodforgePage() {
               <div className="gf-resources">
                 {ON_SITE.map((r) => (
                   <div key={r.href} className="gf-resource">
-                    <Link href={r.href} className="btn">{r.label}</Link>
+                    <Link prefetch={false} href={r.href} className="btn">{r.label}</Link>
                     <p>{r.text}</p>
                   </div>
                 ))}

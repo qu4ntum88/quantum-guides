@@ -50,7 +50,7 @@ export default function StudioClient() {
       <div className="card">
         <h3 style={{ marginTop: 0 }}>Please sign in</h3>
         <p style={{ color: '#aaa', margin: '0 0 1rem' }}>The Creator Studio is for approved creators and editors.</p>
-        <Link href="/sign-in?redirect_url=/studio" className="btn">Sign in</Link>
+        <Link prefetch={false} href="/sign-in?redirect_url=/studio" className="btn">Sign in</Link>
       </div>
     )
   }
@@ -63,7 +63,7 @@ export default function StudioClient() {
           The Creator Studio is for approved creators and editors. You can apply from the members page — approved
           creators publish their own tier lists on the site, credited by name.
         </p>
-        <Link href="/members" className="btn">Apply on the members page</Link>
+        <Link prefetch={false} href="/members" className="btn">Apply on the members page</Link>
       </div>
     )
   }
@@ -83,7 +83,7 @@ export default function StudioClient() {
         {creatorName && <span style={{ color: '#aaa', fontSize: '0.85rem' }}>publishing as <strong style={{ color: '#fff' }}>{creatorName}</strong></span>}
         {/* Admins also manage every game from the Site Admin (history drafts, game info, tier lists per game). */}
         {CAN.moderate(role) && (
-          <Link href="/admin" style={{ ...btnQuiet, marginLeft: 'auto', textDecoration: 'none', color: gold, borderColor: gold }}>
+          <Link prefetch={false} href="/admin" style={{ ...btnQuiet, marginLeft: 'auto', textDecoration: 'none', color: gold, borderColor: gold }}>
             Site Admin (all games) →
           </Link>
         )}

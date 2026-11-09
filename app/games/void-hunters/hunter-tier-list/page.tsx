@@ -7,7 +7,7 @@ import { QUANTUM_TIERS, rowsFromTiers } from '@/src/qgg/tiers'
 import { getVhTieredRoster, VH_CLASSES, vhEntities, vhFilters, vhHunterPath } from '@/src/vh/lib/hunters'
 
 // Tiers can be saved from the Studio editor (Supabase), so re-read them every minute.
-export const revalidate = 60
+export const revalidate = 86400 // admin saves revalidate on demand (src/lib/revalidate-site.ts)
 
 const PATH = '/games/void-hunters/hunter-tier-list'
 
@@ -63,8 +63,8 @@ export default async function VoidHuntersTierListPage() {
           remove them in the Grid view.
         </p>
         <p>
-          New to the game? Start at the <Link href="/games/void-hunters/guides">Void Hunters hub</Link>, or look up any
-          effect in the <Link href="/games/void-hunters/status-effects">status effect reference</Link>.
+          New to the game? Start at the <Link prefetch={false} href="/games/void-hunters/guides">Void Hunters hub</Link>, or look up any
+          effect in the <Link prefetch={false} href="/games/void-hunters/status-effects">status effect reference</Link>.
         </p>
       </section>
     </main>

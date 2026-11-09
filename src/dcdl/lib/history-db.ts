@@ -4,7 +4,7 @@ import type { GuideGame } from '@/src/lib/guide-games'
  * Read layer for `entity_history`: dated entries (release, rework, buff, nerf,
  * rerun) shown in the History section of champion and legacy pages. Entries are
  * drafted as `pending` and only `approved` rows are readable with the anon key
- * (RLS), so drafts never reach the public site. Pages revalidate every 60s, so an
+ * (RLS), so drafts never reach the public site. Approving revalidates the page, so an
  * approval shows up without a redeploy.
  */
 
@@ -49,7 +49,7 @@ export async function getEntityHistory(game: GuideGame, entityType: HistoryEntit
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/entity_history?${q}`, {
       headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
-      next: { revalidate: 60 },
+      next: { revalidate: 86400 },
     })
     if (!res.ok) return []
     const rows = (await res.json()) as Row[]

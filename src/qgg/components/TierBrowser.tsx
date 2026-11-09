@@ -135,7 +135,7 @@ export default function TierBrowser({
         <nav className="qtb-lists" aria-label={listNav.label}>
           <span className="qtb-lists-label">{listNav.label}</span>
           {listNav.items.map((it) => (
-            <Link key={it.href} href={it.href} className={`qtb-list${it.active ? ' is-on' : ''}`} aria-current={it.active ? 'page' : undefined}>
+            <Link prefetch={false} key={it.href} href={it.href} className={`qtb-list${it.active ? ' is-on' : ''}`} aria-current={it.active ? 'page' : undefined}>
               {it.label}
             </Link>
           ))}

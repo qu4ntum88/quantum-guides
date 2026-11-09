@@ -198,7 +198,7 @@ export default function SiteAdmin() {
         <h3 style={{ marginTop: 0 }}>Admins only</h3>
         <p style={{ color: '#aaa', lineHeight: 1.6 }}>
           {access.signedIn ? 'This account isn’t an admin. ' : ''}Creators and editors work in the{' '}
-          <Link href="/studio" style={{ color: gold }}>Creator Studio</Link>.
+          <Link prefetch={false} href="/studio" style={{ color: gold }}>Creator Studio</Link>.
         </p>
         {!access.signedIn && <SignInButton mode="modal"><button className="btn">Sign in</button></SignInButton>}
       </div>

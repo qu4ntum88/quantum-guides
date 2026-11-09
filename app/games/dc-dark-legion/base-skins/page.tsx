@@ -107,7 +107,7 @@ export default function BaseSkinsPage() {
           <div className="gh-hero-divider" />
           <div className="bsk-hero-meta">
             {updated && <span className="bsk-updated">Updated: {updated}</span>}
-            <Link href="/games/dc-dark-legion/guides">← DC: Dark Legion Guides</Link>
+            <Link prefetch={false} href="/games/dc-dark-legion/guides">← DC: Dark Legion Guides</Link>
           </div>
         </div>
       </section>

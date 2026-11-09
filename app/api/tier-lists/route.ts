@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { revalidateSite } from '@/src/lib/revalidate-site'
 import { supabaseAdmin } from '@/src/lib/supabase'
 import { requireRole } from '@/src/lib/roles-server'
 import { hasRole } from '@/src/lib/roles'
@@ -142,6 +143,7 @@ export async function POST(req: NextRequest) {
     .insert(entries.map((e: { entity_id: string; tier: string; position: number }) => ({ ...e, tier_list_id: id })))
   if (entryErr) return NextResponse.json({ error: entryErr.message }, { status: 500 })
 
+  revalidateSite()
   return NextResponse.json({ success: true, id })
 }
 
@@ -161,5 +163,6 @@ export async function DELETE(req: NextRequest) {
 
   const { error } = await supabaseAdmin.from('tier_lists').delete().eq('id', id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  revalidateSite()
   return NextResponse.json({ success: true })
 }
