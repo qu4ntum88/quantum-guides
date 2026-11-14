@@ -41,7 +41,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   desc += '.'
   desc += ' Full skill breakdown, stats, upgrade bonuses, and lore.'
 
-  const ogImage = hunter.fullArt || hunter.portrait
+  // The full art is a transparent WebP, which some link previews don't render well, so share cards keep the PNG portrait
+  const ogImage = hunter.portrait
   const heading = hunter.title ? `${hunter.name}, ${hunter.title}` : hunter.name
 
   return {
@@ -241,20 +242,6 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
 
   return (
     <main>
-      {/* Full-art background */}
-      {hunter.fullArt && (
-        <div style={{
-          position: 'fixed',
-          inset: 0,
-          zIndex: -1,
-          backgroundImage: `url('${hunter.fullArt}')`,
-          backgroundSize: 'auto 100%',
-          backgroundPosition: '115% top',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.18,
-        }} />
-      )}
-
       <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '2rem', paddingBottom: '4rem' }}>
 
         {/* Prev / Next nav */}
@@ -331,6 +318,34 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
               </div>
             )}
           </div>
+
+          {/* Full art: in-game Hero screen render. Most are cutouts; "-scene" files keep the game's backdrop
+              (the background removal lost part of the hunter), so their edges fade into the panel. */}
+          {hunter.fullArt && (
+            <div style={{
+              flex: '1 1 18rem',
+              maxWidth: '26rem',
+              height: 'clamp(20rem, 42vw, 30rem)',
+              margin: '0 auto',
+              background: `radial-gradient(ellipse 70% 60% at 50% 65%, ${rarityColor}2e 0%, transparent 70%)`,
+            }}>
+              <img
+                src={hunter.fullArt}
+                alt={`${hunter.name} full art`}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain',
+                  objectPosition: 'center bottom',
+                  display: 'block',
+                  ...(hunter.fullArt.includes('-scene') ? {
+                    maskImage: 'radial-gradient(ellipse 72% 78% at 50% 50%, #000 62%, transparent 100%)',
+                    WebkitMaskImage: 'radial-gradient(ellipse 72% 78% at 50% 50%, #000 62%, transparent 100%)',
+                  } : {}),
+                }}
+              />
+            </div>
+          )}
         </div>
 
         <QuantumTake game="voidhunters" id={hunter.id} />
