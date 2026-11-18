@@ -60,8 +60,14 @@ function readable(template) {
     .trim()
 }
 
-const exportFile = path.join(EXPORT, 'status-effects', 'status-effects.json')
+// Source, newest first: VH_EFFECTS, else the Hunting Grounds Playtest effects with their real
+// numbers (E:\GameAssets\Exports\_pipeline\void-hunters\effects-from-balance.mjs, built from the
+// memory-snapshot balance table: an effect's own values are filled in, numbers that come from the
+// applying skill stay as $(Stat1) → X), else the alpha export's templates.
+const PLAYTEST = path.join(EXPORT, '_playtest', 'alpha3 0.2089.12', '_memory', 'status-effects.json')
+const exportFile = process.env.VH_EFFECTS || (fs.existsSync(PLAYTEST) ? PLAYTEST : path.join(EXPORT, 'status-effects', 'status-effects.json'))
 if (!fs.existsSync(exportFile)) throw new Error(`No export at ${exportFile}; run the Void Hunters extraction first`)
+console.log(`Source: ${exportFile}`)
 const game = JSON.parse(fs.readFileSync(exportFile, 'utf8'))
 const site = JSON.parse(fs.readFileSync(SITE, 'utf8'))
 

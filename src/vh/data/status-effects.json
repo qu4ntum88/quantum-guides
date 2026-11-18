@@ -3,7 +3,7 @@
     "id": "ally_protection",
     "name": "Ally Protection",
     "image": "/vh/status-effects/SE_AllyProtection-Icon.png",
-    "description": "X damage dealt to this character is transferred to buff caster.",
+    "description": "50% damage dealt to this character is transferred to buff caster.",
     "hunters": [
       "owyn",
       "rosie",
@@ -14,14 +14,14 @@
     "id": "ally_shield",
     "name": "Ally Shield",
     "image": "/vh/status-effects/SE_AllyShield-Icon.png",
-    "description": "X damage dealt to this character is transferred to ally with highest Max Health.",
+    "description": "50% damage dealt to this character is transferred to ally with highest Max Health.",
     "hidden": true
   },
   {
     "id": "ancient_shelter",
     "name": "Invulnerability",
     "image": "/vh/status-effects/SE_AncientShelter-Icon.png",
-    "description": "When about to take damage, lose X stack instead.",
+    "description": "When about to take damage, lose 1 stack instead.",
     "hunters": [
       "cassandra",
       "johannes",
@@ -35,7 +35,7 @@
     "id": "arbias_vow",
     "name": "Arbias' Vow",
     "image": "/vh/status-effects/SE_ArbiasVow-Icon.png",
-    "description": "+X damage vs. [tag] and [tag] enemies (or +Y if they are [tag]).",
+    "description": "+25% damage vs. [tag] and [tag] enemies (or +50% if they are [tag]).",
     "hunters": [
       "arbias"
     ],
@@ -45,14 +45,14 @@
     "id": "aristochilles_vow",
     "name": "Aristochilles' Vow",
     "image": "/vh/status-effects/SE_AristochillesVow-Icon.png",
-    "description": "+X Attack and Crit Dmg for each other [tag] ally.",
+    "description": "+10% Attack and Crit Dmg for each other [tag] ally.",
     "hidden": true
   },
   {
     "id": "armor_shred",
     "name": "Armor Shred",
     "image": "/vh/status-effects/SE_ArmorShred-Icon.png",
-    "description": "-X Armor per stack (min. Y).",
+    "description": "-20% Armor per stack (min. X).",
     "hunters": [
       "jagya",
       "tiche",
@@ -63,12 +63,11 @@
     "id": "attack_down",
     "name": "Attack Down",
     "image": "/vh/status-effects/SE_AttackDown-Icon.png",
-    "description": "-X Attack",
+    "description": "-50% Attack",
     "hunters": [
       "goran",
       "rosie",
       "sir_bernard",
-      "tiche",
       "vukaru"
     ]
   },
@@ -76,13 +75,13 @@
     "id": "attack_up",
     "name": "Attack Up",
     "image": "/vh/status-effects/SE_AttackUp-Icon.png",
-    "description": "+X Attack",
+    "description": "+50% Attack",
     "hunters": [
-      "aedwulf",
       "bomor",
       "jagya",
       "johannes",
       "kurgan",
+      "owyn",
       "ruck",
       "vukaru"
     ]
@@ -98,7 +97,7 @@
     "id": "bleed",
     "name": "Bleed",
     "image": "/vh/status-effects/SE_Bleed-Icon.png",
-    "description": "[On Turn Start] receive damage equal to X ATK of caster of this debuff for each stack of [effect].\n\n-Y Health Recovery per stack.",
+    "description": "[On Turn Start] receive damage equal to 20% ATK of caster of this debuff for each stack of Bleed.\n\n-10% Health Recovery per stack.",
     "hunters": [
       "angelo",
       "eleazar",
@@ -113,7 +112,7 @@
     "id": "bless",
     "name": "Bless",
     "image": "/vh/status-effects/SE_Bless-Icon.png",
-    "description": "+X Attack, Defense, Health and Speed.",
+    "description": "+20% Attack, Defense, Health and Speed.",
     "hunters": [
       "lanthe",
       "lysadorea",
@@ -125,7 +124,7 @@
     "id": "blind",
     "name": "Blind",
     "image": "/vh/status-effects/SE_Blind-Icon.png",
-    "description": "-X Hit Rate.",
+    "description": "-100% Hit Rate.",
     "hunters": [
       "arbias",
       "ashei",
@@ -158,7 +157,7 @@
     "id": "burning",
     "name": "Burning",
     "image": "/vh/status-effects/SE_Burning-Icon.png",
-    "description": "[On Turn Start] all allies with [effect] receive damage equal to X of their Max Health.",
+    "description": "[On Turn Start] all allies with Burning receive damage equal to 5% of their Max Health.",
     "hunters": [
       "bohdan",
       "robin"
@@ -188,14 +187,14 @@
     "id": "cleansing_touch",
     "name": "Cleansing Touch",
     "image": "/vh/status-effects/SE_CleansingTouch-Icon.png",
-    "description": "[On Turn Start] Gain X Void Touch Cleanse per stack",
+    "description": "[On Turn Start] Gain 2% Void Touch Cleanse per stack",
     "hidden": true
   },
   {
     "id": "composed",
     "name": "Composed",
     "image": "/vh/status-effects/SE_Composed-Icon.png",
-    "description": "Immune to [effect]. Can ignore [effect type] effects.",
+    "description": "Immune to Provoke. Can ignore [effect type] effects.",
     "hidden": true
   },
   {
@@ -212,7 +211,7 @@
     "id": "cornered_beast",
     "name": "Cornered Beast",
     "image": "/vh/status-effects/SE_CorneredBeast-Icon.png",
-    "description": "+X Counter Rate, +Y Speed and +Z Life Drain per stack (max. W)",
+    "description": "+4% Counter Rate, +2% Speed and +1% Life Drain per stack (max. 20)",
     "hunters": [
       "vilk"
     ],
@@ -220,9 +219,9 @@
   },
   {
     "id": "creeds_prize",
-    "name": "Creed's Prize",
+    "name": "Reed's Prize",
     "image": "/vh/status-effects/SE_CreedsPrize-Icon.png",
-    "description": "+X Speed, +Y Crit Dmg against [tag] enemies.\n\nEnemies defeated by this character cannot gain Revive.",
+    "description": "+20 Speed, +25% Crit Dmg against [tag] enemies.\n\nEnemies defeated by this character cannot gain Revive.",
     "hunters": [
       "reed"
     ],
@@ -232,30 +231,32 @@
     "id": "crit_damage_down",
     "name": "Crit Damage Down",
     "image": "/vh/status-effects/SE_CritDamageDown-Icon.png",
-    "description": "-X Crit Dmg",
+    "description": "-50% Crit Dmg",
     "hidden": true
   },
   {
     "id": "crit_damage_up",
     "name": "Crit Damage Up",
     "image": "/vh/status-effects/SE_CritDamageUp-Icon.png",
-    "description": "+X Crit Dmg",
+    "description": "+50% Crit Dmg",
     "hunters": [
-      "angelo"
+      "angelo",
+      "bomor",
+      "tiche"
     ]
   },
   {
     "id": "crit_defense_down",
     "name": "Crit Defense Down",
     "image": "/vh/status-effects/SE_CritDefenseDown-Icon.png",
-    "description": "-X Crit Defense",
+    "description": "-50% Crit Defense",
     "hidden": true
   },
   {
     "id": "crit_defense_up",
     "name": "Crit Defense Up",
     "image": "/vh/status-effects/SE_CritDefenseUp-Icon.png",
-    "description": "+X Crit Defense",
+    "description": "+50% Crit Defense",
     "hunters": [
       "natalie"
     ]
@@ -266,21 +267,22 @@
     "image": "/vh/status-effects/SE_CritImmunity-Icon.png",
     "description": "Cannot be critically hit.",
     "hunters": [
-      "lamassu"
+      "lamassu",
+      "tiche"
     ]
   },
   {
     "id": "crit_rate_down",
     "name": "Crit Rate Down",
     "image": "/vh/status-effects/SE_CritRateDown-Icon.png",
-    "description": "-X Crit Rate",
+    "description": "-25% Crit Rate",
     "hidden": true
   },
   {
     "id": "crit_rate_up",
     "name": "Crit Rate Up",
     "image": "/vh/status-effects/SE_CritRateUp-Icon.png",
-    "description": "+X Crit Rate",
+    "description": "+25% Crit Rate",
     "hunters": [
       "leo"
     ]
@@ -289,7 +291,7 @@
     "id": "crit_resistance_down",
     "name": "Crit Resistance Down",
     "image": "/vh/status-effects/SE_CritResistanceDown-Icon.png",
-    "description": "-X Crit Resistance",
+    "description": "-25% Crit Resistance",
     "hunters": [
       "jagya",
       "severin"
@@ -299,7 +301,7 @@
     "id": "crit_resistance_up",
     "name": "Crit Resistance Up",
     "image": "/vh/status-effects/SE_CritResistanceUp-Icon.png",
-    "description": "+X Crit Resistance",
+    "description": "+25% Crit Resistance",
     "hunters": [
       "sir_bernard"
     ]
@@ -308,7 +310,7 @@
     "id": "curse",
     "name": "Curse",
     "image": "/vh/status-effects/SE_Curse-Icon.png",
-    "description": "-X Attack, Defense, Health and Speed.",
+    "description": "-20% Attack, Defense, Health and Speed.",
     "hunters": [
       "cassandra",
       "goran",
@@ -328,14 +330,14 @@
     "id": "damage_reflect_up",
     "name": "Damage Reflect Up",
     "image": "/vh/status-effects/SE_DamageReflectUp-Icon.png",
-    "description": "+X Dmg Reflect",
+    "description": "+25% Dmg Reflect",
     "hidden": true
   },
   {
     "id": "dark_fire",
     "name": "Dark Fire",
     "image": "/vh/status-effects/SE_DarkFire-Icon.png",
-    "description": "[On Turn Start] X chance (stacking) to suffer Y Void Touch.\n\nSkills have additional effects depending on stacks of [effect].",
+    "description": "[On Turn Start] 10% chance (stacking) to suffer 2% Void Touch.\n\nSkills have additional effects depending on stacks of Dark Fire.",
     "hunters": [
       "ruck"
     ],
@@ -390,7 +392,7 @@
     "id": "deathmark",
     "name": "Deathmark",
     "image": "/vh/status-effects/SE_Deathmark-Icon.png",
-    "description": "Can be targeted to bypass taunters and Revive will be blocked if killed while under [effect].\n\n[On Suffer Damage] If damaged directly by enemy attack, receive additional damage equal to X of Max Health.",
+    "description": "Can be targeted to bypass taunters and Revive will be blocked if killed while under Deathmark.\n\n[On Suffer Damage] If damaged directly by enemy attack, receive additional damage equal to 10% of Max Health.",
     "hunters": [
       "cassandra",
       "tombs"
@@ -400,7 +402,7 @@
     "id": "deathproof",
     "name": "Deathproof",
     "image": "/vh/status-effects/SE_Deathproof-Icon.png",
-    "description": "Lethal damage will not kill leaving with X Health instead.",
+    "description": "Lethal damage will not kill leaving with 1 Health instead.",
     "hunters": [
       "lamassu",
       "sir_bernard",
@@ -422,10 +424,11 @@
     "id": "defense_down",
     "name": "Defense Down",
     "image": "/vh/status-effects/SE_DefenseDown-Icon.png",
-    "description": "-X Defense",
+    "description": "-50% Defense",
     "hunters": [
       "johannes",
       "kurgan",
+      "tiche",
       "tombs"
     ]
   },
@@ -433,18 +436,19 @@
     "id": "defense_up",
     "name": "Defense Up",
     "image": "/vh/status-effects/SE_DefenseUp-Icon.png",
-    "description": "+X Defense",
+    "description": "+50% Defense",
     "hunters": [
       "lamassu",
       "natalie",
-      "sir_bernard"
+      "sir_bernard",
+      "tiche"
     ]
   },
   {
     "id": "divine_protection",
     "name": "Divine Protection",
     "image": "/vh/status-effects/SE_DivineProtection-Icon.png",
-    "description": "+X Defense, +Y Crit Defense.\n\nAll Void Touch this character receives is halved.",
+    "description": "+100% Defense, +25% Crit Defense.\n\nAll Void Touch this character suffers is halved.",
     "hunters": [
       "natalie"
     ],
@@ -454,14 +458,14 @@
     "id": "dodge_down",
     "name": "Dodge Down",
     "image": "/vh/status-effects/SE_DodgeDown-Icon.png",
-    "description": "-X Dodge",
+    "description": "-25% Dodge",
     "hidden": true
   },
   {
     "id": "dodge_up",
     "name": "Dodge Up",
     "image": "/vh/status-effects/SE_DodgeUp-Icon.png",
-    "description": "+X Dodge",
+    "description": "+25% Dodge",
     "hidden": true
   },
   {
@@ -485,21 +489,21 @@
     "id": "edge_of_darkness",
     "name": "Edge of Darkness",
     "image": "/vh/status-effects/SE_EdgeOfDarkness-Icon.png",
-    "description": "Void Touch cannot be removed.\nRemove [effect] and instantly Succumb To The Void when inflicted with Void Touch.",
+    "description": "Void Touch cannot be removed.\nRemove Edge of Darkness and instantly suffer Hollowing when inflicted with Void Touch.",
     "hidden": true
   },
   {
     "id": "enraged",
     "name": "Enraged",
     "image": "/vh/status-effects/SE_Enraged-Icon.png",
-    "description": "+X Attack and +Y Speed per stack.\n\nAttack bonus is doubled if this character is [tag].",
+    "description": "+50% Attack and +20% Speed per stack.\n\nAttack bonus is doubled if this character is [tag].",
     "hidden": true
   },
   {
     "id": "expose",
     "name": "Expose",
     "image": "/vh/status-effects/SE_Expose-Icon.png",
-    "description": "[On Suffer Damage] Receive additional damage equal to X of Max Health.",
+    "description": "[On Suffer Damage] Receive additional damage equal to 10% of Max Health.",
     "hunters": [
       "kurgan"
     ]
@@ -508,7 +512,7 @@
     "id": "fatal_wound",
     "name": "Fatal Wound",
     "image": "/vh/status-effects/SE_FatalWound-Icon.png",
-    "description": "-X Health Recovery.\nThis character will suffer Instant Defeat after their next turn and cannot be revived.\n\nWhen this character recovers Y Health, this debuff is removed.",
+    "description": "-50% Health Recovery.\nThis character will suffer Instant Defeat after their next turn and cannot be revived.\n\nWhen this character recovers 50% Health, this debuff is removed.",
     "hunters": [
       "aedwulf",
       "owyn"
@@ -518,7 +522,7 @@
     "id": "faustus_vow",
     "name": "Faustus' Vow",
     "image": "/vh/status-effects/SE_FaustusVow-Icon.png",
-    "description": "Immune to Buff Dispel and Turn Meter Down effects.",
+    "description": "Immune to Buff Dispel and Turn Meter Down effects.\nEach time this character gains Turn Meter Up, they also gain Speed Up for 1 turn(s).\nEach time this character inflicts Turn Meter Down, they also inflict Speed Down for 1 turn(s).",
     "hunters": [
       "faustus"
     ],
@@ -528,7 +532,7 @@
     "id": "fear",
     "name": "Fear",
     "image": "/vh/status-effects/SE_Fear-Icon.png",
-    "description": "Cannot dodge, Counter, Assist or use skills and turn will be skipped.\n\nWhen attacked, receive +X damage, but this debuff expires.",
+    "description": "Cannot dodge, Counter, Assist or use skills and turn will be skipped.\n\nWhen attacked, receive +50% damage, but this debuff expires.",
     "hunters": [
       "aedwulf",
       "bomor",
@@ -547,31 +551,30 @@
     "id": "flaming_armor",
     "name": "Flaming Armor",
     "image": "/vh/status-effects/SE_FlamingArmor-Icon.png",
-    "description": "Suffer X less damage from [skill type] skills.\n\n[On Suffer Damage] Inflict [effect] for Y turns on the attacker (if possible).",
+    "description": "Suffer 50% less damage from [skill type] skills.\n\n[On Suffer Damage] Inflict Burning for 2 turns on the attacker (if possible).",
     "hidden": true
   },
   {
     "id": "flaming_weapon",
     "name": "Flaming Weapon",
     "image": "/vh/status-effects/SE_FlamingWeapon-Icon.png",
-    "description": "Skills are considered [skill type].\n\n[On Deal Damage] Inflict [effect] for X turn(s).",
+    "description": "Skills are considered [skill type].\n\n[On Deal Damage] Inflict Burning for 2 turn(s).",
     "hidden": true
   },
   {
     "id": "focus_down",
     "name": "Focus Down",
     "image": "/vh/status-effects/SE_FocusDown-Icon.png",
-    "description": "-X Focus",
+    "description": "-50% Focus",
     "hidden": true
   },
   {
     "id": "focus_up",
     "name": "Focus Up",
     "image": "/vh/status-effects/SE_FocusUp-Icon.png",
-    "description": "+X Focus",
+    "description": "+50% Focus",
     "hunters": [
       "aedwulf",
-      "bomor",
       "bruno",
       "faustus",
       "renna"
@@ -594,7 +597,7 @@
     "id": "fortune",
     "name": "Fortune",
     "image": "/vh/status-effects/SE_Fortune-Icon.png",
-    "description": "+X Crit Rate, Crit Defense, Dodge and Hit Rate.",
+    "description": "+15% Crit Rate, Crit Defense, Dodge and Hit Rate.",
     "hunters": [
       "cassandra"
     ]
@@ -603,14 +606,14 @@
     "id": "freeze",
     "name": "Freeze",
     "image": "/vh/status-effects/SE_Freeze-Icon.png",
-    "description": "Cannot dodge, Counter, Assist, use skills, immune to all Turn Meter manipulation and Bonus Turn.\n\nNext turn will be skipped and cooldowns will not decrease, but all received damage is decreased by X.",
+    "description": "Cannot dodge, Counter, Assist, use skills, immune to all Turn Meter manipulation and Bonus Turn.\n\nNext turn will be skipped and cooldowns will not decrease, but all received damage is decreased by 50%.",
     "hidden": true
   },
   {
     "id": "frenzy",
     "name": "Frenzy",
     "image": "/vh/status-effects/SE_Frenzy-Icon.png",
-    "description": "Gain X Turn Meter Up when another ally uses a special skill.",
+    "description": "Gain 100% Turn Meter Up when another ally uses a special skill.",
     "hunters": [
       "kurgan",
       "nathaniel"
@@ -628,23 +631,23 @@
   },
   {
     "id": "grenade",
-    "name": "Grenade",
+    "name": "Explosive",
     "image": "/vh/status-effects/SE_Grenade-Icon.png",
-    "description": "Receive +X Max Health damage when this debuff expires.",
+    "description": "Suffer 20% Max Health damage when this debuff expires.",
     "hidden": true
   },
   {
     "id": "growing_void",
     "name": "Growing Void",
     "image": "/vh/status-effects/SE_GrowingVoid-Icon.png",
-    "description": "Whenever this character suffers damage, they also suffer X Void Touch.",
+    "description": "Whenever this character suffers damage, they also suffer 4% Void Touch.",
     "hidden": true
   },
   {
     "id": "guard",
     "name": "Guard",
     "image": "/vh/status-effects/SE_Guard-Icon.png",
-    "description": "\"[On Suffer Damage] Lose X stack; damage received reduced by Y.\"",
+    "description": "\"[On Suffer Damage] Lose 1 stack; damage received reduced by 50%.\"",
     "hunters": [
       "jagya",
       "nadia",
@@ -669,14 +672,14 @@
     "id": "health_down",
     "name": "Health Down",
     "image": "/vh/status-effects/SE_HealthDown-Icon.png",
-    "description": "-X Max Health",
+    "description": "-25% Max Health",
     "hidden": true
   },
   {
     "id": "health_recovery_down",
     "name": "Health Recovery Down",
     "image": "/vh/status-effects/SE_HealthRecoveryDown-Icon.png",
-    "description": "-X Health Recovery",
+    "description": "-50% Health Recovery",
     "hunters": [
       "aedwulf"
     ]
@@ -685,7 +688,7 @@
     "id": "health_recovery_up",
     "name": "Health Recovery Up",
     "image": "/vh/status-effects/SE_HealthRecoveryUp-Icon.png",
-    "description": "+X Health Recovery",
+    "description": "+50% Health Recovery",
     "hunters": [
       "vilk"
     ]
@@ -694,7 +697,7 @@
     "id": "health_up",
     "name": "Health Up",
     "image": "/vh/status-effects/SE_HealthUp-Icon.png",
-    "description": "+X Max Health",
+    "description": "+25% Max Health",
     "hunters": [
       "ygravain"
     ]
@@ -713,7 +716,7 @@
     "id": "hemorrhage",
     "name": "Hemorrhage",
     "image": "/vh/status-effects/SE_Hemorrhage-Icon.png",
-    "description": "Health Recovery is halved.\n[On Suffer Damage] suffer [effect] for X turn(s) based on this effect's caster ATK.",
+    "description": "Health Recovery is halved.\n[On Suffer Damage] suffer Bleed for 2 turn(s) based on this effect's caster ATK.",
     "hunters": [
       "eleazar"
     ],
@@ -750,7 +753,7 @@
     "id": "high_morale",
     "name": "High Morale",
     "image": "/vh/status-effects/SE_HighMorale-Icon.png",
-    "description": "X chance to get a Bonus Turn.",
+    "description": "25% chance to get a Bonus Turn.",
     "hunters": [
       "lamassu",
       "nathaniel",
@@ -762,14 +765,14 @@
     "id": "hit_rate_down",
     "name": "Hit Rate Down",
     "image": "/vh/status-effects/SE_HitRateDown-Icon.png",
-    "description": "-X Hit Rate",
+    "description": "-20% Hit Rate",
     "hidden": true
   },
   {
     "id": "hit_rate_up",
     "name": "Hit Rate Up",
     "image": "/vh/status-effects/SE_HitRateUp-Icon.png",
-    "description": "+X Hit Rate",
+    "description": "+20% Hit Rate",
     "hidden": true
   },
   {
@@ -804,7 +807,7 @@
     "id": "last_stand",
     "name": "Last Stand",
     "image": "/vh/status-effects/SE_LastStand-Icon.png",
-    "description": "+X Attack for each Y Health below Z threshold.",
+    "description": "+10% Attack for each 5% Health below 50% threshold.",
     "hunters": [
       "owyn"
     ],
@@ -814,21 +817,21 @@
     "id": "leech",
     "name": "Leech",
     "image": "/vh/status-effects/SE_Leech-Icon.png",
-    "description": "Attacks against this character will have +X Life Drain.",
+    "description": "Attacks against this character will have +25% Life Drain.",
     "hidden": true
   },
   {
     "id": "life_drain_down",
     "name": "Life Drain Down",
     "image": "/vh/status-effects/SE_LifeDrainDown-Icon.png",
-    "description": "-X Life Drain",
+    "description": "-25% Life Drain",
     "hidden": true
   },
   {
     "id": "life_drain_up",
     "name": "Life Drain Up",
     "image": "/vh/status-effects/SE_LifeDrainUp-Icon.png",
-    "description": "+X Life Drain",
+    "description": "+25% Life Drain",
     "hidden": true
   },
   {
@@ -845,7 +848,7 @@
     "id": "low_morale",
     "name": "Low Morale",
     "image": "/vh/status-effects/SE_LowMorale-Icon.png",
-    "description": "X chance to skip turn.",
+    "description": "25% chance to skip turn.",
     "hunters": [
       "lamassu",
       "lysadorea",
@@ -856,7 +859,7 @@
     "id": "lysadoreas_vow",
     "name": "Lysadorea's Vow",
     "image": "/vh/status-effects/SE_LysadoreasVow-Icon.png",
-    "description": "Healing Effect is doubled, unless healing [tag] allies. When a healed non-[tag] ally reaches X Health, they gain Y [effect] for Z turn(s).",
+    "description": "Healing Effect is doubled, unless healing [tag] allies. When a healed non-[tag] ally reaches 100% Health, they gain 2 Guard for 2 turn(s).",
     "hunters": [
       "lysadorea"
     ],
@@ -889,7 +892,7 @@
     "id": "marked",
     "name": "Marked",
     "image": "/vh/status-effects/SE_Marked-Icon.png",
-    "description": "Receives X more damage from [tag] enemies.",
+    "description": "Suffer 25% more damage from [tag] enemies.",
     "hunters": [
       "reed"
     ]
@@ -905,7 +908,7 @@
     "id": "misfortune",
     "name": "Misfortune",
     "image": "/vh/status-effects/SE_Misfortune-Icon.png",
-    "description": "-X Crit Rate, Crit Defense, Dodge and Hit Rate.",
+    "description": "-15% Crit Rate, Crit Defense, Dodge and Hit Rate.",
     "hunters": [
       "cassandra",
       "st_hermeida"
@@ -915,14 +918,14 @@
     "id": "momentum",
     "name": "Momentum",
     "image": "/vh/status-effects/SE_Momentum-Icon.png",
-    "description": "+X Speed, +Y Attack per stack (max. Z)",
+    "description": "+2% Attack and +1% Speed per stack (max. 25)",
     "hidden": true
   },
   {
     "id": "moonveil",
     "name": "Moonveil",
     "image": "/vh/status-effects/SE_Moonveil-Icon.png",
-    "description": "+X Defense, +Y Crit Defense per stack.",
+    "description": "+15% Defense, +5% Crit Defense per stack.",
     "hunters": [
       "lanthe"
     ],
@@ -932,7 +935,7 @@
     "id": "nadias_vow",
     "name": "Nadia's Vow",
     "image": "/vh/status-effects/SE_NadiasVow-Icon.png",
-    "description": "This character has +X Attack for each living [tag] enemy.",
+    "description": "This character has +15% Attack for each living [tag] enemy.",
     "hunters": [
       "nadia"
     ],
@@ -942,7 +945,7 @@
     "id": "natalies_vow",
     "name": "Natalie's Vow",
     "image": "/vh/status-effects/SE_NataliesVow-Icon.png",
-    "description": "+X Defense, +Y Crit Resistance.\n[On Suffer Crit. Damage] gain Z [effect] for W turns.",
+    "description": "+25% Defense, +25% Crit Resistance.\n[On Suffer Crit. Damage] gain 1 Guard for 3 turns.",
     "hunters": [
       "natalie"
     ],
@@ -952,7 +955,7 @@
     "id": "nathaniels_vow",
     "name": "Nathaniel's Vow",
     "image": "/vh/status-effects/SE_NathanielsVow-Icon.png",
-    "description": "+X Attack.\nThis character is called to Assist with -Y Assist Dmg each time [hunter] uses a skill during his turn.",
+    "description": "This character is called to Assist with -50% Assist Dmg each time [hunter] uses a skill during his turn.",
     "hunters": [
       "nathaniel"
     ],
@@ -962,7 +965,7 @@
     "id": "overconfidence",
     "name": "Overconfidence",
     "image": "/vh/status-effects/SE_Overconfidence-Icon.png",
-    "description": "+X Attack, -Y Defense and Resistance",
+    "description": "+10% Attack, -5% Defense and Resistance",
     "hunters": [
       "bohdan"
     ],
@@ -972,7 +975,7 @@
     "id": "owyns_vow",
     "name": "Owyn's Vow",
     "image": "/vh/status-effects/SE_OwynsVow-Icon.png",
-    "description": "This character gains attribute bonuses equal to X of [hunter]'s Defense, Max Health and Y Attack and Speed.",
+    "description": "This character gains attribute bonuses equal to 50% of [hunter]'s Defense, Max Health and 25% Attack and Speed.",
     "hunters": [
       "owyn"
     ],
@@ -982,7 +985,7 @@
     "id": "persistance",
     "name": "Persistence",
     "image": "/vh/status-effects/SE_Persistance-Icon.png",
-    "description": "+X Defense per stack for each [tag] ally alive,\n[On Turn Start] Gain Y Healing per stack for each [tag] ally alive.\n\nWhen about to die, if this character has Z or more [effect], they lose all [effect], are left with W Health, then dispel all their debuffs and gain V Healing for each [effect] lost.\n\nThis buff does not expire and can be stacked up to U times.",
+    "description": "+2% Defense per stack for each [tag] ally alive,\n[On Turn Start] Gain 0.5% Healing per stack for each [tag] ally alive.\n\nWhen about to die, if this character has 5 or more Persistence, they lose all Persistence, are left with 1 Health, then dispel all their debuffs and gain 5% Healing for each Persistence lost.\n\nThis buff does not expire and can be stacked up to 10 times.",
     "hunters": [
       "ashei",
       "vukaru"
@@ -992,14 +995,14 @@
     "id": "piercing_down",
     "name": "Piercing Down",
     "image": "/vh/status-effects/SE_PiercingDown-Icon.png",
-    "description": "-X Piercing",
+    "description": "-25% Piercing",
     "hidden": true
   },
   {
     "id": "piercing_up",
     "name": "Piercing Up",
     "image": "/vh/status-effects/SE_PiercingUp-Icon.png",
-    "description": "+X Piercing",
+    "description": "+25% Piercing",
     "hunters": [
       "angelo",
       "ruck"
@@ -1009,7 +1012,7 @@
     "id": "poison",
     "name": "Poison",
     "image": "/vh/status-effects/SE_Poison-Icon.png",
-    "description": "[On Turn Start] receive damage equal to X of Max Health",
+    "description": "[On Turn Start] receive damage equal to 5% of Max Health",
     "hunters": [
       "ashei",
       "eleazar",
@@ -1020,14 +1023,14 @@
     "id": "poisoned_armor",
     "name": "Poisoned Armor",
     "image": "/vh/status-effects/SE_PoisonedArmor-Icon.png",
-    "description": "[On Suffer Damage] Lose X [effect] receiving Y less damage and inflicting Z [effect] for W turn(s) on the attacker (if possible).",
+    "description": "[On Suffer Damage] Lose 1 Poisoned Armor receiving 25% less damage and inflicting 1 Poison for 3 turn(s) on the attacker (if possible).",
     "hidden": true
   },
   {
     "id": "poisoned_weapon",
     "name": "Poisoned Weapon",
     "image": "/vh/status-effects/SE_PoisonedWeapon-Icon.png",
-    "description": "[On Deal Damage] Lose X [effect] dealing Y more damage and inflicting Z [effect] for W turn(s) on target.",
+    "description": "[On Deal Damage] Lose 1 Poisoned Weapon dealing 25% more damage and inflicting 1 Poison for 3 turn(s) on target.",
     "hidden": true
   },
   {
@@ -1057,7 +1060,7 @@
     "id": "regeneration",
     "name": "Regeneration",
     "image": "/vh/status-effects/SE_Regeneration-Icon.png",
-    "description": "Heal X Max Health at the beginning of this character's turn.",
+    "description": "Heal 5% Max Health at the beginning of this character's turn.",
     "hunters": [
       "lanthe",
       "lysadorea",
@@ -1068,7 +1071,7 @@
     "id": "reincarnation",
     "name": "Reincarnation",
     "image": "/vh/status-effects/SE_Reincarnation-Icon.png",
-    "description": "If killed, will Revive with X Health if able.",
+    "description": "If killed, will Revive with 50% Health if able.",
     "hidden": true
   },
   {
@@ -1102,7 +1105,7 @@
     "id": "resistance_down",
     "name": "Resistance Down",
     "image": "/vh/status-effects/SE_ResistanceDown-Icon.png",
-    "description": "-X Resistance\n\nThis debuff is [Irresistible].",
+    "description": "-50% Resistance\n\nThis debuff is [Irresistible].",
     "hunters": [
       "faustus",
       "jagya",
@@ -1115,7 +1118,7 @@
     "id": "resistance_up",
     "name": "Resistance Up",
     "image": "/vh/status-effects/SE_ResistanceUp-Icon.png",
-    "description": "+X Resistance\n\n[effect type]: Cannot resist Buff Dispel, will be dispelled before any other Buff(s).",
+    "description": "+50% Resistance\n\n[effect type]: Cannot resist Buff Dispel, will be dispelled before any other Buff(s).",
     "hunters": [
       "raven",
       "renna",
@@ -1126,7 +1129,7 @@
     "id": "retribution",
     "name": "Retribution",
     "image": "/vh/status-effects/SE_Retribution-Icon.png",
-    "description": "+X Counter Rate",
+    "description": "+100% Counter Rate",
     "hunters": [
       "arbias",
       "kurgan",
@@ -1147,7 +1150,7 @@
     "id": "severins_vow",
     "name": "Severin's Vow",
     "image": "/vh/status-effects/SE_SeverinsVow-Icon.png",
-    "description": "When this character triggers Embrace The Void, they gain bonus X [effect].",
+    "description": "When this character triggers Embrace The Void, they gain bonus 2 Void Power.",
     "hunters": [
       "severin"
     ],
@@ -1164,7 +1167,7 @@
     "id": "shield",
     "name": "Shield",
     "image": "/vh/status-effects/SE_Shield-Icon.png",
-    "description": "Additional survivability on top of Max Health.\n\nNote: actual [effect] amount is calculated based on caster's Max Health - or target's Max Health for situations with no caster - unless said explicitly otherwise.",
+    "description": "Additional survivability on top of Max Health.\n\nNote: actual Shield amount is calculated based on caster's Max Health - or target's Max Health for situations with no caster - unless said explicitly otherwise.",
     "hunters": [
       "goran",
       "nadia",
@@ -1189,7 +1192,7 @@
     "id": "snares",
     "name": "Snares",
     "image": "/vh/status-effects/SE_Snares-Icon.png",
-    "description": "When about to get damage from a [skill type] attack, deal X Max Health damage to the attacker and apply a random [Irresistible] Buff Dispel on them, then lose Y [effect].",
+    "description": "When about to get damage from a [skill type] attack, deal 20% Max Health damage to the attacker and apply a random [Irresistible] Buff Dispel on them, then lose 1 Snares.",
     "hunters": [
       "jagya"
     ],
@@ -1216,7 +1219,7 @@
     "id": "speed_down",
     "name": "Speed Down",
     "image": "/vh/status-effects/SE_SpeedDown-Icon.png",
-    "description": "-X Speed",
+    "description": "-25% Speed",
     "hunters": [
       "galen",
       "rosie",
@@ -1227,12 +1230,13 @@
     "id": "speed_up",
     "name": "Speed Up",
     "image": "/vh/status-effects/SE_SpeedUp-Icon.png",
-    "description": "+X Speed",
+    "description": "+25% Speed",
     "hunters": [
       "lanthe",
       "lilith",
       "lysadorea",
       "nadia",
+      "tiche",
       "voltz"
     ]
   },
@@ -1240,7 +1244,7 @@
     "id": "spotlight",
     "name": "Spotlight",
     "image": "/vh/status-effects/SE_Spotlight-Icon.png",
-    "description": "Can always be targeted and cannot gain [effect].\nSkills may have additional effects.",
+    "description": "Cannot gain Stealth.\nSkills may have additional effects.",
     "hunters": [
       "angelo",
       "bruno",
@@ -1252,7 +1256,7 @@
     "id": "stagger",
     "name": "Stagger",
     "image": "/vh/status-effects/SE_Stagger-Icon.png",
-    "description": "[On Suffer Damage] If any Health was lost, suffer X Turn Meter Down and this debuff expires.",
+    "description": "[On Suffer Damage] If any Health was lost, suffer 100% Turn Meter Down and this debuff expires.",
     "hunters": [
       "bomor",
       "natalie",
@@ -1275,7 +1279,7 @@
     "id": "stronger",
     "name": "Strong",
     "image": "/vh/status-effects/SE_Stronger-Icon.png",
-    "description": "+X Attack, Defense, Crit Rate and Crit Resistance",
+    "description": "+5% Attack, Defense, Crit Rate and Crit Resistance",
     "hunters": [
       "bruno",
       "johannes",
@@ -1289,6 +1293,7 @@
     "description": "Cannot dodge, Counter, Assist or use skills and turn will be skipped.",
     "hunters": [
       "angelo",
+      "besemin",
       "faustus",
       "galen",
       "goran",
@@ -1297,20 +1302,21 @@
   },
   {
     "id": "succumbed",
-    "name": "Succumbed",
+    "name": "Hollow",
     "image": "/vh/status-effects/SE_Succumbed-Icon.png",
-    "description": "-X Attack, Defense, Speed, Focus, Resistance and Healing Effect (stacking).\n\nCannot gain Revive.\n\nAdditional cumulative effects based on number of stacks:\n2: Cannot resist Detrimental Effect(s).\n3: Cannot gain Positive Effect(s).\n4: [Unpreventable] Instant Defeat.",
+    "description": "-15% Attack, Defense, Max Health, Speed, Focus and Resistance (stacking).\n\nCannot gain Revive.\n\nAdditional cumulative effects based on number of stacks:\n2: Cannot gain Turn Meter Up.\n3: Cannot attack Out-of-Turn.\n4: All received Healing is halved.\n5: Cannot gain Buff(s).\n6: Suffer [Unpreventable] Instant Defeat.\n\n[On Round End] If this character started this Round(s) with Hollow, cleanse 1 Hollow.",
     "hunters": [
       "aedwulf",
       "raven",
-      "severin"
+      "severin",
+      "st_hermeida"
     ]
   },
   {
     "id": "tainted_armor",
     "name": "Tainted Armor",
     "image": "/vh/status-effects/SE_TaintedArmor-Icon.png",
-    "description": "[On Suffer Damage] Lose X [effect] receiving Y less damage and inflicting Z Void Touch on attacker.\n\n[On Turn Start] W chance (stacking) to suffer V Void Touch.",
+    "description": "[On Suffer Damage] Lose 1 Tainted Armor receiving 25% less damage and inflicting 10% Void Touch on attacker.\n\n[On Turn Start] 25% chance (stacking) to suffer 2% Void Touch.",
     "hunters": [
       "goran",
       "ruck"
@@ -1320,7 +1326,7 @@
     "id": "tainted_weapon",
     "name": "Tainted Weapon",
     "image": "/vh/status-effects/SE_TaintedWeapon-Icon.png",
-    "description": "[On Deal Damage] Lose X [effect] dealing Y more damage and inflicting Z Void Touch on target.\n\n[On Turn Start] W chance (stacking) to suffer V Void Touch.",
+    "description": "[On Deal Damage] Lose 1 Tainted Weapon dealing 25% more damage and inflicting 10% Void Touch on target.\n\n[On Turn Start] 25% chance (stacking) to suffer 1% Void Touch.",
     "hunters": [
       "kurgan",
       "ruck"
@@ -1330,7 +1336,7 @@
     "id": "taunt",
     "name": "Taunt",
     "image": "/vh/status-effects/SE_Taunt-Icon.png",
-    "description": "Enemies must target this character.\n\nCannot gain [effect].",
+    "description": "Enemies must target this character.\n\nCannot gain Stealth.",
     "hunters": [
       "bohdan",
       "goran",
@@ -1378,14 +1384,14 @@
     "id": "tomas_vow",
     "name": "Tomas' Vow",
     "image": "/vh/status-effects/SE_TomasVow-Icon.png",
-    "description": "+X Assist Dmg if target enemy is under [effect].\nWhen this character inflicts [effect], it is [Irresistible] and [Undispellable].",
+    "description": "+100% Assist Dmg if target enemy is under Deathmark.\nWhen this character inflicts Deathmark, it is [Irresistible] and [Undispellable].",
     "hidden": true
   },
   {
     "id": "true_to_vows",
     "name": "True to Vows",
     "image": "/vh/status-effects/SE_TruetoVows-Icon.png",
-    "description": "Collect stacks of [effect] to fullfill this character's Vow.",
+    "description": "Collect stacks of True to Vows to fullfill this character's Vow.",
     "hunters": [
       "arbias",
       "besemin",
@@ -1413,7 +1419,7 @@
     "id": "untouchable",
     "name": "Untouchable",
     "image": "/vh/status-effects/SE_Untouchable-Icon.png",
-    "description": "When about to suffer Void Touch, lose X [effect] instead.",
+    "description": "When about to suffer Void Touch, lose 1 Untouchable instead.",
     "hunters": [
       "besemin",
       "bohdan",
@@ -1428,7 +1434,7 @@
     "id": "void_flask",
     "name": "Void Flask",
     "image": "/vh/status-effects/SE_VoidFlask-Icon.png",
-    "description": "Skills may have additional effects. (Max. X stacks)",
+    "description": "Skills may have additional effects. (Max. 10 stacks)",
     "hunters": [
       "severin"
     ],
@@ -1438,7 +1444,7 @@
     "id": "void_power",
     "name": "Void Power",
     "image": "/vh/status-effects/SE_VoidPower-Icon.png",
-    "description": "This character gains bonuses based on their [effect].\nVoid Touch has no effect on this character attributes.\n\n[On Turn Start] Suffer X Void Touch for each [effect] on any ally.\n\nLose all [effect] if this character Succumb To The Void.",
+    "description": "This character gains bonuses based on their Void Power.\n\nVoid Touch cannot be cleansed from this character.\n\nLose 1 Void Power when this character ends their turn (unless Embrace The Void was used in that turn), and all Void Power when this character suffers Hollowing.",
     "hunters": [
       "aedwulf",
       "angelo",
@@ -1483,7 +1489,7 @@
     "id": "void_trace",
     "name": "Void Trace",
     "image": "/vh/status-effects/SE_VoidTrace-Icon.png",
-    "description": "[On Turn Start] Suffer X Void Touch per stack.",
+    "description": "[On Turn Start] Suffer 3% Void Touch per stack.",
     "hunters": [
       "aedwulf",
       "renna",
@@ -1494,7 +1500,7 @@
     "id": "voidbound",
     "name": "Void Minion",
     "image": "/vh/status-effects/SE_Voidbound-Icon.png",
-    "description": "All Void Touch this character inflicts is increased by X.\n\n[On Turn Start] This character converts some of its Void Touch to Healing.\n\n[When on Hunting Grounds]\nPer each Void Menace level:\n+Y Attack, Defense, Max Health and +Z Speed.",
+    "description": "All Void Touch this character inflicts is increased by 3%.\n\n[On Turn Start] This character converts some of its Void Touch to Healing.\n\n[When on Hunting Grounds]\nPer each Void Menace level:\n+10% Attack, Defense, Max Health and +5% Speed.",
     "hunters": [
       "ygravain"
     ]
@@ -1527,7 +1533,7 @@
     "id": "weaken",
     "name": "Weak",
     "image": "/vh/status-effects/SE_Weaken-Icon.png",
-    "description": "-X Attack, Defense, Crit Rate and Crit Resistance",
+    "description": "-5% Attack, Defense, Crit Rate and Crit Resistance",
     "hunters": [
       "st_hermeida",
       "ygravain"
@@ -1537,7 +1543,7 @@
     "id": "will_nexus",
     "name": "Will Nexus",
     "image": "/vh/status-effects/SE_WillNexus-Icon.png",
-    "description": "Each time other ally is about to gain [effect], this character gains X [effect] instead.",
+    "description": "Each time other ally is about to gain Will, this character gains 1 Will instead.",
     "hunters": [
       "faustus",
       "galen"
@@ -1554,7 +1560,7 @@
     "id": "wrath",
     "name": "Wrath",
     "image": "/vh/status-effects/SE_Wrath-Icon.png",
-    "description": "+X damage per stack. Lose all stacks after the attack.",
+    "description": "+15% damage per stack. Lose all stacks after the attack.",
     "hunters": [
       "bohdan",
       "faustus",
@@ -1567,7 +1573,7 @@
     "id": "ygravains_vow",
     "name": "Ygravain's Vow",
     "image": "/vh/status-effects/SE_YgravainsVow-Icon.png",
-    "description": "Each time this character is about to gain [effect], they gain [effect] instead.",
+    "description": "Each time this character is about to gain Guard, they gain Invulnerability instead.",
     "hunters": [
       "ygravain"
     ],
@@ -1577,7 +1583,7 @@
     "id": "zeal",
     "name": "Zeal",
     "image": "/vh/status-effects/SE_Zeal-Icon.png",
-    "description": "+X ATK and +Y Crit Dmg. (Max. Z stacks)",
+    "description": "+5% ATK and +5% Crit Dmg. (Max. 30 stacks)",
     "hunters": [
       "arbias"
     ],

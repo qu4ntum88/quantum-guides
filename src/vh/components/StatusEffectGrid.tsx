@@ -31,8 +31,9 @@ export default function StatusEffectGrid({ effects, owners = {} }: { effects: St
         : <div className="vh-effects">{filtered.map((e) => <StatusEffectBox key={e.id} effect={e} owners={ownersOf(e)} />)}</div>}
 
       <p className="w-muted vh-effects-note">
-        X, Y and so on stand for numbers set by the skill that applies the effect, so
-        they change from hunter to hunter and with skill level; [effect], [tag], [hunter] and similar stand for
+        Numbers are each effect&apos;s own values in the Hunting Grounds Playtest. Where an X, Y and so on remains, the
+        number is set by the skill that applies the effect, so it changes from hunter to hunter and with skill level;
+        [effect], [tag], [hunter] and similar stand for
         whatever effect, tag or hunter that skill names. Portraits show the hunters whose skills include the effect;
         a gold Unique tag marks an effect that belongs to one hunter. Tap a portrait to see how it works in their skills.
       </p>
