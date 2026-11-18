@@ -5,6 +5,8 @@ import type { StatusEffect } from '@/src/vh/components/StatusEffectBox'
 import RichText from '@/src/vh/components/RichText'
 import { getStatusEffects } from '@/src/vh/lib/status-effects'
 import QuantumTake from '@/src/qgg/components/QuantumTake'
+import KitHistory, { getKitHistory } from '@/src/vh/components/KitHistory'
+import '../../void-hunters.css'
 
 function readHunters(): Hunter[] {
   return require('@/src/vh/data/hunters.json') as Hunter[]
@@ -385,6 +387,13 @@ export default async function HunterPage({ params }: { params: Promise<{ id: str
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {traits.map((s) => <SkillCard key={s.order} skill={s} effects={effects} />)}
             </div>
+          </SectionCard>
+        )}
+
+        {/* What game updates changed in this kit, as a redline (scripts/sync-vh-kits.mjs) */}
+        {getKitHistory(hunter.id).length > 0 && (
+          <SectionCard title="Kit History" accentColor="#94a3b8">
+            <KitHistory hunterId={hunter.id} effects={effects} />
           </SectionCard>
         )}
 

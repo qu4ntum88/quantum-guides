@@ -1,0 +1,7897 @@
+{
+ "aedwulf": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "LOYAL SERVICE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 180% ATK damage to target enemy and gain Focus Up for 1 turn. If this is Archlands or Dwarf ally's turn and Aedwulf has no "
+      ],
+      [
+       "-",
+       "Succumbed"
+      ],
+      [
+       "+",
+       "Hollow"
+      ],
+      [
+       "=",
+       ", gain 1 Control (or 2 Control if this ally is Noble)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +15% ATK damage\nLv. 3: +20% ATK damage\nLv. 4: +25% ATK damage\nLv. 5: +30% ATK damage; gain Focus Up "
+      ],
+      [
+       "-",
+       "for"
+      ],
+      [
+       "+",
+       "foir"
+      ],
+      [
+       "=",
+       " 1 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "DARK REACH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 150% ATK damage to all enemies inflicting Health Recovery Down for 2 turns and "
+      ],
+      [
+       "-",
+       "4%"
+      ],
+      [
+       "+",
+       "6%"
+      ],
+      [
+       "=",
+       " Void Touch. Inflict 1 Void Trace for 2 turns (or 2 Void Trace if Aedwulf has Void Power) on each enemy who lost Health during this attack. This skill deals bonus % ATK damage equal to Void Touch on target."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " -1 Cooldown\nLv. 4: +20% ATK damage"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " Void Touch\nLv. 5: +30% ATK damage"
+      ],
+      [
+       "+",
+       ", +2% Void Touch"
+      ],
+      [
+       "=",
+       "; Inflict 1 Void Trace for 2 turns (or 2 Void Trace if Aedwulf has Void Power) on each enemy who lost Health during this attack."
+      ]
+     ]
+    },
+    {
+     "name": "DEVOUR",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "400%"
+      ],
+      [
+       "+",
+       "360%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy inflicting "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Void Touch, then inflict Fear for 1 turn on all enemies. If Aedwulf has Void Power, this Fear is [Irresistible]. Inflict Cooldowns Up on all skills on target enemy, [Irresistible] if the target is above 50% Void Touch."
+      ],
+      [
+       "+",
+       " Enemies defeated by this skill cannot gain Revive."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " ATK damage;\nLv. 3: +25% ATK damage; +2% Void Touch\nLv. 4: +30% ATK damage; "
+      ],
+      [
+       "+",
+       "+3% Void Touch; "
+      ],
+      [
+       "=",
+       "-1 Cooldown\nLv. 5: +"
+      ],
+      [
+       "-",
+       "40%"
+      ],
+      [
+       "+",
+       "45%"
+      ],
+      [
+       "=",
+       " ATK damage; +"
+      ],
+      [
+       "-",
+       "4%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Void Touch; If Aedwulf has Void Power, this Fear is [Irresistible].\nLv. 6: +"
+      ],
+      [
+       "-",
+       "80%"
+      ],
+      [
+       "+",
+       "60%"
+      ],
+      [
+       "=",
+       " ATK damage; Inflict Cooldowns Up on all skills on target enemy, [Irresistible] if the target is above 50% Void Touch."
+      ]
+     ]
+    },
+    {
+     "name": "DOOMING GAZE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "[Requires 1 Void Power] Lose 1 Void Power to deal 300% ATK damage inflicting Fatal Wound and 25% Turn Meter Down to target enemy. If target had Fear or "
+      ],
+      [
+       "-",
+       "Succumbed"
+      ],
+      [
+       "+",
+       "Hollow"
+      ],
+      [
+       "=",
+       ", these effects are [Irresistible]. If Fatal Wound was resisted and Aedwulf had 2 or more Void Power, lose 1 more to inflict Fatal Wound again, this time as [Irresistible]."
+      ]
+     ]
+    },
+    {
+     "name": "DUTY TO THE REALM",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "[On Battle Start] Aedwulf gains 3 Control and 1 additional Control for each other Archlands or Dwarf ally, doubled if they are Noble, and loses 1 Control for each Archlands or Dwarf enemy. Each time Aedwulf uses a special skill, he loses 5 Control. If he is about to lose more than he currently has, he suffers "
+      ],
+      [
+       "-",
+       "4%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Void Touch for each missing Control."
+      ]
+     ]
+    },
+    {
+     "name": "CURSED DIE TWICE",
+     "change": "removed",
+     "text": "Aedwulf has -40% Health Recovery when healed out of his turn and cannot be called to Assist when he has Succumbed. When Aedwulf is about to be defeated and has no Succumbed, he instantly Succumb To The Void instead, and then gains 100% Healing, 100% Turn Meter Up and [Undispellable] Attack Up for 3 turns, all these effects [Unpreventable]. Then, he inflicts [Irresistible][Undispellable] Fear for 1 turn on the enemy that dealt the final blow (or on a random enemy, if final blow had no author). While Aedwulf has no Succumbed, Consumed allies have +20% Max Health, deal +50% damage to enemies under Fear and each time an enemy suffers Fear, a random Consumed ally gains 15% Turn Meter Up."
+    }
+   ]
+  }
+ ],
+ "besemin": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "LUMINANT TOUCH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant 20% Healing, "
+      ],
+      [
+       "+",
+       "4% Void Touch Cleanse, "
+      ],
+      [
+       "=",
+       "1 Untouchable and a random Debuff Dispel to target ally (or 40% Healing and full Debuff Dispel if they are below 50% Health). If no Debuff(s) were dispelled, grant target ally "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "4%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse"
+      ],
+      [
+       "+",
+       " again"
+      ],
+      [
+       "=",
+       ". If used on self, instead of Untouchable apply Cooldowns Down on Primal Light 3 times, and once more for each ally below 50% Health."
+      ]
+     ]
+    },
+    {
+     "name": "SAINT LIGHTBORNE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Allied Light skills deal +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " damage (or +"
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " if Besemin is active and Lightborne)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " / +"
+      ],
+      [
+       "-",
+       "4%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " damage\nLv. 3: +2% / +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "4%"
+      ],
+      [
+       "=",
+       " damage\nLv. 4: +3% / +6% damage\nLv. 5: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "4%"
+      ],
+      [
+       "=",
+       " / +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "8%"
+      ],
+      [
+       "=",
+       " damage"
+      ]
+     ]
+    },
+    {
+     "name": "RISING TIDE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Besemin is immune to "
+      ],
+      [
+       "-",
+       "Debuff(s)"
+      ],
+      [
+       "+",
+       "Stun"
+      ],
+      [
+       "=",
+       ", cannot Dodge and cannot trigger Embrace The Void. Besemin gains Cooldowns Down on Primal Light each time an ally gets damaged and a Bonus Turn whenever an ally is defeated. While not Lightborne, Besemin has +25% Dmg Reduction"
+      ],
+      [
+       "+",
+       " and +50% Resistance"
+      ],
+      [
+       "=",
+       ". While Lightborne, Besemin has +25% Speed"
+      ],
+      [
+       "-",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "+25% Resistance "
+      ],
+      [
+       "=",
+       "and is immune to Void Touch."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Dmg Reduction"
+      ],
+      [
+       "+",
+       "; +5% Resistance"
+      ],
+      [
+       "=",
+       "\nLv. 3: +5% Dmg Reduction"
+      ],
+      [
+       "+",
+       "; +5% Resistance"
+      ],
+      [
+       "=",
+       "\nLv. 4: "
+      ],
+      [
+       "+",
+       "+5% Resistance; "
+      ],
+      [
+       "=",
+       "While Lightborne, Besemin has +5% Speed"
+      ],
+      [
+       "-",
+       " and +5% Resistance"
+      ],
+      [
+       "=",
+       "\nLv. 5: +10% Dmg Reduction, Speed and Resistance\nLv. 6: +10% Speed and Resistance; While Lightborne, Besemin is immune to Void Touch"
+      ],
+      [
+       "-",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "PURE FAITH",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Each time an ally becomes Vowkeeper, that ally gains 5 True to Vows. Each time "
+      ],
+      [
+       "-",
+       "an"
+      ],
+      [
+       "+",
+       "another"
+      ],
+      [
+       "=",
+       " ally gains a Vow status, they also gain Lightborne until [End of Battle]."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "bohdan": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "TEARING THROUGH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "75%"
+      ],
+      [
+       "+",
+       "70%"
+      ],
+      [
+       "=",
+       " ATK damage to all enemies. This attack has "
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "+15%"
+      ],
+      [
+       "=",
+       " Crit Dmg."
+      ],
+      [
+       "-",
+       " If no ally is alive, inflict Burning for 2 turns on hit."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +5% ATK damage\nLv. 4: +10% ATK damage\nLv. 5: +15% ATK damage; This attack has "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "+15%"
+      ],
+      [
+       "=",
+       " Crit Dmg."
+      ]
+     ]
+    },
+    {
+     "name": "VALOR SWIG",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Gain "
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Healing and 2 Overconfidence. Then, gain "
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse for each defeated ally or empty ally slot. If Bohdan had less than 25% Health, gain "
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Healing instead."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Healing\nLv. 3: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Healing"
+      ],
+      [
+       "+",
+       ", +1% Void Touch Cleanse"
+      ],
+      [
+       "=",
+       "\nLv. 4: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Healing"
+      ],
+      [
+       "+",
+       ", +1% Void Touch Cleanse"
+      ],
+      [
+       "=",
+       "\nLv. 5: +1 Overconfidence; If Bohdan had less than 25% Health, gain "
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Healing instead."
+      ]
+     ]
+    },
+    {
+     "name": "LONE PIERCER",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "-",
+       "Deal"
+      ],
+      [
+       "+",
+       "Inflict"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "400%"
+      ],
+      [
+       "+",
+       "full"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "ATK"
+      ],
+      [
+       "+",
+       "Buff"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "damage"
+      ],
+      [
+       "+",
+       "Dispel"
+      ],
+      [
+       "=",
+       " to target enemy "
+      ],
+      [
+       "-",
+       "inflicting"
+      ],
+      [
+       "+",
+       "dealing"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "full"
+      ],
+      [
+       "+",
+       "400%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Buff"
+      ],
+      [
+       "+",
+       "ATK"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Dispel"
+      ],
+      [
+       "+",
+       "damage"
+      ],
+      [
+       "=",
+       " and "
+      ],
+      [
+       "+",
+       "inflicting "
+      ],
+      [
+       "=",
+       "Skill Block for 2 turns"
+      ],
+      [
+       "+",
+       " on a succesful hit"
+      ],
+      [
+       "=",
+       ". If this attack defeats the enemy, all enemies suffer "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Turn Meter Down. This attack has +"
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Piercing."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +25% ATK damage\nLv. 3: +25% ATK damage\nLv. 4: +25% ATK damage; -1 Cooldown\nLv. 5: +50% ATK damage; +1 Skill Block duration\nLv. 6: +75% ATK damage; If this attack defeats the enemy, all enemies suffer "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Turn Meter Down."
+      ]
+     ]
+    },
+    {
+     "name": "BRAVADO",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Each time Bohdan defeats an enemy, he gains 1 Overconfidence. Each time Bohdan's Health drops below 50% or 25%, he loses 1 Overconfidence. [On Turn Start] if Bohdan has 2 or more Overconfidence, he gains random Debuff Dispel. Bohdan starts battle with 2 Overconfidence"
+      ],
+      [
+       "-",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "I CAN TAKE THEM",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "[On Battle Start] Bohdan gains "
+      ],
+      [
+       "-",
+       "+25% Attack, Defense, Max Health and 2"
+      ],
+      [
+       "+",
+       "1"
+      ],
+      [
+       "=",
+       " Untouchable for each empty ally slot. For each defeated ally or empty ally slot: "
+      ],
+      [
+       "+",
+       "- "
+      ],
+      [
+       "=",
+       "Bohdan "
+      ],
+      [
+       "-",
+       "gains"
+      ],
+      [
+       "+",
+       "has"
+      ],
+      [
+       "=",
+       " +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Counter"
+      ],
+      [
+       "+",
+       "Attack,"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Rate"
+      ],
+      [
+       "+",
+       "Defense,"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "and"
+      ],
+      [
+       "+",
+       "Max"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "Health, - Bohdan has "
+      ],
+      [
+       "=",
+       "+10% Counter "
+      ],
+      [
+       "-",
+       "Dmg;"
+      ],
+      [
+       "+",
+       "Rate"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "- "
+      ],
+      [
+       "=",
+       "Bohdan gains 5% Turn Meter Up each time enemy starts a turn. If there are no active allies, Bohdan ignores Taunt and is immune to Provoke. Bohdan gains 5% Turn Meter Up each time a Debuff(s) expires or is dispelled from him and suffers 5% Turn Meter Down each time he gains a Buff(s)"
+      ],
+      [
+       "+",
+       " (except from himself)"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Max Health"
+      ],
+      [
+       "+",
+       ";"
+      ],
+      [
+       "=",
+       "\nLv. 3: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Max Health"
+      ],
+      [
+       "+",
+       ";"
+      ],
+      [
+       "=",
+       "\nLv. 4: +"
+      ],
+      [
+       "-",
+       "4%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Max Health; "
+      ],
+      [
+       "-",
+       "+"
+      ],
+      [
+       "+",
+       "[On Battle Start] Bohdan gains "
+      ],
+      [
+       "=",
+       "1 Untouchable for each empty ally slot.\nLv. 5: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Max Health; If there are no active allies, Bohdan ignores Taunt"
+      ],
+      [
+       "-",
+       " and"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " is immune to Provoke.\nLv. 6: For each "
+      ],
+      [
+       "-",
+       "dead"
+      ],
+      [
+       "+",
+       "defeated"
+      ],
+      [
+       "=",
+       " ally or empty ally slot Bohdan gains +10% Counter Rate and "
+      ],
+      [
+       "-",
+       "+10% Counter Dmg and "
+      ],
+      [
+       "=",
+       "gains 5% Turn Meter Up each time enemy starts a turn."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Bohdan can trigger Embrace The Void to gain Void Power. Bohdan gains +20% Attack, Defense and Max Health per 1 Void Power. [On Embrace The Void] Bohdan gains 2 Overconfidence and 3 Wrath. When under Void Power, each time Bohdan defeats an enemy, he gains 1 Wrath per 1 Void Power. When Bohdan gains 10 Overconfidence, he gains "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse (limit 1 per battle)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% Attack, Defense and Max Health\nLv. 3: When Bohdan gains 10 Overconfidence, he gains "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse (limit 1 per battle).\nLv. 4: [On Embrace The Void] Bohdan gains 2 Overconfidence and 3 Wrath.\nLv. 5: When under Void Power, each time Bohdan defeats an enemy, he gains 1 Wrath per 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "bomor": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "WARCRY",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Gain full Debuff Dispel, "
+      ],
+      [
+       "-",
+       "Focus"
+      ],
+      [
+       "+",
+       "Crit"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "Damage "
+      ],
+      [
+       "=",
+       "Up for 2 turn(s) and 40% Turn Meter Up and grant the same effects to Leo. Then, inflict Fear on target enemy and 2 random "
+      ],
+      [
+       "+",
+       "other "
+      ],
+      [
+       "=",
+       "enemies for 1 turn(s). Apply Cooldowns Down on all skills of Seasoned and Free Tribes allies."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: -1 Cooldown; +10% Turn Meter Up\nLv. 3: +20% Turn Meter Up\nLv. 4: Apply Cooldowns Down on Earthshaker.\nLv. 5: Leo also gains Debuff Dispel, "
+      ],
+      [
+       "-",
+       "Focus"
+      ],
+      [
+       "+",
+       "Crit"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "Damage "
+      ],
+      [
+       "=",
+       "Up and Turn Meter Up."
+      ]
+     ]
+    },
+    {
+     "name": "EARTHSHAKER",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 160% ATK damage to all enemies inflicting Daze for 1 turn(s) (or 2 turn(s) on critical hit)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +10% ATK damage, 25% chance to inflict Daze for 1 turn(s),\nLv. 4: +15% ATK damage; +25% chance to inflict Daze\nLv. 5: +15% ATK damage; always inflict Daze,\nLv. 6: +30% ATK damage; On critical hit "
+      ],
+      [
+       "-",
+       "inflict"
+      ],
+      [
+       "+",
+       "inflct"
+      ],
+      [
+       "=",
+       " Daze for 2 turn(s) instead."
+      ]
+     ]
+    },
+    {
+     "name": "WORTHY FOE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       "Bomor deals damage depending on target's role: +20% damage vs. Tank enemies; +10% damage vs. Attacker enemies; -10% damage vs. Support enemies"
+      ],
+      [
+       "-",
+       "."
+      ],
+      [
+       "+",
+       ";\""
+      ],
+      [
+       "=",
+       " [On Round Start] Bomor gains +5% Crit Rate for each enemy Tank or Attacker until [End of Round]."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "faustus": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "MEDITATE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Gain Focus Up for 2 turn(s) and deal "
+      ],
+      [
+       "-",
+       "375%"
+      ],
+      [
+       "+",
+       "400%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy. Then gain 40% Turn Meter Up plus 1% for each Will or 100% Turn Meter Up if under Will Supreme. Gain Cooldowns Down on Obliviate."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage, +5% Turn Meter Up\nLv. 3: +"
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "40%"
+      ],
+      [
+       "=",
+       " ATK damage, +5% Turn Meter Up, -1 Cooldown\nLv. 4: +"
+      ],
+      [
+       "-",
+       "45%"
+      ],
+      [
+       "+",
+       "50%"
+      ],
+      [
+       "=",
+       " ATK damage, +10% Turn Meter Up; Additional 1% Turn Meter Up for each Will.\nLv. 5: +"
+      ],
+      [
+       "-",
+       "75%"
+      ],
+      [
+       "+",
+       "80%"
+      ],
+      [
+       "=",
+       " ATK damage, +10% Turn Meter Up; 100% Turn Meter Up if under Will Supreme.\n★ Gain Cooldowns Down on Obliviate."
+      ]
+     ]
+    },
+    {
+     "name": "OBLIVIATE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Inflict full Buff Dispel and "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Turn Meter Down (or "
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "40%"
+      ],
+      [
+       "=",
+       " if under Will Supreme) on all enemies. Inflict Stun for 1 turn(s) on enemies whose Turn Meter is 0%."
+      ],
+      [
+       "-",
+       " All effects are [Irresistible] for target enemy."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Turn Meter Down\nLv. 3: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Turn Meter Down\nLv. 4: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Down; -1 Cooldown\nLv. 5: +10% Turn Meter Down (+"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "40%"
+      ],
+      [
+       "=",
+       " if under Will Supreme).\nLv. 6: Inflict Stun for 1 turn(s) on enemies whose Turn Meter was reduced to 0%.\n★★★★★ "
+      ],
+      [
+       "-",
+       "All"
+      ],
+      [
+       "+",
+       "For"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "target enemy Turn Meter Down is doubled and all "
+      ],
+      [
+       "=",
+       "effects are [Irresistible]"
+      ],
+      [
+       "-",
+       " for target enemy"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "VOW OF THE ARCHPRIEST",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Faustus can trigger Holy Vow to become Vowkeeper. When Faustus is Vowkeeper, gain 20 True to Vows to "
+      ],
+      [
+       "-",
+       "fulfill"
+      ],
+      [
+       "+",
+       "fullfill"
+      ],
+      [
+       "=",
+       " his Vow granting all Holy Order allies Faustus' Vow. Faustus gains 1 True to Vows each time a Holy Order ally grants Turn Meter Up to an ally or inflicts Turn Meter Down on an enemy."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "lilith": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "DON'T DISRUPT ME",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 140% ATK damage to target enemy inflicting "
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Void Touch. Inflicted Void Touch is tripled against Consumed and Tainted enemies."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage, 25% chance to inflict "
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Void Touch.\nLv. 4: +20% ATK damage, +25% chance to inflict "
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Void Touch.\nLv. 5: +25% ATK damage, always inflict "
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Void Touch.\n★★ Inflicted Void Touch is tripled against Consumed and Tainted enemies."
+      ]
+     ]
+    },
+    {
+     "name": "ON YOUR FEET!",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       "Grant target ally 40% Healing with additional effects based on stacks of Dark Vial (cumulative): 1: grant target ally 30% Turn Meter Up; if they are Seasoned, grant them Speed Up for 2 turn(s) as well,"
+      ],
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       " 2: grant target ally full Debuff Dispel and Debuff Immunity for 2 turn(s), 3: grant 60% Healing instead. Lose all Dark Vial."
+      ]
+     ]
+    },
+    {
+     "name": "THIS WILL HELP!",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       "Grant all allies 25% Healing with additional effects based on stacks of Dark Vial (cumulative): 1: grant all allies 20% Turn Meter Up; grant Seasoned allies Speed Up for 1 turn(s),"
+      ],
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       " 2: grant each ally full Debuff Dispel, 3: grant 40% Healing instead. Lose all Dark Vial."
+      ]
+     ]
+    },
+    {
+     "name": "WHATEVER IT TAKES",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Lilith can have up to 3 Dark Vial and suffers 1% Void Touch each time she loses a stack. When healing an ally, for each Dark Vial used, this ally suffers 2% Void Touch (or 1% Void Touch if healing by AoE skill). Lilith "
+      ],
+      [
+       "-",
+       "won't cleanse Void Touch when granting Healing. Lilith "
+      ],
+      [
+       "=",
+       "has +25% Healing Effect on Seasoned allies. [On Battle Start] If all allies are Seasoned, Lilith gains 1 Dark Vial and +10% Speed."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Lilith can trigger Embrace The Void to gain Void Power. Lilith gains +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Max Health, Healing Effect and Crit Resistance per 1 Void Power. [On Embrace The Void] Lilith gains 3 Dark Vial, full Debuff Dispel and Bonus Turn. When under Void Power, each time Lilith gains Dark Vial, she also gains 5% Healing. Each time Lilith fully heals a Seasoned ally using 3 Dark Vial, she gains "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "8%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse (limit 1 per turn)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Max Health, Healing Effect and Crit Resistance\nLv. 3: Each time Lilith fully heals a Seasoned ally using 3 Dark Vial, she gains "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "8%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse (limit 1 per turn).\nLv. 4: [On Embrace The Void] Lilith gains 3 Dark Vial, full Debuff Dispel and Bonus Turn.\nLv. 5: When under Void Power, each time Lilith gains Dark Vial, she also gains 5% Healing."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "natalie": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "FOR THE LIGHT",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant Holy Order allies, ally with Divine Protection and ally with lowest Health 2 Guard for 3 turn(s). Deal "
+      ],
+      [
+       "-",
+       "150%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " ATK damage inflicting Vulnerable for 2 turn(s), then deal "
+      ],
+      [
+       "-",
+       "100%"
+      ],
+      [
+       "+",
+       "200%"
+      ],
+      [
+       "=",
+       " ATK damage, inflicting Stagger for 2 turn(s) and call Nadia to Assist. If Natalie has Taunt, the debuffs are [Irresistible] and this attack deals double damage."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       "/+"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 3: +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       "/+"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " ATK damage, -1 Cooldown\nLv. 4: +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       "/+"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage, -1 Cooldown; call Nadia to Assist.\nLv. 5: +"
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       "/+"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "40%"
+      ],
+      [
+       "=",
+       " ATK damage. Before the attack, grant Holy Order allies, ally with Divine Protection and ally with lowest Health 3 Guard for 2 turn(s).\n★ If Natalie has Taunt, the debuffs are [Irresistible] and this attack deals double damage."
+      ]
+     ]
+    },
+    {
+     "name": "NOT ON MY WATCH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "When an ally with Divine Protection loses 20% Health in a single hit, Natalie gains "
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "50%"
+      ],
+      [
+       "=",
+       " Turn Meter Up. When this ally's Health drops below 50%, Natalie gains Taunt for 2 Turn(s). If Nadia is an ally, she triggers the effects above even if she does not have Divine Protection. Each time Natalie gains Taunt, she also gains 20% Shield for 3 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up\nLv. 3: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up\nLv. 4: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up\nLv. 5: +"
+      ],
+      [
+       "-",
+       "6%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Turn Meter Up, +1 Taunt duration\n★★★★★ Each time Natalie gains Taunt, she also gains 20% Shield for 3 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "KNIGHT OF THE ORDER",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Natalie gains "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Defense for each Holy Order ally and 5% Crit Defense for each Knight ally, but loses 10% Resistance for each Tainted ally. Additionally, Natalie gains 10% Crit Resistance per 1 Guard. If Nadia is an ally, all these bonuses are doubled and affect Nadia as well and all Shield effects on Nadia and Natalie are doubled."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Defense, +1% Crit Defense\nLv. 3: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Defense, +2% Crit Defense\nLv. 4: +10% Crit Resistance per 1 Guard\nLv. 5: If Nadia is an ally, all these bonuses are doubled and affect Nadia as well.\nLv. 6: If Nadia is an ally, all Shield effects on her and Natalie are doubled."
+      ]
+     ]
+    },
+    {
+     "name": "VOW OF THE PROTECTOR",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Natalie can trigger Holy Vow to become Vowkeeper. When Natalie is Vowkeeper, gain 20 True to Vows to fullfill her Vow, granting all Holy Order allies Natalie's Vow and "
+      ],
+      [
+       "-",
+       "giving"
+      ],
+      [
+       "+",
+       "granting"
+      ],
+      [
+       "=",
+       " all allies 3 Guard for 3 turn(s). Natalie gains 1 True to Vows each time a Holy Order ally grants Shield or Guard to an ally (or 2 True to Vows if that ally is below 50% Health)."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "st_hermeida": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "UNHOLY ASCENSION",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "[Requires Void Power] Apply full Debuff Dispel to all Consumed and Tainted allies and inflict dispelled Debuff(s) on target enemy. Then, grant "
+      ],
+      [
+       "+",
+       "["
+      ],
+      [
+       "=",
+       "10% "
+      ],
+      [
+       "+",
+       "x Void Power] "
+      ],
+      [
+       "=",
+       "Turn Meter Up to all allies"
+      ],
+      [
+       "-",
+       " for each Void Power"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "DARK FAITH",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "-",
+       "Other "
+      ],
+      [
+       "=",
+       "Tainted or Consumed allies have +15% Max Health and Defense (doubled if they are Holy Order). "
+      ],
+      [
+       "+",
+       "Enemies defeated by Holy Order allies who are Tainted or Consumed, cannot gain Revive. "
+      ],
+      [
+       "=",
+       "Each time an ally inflicts Void Touch, they gain 10% Turn Meter Up. [On Battle Start] Holy Order allies who are neither Tainted nor Consumed suffer [Undispellable] Speed Down for 2 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "VOW OF THE FORSAKEN",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "St. Hermeida can trigger Holy Vow to become Vowkeeper. When St. Hermeida is Vowkeeper, gain "
+      ],
+      [
+       "-",
+       "25"
+      ],
+      [
+       "+",
+       "20"
+      ],
+      [
+       "=",
+       " True to Vows to fullfill her Vow, granting all Holy Order allies Hermeida's Vow"
+      ],
+      [
+       "+",
+       " and inflicting 10% Void Touch on all enemies"
+      ],
+      [
+       "=",
+       ". St. Hermeida gains 1 True to Vows each time a Holy Order ally inflicts Void Touch on an enemy and 5 True to Vows each time a Holy Order ally triggers Embrace The Void."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "tiche": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "SAW THIS COMING",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 300% ATK damage to target enemy, inflict "
+      ],
+      [
+       "-",
+       "Attack"
+      ],
+      [
+       "+",
+       "Defense"
+      ],
+      [
+       "=",
+       " Down for 2 turn(s) and inflict 100% Turn Meter Down. This attack's damage is increased based on target's Turn Meter, up to 100% at full Turn Meter. If this attack defeats the enemy, inflict Fear for 1 turn(s) on all enemies."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +20% ATK damage\nLv. 3: +20% ATK damage, -1 Cooldown\nLv. 4: +25% ATK damage; Inflict "
+      ],
+      [
+       "-",
+       "Attack"
+      ],
+      [
+       "+",
+       "Defense"
+      ],
+      [
+       "=",
+       " Down for 2 turn(s).\nLv. 5: +35% ATK damage; Inflict 100% Turn Meter Down.\nLv. 6: +50% ATK damage; Damage scaling based on the target's Turn Meter increased to 100%\n★★★★★ If this attack defeats the enemy, inflict Fear for 1 turn(s) on all enemies."
+      ]
+     ]
+    },
+    {
+     "name": "DUAL FORM",
+     "change": "added",
+     "text": "Switch stances between Dual Wielding and Heavy Sword, gain full Debuff Dispel and 60% Turn Meter Up.\n\nOn Dual Wielding, gain Crit Damage Up and Speed Up for 2 turn(s).\nOn Heavy Sword, gain Defense Up and Crit Immunity for 2 turn(s)."
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Tiche can trigger Embrace The Void to gain Void Power. Tiche gains +5% Dodge, +10% Crit Rate and +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Crit Dmg per 1 Void Power. [On Embrace The Void] Tiche gains full Debuff Dispel and Debuff Immunity for 2 turn(s). When under Void Power, Tiche gains bonus Attack equal to half of her Void Touch. When Tiche defeats an enemy with a Special Skill(s), she gains 2% Void Touch Cleanse (limit 1 per enemy per Battle)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Crit Rate, +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Crit Dmg\nLv. 3: When Tiche defeats an enemy with a special skill, she gains 2% Void Touch Cleanse (limit 1 per enemy per battle).\nLv. 4: [On Embrace The Void] Tiche gains full Debuff Dispel and Debuff Immunity for 2 turn(s).\nLv. 5: When under Void Power, Tiche gains bonus Attack equal to half of her Void Touch."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "cassandra": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "CARD OF LIFE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Grant 2 Charm to random allies (or 3 if all allies are Carnivale). Grant following Buff(s) for 3 turn(s) to all allies based on their respective number of Charm: 1 or more: Fortune "
+      ],
+      [
+       "-",
+       "/ "
+      ],
+      [
+       "=",
+       "2 or more: Foresight "
+      ],
+      [
+       "-",
+       "/ "
+      ],
+      [
+       "=",
+       "3 or more: Invulnerability for each Charm"
+      ]
+     ]
+    },
+    {
+     "name": "CARD OF DEATH",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Inflict 2 Hex on random enemies (or 2 if all allies are Carnivale) and inflict following Debuff(s) for 3 turn(s) to all enemies based on their respective stacks of Hex: 1 or more: Misfortune "
+      ],
+      [
+       "-",
+       "/ "
+      ],
+      [
+       "=",
+       "2 or more: Curse "
+      ],
+      [
+       "-",
+       "/ "
+      ],
+      [
+       "=",
+       "3 or more: Deathmark"
+      ],
+      [
+       "-",
+       "."
+      ],
+      [
+       "=",
+       " Then, deal 150% ATK damage to all enemies. Each Hex on target grants additional 45% ATK damage."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "raven": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "RAVEN'S CLAW",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Unless under Mark of Burden, grant a random non-Control Debuff Dispel to each other ally and transfer dispelled Debuff(s) (except Persistent ones) to herself, which is [Irresistible], then gain 1 Guard for each debuff transferred. Deal "
+      ],
+      [
+       "-",
+       "175%"
+      ],
+      [
+       "+",
+       "200%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy. When under Void Power, if a debuff was dispelled from an ally, grant that ally 10% Healing."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +15% ATK damage\nLv. 3: +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 4: +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " ATK damage; Gain 1 Guard for each debuff transferred.\nLv. 5: +"
+      ],
+      [
+       "-",
+       "35%"
+      ],
+      [
+       "+",
+       "40%"
+      ],
+      [
+       "=",
+       " ATK damage; When under Void Power, if a debuff was removed from an ally, grant that ally 10% Healing."
+      ]
+     ]
+    },
+    {
+     "name": "BURDENLASH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "360%"
+      ],
+      [
+       "+",
+       "400%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy inflicting "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Void Touch, then, unless under Mark of Burden, inflict Healing Immunity and Buff Immunity for 2 turn(s). This attack deals additional damage equal to % of Void Touch on Raven"
+      ],
+      [
+       "+",
+       " and enemies defeated by this skill cannot gain Revive"
+      ],
+      [
+       "=",
+       ". Depending on stacks of Void Power on Raven: 1+: Debuff(s) are [Irresistible] 2+: Debuff(s) last 3 turn(s) instead 4+: Debuff(s) are [Undispellable]"
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " ATK damage"
+      ],
+      [
+       "+",
+       ", +1% Void Touch"
+      ],
+      [
+       "=",
+       "\nLv. 3: +"
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " ATK damage"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "+1% Void Touch, "
+      ],
+      [
+       "=",
+       "-1 Cooldown\nLv. 4: +30% ATK damage"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " +1% Void Touch"
+      ],
+      [
+       "-",
+       "; "
+      ],
+      [
+       "+",
+       "\n"
+      ],
+      [
+       "=",
+       "Depending on stacks of Void Power on Raven:"
+      ],
+      [
+       "-",
+       " "
+      ],
+      [
+       "+",
+       "\n"
+      ],
+      [
+       "=",
+       "1+: Debuff(s) are [Irresistible]"
+      ],
+      [
+       "-",
+       " "
+      ],
+      [
+       "+",
+       "\n"
+      ],
+      [
+       "=",
+       "2+: Debuff(s) last 3 turn(s) instead"
+      ],
+      [
+       "-",
+       " "
+      ],
+      [
+       "+",
+       "\n"
+      ],
+      [
+       "=",
+       "4+: Debuff(s) are [Undispellable]\nLv. 5: +40% ATK damage"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " +2% Void Touch; also inflict Buff Immunity.\nLv. 6: +"
+      ],
+      [
+       "-",
+       "60%"
+      ],
+      [
+       "+",
+       "80%"
+      ],
+      [
+       "=",
+       " ATK damage"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Void Touch; This attack deals additional damage equal to % of Void Touch on Raven"
+      ],
+      [
+       "+",
+       " and enemies defeated by this skill cannot gain Revive"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "VOIDWARD BIND",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "[Requires 3 Void Power and not having Mark of Burden] Grant 30% Void Touch Cleanse to all other allies, then remove all "
+      ],
+      [
+       "-",
+       "Succumbed"
+      ],
+      [
+       "+",
+       "Hollow"
+      ],
+      [
+       "=",
+       " from target ally and suffer Mark of Burden which cannot be removed until Raven is defeated."
+      ]
+     ]
+    },
+    {
+     "name": "LIVING LEGEND",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Allies have +10% Attack and Max Health and +5% Speed, doubled for Seasoned allies. Each time a debuff is dispelled from a Seasoned ally, that ally gains "
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% Attack and Max Health\nLv. 3: +1% Attack and Max Health\nLv. 4: +1% Attack and Max Health; Allies also have +5% Speed\nLv. 5: +2% Attack and Max Health; Bonuses are doubled for Seasoned allies.\n★★★★★ Each time a debuff is dispelled from a Seasoned ally, that ally gains "
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up."
+      ]
+     ]
+    },
+    {
+     "name": "I SHALL NOT YIELD!",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Allies cannot cleanse Void Touch from Raven and when she suffers "
+      ],
+      [
+       "-",
+       "Succumb To The Void"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       ", she is instantly defeated (this defeat is [Unpreventable]). Raven cannot gain Revive. Following effects are active unless Raven has Mark of Burden: All Void Touch Raven suffers outside of her turn is halved, "
+      ],
+      [
+       "-",
+       "Void"
+      ],
+      [
+       "+",
+       "she"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Touch"
+      ],
+      [
+       "+",
+       "is"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "does"
+      ],
+      [
+       "+",
+       "immune"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "not"
+      ],
+      [
+       "+",
+       "to"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "decrease"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "her"
+      ],
+      [
+       "+",
+       "unless"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "attributes"
+      ],
+      [
+       "+",
+       "at"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "full Void Touch "
+      ],
+      [
+       "=",
+       "and she has +5% Dmg Reduction and +10% Attack per every 10% Void Touch. Additionally, Raven deals +10% damage per each debuff on herself (or +20% if she uses a special skill). Whenever a last other ally is defeated, Raven gains full Debuff Dispel, 100% Healing and 100% Turn Meter Up and is immune to Void Touch outside of her turn until [End of Battle]."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Raven can trigger Embrace The Void to gain Void Power. Raven gains +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Speed per 1 Void Power. [On Embrace The Void] Raven gains Cooldowns Reset on all skills. When under Void Power, each time another ally suffers Void Touch, Raven gains 5% Turn Meter Up per 1 Void Power. [On Turn Start] If there are no defeated allies, Raven gains "
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse, doubled if all allies are Seasoned."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% Attack, Defense and Speed\nLv. 3: [On Turn Start] If there are at least 4 allies and all are alive, Raven gains "
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse, doubled if all allies are Seasoned.\nLv. 4: [On Embrace The Void] Raven gains Cooldowns Reset on all skills.\nLv. 5: When under Void Power, each time another ally suffers Void Touch, Raven gains 5% Turn Meter Up per 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "galen": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "LET IT FLOW",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "All allies have their current Health percentage equalized (this effect ignores any Healing blocks/immunities). Then, all allies gain "
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Healing, Archlands allies gain Foresight for 2 turn(s) and Sage allies gain 1 Will. Will Supreme bonus: Grant all allies full Debuff Dispel."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% healing\nLv. 3: +1% healing, -1 Cooldown\nLv. 4: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " healing; Archlands allies gain Foresight for 2 turn(s)"
+      ],
+      [
+       "-",
+       "."
+      ],
+      [
+       "=",
+       "\nLv. 5: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " healing, -1 Cooldown; Sage allies gain 1 Will."
+      ]
+     ]
+    },
+    {
+     "name": "OUR POWERS COMBINED",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Galen gains 1 Will each time Archlands or Sage ally uses a special skill. When Galen reaches 20 Will (or 80 if he has Will Nexus), he gains Will Supreme and Cooldowns Reset on all skills. While Galen has Will Supreme he has +50% Defense and +25% Healing Effect. [On Battle Start] Galen gains 1 Will for each Archlands or Sage ally. [On Turn Start] Galen grants "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Turn"
+      ],
+      [
+       "+",
+       "Void"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Meter"
+      ],
+      [
+       "+",
+       "Touch"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Up"
+      ],
+      [
+       "+",
+       "Cleanse"
+      ],
+      [
+       "=",
+       " to a random Archlands or Sage ally"
+      ],
+      [
+       "+",
+       " prioritizing allies with higher Void Touch"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Defense\nLv. 3: +10% Defense\nLv. 4: +20% Defense\nLv. 5: +25% Healing Effect\nLv. 6: Gain Cooldowns Reset on all skills when gaining Will Supreme.\n★ [On Battle Start] Galen gains 1 Will for each Archlands or Sage ally. [On Turn Start] Galen grants "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up to a random Archlands or Sage ally."
+      ]
+     ]
+    },
+    {
+     "name": "ARCHSAGE",
+     "renamedFrom": "ARCHSORCERER",
+     "change": "renamed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "If there are at least 3 Sage allies, Galen can trigger Archmind to gain Will Nexus. When Galen has both Will Nexus and Will Supreme he can use Hold!. [On Turn Start] While other ally has Will Nexus, Galen grants them 1 Will."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Galen can trigger Embrace The Void to gain Void Power. Galen gains +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Attack, Crit Rate and Crit Dmg per 1 Void Power. [On Embrace The Void] Galen gains 1 Will for each Sage ally. [On Turn Start] Galen gains 1 Will for each Void Power. When Galen gains Will Supreme, he gains 10% Void Touch Cleanse (limit 1 per battle)."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "vukaru": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "PROOF OF STRENGTH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "60%"
+      ],
+      [
+       "+",
+       "70%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy 3 times. Each strike has a 20% chance (50% when attacking Out-of-Turn) to inflict "
+      ],
+      [
+       "-",
+       "stack of "
+      ],
+      [
+       "=",
+       "Bleed for 2 turn(s). Vukaru has +5% Crit Rate for each "
+      ],
+      [
+       "-",
+       "stack of "
+      ],
+      [
+       "=",
+       "Bleed on the target and grants random ally 5% Turn Meter Up on each critical hit."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +5% ATK damage; Each strike has a 20% chance to inflict stack of Bleed for 2 turn(s).\nLv. 4: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " ATK damage; Vukaru has +5% Crit Rate for each stack of Bleed on the target.\nLv. 5: +15% ATK damage; Grant random ally 5% Turn Meter Up on each critical hit.\n★ Bleed chance is increased to 50% when attacking Out-of-Turn."
+      ]
+     ]
+    },
+    {
+     "name": "STRENGTH OF THE TRIBE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Free Tribes allies deal +15% damage when attacking Out-of-Turn. Allies have 5% chance to "
+      ],
+      [
+       "-",
+       "assist"
+      ],
+      [
+       "+",
+       "Assist"
+      ],
+      [
+       "=",
+       " whenever a Free Tribes ally deals damage to target enemy during their turn (limit 1 per turn). This chance is doubled for Free Tribes allies."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% damage bonus\nLv. 3: +2% damage bonus\nLv. 4: +2% damage bonus\nLv. 5: Allies have 5% chance to "
+      ],
+      [
+       "-",
+       "assist"
+      ],
+      [
+       "+",
+       "Assist"
+      ],
+      [
+       "=",
+       " whenever a Free Tribes ally deals damage during their turn (limit 1 per turn).\nLv. 6: Assist chance is doubled for Free Tribes allies"
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Vukaru can trigger Embrace The Void to gain Void Power. Vukaru gains +20% Defense, Max Health and Crit Dmg per 1 Void Power. [On Embrace The Void] Vukaru gains Cooldowns Reset on Just You and Me. When attacking Out-of-Turn, Vukaru deals +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " damage per 1 Void Power. [On Turn Start] If all allies are Free Tribes and each other ally has at least 3 Persistence, Vukaru gains 5% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% Defense, Max Health and Crit Dmg\nLv. 3: [On Turn Start] If all allies are Free Tribes and each "
+      ],
+      [
+       "-",
+       "other "
+      ],
+      [
+       "=",
+       "ally has at least 3 Persistence, Vukaru gains 5% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Vukaru gains Cooldowns Reset on Just You and Me.\nLv. 5: When attacking Out-of-Turn, Vukaru deals +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " damage per 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "ygravain": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "PENANCE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "140%"
+      ],
+      [
+       "+",
+       "150%"
+      ],
+      [
+       "=",
+       " ATK damage inflicting Curse and additionally 1 Weak for 2 turn(s) for every 2 Wrath on self."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage\nLv. 4: +20% ATK damage; +1 Curse duration\nLv. 5: +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage; also inflict 1 Weak for every 2 Wrath on self."
+      ]
+     ]
+    },
+    {
+     "name": "HOLY REPRISAL",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 125% ATK damage to all enemies inflicting 2 Armor Shred for 3 turn(s). If Ygravain had at least 5 Wrath, inflict full Buff Dispel on each enemy with Armor Shred, [Irresistible] on Deathproof and Damage Immunity. if Ygravain had at least 10 Wrath, this attack cannot be dodged and inflicts 10% Void Touch on each enemy it deals damage to. During this attack Ygravain has +5% Focus "
+      ],
+      [
+       "+",
+       "and Piercing "
+      ],
+      [
+       "=",
+       "for each Wrath and enemies have -10% Resistance for each Armor Shred."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 3: +10% ATK damage; -1 Cooldown\nLv. 4: +10% ATK damage; If Ygravain had at least 5 Wrath, inflict full Buff Dispel on each enemy with Armor Shred, [Irresistible] on Deathproof and Damage Immunity.\nLv. 5: +15% ATK damage; if Ygravain had at least 10 Wrath, this attack cannot be dodged and inflicts 10% Void Touch on each enemy it deals damage to.\nLv. 6: +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " ATK damage;"
+      ],
+      [
+       "-",
+       " "
+      ],
+      [
+       "+",
+       "  "
+      ],
+      [
+       "=",
+       "During this attack Ygravain has +5% Focus "
+      ],
+      [
+       "+",
+       "and Piercing "
+      ],
+      [
+       "=",
+       "for each Wrath and enemies have -10% Resistance for each Armor Shred."
+      ]
+     ]
+    },
+    {
+     "name": "DIVINE CONNECTION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Ygravain cannot receive Healing from other "
+      ],
+      [
+       "-",
+       "allies"
+      ],
+      [
+       "+",
+       "characters"
+      ],
+      [
+       "=",
+       ". Ygravain has +"
+      ],
+      [
+       "-",
+       "40%"
+      ],
+      [
+       "+",
+       "75%"
+      ],
+      [
+       "=",
+       " Life Drain, +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Dmg Reduction and each time he loses Health"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "loses Invulnerability or has his "
+      ],
+      [
+       "=",
+       "Shield "
+      ],
+      [
+       "+",
+       "damaged, "
+      ],
+      [
+       "=",
+       "he gains 1 Wrath."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Life Drain\nLv. 3: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Life Drain\nLv. 4: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Life Drain"
+      ],
+      [
+       "+",
+       "; Ygravain also has +5% Dmg Reduction"
+      ],
+      [
+       "=",
+       "\nLv. 5: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Life Drain; "
+      ],
+      [
+       "-",
+       "Ygravain also has "
+      ],
+      [
+       "=",
+       "+10% Dmg Reduction"
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Ygravain can trigger Embrace The Void to gain Void Power. Ygravain gains +15% Defense, Crit Defense and Life Drain per 1 Void Power. [On Embrace The Void] Ygravain gains 3 Wrath and "
+      ],
+      [
+       "-",
+       "2"
+      ],
+      [
+       "+",
+       "5"
+      ],
+      [
+       "=",
+       " Guard. [On Turn Start] Ygravain gains "
+      ],
+      [
+       "-",
+       "1"
+      ],
+      [
+       "+",
+       "2"
+      ],
+      [
+       "=",
+       " Wrath per 1 Void Power. When an enemy under Void Minion is defeated, Ygravain gains 2% Void Touch Cleanse (or 5% if they were defeated by Ygravain) (limit 1 per enemy)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "★★ Ygravain can trigger Embrace The Void to gain Void Power. Ygravain gains +15% Defense, Crit Defense and Life Drain per 1 Void Power. [On Embrace The Void] Ygravain gains 3 Wrath and "
+      ],
+      [
+       "-",
+       "2"
+      ],
+      [
+       "+",
+       "5"
+      ],
+      [
+       "=",
+       " Guard. [On Turn Start] Ygravain gains "
+      ],
+      [
+       "-",
+       "1"
+      ],
+      [
+       "+",
+       "2"
+      ],
+      [
+       "=",
+       " Wrath per 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "ashei": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "RAPID BITE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 200% ATK damage to target enemy "
+      ],
+      [
+       "-",
+       "and inflict"
+      ],
+      [
+       "+",
+       "inflicting"
+      ],
+      [
+       "=",
+       " Poison for 2 turn(s). "
+      ],
+      [
+       "-",
+       "Target"
+      ],
+      [
+       "+",
+       "This"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "enemy"
+      ],
+      [
+       "+",
+       "attack"
+      ],
+      [
+       "=",
+       " has "
+      ],
+      [
+       "-",
+       "-"
+      ],
+      [
+       "+",
+       "+"
+      ],
+      [
+       "=",
+       "25% "
+      ],
+      [
+       "-",
+       "Dodge during this"
+      ],
+      [
+       "+",
+       "Hit"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "attack"
+      ],
+      [
+       "+",
+       "Rate"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "VENOM IN OUR VEINS",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Whenever a Poison debuff is triggered on any enemy, Ashei grants Healing to herself/Consumed allies/Tainted allies equal to "
+      ],
+      [
+       "-",
+       "12%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       "/"
+      ],
+      [
+       "-",
+       "8%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       "/"
+      ],
+      [
+       "-",
+       "4%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " of the damage dealt respectively. Whenever Ashei is about to suffer Poison, she gains 1 Persistence"
+      ],
+      [
+       "-",
+       " for the same duration instead"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: Healing +"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "1.5%"
+      ],
+      [
+       "=",
+       "/1%/0.5% (Self/Consumed/Tainted)\nLv. 3: Healing +"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "1.5%"
+      ],
+      [
+       "=",
+       "/1%/0.5% (Self/Consumed/Tainted)\nLv. 4: Healing +"
+      ],
+      [
+       "+",
+       "3%/"
+      ],
+      [
+       "=",
+       "2%/1%"
+      ],
+      [
+       "-",
+       "/0.5%"
+      ],
+      [
+       "=",
+       " (Self/Consumed/Tainted)\nLv. 5: Healing +"
+      ],
+      [
+       "+",
+       "3%/"
+      ],
+      [
+       "=",
+       "2%/1%"
+      ],
+      [
+       "-",
+       "/0.5%"
+      ],
+      [
+       "=",
+       " (Self/Consumed/Tainted); When about to suffer Poison, gain 1 Persistence instead."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Ashei can trigger Embrace The Void to gain Void Power. Ashei gains +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Focus"
+      ],
+      [
+       "+",
+       "Attack"
+      ],
+      [
+       "=",
+       ", "
+      ],
+      [
+       "-",
+       "Max Health"
+      ],
+      [
+       "+",
+       "Focus"
+      ],
+      [
+       "=",
+       " and "
+      ],
+      [
+       "-",
+       "Hit"
+      ],
+      [
+       "+",
+       "Max"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Rate"
+      ],
+      [
+       "+",
+       "Health"
+      ],
+      [
+       "=",
+       " per 1 Void Power. [On Embrace The Void] Ashei inflicts Debuff Duration Up on all Poison on all enemies. When under Void Power, each time Poison is triggered on an enemy, Ashei gains 1% Turn Meter Up per 1 Void Power. [On Turn Start] Ashei gains 1% Void Touch Cleanse per each 3 Persistence."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% "
+      ],
+      [
+       "-",
+       "Focus"
+      ],
+      [
+       "+",
+       "Attack"
+      ],
+      [
+       "=",
+       ", "
+      ],
+      [
+       "-",
+       "Max Health"
+      ],
+      [
+       "+",
+       "Focus"
+      ],
+      [
+       "=",
+       " and "
+      ],
+      [
+       "-",
+       "Hit"
+      ],
+      [
+       "+",
+       "Max"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Rate"
+      ],
+      [
+       "+",
+       "Health"
+      ],
+      [
+       "=",
+       "\nLv. 3: [On Turn Start] Ashei gains 1% Void Touch Cleanse per each 3 Persistence.\nLv. 4: [On Embrace The Void] Ashei inflicts Debuff Duration Up on all Poison on all enemies.\nLv. 5: When under Void Power, each time Poison is triggered on an enemy, Ashei gains 1% Turn Meter Up per 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "eleazar": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "DEBILITATING SPIT",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Suffer 3 Poison for 3 turn(s), then deal 125% ATK damage to all enemies, increased by 10% ATK per each Poison on self. For each Poison on self inflict a random Buff Dispel and 1 Poison for 3 turn(s) on a random enemy. On "
+      ],
+      [
+       "-",
+       "successfully"
+      ],
+      [
+       "+",
+       "succesfully"
+      ],
+      [
+       "=",
+       " dispelled Buff(s), inflict opposite Debuff(s) if possible. All effects above are [Irresistible] for enemies under Hemorrhage."
+      ]
+     ]
+    },
+    {
+     "name": "WITHERING MIASMA",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Enemies have -25% Assist Dmg. Each time an enemy attacks Out-of-Turn, they take damage equal to 5% of their Max Health (this damage cannot defeat enemies). If Eleazar is active, this damage is doubled and enemies also suffer Poison for 2 turn(s). Each time an enemy "
+      ],
+      [
+       "-",
+       "receives"
+      ],
+      [
+       "+",
+       "suffers"
+      ],
+      [
+       "=",
+       " damage from Bleed or is defeated, for each Poison they have a [10% * their Poison] chance to inflict Poison for 2 turn(s) on a random other enemy. This chance is doubled if the enemy "
+      ],
+      [
+       "-",
+       "receiving"
+      ],
+      [
+       "+",
+       "suffering"
+      ],
+      [
+       "=",
+       " damage has Hemorrhage. If Eleazar is defeated while having 5 or more Poison, he "
+      ],
+      [
+       "-",
+       "revives"
+      ],
+      [
+       "+",
+       "gains"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "Revive "
+      ],
+      [
+       "=",
+       "with 20% Health and Turn Meter for each Poison above 4, then loses all Poison."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Eleazar can trigger Embrace The Void to gain Void Power. Eleazar gains +20% Max Health, Focus and Resistance per 1 Void Power. [On Embrace The Void] Eleazar gains 3 Poison for 3 turn(s). When under Void Power, each time another ally inflicts Poison, Eleazar has a [10% * Void Power] chance to suffer Poison for 1 turn(s). [On Turn End] When Eleazar has at least 10 Poison, he gains 6% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% Max Health, Focus and Resistance\nLv. 3: [On Turn End] When Eleazar has at least 10 Poison, he gains 6% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Eleazar gains 3 Poison for 3 turn(s).\nLv. 5: When under Void Power, each time another ally inflicts Poison, Eleazar has "
+      ],
+      [
+       "-",
+       "a "
+      ],
+      [
+       "=",
+       "[10% * Void Power] chance to suffer Poison for 1 turn(s)."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "renna": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "FOLLOW ME!",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 150% ATK damage inflicting 3% Void Touch and call a random Knight ally "
+      ],
+      [
+       "+",
+       "and Sir Bernard "
+      ],
+      [
+       "=",
+       "to "
+      ],
+      [
+       "-",
+       "assist"
+      ],
+      [
+       "+",
+       "Assist"
+      ],
+      [
+       "=",
+       ". If "
+      ],
+      [
+       "-",
+       "this ally"
+      ],
+      [
+       "+",
+       "under"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "is"
+      ],
+      [
+       "+",
+       "Void"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Tank"
+      ],
+      [
+       "+",
+       "Power"
+      ],
+      [
+       "=",
+       ", grant "
+      ],
+      [
+       "-",
+       "them"
+      ],
+      [
+       "+",
+       "assisting"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "allies "
+      ],
+      [
+       "=",
+       "10% Healing."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " ATK damage; +1% Void Touch\nLv. 4: +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage; "
+      ],
+      [
+       "-",
+       "If"
+      ],
+      [
+       "+",
+       "call"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "assisting"
+      ],
+      [
+       "+",
+       "Sir"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "ally"
+      ],
+      [
+       "+",
+       "Bernard"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "is"
+      ],
+      [
+       "+",
+       "to"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Tank"
+      ],
+      [
+       "+",
+       "Assist as well; If under Void Power"
+      ],
+      [
+       "=",
+       ", "
+      ],
+      [
+       "-",
+       "they"
+      ],
+      [
+       "+",
+       "grant"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "gain"
+      ],
+      [
+       "+",
+       "assisting"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "allies "
+      ],
+      [
+       "=",
+       "10% Healing.\nLv. 5: +"
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage; "
+      ],
+      [
+       "+",
+       "-25% Assist Dmg penalty\nLv. 6: +25% ATK damage; "
+      ],
+      [
+       "=",
+       "No Assist Dmg penalty"
+      ]
+     ]
+    },
+    {
+     "name": "DOMINATION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Inflict Resistance Down and Void Trace on all enemies for 2 turn(s), then grant each ally "
+      ],
+      [
+       "+",
+       "2 "
+      ],
+      [
+       "=",
+       "random Debuff Dispel and inflict "
+      ],
+      [
+       "-",
+       "this"
+      ],
+      [
+       "+",
+       "each"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "debuff"
+      ],
+      [
+       "+",
+       "dispelled"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "Debuff(s) "
+      ],
+      [
+       "=",
+       "on a random enemy for 2 turn(s). If Renna has Void Power, these debuffs are [Irresistible]. Gain "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up for each "
+      ],
+      [
+       "-",
+       "debuff"
+      ],
+      [
+       "+",
+       "Debuff(s)"
+      ],
+      [
+       "=",
+       " dispelled"
+      ],
+      [
+       "-",
+       "."
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Inflict"
+      ],
+      [
+       "+",
+       "then"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "inflict "
+      ],
+      [
+       "=",
+       "10% Void Touch on each enemy who suffered a "
+      ],
+      [
+       "-",
+       "debuff"
+      ],
+      [
+       "+",
+       "Debuff(s)"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: -1 Cooldown\nLv. 3: -1 Cooldown\nLv. 4: If Renna has Void Power, these debuffs are [Irresistible].\nLv. 5: +1 debuff duration; "
+      ],
+      [
+       "+",
+       "+1 Debuff Dispel; "
+      ],
+      [
+       "=",
+       "Gain "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter Up for each "
+      ],
+      [
+       "-",
+       "debuff"
+      ],
+      [
+       "+",
+       "Debuff(s)"
+      ],
+      [
+       "=",
+       " dispelled.\n★★ Inflict 10% Void Touch on each enemy who suffered a debuff."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Renna can trigger Embrace The Void to gain Void Power. Renna gains +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Attack and +15% Crit Rate and Crit Dmg per 1 Void Power. [On Embrace The Void] Renna grants 25% Turn Meter Up to all Knight allies. When under Void Power, each time a Knight ally uses a skill, Renna has a [25% x Void Power] chance to Assist, doubled if this ally is Sir Bernard. Each time an enemy is defeated during Renna's turn, she gains 5% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Speed, Focus and Resistance\nLv. 3: Each time an enemy is defeated during Renna's turn, she gains 5% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Renna grants 25% Turn Meter Up to all Knight allies.\nLv. 5: When under Void Power, each time a Knight ally uses a skill, Renna has a [25% x Void Power] chance to Assist, doubled if this ally is Sir Bernard."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "voltz": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "JUST A KICKSPARK",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal ("
+      ],
+      [
+       "-",
+       "60%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " - 300%) ATK damage to target enemy and inflict Daze for 2 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% - "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 3: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " - "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 4: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " - "
+      ],
+      [
+       "-",
+       "40%"
+      ],
+      [
+       "+",
+       "45%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 5: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " - 60% ATK damage; Also inflict Daze for 2 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "KICK BY KICK",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal ("
+      ],
+      [
+       "-",
+       "40%"
+      ],
+      [
+       "+",
+       "50%"
+      ],
+      [
+       "=",
+       " - 200%) ATK damage to a random enemy 5 times with each hit inflicting 10% - 20% Turn Meter Down. If the target has 0% Turn Meter before being hit, inflict Stun for 1 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "CHAIN KICK",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal ("
+      ],
+      [
+       "-",
+       "60%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " - 300%) ATK damage to all enemies, doubled for target enemy and gain 1 stack(s) of Power Source. Each hit has a 50% chance to inflict Stun for 1 turn(s), increased to 100% for target enemy."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% - "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 3: +5% - "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage, -1 Cooldown\nLv. 4: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " - "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage; Gain 1 Power Source.\nLv. 5: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " - "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage; Each hit has a 50% chance to inflict Stun for 1 turn(s).\nLv. 6: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " - "
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "60%"
+      ],
+      [
+       "=",
+       " ATK damage; Target enemy receives double damage and is always inflicted with Stun."
+      ]
+     ]
+    },
+    {
+     "name": "UNBREAKABLE DISPERSION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Voltz cannot critically hit, but "
+      ],
+      [
+       "+",
+       "gains bonus Piercing equal to half of his Crit Rate, "
+      ],
+      [
+       "=",
+       "has +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Piercing for each Crucible or Dwarf ally and his attacks cannot be dodged. Additionally, Voltz has +5% Focus for each "
+      ],
+      [
+       "+",
+       "other "
+      ],
+      [
+       "=",
+       "Seasoned ally."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " Piercing\nLv. 3: +"
+      ],
+      [
+       "-",
+       "3%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Piercing\nLv. 4: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Piercing"
+      ],
+      [
+       "-",
+       "\nLv. 5:"
+      ],
+      [
+       "+",
+       ";"
+      ],
+      [
+       "=",
+       " Additionally, Voltz has +5% Focus for each Seasoned ally.\n"
+      ],
+      [
+       "+",
+       "Lv. 5: Voltz gains bonus Piercing equal to half of his Crit Rate.\n"
+      ],
+      [
+       "=",
+       "★★★★★ Voltz attacks cannot be dodged."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "johannes": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "DEVOURING HEART",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "[Requires 3 Void Power] Inflict Instant Defeat on target enemy, who cannot be revived and inflict Fear for 1 turn(s) on all other enemies. This attack cannot be dodged. Suffer "
+      ],
+      [
+       "-",
+       "Succumb To The Void"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       " and all other allies suffer 15% Void Touch."
+      ]
+     ]
+    },
+    {
+     "name": "UNSTABLE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Each time other Consumed character is defeated, Johannes gains [Undispellable] 1 Strong until [End of Battle] and suffers 2% Void Touch. "
+      ],
+      [
+       "+",
+       "Whenever another character suffers Hollowing, "
+      ],
+      [
+       "=",
+       "Johannes "
+      ],
+      [
+       "+",
+       "gains a Bonus Turn. Johannes "
+      ],
+      [
+       "=",
+       "cannot gain Revive. When Johannes is defeated, he deals damage to all allies equal to 20% of his Max Health and 8% Void Touch to all characters. This damage cannot be dodged."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Johannes can trigger Embrace The Void to gain Void Power. Johannes gains +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Attack, Piercing and Crit Rate per 1 Void Power. [On Embrace The Void] Johannes gains Healing equal to half of his Void Touch. When under Void Power, Johannes ignores Taunt and is immune to Provoke. Each time Johannes causes enemy to "
+      ],
+      [
+       "-",
+       "Succumb To The"
+      ],
+      [
+       "+",
+       "suffer"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Void"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       ", he gains 10% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Attack, Piercing and Crit Rate\nLv. 3: Each time Johannes causes enemy to "
+      ],
+      [
+       "-",
+       "Succumb To The"
+      ],
+      [
+       "+",
+       "suffer"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Void"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       ", he gains 10% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Johannes gains Healing equal to half of his Void Touch.\nLv. 5: When under Void Power, Johannes ignores Taunt and is immune to Provoke."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "lamassu": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "THE LIGHT OF US",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "100%"
+      ],
+      [
+       "+",
+       "120%"
+      ],
+      [
+       "=",
+       " ATK damage to all enemies inflicting Blind for 2 turn(s). Damage is increased by 10% of Lamassu current Health."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 3: +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " ATK damage, -1 Cooldown\nLv. 4: +25% ATK damage, +1 Blind duration\nLv. 5: Damage is increased by 10% of Lamassu current Health."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Lamassu can trigger Embrace The Void to gain Void Power. Lamassu gains +25% Defense, Crit Defense and Focus per 1 Void Power. [On Embrace The Void] Lamassu gains 2 Invulnerability "
+      ],
+      [
+       "+",
+       "and Taunt "
+      ],
+      [
+       "=",
+       "for "
+      ],
+      [
+       "-",
+       "1"
+      ],
+      [
+       "+",
+       "2"
+      ],
+      [
+       "=",
+       " turn(s). When under Void Power, each time Lamassu loses Taunt, she regains it for 2 turn(s) and loses 1 Void Power. When Lamassu gains Revive, she gains 10% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% Defense, Crit Defense and Focus.\nLv. 3: When Lamassu gains Revive, she gains 10% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Lamassu gains 2 Invulnerability "
+      ],
+      [
+       "+",
+       "and Taunt "
+      ],
+      [
+       "=",
+       "for "
+      ],
+      [
+       "-",
+       "1"
+      ],
+      [
+       "+",
+       "2"
+      ],
+      [
+       "=",
+       " turn(s).\nLv. 5: When under Void Power, each time Lamassu loses Taunt, she regains it for 2 turn(s) and loses 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "sir_bernard": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "STEP ASIDE!",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "140%"
+      ],
+      [
+       "+",
+       "150%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy inflicting Attack Down for 2 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage\nLv. 4: +20% ATK damage\nLv. 5: +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage; +1 Attack Down duration"
+      ]
+     ]
+    },
+    {
+     "name": "LEGENDARY PROTECTOR",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Gain Taunt for 2 turn(s), 2 Untouchable and 30% Shield (doubled if Renna is an ally) for 3 turn(s). This Shield is increased by 5% for each Noble ally. Grant Shield equal to half of his own to all Knight allies for 3 turns."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +2% Shield\nLv. 3: +2% Shield, -1 Cooldown\nLv. 4: +2% Shield, +1 Untouchable\nLv. 5: +4% Shield, +5% bonus shield per Noble ally"
+      ],
+      [
+       "+",
+       "."
+      ],
+      [
+       "=",
+       "\nLv. 6: +5% Shield; Shield is doubled if Renna is ally"
+      ],
+      [
+       "+",
+       "."
+      ],
+      [
+       "=",
+       "\n★★★★★ Grant Shield equal to half of his own to all Knight allies for 3 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "DOUBLE SWING",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 80% ATK damage to all enemies twice. Each hit has a chance to inflict Stagger for 2 turn(s). This chance varies from 25% for enemies with full Health to 100% for enemies below 25% Health."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +10% ATK damage\nLv. 4: +10% ATK damage, -1 Cooldown\nLv. 5: +15% ATK damage, Stagger chance varies from 25% for enemies with full Health to 100% for enemies below 25% Health"
+      ],
+      [
+       "+",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "UNDYING LOYALTY",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Sir Bernard instantly uses Legendary Protector: - each time a Noble ally drops below 50% Health for the first time, - [On Battle Start], only if Renna is an ally. While under Shield, Sir Bernard has +30% Dmg Reduction. When Sir Bernard Health drops below 50%, he gains [Unpreventable] [Undispellable] Defense Up. When Sir Bernard Health drops below 20%, he gains Deathproof for 1 turn(s). While Renna is active ally, Sir Bernard adds "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " DEF to all damage he deals."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +2% damage reduction\nLv. 3: +2% damage reduction\nLv. 4: +3% damage reduction\nLv. 5: +3% damage reduction; Instantly trigger Legendary Protector each time a Noble ally drops below 50% Health for the first time"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       "\nLv. 6: +5% damage reduction; [On Battle Start] trigger Legendary Protector if Renna is ally and while Renna is ally and alive, Sir Bernard adds "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " DEF to all damage he deals"
+      ],
+      [
+       "+",
+       "."
+      ]
+     ]
+    },
+    {
+     "name": "GUIDING LIGHT",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Knight allies have +15% Defense, doubled if they are Archlands. If no ally has Taunt when a Knight ally ends their turn, Sir Bernard grants Taunt for 1 turn to the Knight ally with the highest Health."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +2% Defense\nLv. 3: +3% Defense\nLv. 4: +5% Defense\nLv. 5: If no ally has Taunt when a Knight ally ends their turn, Sir Bernard grants Taunt for 1 turn(s) to the Knight ally with the highest Health"
+      ],
+      [
+       "+",
+       "."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "jagya": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "QUICKSHOT",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "190%"
+      ],
+      [
+       "+",
+       "180%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy inflicting Crit Resistance Down for 2 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +15% ATK damage\nLv. 3: +20% ATK damage\nLv. 4: +25% ATK damage\nLv. 5: +"
+      ],
+      [
+       "-",
+       "35%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage; Inflict Crit Resistance Down for 2 turn(s) on hit."
+      ]
+     ]
+    },
+    {
+     "name": "SNARE GUARD",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Grant 3 Snares and Attack Up for 3 turn(s) to target ally and gain 40% Turn Meter Up. If Brighteyes is active, they and Jagya gain additional 1 Snares for 3 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Turn Meter Up\nLv. 3: +5% Turn Meter Up, -1 Cooldown\nLv. 4: +5% Turn Meter Up; also grant Attack Up for 2 turn(s) to target ally.\nLv. 5: +5% Turn Meter Up; +1 Buff(s) duration"
+      ],
+      [
+       "-",
+       ";"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " If Brighteyes is alive, they and Jagya gain additional 1 Snares for 3 turn(s)."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "lanthe": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "I SEE YOU",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 120% ATK damage to target enemy, gain "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Healing and Foresight for 1 turn(s). Lose 1 Moonveil."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage; Gain "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Healing.\nLv. 4: +15% ATK damage; +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Healing.\nLv. 5: +20% ATK damage, Gain Foresight for 1 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "BE THE ONE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant target other ally full Debuff Dispel, 25% Healing, "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "12%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse and grant them Bless and Resilience for 2 turn(s). Then, grant them 50% Turn Meter Up and, if they are Moonlight Clan, call them to Assist with +100% Assist Dmg. Lose 3 Moonveil."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +2% Healing\nLv. 3: +2% Healing"
+      ],
+      [
+       "+",
+       "; grant also 10% Turn Meter Up."
+      ],
+      [
+       "=",
+       "\nLv. 4: +2% Healing; -1 Cooldown\nLv. 5: +4% Healing, +"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse; Also grant Resilience.\nLv. 6: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "3%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse; Grant target ally "
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Turn Meter Up and they Assist if they are Moonlight Clan.\n★★★★★ Target ally has +100% Assist Dmg and gains 20% Turn Meter Up more."
+      ]
+     ]
+    },
+    {
+     "name": "MOONLIGHT PROTECTOR",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Moonlight Clan allies have "
+      ],
+      [
+       "-",
+       "40%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Health Recovery and "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Max Health. When a Moonlight Clan ally with Bless defeats an enemy, that ally gains 5% Void Touch Cleanse, Bonus Turn and all Moonlight Clan allies gain 10% Healing. When a Creature ally starts their turn, they gain a random Debuff Dispel (or full Debuff Dispel if they are Moonlight Clan"
+      ],
+      [
+       "-",
+       ")"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Health Recovery\nLv. 3: +5% Health Recovery\nLv. 4: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Health Recovery\nLv. 5: +5% Max Health; When a Moonlight Clan ally with Bless defeats an enemy, that ally gains 5% Void Touch Cleanse.\nLv. 6: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Max Health; When a Moonlight Clan ally with Bless defeats an enemy, they gain a Bonus Turn and all Moonlight Clan allies gain 10% Healing.\n★★ At the beginning of their turn Creature allies are granted Debuff Dispel on a random debuff or all debuffs if they are Moonlight Clan."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "bruno": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "UNBEARABLE DISTRACTION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 140% ATK damage and "
+      ],
+      [
+       "-",
+       "inflict"
+      ],
+      [
+       "+",
+       "grant"
+      ],
+      [
+       "=",
+       " 10% Turn Meter "
+      ],
+      [
+       "-",
+       "Down"
+      ],
+      [
+       "+",
+       "Up to a random ally"
+      ],
+      [
+       "=",
+       "."
+      ],
+      [
+       "+",
+       " If this ally is Carnivale, Turn Meter Up effect is doubled."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% damage\nLv. 3: +15% damage\nLv. 4: +20% damage"
+      ],
+      [
+       "+",
+       ", +5% Turn Meter Up"
+      ],
+      [
+       "=",
+       "\nLv. 5: +25% damage; "
+      ],
+      [
+       "-",
+       "+5% "
+      ],
+      [
+       "=",
+       "Turn Meter "
+      ],
+      [
+       "-",
+       "Down"
+      ],
+      [
+       "+",
+       "Up effect is doubled for Carnivale allies"
+      ]
+     ]
+    },
+    {
+     "name": "BANJO MAESTRO",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant 25% Healing to all allies and grant Archlands and Carnivale allies "
+      ],
+      [
+       "-",
+       "gain "
+      ],
+      [
+       "=",
+       "Focus Up for 2 turns. "
+      ],
+      [
+       "-",
+       "Inflict"
+      ],
+      [
+       "+",
+       "Then,"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "grant"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Turn"
+      ],
+      [
+       "+",
+       "all"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Meter"
+      ],
+      [
+       "+",
+       "allies"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Down"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "on"
+      ],
+      [
+       "+",
+       "Void"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "all"
+      ],
+      [
+       "+",
+       "Touch"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "enemies"
+      ],
+      [
+       "+",
+       "Cleanse for each unique Buff(s) they have"
+      ],
+      [
+       "=",
+       ". If Bruno has Spotlight"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "this"
+      ],
+      [
+       "+",
+       "Void"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Turn"
+      ],
+      [
+       "+",
+       "Touch"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Meter"
+      ],
+      [
+       "+",
+       "Cleanse"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Down"
+      ],
+      [
+       "+",
+       "effect"
+      ],
+      [
+       "=",
+       " is "
+      ],
+      [
+       "-",
+       "[Irresistible]"
+      ],
+      [
+       "+",
+       "doubled"
+      ],
+      [
+       "=",
+       ". If any ally has Spotlight and they have no debuffs, grant them "
+      ],
+      [
+       "-",
+       "5% Void Touch Cleanse (or 10% if"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "they"
+      ],
+      [
+       "+",
+       "Turn"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "are"
+      ],
+      [
+       "+",
+       "Meter"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Carnivale)"
+      ],
+      [
+       "+",
+       "Up"
+      ],
+      [
+       "=",
+       ". Otherwise, grant them full Debuff Dispel."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +2% Healing\nLv. 3: +3% Healing"
+      ],
+      [
+       "+",
+       ", -1 Cooldown"
+      ],
+      [
+       "=",
+       "\nLv. 4: +5% Healing; "
+      ],
+      [
+       "-",
+       "-1"
+      ],
+      [
+       "+",
+       "If"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Cooldown"
+      ],
+      [
+       "+",
+       "Bruno has Spotlight, Void Touch Cleanse effect is doubled."
+      ],
+      [
+       "=",
+       "\nLv. 5: Grant Archlands and Carnivale allies gain Focus Up for 2 turns.\nLv. 6: "
+      ],
+      [
+       "-",
+       "Inflict 15% Turn Meter Down on all enemies."
+      ],
+      [
+       "+",
+       "Grant"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "If"
+      ],
+      [
+       "+",
+       "allies"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Bruno"
+      ],
+      [
+       "+",
+       "Void"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "has"
+      ],
+      [
+       "+",
+       "Touch"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Spotlight"
+      ],
+      [
+       "+",
+       "Cleanse"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "this"
+      ],
+      [
+       "+",
+       "for"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Turn"
+      ],
+      [
+       "+",
+       "each"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Meter"
+      ],
+      [
+       "+",
+       "unique"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Down"
+      ],
+      [
+       "+",
+       "Buff(s)"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "is"
+      ],
+      [
+       "+",
+       "they"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "[Irresistible]"
+      ],
+      [
+       "+",
+       "have"
+      ],
+      [
+       "=",
+       ".\n★ If any ally has Spotlight and they have no debuffs, grant them "
+      ],
+      [
+       "-",
+       "5% Void Touch Cleanse (or 10% if"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "they"
+      ],
+      [
+       "+",
+       "Turn"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "are"
+      ],
+      [
+       "+",
+       "Meter"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Carnivale)"
+      ],
+      [
+       "+",
+       "Up"
+      ],
+      [
+       "=",
+       ". Otherwise, grant them full Debuff Dispel."
+      ]
+     ]
+    },
+    {
+     "name": "SHIFT OF PACE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Switch ballade based on target ally - if target ally is Tank or Support or they are below 25% Health, play Soothing Chords, otherwise play Rhymes of Valor. Grant target ally full Debuff Dispel and additionally 25% Healing "
+      ],
+      [
+       "-",
+       "if"
+      ],
+      [
+       "+",
+       "If"
+      ],
+      [
+       "=",
+       " playing Soothing Chords or 25% Turn Meter Up if playing Rhymes of Valor. Ally with Spotlight also gains these effects. Then, gain 10% Turn Meter Up for each other Archlands ally, doubled if they are Carnivale. If Bruno has Spotlight, all Carnivale allies gain 10% Turn Meter Up."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "owyn": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "FINAL BRAVERY",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Owyn is immune to Fear. When Owyn is defeated while under Taunt, Revive him with 1 Health"
+      ],
+      [
+       "-",
+       " and"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "60%"
+      ],
+      [
+       "+",
+       "40%"
+      ],
+      [
+       "=",
+       " Turn Meter"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "2 Invulnerability "
+      ],
+      [
+       "=",
+       "and he gains Cooldowns Reset on March Forward!, [Undispellable] Last Stand and suffers [Irresistible] Fatal Wound. This effect can trigger once per round and Owyn cannot be revived by any other means."
+      ],
+      [
+       "-",
+       " On Revive Owyn gains 2 Invulnerability for 1 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter on Revive\nLv. 3: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter on Revive\nLv. 4: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Turn Meter and gain Cooldowns Reset on March Forward! on Revive;\nLv. 5: "
+      ],
+      [
+       "+",
+       "+5% Turn Meter, +1 Invulnerability on Revive; "
+      ],
+      [
+       "=",
+       "Owyn is immune to Fear.\n★★★★★ "
+      ],
+      [
+       "-",
+       "On Revive"
+      ],
+      [
+       "+",
+       "+2"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Owyn"
+      ],
+      [
+       "+",
+       "Invulnerability"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "gains"
+      ],
+      [
+       "+",
+       "and"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "2"
+      ],
+      [
+       "+",
+       "Attack"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Invulnerability"
+      ],
+      [
+       "+",
+       "Up"
+      ],
+      [
+       "=",
+       " for 1 turn(s)"
+      ],
+      [
+       "-",
+       "."
+      ],
+      [
+       "+",
+       " on Revive"
+      ]
+     ]
+    },
+    {
+     "name": "VOW OF THE PALADIN",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Owyn can trigger Holy Vow to become Vowkeeper. When Owyn is Vowkeeper, gain 20 True to Vows to fulfill his Vow, granting all other Holy Order and Archlands allies Owyn's Vow. Owyn gains 1 True to Vows each time a Holy Order ally receives damage when under Taunt or 20 True to Vows when he is defeated. When Owyn becomes Vowkeeper, he gains Debuff Dispel on all Control debuffs and gains Taunt for 1 turn(s). [On Turn Start] Unless under Control debuff(s), if Owyn is Vowkeeper, he gains Taunt for 1 turn(s). [On Battle Start] If Owyn is the only Holy Order ally, he uses Holy Vow"
+      ],
+      [
+       "+",
+       " without gaining a Bonus Turn"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "★★ "
+      ],
+      [
+       "-",
+       "TODO"
+      ],
+      [
+       "+",
+       "[On Battle Start] If Owyn is the only Holy Order ally, he uses Holy Vow without gaining a Bonus Turn."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Owyn can trigger Embrace The Void to gain Void Power. Owyn gains +15% Defense, Crit Resistance and Crit Defense per 1 Void Power. [On Embrace The Void] Owyn gains 2 Guard for 2 turn(s) and uses Defender of the People. When under Void Power, each time Owyn is about to suffer a Control debuff, he loses 1 Void Power instead. When Owyn gains Revive, he gains 50% Void Touch Cleanse (limit 1 per battle)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Defense, Crit Resistance and Crit Defense\nLv. 3: When Owyn gains Revive, he gains 50% Void Touch Cleanse (limit 1 per battle).\nLv. 4: [On Embrace The Void] Owyn gains 2 Guard for 2 turn(s) and uses "
+      ],
+      [
+       "-",
+       "Embrace"
+      ],
+      [
+       "+",
+       "Defender"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "of "
+      ],
+      [
+       "=",
+       "the "
+      ],
+      [
+       "-",
+       "Void"
+      ],
+      [
+       "+",
+       "People"
+      ],
+      [
+       "=",
+       ".\nLv. 5: When under Void Power, each time Owyn is about to suffer a Control debuff, he loses 1 Void Power instead."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rosie": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "TRY ME INSTEAD!",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Inflict Provoke and Attack Down for 2 turn(s) on target enemy and "
+      ],
+      [
+       "+",
+       "enemy with the highest Attack (excluding target one), then "
+      ],
+      [
+       "=",
+       "grant Ally Protection for 3 turn(s) to Angelo and ally with lowest Health who does not already have it. Rosie has +40% Focus when using this skill."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1 Ally Protection duration\nLv. 3: -1 Cooldown, also inflict Attack Down for 2 turn(s)\nLv. 4: Grant Ally Protection to Angelo as well"
+      ],
+      [
+       "+",
+       "; Inflict Debuff(s) on enemy with the highest Attack (excluding target one) as well"
+      ],
+      [
+       "=",
+       ".\nLv. 5: Rosie has +40% Focus when using this skill."
+      ]
+     ]
+    },
+    {
+     "name": "ONE TOUGH GIRL",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Rosie has +5% Max Health for each Archlands ally and twice as much if they are Carnivale. Additionally, Rosie gains 5% Healing when damaged by an enemy with Provoke during their turn. When another Carnivale ally is damaged and falls below 50% Health for the first time this round, Rosie uses Try Me Instead! on the enemy that caused this effect. [On Turn Start] If Rosie is below "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "50%"
+      ],
+      [
+       "=",
+       " Health, she gains 1 Regeneration for 2 turn(s) (or 2 Regeneration if she has Spotlight)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% Max Health\nLv. 3: +1% Max Health\nLv. 4: +1% Max Health\nLv. 5: Rosie gains 5% Healing when damaged by an enemy with Provoke during their turn.\nLv. 6: When another Carnivale ally is damaged and falls below 50% Health for the first time this round, Rosie uses Try Me Instead! on the enemy that caused this effect.\n★ [On Turn Start] If Rosie is below "
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "50%"
+      ],
+      [
+       "=",
+       " Health, she gains 1 Regeneration for 2 turn(s) (or 2 Regeneration if she has Spotlight)."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Rosie can trigger Embrace The Void to gain Void Power. Rosie gains +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Max Health"
+      ],
+      [
+       "+",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "Defense "
+      ],
+      [
+       "=",
+       "and "
+      ],
+      [
+       "-",
+       "Defense"
+      ],
+      [
+       "+",
+       "Focus"
+      ],
+      [
+       "=",
+       " per 1 Void Power. [On Embrace The Void] Rosie gains 25% Healing. When under Void Power, Rosie attacks cannot be dodged. [On Round End] If no ally is defeated, Rosie gains 5% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Max Health and Defense\nLv. 3: [On Round End] If all allies are active, Rosie gains 5% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Rosie gains 25% Healing.\nLv. 5: When under Void Power, Rosie attacks cannot be dodged."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "kurgan": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "RAM CHARGE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 60% ATK damage to target enemy inflicting Daze for 2 turn(s)"
+      ],
+      [
+       "+",
+       " and a random Buff Dispel"
+      ],
+      [
+       "=",
+       ", then deal 150% ATK damage 2 more times, "
+      ],
+      [
+       "-",
+       "then"
+      ],
+      [
+       "+",
+       "and"
+      ],
+      [
+       "=",
+       " suffer [Irresistible] Expose for 2 turn(s). If target has Daze, these 2 strikes deal 50% more damage. If Kurgan has Void Power, inflict 100% Turn Meter Down on target enemy or inflict Fear for 1 turn(s) on 2 random enemies if target enemy is defeated. Kurgan has +40% Focus during this attack."
+      ]
+     ]
+    },
+    {
+     "name": "UNDYING WRATH",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "While Kurgan has Frenzy, he has +50% Crit Dmg"
+      ],
+      [
+       "-",
+       ","
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "+40% Resistance "
+      ],
+      [
+       "=",
+       "and is immune to Turn Skip Debuff(s). When Frenzy is dispelled, apply Cooldowns Down on House Ram Fury."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Crit Dmg\nLv. 3: +5% Crit Dmg\nLv. 4: +5% Crit Dmg; Kurgan is immune to Turn Skip debuffs.\nLv. 5: +10% Crit Dmg; When Frenzy is dispelled, apply Cooldowns Down on House Ram Fury.\n★★★★★ Kurgan has +"
+      ],
+      [
+       "-",
+       "40%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Resistance"
+      ],
+      [
+       "+",
+       "Piercing"
+      ],
+      [
+       "=",
+       " while he has Frenzy."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Kurgan can trigger Embrace The Void to gain Void Power. Kurgan gains +10% Attack, Focus and +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " Crit Dmg per 1 Void Power. [On Embrace The Void] Kurgan gains full Debuff Dispel. When under Void Power, each time Kurgan defeats an enemy, he gains 1 Tainted Weapon per 1 Void Power for 2 turn(s). When Kurgan defeats 3 enemies during a single round, he gains 10% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Attack, Focus and +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Crit Dmg\nLv. 3: When Kurgan defeats 3 enemies during a single round, he gains 10% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Kurgan gains full Debuff Dispel.\nLv. 5: When under Void Power, each time Kurgan defeats an enemy, he gains 1 Tainted Weapon per 1 Void Power for 2 turn(s)."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "leo": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "IT ENDS NOW",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 150% ATK damage to target enemy 3 times. The last strike has +"
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " Crit Dmg and deals double damage to targets under Hunted. If this attack defeats the enemy, gain 25% Turn Meter Up. This skill starts on cooldown 3."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +10% ATK damage, -1 Cooldown\nLv. 4: +15% ATK damage, -1 Cooldown\nLv. 5: +20% ATK damage; On defeating enemy, gain 25% Turn Meter Up.\nLv. 6: +25% ATK damage; Last strike has +"
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " Crit Dmg and deals double damage to targets under Hunted."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Leo can trigger Embrace The Void to gain Void Power. Leo gains +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Max Health per 1 Void Power. [On Embrace The Void] Leo gains Cooldowns Reset on It Ends Now. When under Void Power, each time Leo scores a critical hit, he gains "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Turn Meter Up. When Leo defeats an enemy with It Ends Now, he gains 10% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Attack, Defense and Max Health\nLv. 3: When Leo defeats an enemy with It Ends Now, he gains 10% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Leo gains Cooldowns Reset on It Ends Now.\nLv. 5: When under Void Power, each time Leo scores a critical hit, he gains "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Turn Meter Up."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "tombs": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Tombs can trigger Embrace The Void to gain Void Power. Tombs gains +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Focus and +15% Crit Resistance and Healing Effect per 1 Void Power. [On Embrace The Void] Tombs doubles his stacks of Buried. When under Void Power, when Tombs is defeated while having 5 or more Buried, he gains instant Revive and loses 5 Buried. This Revive is [Unpreventable]. Each time an enemy under Deathmark is defeated, Tombs grants all Consumed allies 3% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Focus and +5% Crit Resistance and Healing Effect\nLv. 3: Each time an enemy under Deathmark is defeated, Tombs grants all Consumed allies 3% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Tombs doubles his stacks of Buried.\nLv. 5: When under Void Power, when Tombs is defeated while having 5 or more Buried, he gains instant Revive and loses 5 Buried. This Revive is [Unpreventable]."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "reed": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "CREED'S PRIZE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Reed can trigger Assassination to inflict Marked. When a Marked enemy is killed by an Assassin ally, Reed gains "
+      ],
+      [
+       "-",
+       "Creed's"
+      ],
+      [
+       "+",
+       "Reed's"
+      ],
+      [
+       "=",
+       " Prize until [End of Round]. If they are killed by Reed, he also gains Cooldowns Reset on all skills and a Bonus Turn."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Reed can trigger Embrace The Void to gain Void Power. Reed gains +10% Speed, Piercing and +25% Crit Dmg per 1 Void Power. [On Embrace The Void] Reed gains Stealth for 3 turn(s). When under Void Power, each time Reed critically hits an enemy, he has a [25% x Void Power] chance to inflict Stagger for 1 turn(s) on this enemy. When Reed gains "
+      ],
+      [
+       "-",
+       "Creed's"
+      ],
+      [
+       "+",
+       "Reed's"
+      ],
+      [
+       "=",
+       " Prize, he gains 10% Void Touch Cleanse."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% Speed, Piercing and +10% Crit Dmg\nLv. 3: When Reed gains "
+      ],
+      [
+       "-",
+       "Creed's"
+      ],
+      [
+       "+",
+       "Reed's"
+      ],
+      [
+       "=",
+       " Prize, he gains 10% Void Touch Cleanse.\nLv. 4: [On Embrace The Void] Reed gains Stealth for 3 turn(s).\nLv. 5: When under Void Power, each time Reed critically hits an enemy, he has a [25% x Void Power] chance to inflict Stagger for 1 turn(s) on this enemy."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "lysadorea": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "HERMEIDA'S LIGHT",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant all allies 20% Healing"
+      ],
+      [
+       "+",
+       " and 5% Void Touch Cleanse"
+      ],
+      [
+       "=",
+       ". Grant Bless for 2 turn(s) and random Debuff Dispel to each healed ally."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +2% Healing\nLv. 3: +2% Healing"
+      ],
+      [
+       "+",
+       ", -1 Cooldown"
+      ],
+      [
+       "=",
+       "\nLv. 4: +2% Healing, "
+      ],
+      [
+       "-",
+       "-1"
+      ],
+      [
+       "+",
+       "+1%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Cooldown"
+      ],
+      [
+       "+",
+       "Void Touch Cleanse"
+      ],
+      [
+       "=",
+       "\nLv. 5: +4% Healing; "
+      ],
+      [
+       "+",
+       "+2% Void Touch Cleanse; "
+      ],
+      [
+       "=",
+       "Grant Bless for 2 turn(s) to each healed ally.\n★ Grant random Debuff Dispel to each healed ally."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "nadia": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "STALWART DEFENDER",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant "
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Shield to all allies (increased to "
+      ],
+      [
+       "-",
+       "30%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " for Seasoned allies) for 3 turns and grant Leo and Bomor Resilience for 2 turn(s)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " Shield\nLv. 3: +"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "1%"
+      ],
+      [
+       "=",
+       " Shield, +1 Shield duration\nLv. 4: +2% Shield, -1 Cooldown\nLv. 5: +4% Shield; Grant Leo and Bomor Resilience for 2 turn(s).\n★★ Shield is increased by "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " for Seasoned allies."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "ruck": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "DARK IGNITION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Gain 1 Dark Fire (or 2 if Ruck has "
+      ],
+      [
+       "+",
+       "more than 50% "
+      ],
+      [
+       "=",
+       "Void "
+      ],
+      [
+       "-",
+       "Power"
+      ],
+      [
+       "+",
+       "Touch"
+      ],
+      [
+       "=",
+       "), then deal 60% ATK damage to "
+      ],
+      [
+       "+",
+       "target enemy and "
+      ],
+      [
+       "=",
+       "1 to 3 random enemies. Gain 10% Shield for 2 "
+      ],
+      [
+       "-",
+       "turn"
+      ],
+      [
+       "+",
+       "Turn"
+      ],
+      [
+       "=",
+       "(s)."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "severin": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "QUICK CUT",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "140%"
+      ],
+      [
+       "+",
+       "150%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy inflicting Crit Resistance Down for 2 turn(s). If the enemy is Tainted, Consumed or is under "
+      ],
+      [
+       "-",
+       "Succumbed"
+      ],
+      [
+       "+",
+       "Hollow"
+      ],
+      [
+       "=",
+       ", gain 1 Void Flask (max. 10)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage\nLv. 4: +20% ATK damage\nLv. 5: +"
+      ],
+      [
+       "-",
+       "25%"
+      ],
+      [
+       "+",
+       "30%"
+      ],
+      [
+       "=",
+       " ATK damage"
+      ],
+      [
+       "+",
+       "; Gain Void Flask when attacking Tainted or Consumed enemy or target under Hollow"
+      ],
+      [
+       "=",
+       "\n★★ Gain Void Flask on attacking Tainted or Consumed enemy or target under Succumbed"
+      ]
+     ]
+    },
+    {
+     "name": "EXCISE VOID",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Grant target ally "
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " Void Touch Cleanse and a full Debuff Dispel at a cost of "
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " of their Health. Gain 2 Void Flask (max. 10) if Void Touch is successfully cleansed and 1 more if target is Consumed or Tainted. Gain Fear for 1 turn(s) if target of this skill is Severin."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% Void Touch Cleanse, -"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Health cost\nLv. 3: +1% Void Touch Cleanse, -"
+      ],
+      [
+       "-",
+       "2%"
+      ],
+      [
+       "+",
+       "5%"
+      ],
+      [
+       "=",
+       " Health cost\nLv. 4: +1% Void Touch Cleanse, "
+      ],
+      [
+       "-",
+       "-2% Health cost; "
+      ],
+      [
+       "=",
+       "+1 Void Flask on cleanse\nLv. 5: +2% Void Touch Cleanse, "
+      ],
+      [
+       "-",
+       "-4% Health cost; "
+      ],
+      [
+       "=",
+       "grant full Debuff Dispel"
+      ],
+      [
+       "+",
+       ";"
+      ]
+     ]
+    },
+    {
+     "name": "EAGER BUT CAUTIOUS",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Severin has +15% Crit Rate and additional +5% Crit Dmg for each 1 Guard. Severin gains High Morale for 2 turns whenever ally uses Embrace The Void or enemy suffers "
+      ],
+      [
+       "-",
+       "Succumb To The Void"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       ". However, he cannot use Embrace The Void himself."
+      ],
+      [
+       "+",
+       " [On Battle Start] Inquisition allies gain +10% Max Health."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% Crit Rate\nLv. 3: +2% Crit Rate\nLv. 4: +2% Crit Rate"
+      ],
+      [
+       "+",
+       "; [On Battle Start] Inquisition allies gain +10% Max Health."
+      ],
+      [
+       "=",
+       "\nLv. 5: +5% Crit Rate; +5% Crit Dmg for each 1 Guard."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "vilk": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "GROWLING RUSH",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Deal 80% ATK damage to target enemy twice. Deal damage additional time for each of the following: - Vilk is under 50% Health, - Vilk is under 25% Health, - Vilk has 10 or more Cornered Beast. - Vilk is under Void Power"
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +5% ATK damage\nLv. 4: +10% ATK damage\nLv. 5: +20% ATK damage; "
+      ],
+      [
+       "-",
+       "if"
+      ],
+      [
+       "+",
+       "If"
+      ],
+      [
+       "=",
+       " Vilk is under 25% Health, deal damage one more time\n★★ Deal damage one more time."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "arbias": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "CLEANSING BLADES",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "90%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy twice."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +10% ATK damage\nLv. 4: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 5: +20% ATK damage"
+      ]
+     ]
+    },
+    {
+     "name": "EXPURGATION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "90%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " ATK to random enemy 2 times, then deal 90% ATK to target enemy twice. When called to Assist by Inquisition ally, use this skill instead of Cleansing Blades."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% ATK damage\nLv. 3: +10% ATK damage\nLv. 4: +"
+      ],
+      [
+       "-",
+       "10%"
+      ],
+      [
+       "+",
+       "15%"
+      ],
+      [
+       "=",
+       " ATK damage\nLv. 5: +20% ATK damage"
+      ]
+     ]
+    },
+    {
+     "name": "FLAGELLANT'S RETRIBUTION",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Arbias deals +25% damage against Tainted or Consumed enemies (or +50% if they are Holy Order). Arbias is immune to Blind. Each time Arbias is called to Assist, he gains 1 Zeal (or 2 if called by an Inquisition character). [On Battle Start] Arbias gains 1 Zeal for each Tainted or Consumed Holy Order enemy. [On Turn Start] Arbias loses "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Health for each other Tainted or Consumed ally. Additionally, each time Arbias suffers Void Touch outside of his turn, he loses "
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Health. These Health losses cannot defeat Arbias."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +5% damage bonus; -"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Health losses\nLv. 3: +5% damage bonus; -"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Health losses\nLv. 4: +5% damage bonus; -"
+      ],
+      [
+       "-",
+       "1%"
+      ],
+      [
+       "+",
+       "2%"
+      ],
+      [
+       "=",
+       " Health losses\nLv. 5: +5% damage bonus; -2% Health losses; [On Battle Start] Gain 1 Zeal for each Tainted or Consumed Holy Order enemy."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Arbias can trigger Embrace The Void to gain Void Power. Arbias gains +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " Attack, Hit Rate and Crit Dmg per 1 Void Power. [On Embrace The Void] Arbias gains 3 Zeal. [On Turn Start] Arbias gains 1 Zeal per 1 Void Power. Each time Arbias defeats a Tainted or Consumed enemy, he gains 5% Void Touch Cleanse (doubled for Holy Order enemies)."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +"
+      ],
+      [
+       "-",
+       "5%"
+      ],
+      [
+       "+",
+       "10%"
+      ],
+      [
+       "=",
+       " Attack, Hit Rate and Crit Dmg\nLv. 3: Each time Arbias defeats a Tainted or Consumed enemy, he gains 5% Void Touch Cleanse (doubled for Holy Order enemies).\nLv. 4: [On Embrace The Void] Arbias gains 3 Zeal.\nLv. 5: [On Turn Start] Arbias gains 1 Zeal per 1 Void Power."
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "goran": [
+  {
+   "id": "hunting-grounds-playtest-2026-11",
+   "date": "2026-11-10",
+   "title": "Hunting Grounds Playtest",
+   "from": "Alpha",
+   "skills": [
+    {
+     "name": "CLOSE COMBAT",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal "
+      ],
+      [
+       "-",
+       "130%"
+      ],
+      [
+       "+",
+       "140%"
+      ],
+      [
+       "=",
+       " ATK damage to target enemy and inflict Attack Down for 1 turn(s) on them and 1 other random enemy."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +15% ATK damage\nLv. 4: +"
+      ],
+      [
+       "-",
+       "15%"
+      ],
+      [
+       "+",
+       "20%"
+      ],
+      [
+       "=",
+       " ATK damage; Inflict Attack Down for 1 turn(s).\nLv. 5: +25% ATK damage; Inflict Attack Down also on 1 other random enemy."
+      ]
+     ]
+    },
+    {
+     "name": "DARK ENDURANCE",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Gain Taunt for 2 turn(s) and 25% Healing. If Goran is below 75% Health, for each level of Void Menace gain additional 20% Healing and suffer 4% Void Touch. "
+      ],
+      [
+       "-",
+       "Goran won't cleanse Void Touch when gaining Healing through this skill. "
+      ],
+      [
+       "=",
+       "Then, gain 1 Tainted Armor for every 10% Void Touch."
+      ]
+     ]
+    },
+    {
+     "name": "FEARLESS CHARGE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Deal 125% ATK damage to target enemy inflicting full Buff Dispel (if Goran has Void Power, this Buff Dispel is [Irresistible]). Then, deal 125% ATK + "
+      ],
+      [
+       "-",
+       "50%"
+      ],
+      [
+       "+",
+       "100%"
+      ],
+      [
+       "=",
+       " DEF damage inflicting Stun for 1 turn(s)."
+      ],
+      [
+       "+",
+       " This attack has bonus Focus equal to the target's Health% loss from each hit's damage."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +10% ATK damage\nLv. 3: +10% ATK damage"
+      ],
+      [
+       "+",
+       "; -1 Cooldown"
+      ],
+      [
+       "=",
+       "\nLv. 4: +10% ATK damage; "
+      ],
+      [
+       "-",
+       "-1"
+      ],
+      [
+       "+",
+       "+50%"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Cooldown"
+      ],
+      [
+       "+",
+       "DEF bonus damage in second hit"
+      ],
+      [
+       "=",
+       "\nLv. 5: +15% ATK damage; inflict full Buff Dispel instead ([Irresistible] if Goran has Void Power)\nLv. 6: +20% ATK damage; +50% DEF bonus damage"
+      ],
+      [
+       "+",
+       ";"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "in"
+      ],
+      [
+       "+",
+       "This"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "second"
+      ],
+      [
+       "+",
+       "attack"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "hit"
+      ],
+      [
+       "+",
+       "has bonus Focus equal to the target's Health% loss from this attack's damage."
+      ]
+     ]
+    },
+    {
+     "name": "A WELCOMED CURSE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Void Touch Cleanse "
+      ],
+      [
+       "+",
+       "and Healing "
+      ],
+      [
+       "=",
+       "effects "
+      ],
+      [
+       "-",
+       "on"
+      ],
+      [
+       "+",
+       "other"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "Goran"
+      ],
+      [
+       "+",
+       "than"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "his own "
+      ],
+      [
+       "=",
+       "are halved"
+      ],
+      [
+       "+",
+       " on Goran"
+      ],
+      [
+       "=",
+       ", but he "
+      ],
+      [
+       "-",
+       "does"
+      ],
+      [
+       "+",
+       "is"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "not"
+      ],
+      [
+       "+",
+       "immune"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "suffer"
+      ],
+      [
+       "+",
+       "to"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "attribute"
+      ],
+      [
+       "+",
+       "Hollowing"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "decrease"
+      ],
+      [
+       "+",
+       "unless"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "-",
+       "from"
+      ],
+      [
+       "+",
+       "above"
+      ],
+      [
+       "=",
+       " "
+      ],
+      [
+       "+",
+       "75% "
+      ],
+      [
+       "=",
+       "Void Touch. For every 10% Void Touch Goran has +3% Dmg Reduction, +5% Crit Resistance and inflicts 1% Void Touch on the attacker (if possible) whenever he suffers damage."
+      ]
+     ],
+     "upgradeOps": [
+      [
+       "=",
+       "Lv. 2: +1% Crit Resistance\nLv. 3: +1% Crit Resistance\nLv. 4: +2% Crit Resistance\nLv. 5: +2% Dmg Reduction"
+      ],
+      [
+       "+",
+       ";"
+      ]
+     ]
+    },
+    {
+     "name": "LORD OF PAIN",
+     "change": "changed",
+     "kind": "wording",
+     "ops": [
+      [
+       "=",
+       "Goran cannot gain Shield nor dodge. When Goran is about to get damage, this damage is reduced by 4% of his Max Health "
+      ],
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       "(+2% vs. Holy Order enemies; +1% for each Void Power) to a minimum of 1."
+      ],
+      [
+       "+",
+       "\""
+      ],
+      [
+       "=",
+       " [On Round Start] If Goran is the only Tank ally, he gains Taunt for 2 turn(s)."
+      ]
+     ]
+    },
+    {
+     "name": "VOID EMBRACE",
+     "change": "changed",
+     "kind": "numbers",
+     "ops": [
+      [
+       "=",
+       "Goran can trigger Embrace The Void to gain Void Power. Goran gains +"
+      ],
+      [
+       "-",
+       "20%"
+      ],
+      [
+       "+",
+       "25%"
+      ],
+      [
+       "=",
+       " Defense and Max Health and +5% Dmg Reduction per 1 Void Power. [On Embrace The Void] Goran gains Cooldowns Reset on Dark Endurance and a Bonus Turn. When under Void Power, each time Goran suffers a critical hit, he has a [10% x Void Power] chance to gain 1 Tainted Armor for 2 turn(s). [On Round End] If Goran has more than 70% Void Touch, he gains 30% Void Touch Cleanse"
+      ],
+      [
+       "-",
+       " (not affected by halving effect of A Welcomed Curse)"
+      ],
+      [
+       "=",
+       "."
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

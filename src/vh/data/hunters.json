@@ -46,12 +46,12 @@
           "Melee",
           "Damage"
         ],
-        "description": "Deal 180% ATK damage to target enemy and gain Focus Up for 1 turn. If this is Archlands or Dwarf ally's turn and Aedwulf has no Succumbed, gain 1 Control (or 2 Control if this ally is Noble).",
+        "description": "Deal 180% ATK damage to target enemy and gain Focus Up for 1 turn.\n\nIf this is Archlands or Dwarf ally's turn and Aedwulf has no Hollow, gain 1 Control (or 2 Control if this ally is Noble).",
         "upgrades": [
           "Lv. 2: +15% ATK damage",
           "Lv. 3: +20% ATK damage",
           "Lv. 4: +25% ATK damage",
-          "Lv. 5: +30% ATK damage; gain Focus Up for 1 turn(s)."
+          "Lv. 5: +30% ATK damage; gain Focus Up foir 1 turn(s)."
         ],
         "image": null
       },
@@ -67,12 +67,12 @@
           "Void Touch",
           "Debuffs"
         ],
-        "description": "Deal 150% ATK damage to all enemies inflicting Health Recovery Down for 2 turns and 4% Void Touch. Inflict 1 Void Trace for 2 turns (or 2 Void Trace if Aedwulf has Void Power) on each enemy who lost Health during this attack. This skill deals bonus % ATK damage equal to Void Touch on target.",
+        "description": "Deal 150% ATK damage to all enemies inflicting Health Recovery Down for 2 turns and 6% Void Touch.\n\nInflict 1 Void Trace for 2 turns (or 2 Void Trace if Aedwulf has Void Power) on each enemy who lost Health during this attack.\n\nThis skill deals bonus % ATK damage equal to Void Touch on target.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
-          "Lv. 3: +15% ATK damage; -1 Cooldown",
-          "Lv. 4: +20% ATK damage; +2% Void Touch",
-          "Lv. 5: +30% ATK damage; Inflict 1 Void Trace for 2 turns (or 2 Void Trace if Aedwulf has Void Power) on each enemy who lost Health during this attack."
+          "Lv. 3: +15% ATK damage, -1 Cooldown",
+          "Lv. 4: +20% ATK damage, +1% Void Touch",
+          "Lv. 5: +30% ATK damage, +2% Void Touch; Inflict 1 Void Trace for 2 turns (or 2 Void Trace if Aedwulf has Void Power) on each enemy who lost Health during this attack."
         ],
         "image": null
       },
@@ -89,13 +89,13 @@
           "Void Touch",
           "Cooldowns Up"
         ],
-        "description": "Deal 400% ATK damage to target enemy inflicting 10% Void Touch, then inflict Fear for 1 turn on all enemies. If Aedwulf has Void Power, this Fear is [Irresistible]. Inflict Cooldowns Up on all skills on target enemy, [Irresistible] if the target is above 50% Void Touch.",
+        "description": "Deal 360% ATK damage to target enemy inflicting 15% Void Touch, then inflict Fear for 1 turn on all enemies.  If Aedwulf has Void Power, this Fear is [Irresistible].\n\nInflict Cooldowns Up on all skills on target enemy, [Irresistible] if the target is above 50% Void Touch.\n\nEnemies defeated by this skill cannot gain Revive.",
         "upgrades": [
-          "Lv. 2: +25% ATK damage;",
+          "Lv. 2: +20% ATK damage;",
           "Lv. 3: +25% ATK damage; +2% Void Touch",
-          "Lv. 4: +30% ATK damage; -1 Cooldown",
-          "Lv. 5: +40% ATK damage; +4% Void Touch; If Aedwulf has Void Power, this Fear is [Irresistible].",
-          "Lv. 6: +80% ATK damage; Inflict Cooldowns Up on all skills on target enemy, [Irresistible] if the target is above 50% Void Touch."
+          "Lv. 4: +30% ATK damage; +3% Void Touch; -1 Cooldown",
+          "Lv. 5: +45% ATK damage; +5% Void Touch; If Aedwulf has Void Power, this Fear is [Irresistible].",
+          "Lv. 6: +60% ATK damage; Inflict Cooldowns Up on all skills on target enemy, [Irresistible] if the target is above 50% Void Touch."
         ],
         "image": null
       },
@@ -111,7 +111,7 @@
           "Debuffs",
           "Turn Meter Down"
         ],
-        "description": "[Requires 1 Void Power] Lose 1 Void Power to deal 300% ATK damage inflicting Fatal Wound and 25% Turn Meter Down to target enemy. If target had Fear or Succumbed, these effects are [Irresistible]. If Fatal Wound was resisted and Aedwulf had 2 or more Void Power, lose 1 more to inflict Fatal Wound again, this time as [Irresistible].",
+        "description": "[Requires 1 Void Power]\n\nLose 1 Void Power to deal 300% ATK damage inflicting Fatal Wound and 25% Turn Meter Down to target enemy. If target had Fear or Hollow, these effects are [Irresistible].\n\nIf Fatal Wound was resisted and Aedwulf had 2 or more Void Power, lose 1 more to inflict Fatal Wound again, this time as [Irresistible].",
         "upgrades": [],
         "image": null
       },
@@ -122,31 +122,15 @@
         "type": "Trait",
         "cooldown": null,
         "tags": [
+          "Status",
           "Void Touch"
         ],
-        "description": "[On Battle Start] Aedwulf gains 3 Control and 1 additional Control for each other Archlands or Dwarf ally, doubled if they are Noble, and loses 1 Control for each Archlands or Dwarf enemy. Each time Aedwulf uses a special skill, he loses 5 Control. If he is about to lose more than he currently has, he suffers 4% Void Touch for each missing Control.",
+        "description": "[On Battle Start] Aedwulf gains 3 Control and 1 additional Control for each other Archlands or Dwarf ally, doubled if they are Noble, and loses 1 Control for each Archlands or Dwarf enemy.\n\nEach time Aedwulf uses a special skill, he loses 5 Control. If he is about to lose more than he currently has, he suffers 2% Void Touch for each missing Control.",
         "upgrades": [],
         "image": null
       },
       {
         "order": 6,
-        "name": "CURSED DIE TWICE",
-        "level": "Max",
-        "type": "Trait",
-        "cooldown": null,
-        "tags": [
-          "Attr. Down",
-          "Buffs",
-          "Healing",
-          "Debuffs",
-          "Attr. Up"
-        ],
-        "description": "Aedwulf has -40% Health Recovery when healed out of his turn and cannot be called to Assist when he has Succumbed. When Aedwulf is about to be defeated and has no Succumbed, he instantly Succumb To The Void instead, and then gains 100% Healing, 100% Turn Meter Up and [Undispellable] Attack Up for 3 turns, all these effects [Unpreventable]. Then, he inflicts [Irresistible][Undispellable] Fear for 1 turn on the enemy that dealt the final blow (or on a random enemy, if final blow had no author). While Aedwulf has no Succumbed, Consumed allies have +20% Max Health, deal +50% damage to enemies under Fear and each time an enemy suffers Fear, a random Consumed ally gains 15% Turn Meter Up.",
-        "upgrades": [],
-        "image": null
-      },
-      {
-        "order": 7,
         "name": "VOID EMBRACE",
         "level": "Max",
         "type": "Trait",
@@ -158,7 +142,7 @@
           "Healing",
           "Debuffs"
         ],
-        "description": "Aedwulf can trigger Embrace The Void to gain Void Power. Aedwulf gains +20% Attack, Focus and +10% Max Health per 1 Void Power. [On Embrace The Void] Aedwulf gains 50% Healing. When under Void Power, each time Aedwulf critically hits an enemy with a special skill, he has a [5% x Void Power] chance to inflict Healing Immunity for 1 turn(s). Each time Aedwulf gains Control while Out-of-Turn, he gains 2% Void Touch Cleanse.",
+        "description": "Aedwulf can trigger Embrace The Void to gain Void Power.\nAedwulf gains +20% Attack, Focus and +10% Max Health per 1 Void Power.\n\n[On Embrace The Void] Aedwulf gains 50% Healing.\n\nWhen under Void Power, each time Aedwulf critically hits an enemy with a special skill, he has a [5% x Void Power] chance to inflict Healing Immunity for 1 turn(s).\n\nEach time Aedwulf gains Control while Out-of-Turn, he gains 2% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Attack, Focus and Max Health",
           "Lv. 3: Each time Aedwulf gains Control while Out-of-Turn, he gains 2% Void Touch Cleanse.",
@@ -375,7 +359,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 250% ATK damage to target enemy twice inflicting Bleed for 2 turn(s) with the first hit. On double crit gain 50% Turn Meter Up. This skill cannot be dodged and has +30% Crit Dmg. This skill starts on Cooldown 3.",
+        "description": "Deal 250% ATK damage to target enemy twice inflicting Bleed for 2 turn(s) with the first hit. On double crit gain 50% Turn Meter Up. This skill cannot be dodged and has +30% Crit Dmg.\n\nThis skill starts on Cooldown 3.",
         "upgrades": [
           "Lv. 2: +20% ATK damage",
           "Lv. 3: +25% ATK damage, -1 Cooldown",
@@ -388,13 +372,13 @@
         "order": 4,
         "name": "A DEADLY TROUPE",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up",
           "Turn Meter Up"
         ],
-        "description": "Archlands allies have +5% Crit Rate and +10% Hit Rate and Carnivale allies have twice this amounts. Carnivale allies gain +2% Turn Meter Up each time they critically hit an enemy.",
+        "description": "Archlands allies have +5% Crit Rate and +10% Hit Rate and Carnivale allies have twice this amounts.\n\nCarnivale allies gain +2% Turn Meter Up each time they critically hit an enemy.",
         "upgrades": [
           "Lv. 2: +1% Crit Rate",
           "Lv. 3: +1% Crit Rate",
@@ -415,7 +399,7 @@
           "Buffs",
           "Turn Meter Up"
         ],
-        "description": "Angelo has +20% Hit Rate and his attacks cannot be countered. Angelo has +20% Dodge and gains Piercing Up for 1 turn(s) each time he dodges an attack. Each time another Carnivale ally begins a turn, Angelo gains 10% Turn Meter Up, doubled if this ally is Rosie.",
+        "description": "Angelo has +20% Hit Rate and his attacks cannot be countered.\nAngelo has +20% Dodge and gains Piercing Up for 1 turn(s) each time he dodges an attack.\n\nEach time another Carnivale ally begins a turn, Angelo gains 10% Turn Meter Up, doubled if this ally is Rosie.",
         "upgrades": [
           "Lv. 2: +5% Crit Dmg",
           "Lv. 3: +5% Crit Dmg, also gain +5% Dodge",
@@ -436,7 +420,7 @@
           "Buffs",
           "Attr. Up"
         ],
-        "description": "If there are at least 3 Carnivale allies, Angelo can trigger Star of the Show to gain Spotlight. When Angelo gains Spotlight, he gains Crit Damage Up for 3 turns. When Angelo has Spotlight, he has +15% Crit Rate and +5% Focus for each living Carnivale ally.",
+        "description": "If there are at least 3 Carnivale allies, Angelo can trigger Star of the Show to gain Spotlight.\n\nWhen Angelo gains Spotlight, he gains Crit Damage Up for 3 turns.\nWhen Angelo has Spotlight, he has +15% Crit Rate and +5% Focus for each living Carnivale ally.",
         "upgrades": [],
         "image": null
       },
@@ -452,7 +436,7 @@
           "Void Touch Cleanse",
           "Turn Meter Up"
         ],
-        "description": "Angelo can trigger Embrace The Void to gain Void Power. Angelo gains +15% Attack, Hit Rate and Crit Rate per 1 Void Power. When under Void Power, all Debuff(s) Angelo inflicts are [Irresistible] and if he has at least 3 Void Power, all Turn Meter Up effects he gains are doubled. Each time Angelo defeats an enemy while at full Health, he gains 3% Void Touch Cleanse.",
+        "description": "Angelo can trigger Embrace The Void to gain Void Power.\nAngelo gains +15% Attack, Hit Rate and Crit Rate per 1 Void Power.\n\nWhen under Void Power, all Debuff(s) Angelo inflicts are [Irresistible] and if he has at least 3 Void Power, all Turn Meter Up effects he gains are doubled.\n\nEach time Angelo defeats an enemy while at full Health, he gains 3% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +5% Attack, Hit Rate and Crit Rate",
           "Lv. 3: Each time Angelo defeats an enemy while at full Health, he gains 3% Void Touch Cleanse.",
@@ -625,7 +609,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 75% ATK damage to target enemy and twice to random enemies. Inflict Blind for 1 turn to target enemy. While Lightborne, this skill deals double damage to target enemy and hits random enemies one additional time.",
+        "description": "Deal 75% ATK damage to target enemy and twice to random enemies. Inflict Blind for 1 turn to target enemy.\n\nWhile Lightborne, this skill deals double damage to target enemy and hits random enemies one additional time.",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +5% ATK damage",
@@ -646,7 +630,7 @@
           "Cooldowns Down",
           "Void Touch Cleanse"
         ],
-        "description": "Grant 20% Healing, 1 Untouchable and a random Debuff Dispel to target ally (or 40% Healing and full Debuff Dispel if they are below 50% Health). If no Debuff(s) were dispelled, grant target ally 5% Void Touch Cleanse. If used on self, instead of Untouchable apply Cooldowns Down on Primal Light 3 times, and once more for each ally below 50% Health.",
+        "description": "Grant 20% Healing, 4% Void Touch Cleanse, 1 Untouchable and a random Debuff Dispel to target ally (or 40% Healing and full Debuff Dispel if they are below 50% Health). If no Debuff(s) were dispelled, grant target ally 4% Void Touch Cleanse again.\n\nIf used on self, instead of Untouchable apply Cooldowns Down on Primal Light 3 times, and once more for each ally below 50% Health.",
         "upgrades": [
           "Lv. 2: +2% Healing",
           "Lv. 3: +2% Healing; +1 Cooldowns Down on Primal Light if used on self",
@@ -665,7 +649,7 @@
           "Light",
           "AoE"
         ],
-        "description": "Gain Lightborne until [End of Battle] unless Besemin already has it. Sacrifice 10% Health (this damage cannot defeat Besemin) to channel the Primal Light for powerful, yet UNPREDICTABLE effects. These effects are different each time Besemin uses this skill, but may slightly depend on the current battle state as Besemin tries to help her allies. However, Primal Light cannot be controlled. This skill starts on cooldown.",
+        "description": "Gain Lightborne until [End of Battle] unless Besemin already has it.\n\nSacrifice 10% Health (this damage cannot defeat Besemin) to channel the Primal Light for powerful, yet UNPREDICTABLE effects. These effects are different each time Besemin uses this skill, but may slightly depend on the current battle state as Besemin tries to help her allies.\n\nHowever, Primal Light cannot be controlled.\n\nThis skill starts on cooldown.",
         "upgrades": [
           "Lv. 2: -2% sacrificed Health; Skill effects are stronger.",
           "Lv. 3: -2% sacrificed Health; Skill effects are stronger.",
@@ -679,17 +663,17 @@
         "order": 4,
         "name": "SAINT LIGHTBORNE",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up"
         ],
-        "description": "Allied Light skills deal +20% damage (or +50% if Besemin is active and Lightborne).",
+        "description": "Allied Light skills deal +15% damage (or +30% if Besemin is active and Lightborne).",
         "upgrades": [
-          "Lv. 2: +2% / +4% damage",
-          "Lv. 3: +2% / +5% damage",
+          "Lv. 2: +1% / +2% damage",
+          "Lv. 3: +2% / +4% damage",
           "Lv. 4: +3% / +6% damage",
-          "Lv. 5: +3% / +10% damage"
+          "Lv. 5: +4% / +8% damage"
         ],
         "image": null
       },
@@ -701,15 +685,16 @@
         "cooldown": null,
         "tags": [
           "Cooldowns Down",
-          "Attr. Up"
+          "Attr. Up",
+          "Bonus Turn"
         ],
-        "description": "Besemin is immune to Debuff(s), cannot Dodge and cannot trigger Embrace The Void. Besemin gains Cooldowns Down on Primal Light each time an ally gets damaged and a Bonus Turn whenever an ally is defeated. While not Lightborne, Besemin has +25% Dmg Reduction. While Lightborne, Besemin has +25% Speed, +25% Resistance and is immune to Void Touch.",
+        "description": "Besemin is immune to Stun, cannot Dodge and cannot trigger Embrace The Void.\n\nBesemin gains Cooldowns Down on Primal Light each time an ally gets damaged and a Bonus Turn whenever an ally is defeated.\n\nWhile not Lightborne, Besemin has +25% Dmg Reduction and +50% Resistance.\n\nWhile Lightborne, Besemin has +25% Speed and is immune to Void Touch.",
         "upgrades": [
-          "Lv. 2: +5% Dmg Reduction",
-          "Lv. 3: +5% Dmg Reduction",
-          "Lv. 4: While Lightborne, Besemin has +5% Speed and +5% Resistance",
+          "Lv. 2: +5% Dmg Reduction; +5% Resistance",
+          "Lv. 3: +5% Dmg Reduction; +5% Resistance",
+          "Lv. 4: +5% Resistance; While Lightborne, Besemin has +5% Speed",
           "Lv. 5: +10% Dmg Reduction, Speed and Resistance",
-          "Lv. 6: +10% Speed and Resistance; While Lightborne, Besemin is immune to Void Touch."
+          "Lv. 6: +10% Speed and Resistance; While Lightborne, Besemin is immune to Void Touch"
         ],
         "image": null
       },
@@ -722,7 +707,7 @@
         "tags": [
           "Buffs"
         ],
-        "description": "Each time an ally becomes Vowkeeper, that ally gains 5 True to Vows. Each time an ally gains a Vow status, they also gain Lightborne until [End of Battle].",
+        "description": "Each time an ally becomes Vowkeeper, that ally gains 5 True to Vows.\nEach time another ally gains a Vow status, they also gain Lightborne until [End of Battle].",
         "upgrades": [],
         "image": null
       }
@@ -894,15 +879,14 @@
         "tags": [
           "Melee",
           "AoE",
-          "Damage",
-          "Debuffs"
+          "Damage"
         ],
-        "description": "Deal 75% ATK damage to all enemies. This attack has 50% Crit Dmg. If no ally is alive, inflict Burning for 2 turns on hit.",
+        "description": "Deal 70% ATK damage to all enemies.\nThis attack has +15% Crit Dmg.",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +5% ATK damage",
           "Lv. 4: +10% ATK damage",
-          "Lv. 5: +15% ATK damage; This attack has 25% Crit Dmg."
+          "Lv. 5: +15% ATK damage; This attack has +15% Crit Dmg."
         ],
         "image": null
       },
@@ -917,12 +901,12 @@
           "Buffs",
           "Void Touch Cleanse"
         ],
-        "description": "Gain 30% Healing and 2 Overconfidence. Then, gain 2% Void Touch Cleanse for each defeated ally or empty ally slot. If Bohdan had less than 25% Health, gain 50% Healing instead.",
+        "description": "Gain 20% Healing and 2 Overconfidence. Then, gain 3% Void Touch Cleanse for each defeated ally or empty ally slot.\n\nIf Bohdan had less than 25% Health, gain 30% Healing instead.",
         "upgrades": [
-          "Lv. 2: +5% Healing",
-          "Lv. 3: +5% Healing",
-          "Lv. 4: +10% Healing",
-          "Lv. 5: +1 Overconfidence; If Bohdan had less than 25% Health, gain 50% Healing instead."
+          "Lv. 2: +2% Healing",
+          "Lv. 3: +3% Healing, +1% Void Touch Cleanse",
+          "Lv. 4: +5% Healing, +1% Void Touch Cleanse",
+          "Lv. 5: +1 Overconfidence; If Bohdan had less than 25% Health, gain 30% Healing instead."
         ],
         "image": null
       },
@@ -938,13 +922,13 @@
           "Debuffs",
           "Turn Meter Down"
         ],
-        "description": "Deal 400% ATK damage to target enemy inflicting full Buff Dispel and Skill Block for 2 turns. If this attack defeats the enemy, all enemies suffer 20% Turn Meter Down. This attack has +50% Piercing.",
+        "description": "Inflict full Buff Dispel to target enemy dealing 400% ATK damage and inflicting Skill Block for 2 turns on a succesful hit. If this attack defeats the enemy, all enemies suffer 25% Turn Meter Down.\n\nThis attack has +30% Piercing.",
         "upgrades": [
           "Lv. 2: +25% ATK damage",
           "Lv. 3: +25% ATK damage",
           "Lv. 4: +25% ATK damage; -1 Cooldown",
           "Lv. 5: +50% ATK damage; +1 Skill Block duration",
-          "Lv. 6: +75% ATK damage; If this attack defeats the enemy, all enemies suffer 20% Turn Meter Down."
+          "Lv. 6: +75% ATK damage; If this attack defeats the enemy, all enemies suffer 10% Turn Meter Down."
         ],
         "image": null
       },
@@ -958,7 +942,7 @@
           "Buffs",
           "Debuff Dispel"
         ],
-        "description": "Each time Bohdan defeats an enemy, he gains 1 Overconfidence. Each time Bohdan's Health drops below 50% or 25%, he loses 1 Overconfidence. [On Turn Start] if Bohdan has 2 or more Overconfidence, he gains random Debuff Dispel. Bohdan starts battle with 2 Overconfidence.",
+        "description": "Each time Bohdan defeats an enemy, he gains 1 Overconfidence.\nEach time Bohdan's Health drops below 50% or 25%, he loses 1 Overconfidence.\n\n[On Turn Start] if Bohdan has 2 or more Overconfidence, he gains random Debuff Dispel.\n\nBohdan starts battle with 2 Overconfidence",
         "upgrades": [],
         "image": null
       },
@@ -973,13 +957,13 @@
           "Turn Meter Up",
           "Turn Meter Down"
         ],
-        "description": "[On Battle Start] Bohdan gains +25% Attack, Defense, Max Health and 2 Untouchable for each empty ally slot. For each defeated ally or empty ally slot: Bohdan gains +20% Counter Rate and +10% Counter Dmg; Bohdan gains 5% Turn Meter Up each time enemy starts a turn. If there are no active allies, Bohdan ignores Taunt and is immune to Provoke. Bohdan gains 5% Turn Meter Up each time a Debuff(s) expires or is dispelled from him and suffers 5% Turn Meter Down each time he gains a Buff(s).",
+        "description": "[On Battle Start] Bohdan gains 1 Untouchable for each empty ally slot.\n\nFor each defeated ally or empty ally slot:\n- Bohdan has +10% Attack, Defense, Max Health,\n- Bohdan has +10% Counter Rate\n- Bohdan gains 5% Turn Meter Up each time enemy starts a turn.\n\nIf there are no active allies, Bohdan ignores Taunt and is immune to Provoke.\n\nBohdan gains 5% Turn Meter Up each time a Debuff(s) expires or is dispelled from him and suffers 5% Turn Meter Down each time he gains a Buff(s) (except from himself).",
         "upgrades": [
-          "Lv. 2: +3% Attack, Defense and Max Health",
-          "Lv. 3: +3% Attack, Defense and Max Health",
-          "Lv. 4: +4% Attack, Defense and Max Health; +1 Untouchable for each empty ally slot.",
-          "Lv. 5: +5% Attack, Defense and Max Health; If there are no active allies, Bohdan ignores Taunt and is immune to Provoke.",
-          "Lv. 6: For each dead ally or empty ally slot Bohdan gains +10% Counter Rate and +10% Counter Dmg and gains 5% Turn Meter Up each time enemy starts a turn."
+          "Lv. 2: +1% Attack, Defense and Max Health;",
+          "Lv. 3: +1% Attack, Defense and Max Health;",
+          "Lv. 4: +2% Attack, Defense and Max Health; [On Battle Start] Bohdan gains 1 Untouchable for each empty ally slot.",
+          "Lv. 5: +2% Attack, Defense and Max Health; If there are no active allies, Bohdan ignores Taunt, is immune to Provoke.",
+          "Lv. 6: For each defeated ally or empty ally slot Bohdan gains +10% Counter Rate and gains 5% Turn Meter Up each time enemy starts a turn."
         ],
         "image": null
       },
@@ -1009,10 +993,10 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Bohdan can trigger Embrace The Void to gain Void Power. Bohdan gains +20% Attack, Defense and Max Health per 1 Void Power. [On Embrace The Void] Bohdan gains 2 Overconfidence and 3 Wrath. When under Void Power, each time Bohdan defeats an enemy, he gains 1 Wrath per 1 Void Power. When Bohdan gains 10 Overconfidence, he gains 20% Void Touch Cleanse (limit 1 per battle).",
+        "description": "Bohdan can trigger Embrace The Void to gain Void Power.\nBohdan gains +20% Attack, Defense and Max Health per 1 Void Power.\n\n[On Embrace The Void] Bohdan gains 2 Overconfidence and 3 Wrath.\n\nWhen under Void Power, each time Bohdan defeats an enemy, he gains 1 Wrath per 1 Void Power.\n\nWhen Bohdan gains 10 Overconfidence, he gains 25% Void Touch Cleanse (limit 1 per battle).",
         "upgrades": [
           "Lv. 2: +10% Attack, Defense and Max Health",
-          "Lv. 3: When Bohdan gains 10 Overconfidence, he gains 20% Void Touch Cleanse (limit 1 per battle).",
+          "Lv. 3: When Bohdan gains 10 Overconfidence, he gains 25% Void Touch Cleanse (limit 1 per battle).",
           "Lv. 4: [On Embrace The Void] Bohdan gains 2 Overconfidence and 3 Wrath.",
           "Lv. 5: When under Void Power, each time Bohdan defeats an enemy, he gains 1 Wrath per 1 Void Power."
         ],
@@ -1186,7 +1170,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 200% ATK damage to target enemy inflicting Stagger for 2 turn(s). This attack deals +20% damage to enemies under Control debuffs.",
+        "description": "Deal 200% ATK damage to target enemy inflicting Stagger for 2 turn(s).\n\nThis attack deals +20% damage to enemies under Control debuffs.",
         "upgrades": [
           "Lv. 2: +15% ATK damage",
           "Lv. 3: +20% ATK damage; 50% chance to inflict Stagger for 2 turn(s),",
@@ -1208,12 +1192,12 @@
           "Debuffs",
           "Cooldowns Down"
         ],
-        "description": "Gain full Debuff Dispel, Focus Up for 2 turn(s) and 40% Turn Meter Up and grant the same effects to Leo. Then, inflict Fear on target enemy and 2 random enemies for 1 turn(s). Apply Cooldowns Down on all skills of Seasoned and Free Tribes allies.",
+        "description": "Gain full Debuff Dispel, Crit Damage Up for 2 turn(s) and 40% Turn Meter Up and grant the same effects to Leo. Then, inflict Fear on target enemy and 2 random other enemies for 1 turn(s).\n\nApply Cooldowns Down on all skills of Seasoned and Free Tribes allies.",
         "upgrades": [
           "Lv. 2: -1 Cooldown; +10% Turn Meter Up",
           "Lv. 3: +20% Turn Meter Up",
           "Lv. 4: Apply Cooldowns Down on Earthshaker.",
-          "Lv. 5: Leo also gains Debuff Dispel, Focus Up and Turn Meter Up."
+          "Lv. 5: Leo also gains Debuff Dispel, Crit Damage Up and Turn Meter Up."
         ],
         "image": null
       },
@@ -1235,7 +1219,7 @@
           "Lv. 3: +10% ATK damage, 25% chance to inflict Daze for 1 turn(s),",
           "Lv. 4: +15% ATK damage; +25% chance to inflict Daze",
           "Lv. 5: +15% ATK damage; always inflict Daze,",
-          "Lv. 6: +30% ATK damage; On critical hit inflict Daze for 2 turn(s) instead."
+          "Lv. 6: +30% ATK damage; On critical hit inflct Daze for 2 turn(s) instead."
         ],
         "image": null
       },
@@ -1249,7 +1233,7 @@
           "Attr. Up",
           "Attr. Down"
         ],
-        "description": "Bomor deals damage depending on target's role: +20% damage vs. Tank enemies; +10% damage vs. Attacker enemies; -10% damage vs. Support enemies. [On Round Start] Bomor gains +5% Crit Rate for each enemy Tank or Attacker until [End of Round].",
+        "description": "\"Bomor deals damage depending on target's role:\n+20% damage vs. Tank enemies;\n+10% damage vs. Attacker enemies;\n-10% damage vs. Support enemies;\"\n\n[On Round Start] Bomor gains +5% Crit Rate for each enemy Tank or Attacker until [End of Round].",
         "upgrades": [
           "Lv. 2: +2% damage vs Tank; +1% damage vs Attacker,",
           "Lv. 3: +2% damage vs Tank; +1% damage vs Attacker",
@@ -1270,7 +1254,7 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Bomor can trigger Embrace The Void to gain Void Power. Bomor gains +20% Attack, Focus and Hit Rate per 1 Void Power. [On Embrace The Void] Bomor gains Attack Up for 2 turn(s). When under Void Power, each time Bomor defeats an enemy, he has [25% x Void Power] chance to gain a Bonus Turn. When Bomor defeats 2 or more enemies with a single hit, he gains 10% Void Touch Cleanse.",
+        "description": "Bomor can trigger Embrace The Void to gain Void Power.\nBomor gains +20% Attack, Focus and Hit Rate per 1 Void Power.\n\n[On Embrace The Void] Bomor gains Attack Up for 2 turn(s).\n\nWhen under Void Power, each time Bomor defeats an enemy, he has [25% x Void Power] chance to gain a Bonus Turn.\n\nWhen Bomor defeats 2 or more enemies with a single hit, he gains 10% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Attack, Focus and Hit Rate.",
           "Lv. 3: When Bomor defeats 2 or more enemies with a single hit, he gains 10% Void Touch Cleanse.",
@@ -1472,12 +1456,12 @@
           "Turn Meter Up",
           "Cooldowns Down"
         ],
-        "description": "Gain Focus Up for 2 turn(s) and deal 375% ATK damage to target enemy. Then gain 40% Turn Meter Up plus 1% for each Will or 100% Turn Meter Up if under Will Supreme. Gain Cooldowns Down on Obliviate.",
+        "description": "Gain Focus Up for 2 turn(s) and deal 400% ATK damage to target enemy. Then gain 40% Turn Meter Up plus 1% for each Will or 100% Turn Meter Up if under Will Supreme.\n\nGain Cooldowns Down on Obliviate.",
         "upgrades": [
-          "Lv. 2: +25% ATK damage, +5% Turn Meter Up",
-          "Lv. 3: +30% ATK damage, +5% Turn Meter Up, -1 Cooldown",
-          "Lv. 4: +45% ATK damage, +10% Turn Meter Up; Additional 1% Turn Meter Up for each Will.",
-          "Lv. 5: +75% ATK damage, +10% Turn Meter Up; 100% Turn Meter Up if under Will Supreme.",
+          "Lv. 2: +30% ATK damage, +5% Turn Meter Up",
+          "Lv. 3: +40% ATK damage, +5% Turn Meter Up, -1 Cooldown",
+          "Lv. 4: +50% ATK damage, +10% Turn Meter Up; Additional 1% Turn Meter Up for each Will.",
+          "Lv. 5: +80% ATK damage, +10% Turn Meter Up; 100% Turn Meter Up if under Will Supreme.",
           "★ Gain Cooldowns Down on Obliviate."
         ],
         "image": null
@@ -1495,14 +1479,14 @@
           "Turn Meter Down",
           "Debuffs"
         ],
-        "description": "Inflict full Buff Dispel and 20% Turn Meter Down (or 30% if under Will Supreme) on all enemies. Inflict Stun for 1 turn(s) on enemies whose Turn Meter is 0%. All effects are [Irresistible] for target enemy.",
+        "description": "Inflict full Buff Dispel and 30% Turn Meter Down (or 40% if under Will Supreme) on all enemies.  Inflict Stun for 1 turn(s) on enemies whose Turn Meter is 0%.",
         "upgrades": [
-          "Lv. 2: +1% Turn Meter Down",
-          "Lv. 3: +2% Turn Meter Down",
-          "Lv. 4: +2% Turn Meter Down; -1 Cooldown",
-          "Lv. 5: +10% Turn Meter Down (+15% if under Will Supreme).",
+          "Lv. 2: +2% Turn Meter Down",
+          "Lv. 3: +3% Turn Meter Down",
+          "Lv. 4: +5% Turn Meter Down; -1 Cooldown",
+          "Lv. 5: +10% Turn Meter Down (+40% if under Will Supreme).",
           "Lv. 6: Inflict Stun for 1 turn(s) on enemies whose Turn Meter was reduced to 0%.",
-          "★★★★★ All effects are [Irresistible] for target enemy."
+          "★★★★★ For target enemy Turn Meter Down is doubled and all effects are [Irresistible]."
         ],
         "image": null
       },
@@ -1518,7 +1502,7 @@
           "AoE",
           "Damage"
         ],
-        "description": "[Requires Will Nexus and Will Supreme] Deal 500% ATK damage to all enemies. Lose Will Nexus.",
+        "description": "[Requires Will Nexus and Will Supreme]\n\nDeal 500% ATK damage to all enemies.\n\nLose Will Nexus.",
         "upgrades": [],
         "image": null
       },
@@ -1526,7 +1510,7 @@
         "order": 5,
         "name": "ARCHPRIEST ANATHEMIZED",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
@@ -1534,7 +1518,7 @@
           "Buffs",
           "Debuffs"
         ],
-        "description": "Holy Order allies have +20% Focus and Resistance and additionally +10% Attack and Defense if they are Knight or Priest. When a Holy Order enemy deals damage to Faustus, they suffer Fear for 1 turn(s) (limit 1 per enemy per turn). When called to Assist while without Will Supreme, Faustus gains 1 Will instead.",
+        "description": "Holy Order allies have +20% Focus and Resistance and additionally +10% Attack and Defense if they are Knight or Priest.\n\nWhen a Holy Order enemy deals damage to Faustus, they suffer Fear for 1 turn(s) (limit 1 per enemy per turn).\n\nWhen called to Assist while without Will Supreme, Faustus gains 1 Will instead.",
         "upgrades": [
           "Lv. 2: +2% Focus and Resistance",
           "Lv. 3: +2% Focus and Resistance",
@@ -1554,7 +1538,7 @@
           "Buffs",
           "Attr. Up"
         ],
-        "description": "Faustus gains 1 Will each time an ally uses a Light skill (or 2 Will if this ally is Priest). When Faustus gains 20 Will (or 80 Will if he has Will Nexus), he loses all Will and gains Will Supreme. Faustus has Hit Rate and Attack increased by 10% of his Focus (or 30% if Faustus has Will Supreme).",
+        "description": "Faustus gains 1 Will each time an ally uses a Light skill (or 2 Will if this ally is Priest).\nWhen Faustus gains 20 Will (or 80 Will if he has Will Nexus), he loses all Will and gains Will Supreme.\n\nFaustus has Hit Rate and Attack increased by 10% of his Focus (or 30% if Faustus has Will Supreme).",
         "upgrades": [
           "Lv. 2: +1% Focus bonus (or +3% under Will Supreme)",
           "Lv. 3: +1% Focus bonus (or +3% under Will Supreme)",
@@ -1573,7 +1557,7 @@
           "Skill Trigger",
           "Buffs"
         ],
-        "description": "If there are at least 3 Sage allies, Faustus can trigger Archmind to gain Will Nexus. When Faustus has both Will Nexus and Will Supreme he can use Light God's Wrath.",
+        "description": "If there are at least 3 Sage allies, Faustus can trigger Archmind to gain Will Nexus.\nWhen Faustus has both Will Nexus and Will Supreme he can use Light God's Wrath.",
         "upgrades": [],
         "image": null
       },
@@ -1587,7 +1571,7 @@
           "Skill Trigger",
           "Buffs"
         ],
-        "description": "Faustus can trigger Holy Vow to become Vowkeeper. When Faustus is Vowkeeper, gain 20 True to Vows to fulfill his Vow granting all Holy Order allies Faustus' Vow. Faustus gains 1 True to Vows each time a Holy Order ally grants Turn Meter Up to an ally or inflicts Turn Meter Down on an enemy.",
+        "description": "Faustus can trigger Holy Vow to become Vowkeeper.\n\nWhen Faustus is Vowkeeper, gain 20 True to Vows to fullfill his Vow granting all Holy Order allies Faustus' Vow.\n\nFaustus gains 1 True to Vows each time a Holy Order ally grants Turn Meter Up to an ally or inflicts Turn Meter Down on an enemy.",
         "upgrades": [],
         "image": null
       },
@@ -1603,7 +1587,7 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Faustus can trigger Embrace The Void to gain Void Power. Faustus gains +25% Focus and +15% Attack and Resistance per 1 Void Power. [On Embrace The Void] Faustus gains 5 Will (or 10 if he has Will Nexus). When under Void Power, each time Faustus suffers Void Touch, he gains 1 Will for each Void Power. When Faustus gains Will Supreme, he gains 15% Void Touch Cleanse.",
+        "description": "Faustus can trigger Embrace The Void to gain Void Power.\nFaustus gains +25% Focus and +15% Attack and Resistance per 1 Void Power.\n\n[On Embrace The Void] Faustus gains 5 Will (or 10 if he has Will Nexus).\n\nWhen under Void Power, each time Faustus suffers Void Touch, he gains 1 Will for each Void Power.\n\nWhen Faustus gains Will Supreme, he gains 15% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Focus, Attack and Resistance",
           "Lv. 3: When Faustus gains Will Supreme, he gains 15% Void Touch Cleanse.",
@@ -1781,12 +1765,12 @@
           "Damage",
           "Void Touch"
         ],
-        "description": "Deal 140% ATK damage to target enemy inflicting 2% Void Touch.\n\nInflicted Void Touch is tripled against Consumed and Tainted enemies.",
+        "description": "Deal 140% ATK damage to target enemy inflicting 3% Void Touch.\n\nInflicted Void Touch is tripled against Consumed and Tainted enemies.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
-          "Lv. 3: +15% ATK damage, 25% chance to inflict 2% Void Touch.",
-          "Lv. 4: +20% ATK damage, +25% chance to inflict 2% Void Touch.",
-          "Lv. 5: +25% ATK damage, always inflict 2% Void Touch.",
+          "Lv. 3: +15% ATK damage, 25% chance to inflict 3% Void Touch.",
+          "Lv. 4: +20% ATK damage, +25% chance to inflict 3% Void Touch.",
+          "Lv. 5: +25% ATK damage, always inflict 3% Void Touch.",
           "★★ Inflicted Void Touch is tripled against Consumed and Tainted enemies."
         ],
         "image": null
@@ -1796,7 +1780,7 @@
         "name": "JUST A DROP",
         "level": "Max",
         "type": "Special",
-        "cooldown": null,
+        "cooldown": 1,
         "tags": [
           "Buffs",
           "Turn Meter Up"
@@ -1822,7 +1806,7 @@
           "Turn Meter Up",
           "Debuff Dispel"
         ],
-        "description": "Grant target ally 40% Healing with additional effects based on stacks of Dark Vial (cumulative):\n1: grant target ally 30% Turn Meter Up; if they are Seasoned, grant them Speed Up for 2 turn(s) as well,\n2: grant target ally full Debuff Dispel and Debuff Immunity for 2 turn(s),\n3: grant 60% Healing instead.\n\nLose all Dark Vial.",
+        "description": "\"Grant target ally 40% Healing with additional effects based on stacks of Dark Vial (cumulative):\n1: grant target ally 30% Turn Meter Up; if they are Seasoned, grant them Speed Up for 2 turn(s) as well,\"\n2: grant target ally full Debuff Dispel and Debuff Immunity for 2 turn(s),\n3: grant 60% Healing instead.\n\nLose all Dark Vial.",
         "upgrades": [
           "Lv. 2: +3% healing, +3% Turn Meter Up",
           "Lv. 3: +3% healing, +3% Turn Meter Up",
@@ -1845,7 +1829,7 @@
           "Turn Meter Up",
           "Debuff Dispel"
         ],
-        "description": "Grant all allies 25% Healing with additional effects based on stacks of Dark Vial (cumulative):\n1: grant all allies 20% Turn Meter Up; grant Seasoned allies Speed Up for 1 turn(s),\n2: grant each ally full Debuff Dispel,\n3: grant 40% Healing instead.\n\nLose all Dark Vial.",
+        "description": "\"Grant all allies 25% Healing with additional effects based on stacks of Dark Vial (cumulative):\n1: grant all allies 20% Turn Meter Up; grant Seasoned allies Speed Up for 1 turn(s),\"\n2: grant each ally full Debuff Dispel,\n3: grant 40% Healing instead.\n\nLose all Dark Vial.",
         "upgrades": [
           "Lv. 2: +1% healing, +1% Turn Meter Up",
           "Lv. 3: +2% healing, +2% Turn Meter Up",
@@ -1866,7 +1850,7 @@
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Lilith can have up to 3 Dark Vial and suffers 1% Void Touch each time she loses a stack.\n\nWhen healing an ally, for each Dark Vial used, this ally suffers 2% Void Touch (or 1% Void Touch if healing by AoE skill).\n\nLilith won't cleanse Void Touch when granting Healing.\n\nLilith has +25% Healing Effect on Seasoned allies.\n\n[On Battle Start] If all allies are Seasoned, Lilith gains 1 Dark Vial and +10% Speed.",
+        "description": "Lilith can have up to 3 Dark Vial and suffers 1% Void Touch each time she loses a stack.\n\nWhen healing an ally, for each Dark Vial used, this ally suffers 2% Void Touch (or 1% Void Touch if healing by AoE skill).\n\nLilith has +25% Healing Effect on Seasoned allies.\n\n[On Battle Start] If all allies are Seasoned, Lilith gains 1 Dark Vial and +10% Speed.",
         "upgrades": [
           "★★★★★ Lilith has +25% Healing Effect on Seasoned allies. [On Battle Start] If all allies are Seasoned, Lilith gains 1 Dark Vial and +10% Speed."
         ],
@@ -1884,12 +1868,12 @@
           "Void Touch Cleanse",
           "Buffs",
           "Debuff Dispel",
-          "He[truncated]"
+          "Healing"
         ],
-        "description": "Lilith can trigger Embrace The Void to gain Void Power.\nLilith gains +15% Max Health, Healing Effect and Crit Resistance per 1 Void Power.\n\n[On Embrace The Void] Lilith gains 3 Dark Vial, full Debuff Dispel and Bonus Turn.\n\nWhen under Void Power, each time Lilith gains Dark Vial, she also gains 5% Healing.\n\nEach time Lilith fully heals a Seasoned ally using 3 Dark Vial, she gains 5% Void Touch Cleanse (limit 1 per turn).",
+        "description": "Lilith can trigger Embrace The Void to gain Void Power.\nLilith gains +20% Max Health, Healing Effect and Crit Resistance per 1 Void Power.\n\n[On Embrace The Void] Lilith gains 3 Dark Vial, full Debuff Dispel and Bonus Turn.\n\nWhen under Void Power, each time Lilith gains Dark Vial, she also gains 5% Healing.\n\nEach time Lilith fully heals a Seasoned ally using 3 Dark Vial, she gains 8% Void Touch Cleanse (limit 1 per turn).",
         "upgrades": [
-          "Lv. 2: +5% Max Health, Healing Effect and Crit Resistance",
-          "Lv. 3: Each time Lilith fully heals a Seasoned ally using 3 Dark Vial, she gains 5% Void Touch Cleanse (limit 1 per turn).",
+          "Lv. 2: +10% Max Health, Healing Effect and Crit Resistance",
+          "Lv. 3: Each time Lilith fully heals a Seasoned ally using 3 Dark Vial, she gains 8% Void Touch Cleanse (limit 1 per turn).",
           "Lv. 4: [On Embrace The Void] Lilith gains 3 Dark Vial, full Debuff Dispel and Bonus Turn.",
           "Lv. 5: When under Void Power, each time Lilith gains Dark Vial, she also gains 5% Healing."
         ],
@@ -2106,12 +2090,12 @@
           "Debuffs",
           "Buffs"
         ],
-        "description": "Grant Holy Order allies, ally with Divine Protection and ally with lowest Health 2 Guard for 3 turn(s).\n\nDeal 150% ATK damage inflicting Vulnerable for 2 turn(s), then deal 100% ATK damage, inflicting Stagger for 2 turn(s) and call Nadia to Assist.\n\nIf Natalie has Taunt, the debuffs are [Irresistible] and this attack deals double damage.",
+        "description": "Grant Holy Order allies, ally with Divine Protection and ally with lowest Health 2 Guard for 3 turn(s).\n\nDeal 100% ATK damage inflicting Vulnerable for 2 turn(s), then deal 200% ATK damage, inflicting  Stagger for 2 turn(s) and call Nadia to Assist.\n\nIf Natalie has Taunt, the debuffs are [Irresistible] and this attack deals double damage.",
         "upgrades": [
-          "Lv. 2: +10%/+5% ATK damage",
-          "Lv. 3: +15%/+5% ATK damage, -1 Cooldown",
-          "Lv. 4: +20%/+10% ATK damage, -1 Cooldown; call Nadia to Assist.",
-          "Lv. 5: +30%/+20% ATK damage. Before the attack, grant Holy Order allies, ally with Divine Protection and ally with lowest Health 3 Guard for 2 turn(s).",
+          "Lv. 2: +5%/+10% ATK damage",
+          "Lv. 3: +10%/+20% ATK damage, -1 Cooldown",
+          "Lv. 4: +15%/+30% ATK damage, -1 Cooldown; call Nadia to Assist.",
+          "Lv. 5: +20%/+40% ATK damage. Before the attack, grant Holy Order allies, ally with Divine Protection and ally with lowest Health 3 Guard for 2 turn(s).",
           "★ If Natalie has Taunt, the debuffs are [Irresistible] and this attack deals double damage."
         ],
         "image": null
@@ -2127,12 +2111,12 @@
           "Turn Meter Up",
           "Shield"
         ],
-        "description": "When an ally with Divine Protection loses 20% Health in a single hit, Natalie gains 30% Turn Meter Up. When this ally's Health drops below 50%, Natalie gains Taunt for 2 Turn(s).\n\nIf Nadia is an ally, she triggers the effects above even if she does not have Divine Protection.\n\nEach time Natalie gains Taunt, she also gains 20% Shield for 3 turn(s).",
+        "description": "When an ally with Divine Protection loses 20% Health in a single hit, Natalie gains 50% Turn Meter Up. When this ally's Health drops below 50%, Natalie gains Taunt for 2 Turn(s).\n\nIf Nadia is an ally, she triggers the effects above even if she does not have Divine Protection.\n\nEach time Natalie gains Taunt, she also gains 20% Shield for 3 turn(s).",
         "upgrades": [
-          "Lv. 2: +3% Turn Meter Up",
-          "Lv. 3: +3% Turn Meter Up",
-          "Lv. 4: +3% Turn Meter Up",
-          "Lv. 5: +6% Turn Meter Up, +1 Taunt duration",
+          "Lv. 2: +5% Turn Meter Up",
+          "Lv. 3: +5% Turn Meter Up",
+          "Lv. 4: +5% Turn Meter Up",
+          "Lv. 5: +15% Turn Meter Up, +1 Taunt duration",
           "★★★★★ Each time Natalie gains Taunt, she also gains 20% Shield for 3 turn(s)."
         ],
         "image": null
@@ -2141,16 +2125,16 @@
         "order": 5,
         "name": "KNIGHT OF THE ORDER",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Natalie gains 5% Defense for each Holy Order ally and 5% Crit Defense for each Knight ally, but loses 10% Resistance for each Tainted ally.\n\nAdditionally, Natalie gains 10% Crit Resistance per 1 Guard.\n\nIf Nadia is an ally, all these bonuses are doubled and affect Nadia as well and all Shield effects on Nadia and Natalie are doubled.",
+        "description": "Natalie gains 10% Defense for each Holy Order ally and 5% Crit Defense for each Knight ally, but loses 10% Resistance for each Tainted ally.\n\nAdditionally, Natalie gains 10% Crit Resistance per 1 Guard.\n\nIf Nadia is an ally, all these bonuses are doubled and affect Nadia as well and all Shield effects on Nadia and Natalie are doubled.",
         "upgrades": [
-          "Lv. 2: +1% Defense, +1% Crit Defense",
-          "Lv. 3: +2% Defense, +2% Crit Defense",
+          "Lv. 2: +2% Defense, +1% Crit Defense",
+          "Lv. 3: +3% Defense, +2% Crit Defense",
           "Lv. 4: +10% Crit Resistance per 1 Guard",
           "Lv. 5: If Nadia is an ally, all these bonuses are doubled and affect Nadia as well.",
           "Lv. 6: If Nadia is an ally, all Shield effects on her and Natalie are doubled."
@@ -2165,9 +2149,10 @@
         "cooldown": null,
         "tags": [
           "Skill Trigger",
-          "Attr. Up"
+          "Status",
+          "Buffs"
         ],
-        "description": "Natalie can trigger Holy Vow to become Vowkeeper.\n\nWhen Natalie is Vowkeeper, gain 20 True to Vows to fullfill her Vow, granting all Holy Order allies Natalie's Vow and giving all allies 3 Guard for 3 turn(s).\n\nNatalie gains 1 True to Vows each time a Holy Order ally grants Shield or Guard to an ally (or 2 True to Vows if that ally is below 50% Health).",
+        "description": "Natalie can trigger Holy Vow to become Vowkeeper.\n\nWhen Natalie is Vowkeeper, gain 20 True to Vows to fullfill her Vow, granting all Holy Order allies Natalie's Vow and granting all allies 3 Guard for 3 turn(s).\n\nNatalie gains 1 True to Vows each time a Holy Order ally grants Shield or Guard to an ally (or 2 True to Vows if that ally is below 50% Health).",
         "upgrades": [],
         "image": null
       },
@@ -2461,7 +2446,7 @@
           "Attr. Up",
           "Void Touch Cleanse",
           "Cooldowns Down",
-          "Void T"
+          "Void Touch"
         ],
         "description": "Robin can trigger Embrace The Void to gain Void Power.\nRobin gains +15% Attack, Focus and +10% Speed per 1 Void Power.\n\n[On Embrace The Void] Robin gains Cooldowns Reset on Wildfire.\n\nWhen under Void Power, each time Robin inflicts Burning, she also inflicts 5% Void Touch per 1 Void Power.\n\nWhen last Holy Order enemy is defeated, Robin gains 10% Void Touch Cleanse.",
         "upgrades": [
@@ -2703,13 +2688,13 @@
         "name": "UNHOLY ASCENSION",
         "level": "Max",
         "type": "Special",
-        "cooldown": null,
+        "cooldown": 4,
         "tags": [
           "Debuff Dispel",
           "Debuffs",
           "Turn Meter Up"
         ],
-        "description": "[Requires Void Power]\n\nApply full Debuff Dispel to all Consumed and Tainted allies and inflict dispelled Debuff(s) on target enemy. Then, grant 10% Turn Meter Up to all allies for each Void Power.",
+        "description": "[Requires Void Power]\n\nApply full Debuff Dispel to all Consumed and Tainted allies and inflict dispelled Debuff(s) on target enemy. Then, grant [10% x Void Power] Turn Meter Up to all allies.",
         "upgrades": [],
         "image": null
       },
@@ -2736,7 +2721,7 @@
         "order": 6,
         "name": "DARK FAITH",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
@@ -2744,7 +2729,7 @@
           "Debuffs",
           "Turn Meter Up"
         ],
-        "description": "Other Tainted or Consumed allies have +15% Max Health and Defense (doubled if they are Holy Order).\n\nEach time an ally inflicts Void Touch, they gain 10% Turn Meter Up.\n\n[On Battle Start] Holy Order allies who are neither Tainted nor Consumed suffer [Undispellable] Speed Down for 2 turn(s).",
+        "description": "Tainted or Consumed allies have +15% Max Health and Defense (doubled if they are Holy Order). Enemies defeated by Holy Order allies who are Tainted or Consumed, cannot gain Revive.\n\nEach time an ally inflicts Void Touch, they gain 10% Turn Meter Up.\n\n[On Battle Start] Holy Order allies who are neither Tainted nor Consumed suffer [Undispellable] Speed Down for 2 turn(s).",
         "upgrades": [
           "Lv. 2: +1% Max Health and Defense",
           "Lv. 3: +2% Max Health and Defense",
@@ -2764,7 +2749,7 @@
           "Skill Trigger",
           "Buffs"
         ],
-        "description": "St. Hermeida can trigger Holy Vow to become Vowkeeper.\n\nWhen St. Hermeida is Vowkeeper, gain 25 True to Vows to fullfill her Vow, granting all Holy Order allies Hermeida's Vow.\n\nSt. Hermeida gains 1 True to Vows each time a Holy Order ally inflicts Void Touch on an enemy and 5 True to Vows each time a Holy Order ally triggers Embrace The Void.",
+        "description": "St. Hermeida can trigger Holy Vow to become Vowkeeper.\n\nWhen St. Hermeida is Vowkeeper, gain 20 True to Vows to fullfill her Vow, granting all Holy Order allies Hermeida's Vow and inflicting 10% Void Touch on all enemies.\n\nSt. Hermeida gains 1 True to Vows each time a Holy Order ally inflicts Void Touch on an enemy and 5 True to Vows each time a Holy Order ally triggers Embrace The Void.",
         "upgrades": [],
         "image": null
       },
@@ -3023,11 +3008,11 @@
           "Debuffs",
           "Turn Meter Down"
         ],
-        "description": "Deal 300% ATK damage to target enemy, inflict Attack Down for 2 turn(s) and inflict 100% Turn Meter Down. This attack's damage is increased based on target's Turn Meter, up to 100% at full Turn Meter.\n\nIf this attack defeats the enemy, inflict Fear for 1 turn(s) on all enemies.",
+        "description": "Deal 300% ATK damage to target enemy, inflict Defense Down for 2 turn(s) and inflict 100% Turn Meter Down. This attack's damage is increased based on target's Turn Meter, up to 100% at full Turn Meter.\n\nIf this attack defeats the enemy, inflict Fear for 1 turn(s) on all enemies.",
         "upgrades": [
           "Lv. 2: +20% ATK damage",
           "Lv. 3: +20% ATK damage, -1 Cooldown",
-          "Lv. 4: +25% ATK damage; Inflict Attack Down for 2 turn(s).",
+          "Lv. 4: +25% ATK damage; Inflict Defense Down for 2 turn(s).",
           "Lv. 5: +35% ATK damage; Inflict 100% Turn Meter Down.",
           "Lv. 6: +50% ATK damage; Damage scaling based on the target's Turn Meter increased to 100%",
           "★★★★★ If this attack defeats the enemy, inflict Fear for 1 turn(s) on all enemies."
@@ -3036,6 +3021,26 @@
       },
       {
         "order": 5,
+        "name": "DUAL FORM",
+        "level": "Max",
+        "type": "Special",
+        "cooldown": 3,
+        "tags": [
+          "Buffs",
+          "Turn Meter Up",
+          "Debuff Dispel"
+        ],
+        "description": "Switch stances between Dual Wielding and Heavy Sword, gain full Debuff Dispel and 60% Turn Meter Up.\n\nOn Dual Wielding, gain Crit Damage Up and Speed Up for 2 turn(s).\nOn Heavy Sword, gain Defense Up and Crit Immunity for 2 turn(s).",
+        "upgrades": [
+          "Lv. 2: +10% Turn Meter Up",
+          "Lv. 3: On Dual Wielding, gain Crit Damage Up for 2 turn(s); On Heavy Sword, gain Defense Up for 2 turn(s)",
+          "Lv. 4: On Dual Wielding, also gain Speed Up for 2 turn(s); On Heavy Sword, also gain Crit Immunity for 2 turn(s)",
+          "Lv. 5: +25% Turn Meter Up; Gain full Debuff Dispel when switching stances."
+        ],
+        "image": null
+      },
+      {
+        "order": 6,
         "name": "BLADE MASTERY",
         "level": "Max",
         "type": "Trait",
@@ -3055,10 +3060,10 @@
         "image": null
       },
       {
-        "order": 6,
+        "order": 7,
         "name": "THE UNDEFEATED",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
@@ -3075,7 +3080,7 @@
         "image": null
       },
       {
-        "order": 7,
+        "order": 8,
         "name": "VOID EMBRACE",
         "level": "Max",
         "type": "Trait",
@@ -3087,9 +3092,9 @@
           "Debuff Dispel",
           "Buffs"
         ],
-        "description": "Tiche can trigger Embrace The Void to gain Void Power.\nTiche gains +5% Dodge, +10% Crit Rate and +25% Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Tiche gains full Debuff Dispel and Debuff Immunity for 2 turn(s).\n\nWhen under Void Power, Tiche gains bonus Attack equal to half of her Void Touch.\n\nWhen Tiche defeats an enemy with a Special Skill(s), she gains 2% Void Touch Cleanse (limit 1 per enemy per Battle).",
+        "description": "Tiche can trigger Embrace The Void to gain Void Power.\nTiche gains +5% Dodge, +10% Crit Rate and +30% Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Tiche gains full Debuff Dispel and Debuff Immunity for 2 turn(s).\n\nWhen under Void Power, Tiche gains bonus Attack equal to half of her Void Touch.\n\nWhen Tiche defeats an enemy with a Special Skill(s), she gains 2% Void Touch Cleanse (limit 1 per enemy per Battle).",
         "upgrades": [
-          "Lv. 2: +5% Crit Rate, +10% Crit Dmg",
+          "Lv. 2: +5% Crit Rate, +15% Crit Dmg",
           "Lv. 3: When Tiche defeats an enemy with a special skill, she gains 2% Void Touch Cleanse (limit 1 per enemy per battle).",
           "Lv. 4: [On Embrace The Void] Tiche gains full Debuff Dispel and Debuff Immunity for 2 turn(s).",
           "Lv. 5: When under Void Power, Tiche gains bonus Attack equal to half of her Void Touch."
@@ -3265,7 +3270,7 @@
           "Buffs",
           "Debuffs"
         ],
-        "description": "Deal 175% ATK damage to target enemy. On Assist, grant Charm to the ally she assists to. On Counter, grant Hex to target enemy. Otherwise, either gain Charm or grant Hex to target enemy, chosen randomly at equal chance.",
+        "description": "Deal 175% ATK damage to target enemy.\n\nOn Assist, grant Charm to the ally she assists to.\nOn Counter, grant Hex to target enemy.\nOtherwise, either gain Charm or grant Hex to target enemy, chosen randomly at equal chance.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
@@ -3284,7 +3289,7 @@
           "AoE",
           "Buffs"
         ],
-        "description": "Grant 2 Charm to random allies (or 3 if all allies are Carnivale). Grant following Buff(s) for 3 turn(s) to all allies based on their respective number of Charm: 1 or more: Fortune / 2 or more: Foresight / 3 or more: Invulnerability for each Charm",
+        "description": "Grant 2 Charm to random allies (or 3 if all allies are Carnivale). Grant following Buff(s) for 3 turn(s) to all allies based on their respective number of Charm:\n1 or more: Fortune\n2 or more: Foresight\n3 or more: Invulnerability for each Charm",
         "upgrades": [
           "Lv. 2: -1 Cooldown",
           "Lv. 3: -1 Cooldown",
@@ -3304,7 +3309,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Inflict 2 Hex on random enemies (or 2 if all allies are Carnivale) and inflict following Debuff(s) for 3 turn(s) to all enemies based on their respective stacks of Hex: 1 or more: Misfortune / 2 or more: Curse / 3 or more: Deathmark. Then, deal 150% ATK damage to all enemies. Each Hex on target grants additional 45% ATK damage.",
+        "description": "Inflict 2 Hex on random enemies (or 2 if all allies are Carnivale) and inflict following Debuff(s) for 3 turn(s) to all enemies based on their respective stacks of Hex:\n1 or more: Misfortune\n2 or more: Curse\n3 or more: Deathmark\n\nThen, deal 150% ATK damage to all enemies. Each Hex on target grants additional 45% ATK damage.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +10% ATK damage",
@@ -3326,7 +3331,7 @@
           "Cooldowns Down",
           "Turn Meter Down"
         ],
-        "description": "Whenever an ally gains 4 Charm, they gain Cooldowns Reset on all skills, Bonus Turn and lose all Charm when their turn ends. Whenever an enemy suffers 4 Hex, they suffer Cooldowns Max on all skills, [Irresistible] 100% Turn Meter Down and lose all Hex when their turn starts. When Cassandra is defeated or the Round(s) ends, all Charm on allies and Hex on enemies are removed.",
+        "description": "Whenever an ally gains 4 Charm, they gain Cooldowns Reset on all skills, Bonus Turn and lose all Charm when their turn ends.\n\nWhenever an enemy suffers 4 Hex, they suffer Cooldowns Max on all skills, [Irresistible] 100% Turn Meter Down and lose all Hex when their turn starts.\n\nWhen Cassandra is defeated or the Round(s) ends, all Charm on allies and Hex on enemies are removed.",
         "upgrades": [],
         "image": null
       },
@@ -3342,7 +3347,7 @@
           "Counter",
           "Status"
         ],
-        "description": "Cassandra has 30% chance to Counter whenever another Archlands ally is damaged during enemy turn and 30% chance to Assist whenever another Archlands ally uses a special skill. Carnivale allies trigger same effects, but with chances doubled. [On Round Start] Cassandra gains 5% Turn Meter Up for each active Archlands ally, grants 2 Charm to random Archlands allies and 1 more Charm to each Carnivale ally. Carnivale allies have +5% Dmg Reduction per each Charm on them and deal 10% more damage per Hex on their target and Cassandra has +5% Speed for each other active Carnivale ally.",
+        "description": "Cassandra has 30% chance to Counter whenever another Archlands ally is damaged during enemy turn and 30% chance to Assist whenever another Archlands ally uses a special skill. Carnivale allies trigger same effects, but with chances doubled.\n\n[On Round Start] Cassandra gains 5% Turn Meter Up for each active Archlands ally, grants 2 Charm to random Archlands allies and 1 more Charm to each Carnivale ally.\n\nCarnivale allies have +5% Dmg Reduction per each Charm on them and deal 10% more damage per Hex on their target and Cassandra has +5% Speed for each other active Carnivale ally.",
         "upgrades": [
           "Lv. 2: +2% counter chance, +2% assist chance,",
           "Lv. 3: +2% counter chance, +2% assist chance,",
@@ -3362,7 +3367,7 @@
           "Skill Trigger",
           "Debuffs"
         ],
-        "description": "If there are at least 3 Carnivale allies, Cassandra can trigger Star of the Show to gain Spotlight. When Cassandra gains Spotlight, all enemies suffer 1 Hex. When Cassandra has Spotlight, each time she starts a turn she inflicts Hex on 2 different random enemies.",
+        "description": "If there are at least 3 Carnivale allies, Cassandra can trigger Star of the Show to gain Spotlight.\n\nWhen Cassandra gains Spotlight, all enemies suffer 1 Hex.\nWhen Cassandra has Spotlight, each time she starts a turn she inflicts Hex on 2 different random enemies.",
         "upgrades": [],
         "image": null
       },
@@ -3378,7 +3383,7 @@
           "Void Touch Cleanse",
           "Debuffs"
         ],
-        "description": "Cassandra can trigger Embrace The Void to gain Void Power. Cassandra gains +15% Attack, Speed and Max Health per 1 Void Power. [On Embrace The Void] Cassandra inflicts 1 Hex on all enemies. When under Void Power, on dealing damage to an enemy under Hex, Cassandra deals bonus damage equal to 5% Max Health of this enemy for each Void Power. When Cassandra gains 4 Charm, she gains 10% Void Touch Cleanse (limit 1 per round).",
+        "description": "Cassandra can trigger Embrace The Void to gain Void Power.\nCassandra gains +15% Attack, Speed and Max Health per 1 Void Power.\n\n[On Embrace The Void] Cassandra inflicts 1 Hex on all enemies.\n\nWhen under Void Power, on dealing damage to an enemy under Hex, Cassandra deals bonus damage equal to 5% Max Health of this enemy for each Void Power.\n\nWhen Cassandra gains 4 Charm, she gains 10% Void Touch Cleanse (limit 1 per round).",
         "upgrades": [
           "Lv. 2: +5% Attack, Speed and Max Health",
           "Lv. 3: When Cassandra gains 4 Charm, she gains 10% Void Touch Cleanse (limit 1 per round).",
@@ -3560,12 +3565,12 @@
           "Void Touch",
           "Healing"
         ],
-        "description": "Unless under Mark of Burden, grant a random non-Control Debuff Dispel to each other ally and transfer dispelled Debuff(s) (except Persistent ones) to herself, which is [Irresistible], then gain 1 Guard for each debuff transferred.\n\nDeal 175% ATK damage to target enemy.\n\nWhen under Void Power, if a debuff was dispelled from an ally, grant that ally 10% Healing.",
+        "description": "Unless under Mark of Burden, grant a random non-Control Debuff Dispel to each other ally and transfer dispelled Debuff(s) (except Persistent ones) to herself, which is [Irresistible], then gain 1 Guard for each debuff transferred.\n\nDeal 200% ATK damage to target enemy.\n\nWhen under Void Power, if a debuff was dispelled from an ally, grant that ally 10% Healing.",
         "upgrades": [
           "Lv. 2: +15% ATK damage",
-          "Lv. 3: +15% ATK damage",
-          "Lv. 4: +20% ATK damage; Gain 1 Guard for each debuff transferred.",
-          "Lv. 5: +35% ATK damage; When under Void Power, if a debuff was removed from an ally, grant that ally 10% Healing."
+          "Lv. 3: +20% ATK damage",
+          "Lv. 4: +25% ATK damage; Gain 1 Guard for each debuff transferred.",
+          "Lv. 5: +40% ATK damage; When under Void Power, if a debuff was removed from an ally, grant that ally 10% Healing."
         ],
         "image": null
       },
@@ -3581,13 +3586,13 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 360% ATK damage to target enemy inflicting 10% Void Touch, then, unless under Mark of Burden, inflict Healing Immunity and Buff Immunity for 2 turn(s).\n\nThis attack deals additional damage equal to % of Void Touch on Raven.\n\nDepending on stacks of Void Power on Raven:\n1+: Debuff(s) are [Irresistible]\n2+: Debuff(s) last 3 turn(s) instead\n4+: Debuff(s) are [Undispellable]",
+        "description": "Deal 400% ATK damage to target enemy inflicting 15% Void Touch, then, unless under Mark of Burden, inflict Healing Immunity and Buff Immunity for 2 turn(s).\n\nThis attack deals additional damage equal to % of Void Touch on Raven and enemies defeated by this skill cannot gain Revive.\n\nDepending on stacks of Void Power on Raven:\n1+: Debuff(s) are [Irresistible]\n2+: Debuff(s) last 3 turn(s) instead\n4+: Debuff(s) are [Undispellable]",
         "upgrades": [
-          "Lv. 2: +20% ATK damage",
-          "Lv. 3: +30% ATK damage; -1 Cooldown",
-          "Lv. 4: +30% ATK damage; +1% Void Touch; Depending on stacks of Void Power on Raven: 1+: Debuff(s) are [Irresistible] 2+: Debuff(s) last 3 turn(s) instead 4+: Debuff(s) are [Undispellable]",
-          "Lv. 5: +40% ATK damage; +2% Void Touch; also inflict Buff Immunity.",
-          "Lv. 6: +60% ATK damage; +3% Void Touch; This attack deals additional damage equal to % of Void Touch on Raven."
+          "Lv. 2: +25% ATK damage, +1% Void Touch",
+          "Lv. 3: +25% ATK damage, +1% Void Touch, -1 Cooldown",
+          "Lv. 4: +30% ATK damage, +1% Void Touch\nDepending on stacks of Void Power on Raven:\n1+: Debuff(s) are [Irresistible]\n2+: Debuff(s) last 3 turn(s) instead\n4+: Debuff(s) are [Undispellable]",
+          "Lv. 5: +40% ATK damage, +2% Void Touch; also inflict Buff Immunity.",
+          "Lv. 6: +80% ATK damage, +5% Void Touch; This attack deals additional damage equal to % of Void Touch on Raven and enemies defeated by this skill cannot gain Revive."
         ],
         "image": null
       },
@@ -3623,7 +3628,7 @@
           "Debuff Dispel",
           "Debuffs"
         ],
-        "description": "[Requires 3 Void Power and not having Mark of Burden]\n\nGrant 30% Void Touch Cleanse to all other allies, then remove all Succumbed from target ally and suffer Mark of Burden which cannot be removed until Raven is defeated.",
+        "description": "[Requires 3 Void Power and not having Mark of Burden]\n\nGrant 30% Void Touch Cleanse to all other allies, then remove all Hollow from target ally and suffer Mark of Burden which cannot be removed until Raven is defeated.",
         "upgrades": [],
         "image": null
       },
@@ -3631,20 +3636,20 @@
         "order": 5,
         "name": "LIVING LEGEND",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
           "Attr. Up",
           "Turn Meter Up"
         ],
-        "description": "Allies have +10% Attack and Max Health and +5% Speed, doubled for Seasoned allies.\n\nEach time a debuff is dispelled from a Seasoned ally, that ally gains 3% Turn Meter Up.",
+        "description": "Allies have +10% Attack and Max Health and +5% Speed, doubled for Seasoned allies.\n\nEach time a debuff is dispelled from a Seasoned ally, that ally gains 5% Turn Meter Up.",
         "upgrades": [
           "Lv. 2: +1% Attack and Max Health",
           "Lv. 3: +1% Attack and Max Health",
           "Lv. 4: +1% Attack and Max Health; Allies also have +5% Speed",
           "Lv. 5: +2% Attack and Max Health; Bonuses are doubled for Seasoned allies.",
-          "★★★★★ Each time a debuff is dispelled from a Seasoned ally, that ally gains 3% Turn Meter Up."
+          "★★★★★ Each time a debuff is dispelled from a Seasoned ally, that ally gains 5% Turn Meter Up."
         ],
         "image": null
       },
@@ -3660,7 +3665,7 @@
           "Healing",
           "Turn Meter Up"
         ],
-        "description": "Allies cannot cleanse Void Touch from Raven and when she suffers Succumb To The Void, she is instantly defeated (this defeat is [Unpreventable]). Raven cannot gain Revive.\n\nFollowing effects are active unless Raven has Mark of Burden:\n\nAll Void Touch Raven suffers outside of her turn is halved, Void Touch does not decrease her attributes and she has +5% Dmg Reduction and +10% Attack per every 10% Void Touch. Additionally, Raven deals +10% damage per each debuff on herself (or +20% if she uses a special skill).\n\nWhenever a last other ally is defeated, Raven gains full Debuff Dispel, 100% Healing and 100% Turn Meter Up and is immune to Void Touch outside of her turn until [End of Battle].",
+        "description": "Allies cannot cleanse Void Touch from Raven and when she suffers Hollowing, she is instantly defeated (this defeat is [Unpreventable]). Raven cannot gain Revive.\n\nFollowing effects are active unless Raven has Mark of Burden:\n\nAll Void Touch Raven suffers outside of her turn is halved, she is immune to Hollowing unless at full Void Touch and she has +5% Dmg Reduction and +10% Attack per every 10% Void Touch. Additionally, Raven deals +10% damage per each debuff on herself (or +20% if she uses a special skill).\n\nWhenever a last other ally is defeated, Raven gains full Debuff Dispel, 100% Healing and 100% Turn Meter Up and is immune to Void Touch outside of her turn until [End of Battle].",
         "upgrades": [
           "Lv. 2: +1% Attack",
           "Lv. 3: +2% Attack",
@@ -3683,10 +3688,10 @@
           "Cooldowns Down",
           "Turn Meter Up"
         ],
-        "description": "Raven can trigger Embrace The Void to gain Void Power.\nRaven gains +20% Attack, Defense and Speed per 1 Void Power.\n\n[On Embrace The Void] Raven gains Cooldowns Reset on all skills.\n\nWhen under Void Power, each time another ally suffers Void Touch, Raven gains 5% Turn Meter Up per 1 Void Power.\n\n[On Turn Start] If there are no defeated allies, Raven gains 1% Void Touch Cleanse, doubled if all allies are Seasoned.",
+        "description": "Raven can trigger Embrace The Void to gain Void Power.\nRaven gains +25% Attack, Defense and Speed per 1 Void Power.\n\n[On Embrace The Void] Raven gains Cooldowns Reset on all skills.\n\nWhen under Void Power, each time another ally suffers Void Touch, Raven gains 5% Turn Meter Up per 1 Void Power.\n\n[On Turn Start] If there are no defeated allies, Raven gains 2% Void Touch Cleanse, doubled if all allies are Seasoned.",
         "upgrades": [
           "Lv. 2: +10% Attack, Defense and Speed",
-          "Lv. 3: [On Turn Start] If there are at least 4 allies and all are alive, Raven gains 1% Void Touch Cleanse, doubled if all allies are Seasoned.",
+          "Lv. 3: [On Turn Start] If there are at least 4 allies and all are alive, Raven gains 2% Void Touch Cleanse, doubled if all allies are Seasoned.",
           "Lv. 4: [On Embrace The Void] Raven gains Cooldowns Reset on all skills.",
           "Lv. 5: When under Void Power, each time another ally suffers Void Touch, Raven gains 5% Turn Meter Up per 1 Void Power."
         ],
@@ -3861,7 +3866,7 @@
           "Damage",
           "Buff Dispel"
         ],
-        "description": "Deal 150% ATK damage to target enemy inflicting full Buff Dispel. Will Supreme bonus: Buff Dispel is [Irresistible].",
+        "description": "Deal 150% ATK damage to target enemy inflicting full Buff Dispel.\n\nWill Supreme bonus: Buff Dispel is [Irresistible].",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage; Inflict random Buff Dispel.",
@@ -3882,12 +3887,12 @@
           "Debuff Dispel",
           "Buffs"
         ],
-        "description": "All allies have their current Health percentage equalized (this effect ignores any Healing blocks/immunities). Then, all allies gain 15% Healing, Archlands allies gain Foresight for 2 turn(s) and Sage allies gain 1 Will. Will Supreme bonus: Grant all allies full Debuff Dispel.",
+        "description": "All allies have their current Health percentage equalized (this effect ignores any Healing blocks/immunities). Then, all allies gain 20% Healing, Archlands allies gain Foresight for 2 turn(s) and Sage allies gain 1 Will.\n\nWill Supreme bonus: Grant all allies full Debuff Dispel.",
         "upgrades": [
           "Lv. 2: +1% healing",
           "Lv. 3: +1% healing, -1 Cooldown",
-          "Lv. 4: +2% healing; Archlands allies gain Foresight for 2 turn(s).",
-          "Lv. 5: +3% healing, -1 Cooldown; Sage allies gain 1 Will."
+          "Lv. 4: +3% healing; Archlands allies gain Foresight for 2 turn(s)",
+          "Lv. 5: +5% healing, -1 Cooldown; Sage allies gain 1 Will."
         ],
         "image": null
       },
@@ -3902,7 +3907,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 100% ATK damage to all enemies and bonus damage equal to 15% of their respective current Health. Then, all enemies with Health under 25% suffer [Irresistible] Stun for 1 turn(s). This attack cannot be dodged. Will Supreme bonus: Stun threshold is set to 50% instead.",
+        "description": "Deal 100% ATK damage to all enemies and bonus damage equal to 15% of their respective current Health. Then, all enemies with Health under 25% suffer [Irresistible] Stun for 1 turn(s).\n\nThis attack cannot be dodged.\n\nWill Supreme bonus: Stun threshold is set to 50% instead.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
@@ -3924,7 +3929,7 @@
           "Debuffs",
           "Turn Meter Down"
         ],
-        "description": "[Requires Will Nexus and Will Supreme] Inflict full Buff Dispel, 100% Turn Meter Down, Stun for 1 turn(s) and Speed Down for 2 turn(s) on all enemies. These effects are [Irresistible]. Lose Will Nexus.",
+        "description": "[Requires Will Nexus and Will Supreme]\n\nInflict full Buff Dispel, 100% Turn Meter Down, Stun for 1 turn(s) and Speed Down for 2 turn(s) on all enemies. These effects are [Irresistible].\n\nLose Will Nexus.",
         "upgrades": [],
         "image": null
       },
@@ -3937,22 +3942,22 @@
         "tags": [
           "Attr. Up",
           "Buffs",
-          "Turn Meter Up"
+          "Void Touch Cleanse"
         ],
-        "description": "Galen gains 1 Will each time Archlands or Sage ally uses a special skill. When Galen reaches 20 Will (or 80 if he has Will Nexus), he gains Will Supreme and Cooldowns Reset on all skills. While Galen has Will Supreme he has +50% Defense and +25% Healing Effect. [On Battle Start] Galen gains 1 Will for each Archlands or Sage ally. [On Turn Start] Galen grants 20% Turn Meter Up to a random Archlands or Sage ally.",
+        "description": "Galen gains 1 Will each time Archlands or Sage ally uses a special skill.\nWhen Galen reaches 20 Will (or 80 if he has Will Nexus), he gains Will Supreme and Cooldowns Reset on all skills.\n\nWhile Galen has Will Supreme he has +50% Defense and +25% Healing Effect.\n\n[On Battle Start] Galen gains 1 Will for each Archlands or Sage ally.\n\n[On Turn Start] Galen grants 5% Void Touch Cleanse to a random Archlands or Sage ally prioritizing allies with higher Void Touch.",
         "upgrades": [
           "Lv. 2: +5% Defense",
           "Lv. 3: +10% Defense",
           "Lv. 4: +20% Defense",
           "Lv. 5: +25% Healing Effect",
           "Lv. 6: Gain Cooldowns Reset on all skills when gaining Will Supreme.",
-          "★ [On Battle Start] Galen gains 1 Will for each Archlands or Sage ally. [On Turn Start] Galen grants 20% Turn Meter Up to a random Archlands or Sage ally."
+          "★ [On Battle Start] Galen gains 1 Will for each Archlands or Sage ally. [On Turn Start] Galen grants 5% Turn Meter Up to a random Archlands or Sage ally."
         ],
         "image": null
       },
       {
         "order": 6,
-        "name": "ARCHSORCERER",
+        "name": "ARCHSAGE",
         "level": "Max",
         "type": "Trait",
         "cooldown": null,
@@ -3960,7 +3965,7 @@
           "Skill Trigger",
           "Buffs"
         ],
-        "description": "If there are at least 3 Sage allies, Galen can trigger Archmind to gain Will Nexus. When Galen has both Will Nexus and Will Supreme he can use Hold!. [On Turn Start] While other ally has Will Nexus, Galen grants them 1 Will.",
+        "description": "If there are at least 3 Sage allies, Galen can trigger Archmind to gain Will Nexus.\nWhen Galen has both Will Nexus and Will Supreme he can use Hold!.\n\n[On Turn Start] While other ally has Will Nexus, Galen grants them 1 Will.",
         "upgrades": [],
         "image": null
       },
@@ -3976,7 +3981,7 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Galen can trigger Embrace The Void to gain Void Power. Galen gains +20% Attack, Crit Rate and Crit Dmg per 1 Void Power. [On Embrace The Void] Galen gains 1 Will for each Sage ally. [On Turn Start] Galen gains 1 Will for each Void Power. When Galen gains Will Supreme, he gains 10% Void Touch Cleanse (limit 1 per battle).",
+        "description": "Galen can trigger Embrace The Void to gain Void Power.\nGalen gains +25% Attack, Crit Rate and Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Galen gains 1 Will for each Sage ally.\n\n[On Turn Start] Galen gains 1 Will for each Void Power.\n\nWhen Galen gains Will Supreme, he gains 10% Void Touch Cleanse (limit 1 per battle).",
         "upgrades": [
           "Lv. 2: +10% Attack, Crit Rate and Crit Dmg",
           "Lv. 3: When Galen gains Will Supreme, he gains 10% Void Touch Cleanse (limit 1 per battle).",
@@ -4154,11 +4159,11 @@
           "Debuffs",
           "Turn Meter Up"
         ],
-        "description": "Deal 60% ATK damage to target enemy 3 times. Each strike has a 20% chance (50% when attacking Out-of-Turn) to inflict stack of Bleed for 2 turn(s).\n\nVukaru has +5% Crit Rate for each stack of Bleed on the target and grants random ally 5% Turn Meter Up on each critical hit.",
+        "description": "Deal 70% ATK damage to target enemy 3 times. Each strike has a 20% chance (50% when attacking Out-of-Turn) to inflict Bleed for 2 turn(s).\n\nVukaru has +5% Crit Rate for each Bleed on the target and grants random ally 5% Turn Meter Up on each critical hit.",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +5% ATK damage; Each strike has a 20% chance to inflict stack of Bleed for 2 turn(s).",
-          "Lv. 4: +5% ATK damage; Vukaru has +5% Crit Rate for each stack of Bleed on the target.",
+          "Lv. 4: +10% ATK damage; Vukaru has +5% Crit Rate for each stack of Bleed on the target.",
           "Lv. 5: +15% ATK damage; Grant random ally 5% Turn Meter Up on each critical hit.",
           "★ Bleed chance is increased to 50% when attacking Out-of-Turn."
         ],
@@ -4233,19 +4238,19 @@
         "order": 5,
         "name": "STRENGTH OF THE TRIBE",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
           "Assists",
           "Attr. Up"
         ],
-        "description": "Free Tribes allies deal +15% damage when attacking Out-of-Turn.\nAllies have 5% chance to assist whenever a Free Tribes ally deals damage to target enemy during their turn (limit 1 per turn). This chance is doubled for Free Tribes allies.",
+        "description": "Free Tribes allies deal +15% damage when attacking Out-of-Turn.\n\nAllies have 5% chance to Assist whenever a Free Tribes ally deals damage to target enemy during their turn (limit 1 per turn). This chance is doubled for Free Tribes allies.",
         "upgrades": [
           "Lv. 2: +1% damage bonus",
           "Lv. 3: +2% damage bonus",
           "Lv. 4: +2% damage bonus",
-          "Lv. 5: Allies have 5% chance to assist whenever a Free Tribes ally deals damage during their turn (limit 1 per turn).",
+          "Lv. 5: Allies have 5% chance to Assist whenever a Free Tribes ally deals damage during their turn (limit 1 per turn).",
           "Lv. 6: Assist chance is doubled for Free Tribes allies"
         ],
         "image": null
@@ -4262,12 +4267,12 @@
           "Void Touch Cleanse",
           "Cooldowns Down"
         ],
-        "description": "Vukaru can trigger Embrace The Void to gain Void Power.\nVukaru gains +20% Defense, Max Health and Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Vukaru gains Cooldowns Reset on Just You and Me.\n\nWhen attacking Out-of-Turn, Vukaru deals +5% damage per 1 Void Power.\n\n[On Turn Start] If all allies are Free Tribes and each other ally has at least 3 Persistence, Vukaru gains 5% Void Touch Cleanse.",
+        "description": "Vukaru can trigger Embrace The Void to gain Void Power.\nVukaru gains +20% Defense, Max Health and Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Vukaru gains Cooldowns Reset on Just You and Me.\n\nWhen attacking Out-of-Turn, Vukaru deals +10% damage per 1 Void Power.\n\n[On Turn Start] If all allies are Free Tribes and each other ally has at least 3 Persistence, Vukaru gains 5% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Defense, Max Health and Crit Dmg",
-          "Lv. 3: [On Turn Start] If all allies are Free Tribes and each other ally has at least 3 Persistence, Vukaru gains 5% Void Touch Cleanse.",
+          "Lv. 3: [On Turn Start] If all allies are Free Tribes and each ally has at least 3 Persistence, Vukaru gains 5% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Vukaru gains Cooldowns Reset on Just You and Me.",
-          "Lv. 5: When attacking Out-of-Turn, Vukaru deals +5% damage per 1 Void Power."
+          "Lv. 5: When attacking Out-of-Turn, Vukaru deals +10% damage per 1 Void Power."
         ],
         "image": null
       }
@@ -4441,12 +4446,12 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 140% ATK damage inflicting Curse and additionally 1 Weak for 2 turn(s) for every 2 Wrath on self.",
+        "description": "Deal 150% ATK damage inflicting Curse and additionally 1 Weak for 2 turn(s) for every 2 Wrath on self.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
           "Lv. 4: +20% ATK damage; +1 Curse duration",
-          "Lv. 5: +25% ATK damage; also inflict 1 Weak for every 2 Wrath on self."
+          "Lv. 5: +30% ATK damage; also inflict 1 Weak for every 2 Wrath on self."
         ],
         "image": null
       },
@@ -4484,17 +4489,17 @@
           "Melee",
           "Damage",
           "Debuffs",
-          "AoE",
           "Buff Dispel",
-          "Void Touch"
+          "Void Touch",
+          "AoE"
         ],
-        "description": "Deal 125% ATK damage to all enemies inflicting 2 Armor Shred for 3 turn(s).\n\nIf Ygravain had at least 5 Wrath, inflict full Buff Dispel on each enemy with Armor Shred, [Irresistible] on Deathproof and Damage Immunity.\n\nif Ygravain had at least 10 Wrath, this attack cannot be dodged and inflicts 10% Void Touch on each enemy it deals damage to.\n\nDuring this attack Ygravain has +5% Focus for each Wrath and enemies have -10% Resistance for each Armor Shred.",
+        "description": "Deal 125% ATK damage to all enemies inflicting 2 Armor Shred for 3 turn(s).\n\nIf Ygravain had at least 5 Wrath, inflict full Buff Dispel on each enemy with Armor Shred, [Irresistible] on Deathproof and Damage Immunity.\n\nif Ygravain had at least 10 Wrath, this attack cannot be dodged and inflicts 10% Void Touch on each enemy it deals damage to.\n\nDuring this attack Ygravain has +5% Focus and Piercing for each Wrath and enemies have -10% Resistance for each Armor Shred.",
         "upgrades": [
-          "Lv. 2: +10% ATK damage",
+          "Lv. 2: +5% ATK damage",
           "Lv. 3: +10% ATK damage; -1 Cooldown",
           "Lv. 4: +10% ATK damage; If Ygravain had at least 5 Wrath, inflict full Buff Dispel on each enemy with Armor Shred, [Irresistible] on Deathproof and Damage Immunity.",
           "Lv. 5: +15% ATK damage; if Ygravain had at least 10 Wrath, this attack cannot be dodged and inflicts 10% Void Touch on each enemy it deals damage to.",
-          "Lv. 6: +20% ATK damage; During this attack Ygravain has +5% Focus for each Wrath and enemies have -10% Resistance for each Armor Shred."
+          "Lv. 6: +25% ATK damage;  During this attack Ygravain has +5% Focus and Piercing for each Wrath and enemies have -10% Resistance for each Armor Shred."
         ],
         "image": null
       },
@@ -4508,12 +4513,12 @@
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Ygravain cannot receive Healing from other allies.\nYgravain has +40% Life Drain, +10% Dmg Reduction and each time he loses Health Shield he gains 1 Wrath.",
+        "description": "Ygravain cannot receive Healing from other characters.\n\nYgravain has +75% Life Drain, +15% Dmg Reduction and each time he loses Health, loses Invulnerability or has his Shield damaged, he gains 1 Wrath.",
         "upgrades": [
-          "Lv. 2: +2% Life Drain",
-          "Lv. 3: +3% Life Drain",
-          "Lv. 4: +5% Life Drain",
-          "Lv. 5: +10% Life Drain; Ygravain also has +10% Dmg Reduction"
+          "Lv. 2: +5% Life Drain",
+          "Lv. 3: +10% Life Drain",
+          "Lv. 4: +15% Life Drain; Ygravain also has +5% Dmg Reduction",
+          "Lv. 5: +20% Life Drain; +10% Dmg Reduction"
         ],
         "image": null
       },
@@ -4521,7 +4526,7 @@
         "order": 5,
         "name": "COMMANDING PRESENCE",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
@@ -4547,7 +4552,7 @@
         "cooldown": null,
         "tags": [
           "Skill Trigger",
-          "Buffs"
+          "Status"
         ],
         "description": "Ygravain can trigger Holy Vow to gain Vowkeeper.\nWhen Ygravain is Vowkeeper, gain 25 True to Vows to fullfill his Vow granting all Holy Order allies Ygravain's Vow and granting Holy Order and Knight allies 1 Invulnerability for 3 turn(s).\n\nYgravain gains 1 True to Vows each time a Holy Order ally grants Shield, Guard or Invulnerability to a Holy Order or Knight ally or 2 True to Vows if that ally is Holy Order Knight.",
         "upgrades": [],
@@ -4560,14 +4565,14 @@
         "type": "Trait",
         "cooldown": null,
         "tags": [
-          "Void Touch Cleanse",
           "Skill Trigger",
           "Attr. Up",
+          "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Ygravain can trigger Embrace The Void to gain Void Power.\nYgravain gains +15% Defense, Crit Defense and Life Drain per 1 Void Power.\n\n[On Embrace The Void] Ygravain gains 3 Wrath and 2 Guard.\n\n[On Turn Start] Ygravain gains 1 Wrath per 1 Void Power.\n\nWhen an enemy under Void Minion is defeated, Ygravain gains 2% Void Touch Cleanse (or 5% if they were defeated by Ygravain) (limit 1 per enemy).",
+        "description": "Ygravain can trigger Embrace The Void to gain Void Power.\nYgravain gains +15% Defense, Crit Defense and Life Drain per 1 Void Power.\n\n[On Embrace The Void] Ygravain gains 3 Wrath and 5 Guard.\n\n[On Turn Start] Ygravain gains 2 Wrath per 1 Void Power.\n\nWhen an enemy under Void Minion is defeated, Ygravain gains 2% Void Touch Cleanse (or 5% if they were defeated by Ygravain) (limit 1 per enemy).",
         "upgrades": [
-          "★★ Ygravain can trigger Embrace The Void to gain Void Power. Ygravain gains +15% Defense, Crit Defense and Life Drain per 1 Void Power. [On Embrace The Void] Ygravain gains 3 Wrath and 2 Guard. [On Turn Start] Ygravain gains 1 Wrath per 1 Void Power."
+          "★★ Ygravain can trigger Embrace The Void to gain Void Power. Ygravain gains +15% Defense, Crit Defense and Life Drain per 1 Void Power. [On Embrace The Void] Ygravain gains 3 Wrath and 5 Guard. [On Turn Start] Ygravain gains 2 Wrath per 1 Void Power."
         ],
         "image": null
       }
@@ -4740,7 +4745,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 200% ATK damage to target enemy and inflict Poison for 2 turn(s). Target enemy has -25% Dodge during this attack.",
+        "description": "Deal 200% ATK damage to target enemy inflicting Poison for 2 turn(s).\n\nThis attack has +25% Hit Rate.",
         "upgrades": [
           "Lv. 2: +15% ATK damage",
           "Lv. 3: +20% ATK damage; Inflict Poison for 1 turn(s).",
@@ -4760,7 +4765,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 200% ATK damage to the target enemy and 2 random enemies and inflict Poison for 2 turn(s) and Blind for 1 turn(s). If all 3 Poison are successfully inflicted, inflict additional 2 Poison on target enemy for 2 turn(s).",
+        "description": "Deal 200% ATK damage to the target enemy and 2 random enemies and inflict Poison for 2 turn(s) and Blind for 1 turn(s).\n\nIf all 3 Poison are successfully inflicted, inflict additional 2 Poison on target enemy for 2 turn(s).",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage, -1 Cooldown",
@@ -4800,7 +4805,7 @@
         "tags": [
           "Void Touch"
         ],
-        "description": "[Requires 2 Void Power] Suffer 20% Void Touch to inflict each enemy with 10% Void Touch per 1 Poison on them.",
+        "description": "[Requires 2 Void Power]\n\nSuffer 20% Void Touch to inflict each enemy with 10% Void Touch per 1 Poison on them.",
         "upgrades": [],
         "image": null
       },
@@ -4814,12 +4819,12 @@
           "Healing",
           "Buffs"
         ],
-        "description": "Whenever a Poison debuff is triggered on any enemy, Ashei grants Healing to herself/Consumed allies/Tainted allies equal to 12%/8%/4% of the damage dealt respectively. Whenever Ashei is about to suffer Poison, she gains 1 Persistence for the same duration instead.",
+        "description": "Whenever a Poison debuff is triggered on any enemy, Ashei grants Healing to herself/Consumed allies/Tainted allies equal to 15%/10%/5% of the damage dealt respectively.\n\nWhenever Ashei is about to suffer Poison, she gains 1 Persistence.",
         "upgrades": [
-          "Lv. 2: Healing +1%/1%/0.5% (Self/Consumed/Tainted)",
-          "Lv. 3: Healing +1%/1%/0.5% (Self/Consumed/Tainted)",
-          "Lv. 4: Healing +2%/1%/0.5% (Self/Consumed/Tainted)",
-          "Lv. 5: Healing +2%/1%/0.5% (Self/Consumed/Tainted); When about to suffer Poison, gain 1 Persistence instead."
+          "Lv. 2: Healing +1.5%/1%/0.5% (Self/Consumed/Tainted)",
+          "Lv. 3: Healing +1.5%/1%/0.5% (Self/Consumed/Tainted)",
+          "Lv. 4: Healing +3%/2%/1% (Self/Consumed/Tainted)",
+          "Lv. 5: Healing +3%/2%/1% (Self/Consumed/Tainted); When about to suffer Poison, gain 1 Persistence instead."
         ],
         "image": null
       },
@@ -4854,9 +4859,9 @@
           "Debuff Dur. Up",
           "Turn Meter Up"
         ],
-        "description": "Ashei can trigger Embrace The Void to gain Void Power. Ashei gains +20% Focus, Max Health and Hit Rate per 1 Void Power. [On Embrace The Void] Ashei inflicts Debuff Duration Up on all Poison on all enemies. When under Void Power, each time Poison is triggered on an enemy, Ashei gains 1% Turn Meter Up per 1 Void Power. [On Turn Start] Ashei gains 1% Void Touch Cleanse per each 3 Persistence.",
+        "description": "Ashei can trigger Embrace The Void to gain Void Power.\nAshei gains +25% Attack, Focus and Max Health per 1 Void Power.\n\n[On Embrace The Void] Ashei inflicts Debuff Duration Up on all Poison on all enemies.\n\nWhen under Void Power, each time Poison is triggered on an enemy, Ashei gains 1% Turn Meter Up per 1 Void Power.\n\n[On Turn Start] Ashei gains 1% Void Touch Cleanse per each 3 Persistence.",
         "upgrades": [
-          "Lv. 2: +10% Focus, Max Health and Hit Rate",
+          "Lv. 2: +10% Attack, Focus and Max Health",
           "Lv. 3: [On Turn Start] Ashei gains 1% Void Touch Cleanse per each 3 Persistence.",
           "Lv. 4: [On Embrace The Void] Ashei inflicts Debuff Duration Up on all Poison on all enemies.",
           "Lv. 5: When under Void Power, each time Poison is triggered on an enemy, Ashei gains 1% Turn Meter Up per 1 Void Power."
@@ -5032,7 +5037,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 150% ATK damage to target enemy and suffer Poison for 3 turn(s). This attack has +20% Life Drain per 1 Bleed on target. If the target has Hemorrhage, suffer additional 1 Poison per each Bleed on target.",
+        "description": "Deal 150% ATK damage to target enemy and suffer Poison for 3 turn(s). This attack has +20% Life Drain per 1 Bleed on target.\n\nIf the target has Hemorrhage, suffer additional 1 Poison per each Bleed on target.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
@@ -5054,7 +5059,7 @@
           "Debuffs",
           "Buff Dispel"
         ],
-        "description": "Suffer 3 Poison for 3 turn(s), then deal 125% ATK damage to all enemies, increased by 10% ATK per each Poison on self. For each Poison on self inflict a random Buff Dispel and 1 Poison for 3 turn(s) on a random enemy. On successfully dispelled Buff(s), inflict opposite Debuff(s) if possible. All effects above are [Irresistible] for enemies under Hemorrhage.",
+        "description": "Suffer 3 Poison for 3 turn(s), then deal 125% ATK damage to all enemies, increased by 10% ATK per each Poison on self.\n\nFor each Poison on self inflict a random Buff Dispel and 1 Poison for 3 turn(s) on a random enemy. On succesfully dispelled Buff(s), inflict opposite Debuff(s) if possible. All effects above are [Irresistible] for enemies under Hemorrhage.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +10% ATK damage; -1 Cooldown",
@@ -5076,7 +5081,7 @@
           "Damage",
           "Buff Dispel"
         ],
-        "description": "Inflict full [Irresistible] Buff Dispel on target enemy, then inflict Poison for 2 turn(s) on them for every 2 Poison on self and inflict [Undispellable] Hemorrhage for 1 turn(s), extended by 1 turn(s) for every 2 Poison on target. Deal 325% ATK damage to target enemy and suffer damage equal to 10% of damage dealt.",
+        "description": "Inflict full [Irresistible] Buff Dispel on target enemy, then inflict Poison for 2 turn(s) on them for every 2 Poison on self and inflict [Undispellable] Hemorrhage for 1 turn(s), extended by 1 turn(s) for every 2 Poison on target.\n\nDeal 325% ATK damage to target enemy and suffer damage equal to 10% of damage dealt.",
         "upgrades": [
           "Lv. 2: +20% ATK damage",
           "Lv. 3: +30% ATK damage; -1 Cooldown",
@@ -5089,7 +5094,7 @@
         "order": 4,
         "name": "WITHERING MIASMA",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Aura",
@@ -5098,7 +5103,7 @@
           "Debuffs",
           "Revive"
         ],
-        "description": "Enemies have -25% Assist Dmg. Each time an enemy attacks Out-of-Turn, they take damage equal to 5% of their Max Health (this damage cannot defeat enemies). If Eleazar is active, this damage is doubled and enemies also suffer Poison for 2 turn(s). Each time an enemy receives damage from Bleed or is defeated, for each Poison they have a [10% * their Poison] chance to inflict Poison for 2 turn(s) on a random other enemy. This chance is doubled if the enemy receiving damage has Hemorrhage. If Eleazar is defeated while having 5 or more Poison, he revives with 20% Health and Turn Meter for each Poison above 4, then loses all Poison.",
+        "description": "Enemies have -25% Assist Dmg.\n\nEach time an enemy attacks Out-of-Turn, they take damage equal to 5% of their Max Health (this damage cannot defeat enemies). If Eleazar is active, this damage is doubled and enemies also suffer Poison for 2 turn(s).\n\nEach time an enemy suffers damage from Bleed or is defeated, for each Poison they have a [10% * their Poison] chance to inflict Poison for 2 turn(s) on a random other enemy. This chance is doubled if the enemy suffering damage has Hemorrhage.\n\nIf Eleazar is defeated while having 5 or more Poison, he gains Revive with 20% Health and Turn Meter for each Poison above 4, then loses all Poison.",
         "upgrades": [
           "Lv. 2: -5% enemy Assist Dmg",
           "Lv. 3: -5% enemy Assist Dmg",
@@ -5119,7 +5124,7 @@
           "Debuffs",
           "Cooldowns Down"
         ],
-        "description": "Eleazar cannot resist Poison, but takes 90% less damage from Poison, has +10% Speed per each Poison and is immune to Hemorrhage. Each time Eleazar suffers damage or a Debuff(s) (except Poison) outside of his turn, he suffers Poison for 3 turn(s). Each time Eleazar gains Healing or a buff outside of his turn, he dispels 1 Poison from self. [On Turn Start] Eleazar converts all non-Control, dispellable debuffs on him to Poison. Then, if Eleazar has 5 or more Poison, he gains Cooldowns Down on Toxic Transfusion. [On Battle Start] Eleazar suffers Poison for 3 turn(s) for each other ally who is Outlaw or Homunculus.",
+        "description": "Eleazar cannot resist Poison, but takes 90% less damage from Poison, has +10% Speed per each Poison and is immune to Hemorrhage.\n\nEach time Eleazar suffers damage or a Debuff(s) (except Poison) outside of his turn, he suffers Poison for 3 turn(s). Each time Eleazar gains Healing or a buff outside of his turn, he dispels 1 Poison from self.\n\n[On Turn Start] Eleazar converts all non-Control, dispellable debuffs on him to Poison. Then, if Eleazar has 5 or more Poison, he gains Cooldowns Down on Toxic Transfusion.\n\n[On Battle Start] Eleazar suffers Poison for 3 turn(s) for each other ally who is Outlaw or Homunculus.",
         "upgrades": [
           "Lv. 2: -5% damage from Poison, +1% Speed per Poison",
           "Lv. 3: -5% damage from Poison, +1% Speed per Poison",
@@ -5141,12 +5146,12 @@
           "Void Touch Cleanse",
           "Debuffs"
         ],
-        "description": "Eleazar can trigger Embrace The Void to gain Void Power. Eleazar gains +20% Max Health, Focus and Resistance per 1 Void Power. [On Embrace The Void] Eleazar gains 3 Poison for 3 turn(s). When under Void Power, each time another ally inflicts Poison, Eleazar has a [10% * Void Power] chance to suffer Poison for 1 turn(s). [On Turn End] When Eleazar has at least 10 Poison, he gains 6% Void Touch Cleanse.",
+        "description": "Eleazar can trigger Embrace The Void to gain Void Power.\nEleazar gains +20% Max Health, Focus and Resistance per 1 Void Power.\n\n[On Embrace The Void] Eleazar gains 3 Poison for 3 turn(s).\n\nWhen under Void Power, each time another ally inflicts Poison, Eleazar has a [10% * Void Power] chance to suffer Poison for 1 turn(s).\n\n[On Turn End] When Eleazar has at least 10 Poison, he gains 6% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Max Health, Focus and Resistance",
           "Lv. 3: [On Turn End] When Eleazar has at least 10 Poison, he gains 6% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Eleazar gains 3 Poison for 3 turn(s).",
-          "Lv. 5: When under Void Power, each time another ally inflicts Poison, Eleazar has a [10% * Void Power] chance to suffer Poison for 1 turn(s)."
+          "Lv. 5: When under Void Power, each time another ally inflicts Poison, Eleazar has [10% * Void Power] chance to suffer Poison for 1 turn(s)."
         ],
         "image": null
       }
@@ -5317,18 +5322,18 @@
         "type": "Basic",
         "cooldown": null,
         "tags": [
-          "Ranged",
           "Damage",
           "Assists",
           "Void Touch",
           "Healing"
         ],
-        "description": "Deal 150% ATK damage inflicting 3% Void Touch and call a random Knight ally to assist. If this ally is Tank, grant them 10% Healing.",
+        "description": "Deal 150% ATK damage inflicting 3% Void Touch and call a random Knight ally and Sir Bernard to Assist.\n\nIf under Void Power, grant assisting allies 10% Healing.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
-          "Lv. 3: +15% ATK damage; +1% Void Touch",
-          "Lv. 4: +20% ATK damage; If assisting ally is Tank, they gain 10% Healing.",
-          "Lv. 5: +30% ATK damage; No Assist Dmg penalty"
+          "Lv. 3: +10% ATK damage; +1% Void Touch",
+          "Lv. 4: +15% ATK damage; call Sir Bernard to Assist as well; If under Void Power, grant assisting allies 10% Healing.",
+          "Lv. 5: +15% ATK damage; -25% Assist Dmg penalty",
+          "Lv. 6: +25% ATK damage; No Assist Dmg penalty"
         ],
         "image": null
       },
@@ -5346,12 +5351,12 @@
           "Turn Meter Up",
           "Void Touch"
         ],
-        "description": "Inflict Resistance Down and Void Trace on all enemies for 2 turn(s), then grant each ally random Debuff Dispel and inflict this debuff on a random enemy for 2 turn(s). If Renna has Void Power, these debuffs are [Irresistible]. Gain 10% Turn Meter Up for each debuff dispelled.\n\nInflict 10% Void Touch on each enemy who suffered a debuff.",
+        "description": "Inflict Resistance Down and Void Trace on all enemies for 2 turn(s), then grant each ally 2 random Debuff Dispel and inflict each dispelled Debuff(s) on a random enemy for 2 turn(s). If Renna has Void Power, these debuffs are [Irresistible].\n\nGain 5% Turn Meter Up for each Debuff(s) dispelled, then inflict 10% Void Touch on each enemy who suffered a Debuff(s).",
         "upgrades": [
           "Lv. 2: -1 Cooldown",
           "Lv. 3: -1 Cooldown",
           "Lv. 4: If Renna has Void Power, these debuffs are [Irresistible].",
-          "Lv. 5: +1 debuff duration; Gain 10% Turn Meter Up for each debuff dispelled.",
+          "Lv. 5: +1 debuff duration; +1 Debuff Dispel; Gain 5% Turn Meter Up for each Debuff(s) dispelled.",
           "★★ Inflict 10% Void Touch on each enemy who suffered a debuff."
         ],
         "image": null
@@ -5366,9 +5371,7 @@
           "Command",
           "AoE",
           "Buffs",
-          "Assists",
-          "Turn Meter Up",
-          "Cooldowns Down"
+          "Assists"
         ],
         "description": "Grant Focus Up to all allies for 2 turn(s) and then call Archlands and Knight allies to Assist with Sir Bernard dealing double damage. Then, apply Cooldowns Down on Kneel before Your Queen for each Archlands Knight ally.\n\nIf Renna has Void Power, assisting allies gain 15% Turn Meter Up.\n\nIf this attack defeats target enemy, Renna takes a Bonus Turn.",
         "upgrades": [
@@ -5385,7 +5388,7 @@
         "order": 4,
         "name": "HER CURSED MAJESTY",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Debuffs",
@@ -5434,9 +5437,9 @@
           "Turn Meter Up",
           "Assists"
         ],
-        "description": "Renna can trigger Embrace The Void to gain Void Power.\nRenna gains +25% Attack and +15% Crit Rate and Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Renna grants 25% Turn Meter Up to all Knight allies.\n\nWhen under Void Power, each time a Knight ally uses a skill, Renna has a [25% x Void Power] chance to Assist, doubled if this ally is Sir Bernard.\n\nEach time an enemy is defeated during Renna's turn, she gains 5% Void Touch Cleanse.",
+        "description": "Renna can trigger Embrace The Void to gain Void Power.\nRenna gains +30% Attack and +15% Crit Rate and Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Renna grants 25% Turn Meter Up to all Knight allies.\n\nWhen under Void Power, each time a Knight ally uses a skill, Renna has a [25% x Void Power] chance to Assist, doubled if this ally is Sir Bernard.\n\nEach time an enemy is defeated during Renna's turn, she gains 5% Void Touch Cleanse.",
         "upgrades": [
-          "Lv. 2: +10% Speed, Focus and Resistance",
+          "Lv. 2: +15% Speed, Focus and Resistance",
           "Lv. 3: Each time an enemy is defeated during Renna's turn, she gains 5% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Renna grants 25% Turn Meter Up to all Knight allies.",
           "Lv. 5: When under Void Power, each time a Knight ally uses a skill, Renna has a [25% x Void Power] chance to Assist, doubled if this ally is Sir Bernard."
@@ -5613,12 +5616,12 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal (60% - 300%) ATK damage to target enemy and inflict Daze for 2 turn(s).",
+        "description": "Deal (100% - 300%) ATK damage to target enemy and inflict Daze for 2 turn(s).",
         "upgrades": [
-          "Lv. 2: +5% - 25% ATK damage",
-          "Lv. 3: +5% - 25% ATK damage",
-          "Lv. 4: +10% - 40% ATK damage",
-          "Lv. 5: +10% - 60% ATK damage; Also inflict Daze for 2 turn(s)."
+          "Lv. 2: +5% - 15% ATK damage",
+          "Lv. 3: +10% - 30% ATK damage",
+          "Lv. 4: +15% - 45% ATK damage",
+          "Lv. 5: +20% - 60% ATK damage; Also inflict Daze for 2 turn(s)."
         ],
         "image": null
       },
@@ -5635,7 +5638,7 @@
           "Turn Meter Down",
           "Debuffs"
         ],
-        "description": "Deal (40% - 200%) ATK damage to a random enemy 5 times with each hit inflicting 10% - 20% Turn Meter Down. If the target has 0% Turn Meter before being hit, inflict Stun for 1 turn(s).",
+        "description": "Deal (50% - 200%) ATK damage to a random enemy 5 times with each hit inflicting 10% - 20% Turn Meter Down. If the target has 0% Turn Meter before being hit, inflict Stun for 1 turn(s).",
         "upgrades": [
           "Lv. 2: +10% ATK max damage",
           "Lv. 3: +15% ATK max damage, -1 Cooldown",
@@ -5659,13 +5662,13 @@
           "Buffs",
           "Debuffs"
         ],
-        "description": "Deal (60% - 300%) ATK damage to all enemies, doubled for target enemy and gain 1 stack(s) of Power Source. Each hit has a 50% chance to inflict Stun for 1 turn(s), increased to 100% for target enemy.",
+        "description": "Deal (100% - 300%) ATK damage to all enemies, doubled for target enemy and gain 1 stack(s) of Power Source. Each hit has a 50% chance to inflict Stun for 1 turn(s), increased to 100% for target enemy.",
         "upgrades": [
-          "Lv. 2: +5% - 25% ATK damage",
-          "Lv. 3: +5% - 25% ATK damage, -1 Cooldown",
-          "Lv. 4: +5% - 25% ATK damage; Gain 1 Power Source.",
-          "Lv. 5: +5% - 25% ATK damage; Each hit has a 50% chance to inflict Stun for 1 turn(s).",
-          "Lv. 6: +10% - 50% ATK damage; Target enemy receives double damage and is always inflicted with Stun."
+          "Lv. 2: +5% - 15% ATK damage",
+          "Lv. 3: +5% - 15% ATK damage, -1 Cooldown",
+          "Lv. 4: +10% - 30% ATK damage; Gain 1 Power Source.",
+          "Lv. 5: +10% - 30% ATK damage; Each hit has a 50% chance to inflict Stun for 1 turn(s).",
+          "Lv. 6: +20% - 60% ATK damage; Target enemy receives double damage and is always inflicted with Stun."
         ],
         "image": null
       },
@@ -5679,12 +5682,12 @@
           "Attr. Up",
           "Attr. Down"
         ],
-        "description": "Voltz cannot critically hit, but has +15% Piercing for each Crucible or Dwarf ally and his attacks cannot be dodged.\n\nAdditionally, Voltz has +5% Focus for each Seasoned ally.",
+        "description": "Voltz cannot critically hit, but gains bonus Piercing equal to half of his Crit Rate, has +10% Piercing for each Crucible or Dwarf ally and his attacks cannot be dodged.\n\nAdditionally, Voltz has +5% Focus for each other Seasoned ally.",
         "upgrades": [
-          "Lv. 2: +2% Piercing",
-          "Lv. 3: +3% Piercing",
-          "Lv. 4: +5% Piercing",
-          "Lv. 5: Additionally, Voltz has +5% Focus for each Seasoned ally.",
+          "Lv. 2: +1% Piercing",
+          "Lv. 3: +2% Piercing",
+          "Lv. 4: +3% Piercing; Additionally, Voltz has +5% Focus for each Seasoned ally.",
+          "Lv. 5: Voltz gains bonus Piercing equal to half of his Crit Rate.",
           "★★★★★ Voltz attacks cannot be dodged."
         ],
         "image": null
@@ -5984,7 +5987,7 @@
           "Debuffs",
           "Void Touch"
         ],
-        "description": "[Requires 3 Void Power]\n\nInflict Instant Defeat on target enemy, who cannot be revived and inflict Fear for 1 turn(s) on all other enemies. This attack cannot be dodged.\n\nSuffer Succumb To The Void and all other allies suffer 15% Void Touch.",
+        "description": "[Requires 3 Void Power]\n\nInflict Instant Defeat on target enemy, who cannot be revived and inflict Fear for 1 turn(s) on all other enemies. This attack cannot be dodged.\n\nSuffer Hollowing and all other allies suffer 15% Void Touch.",
         "upgrades": [],
         "image": null
       },
@@ -5996,9 +5999,10 @@
         "cooldown": null,
         "tags": [
           "Buffs",
-          "Void Touch"
+          "Void Touch",
+          "Bonus Turn"
         ],
-        "description": "Each time other Consumed character is defeated, Johannes gains [Undispellable] 1 Strong until [End of Battle] and suffers 2% Void Touch.\n\nJohannes cannot gain Revive. When Johannes is defeated, he deals damage to all allies equal to 20% of his Max Health and 8% Void Touch to all characters. This damage cannot be dodged.",
+        "description": "Each time other Consumed character is defeated, Johannes gains [Undispellable] 1 Strong until [End of Battle] and suffers 2% Void Touch.\n\nWhenever another character suffers Hollowing, Johannes gains a Bonus Turn.\n\nJohannes cannot gain Revive. When Johannes is defeated, he deals damage to all allies equal to 20% of his Max Health and 8% Void Touch to all characters. This damage cannot be dodged.",
         "upgrades": [],
         "image": null
       },
@@ -6014,10 +6018,10 @@
           "Void Touch Cleanse",
           "Healing"
         ],
-        "description": "Johannes can trigger Embrace The Void to gain Void Power.\nJohannes gains +15% Attack, Piercing and Crit Rate per 1 Void Power.\n\n[On Embrace The Void] Johannes gains Healing equal to half of his Void Touch.\n\nWhen under Void Power, Johannes ignores Taunt and is immune to Provoke.\n\nEach time Johannes causes enemy to Succumb To The Void, he gains 10% Void Touch Cleanse.",
+        "description": "Johannes can trigger Embrace The Void to gain Void Power.\nJohannes gains +20% Attack, Piercing and Crit Rate per 1 Void Power.\n\n[On Embrace The Void] Johannes gains Healing equal to half of his Void Touch.\n\nWhen under Void Power, Johannes ignores Taunt and is immune to Provoke.\n\nEach time Johannes causes enemy to suffer Hollowing, he gains 10% Void Touch Cleanse.",
         "upgrades": [
-          "Lv. 2: +5% Attack, Piercing and Crit Rate",
-          "Lv. 3: Each time Johannes causes enemy to Succumb To The Void, he gains 10% Void Touch Cleanse.",
+          "Lv. 2: +10% Attack, Piercing and Crit Rate",
+          "Lv. 3: Each time Johannes causes enemy to suffer Hollowing, he gains 10% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Johannes gains Healing equal to half of his Void Touch.",
           "Lv. 5: When under Void Power, Johannes ignores Taunt and is immune to Provoke."
         ],
@@ -6232,10 +6236,10 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 100% ATK damage to all enemies inflicting Blind for 2 turn(s). Damage is increased by 10% of Lamassu current Health.",
+        "description": "Deal 120% ATK damage to all enemies inflicting Blind for 2 turn(s). Damage is increased by 10% of Lamassu current Health.",
         "upgrades": [
-          "Lv. 2: +10% ATK damage",
-          "Lv. 3: +15% ATK damage, -1 Cooldown",
+          "Lv. 2: +15% ATK damage",
+          "Lv. 3: +20% ATK damage, -1 Cooldown",
           "Lv. 4: +25% ATK damage, +1 Blind duration",
           "Lv. 5: Damage is increased by 10% of Lamassu current Health."
         ],
@@ -6261,7 +6265,7 @@
         "order": 5,
         "name": "...STILL STANDS",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Buffs",
@@ -6310,11 +6314,11 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Lamassu can trigger Embrace The Void to gain Void Power.\nLamassu gains +25% Defense, Crit Defense and Focus per 1 Void Power.\n\n[On Embrace The Void] Lamassu gains 2 Invulnerability for 1 turn(s).\n\nWhen under Void Power, each time Lamassu loses Taunt, she regains it for 2 turn(s) and loses 1 Void Power.\n\nWhen Lamassu gains Revive, she gains 10% Void Touch Cleanse.",
+        "description": "Lamassu can trigger Embrace The Void to gain Void Power.\nLamassu gains +25% Defense, Crit Defense and Focus per 1 Void Power.\n\n[On Embrace The Void] Lamassu gains 2 Invulnerability and Taunt for 2 turn(s).\n\nWhen under Void Power, each time Lamassu loses Taunt, she regains it for 2 turn(s) and loses 1 Void Power.\n\nWhen Lamassu gains Revive, she gains 10% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Defense, Crit Defense and Focus.",
           "Lv. 3: When Lamassu gains Revive, she gains 10% Void Touch Cleanse.",
-          "Lv. 4: [On Embrace The Void] Lamassu gains 2 Invulnerability for 1 turn(s).",
+          "Lv. 4: [On Embrace The Void] Lamassu gains 2 Invulnerability and Taunt for 2 turn(s).",
           "Lv. 5: When under Void Power, each time Lamassu loses Taunt, she regains it for 2 turn(s) and loses 1 Void Power."
         ],
         "image": null
@@ -6486,12 +6490,12 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 140% ATK damage to target enemy inflicting Attack Down for 2 turn(s).",
+        "description": "Deal 150% ATK damage to target enemy inflicting Attack Down for 2 turn(s).",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
           "Lv. 4: +20% ATK damage",
-          "Lv. 5: +25% ATK damage; +1 Attack Down duration"
+          "Lv. 5: +30% ATK damage; +1 Attack Down duration"
         ],
         "image": null
       },
@@ -6511,8 +6515,8 @@
           "Lv. 2: +2% Shield",
           "Lv. 3: +2% Shield, -1 Cooldown",
           "Lv. 4: +2% Shield, +1 Untouchable",
-          "Lv. 5: +4% Shield, +5% bonus shield per Noble ally",
-          "Lv. 6: +5% Shield; Shield is doubled if Renna is ally",
+          "Lv. 5: +4% Shield, +5% bonus shield per Noble ally.",
+          "Lv. 6: +5% Shield; Shield is doubled if Renna is ally.",
           "★★★★★ Grant Shield equal to half of his own to all Knight allies for 3 turn(s)."
         ],
         "image": null
@@ -6534,7 +6538,7 @@
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +10% ATK damage",
           "Lv. 4: +10% ATK damage, -1 Cooldown",
-          "Lv. 5: +15% ATK damage, Stagger chance varies from 25% for enemies with full Health to 100% for enemies below 25% Health"
+          "Lv. 5: +15% ATK damage, Stagger chance varies from 25% for enemies with full Health to 100% for enemies below 25% Health."
         ],
         "image": null
       },
@@ -6549,13 +6553,13 @@
           "Buffs",
           "Skill Trigger"
         ],
-        "description": "Sir Bernard instantly uses Legendary Protector:\n- each time a Noble ally drops below 50% Health for the first time,\n- [On Battle Start], only if Renna is an ally.\n\nWhile under Shield, Sir Bernard has +30% Dmg Reduction.\nWhen Sir Bernard Health drops below 50%, he gains [Unpreventable] [Undispellable] Defense Up.\n\nWhen Sir Bernard Health drops below 20%, he gains Deathproof for 1 turn(s).\n\nWhile Renna is active ally, Sir Bernard adds 20% DEF to all damage he deals.",
+        "description": "Sir Bernard instantly uses Legendary Protector:\n- each time a Noble ally drops below 50% Health for the first time,\n- [On Battle Start], only if Renna is an ally.\n\nWhile under Shield, Sir Bernard has +30% Dmg Reduction.\nWhen Sir Bernard Health drops below 50%, he gains [Unpreventable] [Undispellable] Defense Up.\n\nWhen Sir Bernard Health drops below 20%, he gains Deathproof for 1 turn(s).\n\nWhile Renna is active ally, Sir Bernard adds 25% DEF to all damage he deals.",
         "upgrades": [
           "Lv. 2: +2% damage reduction",
           "Lv. 3: +2% damage reduction",
           "Lv. 4: +3% damage reduction",
-          "Lv. 5: +3% damage reduction; Instantly trigger Legendary Protector each time a Noble ally drops below 50% Health for the first time",
-          "Lv. 6: +5% damage reduction; [On Battle Start] trigger Legendary Protector if Renna is ally and while Renna is ally and alive, Sir Bernard adds 20% DEF to all damage he deals"
+          "Lv. 5: +3% damage reduction; Instantly trigger Legendary Protector each time a Noble ally drops below 50% Health for the first time,",
+          "Lv. 6: +5% damage reduction; [On Battle Start] trigger Legendary Protector if Renna is ally and while Renna is ally and alive, Sir Bernard adds 25% DEF to all damage he deals."
         ],
         "image": null
       },
@@ -6563,7 +6567,7 @@
         "order": 5,
         "name": "GUIDING LIGHT",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up",
@@ -6574,7 +6578,7 @@
           "Lv. 2: +2% Defense",
           "Lv. 3: +3% Defense",
           "Lv. 4: +5% Defense",
-          "Lv. 5: If no ally has Taunt when a Knight ally ends their turn, Sir Bernard grants Taunt for 1 turn(s) to the Knight ally with the highest Health"
+          "Lv. 5: If no ally has Taunt when a Knight ally ends their turn, Sir Bernard grants Taunt for 1 turn(s) to the Knight ally with the highest Health."
         ],
         "image": null
       },
@@ -6769,12 +6773,12 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 190% ATK damage to target enemy inflicting Crit Resistance Down for 2 turn(s).",
+        "description": "Deal 180% ATK damage to target enemy inflicting Crit Resistance Down for 2 turn(s).",
         "upgrades": [
           "Lv. 2: +15% ATK damage",
           "Lv. 3: +20% ATK damage",
           "Lv. 4: +25% ATK damage",
-          "Lv. 5: +35% ATK damage; Inflict Crit Resistance Down for 2 turn(s) on hit."
+          "Lv. 5: +30% ATK damage; Inflict Crit Resistance Down for 2 turn(s) on hit."
         ],
         "image": null
       },
@@ -6793,7 +6797,7 @@
           "Lv. 2: +5% Turn Meter Up",
           "Lv. 3: +5% Turn Meter Up, -1 Cooldown",
           "Lv. 4: +5% Turn Meter Up; also grant Attack Up for 2 turn(s) to target ally.",
-          "Lv. 5: +5% Turn Meter Up; +1 Buff(s) duration; If Brighteyes is alive, they and Jagya gain additional 1 Snares for 3 turn(s)."
+          "Lv. 5: +5% Turn Meter Up; +1 Buff(s) duration, If Brighteyes is alive, they and Jagya gain additional 1 Snares for 3 turn(s)."
         ],
         "image": null
       },
@@ -6809,7 +6813,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 400% ATK damage to target enemy inflicting Bleed for 3 turn(s) and call Brighteyes to Assist. On critical hit, inflict 1 Armor Shred and additional 1 Bleed for 3 turn(s) as well. This attack has +25% Piercing. If Brighteyes is active and not under Control Debuff(s), they and Jagya have +25% Crit Rate, +25% Crit Dmg during this skill and their attacks cannot be dodged.",
+        "description": "Deal 400% ATK damage to target enemy inflicting Bleed for 3 turn(s) and call Brighteyes to Assist. On critical hit, inflict 1 Armor Shred and additional 1 Bleed for 3 turn(s) as well.\n\nThis attack has +25% Piercing.\n\nIf Brighteyes is active and not under Control Debuff(s), they and Jagya have +25% Crit Rate, +25% Crit Dmg during this skill and their attacks cannot be dodged.",
         "upgrades": [
           "Lv. 2: +25% ATK damage",
           "Lv. 3: +25% ATK damage",
@@ -6832,7 +6836,7 @@
           "Cooldowns Down",
           "Buffs"
         ],
-        "description": "[On Turn Start] If summon slot is available, summon Brighteyes until [End of Battle] (limit 1 per battle). Jagya gains 20% Turn Meter Up each time Brighteyes starts its turn. Brighteyes gains 2% Turn Meter Up each time a Seasoned ally deals damage, doubled if that ally is Jagya. When Brighteyes defeats an enemy, apply Cooldowns Down on Now the Big One. When Brighteyes is defeated apply Cooldowns Reset on Now the Big One and Jagya gains 3 Wrath and 50% Turn Meter Up.",
+        "description": "[On Turn Start] If summon slot is available, summon Brighteyes until [End of Battle] (limit 1 per battle).\n\nJagya gains 20% Turn Meter Up each time Brighteyes starts its turn.\nBrighteyes gains 2% Turn Meter Up each time a Seasoned ally deals damage, doubled if that ally is Jagya.\n\nWhen Brighteyes defeats an enemy, apply Cooldowns Down on Now the Big One.\nWhen Brighteyes is defeated apply Cooldowns Reset on Now the Big One and Jagya gains 3 Wrath and 50% Turn Meter Up.",
         "upgrades": [
           "Lv. 2: +2% Turn Meter Up",
           "Lv. 3: +3% Turn Meter Up",
@@ -6852,7 +6856,7 @@
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Jagya has +5% Attack and Defense for each living Creature ally, doubled for Brighteyes, and has +15% Dmg Reduction vs. Creature and Consumed enemies. [On Round Start] If all enemies are Creature or Consumed, Jagya gains [Undispellable] Stealth until [End of Round].",
+        "description": "Jagya has +5% Attack and Defense for each living Creature ally, doubled for Brighteyes, and has +15% Dmg Reduction vs. Creature and Consumed enemies.\n\n[On Round Start] If all enemies are Creature or Consumed, Jagya gains [Undispellable] Stealth until [End of Round].",
         "upgrades": [
           "Lv. 2: +1% Attack and Defense, +1% Dmg Reduction",
           "Lv. 3: +1% Attack and Defense, +2% Dmg Reduction",
@@ -6874,7 +6878,7 @@
           "Buffs",
           "Assists"
         ],
-        "description": "Jagya can trigger Embrace The Void to gain Void Power. Jagya gains +20% Attack, Hit Rate and Piercing per 1 Void Power. [On Embrace The Void] Jagya gains 3 Wrath. When under Void Power, each time Jagya uses a skill, she has [10% * Void Power] chance to call Brighteyes to Assist. [On Round End] If Brighteyes is at full Health, Jagya gains 10% Void Touch Cleanse.",
+        "description": "Jagya can trigger Embrace The Void to gain Void Power.\nJagya gains +20% Attack, Hit Rate and Piercing per 1 Void Power.\n\n[On Embrace The Void] Jagya gains 3 Wrath.\n\nWhen under Void Power, each time Jagya uses a skill, she has [10% * Void Power] chance to call Brighteyes to Assist.\n\n[On Round End] If Brighteyes is at full Health, Jagya gains 10% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Attack, Hit Rate and Piercing",
           "Lv. 3: [On Round End] If Brighteyes is at full Health, Jagya gains 10% Void Touch Cleanse.",
@@ -7051,11 +7055,11 @@
           "Healing",
           "Buffs"
         ],
-        "description": "Deal 120% ATK damage to target enemy, gain 10% Healing and Foresight for 1 turn(s).\n\nLose 1 Moonveil.",
+        "description": "Deal 120% ATK damage to target enemy, gain 5% Healing and Foresight for 1 turn(s).\n\nLose 1 Moonveil.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
-          "Lv. 3: +15% ATK damage; Gain 5% Healing.",
-          "Lv. 4: +15% ATK damage; +5% Healing.",
+          "Lv. 3: +15% ATK damage; Gain 2% Healing.",
+          "Lv. 4: +15% ATK damage; +3% Healing.",
           "Lv. 5: +20% ATK damage, Gain Foresight for 1 turn(s)."
         ],
         "image": null
@@ -7091,16 +7095,16 @@
           "Healing",
           "Debuff Dispel",
           "Buffs",
-          "Assists",
-          "Turn Meter Up"
+          "Turn Meter Up",
+          "Assists"
         ],
-        "description": "Grant target other ally full Debuff Dispel, 25% Healing, 5% Void Touch Cleanse and grant them Bless and Resilience for 2 turn(s). Then, grant them 50% Turn Meter Up and, if they are Moonlight Clan, call them to Assist with +100% Assist Dmg.\n\nLose 3 Moonveil.",
+        "description": "Grant target other ally full Debuff Dispel, 25% Healing, 12% Void Touch Cleanse and grant them Bless and Resilience for 2 turn(s). Then, grant them 50% Turn Meter Up and, if they are Moonlight Clan, call them to Assist with +100% Assist Dmg.\n\nLose 3 Moonveil.",
         "upgrades": [
           "Lv. 2: +2% Healing",
-          "Lv. 3: +2% Healing",
+          "Lv. 3: +2% Healing; grant also 10% Turn Meter Up.",
           "Lv. 4: +2% Healing; -1 Cooldown",
-          "Lv. 5: +4% Healing, +1% Void Touch Cleanse; Also grant Resilience.",
-          "Lv. 6: +2% Void Touch Cleanse; Grant target ally 30% Turn Meter Up and they Assist if they are Moonlight Clan.",
+          "Lv. 5: +4% Healing, +2% Void Touch Cleanse; Also grant Resilience.",
+          "Lv. 6: +3% Void Touch Cleanse; Grant target ally 20% Turn Meter Up and they Assist if they are Moonlight Clan.",
           "★★★★★ Target ally has +100% Assist Dmg and gains 20% Turn Meter Up more."
         ],
         "image": null
@@ -7109,7 +7113,7 @@
         "order": 4,
         "name": "MOONLIGHT PROTECTOR",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up",
@@ -7117,13 +7121,13 @@
           "Healing",
           "Debuff Dispel"
         ],
-        "description": "Moonlight Clan allies have 40% Health Recovery and 20% Max Health.\n\nWhen a Moonlight Clan ally with Bless defeats an enemy, that ally gains 5% Void Touch Cleanse, Bonus Turn and all Moonlight Clan allies gain 10% Healing.\n\nWhen a Creature ally starts their turn, they gain a random Debuff Dispel (or full Debuff Dispel if they are Moonlight Clan).",
+        "description": "Moonlight Clan allies have 25% Health Recovery and 15% Max Health.\n\nWhen a Moonlight Clan ally with Bless defeats an enemy, that ally gains 5% Void Touch Cleanse, Bonus Turn and all Moonlight Clan allies gain 10% Healing.\n\nWhen a Creature ally starts their turn, they gain a random Debuff Dispel (or full Debuff Dispel if they are Moonlight Clan.",
         "upgrades": [
           "Lv. 2: +5% Health Recovery",
           "Lv. 3: +5% Health Recovery",
-          "Lv. 4: +10% Health Recovery",
+          "Lv. 4: +5% Health Recovery",
           "Lv. 5: +5% Max Health; When a Moonlight Clan ally with Bless defeats an enemy, that ally gains 5% Void Touch Cleanse.",
-          "Lv. 6: +10% Max Health; When a Moonlight Clan ally with Bless defeats an enemy, they gain a Bonus Turn and all Moonlight Clan allies gain 10% Healing.",
+          "Lv. 6: +5% Max Health; When a Moonlight Clan ally with Bless defeats an enemy, they gain a Bonus Turn and all Moonlight Clan allies gain 10% Healing.",
           "★★ At the beginning of their turn Creature allies are granted Debuff Dispel on a random debuff or all debuffs if they are Moonlight Clan."
         ],
         "image": null
@@ -7337,14 +7341,14 @@
         "tags": [
           "Melee",
           "Damage",
-          "Turn Meter Down"
+          "Turn Meter Up"
         ],
-        "description": "Deal 140% ATK damage and inflict 10% Turn Meter Down.",
+        "description": "Deal 140% ATK damage and grant 10% Turn Meter Up to a random ally. If this ally is Carnivale, Turn Meter Up effect is doubled.",
         "upgrades": [
           "Lv. 2: +10% damage",
           "Lv. 3: +15% damage",
-          "Lv. 4: +20% damage",
-          "Lv. 5: +25% damage; +5% Turn Meter Down"
+          "Lv. 4: +20% damage, +5% Turn Meter Up",
+          "Lv. 5: +25% damage; Turn Meter Up effect is doubled for Carnivale allies"
         ],
         "image": null
       },
@@ -7356,19 +7360,19 @@
         "cooldown": 4,
         "tags": [
           "Healing",
+          "Void Touch Cleanse",
           "Buffs",
-          "Turn Meter Down",
           "Debuff Dispel",
-          "Void Touch Cleanse"
+          "Turn Meter Up"
         ],
-        "description": "Grant 25% Healing to all allies and grant Archlands and Carnivale allies gain Focus Up for 2 turns. Inflict 15% Turn Meter Down on all enemies. If Bruno has Spotlight this Turn Meter Down is [Irresistible]. If any ally has Spotlight and they have no debuffs, grant them 5% Void Touch Cleanse (or 10% if they are Carnivale). Otherwise, grant them full Debuff Dispel.",
+        "description": "Grant 25% Healing to all allies and grant Archlands and Carnivale allies Focus Up for 2 turns. Then, grant all allies 2% Void Touch Cleanse for each unique Buff(s) they have.\n\nIf Bruno has Spotlight, Void Touch Cleanse effect is doubled.\n\nIf any ally has Spotlight and they have no debuffs, grant them 25% Turn Meter Up. Otherwise, grant them full Debuff Dispel.",
         "upgrades": [
           "Lv. 2: +2% Healing",
-          "Lv. 3: +3% Healing",
-          "Lv. 4: +5% Healing; -1 Cooldown",
+          "Lv. 3: +3% Healing, -1 Cooldown",
+          "Lv. 4: +5% Healing; If Bruno has Spotlight, Void Touch Cleanse effect is doubled.",
           "Lv. 5: Grant Archlands and Carnivale allies gain Focus Up for 2 turns.",
-          "Lv. 6: Inflict 15% Turn Meter Down on all enemies. If Bruno has Spotlight this Turn Meter Down is [Irresistible].",
-          "★ If any ally has Spotlight and they have no debuffs, grant them 5% Void Touch Cleanse (or 10% if they are Carnivale). Otherwise, grant them full Debuff Dispel."
+          "Lv. 6: Grant allies Void Touch Cleanse for each unique Buff(s) they have.",
+          "★ If any ally has Spotlight and they have no debuffs, grant them 25% Turn Meter Up. Otherwise, grant them full Debuff Dispel."
         ],
         "image": null
       },
@@ -7384,7 +7388,7 @@
           "Healing",
           "Debuff Dispel"
         ],
-        "description": "Switch ballade based on target ally - if target ally is Tank or Support or they are below 25% Health, play Soothing Chords, otherwise play Rhymes of Valor. Grant target ally full Debuff Dispel and additionally 25% Healing if playing Soothing Chords or 25% Turn Meter Up if playing Rhymes of Valor. Ally with Spotlight also gains these effects. Then, gain 10% Turn Meter Up for each other Archlands ally, doubled if they are Carnivale. If Bruno has Spotlight, all Carnivale allies gain 10% Turn Meter Up.",
+        "description": "Switch ballade based on target ally - if target ally is Tank or Support or they are below 25% Health, play Soothing Chords, otherwise play Rhymes of Valor.\n\nGrant target ally full Debuff Dispel and additionally 25% Healing If playing Soothing Chords or 25% Turn Meter Up if playing Rhymes of Valor. Ally with Spotlight also gains these effects.\n\nThen, gain 10% Turn Meter Up for each other Archlands ally, doubled if they are Carnivale.\n\nIf Bruno has Spotlight, all Carnivale allies gain 10% Turn Meter Up.",
         "upgrades": [
           "Lv. 2: +2% target ally Healing / Turn Meter Up",
           "Lv. 3: +2% target ally Healing / Turn Meter Up; -1 Cooldown",
@@ -7404,7 +7408,7 @@
           "Turn Meter Up",
           "Debuff Dispel"
         ],
-        "description": "Bruno starts battle playing Rhymes of Valor. If Bruno plays Rhymes of Valor, each time other ally ends their turn, they gain 5% Turn Meter Up. If Bruno plays Soothing Chords, each time other ally starts their turn, they gain 5% Healing or random Debuff Dispel if their Health was full. These effects are increased by 50% for Archlands allies and doubled for Carnivale allies. If Bruno has Spotlight and there are no other Minstrel allies, effects of this skill are twice as strong and affect Bruno as well.",
+        "description": "Bruno starts battle playing Rhymes of Valor.\n\nIf Bruno plays Rhymes of Valor, each time other ally ends their turn, they gain 5% Turn Meter Up.\n\nIf Bruno plays Soothing Chords, each time other ally starts their turn, they gain 5% Healing or random Debuff Dispel if their Health was full.\n\nThese effects are increased by 50% for Archlands allies and doubled for Carnivale allies.\n\nIf Bruno has Spotlight and there are no other Minstrel allies, effects of this skill are twice as strong and affect Bruno as well.",
         "upgrades": [
           "Lv. 2: +1% Turn Meter Up; +1% Healing",
           "Lv. 3: +1% Turn Meter Up; +1% Healing",
@@ -7428,7 +7432,7 @@
           "Healing",
           "Attr. Up"
         ],
-        "description": "If there are at least 3 Carnivale allies, Bruno can trigger Star of the Show to gain Spotlight. When Bruno gains Spotlight, he gains a full Debuff Dispel or, if he had no debuffs, gains 10% Void Touch Cleanse. Then, he gains 40% Healing. When Bruno has Spotlight, he has +10% Healing Effect for each Carnivale ally.",
+        "description": "If there are at least 3 Carnivale allies, Bruno can trigger Star of the Show to gain Spotlight.\n\nWhen Bruno gains Spotlight, he gains a full Debuff Dispel or, if he had no debuffs, gains 10% Void Touch Cleanse. Then, he gains 40% Healing.\n\nWhen Bruno has Spotlight, he has +10% Healing Effect for each Carnivale ally.",
         "upgrades": [],
         "image": null
       },
@@ -7445,7 +7449,7 @@
           "Cooldowns Down",
           "Healing"
         ],
-        "description": "Bruno can trigger Embrace The Void to gain Void Power. Bruno gains +20% Max Health, Healing Effect and Crit Resistance per 1 Void Power. [On Embrace The Void] Bruno gains Cooldowns Reset on Banjo Maestro. [On Turn Start] Bruno gains 5% Healing per 1 Void Power. [On Round End] If Bruno has Spotlight and there are no defeated Carnivale allies, Bruno grants 10% Void Touch Cleanse to Carnivale ally with the highest Void Touch.",
+        "description": "Bruno can trigger Embrace The Void to gain Void Power.\nBruno gains +20% Max Health, Healing Effect and Crit Resistance per 1 Void Power.\n\n[On Embrace The Void] Bruno gains Cooldowns Reset on Banjo Maestro.\n\n[On Turn Start] Bruno gains 5% Healing per 1 Void Power.\n\n[On Round End] If Bruno has Spotlight and there are no defeated Carnivale allies, Bruno grants 10% Void Touch Cleanse to Carnivale ally with the highest Void Touch.",
         "upgrades": [
           "Lv. 2: +10% Max Health, Healing Effect and Crit Resistance",
           "Lv. 3: [On Round End] If Bruno has Spotlight and there are no defeated Carnivale allies, Bruno grants 10% Void Touch Cleanse to Carnivale ally with the highest Void Touch.",
@@ -7680,13 +7684,13 @@
           "Debuffs",
           "Cooldowns Down"
         ],
-        "description": "Owyn is immune to Fear.\n\nWhen Owyn is defeated while under Taunt, Revive him with 1 Health and 60% Turn Meter and he gains Cooldowns Reset on March Forward!, [Undispellable] Last Stand and suffers [Irresistible] Fatal Wound.\n\nThis effect can trigger once per round and Owyn cannot be revived by any other means.\n\nOn Revive Owyn gains 2 Invulnerability for 1 turn(s).",
+        "description": "Owyn is immune to Fear.\n\nWhen Owyn is defeated while under Taunt, Revive him with 1 Health, 40% Turn Meter, 2 Invulnerability and he gains Cooldowns Reset on March Forward!, [Undispellable] Last Stand and suffers [Irresistible] Fatal Wound.\n\nThis effect can trigger once per round and Owyn cannot be revived by any other means.",
         "upgrades": [
-          "Lv. 2: +10% Turn Meter on Revive",
-          "Lv. 3: +10% Turn Meter on Revive",
-          "Lv. 4: +10% Turn Meter and gain Cooldowns Reset on March Forward! on Revive;",
-          "Lv. 5: Owyn is immune to Fear.",
-          "★★★★★ On Revive Owyn gains 2 Invulnerability for 1 turn(s)."
+          "Lv. 2: +5% Turn Meter on Revive",
+          "Lv. 3: +5% Turn Meter on Revive",
+          "Lv. 4: +5% Turn Meter and gain Cooldowns Reset on March Forward! on Revive;",
+          "Lv. 5: +5% Turn Meter, +1 Invulnerability on Revive; Owyn is immune to Fear.",
+          "★★★★★ +2 Invulnerability and Attack Up for 1 turn(s) on Revive"
         ],
         "image": null
       },
@@ -7696,10 +7700,13 @@
         "level": "Max",
         "type": "Trait",
         "cooldown": null,
-        "tags": [],
-        "description": "Owyn can trigger Holy Vow to become Vowkeeper.\n\nWhen Owyn is Vowkeeper, gain 20 True to Vows to fulfill his Vow, granting all other Holy Order and Archlands allies Owyn's Vow.\n\nOwyn gains 1 True to Vows each time a Holy Order ally receives damage when under Taunt or 20 True to Vows when he is defeated.\n\nWhen Owyn becomes Vowkeeper, he gains Debuff Dispel on all Control debuffs and gains Taunt for 1 turn(s).\n\n[On Turn Start] Unless under Control debuff(s), if Owyn is Vowkeeper, he gains Taunt for 1 turn(s).\n\n[On Battle Start] If Owyn is the only Holy Order ally, he uses Holy Vow.",
+        "tags": [
+          "Skill Trigger",
+          "Status"
+        ],
+        "description": "Owyn can trigger Holy Vow to become Vowkeeper.\n\nWhen Owyn is Vowkeeper, gain 20 True to Vows to fulfill his Vow, granting all other Holy Order and Archlands allies Owyn's Vow.\n\nOwyn gains 1 True to Vows each time a Holy Order ally receives damage when under Taunt or 20 True to Vows when he is defeated.\n\nWhen Owyn becomes Vowkeeper, he gains Debuff Dispel on all Control debuffs and gains Taunt for 1 turn(s).\n\n[On Turn Start] Unless under Control debuff(s), if Owyn is Vowkeeper, he gains Taunt for 1 turn(s).\n\n[On Battle Start] If Owyn is the only Holy Order ally, he uses Holy Vow without gaining a Bonus Turn.",
         "upgrades": [
-          "★★ TODO"
+          "★★ [On Battle Start] If Owyn is the only Holy Order ally, he uses Holy Vow without gaining a Bonus Turn."
         ],
         "image": null
       },
@@ -7717,7 +7724,7 @@
         "upgrades": [
           "Lv. 2: +5% Defense, Crit Resistance and Crit Defense",
           "Lv. 3: When Owyn gains Revive, he gains 50% Void Touch Cleanse (limit 1 per battle).",
-          "Lv. 4: [On Embrace The Void] Owyn gains 2 Guard for 2 turn(s) and uses Embrace the Void.",
+          "Lv. 4: [On Embrace The Void] Owyn gains 2 Guard for 2 turn(s) and uses Defender of the People.",
           "Lv. 5: When under Void Power, each time Owyn is about to suffer a Control debuff, he loses 1 Void Power instead."
         ],
         "image": null
@@ -7909,11 +7916,11 @@
           "Buffs",
           "Debuffs"
         ],
-        "description": "Inflict Provoke and Attack Down for 2 turn(s) on target enemy and grant Ally Protection for 3 turn(s) to Angelo and ally with lowest Health who does not already have it.\n\nRosie has +40% Focus when using this skill.",
+        "description": "Inflict Provoke and Attack Down for 2 turn(s) on target enemy and enemy with the highest Attack (excluding target one), then grant Ally Protection for 3 turn(s) to Angelo and ally with lowest Health who does not already have it.\n\nRosie has +40% Focus when using this skill.",
         "upgrades": [
           "Lv. 2: +1 Ally Protection duration",
           "Lv. 3: -1 Cooldown, also inflict Attack Down for 2 turn(s)",
-          "Lv. 4: Grant Ally Protection to Angelo as well.",
+          "Lv. 4: Grant Ally Protection to Angelo as well; Inflict Debuff(s) on enemy with the highest Attack (excluding target one) as well.",
           "Lv. 5: Rosie has +40% Focus when using this skill."
         ],
         "image": null
@@ -7952,14 +7959,14 @@
           "Skill Trigger",
           "Buffs"
         ],
-        "description": "Rosie has +5% Max Health for each Archlands ally and twice as much if they are Carnivale. Additionally, Rosie gains 5% Healing when damaged by an enemy with Provoke during their turn.\n\nWhen another Carnivale ally is damaged and falls below 50% Health for the first time this round, Rosie uses Try Me Instead! on the enemy that caused this effect.\n\n[On Turn Start] If Rosie is below 25% Health, she gains 1 Regeneration for 2 turn(s) (or 2 Regeneration if she has Spotlight).",
+        "description": "Rosie has +5% Max Health for each Archlands ally and twice as much if they are Carnivale. Additionally, Rosie gains 5% Healing when damaged by an enemy with Provoke during their turn.\n\nWhen another Carnivale ally is damaged and falls below 50% Health for the first time this round, Rosie uses Try Me Instead! on the enemy that caused this effect.\n\n[On Turn Start] If Rosie is below 50% Health, she gains 1 Regeneration for 2 turn(s) (or 2 Regeneration if she has Spotlight).",
         "upgrades": [
           "Lv. 2: +1% Max Health",
           "Lv. 3: +1% Max Health",
           "Lv. 4: +1% Max Health",
           "Lv. 5: Rosie gains 5% Healing when damaged by an enemy with Provoke during their turn.",
           "Lv. 6: When another Carnivale ally is damaged and falls below 50% Health for the first time this round, Rosie uses Try Me Instead! on the enemy that caused this effect.",
-          "★ [On Turn Start] If Rosie is below 25% Health, she gains 1 Regeneration for 2 turn(s) (or 2 Regeneration if she has Spotlight)."
+          "★ [On Turn Start] If Rosie is below 50% Health, she gains 1 Regeneration for 2 turn(s) (or 2 Regeneration if she has Spotlight)."
         ],
         "image": null
       },
@@ -7991,9 +7998,9 @@
           "Void Touch Cleanse",
           "Healing"
         ],
-        "description": "Rosie can trigger Embrace The Void to gain Void Power. Rosie gains +20% Max Health and Defense per 1 Void Power.\n\n[On Embrace The Void] Rosie gains 25% Healing.\n\nWhen under Void Power, Rosie attacks cannot be dodged.\n\n[On Round End] If no ally is defeated, Rosie gains 5% Void Touch Cleanse.",
+        "description": "Rosie can trigger Embrace The Void to gain Void Power.\nRosie gains +15% Max Health, Defense and Focus per 1 Void Power.\n\n[On Embrace The Void] Rosie gains 25% Healing.\n\nWhen under Void Power, Rosie attacks cannot be dodged.\n\n[On Round End] If no ally is defeated, Rosie gains 5% Void Touch Cleanse.",
         "upgrades": [
-          "Lv. 2: +10% Max Health and Defense",
+          "Lv. 2: +5% Max Health and Defense",
           "Lv. 3: [On Round End] If all allies are active, Rosie gains 5% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Rosie gains 25% Healing.",
           "Lv. 5: When under Void Power, Rosie attacks cannot be dodged."
@@ -8207,7 +8214,7 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 60% ATK damage to target enemy inflicting Daze for 2 turn(s), then deal 150% ATK damage 2 more times, then suffer [Irresistible] Expose for 2 turn(s). If target has Daze, these 2 strikes deal 50% more damage.\n\nIf Kurgan has Void Power, inflict 100% Turn Meter Down on target enemy or inflict Fear for 1 turn(s) on 2 random enemies if target enemy is defeated.\n\nKurgan has +40% Focus during this attack.",
+        "description": "Deal 60% ATK damage to target enemy inflicting Daze for 2 turn(s) and a random Buff Dispel, then deal 150% ATK damage 2 more times, and suffer [Irresistible] Expose for 2 turn(s). If target has Daze, these 2 strikes deal 50% more damage.\n\nIf Kurgan has Void Power, inflict 100% Turn Meter Down on target enemy or inflict Fear for 1 turn(s) on 2 random enemies if target enemy is defeated.\n\nKurgan has +40% Focus during this attack.",
         "upgrades": [
           "Lv. 2: +5% / +10% ATK damage",
           "Lv. 3: +5% / +15% ATK damage, -1 Cooldown",
@@ -8227,13 +8234,13 @@
           "Attr. Up",
           "Cooldowns Down"
         ],
-        "description": "While Kurgan has Frenzy, he has +50% Crit Dmg, +40% Resistance and is immune to Turn Skip Debuff(s). When Frenzy is dispelled, apply Cooldowns Down on House Ram Fury.",
+        "description": "While Kurgan has Frenzy, he has +50% Crit Dmg and is immune to Turn Skip Debuff(s). When Frenzy is dispelled, apply Cooldowns Down on House Ram Fury.",
         "upgrades": [
           "Lv. 2: +5% Crit Dmg",
           "Lv. 3: +5% Crit Dmg",
           "Lv. 4: +5% Crit Dmg; Kurgan is immune to Turn Skip debuffs.",
           "Lv. 5: +10% Crit Dmg; When Frenzy is dispelled, apply Cooldowns Down on House Ram Fury.",
-          "★★★★★ Kurgan has +40% Resistance while he has Frenzy."
+          "★★★★★ Kurgan has +30% Piercing while he has Frenzy."
         ],
         "image": null
       },
@@ -8250,9 +8257,9 @@
           "Debuff Dispel",
           "Buffs"
         ],
-        "description": "Kurgan can trigger Embrace The Void to gain Void Power.\nKurgan gains +10% Attack, Focus and +25% Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Kurgan gains full Debuff Dispel.\n\nWhen under Void Power, each time Kurgan defeats an enemy, he gains 1 Tainted Weapon per 1 Void Power for 2 turn(s).\n\nWhen Kurgan defeats 3 enemies during a single round, he gains 10% Void Touch Cleanse.",
+        "description": "Kurgan can trigger Embrace The Void to gain Void Power.\nKurgan gains +10% Attack, Focus and +30% Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Kurgan gains full Debuff Dispel.\n\nWhen under Void Power, each time Kurgan defeats an enemy, he gains 1 Tainted Weapon per 1 Void Power for 2 turn(s).\n\nWhen Kurgan defeats 3 enemies during a single round, he gains 10% Void Touch Cleanse.",
         "upgrades": [
-          "Lv. 2: +5% Attack, Focus and +10% Crit Dmg",
+          "Lv. 2: +5% Attack, Focus and +15% Crit Dmg",
           "Lv. 3: When Kurgan defeats 3 enemies during a single round, he gains 10% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Kurgan gains full Debuff Dispel.",
           "Lv. 5: When under Void Power, each time Kurgan defeats an enemy, he gains 1 Tainted Weapon per 1 Void Power for 2 turn(s)."
@@ -8472,13 +8479,13 @@
           "Damage",
           "Turn Meter Up"
         ],
-        "description": "Deal 150% ATK damage to target enemy 3 times. The last strike has +50% Crit Dmg and deals double damage to targets under Hunted. If this attack defeats the enemy, gain 25% Turn Meter Up.\n\nThis skill starts on cooldown 3.",
+        "description": "Deal 150% ATK damage to target enemy 3 times. The last strike has +100% Crit Dmg and deals double damage to targets under Hunted. If this attack defeats the enemy, gain 25% Turn Meter Up.\n\nThis skill starts on cooldown 3.",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +10% ATK damage, -1 Cooldown",
           "Lv. 4: +15% ATK damage, -1 Cooldown",
           "Lv. 5: +20% ATK damage; On defeating enemy, gain 25% Turn Meter Up.",
-          "Lv. 6: +25% ATK damage; Last strike has +50% Crit Dmg and deals double damage to targets under Hunted."
+          "Lv. 6: +25% ATK damage; Last strike has +100% Crit Dmg and deals double damage to targets under Hunted."
         ],
         "image": null
       },
@@ -8486,7 +8493,7 @@
         "order": 4,
         "name": "I LIKE THEM ALL",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up"
@@ -8511,7 +8518,7 @@
           "Damage",
           "Attr. Up"
         ],
-        "description": "Leo ignores Taunt and deals +10% damage vs. targets under Control debuffs.\n\nWhen Leo deals damage to a Hunted enemy, he deals bonus damage equal to 8% of the target's Max Health (limit 1 per turn).\n\nIf Bomor and Nadia are allies, they also gain these effects.",
+        "description": "Leo ignores Taunt and deals +10% damage vs. targets under Control debuffs.\n\nWhen Leo deals damage to a Hunted enemy, he deals bonus damage equal to 8% of the target's Max Health (limit 1 per turn). If Bomor and Nadia are allies, they also gain these effects.",
         "upgrades": [
           "Lv. 2: +1% bonus damage",
           "Lv. 3: +1% bonus damage",
@@ -8533,12 +8540,12 @@
           "Cooldowns Down",
           "Turn Meter Up"
         ],
-        "description": "Leo can trigger Embrace The Void to gain Void Power. Leo gains +15% Attack, Defense and Max Health per 1 Void Power.\n\n[On Embrace The Void] Leo gains Cooldowns Reset on It Ends Now.\n\nWhen under Void Power, each time Leo scores a critical hit, he gains 5% Turn Meter Up.\n\nWhen Leo defeats an enemy with It Ends Now, he gains 10% Void Touch Cleanse.",
+        "description": "Leo can trigger Embrace The Void to gain Void Power.\nLeo gains +20% Attack, Defense and Max Health per 1 Void Power.\n\n[On Embrace The Void] Leo gains Cooldowns Reset on It Ends Now.\n\nWhen under Void Power, each time Leo scores a critical hit, he gains 10% Turn Meter Up.\n\nWhen Leo defeats an enemy with It Ends Now, he gains 10% Void Touch Cleanse.",
         "upgrades": [
-          "Lv. 2: +5% Attack, Defense and Max Health",
+          "Lv. 2: +10% Attack, Defense and Max Health",
           "Lv. 3: When Leo defeats an enemy with It Ends Now, he gains 10% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Leo gains Cooldowns Reset on It Ends Now.",
-          "Lv. 5: When under Void Power, each time Leo scores a critical hit, he gains 5% Turn Meter Up."
+          "Lv. 5: When under Void Power, each time Leo scores a critical hit, he gains 10% Turn Meter Up."
         ],
         "image": null
       }
@@ -8789,7 +8796,7 @@
         "tags": [
           "Buffs"
         ],
-        "description": "Tombs gains 1 Buried (max. 20) whenever a character is defeated. Enemies defeated by Tombs cannot be revived.\n\n[On Round Start] Tombs gains 3 Buried.",
+        "description": "Tombs gains 1 Buried (max. 20) whenever a character is defeated.\nEnemies defeated by Tombs cannot be revived.\n\n[On Round Start] Tombs gains 3 Buried.",
         "upgrades": [],
         "image": null
       },
@@ -8797,7 +8804,7 @@
         "order": 6,
         "name": "VOID EMBRACE",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Skill Trigger",
@@ -8806,9 +8813,9 @@
           "Buffs",
           "Revive"
         ],
-        "description": "Tombs can trigger Embrace The Void to gain Void Power.\nTombs gains +20% Focus and +15% Crit Resistance and Healing Effect per 1 Void Power.\n\n[On Embrace The Void] Tombs doubles his stacks of Buried.\n\nWhen under Void Power, when Tombs is defeated while having 5 or more Buried, he gains instant Revive and loses 5 Buried. This Revive is [Unpreventable].\n\nEach time an enemy under Deathmark is defeated, Tombs grants all Consumed allies 3% Void Touch Cleanse.",
+        "description": "Tombs can trigger Embrace The Void to gain Void Power.\nTombs gains +25% Focus and +15% Crit Resistance and Healing Effect per 1 Void Power.\n\n[On Embrace The Void] Tombs doubles his stacks of Buried.\n\nWhen under Void Power, when Tombs is defeated while having 5 or more Buried, he gains instant Revive and loses 5 Buried. This Revive is [Unpreventable].\n\nEach time an enemy under Deathmark is defeated, Tombs grants all Consumed allies 3% Void Touch Cleanse.",
         "upgrades": [
-          "Lv. 2: +5% Focus and +5% Crit Resistance and Healing Effect",
+          "Lv. 2: +10% Focus and +5% Crit Resistance and Healing Effect",
           "Lv. 3: Each time an enemy under Deathmark is defeated, Tombs grants all Consumed allies 3% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Tombs doubles his stacks of Buried.",
           "Lv. 5: When under Void Power, when Tombs is defeated while having 5 or more Buried, he gains instant Revive and loses 5 Buried. This Revive is [Unpreventable]."
@@ -9067,7 +9074,7 @@
           "Buffs",
           "Cooldowns Down"
         ],
-        "description": "Reed can trigger Assassination to inflict Marked.\n\nWhen a Marked enemy is killed by an Assassin ally, Reed gains Creed's Prize until [End of Round]. If they are killed by Reed, he also gains Cooldowns Reset on all skills and a Bonus Turn.",
+        "description": "Reed can trigger Assassination to inflict Marked.\n\nWhen a Marked enemy is killed by an Assassin ally, Reed gains Reed's Prize until [End of Round]. If they are killed by Reed, he also gains Cooldowns Reset on all skills and a Bonus Turn.",
         "upgrades": [],
         "image": null
       },
@@ -9084,10 +9091,10 @@
           "Buffs",
           "Debuffs"
         ],
-        "description": "Reed can trigger Embrace The Void to gain Void Power.\nReed gains +10% Speed, Piercing and +25% Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Reed gains Stealth for 3 turn(s).\n\nWhen under Void Power, each time Reed critically hits an enemy, he has a [25% x Void Power] chance to inflict Stagger for 1 turn(s) on this enemy.\n\nWhen Reed gains Creed's Prize, he gains 10% Void Touch Cleanse.",
+        "description": "Reed can trigger Embrace The Void to gain Void Power.\nReed gains +10% Speed, Piercing and +25% Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Reed gains Stealth for 3 turn(s).\n\nWhen under Void Power, each time Reed critically hits an enemy, he has a [25% x Void Power] chance to inflict Stagger for 1 turn(s) on this enemy.\n\nWhen Reed gains Reed's Prize, he gains 10% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +5% Speed, Piercing and +10% Crit Dmg",
-          "Lv. 3: When Reed gains Creed's Prize, he gains 10% Void Touch Cleanse.",
+          "Lv. 3: When Reed gains Reed's Prize, he gains 10% Void Touch Cleanse.",
           "Lv. 4: [On Embrace The Void] Reed gains Stealth for 3 turn(s).",
           "Lv. 5: When under Void Power, each time Reed critically hits an enemy, he has a [25% x Void Power] chance to inflict Stagger for 1 turn(s) on this enemy."
         ],
@@ -9284,12 +9291,12 @@
           "Healing",
           "Buffs"
         ],
-        "description": "Grant all allies 20% Healing. Grant Bless for 2 turn(s) and random Debuff Dispel to each healed ally.",
+        "description": "Grant all allies 20% Healing and 5% Void Touch Cleanse. Grant Bless for 2 turn(s) and random Debuff Dispel to each healed ally.",
         "upgrades": [
           "Lv. 2: +2% Healing",
-          "Lv. 3: +2% Healing",
-          "Lv. 4: +2% Healing, -1 Cooldown",
-          "Lv. 5: +4% Healing; Grant Bless for 2 turn(s) to each healed ally.",
+          "Lv. 3: +2% Healing, -1 Cooldown",
+          "Lv. 4: +2% Healing, +1% Void Touch Cleanse",
+          "Lv. 5: +4% Healing; +2% Void Touch Cleanse; Grant Bless for 2 turn(s) to each healed ally.",
           "★ Grant random Debuff Dispel to each healed ally."
         ],
         "image": null
@@ -9541,13 +9548,13 @@
           "Shield",
           "Buffs"
         ],
-        "description": "Grant 20% Shield to all allies (increased to 30% for Seasoned allies) for 3 turns and grant Leo and Bomor Resilience for 2 turn(s).",
+        "description": "Grant 15% Shield to all allies (increased to 20% for Seasoned allies) for 3 turns and grant Leo and Bomor Resilience for 2 turn(s).",
         "upgrades": [
-          "Lv. 2: +2% Shield",
-          "Lv. 3: +2% Shield, +1 Shield duration",
+          "Lv. 2: +1% Shield",
+          "Lv. 3: +1% Shield, +1 Shield duration",
           "Lv. 4: +2% Shield, -1 Cooldown",
           "Lv. 5: +4% Shield; Grant Leo and Bomor Resilience for 2 turn(s).",
-          "★★ Shield is increased by 10% for Seasoned allies."
+          "★★ Shield is increased by 5% for Seasoned allies."
         ],
         "image": null
       },
@@ -9561,7 +9568,7 @@
           "Buffs",
           "Assists"
         ],
-        "description": "Gain Taunt and 3 Guard for 2 turn(s). Grant Speed Up for 2 turn(s) to other Seasoned ally with the highest Attack and call them to Assist. Leo and Bomor have +25% Assist Dmg during this attack.",
+        "description": "Gain Taunt and 3 Guard for 2 turn(s).\nGrant Speed Up for 2 turn(s) to other Seasoned ally with the highest Attack and call them to Assist. Leo and Bomor have +25% Assist Dmg during this attack.",
         "upgrades": [
           "Lv. 2: +1 Guard",
           "Lv. 3: -1 Cooldown",
@@ -9574,13 +9581,13 @@
         "order": 4,
         "name": "TRUSTED SHIELD",
         "level": "Max",
-        "type": "Enduring Trait",
+        "type": "Trait",
         "cooldown": null,
         "tags": [
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Nadia has +5% Max Health and Defense for each other Seasoned ally, doubled for Leo and Bomor.\n\nWhen Nadia has Taunt, she has +10% Dmg Reduction and +15% Resistance, doubled if there is another ally with Taunt.\n\nWhen Nadia has Guard, she has +100% Counter Rate.\n\nIf Natalie is an ally, she gains the above bonuses as well. Moreover, whenever Taunt is dispelled from one of them, the other one gains Taunt for 1 turn(s) and whenever Natalie takes damage while under 50% Health, Nadia grants her 1 Guard for 2 turn(s).",
+        "description": "Nadia has +5% Max Health and Defense for each other Seasoned ally, doubled for Leo and Bomor.\n\nWhen Nadia has Taunt, she has  +10% Dmg Reduction and +15% Resistance, doubled if there is another ally with Taunt.\n\nWhen Nadia has Guard, she has +100% Counter Rate.\n\nIf Natalie is an ally, she gains the above bonuses as well. Moreover, whenever Taunt is dispelled from one of them, the other one gains Taunt for 1 turn(s) and whenever Natalie takes damage while under 50% Health, Nadia grants her 1 Guard for 2 turn(s).",
         "upgrades": [
           "Lv. 2: +5% Defense for each other Seasoned ally.",
           "Lv. 3: +5% Dmg Reduction under Taunt",
@@ -9599,7 +9606,7 @@
         "cooldown": null,
         "tags": [
           "Skill Trigger",
-          "Buffs",
+          "Status",
           "Healing"
         ],
         "description": "Nadia can trigger Holy Vow to become Vowkeeper.\n\nWhen Nadia is Vowkeeper, gain 20 True to Vows to fullfill her Vow, granting all allies Nadia's Vow and 20% Healing to Nadia.\n\nNadia gains 1 True to Vows each time a Holy Order ally deals damage to a Holy Order enemy, doubled if this ally is Nadia or Natalie.",
@@ -9618,7 +9625,7 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Nadia can trigger Embrace The Void to gain Void Power. Nadia gains +20% Defense, Max Health and Counter Dmg per 1 Void Power.\n\n[On Embrace The Void] Nadia gains 3 Guard for 3 turn(s).\n\nWhen under Void Power, Nadia has +20% Attack and Crit Rate per 1 Void Power during Out-of-Turn attacks.\n\nEach time a Holy Order enemy is defeated, Nadia gains 5% Void Touch Cleanse.",
+        "description": "Nadia can trigger Embrace The Void to gain Void Power.\nNadia gains +20% Defense, Max Health and Counter Dmg per 1 Void Power.\n\n[On Embrace The Void] Nadia gains 3 Guard for 3 turn(s).\n\nWhen under Void Power, Nadia has +20% Attack and Crit Rate per 1 Void Power during Out-of-Turn attacks.\n\nEach time a Holy Order enemy is defeated, Nadia gains 5% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Defense, Max Health and Counter Dmg",
           "Lv. 3: Each time a Holy Order enemy is defeated, Nadia gains 5% Void Touch Cleanse.",
@@ -9798,7 +9805,7 @@
           "Buffs",
           "Assists"
         ],
-        "description": "Grant Bless for 2 turn(s) to a random other ally, then deal 140% ATK damage to target enemy. If the buffed ally is Holy Order and it is Nathaniel's turn, they are called to Assist with 50% Assist Dmg.",
+        "description": "Grant Bless for 2 turn(s) to a random other ally, then deal 140% ATK damage to target enemy.  If the buffed ally is Holy Order and it is Nathaniel's turn, they are called to Assist with 50% Assist Dmg.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +10% ATK damage",
@@ -9900,7 +9907,7 @@
           "Buffs",
           "Buff Dur. Up"
         ],
-        "description": "Nathaniel can trigger Embrace The Void to gain Void Power. Nathaniel gains +15% Attack, Defense and Speed per 1 Void Power.\n\n[On Embrace The Void] Nathaniel gains Frenzy for 3 turn(s).\n\nWhen under Void Power, all Bless effect Nathaniel grants have +1 duration.\n\nWhen Nathaniel gains Vowkeeper, he gains 5% Void Touch Cleanse and when he grants Nathaniel's Vow to an ally, he gains 2% Void Touch Cleanse.",
+        "description": "Nathaniel can trigger Embrace The Void to gain Void Power.\nNathaniel gains +15% Attack, Defense and Speed per 1 Void Power.\n\n[On Embrace The Void] Nathaniel gains Frenzy for 3 turn(s).\n\nWhen under Void Power, all Bless effect Nathaniel grants have +1 duration.\n\nWhen Nathaniel gains Vowkeeper, he gains 5% Void Touch Cleanse and when he grants Nathaniel's Vow to an ally, he gains 2% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +5% Attack, Defense and Speed",
           "Lv. 3: When Nathaniel gains Vowkeeper, he gains 5% Void Touch Cleanse and when he grants Nathaniel's Vow to an ally, he gains 2% Void Touch Cleanse.",
@@ -10083,7 +10090,7 @@
           "Buffs",
           "Shield"
         ],
-        "description": "Gain 1 Dark Fire (or 2 if Ruck has Void Power), then deal 60% ATK damage to 1 to 3 random enemies.\n\nGain 10% Shield for 2 turn(s).",
+        "description": "Gain 1 Dark Fire (or 2 if Ruck has more than 50% Void Touch), then deal 60% ATK damage to target enemy and 1 to 3 random enemies.\n\nGain 10% Shield for 2 Turn(s).",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +5% ATK damage",
@@ -10355,12 +10362,12 @@
           "Damage",
           "Status"
         ],
-        "description": "Deal 140% ATK damage to target enemy inflicting Crit Resistance Down for 2 turn(s).\n\nIf the enemy is Tainted, Consumed or is under Succumbed, gain 1 Void Flask (max. 10).",
+        "description": "Deal 150% ATK damage to target enemy inflicting Crit Resistance Down for 2 turn(s).\n\nIf the enemy is Tainted, Consumed or is under Hollow, gain 1 Void Flask (max. 10).",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
           "Lv. 4: +20% ATK damage",
-          "Lv. 5: +25% ATK damage",
+          "Lv. 5: +30% ATK damage; Gain Void Flask when attacking Tainted or Consumed enemy or target under Hollow",
           "★★ Gain Void Flask on attacking Tainted or Consumed enemy or target under Succumbed"
         ],
         "image": null
@@ -10376,12 +10383,12 @@
           "Buffs",
           "Debuffs"
         ],
-        "description": "Grant target ally 10% Void Touch Cleanse and a full Debuff Dispel at a cost of 15% of their Health. Gain 2 Void Flask (max. 10) if Void Touch is successfully cleansed and 1 more if target is Consumed or Tainted.\n\nGain Fear for 1 turn(s) if target of this skill is Severin.",
+        "description": "Grant target ally 15% Void Touch Cleanse and a full Debuff Dispel at a cost of 10% of their Health. Gain 2 Void Flask (max. 10) if Void Touch is successfully cleansed and 1 more if target is Consumed or Tainted.\n\nGain Fear for 1 turn(s) if target of this skill is Severin.",
         "upgrades": [
-          "Lv. 2: +1% Void Touch Cleanse, -2% Health cost",
-          "Lv. 3: +1% Void Touch Cleanse, -2% Health cost",
-          "Lv. 4: +1% Void Touch Cleanse, -2% Health cost; +1 Void Flask on cleanse",
-          "Lv. 5: +2% Void Touch Cleanse, -4% Health cost; grant full Debuff Dispel"
+          "Lv. 2: +1% Void Touch Cleanse, -5% Health cost",
+          "Lv. 3: +1% Void Touch Cleanse, -5% Health cost",
+          "Lv. 4: +1% Void Touch Cleanse, +1 Void Flask on cleanse",
+          "Lv. 5: +2% Void Touch Cleanse, grant full Debuff Dispel;"
         ],
         "image": null
       },
@@ -10432,11 +10439,11 @@
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Severin has +15% Crit Rate and additional +5% Crit Dmg for each 1 Guard.\n\nSeverin gains High Morale for 2 turns whenever ally uses Embrace The Void or enemy suffers Succumb To The Void. However, he cannot use Embrace The Void himself.",
+        "description": "Severin has +15% Crit Rate and additional +5% Crit Dmg for each 1 Guard.\n\nSeverin gains High Morale for 2 turns whenever ally uses Embrace The Void or enemy suffers Hollowing. However, he cannot use Embrace The Void himself.\n\n[On Battle Start] Inquisition allies gain +10% Max Health.",
         "upgrades": [
           "Lv. 2: +1% Crit Rate",
           "Lv. 3: +2% Crit Rate",
-          "Lv. 4: +2% Crit Rate",
+          "Lv. 4: +2% Crit Rate; [On Battle Start] Inquisition allies gain +10% Max Health.",
           "Lv. 5: +5% Crit Rate; +5% Crit Dmg for each 1 Guard."
         ],
         "image": null
@@ -10609,12 +10616,12 @@
           "Melee",
           "Damage"
         ],
-        "description": "Deal 80% ATK damage to target enemy twice. Deal damage additional time for each of the following:\n- Vilk is under 50% Health,\n- Vilk is under 25% Health,\n- Vilk has 10 or more Cornered Beast.\n- Vilk is under Void Power",
+        "description": "Deal 80% ATK damage to target enemy twice.\nDeal damage additional time for each of the following:\n- Vilk is under 50% Health,\n- Vilk is under 25% Health,\n- Vilk has 10 or more Cornered Beast.\n- Vilk is under Void Power",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +5% ATK damage",
           "Lv. 4: +10% ATK damage",
-          "Lv. 5: +20% ATK damage; if Vilk is under 25% Health, deal damage one more time",
+          "Lv. 5: +20% ATK damage; If Vilk is under 25% Health, deal damage one more time",
           "★★ Deal damage one more time."
         ],
         "image": null
@@ -10715,7 +10722,7 @@
           "Buffs",
           "Healing"
         ],
-        "description": "Vilk can trigger Embrace The Void to gain Void Power. Vilk gains +10% Speed, Counter Rate and +25% Counter Dmg per 1 Void Power.\n\n[On Embrace The Void] Vilk gains 3 Cornered Beast.\n\n[On Turn Start] When under Void Power and if Vilk is under 25% Health, he gains 25% Healing and loses 1 Void Power.\n\n[On Round End] If Vilk has no Cornered Beast, he gains 10% Void Touch Cleanse.",
+        "description": "Vilk can trigger Embrace The Void to gain Void Power.\nVilk gains +10% Speed, Counter Rate and +25% Counter Dmg per 1 Void Power.\n\n[On Embrace The Void] Vilk gains 3 Cornered Beast.\n\n[On Turn Start] When under Void Power and if Vilk is under 25% Health, he gains 25% Healing and loses 1 Void Power.\n\n[On Round End] If Vilk has no Cornered Beast, he gains 10% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +5% Speed, Counter Rate and +10% Counter Dmg",
           "Lv. 3: [On Round End] If Vilk has no Cornered Beast, he gains 10% Void Touch Cleanse.",
@@ -10895,11 +10902,11 @@
           "Melee",
           "Damage"
         ],
-        "description": "Deal 90% ATK damage to target enemy twice.",
+        "description": "Deal 100% ATK damage to target enemy twice.",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +10% ATK damage",
-          "Lv. 4: +10% ATK damage",
+          "Lv. 4: +15% ATK damage",
           "Lv. 5: +20% ATK damage"
         ],
         "image": null
@@ -10914,11 +10921,11 @@
           "Melee",
           "Damage"
         ],
-        "description": "Deal 90% ATK to random enemy 2 times, then deal 90% ATK to target enemy twice. When called to Assist by Inquisition ally, use this skill instead of Cleansing Blades.",
+        "description": "Deal 100% ATK to random enemy 2 times, then deal 90% ATK to target enemy twice.\n\nWhen called to Assist by Inquisition ally, use this skill instead of Cleansing Blades.",
         "upgrades": [
           "Lv. 2: +5% ATK damage",
           "Lv. 3: +10% ATK damage",
-          "Lv. 4: +10% ATK damage",
+          "Lv. 4: +15% ATK damage",
           "Lv. 5: +20% ATK damage"
         ],
         "image": null
@@ -10933,11 +10940,11 @@
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Arbias deals +25% damage against Tainted or Consumed enemies (or +50% if they are Holy Order). Arbias is immune to Blind. Each time Arbias is called to Assist, he gains 1 Zeal (or 2 if called by an Inquisition character). [On Battle Start] Arbias gains 1 Zeal for each Tainted or Consumed Holy Order enemy. [On Turn Start] Arbias loses 5% Health for each other Tainted or Consumed ally. Additionally, each time Arbias suffers Void Touch outside of his turn, he loses 5% Health. These Health losses cannot defeat Arbias.",
+        "description": "Arbias deals +25% damage against Tainted or Consumed enemies (or +50% if they are Holy Order). Arbias is immune to Blind.\n\nEach time Arbias is called to Assist, he gains 1 Zeal (or 2 if called by an Inquisition character).\n\n[On Battle Start] Arbias gains 1 Zeal for each Tainted or Consumed Holy Order enemy.\n\n[On Turn Start] Arbias loses 2% Health for each other Tainted or Consumed ally. Additionally, each time Arbias suffers Void Touch outside of his turn, he loses 2% Health. These Health losses cannot defeat Arbias.",
         "upgrades": [
-          "Lv. 2: +5% damage bonus; -1% Health losses",
-          "Lv. 3: +5% damage bonus; -1% Health losses",
-          "Lv. 4: +5% damage bonus; -1% Health losses",
+          "Lv. 2: +5% damage bonus; -2% Health losses",
+          "Lv. 3: +5% damage bonus; -2% Health losses",
+          "Lv. 4: +5% damage bonus; -2% Health losses",
           "Lv. 5: +5% damage bonus; -2% Health losses; [On Battle Start] Gain 1 Zeal for each Tainted or Consumed Holy Order enemy."
         ],
         "image": null
@@ -10951,7 +10958,7 @@
         "tags": [
           "Buffs"
         ],
-        "description": "Arbias can trigger Holy Vow to become Vowkeeper. When Arbias is Vowkeeper, gain 30 True to Vows to fulfill his Vow, granting all Holy Order allies Arbias' Vow. Arbias gains 1 True to Vows each time a Holy Order ally deals damage to a Tainted or Consumed enemy (or 2 True to Vows if this enemy is Holy Order).",
+        "description": "Arbias can trigger Holy Vow to become Vowkeeper.\n\nWhen Arbias is Vowkeeper, gain 30 True to Vows to fulfill his Vow, granting all Holy Order allies Arbias' Vow.\n\nArbias gains 1 True to Vows each time a Holy Order ally deals damage to a Tainted or Consumed enemy (or 2 True to Vows if this enemy is Holy Order).",
         "upgrades": [],
         "image": null
       },
@@ -10967,9 +10974,9 @@
           "Void Touch Cleanse",
           "Buffs"
         ],
-        "description": "Arbias can trigger Embrace The Void to gain Void Power. Arbias gains +15% Attack, Hit Rate and Crit Dmg per 1 Void Power. [On Embrace The Void] Arbias gains 3 Zeal. [On Turn Start] Arbias gains 1 Zeal per 1 Void Power. Each time Arbias defeats a Tainted or Consumed enemy, he gains 5% Void Touch Cleanse (doubled for Holy Order enemies).",
+        "description": "Arbias can trigger Embrace The Void to gain Void Power.\nArbias gains +20% Attack, Hit Rate and Crit Dmg per 1 Void Power.\n\n[On Embrace The Void] Arbias gains 3 Zeal.\n\n[On Turn Start] Arbias gains 1 Zeal per 1 Void Power.\n\nEach time Arbias defeats a Tainted or Consumed enemy, he gains 5% Void Touch Cleanse (doubled for Holy Order enemies).",
         "upgrades": [
-          "Lv. 2: +5% Attack, Hit Rate and Crit Dmg",
+          "Lv. 2: +10% Attack, Hit Rate and Crit Dmg",
           "Lv. 3: Each time Arbias defeats a Tainted or Consumed enemy, he gains 5% Void Touch Cleanse (doubled for Holy Order enemies).",
           "Lv. 4: [On Embrace The Void] Arbias gains 3 Zeal.",
           "Lv. 5: [On Turn Start] Arbias gains 1 Zeal per 1 Void Power."
@@ -11144,11 +11151,11 @@
           "Damage",
           "Debuffs"
         ],
-        "description": "Deal 130% ATK damage to target enemy and inflict Attack Down for 1 turn(s) on them and 1 other random enemy.",
+        "description": "Deal 140% ATK damage to target enemy and inflict Attack Down for 1 turn(s) on them and 1 other random enemy.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
           "Lv. 3: +15% ATK damage",
-          "Lv. 4: +15% ATK damage; Inflict Attack Down for 1 turn(s).",
+          "Lv. 4: +20% ATK damage; Inflict Attack Down for 1 turn(s).",
           "Lv. 5: +25% ATK damage; Inflict Attack Down also on 1 other random enemy."
         ],
         "image": null
@@ -11164,7 +11171,7 @@
           "Healing",
           "Void Touch"
         ],
-        "description": "Gain Taunt for 2 turn(s) and 25% Healing. If Goran is below 75% Health, for each level of Void Menace gain additional 20% Healing and suffer 4% Void Touch. Goran won't cleanse Void Touch when gaining Healing through this skill. Then, gain 1 Tainted Armor for every 10% Void Touch.",
+        "description": "Gain Taunt for 2 turn(s) and 25% Healing. If Goran is below 75% Health, for each level of Void Menace gain additional 20% Healing and suffer 4% Void Touch. Then, gain 1 Tainted Armor for every 10% Void Touch.",
         "upgrades": [
           "Lv. 2: +5% Healing",
           "Lv. 3: +5% additional Healing, -1 Cooldown",
@@ -11186,13 +11193,13 @@
           "Debuffs",
           "Buff Dispel"
         ],
-        "description": "Deal 125% ATK damage to target enemy inflicting full Buff Dispel (if Goran has Void Power, this Buff Dispel is [Irresistible]). Then, deal 125% ATK + 50% DEF damage inflicting Stun for 1 turn(s).",
+        "description": "Deal 125% ATK damage to target enemy inflicting full Buff Dispel (if Goran has Void Power, this Buff Dispel is [Irresistible]). Then, deal 125% ATK + 100% DEF damage inflicting Stun for 1 turn(s).\n\nThis attack has bonus Focus equal to the target's Health% loss from each hit's damage.",
         "upgrades": [
           "Lv. 2: +10% ATK damage",
-          "Lv. 3: +10% ATK damage",
-          "Lv. 4: +10% ATK damage; -1 Cooldown",
+          "Lv. 3: +10% ATK damage; -1 Cooldown",
+          "Lv. 4: +10% ATK damage; +50% DEF bonus damage in second hit",
           "Lv. 5: +15% ATK damage; inflict full Buff Dispel instead ([Irresistible] if Goran has Void Power)",
-          "Lv. 6: +20% ATK damage; +50% DEF bonus damage in second hit"
+          "Lv. 6: +20% ATK damage; +50% DEF bonus damage; This attack has bonus Focus equal to the target's Health% loss from this attack's damage."
         ],
         "image": null
       },
@@ -11206,12 +11213,12 @@
           "Attr. Up",
           "Void Touch"
         ],
-        "description": "Void Touch Cleanse effects on Goran are halved, but he does not suffer attribute decrease from Void Touch. For every 10% Void Touch Goran has +3% Dmg Reduction, +5% Crit Resistance and inflicts 1% Void Touch on the attacker (if possible) whenever he suffers damage.",
+        "description": "Void Touch Cleanse and Healing effects other than his own are halved on Goran, but he is immune to Hollowing unless above 75% Void Touch.\n\nFor every 10% Void Touch Goran has +3% Dmg Reduction, +5% Crit Resistance and inflicts 1% Void Touch on the attacker (if possible) whenever he suffers damage.",
         "upgrades": [
           "Lv. 2: +1% Crit Resistance",
           "Lv. 3: +1% Crit Resistance",
           "Lv. 4: +2% Crit Resistance",
-          "Lv. 5: +2% Dmg Reduction"
+          "Lv. 5: +2% Dmg Reduction;"
         ],
         "image": null
       },
@@ -11225,7 +11232,7 @@
           "Attr. Up",
           "Buffs"
         ],
-        "description": "Goran cannot gain Shield nor dodge. When Goran is about to get damage, this damage is reduced by 4% of his Max Health (+2% vs. Holy Order enemies; +1% for each Void Power) to a minimum of 1. [On Round Start] If Goran is the only Tank ally, he gains Taunt for 2 turn(s).",
+        "description": "Goran cannot gain Shield nor dodge.\nWhen Goran is about to get damage, this damage is reduced by 4% of his Max Health \"(+2% vs. Holy Order enemies; +1% for each Void Power) to a minimum of 1.\"\n\n[On Round Start] If Goran is the only Tank ally, he gains Taunt for 2 turn(s).",
         "upgrades": [
           "Lv. 2: Amount reduced is increased by 2% of his Max Health vs. Holy Order enemies.",
           "Lv. 3: Amount reduced: +0.5% Max Health.",
@@ -11249,7 +11256,7 @@
           "Cooldowns Down",
           "Buffs"
         ],
-        "description": "Goran can trigger Embrace The Void to gain Void Power. Goran gains +20% Defense and Max Health and +5% Dmg Reduction per 1 Void Power. [On Embrace The Void] Goran gains Cooldowns Reset on Dark Endurance and a Bonus Turn. When under Void Power, each time Goran suffers a critical hit, he has a [10% x Void Power] chance to gain 1 Tainted Armor for 2 turn(s). [On Round End] If Goran has more than 70% Void Touch, he gains 30% Void Touch Cleanse (not affected by halving effect of A Welcomed Curse).",
+        "description": "Goran can trigger Embrace The Void to gain Void Power.\nGoran gains +25% Defense and Max Health and +5% Dmg Reduction per 1 Void Power.\n\n[On Embrace The Void] Goran gains Cooldowns Reset on Dark Endurance and a Bonus Turn.\n\nWhen under Void Power, each time Goran suffers a critical hit, he has a [10% x Void Power] chance to gain 1 Tainted Armor for 2 turn(s).\n\n[On Round End] If Goran has more than 70% Void Touch, he gains 30% Void Touch Cleanse.",
         "upgrades": [
           "Lv. 2: +10% Defense and Max Health",
           "Lv. 3: [On Round End] If Goran has more than 70% Void Touch, he gains 30% Void Touch Cleanse.",

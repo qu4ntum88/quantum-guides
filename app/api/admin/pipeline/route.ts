@@ -90,6 +90,16 @@ const JOBS: Record<string, JobDef> = {
     cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-vh-status-effects.mjs'), '--write'],
     note: 'Writes the names + descriptions into src/vh/data/status-effects.json (ids and icons untouched, nothing added). Commit afterwards.',
   },
+  'vh-kits-preview': {
+    group: 'Void Hunters', label: 'Update hunter kits — preview',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-vh-kits.mjs')],
+    note: 'Compares every site hunter\'s kit with kits.json from the latest memory-snapshot pull (real numbers). Writes nothing.',
+  },
+  'vh-kits-apply': {
+    group: 'Void Hunters', label: 'Update hunter kits — apply',
+    cwd: REPO, args: [path.join(REPO, 'scripts', 'sync-vh-kits.mjs'), '--write'],
+    note: 'Writes the new kits into src/vh/data/hunters.json and adds a redline of the changes to src/vh/data/kit-history.json (Kit History on each hunter page). Commit afterwards.',
+  },
   'vh-fights-save': {
     group: 'Void Hunters', label: 'Save the last fight',
     cwd: EXPORTS, args: [path.join(EXPORTS, '_pipeline', 'void-hunters', 'record-fights.mjs'), '--once'],

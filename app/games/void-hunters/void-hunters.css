@@ -37,3 +37,26 @@
   .vh-resource { flex-direction: column; align-items: stretch; gap: 0.5rem; }
   .vh-resource .btn { flex-basis: auto; }
 }
+
+/* ─── Kit History redline (src/vh/components/KitHistory.tsx) ─────────────────────
+   Like a legal redline: deleted words red + struck through, added words green. */
+.vh-redline { --vh-del: #ff7b7b; --vh-del-bg: rgba(255, 107, 107, 0.13); --vh-ins: #5ee08f; --vh-ins-bg: rgba(74, 222, 128, 0.13); display: flex; flex-direction: column; gap: 1.25rem; }
+.vh-redline del { color: var(--vh-del); background: var(--vh-del-bg); text-decoration: line-through; text-decoration-thickness: 2px; border-radius: 0.15rem; }
+.vh-redline ins { color: var(--vh-ins); background: var(--vh-ins-bg); text-decoration: none; font-weight: 600; border-radius: 0.15rem; }
+.vh-redline-key { display: flex; gap: 0.9rem; margin: 0; font-size: 0.78rem; }
+.vh-redline-key del, .vh-redline-key ins { padding: 0.05rem 0.4rem; }
+.vh-redline-entry h3 { margin: 0 0 0.75rem; font-family: Unbounded, sans-serif; font-size: 0.85rem; letter-spacing: 0.05em; color: #e8e8e8; }
+.vh-redline-entry h3 span { display: block; margin-top: 0.2rem; font-family: inherit; font-size: 0.7rem; font-weight: 400; letter-spacing: 0.02em; color: #777; }
+.vh-redline-skill { padding: 0.75rem 0; border-top: 1px solid #262626; }
+.vh-redline-skill:first-of-type { border-top: 0; padding-top: 0; }
+.vh-redline-name { font-family: Unbounded, sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.05em; color: #e0e0e0; margin-bottom: 0.35rem; }
+.vh-redline-name small { font-family: system-ui, sans-serif; font-weight: 400; letter-spacing: 0; color: #888; }
+.vh-redline-badge { display: inline-block; margin-left: 0.5rem; padding: 0.08rem 0.45rem; border-radius: 99px; font-size: 0.58rem; letter-spacing: 0.06em; text-transform: uppercase; vertical-align: 0.1em; background: #222; color: #999; }
+.vh-redline-badge--numbers { background: rgba(204, 164, 83, 0.16); color: var(--gold); }
+.vh-redline-badge--added { background: var(--vh-ins-bg); color: var(--vh-ins); }
+.vh-redline-badge--removed { background: var(--vh-del-bg); color: var(--vh-del); }
+.vh-redline-skill p { margin: 0; font-size: 0.88rem; line-height: 1.65; color: #c8c8c8; white-space: pre-line; }
+.vh-redline-skill details { margin-top: 0.45rem; }
+.vh-redline-skill summary { cursor: pointer; font-size: 0.72rem; color: #888; }
+.vh-redline-skill .vh-redline-levels { margin-top: 0.4rem; font-size: 0.8rem; color: #999; }
+@media (max-width: 600px) { .vh-redline-skill p { font-size: 0.84rem; } }
