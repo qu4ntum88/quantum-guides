@@ -33,7 +33,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       'Full kit, stats by rank, ascension and awakening bonuses.',
     ].filter(Boolean).join(' '),
     path: `/games/godforge/heroes/${slug}`,
-    image: hero.image_url,
+    // the opaque portrait card previews better in link embeds than the transparent full art
+    image: hero.card_url || hero.image_url,
     type: 'article',
   })
 }
@@ -86,8 +87,8 @@ export default async function GfHeroPage({ params }: { params: Promise<{ slug: s
             <Link prefetch={false} href="/games/godforge">Godforge</Link> › <Link prefetch={false} href="/games/godforge/hero-tier-list">Heroes</Link> › <span>{hero.name}</span>
           </nav>
           <div className="gfh-top">
-            <div className="gfh-portrait">
-              {hero.portrait_url && <img src={hero.portrait_url} alt={hero.name} />}
+            <div className={hero.card_url ? 'gfh-portrait gfh-portrait--card' : 'gfh-portrait'}>
+              {(hero.card_url || hero.portrait_url) && <img src={hero.card_url || hero.portrait_url!} alt={hero.name} />}
               {hero.faction_icon && <img className="gfh-corner gfh-corner--tl" src={hero.faction_icon} alt={realm ?? ''} />}
               {hero.archetype_icon && <img className="gfh-corner gfh-corner--tr" src={hero.archetype_icon} alt={hero.archetype ?? ''} />}
               {hero.affinity_icon && <img className="gfh-corner gfh-corner--bl" src={hero.affinity_icon} alt={hero.affinity ?? ''} />}

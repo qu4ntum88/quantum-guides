@@ -72,6 +72,8 @@ export type GfHero = {
   faction_icon: string | null
   portrait_url: string | null
   image_url: string | null
+  /** Painted portrait card (opaque, 704×1024): hero page header + share image. */
+  card_url?: string | null
   stats: GfHeroStats | null
   ascension_bonuses: GfHeroAscensionBonus[]
   awakening_bonuses: GfHeroAwakeningBonus[]

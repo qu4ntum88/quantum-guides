@@ -15,6 +15,8 @@ export interface GfRosterHero {
   name: string
   fullArt: string
   portrait: string | null
+  /** Painted portrait card from the content creator drive (scripts/import-gf-art.mjs). */
+  card?: string | null
   rarity: string | null
   affinity: string | null
   allegiance: string | null

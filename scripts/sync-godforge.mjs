@@ -193,6 +193,7 @@ for (const r of roster) {
     faction_icon: faction ? `/godforge/gf_heroes/factions/${faction}.png` : null,
     portrait_url: r.portrait || r.fullArt,
     image_url: r.fullArt,
+    card_url: r.card ?? null,
     stats: {
       hp: Math.round((s.health ?? 0) * HP_SCALE),
       atk: s.attack ?? 0,
